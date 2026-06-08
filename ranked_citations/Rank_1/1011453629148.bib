@@ -1,0 +1,18 @@
+@article{10.1145/3629148,
+ abstract = {The TLS ecosystem depends on certificates to bootstrap secure connections. Certificate Authorities (CAs) are trusted to issue these correctly. However, as a result of security breaches or attacks, certificates may be issued fraudulently and need to be revoked prematurely.Revocation, as a reactive measure, is fundamentally damage control and, as such, time is critical. Therefore, measuring reaction delay is the first step to identifying how well the revocation system functions.In this paper we attempt to characterize the current performance of the WebPKI in dealing with fraudulent certificates. We present measurements of each step in the revocation process: the detection of certificate issuance through Certificate Transparency (CT) monitoring, the administrative revocation process at popular CAs, and the revocation checking behavior of end-user clients, both in a controlled virtualized environment and in the wild. We perform two live measurements, in 2022 and 2023, respectively, to provide a longitudinal comparison.We find that detection and revocation of fraudulent certificates is quick and efficient when leveraging CT and can be completed within 6.5 hours on average. Furthermore, CT is being increasingly enforced by some browsers. However, ∼83% of the clients we observed, across popular browsers, brands and OSes, completely disregard a certificate's status, whileall of the studied browsers still display soft-fail behavior, making them vulnerable to attackers capable of interfering with the network. Of the clients that do check revocation, we find that 35% can be made to accept a revoked certificate through the use of OCSP Stapling. We expect this number to grow with client-side adoption of OCSP Stapling [RFC6961]. Current OCSP expiration times allow a revoked certificate to remain fully valid for up to 7 days for the majority of CAs, exposing clients to attacks.},
+ address = {New York, NY, USA},
+ articleno = {26},
+ author = {Friess, Jens and Schulmann, Haya and Waidner, Michael},
+ doi = {10.1145/3629148},
+ issue_date = {December 2023},
+ journal = {Proc. ACM Netw.},
+ keyword = {PKI, certificate transparency, certificates, revocation},
+ month = {November},
+ number = {CoNEXT3},
+ numpages = {20},
+ publisher = {Association for Computing Machinery},
+ title = {Revocation Speedrun: How the WebPKI Copes with Fraudulent Certificates},
+ url = {https://doi.org/10.1145/3629148},
+ volume = {1},
+ year = {2023}
+}

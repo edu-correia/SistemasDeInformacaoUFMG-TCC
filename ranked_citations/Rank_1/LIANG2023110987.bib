@@ -1,0 +1,13 @@
+@article{LIANG2023110987,
+ abstract = {Convolutional neural networks(CNN), especially U-shaped networks, have become the mainstream approach for medical image segmentation. However, due to the intrinsic locality of convolutional operations, CNN has inherent limitations in capturing long-range dependencies. Although Transformer-based methods have demonstrated remarkable performance in computer vision by modeling long-range dependencies, their high computational complexity and reliance on large-scale pre-training present challenges, particularly for higher-resolution medical images. In this paper, we introduce MAXFormer, a U-shaped hierarchical network that effectively leverages global context within individual samples and relationships between different samples. Our Transformer module reformulates the self-attention mechanism into two parts: local–global attention and external attention. The local–global attention provides an efficient alternative to self-attention with linear complexity, employing a parallel architecture that allows local–global spatial interactions. The local attention branch captures high-frequency local information, while the global attention branch captures low-frequency global information. Furthermore, we have designed the Refined Fused Connection module to effectively merge feature outputs from each encoder block with the decoder output, mitigating spatial detail loss due to downsampling. Extensive experiments on two different medical image segmentation datasets show that our proposed method outperforms other state-of-the-art methods without requiring pre-training weights. Code will be available at https://github.com/zhiwei-liang/MAXFormer.},
+ author = {Zhiwei Liang and Kui Zhao and Gang Liang and Siyu Li and Yifei Wu and Yiping Zhou},
+ doi = {https://doi.org/10.1016/j.knosys.2023.110987},
+ issn = {0950-7051},
+ journal = {Knowledge-Based Systems},
+ keyword = {Transformer, Medical image segmentation, Attention mechanism},
+ pages = {110987},
+ title = {MAXFormer: Enhanced transformer for medical image segmentation with multi-attention and multi-scale features fusion},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950705123007372},
+ volume = {280},
+ year = {2023}
+}

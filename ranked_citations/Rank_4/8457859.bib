@@ -1,0 +1,14 @@
+@inproceedings{8457859,
+ abstract = {The log-structured merge (LSM) tree is designed to provide efficient indexing for data that is frequently updated by using the log-structured approach. It defers merge operations for reordering data, propagating the index changes from a memory-resident component through one or more disk components. Thus, LSM-based storage engines can achieve good write performance. However, processing merge operations incurs high write amplification and memory consumption, ultimately having an adverse effect on system performance. In this paper, we propose the Ranged Log-Structured Merge (RLSM) tree to mitigate the problems of the LSM tree. To reduce the write amplification and memory overhead, RLSM simplifies the logical layout of storage and keeps data as an unsorted order. In addition, we prevent read performance from declining by partitioning data on the disk into multiple files with non-overlapping ranges. We implement our schemes on HBase, one of the most popular key-value storage engines, and evaluate our system by using YCSB benchmark. Our experimental results show that RLSM consequently reduces write amplification by a factor of 3, and memory consumption by up to 24%.},
+ author = {Song, Nae Young and Yeom, Heon Young and Han, Hyuck},
+ booktitle = {2018 IEEE 11th International Conference on Cloud Computing (CLOUD)},
+ doi = {10.1109/CLOUD.2018.00090},
+ issn = {2159-6190},
+ keyword = {Compaction;Data structures;Buffer storage;Memory management;Throughput;Synchronization;Sorting;LSM tree;key-value stores},
+ month = {July},
+ number = {},
+ pages = {652-659},
+ title = {Efficient Key-Value Stores with Ranged Log-Structured Merge Trees},
+ volume = {},
+ year = {2018}
+}

@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2021.3123507,
+ abstract = {To detect fraudulent TLS server certificates and improve the accountability of certification authorities (CAs), certificate transparency (CT) is proposed to record certificates in publicly-visible logs, from which the monitors fetch all certificates and watch for suspicious ones. However, if the monitors, either domain owners themselves or third-party services, fail to return a complete set of certificates issued for a domain of interest, potentially fraudulent certificates may not be detected and then the CT framework becomes less reliable. This paper presents the first systematic study on CT monitors. We analyze the data in 88 public logs and the services of 5 active third-party monitors regarding 3,000,431 certificates of 6,000 selected Alexa Top-1M websites. We find that although CT allows ordinary domain owners to act as monitors, it is impractical for them to perform reliable processing by themselves, due to the rapidly increasing volume of certificates in public logs (e.g., on average about 5 million records or 28.29 GB daily for the minimal set of logs that need to be monitored in 2018, or more than 7 million records per day in 2020, according to the Chrome CT policy). Moreover, our study discloses that (&lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;${a}$ &lt;/tex-math&gt;&lt;/inline-formula&gt;) none of the third-party monitors guarantees to return the complete set of certificates for a domain, and (&lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;${b}$ &lt;/tex-math&gt;&lt;/inline-formula&gt;) for some domains, even the union of the certificates returned by the five third-party monitors can probably be incomplete. As a result, the certificates accepted by CT-enabled browsers are not actually visible to the claimed domain owners, even when CT is adopted with well-functioning logs. The risk of invisible fraudulent certificates in public logs raises doubts on the reliability of CT in practice.},
+ author = {Li, Bingyu and Lin, Jingqiang and Li, Fengjun and Wang, Qiongxiao and Wang, Wei and Li, Qi and Cheng, Guangshen and Jing, Jiwu and Wang, Congli},
+ doi = {10.1109/tnet.2021.3123507},
+ issn = {1063-6692},
+ issue_date = {April 2022},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {November},
+ number = {2},
+ numpages = {17},
+ pages = {749–765},
+ publisher = {IEEE Press},
+ title = {The Invisible Side of Certificate Transparency: Exploring the Reliability of Monitors in the Wild},
+ url = {https://doi.org/10.1109/TNET.2021.3123507},
+ volume = {30},
+ year = {2021}
+}

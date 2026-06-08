@@ -1,0 +1,14 @@
+@inproceedings{11118070,
+ abstract = {Key-value storage holds a crucial position in modern large-scale applications within data centers. Write-optimized data structures, such as LSM-tree (Log-Structured Merge-tree) and its variations, are prevalently adopted in key-value storage systems like BigTable and HBase. The conventional LSM-tree organizes key values into multiple files of sorted strings that keep expanding and utilizes compaction to transfer key values from one smaller file to another adjacent larger file until the key values reach the largest file. Unfortunately, the current compaction schemes bring about considerable write amplification due to the repeated reading and writing of key values, resulting in suboptimal throughput. We propose a novel compaction scheme, namely sliding-window based compaction (SWCompaction), which has the ability to reduce write amplification. Sliding-window based compaction calculates the compaction cost based on the key range of the sorted string files and determines the candidate sorted string files. Sliding-window based compaction can effectively lower write amplification and boost the system throughput. We implemented SWCompaction on HBase and carried out extensive experiments. Validation through the YCSB framework shows that the write performance of SWCompaction is enhanced by approximately 15%, and the read performance is comparable to default HBase.},
+ author = {Li, Jianqiang and Wang, Kunfeng and Chen, Ruyang},
+ booktitle = {2024 6th International Academic Exchange Conference on Science and Technology Innovation (IAECST)},
+ doi = {10.1109/IAECST64597.2024.11118070},
+ issn = {},
+ keyword = {Cloud computing;Technological innovation;Data centers;Costs;Data analysis;Writing;Throughput;Data structures;Compaction;Engines;key-value store;Log-Structured Merge-tree(LSM-tree);write amplification;sliding-window based compaction},
+ month = {Dec},
+ number = {},
+ pages = {795-801},
+ title = {Reducing Write Amplification in LSM-Tree by Data Compaction Based on Sliding-Window},
+ volume = {},
+ year = {2024}
+}

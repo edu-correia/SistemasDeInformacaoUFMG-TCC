@@ -1,0 +1,16 @@
+@article{Song20232238,
+ abstract = {Due to the restricted on-chip computing capability for deep neural network (DNN) processing, high-definition video recognition (VOR) task is not easily achievable as a real-time task in a consumer SoC. Despite the fact that many accelerators have been proposed for fast VOR, they remain isolated from a video decoder's inherent video compression knowledge. Therefore, in this article, we propose a video decoder-assisted neural network acceleration framework for real-time video recognition. First, given the fact that the nonkey frames can be dynamically reconstructed by the key frames with high fidelity during video compression, we propose the VR-DANN algorithm that reconstructs the VOR results of nonkey frames in a similar way so as to save a large amount of NN computing power. In VR-DANN, we leverage motion vectors, the tempo-spatial information already available in the video decoding process to facilitate the recognition process, and propose a lightweight NN-based refinement scheme to suppress the nonpixel recognition noise. Moreover, we consider that there is numerous redundant information in the video frames because the objects of interest usually take a small portion in a video frame. We, therefore, propose the object-based acceleration algorithm (Jigsaw-VOR) to avoid unnecessary computation by dropping out the redundant information in the frames before going through the computing-intensive DNN process. Concretely, we adopt the motion vectors to track the rough position for the objects of interest and then merge them into a consolidated frame for DNN processing like a jigsaw game. The acceleration comes from the processing of much fewer consolidated frames compared to the raw frames in a video stream. The VR-DANN and Jigsaw-VOR can be integrated for further speedup. From the hardware side, we propose the VR-DANN and Jigsaw-VOR architectures to, respectively, accelerate the VR-DANN and Jigsaw-VOR algorithms. These two architectures can be combined to gain higher performance improvement. Our experimental results show that the VR-DANN architecture achieves 2.9× performance improvement with less than 1% accuracy loss compared with the state-of-the-art 'FAVOS' scheme. In addition, the experimental results show that applying Jigsaw-VOR to all frames can achieve 2.4× performance improvement with comparable accuracy compared to FAVOS. By combining VR-DANN and Jigsaw-VOR schemes, the performance improvement can reach up to 3.6×.  © 1982-2012 IEEE.},
+ author = {Song, Zhuoran and Lu, Heng and Jiang, Li and Jing, Naifeng and Liang, Xiaoyao},
+ doi = {10.1109/TCAD.2022.3217667},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 5},
+ number = {7},
+ pages = {2238 - 2251},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Real-Time Video Recognition via Decoder-Assisted Neural Network Acceleration Framework},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85141453780?origin=resultslist},
+ volume = {42},
+ year = {2023}
+}

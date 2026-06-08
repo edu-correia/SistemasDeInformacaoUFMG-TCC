@@ -1,0 +1,13 @@
+@article{LIAO2026108041,
+ abstract = {Directed Acyclic Graph (DAG)-based blockchains represent a paradigm shift from traditional blockchains, significantly improving throughput performance by concurrently committing blocks. Some DAG-based blockchain applications have real-time requirements, where transactions must be committed before specific deadlines. However, the ordering phase remains a bottleneck in DAG-based blockchains. DAG-based blockchains typically adopt an order-execute (OE) framework to resolve transaction conflicts. This explicit ordering approach requires dedicated time to reconcile transaction conflicts, leading to reduced throughput. For time-sensitive transactions, this overhead becomes critical as no transactions are processed during this period. Therefore, this paper proposes IORT-DAG, a DAG-based blockchain that employs an implicit ordering mechanism for transaction processing. Specifically, IORT-DAG adopts a merged execution and ordering concurrency control (MEOCC) to execute transactions concurrently. To ensure conflict serializability, we introduce the concept of a transaction anchor table, which stores temporary transaction states. Upon execution, transaction results are written into this table. Transactions failing to meet serializability conditions are restarted based on temporary states in the anchor table, while those satisfying serializability are committed according to their deadlines. To reduce tail latency, we propose a transaction position table that records transaction read-write sets after execution. This table enables the early commitment of execution completed transactions whose dependencies have been fulfilled, effectively reducing latency and enhancing throughput. Extensive experimental results demonstrate that IORT-DAG achieves robust performance across varying conflict rates and deadline constraints, effectively meeting real-time transaction requirements.},
+ author = {Guoqiong Liao and Hao Ding and Yinxiang Lei},
+ doi = {https://doi.org/10.1016/j.future.2025.108041},
+ issn = {0167-739X},
+ journal = {Future Generation Computer Systems},
+ keyword = {DAG-based blockchain, Real-time transaction, Transaction processing, Implicit ordering},
+ pages = {108041},
+ title = {IORT-DAG: A real-time DAG-based blockchain with implicit ordering},
+ url = {https://www.sciencedirect.com/science/article/pii/S0167739X2500336X},
+ volume = {175},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@conference{Lee202293,
+ abstract = {Unlike traditional block-based SSDs, Zoned Namespace (ZNS) SSDs expose storage through the zoned block interface, completely eliminating the need for in-device garbage collection (GC) and relinquishing this responsibility to applications. As a result, application-aware data placement decisions give the opportunity for applications on the host to perform efficient GC. Meanwhile, RocksDB for ZNS SSD places data with similar invalidation times (lifetimes) in the same zone through ZenFS (a user-level file system) using the Lifetime-based Zone Allocation algorithm (LIZA), and minimizes the GC overhead of valid data copy when reclaiming a zone. However, LIZA, which allocates zones by predicting the lifetime of each SSTable according to the level of the hierarchical structure of the LSM-tree, is very inefficient in minimizing the write amplification (WA) problem due to inaccurate predictions of SSTable lifetimes. Instead, based on our observation that the deletion time of SSTables in the LSM-tree is solely determined by the compaction process, we propose a novel Compaction-Aware Zone Allocation algorithm (CAZA) that allows the newly created SSTables to be deleted together after merging in the future. CAZA is implemented in RocksDB's ZenFS and our extensive evaluations show that CAZA significantly reduces the WA overhead compared to LIZA. © 2022 ACM.},
+ author = {Lee, Hee-Rock and Lee, Chang-Gyu and Lee, Seungjin and Kim, Youngjae},
+ doi = {10.1145/3538643.3539743},
+ journal = {HotStorage 2022 - Proceedings of the 2022 14th ACM Workshop on Hot Topics in Storage and File Systems},
+ note = {Cited by: 61},
+ pages = {93 - 99},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Compaction-aware zone allocation for LSM based key-value store on ZNS SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85134187298?origin=resultslist},
+ year = {2022}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10695648,
+ abstract = {Currently, most open vocabulary models rely on CLIP (Contrastive Language-Image Pre-training) to classify masked regions, but CLIP models still have many drawbacks. The traditional transformer model is context aware through self attention, but this local context based mechanism is limited by the sequence length of information, it can also impact model effect. Inspired by the article BiFormer, This article replaces the traditional transformer model in the Side Adapter Network (SAN) model with a variant module BIVD block based on BiFormer blocks. This model follows the latest transformer model and extracts features using a four layer feature pyramid structure, For the reduced spatial resolution caused by patch merging, add a Visual-Decoder to reshape the visual vector sequence into a spatial feature map, and restore it to the original resolution through convolution and upsampling. This can enhance the extracted feature information through a feature pyramid without affecting the fusion with CLIP layer features. But the cost is increasing the cost of the model. This article was tested on 5 commonly used datasets and showed a stable improvement in accuracy.},
+ author = {Hu, Liyuan and Lu, Jun},
+ booktitle = {2024 Asia-Pacific Conference on Image Processing, Electronics and Computers (IPEC)},
+ doi = {10.1109/IPEC61310.2024.00052},
+ issn = {},
+ keyword = {Adaptation models;Vocabulary;Visualization;Costs;Semantic segmentation;Feature extraction;Transformers;Decoding;Spatial resolution;Context modeling;component;CLIP;side adapter;BiFormer;Visual Decoder},
+ month = {April},
+ number = {},
+ pages = {261-265},
+ title = {BIVD: Improved Side Adapter Network based on BiFormer},
+ volume = {},
+ year = {2024}
+}

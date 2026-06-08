@@ -1,0 +1,14 @@
+@conference{Sun2024190,
+ abstract = {LSM-tree-based key-value stores or KV stores, with their advantage of sequential writes, are widely deployed as backend storage engines. LSM-trees achieve updates by merging data through compaction operations. During compaction, however, background tasks - read, write, and filter large amounts of data - compete against foreground requests for the system's computational and I/O resources. Although numerous studies have sought to enhance system performance using high-speed storage along with computational devices, bottlenecks in CPU computation and I/Os still persist. Near-data processing (NDP) emerges as an effective solution to mitigate the bottleneck issues: the computational units of an NDP device not only expand the system's computational resources but also significantly reduce data movement by internally performing computations. Prior collaborative efforts in the NDP device have adopted a time-aware dynamic scheduling mode. Nonetheless, there still exists a noticeable disparity in processing time between a host and its device. To address this gap, we propose WinDB - a KV store that utilizes a window-driven task allocation approach. WinDB advances task allocation in fine-grained key ranges, ensuring that the data volume of compacted SSTables matches the computing capabilities of both host and device. Apart from device-level parallelism, WinDB embraces thread-level parallelism to enhance the system's overall performance. The experimental results unfold that WinDB bolsters the throughput by up to 4x that of RocksDB, with a significant reduction in average latency. WinDB is capable of curtailing resource contention, which in turn leads to shortened front-end response time.  © 2024 IEEE.},
+ author = {Sun, Hui and Jin, Rui and Huang, Jiaming and Yue, Yinliang and Qin, Xiao},
+ doi = {10.1109/HPCC64274.2024.00035},
+ journal = {Proceedings - 2024 IEEE International Conference on High Performance Computing and Communications, HPCC 2024},
+ note = {Cited by: 0},
+ pages = {190 - 199},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Window-Driven Compaction Mechanism in LSM-tree-based Key-Value Stores through Near-Data Processing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105013070498?origin=resultslist},
+ year = {2024}
+}

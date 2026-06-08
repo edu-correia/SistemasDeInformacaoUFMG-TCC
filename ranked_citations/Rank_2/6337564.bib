@@ -1,0 +1,14 @@
+@inproceedings{6337564,
+ abstract = {MapReduce is a programming model proposed by Google to simplify large-scale data processing. In contrast, the message passing interface (MPI) standard is extensively used for algorithmic parallelization, as it accommodates an efficient communication infrastructure. In the original implementation of MapReduce, the reduce function can only start processing following termination of the map function. If the map function is slow for any reason, this will affect the whole running time. In this paper, we propose MapReduce overlapping using MPI, which is an adapted structure of the MapReduce programming model for fast intensive data processing. Our implementation is based on running the map and the reduce functions concurrently in parallel by exchanging partial intermediate data between them in a pipeline fashion using MPI. At the same time, we maintain the usability and the simplicity of MapReduce. Experimental results based on two different applications (Word Count and Distributed Inverted Indexing) show a good speedup compared to the earlier versions of MapReduce such as Hadoop and the available MPI-MapReduce implementations. For word count, we are able to achieve 1.9x and 5.3x speedup comparing to Hadoop and MPI-MapReduce respectively for 53Gb of data.},
+ author = {Mohamed, Hisham and Marchand-Maillet, Stephane},
+ booktitle = {2012 41st International Conference on Parallel Processing Workshops},
+ doi = {10.1109/ICPPW.2012.6},
+ issn = {2332-5690},
+ keyword = {Data models;Computational modeling;Libraries;Prototypes;Merging;Programming;Usability;MapReduce overlapping;MPI-MapReduce;Parallel MapReduce},
+ month = {Sep.},
+ number = {},
+ pages = {11-18},
+ title = {Enhancing MapReduce Using MPI and an Optimized Data Exchange Policy},
+ volume = {},
+ year = {2012}
+}

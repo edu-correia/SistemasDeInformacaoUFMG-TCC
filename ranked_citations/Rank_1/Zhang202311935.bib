@@ -1,0 +1,16 @@
+@article{Zhang202311935,
+ abstract = {Persistent key-value (KV) stores are mainly designed based on the Log-Structured Merge-tree (LSM-tree), yet they suffer from large read and write amplifications, especially when KV stores grow in size. Existing design optimizations for LSM-tree-based KV stores often make certain trade-offs and fail to simultaneously improve both the read and write performance on large KV stores without sacrificing scan performance. We design UniKV, which unifies the key design ideas of hash indexing and the LSM-tree in a single system. Specifically, UniKV leverages data locality to differentiate the indexing management of KV pairs. It also develops multiple techniques (e.g., merge with partial KV separation, dynamic range partitioning) to tackle the issues caused by unifying the indexing techniques, so as to simultaneously improve the performance in reads and writes. Furthermore, it proposes a parallel optimization scheme to manage partitions in parallel and develops multiple strategies to optimize the scan performance. Experiments show that UniKV significantly outperforms several state-of-the-art KV stores (e.g., LevelDB, RocksDB, PebblesDB and Titan) in overall throughput under read-write mixed workloads. © 1989-2012 IEEE.},
+ author = {Zhang, Qiang and Li, Yongkun and Lee, Patrick P. C. and Xu, Yinlong},
+ doi = {10.1109/TKDE.2023.3234510},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 2},
+ number = {11},
+ pages = {11935 - 11949},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {The Design and Implementation of UniKV for Mixed Key-Value Storage Workloads},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85147212807?origin=resultslist},
+ volume = {35},
+ year = {2023}
+}

@@ -1,0 +1,15 @@
+@article{Salam2022114711,
+ abstract = {R-trees have been popular for their support of multidimensional data and high-performing queries. FBR-tree is the state-of-the-art concurrent variant of the R-tree for Intel DC Persistent Memory (DCPM). However, its adoption on manycore servers is impeded by concurrency limitations due to lengthy, lock-based synchronization, including structure modification operations, split and merge. Additionally, emerging DCPM-based machines are equipped with multiple CPU sockets, forming a non-uniform memory access (NUMA) architecture. FBR-tree's lack of NUMA-awareness induces further performance overhead from remote memory accesses. In this paper, we propose MPR-tree, a concurrent, NUMA-aware and persistent future-based R-tree for DCPM servers. MPR-tree focuses on insert operations due to their laborious nature. MPR-tree relies on per-thread local future objects and a global R-tree. To introduce NUMA-awareness and minimize remote memory accesses, MPR-tree adopts per-socket dedicated asynchronous evaluate threads to checkpoint future objects to the global R-tree. MPR-tree employs an in-memory hash table to mitigate the read overhead of key searches over the future objects. We implemented MPR-tree atop FBR-tree and evaluated its performance on a server with 40 physical cores for insert and lookup queries, and it showed that MPR-tree outperforms FBR-tree on average by 2× on log10 scale. © 2013 IEEE.},
+ author = {Salam, Abdul and Jamil, Safdar and Jung, Sungwon and Park, Sung-Soon and Kim, Youngjae},
+ doi = {10.1109/ACCESS.2022.3216410},
+ journal = {IEEE Access},
+ note = {Cited by: 2; All Open Access; Gold Open Access; Green Open Access},
+ pages = {114711 - 114724},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Future-Based Persistent Spatial Data Structure for NVM-Based Manycore Machines},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85140742914?origin=resultslist},
+ volume = {10},
+ year = {2022}
+}

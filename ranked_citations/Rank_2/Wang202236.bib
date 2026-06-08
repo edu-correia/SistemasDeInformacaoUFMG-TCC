@@ -1,0 +1,14 @@
+@conference{Wang202236,
+ abstract = {Nowadays, most of the current research on object detection is to improve the whole framework, in order to improve the accuracy of detection, but another problem of object detection is the detection speed. The more complex the architecture, the slower the speed. This time, we implemented a Single Shot Multibox Detector(SSD) using GPU with CUDA.We have improved the object detection speed of SSD, which is one of the most regularly used object detection frameworks. The most time-consuming part, the VGG16 network, is rephrased by using cuDNN, which is made faster by about 9%. The second time-consuming part is post-processing, where non-maximum-suppression (NMS) is performed. We accelerated NMS by implementing our new algorithms that are suitable for GPUs, which is about 52% faster than the original PyTorch version [11]. We also ported those parts that were originally executed on the CPU to the GPU. In total, our GPU-accelerated SSD can detect objects 22.5% faster than the original version. We demonstrate that using GPUs to accelerate existing frameworks is a viable approach.  © 2022 IEEE.},
+ author = {Wang, Chenyu and Endo, Toshi and Hirofuchi, Takahiro and Ikegami, Tsutomu},
+ doi = {10.1109/SNPD-Summer57817.2022.00015},
+ journal = {Proceedings - 2022 23rd ACIS International Summer Virtual Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing, SNPD-Summer 2022},
+ note = {Cited by: 2},
+ pages = {36 - 41},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Speed-up Single Shot Detector on GPU with CUDA},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85149881084?origin=resultslist},
+ year = {2022}
+}

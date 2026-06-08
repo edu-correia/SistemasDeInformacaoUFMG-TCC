@@ -1,0 +1,15 @@
+@conference{Ge2025385,
+ abstract = {Pattern matching is a key operation in unstructured data analytics, commonly supported by regular expression (regex) engines. Bit-parallel regex engines compile regexes into bitstream programs, which expose fine-grained parallelism and are well-suited for GPU execution. A straightforward strategy executes each bitstream instruction sequentially, processing all data blocks in a loop. However, this execution suffers from poor data reuse and high memory consumption, limiting throughput. Our key insight is to adopt an interleaved execution model, where all bitstream instructions are fused into a single loop and executed block-wise. While interleaved execution could improve data reuse, enabling it on GPUs is non-trivial due to cross-block data dependencies. To address this, we introduce 1) Dependency-Aware Thread-Data Mapping, which resolves cross-block dependencies via selective recomputation. We further improve interleaved execution performance with two additional optimizations: 2) Shift Rebalancing, which balances dependency chains to reduce synchronization barriers; and 3) Zero Block Skipping, which exploits bitstream sparsity to skip computation on zero blocks. Together, these techniques make interleaved execution practical and efficient. Experiments on real-world regex benchmarks demonstrate a 19.5 × geometric mean speedup over the state-of-the-art GPU regex engine. © 2025 Copyright held by the owner/author(s).},
+ author = {Ge, Tianao and Chu, Xiaowen and Liu, Hongyuan},
+ doi = {10.1145/3725843.3756052},
+ journal = {Proceedings of the Annual International Symposium on Microarchitecture, MICRO},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {385 - 400},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Interleaved Bitstream Execution for Multi-Pattern Regex Matching on GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021327596?origin=resultslist},
+ volume = {Part of 213862},
+ year = {2025}
+}

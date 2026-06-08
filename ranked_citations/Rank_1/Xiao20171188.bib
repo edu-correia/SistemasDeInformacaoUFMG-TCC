@@ -1,0 +1,14 @@
+@conference{Xiao20171188,
+ abstract = {As an important numerical analysis method of rock mechanics, discontinuous deformation analysis (DDA) has been widely used in rock engineering. DDA has certain advantages such as the large time step and the large deformation, at the cost of relatively low computing efficiency. To address the efficiency bottleneck of DDA, this paper proposes a complete graphics processing unit (GPU)-based version. The entire DDA pipeline, involving contact detection, global matrix building, linear equation solving, and interpenetration checking, is restructured according to the GPU architecture to minimize data transmissions between the host and device. For the equation solver in DDA, a comparison study of the conjugate gradient method with different preconditioners, i.e., block Jacobi, symmetric successive over-relaxation (SSOR) approximate inverse, and ILU, is introduced first, and a novel sparse matrix-vector multiplication (SpMV) method, intended for the sparse block symmetry matrix with distinct features and which outperforms cuSPARSE by 2.8 times, is proposed as well. Schemes to solve memory write conflicts and branch divergences on the GPU are also introduced in contact detection, global matrix building, and interpenetration checking. For the stable analysis of a slope, the proposed GPU-based DDA with double precision achieved a speed-up rate that was 48.72 times higher than that of the original CPU-based serial implementation. © 2017 IEEE.},
+ author = {Xiao, Yunfan and Huang, Min and Miao, Qinghai and Xiao, Jun and Wang, Ying},
+ doi = {10.1109/IPDPSW.2017.93},
+ journal = {Proceedings - 2017 IEEE 31st International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2017},
+ note = {Cited by: 4},
+ pages = {1188 - 1197},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Architecting the discontinuous deformation analysis method pipeline on the GPU},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85028062523?origin=resultslist},
+ year = {2017}
+}

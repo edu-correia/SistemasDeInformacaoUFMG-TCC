@@ -1,0 +1,16 @@
+@article{Yang20201976,
+ abstract = {Frequency-based cache replacement policies that work well on page-based database storage engines are no longer suffi-cient for the emerging LSM-tree (Log-Structure Merge-tree) based storage engines. Due to the append-only and copy-on-write techniques applied to accelerate writes, the state-of-the-art LSM-tree adopts mutable record blocks and issues frequent background operations (i.e., compaction, ush) to reorganize records in possibly every block. As a side-effect, such operations invalidate the corresponding entries in the cache for each involved record, causing sudden drops on the cache hit rates and spikes on access latency. Given the ob-servation that existing methods cannot address this cache invalidation problem, we propose Leaper, a machine learn-ing method to predict hot records in an LSM-tree storage engine and prefetch them into the cache without being dis-turbed by background operations. We implement Leaper in a state-of-the-art LSM-tree storage engine, X-Engine, as a light-weight plug-in. Evaluation results show that Leaper eliminates about 70% cache invalidations and 99% latency spikes with at most 0.95% overheads as measured in real-world workloads. © 2020, VLDB Endowment.},
+ author = {Yang, Lei and Wu, Hong and Zhang, Tieying and Cheng, Xuntao and Li, Feifei and Zou, Lei and Wang, Yujie and Chen, Rongyao and Wang, Jianying and Huang, Gui},
+ doi = {10.14778/3407790.3407803},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 56},
+ number = {11},
+ pages = {1976 - 1989},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Leaper: A learned prefetcher for cache invalidation in LSM-tree based storage engines},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85091112015?origin=resultslist},
+ volume = {13},
+ year = {2020}
+}

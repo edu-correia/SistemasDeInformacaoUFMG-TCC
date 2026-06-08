@@ -1,0 +1,14 @@
+@article{9745139,
+ abstract = {Small file processing in Hadoop is one of the challenging task. The performance of the Hadoop is quite good when dealing with large files because they require lesser metadata and consume less memory. But while dealing with enormous amount of small files, metadata grows linearly and Name Node memory gets overloaded hence overall performance of the Hadoop degrades. This paper presents a dual merge technique HB-EHA (Hash Based-Extended Hadoop Archive), that will resolve the small file issue of Hadoop and provide an excellent solution for massive small files that are generated in the health care management applications. The proposed technique merges the small files using two-level compaction, therefore, the size of metadata at the name node gets reduced and less memory will be used. The indexing will be carried out over the archives and files can be accessed after merging in real-time. Index files in the proposed approach can read partially that improves the name node memory usage and also offers the file appending capability in the existing archive. The proposed technique first creates Hadoop archive from the small files and then uses two special hash functions i.e. SSHF (Scalable-Splittable Hash Function) and HT-MMPHF (Hollow Trie Monotone Minimal Perfect Hash Function), SSHF is used to dynamically distribute the archives meta-data to the associated slave index files, and these slave index files will be further written to the final index files, the order of the meta-data in final index file will be preserved by the HT-MMPHF. The evaluation outcome exhibit that the proposed technique is 13% & 17% faster than HDFS with caching enabled and disabled respectively, and 38% & 47% faster than the HAR with caching and without caching, respectively. While comparing with the map file, the proposed technique is 28 & 35 times faster with caching and without caching, respectively. HB-EHA is a maximum of 40% & 28% faster than the HBAF with and without caching, respectively.},
+ author = {Sharma, Vijay Shankar and Afthanorhan, Asyraf and Barwar, Nemi Chand and Singh, Satyendra and Malik, Hasmat},
+ doi = {10.1109/ACCESS.2022.3163433},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Indexes;Metadata;Memory management;Merging;Medical services;Hash functions;Business;Extended Hadoop archive;HAR archive;healthcare small files;HB-EHA;HDFS;HT-MMPHF;map file archive;sequential file;SSHF},
+ month = {},
+ number = {},
+ pages = {36856-36867},
+ title = {A Dynamic Repository Approach for Small File Management With Fast Access Time on Hadoop Cluster: Hash Based Extended Hadoop Archive},
+ volume = {10},
+ year = {2022}
+}

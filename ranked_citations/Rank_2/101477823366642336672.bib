@@ -1,0 +1,17 @@
+@article{10.14778/2336664.2336672,
+ abstract = {While traditional data-management systems focus on evaluating single, ad-hoc queries over static data sets in a centralized setting, several emerging applications require (possibly, continuous) answers to queries on dynamic data that is widely distributed and constantly updated. Furthermore, such query answers often need to discount data that is "stale", and operate solely on a sliding window of recent data arrivals (e.g., data updates occurring over the last 24 hours). Such distributed data streaming applications mandate novel algorithmic solutions that are both time- and space-efficient (to manage high-speed data streams), and also communication-efficient (to deal with physical data distribution). In this paper, we consider the problem of complex query answering over distributed, high-dimensional data streams in the sliding-window model. We introduce a novel sketching technique (termed ECM-sketch) that allows effective summarization of streaming data over both time-based and count-based sliding windows with probabilistic accuracy guarantees. Our sketch structure enables point as well as inner-product queries, and can be employed to address a broad range of problems, such as maintaining frequency statistics, finding heavy hitters, and computing quantiles in the sliding-window model. Focusing on distributed environments, we demonstrate how ECM-sketches of individual, local streams can be composed to generate a (low-error) ECM-sketch summary of the order-preserving aggregation of all streams; furthermore, we show how ECM-sketches can be exploited for continuous monitoring of sliding-window queries over distributed streams. Our extensive experimental study with two real-life data sets validates our theoretical claims and verifies the effectiveness of our techniques. To the best of our knowledge, ours is the first work to address efficient, guaranteed-error complex query answering over distributed data streams in the sliding-window model.},
+ author = {Papapetrou, Odysseas and Garofalakis, Minos and Deligiannakis, Antonios},
+ doi = {10.14778/2336664.2336672},
+ issn = {2150-8097},
+ issue_date = {June 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {12},
+ pages = {992–1003},
+ publisher = {VLDB Endowment},
+ title = {Sketch-based querying of distributed sliding-window data streams},
+ url = {https://doi.org/10.14778/2336664.2336672},
+ volume = {5},
+ year = {2012}
+}

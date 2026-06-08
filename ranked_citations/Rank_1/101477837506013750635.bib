@@ -1,0 +1,17 @@
+@article{10.14778/3750601.3750635,
+ abstract = {Vector indexing enables semantic search over diverse corpora and has become an important interface to databases for both users and AI agents. Efficient vector search requires deep optimizations in database systems. This has motivated a new class of specialized vector databases that optimize for vector search quality and cost. Instead, we argue that a scalable, high-performance, and cost-efficient vector search system can be built inside a cloud-native operational database like Azure Cosmos DB while leveraging the benefits of a distributed database such as high availability, durability, and scale. We do this by deeply integrating DiskANN, a state-of-the-art vector indexing library, inside Azure Cosmos DB NoSQL. This system uses a single vector index per partition stored in existing index trees, and kept in sync with underlying data. It supports &lt; 20ms query latency over an index spanning 10 million vectors, has stable recall over updates, and offers approximately 43\texttimes{} and 12\texttimes{} lower query cost compared to Pinecone and Zilliz serverless enterprise products. It also scales out to billions of vectors via automatic partitioning. This convergent design presents a point in favor of integrating vector indices into operational databases in the context of recent debates on specialized vector databases, and offers a template for vector indexing in other databases.},
+ author = {Upreti, Nitish and Simhadri, Harsha Vardhan and Sundar, Hari Sudan and Sundaram, Krishnan and Boshra, Samer and Perumalswamy, Balachandar and Atri, Shivam and Chisholm, Martin and Singh, Revti Raman and Yang, Greg and Hass, Tamara and Dudhey, Nitesh and Pattipaka, Subramanyam and Hildebrand, Mark and Manohar, Magdalen and Moffitt, Jack and Xu, Haiyang and Datha, Naren and Gupta, Suryansh and Krishnaswamy, Ravishankar and Gupta, Prashant and Sahu, Abhishek and Varada, Hemeswari and Barthwal, Sudhanshu and Mor, Ritika and Codella, James and Cooper, Shaun and Pilch, Kevin and Moreno, Simon and Kataria, Aayush and Kulkarni, Santosh and Deshpande, Neil and Sagare, Amar and Billa, Dinesh and Fu, Zishan and Vishal, Vipul},
+ doi = {10.14778/3750601.3750635},
+ issn = {2150-8097},
+ issue_date = {August 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {18},
+ pages = {5166–5183},
+ publisher = {VLDB Endowment},
+ title = {Cost-Effective, Low Latency Vector Search with Azure Cosmos DB},
+ url = {https://doi.org/10.14778/3750601.3750635},
+ volume = {18},
+ year = {2025}
+}

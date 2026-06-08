@@ -1,0 +1,18 @@
+@article{10.1145/3730913,
+ abstract = {Radiance field methods such as 3D Gaussian Splatting (3DGS) allow easy reconstruction from photos, enabling free-viewpoint navigation. Nonetheless, pose estimation using Structure from Motion and 3DGS optimization can still each take between minutes and hours of computation after capture is complete. SLAM methods combined with 3DGS are fast but struggle with wide camera baselines and large scenes. We present an on-the-fly method to produce camera poses and a trained 3DGS immediately after capture. Our method can handle dense and wide-baseline captures of ordered photo sequences and large-scale scenes. To do this, we first introduce fast initial pose estimation, exploiting learned features and a GPU-friendly mini bundle adjustment. We then introduce direct sampling of Gaussian primitive positions and shapes, incrementally spawning primitives where required, significantly accelerating training. These two efficient steps allow fast and robust joint optimization of poses and Gaussian primitives. Our incremental approach handles large-scale scenes by introducing scalable radiance field construction, progressively clustering 3DGS primitives, storing them in anchors, and offloading them from the GPU. Clustered primitives are progressively merged, keeping the required scale of 3DGS at any viewpoint. We evaluate our solution on a variety of datasets and show that it can provide on-the-fly processing of all the capture scenarios and scene sizes we target. At the same time our method remains competitive - in speed, image quality, or both - with other methods that only handle specific capture styles or scene sizes.},
+ address = {New York, NY, USA},
+ articleno = {125},
+ author = {Meuleman, Andreas and Shah, Ishaan and Lanvin, Alexandre and Kerbl, Bernhard and Drettakis, George},
+ doi = {10.1145/3730913},
+ issn = {0730-0301},
+ issue_date = {August 2025},
+ journal = {ACM Trans. Graph.},
+ month = {July},
+ number = {4},
+ numpages = {14},
+ publisher = {Association for Computing Machinery},
+ title = {On-the-fly Reconstruction for Large-Scale Novel View Synthesis from Unposed Images},
+ url = {https://doi.org/10.1145/3730913},
+ volume = {44},
+ year = {2025}
+}

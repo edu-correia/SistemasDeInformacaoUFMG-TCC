@@ -1,0 +1,14 @@
+@conference{Jiang2024249,
+ abstract = {ZNS SSD (Zoned Namespace SSD) is a new type of SSD based on the Zoned Namespace, which manages storage space with zones while providing host-level flash management. While previous work has evaluated the device-level performance of ZNS SSDs, it remains unclear how ZNS SSDs will perform on real SQL DBMSs. Since SQL DBMSs dominate the database market, it is worth performing an experimental analysis of ZNS SSDs when used for real SQL DBMSs. However, currently, existing SQL DBMSs cannot support ZNS SSDs directly. Thus, we turn to MyRocks, which is a branch of MySQL but replaces the InnoDB engine with RocksDB. Next, we install a ZNS-compatible file system module named ZenFS, which provides the FTL functionalities for ZNS SSDs, and configure RocksDB to run on ZenFS. With such a configuration, we set up a real SQL environment to evaluate the performance of ZNS SSDs. The experimental evaluation consists of two parts. First, we verify the effectiveness of ZenFS by measuring the write amplification factor and space amplification factor of ZenFS when running on a real ZNS SSD. Second, we test the performance of MyRocks on a real ZNS SSD. To compare ZNS SSDs with traditional SSDs, we also include two types of old SSDs: an NVMe SSD using the PCIe interface and a SATA SSD using the SATA interface. The experimental results regarding tps, latency, and multi-thread scalability show that ZNS SSDs outperform NVMe SSDs regarding write performance, especially for deletions and updates. Meanwhile, all SSDs show similar read performance. Additionally, ZNS SSDs exhibited better performance stability than NVMe SSDs when the space used increased. As a result, ZNS SSDs are more suitable for write-intensive applications. © 2024 Knowledge Systems Institute Graduate School. All rights reserved.},
+ author = {Jiang, Zijian and Jin, Peiquan},
+ doi = {10.18293/SEKE2024-103},
+ journal = {Proceedings of the International Conference on Software Engineering and Knowledge Engineering, SEKE},
+ note = {Cited by: 0; All Open Access; Bronze Open Access},
+ pages = {249 - 254},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {How Will ZNS SSDs Perform on Real SQL DBMSs? An Experimental Analysis of MyRocks},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85218627147?origin=resultslist},
+ year = {2024}
+}

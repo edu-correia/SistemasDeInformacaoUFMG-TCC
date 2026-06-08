@@ -1,0 +1,14 @@
+@article{11037276,
+ abstract = {Knowledge graph reasoning (KGR) seeks to infer new factual triples from existing knowledge graphs (KGs). Recent methods have unified transductive and inductive reasoning by learning entity-independent representations through local neighboring structures. Nevertheless, these methods often encounter inefficiencies and rely on elaborate local structures without directly modeling the correlations between queries and various structures within KGs. In this paper, we propose a novel framework MulGA, which is designed to learn multi-granularity and adaptive embeddings for KGR. MulGA first employs connectivity subgraphs to uniformly and hierarchically represent query-related structures within KGs, such as triples, relation paths, and subgraphs, establishing the hierarchical relationship between structures at different granularities. Subsequently, we design a graph neural network-based multi-granularity embedding propagation module that unifies the message-passing process with the connectivity subgraph construction. This module obtains the query-related structural representations by all entities at multiple granularities, eliminating the need to explicitly extract any graph elements, thus addressing inefficiency issues. Moreover, we develop a structure-aware adaptive merging mechanism that assigns weights to different granularities and integrates them into cohesive subgraph-granularity representations for reasoning. The systematic experiments have been conducted on 15 benchmarks and MulGA achieves a significant improvement in MRR by an average of 0.5% -1.1% on transductive tasks and 0.2% -7.3% on inductive tasks than existing state-of-the-art methods. Moreover, MulGA exhibits faster convergence speed, smaller number of parameters, competitive inference time, and alleviates the over-smoothing prevalent in graph neural networks.},
+ author = {Shang, Ziyu and Wang, Peng and Liu, Jianghan and Liu, Jiajun and Li, Guozheng and Xu, Zijie and Luo, Zhizhao and Chen, Xiye and Ke, Wenjun},
+ doi = {10.1109/TKDE.2025.3579774},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Cognition;Knowledge graphs;Training;Semantics;Merging;Data mining;Convergence;Adaptation models;Noise;Feature extraction;Knowledge graph;knowledge graph embedding;knowledge graph reasoning},
+ month = {Sep.},
+ number = {9},
+ pages = {5360-5377},
+ title = {Learning Multi-Granularity and Adaptive Representation for Knowledge Graph Reasoning},
+ volume = {37},
+ year = {2025}
+}

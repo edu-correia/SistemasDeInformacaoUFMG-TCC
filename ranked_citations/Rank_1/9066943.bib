@@ -1,0 +1,14 @@
+@article{9066943,
+ abstract = {Log-structured-merge (LSM) trees are a highly write-optimized data structure for lightweight, high-performance key-value (KV) stores. Furthermore, solid-state drives (SSDs) are a crucial component for I/O acceleration. Conventional LSM-over-SSD designs involve multiple software layers, including the LSM tree, host file system, and flash translation layer (FTL), which introduce cascading write amplifications. To manage the write amplifications from different layers, we propose KVSSDs, which are a close integration of LSM trees and the FTL. KVSSDs exploit the FTL mapping mechanism to implement copy-free compaction of LSM trees, and they enables direct data allocation in flash memory for efficient garbage collection. Our design also uses a fine-grained, dynamic striping policy to fully exploit the rich internal parallelism of multichip SSDs. The experimental results indicated that our LSM-SSD integrated design reduced the write amplification by 86% and improved the throughput by 383% compared with a conventional LSM-over-SSD design.},
+ author = {Wu, Sung-Ming and Lin, Kai-Hsiang and Chang, Li-Pin},
+ doi = {10.1109/TCAD.2020.2987781},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Compaction;Software;Parallel processing;Throughput;Writing;Resource management;Integrated design;Flash memory;key-value (KV) store;log-structured-merge (LSM) tree;solid-state drive (SSD)},
+ month = {Jan},
+ number = {1},
+ pages = {87-100},
+ title = {Integrating LSM Trees With Multichip Flash Translation Layer for Write-Efficient KVSSDs},
+ volume = {40},
+ year = {2021}
+}

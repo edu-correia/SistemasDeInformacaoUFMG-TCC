@@ -1,0 +1,14 @@
+@conference{Kruber201429,
+ abstract = {Distributed key-value stores are horizontally scalable by design. However, structured data with links between values may raise hotspots or bottlenecks caused by popular keys and large index objects. These hotspots typically reduce the scalability of the key-value store, especially for operations changing data. Relational database management systems, on the other hand, are designed to handle relational data efficiently, but generally do not scale horizontally in a cost-efficient way. Combining the best of both worlds, would be great. With a wiki as a demonstrator, we map a relational database schema to a distributed transactional key-value store. This includes solutions for typical constraints key-value stores impose on applications due to their limited query expressibility. It also includes the mapping of dependent tables and secondary indices to a single key-value namespace. We evaluate and identify hotspots and bottlenecks and propose improved mappings. We reduce the effects of the most prominent hotspots, i.e. secondary indices, by applying advanced partitioning schemes which both reduce the size of the indices and allow more concurrent write accesses in transactional contexts. These optimisations are generic and help to map relational schemas and corresponding applications to transactional key-value stores in a way to preserve their horizontal scalability. With our data models for key-value stores, we get the best of two worlds for the wiki application: a horizontally scalable database serving a moderately complex relational schema. Our optimisations give up to 96% fewer transaction aborts for data change operations and an up to 25-fold latency improvement for the overall operations mix, i.e. reading, changing, and creating data, compared to the basic mapping, when replaying an access trace of the Wikipedia on our system. © 2014 IEEE.},
+ author = {Kruber, Nico and Schintke, Florian and Berlin, Michael},
+ doi = {10.1109/BigData.2014.7004441},
+ journal = {Proceedings - 2014 IEEE International Conference on Big Data, IEEE Big Data 2014},
+ note = {Cited by: 2},
+ pages = {29 - 37},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A relational database schema on the transactional key-value store scalaris},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84921805876?origin=resultslist},
+ year = {2014}
+}

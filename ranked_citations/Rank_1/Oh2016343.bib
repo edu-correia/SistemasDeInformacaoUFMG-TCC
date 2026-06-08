@@ -1,0 +1,15 @@
+@conference{Oh2016343,
+ abstract = {Database consistency and recoverability require guaranteeing write atomicity for one or more pages. However, contemporary database systems consider write operations nonatomic. Thus, many database storage engines have traditionally relied on either journaling or copy-on-write approaches for atomic propagation of updated pages to the storage. This reliance achieves write atomicity at the cost of various write amplifications such as redundant writes, tree-wandering, and compaction. This write amplification results in reduced performance and, for flash storage, accelerates device wear-out. In this paper, we propose a flash storage interface, SHARE. Being able to explicitly remap the address mapping inside flash storage using SHARE interface enables host-side database storage engines to achieve write atomicity without causing write amplification. We have implemented SHARE on a real SSD board, OpenSSD, and modified MySQL/InnoDB and Couchbase NoSQL storage engines to make them compatible with the extended SHARE interface. Our experimental results show that this SHARE-based MySQL/InnoDB and Couchbase configurations can significantly boost database performance. In particular, the inevitable and costly Couchbase compaction process can complete without copying any data pages. © 2016 ACM.},
+ author = {Oh, Gihwan and Seo, Chiyoung and Mayuram, Ravi and Kee, Yang-Suk and Lee, Sang-Won},
+ doi = {10.1145/2882903.2882910},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 40},
+ pages = {343 - 354},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SHARE interface in flash storage for relational and NoSQL databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84979665367?origin=resultslist},
+ volume = {26-June-2016},
+ year = {2016}
+}

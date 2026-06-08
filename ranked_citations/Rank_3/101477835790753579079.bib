@@ -1,0 +1,17 @@
+@article{10.14778/3579075.3579079,
+ abstract = {In-memory key-value stores (IMKVSes) serve many online applications. They generally adopt the fork-based snapshot mechanism to support data backup. However, this method can result in query latency spikes because the engine is out-of-service for queries during the snapshot. In contrast to existing research optimizing snapshot algorithms, we address the problem from the operating system (OS) level, while keeping the data persistent mechanism in IMKVSes unchanged. Specifically, we first study the impact of the fork operation on query latency. Based on findings in the study, we propose Async-fork, which performs the fork operation asynchronously to reduce the out-of-service time of the engine. Async-fork is implemented in the Linux kernel and deployed into the online Redis database in public clouds. Our experiment results show that Async-fork can significantly reduce the tail latency of queries during the snapshot.},
+ author = {Pang, Pu and Deng, Gang and Bai, Kaihao and Chen, Quan and Sun, Shixuan and Liu, Bo and Xu, Yu and Yao, Hongbo and Wang, Zhengheng and Wang, Xiyu and Liu, Zheng and Song, Zhuo and Yang, Yong and Ma, Tao and Guo, Minyi},
+ doi = {10.14778/3579075.3579079},
+ issn = {2150-8097},
+ issue_date = {January 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {January},
+ number = {5},
+ numpages = {13},
+ pages = {1033–1045},
+ publisher = {VLDB Endowment},
+ title = {Async-Fork: Mitigating Query Latency Spikes Incurred by the Fork-based Snapshot Mechanism from the OS Level},
+ url = {https://doi.org/10.14778/3579075.3579079},
+ volume = {16},
+ year = {2023}
+}

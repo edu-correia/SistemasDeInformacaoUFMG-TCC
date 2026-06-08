@@ -1,0 +1,18 @@
+@article{10.1145/3290324,
+ abstract = {Many object-oriented languages provide method overloading, which allows multiple method declarations with the same name. For a given method invocation, in order to choose what method declaration to invoke, multiple dispatch considers the run-time types of the arguments. While multiple dispatch can support binary methods (such as mathematical operators) intuitively and consistently, it is difficult to guarantee that calls will be neither ambiguous nor undefined at run time, especially in the presence of expressive language features such as multiple inheritance and parametric polymorphism. Previous efforts have formalized languages that include such features by using overloading rules that guarantee a unique and type-sound resolution of each overloaded method call; in many cases, such rules resolve ambiguity by treating the arguments asymmetrically. Here we present the first formal specification of a strongly typed object-oriented language with symmetric multiple dispatch, multiple inheritance, and parametric polymorphism with variance. We define both a static (type- checking) semantics and a dynamic (dispatching) semantics and prove the type soundness of the language, thus demonstrating that our novel dynamic dispatch algorithm is consistent with the static semantics. Details of our dynamic dispatch algorithm address certain technical challenges that arise from structural asymmetries inherent in object-oriented languages (e.g., classes typically declare ancestors explicitly but not descendants).},
+ address = {New York, NY, USA},
+ articleno = {11},
+ author = {Park, Gyunghee and Hong, Jaemin and Steele Jr., Guy L. and Ryu, Sukyoung},
+ doi = {10.1145/3290324},
+ issue_date = {January 2019},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Method Overloading, Parametric Polymorphism, Symmetric Multiple Dispatch, Variance},
+ month = {January},
+ number = {POPL},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Polymorphic symmetric multiple dispatch with variance},
+ url = {https://doi.org/10.1145/3290324},
+ volume = {3},
+ year = {2019}
+}

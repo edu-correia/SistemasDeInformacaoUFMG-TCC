@@ -1,0 +1,13 @@
+@article{KONG2026100755,
+ abstract = {Ship piping design requires arranging many interconnected pipes within confined spaces while satisfying connectivity and collision constraints. This study proposed a data-driven method for transferring 3D pipe routes from past ship projects to a new target ship via a two-stage workflow: similar-system retrieval and route transfer with geometric adjustment. First, P&IDs (Piping and Instrumentation Diagrams) were converted into system graphs consisting of equipment nodes and connection edges. System similarity was computed by embedding graphs with graph2vec and ranking candidates by cosine similarity to retrieve past systems structurally closest to the target system. Second, the retrieved system's historical 3D routes were normalized by principal ship dimensions and used to construct a routing space. To reflect both proximity and segment orientation, DBSCAN (Density-Based Spatial Clustering of Applications with Noise) was extended with an angular-distance term between segment direction vectors, and the resulting clusters were merged and scaled to the target ship geometry. A past pipe centerline was then transferred into the routing space and adjusted by solving a constrained optimization with GA (Genetic Algorithm), where bend nodes are treated as design variables and their motion is restricted to preserve the original route shape. Feasibility was evaluated using a SphereCast-based collision penalty against hull and obstacle colliders. By enabling retrieval-conditioned reuse of proven route patterns and automated collision-aware adjustment within a learned routing space, the proposed method supports rapid generation of feasible initial piping layouts for new ship projects while reducing manual trial-and-error in early-stage routing.},
+ author = {Min-Chul Kong and Myung-Il Roh and In-Su Han and Seong-Won Choi and Jeongyeon Kim},
+ doi = {https://doi.org/10.1016/j.ijnaoe.2026.100755},
+ issn = {2092-6782},
+ journal = {International Journal of Naval Architecture and Ocean Engineering},
+ keyword = {Piping design, Pipe routing, Graph structure, Design transferring, Shipbuilding},
+ pages = {100755},
+ title = {A method for transferring piping designs using past project data in shipbuilding},
+ url = {https://www.sciencedirect.com/science/article/pii/S2092678226000191},
+ volume = {18},
+ year = {2026}
+}

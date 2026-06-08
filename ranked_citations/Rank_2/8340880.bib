@@ -1,0 +1,14 @@
+@article{8340880,
+ abstract = {The structural graph clustering algorithm SCAN is a fundamental technique for managing and analyzing graph data. However, its high runtime remains a computational bottleneck, which limits its applicability. In this paper, we propose a novel interactive approach for tackling this problem on multicore CPUs. Our algorithm, called anySCAN, iteratively processes vertices in blocks. The acquired results are merged into an underlying cluster structure consisting of the so-called super-nodes for building clusters. During its runtime, anySCAN can be suspended for examining intermediate results and resumed for finding better results at arbitrary time points, making it an anytime algorithm which is capable of handling very large graphs in an interactive way and under arbitrary time constraints. Moreover, its block processing scheme allows the design of a scalable parallel algorithm on shared memory architectures such as multicore CPUs for speeding up the algorithm further at each iteration. Consequently, anySCAN uniquely is a both interactive and work-efficient parallel algorithm. We further introduce danySCAN an efficient bulk update scheme for anySCAN on dynamic graphs in which the clusters are updated in bulks and in a parallel interactive scheme. Experiments are conducted on very large real graph datasets for demonstrating the performance of anySCAN. They show its ability to acquire very good approximate results early, leading to orders of magnitude speedup compared to SCAN and its variants. Moreover, it scales very well with the number of threads when dealing with both static and dynamic graphs.},
+ author = {Mai, Son T. and Amer-Yahia, Sihem and Assent, Ira and Birk, Mathias Skovgaard and Dieu, Martin Storgaard and Jacobsen, Jon and Kristensen, Jesper M.},
+ doi = {10.1109/TKDE.2018.2828086},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Graph theory;Parallel algorithms;Iterative methods;Pattern classification;Microprocessor chips;Structural graph clustering;SCAN;anytime clustering;parallel algorithm;multicore CPUs;dynamic graphs},
+ month = {July},
+ number = {7},
+ pages = {1239-1252},
+ title = {Scalable Interactive Dynamic Graph Clustering on Multicore CPUs},
+ volume = {31},
+ year = {2019}
+}

@@ -1,0 +1,16 @@
+@article{Gazzoni2026353,
+ abstract = {Many post-quantum cryptosystems require generating an n-bit binary vector with a prescribed Hamming weight ω, a process known as fixed-weight sampling. When ω = O(n), we call this dense fixed-weight sampling, which commonly appears in lattice-based cryptosystems, like those in the NTRU family. In contrast, code-based cryptosystems typically use sparse fixed-weight sampling with ω = o(n) (e.g., O(<sup>√</sup>n). Sparse fixed-weight sampling generally involves three constant-time steps to keep the sampled vector secret: 1. sample ω nearly uniform random integers from a series of decreasing intervals; 2. map these integers into a set of ω distinct indices in [0, n), called the support; 3. generate a binary n-bit vector with bits set only at the support indices. Remarkably, some of the core algorithms employed in fixed-weight sampling date back to nearly a century, yet developing efficient and secure techniques remains essential for modern post-quantum cryptographic applications. In this paper, we present novel algorithms for steps two and three of the fixed-weight sampling process. We demonstrate their practical applicability by replacing the current fixed-weight sampling routine in the HQC post-quantum key exchange mechanism, recently selected for NIST standardization. We rigorously prove that our procedures are sound, secure, and introduce little to no bias. Our implementation of the proposed algorithms accelerates step 2 by up to 2.9× and step 3 by up to 5.8× compared to an optimized version of the fixed-weight sampler currently used in HQC. Since fixed-weight sampling constitutes a significant portion of HQC’s execution time, these speedups translate into protocol-level improvements of up to 1.37×, 1.28× and 1.21× for key generation, encapsulation and decapsulation, respectively. © 2026, Ruhr-University of Bochum. All rights reserved.},
+ author = {Gazzoni, Décio Luiz and Adj, Gora and Bettaieb, Slim and Budroni, Alessandro and Chávez-Saab, Jorge and Rodríguez-Henríquez, Francisco},
+ doi = {10.46586/tches.v2026.i1.353-375},
+ journal = {IACR Transactions on Cryptographic Hardware and Embedded Systems},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {1},
+ pages = {353 - 375},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Sota Voce: Low-Noise Sampling of Sparse Fixed-Weight Vectors},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105028700787?origin=resultslist},
+ volume = {2026},
+ year = {2026}
+}

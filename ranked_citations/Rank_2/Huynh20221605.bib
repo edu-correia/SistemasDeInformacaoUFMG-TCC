@@ -1,0 +1,16 @@
+@article{Huynh20221605,
+ abstract = {Log-Structured Merge trees (LSM trees) are increasingly used as the storage engines behind several data systems, frequently deployed in the cloud. Similar to other database architectures, LSM trees consider information about the expected workload (e.g., reads vs. writes, point vs. range queries) to optimize their performance via tuning. However, operating in a shared infrastructure like the cloud comes with workload uncertainty due to the fast-evolving nature of modern applications. Systems with static tuning discount the variability of such hybrid workloads and hence provide an inconsistent and overall suboptimal performance. To address this problem, we introduce ENDURE – a new paradigm for tuning LSM trees in the presence of workload uncertainty. Specifically, we focus on the impact of the choice of compaction policies, size ratio, and memory allocation on the overall performance. ENDURE considers a robust formulation of the throughput maximization problem and recommends a tuning that maximizes the worst-case throughput over the neighborhood of each expected workload. Additionally, an uncertainty tuning parameter controls the size of this neighborhood, thereby allowing the output tunings to be conservative or optimistic. Through both model-based and extensive experimental evaluations of ENDURE in the state-of-the-art LSM-based storage engine, RocksDB, we show that the robust tuning methodology consistently outperforms classical tuning strategies. The robust tunings output by ENDURE lead up to a 5☓ improvement in throughput in the presence of uncertainty. On the flip side, ENDFIRE tunings have negligible performance loss when the observed workload exactly matches the expected one. © 2022, American Mathematical Society. All rights reserved.},
+ author = {Huynh, Andy and Chaudhari, Harshal A. and Terzi, Evimaria and Athanassoulis, Manos},
+ doi = {10.14778/3529337.3529345},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 12},
+ number = {8},
+ pages = {1605 - 1618},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Endure: A Robust Tuning Paradigm for LSM Trees Under Workload Uncertainty},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85140972387?origin=resultslist},
+ volume = {15},
+ year = {2022}
+}

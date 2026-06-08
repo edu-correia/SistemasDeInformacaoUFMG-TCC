@@ -1,0 +1,16 @@
+@article{Zheng20231,
+ abstract = {Growing demands for the efficient processing of extreme-scale time series workloads call for more capable time series database management systems (TSDBMS). Specifically, to maintain consistency and durability of transaction processing, systems employ write-ahead logging (WAL) whereby transactions are committed only after the related log entries are flushed to disk. However, when faced with massive I/O, this becomes a throughput bottleneck. Recent advances in byte-addressable Non-Volatile Memory (NVM) provide opportunities to improve logging performance by persisting logs to NVM instead. Existing studies typically track complex transaction dependencies and use barrier instructions of NVM to ensure log ordering. In contrast, few studies consider the heavy-tailed characteristics of time series workloads, where most transactions are independent of each other. We propose DecLog, a decentralized NVM-based logging system that enables concurrent logging of TSDBMS transactions. Specifically, we propose data-driven log sequence numbering and relaxed ordering strategies to track transaction dependencies and resolve serialization issues. We also propose a parallel logging method to persist logs to NVM after being compressed and aligned. An experimental study on the YCSB-TS benchmark offers insight into the performance properties of DecLog, showing that it improves throughput by up to 4.6× while offering lower recovery time in comparison to the open source TSDBMS Beringei. © 2023, VLDB Endowment. All rights reserved.},
+ author = {Zheng, Bolong and Gao, Yongyong and Wan, Jingyi and Yan, Lingsen and Hu, Long and Liu, Bo and Gao, Yunjun and Zhou, Xiaofang and Jensen, Christian S.},
+ doi = {10.14778/3617838.3617839},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 7; All Open Access; Green Open Access},
+ number = {1},
+ pages = {1 - 14},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DecLog: Decentralized Logging in Non-Volatile Memory for Time Series Database Systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85181979077?origin=resultslist},
+ volume = {17},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@conference{Lu2020,
+ abstract = {The sparse triangular solve (SpTRSV) kernel is an important building block for a number of linear algebra routines such as sparse direct and iterative solvers. The major challenge of accelerating SpTRSV lies in the difficulties of finding higher parallelism. Existing work mainly focuses on reducing dependencies and synchronizations in the level-set methods. However, the 2D block layout of the input matrix has been largely ignored in designing more efficient SpTRSV algorithms. In this paper, we implement three block algorithms, i.e., column block, row block and recursive block algorithms, for parallel SpTRSV on modern GPUs, and propose an adaptive approach that can automatically select the best kernels according to input sparsity structures. By testing 159 sparse matrices on two high-end NVIDIA GPUs, the experimental results demonstrate that the recursive block algorithm has the best performance among the three block algorithms, and it is on average 4.72x (up to 72.03x) and 9.95x (up to 61.08x) faster than cuSPARSE v2 and Sync-free methods, respectively. Besides, our method merely needs moderate cost for preprocessing the input matrix, thus is highly efficient for multiple right-hand sides and iterative scenarios. © 2020 ACM.},
+ author = {Lu, Zhengyang and Niu, Yuyao and Liu, Weifeng},
+ doi = {10.1145/3404397.3404413},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 27},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Block Algorithms for Parallel Sparse Triangular Solve},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85090597414?origin=resultslist},
+ year = {2020}
+}

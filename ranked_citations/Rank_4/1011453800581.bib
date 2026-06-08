@@ -1,0 +1,14 @@
+@article{10.1145/3800581,
+ abstract = {The Internet of Vehicles (IoV) relies on frequent over-the-air (OTA) software updates to deliver new features, patch vulnerabilities, and maintain safety. As vehicles evolve into cyber-physical platforms, protecting software supply chains (SSCs) becomes a critical challenge.Existing blockchain applications in automotive supply chains focus on hardware provenance and component traceability, leaving software delivery pipelines undersecured. Git, the backbone of collaborative development, lacks tamper resistance: features such as rebase and force-push enable history rewriting, while compromised credentials or CI/CD tokens allow adversaries to poison repositories. In IoV settings, a single breach can cascade through multi-tier suppliers, exposing safety-critical functions. Despite blockchain’s potential to provide immutability and auditability, no prior study has systematically evaluated synchronization strategies for integrating Git with distributed ledgers.We define and implement three Git–blockchain synchronization models (independent clone, differential patch, and continuous direct push) on a permissioned blockchain testbed. Using a real automotive codebase, we conducted 270 experimental runs and applied statistical methods including pairwise Z-tests with Holm–Bonferroni correction, effect size analysis, correlation, and regression modeling. Results show that disk footprint is the dominant predictor of synchronization time. Model 1 consistently achieved superior efficiency, while Models 2 and 3 offered viable trade-offs for bandwidth-constrained and compliance-driven environments. All models achieved 100% consistency, proving the feasibility of blockchain-backed provenance in IoV pipelines. This study establishes foundational principles for Git–blockchain integration and introduces GuixChain, a future end-to-end framework unifying Git, blockchain, reproducible builds, SBOMs, and secure OTA deployment to deliver trustworthy, transparent, and continuously verifiable automotive SSCs.},
+ address = {New York, NY, USA},
+ author = {Aideyan, Iwinosa and Pes\'{e}, Mert D. and Brooks, Richard. R.},
+ doi = {10.1145/3800581},
+ journal = {Distrib. Ledger Technol.},
+ keyword = {Software Supply Chain Security, Git-BlockchainIntegration, Hyperledger Fabric, Internet-of-Vehicles, Blockchain, Version control, Git, Software security},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Quantitative Evaluation of Git-Blockchain Synchronization Models for Trustworthy Software Provenance in Internet of Vehicles},
+ url = {https://doi.org/10.1145/3800581},
+ year = {2026}
+}

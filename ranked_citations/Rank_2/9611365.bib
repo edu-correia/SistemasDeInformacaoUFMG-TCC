@@ -1,0 +1,14 @@
+@article{9611365,
+ abstract = {The goal of program repair is to eliminate a bug in a given program by automatically modifying its source code. The majority of real-world software is written in imperative programming languages. Each function or expression in imperative code may have side effects, observable effects beyond returning a value. Existing program repair approaches have a limited ability to handle side effects. Previous test-driven semantic repair approaches only synthesise patches without side effects. Heuristic repair approaches generate patches with side effects only if suitable code fragments exist in the program or a database of repair patterns, or can be derived from training data. This work introduces Trident, the first test-driven program repair approach that synthesizes patches with side effects without relying on the plastic surgery hypothesis, a database of patterns, or training data. Trident relies on an interplay of several parts. First, it infers a specification for synthesising side-effected patches using symbolic execution with a custom state merging strategy that alleviates path explosion due to side effects. Second, it uses a novel component-based patch synthesis approach that supports lvalues, values that appear on the left-hand sides of assignments. In an evaluation on open-source projects, Trident successfully repaired 6 out of 10 real bugs that require insertion of new code with side effects, which previous techniques do not therefore repair. Evaluated on the ManyBugs benchmark, Trident successfully repaired two new bugs that previous approaches could not. Adding patches with side effects to the search space can exacerbate test-overfitting. We experimentally demonstrate that the simple heuristic of preferring patches with the fewest side effects alleviates the problem. An evaluation on a large number of smaller programs shows that this strategy reduces test-overfitting caused by side-effects, increasing the rate of correct patches from 33.3% to 58.3%.},
+ author = {Parasaram, Nikhil and Barr, Earl T. and Mechtaev, Sergey},
+ doi = {10.1109/TSE.2021.3124323},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Maintenance engineering;Computer bugs;Codes;Databases;Training data;Switches;Semantics;program repair;program synthesis;symbolic execution;side effects},
+ month = {Dec},
+ number = {12},
+ pages = {4717-4732},
+ title = {Trident: Controlling Side Effects in Automated Program Repair},
+ volume = {48},
+ year = {2022}
+}

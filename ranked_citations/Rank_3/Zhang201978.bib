@@ -1,0 +1,16 @@
+@article{Zhang201978,
+ abstract = {We present the Succinct Range Filter (SuRF), a fast and compact data structure for approximate membership tests. Unlike traditional Bloom filters, SuRF supports both single-key lookups and common range queries. SuRF is based on a new data structure called the Fast Succinct Trie (FST) that matches the point and range query performance of state-of-the-art order-preserving indexes, while consuming only 10 bits per trie node. The false positive rates in SuRF for both point and range queries are tunable to satisfy different application needs. We evaluate SuRF in RocksDB as a replacement for its Bloom filters to reduce I/O by filtering requests before they access on-disk data structures. Our experiments on a 100 GB dataset show that replacing RocksDB's Bloom filters with SuRFs speeds up open-seek (without upper-bound) and closed-seek (with upper-bound) queries by up to 1.5× and 5× with a modest cost on the worst-case (all-missing) point query throughput due to slightly higher false positive rate. © 2019 Association for Computing Machinery.},
+ author = {Zhang, Huanchen and Lim, Hyeontaek and Leise, Viktor and Andersen, David G. and Kaminsky, Michael and Keeton, Kimberly and Pavlo, Andrew},
+ doi = {10.1145/3183713.3196931},
+ journal = {SIGMOD Record},
+ note = {Cited by: 3; All Open Access; Gold Open Access},
+ number = {1},
+ pages = {78 - 85},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Succinct range filters},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85074839765?origin=resultslist},
+ volume = {48},
+ year = {2019}
+}

@@ -1,0 +1,14 @@
+@conference{Shen2021,
+ abstract = {MapReduce-based SQL processing frameworks, such as Hive and Spark SQL, are widely used to support big data analytics. Currently these systems mainly adopt the record-at-a-time execution model, which is less efficient in terms of CPU utilization. In contrast, vectorized execution is able to make better use of CPU cache by bulk processing a record batch at a time. However, simply applying vectorized execution to MapReduce-based frameworks results in low efficient vectorized shuffle. Moreover, existing vectorized execution donot make full use of CPU cache for complex operators (e.g. Sort and Aggregation). In this paper, we present VEE, a thorough vectorized execution engine designed for SQL query processing on Spark. First, VEE designs compact in-memory data layout and serialization-aware assembling for vectorized shuffle to expedites shuffle execution, since they reduce shuffle data footprint and related computations. Secondly, VEE applies in-memory record batch rearrangement for Sort and Aggregation to greatly reduce random memory access and increase query performance. Thirdly, VEE carefully designs operator-aware batch length when handling different operators, which makes better utilization of CPU cache and increases query performance. We conduct extensive performance evaluations. The experiment results show that the performance speedup of VEE against Spark is up to 72.7% and 25.0% on average for OLAP workloads (TPC-H). The vectorized execution technologies in VEE are also applicable to other MapReduce-based data analytic frameworks to improve their query performance. © 2021 ACM.},
+ author = {Shen, Yijie and Xiong, Jin and Jiang, Dejun},
+ doi = {10.1145/3472456.3472495},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Using Vectorized Execution to Improve SQL Query Performance on Spark},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85117232949?origin=resultslist},
+ year = {2021}
+}

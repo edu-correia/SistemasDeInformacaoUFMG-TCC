@@ -1,0 +1,18 @@
+@article{10.1145/3580804,
+ abstract = {End-to-end deep learning models are increasingly applied to safety-critical human activity recognition (HAR) applications, e.g., healthcare monitoring and smart home control, to reduce developer burden and increase the performance and robustness of prediction models. However, integrating HAR models in safety-critical applications requires trust, and recent approaches have aimed to balance the performance of deep learning models with explainable decision-making for complex activity recognition. Prior works have exploited the compositionality of complex HAR (i.e., higher-level activities composed of lower-level activities) to form models with symbolic interfaces, such as concept-bottleneck architectures, that facilitate inherently interpretable models. However, feature engineering for symbolic concepts-as well as the relationship between the concepts-requires precise annotation of lower-level activities by domain experts, usually with fixed time windows, all of which induce a heavy and error-prone workload on the domain expert. In this paper, we introduce X-CHAR, an eXplainable Complex Human Activity Recognition model that doesn't require precise annotation of low-level activities, offers explanations in the form of human-understandable, high-level concepts, while maintaining the robust performance of end-to-end deep learning models for time series data. X-CHAR learns to model complex activity recognition in the form of a sequence of concepts. For each classification, X-CHAR outputs a sequence of concepts and a counterfactual example as the explanation. We show that the sequence information of the concepts can be modeled using Connectionist Temporal Classification (CTC) loss without having accurate start and end times of low-level annotations in the training dataset-significantly reducing developer burden. We evaluate our model on several complex activity datasets and demonstrate that our model offers explanations without compromising the prediction accuracy in comparison to baseline models. Finally, we conducted a mechanical Turk study to show that the explanations provided by our model are more understandable than the explanations from existing methods for complex activity recognition.},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {Jeyakumar, Jeya Vikranth and Sarker, Ankur and Garcia, Luis Antonio and Srivastava, Mani},
+ doi = {10.1145/3580804},
+ issue_date = {March 2023},
+ journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+ keyword = {Activity recognition, Explainable AI, Interpretability, Neural networks},
+ month = {March},
+ number = {1},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {X-CHAR: A Concept-based Explainable Complex Human Activity Recognition Model},
+ url = {https://doi.org/10.1145/3580804},
+ volume = {7},
+ year = {2023}
+}

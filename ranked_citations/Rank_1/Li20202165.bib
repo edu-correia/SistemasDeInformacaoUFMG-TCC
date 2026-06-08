@@ -1,0 +1,15 @@
+@conference{Li20202165,
+ abstract = {Large-scale cloud block storage provides virtual disks for various applications and services like online booking, gaming, and offline data analytics. The state-of-the-art URSA [1] block store adopted a hybrid storage structure which placed primary data on solid-state drives (SSDs) and stored backup data on hard-disk drives (HDDs). URSA used small SSD journals to bridge the performance gap between SSDs and HDDs. Although URSA's SSD-HDD-hybrid storage structure achieves SSD-like I/O performance while using only one third of the SSDs required by the SSD-only storage pattern (storing both primary data and backup data on SSDs), we argue that the traditional HDDonly storage structure is still preferable for a large variety of relatively low-end customers and underloaded applications that are sensitive to the per-bit storage cost.To lower the storage cost, in this paper we design URSAL, an HDD-only block store which provides ultra efficiency, reliability, scalability and availability at low cost. Compared to existing block stores such as URSA, Ceph, and Sheepdog, URSAL has the following distinctions. First, URSAL designs the proxy-based storage architecture, where a proxy server process runs together with each virtual machine (VM) client mounting virtual disks and controls the procedure of all block-level I/O. Second, URSAL selectively performs direct block writes on raw HDDs or indirect log appends to HDD journals (which are then asynchronously replayed to raw HDDs), depending on the characteristics of the workloads. Third, URSAL runs one storage server process for each physical HDD, which conservatively has at most one active thread reading/writing the HDD to avoid I/O contention. We have implemented URSAL. Evaluation results show that URSAL significantly outperforms state-of-the-art HDD-only block stores (Ceph and Sheepdog) when providing virtual disks for underloaded applications. © 2020 IEEE.},
+ author = {Li, Huiba and Zhang, Yiming and Wang, Haonan and Zhong, Ping},
+ doi = {10.1109/INFOCOM41043.2020.9155513},
+ journal = {Proceedings - IEEE INFOCOM},
+ note = {Cited by: 3},
+ pages = {2165 - 2174},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {URSAL: Ultra-Efficient, Reliable, Scalable, and Available Block Storage at Low Cost},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85090278959?origin=resultslist},
+ volume = {2020-July},
+ year = {2020}
+}

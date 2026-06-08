@@ -1,0 +1,14 @@
+@inproceedings{1024251,
+ abstract = {In this paper we introduce a path-finding algorithm, maximal reservable bandwidth tree (MRBT), for the QoS-based routing to establish connections with the bandwidth requirement. Our goal aims to eliminate the use of per-flow state information, commonly used for the guaranteed service with the rated-base service discipline scheme, and needed to be stored at each router along an established path. Instead, we aggregate flows at the same egress router, into a MRBT; each router only needs to maintain the aggregated flows state information on a per-MRBT basis. Each MRBT is a directed tree that reversely roots at a (egress) border node and spans all the other (ingress) border nodes, and the maximal reservable bandwidth (MRB) between each border node and the root is calculated according to the most updated advertisements of the physical-link bandwidth within a routing domain. At each instance, the total number of the MRBT in a routing domain is proportional to the number of the border nodes and the frequency of the QoS-based routing information advertisement. Because of the nature of the path mergence, each MRBT structure can be stored by recording each of its outgoing branches (or interface) at each local node, and the affected MRB between each node and the root can be easily updated upon the establishment or the release of each connection. We compare the MRBT algorithm simply to the modified Dijkstra's algorithm, which calculates the paths with the MRB between each pair of border nodes. Using computer simulation, we measure their performance in terms of the successful setup of connections and the scalability in terms of the amount of state information stored at each node. Our results show that MRBT could provide good scalability, which relieves the burden of per-flow traffic management, while maintaining competitive performance.},
+ author = {Yu-Kung Ke and Copeland, J.A.},
+ booktitle = {Workshop on High Performance Switching and Routing, Merging Optical and IP Technologie},
+ doi = {10.1109/HPSR.2002.1024251},
+ issn = {},
+ keyword = {Bandwidth;Delay;Scalability;Internet;Routing protocols;Communication system traffic;Frequency;Computer interfaces;Quantization;Computer simulation},
+ month = {May},
+ number = {},
+ pages = {289-294},
+ title = {Maximal reservable bandwidth tree - a new approach to reduce the storage of state information},
+ volume = {},
+ year = {2002}
+}

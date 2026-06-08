@@ -1,0 +1,14 @@
+@article{KOTB2026100185,
+ abstract = {Light Detection and Ranging (LIDAR) point clouds provide high precision spatial data but impose significant storage and transmission challenges, often exceeding one gigabyte per square kilometer. This paper introduces a novel hierarchical framework for lossless LiDAR data compression, designed to address these issues through a three-stage approach: class-aware segmentation, adaptive algorithm selection, and hierarchical compression. The framework begins by partitioning point clouds into semantic classes (e.g., ground, vegetation, buildings) using an SVM-based classifier with a radial basis function kernel, enabling targeted compression that exploits intra-class redundancies. The adaptive algorithm selection stage employs a density-based matcher to choose optimal compression algorithms for each class, ensuring efficiency across varying point densities and terrain types. Finally, hierarchical compression merges class-specific compressed files and applies a secondary compression using WinRAR for enhanced efficiency. Evaluated on ten openly available benchmark LiDAR datasets, the proposed method consistently outperforms state-of-the-art lossless compression techniques, such as LASzip, achieving file size reductions to 12.76 % of the original for high-density point clouds and 22.51 % for low-density ones. While compression and decompression times are higher than some alternatives, the framework's superior storage savings and perfect fidelity make it ideal for large-scale LiDAR data archiving and exchange.},
+ author = {Ahmed Kotb and Marwa S. Moustafa and Safaa Hassan and Hesham Hassan},
+ doi = {https://doi.org/10.1016/j.aiig.2026.100185},
+ issn = {2666-5441},
+ journal = {Artificial Intelligence in Geosciences},
+ keyword = {LiDAR LASzip, LASCompression, LiDAR compressor, Adaptable hybrid approach, WinRAR},
+ number = {1},
+ pages = {100185},
+ title = {An adaptable hybrid method for lossless airborne lidar data compression},
+ url = {https://www.sciencedirect.com/science/article/pii/S2666544126000018},
+ volume = {7},
+ year = {2026}
+}

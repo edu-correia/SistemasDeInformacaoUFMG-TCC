@@ -1,0 +1,16 @@
+@article{Huynh20255582,
+ abstract = {Log-Structured Merge (LSM) trees are used as the data structure of choice for key-value stores supporting a wide variety of applications. A common challenge for LSM-based systems is tuning them effectively, particularly as the complexity and number of tuning knobs increase. Prior work relies on expert-created cost models and expert-configured numerical solvers to produce high-quality tunings; however, these methods do not address tuning multiple instances at scale for various execution environments. On the other hand, using iterative learning, such as Bayesian Optimization (BO), relaxes the requirements for domain expertise and provides gener-alizability; however, it comes at a high cost, as it involves learning directly from database executions at deployment time. Furthermore, both approaches struggle with categorical tuning knobs that create a hard-to-navigate optimization space. To address these challenges, we introduce AXE, a novel learned LSM tuning paradigm that decomposes the tuning task into two steps. First, AXE trains a learned cost model using existing performance modeling or execution logs, acting as a surrogate cost function in the tuning process. Second, AXE effciently generates arbitrarily many training samples for a learned tuner optimized to identify high-performance tunings using the learned cost model as its loss function. This task decomposition approach generalizes well for tuning simple and complex LSM designs and requires no retraining, allowing AXE to be used for tuning at scale. Compared to BO, AXE recommends higher performing tunings than BO 71% of the time while incurring 100× smaller tuning overhead. We further show that AXE requires less domain knowledge to produce optimal tunings than traditional expert-configured tuning pipelines. Lastly, we compare AXE to both state-of-the-art machine learning methods and analytical methods to show that AXE outperforms all other LSM tuning baselines. © 2025, VLDB Endowment. All rights reserved.},
+ author = {Huynh, Andy and Saha, Anwesha and Chaudhari, Harshal A. and Athanassoulis, Manos},
+ doi = {10.14778/3773731.3773735},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 0},
+ number = {13},
+ pages = {5582 - 5595},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {AXE: A Task Decomposition Approach to Learned LSM Tuning},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105026567334?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

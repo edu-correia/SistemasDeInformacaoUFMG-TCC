@@ -1,0 +1,18 @@
+@article{10.1145/3287321,
+ abstract = {One cost that plays a significant role in shaping the overall performance of both single-threaded and multi-thread applications in modern computing systems is the cost of moving data between compute elements and storage elements. Traditional approaches to address this cost are code and data layout reorganizations and various hardware enhancements. More recently, an alternative paradigm, called Near Data Computing (NDC) or Near Data Processing (NDP), has been shown to be effective in reducing the data movements costs, by moving computation to data, instead of the traditional approach of moving data to computation. Unfortunately, the existing Near Data Computing proposals require significant modifications to hardware and are yet to be widely adopted. In this paper, we present a software-only (compiler-driven) approach to reducing data movement costs in both single-threaded and multi-threaded applications. Our approach, referred to as Computing with Near Data (CND), is built upon a concept called "recomputation," in which a costly data access is replaced by a few less costly data accesses plus some extra computation, if the cumulative cost of the latter is less than that of the costly data access. If implemented carefully, CND can successfully trade off data access with computation, and considering the continuously increasing latency gap between the two, doing so can significantly reduce the execution latencies of both sequential and parallel application programs. We i) quantify the intrinsic recomputability of a set of single-threaded and multi-threaded applications, ii) propose a practical, compiler-driven approach that automatically transforms a given application code fragment to a version that employs recomputation, iii) discuss an optimization strategy that increases recomputability; and iv) compare CND, both qualitatively and quantitatively, against NDC. Our experimental analysis of CND reveals that i) the average recomputability across our benchmarks is 51.1%, ii) our compiler-driven strategy is able to exploit 79.3% of the recomputation opportunities presented by our workloads, and iii) our enhancements increase the value of the recomputability metric significantly. As a result, our compiler-driven approach with the proposed enhancements brings an average execution time improvement of 40.1%.},
+ address = {New York, NY, USA},
+ articleno = {42},
+ author = {Tang, Xulong and Kandemir, Mahmut Taylan and Zhao, Hui and Jung, Myoungsoo and Karakoy, Mustafa},
+ doi = {10.1145/3287321},
+ issue_date = {December 2018},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {data movement, manycore systems, recomputation},
+ month = {December},
+ number = {3},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {Computing with Near Data},
+ url = {https://doi.org/10.1145/3287321},
+ volume = {2},
+ year = {2018}
+}

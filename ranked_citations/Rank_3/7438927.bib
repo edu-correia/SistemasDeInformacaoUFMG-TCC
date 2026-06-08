@@ -1,0 +1,14 @@
+@article{7438927,
+ abstract = {Network-on-chip (NoC), due to its superior scalability, has become increasingly popular in multicore and many-core designs. A recent state-of-the-art NoC design, called single-cycle multihop asynchronous repeated traversal (SMART), enables ultralow latency performance by enabling a flit to bypass the pipelines of intermediate routers entirely. This enables a flit to traverse multiple routers within a single clock cycle. However, there are two concerns related to SMART: 1) it employs dedicated broadcast wires to transmit SMART-hop setup requests (SSRs), incurring large wire and energy overheads and 2) it needs a complex allocator to arbitrate multiple simultaneous SSRs. In this paper, we propose an SSR network to address these two concerns. This is a specialized network that replaces long and overlapping broadcast wires with shorter wires and switches. It reduces the wire and energy overheads significantly. It also eliminates lowpriority SSRs before they reach the allocator and, therefore, leads to a simplified allocator design. We evaluate SSR networks in various contexts. Our evaluation demonstrates that the SSR network can reduce the wire overhead by up to 12.2×. Moreover, it results in up to 63.7% area reduction, and up to 15.7% dynamic energy reduction. It also makes multiple physical networks and/or wider flits feasible. This paper shows that with fewer wires and the same amount of buffer space, multiple simple SMART-1D networks can deliver a higher bandwidth and lower latency than a single complex SMART-2D network, when our SSR network is used.},
+ author = {Chen, Xianmin and Jha, Niraj K.},
+ doi = {10.1109/TVLSI.2016.2538284},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Wires;Pipelines;Merging;Clocks;Routing protocols;Resource management;Network-on-chip;Energy;network-on-chip (NoC);single-cycle multihop asynchronous repeated traversal (SMART);SMART-hop setup request (SSR) network;wire overhead},
+ month = {Oct},
+ number = {10},
+ pages = {3013-3026},
+ title = {Reducing Wire and Energy Overheads of the SMART NoC Using a Setup Request Network},
+ volume = {24},
+ year = {2016}
+}

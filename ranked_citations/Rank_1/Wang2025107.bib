@@ -1,0 +1,14 @@
+@conference{Wang2025107,
+ abstract = {We present TieredKV, a novel tiered key-value store that seamlessly integrates a Log-Structured Merge (LSM) tree with a Learned Index to achieve superior read and write performance on storage systems. While existing approaches use learned indexes primarily as auxiliary components within LSM trees, TieredKV employs a two-tier design where the LSM tree handles recent write operations while a separate Learned Index accelerates read performance. Our design includes a non-blocking conversion mechanism that efficiently transforms LSM data into a Learned Index during garbage collection, maintaining high performance without interrupting operations. TieredKV dramatically reduces LSM size through this tiered approach, leading to significant performance gains in both reads and writes. Extensive evaluations across diverse workloads show that TieredKV outperforms state-of-the-art LSM-based solutions by up to 4.32x for read operations and 1.43x for writes, and achieves up to 7.9x better overall performance compared with on-storage Learned Index. The system demonstrates robust performance across different data distributions, access patterns, and storage media including both SSDs and HDDs. © 2025 Copyright held by the owner/author(s).},
+ author = {Wang, Wenlong and Du, David Hung-Chang},
+ doi = {10.1145/3757347.3759135},
+ journal = {Proceedings of the 18th ACM International Systems and Storage Conference, SYSTOR 2025},
+ note = {Cited by: 0},
+ pages = {107 - 121},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TieredKV: A Tiered LSM-Learned Index Design for Superior Performance on Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105017771001?origin=resultslist},
+ year = {2025}
+}

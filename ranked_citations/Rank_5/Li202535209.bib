@@ -1,0 +1,14 @@
+@conference{Li202535209,
+ abstract = {Mixture of Experts (MoE) architecture improves Large Language Models (LLMs) with better scaling, but its higher parameter counts and memory demands create challenges for deployment. In this paper, we present MoE-SVD, a new decomposition-based compression framework tailored for MoE LLMs without any extra training. By harnessing the power of Singular Value Decomposition (SVD), MoE-SVD addresses the critical issues of decomposition collapse and matrix redundancy in MoE architectures. Specifically, we first decompose experts into compact low-rank matrices, resulting in accelerated inference and memory optimization. In particular, we propose selective decomposition strategy by measuring sensitivity metrics based on weight singular values and activation statistics to automatically identify decomposable expert layers. Then, we share a single V-matrix across all experts and employ a top-k selection for U-matrices. This low-rank matrix sharing and trimming scheme allows for significant parameter reduction while preserving diversity among experts. Comprehensive experiments on Mixtral, Phi-3.5, DeepSeek, and Qwen2 MoE LLMs show MoE-SVD outperforms other compression methods, achieving a 60% compression ratio and 1.5× faster inference with minimal performance loss. © 2025, by the authors.},
+ author = {Li, Wei and Li, Lujun and Gu, Hao and Huang, You-Liang and Lee, Mark and Sun, Shengjie and Xue, Wei and Guo, Yike},
+ journal = {Proceedings of Machine Learning Research},
+ note = {Cited by: 1},
+ pages = {35209 - 35230},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MoE-SVD: Structured Mixture-of-Experts LLMs Compression via Singular Value Decomposition},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105023820787?origin=resultslist},
+ volume = {267},
+ year = {2025}
+}

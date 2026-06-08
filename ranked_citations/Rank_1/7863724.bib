@@ -1,0 +1,14 @@
+@inproceedings{7863724,
+ abstract = {Shared-memory languages and systems provide strong guarantees only for well-synchronized (data-race-free) programs. Prior work introduces support for memory consistency based on region serializability of executing code regions, but all approaches incur serious limitations such as adding high run-time overhead or relying on complex custom hardware. This paper explores the potential for leveraging widely available, commodity hardware transactional memory to provide an end-to-end memory consistency model called dynamically bounded region serializability (DBRS). To amortize high per-transaction costs, yet mitigate the risk of unpredictable, costly aborts, we introduce dynamic runtime support called Legato that executes multiple dynamically bounded regions (DBRs) in a single transaction. Legato varies the number of DBRs per transaction on the fly, based on the recent history of committed and aborted transactions. Legato outperforms existing commodity enforcement of DBRS, and its costs are less sensitive to a program's shared-memory communication patterns. These results demonstrate the potential for providing always-on strong memory consistency using commodity transactional hardware.},
+ author = {Sengupta, Aritra and Cao, Man and Bond, Michael D. and Kulkarni, Milind},
+ booktitle = {2017 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO.2017.7863724},
+ issn = {},
+ keyword = {Hardware;Distributed Bragg reflectors;Program processors;Synchronization;Optimization;Memory management;Runtime},
+ month = {Feb},
+ number = {},
+ pages = {1-13},
+ title = {Legato: End-to-end bounded region serializability using commodity hardware transactional memory},
+ volume = {},
+ year = {2017}
+}

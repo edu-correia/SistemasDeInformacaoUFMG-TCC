@@ -1,0 +1,18 @@
+@article{10.1145/3629143,
+ abstract = {Research has shown that Multipath TCP (MPTCP) improves the quality of a TCP connection by exploiting multiple paths, but its adoption in the wide area network is still fledgling. While MPTCP-TCP proxying is often employed as a practical solution, the performance of a split-connection proxy is suboptimal – it wastes CPU cycles on content relaying between two connections while it does not efficiently leverage multiple CPU cores in packet processing.We present FlexCP, a high-performance MPTCP-TCP proxy based on the following properties. First, FlexCP operates by translating the two protocols on a packet level. This approach not only avoids the overhead of flow reassembly and memory copying, but it greatly simplifies the implementation as the proxy stays away from reliable data transfer, socket buffer management, and per-hop congestion/flow control. Second, FlexCP maintains connection-to-core affinity for multiple subflows of the same MPTCP connection and its corresponding TCP connection by leveraging SmartNIC. This enables a lock-free implementation for packet processing, which significantly improves the performance. Our evaluation demonstrates that FlexCP achieves 281 Gbps of connection proxying on a single machine, outperforming existing proxies by up to 6.3\texttimes{} in terms of throughput while it incurs little extra latency over direct TCP/MPTCP connections.},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Kim, Duckwoo and Moon, YoungGyoun and Hwang, Jaehyun and Park, KyoungSoo},
+ doi = {10.1145/3629143},
+ issue_date = {December 2023},
+ journal = {Proc. ACM Netw.},
+ keyword = {ATSSS, MPTCP, TCP proxy, packet processing},
+ month = {November},
+ number = {CoNEXT3},
+ numpages = {21},
+ publisher = {Association for Computing Machinery},
+ title = {FlexCP: A Scalable Multipath TCP Proxy for Cellular Networks},
+ url = {https://doi.org/10.1145/3629143},
+ volume = {1},
+ year = {2023}
+}

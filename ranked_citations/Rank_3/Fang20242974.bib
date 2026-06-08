@@ -1,0 +1,16 @@
+@article{Fang20242974,
+ abstract = {Log-structured merge trees (LSM-trees) are commonly employed as the storage engines for write-intensive workloads in modern time series databases including Apache IoTDB. Following append-only principle, LSM-trees can handle intensive writes and updates, but consequently suffer high space amplification (SA). To reduce SA in LSM-tree, compaction is triggered periodically to reorganize a large number of immutable files on disk to eliminate redundancy. This issue is further complicated in the Internet of Things (IoT) scenarios, where frequent out-of-order data insertions and data updates introduce duplicated keys, obsolete values and overlapping bitmaps in multi-column data, thereby exacerbating SA concerns. To mitigate SA in such contexts, this paper presents a Multi Column Compaction (MCC) strategy in Apache IoTDB, an open source time series database utilizing LSM-tree architecture and supporting multi-column storage. We take into consideration both the separate insertions (out-of-order data) and updates of multi column data, and analyze the hardness of selecting proper files with the maximum space reduction in compaction. We then pro pose a heuristic method designed to improve the file selection, thus reducing SA. To enhance the efficiency of this approach, we fur ther devise File Prefetcher and Compaction Cache. The proposed MCC has been implemented in ApacheIo TDB. Experimental results demonstrate that our proposed MCC achieves better performance in reducing space amplification. © 2024, VLDB Endowment. All rights reserved.},
+ author = {Fang, Chenguang and Chen, Zijie and Song, Shaoxu and Huang, Xiangdong and Wang, Chen and Wang, Jianmin},
+ doi = {10.14778/3681954.3681977},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 2},
+ number = {11},
+ pages = {2974 - 2986},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {On Reducing Space Amplification with Multi-Column Compaction in Apache IoTDB},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85205376198?origin=resultslist},
+ volume = {17},
+ year = {2024}
+}

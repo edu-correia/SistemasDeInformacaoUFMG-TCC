@@ -1,0 +1,14 @@
+@article{4524229,
+ abstract = {Large sets of bioinformatical data provide a challenge in time consumption while solving the cluster identification problem, and that is why a parallel algorithm is so needed for identifying dense clusters in a noisy background. Our algorithm works on a graph representation of the data set to be analyzed. It identifies clusters through the identification of densely intraconnected subgraphs. We have employed a minimum spanning tree (MST) representation of the graph and solve the cluster identification problem using this representation. The computational bottleneck of our algorithm is the construction of an MST of a graph, for which a parallel algorithm is employed. Our high-level strategy for the parallel MST construction algorithm is to first partition the graph, then construct MSTs for the partitioned subgraphs and auxiliary bipartite graphs based on the subgraphs, and finally merge these MSTs to derive an MST of the original graph. The computational results indicate that when running on 150 CPUs, our algorithm can solve a cluster identification problem on a data set with 1,000,000 data points almost 100 times faster than on single CPU, indicating that this program is capable of handling very large data clustering problems in an efficient manner. We have implemented the clustering algorithm as the software CLUMP.},
+ author = {Olman, Victor and Mao, Fenglou and Wu, Hongwei and Xu, Ying},
+ doi = {10.1109/TCBB.2007.70272},
+ issn = {1557-9964},
+ journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+ keyword = {Clustering algorithms;Bioinformatics;Partitioning algorithms;Parallel algorithms;Background noise;Algorithm design and analysis;Tree graphs;Concurrent computing;Bipartite graph;Software algorithms;Pattern recognition;clustering algorithm;genome application;parallel processing.;Clustering;Bioinformatics (genome or protein) databases},
+ month = {April},
+ number = {2},
+ pages = {344-352},
+ title = {Parallel Clustering Algorithm for Large Data Sets with Applications in Bioinformatics},
+ volume = {6},
+ year = {2009}
+}

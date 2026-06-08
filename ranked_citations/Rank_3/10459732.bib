@@ -1,0 +1,14 @@
+@inproceedings{10459732,
+ abstract = {Despite the numerous advancements in Convolutional Neural Networks (CNNs) and Transformers, especially in the field of medical image segmentation, two fundamental issues remain. First, the image segmentation task often struggles with effectively modelling global contexts with multi-scales to achieve accurate segmentation results. The second issue concerns the computational burden associated with processing high-resolution medical images and producing fine-grained predictions. Dealing with this level of detail, demands significant computational resources, leading to a computationally intensive process. UNet-like encoder-decoder architectures, which are still the number one widely used architecture in many state-of-the-art applications, struggle to address these complications. While UNet's naive skip connections help to recover spatial information, they fall short in capturing the hierarchical relationships at different scales and the overall context of the image as they combine features from different layers without accounting for their differences, which leads to less accurate segmentation results. We propose an enhanced UNet-like Transformer-based framework with attentive skip connections to tackle these problems: first, instead of simply integrating features extracted from the encoder with the decoder, we added a Transformer-based skip connection module, and second, we optimized the calculations within the skip connection module by employing a merging cross-covariance attention mechanism rather than the conventional self-attention operation, which not only bridges the gaps between multiple levels of semantics and captures more complex dependencies but can also process high-resolution images more efficiently due to its linear complexity in the number of tokens. While retaining the U-shaped encoder-decoder structure, we also replace UNet's CNN layers with hierarchically equivalent Swin Transformer blocks, capturing both global interactions and local dependencies.},
+ author = {Elahi, Maryam Tavakol and Lee, WonSook and Phan, Philippe},
+ booktitle = {2023 International Conference on Machine Learning and Applications (ICMLA)},
+ doi = {10.1109/ICMLA58977.2023.00301},
+ issn = {1946-0759},
+ keyword = {Image segmentation;Semantics;Merging;Computer architecture;Transformers;Feature extraction;Complexity theory;Deep Learning;Medical Image Segmentation;Transformers;Skip Connections;Medical Imaging},
+ month = {Dec},
+ number = {},
+ pages = {1994-1999},
+ title = {SAttisUNet: UNet-like Swin Transformer with Attentive Skip Connections for Enhanced Medical Image Segmentation},
+ volume = {},
+ year = {2023}
+}

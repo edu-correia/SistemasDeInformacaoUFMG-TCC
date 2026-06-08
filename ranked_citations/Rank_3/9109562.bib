@@ -1,0 +1,14 @@
+@article{9109562,
+ abstract = {Network function virtualization (NFV) of IP Multimedia Subsystem (IMS) pose promise to service increasing multimedia traffic demand. In this paper, we show that virtualized IMS (vIMS) is unable to provide session-level resilience under faults and becomes the bottleneck to high service availability. We propose a design to provide fault-tolerance for vIMS operations. In control-plane, our system decomposes single IMS operation into different atomic actions, and partition these actions into critical and non-critical actions. Only the critical actions are then monitored in real time and the system can easily resume IMS operations after failure. In data-plane, we decompose multimedia traffic flows and partition each multimedia service as a separate Virtualized Network Function (VNF). Through data-plane partitioning, our design restricts the damage from faults to only failed VNF. Thereafter, impacted service flow is merged with other ongoing service flows. We build our system prototype of open source IMS over virtualized platform. Our results show that we can achieve session-level resilience by performing fail-over procedure within tens of milliseconds under different combinations of IMS failures in both control-plane and data-plane operations.},
+ author = {Raza, Muhammad Taqi and Lu, Songwu},
+ doi = {10.1109/JSAC.2020.2999686},
+ issn = {1558-0008},
+ journal = {IEEE Journal on Selected Areas in Communications},
+ keyword = {Long Term Evolution;Fault tolerance;Fault tolerant systems;Noise measurement;Software;Media;Hardware;Network functions virtualization;LTE;IP multimedia subsystem;fault tolerance;software defined networking},
+ month = {July},
+ number = {7},
+ pages = {1464-1477},
+ title = {Uninterruptible IMS: Maintaining Users Access During Faults in Virtualized IP Multimedia Subsystem},
+ volume = {38},
+ year = {2020}
+}

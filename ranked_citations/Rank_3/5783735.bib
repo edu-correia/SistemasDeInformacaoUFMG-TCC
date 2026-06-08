@@ -1,0 +1,14 @@
+@inproceedings{5783735,
+ abstract = {ATPG tool generated patterns are a major component of test data for large SOCs. With increasing sizes of chips, higher integration involving IP cores and the need for patterns targeting multiple fault models for better defect coverage in newer technologies, the issues of adequate coverage and reasonable test data volume and application time dominate the economics of test. We address the problem of generating compact set of test patterns across multiple fault models. Traditional approaches use separate ATPG for each fault models and minimize patterns either during pattern generation through static or dynamic compaction, or after pattern generation by simulating all patterns over all fault models for static compaction. We propose a novel ATPG technique where all fault models of interest are concurrently targeted in a single ATPG run. Patterns are generated in small intervals, each consisting of 16, 32 or 64 patterns. In each interval fault model specific ATPG setups generate separate pattern sets for their respective fault model. An effectiveness criterion then selects exactly one of those pattern sets. The selected set covers untargeted faults that would have required the most additional patterns. Pattern generation intervals are repeated until required coverage for faults of all models of interest is achieved. The sum total of all selected interval pattern sets is the overall test set for the DUT. Experiments on industrial circuits show pattern count reductions of 21% to 68%. The technique is independent of any special ATPG tool or scan compression technique and requires no change or additional support in an existing ATPG system.},
+ author = {Alampally, S. and Venkatesh, R. T. and Shanmugasundaram, P. and Parekhji, R. A. and Agrawal, V. D.},
+ booktitle = {29th VLSI Test Symposium},
+ doi = {10.1109/VTS.2011.5783735},
+ issn = {2375-1053},
+ keyword = {Automatic test pattern generation;Delay;Circuit faults;Biological system modeling;Optimization;System-on-a-chip;ATPG optimizations;pattern merge;test data volume reduction;composite fault models},
+ month = {May},
+ number = {},
+ pages = {285-290},
+ title = {An efficient test data reduction technique through dynamic pattern mixing across multiple fault models},
+ volume = {},
+ year = {2011}
+}

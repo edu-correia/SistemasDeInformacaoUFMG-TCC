@@ -1,0 +1,18 @@
+@article{10.1145/3589269,
+ abstract = {For exploratory data analysis, it is often desirable to know what answers you are likely to get before actually obtaining those answers. This can potentially be achieved by designing systems to offer the estimates of a data operation result-say op(data)-earlier in the process based on partial data processing. Those estimates continuously refine as more data is processed and finally converge to the exact answer. Unfortunately, the existing techniques-called Online Aggregation (OLA)-are limited to a single operation; that is, we cannot obtain the estimates for op(op(data)) or op(...(op(data))). If this Deep OLA becomes possible, data analysts will be able to explore data more interactively using complex cascade operations.In this work, we take a step toward Deep OLA with evolving data frames (edf), a novel data model to offer OLA for nested ops-op(...(op(data)))-by representing an evolving structured data (with converging estimates) that is closed under set operations. That is, op(edf) produces yet another edf; thus, we can freely apply successive operations to edf and obtain an OLA output for each op. We evaluate its viability with Wake, an edf-based OLA system, by examining against state-of-the-art OLA and non-OLA systems. In our experiments on TPC-H dataset, Wake produces its first estimates 4.93\texttimes{} faster (median)-with 1.3\texttimes{} median slowdown for exact answers-compared to conventional systems. Besides its generality, Wake is also 1.92\texttimes{} faster (median) than existing OLA systems in producing estimates of under 1% relative errors.},
+ address = {New York, NY, USA},
+ articleno = {124},
+ author = {Sheoran, Nikhil and Chockchowwat, Supawit and Chheda, Arav and Wang, Suwen and Verma, Riya and Park, Yongjoo},
+ doi = {10.1145/3589269},
+ issue_date = {June 2023},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {SQL, cardinality estimation, confidence interval, data frame, evolving data frame, nested query, online aggregation, time-series forecasting},
+ month = {June},
+ number = {2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {A Step Toward Deep Online Aggregation},
+ url = {https://doi.org/10.1145/3589269},
+ volume = {1},
+ year = {2023}
+}

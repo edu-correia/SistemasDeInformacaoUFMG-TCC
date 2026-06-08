@@ -1,0 +1,18 @@
+@article{10.1145/3550291,
+ abstract = {An accurate understanding of omnidirectional environment lighting is crucial for high-quality virtual object rendering in mobile augmented reality (AR). In particular, to support reflective rendering, existing methods have leveraged deep learning models to estimate or have used physical light probes to capture physical lighting, typically represented in the form of an environment map. However, these methods often fail to provide visually coherent details or require additional setups. For example, the commercial framework ARKit uses a convolutional neural network that can generate realistic environment maps; however the corresponding reflective rendering might not match the physical environments. In this work, we present the design and implementation of a lighting reconstruction framework called LITAR that enables realistic and visually-coherent rendering. LITAR addresses several challenges of supporting lighting information for mobile AR.First, to address the spatial variance problem, LITAR uses two-field lighting reconstruction to divide the lighting reconstruction task into the spatial variance-aware near-field reconstruction and the directional-aware far-field reconstruction. The corresponding environment map allows reflective rendering with correct color tones. Second, LITAR uses two noise-tolerant data capturing policies to ensure data quality, namely guided bootstrapped movement and motion-based automatic capturing. Third, to handle the mismatch between the mobile computation capability and the high computation requirement of lighting reconstruction, LITAR employs two novel real-time environment map rendering techniques called multi-resolution projection and anchor extrapolation. These two techniques effectively remove the need of time-consuming mesh reconstruction while maintaining visual quality. Lastly, LITAR provides several knobs to facilitate mobile AR application developers making quality and performance trade-offs in lighting reconstruction. We evaluated the performance of LITAR using a small-scale testbed experiment and a controlled simulation. Our testbed-based evaluation shows that LITAR achieves more visually coherent rendering effects than ARKit. Our design of multi-resolution projection significantly reduces the time of point cloud projection from about 3 seconds to 14.6 milliseconds. Our simulation shows that LITAR, on average, achieves up to 44.1% higher PSNR value than a recent work Xihe on two complex objects with physically-based materials.},
+ address = {New York, NY, USA},
+ articleno = {153},
+ author = {Zhao, Yiqin and Ma, Chongyang and Huang, Haibin and Guo, Tian},
+ doi = {10.1145/3550291},
+ issue_date = {September 2022},
+ journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+ keyword = {3D vision, lighting estimation, mobile augmented reality},
+ month = {September},
+ number = {3},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {LITAR: Visually Coherent Lighting for Mobile Augmented Reality},
+ url = {https://doi.org/10.1145/3550291},
+ volume = {6},
+ year = {2022}
+}

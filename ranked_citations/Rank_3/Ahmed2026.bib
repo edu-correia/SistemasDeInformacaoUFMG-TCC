@@ -1,0 +1,14 @@
+@article{Ahmed2026,
+ abstract = {Vector similarity search in relational databases underpins retrieval-augmented generation and semantic search, but indexes like HNSW and IVFFlat in pgvector produce high write-ahead log (WAL) volume because every insert touches many index pages. The Two-Tier Vector Index (TTVI) uses a coarse partition table for routing, per-partition refinement structures for search, and an insert buffer that a background merge flushes into partition-sized index units. A formal WAL cost model shows that each merge produces at most one WAL record per affected partition regardless of how many inserts were buffered; amortized per-insert WAL cost falls as batch size grows. The paper details build and search algorithms, complexity and space, supported distance metrics, and integration with the PostgreSQL access-method API. On synthetic 768- and 1536-dimensional data, TTVI cuts WAL volume by 40–70% for 10K–100K insert batches while keeping recall and query latency in line with IVFFlat and reaching 4–8× higher insert throughput. The design targets insert-heavy workloads where WAL or replication lag is the bottleneck. © 2013 IEEE.},
+ author = {Ahmed, Ibrar},
+ doi = {10.1109/ACCESS.2026.3689333},
+ journal = {IEEE Access},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {},
+ publication_stage = {Article in press},
+ source = {Scopus},
+ title = {TTVI: A Two-Tier Vector Index for Low-WAL Approximate Nearest Neighbor Search in Databases},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105037853842?origin=resultslist},
+ year = {2026}
+}

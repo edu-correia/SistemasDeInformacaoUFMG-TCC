@@ -1,0 +1,14 @@
+@article{4433985,
+ abstract = {This paper presents a hybrid flash file system (HFFS) based on both NOR flash and NAND flash memory. In a conventional NAND flash-based flash file system, there is a trade-off between life span and durability in the frequent writing of small amounts of data. Because NAND flash supports only a page-level I/O, at least one page is wasted in the synchronous writing of small amounts of data. The wastes of pages reduce the utilization and life span of the NAND flash. To alleviate the utilization problem, some NAND flash-based flash file system write small amounts of data asynchronously with RAM buffers, though buffering in RAM decreases the durability of the system. Our HFFS eliminates the trade-off between life span and durability. It synchronously stores data as a log in NOR flash, whenever we append small amounts of data to a file. The merged logs are then flushed to the NAND flash in a page-aligned fashion. The implementation of our HFFS is based on our previous NAND flash-based file system, called CFFS. The experimental results reveal that our HFFS provides a longer life span than a conventional NAND flash-based synchronous flash file system, with a similar level of durability.},
+ author = {Lee, Chul and Baek, Sung Hoon and Park, Kyu Ho},
+ doi = {10.1109/TC.2008.14},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Computers;File systems;Storage management;Random access memory;Writing;Power system reliability;Flash memories;Storage Management;File Systems Management;Real-time systems and embedded systems;Storage Management;File Systems Management;Real-time systems and embedded systems},
+ month = {July},
+ number = {7},
+ pages = {1002-1008},
+ title = {A Hybrid Flash File System Based on NOR and NAND Flash Memories for Embedded Devices},
+ volume = {57},
+ year = {2008}
+}

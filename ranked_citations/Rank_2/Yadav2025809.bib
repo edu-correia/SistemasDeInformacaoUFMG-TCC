@@ -1,0 +1,15 @@
+@conference{Yadav2025809,
+ abstract = {Sparse matrix-matrix multiplication (SpGEMM) is crucial in many applications, with numerous recent efforts focused on optimizing it. The row-wise product has emerged as a favorable SpGEMM dataflow due to its balanced performance, but it alone is insufficient to minimize data movement and off-chip traffic - key factors for efficient accelerator deployment. Previous studies face three key challenges: (1) reordering is often suboptimal, failing to maximize memory traffic reduction; (2) preprocessing steps are typically slow and inefficient, making the overhead hard to justify; and (3) certain sparsity patterns do not benefit from reordering, potentially increasing traffic, yet existing methods lack a mechanism to detect such cases. To address these challenges, we propose Bootes, a novel approach that leverages spectral clustering to optimally reorder the rows of matrix A, aligning data access patterns with matrix B to maximize reuse and reduce off-chip memory traffic during row-wise matrix multiplication. Our key insight lies in using a similarity matrix that captures the structural properties of matrix A to guide clustering, along with an optimized implementation of the spectral clustering algorithm to reduce preprocessing overhead. Additionally, Bootes incorporates a decision tree model trained on real-world matrices to predict when reordering is beneficial, enabling a cost-aware preprocessing strategy. Bootes achieves a geometric mean speedup of 11.61 × in preprocessing time compared to existing row reordering techniques while maintaining scalability. It is deployed on state-of-the-art accelerators - Flexagon, GAMMA, and Trapezoid - where it reduces off-chip traffic by 2.31 ×, 1.67 ×, and 1.38 ×, respectively, thereby boosting their efficiency. © 2025 Copyright held by the owner/author(s).},
+ author = {Yadav, Sanjali and Asgari, Bahar},
+ doi = {10.1145/3725843.3756125},
+ journal = {Proceedings of the Annual International Symposium on Microarchitecture, MICRO},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {809 - 823},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Bootes: Boosting the Efficiency of Sparse Accelerators Using Spectral Clustering},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021326831?origin=resultslist},
+ volume = {Part of 213862},
+ year = {2025}
+}

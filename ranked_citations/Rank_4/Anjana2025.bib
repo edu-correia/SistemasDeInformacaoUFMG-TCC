@@ -1,0 +1,15 @@
+@conference{Anjana2025,
+ abstract = {Parallel execution of smart contract transactions in large multicore architectures is critical for higher efficiency and improved throughput. The main bottleneck for maximizing the throughput of a node through parallel execution is transaction conflict resolution: when two transactions interact with the same data, like an account balance, their order matters. Imagine one transaction sends tokens from account A to account B, and another tries to send tokens from account B to account C. If the second transaction happens before the first one, the token balance in account B might be wrong, causing the entire system to break. Conflicts like these must be managed carefully, or you end up with an inconsistent, unusable blockchain state. Traditional software transactional memory (STM) has been identified as a possible abstraction for the concurrent execution of transactions within a block, with Block-STM pioneering its application for efficient blockchain transaction processing on multicore validator nodes. This paper presents a parallel execution methodology that leverages conflict specification information of the transactions for block transactional memory (BTM) algorithms. Our experimental analysis, conducted over synthetic transactional workloads and real-world blocks, demonstrates that BTMs leveraging conflict specifications outperform their plain counterparts on both EVM and MoveVM. Our proposed BTM implementations achieve up to 1.75× speedup over sequential execution and outperform the state-of-the-art Parallel-EVM (PEVM) execution by up to 1.33× across synthetic workloads. © Parwat Singh Anjana, Matin Amini, Rohit Kapoor, Rahul Parmar, Raghavendra Ramesh,},
+ author = {Anjana, Parwat Singh and Amini, Matin and Kapoor, Rohit and Parmar, Rahul and Ramesh, Raghavendra and Ravi, Srivatsan and Tobkin, Joshua},
+ doi = {10.4230/LIPIcs.AFT.2025.29},
+ journal = {Leibniz International Proceedings in Informatics, LIPIcs},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Parallel Execution of Blockchain Transactions Leveraging Conflict Specifications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105019305646?origin=resultslist},
+ volume = {354},
+ year = {2025}
+}

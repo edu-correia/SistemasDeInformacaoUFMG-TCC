@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749717,
+ abstract = {Late Materialization (LM) is a critical technique applied in traditional column stores to speed up analytical queries. However, with modern analytical databases evolved to incorporate a vectorized columnar execution engine, LM's benefits in I/O reduction and fast columnar query processing have diminished. In this paper, we redefine the concept of Late Materialization in the context of modern analytical databases and propose Selective Late Materialization (SLM) to allow each attribute in a query to choose its own materialization point that yields the minimum cost. SLM expands the solution space of the traditional materialization problem from one unified hard-coded binary decision (i.e., early or late) for all attributes to per attribute per query decisions. By integrating SLM into DuckDB, we show that SLM consistently outperforms the baselines of Early Materialization and Late Materialization by 14.7% and 8.9%, respectively, on average using the Join Order Benchmark (JOB), with up to 76.7% latency reduction for individual queries. We observe similar results for the TPC-DS benchmark.},
+ author = {Liu, Yihao and Tang, Shaoxuan and Hui, Yulong and Zhou, Hangrui and Zhang, Huanchen},
+ doi = {10.14778/3749646.3749717},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {4616–4628},
+ publisher = {VLDB Endowment},
+ title = {Selective Late Materialization in Modern Analytical Databases},
+ url = {https://doi.org/10.14778/3749646.3749717},
+ volume = {18},
+ year = {2025}
+}

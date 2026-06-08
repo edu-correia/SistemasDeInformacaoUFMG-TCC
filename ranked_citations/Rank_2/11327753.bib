@@ -1,0 +1,14 @@
+@inproceedings{11327753,
+ abstract = {The continuously growing key-value (KV) Cache during the inference of large language models (LLMs) becomes an obstacle to efficient deployment. Recently, KV Cache compression techniques such as evicting and merging KV pairs have been widely studied, which play an important role in reducing memory usage in the decoding phase of LLM inference. However, these methods inevitably cause problems of output perturbation and computational redundancy. In this paper, we propose SimCalKV, a theoretically grounded merging strategy that identifies the optimal merging under key similarity assumptions. By averaging similar keys with a simple bias calibration and weighting values according to attention scores, SimCalKV reduces perturbation with negligible computational overhead. Experimental results across multiple models and tasks demonstrate that our approach can compress the KV Cache by up to $5 \times$ while maintaining competitive model performance, achieving up to $1.5 \times$ speedup over representative merging methods during inference. Our code is available at: https://github.com/William-kaihhu/SimCalKV.},
+ author = {Cheng, Yukai and Zhou, Wenxuan and Li, Zhizhou and Qu, Zhihao and Ye, Baoliu},
+ booktitle = {2025 21st International Conference on Mobility, Sensing and Networking (MSN)},
+ doi = {10.1109/MSN69125.2025.00053},
+ issn = {2994-3523},
+ keyword = {Codes;Perturbation methods;Computational modeling;Large language models;Merging;Redundancy;Vectors;Calibration;Sensors;Decoding;large language models (LLMs);KV Cache;KV Cache merging;inference speedup},
+ month = {Dec},
+ number = {},
+ pages = {349-358},
+ title = {Efficient LLMs Inference via Similarity-Aware KV Cache Merging with Bias Calibration},
+ volume = {},
+ year = {2025}
+}

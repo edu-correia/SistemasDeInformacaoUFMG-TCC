@@ -1,0 +1,13 @@
+@article{JIN2025104313,
+ abstract = {Automatic and precise 3D tooth instance segmentation is crucial in digital stomatology. Despite breakthrough progress by learning-based methods, atypical cases still pose significant challenges for tooth semantics and boundary discrimination. We argue that one of the primary reasons for this is the limited expressiveness of the feature representations of 3D tooth instances learned by deep neural networks. To address this issue, we introduce a novel segmentation framework that features a neural network capable of learning center- and boundary-aware tooth instance representations. Our network begins with an encoder that extracts geometric features from the 3D tooth mesh, supervised by semantic-agnostic boundary and distance maps. Leveraging an effective center-aware sampling strategy based on the distance map, we select the representative candidate points located around the tooth centers and utilize local graph convolution and candidate-wise self-attention to learn instance representation. These candidate features are then combined with point-wise features and processed through prediction heads, which generate corresponding candidate masks, class probabilities, and IoU scores in parallel. Finally, instance masks are selected and merged via non-maximum suppression (NMS) to produce the final segmentation results. Additionally, to maximize the optimization of segmentation results, we design an interactive refinement scheme that allows users to select desired regions with handy clicks and correct erroneous labels directly on the high-resolution original tooth mesh. We extensively validate our method on the Teeth3DS benchmark dataset, demonstrating superior performance in tooth category and boundary identification compared to state-of-the-art methods.(The code well be released at https://github.com/bibi547/CBANet.git).},
+ author = {Hairong Jin and Jianwen Lou and Zhiguo Lu and Teng Wu and Kun Zhou and Youyi Zheng},
+ doi = {https://doi.org/10.1016/j.cag.2025.104313},
+ issn = {0097-8493},
+ journal = {Computers & Graphics},
+ keyword = {3D tooth segmentation, Geodesic distance, Center-aware sampling, Interactive refinement},
+ pages = {104313},
+ title = {Learning center- and boundary-aware instance representation for 3D tooth segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0097849325001542},
+ volume = {132},
+ year = {2025}
+}

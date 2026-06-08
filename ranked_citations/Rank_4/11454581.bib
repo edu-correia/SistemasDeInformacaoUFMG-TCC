@@ -1,0 +1,14 @@
+@article{11454581,
+ abstract = {Autonomous on-ramp merging requires a safe and efficient decision and planning framework to navigate dynamic and complex traffic scenarios. Reinforcement Learning (RL) offers adaptability in such environments but struggles to ensure safety in unseen situations, whereas Model Predictive Control (MPC) can enforce safety constraints but relies on accurate models. To leverage the strengths of both, we propose a hierarchical Safety-Augmented RL and MPC integration approach, i.e., SARMI, for decision and planning in the on-ramp merging scenario. The high-level decision-making layer employs a discrete Soft Actor-Critic (SAC-Discrete) algorithm enhanced with the Augmented Lagrangian method to generate actions. MPC generates reference trajectories based on RL actions and feeds predicted states back to RL for reward and cost design, ensuring consistency between RL and MPC. Our key innovations include: i) incorporating a Gaussian-based risk field model into the cost design of constrained RL, which quantifies collision risk based on MPC-predicted states, enabling agents to make proactive decisions; ii) an Augmented Lagrangian SAC-Discrete method with barrier-like quadratic penalties to promote compliance with safety constraints and alleviate oscillations in dual gradient descent; iii) theoretical analysis proving the equivalence between the optimal solutions of the primal and dual problems in Augmented Lagrangian SAC-Discrete and iv) a dual safety mechanism combining action masking (to filter invalid actions) and action shielding (to replace unsafe actions in RL), enhancing safety during the exploration and execution stages, respectively. Experiments demonstrate the superiority of our method over the baseline SAC-Discrete, showing improved safety and efficiency.},
+ author = {Li, Yang and Li, Jian and Huang, Wenjie and Yang, Qisong and Qin, Hongmao and Jiang, Xiaolong and Bian, Yougang and Hu, Manjiang and Hu, Yingbai},
+ doi = {10.1109/JIOT.2026.3676898},
+ issn = {2327-4662},
+ journal = {IEEE Internet of Things Journal},
+ keyword = {Safety;Planning;Merging;Decision making;Reinforcement learning;Predictive control;Motion control;Autonomous vehicles;Markov decision processes;Costs;Autonomous on-ramp merging;reinforcement learning;augmented Lagrangian;action masking and shielding;model predictive control},
+ month = {},
+ number = {},
+ pages = {1-1},
+ title = {Risk-Constrained On-Ramp Merging via Safety-Augmented Reinforcement Learning and Model Predictive Control},
+ volume = {},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{7932189,
+ abstract = {In this paper, we propose an erasure-coded data archival system called aHDFS for Hadoop clusters, where RS(k + r; k) codes are employed to archive data replicas in the Hadoop distributed file system or HDFS. We develop two archival strategies (i.e., aHDFS-Grouping and aHDFS-Pipeline) in aHDFSto speed up the data archival process. aHDFS-Groupinga MapReduce-based data archiving scheme - keeps each mapper's intermediate output Key-Value pairs in a local key-value store. With the local store in place, aHDFS-Grouping merges all the intermediate key-value pairs with the same key into one single key-value pair, followed by shuffling the single Key-Value pair to reducers to generate final parity blocks. aHDFS-Pipeline forms a data archival pipeline using multiple data node in a Hadoop cluster. aHDFS-Pipeline delivers the merged single key-value pair to a subsequent node's local key-value store. Last node in the pipeline is responsible for outputting parity blocks. We implement aHDFS in a real-world Hadoop cluster. The experimental results show that aHDFS-Grouping and aHDFS-Pipeline speed up Baseline's shuffle and reduce phases by a factor of 10 and 5, respectively. When block size is larger than 32 MB, aHDFS improves the performance of HDFS-RAID and HDFS-EC by approximately 31.8 and 15.7 percent, respectively.},
+ author = {Chen, Yuanqi and Zhou, Yi and Taneja, Shubbhi and Qin, Xiao and Huang, Jianzhong},
+ doi = {10.1109/TPDS.2017.2706686},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Mathematical model;Distributed databases;Redundancy;Encoding;Programming;Pipelines;Data models;Hadoop distributed file system;replica-based storage clusters;archival performance;erasure codes;parallel encoding},
+ month = {Nov},
+ number = {11},
+ pages = {3060-3073},
+ title = {aHDFS: An Erasure-Coded Data Archival System for Hadoop Clusters},
+ volume = {28},
+ year = {2017}
+}

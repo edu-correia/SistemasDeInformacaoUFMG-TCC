@@ -1,0 +1,18 @@
+@article{10.1145/3617326,
+ abstract = {k-closest pair (KCP for short) search is a fundamental problem in database research. Given a set of d-dimensional streaming data S, KCP search aims to retrieve k pairs with the shortest distances between them. While existing works have studied continuous 1-closest pair query (i.e., k=1) over dynamic data environments, which allow for object insertions/deletions, they require high computational costs and cannot easily support KCP search with k&gt;1. This paper investigates the problem of KCP search over data stream, aiming to incrementally maintain as few pairs as possible to support KCP search with arbitrarily k. To achieve this, we introduce the concept of NNS (short for Nearest Neighbour pair-Set), which consists of all the nearest neighbour pairs and allows us to support KCP search via only accessing O(k) objects. We further observe that in most cases, we only need to use a small portion of NNS to answer KCP search as typically k\l{}l n. Based on this observation, we propose TNNS (short for Threshold-based NNpair Set), which contains a small number of high-quality NN pairs, and a partition named τ-DLBP (short for τ-Distance Lower-Bound based Partition) to organize objects, with τ being an integer significantly smaller than n. τ-DLBP organizes objects using up to O(\l{}og n / τ) partitions and is able to support the construction and update of TNNS efficiently.},
+ address = {New York, NY, USA},
+ articleno = {205},
+ author = {Zhu, Rui and Wang, Bin and Yang, Xiaochun and Zheng, Baihua},
+ doi = {10.1145/3617326},
+ issue_date = {September 2023},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {cube, k-closest pair search, partition, streaming data},
+ month = {November},
+ number = {3},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Closest Pairs Search Over Data Stream},
+ url = {https://doi.org/10.1145/3617326},
+ volume = {1},
+ year = {2023}
+}

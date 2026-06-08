@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3682021,
+ abstract = {As Spark becomes a common big data analytics platform, its growing complexity makes automatic tuning of numerous parameters critical for performance. Our work on Spark parameter tuning is particularly motivated by two recent trends: Spark's Adaptive Query Execution (AQE) based on runtime statistics, and the increasingly popular Spark cloud deployments that make cost-performance reasoning crucial for the end user. This paper presents our design of a Spark optimizer that controls all tunable parameters of each query in the new AQE architecture to explore its performance benefits and, at the same time, casts the tuning problem in the theoretically sound multi-objective optimization (MOO) setting to better adapt to user cost-performance preferences. To this end, we propose a novel hybrid compile-time/runtime approach to multi-granularity tuning of diverse, correlated Spark parameters, as well as a suite of modeling and optimization techniques to solve the tuning problem in the MOO setting while meeting the stringent time constraint of 1--2 seconds for cloud use. Evaluation results using TPC-H and TPC-DS benchmarks demonstrate the superior performance of our approach: (i) When prioritizing latency, it achieves 63% and 65% reduction for TPC-H and TPC-DS, respectively, under an average solving time of 0.7--0.8 sec, outperforming the most competitive MOO method that reduces only 18--25% latency with 2.6--15 sec solving time. (ii) When shifting preferences between latency and cost, our approach dominates the solutions of alternative methods, exhibiting superior adaptability to varying preferences.},
+ author = {Lyu, Chenghao and Fan, Qi and Guyard, Philippe and Diao, Yanlei},
+ doi = {10.14778/3681954.3682021},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {15},
+ pages = {3565–3579},
+ publisher = {VLDB Endowment},
+ title = {A Spark Optimizer for Adaptive, Fine-Grained Parameter Tuning},
+ url = {https://doi.org/10.14778/3681954.3682021},
+ volume = {17},
+ year = {2024}
+}

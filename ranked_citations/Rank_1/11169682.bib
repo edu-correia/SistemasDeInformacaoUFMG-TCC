@@ -1,0 +1,14 @@
+@inproceedings{11169682,
+ abstract = {The Log-Structured Merge-tree (LSM-tree) has become a cornerstone of modern key-value stores (KVSs) due to its efficiency in handling write-intensive workloads. However, traditional monolithic LSM-tree designs suffer from write stalls caused by resource contention between Memtable flushing and SSTable compaction, while existing distributed systems adopt coarse-grained elasticity that limits resource utilization and responsiveness. This paper introduces ServerlessLSM, a kernelspace RDMA-odesigned Serverless workflow architecture for LSM-trees. By decoupling Memtable flushing and compaction into independent Serverless functions, ServerlessLSM enables fine-grained elasticity and low-latency state transfers through distributed OS primitives (e.g., remote fork, remote memory mapping). Evaluations demonstrate that ServerlessLSM reduces cold-start latency by $\mathbf{9 8 \%}$ and achieves $\mathbf{2. 4} \times$ higher throughput compared to state-of-the-art solutions, while maintaining space amplification below 11 %, validating its efficiency and costeffectiveness in cloud environments.},
+ author = {Liu, Mingxuan and Gu, Jianhua and Zhao, Tianhai},
+ booktitle = {2025 IEEE International Conference on Web Services (ICWS)},
+ doi = {10.1109/ICWS67624.2025.00100},
+ issn = {2836-3868},
+ keyword = {Web services;Serverless computing;Computer architecture;Elasticity;Throughput;Compaction;Low latency communication;Serverless Computing;LSM-tree;RDMA;Compute-storage Disaggregation;Elastic Key-value Stores;Cloud Storage;Stateful Serverless},
+ month = {July},
+ number = {},
+ pages = {1-7},
+ title = {ServerlessLSM: Fast RDMA-Codesigned Disaggregated Compaction for Elastic Serverless LSM-Tree Key-Value Store},
+ volume = {},
+ year = {2025}
+}

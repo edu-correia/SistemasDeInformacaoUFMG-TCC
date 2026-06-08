@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3681988,
+ abstract = {This paper addresses the challenge of identifying super spreaders within large, high-speed data streams. In these streams, data is segmented into flows, with each flow's spread defined as the number of distinct items it contains. A super spreader is characterized as a flow with a notably large spread. Current compact solutions, known as sketches, are designed to fit within the constrained memory of online devices. However, they struggle to accurately track the spread of all flows due to the substantial memory requirement for monitoring a single flow --- a problem exacerbated when numerous flows are involved. To overcome these limitations, this study proposes a more precise sketch-based approach. Our solution introduces an innovative non-duplicate sampler that effectively eliminates duplicates, allowing for accurate post-sampling count of flow spread using only counters. Additionally, it incorporates an exponential-weakening decay technique to highlight large flows, markedly enhancing the accuracy of super spreader identification. We offer a comprehensive theoretical analysis of our method. Trace-driven experiments validate that our approach statistically surpasses existing state-of-the-art solutions in identifying super spreaders. It also demonstrates the lowest time required to restore super spreaders and significantly reduces bandwidth consumption by an order of magnitude when offline restoration is conducted remotely.},
+ author = {Wang, Haibo},
+ doi = {10.14778/3681954.3681988},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {3124–3137},
+ publisher = {VLDB Endowment},
+ title = {Enhancing Accuracy for Super Spreader Identification in High-Speed Data Streams},
+ url = {https://doi.org/10.14778/3681954.3681988},
+ volume = {17},
+ year = {2024}
+}

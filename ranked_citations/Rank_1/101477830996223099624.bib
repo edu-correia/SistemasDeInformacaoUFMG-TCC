@@ -1,0 +1,17 @@
+@article{10.14778/3099622.3099624,
+ abstract = {Exact set similarity join, which finds all the similar set pairs from two collections of sets, is a fundamental problem with a wide range of applications. The existing solutions for set similarity join follow a filtering-verification framework, which generates a list of candidate pairs through scanning indexes in the filtering phase, and reports those similar pairs in the verification phase. Though much research has been conducted on this problem, set relations, which we find out is quite effective on improving the algorithm efficiency through computational cost sharing, have never been studied. Therefore, in this paper, instead of considering each set individually, we explore the set relations in different levels to reduce the overall computational costs. First, it has been shown that most of the computational time is spent on the filtering phase, which can be quadratic to the number of sets in the worst case for the existing solutions. Thus we explore index-level set relations to reduce the filtering cost to be linear to the size of the input while keeping the same filtering power. We achieve this by grouping related sets into blocks in the index and skipping useless index probes in joins. Second, we explore answer-level set relations to further improve the algorithm based on the intuition that if two sets are similar, their answers may have a large overlap. We derive an algorithm which incrementally generates the answer of one set from an already computed answer of another similar set rather than compute the answer from scratch to reduce the computational cost. Finally, we conduct extensive performance studies using 21 real datasets with various data properties from a wide range of domains. The experimental results demonstrate that our algorithm outperforms all the existing algorithms across all datasets and can achieve more than an order of magnitude speedup against the state- of-the-art algorithms.},
+ author = {Wang, Xubo and Qin, Lu and Lin, Xuemin and Zhang, Ying and Chang, Lijun},
+ doi = {10.14778/3099622.3099624},
+ issn = {2150-8097},
+ issue_date = {May 2017},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {12},
+ pages = {925–936},
+ publisher = {VLDB Endowment},
+ title = {Leveraging set relations in exact set similarity join},
+ url = {https://doi.org/10.14778/3099622.3099624},
+ volume = {10},
+ year = {2017}
+}

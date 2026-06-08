@@ -1,0 +1,14 @@
+@article{10461494,
+ abstract = {SPHINCS+ was selected as one of NIST Post-Quantum Cryptography Digital Signature Algorithms (PQC-DSA). However, SPHINCS+ processes are slower compared to other PQC-DSA. When integrating it into protocols ( $e.g.$ , TLS and IPSec), optimization research from the server perspective becomes crucial. Therefore, we present highly parallel and optimized implementations of SPHINCS+ on various NVIDIA GPU architectures (Pascal, Turing, and Ampere). We discovered parts within the internal processes of SPHINCS+ that could be parallelized and optimized them ( $e.g.$ , leaf node generation and node merging process in MSS, subtree constructions in FORS, signature generation in WOTS+ and hypertree layer construction), leveraging the characteristics of GPU architecture ( $e.g.$ , warp-based execution and efficient memory access). As far as we know, this is the first SPHINCS+ implementations on GPUs. Our implementations achieve 44,391(resp. 24,997 and 11,401) signature generations, 725,118(resp. 354,309 and 100,168) key generations, and 285,680(resp. 155,800 and 106,280) verifications per second at security level 1(resp. 3 and 5) on RTX3090. Furthermore, on GTX1070, our SPHINCS+ shows an enhanced throughput of  $\times 2.10$  for signature generation,  $\times 1.03$  for key generation, and  $\times 9.86$  for verification at security level 1, surpassing the study conducted by Sun  $et ~al.$  (IEEE TPDS 2020) on the GTX1080 having 640 more cores than GTX1070.},
+ author = {Kim, DongCheon and Choi, HoJin and Seo, Seog Chung},
+ doi = {10.1109/TCSI.2024.3370802},
+ issn = {1558-0806},
+ journal = {IEEE Transactions on Circuits and Systems I: Regular Papers},
+ keyword = {Graphics processing units;Public key;Hash functions;Vegetation;Cryptography;NIST;Computational modeling;Post-quantum cryptography;hash-based digital signature algorithm;SPHINCS+;GPU architecture;CUDA;parallel processing},
+ month = {June},
+ number = {6},
+ pages = {2810-2823},
+ title = {Parallel Implementation of SPHINCS+ With GPUs},
+ volume = {71},
+ year = {2024}
+}

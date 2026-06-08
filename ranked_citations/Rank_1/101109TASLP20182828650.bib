@@ -1,0 +1,17 @@
+@article{10.1109/TASLP.2018.2828650,
+ abstract = {Recurrent neural networks RNNs have been successfully used as fundamental frequency F0 models for text-to-speech synthesis. However, this paper showed that a normal RNN may not take into account the statistical dependency of the F0 data across frames and consequently only generate noisy F0 contours when F0 values are sampled from the model. A better model may take into account the causal dependency of the current F0 datum on the previous frames’ F0 data. One such model is the shallow autoregressive AR recurrent mixture density network SAR that we recently proposed. However, as this study showed, an SAR is equivalent to the combination of trainable linear filters and a conventional RNN. It is still weak for F0 modeling. To better model the temporal dependency in F0 contours, we propose a deep AR model DAR. On the basis of an RNN, this DAR propagates the previous frame's F0 value through the RNN, which allows nonlinear AR dependency to be achieved. We also propose F0 quantization and data dropout strategies for the DAR. Experiments on a Japanese corpus demonstrated that this DAR can generate appropriate F0 contours by using the random-sampling-based generation method, which is impossible for the baseline RNN and SAR. When a conventional mean-based generation method was used in the proposed DAR and other experimental models, the DAR generated accurate and less oversmoothed F0 contours and achieved a better mean-opinion-score in a subjective evaluation test.},
+ author = {Wang, Xin and Takaki, Shinji and Yamagishi, Junichi},
+ doi = {10.1109/TASLP.2018.2828650},
+ issn = {2329-9290},
+ issue_date = {August 2018},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {August},
+ number = {8},
+ numpages = {14},
+ pages = {1406–1419},
+ publisher = {IEEE Press},
+ title = {Autoregressive Neural F0 Model for Statistical Parametric Speech Synthesis},
+ url = {https://doi.org/10.1109/TASLP.2018.2828650},
+ volume = {26},
+ year = {2018}
+}

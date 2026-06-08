@@ -1,0 +1,13 @@
+@article{BAI2025105894,
+ abstract = {Three-dimensional (3D) inversion of magnetotelluric (MT) data is crucial for accurately resolving subsurface conductivity structures and requires robust, computationally efficient inversion techniques. In this study, we propose a novel 3D MT inversion method based on the limited-memory Broyden–Fletcher–Goldfarb–Shanno (L-BFGS) optimization algorithm, implemented within an edge-based finite element framework. The L-BFGS algorithm approximates the inverse Hessian using limited memory, thereby avoiding the storage and computation of large, dense matrices. To enhance the computational efficiency of the L-BFGS inversion, we introduce two strategies targeting the most time-consuming components: forward modeling and sensitivity calculations. The first strategy employs solution space dimensionality reduction by mapping the edges of the original forward-modeling grid to a coarser grid with fewer edges but without cells merging. This approach significantly reduces the degrees of freedom needed to solve the forward problem. The second strategy transforms the reduced-dimensional linear system into an equivalent real-valued linear system, which is efficiently solved using a direct–iterative hybrid solver. Numerical experiments demonstrate that solving the reduced-dimensional real linear system with the hybrid solver substantially decreases computational time compared to solving the original complex linear system with the direct solver PARDISO. The validity and robustness of the proposed inversion algorithm were confirmed through applications to both synthetic datasets and field MT data from the Longgang Volcanic Field.},
+ author = {Ningbo Bai and Jiancheng Zhou and Xiangyun Hu and Bo Han and Junjun Zhou and Jian Yang and He Zhao},
+ doi = {https://doi.org/10.1016/j.jappgeo.2025.105894},
+ issn = {0926-9851},
+ journal = {Journal of Applied Geophysics},
+ keyword = {Magnetotelluric, L-BFGS inversion, Solution space dimensionality reduction, Hybrid solver},
+ pages = {105894},
+ title = {Fast three-dimensional inversion of magnetotelluric data based on L-BFGS optimization},
+ url = {https://www.sciencedirect.com/science/article/pii/S0926985125002757},
+ volume = {242},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10943472,
+ abstract = {Depth estimation is the fundamental computer vision task for scene analysis. With the emergence of the deep learning era supervised monocular image depth estimation (MDE) became a popular choice for the task. Predominantly, MDE methods utilize 360 images as ideal input due to their comprehensive field of view scene content compared to perspective images, but they suffer from distortions in polar regions making it a more challenging illposed problem to date. Over the years, methods using CNNs, and/or large transformers taking 360 and/or projected perspective patch inputs have been proposed to solve the 360 MDE problem by formulating it as a regression or a classification task. Nevertheless, their performance still suffers from global discrepancy, inaccuracy, poor details, and generalizability. Lately, diffusion-generating models have shown state-of-the-art performance in image synthesis that captures exceptionally rich knowledge of the visual world. However, their ability to perform omnidirectional perception tasks is still unexplored. In this paper, we explore a new approach called OmniDiffusion that reformulates the 360 MDE task as a diffusion denoising process. We present a diffusion-based framework to learn an iterative denoising process that denoises random depth distribution into the required depths. The diffusion process is performed in the latent space and uses the guidance of encoded RGB image visual as a condition. Furthermore, to advance the image latent in a geometrically meaningful direction we leverage semantic segmentation and surface normal information to provide a more detailed contextual assistance to the denoising process. The performed experiments on the multiple real-world datasets show that our diffusion-denoising approach with the proposed conditions more appropriately refines depths outperforming the existing MDE and diffusion-based methods with state-of-the-art generalization ability while generating more accurate, high-quality, and detailed 360 depths.},
+ author = {Mohadikar, Payal and Duan, Ye},
+ booktitle = {2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+ doi = {10.1109/WACV61041.2025.00783},
+ issn = {2642-9381},
+ keyword = {Visualization;Computer vision;Depth measurement;Semantic segmentation;Noise reduction;Semantics;Merging;Transformers;Iterative methods;Surface treatment},
+ month = {Feb},
+ number = {},
+ pages = {8068-8078},
+ title = {OmniDiffusion: Reformulating 360 Monocular Depth Estimation Using Semantic and Surface Normal Conditioned Diffusion},
+ volume = {},
+ year = {2025}
+}

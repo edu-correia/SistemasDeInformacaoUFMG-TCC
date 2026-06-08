@@ -1,0 +1,14 @@
+@conference{Han2018305,
+ abstract = {DBSCAN is a well-known clustering algorithm which is based on density and is able to identify arbitrary shaped clusters and eliminate noise data. However, existing parallel implementation strategies based on MPI lack fault tolerance and there is no guarantee that their workload is balanced. Although some of Hadoop-based approaches have been proposed, they do not perform well in terms of scalability since the merge process is not efficient.We propose a scalable parallel DBSCAN algorithm by applying a partitioning strategy. It is implemented in Apache Spark. In order to reduce search time, kdtree is used in our algorithm. To achieve better performance and scalability based on kdtree, we adopt an effective partitioning technique aimed at producing balanced sub-domains which can be computed within Spark executors. Moreover, we came up with a new merging technique: through mapping the relationship between the local points and their bordering neighbors, all the partial clusters which are generated in executors are merged to form the final complete clusters. We have observed and verified (through experiments) that this merging approach is very effective in reducing the time taken for the merge phase and very scalable with increasing the number of processing cores and the generated partial clusters.We implemented the algorithm in Java, evaluated its scalability by using different number of processing cores, and using real and synthetic datasets containing up to several hundred million high-dimensional points. We used three scales of datasets to evaluate our implementation. For small scale, we use 50k, 100k, and 500k data points, obtaining up to a factor of 14.9 speedup when using 16 cores. For medium scale, we use 1.0m, 1.5m, and 1.9m data points, obtaining a factor of 109.2 speedup when using 128 cores. For large scale, we use 61.0m, 91.5m, and 115.9m data points, obtaining a factor of 8344.5 speedup when using 16384 cores. © 2018 IEEE.},
+ author = {Han, Dianwei and Agrawal, Ankit and Liao, Wei-Keng and Choudhary, Alok},
+ doi = {10.1109/BigData.2018.8622258},
+ journal = {Proceedings - 2018 IEEE International Conference on Big Data, Big Data 2018},
+ note = {Cited by: 17},
+ pages = {305 - 312},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Parallel DBSCAN Algorithm Using a Data Partitioning Strategy with Spark Implementation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85062608028?origin=resultslist},
+ year = {2018}
+}

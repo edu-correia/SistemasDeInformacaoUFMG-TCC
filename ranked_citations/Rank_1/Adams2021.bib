@@ -1,0 +1,16 @@
+@article{Adams2021,
+ abstract = {Median filters are a widely-used tool in graphics, imaging, machine learning, visual effects, and even audio processing. Currently, very-small-support median filters are performed using sorting networks, and large-support median filters are handled by O(1) histogram-based methods. However, the constant factor on these O(1) algorithms is large, and they scale poorly to data types above 8-bit integers. On the other hand, good sorting networks have not been described above the 7 X 7 case, leaving us with no fast way to compute integer median filters of modest size, and no fast way to compute floating point median filters for any size above 7 X 7. This paper describes new sorting networks that efficiently compute median filters of arbitrary size. The key idea is that these networks can be factored to exploit the separability of the sorting problem - they share common work across scanlines, and within small tiles of output. We also describe new ways to run sorting networks efficiently, using a sorting-specific instruction set, compiler, and interpreter. The speed-up over prior work is more than an order of magnitude for a wide range of data types and filter sizes. For 8-bit integers, we describe the fastest median filters for all sizes up to 25 X 25 on CPU, and up to 33 X 33 on GPU. For higher-precision types, we describe the fastest median filters at all sizes tested on both CPU and GPU. © 2021 ACM.},
+ author = {Adams, Andrew},
+ doi = {10.1145/3450626.3459773},
+ journal = {ACM Transactions on Graphics},
+ note = {Cited by: 19},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Fast median filters using separable sorting networks},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85111264473?origin=resultslist},
+ volume = {40},
+ year = {2021}
+}

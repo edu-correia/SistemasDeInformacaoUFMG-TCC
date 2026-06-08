@@ -1,0 +1,18 @@
+@article{10.1145/3763081,
+ abstract = {In static analysis frameworks for Java, the bytecode frontend serves as a critical component, transforming complex, stack-based Java bytecode into a more analyzable register-based, typed 3-address code representation. This transformation often significantly influences the overall performance of analysis frameworks, particularly when processing large-scale Java applications, rendering the efficiency of the bytecode frontend paramount for static analysis. However, the bytecode frontends of currently dominant Java static analysis frameworks, Soot and WALA, despite being time-tested and widely adopted, exhibit limitations in efficiency, hindering their ability to offer a better user experience. To tackle efficiency issues, we introduce a new bytecode frontend. Typically, bytecode frontends consist of two key stages: (1) translating Java bytecode to untyped 3-address code, and (2) performing type inference on this code. For 3-address code translation, we identified common patterns in bytecode that enable more efficient processing than traditional methods. For type inference, we found that traditional algorithms often include redundant computations that hinder performance. Leveraging these insights, we propose two novel approaches: pattern-aware 3-address code translation and pruning-based type inference, which together form our new frontend and lead to significant efficiency improvements. Besides, our approach can also generate SSA IR, enhancing its usability for various static analysis techniques. We implemented our new bytecode frontend in Tai-e, a recent state-of-the-art static analysis framework for Java, and evaluated its performance across a diverse set of Java applications. Experimental results demonstrate that our frontend significantly outperforms Soot, WALA, and SootUp (an overhaul of Soot)—in terms of efficiency, being on average 14.2\texttimes{}, 14.5\texttimes{}, and 75.2\texttimes{} faster than Soot, WALA, and SootUp, respectively. Moreover, additional experiments reveal that our frontend exhibits superior reliability in processing Java bytecode compared to these tools, thus providing a more robust foundation for Java static analysis.},
+ address = {New York, NY, USA},
+ articleno = {303},
+ author = {Li, Chenxi and Lin, Haoran and Tan, Tian and Li, Yue},
+ doi = {10.1145/3763081},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {3-Address Code, Bytecode, Frontend, Java, Static Analysis, Type Inference},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Two Approaches to Fast Bytecode Frontend for Static Analysis},
+ url = {https://doi.org/10.1145/3763081},
+ volume = {9},
+ year = {2025}
+}

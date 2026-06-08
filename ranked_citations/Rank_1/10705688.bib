@@ -1,0 +1,14 @@
+@article{10705688,
+ abstract = {Proposal-free instance segmentation methods have significantly advanced the field of biological image analysis. Recently, the Segment Anything Model (SAM) has shown an extraordinary ability to handle challenging instance boundaries. However, directly applying SAM to biological images that contain instances with complex morphologies and dense distributions fails to yield satisfactory results. In this work, we propose BioSAM, a new biological instance segmentation framework generating SAM prompts from a superpixel graph. Specifically, to avoid over-merging, we first generate sufficient superpixels as graph nodes and construct an initialized graph. We then generate initial prompts from each superpixel and aggregate them through a graph neural network (GNN) by predicting the relationship of superpixels to avoid over-segmentation. We employ the SAM encoder embeddings and the SAM-assisted superpixel similarity as new features for the graph to enhance its discrimination capability. With the graph-based prompt aggregation, we utilize the aggregated prompts in SAM to refine the segmentation and generate more accurate instance boundaries. Comprehensive experiments on four representative biological datasets demonstrate that our proposed method outperforms state-of-the-art methods.},
+ author = {Cai, Miaomiao and Liu, Xiaoyu and Xiong, Zhiwei and Chen, Xuejin},
+ doi = {10.1109/JBHI.2024.3474706},
+ issn = {2168-2208},
+ journal = {IEEE Journal of Biomedical and Health Informatics},
+ keyword = {Biological information theory;Instance segmentation;Image segmentation;Feature extraction;Morphology;Biomedical imaging;Biological system modeling;Graph neural networks;Decoding;Accuracy;Biological Instance Segmentation;segment anything;prompt generation;superpixel},
+ month = {Jan},
+ number = {1},
+ pages = {273-284},
+ title = {BioSAM: Generating SAM Prompts From Superpixel Graph for Biological Instance Segmentation},
+ volume = {29},
+ year = {2025}
+}

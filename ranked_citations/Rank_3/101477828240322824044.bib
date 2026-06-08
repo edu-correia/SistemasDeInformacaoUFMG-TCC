@@ -1,0 +1,17 @@
+@article{10.14778/2824032.2824044,
+ abstract = {Given its pervasive use in smart mobile platforms, there is a compelling need to optimize the performance of sluggish SQLite databases. Popular mobile applications such as messenger, email and social network services rely on SQLite for their data management need. Those mobile applications tend to execute relatively short transactions in the autocommit mode for transactional consistency in databases. This often has adverse effect on the flash memory storage in mobile devices because the small random updates cause high write amplification and high write latency. In order to address this problem, we propose a new optimization strategy, called per-page logging (PPL), for mobile data management, and have implemented the key functions in SQLite/PPL. The hardware component of SQLite/PPL includes phase change memory (PCM) with a byte-addressable, persistent memory abstraction. By capturing an update in a physiological log record and adding it to the PCM log sector, SQLite/PPL can replace a multitude of successive page writes made to the same logical page with much smaller log writes done to PCM much more efficiently. We have observed that SQLite/PPL would potentially improve the performance of mobile applications by an order of magnitude while supporting transactional atomicity and durability.},
+ author = {Oh, Gihwan and Kim, Sangchul and Lee, Sang-Won and Moon, Bongki},
+ doi = {10.14778/2824032.2824044},
+ issn = {2150-8097},
+ issue_date = {August 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {1454–1465},
+ publisher = {VLDB Endowment},
+ title = {SQLite optimization with phase change memory for mobile applications},
+ url = {https://doi.org/10.14778/2824032.2824044},
+ volume = {8},
+ year = {2015}
+}

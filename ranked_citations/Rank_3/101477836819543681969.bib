@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3681969,
+ abstract = {There is significant interest in examining large datasets using complex domain-specific queries. In many cases, these queries can be accelerated using specialized indexes. Unfortunately, the development of a practical index is difficult, because databases generally require additional features such as updates, concurrency support, crash recovery, etc. There are three major lines of work to alleviate the pain: (1) automatic index composition/tuning which composes indexes out of core data structure primitives to optimize for specific workloads; (2) generalized index templates which generalize common data structures such as B+-trees for custom queries over custom data types, and (3) data structure dynamization frameworks such as the Bentley-Saxe method which converts a static data structure into an updatable data structure with bounded additional query cost. The first two are limited to very specific queries and/or data structures and, thus, are not suitable for building a general index dynamization framework. The last one is more promising in its generality but also has limitations on query types, deletion support, and performance tuning. In this paper, we discuss the limitations of the classic index dynamization techniques and propose a path towards a more general and systematic solution. We demonstrate the viability of our framework by realizing it as a C++20 metaprogramming library and conducting case studies on four example queries with their corresponding static index structures. With this framework, many theoretical/early-stage index designs can easily be extended with support for updates, along with a wide tuning space for query/update performance trade-offs. This allows index designers to focus on efficient data layouts and query algorithms, thereby dramatically narrowing the gap between novel index designs and deployment.},
+ author = {Rumbaugh, Douglas B. and Xie, Dong and Zhao, Zhuoyue},
+ doi = {10.14778/3681954.3681969},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {2867–2879},
+ publisher = {VLDB Endowment},
+ title = {Towards Systematic Index Dynamization},
+ url = {https://doi.org/10.14778/3681954.3681969},
+ volume = {17},
+ year = {2024}
+}

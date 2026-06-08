@@ -1,0 +1,18 @@
+@article{10.1145/3643771,
+ abstract = {Continuous Integration (CI) is a common practice adopted by modern software organizations. It plays an especially important role for large corporations like Ubisoft, where thousands of build jobs are submitted daily. Indeed, the cadence of development progress is constrained by the pace at which CI services process build jobs. To provide faster CI feedback, recent work explores how build outcomes can be anticipated. Although early results show plenty of promise, the distinct characteristics of Project X—a AAA video game project at Ubisoft—present new challenges for build outcome prediction. In the Project X setting, changes that do not modify source code also incur build failures. We also observe that the code changes that have an impact that crosses the source-data boundary are more prone to build failures than code changes that do not impact data files. Since such changes are not fully characterized by the existing set of features for build outcome prediction, state-of-the-art models tend to underperform.To incorporate the data context, we propose RavenBuild—a novel approach to build outcome prediction that leverages context-, relevance-, and dependency-aware features. In the Project X context, we observe that RavenBuild improves the F1-score of the failing class by 50%, the recall of the failing class by 105%, and the AUC by 11% with respect to the state-of-the-art BuildFast approach. To ease adoption in settings with heterogeneous project sets, we also provide a simplified alternative RavenBuild-CR, which excludes dependency-aware features. We observe across-the-board improvements when RavenBuild-CR is applied to 22 open-source projects and Project X. On the other hand, we find that a na\"{\i}ve Parrot approach, which simply echoes the previous build outcome as its prediction, is surprisingly competitive with BuildFast and RavenBuild. Though Parrot fails to predict when the build outcome differs from their immediate predecessor, Parrot serves well as a tendency indicator of the sequences in build outcome datasets. Thus, we recommend that future studies also compare to the Parrot approach as a baseline when evaluating build outcome prediction models.},
+ address = {New York, NY, USA},
+ articleno = {45},
+ author = {Sun, Gengyi and Habchi, Sarra and McIntosh, Shane},
+ doi = {10.1145/3643771},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {continuous integration, build outcome prediction, maintenance cost, mining software repositories},
+ month = {July},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {RavenBuild: Context, Relevance, and Dependency Aware Build Outcome Prediction},
+ url = {https://doi.org/10.1145/3643771},
+ volume = {1},
+ year = {2024}
+}

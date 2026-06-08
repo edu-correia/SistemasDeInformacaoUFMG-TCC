@@ -1,0 +1,14 @@
+@article{6227449,
+ abstract = {Garbage collection (GC) is a time-consuming operation incorporated in flash memory storage systems, and thus, it has a significant impact on the storage performance. Flash memory provides an internal copy-back operation that can perform page data transfer efficiently during GC. However, this operation is not widely accepted due to some limitations: bit errors can be propagated during the transfer between the pages without being detected, and the operation can be used for blocks within the same plane. In order to address these problems, the page data must be read to a buffer and then transmitted to another page. When this method is used, not only does a temporal overhead occur but also I/O bus utilization and power consumption by the two data transfer operations are increased. In this paper, we propose a technique for reducing the data transfer overhead of GC, using which devices transmit data directly when garbage is collected in a flash memory-based storage system in which several flash memory devices share a single I/O bus, while only the partial updated corrected data is updated when an error is detected. The proposed technique improves the performance of GC and reduces I/O bus utilization compared to the existing methods.},
+ author = {Jeong, Jaehyeong and Song, Yong Ho},
+ doi = {10.1109/TCE.2012.6227449},
+ issn = {1558-4127},
+ journal = {IEEE Transactions on Consumer Electronics},
+ keyword = {Flash memory;Registers;Performance evaluation;Arrays;Delay;Buffer storage;Error correction codes;Garbage Collection;Copy-back;NAND Flash Memory;SSD (Solid-State Drive)},
+ month = {May},
+ number = {2},
+ pages = {470-478},
+ title = {A technique to improve garbage collection performance for NAND flash-based storage systems},
+ volume = {58},
+ year = {2012}
+}

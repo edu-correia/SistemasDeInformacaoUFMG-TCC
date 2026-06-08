@@ -1,0 +1,15 @@
+@conference{Oh2021104,
+ abstract = {In cloud ecosystems, distributed block storage systems are used to provide a persistent block storage service, which is the fundamental building block for operating cloud native services. However, existing distributed storage systems performed poorly for random write workloads in an all-NVMe storage configuration, becoming CPU-bottlenecked. Our roofline-based approach to performance analysis on a conventional distributed block storage system with NVMe SSDs reveals that the bottleneck does not lie in one specific software module, but across the entire software stack; (1) tightly coupled I/O processing, (2) inefficient threading architecture, and (3) local backend data store causing excessive CPU usage. To this end, we re-architect a modern distributed block storage system for improving random write performance. The key ingredients of our system are (1) decoupled operation processing using non-volatile memory, (2) prioritized thread control, and (3) CPU-efficient backend data store. Our system emphasizes low CPU overhead and high CPU efficiency to efficiently utilize NVMe SSDs in a distributed storage environment. We implement our system in Ceph. Compared to the native Ceph, our prototype system delivers more than 3x performance improvement for small random write I/Os in terms of both IOPS and latency by efficiently utilizing CPU cores.  © 2021 IEEE.},
+ author = {Oh, Myoungwon and Park, Jiwoong and Park, Sung Kyu and Choi, Adel and Lee, Jongyoul and Choi, Jin-Hyeok and Yeom, Heon Y.},
+ doi = {10.1109/ICDCS51616.2021.00019},
+ journal = {Proceedings - International Conference on Distributed Computing Systems},
+ note = {Cited by: 6},
+ pages = {104 - 114},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Re-architecting distributed block storage system for improving random write performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85117161066?origin=resultslist},
+ volume = {2021-July},
+ year = {2021}
+}

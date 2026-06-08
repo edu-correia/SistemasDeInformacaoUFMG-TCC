@@ -1,0 +1,18 @@
+@article{10.1145/3276520,
+ abstract = {We address the problem of learning a syntactic profile for a collection of strings, i.e. a set of regex-like patterns that succinctly describe the syntactic variations in the strings. Real-world datasets, typically curated from multiple sources, often contain data in various syntactic formats. Thus, any data processing task is preceded by the critical step of data format identification. However, manual inspection of data to identify the different formats is infeasible in standard big-data scenarios. Prior techniques are restricted to a small set of pre-defined patterns (e.g. digits, letters, words etc.), and provide no control over granularity of profiles. We define syntactic profiling as a problem of clustering strings based on syntactic similarity, followed by identifying patterns that succinctly describe each cluster. We present a technique for synthesizing such profiles over a given language of patterns, that also allows for interactive refinement by requesting a desired number of clusters. Using a state-of-the-art inductive synthesis framework, PROSE, we have implemented our technique as FlashProfile. Across 153 tasks over 75 large real datasets, we observe a median profiling time of only ∼ 0.7s. Furthermore, we show that access to syntactic profiles may allow for more accurate synthesis of programs, i.e. using fewer examples, in programming-by-example (PBE) workflows such as Flash Fill.},
+ address = {New York, NY, USA},
+ articleno = {150},
+ author = {Padhi, Saswat and Jain, Prateek and Perelman, Daniel and Polozov, Oleksandr and Gulwani, Sumit and Millstein, Todd},
+ doi = {10.1145/3276520},
+ issue_date = {November 2018},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {program synthesis, pattern profiles, pattern learning, outlier detection, hierarchical clustering, data profiling},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {FlashProfile: a framework for synthesizing data profiles},
+ url = {https://doi.org/10.1145/3276520},
+ volume = {2},
+ year = {2018}
+}

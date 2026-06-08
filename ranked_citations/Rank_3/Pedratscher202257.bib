@@ -1,0 +1,15 @@
+@article{Pedratscher202257,
+ abstract = {Porting existing monoliths to the Function-as-a-Service (FaaS) (FaaSification) can be very challenging for software developers due to different architectural styles. For a successful porting, developers need to resolve various dependencies, such as method invocations of external packages or user-defined codes, as well as global and local variables used in and after the code block that should be faasified. To bridge the gap and automatize FaaSification, this paper introduces M2FaaS, a FaaSifier that automatically converts a Node.js monolith into a hybrid by faasifying annotated code blocks as serverless functions on multiple FaaS providers. M2FaaS is a novel FaaSifier that resolves many challenges for the resulting monolith to work properly after the FaaSification. Developers may annotate all dependencies that need to be resolved for the generated functions to run properly and specify variables that should be returned by the function to the monolith because they are used later in the monolith. Moreover, M2FaaS is the first FaaSifier that faasifies arbitrary code blocks. The current M2FaaS prototype supports FaaSification of individual functions on two FaaS providers, AWS Lambda and IBM Cloud Functions. Finally, M2FaaS introduces an optional annotation for alternative functions to be invoked in case the primary faasified function fails. The resulting hybrid application invokes the automatically deployed serverless functions, while the original code remains executable. Experiments with four complementary monoliths demonstrate that M2FaaS outperforms state-of-the-art FaaSifiers in terms of development effort by up to 73.3%. Moreover, with the fault tolerance support, M2FaaS finishes all submitted functions, thereby achieving by 18.5% higher throughput than the other FaaSifiers. © 2022 The Author(s)},
+ author = {Pedratscher, Stefan and Ristov, Sasko and Fahringer, Thomas},
+ doi = {10.1016/j.future.2022.04.021},
+ journal = {Future Generation Computer Systems},
+ note = {Cited by: 10; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ pages = {57 - 71},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {M2FaaS: Transparent and fault tolerant FaaSification of Node.js monolith code blocks},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85129960207?origin=resultslist},
+ volume = {135},
+ year = {2022}
+}

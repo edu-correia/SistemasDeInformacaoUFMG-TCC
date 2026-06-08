@@ -1,0 +1,14 @@
+@inproceedings{9139868,
+ abstract = {HipMCL is a high-performance distributed memory implementation of the popular Markov Cluster Algorithm (MCL) and can cluster large-scale networks within hours using a few thousand CPU-equipped nodes. It relies on sparse matrix computations and heavily makes use of the sparse matrix-sparse matrix multiplication kernel (SpGEMM). The existing parallel algorithms in HipMCL are not scalable to Exascale architectures, both due to their communication costs dominating the runtime at large concurrencies and also due to their inability to take advantage of accelerators that are increasingly popular. In this work, we systematically remove scalability and performance bottlenecks of HipMCL. We enable GPUs by performing the expensive expansion phase of the MCL algorithm on GPU. We propose a CPU-GPU joint distributed SpGEMM algorithm called pipelined Sparse SUMMA and integrate a probabilistic memory requirement estimator that is fast and accurate. We develop a new merging algorithm for the incremental processing of partial results produced by the GPUs, which improves the overlap efficiency and the peak memory usage. We also integrate a recent and faster algorithm for performing SpGEMM on CPUs. We validate our new algorithms and optimizations with extensive evaluations. With the enabling of the GPUs and integration of new algorithms, HipMCL is up to 12.4× faster, being able to cluster a network with 70 million proteins and 68 billion connections just under 15 minutes using 1024 nodes of ORNL's Summit supercomputer.},
+ author = {Selvitopi, Oguz and Hussain, Md Taufique and Azad, Ariful and Buluç, Aydın},
+ booktitle = {2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS47924.2020.00022},
+ issn = {1530-2075},
+ keyword = {Clustering algorithms;Sparse matrices;Markov processes;Memory management;Merging;Optimization;Graphics processing units;Markov clustering;HipMCL;SpGEMM},
+ month = {May},
+ number = {},
+ pages = {116-126},
+ title = {Optimizing High Performance Markov Clustering for Pre-Exascale Architectures},
+ volume = {},
+ year = {2020}
+}

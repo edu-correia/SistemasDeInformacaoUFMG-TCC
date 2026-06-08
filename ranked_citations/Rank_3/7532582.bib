@@ -1,0 +1,14 @@
+@inproceedings{7532582,
+ abstract = {A light field (LF) is a 2D array of closely spaced viewpoint images of a static 3D scene. In an interactive LF streaming (ILFS) scenario, a user successively requests desired neighboring viewpoints for observation, and in response the server must transmit pre-encoded data for correct decoding of the requested viewpoint images. Designing frame structures for ILFS is challenging, since at encoding time it is not known what navigation path a user will take, making differential coding very difficult to employ. In this paper, leveraging on a recent work on the merge operator - a new distributed source coding technique that efficiently merges differences among a set of side information (SI) frames into an identical reconstruction - we design redundant frame structures that facilitate ILFS, trading off expected transmission cost with total storage size. Specifically, we first propose a new view interaction model that captures view navigation tendencies of typical users. Assuming a flexible one-frame buffer at the decoder, we then derive a set of recursive equations that compute the expected transmission cost for a navigation lifetime of T views, given the proposed interaction model and a pre-encoded frame structure. Finally, we propose an algorithm that greedily builds a redundant frame structure, minimizing a weighted sum of expected transmission cost and total storage size. Experimental results show that our proposed algorithm generates frame structures with better transmission / storage tradeoffs than competing schemes.},
+ author = {Motz, Benedicte and Cheung, Gene and Ortega, Antonio},
+ booktitle = {2016 IEEE International Conference on Image Processing (ICIP)},
+ doi = {10.1109/ICIP.2016.7532582},
+ issn = {2381-8549},
+ keyword = {Navigation;Mathematical model;Decoding;Computational modeling;Encoding;Streaming media;Buffer storage;interactive streaming;light field;distributed source coding},
+ month = {Sep.},
+ number = {},
+ pages = {1369-1373},
+ title = {Redundant frame structure using M-frame for interactive light field streaming},
+ volume = {},
+ year = {2016}
+}

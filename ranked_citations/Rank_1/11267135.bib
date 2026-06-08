@@ -1,0 +1,14 @@
+@article{11267135,
+ abstract = {Today's mobile applications oftentimes need to detect user-defined complex patterns (e.g., the mysterious “phantom traffic jam”) over data streams to support decision making. It is achieved by continuously creating candidate instances that have partially matched a pattern, and meanwhile aggregating common instances (across patterns) for efficiency enhancement. Existing aggregation approaches are taken in a straightforward or intuitive manner, incurring an exponential solution space and thus having to be executed offline. This paper explores how to significantly accelerate aggregation so as to make pattern detection online executable, even suited to the emerging serverless runtime that involves complicated state synchronizations among distributed cloud functions. By comprehensively investigating a wide variety of mobile data streams, we note the existence of a latent hierarchical cluster structure among complex patterns (in terms of their instance similarities), which can be utilized to quickly aggregate common instances without going through the exponential solution space. To extract the latent information, we devise a content-aware structural entropy minimization algorithm to properly determine intra-cluster patterns, together with a lightweight differential compensation mechanism to maintain those inter-cluster “residual” relations among patterns. Evaluations on real-world vehicle and sensor network data streams illustrate that the resulting approach, dubbed PatternInsight, saves the aggregation time by 10× to 50× and reduces the instance size by 40%.},
+ author = {Wu, Xudong and Ren, Yuyang and Li, Zhenhua and Xu, Fei and Liu, Yunhao and Chen, Guihai},
+ doi = {10.1109/TMC.2025.3636469},
+ issn = {1558-0660},
+ journal = {IEEE Transactions on Mobile Computing},
+ keyword = {Accidents;Phantoms;Mobile applications;Monitoring;Entropy;Urban areas;Roads;Mobile computing;Supply chains;Scalability;Mobile data stream;complex pattern detection;online aggregation;serverless computing;structural information theory},
+ month = {May},
+ number = {5},
+ pages = {6455-6471},
+ title = {PatternInsight: An Online Approach to Complex Pattern Detection Over Mobile Data Streams},
+ volume = {25},
+ year = {2026}
+}

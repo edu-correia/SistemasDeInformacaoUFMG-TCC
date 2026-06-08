@@ -1,0 +1,16 @@
+@article{Lin20251049,
+ abstract = {Training large models for modern recommendation systems requires a substantial number of computational devices and extended periods. Since it is essential to store model checkpoints throughout the training progress for accuracy debugging or mitigating potential failures, checkpointing systems are widely used. However, given that recommendation models can scale to hundreds of gigabytes or more, existing solutions often introduce significant overhead in terms of both storage and I/O. In this paper, we present IncrCP, a checkpointing system specifically designed for recommendation models. Given that only a small fraction of model parameters are modified in each iteration, IncrCP creatively leverages the incremental checkpointing strategy and overcomes the inherent slow recovery problem. To support recovering all states throughout the training process, while also ensuring efficient storage utilization and rapid recovery, IncrCP proposes the 2-D chunk approach. It proactively records changed parameters in the training process as well as their indexes, extracts parameters according to duplicated indexes as independent chunk files, and then orchestrates these chunks in the 2-dimensional linked list. In this way, IncrCP achieves fast recovery by loading less unnecessary parameters and performing less deduplication during recovery. Furthermore, IncrCP includes a selective extraction approach to reduce I/O by avoiding worthless extractions and a concatenate approach to reduce random disk access when recovery. Evaluations show that IncrCP achieves up to 6.6× recovery speedup compared to the naive incremental strategy and saves storage space by 60.4% with slight overhead compared to another recovery-friendly strategy. © Publication rights licensed to the VLDB Endowment.},
+ author = {Lin, Qingyin and Du, Jiangsu and Li, Rui and Chen, Zhiguang and Chen, Wenguang and Xiao, Nong},
+ doi = {10.14778/3717755.3717765},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 1},
+ number = {4},
+ pages = {1049 - 1062},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {IncrCP: Decomposing and Orchestrating Incremental Checkpoints for Effective Recommendation Model Training},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105008761572?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

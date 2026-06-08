@@ -1,0 +1,15 @@
+@article{10.1145/3801101,
+ abstract = {Erasure-coded storage systems adopt multiple redundancy levels to balance reliability and storage efficiency under changing workloads. However, transitioning data across different redundancy configurations incurs high network overhead due to data relocation and parity recomputation, especially under successive transitions. Existing approaches are typically optimized for fixed parameters and lack flexibility and scalability. This paper presents FlexRT, a flexible and efficient redundancy transitioning framework for erasure-coded systems. FlexRT employs a linear-hashing–based stripe placement that decouples stripe layout from coding parameters, enabling zero data relocation across successive transitions. To minimize parity update overhead, FlexRT binds encoding coefficients to physical nodes instead of logical stripe positions, allowing parity to be incrementally updated even when data blocks are reorganized. In addition, a greedy sub-stripe decomposition and matching algorithm maximizes parity reuse and reduces the amount of data involved in recomputation, transforming redundancy transitioning into an efficient split-and-merge process. We implement FlexRT in a C++ prototype and evaluate it through large-scale simulations and Alibaba Cloud experiments. Results show that FlexRT reduces transitioning traffic by 86.0%–94.1% and shortens transition time by 79.4%–89.2% compared with state-of-the-art schemes, while completely eliminating data relocation.},
+ address = {New York, NY, USA},
+ author = {Nan, Fulin and Chen, Liang and Chen, Zehai and Wu, Ronglong and Shen, Zhirong and Bao, Zhifeng and KAPLUN, DMITRII and Shu, Jiwu},
+ doi = {10.1145/3801101},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {Redundancy Transitioning, Erasure Coding},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {FlexRT: Enabling Flexible and Efficient Redundancy Transitioning in Erasure-Coded Systems},
+ url = {https://doi.org/10.1145/3801101},
+ year = {2026}
+}

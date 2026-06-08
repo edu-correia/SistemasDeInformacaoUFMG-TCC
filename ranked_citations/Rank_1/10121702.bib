@@ -1,0 +1,14 @@
+@article{10121702,
+ abstract = {In this article, an energy-efficient spike domain deep-neural-network processor (SNPU) is proposed. Recently, many sparsity-aware processors were proposed to increase energy efficiency. However, because the activation of the real-world network was not high compared to the ideal condition, they were unable to completely employ integrated zero skipping logic. In addition, they employed weight sparsity by pruning, but their zero skipping logic was designed to perform best only under specific sparsity condition. We adopt two-step encoding (neural and computing encoding) and an omni-sparsity handling unit to solve these issues. The input neural encoding eliminates pseudo-random number generators (PRNGs) for the previous encoding, and the output neural encoding reduces redundant memory access. As a result, weight can be reused by a delayed factor, while input spike encoding consumes 99.4% less power compared to the Poisson encoder. Also, SNPU uses computing encoding with multi-level encoding and spiketrain decomposition. The multi-level encoding reduces the time-window size by merging several spikes, and SNPU uses a single shift-and-accumulation (SAC) rather than several accumulations, reducing 43.5% of operations compared to single-level encoding. In addition, the spike-train decomposition is proposed to decrease the number of SACs by computation reuse, resulting in a reduction of 71.8% operations compared to previous spiking neural-network (SNN) processing, which cannot reuse computation result. As a result, the computing encoding reduces the operations by 83.3% compared to SNPU without multi-level encoding and spike-train decomposition. Moreover, SAC units in SNN PE process multi-level spikes while consuming 80.3% less power than accumulator arrays that do not use the two-step encoding. Also, the neuron link and spike-train allocator handle variable time-window sizes, and they can increase PE utilization of SNPU by 23.1%. To sum it up, SNPU shows the state-of-the-art energy efficiency of 13.7 TOPS/W for object detection and 31.5 TOPS/W for ImageNet classification. Moreover, SNPU shows the state-of-the-art power consumption of 63.2  $\mu \text{W}$  for face recognition.},
+ author = {Kim, Sangyeob and Kim, Sangjin and Um, Soyeon and Kim, Soyeon and Lee, Juhyoung and Yoo, Hoi-Jun},
+ doi = {10.1109/JSSC.2023.3270442},
+ issn = {1558-173X},
+ journal = {IEEE Journal of Solid-State Circuits},
+ keyword = {Encoding;Neurons;Energy efficiency;Power demand;Computer architecture;Membrane potentials;Generators;Deep learning application-specific integrated circuit (ASIC);deep neural network (DNN);sparsity exploration;spiking neural network (SNN);zero skipping},
+ month = {Oct},
+ number = {10},
+ pages = {2812-2825},
+ title = {SNPU: An Energy-Efficient Spike Domain Deep-Neural-Network Processor With Two-Step Spike Encoding and Shift-and-Accumulation Unit},
+ volume = {58},
+ year = {2023}
+}

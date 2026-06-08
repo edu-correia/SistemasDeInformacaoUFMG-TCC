@@ -1,0 +1,16 @@
+@article{Brinkmann2025,
+ abstract = {Key-value stores in Cloud environments can contain more than 2<sup>45</sup> unique elements and be larger than 100 PByte. B<sup>+</sup>-Trees are well suited for these larger-than-memory datasets and seamlessly index data stored on thousands of secondary storage devices. Unfortunately, it is often uneconomical to even store all inner tree nodes in memory for these dataset sizes. Therefore, lookup performance is affected by the additional IOs for reading inner nodes. This number of inner nodes can be reduced by increasing the size of leaf nodes. We propose HLN-Trees, which support huge leaf nodes without increasing the IO sizes for individual index operations. They partition leaf nodes in arrays of independent subnodes and combine ideas from BD-trees with rebalancing, learning key deviations, and storing locality predictors. HLN-Trees have been initially designed for uniform random key distributions and support arbitrary key distributions through an additional layer of hashing in leaf nodes. HLN-Trees decrease the number of inner nodes by up to 256× for uniform random key distributions and by 16× to 64× for arbitrary ones compared to B<sup>+</sup>-Trees, while keeping their performance at the same level even at high concurrency levels. We show analytically and through real-world and synthetic benchmarks that HLN-Trees also outperform state-of-the-art learned indexes for secondary storage. © 2025 Copyright held by the owner/author(s).},
+ author = {Brinkmann, André and Salkhordeh, Reza and Wiegert, Florian and Wang, Peng and Xin, Yao and Chen, Renhai and Keji, Huang and Zhang, Gong},
+ doi = {10.1145/3707641},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 0; All Open Access; Hybrid Gold Open Access},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HLN-Tree: A Memory-efficient B+-Tree with Huge Leaf Nodes and Locality Predictors},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105003451889?origin=resultslist},
+ volume = {21},
+ year = {2025}
+}

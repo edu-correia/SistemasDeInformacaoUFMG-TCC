@@ -1,0 +1,14 @@
+@article{9090881,
+ abstract = {In this paper, we propose a novel Convolutional Neural Network (CNN) based video coding technique using a video prediction network (VPN) to support enhanced motion prediction in High Efficiency Video Coding (HEVC). Specifically, we design a CNN VPN to generate a virtual reference frame (VRF), which is synthesized using previously coded frames, to improve coding efficiency. The proposed VPN uses two sub-VPN architectures in cascade to predict the current frame in the same time instance. The VRF is expected to have higher temporal correlation than a conventional reference frame, and, thus it is substituted for a conventional reference frame. The proposed technique is incorporated into the HEVC inter-coding framework. Particularly, the VRF is managed in a HEVC reference picture list, so that each prediction unit (PU) can choose a better prediction signal through Rate-Distortion optimization without any additional side information. Furthermore, we modify the HEVC inter-prediction mechanisms of Advanced Motion Vector Prediction and Merge modes adaptively when the current PU uses the VRF as a reference frame. In this manner, the proposed technique can exploit the PU-wise multi-hypothesis prediction techniques in HEVC. Since the proposed VPN can perform both the video interpolation and extrapolation, it can be used for Random Access (RA) and Low Delay B (LD) coding configurations. It is shown in experimental results that the proposed technique provides -2.9% and -5.7% coding gains, respectively, in RA and LD coding configurations as compared to the HEVC reference software, HM 16.6 version.},
+ author = {Lee, Jung-Kyung and Kim, Nayoung and Cho, Seunghyun and Kang, Je-Won},
+ doi = {10.1109/ACCESS.2020.2993566},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Virtual private networks;Encoding;Video coding;Kernel;Interpolation;Extrapolation;Convolution;Video coding;deep learning;convolutional neural network;video prediction network;inter-prediction;virtual reference frame;HEVC;VVC},
+ month = {},
+ number = {},
+ pages = {95906-95917},
+ title = {Deep Video Prediction Network-Based Inter-Frame Coding in HEVC},
+ volume = {8},
+ year = {2020}
+}

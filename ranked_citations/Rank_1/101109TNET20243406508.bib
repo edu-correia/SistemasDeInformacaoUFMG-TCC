@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2024.3406508,
+ abstract = {Fast Internet-wide scanning is essential for network situational awareness and asset evaluation. However, the vast IPv6 address space makes brute-force scanning infeasible. Despite advancements in state-of-the-art methods, they do not work in seedless regions and suffer low detection efficiency and speed in regions with known active IPv6 addresses (i.e., seed addresses). Moreover, the collected active address list (i.e., IPv6 hitlist) with low coverage cannot truly represent the active IPv6 address landscape of the Internet. This paper introduces AddrMiner, a fast, efficient, and comprehensive global active IPv6 address detection system. We design a systematic active IPv6 address detection strategy that divides the IPv6 space into two detection scenarios based on the presence or absence of seed addresses to discover active IPv6 addresses from scratch and from few to many. In the seedless regions, we present AddrMiner-N, leveraging a multi-level association policy to probe active addresses. It fills the gap of address detection in seedless regions and successfully discovers active addresses in 39,899 BGP prefixes without seed addresses, with a &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$1.03times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; higher hit rate, &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$30sim 911times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; higher speed, and &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$2.7times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; broader coverage, compared to existing solutions. In the regions with seed addresses, our method AddrMiner-S dynamically generates target addresses using reinforcement learning. Compared to state-of-the-art methods, AddrMiner-S achieves an impressive 56.3% hit rate and a discovery speed of 839.0/s, which is &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$1.9sim 2153times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; and &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$1.5sim 755times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; of existing works, respectively. Finally, we deploy AddrMiner and discover 2.1B active IPv6 addresses, including 1.7B de-aliased active addresses and 0.4B aliased addresses, through continuous probing for three years.},
+ author = {Song, Guanglei and He, Lin and Zhu, Feiyu and Lin, Jinlei and Zhang, Wenjian and Fan, Linna and Li, Chenglong and Wang, Zhiliang and Yang, Jiahai},
+ doi = {10.1109/tnet.2024.3406508},
+ issn = {1063-6692},
+ issue_date = {Oct. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {June},
+ number = {5},
+ numpages = {18},
+ pages = {3870–3887},
+ publisher = {IEEE Press},
+ title = {&lt;italic&gt;AddrMiner&lt;/italic&gt;: A Fast, Efficient, and Comprehensive Global Active IPv6 Address Detection System},
+ url = {https://doi.org/10.1109/TNET.2024.3406508},
+ volume = {32},
+ year = {2024}
+}

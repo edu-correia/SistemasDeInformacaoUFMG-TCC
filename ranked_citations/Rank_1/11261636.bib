@@ -1,0 +1,14 @@
+@article{11261636,
+ abstract = {Kokkidio is a newly developed C++ template library that bridges the performance portability framework Kokkos and its strength in utilising GPUs with the expressive syntax and CPU optimisations of the linear algebra library Eigen. The unified abstractions provided by Kokkidio enable both simple data management as well as clear, succinct compute code in kernel functors, where a novel iteration/ functor parameter performs target-specific grouping of operations. When compiled for CPUs, this approach distributes contiguous data segments to OpenMP threads, while preserving Eigen’s loop abstractions to enable explicit vectorisation, thus utilising both thread- and data-level parallelism. Compiling the same source code for accelerators, such as GPUs, leverages Kokkos’ parallel dispatch instead, achieving compatibility with all prevalent GPU backends (CUDA, ROCm, SYCL,…). A comprehensive evaluation across GPUs and CPUs by all major vendors shows Kokkidio providing significantly improved performance portability over Kokkos: With the fraction of best observed runtime as the efficiency metric, Kokkidio achieves a near-optimal harmonic mean of 95 % efficiency across all microbenchmarks and tested hardware, offering a marked improvement over to Kokkos’ 59 %, thus effectively merging Kokkos’ GPU and Eigen’s CPU performance, powerful math functions, and legibility into one framework.},
+ author = {Steffen, Lennart and Hinkelmann, Reinhard},
+ doi = {10.1109/ACCESS.2025.3635265},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Graphics processing units;Codes;Libraries;Syntactics;Kernel;Vectors;Hardware;C++ languages;Optimization;Central Processing Unit;Exascale;GPU computing;high-performance computing;parallel computing;performance portability},
+ month = {},
+ number = {},
+ pages = {203762-203779},
+ title = {Kokkidio: Fast, Expressive, Portable Code, Based on Kokkos and Eigen},
+ volume = {13},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@conference{Chen2025724,
+ abstract = {Seasonal-trend decomposition has been widely used in time series analysis, e.g., time series forecasting and anomaly detection. Existing seasonal-trend decomposition methods, such as STL and its variations, assume that the time series is complete and sorted by timestamp. However, popular time series databases usually adopt LSM-Tree based storage, which stores data in pages not necessarily in time order. Moreover, time series stored in databases often suffer from missing values due to sensor failures, further compromising their integrity. A straightforward idea is to first merge and sort the data of different pages, and then decompose them. It obviously leads to heavy online computation, repeated calculations for multiple queries, and still cannot deal with the remaining missing data. In this paper, we propose OneRoundSTL, which pre-calculates offline some results in each individual page and concatenates the pre-calculated results online at query time to obtain the decomposition outcome. OneRoundSTL has been deployed and included as a function in an open source time series database, Apache IoTDB. Experiments on synthetic and real-world datasets in the system show that our OneRoundSTL exhibits high efficiency, far exceeding the state-of-the-art methods, while keeping decomposition effect.  © 2025 IEEE.},
+ author = {Chen, Zijie and Song, Shaoxu and Wang, Jianmin},
+ doi = {10.1109/ICDE65448.2025.00060},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 0},
+ pages = {724 - 736},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {OneRoundSTL: In-Database Seasonal-Trend Decomposition},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105015401611?origin=resultslist},
+ year = {2025}
+}

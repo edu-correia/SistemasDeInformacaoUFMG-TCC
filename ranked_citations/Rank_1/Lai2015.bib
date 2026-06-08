@@ -1,0 +1,15 @@
+@conference{Lai2015,
+ abstract = {Users store rapidly increasing amount of data into the cloud. Cloud storage service is often characterized as having a large data set and few deletes. Hosting the service on a conventional system consisting of servers of powerful CPUs and managed by either a key-value (KV) system or a file system is not efficient. First, as demand on storage capacity grows much faster than that on CPU power, existing server configurations can lead to CPU under-utilization and inadequate storage. Second, as data durability is of paramount importance and storage capacity can be limited, a data protection scheme relying on data replication is not space efficient. Third, because of the unique distribution of data object size (mostly a few KBytes), hard disks may suffer from unnecessarily high request rate (when data is stored as KV pairs and need constant re-organization) or too many random writes (when data is stored as relatively small files). In Baidu this inefficiency has become an urgent issue as data is uploaded into the storage at an increasingly high rate and both the user population and the system are rapidly expanding. To address this issue, we adopt a customized compact server design based on the ARM processors and replace three-copy replication for data protection with erasure coding to enable low-power and high-density storage. Furthermore, there is a huge number of objects stored in the system, such as those for photos, MP3 music, and documents, but their sizes do not allow efficient operations in the conventional KV systems. To this end we propose an innovative architecture separating metadata and data managements to enable efficient data coding and storage. The resulting production system, called Atlas, is a highly scalable, reliable, and cost-effective KV store supporting Baidu's cloud storage service. © 2015 IEEE.},
+ author = {Lai, Chunbo and Jiang, Song and Yang, Liqiong and Lin, Shiding and Sun, Guangyu and Hou, Zhenyu and Cui, Can and Cong, Jason},
+ doi = {10.1109/MSST.2015.7208288},
+ journal = {IEEE Symposium on Mass Storage Systems and Technologies},
+ note = {Cited by: 133},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Atlas: Baidu's key-value storage system for cloud data},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84951979026?origin=resultslist},
+ volume = {2015-August},
+ year = {2015}
+}

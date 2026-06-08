@@ -1,0 +1,18 @@
+@article{10.1145/3729377,
+ abstract = {Log parsing serves as an essential prerequisite for various log analysis tasks. Recent advancements in this field have improved parsing accuracy by leveraging the semantics in logs through fine-tuning large language models (LLMs) or learning from in-context demonstrations. However, these methods heavily depend on high-quality labeled examples to achieve optimal performance. In practice, continuously collecting high-quality labeled data is challenging since logs are huge in volume and under frequent evolution, leading to performance degradation or heavy maintenance efforts for existing log parsers after deployment. To address this issue, we propose LUNAR, an unsupervised LLM-based method for efficient and off-the-shelf log parsing. Our key insight is that while LLMs may struggle with direct log parsing, their performance can be significantly enhanced through comparative analysis across multiple logs that differ only in their parameter parts. We refer to such groups of logs as Log Contrastive Units (LCUs). Given the vast volume of logs, obtaining LCUs is difficult. Therefore, LUNAR introduces a hybrid ranking scheme to effectively search for LCUs by jointly considering the commonality and variability among logs. Additionally, LUNAR crafts a novel parsing prompt for LLMs to identify contrastive patterns and extract meaningful log structures from LCUs. Experiments on large-scale public and industrial log datasets demonstrate that LUNAR significantly outperforms state-of-the-art log parsers in terms of accuracy and efficiency, providing an effective and practical solution for real-world deployment.},
+ address = {New York, NY, USA},
+ articleno = {FSE107},
+ author = {Huang, Junjie and Jiang, Zhihan and Chen, Zhuangbin and Lyu, Michael},
+ doi = {10.1145/3729377},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {large language models, log analysis, log parsing, unsupervised learning},
+ month = {June},
+ number = {FSE},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {No More Labelled Examples? An Unsupervised Log Parser with LLMs},
+ url = {https://doi.org/10.1145/3729377},
+ volume = {2},
+ year = {2025}
+}

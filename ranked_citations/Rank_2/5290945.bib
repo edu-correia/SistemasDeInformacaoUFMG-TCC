@@ -1,0 +1,14 @@
+@inproceedings{5290945,
+ abstract = {We propose a pipelined field-merge architecture for memory-efficient and high-throughput large-scale string matching (LSSM). Our proposed architecture partitions the (8-bit) character input into several bit-field inputs of smaller (usually 2-bit) widths. Each bit-field input is matched in a partial state machine (PSM) pipeline constructed from the respective bit-field patterns. The matching results from all the bit-fields in every pipeline stage are then merged with the help of an auxiliary table (ATB). This novel architecture essentially divides the LSSM problem with a continuous stream of input characters into two disjoint and simpler sub-problems: 1) O(character_bitwidth) number of pipeline traversals, and 2) O(pattern_length) number of table lookups. It is naturally suitable for implementation on FPGA or VLSI with on-chip memory. Compared to the bit-split approach, our field-merge implementation on FPGA requires 1/5 to 1/13 the total memory while achieving 25% to 54% higher clock frequencies.},
+ author = {Yang, Yi-Hua Edward and Prasanna, Viktor K.},
+ booktitle = {2009 17th IEEE Symposium on Field Programmable Custom Computing Machines},
+ doi = {10.1109/FCCM.2009.17},
+ issn = {},
+ keyword = {Memory architecture;Large-scale systems;Pipelines;Field programmable gate arrays;Pattern matching;Impedance matching;Table lookup;Very large scale integration;Clocks;Frequency},
+ month = {April},
+ number = {},
+ pages = {104-111},
+ title = {Memory-Efficient Pipelined Architecture for Large-Scale String Matching},
+ volume = {},
+ year = {2009}
+}

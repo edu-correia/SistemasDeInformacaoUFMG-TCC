@@ -1,0 +1,16 @@
+@article{Broneske20191296,
+ abstract = {Efficient evaluation of selection predicates is a performance-critical task, for instance to reduce intermediate result sizes being the input for further operations. With analytical queries getting more and more complex, the number of evaluated selection predicates per query and table rises, too. This leads to numerous multi-column selection predicates. Recent approaches to increase the performance of main-memory databases for selection-predicate evaluation aim at optimally exploiting the speed of the CPU by using accelerated scans. However, scanning each column one by one leaves tuning opportunities open that arise if all predicates are considered together. To this end, we introduce Elf, an index structure that is able to exploit the relation between several selection predicates. Elf features cache sensitivity, an optimized storage layout, fixed search paths, and slight data compression. In a large-scale evaluation, we compare its query performance to state-of-the-art approaches and a sequential scan using SIMD capabilities. Our results indicate a clear superiority of our approach for queries returning less than 10 percent of all tuples - a selectivity almost one order of magnitude larger than observed for related indexing approaches. For TPC-H queries with multi-column selection predicates, we achieve a speedup between factor five and two orders of magnitude, mainly depending on the selectivity of the predicates. Further scaling experiments reveal that for large data sets, these speedup factors are expected to increase, due to more densely populated data spaces. Finally, our results indicate that using a delta-store like concept to support periodic insertions results in virtually no performance penalty for reasonable sizes of a write-optimized Elf as delta store. © 1989-2012 IEEE.},
+ author = {Broneske, David and Koppen, Veit and Saake, Gunter and Schaler, Martin},
+ doi = {10.1109/TKDE.2018.2825349},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 7},
+ number = {7},
+ pages = {1296 - 1311},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Evaluation of Multi-Column Selection Predicates in Main-Memory},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85045345173?origin=resultslist},
+ volume = {31},
+ year = {2019}
+}

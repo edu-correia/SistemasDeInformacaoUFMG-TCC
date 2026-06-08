@@ -1,0 +1,14 @@
+@inproceedings{11112999,
+ abstract = {The shattered and overlapped Level-0 data organization is the primary cause of write stall and read amplification problems in LSM-Tree-based Key-Value (KV) stores: (1) Level-0 to Level-1 compaction involves a large amount of data which induces write stalls, and (2) A point lookup needs to access multiple files in Level-0 which leads to significant read amplification. To address the problem, we propose BL-Tree by replacing the shattered Level-0 in LSM-Tree with a B+-Tree in byte-addressable Persistent Memory (PM). The sorted B+-Tree of Level-0 can accelerate the point lookup speed and reduce read/write amplification. BL-Tree further conducts the locality-aware and parallel compaction from the B+-Tree in PM (Level-0) to the lower levels of LSM-Tree in SSDs by only moving cold data downward, thus alleviating the write stalls and reducing the read/write amplification simultaneously. The extensive experiments on the prototype of BL- Tree show that it definitely avoids the write stalls and significantly reduces the read/write amplification. As a result, BL-Tree reduces the P99 tail latency by 65.2 × than LevelDB-PM and speeds up the throughput by more than 2 × under workloads with spatial locality than other KV stores.},
+ author = {Wu, Suzhen and Wang, Zuocheng and Wang, Shengzhe and Chen, Jiahong and Du, Chunfeng and Zhou, Ke and Zhang, Jie and Mao, Bo},
+ booktitle = {2025 IEEE 41st International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE65448.2025.00146},
+ issn = {2375-026X},
+ keyword = {Prototypes;Telecommunication traffic;Organizations;Throughput;Data engineering;Compaction;Communication switching;Persistent KV Store;B+-Tree;LSM-Tree},
+ month = {May},
+ number = {},
+ pages = {1910-1923},
+ title = {BL-Tree: The Best of Both Worlds by Combining B+- Tree on Top and LSM - Tree on Bottom},
+ volume = {},
+ year = {2025}
+}

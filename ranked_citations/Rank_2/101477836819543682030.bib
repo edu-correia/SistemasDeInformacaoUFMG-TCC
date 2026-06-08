@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3682030,
+ abstract = {Autonomous database management systems (DBMSs) aim to optimize themselves automatically without human guidance. They rely on machine learning (ML) models that predict their run-time behavior to evaluate whether a candidate configuration is beneficial without the expensive execution of queries. However, the high cost of collecting the training data to build these models makes them impractical for real-world deployments. Furthermore, these models are instance-specific and thus require retraining whenever the DBMS's environment changes. State-of-the-art methods spend over 93% of their time running queries for training versus tuning.To mitigate this problem, we present the Boot framework for automatically accelerating training data collection in DBMSs. Boot utilizes macro- and micro-acceleration (MMA) techniques that modify query execution semantics with approximate run-time telemetry and skip repetitive parts of the training process. To evaluate Boot, we integrated it into a database gym for PostgreSQL. Our experimental evaluation shows that Boot reduces training collection times by up to 268\texttimes{} with modest degradation in model accuracy. These results also indicate that our MMA-based approach scales with dataset size and workload complexity.},
+ author = {Lim, Wan Shen and Ma, Lin and Zhang, William and Butrovich, Matthew and Arch, Samuel and Pavlo, Andrew},
+ doi = {10.14778/3681954.3682030},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {3680–3693},
+ publisher = {VLDB Endowment},
+ title = {Hit the Gym: Accelerating Query Execution to Efficiently Bootstrap Behavior Models for Self-Driving Database Management Systems},
+ url = {https://doi.org/10.14778/3681954.3682030},
+ volume = {17},
+ year = {2024}
+}

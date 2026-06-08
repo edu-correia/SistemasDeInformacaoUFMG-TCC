@@ -1,0 +1,15 @@
+@article{Riegger2024,
+ abstract = {Modern persistent Key/Value-Stores operate on updatable datasets — massively exceeding the size of available main memory. Tree-based key/value storage management structures became particularly popular in storage engines. B<sup>+</sup>-Trees allow constant search performance, however write-heavy workloads yield inefficient write patterns to secondary storage devices and poor performance characteristics. LSM-Trees overcome this issue by horizontal partitioning fractions of data — small enough to fully reside in main memory, but require frequent maintenance to sustain search performance. To this end, firstly, we propose Multi-Version Partitioned BTrees (MV-PBT) as sole storage and index management structure in key-sorted storage engines like Key/Value-Stores. Secondly, we compare MV-PBT against LSM-Trees. The logical horizontal partitioning in MV-PBT allows leveraging recent advances in modern B<sup>+</sup>-Tree techniques in a small transparent and memory resident portion of the structure. Structural properties sustain steady read performance, even on historical data, and yield efficient write patterns as well as reduced write-amplification. We integrate MV-PBT in the WiredTiger key/value storage engine. MV-PBT offers an up to 2x increased steady throughput in comparison to LSM-Trees and several orders of magnitude in comparison to B<sup>+</sup>-Trees in a YCSB workload. Moreover, MV-PBT exhibits robust time-travel query performance and outperforms LSM-Trees by 20% and B<sup>+</sup>-Trees by an order of magnitude. © 2024 The Authors},
+ author = {Riegger, Christian and Petrov, Ilia},
+ doi = {10.1016/j.is.2024.102403},
+ journal = {Information Systems},
+ note = {Cited by: 2; All Open Access; Bronze Open Access; Green Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Storage Management with Multi-Version Partitioned BTrees},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85195423743?origin=resultslist},
+ volume = {125},
+ year = {2024}
+}

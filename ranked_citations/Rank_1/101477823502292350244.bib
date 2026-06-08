@@ -1,0 +1,17 @@
+@article{10.14778/2350229.2350244,
+ abstract = {Many systems for big data analytics employ a data flow abstraction to define parallel data processing tasks. In this setting, custom operations expressed as user-defined functions are very common. We address the problem of performing data flow optimization at this level of abstraction, where the semantics of operators are not known. Traditionally, query optimization is applied to queries with known algebraic semantics. In this work, we find that a handful of properties, rather than a full algebraic specification, suffice to establish reordering conditions for data processing operators. We show that these properties can be accurately estimated for black box operators by statically analyzing the general-purpose code of their user-defined functions.We design and implement an optimizer for parallel data flows that does not assume knowledge of semantics or algebraic properties of operators. Our evaluation confirms that the optimizer can apply common rewritings such as selection reordering, bushy join-order enumeration, and limited forms of aggregation push-down, hence yielding similar rewriting power as modern relational DBMS optimizers. Moreover, it can optimize the operator order of nonrelational data flows, a unique feature among today's systems.},
+ author = {Hueske, Fabian and Peters, Mathias and Sax, Matthias J. and Rheinl\"{a}nder, Astrid and Bergmann, Rico and Krettek, Aljoscha and Tzoumas, Kostas},
+ doi = {10.14778/2350229.2350244},
+ issn = {2150-8097},
+ issue_date = {July 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {1256–1267},
+ publisher = {VLDB Endowment},
+ title = {Opening the black boxes in data flow optimization},
+ url = {https://doi.org/10.14778/2350229.2350244},
+ volume = {5},
+ year = {2012}
+}

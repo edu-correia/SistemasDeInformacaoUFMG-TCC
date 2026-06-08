@@ -1,0 +1,18 @@
+@article{10.1145/3643749,
+ abstract = {Typestate analysis is a commonly used static technique to identify software vulnerabilities by assessing if a sequence of operations violates temporal safety specifications defined by a finite state automaton. Path sensitive typestate analysis (PSTA) offers a more precise solution by eliminating false alarms stemming from infeasible paths. To improve the efficiency of path-sensitive analysis, previous efforts have incorporated sparse techniques, with a focus on analyzing the path feasibility of def-use chains. However, they cannot be directly applied to detect typestate vulnerabilities requiring temporal information within the control flow graph like use-to-use information.In this paper, we introduce FGS, a Fast Graph Simplification approach designed for PSTA by retaining multi-point temporal information while harnessing the advantages of sparse analysis. We propose a new multi-point slicing technique that captures the temporal and spatial correlations within the program. By doing so, it optimizes the program by only preserving the necessary program dependencies, resulting in a sparser structure for precision-preserving PSTA. Our graph simplification approach, as a fast preprocessing step, offers several benefits for existing PSTA algorithms. These include a more concise yet precision-preserving graph structure, decreased numbers of variables and constraints within execution states, and simplified path feasibility checking. As a result, the overall efficiency of the PSTA algorithm exhibits significant improvement.We evaluated FGS using NIST benchmarks and ten real-world large-scale projects to detect four types of vulnerabilities, including memory leaks, double-frees, use-after-frees, and null dereferences. On average, when comparing FGS against ESP (baseline PSTA), FGS reduces 89% of nodes, 86% of edges, and 88% of calling context of the input graphs, obtaining a speedup of 116\texttimes{} and a memory usage reduction of 93% on the large projects evaluated. Our experimental results also demonstrate that FGS outperforms six open-source tools (IKOS, ClangSA, Saber, Cppcheck, Infer, and Sparrow) on the NIST benchmarks, which comprises 846 programs. Specifically, FGS achieves significantly higher precision, with improvements of up to 171% (42% on average), and detects a greater number of true positives, with enhancements of up to 245% (52% on average). Moreover, among the ten large-scale projects, FGS successfully found 105 real bugs with a precision rate of 82%. In contrast, our baseline tools not only missed over 42% of the real bugs but also yielded an average precision rate of just 13%.},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Cheng, Xiao and Ren, Jiawei and Sui, Yulei},
+ doi = {10.1145/3643749},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Graph simplification, multi-point slicing, Path-sensitive typestate analysis},
+ month = {July},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Fast Graph Simplification for Path-Sensitive Typestate Analysis through Tempo-Spatial Multi-Point Slicing},
+ url = {https://doi.org/10.1145/3643749},
+ volume = {1},
+ year = {2024}
+}

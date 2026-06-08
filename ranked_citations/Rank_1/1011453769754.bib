@@ -1,0 +1,18 @@
+@article{10.1145/3769754,
+ abstract = {Modern stream processing engines (SPEs) must handle massive real-time data streams under strict latency and throughput requirements. However, conventional SPEs are constrained by their software parallelization strategies (e.g., queue-based data re-partitioning, high synchronization overheads, etc.), which prevent efficient utilization of modern hardware capabilities, ultimately limiting performance scalability. In this paper, we present FlexStream, a novel SPE that leverages hardware offloading to redesign the parallelization strategies and overcome these limitations. By offloading data re-partitioning to hardware and integrating a coupled network-executor model, FlexStream maximizes resource utilization, achieving up to 95% network bandwidth saturation. To address the load imbalance challenges introduced by this design, we implement a lock-free state backend with efficient state migration mechanisms. Overall, FlexStream achieves throughput improvements of 1.95 \texttimes{} - 3.35 \texttimes{} compared to state-of-the-art SPEs (e.g., LightSaber) across six real-world streaming analytics applications. FlexStream cuts latency spikes by 71.9% and migration time by 66.8% during state migration, highlighting the benefits of hardware-software co-design in SPEs. Our work underscores the potential of hardware-software co-design in SPEs, offering a scalable, elastic solution for real-time analytics.},
+ address = {New York, NY, USA},
+ articleno = {289},
+ author = {Guo, Zhengyan and Zhang, Mingxing and Shan, Yingdi and Chen, Kang and Jiang, Jinlei and Wu, Yongwei},
+ doi = {10.1145/3769754},
+ issue_date = {December 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {elasticity, hardware offloading, real-time analytics, stream management},
+ month = {December},
+ number = {6},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Accelerating Stream Processing Engines via Hardware Offloading},
+ url = {https://doi.org/10.1145/3769754},
+ volume = {3},
+ year = {2025}
+}

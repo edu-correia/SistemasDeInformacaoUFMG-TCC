@@ -1,0 +1,14 @@
+@inproceedings{11486388,
+ abstract = {Reliable detection of cyclist and person samples in urban traffic is critical for high-safety autonomous driving systems, traffic analytics, and intelligent transportation systems. These classes present complementary challenges, as pedestrians vary widely in pose and scale, while cyclists show high intra-class variation, frequent occlusions, and ambiguous context, similar to pedestrians walking bicycles. We built a cyclist detector for urban traffic by combining COCO, a cyclist-focused image set, and in-house driving videos. Because most public datasets lack an explicit cyclist label, we extract it from person and bicycle detections, merge them into a single cyclist box if their Intersection over Union (IoU) exceeds $\tau=0.3$, and then perform targeted manual corrections. Using these cyclist-enriched data, we fine-tune YOLOv8n, YOLOv11n, and Faster R-CNN under the same training and evaluation protocol to jointly detect person and cyclist. On a held-out test split, fine-tuning with enriched labels significantly improves cyclist detection over off-the-shelf models. YOLOv11n obtains mAP@ 0.5 $=0.818$, cyclist $\mathrm{AP} \text{@} 0.5: 0.95=0.47$, and 74 FPS, achieving the best accuracy-latency balance; YOLOv8n runs at 84 FPS, which is faster with a small drop in recall, while Faster R-CNN yields the highest recall but lower precision and much higher latency. We report detailed per-class precision-recall curves, mAP scores at multiple IoU thresholds, and discuss common failure modes such as occlusion, rider–bicycle disambiguation, and crowded scenes. The code and scripts required for data preparation, training, and evaluation, to ensure repeatability, are available on GitHub at https://github.com/manikantakotthapalli/Cyclist-detection-using-YOLO.},
+ author = {Izadkhah, Saba and Kotthapalli, Manikanta and Rekabdar, Banafsheh and Wagner, Andrew and Kothuri, Sirisha and McNeil, Nathan},
+ booktitle = {2026 International Conference on Semantic Computing (ICSC)},
+ doi = {10.1109/ICSC67292.2026.00027},
+ issn = {2472-9671},
+ keyword = {Internet of Things;Protocols;Videos;Location awareness;Radio access networks;Regional area networks;Communication systems;Internet;Video equipment;Mobile communication;Cyclist detection;Person detection;YOLO;Faster R-CNN;Urban perception;Object detection},
+ month = {Feb},
+ number = {},
+ pages = {140-147},
+ title = {Cyclist Detection in Urban Traffic Using Fine-Tuned YOLO Models and Diverse Real-World Video Data},
+ volume = {},
+ year = {2026}
+}

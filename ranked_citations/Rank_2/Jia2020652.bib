@@ -1,0 +1,15 @@
+@conference{Jia2020652,
+ abstract = {—Log-Structured Merge (LSM) tree based key-value stores are widely deployed in data centers. Due to its complex internal structures, appropriately configuring a modern key-value data store system, which can have more than 50 parameters with various hardware and system settings, is a highly challenging task. Currently, the industry still heavily relies on a traditional, experience-based, hand-tuning approach for performance tuning. Many simply adopt the default setting out of the box with no changes. Auto-tuning, as a self-adaptive solution, is thus highly appealing for achieving optimal or near-optimal performance in real-world deployment. In this paper, we quantitatively study and compare five optimization methods for auto-tuning the performance of LSM-tree based key-value stores. In order to evaluate the auto-tuning processes, we have conducted an exhaustive set of experiments over RocksDB, a representative LSM-tree data store. We have collected over 12,000 experimental records in 6 months, with about 2,000 software configurations of 6 parameters on different hardware setups. We have compared five representative algorithms, in terms of throughput, the 99th percentile tail latency, convergence time, real-time system throughput, and the iteration process, etc. We find that multi-objective optimization (MOO) methods can achieve a good balance among multiple targets, which satisfies the unique needs of key-value services. The more specific Quality of Service (QoS) requirements users can provide, the better performance these algorithms can achieve. We also find that the number of concurrent threads and the write buffer size are the two most impactful parameters determining the throughput and the 99th percentile tail latency across different hardware and workloads. Finally, we provide system-level explanations for the auto-tuning results and also discuss the associated implications for system designers and practitioners. We hope this work will pave the way towards a practical, high-speed auto-tuning solution for key-value data store systems. ©2020 IEEE},
+ author = {Jia, Yichen and Chen, Feng},
+ doi = {10.1109/ICDCS47774.2020.00113},
+ journal = {Proceedings - International Conference on Distributed Computing Systems},
+ note = {Cited by: 14},
+ pages = {652 - 664},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Kill two birds with one stone: Auto-tuning RocksDB for High Bandwidth and Low Latency},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85101970138?origin=resultslist},
+ volume = {2020-November},
+ year = {2020}
+}

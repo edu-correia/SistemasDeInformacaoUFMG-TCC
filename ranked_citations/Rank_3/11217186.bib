@@ -1,0 +1,14 @@
+@article{11217186,
+ abstract = {Recent advancements in hyperspectral anomaly detection (HAD) utilizing deep learning have garnered significant attention due to their superior performance. However, most existing methods based on convolutional neural networks (CNNs) and Transformer focus on extracting local and global features separately and assume that the background resides in a single subspace for reconstruction, thereby reducing the quality of the reconstructed background and decreasing the accuracy of HAD. Moreover, although incorporating the prior physical knowledge into the loss function can enhance the performance of the deep learning networks, it also increases the number of hyperparameters and complicates the tuning process. To address these issues, we propose a deep prior Mamba network (DPMN) for HAD, which primarily consists of two components: the abundance generation module (AGM) and the background reconstruction module (BRM). Specifically, AGM employs convolutional layers to extract local information and introduces Mamba to capture long-range dependencies, achieving feature extraction from local to global. Subsequently, BRM utilizes a learnable background dictionary to divide the background into multiple subspaces for reconstruction, realizing accurate background reconstruction while effectively suppressing the interference of anomalies on background reconstruction. Furthermore, to fully leverage the intrinsic properties of hyperspectral images (HSIs), we incorporate a regularization term into the loss function, merging the total variation (TV) with the low-rank representation (LRR), which not only exploits spatial smoothness and low ranknes but also reduces the number of hyperparameters. Experimental results on eight publicly available real datasets demonstrate that our method significantly outperforms other state-of-the-art (SOTA) methods. In addition, our code is available at: https://github.com/I3ab/DPMN},
+ author = {Li, Linwei and Wang, Bin},
+ doi = {10.1109/TGRS.2025.3625232},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Accuracy;Transformers;TV;Feature extraction;Deep learning;Anomaly detection;Tensors;Image reconstruction;Hyperspectral imaging;Dictionaries;Anomaly detection;hyperspectral images (HSIs);low-rank representation (LRR);Mamba;total variation (TV)},
+ month = {},
+ number = {},
+ pages = {1-16},
+ title = {DPMN: Deep Prior Mamba Network for Hyperspectral Anomaly Detection},
+ volume = {63},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10771329,
+ abstract = {Software projects are dependent on many third-party libraries, therefore high-risk vulnerabilities can propagate through the dependency chain to downstream projects. Owing to the subjective nature of patch management, software vendors commonly fix vulnerabilities silently. Silent vulnerability fixes cause downstream software to be unaware of urgent security issues in a timely manner, posing a security risk to the software. Presently, most of the existing works for vulnerability fix identification only consider the changed code as a sequential textual sequence, ignoring the structural information of the code.In this paper, we propose GRAPE, a GRAph-based Patch rEpresentation that aims to 1) provide a unified framework for getting vulnerability fix patches representation; and 2) enhance the understanding of the intent and potential impact of patches by extracting structural information of the code. GRAPE employs a novel joint graph structure (MCPG) to represent the syntactic and semantic information of silent fix patches and embeds both nodes and edges. Subsequently, a carefully designed graph convolutional neural network (NE-GCN) is utilized to fully learn structural features by leveraging the attributes of the nodes and edges. Moreover, we construct a dataset containing 2251 silent fixes. For the experimental section, we evaluated patch representation on three tasks, including vulnerability fix identification, vulnerability types classification, and vulnerability severity classification. Experimental results indicate that, in comparison to baseline methods, GRAPE can more effectively reduce false positives and omissions of vulnerability fixes identification and provide accurate vulnerability assessments.},
+ author = {Han, Mei and Wang, Lulu and Chang, Jianming and Li, Bixin and Zhang, Chunguang},
+ booktitle = {2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)},
+ doi = {10.1109/ISSRE62328.2024.00022},
+ issn = {2332-6549},
+ keyword = {Representation learning;Codes;Source coding;Pipelines;Semantics;Syntactics;Feature extraction;Software;Software reliability;Security;silent vulnerability fix;code representation;graph neural network},
+ month = {Oct},
+ number = {},
+ pages = {120-131},
+ title = {Learning Graph-based Patch Representations for Identifying and Assessing Silent Vulnerability Fixes},
+ volume = {},
+ year = {2024}
+}

@@ -1,0 +1,13 @@
+@conference{Bittman201917,
+ abstract = {New byte-addressable non-volatile memory (BNVM) technologies such as phase change memory (PCM) enable the construction of systems with large persistent memories, improving reliability and potentially reducing power consumption. However, BNVM technologies only support a limited number of lifetime writes per cell and consume most of their power when flipping a bit’s state during a write; thus, PCM controllers only rewrite a cell’s contents when the cell’s value has changed. Prior research has assumed that reducing the number of words written is a good proxy for reducing the number of bits modified, but a recent study has suggested that this assumption may not be valid. Our research confirms that approaches with the fewest writes often have more bit flips than those optimized to reduce bit flipping. To test the effectiveness of bit flip reduction, we built a framework that uses the number of bits flipped over time as the measure of “goodness” and modified a cycle-accurate simulator to count bits flipped during program execution. We implemented several modifications to common data structures designed to reduce power consumption and increase memory lifetime by reducing the number of bits modified by operations on several data structures: linked lists, hash tables, and red-black trees. We were able to reduce the number of bits flipped by up to 3.56× over standard implementations of the same data structures with negligible overhead. We measured the number of bits flipped by memory allocation and stack frame saves and found that careful data placement in the stack can reduce bit flips significantly. These changes require no hardware modifications and neither significantly reduce performance nor increase code complexity, making them attractive for designing systems optimized for BNVM.},
+ author = {Bittman, Daniel and Alvaro, Peter and Long, Darrell D.E. and Miller, Ethan L.},
+ journal = {Proceedings of the 17th USENIX Conference on File and Storage Technologies, FAST 2019},
+ note = {Cited by: 20},
+ pages = {17 - 30},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing systems for byte-addressable NVM by reducing bit flipping},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85077027936?origin=resultslist},
+ year = {2019}
+}

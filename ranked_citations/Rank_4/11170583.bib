@@ -1,0 +1,14 @@
+@inproceedings{11170583,
+ abstract = {Inductor is a new compilation backend introduced by PyTorch in 2022, consisting primarily of modules for graph analysis, operator fusion, scheduling optimization, and low-level code generation. The inductor’s operator fusion module can merge multiple operators into a single, larger fused operator to reduce memory access overhead. However, it currently lacks support for fusion across kernel boundaries, limiting the exploitation of further optimization opportunities. To address this issue, this paper proposes a kernel fusion optimization method based on operator characteristics. The method constructs candidate fusion pairs by extracting operator features such as computational scale and dependency relationships. It also employs a cost evaluation and fusion decision mechanism to automatically perform cross-kernel fusion. Experiments were conducted on the NVIDIA 3060 and A100 platforms. The results show that approximately $30 \%$ of the kernels in the tested models can be effectively fused using the proposed optimization method. The fused kernels achieve an average speedup of 1.6 on the A100 platform and 1.3 on the 3060 platform, while ensuring computational correctness.},
+ author = {Liu, Can and Li, Yingying and Gao, Wei and Dong, Zhenru and Han, Lin and Li, Jianan},
+ booktitle = {2025 6th International Conference on Electronic Communication and Artificial Intelligence (ICECAI)},
+ doi = {10.1109/ICECAI66283.2025.11170583},
+ issn = {},
+ keyword = {Limiting;Costs;Codes;Computational modeling;Optimization methods;Machine learning;Predictive models;Feature extraction;Kernel;Inductors;PyTorch;Fusion Optimization;Inductor;Triton kernel},
+ month = {June},
+ number = {},
+ pages = {577-581},
+ title = {Graph Fusion Optimization Based on PyTorch Inductor},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,16 @@
+@article{Dunbo20252017,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is a performance-critical kernel in various application domains, including high-performance computing, artificial intelligence, and big data. However, the performance of SpMV on SIMD devices is greatly affected by data divergences. To address this issue, we propose an In-SRAM Computing-based Processor Memory Co-Compute SpMV optimization framework that divides the SpMV kernel into two stages: a compute-intensive stage and a control-intensive stage. For optimizing the first stage, we leverage the parallel random access feature of multi-bank SRAM to eliminate overheads caused by memory divergences and use the Aggregate Table (AT) to reduce bank conflicts. For optimizing the second stage, we convert control divergences into memory divergences and utilize the Accumulate ScratchPad Memory (AccSPM) for executing reduction operations while eliminating overheads caused by memory divergences. Experimental results demonstrate that our solution achieves significant throughput increase over highly optimized vector SpMV kernels under CSR, CSR5, and CVR compression formats with performance speedups up to 4.74x, 5.58x, and 4.83x (3.11x, 3.04x, and 3.07x on average), respectively. © 1968-2012 IEEE.},
+ author = {Dunbo, Zhang and Li, Shen and Kai, Lu},
+ doi = {10.1109/TC.2025.3547162},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 2},
+ number = {6},
+ pages = {2017 - 2030},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Eliminate Data Divergence in SpMV via Processor and Memory Co-Computing Framework},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85219445322?origin=resultslist},
+ volume = {74},
+ year = {2025}
+}

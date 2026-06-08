@@ -1,0 +1,21 @@
+@article{SIDOROV2025,
+ abstract = {Background
+Opioid overdose is a global public health emergency, with the United States experiencing high rates of morbidity and mortality due to prescription and illicit opioid use. Traditional public health monitoring systems often fail to provide real-time insights, limiting their capacity for early detection and intervention. Social media platforms, especially Reddit, offer a promising alternative for timely toxicovigilance due to the abundance of user-generated, real-time content.
+Objective
+This study aimed to explore the use of Reddit as a real-time, high-volume source for toxicovigilance and develop an automated system that can classify and analyze opioid-related social media posts to detect behavioral patterns and monitor the evolution of public discourse on opioid use.
+Methods
+To investigate evolving social media discourse around opioid use, we collected a large-scale dataset from Reddit spanning 6 years, from January 1, 2018, to December 30, 2023. Using a comprehensive opioid lexicon—including formal drug names, street slang, common misspellings, and abbreviations—we filtered relevant posts for further analysis. A subset of these data was manually annotated according to well-defined annotation guidelines into 4 categories: self-misuse, external misuse, information, and unrelated, with distributions of 37.21%, 27.25%, 27.57%, and 7.97%, respectively. To automate the classification of opioid-related chatter, we developed a robust natural language processing pipeline leveraging classical machine learning algorithms, deep learning models, and transformer-based architecture, and fine-tuned a state-of-the-art large language model (LLM; OpenAI GPT-3.5 Turbo). In the final stage, the trained LLM was deployed on an unlabeled dataset comprising 74,975 additional Reddit chatter posts. This enabled a detailed temporal analysis of opioid-related discussions, aligned with 6 years of opioid-related death records from the Centers for Disease Control and Prevention (CDC). For this study, self-misuse and external misuse were merged into a misuse category for direct comparison with the CDC’s mortality data, examining whether trends in social media discourse on opioid misuse reflect patterns in real-world mortality statistics.
+Results
+The fine-tuned GPT-3.5 Turbo model achieved the highest classification accuracy of 0.93, outperforming the baseline (random forest 0.85) by representing a performance improvement of 9.14% over the machine learning model. The temporal analysis of the unlabeled data revealed evolving trends in opioid-related discussions, indicating shifts in user behavior and overdose-related chatter over time. To quantify this relationship, we calculated the Pearson correlation coefficient between misuse-related posts and CDC death records (r=0.854). This correlation was statistically significant (P<.001), indicating a strong positive relationship between web-based discussions and CDC mortality data.
+Conclusions
+This study demonstrates the potential of integrating advanced natural language processing techniques and LLMs with social media data to support real-time public health surveillance. Reddit provides a valuable platform for identifying emerging trends in opioid use and overdose risk. The proposed system offers a proactive tool for researchers, clinicians, and policymakers to better understand and respond to the opioid crisis.},
+ author = {Grigori Sidorov and Muhammad Ahmad and Pierpaolo Basile and Muhammad Waqas and Rita Orji and Ildar Batyrshin},
+ doi = {https://doi.org/10.2196/77279},
+ issn = {2564-1891},
+ journal = {JMIR Infodemiology},
+ keyword = {opioid overdose, drug analysis, CDC, Centers for Disease Control and Prevention, large language models, health care, data mining, Reddit, social media, temporal analysis, artificial intelligence, LLM},
+ title = {Monitoring Opioid-Related Social Media Chatter Using Natural Language Processing and Large Language Models: Temporal Analysis},
+ url = {https://www.sciencedirect.com/science/article/pii/S2564189125000660},
+ volume = {5},
+ year = {2025}
+}

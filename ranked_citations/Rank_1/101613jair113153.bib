@@ -1,0 +1,17 @@
+@article{10.1613/jair.1.13153,
+ abstract = {In classical AI planning, heuristic functions typically base their estimates on a relaxation of the input task. Such relaxations can be more or less precise, and many heuristic functions have a refinement procedure that can be iteratively applied until the desired degree of precision is reached. Traditionally, such refinement is performed offline to instantiate the heuristic for the search. However, a natural idea is to perform such refinement online instead, in situations where the heuristic is not sufficiently accurate. We introduce several online-refinement search algorithms, based on hill-climbing and greedy best-first search. Our hill-climbing algorithms perform a bounded lookahead, proceeding to a state with lower heuristic value than the root state of the lookahead if such a state exists, or refining the heuristic otherwise to remove such a local minimum from the search space surface. These algorithms are complete if the refinement procedure satisfies a suitable convergence property. We transfer the idea of bounded lookaheads to greedy best-first search with a lightweight lookahead after each expansion, serving both as a method to boost search progress and to detect when the heuristic is inaccurate, identifying an opportunity for online refinement. We evaluate our algorithms with the partial delete relaxation heuristic hCFF, which can be refined by treating additional conjunctions of facts as atomic, and whose refinement operation satisfies the convergence property required for completeness. On both the IPC domains as well as on the recently published Autoscale benchmarks, our online-refinement search algorithms significantly beat state-of-the-art satisficing planners, and are competitive even with complex portfolios.},
+ address = {El Segundo, CA, USA},
+ author = {Fickert, Maximilian and Hoffmann, J\"{o}rg},
+ doi = {10.1613/jair.1.13153},
+ issn = {1076-9757},
+ issue_date = {May 2022},
+ journal = {J. Artif. Int. Res.},
+ keyword = {heuristics, search, planning},
+ month = {May},
+ numpages = {49},
+ publisher = {AI Access Foundation},
+ title = {Online Relaxation Refinement for Satisficing Planning: On Partial Delete Relaxation, Complete Hill-Climbing, and Novelty Pruning},
+ url = {https://doi.org/10.1613/jair.1.13153},
+ volume = {73},
+ year = {2022}
+}

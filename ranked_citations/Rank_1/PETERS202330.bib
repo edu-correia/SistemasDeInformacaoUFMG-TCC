@@ -1,0 +1,13 @@
+@article{PETERS202330,
+ abstract = {We study how to learn semantic segmentation of 3D point clouds from small training sets. The problem arises because annotating 3D point clouds is a lot more time-consuming and error-prone than annotating 2D images. On the one hand this means that one cannot afford to create a large enough training dataset for each new project. On the other hand it also means that there is not nearly as much public data available as there is for images, which one could use to pretrain a generic feature extractor that could then, with only little dedicated training data, be adapted (“fine-tuned”) to the task at hand. To address this bottleneck we explore the possibility to transfer knowledge from the 2D image domain to 3D point clouds. That strategy is of particular interest for mobile mapping systems that capture both point clouds and images, in a fully calibrated setting that makes it easy to connect the two domains. We find that, as expected, naively segmenting in image space and mapping the resulting labels onto the point cloud is not sufficient, as visual ambiguities, residual calibration errors, etc. affect the result. Instead, we propose a system that learns to merge image evidence from a varying number viewpoint, and 3D geometry information, into a common representation that encodes point-wise 3D semantics. To validate our approach we make use of a new mobile mapping dataset with 88M annotated 3D points and 2205 oriented multi-view images. In a series of experiments, we show how much label noise is caused by simplistic label transfer, and how well existing semantic segmentation architectures can correct it. Finally, we demonstrate that adding our learned 2D-to-3D multi-view label transfer significantly improves the performance of different segmentation backbones.},
+ author = {Torben Peters and Claus Brenner and Konrad Schindler},
+ doi = {https://doi.org/10.1016/j.isprsjprs.2023.05.018},
+ issn = {0924-2716},
+ journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+ keyword = {Semantic segmentation, 3D point clouds, Multi-view, Convolutional neural network (CNN), Label transfer},
+ pages = {30-39},
+ title = {Semantic segmentation of mobile mapping point clouds via multi-view label transfer},
+ url = {https://www.sciencedirect.com/science/article/pii/S0924271623001351},
+ volume = {202},
+ year = {2023}
+}

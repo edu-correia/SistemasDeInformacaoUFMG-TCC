@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749661,
+ abstract = {Cloud service providers commonly use standard benchmarks like TPC-H and TPC-DS to evaluate and optimize cloud data analytics systems. However, these benchmarks rely on fixed query patterns and fail to capture real execution statistics of production cloud workloads. Although some cloud database vendors have recently released real workload traces, these traces alone do not qualify as benchmarks, as they typically lack essential components (i.e., queries and databases). To overcome this limitation, this paper studies a new problem of workload synthesis with real statistics, which generates synthetic workloads that closely approximate real execution statistics, including key performance metrics and operator distributions. To address this problem, we propose PBench, a novel workload synthesizer that constructs synthetic workloads by (1) selecting and combining workload components from existing benchmarks and (2) augmenting new workload components. This paper studies the key challenges in PBench. First, we address the challenge of balancing performance metrics and operator distributions by introducing a multi-objective optimization-based component selection method. Second, to capture the temporal dynamics of real workloads, we design a timestamp assignment method that progressively reines workload timestamps. Third, to handle the disparity between the original workload and the candidate workload, we propose a component augmentation approach that leverages large language models (LLMs) to generate additional workload components while maintaining statistical idelity. Experimental results show that PBench reduces approximation error by up to 6X compared to state-of-the-art methods.},
+ author = {Zhou, Yan and Liu, Chunwei and Urgaonkar, Bhuvan and Wang, Zhengle and Mueller, Magnus and Zhang, Chao and Zhang, Songyue and Pfeil, Pascal and Horn, Dominik and Liu, Zhengchun and Pagano, Davide and Kraska, Tim and Madden, Samuel and Fan, Ju},
+ doi = {10.14778/3749646.3749661},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {3883–3895},
+ publisher = {VLDB Endowment},
+ title = {PBench: Workload Synthesizer with Real Statistics for Cloud Analytics Benchmarking},
+ url = {https://doi.org/10.14778/3749646.3749661},
+ volume = {18},
+ year = {2025}
+}

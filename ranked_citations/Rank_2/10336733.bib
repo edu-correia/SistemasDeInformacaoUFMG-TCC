@@ -1,0 +1,14 @@
+@article{10336733,
+ abstract = {We propose a novel gyro-based tracking assistant designed to excel in aerial environments, where the use of drones equipped with infrared cameras is expanding rapidly. Our proposed method comprises two sub-modules. First, the search region prediction module independently estimates the search region position for the current frame using only gyroscope sensor data. The prediction module estimates the displacement of the search area location between adjacent frames due to camera motion using the homography transform. Second, the search region deblurring module renders a blur kernel using only gyroscope sensor data. The deblurring module introduces an approach that models an infrared sensor mechanism and merges this model with the homography transform to synthesize the blur kernel. The rendered blur kernel is used to deblur the search region with a deconvolution algorithm. To quantitatively evaluate our proposed method, we constructed a dataset ourselves. We collected and synchronized gyroscope sensor data and infrared images in a configuration similar to a drone environment. Our dataset comprises 15 sequences and two classes, with camera motion effects encompassing six distinct steps. Our experiments were structured into two main categories. First, we analyzed the degradation in tracking performance caused by camera motion. This analysis revealed that displacement has a more significant impact on tracking performance than motion blur. Second, we evaluated the effectiveness of our gyro-based tracking assistant. Through extensive quantitative experiments, we demonstrated that our integrated tracker outperforms the use of state-of-the-art trackers alone.},
+ author = {Lee, Kangil and Kim, Changick},
+ doi = {10.1109/JSEN.2023.3335621},
+ issn = {1558-1748},
+ journal = {IEEE Sensors Journal},
+ keyword = {Cameras;Drones;Target tracking;Sensors;Gyroscopes;Object tracking;Bolometers;Sensor fusion;Camera motion;drone;gyroscope;microbolometer;motion blur;robust tracker;sensor fusion;uncooled infrared camera},
+ month = {Jan},
+ number = {1},
+ pages = {645-659},
+ title = {A Gyro-Based Tracking Assistant for Drones With Uncooled Infrared Camera},
+ volume = {24},
+ year = {2024}
+}

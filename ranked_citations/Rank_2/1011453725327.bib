@@ -1,0 +1,18 @@
+@article{10.1145/3725327,
+ abstract = {Log-structured merge (LSM) trees typically employ Bloom Filters (BFs) to prevent unnecessary disk accesses for point queries. The size of BFs can be tuned to navigate a memory vs. performance tradeoff. State-of-the-art memory allocation strategies use a worst-case model for point lookup cost to derive a closed-form solution. However, existing approaches have three limitations: (1) the number of key-value pairs to be ingested must be known a priori, (2) the closed-form solution only works for a perfectly shaped LSM tree, and (3) the model assumes a uniform query distribution. Due to these limitations, the available memory budget for BFs is sub-optimally utilized, especially when the system is under memory pressure (i.e., less than 7 bits per key). In this paper, we design Mnemosyne, a BF reallocation framework for evolving LSM trees that does not require prior workload knowledge. We use a more general query cost model that considers the access pattern per file, and we find that no system accurately maintains access statistics per file, and that simply maintaining a counter per file significantly deviates from the ground truth for evolving LSM trees. To address this, we propose Merlin, a dynamic sliding-window-based tracking mechanism that accurately captures these statistics. The upgraded Mnemosyne^+ combines Merlin with our new cost model. In our evaluation, Mnemosyne reduces query latency by up to 20% compared to RocksDB under memory pressure, and Mnemosyne^+ further improves throughput by another 10% when workloads exhibit higher skew.},
+ address = {New York, NY, USA},
+ articleno = {190},
+ author = {Zhu, Zichen and Wei, Yanpeng and Mun, Ju Hyoung and Athanassoulis, Manos},
+ doi = {10.1145/3725327},
+ issue_date = {June 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {bloom filter, lsm-trees, optimization},
+ month = {June},
+ number = {3},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Mnemosyne: Dynamic Workload-Aware BF Tuning via Accurate Statistics in LSM trees},
+ url = {https://doi.org/10.1145/3725327},
+ volume = {3},
+ year = {2025}
+}

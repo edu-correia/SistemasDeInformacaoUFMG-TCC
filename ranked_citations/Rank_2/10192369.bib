@@ -1,0 +1,14 @@
+@article{10192369,
+ abstract = {Despite its popularity as a one-shot Neural Architecture Search (NAS) approach, the applicability of differentiable architecture search (DARTS) on complex vision tasks is still limited by the high computation and memory costs incurred by the over-parameterized supernet. We propose a new architecture search method called EasyNAS, whose memory and computational efficiency is achieved via our devised operator merging technique which shares and merges the weights of candidate convolution operations into a single convolution, and a dynamic channel refinement strategy. We also introduce a configurable search space-to-supernet conversion tool, leveraging the concept of atomic search components, to enable its application from classification to more complex vision tasks: detection and semantic segmentation. In classification, EasyNAS achieves state-of-the-art performance on the NAS-Bench-201 benchmark, attaining an impressive 76.2% accuracy on ImageNet. For detection, it achieves a mean average precision (mAP) of 40.1 with 120 frames per second (FPS) on MS-COCO test-dev. Additionally, we transfer the discovered architecture to the rotation detection task, where EasyNAS achieves a remarkable 77.05 mAP$_{50}$50 on the DOTA-v1.0 test set, using only 21.1 M parameters. In semantic segmentation, it achieves a competitive mean intersection over union (mIoU) of 72.6% at 173 FPS on Cityscape, after searching for only 0.7 GPU-day.},
+ author = {Wang, Xiaoxing and Lian, Zhirui and Lin, Jiale and Xue, Chao and Yan, Junchi},
+ doi = {10.1109/TPAMI.2023.3298296},
+ issn = {1939-3539},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ keyword = {Task analysis;Computer architecture;Costs;Memory management;Training;Merging;Graphics processing units;Channel reduction;image classification;neural architecture search;object detection;operation merge;semantic segmentation;supernet construction},
+ month = {Nov},
+ number = {11},
+ pages = {13974-13990},
+ title = {DIY Your EasyNAS for Vision: Convolution Operation Merging, Map Channel Reducing, and Search Space to Supernet Conversion Tooling},
+ volume = {45},
+ year = {2023}
+}

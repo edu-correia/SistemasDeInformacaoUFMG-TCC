@@ -1,0 +1,18 @@
+@article{10.1145/3728886,
+ abstract = {Code obfuscation is a technique used to protect software by making it difficult to understand and reverse engineer. However, it can also be exploited for malicious purposes such as code plagiarism or developing malicious programs. Learning-based techniques have achieved great success with the help of supervised learning and labeled training sets. However, when faced with real-life environments involving privately developed and undisclosed obfuscators, these supervised learning methods often raise concerns about generalizability and robustness when facing unseen and unknown classes of obfuscation techniques. This paper presents ALMOND, a novel zero-shot approach for detecting code obfuscation in binary executables. Unlike previous supervised learning methods, ALMOND does not require labeled obfuscated samples for training. Instead, it leverages a language model pre-trained only on unobfuscated assembly code to identify the linguistic deviations introduced by obfuscation. The key innovation is the use of ”error-perplexity” as a detection metric, which focuses on tokens the model fails to predict. Continuous Error Perplexity further enhances this to capture consecutive prediction errors characteristic of obfuscated sequences. Experiments show ALMOND achieves 96.3% accuracy on unseen obfuscation methods, outperforming supervised baselines. On real-world malware samples, it demonstrates an AUC of 0.869 and significantly outperforms the supervise-learning baseline. Our Dataset, pre-trained model, and code of evaluation will be available at https://github.com/palmtreemodel/ALMOND},
+ address = {New York, NY, USA},
+ articleno = {ISSTA017},
+ author = {Li, Xuezixiang and Yu, Sheng and Yin, Heng},
+ doi = {10.1145/3728886},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Binary Analysis, Deep Learning, Language Model, Obfuscation Detection},
+ month = {June},
+ number = {ISSTA},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {ALMOND: Learning an Assembly Language Model for 0-Shot Code Obfuscation Detection},
+ url = {https://doi.org/10.1145/3728886},
+ volume = {2},
+ year = {2025}
+}

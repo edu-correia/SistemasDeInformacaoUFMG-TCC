@@ -1,0 +1,14 @@
+@conference{Wang20205849,
+ abstract = {In this paper, to improve the read performance of LSM-tree, we propose an enhanced LSM-tree called HotKey-LSM. The key idea of HotKey-LSM is to put hot keys and cold keys in two separated column families. Thus, when a hot key is not in the block cache, LSM-tree only needs to access a small hot-key LSM-tree to read the key. With this mechanism, most hot-key requests will be answered with low latency: if the hot key is in the block cache, we can return the memory address of the key; if it is not in the cache, we search the small hot-key LSM-tree. This differs from the traditional LSM-tree in that a hot-key request may traverse a large LSM-tree, which causes a high read latency. We implement HotKey-LSM on RocksDB and compare HotKey-LSM with the original RocksDB. The result in terms of QPS suggests the efficiency of our proposal. © 2020 IEEE.},
+ author = {Wang, Yi and Jin, Peiquan and Wan, Shouhong},
+ doi = {10.1109/BigData50022.2020.9377736},
+ journal = {Proceedings - 2020 IEEE International Conference on Big Data, Big Data 2020},
+ note = {Cited by: 8},
+ pages = {5849 - 5851},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HotKey-LSM: A Hotness-Aware LSM-Tree for Big Data Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85103852249?origin=resultslist},
+ year = {2020}
+}

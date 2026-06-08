@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749665,
+ abstract = {In this work, we propose, analyze and empirically validate a lazy-update approach to maintain accurate approximations of the 2-hop neighborhoods of dynamic graphs resulting from sequences of edge insertions.We first show that under random input sequences, our algorithm exhibits an optimal trade-off between accuracy and insertion cost: it only performs [EQUATION] (amortized) updates per edge insertion, while the estimated size of any vertex's 2-hop neighborhood is at most a factor ε away from its true value in most cases, regardless of the underlying graph topology and for any ε &gt; 0.As a further theoretical contribution, we explore adversarial scenarios that can force our approach into a worst-case behavior at any given time t of interest. We show that while worst-case input sequences do exist, a necessary condition for them to occur is that the girth of the graph released up to time t be at most 4.Finally, we conduct extensive experiments on a collection of real, incremental social networks of different sizes, which typically have low girth. Empirical results are consistent with and typically better than our theoretical analysis anticipates. This further supports the robustness of our theoretical findings: forcing our algorithm into a worst-case behavior not only requires topologies characterized by a low girth, but also carefully crafted input sequences that are unlikely to occur in practice.Combined with standard sketching techniques, our lazy approach proves an effective and efficient tool to support key neighborhood queries on large, incremental graphs, including neighborhood size, Jaccard similarity between neighborhoods and, in general, functions of the union and/or intersection of 2-hop neighborhoods.},
+ author = {Becchetti, Luca and Clementi, Andrea and Gual\'{a}, Luciano and Sciarria, Luca Pep\`{e} and Straziota, Alessandro and Stromieri, Matteo},
+ doi = {10.14778/3749646.3749665},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {3937–3950},
+ publisher = {VLDB Endowment},
+ title = {Approximate 2-hop Neighborhoods on Incremental Graphs: An Efficient Lazy Approach},
+ url = {https://doi.org/10.14778/3749646.3749665},
+ volume = {18},
+ year = {2025}
+}

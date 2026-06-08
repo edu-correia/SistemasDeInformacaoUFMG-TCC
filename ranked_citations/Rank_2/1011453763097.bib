@@ -1,0 +1,18 @@
+@article{10.1145/3763097,
+ abstract = {Large-language models (LLMs) have been leveraged to enhance the capability of automated program repair techniques in recent research.   While existing LLM-based program repair techniques compared favorably to other techniques based on heuristics, constraint-solving, and learning in producing high-quality patches,  they mainly target bugs that can be corrected by changing a single faulty method,  which greatly limits the effectiveness of such techniques in repairing bugs that demand patches spanning across multiple methods.   In this work, we propose the PReMM technique to effectively propose patches changing multiple methods.   PReMM builds on three core component techniques:   the faulty method clustering technique to partition the faulty methods into clusters based on the dependence relationship among them,   enabling a divide-and-conquer strategy for the repairing task;   the fault context extraction technique to gather extra information about the fault context which can be utilized to better guide the diagnosis of the fault and the generation of correct patches;   the dual-agent-based patch generation technique that employs two LLM-based agents with different roles to analyze the fault more precisely and generate patches of higher-quality.  We have implemented the PReMM technique into a tool with the same name and applied the tool to repair real-world bugs from datasets Defects4J V1.2 and V2.0.   PReMM produced correct patches for 307 bugs in total.   Compared with ThinkRepair, the state-of-the-art LLM-based program repair technique,  PReMM correctly repaired 102 more bugs, achieving an improvement of 49.8%.},
+ address = {New York, NY, USA},
+ articleno = {319},
+ author = {Xie, Linna and Li, Zhong and Pei, Yu and Wen, Zhongzhen and Liu, Kui and Zhang, Tian and Li, Xuandong},
+ doi = {10.1145/3763097},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Automated Program Repair, Context-Aware Repair, Divide and Conquer, Large Language Models, Multi-method Bugs},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {PReMM: LLM-Based Program Repair for Multi-method Bugs via Divide and Conquer},
+ url = {https://doi.org/10.1145/3763097},
+ volume = {9},
+ year = {2025}
+}

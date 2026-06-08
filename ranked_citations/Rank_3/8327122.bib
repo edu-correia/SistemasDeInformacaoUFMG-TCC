@@ -1,0 +1,14 @@
+@inproceedings{8327122,
+ abstract = {LevelDB uses the merger mechanism for data integration during the writing process. During this process, the value will move together with the key, causing a lot of unnecessary data rewriting. This paper presents a structure that the key stored separately from the value. And the value is stored in a separate file (we call it Value File), with value offset in the file and length information stored in LevelDB. Test results show that the optimized LevelDBs sequential write performance is reduced by about 40%. But random write and overwrite performances improve more than 200%. And with the increase of the number of tests records, the improvement becomes more and more obvious. The amount of rewriting data and the number of merging files, depending on the length of every different record, reduce about 80% averagely, which significantly improves the performance of the original program.},
+ author = {Wang, Lei and Ding, Guiqiang and Zhao, Yulong and Wu, Dingzeyu and He, Chengrui},
+ booktitle = {2017 18th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT)},
+ doi = {10.1109/PDCAT.2017.00074},
+ issn = {},
+ keyword = {Compaction;Random access memory;Merging;Writing;Distributed databases;Memory management;Corporate acquisitions;key-value storage;LevelDB;data rewriting},
+ month = {Dec},
+ number = {},
+ pages = {421-428},
+ title = {Optimization of LevelDB by Separating Key and Value},
+ volume = {},
+ year = {2017}
+}

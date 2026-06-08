@@ -1,0 +1,14 @@
+@inproceedings{10655384,
+ abstract = {Layout-aware text-to-image generation is a task to generate multi-object images that reflect layout conditions in addition to text conditions. The current layout-aware text-to-image diffusion models still have several issues, including mismatches between the text and layout conditions and quality degradation of generated images. This paper proposes a novel layout-aware text-to-image diffusion model called NoiseCollage to tackle these issues. During the denoising process, NoiseCollage independently estimates noises for individual objects and then crops and merges them into a single noise. This operation helps avoid condition mismatches; in other words, it can put the right objects in the right places. Qualitative and quantitative evaluations show that NoiseCollage outperforms several state-of-the-art models. These successful results indicate that the crop-and-merge operation of noises is a reasonable strategy to control image generation. We also show that NoiseCollage can be integrated with ControlNet to use edges, sketches, and pose skeletons as additional conditions. Experimental results show that this integration boosts the layout accuracy of ControlNet. The code is available at https://github.com/univ-esuty/noisecollage.},
+ author = {Shirakawa, Takahiro and Uchida, Seiichi},
+ booktitle = {2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+ doi = {10.1109/CVPR52733.2024.00852},
+ issn = {2575-7075},
+ keyword = {Image synthesis;Image edge detection;Noise;Layout;Noise reduction;Merging;Text to image;diffusion model;layout-aware image generation;text-to-image generation},
+ month = {June},
+ number = {},
+ pages = {8921-8930},
+ title = {NoiseCollage: A Layout-Aware Text-to-Image Diffusion Model Based on Noise Cropping and Merging},
+ volume = {},
+ year = {2024}
+}

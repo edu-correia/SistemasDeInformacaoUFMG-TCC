@@ -1,0 +1,14 @@
+@inproceedings{9289805,
+ abstract = {As a popular data structure for block devices like hard disks, B-tree maintains a perfectly balanced tree height to minimize the number of block accesses and optimize the performance of common tree operations. However, when modern byteaddressable nonvolatile memories (NVMs) replace mechanical hard disk as the storage media, B-tree might suffer from severe performance degradation due to the lacking of concerns over the byte accessing capability, which is not available on hard disk. In particular, B-tree might experience severe performance degradation on node splits and merges, during which a large number of keys, data, and pointers must be moved across multiple B-tree nodes. Meanwhile, classical B-tree designs aim to reduce the number of nodes accessed on common B-tree operations, but underestimate the performance impacts to sort and rewrite the keys in a B-tree node on byte-addressable NVMs. While the concept to buffer newly inserted keys in a B-tree to reduce the update costs has been proposed in prior arts, the realization schemes on NVMs are still an incomplete issue. Such an observation motivates this work in proposing a hashed B-tree design which provides better practical performance on byte-addressable NVMs. According to experimental results, with different workloads, the hashed B-tree reduces the write traffic, read traffic, and normalized I/O time by 75.55%-93.54%, 36.66%-46.75%, and 66.42%-82.16%, respectively. In addition, the hashed B-tree is more adaptive than the default B-tree scheme on diversified, and even dynamically-shifting workloads.},
+ author = {Chen, Yi-Hua and Lien, Yi-Han and Huang, Po-Chun},
+ booktitle = {2020 IEEE Green Technologies Conference(GreenTech)},
+ doi = {10.1109/GreenTech46478.2020.9289805},
+ issn = {2166-5478},
+ keyword = {Performance evaluation;Degradation;Nonvolatile memory;Vegetation;Media;Hard disks;Data structures;B-tree;nonvolatile memories (NVMs).},
+ month = {April},
+ number = {},
+ pages = {53-58},
+ title = {Hashed B-tree: Adaptive Performance Enhancement of B-tree on Byte-addressable Nonvolatile Memories},
+ volume = {},
+ year = {2020}
+}

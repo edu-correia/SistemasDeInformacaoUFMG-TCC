@@ -1,0 +1,14 @@
+@article{10813017,
+ abstract = {In very large scale integration (VLSI) circuit physical design, precise congestion prediction during placement is crucial for enhancing routability and accelerating design processes. Existing congestion prediction models often encounter challenges in handling multimodal information and lack effective fusion of placement and netlist features, limiting their prediction accuracy. In this article, we present a novel congestion prediction model that leverages dual multimodal fusions with convolution and transformer layers to effectively capture the multiscale placement information and enhance congestion prediction accuracy. We first adopt convolutional neural networks (CNNs) to extract grid-based placement features and heterogeneous graph convolutional networks (HGCNs) to extract netlist information. To help the model understand the correlation between different modalities, we then propose an early feature fusion (EFF) to integrate netlist knowledge into multiscale placement features at multimodal interaction subspace. Besides, a deep feature fusion (DFF) method is proposed to further fuse multimodal features, which has multiple vision transformer layers based on adaptive attention enhancement technology. These layers include self-attention (SA) to boost intramodal features and cross-attention (CA) to perform cross-modal feature fusion on netlist and grid-based placement features. Finally, the output features of DFF are sent into the cascaded decoder to recover the congestion map by exploiting several upsampling layers and merging with EFF features. Compared with the existing state-of-the-art congestion prediction models, experimental results demonstrate that our model not only outperforms them in prediction accuracy, but also excels in reducing routing congestion when integrated into the placer DREAMPlace.},
+ author = {Gu, Hao and Wang, Youwen and Zheng, Xinglin and Peng, Keyu and Zhu, Ziran and Chen, Jianli and Yang, Jun},
+ doi = {10.1109/TCAD.2024.3522199},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Feature extraction;Predictive models;Routing;Transformers;Integrated circuit modeling;Design automation;Convolutional neural network;Very large scale integration;Graph neural networks;Congestion prediction;electronic design automation;machine learning;physical design;routability},
+ month = {June},
+ number = {6},
+ pages = {2378-2391},
+ title = {Dual Multimodal Fusions With Convolution and Transformer Layers for VLSI Congestion Prediction},
+ volume = {44},
+ year = {2025}
+}

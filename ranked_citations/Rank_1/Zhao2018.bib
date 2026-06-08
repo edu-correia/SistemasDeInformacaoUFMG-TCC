@@ -1,0 +1,14 @@
+@conference{Zhao2018,
+ abstract = {The Internet-of-Things (IoT) attracts great attention in the past few years. With millions of devices connected to the network, data are generated at an unprecedented speed and the data must be stored efficiently in the database to serve spatial queries. In existing spatial databases that use space-filling curves to organize the data, they store spatial data without considering on-road data distribution. This will introduce unnecessary computation and I/O cost in the service of users' queries about data on the roads. In this paper, we present a Road-Aware Spatial Mapping of data to the storage, or RASM for short, which can be applied in spatial databases for highly efficient storage and query services for moving objects. Usually, a space-filling curve, such as the Hilbert curve, is used to map data in a cell of a geographical area to a segment of linear storage space. However, in a road-network system where data are most distributed and queried along the roads, using a generic square cell as a mapping unit to aggregate data is in conflict with the data use pattern. In RASM, road segment, instead of the cell, is used as the unit of space mapping and data storage so that data requested in a road query can be stored together to enable efficient I/O. Furthermore, a substantial computation may be required to identify mapping units covered in a query in a geometric space. As RASM has grouped data in the road-segment units, one can efficiently found the units covered in a road query, which is usually concerned only about data on a few segments of roads. We implemented a prototype query-serving system using RASM to map data on road segments to a linear space enabled by LevelDB, a widely-used key-value store. Experiment results with real-world traffic data show that with RASM, the road query time can be reduced by up to 43%, and the I/O traffic can be reduced by up to 70%. In the meantime, other queries about geographical regions are well supported in RASM with minimal performance impacts. © 2018 IEEE.},
+ author = {Zhao, Xingsheng and Shi, Jingwen and Du, Mingzhe and Ni, Fan and Jiang, Song and Wang, Yang},
+ doi = {10.1109/PCCC.2018.8710770},
+ journal = {2018 IEEE 37th International Performance Computing and Communications Conference, IPCCC 2018},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Road-Aware Spatial Mapping for Moving Objects},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85066479464?origin=resultslist},
+ year = {2018}
+}

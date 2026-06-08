@@ -1,0 +1,14 @@
+@inproceedings{11437837,
+ abstract = {With the rapid development of large medical language models, multi-task fusion has become a key research focus. However, ophthalmic consultation and knowledge teaching tasks differ significantly in input structure, language style, and objectives, making direct joint training prone to semantic drift and modeling conflicts. To address this, we propose a multistage strategy combining task-decoupled distillation and branch-merge training to build MedFusion-R1-7B, a lightweight and efficient ophthalmic multi-task language model. We first use the teacher model DeepSeek-R1-Qwen-32B to annotate both tasks and construct a unified dataset, then transfer knowledge to the student model DeepSeek-R1-Qwen-7B via LoRA fine-tuning. Task-specific sub-models are trained through decoupled fine-tuning and used to generate new soft labels, which guide branchmerge re-distillation to achieve unified multi-task representation. We further apply NF4 quantization for efficient inference. Experiments show that MedFusion-R1-7B achieves competitive performance close to the teacher model while significantly reducing memory and latency, offering a practical solution for multi-task deployment in medical NLP.},
+ author = {Guo, Ruifeng and Cheng, Daang and Wang, Hongliang and Xiu, Pengfei and Liu, Xianjie},
+ booktitle = {2025 11th International Conference on Computer and Communications (ICCC)},
+ doi = {10.1109/ICCC68654.2025.11437837},
+ issn = {2837-7109},
+ keyword = {Training;Measurement;Quantization (signal);Computational modeling;Large language models;Semantics;Medical services;Multitasking;Ophthalmology;Knowledge transfer;Medical large language models;task decoupling;knowledge distillation;multi-task learning;model quantization},
+ month = {Dec},
+ number = {},
+ pages = {447-452},
+ title = {MedFusion-R1-7B: Task-Decoupled Distillation Framework for Multi-Task Medical LLMs},
+ volume = {},
+ year = {2025}
+}

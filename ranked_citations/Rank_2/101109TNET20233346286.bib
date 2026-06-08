@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2023.3346286,
+ abstract = {State-of-the-art approaches to design, develop and optimize software packet-processing programs are based on static compilation: the compiler’s input is a description of the forwarding plane semantics and the output is a binary that can accommodate any control plane configuration or input traffic. In this paper, we demonstrate that tracking control plane actions and packet-level traffic dynamics at run time opens up new opportunities for code specialization. We present Morpheus, a system working alongside static compilers that continuously optimizes the targeted networking code. We introduce a number of new techniques, from static code analysis to adaptive code instrumentation, and we implement a toolbox of domain specific optimizations that are not restricted to a specific data plane framework or programming language. We apply Morpheus to several systems, from eBPF and DPDK programs including Katran, Meta’s production-grade load balancer to container orchestration solutions such a Kubernets. We compare Morpheus to state-of-the-art optimization frameworks and show that it can bring up to 2x throughput improvement, while halving the 99th percentile latency.},
+ author = {Miano, Sebastiano and Sanaee, Alireza and Risso, Fulvio and R\'{e}tv\'{a}ri, G\'{a}bor and Antichi, Gianni},
+ doi = {10.1109/TNET.2023.3346286},
+ issn = {1063-6692},
+ issue_date = {June 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {December},
+ number = {3},
+ numpages = {16},
+ pages = {2269–2284},
+ publisher = {IEEE Press},
+ title = {Morpheus: A Run Time Compiler and Optimizer for Software Data Planes},
+ url = {https://doi.org/10.1109/TNET.2023.3346286},
+ volume = {32},
+ year = {2023}
+}

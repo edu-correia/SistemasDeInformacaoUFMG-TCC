@@ -1,0 +1,13 @@
+@article{LI2026130943,
+ abstract = {Faithfulness evaluation methods are used to identify discrepancies between generated summaries and source documents, and are becoming essential for detecting hallucinations in generative models. Recently, some strategies repurpose the faithfulness evaluation as surrogate NLP tasks using generic data to reduce dependence on specialized annotations for hallucination. However, these strategies encounter two critical challenges. First, although surrogate tasks, such as classification, are similar to faithfulness detection, differences in data distribution can bias the models towards features of the source task during optimization, leading to a drift in data-driven representation. Second, joint training across different tasks may merge their feature spaces, leading to conflicts in supervised signals that prevent models from capturing essential features effectively. To address these challenges, we present a faithfulness evaluation model with knowledge experts that decouples semantic features across supervised signals via two-stage training. We first employ adapter layers as knowledge experts to decouple feature learning via independent semantic alignment, mitigating supervised signal conflicts. Subsequent fine-tuning at the fusion layer on a limited faithful dataset at stage two mitigates the representation drift introduced by generic data. Meanwhile, a dynamic coordination mechanism autonomously balances expert contributions to overcome joint training bottlenecks. We validated our approach on 2 benchmark datasets, achieving a 3.7% performance improvement over previous strong baselines. Further analysis demonstrates that our two-stage training framework effectively mitigates representation drift and the dynamic coordination mechanism balances task-specific features.},
+ author = {Jiuyi Li and Degen Huang and Junpeng Liu and Jinshuang Zhao},
+ doi = {https://doi.org/10.1016/j.eswa.2025.130943},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Summarization, Faithfulness evaluation, Adapter},
+ pages = {130943},
+ title = {AlignExperts: Knowledge alignment experts for summarization faithfulness evaluation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425045580},
+ volume = {307},
+ year = {2026}
+}

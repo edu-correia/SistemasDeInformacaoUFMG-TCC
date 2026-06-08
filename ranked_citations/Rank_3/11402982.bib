@@ -1,0 +1,14 @@
+@inproceedings{11402982,
+ abstract = {Brunei Darussalam’s annual labour-force census has historically required months of manual cleaning across ~150,000 records and 60 fields. We developed an Excel-native automation that combines Power Query for deterministic transformations and reference-table merges (e.g., BDSOC occupation codes, ISO country codes) with targeted VBA procedures for cross-field validation and orchestration. The workflow first standardises key categorical fields and code formats, then applies rule-based checks on age, employment type, work-pass expiry, salary ranges by BDSOC group, identity-document consistency, qualification plausibility, and commencement-date validity. Business Activity entries are preprocessed and split from semicolon lists to single-code rows to enable precise lookups. Each rule emits an explicit flag column to support focused human review, and a connected Excel dashboard presents refreshed summaries on each run. Evaluated on the 2023 census, the pipeline processed the full dataset in $\approx 5$ minutes, replacing months of manual effort while improving consistency, traceability, and staff productivity. Because it reuses familiar spreadsheet tooling and requires no new licences, the approach is readily adoptable and provides a replicable model for data-rich public-sector settings. We discuss integration with stricter front-end form validation and optional off-loading of heavier joins or anomaly detection to a database or Python/R for future scalability.},
+ author = {Hao, Lee Zi and Bramantoro, Arif and Abdullah, Aliana},
+ booktitle = {2025 7th International Conference on Applied Computational Intelligence in Information Systems (ACIIS)},
+ doi = {10.1109/ACIIS66255.2025.11402982},
+ issn = {},
+ keyword = {Productivity;Codes;Automation;Reviews;Scalability;Pipelines;Manuals;Cleaning;Remuneration;Qualifications;labour census;data cleaning;Excel automation;Power Query;VBA;public-sector analytics},
+ month = {Oct},
+ number = {},
+ pages = {1-6},
+ title = {Automating Brunei’s Labour-Census Cleaning with Excel Power Query and VBA},
+ volume = {},
+ year = {2025}
+}

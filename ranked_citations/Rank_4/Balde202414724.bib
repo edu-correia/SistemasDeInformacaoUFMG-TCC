@@ -1,0 +1,14 @@
+@conference{Balde202414724,
+ abstract = {In this work, we show a fundamental limitation in vocabulary adaptation approaches that use Byte-Pair Encoding (BPE) tokenization scheme for fine-tuning pretrained language models (PLMs) to expert domains. Current approaches trivially append the target domain-specific vocabulary (V<sub>DOMAIN</sub>) at the end of the PLM vocabulary. This approach leads to a lower priority score and causes sub-optimal tokenization in BPE that iteratively uses merge rules to tokenize a given text. To mitigate this issue, we propose ADAPTBPE where the BPE tokenization initialization phase is modified to first perform the longest string matching on the added (target) vocabulary before tokenizing at the character level. We perform an extensive evaluation of ADAPTBPE versus the standard BPE over various classification and summarization tasks; ADAPTBPE improves by 3.57% (in terms of accuracy) and 1.87% (in terms of Rouge-L), respectively. ADAPTBPE for MEDVOC works particularly well when reference summaries have high OOV concentration or are longer in length. We also conduct a human evaluation, revealing that ADAPTBPE generates more relevant and more faithful summaries as compared to MEDVOC. We make our codebase publicly available at https://github.com/gb-kgp/adaptbpe. © 2024 Association for Computational Linguistics.},
+ author = {Balde, Gunjan and Roy, Soumyadeep and Mondal, Mainack and Ganguly, Niloy},
+ doi = {10.18653/v1/2024.findings-emnlp.863},
+ journal = {EMNLP 2024 - 2024 Conference on Empirical Methods in Natural Language Processing, Findings of EMNLP 2024},
+ note = {Cited by: 6; All Open Access; Gold Open Access},
+ pages = {14724 - 14733},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Adaptive BPE Tokenization for Enhanced Vocabulary Adaptation in Finetuning Pretrained Language Models},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85217618109?origin=resultslist},
+ year = {2024}
+}

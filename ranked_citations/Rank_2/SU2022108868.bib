@@ -1,0 +1,13 @@
+@article{SU2022108868,
+ abstract = {Anchor-free detectors basically formulate object detection as dense classification and regression. For popular anchor-free detectors, it is common to introduce an individual prediction branch to estimate the quality of localization. The following inconsistencies are observed when we delve into the practices of classification and quality estimation. Firstly, for some adjacent samples which are assigned completely different labels, the trained model would produce similar classification scores. This violates the training objective and leads to performance degradation. Secondly, it is found that detected bounding boxes with higher confidences contrarily have smaller overlaps with the corresponding ground-truth. Accurately localized bounding boxes would be suppressed by less accurate ones in the Non-Maximum Suppression (NMS) procedure. To address the inconsistency problems, the Dynamic Smooth Label Assignment (DSLA) method is proposed. Based on the concept of centerness originally developed in FCOS, a smooth assignment strategy is proposed. The label is smoothed to a continuous value in [0,1] to make a steady transition between positive and negative samples. Intersection-of-Union (IoU) is predicted dynamically during training and is coupled with the smoothed label. The dynamic smooth label is assigned to supervise the classification branch. Under such supervision, quality estimation branch is naturally merged into the classification branch, which simplifies the architecture of anchor-free detector. Comprehensive experiments are conducted on the MS COCO benchmark. It is demonstrated that, DSLA can significantly boost the detection accuracy by alleviating the above inconsistencies for anchor-free detectors. Our codes are released at https://github.com/YonghaoHe/DSLA.},
+ author = {Hu Su and Yonghao He and Rui Jiang and Jiabin Zhang and Wei Zou and Bin Fan},
+ doi = {https://doi.org/10.1016/j.patcog.2022.108868},
+ issn = {0031-3203},
+ journal = {Pattern Recognition},
+ keyword = {Convolutional neural network, Object detection, Centerness score, Intersection-of-union},
+ pages = {108868},
+ title = {DSLA: Dynamic smooth label assignment for efficient anchor-free object detection},
+ url = {https://www.sciencedirect.com/science/article/pii/S0031320322003491},
+ volume = {131},
+ year = {2022}
+}

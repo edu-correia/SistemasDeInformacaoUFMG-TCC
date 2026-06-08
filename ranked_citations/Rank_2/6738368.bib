@@ -1,0 +1,14 @@
+@inproceedings{6738368,
+ abstract = {The ability to efficiently switch from one pre-encoded video stream to another is a valuable attribute for a variety of interactive streaming applications, such as switching among streams of the same video encoded in different bit-rates for real-time bandwidth adaptation, or view-switching among videos capturing the same dynamic 3D scene but from different viewpoints. It is well known that intra-coded I-frames can be used at switch boundaries to facilitate stream-switching. However, the size of an I-frame is large, making frequent insertion impractical. A recent proposal towards a more efficient stream-switching mechanism is distributed source coding (D-SC), which exploits worst-case correlation between a set of potential predictor frames in the decoder buffer (called side information (SI) frames) and a target frame to lower encoding rate. However, the conventional use of bit-plane and channel coding means the encoding and decoding complexity of DSC frames is large. In this paper, we pursue a novel approach to the stream-switching problem based on the concept of “signal merging”, using piecewise constant (p-wc) function as the merge operator. Specifically, we propose a new merge mode for a code block, where for each k-th transform coefficient in the block, we encode appropriate step size and horizontal shift parameters at the encoder, so that the resulting floor function at the decoder can map corresponding coefficients from any SI frame to the same reconstructed value, resulting in an identically merged signal. The selection of shift parameter per coefficient, as well as coding modes between intra and merge per block, are optimized in a rate-distortion (RD) optimal manner. Experiments show encouraging coding gain over a previous implementation of DSC frame at low-to mid-bitrates at reduced computation complexity.},
+ author = {Dai, Wei and Cheung, Gene and Cheung, Ngai-Man and Ortega, Antonio and Au, Oscar C.},
+ booktitle = {2013 IEEE International Conference on Image Processing},
+ doi = {10.1109/ICIP.2013.6738368},
+ issn = {2381-8549},
+ keyword = {Encoding;Decoding;Switches;Image reconstruction;Merging;Codes;Videos;Floors;Transforms;Distortion;Interactive video;video coding;distributed source coding},
+ month = {Sep.},
+ number = {},
+ pages = {1787-1791},
+ title = {Rate-distortion optimized merge frame using piecewise constant functions},
+ volume = {},
+ year = {2013}
+}

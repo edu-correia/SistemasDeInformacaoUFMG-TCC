@@ -1,0 +1,18 @@
+@article{10.1145/3747528,
+ abstract = {Conflict-free replicated data types (CRDTs) are distributed data structures designed for fault tolerance and high availability. CRDTs have historically been taxonomized into state-based CRDTs, in which replicas apply updates locally and periodically broadcast their state to other replicas over the network, and operation-based (or op-based) CRDTs, in which every state-updating operation is individually broadcast. In the literature, state-based and op-based CRDTs are considered equivalent due to the existence of algorithms that let them emulate each other, and verification techniques and results that apply to one kind of CRDT are said to apply to the other thanks to this equivalence. However, what it means for state-based and op-based CRDTs to emulate each other has never been made fully precise. Emulation is nontrivial since state-based and op-based CRDTs place different requirements on the underlying network with regard to both the causal ordering of message delivery, and the granularity of the messages themselves. We specify and formalize CRDT emulation in terms of simulation by modeling CRDTs and their interactions with the network as transition systems. We show that emulation can be understood as weak simulations between the transition systems of the original and emulating CRDT systems, thus closing a gap in the CRDT literature. We precisely characterize which properties of CRDT systems are preserved by our weak simulations, and therefore which properties can be said to be preserved by emulation algorithms. Finally, we leverage our emulation results to obtain a general representation independence result for CRDTs: intuitively, clients of a CRDT cannot tell whether they are interacting with a state-based or op-based CRDT in particular.},
+ address = {New York, NY, USA},
+ articleno = {259},
+ author = {Liittschwager, Nathan and Castello, Jonathan and Tsampas, Stelios and Kuper, Lindsey},
+ doi = {10.1145/3747528},
+ issue_date = {August 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {CRDTs, emulation},
+ month = {August},
+ number = {ICFP},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {CRDT Emulation, Simulation, and Representation Independence},
+ url = {https://doi.org/10.1145/3747528},
+ volume = {9},
+ year = {2025}
+}

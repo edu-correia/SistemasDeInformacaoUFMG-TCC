@@ -1,0 +1,14 @@
+@conference{Tan2014700,
+ abstract = {Log-Structured-Merge (LSM) Tree gains much attention recently because of its superior performance in write-intensive workloads. LSM Tree uses an append-only structure in memory to achieve low write latency; at memory capacity, in-memory data are flushed to other storage media (e.g. disk). Consequently, read access is slower comparing to write. These specific features of LSM, including no in-place update and asymmetric read/write performance raise unique challenges in index maintenance for LSM. The structural difference between LSM and B-Tree also prevents mature B-Tree based approaches from being directly applied. To address the issues of index maintenance for LSM, we propose Diff-Index to support a spectrum of index maintenance schemes to suit different objectives in index consistency and performance. The schemes consist of sync-full, sync-insert, async-simple and async-session. Experiments on our HBase implementation quantitatively demonstrate that Diff-Index offers various performance/consistency balance and satisfactory scalability while avoiding global coordination. Syncinsert and async-simple can reduce 60%-80% of the overall index update latency when compared to the baseline syncfull; async-simple can achieve superior index update performance with an acceptable inconsistency. Diff-Index exploits LSM features such as versioning and the flush-compact process to achieve goals of concurrency control and failure recovery with low complexity and overhead. Diff-Index is included in IBM InfoSphere BigInsights, an IBM big data offering.},
+ author = {Tan, Wei and Tata, Sandeep and Fong, Liana and Tang, Yuzhe},
+ doi = {10.5441/002/edbt.2014.76},
+ journal = {Advances in Database Technology - EDBT 2014: 17th International Conference on Extending Database Technology, Proceedings},
+ note = {Cited by: 20},
+ pages = {700 - 711},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Diff-index: Differentiated index in distributed log-structured data stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84941233947?origin=resultslist},
+ year = {2014}
+}

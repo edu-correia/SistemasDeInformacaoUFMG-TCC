@@ -1,0 +1,13 @@
+@article{LI2023108488,
+ abstract = {Sparse matrix–vector multiplication (SpMV) is an important kernel that is widely used in science and engineering applications. The features of SpMV, such as high memory-intensiveness and many different access patterns, cause the performance of SpMV to be bounded by the limited bandwidth between memory and processing units. Processing in memory (PIM) is a novel architecture used to overcome the bandwidth bottleneck by shortening the distance between processing elements (PE) and memory. In this paper, we propose a PIM-structure SpMV accelerator based on high-bandwidth memory (HBM). To make full use of the high bandwidth provided by HBM, we design a highly parallel PE array and implement a high-frequency pipeline inside the PE to hide the latency of reading matrix elements from HBM. For each PE, we integrate an L1 cache to exploit the data locality in the vector. We propose two data layout strategies, namely a row merging algorithm to exploit the inter-row data locality and a row assignment algorithm to achieve workload balance among PEs. Our design is implemented using a field programmable gate array (FPGA) card with 8GB HBM2 memory. Compared to the baseline central processing unit (CPU) SpMV implementation, our accelerator can obtain a 5.24x performance speedup on average.},
+ author = {Tao Li and Li Shen},
+ doi = {https://doi.org/10.1016/j.compeleceng.2022.108488},
+ issn = {0045-7906},
+ journal = {Computers and Electrical Engineering},
+ keyword = {Sparse matrix-vector multiplication, Processor in memory, High bandwidth memory, Accelerator, Data layout},
+ pages = {108488},
+ title = {A sparse matrix vector multiplication accelerator based on high-bandwidth memory},
+ url = {https://www.sciencedirect.com/science/article/pii/S0045790622007030},
+ volume = {105},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@article{10970104,
+ abstract = {Although local self-attentions exhibit translation equivariance and locality similar to convolution, the model has limited receptive fields and weak modeling ability. The main reason is that self-attention is computed within nonoverlapped windows. To overcome this issue, common methods need further operations to communicate the information across windows, such as window shifting, and sliding. These operations are memory unfriendly, not well supported, and optimized by modern deep-learning frameworks. Alternatively, this article exchanges information across nonoverlapped windows via efficiently mixing abstract tokens (MAT). The MAT block includes the following steps. First, the image tokens are partitioned into windows and each window is merged with an abstract token. Second, in each window, interactions of image tokens and the abstract token to image tokens are performed. Third, because the abstract token learns abstract information from each corresponding window, mixing all abstract tokens via transformer encoder helps to exchange information between local windows and result in global context modeling. Fourth, the global information of the mixed tokens is propagated back to the image tokens through transformer decoder. The MAT block is efficient and easy to implement, only containing matrix multiplications. In addition, this article also proposes a bilinear patch embedding that samples relevant regions of the input tokens based on learned offsets. Extensive experiments are conducted and evaluated with various tasks such as image classification, object detection, and segmentation. As a result, our method achieves promising performances across tasks. For example, MAT-2 accomplishes 79.0% top-1 accuracy on ImageNet-1 K with 0.7 GFLOPs and outperforms the baseline Swin-0.7 G by 4.6% while reducing 15.2 ms on CPU and 0.53 ms on GPU devices. The MAT-4 surpasses Swin-T by 1.8% mIoU with only 70% GFLOPs.},
+ author = {Vo, Xuan-Thuy and Nguyen, Duy-Linh and Priadana, Adri and Cao, Ge and Choi, Jehwan and Jo, Kang-Hyun},
+ doi = {10.1109/TII.2025.3555982},
+ issn = {1941-0050},
+ journal = {IEEE Transactions on Industrial Informatics},
+ keyword = {Transformers;Convolutional neural networks;Graphics processing units;Computational modeling;Complexity theory;Visualization;Feature extraction;Computer vision;Predictive models;Image analysis;Road traffic;Computer vision tasks;efficient vision transformers (ViT);urban driving scene segmentation;window self-attention},
+ month = {July},
+ number = {7},
+ pages = {5420-5430},
+ title = {Local Self-Attention With Mixing Abstract Tokens for Urban Autonomous Driving},
+ volume = {21},
+ year = {2025}
+}

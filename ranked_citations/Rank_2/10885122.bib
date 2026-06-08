@@ -1,0 +1,14 @@
+@inproceedings{10885122,
+ abstract = {The Log-Structured Merge tree (LSM-tree) can transform random writes into sequential writes, adapting to the high sequential write performance of external storage devices. This has led to its widespread application in various Key-Value (KV) storage systems. However, the LSM-tree has issues such as write amplification and periodic sharp declines in performance. Non-Volatile Memory (NVM) and Zoned Namespace (ZNS) Solid State Drive (SSD) are emerging storage devices that differ significantly from traditional SSDs. Directly applying LSM-tree to NVM and ZNS SSD is challenging due to their unique advantages and characteristics. This paper proposes the DNZ-LSM-Tree, tailored for hybrid external storage constructed using NVM and ZNS SSD. Initially, we present the structure of the DNZ-LSM-Tree, which reconstructs the LSM-tree by utilizing the distinct features of memory, NVM, and ZNS SSD. Subsequently, to address the cascading compaction issue that significantly affects the performance of LSM-tree, we construct a Compaction Cache in NVM and design a layered distribution strategy for Sorted String Tables (SSTables) with cascading compactions. In addition, the zone allocation strategy based on key overlap ratio estimation and the wear leveling strategy for DNZ-LSM-Tree are designed to manage the zones of ZNS SSD. Finally, a prototype of KV storage system based on hybrid storage devices called HNZMS is implemented by employing DNZ-LSM-Tree and tested by YCSB. The results indicate that compared to the storage system called ListDB based on LSM-tree, HNZMS can increase the write throughput by 36.2% and reduce the write amplification by 51.9%.},
+ author = {Cai, Tao and Huang, Zeyu and Niu, Dejiao and Ni, Qiangqiang and Yinyi, Zihao and Zou, Danping},
+ booktitle = {2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)},
+ doi = {10.1109/ISPA63168.2024.00196},
+ issn = {2158-9208},
+ keyword = {Performance evaluation;Nonvolatile memory;Distribution strategy;Solid state drives;Prototypes;Estimation;Transforms;Throughput;Compaction;Resource management;LSM-tree;ZNS SSD;NVM;Hybrid Storage System},
+ month = {Oct},
+ number = {},
+ pages = {1453-1458},
+ title = {DNZ-LSM-Tree for Hybrid Storage Systems},
+ volume = {},
+ year = {2024}
+}

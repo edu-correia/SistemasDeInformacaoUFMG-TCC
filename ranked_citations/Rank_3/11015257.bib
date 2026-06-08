@@ -1,0 +1,14 @@
+@article{11015257,
+ abstract = {The invention of single-cell RNA sequencing (scRNA-seq) has enabled transcriptomic examination of cells on an individual basis, uncovering cell-to-cell phenotypic heterogeneity within isogenic cell populations. Inevitably, cell type annotation has emerged as a fundamental, albeit challenging task in scRNA-seq data analysis, which involves identifying and characterizing cells based on their unique molecular profiles. Recently, deep learning techniques with their data-driven priors have shown significant promise in this task. On the one hand, task-agnostic transformers pre-trained on large-scale biological databases capture generalizable representations but cannot characterize intricate relationships between genes and cells. Contrarily, task-specific graph neural networks (GNNs) trained on target datasets can characterize entity relationships, but they can suffer from poor generalizability. Furthermore, existing GNNs focus on either homogeneous or heterogeneous relationships, failing to capture the full cellular complexity. Here, we propose scGraPhT, a unified transformer–graph model that combines pre-trained transformer embeddings of scRNA-seq data with a multilayer GNN to capture cell-cell, cell-gene, and gene-gene relationships. Different from previous GNNs, scGraPhT examines both homogeneous and heterogeneous relationships through subgraph layers to offer a more comprehensive assessment. Since the graph construction uses transformer-derived embeddings, scGraPhT does not require costly training procedures and can also be adapted to leverage any transformer-based single-cell annotation method, such as scGPT or scBERT. Demonstrations on three scRNA-seq benchmark datasets indicate that scGraPhT outperforms state-of-the-art annotation methods without compromising efficiency. Utilizing Grad-CAM, we demonstrate how the GNN and transformer components complement each other to enhance performance. We share our source codes and datasets for reproducibility.},
+ author = {Koç, Emirhan and Kulkul, Emre and Kaynar, Gülara and Çukur, Tolga and Acar, Murat and Koç, Aykut},
+ doi = {10.1109/TSIPN.2025.3573591},
+ issn = {2373-776X},
+ journal = {IEEE Transactions on Signal and Information Processing over Networks},
+ keyword = {Annotations;Transformers;Graph neural networks;Information processing;Gene expression;Analytical models;Training;Cells (biology);Transcriptomics;Sequential analysis;Graph neural networks (GNNs);transformers;foundation models;scRNA sequencing;cell type annotation},
+ month = {},
+ number = {},
+ pages = {505-519},
+ title = {scGraPhT: Merging Transformers and Graph Neural Networks for Single-Cell Annotation},
+ volume = {11},
+ year = {2025}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3021924.3021941,
+ abstract = {We study a class of graph analytics SQL queries, which we call relationship queries. These queries involving aggregation, join, semijoin, intersection and selection are a wide superset of fixed-length graph reachability queries and of tree pattern queries. We present real-world OLAP scenarios, where efficient relationship queries are needed. However, row stores, column stores and graph databases are unacceptably slow in such OLAP scenarios.We propose a GQ-Fast database, which is an indexed database that roughly corresponds to efficient encoding of annotated adjacency lists that combines salient features of column-based organization, indexing and compression. GQ-Fast uses a bottom-up fully pipelined query execution model, which enables (a) aggressive compression (e.g., compressed bitmaps and Huffman) and (b) avoids intermediate results that consist of row IDs (which are typical in column databases). GQ-Fast compiles query plans into executable C++ source code. Besides achieving runtime efficiency, GQ-Fast also reduces main memory requirements because, unlike column databases, GQ-Fast selectively allows dense forms of compression including heavy-weight compressions, which do not support random access.We used GQ-Fast to accelerate queries for two OLAP dashboards in the biomedical field. GQ-Fast outperforms PostgreSQL by 2--4 orders of magnitude and MonetDB, Vertica and Neo4j by 1--3 orders of magnitude when all of them are running on RAM. Our experiments dissect GQ-Fast's advantage between (i) the use of compiled code, (ii) the bottom-up pipelining execution strategy, and (iii) the use of dense structures. Other analysis and experiments show the space savings of GQ-Fast due to the appropriate use of compression methods. We also show that the runtime penalty incurred by the dense compression methods decreases as the number of CPU cores increases.},
+ author = {Lin, Chunbin and Mandel, Benjamin and Papakonstantinou, Yannis and Springer, Matthias},
+ doi = {10.14778/3021924.3021941},
+ issn = {2150-8097},
+ issue_date = {November 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {12},
+ pages = {265–276},
+ publisher = {VLDB Endowment},
+ title = {Fast in-memory SQL analytics on typed graphs},
+ url = {https://doi.org/10.14778/3021924.3021941},
+ volume = {10},
+ year = {2016}
+}

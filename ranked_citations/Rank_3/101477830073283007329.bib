@@ -1,0 +1,17 @@
+@article{10.14778/3007328.3007329,
+ abstract = {This paper introduces Quill (stands for a quadrillion tuples per day), a library and distributed platform for relational and temporal analytics over large datasets in the cloud. Quill exposes a new abstraction for parallel datasets and computation, called ShardedStreamable. This abstraction provides the ability to express efficient distributed physical query plans that are transferable, i.e., movable from offline to real-time and vice versa. ShardedStreamable decouples incremental query logic specification, a small but rich set of data movement operations, and keying; this allows Quill to express a broad space of plans with complex querying functionality, while leveraging existing temporal libraries such as Trill. Quill's layered architecture provides a careful separation of responsibilities with independently useful components, while retaining high performance. We built Quill for the cloud, with a master-less design where a language-integrated client library directly communicates and coordinates with cloud workers using off-the-shelf distributed cloud components such as queues. Experiments on up to 400 cloud machines, and on datasets up to 1TB, find Quill to incur low overheads and outperform SparkSQL by up to orders-of-magnitude for temporal and 6\texttimes{} for relational queries, while supporting a rich space of transferable, programmable, and expressive distributed physical query plans.},
+ author = {Chandramouli, Badrish and Fernandez, Raul Castro and Goldstein, Jonathan and Eldawy, Ahmed and Quamar, Abdul},
+ doi = {10.14778/3007328.3007329},
+ issn = {2150-8097},
+ issue_date = {October 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {October},
+ number = {14},
+ numpages = {12},
+ pages = {1623–1634},
+ publisher = {VLDB Endowment},
+ title = {Quill: efficient, transferable, and rich analytics at scale},
+ url = {https://doi.org/10.14778/3007328.3007329},
+ volume = {9},
+ year = {2016}
+}

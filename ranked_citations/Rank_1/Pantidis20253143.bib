@@ -1,0 +1,16 @@
+@article{Pantidis20253143,
+ abstract = {We present a novel image-based adaptive domain decomposition FEM framework to accelerate the solution of continuum damage mechanics problems. The key idea is to use image-processing techniques in order to identify the moving interface between the healthy subdomain and unhealthy subdomain as damage propagates, and then use an iterative Schur complement approach to efficiently solve the problem. The implementation of the algorithm consists of several modular components. Following the FEM solution of a load increment, the damage detection module is activated, a step that is based on several image-processing operations including colormap manipulation and morphological convolution-based operations. Then, the damage tracking module is invoked, to identify the crack growth direction using geometrical operations and the ray casting algorithm. This information is then passed into the domain decomposition module, where the domain is divided into the healthy subdomain which contains only undamaged elements, and the unhealthy subdomain which comprises both damaged and undamaged elements. Continuity between the two regions is restored using penalty constraints. The computational savings of our method stem from the Schur complement, which allows for the iterative solution of the system of equations appertaining only to the unhealthy subdomain. We perform an exhaustive comparison between our approach and single domain computations through a series of benchmark examples, and we demonstrate the accuracy, efficiency, and numerical robustness of the proposed framework. We ensure the flexibility of our method by testing it on both local and non-local integral damage laws and structured and unstructured mesh idealizations, and we extend it to more challenging problems where different damage paths eventually merge. Since the key novelty of the method lies in using image processing tools to inform the domain decomposition module, our framework can be readily extended beyond damage mechanics and model several classes of non-linear problems such as plasticity, phase-field, and more. The code and data used in this work are made publicly available upon publication of the article. © The Author(s), under exclusive licence to Springer-Verlag London Ltd., part of Springer Nature 2025.},
+ author = {Pantidis, Panos and Otchere, Cornelius and E. Mobasher, Mostafa},
+ doi = {10.1007/s00366-025-02152-w},
+ journal = {Engineering with Computers},
+ note = {Cited by: 0},
+ number = {5},
+ pages = {3143 - 3168},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Image-based adaptive domain decomposition for continuum damage models},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105004773944?origin=resultslist},
+ volume = {41},
+ year = {2025}
+}

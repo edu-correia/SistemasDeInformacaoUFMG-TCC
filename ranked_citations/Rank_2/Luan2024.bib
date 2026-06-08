@@ -1,0 +1,15 @@
+@conference{Luan2024,
+ abstract = {LSM-tree is favored in write-intensive scenarios due to its sequential write feature, but it grapples with read and write amplification issues. A common solution is to store keys and values separately, with the LSM-tree holding only the key and value address, while the value is kept separately. However, this approach presents challenges in range query and garbage collection, necessitating multiple random reads and pointless data rewriting. To address these issues, we introduce TreeKV, a system that uses a specialized B+ tree for value storage, grouping values with adjacent keys together. This reduces random reads during range queries and eliminates unnecessary data rewriting during garbage collection. We also delve into crash recovery and minimal-blocking garbage collection implementation in TreeKV. Our comparison with existing key-value separated stores shows that TreeKV, while maintaining high read-write performance, enhances range query and garbage collection performance. © 2024 SPIE.},
+ author = {Luan, Hao},
+ doi = {10.1117/12.3035010},
+ journal = {Proceedings of SPIE - The International Society for Optical Engineering},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TreeKV: Efficient garbage collection and range query for key-value separated LSM-stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85200436326?origin=resultslist},
+ volume = {13210},
+ year = {2024}
+}

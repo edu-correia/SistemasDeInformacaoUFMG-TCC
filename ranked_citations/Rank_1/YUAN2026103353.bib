@@ -1,0 +1,13 @@
+@article{YUAN2026103353,
+ abstract = {Drug–drug interaction (DDI) extraction is a pivotal task in biomedical information processing, focused on identifying potentially adverse drug reactions (ADRs). Despite significant progress in DDI extraction, existing models struggle with complex sentence structures and ambiguous interactions, especially in cases involving rare or implicit drug relationships. To overcome these limitations, this paper presents a novel model, BRLA-DDI, that integrates BioBERT-LSTM mechanism, Relational Graph Convolutional Network (R-GCN), and a loss function incorporating attention (loss+attention) to enhance both accuracy and generalization in DDI tasks. The core innovation of BRLA-DDI lies in its synergistic integration of these components, coupled with two unique methodological contributions. First, the model employs BioBERT and BiLSTM for text feature extraction, effectively leveraging the contextual information within drug descriptions. Second, by thoroughly integrating the multihead attention mechanism with R-GCN, BRLA-DDI strengthens its capability to capture intricate relationships between drug entities. Additionally, we introduce an innovative loss-attention mechanism that merges cross-entropy loss with an attention-based regularization term, offering precise guidance for the model in learning key features during the optimization process. Lastly, we employ a dynamic negative sampling strategy that mitigates the zero-loss issue prevalent in traditional methods, thereby accelerating model convergence and enhancing robustness. Experimental results demonstrate the superiority of the proposed BRLA-DDI approach, achieving a precision of 87.68%, a recall of 88.06%, and an F1 Score of 87.87% on the DDI Extraction 2013 dataset, surpassing a wide range of existing methods. Crucially, the model also exhibits robust and superior performance on the external TAC 2018 dataset, providing compelling evidence of its strong generalizability across different data sources and annotation styles. All our code and data have been publicly released at https://github.com/Hero-Legend/LossAtt-DDI.},
+ author = {Zhu Yuan and Shuailiang Zhang and Zongjin Li and Huiyun Zhang and Huaqi Zhang and Yaxun Jia},
+ doi = {https://doi.org/10.1016/j.artmed.2026.103353},
+ issn = {0933-3657},
+ journal = {Artificial Intelligence in Medicine},
+ keyword = {Drug–drug interaction, BioBERT, Relational Graph Convolutional Network, Loss function with attention, Dynamic negative sampling},
+ pages = {103353},
+ title = {BRLA-DDI: A novel framework for drug–drug interaction extraction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0933365726000059},
+ volume = {174},
+ year = {2026}
+}

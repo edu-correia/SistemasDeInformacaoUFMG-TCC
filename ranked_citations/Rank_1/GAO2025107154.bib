@@ -1,0 +1,13 @@
+@article{GAO2025107154,
+ abstract = {Medical imaging, particularly medical image segmentation, is pivotal in modern medicine. Transformer architectures have gained significant attention in the field of medical image segmentation. Both pure transformer architectures and hybrid architectures combining transformer with CNN have been extensively proposed, demonstrating impressive performance in medical image segmentation. However, whether embedding the transformer in the higher layers of CNN networks or enhancing attention mechanisms, these approaches have inherent limitations in fully harnessing the potential of the transformer within the constraints of low computational cost. This paper introduces an efficient hybrid network structure that combines CNN and transformer for 3D medical image segmentation. This network utilizes depth-wise separable convolutions (DWconvs) to extract local fine-grained details and introduces a content-driven attention mechanism, P-attention, to replace self-attention within the transformer. P-attention enables global feature modeling in both channel and spatial dimensions. By integrating local information with global dependencies, the network achieves more precise segmentation results with a reduced computational burden. Extensive experiments on Synapse and Automated Cardiac Diagnosis Challenge (ACDC) datasets, utilizing various evaluation metrics such as dice similarity coefficients (DSC), 95% percentile Hausdorff Distance (HD95), average symmetric surface distance (ASSD), precision (PRE) and sensitivity (SE), were conducted to assess the performance of PFormer. The experimental results demonstrate that, compared to other state-of-the-art methods, PFormer achieves superior segmentation performance under lower parameters and floating point of operations (FLOPs), providing strong evidence of the effectiveness of our method. Codes and models of PFormer are available at https://github.com/BitGyy/PFormer.},
+ author = {Yueyang Gao and Jinhui Zhang and Siyi Wei and Zheng Li},
+ doi = {https://doi.org/10.1016/j.bspc.2024.107154},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {3D medical image segmentation, CNN-Transformer hybrid architecture, P-attention, Various evaluation metrics, Superior segmentation performance, Low computational cost},
+ pages = {107154},
+ title = {PFormer: An efficient CNN-Transformer hybrid network with content-driven P-attention for 3D medical image segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809424012126},
+ volume = {101},
+ year = {2025}
+}

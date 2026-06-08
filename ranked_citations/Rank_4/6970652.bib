@@ -1,0 +1,14 @@
+@inproceedings{6970652,
+ abstract = {Traffic classification is an essential task in network management. Recently, there has been a new trend in exploring Graphics Processing Unit (GPU) for network applications. These applications typically do not perform floating point operations and obtaining speedup can be challenging. In this paper, we design a high-performance traffic classifier based on an alternate representation of the C4.5 decision-tree algorithm and implement it using Compute Unified Device Architecture (CUDA). To remedy the unbalanced nature of the decision-trees arising in traffic classification, we convert the C4.5 decision-tree into a set of completely balanced range-trees. Classification is performed by searching the range-trees and merging the search results. We optimize our design by storing the range-trees using compact arrays without explicit pointers in shared memory. By exploiting thread level parallelism, we develop throughput-optimized as well as latency-optimized designs. Experimental results show that for a typical decision-tree containing 128 leaf nodes and 6 features, our design achieves a throughput of over 1600 million classifications per second (MCPS). Compared with the state-of the-art multi-core implementation, our design demonstrates 16x improvement with respect to throughput. We also demonstrate similar performance improvements on a variety of decision-trees with respect to number of leaf nodes, structure of the tree and number of features.},
+ author = {Zhou, Shijie and Nittoor, Prashant Rao and Prasanna, Viktor K.},
+ booktitle = {2014 IEEE 26th International Symposium on Computer Architecture and High Performance Computing},
+ doi = {10.1109/SBAC-PAD.2014.48},
+ issn = {1550-6533},
+ keyword = {Graphics processing units;Instruction sets;Throughput;Accuracy;Ports (Computers);Feature extraction;Classification algorithms;GPU;CUDA;High-Performance;Traffic Classification},
+ month = {Oct},
+ number = {},
+ pages = {97-104},
+ title = {High-Performance Traffic Classification on GPU},
+ volume = {},
+ year = {2014}
+}

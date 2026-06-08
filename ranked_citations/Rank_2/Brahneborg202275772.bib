@@ -1,0 +1,15 @@
+@article{Brahneborg202275772,
+ abstract = {Embedded systems typically have limited processing and storage capabilities, and may only intermittently be powered on. After sending data from its sensors upstream, the system must therefore be able to trust that the data, once acknowledged, is not lost. The purpose of this work is to propose a novel solution for replicating data between the upstream nodes in such systems, with a minimal effect on the software architecture. On the assumption that there is no relative order between replicated data tuples, we designed a new replication protocol based on partial replication. Our protocol uses only 2 communication steps per data tuple, instead of the 3 to 12 used by other solutions. We verified its failover mechanism in a proof-of-concept implementation of the protocol using simulated network failures, and evaluated the implementation on throughput and latency in several controlled experiments using up to 7 nodes in up to 5 geographically separated areas, with up to 1000 data producers per node. The recorded system throughput increased linearly relative to both the number of nodes and the number of data producers. For comparison, Paxos showed a performance similar to our protocol when using 3 nodes, but got slower as more nodes were added. The lack of a relative order, in combination with partial replication, enables our system to continue working during network partitions, not only in the part containing the majority of the nodes, but also in any sufficiently large minority partitions.  © 2013 IEEE.},
+ author = {Brahneborg, Daniel and Duvignau, Romaric and Afzal, Wasif and Mubeen, Saad},
+ doi = {10.1109/ACCESS.2022.3191686},
+ journal = {IEEE Access},
+ note = {Cited by: 1; All Open Access; Gold Open Access; Green Open Access},
+ pages = {75772 - 75788},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {GeoRep - Resilient Storage for Wide Area Networks},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85135218229?origin=resultslist},
+ volume = {10},
+ year = {2022}
+}

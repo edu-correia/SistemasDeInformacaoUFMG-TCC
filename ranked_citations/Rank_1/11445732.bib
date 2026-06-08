@@ -1,0 +1,14 @@
+@inproceedings{11445732,
+ abstract = {Accurate lane topology is essential for autonomous driving, yet traditional methods struggle to model the complex, non-linear structures—such as loops and bidirectional lanes—prevalent in real-world road structure. We present SeqGrowGraph, a novel framework that learns lane topology as a chain of graph expansions, inspired by human mapdrawing processes. Representing the lane graph as a directed graph $G=(V, E)$, with intersections ($V$) and centerlines (E), SeqGrowGraph incrementally constructs this graph by introducing one vertex at a time. At each step, an adjacency matrix ($A$) expands from $n \times n$ to ($n+1) \times(n+1)$ to encode connectivity, while a geometric matrix ($M$) captures centerline shapes as quadratic Bézier curves. The graph is serialized into sequences, enabling a transformer model to autoregressively predict the chain of expansions, guided by a depth-first search ordering. Evaluated on nuScenes and Argoverse 2 datasets, SeqGrowGraph achieves state-of-the-art performance.},
+ author = {Xie, Mengwei and Zeng, Shuang and Chang, Xinyuan and Liu, Xinran and Pan, Zheng and Xu, Mu and Wei, Xing},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02522},
+ issn = {2380-7504},
+ keyword = {Passive optical networks;Pixel;Protocols;HTTP;Network topology;Location awareness;Network architecture;Mobile communication;Optical fiber networks;Digital images},
+ month = {Oct},
+ number = {},
+ pages = {27166-27175},
+ title = {SeqGrowGraph: Learning Lane Topology as a Chain of Graph Expansions},
+ volume = {},
+ year = {2025}
+}

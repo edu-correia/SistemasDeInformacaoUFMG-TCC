@@ -1,0 +1,14 @@
+@inproceedings{7515978,
+ abstract = {Hadoop distributed file system (HDFS) was originally designed for streaming access large files, but the access and storage efficiency is low for the mass small files. This paper presents an access optimization approach for HDFS small file based on MapFile: TLB-MapFile. TLB-MapFile merges massive small files into large files by MapFile mechanism to reduce NameNode memory consumption and add fast table structure (TLB) in DataNode, and to improve retrieval efficiency of small files. First, according to MapFile mechanism, small files are merged into large files and stored in HDFS. Second, the access frequency and the ordered queue of small files (per unit time) can be obtained through accessing system audit logs in HDFS, and the mapping information between block and small files are stored in the TLB table with regularly being updated. TLB-MapFile improves access efficiency of small files through the prefetching of priori strategies based on TLB table. Experiment results show that this method can effectively reduce NameNode memory consumption and improve the reading speed of small files.},
+ author = {Meng, Bing and Guo, Wei-bin and Fan, Gui-sheng and Qian, Neng-wu},
+ booktitle = {2016 17th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD)},
+ doi = {10.1109/SNPD.2016.7515978},
+ issn = {},
+ keyword = {Prefetching;Indexes;Metadata;Memory management;Time-frequency analysis;File systems;Optimization;HDFS;TLB;Rapid retrieval;the storage of small files;prefetching},
+ month = {May},
+ number = {},
+ pages = {681-686},
+ title = {A novel approach for efficient accessing of small files in HDFS: TLB-MapFile},
+ volume = {},
+ year = {2016}
+}

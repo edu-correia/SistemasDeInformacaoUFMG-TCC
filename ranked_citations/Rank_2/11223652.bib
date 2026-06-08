@@ -1,0 +1,14 @@
+@article{11223652,
+ abstract = {Homomorphic Encryption (HE) enables computation on encrypted data, offering a promising solution for privacy-preserving applications such as identity verification and medical image analysis. The CKKS scheme, in particular, is well-suited for convolutional neural network (CNN) inference due to its support for realnumber arithmetic. However, HE-based CNN inference suffers from high computational latency and resource overhead, hindering its practical implementation. In addition, existing acceleration methods are mainly designed for single-image or large-batch processing, lacking a solution for efficiently processing a moderate number of input images with fast homomorphic inference capabilities. To address this, we introduce a novel leveled homomorphic CNN inference scheme aimed at reducing latency and improving throughput using the CKKS scheme. Our approach includes a novel batch packing method that maps multiple inputs into ciphertexts by leveraging convolutional sliding windows and SIMD capabilities. We further introduce optimizations such as mask-weight merging, rotation multiplexing, stride convolution segmentation, and folding rotations to minimize computational cost. Evaluations on MNIST and CIFAR-10 demonstrate that our method completes inference for 163 MNIST images in 10.4 seconds on a single CPU thread with an accuracy of 98.95%, achieving a 6.9× throughput improvement over state-of-the-art works, while also reducing communication and memory overhead.},
+ author = {Ye, Zewen and Wang, Tianyu and Huang, Tianshun and Li, Yonggen and Wang, Chengxuan and Cheung, Ray C.C. and Huang, Kejie},
+ doi = {10.1109/TDSC.2025.3627562},
+ issn = {1941-0018},
+ journal = {IEEE Transactions on Dependable and Secure Computing},
+ keyword = {Convolutional neural networks;Cryptography;Homomorphic encryption;Throughput;Servers;Optimization;Data privacy;Vectors;Kernel;Delays;Homomorphic encryption;CKKS;Convolutional Neural Network;CNN Inference},
+ month = {March},
+ number = {2},
+ pages = {2400-2411},
+ title = {HTCNN: High-Throughput Batch CNN Inference With Homomorphic Encryption},
+ volume = {23},
+ year = {2026}
+}

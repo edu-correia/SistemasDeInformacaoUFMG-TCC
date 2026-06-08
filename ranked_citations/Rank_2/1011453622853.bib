@@ -1,0 +1,18 @@
+@article{10.1145/3622853,
+ abstract = {Parametric polymorphism enables programmers to express algorithms independently of the types of values that they operate on. The approach used to implement parametric polymorphism can have important performance implications. One popular approach, erasure, uses a uniform representation for generic data, which entails primitive boxing and other indirections that harm performance. Erasure destroys type information that could be used by language implementations to optimize generic code.    We present TASTyTruffle, an implementation for a subset of the Scala programming language. Instead of JVM bytecode, TASTyTruffle interprets Scala's TASTy intermediate representation, a typed representation wherein generic types are not erased. TASTy's precise type information empowers TASTyTruffle to implement generic code more effectively. In particular, it allows TASTyTruffle to reify types as run-time objects that can be passed around. Using reified types, TASTyTruffle supports heterogeneous box-free representations for generic values. TASTyTruffle also uses reified types to specialize generic code, producing monomorphic copies of generic code that can be easily and reliably optimized by its just-in-time (JIT) compiler.    Empirically, TASTyTruffle is competitive with standard JVM implementations on a small set of benchmark programs; when generic code is used with multiple types, TASTyTruffle consistently outperforms the JVM. The precise type information in TASTy enables TASTyTruffle to find additional optimization opportunities that could not be uncovered with erased JVM bytecode.},
+ address = {New York, NY, USA},
+ articleno = {277},
+ author = {D'Souza, Matt and You, James and Lhot\'{a}k, Ond\v{r}ej and Prokopec, Aleksandar},
+ doi = {10.1145/3622853},
+ issue_date = {October 2023},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Scala, Truffle, just-in-time compiler, parametric polymorphism, reified types, specialization},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {TASTyTruffle: Just-in-Time Specialization of Parametric Polymorphism},
+ url = {https://doi.org/10.1145/3622853},
+ volume = {7},
+ year = {2023}
+}

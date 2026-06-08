@@ -1,0 +1,14 @@
+@article{NGUYEN2012727,
+ abstract = {The AdaptiveHydraulics (ADH) model is an adaptiveﬁnite element method to simulate three-dimensional Navier-Stokes ﬂow, unsaturated and saturated groundwater ﬂow, overland ﬂow, and two-or three-dimensional shallow-water ﬂow and transport. In the shallow-water ﬂow and transport, especially involving multispecies transport, the water depth (h), the product of water depth and velocities (uh and vh), as well as water depth and chemical concentration (hc) are dependent variables of ﬂuid-motion simulations and are often solved at various times. It is important for the numerical model to predict accurate water depth, velocity ﬁelds, and chemical distribution, as well as conserve mass, especially forwater quality applications. Solution accuracydepends highly on mesh resolution. Adaptive mesh reﬁnement (AMR), particularly the h-reﬁnement, is often used to add new nodes in the region where they are needed and to remove others where they are no longer required during the simulation. The AMR is proven to optimize the performance of a computed solution. However, mass withgain or loss can occur when elements are merged due to removing a node at mesh coarsening. Therefore, we develop and implement the mass-conservative unreﬁnement algorithm to ensure the mass conserved in a merged element in which a node has been removed. This study describes the use of the Galerkin ﬁnite element method to redistribute mass to nodes comprising a merged element. The algorithmwas incorporated into the ADH code. This algorithm minimizes mass error during the unreﬁnement process to conserve mass during the simulation for two-dimensional shallow-water ﬂow and transport. The implementation neither signiﬁcantly increases the computational time nor memory usage. The simulation was runwithvarious numbersof processors.The resultsshowedgoodscalingof solutiontimeasthenumberof processors increases.},
+ author = {HungV. Nguyen and Jing-Ru C. Cheng and Charlie R. Berger and Gaurav Savant},
+ doi = {https://doi.org/10.1016/j.procs.2012.04.078},
+ issn = {1877-0509},
+ journal = {Procedia Computer Science},
+ keyword = {Adaptive mesh, ﬁnite element method, mass conservative, shallow-water ﬂow, and ADH model},
+ note = {Proceedings of the International Conference on Computational Science, ICCS 2012},
+ pages = {727-736},
+ title = {AMass Conservation AlgorithmFor Adaptive Unrefinement Meshes Used By Finite Element Methods},
+ url = {https://www.sciencedirect.com/science/article/pii/S1877050912001998},
+ volume = {9},
+ year = {2012}
+}

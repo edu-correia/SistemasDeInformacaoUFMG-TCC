@@ -1,0 +1,17 @@
+@article{10.14778/3231751.3231761,
+ abstract = {Query performance regression due to the query optimizer selecting a bad query execution plan is a major pain point in production workloads. Commercial DBMSs today can automatically detect and correct such query plan regressions by storing previously-executed plans and reverting to a previous plan which is still valid and has the least execution cost. Such reversion-based plan correction has relatively low risk of plan regression since the decision is based on observed execution costs. However, this approach ignores potentially valuable information of efficient subplans collected from other previously-executed plans. In this paper, we propose a novel technique, Plan Stitch, that automatically and opportunistically combines efficient subplans of previously-executed plans into a valid new plan, which can be cheaper than any individual previously-executed plan. We implement Plan Stitch on top of Microsoft SQL Server. Our experiments on TPC-DS benchmark and three real-world customer workloads show that plans obtained via Plan Stitch can reduce execution cost significantly, with a reduction of up to two orders of magnitude in execution cost when compared to reverting to the cheapest previously-executed plan.},
+ author = {Ding, Bailu and Das, Sudipto and Wu, Wentao and Chaudhuri, Surajit and Narasayya, Vivek},
+ doi = {10.14778/3231751.3231761},
+ issn = {2150-8097},
+ issue_date = {June 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {14},
+ pages = {1123–1136},
+ publisher = {VLDB Endowment},
+ title = {Plan stitch: harnessing the best of many plans},
+ url = {https://doi.org/10.14778/3231751.3231761},
+ volume = {11},
+ year = {2018}
+}

@@ -1,0 +1,14 @@
+@conference{Chang2002346,
+ abstract = {This paper addresses the problem of evaluating ranked top-k queries with expensive predicates. As major DBMSs now all support expensive user-defined predicates for Boolean queries, we believe such support for ranked queries will be even more important: First ranked queries often need to model user-specific concepts of preference, relevance, or similarity, which call for dynamic user-defined functions. Second, middleware systems must incorporate external predicates for integrating autonomous sources typically accessible only by per-object queries. Third, fuzzy joins are inherently expensive, as they are essentially user-defined operations that dynamically associate multiple relations. These predicates, being dynamically defined or externally accessed, cannot rely on index mechanisms to provide zero-time sorted output, and must instead require per-object probe to evaluate. The current standard sort-merge framework for ranked queries cannot efficiently handle such predicates because it must completely probe all objects, before sorting and merging them to produce top-k answers. To minimize expensive probes, we thus develop the formal principle of "necessary probes,"which determines if a probe is absolutely required. We then propose Algorithm MPro which, by implementing the principle, is provably optimal with minimal probe cost. Further, we show that MPro can scale well and can be easily parallelized. Our experiments using both a real-estate benchmark database and synthetic datasets show that MPro enables significant probe reduction, which can be orders of magnitude faster than the standard scheme using complete probing.  © 2002 ACM.},
+ author = {Chang, Kevin Chen-Chuan and Hwang, Seung-Won},
+ doi = {10.1145/564691.564731},
+ journal = {Proceedings of the 2002 ACM SIGMOD International Conference on Management of Data, SIGMOD 2002},
+ note = {Cited by: 4},
+ pages = {346 - 357},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Minimal Probing: Supporting Expensive Predicates for Top-k Queries},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85134309188?origin=resultslist},
+ year = {2002}
+}

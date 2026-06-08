@@ -1,0 +1,14 @@
+@conference{Canon2023535,
+ abstract = {Key-value stores distribute data across several storage nodes to handle large amounts of parallel requests. Proper scheduling of these requests impacts the quality of service, as measured by achievable throughput and (tail) latencies. In addition to scheduling, performance heavily depends on the nature of the workload and the deployment environment. It is, unfortunately, difficult to evaluate different scheduling strategies consistently under the same operational conditions. Moreover, such strategies are often hard-coded in the system, limiting flexibility. We present Hector, a modular framework for implementing and evaluating scheduling policies in Apache Cassandra. Hector enables users to select among several options for key components of the scheduling workflow, from the request propagation via replica selection to the local ordering of incoming requests at a storage node. We demonstrate the capabilities of Hector by comparing strategies in various settings. For example, we find that leveraging cache locality effects may be of particular interest: we propose a new replica selection strategy, called Popularity-Aware, that supports 6 times the maximum throughput of the default algorithm under specific key access patterns. We also show that local scheduling policies have a significant effect when parallelism at each storage node is limited. © 2023 Association for Computing Machinery. All rights reserved.},
+ author = {Canon, Louis-Claude and Dugois, Anthony and Marchal, Loris and Rivière, Etienne},
+ doi = {10.1145/3605573.3605614},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 2; All Open Access; Green Open Access},
+ pages = {535 - 545},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Hector: A Framework to Design and Evaluate Scheduling Strategies in Persistent Key-Value Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179886346?origin=resultslist},
+ year = {2023}
+}

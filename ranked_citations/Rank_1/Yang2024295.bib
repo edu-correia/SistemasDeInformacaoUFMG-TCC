@@ -1,0 +1,15 @@
+@article{Yang2024295,
+ abstract = {Ethereum's block synchronization process interacts with the storage engine in two parts: waiting for state data to be read while processing transactions and waiting to write data after processing is complete. Presently, Ethereum utilizes the LSM-tree-based storage engine that not only falls short of meeting Ethereum's read performance requirements but also presents additional mismatches. In this paper, we propose the single-level ordered log structure database (SolsDB), which fully utilizes state data features to satisfy the workload requirements of Ethereum block synchronization process and suggest novel interactions to deliver state data features to the storage engine. The write feature of state data is utilized to store state data in blocks and the file is globally ordered, which avoids write amplification caused by compaction. By delivering the read feature, the Parser module is crafted to parse the query key, enabling direct file location without the need for level-by-level querying, thus addressing the issue of read amplification. Extensive experiments are conducted to validate the performance of SolsDB. Compared with LevelDB, SolsDB improves read performance by up to 4.7x, reduces read tail latency by 68.7% to 83.3%, and reduces the write amplification factor by 49.1% to 76.1%. © 2024 Elsevier B.V.},
+ author = {Yang, Cuihua and Yang, Fangning and Xu, Quanqing and Zhang, Yongquan and Liang, Junqing},
+ doi = {10.1016/j.future.2024.05.050},
+ journal = {Future Generation Computer Systems},
+ note = {Cited by: 5},
+ pages = {295 - 304},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SolsDB: Solve the Ethereum's bottleneck caused by storage engine},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85195688160?origin=resultslist},
+ volume = {160},
+ year = {2024}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/1687553.1687571,
+ abstract = {Mining for association rules and frequent patterns is a central activity in data mining. However, most existing algorithms are only moderately suitable for real-world scenarios. Most strategies use parameters like minimum support, for which it can be very difficult to define a suitable value for unknown datasets. Since most untrained users are unable or unwilling to set such technical parameters, we address the problem of replacing the minimum-support parameter with top-n strategies. In our paper, we start by extending a top-n implementation of the ECLAT algorithm to improve its performance by using heuristic search strategy optimizations. Also, real-world datasets are often distributed and modern database architectures are switching from expensive SMPs to cheaper shared-nothing blade servers. Thus, most mining queries require distribution handling. Since partitioning can be forced by user-defined semantics, it is often forbidden to transform the data. Therefore, we developed an adaptive top-n frequent-pattern mining algorithm that simplifies the mining process on real distributions by relaxing some requirements on the results. We first combine the PARTITION and the TPUT algorithms to handle distributed top-n frequent-pattern mining. Then, we extend this new algorithm for distributions with real-world data characteristics. For frequent-pattern mining algorithms, equal distributions are important conditions, and tiny partitions can cause performance bottlenecks. Hence, we implemented an approach called MAST that defines a minimum absolute-support threshold. MAST prunes patterns with low chances of reaching the global top-n result set and high computing costs. In total, our approach simplifies the process of frequent-pattern mining for real customer scenarios and data sets. This may make frequent-pattern mining accessible for very new user groups. Finally, we present results of our algorithms when run on the SAP NetWeaver BW Acceleratorwith standard and real business datasets.},
+ author = {Legler, Thomas and Lehner, Wolfgang and Schaffner, Jan and Kr\"{u}ger, Jens},
+ doi = {10.14778/1687553.1687571},
+ issn = {2150-8097},
+ issue_date = {August 2009},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {2},
+ numpages = {12},
+ pages = {1438–1449},
+ publisher = {VLDB Endowment},
+ title = {Robust and distributed top-n frequent-pattern mining with SAP BW accelerator},
+ url = {https://doi.org/10.14778/1687553.1687571},
+ volume = {2},
+ year = {2009}
+}

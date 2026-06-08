@@ -1,0 +1,13 @@
+@article{PAPASTEFANATOS2022101754,
+ abstract = {Characteristic sets (CS) organize RDF triples based on the set of properties associated with their subject nodes. This concept was recently used in indexing techniques, as it can capture the implicit schema of RDF data. While most CS-based approaches yield significant improvements in space and query performance, they fail to perform well when answering complex query workloads in the presence of schema heterogeneity, i.e., when the number of CSs becomes very large, resulting in a highly partitioned data organization. In this paper, we address this problem by introducing a novel technique, for merging CSs based on their hierarchical structure. Our method employs a lattice to capture the hierarchical relationships between CSs, identifies dense CSs and merges dense CSs with their ancestors. We have implemented our algorithm on top of a relational backbone, where each merged CS is stored in a relational table, and therefore, CS merging results in a smaller number of required tables to host the source triples of a dataset. Moreover, we perform an extensive experimental study to evaluate the performance and impact of merging to the storage and querying of RDF datasets, indicating significant improvements. We also conduct a sensitivity analysis to identify the stability and any possible weaknesses of our algorithm, and report on our results.},
+ author = {George Papastefanatos and Marios Meimaris and Panos Vassiliadis},
+ doi = {https://doi.org/10.1016/j.is.2021.101754},
+ issn = {0306-4379},
+ journal = {Information Systems},
+ keyword = {Schema optimization, Query processing, Knowledge graphs, RDF data},
+ pages = {101754},
+ title = {Relational schema optimization for RDF-based knowledge graphs},
+ url = {https://www.sciencedirect.com/science/article/pii/S0306437921000223},
+ volume = {104},
+ year = {2022}
+}

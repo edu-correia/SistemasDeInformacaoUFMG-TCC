@@ -1,0 +1,13 @@
+@article{ZHU2026130474,
+ abstract = {Stock trend prediction faces significant challenges due to market sentiment influences, long-term dependencies, and time-varying stock correlation. Specifically, (1) Current sentiment analysis methods exhibit insufficient market sentiment quantification and lack dynamic adaptive integration mechanisms for market fluctuations. (2) Transformer-based models’ quadratic complexity limits long-term stock prediction while lacking finance-specific temporal inductive biases. (3)Traditional temporal tokenization paradigms forcibly merge multi-stock features, weakening stock correlation modeling while dramatically increasing computational costs. To address these constraints, we present GHOST (Gated Hybrid Organization with Sentiment-guided Temporal Mamba and Stock-wise Tokenization Attention). In particular, we leverage GDELT(Global Database of Events, Language and Tone) sentiment quantification through a Hierarchical Sentiment-Gated Layer for dynamic fusion of affective features with trading data. Additionally, Intra-Stock Mamba Selection Layer achieves time-series linear complexity for long-term forecasting by combining a dynamically parameterized shared state space model to provide specialized financial inductive biases. Moreover, our Stock-wise Tokenization Layer converts temporal tokens into stock tokens while preserving data integrity, enabling Inter-Stock Attention Layer to capture stock correlation via attention between stock tokens and reducing attention computation complexity. Experimental results on real-world stock datasets demonstrate the effectiveness of our model. All code and datasets used in this study are publicly available on our GitHub: https://github.com/WHUT-zwj/GHOST.},
+ author = {Weijie Zhu and Liang Xie and Hanyu Fu and Jiangling Zhang},
+ doi = {https://doi.org/10.1016/j.eswa.2025.130474},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Market sentiment analysis, Intra-stock mamba, Stock-wise tokenization, Inter-stock attention, Stock trend prediction},
+ pages = {130474},
+ title = {GHOST: Sentiment-gated mamba and stock-wise tokenization attention for enhanced stock prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425040898},
+ volume = {301},
+ year = {2026}
+}

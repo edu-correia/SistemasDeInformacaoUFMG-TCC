@@ -1,0 +1,14 @@
+@inproceedings{10030738,
+ abstract = {High dynamic range (HDR) imaging is an indispensable technique in modern photography. Traditional methods focus on HDR reconstruction from multiple images, solving the core problems of image alignment, fusion, and tone mapping, yet having a perfect solution due to ghosting and other visual artifacts in the reconstruction. Recent attempts at single-image HDR reconstruction show a promising alternative: by learning to map pixel values to their irradiance using a neural network, one can bypass the align-and-merge pipeline completely yet still obtain a high-quality HDR image. In this work, we propose a weakly supervised learning method that inverts the physical image formation process for HDR reconstruction via learning to generate multiple exposures from a single image. Our neural network can invert the camera response to reconstruct pixel irradiance before synthesizing multiple exposures and hallucinating details in under- and over-exposed regions from a single input image. To train the network, we propose a representation loss, a reconstruction loss, and a perceptual loss applied on pairs of under- and over-exposure images and thus do not require HDR images for training. Our experiments show that our proposed model can effectively reconstruct HDR images. Our qualitative and quantitative results show that our method achieves state-of-the-art performance on the DrTMO dataset. Our code is available at https://github.com/VinAIResearch/single_image_hdr.},
+ author = {Le, Phuoc-Hieu and Le, Quynh and Nguyen, Rang and Hua, Binh-Son},
+ booktitle = {2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+ doi = {10.1109/WACV56688.2023.00405},
+ issn = {2642-9381},
+ keyword = {Training;Photography;Image quality;Visualization;Computer vision;Neural networks;Supervised learning;Algorithms: Computational photography;image and video synthesis;Low-level and physics-based vision},
+ month = {Jan},
+ number = {},
+ pages = {4052-4061},
+ title = {Single-Image HDR Reconstruction by Multi-Exposure Generation},
+ volume = {},
+ year = {2023}
+}

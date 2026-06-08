@@ -1,0 +1,16 @@
+@article{Zhang2017,
+ abstract = {As the cost-per-bit of solid state disks is decreasing quickly, SSDs are supplanting HDDs in many cases, including the primary storage of key-value stores. However, simply deploying LSM-tree-based key-value stores on commercial SSDs is inefficient and induces heavy write amplification and severe garbage collection overhead under write-intensive conditions. The main cause of these critical issues comes from the triple redundant management functionalities lying in the LSM-tree, file system and flash translation layer, which block the awareness between key-value stores and flash devices. Furthermore, we observe that the performance of LSM-tree-based key-value stores is improved little by only eliminating these redundant layers, as the I/O stacks, including the cache and scheduler, are not optimized for LSM-tree's unique I/O patterns. To address the issues above, we propose FlashKV, an LSM-tree based key-value store running on openchannel SSDs. FlashKV eliminates the redundant management and semantic isolation by directly managing the raw flash devices in the application layer. With the domain knowledge of LSM-tree and the open-channel information, FlashKV employs a parallel data layout to exploit the internal parallelism of the flash device, and optimizes the compaction, caching and I/O scheduling mechanisms specifically. Evaluations show that FlashKV effectively improves system performance by 1.5× to 4.5× and decreases up to 50% write traffic under heavy write conditions, compared to LevelDB. © 2017 ACM.},
+ author = {Zhang, Jiacheng and Lu, Youyou and Shu, Jiwu and Qin, Xiongjun},
+ doi = {10.1145/3126545},
+ journal = {ACM Transactions on Embedded Computing Systems},
+ note = {Cited by: 60},
+ number = {5s},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FlashKV: Accelerating KV performance with open-channel SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85030679526?origin=resultslist},
+ volume = {16},
+ year = {2017}
+}

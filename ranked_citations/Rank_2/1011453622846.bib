@@ -1,0 +1,18 @@
+@article{10.1145/3622846,
+ abstract = {Verona is a concurrent object-oriented programming language that organises all the objects in a program into a forest of isolated regions. Memory is managed locally for each region, so programmers can control a program's memory use by adjusting objects' partition into regions, and by setting each region's memory management strategy. A thread can only mutate (allocate, deallocate) objects within one active region---its "window of mutability". Memory management costs are localised to the active region, ensuring overheads can be predicted and controlled. Moving the mutability window between regions is explicit, so code can be executed wherever it is required, yet programs remain in control of memory use. An ownership type system based on reference capabilities enforces region isolation, controlling aliasing within and between regions, yet supporting objects moving between regions and threads. Data accesses never need expensive atomic operations, and are always thread-safe.},
+ address = {New York, NY, USA},
+ articleno = {270},
+ author = {Arvidsson, Ellen and Castegren, Elias and Clebsch, Sylvan and Drossopoulou, Sophia and Noble, James and Parkinson, Matthew J. and Wrigstad, Tobias},
+ doi = {10.1145/3622846},
+ issue_date = {October 2023},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {isolation, memory management, ownership, type systems},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {31},
+ publisher = {Association for Computing Machinery},
+ title = {Reference Capabilities for Flexible Memory Management},
+ url = {https://doi.org/10.1145/3622846},
+ volume = {7},
+ year = {2023}
+}

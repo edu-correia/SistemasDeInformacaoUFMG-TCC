@@ -1,0 +1,14 @@
+@article{9740528,
+ abstract = {Sketch recognition relies on two types of information, namely, spatial contexts like the local structures in images and temporal contexts like the orders of strokes. Existing methods usually adopt convolutional neural networks (CNNs) to model spatial contexts, and recurrent neural networks (RNNs) for temporal contexts. However, most of them combine spatial and temporal features with late fusion or single-stage transformation, which is prone to losing the informative details in sketches. To tackle this problem, we propose a novel framework that aims at the multi-stage interactions and refinements of spatial and temporal features. Specifically, given a sketch represented by a stroke array, we first generate a temporal-enriched image (TEI), which is a pseudo-color image retaining the temporal order of strokes, to overcome the difficulty of CNNs in leveraging temporal information. We then construct a dual-branch network, in which a CNN branch and a RNN branch are adopted to process the stroke array and the TEI respectively. In the early stages of our network, considering the limited ability of RNNs in capturing spatial structures, we utilize multiple enhancement modules to enhance the stroke features with the TEI features. While in the last stage of our network, we propose a spatio-temporal enhancement module that refines stroke features and TEI features in a joint feature space. Furthermore, a bidirectional temporal-compatible unit that adaptively merges features in opposite temporal orders, is proposed to help RNNs tackle abrupt strokes. Comprehensive experimental results on QuickDraw and TU-Berlin demonstrate that the proposed method is a robust and efficient solution for sketch recognition.},
+ author = {Li, Hanhui and Jiang, Xudong and Guan, Boliang and Wang, Ruomei and Thalmann, Nadia Magnenat},
+ doi = {10.1109/TIP.2022.3160240},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Convolutional neural networks;Image recognition;Stroke (medical condition);Network architecture;Image segmentation;Feature extraction;Recurrent neural networks;Sketch recognition;spatio-temporal feature;multi-modal networks;feature fusion},
+ month = {},
+ number = {},
+ pages = {2683-2694},
+ title = {Multistage Spatio-Temporal Networks for Robust Sketch Recognition},
+ volume = {31},
+ year = {2022}
+}

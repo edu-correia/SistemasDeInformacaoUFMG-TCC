@@ -1,0 +1,17 @@
+@article{10.14778/2794367.2794378,
+ abstract = {We present a new system, called Searchlight, that uniquely integrates constraint solving and data management techniques. It allows Constraint Programming (CP) machinery to run efficiently inside a DBMS without the need to extract, transform and move the data. This marriage concurrently offers the rich expressiveness and efficiency of constraint-based search and optimization provided by modern CP solvers, and the ability of DBMSs to store and query data at scale, resulting in an enriched functionality that can effectively support both data- and search-intensive applications. As such, Searchlight is the first system to support generic search, exploration and mining over large multi-dimensional data collections, going beyond point algorithms designed for point search and mining tasks.Searchlight makes the following scientific contributions:• Constraint solvers as first-class citizens Instead of treating solver logic as a black-box, Searchlight provides native support, incorporating the necessary APIs for its specification and transparent execution as part of query plans, as well as novel algorithms for its optimized execution and parallelization.• Speculative solving Existing solvers assume that the entire data set is main-memory resident. Searchlight uses an innovative two stage Solve-Validate approach that allows it to operate speculatively yet safely on main-memory synopses, quickly producing candidate search results that can later be efficiently validated on real data.• Computation and I/O load balancing As CP solver logic can be computationally expensive, executing it on large search and data spaces requires novel CPU-I/O balancing approaches when performing search distribution.We built a prototype implementation of Searchlight on Google's Or-Tools, an open-source suite of operations research tools, and the array DBMS SciDB. Extensive experimental results show that Searchlight often performs orders of magnitude faster than the next best approach (SciDB-only or CP-solver-only) in terms of end response time and time to first result.},
+ author = {Kalinin, Alexander and Cetintemel, Ugur and Zdonik, Stan},
+ doi = {10.14778/2794367.2794378},
+ issn = {2150-8097},
+ issue_date = {June 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {12},
+ pages = {1094–1105},
+ publisher = {VLDB Endowment},
+ title = {Searchlight: enabling integrated search and exploration over large multidimensional data},
+ url = {https://doi.org/10.14778/2794367.2794378},
+ volume = {8},
+ year = {2015}
+}

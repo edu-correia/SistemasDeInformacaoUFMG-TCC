@@ -1,0 +1,16 @@
+@article{Shen20191635,
+ abstract = {SQLite has been deployed in millions of mobile devices from Web to smartphone applications on various mobile operating systems. However, due to the uncoordinated IO interactions with the underlying file system (e.g., ext4), SQLite is not efficient with low transactions per second. In this paper, we for the first time propose a new SQLite-like database engine, called SQLiteKV, which adopts the LSM-tree-based data structure but retains the SQLite operation interfaces. With its SQLite interface, SQLiteKV can be utilized by existing applications without any modification, while providing high performance with its LSM-tree-based data structure. We separate SQLiteKV into the front-end and back-end. In the front-end, we develop a light-weight SQLite-to-KV compiler to solve the semantic mismatch, so SQL statements can be efficiently translated into KV operations. We also design a novel coordination caching mechanism with memory defragmentation so query results can be effectively cached inside SQLiteKV by alleviating the discrepancy of data management between front-end SQLite statements and back-end data organization. In the back-end, we adopt an LSM-tree-based key-value database engine, and propose a lightweight metadata management scheme to mitigate the memory requirement. We have implemented and deployed SQLiteKV on a Google Nexus 6P smartphone. Experimental results with various workloads show that SQLiteKV outperforms SQLite up to six times. © 1982-2012 IEEE.},
+ author = {Shen, Zhaoyan and Shi, Yuanjing and Shao, Zili and Guan, Yong},
+ doi = {10.1109/TCAD.2018.2855179},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 12},
+ number = {9},
+ pages = {1635 - 1647},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An Efficient LSM-Tree-Based SQLite-Like Database Engine for Mobile Devices},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85049937317?origin=resultslist},
+ volume = {38},
+ year = {2019}
+}

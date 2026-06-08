@@ -1,0 +1,14 @@
+@inproceedings{10538547,
+ abstract = {Pattern matching is a crucial technique for network traffic detection applications. As a fundamental computation model used by pattern matching, the finite state automata execute sequential matching due to the state dependence among transitions. Meanwhile, most services tend to compress their data to improve transmission or storage efficiency. The increased compressed data challenges the straightforward method of matching the whole decompressed data and incurs data dependence among the compression encodings. The related approaches either leverage techniques to break the state dependence of matching uncompressed data or accelerate matching compressed data in a single-threaded manner without considering the state and data dependence. None of them can perform parallel matching over compressed data. This paper provides PETALS, a parallel pattern matching method over Brotli compressed network traffic. PETALS partitions the original compressed traffic into fixed- length blocks for parallel matching and patches the broken compression encodings crossing blocks to break the data dependence. Then, it merges the compressed traffic matching method into path fusion, an enumerative parallelization of finite state automata, to present parallel matching over compressed traffic. Evaluation using real-world network traffic and regular expressions shows that PETALS can raise the speedup from 1.53x to 3.53x of the state-of-the-art parallelization schemes on a 56-cores machine.},
+ author = {Sun, Xiuwen and Zhang, Guangzheng and Wu, Di and Yu, Qingying and Cui, Jie and Zhong, Hong},
+ booktitle = {2023 IEEE 22nd International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)},
+ doi = {10.1109/TrustCom60117.2023.00079},
+ issn = {2324-9013},
+ keyword = {Privacy;Instruction sets;Computational modeling;Automata;Telecommunication traffic;Programming;Parallel processing;Parallelization;Compressed Traffic Matching;Brotli;Regular Expression Matching;Pattern Matching},
+ month = {Nov},
+ number = {},
+ pages = {477-484},
+ title = {Parallel Pattern Matching over Brotli Compressed Network Traffic},
+ volume = {},
+ year = {2023}
+}

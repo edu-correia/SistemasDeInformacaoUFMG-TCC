@@ -1,0 +1,15 @@
+@article{Ferragina2025,
+ abstract = {We study the problem of engineering space–time efficient data structures that support membership and rank queries on very large static dictionaries of strings. Our solution is based on a very simple approach that decouples string storage and string indexing by means of a block-wise compression of the sorted dictionary strings (to be stored in external memory) and a succinct implementation of a Patricia trie (to be stored in internal memory) built on the first string of each block. On top of this, we design an in-memory cache that, given a sample of the query workload, augments the Patricia trie with additional information to reduce the number of I/Os of future queries. Our experimental evaluation on two new datasets, which are at least one order of magnitude larger than the ones used in the literature, shows that (i) the state-of-the-art compressed string dictionaries, compared to Patricia tries, do not provide significant benefits when used in a large-scale indexing setting, and (ii) our two-level approach enables the indexing and storage of 3.5 billion strings taking 273 GB in just less than 200 MB of internal memory and 83 GB of compressed disk space, while still guaranteeing comparable or faster query performance than those offered by array-based solutions used in modern storage systems, such as RocksDB, thus possibly influencing their future design. © 2024 The Authors},
+ author = {Ferragina, Paolo and Rotundo, Mariagiovanna and Vinciguerra, Giorgio},
+ doi = {10.1016/j.is.2024.102490},
+ journal = {Information Systems},
+ note = {Cited by: 1; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Two-level massive string dictionaries},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85208766360?origin=resultslist},
+ volume = {128},
+ year = {2025}
+}

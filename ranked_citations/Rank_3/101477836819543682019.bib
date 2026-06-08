@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3682019,
+ abstract = {The schemalessness, one of the major advantages of JSON representation format, comes with high penalties in querying and operations by denying various critical functions such as query optimizations, indexing, or data verification. There have been continuous efforts to develop an accurate JSON schema discovery algorithm from a bag of JSON documents. Unfortunately, existing schema discovery techniques, being top-down algorithms, face challenges from the lack of visibility into children nodes of JSON tree. With absence of the information about lower-level JSON elements, top-down algorithms need to employ assumptions and heuristics to decide the schema type of nodes. However, such static decisions are often violated in datasets which causes top-down algorithms to perform poorly. To overcome this, we propose an algorithm, called ReCG, that processes JSON documents in a bottom-up manner. It builds up schemas from leaf elements upward in the JSON document tree and, thus, can make more informed decisions of the schema node types. In addition, we adopt MDL (Minimum Description Length) principles systematically while building up the schemas to choose among candidate schemas the most concise yet accurate one with well-balanced generality. Evaluations show that our technique improves the recall and precision of found schemas by as high as 47%, resulting in 46% better F1 score while also performing 2.11\texttimes{} faster on average against the state-of-the-art.},
+ author = {Yun, Joohyung and Tak, Byungchul and Han, Wook-Shin},
+ doi = {10.14778/3681954.3682019},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {3538–3550},
+ publisher = {VLDB Endowment},
+ title = {ReCG: Bottom-up JSON Schema Discovery Using a Repetitive Cluster-and-Generalize Framework},
+ url = {https://doi.org/10.14778/3681954.3682019},
+ volume = {17},
+ year = {2024}
+}

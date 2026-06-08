@@ -1,0 +1,15 @@
+@article{Jocksch2021,
+ abstract = {Collective communication, namely the pattern allreduce in message-passing systems, is optimised based on measurements at the installation time of the library. The algorithms used are set up in an initialisation phase of the communication, as so-called persistent collective communication, introduced in the message-passing interface (MPI) standard. Part of our allreduce algorithms are the patterns reduce_scatter and allgatherv which are also considered standalone. For the allreduce pattern for short messages the existing cyclic shift algorithm (Bruck's algorithm) is applied with a prefix operation. For allreduce and long messages our algorithm is based on reduce_scatter and allgatherv, where the cyclic shift algorithm is applied with a flexible number of communication ports per node. The algorithms for equal message sizes are used with non-equal message sizes together with a heuristic for rank reordering. Medium message sizes are communicated with an incomplete reduce_scatter followed by allgatherv. Furthermore, an optional recursive application of the cyclic shift algorithm is applied. All algorithms are applied at the node level. The data is gathered and scattered by the cores within the node and the communication algorithms are applied across the nodes. In general, our approach outperforms the non-persistent counterpart in established MPI libraries by up to one order of magnitude or shows equal performance, with a few exceptions of number of nodes and message sizes. © 2021},
+ author = {Jocksch, Andreas and Ohana, Noé and Lanti, Emmanuel and Koutsaniti, Eirini and Karakasis, Vasileios and Villard, Laurent},
+ doi = {10.1016/j.parco.2021.102812},
+ journal = {Parallel Computing},
+ note = {Cited by: 7; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An optimisation of allreduce communication in message-passing systems},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85112497290?origin=resultslist},
+ volume = {107},
+ year = {2021}
+}

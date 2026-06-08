@@ -1,0 +1,18 @@
+@article{10.1145/3656445,
+ abstract = {We present SpEQ, a quick and correct strategy for detecting semantics in sparse codes and enabling automatic translation to high-performance library calls or domain-specific languages (DSLs). When sparse linear algebra codes contain implicit preconditions about how data is stored that hamper direct translation, SpEQ identifies the high-level computation along with storage details and related preconditions. A run-time check guards the translation and ensures that required preconditions are met.We implement SpEQ using the LLVM framework, the Z3 solver, and egglog library and correctly translate sparse linear algebra codes into two high-performance libraries, NVIDIA cuSPARSE and Intel MKL, and OpenMP (OMP). We evaluate SpEQ on ten diverse benchmarks against two state-of-the-art translation tools. SpEQ achieves geometric mean speedups of 3.25\texttimes{},5.09\texttimes{}, and 8.04\texttimes{} on OpenMP, MKL, and cuSPARSE backends, respectively. SpEQ is the only tool that can guarantee the correct translation of sparse computations.},
+ address = {New York, NY, USA},
+ articleno = {215},
+ author = {Laird, Avery and Liu, Bangtian and Bj\o{}rner, Nikolaj and Dehnavi, Maryam Mehri},
+ doi = {10.1145/3656445},
+ issue_date = {June 2024},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Program Analysis, Verification, Equivalence Checking, Equality Saturation},
+ month = {June},
+ number = {PLDI},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {SpEQ: Translation of Sparse Codes using Equivalences},
+ url = {https://doi.org/10.1145/3656445},
+ volume = {8},
+ year = {2024}
+}

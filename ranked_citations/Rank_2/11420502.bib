@@ -1,0 +1,14 @@
+@inproceedings{11420502,
+ abstract = {D Gaussian Splatting (3DGS) has emerged as a promising 3D reconstruction technique. The traditional 3DGS training pipeline follows three sequential steps: Gaussian densification, Gaussian projection, and color splatting. Despite its promising reconstruction quality, this conventional approach suffers from three critical inefficiencies: (1) Skewed density allocation during Gaussian densification. The adaptive densification strategy in 3DGS makes skewed Gaussian allocation across dense and sparse regions. The number of Gaussians of dense regions can be $100 \times$ that of sparse regions, leading to Gaussian redundancy. (2) Imbalanced computation workload during Gaussian projection. The traditional one-to-one allocation mechanism between threads and pixels results in execution time discrepancies between threads, leading to $\sim 20 \%$ latency overhead. (3) Fragmented memory access during color splatting. Discrete storage of colors in memory fails to take advantage of data locality with fragmented memory access, resulting in $\sim 2.0 \times$ color memory access time. To tackle the above challenges, we introduce BalanceGS, the algorithm-system co-design for efficient training in 3DGS. (1) At the algorithm level, we propose heuristic workload-sensitive Gaussian density control to automatically balance point distributions - removing 80% redundant Gaussians in dense regions while filling gaps in sparse areas. (2) At the system level, we propose Similarity-based Gaussian sampling and merging, which replaces the static one-to-one thread-pixel mapping with adaptive workload distribution - threads now dynamically process variable numbers of Gaussians based on local cluster density. (3) At the mapping level, we propose reordering-based memory access mapping strategy that restructures RGB storage and enables batch loading in shared memory. Extensive experiments demonstrate that compared with 3DGS, our approach achieves a $1.44 \times$ training speedup on a NVIDIA A100 GPU with negligible quality degradation.},
+ author = {Wu, Junyi and Xu, Jiaming and Li, Jinhao and Zhou, Yongkang and Pan, Jiayi and Li, Xingyang and Dai, Guohao},
+ booktitle = {2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)},
+ doi = {10.1109/ASP-DAC66049.2026.11420502},
+ issn = {2153-697X},
+ keyword = {Training;Three-dimensional displays;Image color analysis;Instruction sets;Heuristic algorithms;Merging;Memory management;Graphics processing units;Rendering (computer graphics);Resource management},
+ month = {Jan},
+ number = {},
+ pages = {896-902},
+ title = {BalanceGS: Algorithm-System Co-design for Efficient 3D Gaussian Splatting Training on GPU},
+ volume = {},
+ year = {2026}
+}

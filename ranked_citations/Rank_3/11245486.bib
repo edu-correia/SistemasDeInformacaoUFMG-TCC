@@ -1,0 +1,14 @@
+@article{11245486,
+ abstract = {With the rapid proliferation of blockchain technology, the volume of stored data has increased dramatically. Existing blockchain systems typically employ a key–value storage model, which is efficient for single-key lookups but inadequate for complex queries such as value-based conditional searches and range queries. Although several studies have attempted to support complex queries by integrating external databases, such approaches inherently suffer from integrity and synchronization issues. To address these limitations, we propose and implement an LSM-Tree augmented with hierarchical, level-specific B-tree indexes (referred to as LSM HB-tree). The proposed architecture augments the conventional LSM-Tree hierarchy with level-specific B-tree indexes, thereby supporting composite key indexing and improving the efficiency of data retrieval within on-chain storage. Index construction builds a B-tree index for SSTables at each level, thereby reducing disk access costs and significantly improving the performance of equality and range queries. We evaluate the system by varying the SSTable threshold from 2 MiB to 32 MiB and observe that an 8 MiB threshold provides the best trade-off between write latency and query efficiency. Under this configuration, experiments with equality and range queries under selectivity levels ranging from 0.01% to 100% demonstrate that LSM HB-tree substantially reduces query latency compared to the conventional LSM-Tree. Furthermore, multi-threaded experiments with up to 16 threads reveal that the best performance for both equality and range queries is achieved with four threads. Collectively, these results confirm that LSM HB-tree is a practical and effective index structure for supporting efficient complex queries entirely within the internal blockchain architecture.},
+ author = {Lee, Byeongyeong and Byun, Kyeongsu and Kwon, Joonho},
+ doi = {10.1109/ACCESS.2025.3632512},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Blockchains;Trees (botanical);Indexing;Query processing;Synchronization;Databases;Compaction;Research and development;Metadata;Throughput;Blockchain;LSM-tree;B-tree;range query processing;hierarchical indexing;parallel query execution},
+ month = {},
+ number = {},
+ pages = {194596-194613},
+ title = {LSM HB-Tree: An LSM Tree Augmented With Hierarchical B-Tree for Efficient Range Query Processing on Blockchain Data},
+ volume = {13},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@conference{Zhao2020601,
+ abstract = {Sparse Matrix-Vector Multiplication (SpMV) is a fundamental workload of numerous applications. However, for today's high-end superscalar CPUs, such as Intel Xeon series, it is usually difficult to efficiently perform SpMV due to the irregular, matrix-dependent data access and computation pattern. While many researches focus on optimizing the memory bandwidth bound by improving data locality, this work dives into the execution of SpMV computation on Intel Xeon CPU and reveals that the bad-speculation penalty is significant in many sparse matrices and too expensive to be ignored. We study and characterize sparsity structure types that are more vulnerable to the cache miss penalty or the bad speculation penalty, respectively. Based on this insight, we proposed a fast preprocessing method, which divides the matrix into sub-matrices and determines the critical performance bound of sub-matrices according to the data distribution characteristics. On each submatrix, a combination of dedicated row reordering strategies is performed to efficiently alleviate its key performance bounds: bad speculation, cache miss, or both. Our matrix representation is based on standard Compressed Sparse Row (CSR) format, and can be easily adapted to existing SpMV libraries. Our approach is evaluated on Intel Xeon Gold 6146 Processor with a wide-range of matrices from the SuiteSparse benchmarks. The results demonstrate that the proposed approach achieves an average 1.8× speedup (up to 2.5×) on multi-threaded MKL Sparse Routines, with a quite low pre-processing cost. Additionally, when used in conjunction with MKL's original optimization method, our approach can further prompt the speedup, to average 3.6 × (up to 8.3 ×), This result indicates that our method can serve as a fast and wide-spectrum optimization method which is compatible with existing routines. © 2020 IEEE.},
+ author = {Zhao, Haoran and Xia, Tian and Li, Chenyang and Zhao, Wenzhe and Zheng, Nanning and Ren, Pengju},
+ doi = {10.1109/ICCD50377.2020.00105},
+ journal = {Proceedings - IEEE International Conference on Computer Design: VLSI in Computers and Processors},
+ note = {Cited by: 16},
+ pages = {601 - 609},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Exploring Better Speculation and Data Locality in Sparse Matrix-Vector Multiplication on Intel Xeon},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85098875527?origin=resultslist},
+ volume = {2020-October},
+ year = {2020}
+}

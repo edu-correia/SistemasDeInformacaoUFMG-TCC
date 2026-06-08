@@ -1,0 +1,16 @@
+@article{Kluban2024,
+ abstract = {JavaScript is often rated as the most popular programming language for the development of both client-side and server-side applications. Because of its popularity, JavaScript has become a frequent target for attackers who exploit vulnerabilities in the source code to take control over the application. To address these JavaScript security issues, such vulnerabilities must be identified first. Existing studies in vulnerable code detection in JavaScript mostly consider package-level vulnerability tracking and measurements. However, such package-level analysis is largely imprecise, as real-world services that include a vulnerable package may not use the vulnerable functions in the package. Moreover, even the inclusion of a vulnerable function may not lead to a security problem if the function cannot be triggered with exploitable inputs. In this article, we develop a vulnerability detection framework that uses vulnerable pattern recognition and textual similarity methods to detect vulnerable functions in real-world JavaScript projects, combined with a static multi-file taint analysis mechanism to further assess the impact of the vulnerabilities on the whole project (i.e., whether the vulnerability can be exploited in a given project). We compose a comprehensive dataset of 1,360 verified vulnerable JavaScript functions using the Snyk vulnerability database and the VulnCode-DB project. From this ground-truth dataset, we build our vulnerable patterns for two common vulnerability types: prototype pollution and Regular Expression Denial of Service (ReDoS). With our framework, we analyze 9,205,654 functions (from 3,000 NPM packages, 1,892 websites and 557 Chrome Web extensions), and detect 117,601 prototype pollution and 7,333 ReDoS vulnerabilities. By further processing all 5,839 findings from NPM packages with our taint analyzer, we verify the exploitability of 290 zero-day cases across 134 NPM packages. In addition, we conduct an in-depth contextual analysis of the findings in 17 popular/critical projects and study the practical security exposure of 20 functions. With our semi-automated vulnerability reporting functionality, we disclosed all verified findings to project owners. We also obtained 25 published CVEs for our findings, 19 of them rated as "Critical"severity and six rated as "High"severity. Additionally, we obtained 169 CVEs that are currently "Reserved"(as of Apr. 2023). As evident from the results, our approach can shift JavaScript vulnerability detection from the coarse package/library level to the function level and thus improve the accuracy of detection and aid timely patching. © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Kluban, Maryna and Mannan, Mohammad and Youssef, Amr},
+ doi = {10.1145/3630253},
+ journal = {ACM Transactions on Privacy and Security},
+ note = {Cited by: 5; All Open Access; Bronze Open Access},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {On detecting and measuring exploitable javascript functions in real-world applications},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85185252093?origin=resultslist},
+ volume = {27},
+ year = {2024}
+}

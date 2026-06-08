@@ -1,0 +1,14 @@
+@article{10562356,
+ abstract = {In this article, a hard constraint (HC) and domain-decomposition-based physics-informed neural network (HCD-PINN) framework is introduced for nonhomogeneous transient thermal analysis. In general, physics-informed neural network (PINN) uses a global neural network to approximate the solutions of partial differential equations (PDEs), and its performance could decrease dramatically when the problem becomes big or complex. To get this deficiency addressed and simultaneously enhance the modeling capability of PINN, in this work, the domain decomposition method (DDM)-based strategy is introduced. In each subdomain, an independent neural network is used to approximate the solution. Thereby, the size and complexity of the neutral network are reduced. To facilitate effective integration of solutions across different regions, an HC method is proposed for automatic satisfaction of interface conditions between adjacent subdomains. At the interface, continuity conditions for temperature and heat flux are considered, with heat flux continuity expressed in terms of the derivative of temperature. Using the mixed residual method (MIM), continuity conditions at the interface can be transformed into a linear form of the neural network outputs. This eliminates the need for differentiation, enabling automatic satisfaction of conditions through the use of a predefined HC matrix. Ultimately, we merge neural networks responsible for subdomains and interfaces, along with the HC matrix, using a differentiable distance function. This integration establishes a cohesive and unified framework. To validate the efficiency and accuracy of HCD-PINN, several numerical examples are studied and compared with previous PINN methods, with COMSOL simulations as exact solutions. The experimental results demonstrate the superior accuracy of our proposed method.},
+ author = {Wu, Zengkai and Jun Jiang, Li and Sun, Sheng and Li, Ping},
+ doi = {10.1109/TCPMT.2024.3416523},
+ issn = {2156-3985},
+ journal = {IEEE Transactions on Components, Packaging and Manufacturing Technology},
+ keyword = {Neural networks;Transient analysis;Thermal analysis;Heating systems;Finite element analysis;Time-domain analysis;Accuracy;3-D packages;domain decomposition (DDM);hard constraint (HC);physics-informed neural network (PINN);transient thermal analysis},
+ month = {July},
+ number = {7},
+ pages = {1215-1226},
+ title = {A Hard Constraint and Domain-Decomposition- Based Physics-Informed Neural Network Framework for Nonhomogeneous Transient Thermal Analysis},
+ volume = {14},
+ year = {2024}
+}

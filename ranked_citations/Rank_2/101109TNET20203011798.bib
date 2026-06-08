@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2020.3011798,
+ abstract = {Fast detection of heavy flows (e.g., heavy hitters and heavy changers) in massive network traffic is challenging due to the stringent requirements of fast packet processing and limited resource availability. Invertible sketches are summary data structures that can recover heavy flows with small memory footprints and bounded errors, yet existing invertible sketches incur high memory access overhead that leads to performance degradation. We present MV-Sketch, a fast and compact invertible sketch that supports heavy flow detection with small and static memory allocation. MV-Sketch tracks candidate heavy flows inside the sketch data structure via the idea of majority voting, such that it incurs small memory access overhead in both update and query operations, while achieving high detection accuracy. We present theoretical analysis on the memory usage, performance, and accuracy of MV-Sketch in both local and network-wide scenarios. We further show how MV-Sketch can be implemented and deployed on P4-based programmable switches subject to hardware deployment constraints. We conduct evaluation in both software and hardware environments. Trace-driven evaluation in software shows that MV-Sketch achieves higher accuracy than existing invertible sketches, with up to 3.38× throughput gain. We also show how to boost the performance of MV-Sketch with SIMD instructions. Furthermore, we evaluate MV-Sketch on a Barefoot Tofino switch and show how MV-Sketch achieves line-rate measurement with limited hardware resource overhead.},
+ author = {Tang, Lu and Huang, Qun and Lee, Patrick P. C.},
+ doi = {10.1109/tnet.2020.3011798},
+ issn = {1063-6692},
+ issue_date = {Oct. 2020},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {October},
+ number = {5},
+ numpages = {14},
+ pages = {2350–2363},
+ publisher = {IEEE Press},
+ title = {A Fast and Compact Invertible Sketch for Network-Wide Heavy Flow Detection},
+ url = {https://doi.org/10.1109/TNET.2020.3011798},
+ volume = {28},
+ year = {2020}
+}

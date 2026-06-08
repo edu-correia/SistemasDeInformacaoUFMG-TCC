@@ -1,0 +1,14 @@
+@inproceedings{11333857,
+ abstract = {The large model size and high computational cost of the Document Understanding Transformer (Donut) and other OCR-free architectures from the Visual Document Understanding (VDU) models pose significant obstacles to scalable and practical deployment. In this paper, we present Slim-Donut, a new lightweight and scalable framework designed for high-throughput generation of ToCs (Table of Contents). Slim-Donut optimizes the standard Donut architecture through a two-pronged approach: first, it incorporates a dynamic token slimming module into the Swin Transformer encoder to reduce computational complexity by adaptively merging redundant visual features; second, it employs post-training quantization and knowledge distillation to significantly compress the model size while preserving high fidelity. By fine-tuning the comprehensive DocLayNet dataset, Slim-Donut learns to accurately identify and structure hierarchical headers. Our experimental evaluation shows that Slim-Donut achieves an $8 \times$ improvement in CPU inference speed, a $3 \times$ reduction in model parameters, and a $2.5 \times$ reduction in GFLOPs compared to the baseline Donut model, while maintaining comparable accuracy. Furthermore, it outperforms other leading architectures like LayoutLMv3 in scalability and deployment readiness. Crucially, this efficiency is achieved with only a minimal trade-off in extraction accuracy, establishing a new, highly favorable point on the performance efficiency frontier for document indexing tasks. This work demonstrates the immense potential of architectural optimization and model compression to create practical, scalable solutions for automated document structuring.},
+ author = {Dhondge, Om and Bayyapu, Neelima},
+ booktitle = {2025 Supercomputing India (SCI)},
+ doi = {10.1109/SCI68648.2025.11333857},
+ issn = {},
+ keyword = {Visualization;Accuracy;Quantization (signal);Computational modeling;Scalability;Computer architecture;Transformers;Model compression;Standards;Optimization;Table of Contents Generation;Visual Document Understanding;Lightweight Model;Donut model;DocyLayNet dataset},
+ month = {Dec},
+ number = {},
+ pages = {1-8},
+ title = {Slim-Donut: A Lightweight and Scalable Transformer for Accelerated Table of Contents Generation},
+ volume = {},
+ year = {2025}
+}

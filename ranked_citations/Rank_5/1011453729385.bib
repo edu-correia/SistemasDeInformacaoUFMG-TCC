@@ -1,0 +1,18 @@
+@article{10.1145/3729385,
+ abstract = {Foundation models (FMs) have become the backbone of intelligent systems. Collaborative development of FMs enables multiple teams to fine-tune different aspects of an FM simultaneously. However, conflicts in model updates across teams, particularly when modifying overlapping parameters, pose significant challenges to maintaining model performance. To address these challenges, in this paper, we propose Medusa, a novel framework designed to support collaborative FM development by managing model branches and introducing a structured system of parameter ownership. Medusa tracks fine-tuning efforts as separate branches, similar to Git, allowing developers to work on different tasks without destabilizing the base model. Instead of passively merging parameters from already fine-tuned models, Medusa proactively controls the merging process through our novel algorithm for assigning ownership of parameters by generating merging-aware masks to guide the fine-tuning process, ensuring that only specific branches can modify designated parameters. Medusa approximates the optimal assignment even as model complexity increases, ensuring scalability in large models. To investigate the efficacy of Medusa, we conduct extensive evaluations on five datasets and three models fine-tuned by three popular techniques, and compare our approach against six state-of-the-art approaches for post-training model merging. The evaluation results show that Medusa substantially and generally improves the effectiveness of collaborative model development, across different models, fine-tuning techniques, and datasets. Specifically, with automated parameter ownership assignment and masked fine-tuning, Medusa outperforms post-training model-merging approaches by improving model performance after merging by 3.19% absolute points. Ablation studies further demonstrate the efficacy of the algorithms in Medusa.},
+ address = {New York, NY, USA},
+ articleno = {FSE115},
+ author = {Ran, Dezhi and Cao, Yuan and Guo, Yuzhe and Li, Yuetong and Wu, Mengzhou and Chen, Simin and Yang, Wei and Xie, Tao},
+ doi = {10.1145/3729385},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Foundation Models, Large Language Models, Mixed Integer Programming, Model Development Process, Model Merging, Ownership Assignment, Parameter-Efficient Fine-Tuning},
+ month = {June},
+ number = {FSE},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Medusa: A Framework for Collaborative Development of Foundation Models with Automated Parameter Ownership Assignment},
+ url = {https://doi.org/10.1145/3729385},
+ volume = {2},
+ year = {2025}
+}

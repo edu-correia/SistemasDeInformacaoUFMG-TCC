@@ -1,0 +1,15 @@
+@conference{Lee2019384,
+ abstract = {Several key-value stores such as RocksDB and MongoDB are implemented on the file system using the Log-Structured Merge-Tree (LSM-tree). The LSM-tree involves high compaction overhead. To minimize this overhead, WiscKey, the state-of-the-art LSM-tree, separates key and value, appends the value to the Value Log file, and LSM-tree manages only the key and Value Log offset. This minimizes the compaction overhead by reducing the number of SSTables managed by the LSM-tree. However, WiscKey still has a high I/O stack overhead that must go through the OS file system and block-layer. Therefore, this paper proposes iLSM-SSD that implements WiscKey in SSD and supports near-data processing. iLSM-SSD has the following features: (i) iLSM-SSD implements a key-value separation based LSM-tree in a limited memory space inside the SSD. (ii) The Value Log offset update management overhead incurred during the Value Log cleaning has a significant performance impact on CPU and memory-constrained SSD environments. To minimize this overhead, iLSM-SSD implements Scattered Logging, which reuses invalidated Value Log pages on the Value Log. (iii) iLSM-SSD manages the data layout internally. This enables iLSM-SSD to eliminate the need for file system interactions to obtain the data layout for in-storage processing on traditional block-interface-based SSDs. We prototyped the iLSM-SSD on the Cosmos+ OpenSSD platform in a Linux environment. Extensive evaluations with synthetic benchmarks have shown that the PUT performance of iLSM-SSD is 1.6-4 times higher than that of WiscKey implemented in RocksDB. © 2019 IEEE.},
+ author = {Lee, Chang-Gyu and Kang, Hyeongu and Park, Donggyu and Park, Sungyong and Kim, Youngjae and Noh, Jungki and Chung, Woosuk and Park, Kyoung},
+ doi = {10.1109/MASCOTS.2019.00048},
+ journal = {Proceedings - IEEE Computer Society's Annual International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunications Systems, MASCOTS},
+ note = {Cited by: 26},
+ pages = {384 - 395},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ILSM-SSD: An intelligent LSM-Tree based key-value SSD for data analytics},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85077801856?origin=resultslist},
+ volume = {2019-October},
+ year = {2019}
+}

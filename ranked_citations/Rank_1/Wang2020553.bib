@@ -1,0 +1,15 @@
+@conference{Wang2020553,
+ abstract = {With the gaining popularity of the Non-Volatile Memory (NVM) technology, NVM express (NVMe) is now becoming the de facto interface for high-end block devices. NVMe generally enables the applications to exploit the massive internal parallelism of new-generation solid-state drives (SSDs) by issuing simultaneous I/O requests. However, existing B+ Trees are unable to maximize the utilization of NVMe hardware performance because of their synchronous execution paradigm which is incompatible with the interface of NVMe. To tackle this problem, we propose PA-Tree, an NVMe-friendly B+ Tree with a novel, polled-mode, asynchronous execution paradigm to process multiple index operations in an interleaved and asynchronous manner. Such an execution paradigm allows PA-Tree to saturate NVMe hardware with sufficient asynchronous I/O operations, while avoiding the potential overhead of excessive multi-threading. To further unleash the power of the new paradigm, we devise a new workload-aware scheduling algorithm to optimize the access to the NVMe interface based on the unique characteristic of NVMe, which enhances throughput while minimizing processing latency as well as CPU consumption. Extensive experiments on both synthetic and real workloads demonstrate that PA-Tree achieves up to 5× improvement on throughput and 30% reduction on latency against state-of-the-art solutions. © 2020 IEEE.},
+ author = {Wang, Li and Zhang, Zining and He, Bingsheng and Zhang, Zhenjie},
+ doi = {10.1109/ICDE48307.2020.00054},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 8},
+ pages = {553 - 564},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PA-Tree: Polled-mode asynchronous B+ tree for NVMe},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85085856661?origin=resultslist},
+ volume = {2020-April},
+ year = {2020}
+}

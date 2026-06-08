@@ -1,0 +1,14 @@
+@inproceedings{4420170,
+ abstract = {Modern architectures rely on exploiting parallelism found at the instruction level to achieve high performance. Aggressive ILP compilers expose high amounts of instruction level parallelism where, in some cases, the number of architected registers is not enough to hold the results of potential parallel instructions. This paper presents a new code generation scheme for the QueueCore, a 32-bit queue-based architecture capable of executing high amounts of ILP. QueueCore's instructions implicitly read their operands and write results. Compiling for the QueueCore requires that all instructions have at most one explicit operand represented as an offset calculated at compile-time. Additionally, the instructions must be scheduled in level-order manner. The proposed algorithm successfully restricts all instructions to have at most one offset reference, it computes the offset values, and makes a level-order scheduling of the program. To evaluate the effectiveness of the new code generation scheme we developed a queue compiler and compiled a set of benchmark programs. Our results show that the code has more parallelism than optimized RISC code by factors ranging from 1.12 to 2.30. QueueCore's instruction set allows us to generate code about 40%-18% denser than optimized RISC code.},
+ author = {Canedo, Arquimedes and Abderazek, Ben A. and Sowa, Masahiro},
+ booktitle = {Eighth International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2007)},
+ doi = {10.1109/PDCAT.2007.12},
+ issn = {2379-5352},
+ keyword = {Registers;Parallel processing;Hardware;Processor scheduling;Scheduling algorithm;Program processors;Reduced instruction set computing;Encoding;Computational modeling;Distributed computing},
+ month = {Dec},
+ number = {},
+ pages = {185-192},
+ title = {New Code Generation Algorithm for QueueCore An Embedded Processor with High ILP},
+ volume = {},
+ year = {2007}
+}

@@ -1,0 +1,15 @@
+@article{Liu20252886,
+ abstract = {Learned indexes have attracted significant research interest due to their potential to offer better space-time trade-offs compared to B+- tree variants. Among various learned indexes, the PGM-Index based on error-bounded piecewise linear approximation is an elegant data structure that has demonstrated provably superior performance over conventional B+-tree indexes. However, despite numerous efforts to optimize the design of the PGM-Index, few systematically study the root causes of performance mismatches observed in practice. In this paper, we explore two key research questions. Q1: Why are PGM-Indexes theoretically effective? and Q2: Why do PGM-Indexes underperform in practice? For Q1, we show that for a set of Nsorted keys, the PGM-Index can achieve a lookup time of O(log log N) while using O(N) space. For Q2, we identify that querying PGM-Indexes is highly memory-bound, where the internal index search operations often become the bottleneck. To fill the performance gap, we propose PGM++, a simple yet effective extension to the original PGM-Index that employs a mixture of different search strategies, with hyper-parameters automatically tuned through a cost model calibrated by theoretical findings. Extensive experiments show that, at comparable space costs, PGM++ speeds up index lookup queries by up to 2.31× and 1.56× when compared to the original PGM-Index and SOTA baselines. © 2025, VLDB Endowment. All rights reserved.},
+ author = {Liu, Qiyu and Han, Siyuan and Qi, Yanlin and Peng, Jingshu and Li, Jin and Lin, Longlong and Chen, Lei},
+ doi = {10.14778/3746405.3746415},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 0},
+ pages = {2886 - 2898},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Why Are Learned Indexes So Effective but Sometimes Ineffective?},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105014238650?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

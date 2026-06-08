@@ -1,0 +1,16 @@
+@article{Huang2023134,
+ abstract = {Having dominated databases and various data management systems for decades, B<sup>+</sup>-tree is infamously subject to a logging dilemma: One could improve B<sup>+</sup>-tree speed performance by equipping it with a larger log, which nevertheless will degrade its crash recovery speed. Such a logging dilemma is particularly prominent in the presence of modern workloads that involve intensive small writes. In this paper, we propose a novel solution, called per-page logging based B<sup>+</sup>-tree, which leverages the emerging computational storage drive (CSD) with built-in transparent compression to fundamentally resolve the logging dilemma. Our key idea is to divide the large single log into many small (e.g., 4KB), highly compressible per-page logs, each being statically bounded with a B<sup>+</sup>-tree page. All per-page logs together form a very large over-provisioned log space for B<sup>+</sup>-tree to improve its operational speed performance. Meanwhile, during crash recovery, B<sup>+</sup>-tree does not need to scan any per-page logs, leading to a recovery latency independent from the total log size. We have developed and open-sourced a fully functional prototype. Our evaluation results show that, under small-write intensive workloads, our design solution can improve B<sup>+</sup>-tree operational throughput by up to 625.6% and maintain a crash recovery time of as low as 19.2 ms, while incurring a minimal storage overhead of only 0.5-1.6%. © 2023, VLDB Endowment. All rights reserved.},
+ author = {Huang, Kecheng and Shen Shenzhaoyan@Sdu.Edu.Cn, Zhaoyan and Shao, Zili and Zhang, Tong and Chen, Feng},
+ doi = {10.14778/3626292.3626297},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 8},
+ number = {2},
+ pages = {134 - 147},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Breathing New Life into An Old Tree: Resolving Logging Dilemma of B+-tree on Modern Computational Storage Drives},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85182587603?origin=resultslist},
+ volume = {17},
+ year = {2023}
+}

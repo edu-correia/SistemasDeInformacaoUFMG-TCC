@@ -1,0 +1,14 @@
+@inproceedings{8425199,
+ abstract = {In this paper, we present our GPU implementation of the quotient filter, a compact data structure designed to implement approximate membership queries. The quotient filter is similar to the more well-known Bloom filter; however, in addition to set insertion and membership queries, the quotient filter also supports deletions and merging filters without requiring rehashing of the data set. Furthermore, the quotient filter can be extended to include counters without increasing the memory footprint. This paper describes our GPU implementation of two types of quotient filters: the standard quotient filter and the rank-and-select-based quotient filter. We describe the parallelization of all filter operations, including a comparison of the four different methods we devised for parallelizing quotient filter construction. In solving this problem, we found that we needed an operation similar to a parallel scan, but for non-associative operators. One outcome of this work is a variety of methods for computing parallel scan-type operations on a non-associative operator. For membership queries, we achieve a throughput of up to 1.13 billion items/second for the rank-and-select-based quotient filter: a speedup of 3x over the BloomGPU filter. Our fastest filter build method achieves a speedup of 2.1-3.1x over BloomGPU, with a peak throughput of 621 million items/second, and a rate of 516 million items/second for a 70% full filter. However, we find that our filters do not perform incremental updates as fast as the BloomGPU filter. For a batch of 2 million items, we perform incremental inserts at a rate of 81 million items/second - a 2.5x slowdown compared to BloomGPU's throughput of 201 million items/second. The quotient filter's memory footprint is comparable to that of a Bloom filter.},
+ author = {Geil, Afton and Farach-Colton, Martin and Owens, John D.},
+ booktitle = {2018 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS.2018.00055},
+ issn = {1530-2075},
+ keyword = {Graphics processing units;Data structures;Standards;Metadata;Throughput;Filtering algorithms;Merging;GPU computing;algorithms;data structures;approximate membership queries;Bloom filter},
+ month = {May},
+ number = {},
+ pages = {451-462},
+ title = {Quotient Filters: Approximate Membership Queries on the GPU},
+ volume = {},
+ year = {2018}
+}

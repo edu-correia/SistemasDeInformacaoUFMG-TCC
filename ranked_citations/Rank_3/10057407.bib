@@ -1,0 +1,14 @@
+@article{10057407,
+ abstract = {Location data is valuable for various applications such as epidemiology, natural disasters, and urban planning but causes exposure of sensitive information, e.g., home or work place, from collected data in a datastore. Local Differential Privacy (LDP)-based data collection is a promising technology to protect sensitive information. A mobile device modify data to make each piece of data indistinguishable from others but keep its intrinsic value for statistical characteristics in data. Although LDP fundamentally protects the privacy exposure from a data store, a datastore suffer a shortcomings on it; as a datastore can never validate the modified data due to concealed raw data, that allows anyone to tamper with one’s data or inject any amount of data, and thus manipulate the statistics of the whole data in a datastore, called data poisoning attack. As a device does not disclose raw data and a datastore cannot collaborate to validate data with a device who may be an adversary on this mutual distrust relationship, data collection needs an ability to avoid the effect of data poisoning.. The cause of data poisoning is the direct relationship between data volume and statistic; the more data a device sends gives more statistical changes on merged data in a datastore. In this paper, we propose to decouple statistical characteristics from data volumes on LDP-based data collection process to minimize the effect of poisoned data on a datastore. We utilize Oblivious Transfer (OT) protocol to retrieve only statistic characteristics of receiving data at a datastore. As OT protocol inevitably strengthen privacy protection on LDP-based data collection and accordingly drops statistic characteristics of data, We adjust LDP processing to collaboratively work with OT protocol. The proposed adjustment method adapts the protection strength of LDP to OT protocol behavior so that a data store receives data containing sufficient statistical characteristics. We conduct qualitative and experimental overhead analysis and show that our method decouples the relationship between statistical characteristics from data volume. Our experimental result also prove that the overhead can be acceptable on devices such as smartphones and IoT.},
+ author = {Sasada, Taisho and Taenaka, Yuzo and Kadobayashi, Youki},
+ doi = {10.1109/ACCESS.2023.3251560},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Protocols;Data collection;Privacy;Perturbation methods;Proposals;Differential privacy;Receivers;Location awareness;Data security;Local differential privacy;oblivious transfer protocol;location data;privacy-preserving data mining;data security},
+ month = {},
+ number = {},
+ pages = {21374-21386},
+ title = {Oblivious Statistic Collection With Local Differential Privacy in Mutual Distrust},
+ volume = {11},
+ year = {2023}
+}

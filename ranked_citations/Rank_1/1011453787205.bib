@@ -1,0 +1,15 @@
+@article{10.1145/3787205,
+ abstract = {Occurring approximately once or twice in each block, sandwich attacks threaten Ethereum’s ecosystem by manipulating prices through strategically placed buy and sell transactions around pending user trades. Existing detection methods primarily rely on rigid heuristic rules, limiting their ability to detect increasingly sophisticated and dynamic attack variants, particularly those residing only in the mempool or spanning multiple blocks. In this paper, we propose SandWatch, a novel Ethereum sandwich attack detection framework that integrates a dual-task graph neural network (Dual-GNN) with heuristic methods. The framework comprises three main components. (1) An order-independent heuristic that captures fundamental token transfer patterns, reducing transaction volume by over 94% for subsequent graph analysis. (2) A Dual-GNN that simultaneously classifies sandwich attack transactions and DEX nodes, dynamically updating an address label pool to enhance accuracy and generalizability. (3) A positive-unlabeled learning strategy to leverage large-scale unlabeled data effectively. We first evaluate Dual-GNN on a benchmark dataset derived from publicly available Ethereum sandwich attack data, achieving an F1-score of 99.78%, outperforming the single-task baseline by 0.93 percentage points. We then deploy SandWatch on Ethereum transactions collected through blockchain interfaces and mempool pre-execution from January to May 2024. SandWatch detects 563,453 sandwich attacks, including 24,404 multi-attack, 4,902 cross-block, and 1,057 pool-failure variants, achieving an overall recall of 98.63% compared to the state-of-the-art benchmark platform. These results demonstrate the robustness of SandWatch in detecting sophisticated sandwich attacks within the real-world Ethereum ecosystem.},
+ address = {New York, NY, USA},
+ author = {Wu, Changhao and Chen, Luyu and Wang, Kai and Han, Weili and Chai, Hongfeng},
+ doi = {10.1145/3787205},
+ issn = {1559-1131},
+ journal = {ACM Trans. Web},
+ keyword = {Ethereum, Sandwich Attack, Mempool, Graph Neural Network, Positive-Unlabeled Learning},
+ month = {January},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {SandWatch: Towards Detecting Sandwich Attacks in Ethereum Using a Dual-Task Graph Neural Network},
+ url = {https://doi.org/10.1145/3787205},
+ year = {2026}
+}

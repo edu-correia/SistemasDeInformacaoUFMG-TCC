@@ -1,0 +1,18 @@
+@article{10.1145/3771575,
+ abstract = {Machine learning (ML) models are increasingly integrated into modern mobile apps to enable personalized and intelligent services. These models typically rely on rich input features derived from historical user behaviors to capture user intents. However, as ML-driven services become more prevalent, recording necessary user behavior data imposes substantial storage cost on mobile apps, leading to lower system responsiveness and more app uninstalls. To address this storage bottleneck, we present AdaLog, a lightweight and adaptive system designed to improve the storage efficiency of user behavior log in ML-embedded mobile apps, without compromising model inference accuracy or latency. We identify two key inefficiencies in current industrial practices of user behavior log: (i) redundant logging of overlapping behavior data across different features and models, and (ii) sparse storage caused by storing behaviors with heterogeneous attribute descriptions in a single log file. To solve these issues, AdaLog first formulates the elimination of feature-level redundant data as a maximum weighted matching problem in hypergraphs, and proposes a hierarchical algorithm for efficient on-device deployment. Then, AdaLog employs a virtually hashed attribute design to distribute heterogeneous behaviors into a few log files with physically dense storage. Finally, to ensure scalability to dynamic user behavior patterns, AdaLog designs an incremental update mechanism to minimize the I/O operations needed for adapting outdated behavior log. We implement a prototype of AdaLog and deploy it into popular mobile apps in collaboration with our industry partner. Evaluations on real-world user data show that AdaLog reduces behavior log size by 19% to 44% with minimal system overhead (only 2 seconds latency and 15 MB memory usage), providing a more efficient data foundation for broader adoption of on-device ML.},
+ address = {New York, NY, USA},
+ articleno = {60},
+ author = {Gong, Chen and Zhuang, Yan and Zheng, Zhenzhe and Chen, Yiliu and Wang, Sheng and Wu, Fan and Chen, Guihai},
+ doi = {10.1145/3771575},
+ issue_date = {December 2025},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {mobile application log, on-device machine learning, resource-efficient on-device model inference, storage optimization},
+ month = {December},
+ number = {3},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Optimizing Storage Overhead of User Behavior Log for ML-embedded Mobile Apps},
+ url = {https://doi.org/10.1145/3771575},
+ volume = {9},
+ year = {2025}
+}

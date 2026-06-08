@@ -1,0 +1,14 @@
+@conference{Youssef2021,
+ abstract = {The exponential growth in dataset sizes necessitates the use of high-performance computing (HPC) for large-scale data science. Furthermore, the sizes of these datasets shift the performance bottleneck from the compute subsystem towards the memory and I/O subsystems. To address this shift, modern HPC clusters are equipped with low-latency and high-bandwidth storage devices, such as non-volatile memory, and, in turn, re-designed I/O subsystems to improve performance. However, an overlooked bottleneck arises due to the size of these storage devices being dwarfed by the storage footprint of large-scale data science applications. For instance, applications that process and store consistent snapshots of incrementally growing data streams require a significant storage footprint that far outstrips the size of the storage devices. To address this bottleneck, we present Privateer, a general-purpose data store that optimizes the tradeoff between storage space utilization and I/O performance. Privateer uses memory-mapped I/O with private mapping and an optimized writeback mechanism to maximize write parallelism and eliminate redundant writes; it also uses content-Addressable storage to optimize storage space via de-duplication. We evaluate the effectiveness of Privateer by using it as the data-store management layer of Metall, a persistent C++ data structure allocator. Using a micro-benchmark that incrementally constructs and stores snapshots of an incremental graph data structure, Privateer can reduce the storage space used by approximately 30% while delivering comparable performance to the baseline Metall implementation.  © 2021 IEEE.},
+ author = {Youssef, Karim and Iwabuchi, Keita and Feng, Wu-Chun and Pearce, Roger},
+ doi = {10.1109/HPEC49654.2021.9622826},
+ journal = {2021 IEEE High Performance Extreme Computing Conference, HPEC 2021},
+ note = {Cited by: 2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Privateer: Multi-versioned Memory-mapped Data Stores for High-Performance Data Science},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85123494974?origin=resultslist},
+ year = {2021}
+}

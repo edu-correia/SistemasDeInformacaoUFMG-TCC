@@ -1,0 +1,14 @@
+@conference{Shi201724,
+ abstract = {Huge pages have been widely supported by architecture and operating system. Huge pages map large fixed virtual memory regions, on the orders of 2MB to 1GB on Intel x86-64 architecture. The page size is the key to striking the balance between trade-off pairs. For example, initially, the use of huge pages aims to mitigate address translation overhead for memory-intensive workloads with large memory footprints. The huge pages do benefit to the TLB hit rate as well as the TLB miss penalty but occupy a huge amount of contiguous physical memory. Moreover, the use of huge pages influences the overhead of page-based technologies. For example, the incremental checkpoint keeps track of memory access information at the granularity of the memory page. The page size is the basic unit ofthe range of monitoring. Itdetermines the frequency of page faultsand the copying overhead, which are another trade-off pair. This paper establishes the Dynamic Page Size Adjustment (DPSA) framework in Linux OS. This work provides merge and split operations in OS that change the size of memory pages during runtime. We also support on and off DPSA modes to enable an automaticadjustment of the page size based on memory access pattern. These functions are all exposed via system-level APIs. This framework is free to use for application programmers. They can either turn off the mode tocall the APIsaccording to their applications' characteristic, or they can turn on the mode to give freedom to the DPSA. © 2016 IEEE.},
+ author = {Shi, Zhan and Lu, Kai and Wang, Xiao-Ping and Zhang, Wen-Zhe},
+ doi = {10.1109/ISAI.2016.0015},
+ journal = {Proceedings - 2016 International Conference on Information System and Artificial Intelligence, ISAI 2016},
+ note = {Cited by: 1},
+ pages = {24 - 28},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Dynamic page size adjustment in operating system},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85016780302?origin=resultslist},
+ year = {2017}
+}

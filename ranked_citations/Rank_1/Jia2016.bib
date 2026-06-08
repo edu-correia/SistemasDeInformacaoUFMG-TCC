@@ -1,0 +1,15 @@
+@conference{Jia2016,
+ abstract = {Cross-match is a central operation in astronomic databases to integrate multiple catalogs of celestial objects. With the rapid development of new astronomy projects, large amounts of astronomic catalogs are generated and require fast crossmatch with existing databases. In this paper, we propose to adopt a Multi-Assignment Single Join (MASJ) method for cross-match on heterogeneous clusters that consist of both CPUs and GPUs. We chose MASJ for cross-match, because (1) cross-matching records from astronomic catalogs is essentially a spatial distance join on two sets of points, and (2) each reference point is mapped to only a small number of search intervals. As a result, the MASJ cross-match, or MASJ-CM algorithm is feasible and highly efficient in a heterogeneous cluster environment. We have implemented MASJ-CM in two packages: one is an MPICUDA implementation, which fully utilizes the multi-core CPUs, GPUs, and InfiniBand communications; the other is on top of the popular distributed computing platform Spark, which greatly simplifies the programming. Our results on a six-node CPU-GPU cluster show that the MPI-CUDA implementation achieved a speedup of 2.69 times over a previous indexed nested-loop join algorithm. The Spark-based implementation was an order of magnitude slower than the MPI-CUDA; nevertheless, it is widely applicable and its source code much simpler. © 2016 ACM.},
+ author = {Jia, Xiaoying and Luo, Qiong},
+ doi = {10.1145/2949689.2949705},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Multi-assignment single joins for parallel cross-match of astronomic catalogs on heterogeneous clusters},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84982105745?origin=resultslist},
+ volume = {18-20-July-2016},
+ year = {2016}
+}

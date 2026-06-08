@@ -1,0 +1,14 @@
+@inproceedings{10643896,
+ abstract = {Edge computing environments increasingly demand real-time data processing, leading to the adoption of log-structured merge-tree based key-value stores (LSM-KVS) for efficient data handling. LSM-KVS periodically runs compaction operations in the background to manage the database. However compaction delays cause write stalls, which lead to degraded throughput of LSM-KVS and system performance on resource-limited edge servers. An edge federation environment, which shares resources and tasks between edge servers, can alleviate the resource limitations. Such environments can leverage com-paction offloading where another server performs CPU-intensive compaction operations instead. But coordinating compaction offloading is an important challenge, as the performance of the server performing the compaction can be degraded. In this paper, we propose Edgepilot. Edgepilot is scheduling mechanism of compaction offloading that is designed for LSM-KVS within edge federation. Edgepilot schedules where to reallocate compactions among the edge servers. This is achieved by considering the resource and computing power of each server. As a result, the overall resource efficiency and compaction throughput are increased. In addition, Edgepi-lotprovides Edgecode to determine the effectiveness of compaction offloading. Edgecode is a mathematical modeling based on compaction processing data to approximate inter-server compaction processing times. Edgepilot is implemented on the prominent LSM-KVS, RocksDB v8.3.2, and demonstrates notable improvements compared to the conventional RocksDB. The overall write stall duration of the system is reduced by up to 71 %, and throughput is increased by 17%.},
+ author = {Kim, Jeeseob and Yoo, Honghyeon and Lee, Seungjae and Byun, Hongsu and Park, Sungyong},
+ booktitle = {2024 IEEE 17th International Conference on Cloud Computing (CLOUD)},
+ doi = {10.1109/CLOUD62652.2024.00054},
+ issn = {2159-6190},
+ keyword = {Cloud computing;Schedules;Processor scheduling;Computational modeling;System performance;Throughput;Real-time systems;Infrastructure;Edge Computing;Cloud Storage;Key-Value Store;LSM-tree},
+ month = {July},
+ number = {},
+ pages = {419-429},
+ title = {Coordinating Compaction Between LSM-Tree Based Key-Value Stores for Edge Federation},
+ volume = {},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{8848237,
+ abstract = {As one of the most popular open source projects, Hadoop is considered nowadays as the de-facto framework for managing and analyzing huge amounts of data. HDFS (Hadoop Distributed File System) is one of the core components in Hadoop framework to store big data, especially semi-structured and unstructured data. HDFS provides high scalability and reliability when handling large files across thousands of machines. But the performance will be severely degraded while dealing with massive small files. Although some effort was spent to investigate this well-known issue, existing approaches, such as HAR, SequenceFile, and MapFile, are limited in their ability to reduce the memory consumption of the NameNode and optimize the access performance in the meantime. In this paper, we presented LHF, a solution to handle massive small files in HDFS by merging small files into big files and building a linear hashing based extendable index to speed up the process of locating a small file. The advantages of our approach are (1) it significantly reduces the size of the metadata, (2) it does not require sorting the files at the client side, (3) it supports appending more small files to the merged file afterwards and (4) it achieves good access performance. A series of experiments were performed to demonstrate the effectiveness and efficiency of LHF as well, which takes less time while accessing files compared with other methods.},
+ author = {Tao, Wenjun and Zhai, Yanlong and Tchaye-Kondi, Jude},
+ booktitle = {2019 IEEE Fifth International Conference on Big Data Computing Service and Applications (BigDataService)},
+ doi = {10.1109/BigDataService.2019.00012},
+ issn = {},
+ keyword = {Metadata;File systems;Indexes;Big Data;Cloud computing;Scalability;Memory management;HDFS;linear hashing;massive small files},
+ month = {April},
+ number = {},
+ pages = {40-48},
+ title = {LHF: A New Archive Based Approach to Accelerate Massive Small Files Access Performance in HDFS},
+ volume = {},
+ year = {2019}
+}

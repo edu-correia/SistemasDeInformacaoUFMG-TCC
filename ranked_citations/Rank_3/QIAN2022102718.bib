@@ -1,0 +1,13 @@
+@article{QIAN2022102718,
+ abstract = {To tackle the microwrite issue in Internet-of-Things (IoT) applications, i.e., massive small size and concurrent random write requests, a straightforward approach is to establish cache mechanisms at the edge to reconstruct writing operations and flush data efficiently. In spite of recent research efforts on cache mechanisms, existing approaches still face unsolvable problems like frequent competition on cache blocks, massive fragments caused by merging, and cache pollution due to cache updating, especially in IoT scenarios with highly concurrent microwrites. To address these problems, we design and implement FastCache, a write-optimized edge storage system via concurrent microwrites merging. By leveraging an optimistic lock scheme, we implement a two-level cache structure that dispatches the concurrent write threads efficiently and significantly mitigates the cache block competition problem. Further, we propose a flexible merging scheme to avoid excessive fragments and the corresponding cache updating policy based on a throughput-aware threshold and a Poisson Distribution Sampling scheme. Extensive experiments on both synthetic workloads and a real-world trace from 20 million power meters with highly concurrent microwrites demonstrate that FastCache outperforms the state-of-the-art approaches, e.g., up to 14.6× and 5× improvement in terms of IOPS on synthetic and real-world workloads, respectively.},
+ author = {Lin Qian and Zhihao Qu and Miao Cai and Baoliu Ye and Xiaoliang Wang and Jianyu Wu and Weiguo Duan and Ming Zhao and Qiang Lin},
+ doi = {https://doi.org/10.1016/j.sysarc.2022.102718},
+ issn = {1383-7621},
+ journal = {Journal of Systems Architecture},
+ keyword = {Internet of Things, Edge storage system, Write-optimized, Cache, Optimistic lock},
+ pages = {102718},
+ title = {FastCache: A write-optimized edge storage system via concurrent merging cache for IoT applications},
+ url = {https://www.sciencedirect.com/science/article/pii/S1383762122002065},
+ volume = {131},
+ year = {2022}
+}

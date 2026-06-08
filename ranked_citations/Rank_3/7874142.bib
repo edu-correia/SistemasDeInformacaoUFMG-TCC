@@ -1,0 +1,14 @@
+@article{7874142,
+ abstract = {NAND flash memory is the major storage media for both mobile storage cards and enterprise Solid-State Drives (SSDs). Log-block-based Flash Translation Layer (FTL) schemes have been widely used to manage NAND flash memory storage systems in industry. In log-block-based FTLs, a few physical blocks called log blocks are used to hold all page updates from a large amount of data blocks. Frequent page updates in log blocks introduce big overhead so log blocks become the system bottleneck. To address this problem, this paper presents BLog, a block-level log-block management scheme for MLC NAND flash memory storage system. In BLog, with block-level management, the update pages of a data block can be collected together and put into the same log block as much as possible; therefore, we can effectively reduce the associativities of log blocks so as to reduce the garbage collection overhead. We also propose a novel partial merge operation strategy called reduced-order merge by which we can effectively postpone the garbage collection of log blocks so as to maximally utilize valid pages and reduce unnecessary erase operations in log blocks. Based on BLog, we design an FTL called BLogFTL for Multi-Level Cell (MLC) NAND flash. We conduct a set of experiments on a real hardware platform. Both representative FTL schemes and the proposed BLogFTL have been implemented in the hardware evaluation board. The experimental results show that our scheme can effectively reduce the garbage collection operations and reduce the system response time compared to the previous log-block-based FTLs for MLC NAND flash.},
+ author = {Guan, Yong and Wang, Guohui and Ma, Chenlin and Chen, Renhai and Wang, Yi and Shao, Zili},
+ doi = {10.1109/TC.2017.2679180},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Blogs;Memory management;Flash memories;Hardware;Time factors;Random access memory;Error correction codes;NAND flash memory;flash translation layer;log block;garbage collection;response time},
+ month = {Sep.},
+ number = {9},
+ pages = {1464-1477},
+ title = {A Block-Level Log-Block Management Scheme for MLC NAND Flash Memory Storage Systems},
+ volume = {66},
+ year = {2017}
+}

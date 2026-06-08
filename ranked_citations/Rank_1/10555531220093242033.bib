@@ -1,0 +1,16 @@
+@article{10.5555/3122009.3242033,
+ abstract = {The fused lasso, also known as (anisotropic) total variation denoising, is widely used for piecewise constant signal estimation with respect to a given undirected graph. The fused lasso estimate is highly nontrivial to compute when the underlying graph is large and has an arbitrary structure. But for a special graph structure, namely, the chain graph, the fused lasso--or simply, 1d fused lasso--can be computed in linear time. In this paper, we revisit a result recently established in the online classification literature (Herbster et al., 2009; Cesa-Bianchi et al., 2013) and show that it has important implications for signal denoising on graphs. The result can be translated to our setting as follows. Given a general graph, if we run the standard depth-first search (DFS) traversal algorithm, then the total variation of any signal over the chain graph induced by DFS is no more than twice its total variation over the original graph.This result leads to several interesting theoretical and computational conclusions. Letting m and n denote the number of edges and nodes, respectively, of the graph in consideration, it implies that for an underlying signal with total variation t over the graph, the fused lasso (properly tuned) achieves a mean squared error rate of t2/3n-2/3. Moreover, precisely the same mean squared error rate is achieved by running the 1d fused lasso on the DFS-induced chain graph. Importantly, the latter estimator is simple and computationally cheap, requiring O(m) operations to construct the DFS-induced chain and O(n) operations to compute the 1d fused lasso solution over this chain. Further, for trees that have bounded maximum degree, the error rate of t2/3n-2/3 cannot be improved, in the sense that it is the minimax rate for signals that have total variation t over the tree. Finally, several related results also hold--for example, the analogous result holds for a roughness measure defined by the l0 norm of differences across edges in place of the total variation metric.},
+ author = {Padilla, Oscar Hernan Madrid and Sharpnack, James and Scott, James G.},
+ issn = {1532-4435},
+ issue_date = {January 2017},
+ journal = {J. Mach. Learn. Res.},
+ keyword = {total variation denoising, graph denoising, fused lasso, depth-first search},
+ month = {January},
+ number = {1},
+ numpages = {36},
+ pages = {6410–6445},
+ publisher = {JMLR.org},
+ title = {The DFS fused lasso: linear-time denoising over general graphs},
+ volume = {18},
+ year = {2017}
+}

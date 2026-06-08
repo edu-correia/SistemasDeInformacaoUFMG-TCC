@@ -1,0 +1,13 @@
+@article{JIANG2024156,
+ abstract = {This paper primarily presents a parallel incremental Structure from Motion (ISfM) solution for large-scale images captured by unmanned aerial vehicles (UAVs). The core ideas are a local connection-constrained edge weighting strategy for match graph construction and an anchor-free parallel merging algorithm for the merged model generation. First, an effective algorithm is employed to retrieve spatially overlapped match pairs, utilizing the global descriptor for image representation and the graph indexing for nearest neighbor searching. Second, match pairs are used to create an undirected weighted match graph that is weighted by the local connection strength of the image. This match graph is then used to achieve parallel ISfM through graph clustering. Third, an anchor-free cluster merging algorithm, called AFP-Merging, is then designed by taking advantage of the independent connection between clusters, which increases the merging efficiency and stability. For robust estimation, AFP-Merging is implemented via a bidirectional mean square reprojection error. Finally, extensive evaluation and analysis have been carried out to verify its validation using large-scale UAV datasets captured from classical oblique photogrammetry and recent optimized views photogrammetry. Experiment results show that the proposed solution can generate more compact scene clusters and achieve a speedup ratio greater than 9.0 in cluster merging; compared with recent parallel ISfM, its orientation accuracy is higher in both relative bundle adjustment (BA) without GCPs (Ground Control Points) and absolute BA with GCPs. For the orientation of very large-scale UAV images, it has been successfully applied to a dataset containing ninety thousand images over an area of 50.0 km2. The proposed method provides a more efficient and reliable parallel SfM solution. The executable tool is made publicly available11https://github.com/json87/ParallelSfM..},
+ author = {San Jiang and Yichen Ma and Wanshou Jiang and Qingquan Li},
+ doi = {https://doi.org/10.1016/j.isprsjprs.2024.04.005},
+ issn = {0924-2716},
+ journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+ keyword = {Unmanned aerial vehicle, Structure from Motion, 3D reconstruction, Image retrieval, Cluster merging, Bundle adjustment, Image orientation},
+ pages = {156-170},
+ title = {Efficient structure from motion for UAV images via anchor-free parallel merging},
+ url = {https://www.sciencedirect.com/science/article/pii/S0924271624001618},
+ volume = {211},
+ year = {2024}
+}

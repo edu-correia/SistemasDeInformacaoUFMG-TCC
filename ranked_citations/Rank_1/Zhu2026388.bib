@@ -1,0 +1,15 @@
+@article{Zhu2026388,
+ abstract = {Log-Structured Merge (LSM) tree based key-value stores have demonstrated significant performance improvements when implemented on large-zone Zoned Namespace Solid-State Drives (ZNS SSDs). However, their deployment on small-zone ZNS SSDs presents notable challenges due to the parallelism constraints of ZenFS, which limit further performance optimization. To address these limitations, this study proposes UltraZenFS, a user-space file system designed to enhance the efficiency of LSM-tree based key-value stores on small-zone ZNS SSDs. UltraZenFS introduces two key optimizations. First, a batch asynchronous I/O request submission mechanism is developed to optimize the user-space file system’s storage stack. A machine learning model dynamically adjusts the size of batch submission queues, further improving the efficiency of I/O request handling. Second, a data allocation strategy is introduced, which assigns data based on the overlap rate of the Sorted String Table (SST) files across different levels. The proposed method reduces redundant data replication during compaction and mitigates write amplification. The evaluation of UltraZenFS under typical workloads demonstrates significant improvements, achieving a throughput increase of 35.2% to 68.1%, a P99.9 latency reduction of 18.4% to 35.3%, and write amplification optimization by up to 16.2%. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2026.},
+ author = {Zhu, Chunhui and Tao, Qiuming and Zhou, Qiming and Li, Mingshu},
+ doi = {10.1007/978-981-95-5716-5_24},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {388 - 402},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {UltraZenFS: A User-Space File System for LSM-Tree Based Key-Value Stores on Small-Zone ZNS SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105031092211?origin=resultslist},
+ volume = {16114 LNCS},
+ year = {2026}
+}

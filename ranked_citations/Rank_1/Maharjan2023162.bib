@@ -1,0 +1,14 @@
+@conference{Maharjan2023162,
+ abstract = {In the realm of database systems, optimizing B+tree index performance is of paramount importance to overall database performance. LeanStore, a high-performance OLTP storage engine, has extensively optimized its in-memory B+tree component as well as its B+-tree-indexed database on the disk. However, B+-tree’s lookup time increases linearly with the tree height. This is especially problematic when all or part of its lookup path is on the disk. Recently proposed learned index technique has the potential to significantly improve the performance of the B+-tree-based index by predicting location of the search key, instead of the level-by-level path walk. However, this machine-learning-model-based index has prediction errors that require a local search within the sorted keys. When the keys are on the disk, this search can be very expensive. The errors increase with write requests, which makes the search increasingly more expensive. We propose LearnedStore, in which the learned index technique is leveraged to improve the LeanStore database while the deterioration of learned-index’s search performance is curbed. Instead of replacing the B+-tree index in LeanStore, LearnedStore opportunistically employs a learned index when it offers a performance advantage over the B+-tree index. Otherwise, it reverts to using the B+-tree index. By seamlessly integrating the learned index with LeanStore’s B+-tree structure, LearnedStore takes advantage of the learned index while effectively addressing its challenges. We have implemented LearnedStore and extensively evaluated its performance. Experiment results show that LearnedStore improves throughput by up to 2.29 times for read-only workloads when the index and data set are all in memory. It reduces tail latency by up to 6.84 times when the index and data set are partially in the memory. Even when the entire index and data set are on the disk, LearnedStore can improve startup time by 3.05 times. ©2023 IEEE.},
+ author = {Maharjan, Sujit and Zhao, Shuaihua and Zhong, Chen and Jiang, Song},
+ doi = {10.1109/HDIS60872.2023.10499467},
+ journal = {2023 International Conference on High Performance Big Data and Intelligent Systems, HDIS 2023},
+ note = {Cited by: 5},
+ pages = {162 - 169},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {From LeanStore to LearnedStore: Using a Learned Index to Improve Database Index Search},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85191743042?origin=resultslist},
+ year = {2023}
+}

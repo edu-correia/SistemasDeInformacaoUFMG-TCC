@@ -1,0 +1,14 @@
+@article{11363327,
+ abstract = {Whole slide imaging (WSI) provides rich tissue information at a gigapixel resolution, posing significant challenges for the development of pathology analysis algorithms. Mainstream approaches effectively analyze WSI but treat the pretrained feature extractor and the task-specific network as independent modules, thereby restricting downstream task accuracy due to the limitations of the pretrained model. Inspired by the knowledge complementarity mechanism in multi-agent collaboration, we propose PLM-SynNet, a pathology large model synergy network that integrates the strengths of multiple pathology large models (PLMs) by establishing a flexible collaborative structure and achieving information gain. Specifically, the PLM Synergy Block (PLM-SB) is designed based on Mixture of Experts (MoE), which flexibly generates and utilizes supplementary features by employing a feature generator as an expert in MoE and merging these outputs via pixel-wise summation for effective collaboration. Subsequently, a Synergy Reinforcement Loss (SRLoss) is defined to enhance the information gain of multiple PLMs by enforcing stricter constraints on both queried and generated features. Experiments on a private PCA-EPE (Extraprostatic Extension of Prostate Cancer) dataset and two public datasets demonstrate the effectiveness of the proposed method, yielding gains of 13.27% in F1-score, 6.30% in accuracy, and 15.16% in MCC on PCA-EPE. It further improves TCGA-CRC accuracy by 1.71% and enhances BRIGHT accuracy and AUC by 2.67% and 4.00%, respectively. The code repository is available at https://github.com/mathfyy/PLM-SynNet},
+ author = {Feng, Yingying and Jing, Yi and Xia, Moyu and Zhang, Xuanyi and Cai, Wei and Zhang, Xia},
+ doi = {10.1109/TMI.2026.3657524},
+ issn = {1558-254X},
+ journal = {IEEE Transactions on Medical Imaging},
+ keyword = {Pathology;Feature extraction;Collaboration;Transformers;Predictive models;Biological system modeling;Adaptation models;Medical services;Tissue engineering;Whole slide imaging;multi-instance learning;multiple pathology large models;mixture of experts;information gain},
+ month = {May},
+ number = {5},
+ pages = {2599-2610},
+ title = {PLM-SynNet: A Pathology Large Model Synergy Network Based on Multi-Instance Learning for Whole Slide Imaging Classification},
+ volume = {45},
+ year = {2026}
+}

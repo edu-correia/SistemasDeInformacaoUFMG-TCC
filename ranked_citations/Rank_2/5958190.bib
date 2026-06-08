@@ -1,0 +1,14 @@
+@article{5958190,
+ abstract = {The embedded deterministic test-based compression uses cube merging to reduce a pattern count, the amount of test data, and test time. It gradually expands a test pattern by incorporating compatible test cubes. This paper demonstrates that compression ratios can be order of magnitude higher, if the cube merging continues despite conflicts on certain positions. Our novel solution produces test clusters, each comprising a parent pattern and a number of its derivatives obtained by imposing extra bits on it. In order to load scan chains with patterns that feature original test cubes, only data necessary to recreate parent patterns as well as information regarding locations and values of the corresponding conflicting bits are required. A test controller can then deliver tests by repeatedly applying the same parent pattern, every time using a different control pattern to decide whether a given scan chain receives data from the parent pattern, or another pattern is used instead to recover content of the original test cube. Compression of incompatible test cubes preserves all benefits of continuous flow decompression and offers compression ratios of order 1000× with encoding efficiency much higher than 1.0. We also demonstrate that test clusters make it possible to deliver test patterns in a flexible power-aware fashion. This framework achieves significant reductions in switching activity during scan loading as well as additional test data volume reductions due to encoding algorithms employed to compress parent and control vectors.},
+ author = {Czysz, Dariusz and Mrugalski, Grzegorz and Mukherjee, Nilanjan and Rajski, Janusz and Szczerbicki, Przemysław and Tyszer, Jerzy},
+ doi = {10.1109/TCAD.2011.2126574},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Encoding;Merging;Registers;Ring generators;Multiplexing;System-on-a-chip;Generators;Embedded deterministic test;incompatible test cubes;low power compression;scan-based test;test compression},
+ month = {Aug},
+ number = {8},
+ pages = {1225-1238},
+ title = {Deterministic Clustering of Incompatible Test Cubes for Higher Power-Aware EDT Compression},
+ volume = {30},
+ year = {2011}
+}

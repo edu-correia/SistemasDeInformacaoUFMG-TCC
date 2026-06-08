@@ -1,0 +1,14 @@
+@inproceedings{10881309,
+ abstract = {This paper introduces a novel approach to enhancing the performance of Log-Structured Merge (LSM) trees through the implementation of deferred updates. Traditional LSM trees suffer from performance inefficiencies due to the need for hidden reads during replace and delete operations. Our approach eliminates these hidden reads by deferring old data lookups and deletions until the compaction phase. I present a detailed examination of the deferred update algorithm, including its integration with various sublevel compaction strategies and its impact on read and write performance. Theoretical analysis and empirical evaluation demonstrate that deferred updates significantly accelerate operations, achieving up to a tenfold increase in speed compared to conventional methods, particularly under write-intensive workloads. I also explore the implications of this optimization on secondary index management and overall system throughput. Our results suggest that the proposed method not only improves efficiency but also offers a scalable solution for managing large-scale databases with multiple indexes.},
+ author = {Badami, Shujaatali},
+ booktitle = {2024 7th International Conference on Data Science and Information Technology (DSIT)},
+ doi = {10.1109/DSIT61374.2024.10881309},
+ issn = {},
+ keyword = {Scalability;Distributed databases;Data science;Throughput;Data processing;Hardware;Compaction;Indexes;Information technology;Optimization},
+ month = {Dec},
+ number = {},
+ pages = {1-9},
+ title = {Optimizing LSM Tree Operations with Deferred Updates: A Comparative Study},
+ volume = {},
+ year = {2024}
+}

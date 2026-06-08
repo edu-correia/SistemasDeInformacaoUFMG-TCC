@@ -1,0 +1,14 @@
+@conference{Huang201353,
+ abstract = {State-of-the-art dynamic bug detectors such as data race and memory leak detectors report program locations that are likely causes of bugs. However, programmers need more than static program locations to understand the behavior of increasingly complex and concurrent software. Dynamic calling context provides additional information, but it is expensive to record calling context frequently, e.g., at every read and write. Context-sensitive dynamic analyses can build and maintain a calling context tree (CCT) to track calling context-but in order to reuse existing nodes, CCT-based approaches require an expensive lookup. This paper introduces a new approach for context sensitivity that avoids this expensive lookup. The approach uses a new data structure called the calling context uptree (CCU) that adds low overhead by avoiding the lookup and instead allocating a new node for each context. A key contribution is that the approach can mitigate the costs of allocating many nodes by extending tracing garbage collection (GC): GC collects unused CCU nodes naturally and efficiently, and we extend GC to merge duplicate nodes lazily. We implement our CCU-based approach in a high-performance Java virtual machine and integrate it with a stalenessbased memory leak detector and happens-before data race detector, so they can report context-sensitive program locations that cause bugs. We show that the CCU-based approach, in concert with an extended GC, provides a compelling alternative to CCT-based approaches for adding context sensitivity to dynamic analyses. Copyright © 2013 ACM.},
+ author = {Huang, Jipeng and Bond, Michael D.},
+ doi = {10.1145/2509136.2509510},
+ journal = {Proceedings of the Conference on Object-Oriented Programming Systems, Languages, and Applications, OOPSLA},
+ note = {Cited by: 9; All Open Access; Green Open Access},
+ pages = {53 - 71},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient context sensitivity for dynamic analyses via calling context uptrees and customized memory management},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84888153195?origin=resultslist},
+ year = {2013}
+}

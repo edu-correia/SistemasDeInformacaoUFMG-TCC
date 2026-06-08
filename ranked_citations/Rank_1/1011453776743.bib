@@ -1,0 +1,15 @@
+@article{10.1145/3776743,
+ abstract = {Generating effective test inputs for a software system requires that these inputs be valid, as they will otherwise be rejected without reaching actual functionality. In the absence of a specification for the input language, common test generation techniques rely on sample inputs, which are abstracted into matching grammars and/or evolved guided by test coverage. However, if sample inputs miss features of the input language, the chances of generating these features randomly are slim.In this work, we present the first technique for symbolically and automatically mining input grammars from the code of recursive descent parsers. So far, the complexity of parsers has made such a symbolic analysis challenging to impossible. Our realization of the symbolic parsing technique overcomes these challenges by (1) associating each parser function&nbsp;parse_ELEM() with a nonterminal&nbsp;&lt;ELEM&gt;; (2) limiting recursive calls and loop iterations, such that a symbolic analysis of&nbsp;parse_ELEM() needs to consider only a finite number of paths; and (3) for each path, create an expansion alternative for&nbsp;&lt;ELEM&gt;. Being purely static, symbolic parsing does not require seed inputs; as it mitigates path explosion, it scales to complex parsers.Our evaluation promises symbolic parsing to be highly accurate. Applied on parsers for complex languages such as TINY-C or JSON, our STALAGMITE implementation extracts grammars with an accuracy of 99–100%, widely improving over the state of the art despite requiring only the program code and no input samples. The resulting grammars cover the entire input space, allowing for comprehensive and effective test generation, reverse engineering, and documentation.},
+ address = {New York, NY, USA},
+ author = {Bettscheider, Leon and Zeller, Andreas},
+ doi = {10.1145/3776743},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Input grammars, symbolic analysis, test generation, fuzzing},
+ month = {November},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Inferring Input Grammars from Code with Symbolic Parsing},
+ url = {https://doi.org/10.1145/3776743},
+ year = {2025}
+}

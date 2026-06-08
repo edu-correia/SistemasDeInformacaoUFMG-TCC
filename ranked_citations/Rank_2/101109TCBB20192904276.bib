@@ -1,0 +1,18 @@
+@article{10.1109/TCBB.2019.2904276,
+ abstract = {We are interested in studying the evolution of large homogeneous populations of cells, where each cell is assumed to be composed of a group of biological players (species) whose dynamics is governed by a complex biological pathway, identical for all cells. Modeling the inherent variability of the species concentrations in different cells is crucial to understand the dynamics of the population. In this work, we focus on handling this variability by modeling each species by a random variable that evolves over time. This appealing approach runs into the curse of dimensionality since exactly representing a joint probability distribution involving a large set of random variables quickly becomes intractable as the number of variables grows. To make this approach amenable to biopathways, we explore different techniques to (i) approximate the exact joint distribution at a given time point, and (ii) to track its evolution as time elapses. We start with the problem of approximating the probability distribution of biological species in a population of cells at some given time point. Data come from different fine-grained models of biological pathways of increasing complexities, such as (perturbed) Ordinary Differential Equations (ODEs). Classical approximations rely on the strong and unrealistic assumption that variables/species are independent, or that they can be grouped into small independent clusters. We propose instead to use the Chow-Liu tree representation, based on overlapping clusters of two variables, which better captures correlations between variables. Our experiments show that the proposed approximation scheme is more accurate than existing ones to model probability distributions deriving from biopathways. Then we address the problem of tracking the dynamics of a population of cells, that is computing from an initial distribution the evolution of the (approximate) joint distribution of species over time, called the inference problem. We evaluate several approximate inference algorithms (e.g., [14] , [17] ) for coarse-grained abstractions [12] , [16] of biological pathways. Using the Chow-Liu tree approximation, we develop a new inference algorithm which is very accurate according to the experiments we report, for a minimal computation overhead. Our implementation is available at https://codeocean.com/capsule/6491669/tree.},
+ address = {Washington, DC, USA},
+ author = {Pichen\'{e}, Matthieu and Palaniappan, Sucheendra K. and Fabre, Eric and Genest, Blaise},
+ doi = {10.1109/tcbb.2019.2904276},
+ issn = {1545-5963},
+ issue_date = {Sept.-Oct. 2020},
+ journal = {IEEE/ACM Trans. Comput. Biol. Bioinformatics},
+ month = {October},
+ number = {5},
+ numpages = {12},
+ pages = {1691–1702},
+ publisher = {IEEE Computer Society Press},
+ title = {Modeling Variability in Populations of Cells Using Approximated Multivariate Distributions},
+ url = {https://doi.org/10.1109/TCBB.2019.2904276},
+ volume = {17},
+ year = {2020}
+}

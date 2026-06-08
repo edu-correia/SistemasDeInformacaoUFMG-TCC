@@ -1,0 +1,14 @@
+@inproceedings{10029450,
+ abstract = {Octo-Tiger, a large-scale 3D AMR code for the merger of stars, uses a combination of HPX, Kokkos and explicit SIMD types, aiming to achieve performance-portability for a broad range of heterogeneous hardware. However, on A64FX CPUs, we encountered several missing pieces, hindering performance by causing problems with the SIMD vectorization. Therefore, we add std::experimental::simd as an option to use in Octo-Tiger’s Kokkos kernels alongside Kokkos SIMD, and further add a new SVE (Scalable Vector Extensions) SIMD backend. Additionally, we amend missing SIMD implementations in the Kokkos kernels within Octo-Tiger’s hydro solver. We test our changes by running Octo-Tiger on three different CPUs: An A64FX, an Intel Icelake and an AMD EPYC CPU, evaluating SIMD speedup and node-level performance. We get a good SIMD speedup on the A64FX CPU, as well as noticeable speedups on the other two CPU platforms. However, we also experience a scaling issue on the EPYC CPU.},
+ author = {Daiß, Gregor and Singanaboina, Srinivas Yadav and Diehl, Patrick and Kaiser, Hartmut and Pflüger, Dirk},
+ booktitle = {2022 IEEE/ACM 7th International Workshop on Extreme Scale Programming Models and Middleware (ESPM2)},
+ doi = {10.1109/ESPM256814.2022.00007},
+ issn = {2831-3631},
+ keyword = {Three-dimensional displays;Codes;Conferences;Merging;Stars;Programming;Hardware;HPX;Kokkos;SIMD;astrophysical simulation},
+ month = {Nov},
+ number = {},
+ pages = {10-19},
+ title = {From Merging Frameworks to Merging Stars: Experiences using HPX, Kokkos and SIMD Types},
+ volume = {},
+ year = {2022}
+}

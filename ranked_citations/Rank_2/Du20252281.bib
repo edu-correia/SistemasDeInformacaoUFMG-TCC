@@ -1,0 +1,16 @@
+@article{Du20252281,
+ abstract = {Raft is a popular consistency protocol in distributed data services due to its ease of implementation. However, log entries in Raft cannot be outof-order processed even if they do not have dependencies, which limits the system performance in high-concurrency scenarios. To address this challenge, researchers propose out-of-order Raft (OORaft) protocols that support out-of-order apply (OOApply). Existing OORaft protocols adopt the Paxos-style election and replication process to merge missing entries on leader candidates. It leads to problems such as extra overhead on dependency analysis, availability when the network is partitioned, and incomplete verification. This paper proposes a concise paralleled Raft called CPRaft, which is the first OORaft protocol to focus on dependency analysis overhead and to use full TLA<sup>+ </sup>validation for the leader election process. Specifically, 1) CP-Raft proposes a Raft-aligned three-step election method that simplifies the understanding difficulty and solves the availability problem when the network is partitioned. 2) CP-Raft applies an efficient leader-side bitmap-based dependency analysis and representation method to break through the performance bottleneck caused by dependency analysis costs. 3) CP-Raft discusses why existing methods cannot achieve OORaft correctness verification using TLA<sup>+ </sup>in a limited time and uses phased verification methods to ensure its correctness. Finally, we implement CP-Raft based on an open-source Raft protocol and discuss its potential performance bottlenecks in various scenarios. The experimental results under high dependency strength workloads demonstrate that CP Raft achieves 1.5× transaction per second (TPS) performance of DP-Raft and 2× of ParallelRaft-CE. It also provides better availability than state-of-the-art OORaft protocols. © 2008-2012 IEEE.},
+ author = {Du, Haiwen and Wang, Kai and Wu, Yulei and Zhang, Hongke},
+ doi = {10.1109/TSC.2025.3577505},
+ journal = {IEEE Transactions on Services Computing},
+ note = {Cited by: 3},
+ number = {4},
+ pages = {2281 - 2294},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing Consistency in Distributed Data Services: The CP-Raft Protocol for High-Performance and Fault-Tolerant Replication},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105007646895?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

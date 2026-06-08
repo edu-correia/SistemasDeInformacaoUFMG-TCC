@@ -1,0 +1,14 @@
+@inproceedings{8855452,
+ abstract = {In traditional databases, join is one of the most computationally expensive operations in query processing. During the past years, GPU has been adopted to improve the performance of join processing because of the features of massive parallelism and high memory bandwidth. Limited by the capacity of GPU memory and the absence of virtual memory management, however, handling the relations that exceed the capacity of the GPU memory is a challenge for GPU-based join algorithms. Because of the high computing throughput provided by GPUs and the low bandwidth of data communication between the CPUs and the GPUs, data have to be partitioned to fit the features of GPUs and to reduce the cost of data transmission. Furthermore, a series of novel techniques have been developed on the GPUs, which can benefit the join algorithms. In this work, we focus on the optimizing of processing join operator on large relations and propose the designs of in-memory hash join and sort-merge join on GPUs. We present the data partition method on the GPUs implemented with a pipeline mechanism. Furthermore, the shuffle instructions and the CUDA streams are applied in our algorithms to best utilize the GPUs. Experimental results indicate that our hash join algorithm delivers up to 1.51X and 1.24X speedup over the state-of-the-art hash join algorithm on CPUs on NVIDIA GTX1080ti-Pascal GPU and TitanV-Volta GPU respectively. For sort-merge join, our algorithm achieves up to 3.52X and 2.21X improvements on the same GPUs respectively compared to the baselines on CPUs.},
+ author = {Guo, Chengxin and Chen, Hong},
+ booktitle = {2019 IEEE 21st International Conference on High Performance Computing and Communications; IEEE 17th International Conference on Smart City; IEEE 5th International Conference on Data Science and Systems (HPCC/SmartCity/DSS)},
+ doi = {10.1109/HPCC/SmartCity/DSS.2019.00151},
+ issn = {},
+ keyword = {Graphics processing units;Instruction sets;Partitioning algorithms;Memory management;Data communication;Pipelines;Hash Join, Sort-Merge Join, Graphics Processing Unit, Large Dataset, Database},
+ month = {Aug},
+ number = {},
+ pages = {1060-1067},
+ title = {In-Memory Join Algorithms on GPUs for Large-Data},
+ volume = {},
+ year = {2019}
+}

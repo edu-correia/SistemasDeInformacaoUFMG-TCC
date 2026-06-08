@@ -1,0 +1,13 @@
+@article{ZHAO2024332,
+ abstract = {The 6-Degree-of-Freedom (6-DoF) robotic grasping is a fundamental task in robot manipulation, aimed at detecting graspable points and corresponding parameters in a 3D space, i.e affordance learning, and then a robot executes grasp actions with the detected affordances. Existing research works on affordance learning predominantly focus on learning local features directly for each grid in a voxel scene or each point in a point cloud scene, subsequently filtering the most promising candidate for execution. Contrarily, cognitive models of grasping highlight the significance of global descriptors, such as size, shape, and orientation, in grasping. These global descriptors indicate a grasp path closely tied to actions. Inspired by this, we propose a novel bio-inspired neural network that explicitly incorporates global feature encoding. In particular, our method utilizes a Truncated Signed Distance Function (TSDF) as input, and employs the recently proposed Transformer model to encode the global features of a scene directly. With the effective global representation, we then use deconvolution modules to decode multiple local features to generate graspable candidates. In addition, to integrate global and local features, we propose using a skip-connection module to merge lower-layer global features with higher-layer local features. Our approach, when tested on a recently proposed pile and packed grasping dataset for a decluttering task, surpassed state-of-the-art local feature learning methods by approximately 5% in terms of success and declutter rates. We also evaluated its running time and generalization ability, further demonstrating its superiority. We deployed our model on a Franka Panda robot arm, with real-world results aligning well with simulation data. This underscores our approach’s effectiveness for generalization and real-world applications.},
+ author = {Zhenjie Zhao and Hang Yu and Hang Wu and Xuebo Zhang},
+ doi = {https://doi.org/10.1016/j.neunet.2023.12.005},
+ issn = {0893-6080},
+ journal = {Neural Networks},
+ keyword = {Affordance learning, Bio-inspired neural network, Transformer, 6-DoF robotic grasping},
+ pages = {332-342},
+ title = {Bio-inspired affordance learning for 6-DoF robotic grasping: A transformer-based global feature encoding approach},
+ url = {https://www.sciencedirect.com/science/article/pii/S0893608023006998},
+ volume = {171},
+ year = {2024}
+}

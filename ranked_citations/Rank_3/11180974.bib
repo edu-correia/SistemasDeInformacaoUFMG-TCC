@@ -1,0 +1,14 @@
+@inproceedings{11180974,
+ abstract = {Traditional SLAM algorithms primarily emphasize geometric reconstruction, which constrains a robot’s ability to interpret and interact with its environment at a semantic level. To address this limitation, we present an integrated framework for semantic map construction and navigation validation. The framework begins by capturing RGB and depth images, followed by instance segmentation using the YOLO11-seg model to obtain object masks and detection results. ORB-SLAM3 is employed to estimate the camera pose. By combining pose and depth information, RGB-D pixels within segmented regions are projected into the world coordinate system to form a semantic point cloud. To enhance processing efficiency and map quality, the framework incorporates a semantically guided adaptive voxel downsampling strategy that dynamically adjusts voxel size based on local point cloud density. In addition, an adaptive clustering-based deduplication module leverages object size, semantic labels, and inter-frame overlap to identify and merge redundant instances. Finally, a visualization interface is developed, integrating multiple path planning and obstacle avoidance algorithms on top of the generated semantic map. This framework demonstrates the practicality of semantic mapping for navigation tasks and provides a foundation for deployment in real-world robotic applications.},
+ author = {Yao, Yao and Wang, Aihui and Yue, Xuebing and Wang, Kuozhan and Li, Hengyi and Wang, Yan},
+ booktitle = {2025 International Conference on Advanced Mechatronic Systems (ICAMechS)},
+ doi = {10.1109/ICAMechS68051.2025.11180974},
+ issn = {2325-0690},
+ keyword = {Point cloud compression;Instance segmentation;Visualization;Adaptive systems;Simultaneous localization and mapping;Navigation;Robot kinematics;Semantics;Path planning;Collision avoidance;Semantic mapping;instance segmentation;ORB-SLAM3;adaptive voxel downsampling;adaptive clustering deduplication;path planning and obstacle avoidance},
+ month = {Sep.},
+ number = {},
+ pages = {144-149},
+ title = {Adaptive-Optimized Semantic Point Cloud Mapping and Path Planning with YOLO11-seg},
+ volume = {},
+ year = {2025}
+}

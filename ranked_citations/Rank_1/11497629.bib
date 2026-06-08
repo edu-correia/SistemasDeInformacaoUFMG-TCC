@@ -1,0 +1,14 @@
+@inproceedings{11497629,
+ abstract = {Large language model (LLM)-based medical question answering systems often produce fluent answers, but they lack clear grounding, source traceability, and verification, which limits their reliability for clinical exploration of knowledge and medical education. By conditioning responses on external evidence, Retrieval-Augmented Generation (RAG) mitigates these constraints. However, most current medical RAG techniques rely on shallow pipelines and single-source retrieval, leave them susceptible to topic drift, noisy context, and unsupported generation. This paper proposes a multi-stage, evidence-grounded RAG framework that explicitly models retrieval quality, evidence sufficiency, and grounding verification through a five-stage orchestrated pipeline consisting of multi-source retrieval from PubMed and NCBI Bookshelf, cross-encoder reranking, sentence-level evidence distillation, gated follow-up retrieval, grounded answer generation using a locally deployed LLM (Ollama), and post-generation grounding verification with safe regeneration. To facilitate multimodal reasoning and guarantee that all medical explanations are produced solely by the text-based RAG pipeline, the framework further allows clinical documents provided by the user and vision-derived summaries. ResNet-18 models trained and assessed on common MedMNIST benchmarks are used to create vision components, which are only merged after independent validation. In comparison to LLM-only and single-source RAG baselines, quantitative evaluation on curated medical queries shows improved evidence-to-answer ratio, traceability coverage, and grounding pass rate while also offering competitive latency and stable behavior. These findings emphasize how crucial explicit orchestration and verification are to providing accurate answers to medical questions.},
+ author = {Sharma, Khushi and Srivastava, Srishti and Sahrawat, Shruti and Singhal, Abhishek},
+ booktitle = {2026 IEEE International Conference on AI Engineering and Innovations (AIEI)},
+ doi = {10.1109/AIEI69164.2026.11497629},
+ issn = {},
+ keyword = {Filtering;Filters;Circuits and systems;Radio access networks;Regional area networks;Communication systems;Protocols;HTTP;Internet;Computer networks;Medical question answering;retrieval-augmented generation (RAG);large language models (LLMs);evidence grounding;multi-stage retrieval;biomedical information retrieval;grounding verification;multimodal reasoning},
+ month = {March},
+ number = {},
+ pages = {1-7},
+ title = {An Evidence-Grounded Multi-Stage Retrieval-Augmented Framework for Multimodal Medical Question Answering},
+ volume = {},
+ year = {2026}
+}

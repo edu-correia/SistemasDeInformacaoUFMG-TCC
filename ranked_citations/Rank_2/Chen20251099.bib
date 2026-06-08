@@ -1,0 +1,14 @@
+@conference{Chen20251099,
+ abstract = {This paper presents μTPS, a new thread architecture tailored for in-memory key-value stores (KVSs) that operate at tens of millions of operations per second. We show through analysis and demonstration that the widely used run-to-completion thread architecture, which executes monolithic functions from start to finish, often suffers from cache inefficiencies and contention issues. To address this, we revisit the once widely used thread-per-stage (TPS) architecture, but with a fresh perspective - separating cache-resident, contention-free stages and memory-resident, conflict-prone stages into distinct thread pools, and scheduling them with dedicated hardware resources (e.g., CPU cores, cache ways). This novel division enables independent optimization of each stage, significantly improving cache efficiency and mitigating contention. Additionally, μTPS incorporates reconfigurable RPC, resizable caching, and an auto-tuner to enhance its schedulability and performance. We implement two in-memory key-value stores, μTPS-H and μTPS-T, to demonstrate the effectiveness of this approach. Evaluation results show that μTPS achieves higher performance than the run-to-completion counterparts. © 2025 Copyright is held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Chen, Youmin and Shu, Jiwu and Shen, Yanyan and Huang, Linpeng and Mei, Hong},
+ doi = {10.1145/3731569.3764794},
+ journal = {SOSP 2025 - Proceedings of the 2025 ACM SIGOPS 31st Symposium on Operating Systems Principles},
+ note = {Cited by: 0},
+ pages = {1099 - 1114},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Rearchitecting the Thread Model of In-Memory Key-Value Stores with μtPS},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105020850587?origin=resultslist},
+ year = {2025}
+}

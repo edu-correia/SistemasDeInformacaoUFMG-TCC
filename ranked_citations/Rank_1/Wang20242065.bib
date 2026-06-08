@@ -1,0 +1,14 @@
+@conference{Wang20242065,
+ abstract = {Extracting class activation maps (CAMs) is commonly recognized as a crucial step in generating pseudo-masks for weakly supervised semantic segmentation (WSSS). However, we have noticed that the commonly used binary cross-entropy loss (BCE) in CAM contributes significantly to the unsatisfactory quality of these pseudo-masks. Specifically, BCE's tendency to overclassify and merge often leads to CAM pixels responding to multiple classes within the same receptive field. As a result, when focusing on a specific class, its 'hot' CAM pixels may erroneously invade regions belonging to other classes, while 'non-hot' CAM pixels might actually represent part of the target class. To mitigate this issue, we propose a novel and effective approach: we refine the converged CAM using BCE after employing softmax cross-entropy loss (SCE). This approach, termed BSCAM, involves extracting feature pixels for each class using CAM for a given image and subsequently training an additional fully connected layer with SCE (positioned after the backbone network) using these pixels and class labels. Once this extra layer has converged, we extract BSCAM similarly to traditional CAM. Due to the discriminative nature of SCE, pixel responses are distributed across different categories, thereby reducing potential ambiguities in the resulting masks. Evaluations conducted on the PASCAL VOC and MS COCO datasets demonstrate that BSCAM not only produces high-quality masks but also offers a versatile solution that can be easily integrated into any CAM variant with minimal additional computational overhead.  © 2024 IEEE.},
+ author = {Wang, Chunhua},
+ doi = {10.1109/ICIPCA61593.2024.10709162},
+ journal = {2024 IEEE 2nd International Conference on Image Processing and Computer Applications, ICIPCA 2024},
+ note = {Cited by: 0},
+ pages = {2065 - 2070},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Simple and Effective Method on Extracting Class Activation Map},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85207937068?origin=resultslist},
+ year = {2024}
+}

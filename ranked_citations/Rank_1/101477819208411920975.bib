@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920975,
+ abstract = {Probabilistic databases hold promise of being a viable means for large-scale uncertainty management, increasingly needed in a number of real world applications domains. However, query evaluation in probabilistic databases remains a computational challenge. Prior work on efficient exact query evaluation in probabilistic databases has largely concentrated on query-centric formulations (e.g., safe plans, hierarchical queries), in that, they only consider characteristics of the query and not the data in the database. It is easy to construct examples where a supposedly hard query run on an appropriate database gives rise to a tractable query evaluation problem. In this paper, we develop efficient query evaluation techniques that leverage characteristics of both the query and the data in the database. We focus on tuple-independent databases where the query evaluation problem is equivalent to computing marginal probabilities of Boolean formulas associated with the result tuples. This latter task is easy if the Boolean formulas can be factorized into a form that has every variable appearing at most once (called read-once). However, a naive approach that directly uses previously developed Boolean formula factorization algorithms is inefficient, because those algorithms require the input formulas to be in the disjunctive normal form (DNF). We instead develop novel, more efficient factorization algorithms that directly construct the read-once expression for a result tuple Boolean formula (if one exists), for a large subclass of queries (specifically, conjunctive queries without self-joins). We empirically demonstrate that (1) our proposed techniques are orders of magnitude faster than generic inference algorithms for queries where the result Boolean formulas can be factorized into read-once expressions, and (2) for the special case of hierarchical queries, they rival the efficiency of prior techniques specifically designed to handle such queries.},
+ author = {Sen, Prithviraj and Deshpande, Amol and Getoor, Lise},
+ doi = {10.14778/1920841.1920975},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {12},
+ pages = {1068–1079},
+ publisher = {VLDB Endowment},
+ title = {Read-once functions and query evaluation in probabilistic databases},
+ url = {https://doi.org/10.14778/1920841.1920975},
+ volume = {3},
+ year = {2010}
+}

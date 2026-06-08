@@ -1,0 +1,16 @@
+@article{Sun20251810,
+ abstract = {DIMM-based Near-Memory-Processing (NMP) kernel offloading enables a program to execute in computation-enabled DIMM buffer chips, bypassing the bandwidth-constrained CPU main memory bus for high performance. Yet, it also enables programs to access memory without restrictions and protection from CPU, resulting in potential security hazards. To protect general NMP kernel offloading even with malicious privileged software, a heterogeneous TEE is required. However, for architectural design simplification, the conventional heterogeneous TEE design isolates host CPU process from NMP kernel’s memory and vice versa, such that CPU TEE and trusted NMP driver can protect CPU processes and NMP kernels in complete separation. Such isolation results in redundant input/output data movement between the two isolated memory spaces, with half of the movement performed by host CPU. Worsened by limited CPU memory bandwidth, we identify that such redundancy severely bottlenecks the performance of many potential NMP applications. To overcome this bottleneck, we propose to abandon isolation and share the NMP kernel memory with its host CPU process. Based on this idea, we design SSS-DIMM, an efficient TEE for DIMM-based NMP kernel offloading that removes the redundant data movement via Secure Space Sharing. SSS-DIMM resolves the two security challenges faced by memory sharing: to provide consistent security guarantees on CPU processes and NMP kernels with CPU TEE and the NMP driver for both memory ownership (allocation) and views (mapping), and to ensure that cryptography metadata be securely shared and synchronized between CPU and NMP unit. Our evaluation shows that SSS-DIMM maintains both security and high performance. © 1990-2012 IEEE.},
+ author = {Sun, Weiyi and Zhu, Jianfeng and Gao, Mingyu and Li, Zhaoshi and Wei, Shaojun and Liu, Leibo},
+ doi = {10.1109/TPDS.2025.3576438},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 0},
+ number = {8},
+ pages = {1810 - 1827},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SSS-DIMM: Removing Redundant Data Movement in Trusted DIMM-Based Near-Memory-Processing Kernel Offloading via Secure Space Sharing},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105007413368?origin=resultslist},
+ volume = {36},
+ year = {2025}
+}

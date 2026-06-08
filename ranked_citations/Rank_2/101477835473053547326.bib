@@ -1,0 +1,17 @@
+@article{10.14778/3547305.3547326,
+ abstract = {A Join-Project operation is a join operation followed by a duplicate eliminating projection operation. It is used in a large variety of applications, including entity matching, set analytics, and graph analytics. Previous work proposes a hybrid design that exploits the classical solution (i.e., join and deduplication), and MM (matrix multiplication) to process the sparse and the dense portions of the input data, respectively. However, we observe three problems in the state-of-the-art solution: 1) The outputs of the sparse and dense portions overlap, requiring an extra deduplication step; 2) Its table-to-matrix transformation makes an over-simplified assumption of the attribute values; and 3) There is a mismatch between the employed MM in BLAS packages and the characteristics of the Join-Project operation.In this paper, we propose DIM3, an optimized algorithm for the Join-Project operation. To address 1), we propose an intersection-free partition method to completely remove the final deduplication step. For 2), we develop an optimized design for mapping attribute values to natural numbers. For 3), we propose DenseEC and SparseBMM algorithms to exploit the structure of Join-Project for better efficiency. Moreover, we extend DIM3 to consider partial result caching and support Join-op queries, including Join-Aggregate and MJP (Multi-way Joins with Projection). Experimental results using both real-world and synthetic data sets show that DIM3 outperforms previous Join-Project solutions by a factor of 2.3X-18X. Compared to RDBMSs, DIM3 achieves orders of magnitude speedups.},
+ author = {Huang, Zichun and Chen, Shimin},
+ doi = {10.14778/3547305.3547326},
+ issn = {2150-8097},
+ issue_date = {June 2022},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {13},
+ pages = {2244–2256},
+ publisher = {VLDB Endowment},
+ title = {Density-optimized intersection-free mapping and matrix multiplication for join-project operations},
+ url = {https://doi.org/10.14778/3547305.3547326},
+ volume = {15},
+ year = {2022}
+}

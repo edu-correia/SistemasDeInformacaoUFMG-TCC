@@ -1,0 +1,14 @@
+@article{8657696,
+ abstract = {Frequent itemset mining is an important operation to return all itemsets in the transaction table, which occur as a subset of at least a specified fraction of the transactions. The existing algorithms cannot compute frequent itemsets on massive data efficiently, since they either require multiple-pass scans on the table or construct complex data structures which normally exceed the available memory on massive data. This paper proposes a novel precomputation-based frequent itemset mining (PFIM) algorithm to compute the frequent itemsets quickly on massive data. PFIM treats the transaction table as two parts: the large old table storing historical data and the relatively small new table storing newly generated data. PFIM first pre-constructs the quasi-frequent itemsets on the old table whose supports are above the lower-bound of the practical support level. Given the specified support threshold, PFIM can quickly return the required frequent itemsets on the table by utilizing the quasi-frequent itemsets. Three pruning rules are presented to reduce the size of the involved candidates. An incremental update strategy is devised to efficiently re-construct the quasi-frequent itemsets when the tables are merged. The extensive experimental results, conducted on synthetic and real-life data sets, show that PFIM has a significant advantage over the existing algorithms and runs two orders of magnitude faster than the latest algorithm.},
+ author = {Han, Xixian and Liu, Xianmin and Chen, Jian and Lai, Guojun and Gao, Hong and Li, Jianzhong},
+ doi = {10.1109/ACCESS.2019.2902602},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Itemsets;Data mining;Data structures;Partitioning algorithms;Software algorithms;Memory management;Frequent itemset mining;massive data;PFIM algorithm;pruning rule;incremental update},
+ month = {},
+ number = {},
+ pages = {31409-31421},
+ title = {Efficiently Mining Frequent Itemsets on Massive Data},
+ volume = {7},
+ year = {2019}
+}

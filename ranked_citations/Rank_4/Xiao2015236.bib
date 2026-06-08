@@ -1,0 +1,14 @@
+@conference{Xiao2015236,
+ abstract = {The rapid growth of cloud storage systems calls for fast and scalable namespace processing. While few commercial file systems offer anything better than federating individually non-scalable namespace servers, a recent academic file system, IndexFS, demonstrates scalable namespace processing based on client caching of directory entries and permissions (directory lookup state) with no per-client state in servers. In this paper we explore explicit replication of directory lookup state in all servers as an alternative to caching this information in all clients. Both eliminate most repeated RPCs to different servers in order to resolve hierarchical permission tests. Our realization for server replicated directory lookup state, ShardFS, employs a novel file system specific hybrid optimistic and pessimistic concurrency control favoring single object transactions over distributed transactions. Our experimentation suggests that if directory lookup state mutation is a fixed fraction of operations (strong scaling for metadata), server replication does not scale as well as client caching, but if directory lookup state mutation is proportional to the number of jobs, not the number of processes per job, (weak scaling for metadata), then server replication can scale more linearly than client caching and provide lower 70 percentile response times as well. © 2015 ACM.},
+ author = {Xiao, Lin and Ren, Kai and Zheng, Qing and Gibson, Garth A.},
+ doi = {10.1145/2806777.2806844},
+ journal = {ACM SoCC 2015 - Proceedings of the 6th ACM Symposium on Cloud Computing},
+ note = {Cited by: 35; All Open Access; Gold Open Access},
+ pages = {236 - 249},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ShardFS vs. Indexfs: Replication vs. Caching strategies for distributed metadata management in cloud storage systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84959036419?origin=resultslist},
+ year = {2015}
+}

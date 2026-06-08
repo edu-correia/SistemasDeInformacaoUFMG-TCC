@@ -1,0 +1,14 @@
+@inproceedings{7393361,
+ abstract = {Very Long Instruction Word (VLIW) processors are commonplace in embedded systems due to their inherent lowpower consumption as the instruction scheduling is performed by the compiler instead by sophisticated and power-hungry hardware instruction schedulers used in their RISC counterparts. This is achieved by maximizing resource utilization by only targeting a certain application domain. However, when the inherent application ILP (instruction-level parallelism) is low, resources are under-utilized/wasted and the encoding of NOPs results in large code sizes and consequently additional pressure on the memory subsystem to store these NOPs. To address the resource-utilization issue, we proposed a dynamic VLIW processor design that can merge unused resources to form additional cores to execute more threads. Therefore, the formation of cores can result in issue widths of 2, 4, and 8. Without sacrificing the possibility of code interruptability and resumption, we proposed a generic binary scheme that allows a single binary to be executed on these different issue-width cores. However, the code size issue remains as the generic binary scheme even slightly further increases the number NOPS. Therefore, in this paper, we propose to apply a well-known stop-bit code compression technique to the generic binaries that, most importantly, maintains its code compatibility characteristic allowing it to be executed on different cores. In addition, we present the hardware designs to support this technique in our dynamic core. For prototyping purposes, we implemented our design on a Xilinx Virtex-6 FPGA device and executed 14 embedded benchmarks. For comparison, we selected a nondynamic/ static VLIW core that incorporates a similar stop-bit technique for its code compression. We demonstrate, while maintaining code compatibility on top of a flexible dynamic VLIW processor, that the code size can be significantly reduced (up to 80%) resulting in energy savings, and that the performance can be increased (up to a factor of three). Finally, our experimental results show that we can use smaller caches (2 to 4 times as small), which will further help in decreasing energy consumption.},
+ author = {Brandon, Anthony and Hoozemans, Joost and van Straten, Jeroen and Lorenzon, Arthur and Sartor, Anderson and Schneider Beck, Antonio Carlos and Wong, Stephan},
+ booktitle = {2015 International Conference on ReConFigurable Computing and FPGAs (ReConFig)},
+ doi = {10.1109/ReConFig.2015.7393361},
+ issn = {},
+ keyword = {VLIW;Program processors;Encoding;Hardware;Energy consumption;Complexity theory;Parallel processing},
+ month = {Dec},
+ number = {},
+ pages = {1-7},
+ title = {A sparse VLIW instruction encoding scheme compatible with generic binaries},
+ volume = {},
+ year = {2015}
+}

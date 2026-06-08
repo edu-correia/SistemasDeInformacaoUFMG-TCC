@@ -1,0 +1,14 @@
+@article{11372754,
+ abstract = {As large language models (LLMs) continue to scale in both size and particularly in sequence length, the softmax-attention mechanism of the underlying transformer architecture has emerged as a critical bottleneck. While in-memory computing (IMC) based architectures offer efficient acceleration for vector-matrix multiplications (VMMs), integrating softmax remains challenging due to its computational complexity. This work presents a comprehensive analysis of softmax approximations and softmax precision requirements in modern LLMs spanning model sizes from 125M to 405B parameters across several natural language processing (NLP) benchmarks. Based on these findings, we present an IMC-optimized reformulation of softmax for attention that results in negligible accuracy degradation, including (a) transformation of complexity from sequence-length-dependency to the much smaller attention head dimension and (b) merging of softmax components within the adjacent IMC’s VMM operations. We present both digital and analog implementations. Our digital approach reduces area overhead to 81.2 μm2 and energy to 0.69 pJ per input-output pair, resulting in more than 20× lower energy-delay-area product compared to state-of-the-art. Our analog implementation achieves 37.1 μm2 and 0.33 pJ by leveraging a spike-based encoding. These results highlight the importance of rethinking softmax computation for IMC to enable scalable transformer accelerators.},
+ author = {Finkbeiner, Jan and Siegel, Sebastian and Sudarshan, Chirag and Zhao, Yuankang and Strachan, John Paul and Neftci, Emre},
+ doi = {10.1109/JETCAS.2026.3661247},
+ issn = {2156-3365},
+ journal = {IEEE Journal on Emerging and Selected Topics in Circuits and Systems},
+ keyword = {Virtual machine monitors;Computer architecture;Hardware;In-memory computing;Transformers;Energy efficiency;Computational modeling;Attention mechanisms;Accuracy;Natural language processing;Softmax;Attention;Transformers;LLM;In-Memory Computing},
+ month = {},
+ number = {},
+ pages = {1-1},
+ title = {Algorithm-Hardware Implications of Softmax Approximations for In-Memory Computing based LLM Accelerators},
+ volume = {},
+ year = {2026}
+}

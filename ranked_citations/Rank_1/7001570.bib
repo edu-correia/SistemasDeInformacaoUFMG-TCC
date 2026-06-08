@@ -1,0 +1,14 @@
+@article{7001570,
+ abstract = {This paper aims at learning a better probabilistic context-free grammar with latent annotations (PCFG-LA) by using a graph propagation (GP) technique. We propose leveraging the GP to regularize the lexical model of the grammar. The proposed approach constructs k-nearest neighbor ( k-NN) similarity graphs over words with identical pre-terminal (part-of-speech) tags, for propagating the probabilities of latent annotations given the words. The graphs demonstrate the relationship between words in syntactic and semantic levels, estimated by using a neural word representation method based on Recursive autoencoder (RAE). We modify the conventional PCFG-LA parameter estimation algorithm, expectation maximization (EM), by incorporating a GP process subsequent to the M-step. The GP encourages the smoothness among the graph vertices, where different words under similar syntactic and semantic environments should have approximate posterior distributions of nonterminal subcategories. The proposed PCFG-LA learning approach was evaluated together with a hierarchical split-and-merge training strategy, on parsing tasks for English, Chinese and Portuguese. The empirical results reveal two crucial findings: 1) regularizing the lexicons with GP results in positive effects to parsing accuracy; and 2) learning with unlabeled data can also expand the PCFG-LA lexicons.},
+ author = {Zeng, Xiaodong and Wong, Derek F. and Chao, Lidia S. and Trancoso, Isabel},
+ doi = {10.1109/TASLP.2015.2389034},
+ issn = {2329-9304},
+ journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+ keyword = {Grammar;Training;Syntactics;Vectors;Semantics;Parameter estimation;Training data;Graph propagation;natural language processing;neural word representation;syntax parsing},
+ month = {March},
+ number = {3},
+ pages = {441-450},
+ title = {Graph-Based Lexicon Regularization for PCFG With Latent Annotations},
+ volume = {23},
+ year = {2015}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10648097,
+ abstract = {This article presents a new image segmentation algorithm based on a Split & Merge approach. By nature, the execution time of Split & Merge algorithms is data-dependent, as their halting conditions are tied to the homogeneity of each region. While previous algorithms made the Split step less sensitive to input data, the execution time of the more complex Merge step remains highly sensitive to image content. This paper tackles the sensitivity and performance problems from a system and architecture perspective. Memory reallocations due to array fusions are eliminated with the introduction of a TTA (Three Table Array) structure in the Merge step. As iterating over entries in this structure causes a loss of memory locality, we propose two new mechanisms that implement a software cache to mitigate this. An experimental study on an embedded system (Nvidia Jetson Xavier NX) has shown our Merge algorithm to be 10.6 times faster than the state-of-the-art Split & Merge algorithm for $960 \times 720$ images. Moreover, the execution time of our algorithm is also more resistant to image characteristics.},
+ author = {Maurice, Nathan and Sopena, Julien and Lacassagne, Lionel},
+ booktitle = {2024 IEEE International Conference on Image Processing (ICIP)},
+ doi = {10.1109/ICIP51287.2024.10648097},
+ issn = {2381-8549},
+ keyword = {Resistance;Image segmentation;Embedded systems;Sensitivity;Software algorithms;Streaming media;Prediction algorithms;Image segmentation;Merging;Embedded systems;Data structures},
+ month = {Oct},
+ number = {},
+ pages = {3613-3619},
+ title = {A New Efficient Split & Merge Algorithm for Embedded Systems},
+ volume = {},
+ year = {2024}
+}

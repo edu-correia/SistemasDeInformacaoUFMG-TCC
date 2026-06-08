@@ -1,0 +1,15 @@
+@article{10.1145/3807508,
+ abstract = {Compiler fuzzing with randomly generated input programs is a powerful technique for finding compiler crashes and miscompilation bugs. Existing fuzzers for compilers are either unguided, or guided by feedback stemming from code coverage instrumentation. Code coverage is both expensive and blind to complex internal states not represented by the structure of code.In this work we present LOOL, an approach for fuzzing a compiler with low overhead, guided by optimization log information produced by the compiler. The optimization log tracks program transformations performed by the compiler on the level of methods. We argue that using the optimization log incurs less runtime overhead than off-the-shelf code coverage tools. At the same time, the optimization log's per-method data provides more information than code coverage collected over a number of distinct compilations.We integrate the LOOL approach in an existing fuzzer for the GraalVM compiler. A genetic optimization algorithm uses optimization log information for tuning code generation parameters to cover infrequently exercised combinations of optimizations. Initial experiments confirm that varying the generator's parameters is effective at finding new bugs. The genetic algorithm automates the exploration of the parameter space to improve testing of currently insufficiently fuzzed parts of the compiler.},
+ address = {New York, NY, USA},
+ author = {Berlakovich, Felix and Schwarcz, Florian and Barany, Gerg\"{o} and M\"{o}ssenb\"{o}ck, Hanspeter and Brunthaler, Stefan},
+ doi = {10.1145/3807508},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {fuzzing, JIT compiler, genetic algorithm, GraalVM},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {LOOL: Low-Overhead, Optimization-Log-Guided Compiler Fuzzing},
+ url = {https://doi.org/10.1145/3807508},
+ year = {2026}
+}

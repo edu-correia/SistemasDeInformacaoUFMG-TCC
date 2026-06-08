@@ -1,0 +1,14 @@
+@inproceedings{10589905,
+ abstract = {Stable patch identification is crucial in merging patches into stable versions, which helps ensure the stability of the Linux kernel. Although many tools have been proposed to mitigate the manual effort of stable patch identification, challenges still arise because they neglect continuous stable patch tracking and advanced Natural Language Processing (NLP) pre-training techniques. In this paper, in collaboration with developers from the openAnolis Linux operating system distribution community, we present a stable patch identification model called PatchBERT. It utilizes BERT and CodeBERT to capture the semantic patch representation from the commit message and code changes in a patch. We then perform patch classification and output the probability that the patch should be merged into the stable versions. We perform experiments on the dataset used by the previous methods. The experimental results show the superior performance of PatchBERT over state-of-the-art baselines. Additionally, it is common practice to train the model using the latest Linux patches and implement it in a real-world industrial setting. In this exercise, we randomly select 10,000 patches for identification, accurately identifying 8,617 patches and incorrectly identifying 1,383 patches. This practical outcome further confirms the effectiveness and utility of PatchBERT in real-world scenarios.},
+ author = {Liu, Rongkai and Shi, Heyuan and Zhang, Yongchao and Wang, Runzhe and Shen, Yuheng and Chen, Yuao and Luo, Jing and Shi, Xiaohai and Hu, Chao and Jiang, Yu},
+ booktitle = {2024 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+ doi = {10.1109/SANER60148.2024.00042},
+ issn = {2640-7574},
+ keyword = {Codes;Linux;Computational modeling;Semantics;Predictive models;Natural language processing;Vectors;Linux kernel;stable patch identification;deep learning;patch tracking},
+ month = {March},
+ number = {},
+ pages = {349-358},
+ title = {PatchBert: Continuous Stable Patch Identification for Linux Kernel via Pre-trained Model Fine-tuning},
+ volume = {},
+ year = {2024}
+}

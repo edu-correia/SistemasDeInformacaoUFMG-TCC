@@ -1,0 +1,16 @@
+@article{Cheng20201952,
+ abstract = {LSM-trie-based key-value (KV) store is often used to manage an ultralarge dataset in reality by introducing a number of sublevels at each level, its linear growth pattern can fairly reduce the write amplification in store operations. Although this design is effective for the write operation, the last level holds a large proportion of KV items, leading to the extreme imbalance of data distribution. Therefore, to support efficient read, we need to carefully consider this imbalance. On the other hand, to ensure that acquired data is latest, the LSM-trie needs to search the dataset at different levels one by one, and this search method may take a lot of unnecessary time. When the number of items is ultralarge, the random lookup performance may be poor due to the imbalance data distribution. To address this issue, we improve the read performance of the LSM-trie by changing its serial search to parallel search, using two threads to simultaneously search at the last level and other levels, respectively. Our experiment results show that the read performance of the LSM-trie can be improved up to 98.35% and on average 71.55%. © 2020 John Wiley & Sons, Ltd.},
+ author = {Cheng, Wen and Guo, Tao and Zeng, Lingfang and Wang, Yang and Nagel, Lars and Süß, Tim and Brinkmann, André},
+ doi = {10.1002/spe.2875},
+ journal = {Software - Practice and Experience},
+ note = {Cited by: 2; All Open Access; Green Open Access},
+ number = {10},
+ pages = {1952 - 1965},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Improving LSM-trie performance by parallel search},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85088869941?origin=resultslist},
+ volume = {50},
+ year = {2020}
+}

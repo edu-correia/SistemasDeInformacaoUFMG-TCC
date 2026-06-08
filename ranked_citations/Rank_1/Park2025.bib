@@ -1,0 +1,16 @@
+@article{Park2025,
+ abstract = {Micro-batch streaming systems using Log-Structured Merge-tree based Key-Value Store (LSM-KVS) as state stores often experience high tail latency due to several factors. First, the commit task is synchronous, blocking query execution until it is fully completed. During this time, the streaming engine must wait for all associated operations to finish. Additionally, remote checkpointing, which is part of the commit task, increases compaction time in the LSM-KVS. This involves reading metadata and state from a remote persistent node for compaction then writing the updated data back, which prolongs the commit latency and degrades overall performance. These delays also postpone subsequent tasks, causing rapid data accumulation from data source and creating a cycle that further extends commit latency, ultimately resulting in long tail latency. To address these issues, we propose MiSA, a micro-batch streaming system that incorporates asynchronous commit and state preloading mechanisms in the LSM-KVS based architectures. MiSA overlaps the time-consuming commit operation with query execution and enhances performance through hierarchical state preloading. We implemented MiSA in Apache Spark Structured Streaming with LSM-KVS support, a widely-used micro-batch streaming platform. Experimental results show that MiSA reduces tail latency by up to 13.4× at the 99th percentile and boosts average throughput by up to 10.4×. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2025.},
+ author = {Park, Kyuli and Lee, Dongjae and Jeong, Yeonwoo and Hariri, Salim and Park, Sungyong},
+ doi = {10.1007/s10586-024-05000-6},
+ journal = {Cluster Computing},
+ note = {Cited by: 0},
+ number = {7},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Towards an asynchronous commit in micro-batch streaming systems with log-structured merge-tree based key-value store},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105012281183?origin=resultslist},
+ volume = {28},
+ year = {2025}
+}

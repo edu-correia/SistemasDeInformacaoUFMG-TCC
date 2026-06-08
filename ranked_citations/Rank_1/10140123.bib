@@ -1,0 +1,14 @@
+@inproceedings{10140123,
+ abstract = {Vehicle localization and navigation in a GPS-denied or GPS-degraded environment is a common use case in both civilian and military applications. Augmented reality (AR) applications in particular require a high level of localization accuracy to be perceptually convincing. In this paper we discuss our experimental results implementing a complete, working navigation system for vehicular AR, which is able to maintain high localization accuracy in situations where GPS loss occurs for significant periods of time. We have implemented a hybrid state filter that is able to considerably improve GPS-denied dead-reckoning solutions by merging the output of an Unscented Kalman Filter (UKF), or any off the shelf pose solution with our map-corrected particle filter. The solution is initialized with a known starting location and subsequently corrects the GPS-denied pose solution by performing a “road-aiding” correction using a distance-transform metric derived from an OpenStreetMaps (OSM) map. A calibrated camera provides RGB input to a semantic segmentation network that determines the location of the road. The geometry of the labelling helps the system decide whether the vehicle is on or off road and subsequently whether the map correction can be applied. Our experimental results show a marked improvement in overall accuracy under GPS-denied conditions over a purely dead-reckoning INS solution on a truck mounted system on public roads. To demonstrate the robustness of our system, we drove for 112 minutes GPS-denied, achieving a median positional error of 5 meters and a median heading error of 28 mrad. This degree of accuracy supported consistent and perceptually convincing AR.},
+ author = {Welsh, Tomihisa and Marks, Sean M. and Pronschinske, Alex},
+ booktitle = {2023 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
+ doi = {10.1109/PLANS53410.2023.10140123},
+ issn = {2153-3598},
+ keyword = {Location awareness;Dead reckoning;Three-dimensional displays;Statistical analysis;Roads;Cameras;Particle filters;particle filter;open street maps;OSM;gps-denied},
+ month = {April},
+ number = {},
+ pages = {1363-1372},
+ title = {GPS-denied Vehicle Localization for Augmented Reality Using a Road-Aided Particle Filter and RGB Camera},
+ volume = {},
+ year = {2023}
+}

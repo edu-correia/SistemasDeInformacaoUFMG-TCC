@@ -1,0 +1,14 @@
+@article{8472784,
+ abstract = {In a memory system, understanding how the host is stressing the memory is important to improve memory performance. Accordingly, the need for the analysis of memory command trace, which the memory controller sends to the dynamic random access memory, has increased. However, the size of this trace is very large; consequently, a high-throughput hardware (HW) accelerator that can efficiently compress these data in real time is required. This paper proposes a high-throughput HW accelerator for lossless compression of the command trace. The proposed HW is designed in a pipeline structure to process Huffman tree generation, encoding, and stream merge. To avoid the HW cost increase owing to high-throughput processing, a Huffman tree is efficiently implemented by utilizing static random access memory-based queues and bitmaps. In addition, variable length stream merge is performed at a very low cost by reducing the HW wire width using the mathematical properties of Huffman coding and processing the metadata and the Huffman codeword using FIFO separately. Furthermore, to improve the compression efficiency of the DDR4 memory command, the proposed design includes two preprocessing operations, the “don't care bits override” and the “bits arrange,” which utilize the operating characteristics of DDR4 memory. The proposed compression architecture with such preprocessing operations achieves a high throughput of 8 GB/s with a compression ratio of 40.13% on average. Moreover, the total HW resource per throughput of the proposed architecture is superior to the previous implementations.},
+ author = {Choi, Jiwoong and Kim, Boyeal and Kim, Hyun and Lee, Hyuk-Jae},
+ doi = {10.1109/TVLSI.2018.2869663},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Huffman coding;Throughput;Image coding;Random access memory;Complexity theory;Hardware;Memory management;Block Huffman;field-programmable gate array (FPGA);high-throughput hardware (HW) design;lossless compression;memory command trace analysis},
+ month = {Jan},
+ number = {1},
+ pages = {92-102},
+ title = {A High-Throughput Hardware Accelerator for Lossless Compression of a DDR4 Command Trace},
+ volume = {27},
+ year = {2019}
+}

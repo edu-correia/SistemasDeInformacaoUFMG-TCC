@@ -1,0 +1,14 @@
+@article{8788600,
+ abstract = {Multimodal medical image fusion aims to integrate multisensory medical data into a single image for better prediction of the diagnostic details. This article presents a feature-level multimodal medical image fusion with the use of a two-scale ℓ1 - ℓ0 hybrid layer decomposition scheme to maximize the structural details with the suppression of significant noise and artifacts. The proposed method uses a convolutional neural network (CNN) with consistency verification and structural patch clustering (fuzzy c-means-based) for the decomposed base and detail layer fusion, respectively. At first, a color space transform is used to separate the luminance and chrominance components extracted from both the source images and the luminance part of each image is decomposed. In the second step, a pretrained CNN model is used to extract the prominent features from each decomposed base layer component. For the output feature map, a regional energy-based activity measure is computed and generated a fusion score, which is refined in the consistency verification step to optimize the weight map for fusing the base layers. The two-scale detail layers are merged by the clustering-based prelearned dictionary for efficiently mapping of structural details of the layers. The color components associated with both the images are also combined using a color saliency measure. Finally, the fused base layer, detail layers, and color components are merged to get the resultant fused image. The experimental results justify the superiority of the proposed approach in terms of both subjective and objective assessments. The performance of the proposed scheme is tested on a large multimodal medical data set of MR-SPECT, MR-PET, and CT-MR neurological images. Furthermore, the proposed approach shows better results than the other state-of-the-art approaches with improved fusion quality and computational performances.},
+ author = {Singh, Sneha and Anand, R. S.},
+ doi = {10.1109/TIM.2019.2933341},
+ issn = {1557-9662},
+ journal = {IEEE Transactions on Instrumentation and Measurement},
+ keyword = {Image fusion;Transforms;Medical diagnostic imaging;Image edge detection;Image color analysis;Principal component analysis;ℓ₁ – ℓ₀ layer decomposition;clustering;guided filter;medical image fusion;principle component analysis},
+ month = {June},
+ number = {6},
+ pages = {3855-3865},
+ title = {Multimodal Medical Image Fusion Using Hybrid Layer Decomposition With CNN-Based Feature Mapping and Structural Clustering},
+ volume = {69},
+ year = {2020}
+}

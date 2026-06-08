@@ -1,0 +1,14 @@
+@inproceedings{9741267,
+ abstract = {Extended Berkeley Packet Filter (BPF) is a language and run-time system that allows non-superusers to extend the Linux and Windows operating systems by downloading user code into the kernel. To ensure that user code is safe to run in kernel context, BPF relies on a static analyzer that proves properties about the code, such as bounded memory access and the absence of operations that crash. The BPF static analyzer checks safety using abstract interpretation with several abstract domains. Among these, the domain of tnums (tristate numbers) is a key domain used to reason about the bitwise uncertainty in program values. This paper formally specifies the tnum abstract domain and its arithmetic operators. We provide the first proofs of soundness and optimality of the abstract arithmetic operators for tnum addition and subtraction used in the BPF analyzer. Further, we describe a novel sound algorithm for multiplication of tnums that is more precise and efficient (runs 33% faster on average) than the Linux kernel’s algorithm. Our tnum multiplication is now merged in the Linux kernel.},
+ author = {Vishwanathan, Harishankar and Shachnai, Matan and Narayana, Srinivas and Nagarakatte, Santosh},
+ booktitle = {2022 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO53902.2022.9741267},
+ issn = {},
+ keyword = {Band-pass filters;Codes;Uncertainty;Linux;Computer crashes;Safety;Registers;Abstract domains;Program verification;Static analysis;Kernel extensions;eBPF},
+ month = {April},
+ number = {},
+ pages = {254-265},
+ title = {Sound, Precise, and Fast Abstract Interpretation with Tristate Numbers},
+ volume = {},
+ year = {2022}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/1687627.1687726,
+ abstract = {In diverse applications ranging from stock trading to traffic monitoring, popular data streams are typically monitored by multiple analysts for patterns of interest. These analysts may submit similar pattern mining requests, such as cluster detection queries, yet customized with different parameter settings. In this work, we present an efficient shared execution strategy for processing a large number of density-based cluster detection queries with arbitrary parameter settings. Given the high algorithmic complexity of the clustering process and the real-time responsiveness required by streaming applications, serving multiple such queries in a single system is extremely resource intensive. The naive method of detecting and maintaining clusters for different queries independently is often in-feasible in practice, as its demands on system resources increase dramatically with the cardinality of the query workload. To overcome this, we analyze the interrelations between the cluster sets identified by queries with different parameters settings, including both pattern-specific and window-specific parameters. We introduce the notion of the growth property among the cluster sets identified by different queries, and characterize the conditions under which it holds. By exploiting this growth property we propose a uniform solution, called Chandi, which represents identified cluster sets as one single compact structure and performs integrated maintenance on them -- resulting in significant sharing of computational and memory resources. Our comprehensive experimental study, using real data streams from domains of stock trades and moving object monitoring, demonstrates that Chandi is on average four times faster than the best alternative methods, while using 85% less memory space in our test cases. It also shows that Chandi scales in handling large numbers of queries on the order of hundreds or even thousands under high input data rates.},
+ author = {Yang, Di and Rundensteiner, Elke A. and Ward, Matthew O.},
+ doi = {10.14778/1687627.1687726},
+ issn = {2150-8097},
+ issue_date = {August 2009},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {1},
+ numpages = {12},
+ pages = {874–885},
+ publisher = {VLDB Endowment},
+ title = {A shared execution strategy for multiple pattern mining requests over streaming data},
+ url = {https://doi.org/10.14778/1687627.1687726},
+ volume = {2},
+ year = {2009}
+}

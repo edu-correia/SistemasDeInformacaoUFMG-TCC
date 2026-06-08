@@ -1,0 +1,14 @@
+@inproceedings{8930874,
+ abstract = {The Static Single Assignment (SSA) form is an intermediate representation used for the analysis and optimization of programs in modern compilers. The φ-function placement is the most computationally expensive part of converting any program into its SSA form. The most widely-used φ-function placement algorithms are based on computing dominance frontiers. However, this kind of algorithms works under the limiting assumption that all variables are defined at the beginning of the program, which is not the case for local variables. In this paper, we introduce an innovative algorithm based on computing reaching definitions, only assuming that global variables and formal parameters are defined at the beginning of the program. We implemented our algorithm and compared it to a well-known dominance frontiers-based algorithm in the Clang/LLVM compiler framework by performing experiments on a benchmarking suite for Perl. The results of our experiments show that, besides a few computationally expensive cases, our algorithm is fairly efficient, and most notably it produces up to 169% and on an average 74% fewer φ-functions than the reference dominance frontiers-based algorithm.},
+ author = {Masud, Abu Naser and Ciccozzi, Federico},
+ booktitle = {2019 19th International Working Conference on Source Code Analysis and Manipulation (SCAM)},
+ doi = {10.1109/SCAM.2019.00012},
+ issn = {2470-6892},
+ keyword = {Reactive power;Benchmark testing;Technological innovation;Optimization;Program processors;Limiting;Indexes;Static single assignment, program optimization, program transformation, reaching definition, dataflow analysis},
+ month = {Sep.},
+ number = {},
+ pages = {23-33},
+ title = {Towards Constructing the SSA form using Reaching Definitions Over Dominance Frontiers},
+ volume = {},
+ year = {2019}
+}

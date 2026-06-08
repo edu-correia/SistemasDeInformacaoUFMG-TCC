@@ -1,0 +1,17 @@
+@article{10.14778/1687627.1687659,
+ abstract = {Conventional data warehouses employ the query-at-a-time model, which maps each query to a distinct physical plan. When several queries execute concurrently, this model introduces contention, because the physical plans---unaware of each other---compete for access to the underlying I/O and computation resources. As a result, while modern systems can efficiently optimize and evaluate a single complex data analysis query, their performance suffers significantly when multiple complex queries run at the same time.We describe an augmentation of traditional query engines that improves join throughput in large-scale concurrent data warehouses. In contrast to the conventional query-at-a-time model, our approach employs a single physical plan that can share I/O, computation, and tuple storage across all in-flight join queries. We use an "always-on" pipeline of non-blocking operators, coupled with a controller that continuously examines the current query mix and performs run-time optimizations. Our design allows the query engine to scale gracefully to large data sets, provide predictable execution times, and reduce contention. In our empirical evaluation, we found that our prototype outperforms conventional commercial systems by an order of magnitude for tens to hundreds of concurrent queries.},
+ author = {Candea, George and Polyzotis, Neoklis and Vingralek, Radek},
+ doi = {10.14778/1687627.1687659},
+ issn = {2150-8097},
+ issue_date = {August 2009},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {1},
+ numpages = {12},
+ pages = {277–288},
+ publisher = {VLDB Endowment},
+ title = {A scalable, predictable join operator for highly concurrent data warehouses},
+ url = {https://doi.org/10.14778/1687627.1687659},
+ volume = {2},
+ year = {2009}
+}

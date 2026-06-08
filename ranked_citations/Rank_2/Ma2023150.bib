@@ -1,0 +1,14 @@
+@conference{Ma2023150,
+ abstract = {This paper studies how to mitigate the speed performance loss caused by integrating block data compression into in-memory key-valueg(KV) stores. Despite extensive prior research on in-memory KV stores, little focus has been given to memory usage reduction via block data compression (e.g., LZ4, ZSTD) due to potential performance degradation. This paper introduces design techniques to mitigate compression-induced performance degradation by utilizing decompression streaming, latency differences between compression and decompression, and data access locality in real-world workloads. These techniques can be incorporated into conventional hash or B+-tree indexing structures, enabling integration with most in-memory KV stores without altering their core indexing data structures. For demonstration, we implemented ZipKV that incorporates the developed design techniques. Compared with RocksDB (in-memory mode) that employs the log-structured merge tree indexing data structure with natural support of block data compression, ZipKV realizes similar memory usage reduction via block data compression, reduces the point query latency by 68% (LZ4) and 58% (ZSTD), and achieves up to 3.8× (LZ4) and 2.7× (ZSTD) point query throughput.  © 2023 ACM.},
+ author = {Ma, Linsen and Xie, Rui and Zhang, Tong},
+ doi = {10.1145/3591195.3595273},
+ journal = {International Symposium on Memory Management, ISMM},
+ note = {Cited by: 4},
+ pages = {150 - 162},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ZipKV: In-Memory Key-Value Store with Built-In Data Compression},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85163584803?origin=resultslist},
+ year = {2023}
+}

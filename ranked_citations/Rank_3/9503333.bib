@@ -1,0 +1,14 @@
+@article{9503333,
+ abstract = {Data sketches are widely used to accelerate operations in big data analytics. For example, algorithms use sketches to compute the cardinality of a set, or the similarity between two sets. Sketches achieve significant reductions in computing time and storage requirements by providing probabilistic estimates rather than exact values. In many applications, an estimate is sufficient and thus, it is possible to trade accuracy for computational complexity; this enables the use of probabilistic sketches. However, the use of probabilistic data structures may create security issues because an attacker may manipulate the data in such a way that the sketches produce an incorrect estimate. For example, an attacker could potentially inflate the estimate of the number of distinct users to increase its revenues or popularity. Recent works have shown that an attacker can manipulate Hyperloglog, a sketch widely used for cardinality estimate, with no knowledge of its implementation details. This paper considers the security of K Minimum Values (KMV), a sketch that is also widely used to implement both cardinality and similarity estimates. Next sections characterize vulnerabilities at an implementation-independent level, with attacks formulated as part of a novel adversary model that manipulates the similarity estimate. Therefore, the paper pursues an analysis and simulation; the results suggest that as vulnerable to attacks, an increase or reduction of the estimate may occur. The execution of the attacks against the KMV implementation in the Apache DataSketches library validates these scenarios. Experiments show an excellent agreement between theory and experimental results.},
+ author = {Reviriego, Pedro and Sánchez-Macián, Alfonso and Liu, Shanshan and Lombardi, Fabrizio},
+ doi = {10.1109/TDSC.2021.3101280},
+ issn = {1941-0018},
+ journal = {IEEE Transactions on Dependable and Secure Computing},
+ keyword = {Security;Hash functions;Probabilistic logic;Mathematical model;Computational modeling;Merging;Libraries;Data sketches;cardinality;KMV;similarity;security;attack},
+ month = {Sep.},
+ number = {5},
+ pages = {3539-3545},
+ title = {On the Security of the K Minimum Values (KMV) Sketch},
+ volume = {19},
+ year = {2022}
+}

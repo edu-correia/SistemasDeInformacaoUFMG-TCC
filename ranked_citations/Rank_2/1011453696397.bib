@@ -1,0 +1,18 @@
+@article{10.1145/3696397,
+ abstract = {Traffic monitoring in the dataplane is vital for reacting to network events such as microbursts, incast, and attacks. However, current solutions are constrained by the limited resources available on modern ASICs and don't provide the flexibility required to identify repeating patterns, such as applications whose flows communicate with a server at regular intervals. While such flexibility can be achieved using a co-processing CPU, it is generally too slow to provide insights quickly enough. In this paper, we show how an FPGA co-processor placed alongside the switching pipeline enables flexible traffic monitoring at data plane rates. While FPGAs have large memory and expressive processing, their throughput is significantly lower than switch ASICs. To bridge the throughput gap, we split query execution between the switch and FPGA and present methods that prevent processing all packets in FPGA. As a result, our system misses up to 5.0x fewer DDoS attack vectors than ACC-Turbo, the state-of-the-art on-switch solution, and up to 24% fewer microburst-contributing flows for the same precision rate.},
+ address = {New York, NY, USA},
+ articleno = {25},
+ author = {Feng, Weiqi and Gao, Jiaqi and Chen, Xiaoqi and Antichi, Gianni and Basat, Ran Ben and Shao, Michael Mingchao and Zhang, Ying and Yu, Minlan},
+ doi = {10.1145/3696397},
+ issue_date = {December 2024},
+ journal = {Proc. ACM Netw.},
+ keyword = {network monitoring, programmable network},
+ month = {November},
+ number = {CoNEXT4},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {F3: Fast and Flexible Network Telemetry with an FPGA coprocessor},
+ url = {https://doi.org/10.1145/3696397},
+ volume = {2},
+ year = {2024}
+}

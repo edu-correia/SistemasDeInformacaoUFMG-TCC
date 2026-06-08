@@ -1,0 +1,18 @@
+@article{10.1613/jair.1.11576,
+ abstract = {Analyzing reachability in large discrete transition systems is an important sub-problem in several areas of AI, and of CS in general. State space search is a basic method for conducting such an analysis. A wealth of techniques have been proposed to reduce the search space without affecting the existence of (optimal) solution paths. In particular, strong stubborn set (SSS) pruning is a prominent such method, analyzing action dependencies to prune commutative parts of the search space. We herein show how to apply this idea to star-topology decoupled state space search, a recent search reformulation method invented in the context of classical AI planning.Star-topology decoupled state space search, short decoupled search, addresses planning tasks where a single center component interacts with several leaf components. The search exploits a form of conditional independence arising in this setting: given a fixed path πC of transitions by the center, the possible leaf moves compliant with πC are independent across the leaves. Decoupled search thus searches over center paths only, maintaining the compliant paths for each leaf separately. This avoids the enumeration of combined states across leaves.Just like standard search, decoupled search is adversely affected by commutative parts of its search space. The adaptation of strong stubborn set pruning is challenging due to the more complex structure of the search space, and the resulting ways in which action dependencies may affect the search. We spell out how to address this challenge, designing optimality-preserving decoupled strong stubborn set (DSSS) pruning methods. We introduce a design for star topologies in full generality, as well as simpler design variants for the practically relevant fork and inverted fork special cases. We show that there are cases where DSSS pruning is exponentially more effective than both, decoupled search and SSS pruning, exhibiting true synergy where the whole is more than the sum of its parts. Empirically, DSSS pruning reliably inherits the best of its components, and sometimes outperforms both.},
+ address = {El Segundo, CA, USA},
+ author = {Gnad, Daniel and Hoffmann, J\"{o}rg and Wehrle, Martin},
+ doi = {10.1613/jair.1.11576},
+ issn = {1076-9757},
+ issue_date = {May 2019},
+ journal = {J. Artif. Int. Res.},
+ month = {May},
+ number = {1},
+ numpages = {50},
+ pages = {343–392},
+ publisher = {AI Access Foundation},
+ title = {Strong stubborn set pruning for star-topology decoupled state space search},
+ url = {https://doi.org/10.1613/jair.1.11576},
+ volume = {65},
+ year = {2019}
+}

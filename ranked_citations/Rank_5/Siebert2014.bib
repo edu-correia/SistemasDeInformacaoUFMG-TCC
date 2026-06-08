@@ -1,0 +1,16 @@
+@article{Siebert2014,
+ abstract = {We present a simple, work-optimal and synchronization-free solution to the problem of stably merging in parallel two given, ordered arrays of m and n elements into an ordered array of m+n elements. The main contribution is a new, simple, fast and direct algorithm that determines, for any prefix of the stably merged output array, the exact prefixes of each of the two input arrays needed to produce this output prefix. More precisely, for any given index in the resulting, but not yet constructed output array, representing the desired output prefix, the algorithm computes the indices (called co-ranks) in each of the two input arrays representing the required input prefixes without having to merge the input arrays. The co-ranking algorithm takes O(logmin(m, n)) time steps, and uses O(1) space. Co-ranking is used in parallel to partition the input arrays into a collection of as many pairs as desired, each pair with exactly the same number of elements. Any stable, sequential merge algorithm can be used to merge pairs independently. The result is a perfectly load-balanced, stable, parallel merge algorithm. Co-ranking and sequential merging of pairs can be done without synchronization. Compared to other, linear speed-up approaches to the parallel merge problem, the algorithm is considerably simpler and can be up to a factor of two faster. Compared to previous algorithms for solving the co-ranking problem, the new algorithm works for arbitrary output array indices and maintains stability in the presence of repeated elements at no extra space or time cost. When the number of processing elements p does not exceed (m + n)/ log min(m, n), the parallel merge algorithm has perfect, linear speedup p. Furthermore, it is easy to implement on both shared and distributed memory systems. © 2014 World Scientific Publishing Company.},
+ author = {Siebert, Christian and Träff, Jesper Larsson},
+ doi = {10.1142/S0129626414500054},
+ journal = {Parallel Processing Letters},
+ note = {Cited by: 2},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Perfectly load-balanced, stable, synchronization-free parallel merge},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84897419636?origin=resultslist},
+ volume = {24},
+ year = {2014}
+}

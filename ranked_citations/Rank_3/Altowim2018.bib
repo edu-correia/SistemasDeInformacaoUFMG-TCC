@@ -1,0 +1,16 @@
+@article{Altowim2018,
+ abstract = {Entity resolution (ER) is the process of identifying which entities in a dataset refer to the same real-world object. In relational ER, the dataset consists of multiple entity-sets and relationships among them. Such relationships cause the resolution of some entities to influence the resolution of other entities. For instance, consider a relational dataset that consists of a set of research paper entities and a set of venue entities. In such a dataset, deciding that two research papers are the same may trigger the fact that their venues are also the same. This article proposes a progressive approach to relational ER, named ProgressER, that aims to produce the highest quality result given a constraint on the resolution budget, specified by the user. Such a progressive approach is useful for many emerging analytical applications that require low latency response (and thus cannot tolerate delays caused by cleaning the entire dataset) and/or in situations where the underlying resources are constrained or costly to use. To maximize the quality of the result, ProgressER follows an adaptive strategy that periodically monitors and reassesses the resolution progress to determine which parts of the dataset should be resolved next and how they should be resolved. More specifically, ProgressER divides the input budget into several resolution windows and analyzes the resolution progress at the beginning of each window to generate a resolution plan for the current window. A resolution plan specifies which blocks of entities and which entity pairs within blocks need to be resolved during the plan execution phase of that window. In addition, ProgressER specifies, for each identified pair of entities, the order in which the similarity functions should be applied on the pair. Such an order plays a significant role in reducing the overall cost because applying the first few functions in this order might be sufficient to resolve the pair. The empirical evaluation of ProgressER demonstrates its significant advantage in terms of progressiveness over the traditional ER techniques for the given problem settings. © 2018 ACM.},
+ author = {Altowim, Yasser and Kalashnikov, Dmitri V. and Mehrotra, Sharad},
+ doi = {10.1145/3154410},
+ journal = {ACM Transactions on Knowledge Discovery from Data},
+ note = {Cited by: 11; All Open Access; Bronze Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ProgressER: Adaptive progressive approach to relational entity resolution},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85047009428?origin=resultslist},
+ volume = {12},
+ year = {2018}
+}

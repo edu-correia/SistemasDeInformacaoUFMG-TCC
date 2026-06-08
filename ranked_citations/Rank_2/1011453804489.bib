@@ -1,0 +1,18 @@
+@article{10.1145/3804489,
+ abstract = {The generation of consistent multi-view images is essential for diffusion-based 3D texture synthesis, a key component of modern 3D content pipelines. However, existing methods remain weakly coupled across viewpoints, often exhibiting inconsistencies between views that result in artifacts such as ghosting, misalignment, and texture distortions. We introduce PixelSync, a training-free mechanism that explicitly enforces multi-view consistency during the diffusion process. Our method operates in two stages. First, we compute visibility-aware pixel correspondences between known views in a fast pre-computation step by utilizing geometric information obtained from a given 3D model. Then, during the diffusion process, we enforce consistency through two complementary algorithms: (i) attention synchronization, by modifying the attention scores in the U-Net’s down- and mid-blocks, and (ii) latent synchronization, by progressively aligning features on their corresponding shared pixels. PixelSync can be seamlessly integrated into pre-trained diffusion models without retraining, offering a lightweight and effective solution. We demonstrate the effectiveness of our approach for generative texture synthesis by plugging PixelSync into established multi-view diffusion backbones, showcasing reduced cross-view artifacts and improved global coherence across standard quantitative and qualitative evaluations.},
+ address = {New York, NY, USA},
+ articleno = {7},
+ author = {Drescher, Philipp and Dominici, Edoardo Alberto and Nazzaro, Giacomo and Vardis, Konstantinos and Hauswiesner, Stefan and Steinberger, Markus},
+ doi = {10.1145/3804489},
+ issue_date = {May 2026},
+ journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+ keyword = {multi-view, training-free, texture generation},
+ month = {May},
+ number = {1},
+ numpages = {19},
+ publisher = {Association for Computing Machinery},
+ title = {PixelSync: Enhancing Texture Generation via Explicit Feature Synchronization},
+ url = {https://doi.org/10.1145/3804489},
+ volume = {9},
+ year = {2026}
+}

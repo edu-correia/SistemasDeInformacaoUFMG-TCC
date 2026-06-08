@@ -1,0 +1,14 @@
+@inproceedings{9533343,
+ abstract = {Pruning reduces neural networks' parameters and accelerates inferences, enabling deep learning in resource-limited scenarios. Existing saliency-based pruning methods apply characteristics of feature maps or weights to judge the importance of neurons or structures, where weights' characteristics based methods are data-independent and robust for future input data. This paper proposes a coreset based pruning method for the data-independent structured compression, aiming to improve the construction efficiency of pruning. The first step of our method is to prune channels, according to the channel coreset merged from multi-rounds coresets constructions. Our method adjusts the importance function utilized in the random probability sampling during coresets construction procedures to achieve data-independent channel selections. The second step is recovering the precision of compressed networks through solving the compressed weights reconstruction by linear least squares. Our method is also generalized to implementations on multi-branch networks such as SqueezeNet and MobileNet-v2. In tests on classification networks like ResNet, it is observed that our method performs fast and achieves an accuracy decline as small as 0.99% when multiple layers are pruned without finetuning. As shown in evaluations on object detection networks, our method acquires the least decline in mAP indicator compared to comparison schemes, due to the advantage of data-independent channel selections of our method in preserving precision.},
+ author = {Yin, Wenfeng and Dong, Gang and Zhao, Yaqian and Li, Rengang},
+ booktitle = {2021 International Joint Conference on Neural Networks (IJCNN)},
+ doi = {10.1109/IJCNN52387.2021.9533343},
+ issn = {2161-4407},
+ keyword = {Deep learning;Neurons;Object detection;Probability;Biological neural networks},
+ month = {July},
+ number = {},
+ pages = {1-8},
+ title = {Coresets Application in Channel Pruning for Fast Neural Network Slimming},
+ volume = {},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@article{11078393,
+ abstract = {Skin lesion segmentation is vital for the early detection, diagnosis, and treatment of melanoma, yet it remains challenging due to significant variations in lesion attributes (e.g., color, size, shape), ambiguous boundaries, and noise interference. Recent advancements have focused on capturing contextual information and incorporating boundary priors to handle challenging lesions. However, there has been limited exploration on the explicit analysis of the inherent patterns of skin lesions, a crucial aspect of the knowledge-driven decision-making process used by clinical experts. In this work, we introduce a novel approach called Probabilistic Attribute Learning (PAL), which leverages knowledge of lesion patterns to achieve enhanced performance on challenging lesions. Recognizing that the lesion patterns exhibited in each image can be properly depicted by disentangled attributes, we begin by explicitly estimating the distributions of these attributes as distinct Gaussian distributions, with mean and variance indicating the most likely pattern of that attribute and its variation. Using Monte Carlo Sampling, we iteratively draw multiple samples from these distributions to capture various potential patterns for each attribute. These samples are then merged through an effective attribute fusion technique, resulting in diverse representations that comprehensively depict the lesion class. By performing pixel-class proximity matching between each pixel-wise representation and the diverse class-wise representations, we significantly enhance the model’s robustness. Extensive experiments on two public skin lesion datasets and one unified polyp lesion dataset demonstrate the effectiveness and strong generalization ability of our method. Codes are available at https://github.com/IsYuchenYuan/PAL},
+ author = {Yuan, Yuchen and Wang, Xi and Li, Jinpeng and Chen, Guangyong and Heng, Pheng-Ann},
+ doi = {10.1109/TMI.2025.3588167},
+ issn = {1558-254X},
+ journal = {IEEE Transactions on Medical Imaging},
+ keyword = {Lesions;Image segmentation;Skin;Shape;Accuracy;Transformers;Image color analysis;Feature extraction;Probabilistic logic;Multitasking;Skin lesion segmentation;lesion patterns;probabilistic representations;disentangled attributes},
+ month = {Dec},
+ number = {12},
+ pages = {5183-5196},
+ title = {PAL: Boosting Skin Lesion Segmentation via Probabilistic Attribute Learning},
+ volume = {44},
+ year = {2025}
+}

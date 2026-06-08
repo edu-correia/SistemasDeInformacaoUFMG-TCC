@@ -1,0 +1,14 @@
+@conference{Zhan2024720,
+ abstract = {Compute eXpress Link (CXL) based Solid-State Drives (CXL-SSDs), such as the Samsung CMM-H model, promise to offer CXL.mem memory and CXL.io block dual-mode interfaces. Nonetheless, whether and how cloud applications with diverse and varying access patterns benefit from such dual-mode CXL-SSD remains an open question for academia and industry. This paper proposes RomeFS, the first CXL-SSD aware file system, handling file operations by synergistically yet preferentially utilize complementary CXL.mem and CXL.io data paths. To this end, RomeFS presents key enabling techniques including 1) dual-path data layout to statically partition metadata and file data into CXL.mem and CXL.io data-zones respectively; 2) dual-path access for file data using the two data paths synergistically at runtime; 3) hybrid parallel file indexing for efficient per-file mapping to locate dispersed file data across the two data paths; 4) data defragmentation to merge dispersed file data to the CXL.io data-zone; and 5) metadata journaling and synergistic dual-path transactional write to ensure crash consistency with low overhead. We implement and evaluate RomeFS under two emulated hardware platforms. The experiments show that RomeFS outperforms state-of-the-art block-based file systems and PM-based file systems by up to 14.24× and 4.89× respectively. © 2024 ACM.},
+ author = {Zhan, Yekang and Hu, Haichuan and Yang, Xiangrui and Wang, Shaohua and Cao, Qiang and Jiang, Hong and Yao, Jie},
+ doi = {10.1145/3698038.3698539},
+ journal = {SoCC 2024 - Proceedings of the 2024 ACM Symposium on Cloud Computing},
+ note = {Cited by: 10},
+ pages = {720 - 736},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85215535459?origin=resultslist},
+ year = {2024}
+}

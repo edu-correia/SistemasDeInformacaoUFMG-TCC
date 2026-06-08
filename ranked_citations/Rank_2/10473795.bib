@@ -1,0 +1,14 @@
+@inproceedings{10473795,
+ abstract = {To execute a quantum program, it has to be compiled for execution on the target quantum processor. The program is first converted into a logical circuit composed of elementary gates supported by the target processor. Most often the logical circuit cannot be executed directly on the quantum processor due to the limited connectivity between the physical qubits of the processor. So, a quantum compiler needs to perform qubit routing by inserting auxiliary gates to execute operations like SWAP, MOVE, and BRIDGE in order to satisfy the connectivity constraint. Qubit routing yields a physical circuit that can be executed on the target processor. Finally, the physical circuit still has to be scheduled considering the gate delays and the control constraints imposed by the shared classical control electronics of the quantum processor. For noisy intermediate-scale quantum processors, it is important to minimize the latency of the final scheduled physical circuit. However, solving qubit routing without considering gate delays and control constraints will inevitably lead to suboptimal final results. Here we propose a control and timing-aware qubit routing algorithm, CTQr, considering gate delays and control constraints. Moreover, CTQr performs gate merging on the fly in order to minimize the final circuit latency. The experimental results show that CTQr outperforms the state-of-art approach with 11.2%, 8.8%, and 54.6% average reduction in the circuit latency, number of additional gates, and execution time, respectively.},
+ author = {Huang, Ching-Yao and Mak, Wai-Kei},
+ booktitle = {2024 29th Asia and South Pacific Design Automation Conference (ASP-DAC)},
+ doi = {10.1109/ASP-DAC58780.2024.10473795},
+ issn = {2153-697X},
+ keyword = {Design automation;Qubit;Merging;Asia;Process control;Bridge circuits;Logic gates},
+ month = {Jan},
+ number = {},
+ pages = {140-145},
+ title = {CTQr: Control and Timing-Aware Qubit Routing},
+ volume = {},
+ year = {2024}
+}

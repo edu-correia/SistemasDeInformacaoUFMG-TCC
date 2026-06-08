@@ -1,0 +1,15 @@
+@article{Riegger2022255,
+ abstract = {Database Management Systems and K/V-Stores operate on updatable datasets – massively exceeding the size of available main memory. Tree-based K/V storage management structures became particularly popular in storage engines. B<sup>+</sup> -Trees [1, 4] allow constant search performance, however write-heavy workloads yield in inefficient write patterns to secondary storage devices and poor performance characteristics. LSM-Trees [16, 23] overcome this issue by horizontal partitioning fractions of data – small enough to fully reside in main memory, but require frequent maintenance to sustain search performance. Firstly, we propose Multi-Version Partitioned BTrees (MV-PBT) as sole storage and index management structure in key-sorted storage engines like K/V-Stores. Secondly, we compare MV-PBT against LSM-Trees. The logical horizontal partitioning in MV-PBT allows leveraging recent advances in modern B<sup>+</sup> -Tree techniques in a small transparent and memory resident portion of the structure. Structural properties sustain steady read performance, yielding efficient write patterns and reducing write amplification. We integrated MV-PBT in the WiredTiger [15] KV storage engine. MV-PBT offers an up to 2 × increased steady throughput in comparison to LSM-Trees and several orders of magnitude in comparison to B<sup>+</sup> -Trees in a YCSB [5] workload. © 2022, Springer Nature Switzerland AG.},
+ author = {Riegger, Christian and Petrov, Ilia},
+ doi = {10.1007/978-3-031-15740-0_19},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1},
+ pages = {255 - 269},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Storage Management with Multi-Version Partitioned BTrees},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85137998835?origin=resultslist},
+ volume = {13389 LNCS},
+ year = {2022}
+}

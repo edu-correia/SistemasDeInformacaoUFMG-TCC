@@ -1,0 +1,13 @@
+@article{REN2023104542,
+ abstract = {Manual labelling and qualitative analysis of lesion tissues in vessel optical coherence tomography (OCT) images are time-consuming and laborious for cardiovascular specialists. To beat these issues, a semantic segmentation method was presented based on deep learning on the OCT image analysis of the human vessel to reduce the diagnosis pressure of cardiovascular doctors. An outer border of ROI was segmented based on the level-set method to obtain the visible superficial layer containing useful information. And then, cropping square patches from the ROI with its patch center pixel inside the ROI and using patches as the input data. To reuse the preceding layers' feature maps, we used the dense block to replace the normal convolution layer, and simultaneously, employed a skip-connection from m the down-sampling path to the up-sampling path to keep the spatial information. With the advantage of SegNet on semantic segmentation, a dense-block-SegNet (DBSegNet) is constructed to complete the pixel-level segmentation. Training and testing were executed on 7 datasets (22, 210 images) to assess the model. Tenfold cross-validation method was implemented to measure the classification outcomes and the semantic segmentation capacity of our model. In deep learning experiment, sensitivities for calcified, fibrous and lipid plaques were 91.81 ± 3.60 %, 92.81 ± 2.72 % and 91.78 ± 1.62 %, respectively. A 3-D volume was created to insert each prediction slice along the depth axis to compute the maximum type number of each pixel in order to identify the final type of each pixel. Post-processing was used to refine the classification findings in order to eliminate classification errors. Semantic segmentation neural network based on the cropped input data and feature reusing was a feasible approach for the vessel tissue pixel-classification of IVOCT image. The proposed method has the potential to become a useful tool for specialists in analysing lesion kinds and determining clinical lesion characteristics (e.g., distribution position, angle and depth).},
+ author = {Xinbo Ren and Yuxia Zhao and Jingbo Fan and Haiyuan Wu and Qian Chen and Takashi Kubo},
+ doi = {https://doi.org/10.1016/j.infrared.2022.104542},
+ issn = {1350-4495},
+ journal = {Infrared Physics & Technology},
+ keyword = {IVOCT, Semantic segmentation, Superficial layer, Lesion plaques, Deep learning},
+ pages = {104542},
+ title = {Semantic segmentation of superficial layer in intracoronary optical coherence tomography based on cropping-merging and deep learning},
+ url = {https://www.sciencedirect.com/science/article/pii/S1350449522005230},
+ volume = {129},
+ year = {2023}
+}

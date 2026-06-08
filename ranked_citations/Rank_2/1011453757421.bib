@@ -1,0 +1,18 @@
+@article{10.1145/3757421,
+ abstract = {Community detection, the unsupervised task of clustering nodes of a graph, finds applications across various fields. The common approaches for community detection involve optimizing an objective function to partition the nodes into communities at a single scale of granularity. However, the single-scale approaches often fall short of producing partitions that are robust and at a suitable scale. The existing algorithm, PyGenStability, returns multiple robust partitions for a network by optimizing the multi-scale Markov stability function. However, in cases where the suitable scale is not known or assumed by the user, a method is needed to select a single robust partition at a suitable scale from the multiple partitions that PyGenStability produces.Our proposed method combines the Markov stability framework with a pre-trained machine learning model for scale selection to obtain one robust partition at a scale that is learned based on the graph structure. This automatic scale selection involves using a gradient boosting model pre-trained on hand-crafted and embedding-based network features from a labeled dataset of 10k benchmark networks. This model was trained to predict the scale value that maximizes the similarity of the output partition to the planted partition of the benchmark network. Combining our scale selection algorithm with the PyGenStability algorithm results in PyGenStabilityOne (PO): a hyperparameter-free multi-scale community detection algorithm that returns one robust partition at a suitable scale without the need for any assumptions, input, or tweaking from the user. We compare the performance of PO against 29 algorithms and show that it outperforms 25 other algorithms by statistically meaningful margins. Our results facilitate choosing between community detection algorithms, among which PO stands out as the accurate, robust, and hyperparameter-free method.},
+ address = {New York, NY, USA},
+ articleno = {CSCW240},
+ author = {Aref, Samin and Mathiyarasan, Sanchaai},
+ doi = {10.1145/3757421},
+ issue_date = {November 2025},
+ journal = {Proc. ACM Hum.-Comput. Interact.},
+ keyword = {PyGenStabilityOne, clustering, generalized Markov stability, graph embedding, multi-resolution, multi-scale, network science, social network analysis},
+ month = {October},
+ number = {7},
+ numpages = {33},
+ publisher = {Association for Computing Machinery},
+ title = {Robust Markov Stability for Community Detection at the Scale Learned based on the Structure},
+ url = {https://doi-org.ez27.periodicos.capes.gov.br/10.1145/3757421},
+ volume = {9},
+ year = {2025}
+}

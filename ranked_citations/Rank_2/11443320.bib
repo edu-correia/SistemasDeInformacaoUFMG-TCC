@@ -1,0 +1,14 @@
+@inproceedings{11443320,
+ abstract = {We tackle the challenge of jointly personalizing content and style from a few examples. A promising approach is to train separate Low-Rank Adapters (LoRA) and merge them effectively, preserving both content and style. Existing methods, such as ZipLoRA, treat content and style as independent entities, merging them by learning masks in LoRA's output dimensions. However, content and style are intertwined, not independent. To address this, we propose DuoLoRA-a content-style personalization framework featuring three key components: (1) rank-dimension mask learning, (2) effective merging via layer priors, and (3) Constyle loss, which leverages cycle-consistency in the merging process. First, we introduce ZipRank, which performs content-style merging within the rank dimension, offering adaptive rank flexibility and significantly reducing the number of learnable parameters. Additionally, we incorporate SDXL layer priors to apply implicit rank constraints informed by each layer's content-style bias and adaptive merger initialization, enhancing the integration of content and style. To further refine the merging process, we introduce Constyle loss, which leverages the cycle-consistency between content and style. Our experimental results demonstrate that DuoLoRA outperforms state-of-the-art content-style merging methods across multiple benchmarks. Project. https://github.com/aniket004/DuoLoRA.git},
+ author = {Roy, Aniket and Borse, Shubhankar and Kadambi, Shreya and Das, Debasmit and Mahajan, Shweta and Garrepalli, Risheek and Park, Hyojin and Nayak, Ankita and Chellappa, Rama and Hayat, Munawar and Porikli, Fatih},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01428},
+ issn = {2380-7504},
+ keyword = {Circuits;Feedback;LoRa;Modulation;Protocols;Amplitude shift keying;Communication systems;HTTP;Amplitude modulation;Communications technology},
+ month = {Oct},
+ number = {},
+ pages = {15395-15404},
+ title = {DuoLoRA: Cycle-Consistent and Rank-Disentangled Content-Style Personalization},
+ volume = {},
+ year = {2025}
+}

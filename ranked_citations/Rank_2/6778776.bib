@@ -1,0 +1,14 @@
+@article{6778776,
+ abstract = {High Efficiency Video Coding (HEVC) adopts the quadtree structured coding unit (CU), which allows recursive splitting into four equally sized blocks. At each depth level, it enables SKIP mode, merge mode, inter 2N  $\times 2$ N, inter 2N  $\times $  N, inter N  $\times 2$ N, inter 2N  $\times $  nU, inter 2N  $\times $  nD, inter nL  $\times 2$ N, inter nR  $\times 2$ N, inter N  $\times $  N (only available for the smallest CU), intra 2N  $\times 2$ N, and intra N  $\times $  N (only available for the smallest CU) in inter-frames. Similar to H.264/AVC, the mode decision process in HEVC is performed using all the possible depth levels (or CU sizes) and prediction modes to find the one with the least rate distortion (RD) cost using Lagrange multiplier. This achieves the highest coding efficiency, but leads to a very high computational complexity. Since the optimal prediction mode is highly content dependent, it is not efficient to use all the modes. In this paper, we propose a fast inter-mode decision algorithm for HEVC by jointly using the inter-level correlation of quadtree structure and the spatiotemporal correlation. There exist strong correlations of the prediction mode, the motion vector and RD cost between different depth levels and between spatially temporally adjacent CUs. We statistically analyze the prediction mode distribution at each depth level and the coding information correlation among the adjacent CUs. Based on the analysis results, three adaptive inter-mode decision strategies are proposed including early SKIP mode decision, prediction size correlation-based mode decision and RD cost correlation-based mode decision. Experimental results show that the proposed overall algorithm can save 49%–52% computational complexity on average with negligible loss of coding efficiency, exhibiting applicability to various types of video sequences.},
+ author = {Shen, Liquan and Zhang, Zhaoyang and Liu, Zhi},
+ doi = {10.1109/TCSVT.2014.2313892},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Correlation;Encoding;Video coding;Materials;Prediction algorithms;Electronic mail;Algorithm design and analysis;High Efficiency Video Coding (HEVC);mode decision;motion estimation (ME)},
+ month = {Oct},
+ number = {10},
+ pages = {1709-1722},
+ title = {Adaptive Inter-Mode Decision for HEVC Jointly Utilizing Inter-Level and Spatiotemporal Correlations},
+ volume = {24},
+ year = {2014}
+}

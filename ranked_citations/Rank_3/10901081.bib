@@ -1,0 +1,14 @@
+@inproceedings{10901081,
+ abstract = {Distributed Deep Learning (DDL) has become essential for accelerating model training to manage the growing size of models and datasets. However, the communication overhead required for synchronizing model weights across parallel workers would be a performance bottleneck of DDL training. Recently, in-network aggregation (INA) has been proposed to harness the computational capabilities of programmable switches to merge weights before forwarding, thereby reducing bandwidth consumption during synchronization. However, ensuring the reliability of INA incurs significant retransmission costs and coordination overhead. To fully optimize the benefits of INA, we introduce Coding-based INA (CINA), a system that integrates network coding with INA to facilitate efficient loss recovery. Moreover, we propose a priority-aware weight batching (grouping) scheme that leverages model sparsity to enhance bandwidth utilization in our coding-based INA. Emulation results demonstrate that our design effectively reduces feedback overhead by up to 94.87% and improves overall throughput by up to 2.64×. Compared to priority-oblivious batching, our priority-aware weight batching reduces the mean square error of model weights by around 15.27%.},
+ author = {Chang, Kai-Ching and Kuo, Yi-Ching and Lin, Kate Ching-Ju},
+ booktitle = {GLOBECOM 2024 - 2024 IEEE Global Communications Conference},
+ doi = {10.1109/GLOBECOM52923.2024.10901081},
+ issn = {2576-6813},
+ keyword = {Training;Deep learning;Computational modeling;Emulation;Bandwidth;Mean square error methods;Network coding;Throughput;Reliability;Synchronization;Distributed Deep Learning;In-Network Aggregation;Network Coding},
+ month = {Dec},
+ number = {},
+ pages = {4636-4641},
+ title = {Coding-based In-Network Aggregation for Distributed Deep Learning},
+ volume = {},
+ year = {2024}
+}

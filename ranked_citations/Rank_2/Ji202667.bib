@@ -1,0 +1,14 @@
+@conference{Ji202667,
+ abstract = {Rapidly growing context lengths have amplified the inherent sparsity in the attention mechanism of popular Large Language Models. However, the dynamic data access patterns required by sparse attention are challenging to realize using static data paths, leading to execution inefficiency. Existing SpMM hardware acceleration techniques address these inefficiencies by dynamically configuring data paths to align with the unstructured data access patterns of sparse attention. However, these approaches are not applicable to GEMM-optimized hardware, where dynamic data paths would introduce unacceptable hardware complexity and frequency degradation. We leverage the observation that non-zero values in sparse attention are not random, but exist in clusters due to the nature of the attention mechanism. We develop a technique that uses an index merge/sort module to dynamically aggregate unpruned values into small dense tiles, thus transforming post-attention SpMM into many smaller dense GEMM blocks, allowing efficient acceleration on dense GEMM-optimized hardware. We implemented our design on an Intel Stratix 10 NX FPGA with hardened Tensor Blocks, demonstrating performance improvements while preserving model accuracy. Specifically, we achieve speedups of 3.89×, 2.85×, and 2.66× for the attention-value product in popular chatglm2-6b-32k, llama2-7b-chat-4k, and mixtral-8x7b models, respectively, compared to a dense GEMM baseline on the same hardware. Compared to prior SpMM hardware [31], our design demonstrates improved scalability and up to 2.68× higher throughput. © 2026 Copyright held by the owner/author(s).},
+ author = {Ji, Tianchu and Balasubramanian, Niranjan and Ferdman, Michael and Milder, Peter},
+ doi = {10.1145/3748173.3779187},
+ journal = {Proceedings of the 2026 ACM/SIGDA International Symposium on Field Programmable Gate Arrays, FPGA 2026},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {67 - 78},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Enabling Efficient SpMM for Sparse Attention on GEMM-Optimized Hardware with Block Aggregation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105032987932?origin=resultslist},
+ year = {2026}
+}

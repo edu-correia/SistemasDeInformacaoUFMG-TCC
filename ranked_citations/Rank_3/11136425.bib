@@ -1,0 +1,14 @@
+@inproceedings{11136425,
+ abstract = {Log-Structured Merge-tree (LSM-tree) is widely adopted in key-value stores due to its high write efficiency and space utilization, which is achieved by batch data writing and structure maintenance through compaction. However, the compaction process incurs significant computational and I/O overhead, leading to frequent write stalls and a reduction in overall system throughput. LSM-KV deployed in the cloud cannot always solve the resource competition problem of compaction due to the coarse-grained scalability of elastic computing cloud. Since compaction is a periodically triggered operation, the emerging serverless computing provides an opportunity to offload this resource-intensive task with its dynamic resource scaling and fine-grained billing capabilities. In this paper, we propose SCCompaction, a novel serverless cloud-based compaction service designed to address these challenges. We introduce a parallel sub-compaction algorithm to enhance compaction efficiency and incorporate a remote detection mechanism that determines optimal compaction timing, ensuring effective utilization of local resources. The experimental results show that SCCompaction significantly outperforms that of RocksDB.},
+ author = {He, Shiyu},
+ booktitle = {2025 8th International Conference on Enterprise Systems (ES)},
+ doi = {10.1109/ES64449.2025.11136425},
+ issn = {2572-6609},
+ keyword = {Elastic computing;Scalability;Heuristic algorithms;Serverless computing;Throughput;Dynamic scheduling;Compaction;Timing;Maintenance;LSM-Tree;Compaction;Serverless Computing},
+ month = {April},
+ number = {},
+ pages = {1-6},
+ title = {Accelerating Compactions in LSM-Tree-Based Stores with Serverless Cloud Function},
+ volume = {},
+ year = {2025}
+}

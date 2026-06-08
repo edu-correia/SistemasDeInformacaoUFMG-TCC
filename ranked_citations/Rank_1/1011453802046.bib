@@ -1,0 +1,18 @@
+@article{10.1145/3802046,
+ abstract = {Agentic workflows are composed of sequences of interdependent Large Language Model (LLM) calls, and they have become a dominant workload in modern AI systems. These workflows exhibit extensive redundancy from overlapping prompts and intermediate results due to speculative and parallel exploration. Existing LLM serving systems, such as vLLM, focus on optimizing individual inference calls and overlook cross-call dependencies, leading to significant inefficiencies. This paper rethinks LLM and agent serving from a data systems perspective and introduces Helium, a workflow-aware serving framework that models agentic workloads as query plans and treats LLM invocations as first-class operators. Helium integrates proactive caching and cache-aware scheduling to maximize reuse across prompts, KV states, and workflows. Through these techniques, Helium bridges classic query optimization principles with LLM serving, achieving up to 1.56\texttimes{} speedup over state-of-the-art agent serving systems on various workloads. Our results demonstrate that end-to-end optimization across workflows is essential for scalable and efficient LLM-based agents.},
+ address = {New York, NY, USA},
+ articleno = {169},
+ author = {Wadlom, Noppanat and Shen, Junyi and Lu, Yao},
+ doi = {10.1145/3802046},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {large language models, agentic workflows, query optimization},
+ month = {May},
+ number = {3},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective},
+ url = {https://doi.org/10.1145/3802046},
+ volume = {4},
+ year = {2026}
+}

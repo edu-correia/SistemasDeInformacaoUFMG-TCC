@@ -1,0 +1,14 @@
+@inproceedings{10177486,
+ abstract = {This paper introduces a novel parallel relaxed flooding (PRF) algorithm for Voronoi diagram generation. The algorithm takes a set of reference points extracted from an image as input and assigns each GPU thread a partition of the image domain to perform parallel flooding computation. Our PRF algorithm has three advantages as follows. (1) The PRF algorithm divides an image domain into subregions for concurrent flooding computation. To achieve high parallelism, a point selection method is incorporated to remove dependencies between different subregions. (2) We exploit the sparsity of the input point data with a k-d tree. With the k-d tree data structure, the point selection step achieves high efficiency, and the amount of CPU-GPU data transfer is reduced. (3) We propose a relaxed flooding method, which achieves more accurate results and decreases memory traffic compared to the traditional flooding method. In addition to these advantages, we provide an empirical method to determine the appropriate parameter in the point selection step for high performance, given an expected error rate. We evaluated the performance of our method on multiple datasets. Compared with the state-of-the-art parallel banding algorithm, our method achieved an average speed-up of 4.6× on the randomly generated datasets with a point density of 0.01%, and 6.8× on nuclei segmentation datasets. The code of the PRF algorithm is publicly available*.},
+ author = {Wang, Jue and Ino, Fumihiko and Ke, Jing},
+ booktitle = {2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS54959.2023.00077},
+ issn = {1530-2075},
+ keyword = {Tree data structures;Error analysis;Instruction sets;Memory management;Graphics processing units;Parallel processing;Data transfer;parallel computing;Voronoi diagram;flooding algorithm;k-d tree;GPU},
+ month = {May},
+ number = {},
+ pages = {713-723},
+ title = {PRF: A Fast Parallel Relaxed Flooding Algorithm for Voronoi Diagram Generation on GPU},
+ volume = {},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11446256,
+ abstract = {Video large language models (LLMs) achieve strong video understanding by leveraging a large number of spatiotemporal tokens, but suffer from quadratic computational scaling with token count. To address this, we propose a training-free spatio-temporal token merging method, named STTM. Our key insight is to exploit local spatial and temporal redundancy in video data which has been overlooked in prior work. STTM first transforms each frame into multi-granular spatial tokens using a coarse-to-fine search over a quadtree structure, then performs directed pairwise merging across the temporal dimension. This decomposed merging approach outperforms existing token reduction methods across six video QA benchmarks. Notably, STTM achieves a $2 \times$ speed-up with only a 0.5% accuracy drop under a 50% token budget, and a $3 \times$ speed-up with just a 2% drop under a 30% budget. Moreover, STTM is query-agnostic, allowing KV cache reuse across different questions for the same video. The code is available at https://github.com/HYUNJS/STTM.},
+ author = {Hyun, Jeongseok and Hwang, Sukjun and Han, Su Ho and Kim, Taeoh and Lee, Inwoong and Wee, Dongyoon and Lee, Joon-Young and Kim, Seon Joo and Shim, Minho},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02224},
+ issn = {2380-7504},
+ keyword = {Videos;Communication systems;Video equipment;Internet;Optical projectors;Radio access networks;Regional area networks;Computer networks;Protocols;HTTP;video llm;token merging;training-free},
+ month = {Oct},
+ number = {},
+ pages = {23990-24000},
+ title = {Multi-Granular Spatio-Temporal Token Merging for Training-Free Acceleration of Video LLMs},
+ volume = {},
+ year = {2025}
+}

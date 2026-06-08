@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2023.3259541,
+ abstract = {This paper presents a fast and robust centralized data center network (DCN) routing solution, called Primus. For fast routing calculation, Primus uses centralized controllers to collect/disseminate the network’s link-states (LS), and offload the actual routing calculation onto each switch. Observing that the routing changes can be classified into a few fixed patterns in DCNs which have regular topologies, we simplify each switch’s routing calculation into a table-lookup manner, i.e., comparing LS changes with pre-installed base topology and updating routing paths according to predefined rules. As such, the routing calculation time at each switch only needs 10s of us even in a large network topology containing 10K+ switches. For efficient controller fault-tolerance, Primus purposely uses reporter switch to ensure the LS updates successfully delivered to all affected switches. As such, Primus can use multiple stateless controllers and little redundant traffic to tolerate failures, which incurs little overhead under normal case, and keeps 10s of ms fast routing reaction time even under complex data-/control-plane failures. We design, implement and evaluate Primus with extensive experiments on Linux-machine controllers and white-box switches. Primus provides ~1200x and ~100x shorter convergence time than current distributed protocol BGP and the state-of-the-art centralized routing solution, respectively. Furthermore, Primus maintains good routing controllability/manageability thanks to its centralized architecture, which enables us to build several advanced routing features in our testbed, including routing failure visualization and weighted-cost-multi-path routing.},
+ author = {Lin, Fusheng and Wang, Hongyu and Chen, Guo and Zhou, Guihua and Xu, Tingting and Wei, Dehui and Chen, Li and Lu, Yuanwei and Qu, Andrew and Shao, Hua and Jiang, Hongbo},
+ doi = {10.1109/tnet.2023.3259541},
+ issn = {1063-6692},
+ issue_date = {Dec. 2023},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {April},
+ number = {6},
+ numpages = {16},
+ pages = {2624–2639},
+ publisher = {IEEE Press},
+ title = {Fast, Scalable and Robust Centralized Routing for Data Center Networks},
+ url = {https://doi.org/10.1109/TNET.2023.3259541},
+ volume = {31},
+ year = {2023}
+}

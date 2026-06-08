@@ -1,0 +1,14 @@
+@conference{Wang20241219,
+ abstract = {Single-cell RNA sequencing (scRNA-seq) enables researchers to analyze gene expression at single-cell level. One important task in scRNA-seq data analysis is unsupervised clustering, which helps identify distinct cell types, laying down the foundation for other downstream analysis tasks. In this paper, we propose a novel method called Cluster-aware IteRative Contrastive LEarning (CIRCLE in short) for scRNA-seq data clustering, which uses an iterative representation learning and clustering framework to progressively learn the clustering structure of scRNA-seq data with a cluster-aware contrastive loss. CIRCLE consists of a Transformer encoder, a clustering head, a projection head and a contrastive loss. First, CIRCLE extracts the feature vectors of the original and augmented data by the Transformer-encoder. Then, it computes the clustering centroids by K-means and employs the student's t-distribution to assign pseudo-labels to all cells in the clustering head. The projection-head uses a Multi-Layer Perceptron (MLP) to obtain projections of the augmented data. At last, both pseudo-labels and projections are used in the contrastive loss to guide the model training. Such a process goes iteratively so that the clustering result gets better and better. Extensive experiments on 25 real-world scRNA-seq datasets show that CIRCLE outperforms the state-of-the-art (SOTA) methods in most cases. Concretely, CIRCLE surpasses the existing methods by from 14% to 280%, and from 5% to 133% on average in terms of performance metrics ARI and NMI respectively. Source code is available at https://github.com/Alunethy/CIRCLE. © 2024 IEEE.},
+ author = {Wang, Jinxian and Jiang, Weikang and Guan, Jihong and Zhou, Shuigeng},
+ doi = {10.1109/BIBM62325.2024.10822557},
+ journal = {Proceedings - 2024 IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2024},
+ note = {Cited by: 3},
+ pages = {1219 - 1225},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CIRCLE: ScRNA-seq Data Clustering by Cluster-aware Iterative Contrastive Learning},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85217275323?origin=resultslist},
+ year = {2024}
+}

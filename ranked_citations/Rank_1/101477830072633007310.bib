@@ -1,0 +1,17 @@
+@article{10.14778/3007263.3007310,
+ abstract = {We present LocationSpark, a spatial data processing system built on top of Apache Spark, a widely used distributed data processing system. LocationSpark offers a rich set of spatial query operators, e.g., range search, kNN, spatio-textual operation, spatial-join, and kNN-join. To achieve high performance, LocationSpark employs various spatial indexes for in-memory data, and guarantees that immutable spatial indexes have low overhead with fault tolerance. In addition, we build two new layers over Spark, namely a query scheduler and a query executor. The query scheduler is responsible for mitigating skew in spatial queries, while the query executor selects the best plan based on the indexes and the nature of the spatial queries. Furthermore, to avoid unnecessary network communication overhead when processing overlapped spatial data, We embed an efficient spatial Bloom filter into LocationSpark's indexes. Finally, LocationSpark tracks frequently accessed spatial data, and dynamically flushes less frequently accessed data into disk. We evaluate our system on real workloads and demonstrate that it achieves an order of magnitude performance gain over a baseline framework.},
+ author = {Tang, Mingjie and Yu, Yongyang and Malluhi, Qutaibah M. and Ouzzani, Mourad and Aref, Walid G.},
+ doi = {10.14778/3007263.3007310},
+ issn = {2150-8097},
+ issue_date = {September 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {13},
+ numpages = {4},
+ pages = {1565–1568},
+ publisher = {VLDB Endowment},
+ title = {LocationSpark: a distributed in-memory data management system for big spatial data},
+ url = {https://doi.org/10.14778/3007263.3007310},
+ volume = {9},
+ year = {2016}
+}

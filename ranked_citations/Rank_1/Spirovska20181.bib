@@ -1,0 +1,14 @@
+@conference{Spirovska20181,
+ abstract = {Transactional Causal Consistency (TCC) extends causal consistency, the strongest consistency model compatible with availability, with interactive read-write transactions, and is therefore particularly appealing for geo-replicated platforms. This paper presents Wren, the first TCC system that at the same time i) implements nonblocking read operations, thereby achieving low latency, and ii) allows an application to efficiently scale out within a replication site by sharding. Wren introduces new protocols for transaction execution, dependency tracking and stabilization. The transaction protocol supports nonblocking reads by providing a transaction with a snapshot that is the union of a fresh causal snapshot S installed by every partition in the local data center and a client-side cache for writes that are not yet included in S. The dependency tracking and stabilization protocols require only two scalar timestamps, resulting in efficient resource utilization and providing scalability in terms of replication sites. In return for these benefits, Wren slightly increases the visibility latency of updates. We evaluate Wren on an AWS deployment using up to 5 replication sites and 16 partitions per site. We show that Wren delivers up to 1.4x higher throughput and up to 3.6x lower latency when compared to the state-of-the-art design. The choice of an older snapshot increases local update visibility latency by a few milliseconds. The use of only two timestamps to track causality increases remote update visibility latency by less than 15%. © 2018 IEEE.},
+ author = {Spirovska, Kristina and Didona, Diego and Zwaenepoel, Willy},
+ doi = {10.1109/DSN.2018.00014},
+ journal = {Proceedings - 48th Annual IEEE/IFIP International Conference on Dependable Systems and Networks, DSN 2018},
+ note = {Cited by: 29; All Open Access; Green Open Access},
+ pages = {1 - 12},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Wren: Nonblocking reads in a partitioned transactional causally consistent data store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85051060154?origin=resultslist},
+ year = {2018}
+}

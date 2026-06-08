@@ -1,0 +1,16 @@
+@article{Rolón202445,
+ abstract = {It is a critical concern for cloud computing providers to identify and adopt optimal virtual machine (VM) I/O storage paths. In Linux, these involve NVMe hardware, PCIe passthrough with vfio, and userspace drivers (e.g. SPDK). One project tying together these host-side improvements with the guests is vfio-user, a library and protocol for inter-process communication of I/O operations over sockets. QEMU/KVM VMs using vfio-user and SPDK are theoretically expected to attain low latencies due to mostly userspace processing, but this VM datapath configuration is still experimental and performance data is lacking in the literature. This paper presents the setup and results of benchmarks comparing the I/O performance of a VM using vfio-user and SPDK as its storage backend against different datapath configurations. Additionally, we present a bpftrace-based tool we call vfio_user_snoop to analyze vfio-user packets in transit and a layer-by-layer breakdown of I/O latencies using this setup. We observe negligible differences for baremetal, vfio-user, and passthrough in fio benchmarks, at 26.66 ± 0.18μs mean latency in random reads and 27.77 ± 0.77μs in random writes. For RocksDB, on random reads, vfio-user attains 19.75% fewer mean ops/sec vs. baremetal and 1.66% higher mean ops/sec vs. passthrough; on 50/50 random reads and writes, we see 5.59% and 2.39% fewer mean ops/sec vs. bare-metal and passthrough, respectively. © 2024 Association for Computing Machinery.},
+ author = {Rolón, Sebastián and Balmau, Oana},
+ doi = {10.1145/3689051.3689059},
+ journal = {Operating Systems Review (ACM)},
+ note = {Cited by: 0},
+ number = {1},
+ pages = {45 - 52},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Is Bare-metal I/O Performance with User-defined Storage Drives Inside VMs Possible? Benchmarking libvfio-user vs. Common Storage Virtualization Configurations},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85201487756?origin=resultslist},
+ volume = {58},
+ year = {2024}
+}

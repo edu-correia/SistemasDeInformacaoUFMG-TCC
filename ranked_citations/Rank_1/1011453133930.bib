@@ -1,0 +1,18 @@
+@article{10.1145/3133930,
+ abstract = {Type inference is convenient by allowing programmers to elide type annotations, but this comes at the cost of often generating very confusing and opaque type error messages that are of little help to fix type errors. Though there have been many successful attempts at making type error messages better in the past thirty years, many classes of errors are still difficult to fix. In particular, current approaches still generate imprecise and uninformative error messages for type errors arising from errors in grouping constructs like parentheses and brackets. Worse, a recent study shows that these errors usually take more than 10 steps to fix and occur quite frequently (around 45% to 60% of all type errors) in programs written by students learning functional programming. We call this class of errors, nonstructural errors. We solve this problem by developing Learnskell, a type error debugger that uses machine learning to help diagnose and deliver high quality error messages, for programs that contain nonstructural errors. While previous approaches usually report type errors on typing constraints or on the type level, Learnskell generates suggestions on the expression level. We have performed an evaluation on more than 1,500 type errors, and the result shows that Learnskell is quite precise. It can correctly capture 86% of all nonstructural errors and locate the error cause with a precision of 63%/87% with the first 1/3 messages, respectively. This is several times more than the precision of state-of-the-art compilers and debuggers. We have also studied the performance of Learnskell and found out that it scales to large programs.},
+ address = {New York, NY, USA},
+ articleno = {106},
+ author = {Wu, Baijun and Campora III, John Peter and Chen, Sheng},
+ doi = {10.1145/3133930},
+ issue_date = {October 2017},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Type error debugging, concrete messages, machine learning, structure- changing errors},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Learning user friendly type-error messages},
+ url = {https://doi.org/10.1145/3133930},
+ volume = {1},
+ year = {2017}
+}

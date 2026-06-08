@@ -1,0 +1,14 @@
+@article{ALTUKHAIM202211485,
+ abstract = {Many replication protocols, which can be used in various distributed applications such as distributed databases, collaborative applications, and distributed agenda, sacrifice strong consistency to achieve lower latency and higher throughput. This paper describes the design, specification, implementation, and evaluation of Unidirectional and Multidirectional Replication, which challenge this inflexible tradeoff. By propagating the resulting states parallelly, as in Primary-Backup Replication, but with fewer messages, while having a head that processes write requests and a tail that processes read requests, as in Chain Replication, Unidirectional Replication improves the latency and throughput of the two protocols without compromising strong consistency. To improve the utilization of computing and communication resources of Unidirectional Replication, Multidirectional Replication divides objects into several logical shards and runs an instance of Unidirectional Replication on each logical shard. We have accomplished the proposed protocols in three steps: (1) merging Primary-Backup Replication and Chain Replication into Unidirectional Replication; (2) merging Unidirectional Replication and logical sharding into Multidirectional Replication; and (3) implementation and evaluation. Empirical results show that, compared to Primary-Backup Replication, when handling read requests with write-read conflicts, Unidirectional Replication shows an improvement of roughly 66% in latency; compared to Chain Replication, when handling write requests with basic settings, Unidirectional Replication shows an improvement of roughly 59% in throughput; and compared to Unidirectional Replication, Multidirectional Replication shows an improvement of 150% in the number of clients that it can handle.},
+ author = {Furat F. Altukhaim and Almetwally M. Mostafa and Ahmed E. Youssef},
+ doi = {https://doi.org/10.1016/j.aej.2022.05.005},
+ issn = {1110-0168},
+ journal = {Alexandria Engineering Journal},
+ keyword = {Fault tolerance, Primary-Backup Replication, Chain Replication, Data sharding, Resource utilization},
+ number = {12},
+ pages = {11485-11510},
+ title = {Multidirectional Replication for Supporting Strong Consistency, Low Latency, and High Throughput},
+ url = {https://www.sciencedirect.com/science/article/pii/S1110016822003180},
+ volume = {61},
+ year = {2022}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3763798,
+ abstract = {Resource analysis aims to derive symbolic resource bounds of programs. Although numerous resource-analysis techniques have been developed—ranging from static to dynamic and manual to automated techniques—they each come with their own distinct strengths and weaknesses. To overcome the limitations of individual resource-analysis techniques, a promising approach is to combine them in such a way that retains their complementary strengths while mitigating their respective weaknesses. This article proposes a novel program translation method called resource decomposition that facilitates the combination of different resource-analysis techniques. The key idea of resource decomposition is to first identify and annotate the program with resource components, which are user-specified variables that serve as an interface between different analysis techniques. Using these resource components, our method generates a resource-guarded program, where one analysis technique is used to infer an overall cost bound parametric in the resource components, and other analysis techniques are used to infer symbolic bounds to be substituted for the resource components. We establish the soundness of resource decomposition using a denotational cost semantics and a binary logical relation. It states that composing sound bounds results in a sound bound for the original program. Furthermore, we present three instantiations of the resource-decomposition framework, each representing distinct combinations of static, data-driven, and manual resource analyses. The data-driven part of these instantiations is a novel Bayesian approach to inferring linear and logarithmic bounds of recursion depths. An implementation and empirical evaluation of resource decomposition demonstrates that it can effectively infer sound and asymptotically tight cost bounds for a number of challenging benchmarks that are beyond the reach of previous analysis methods.},
+ address = {New York, NY, USA},
+ articleno = {409},
+ author = {Pham, Long and Niu, Yue and Glover, Nathan and Saad, Feras and Hoffmann, Jan},
+ doi = {10.1145/3763798},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {data-driven analysis, resource analysis, static analysis, worst-case costs},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {Integrating Resource Analyses via Resource Decomposition},
+ url = {https://doi.org/10.1145/3763798},
+ volume = {9},
+ year = {2025}
+}

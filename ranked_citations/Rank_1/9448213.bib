@@ -1,0 +1,14 @@
+@article{9448213,
+ abstract = {Scientific applications often require high-bandwidth shared storage to perform joint simulations and collaborative data analytics. Shared memory pools provide a chance to satisfy such needs. Recently, a high-speed network such as Gen-Z utilizing persistent memory (PM) offers an opportunity to create a shared memory pool connected to compute nodes. However, there are several challenges to use scientific applications on the shared memory pool directly such as scalability, failure-atomicity, and lack of scientific metadata-based search and query. In this paper, we propose MOSIQS, a persistent memory object storage framework with metadata indexing and querying for scientific computing. We design MOSIQS based on the key idea that memory objects on PM pool can live beyond the application lifetime and can become the sharing currency for applications and scientists. MOSIQS provides an aggregate memory pool atop an array of persistent memory devices to store and access memory objects to accelerate scientific computing. MOSIQS uses a lightweight persistent memory key-value store to manage the metadata of memory objects, which enables memory object sharing. To facilitate metadata search and query over millions of memory objects resident on memory pool, we introduce Group Split and Merge (GSM), a novel persistent index data structure designed primarily for scientific datasets. GSM splits and merges dynamically to minimize the query search space and maintains low query processing time while overcoming the index storage overhead. MOSIQS is implemented on top of PMDK. We evaluate the proposed approach on many-core server with an array of real PM devices. Experimental results show that MOSIQS gains a 100% write performance improvement and executes multi-attribute queries efficiently with 2.7× less index storage overhead offering significant potential to speed up scientific computing applications.},
+ author = {Khan, Awais and Sim, Hyogi and Vazhkudai, Sudharshan S. and Kim, Youngjae},
+ doi = {10.1109/ACCESS.2021.3087502},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {GSM;Analytical models;Scientific computing;Computational modeling;Memory management;Metadata;Tagging;Memory-centric computing and HPC;persistent memory storage;scientific metadata indexing and search;PM~index data structures},
+ month = {},
+ number = {},
+ pages = {85217-85231},
+ title = {MOSIQS: Persistent Memory Object Storage With Metadata Indexing and Querying for Scientific Computing},
+ volume = {9},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10609623,
+ abstract = {Accelerating matrix multiplication is crucial to achieve high performance in many application domains, including neural networks, graph analytics, and scientific computing. These applications process matrices with a wide range of sparsities, from completely dense to highly sparse. Ideally, a single accelerator should handle matrices of all sparsity levels well. However, prior matrix multiplication accelerators each target a limited range of sparsity levels. We present Trapezoid, a versatile accelerator that performs matrix multiplication across all sparsity levels effectively. Trapezoid builds on a 2D spatial array design, which excels at dense matrix multiplication, and extends it with new hardware mechanisms that let it handle sparse inputs. We present a novel innerproduct-based dataflow with a multi-fiber intersection unit that handles mildly sparse matrices. Furthermore, novel Gustavsonbased dataflows and a multi-level memory hierarchy enable high performance on highly sparse matrices. Trapezoid’s hardware extensions are reused across dataflows to minimize area overheads. We evaluate Trapezoid on a broad range of dense and sparse matrix multiplication workloads. Trapezoid has gmean $19.7 \times$, $4.3 \times$, and $2.9 \times$ better performance/area than TPU, SIGMA, and Flexagon, prior state-of-the-art accelerators that target dense, mildly sparse, and highly sparse matrices, respectively.},
+ author = {Yang, Yifan and Emer, Joel S. and Sanchez, Daniel},
+ booktitle = {2024 ACM/IEEE 51st Annual International Symposium on Computer Architecture (ISCA)},
+ doi = {10.1109/ISCA59077.2024.00072},
+ issn = {},
+ keyword = {Costs;Scientific computing;Neural networks;Computer architecture;Throughput;Hardware;Sparse matrices;Sparsity;Matrix Multiplication;Accelerator;Dataflow},
+ month = {June},
+ number = {},
+ pages = {931-945},
+ title = {Trapezoid: A Versatile Accelerator for Dense and Sparse Matrix Multiplications},
+ volume = {},
+ year = {2024}
+}

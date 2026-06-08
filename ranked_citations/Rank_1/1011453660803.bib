@@ -1,0 +1,18 @@
+@article{10.1145/3660803,
+ abstract = {The quality of Virtual Reality (VR) apps is vital, particularly the rendering quality of the VR Graphical User Interface (GUI). Different from traditional two-dimensional (2D) apps, VR apps create a 3D digital scene for users, by rendering two distinct 2D images for the user’s left and right eyes, respectively. Stereoscopic visual inconsistency (denoted as “SVI”) issues, however, undermine the rendering process of the user’s brain, leading to user discomfort and even adverse health effects. Such issues commonly exist in VR apps but remain underexplored. To comprehensively understand the SVI issues, we conduct an empirical analysis on 282 SVI bug reports collected from 15 VR platforms, summarizing 15 types of manifestations of the issues. The empirical analysis reveals that automatically detecting SVI issues is challenging, mainly because: (1) lack of training data; (2) the manifestations of SVI issues are diverse, complicated, and often application-specific; (3) most accessible VR apps are closed-source commercial software, we have no access to code, scene configurations, etc. for issue detection. Our findings imply that the existing pattern-based supervised classification approaches may be inapplicable or ineffective in detecting the SVI issues.To counter these challenges, we propose an unsupervised black-box testing framework named StereoID to identify the stereoscopic visual inconsistencies, based only on the rendered GUI states. StereoID generates a synthetic right-eye image based on the actual left-eye image and computes distances between the synthetic right-eye image and the actual right-eye image to detect SVI issues. We propose a depth-aware conditional stereo image translator to power the image generation process, which captures the expected perspective shifts between left-eye and right-eye images. We build a large-scale unlabeled VR stereo screenshot dataset with larger than 171K images from 288 real-world VR apps, which can be utilized to train our depth-aware conditional stereo image translator and evaluate the whole testing framework StereoID. After substantial experiments, depth-aware conditional stereo image translator demonstrates superior performance in generating stereo images, outpacing traditional architectures. It achieved the lowest average L1 and L2 losses and the highest SSIM score, signifying its effectiveness in pixel-level accuracy and structural consistency for VR apps. StereoID further demonstrates its power for detecting SVI issues in both user reports and wild VR apps. In summary, this novel framework enables effective detection of elusive SVI issues, benefiting the quality of VR apps.},
+ address = {New York, NY, USA},
+ articleno = {96},
+ author = {Li, Shuqing and Gao, Cuiyun and Zhang, Jianping and Zhang, Yujia and Liu, Yepang and Gu, Jiazhen and Peng, Yun and Lyu, Michael R.},
+ doi = {10.1145/3660803},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Virtual Reality, Extended Reality, Software Quality Assurance, GUI Testing, Deep Learning},
+ month = {July},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Less Cybersickness, Please: Demystifying and Detecting Stereoscopic Visual Inconsistencies in Virtual Reality Apps},
+ url = {https://doi.org/10.1145/3660803},
+ volume = {1},
+ year = {2024}
+}

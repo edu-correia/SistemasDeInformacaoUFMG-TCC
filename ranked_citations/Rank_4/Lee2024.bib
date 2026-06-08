@@ -1,0 +1,14 @@
+@conference{Lee2024,
+ abstract = {Recent token reduction methods for Vision Transformers (ViTs) incorporate token merging, which measures the similarities between token embeddings and combines the most similar pairs. However, their merging policies are directly dependent on intermediate features in ViTs, which prevents exploiting features tailored for merging and requires end-to-end training to improve token merging. This paper proposes Decoupled Token Embedding for Merging (DTEM) that enhances token merging through a decoupled embedding learned via a continuously relaxed token merging process. Our method introduces a lightweight embedding module decoupled from the ViT forward pass to extract dedicated features for token merging, addressing the restriction from using intermediate features. The continuously relaxed token merging, applied during training, enables us to learn the decoupled embeddings in a differentiable manner. Thanks to the decoupled structure, our method can be seamlessly integrated into existing ViT backbones and trained either modularly by learning only the decoupled embeddings or end-to-end by fine-tuning. We demonstrate the applicability of DTEM on various tasks, including classification, captioning, and segmentation, with consistent improvement in token merging. Especially in the ImageNet-1k classification, DTEM achieves a 37.2% reduction in FLOPs while maintaining a top-1 accuracy of 79.85% with DeiT-small. Code is available at https://github.com/movinghoon/dtem. © 2024 Neural information processing systems foundation. All rights reserved.},
+ author = {Lee, Dong Hoon and Hong, Seunghoon},
+ journal = {Advances in Neural Information Processing Systems},
+ note = {Cited by: 5},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Learning to Merge Tokens via Decoupled Embedding for Efficient Vision Transformers},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105000494811?origin=resultslist},
+ volume = {37},
+ year = {2024}
+}

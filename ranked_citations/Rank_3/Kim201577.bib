@@ -1,0 +1,16 @@
+@article{Kim201577,
+ abstract = {NAND flash memory has been widely used as a storage device for embedded systems because of its fast access speed, low power consumption, and lower noise compared to a hard disk. However, due to its unique characteristics such as the lack of an in-place update and asymmetric operation speed/unit, conventional disk-based systems and applications may experience severe performance degradation when NAND flash memory is used. When a disk-based index structure such as a B-Tree is implemented in flash memory-based storage systems, intensive overwrite operations, which are caused by record insertion, deletion, and reorganization, may result in severe performance degradation. Although several index structures have been proposed to overcome this problem, they suffer from frequent node splits, rapid increments of tree height, and poor space usage. In this paper, we propose a log-structured B-Tree index structure where a log node corresponding to a leaf node is allocated for updating the modified data, and then these data in the log node are stored in a single write operation. Our proposed index structure reduces additional write operations by deferring parent node changes. In addition, the index structure reduces the number of write operations by directly switching the log node to a leaf node if the data are sequentially inserted according to key order. Through various experiments, we show that our proposed index structure performs better than related techniques. © 2014, Springer Science+Business Media New York.},
+ author = {Kim, Bo-kyeong and Lee, Dong-Ho},
+ doi = {10.1007/s10617-014-9139-4},
+ journal = {Design Automation for Embedded Systems},
+ note = {Cited by: 15},
+ number = {1-2},
+ pages = {77 - 100},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LSB-Tree: a log-structured B-Tree index structure for NAND flash SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84939414732?origin=resultslist},
+ volume = {19},
+ year = {2015}
+}

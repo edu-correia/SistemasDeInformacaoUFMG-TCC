@@ -1,0 +1,14 @@
+@article{10877904,
+ abstract = {Recent advancements in neural image codecs (NICs) are of significant compression performance, but limited attention has been paid to their error resilience. These resulting NICs tend to be sensitive to packet losses, which are prevalent in real-time communications. In this paper, we investigate how to elevate the resilience ability of NICs to combat packet losses. We propose ResiComp, a pioneering neural image compression framework with feature-domain packet loss concealment (PLC). Motivated by the inherent consistency between generation and compression, we advocate merging the tasks of entropy modeling and PLC into a unified framework focused on latent space context modeling. To this end, we take inspiration from the impressive generative capabilities of large language models (LLMs), particularly the recent advances of masked visual token modeling (MVTM). In specific, ResiComp develops a bi-directional masked Transformer to model the contextual dependencies among latents with dual-functionality: 1) iteratively acts as a conditional entropy model to boost compression efficiency; 2) operates latent PLC to improve resilience. During training, we integrate MVTM to mirror the effects of packet loss, enabling a dual-functional Transformer to restore the masked latents by predicting their missing values and conditional probability mass functions. Our ResiComp jointly optimizes compression efficiency and loss resilience. Moreover, ResiComp provides flexible coding modes, allowing for explicitly adjusting the efficiency-resilience trade-off in response to varying Internet or wireless network conditions. Extensive experiments demonstrate that ResiComp can significantly enhance the NIC’s resilience against packet losses, while exhibits a worthy trade-off between compression efficiency and packet loss resilience. Additionally, packet-level simulations, conducted using diverse network models based on real traces, demonstrate that ResiComp exhibits much better robustness to fluctuating network conditions compared to redundancy-based approaches like VTM + FEC.},
+ author = {Wang, Sixian and Dai, Jincheng and Qin, Xiaoqi and Yang, Ke and Niu, Kai and Zhang, Ping},
+ doi = {10.1109/TCSVT.2025.3539747},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Context modeling;Packet loss;Resilience;Entropy;Image coding;Codecs;Transforms;Transformers;Adaptation models;Forward error correction;Image compression;packet loss (PL);visual token;mask learning;context modeling},
+ month = {July},
+ number = {7},
+ pages = {7181-7195},
+ title = {ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling},
+ volume = {35},
+ year = {2025}
+}

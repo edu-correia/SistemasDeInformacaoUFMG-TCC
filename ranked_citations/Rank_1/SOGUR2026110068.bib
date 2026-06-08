@@ -1,0 +1,13 @@
+@article{SOGUR2026110068,
+ abstract = {Dentists frequently use imaging methods to diagnose oral and dental diseases. However, factors such as artifacts, blurring, and lighting issues can negatively affect the interpretation of these images. In this study, we present a region-based framework to improve the segmentation performance of panoramic dental radiographs. The framework consists of region of interest (ROI) extraction, preprocessing, dividing an image into patches, segmentation, and postprocessing steps. Firstly, the maxillomandibular region of the radiographs was extracted. 14 preprocessing methods, covering traditional and hybrid approaches, were systematically evaluated for both image quality improvement and segmentation performance. The three best-performing methods, Gaussian blur (GB), contrast stretching (CS), and CS + GB, were applied to the ROI. Enhanced maxillomandibular region was then divided into four patches and segmented using a custom U-Net and U-Net variants with ResNet50, VGG19, and EfficientNetB4 encoder backbones. In the final step, the segmented patches were merged to reconstruct the full image. The proposed method was tested on the Tufts Dental Database. Experimental results showed that our approach significantly increased performance by focusing on local details. The proposed method outperformed the basic segmentation process using original images by 0.9083, achieving an average dice score of 0.9250 with EfficientNetB4-based U-Net. The robustness of the model was tested with ROI perturbation tests and demonstrated stable performance against localization errors. Furthermore, with a low inference time of only 77.12 ms per image, it has the potential to integrate into clinical settings, support real-time diagnostic processes, eliminate subjective evaluation differences in panoramic analyses, and improve overall treatment efficiency.},
+ author = {Neslihan Sogur and Nihan Kazak Çerçevik},
+ doi = {https://doi.org/10.1016/j.bspc.2026.110068},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {Dental radiography, Image segmentation, Preprocessing framework, U-Net variants, Deep learning, Biomedical image analysis},
+ pages = {110068},
+ title = {Region-guided preprocessing and U-Net variants for improved panoramic dental radiograph segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809426006221},
+ volume = {120},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{11289571,
+ abstract = {Power estimation serves as the foundation for a series of hardware optimization strategies. However, it is challenging to deliver accurate power estimation at an early design stage like high-level synthesis (HLS). In this paper, we propose PowerGear, a graph-learning-assisted power estimation approach for FPGA HLS, which features high accuracy, efficiency, scalability, transferability, and applicability. PowerGear comprises two main components: a graph construction flow and a customized graph neural network (GNN) model. In the graph construction flow, PowerGear introduces buffer insertion, datapath merging, graph trimming and feature annotation techniques to transform HLS designs into graph-structured data, which encode both intra-operation micro-architectures and inter-operation interconnects annotated with switching activities. Additionally, PowerGear incorporates cross-function graph integration, dataflow adaptation, and design scaling strategies that make it compatible with multi-kernel, computation-intensive and large-scale applications. Furthermore, we propose a novel power-aware heterogeneous edge-centric GNN model, which effectively learns heterogeneous edge semantics and structural properties of the constructed graphs via edge-centric neighborhood aggregation, and eventually fits the formulation of dynamic power. Compared with on-board measurement, PowerGear shows average errors of 3.60% and 8.81% in total and dynamic power estimation, respectively. It also supports large-scale and dataflow-optimized neural networks with an error of only 3.91%, demonstrating broad applicability. Moreover, PowerGear achieves a 9.1× speedup over direct measurement, and up to 41.9× when combined with the design scaling strategy. Finally, PowerGear facilitates design space exploration for FPGA HLS, yielding a performance gain of up to 11.2% compared with state-of-the-art predictive models.},
+ author = {Yan, Sen and Huang, Kuangxun and Zhao, Kang and Lin, Zhe},
+ doi = {10.1109/TCAD.2025.3642210},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Estimation;Field programmable gate arrays;Predictive models;Register transfer level;Power demand;Hardware;Accuracy;Graph neural networks;Adaptation models;Analytical models;High-level synthesis (HLS);field-programmable gate array (FPGA);graph neural network (GNN);power modeling},
+ month = {},
+ number = {},
+ pages = {1-1},
+ title = {Accurate, Efficient and Scalable Power Modeling for FPGA HLS},
+ volume = {},
+ year = {2025}
+}

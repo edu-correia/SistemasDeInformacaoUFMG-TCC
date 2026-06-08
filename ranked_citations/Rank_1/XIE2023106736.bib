@@ -1,0 +1,20 @@
+@article{XIE2023106736,
+ abstract = {Background and objective:
+Abundant labeled data drives the model training for better performance, but collecting sufficient labels is still challenging. To alleviate the pressure of label collection, semi-supervised learning merges unlabeled data into training process. However, the joining of unlabeled data (e.g., data from different hospitals with different acquisition parameters) will change the original distribution. Such a distribution shift leads to a perturbation in the training process, potentially leading to a confirmation bias. In this paper, we investigate distribution shift and develop methods to increase the robustness of our models, with the goal of improving performance in semi-supervised semantic segmentation of medical images. We study distribution shift and increase model robustness to it, for improving practical performance in semi-supervised segmentation over medical images.
+Methods:
+To alleviate the issue of distribution shift, we introduce adversarial training into the co-training process. We simulate perturbations caused by the distribution shift via adversarial perturbations and introduce the adversarial perturbation to attack the supervised training to improve the robustness against the distribution shift. Benefiting from label guidance, supervised training does not collapse under adversarial attacks. For co-training, two sub-models are trained from two views (over two disjoint subsets of the dataset) to extract different kinds of knowledge independently. Co-training outperforms single-model by integrating both views of knowledge to avoid confirmation bias.
+Results:
+For practicality, we conduct extensive experiments on challenging medical datasets. Experimental results show desirable improvements to state-of-the-art counterparts (Yu and Wang, 2019; Peng et al., 2020; Perone et al., 2019). We achieve a DSC score of 87.37% with only 20% of labels on the ACDC dataset, almost same to using 100% of labels. On the SCGM dataset with more distribution shift, we achieve a DSC score of 78.65% with 6.5% of labels, surpassing 10.30% over Peng et al. (2020). Our evaluative results show superior robustness against distribution shifts in medical scenarios.
+Conclusion:
+Empirical results show the effectiveness of our work for handling distribution shift in medical scenarios.},
+ author = {Haoyu Xie and Chong Fu and Xu Zheng and Yu Zheng and Chiu-Wing Sham and Xingwei Wang},
+ doi = {https://doi.org/10.1016/j.compbiomed.2023.106736},
+ issn = {0010-4825},
+ journal = {Computers in Biology and Medicine},
+ keyword = {Deep learning, Semi-supervised learning, Co-training, Adversarial example, Medical image segmentation},
+ pages = {106736},
+ title = {Adversarial co-training for semantic segmentation over medical images},
+ url = {https://www.sciencedirect.com/science/article/pii/S0010482523002019},
+ volume = {157},
+ year = {2023}
+}

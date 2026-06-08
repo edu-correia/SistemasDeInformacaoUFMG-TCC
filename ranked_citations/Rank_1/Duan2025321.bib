@@ -1,0 +1,13 @@
+@conference{Duan2025321,
+ abstract = {The key-value separation is renowned for its significant mitigation of the write amplification inherent in traditional LSM trees. However, KV separation potentially increases performance overhead in the management of Value region, especially for garbage collection (GC) operation that is used to reduce the redundant space occupation. In response, many efforts have been made to optimize the GC mechanism for KV separation. However, our analysis indicates that such solution based on trade-offs between CPU and I/O overheads cannot simultaneously satisfy the three requirements of KV separated systems in terms of throughput, tail latency, and space usage. This limitation hinders their real-world application. In this paper, we introduce AegonKV, a “three-birds-one-stone” solution that comprehensively enhances the throughput, tail latency, and space usage of KV separated systems. AegonKV first proposes a SmartSSD-based GC offloading mechanism to enable asynchronous GC operations without competing with LSM read/write for bandwidth or CPU. AegonKV leverages offload-friendly data structures and hardware/software execution logic to address the challenges of GC offloading. Experiments demonstrate that AegonKV achieves the largest throughput improvement of 1.28-3.3 times, a significant reduction of 37%-66% in tail latency, and 15%-85% in space overhead compared to existing KV separated systems. © 2025 FAST. All Rights Reserved.},
+ author = {Duan, Zhuohui and Feng, Hao and Liu, Haikun and Liao, Xiaofei and Jin, Hai and Li, Bangyu},
+ journal = {Proceedings of the 23rd USENIX Conference on File and Storage Technologies, FAST 2025},
+ note = {Cited by: 6},
+ pages = {321 - 335},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105002250629?origin=resultslist},
+ year = {2025}
+}

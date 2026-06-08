@@ -1,0 +1,16 @@
+@article{Zhang20247677,
+ abstract = {Set intersection is a fundamental operation in many applications, such as common neighbor computation in graph-based algorithms, set similarity computation, item recommendation, etc. In the literature, many set intersection methods are proposed. We observe that the state-of-the-art algorithm RCode bears several limitations, such as high index time complexity, inefficient for large-sized sets, and not friendly to the generic set intersection. In this paper, we introduce the Bucket Signature for Set (BigSet), an efficient generic set intersection algorithm. BigSet consists of two phases, namely the preprocessing phase and the query phase. In the preprocessing phase, BigSet partitions the elements of a record into O(<sup>2k</sup>) buckets and uses a bitmap to indicate the status of the buckets where n is the record length and k is the number of bits in the signature. In the query phase, BigSet calculates the results using a candidate generating-and-verification framework. Specifically, a set of candidate elements is identified as those falling in the same buckets. Then, for each bucket, BigSet collects the common elements using a merge-based method. To improve the performance, we introduce two optimizations, including bucket sharing and size-aware signature construction techniques. We conduct experiments on 10 real graph datasets and 5 real generic set datasets to evaluate the performance of our proposals. The experiment results show that BigSet is 20× faster than the leading generic set intersection algorithms. Besides it outperforms the RCode with 5× speedup, and while uses up to 8× less memory. © 1989-2012 IEEE.},
+ author = {Zhang, Shiding and Yang, Jianye and Zhang, Wenjie and Yang, Shiyu and Zhang, Ying and Lin, Xuemin},
+ doi = {10.1109/TKDE.2024.3432595},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 0},
+ number = {12},
+ pages = {7677 - 7691},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {BigSet: An Efficient Set Intersection Approach},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85199558093?origin=resultslist},
+ volume = {36},
+ year = {2024}
+}

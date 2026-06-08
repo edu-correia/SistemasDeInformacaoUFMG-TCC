@@ -1,0 +1,18 @@
+@article{10.1007/s00778-025-00941-9,
+ abstract = {Data cleaning has always been a challenging issue in data research. As data volumes grow exponentially, manual cleaning has become increasingly impractical. Despite substantial efforts in automated data cleaning, significant human effort remains essential, either for providing prior knowledge to generate rules or labeling data to train models. In this paper, we study the problem of self-supervised and interpretable data cleaning, which automatically extracts interpretable data repair rules from dirty data. We propose a novel framework, namely Garf+, based on sequence generative adversarial networks (SeqGAN). A key objective of Garf+ is to capture data repair rules (e.g., the city “Dothan” can uniquely determine that the county is “Houston”). Garf+ employs a SeqGAN consisting of a generator G and a discriminator D that trains G to learn the dependency relationships (e.g., given the city “Dothan” as input, G infers that the county should be “Houston”). After training, the generator G can be used to generate data repair rules, but such generated rules may contain incorrect rules, especially when learned from dirty data. To mitigate this problem, Garf+ further updates the learned relationships with another discriminator D′ to iteratively improve the quality of both rules and data. By taking advantage of both logical and learning-based methods, Garf+ achieves interpretable data cleaning without requiring prior knowledge or labeled training data. Furthermore, Garf+ explores the potential of open-source large language models (LLMs) in data cleaning. Through fine-tuning, LLMs can effectively assimilate both general knowledge and domain-specific information. Garf+ integrates LLMs as a knowledge enhancement module to support rule generation and data repair processes. Extensive experiments on real-world and synthetic datasets demonstrate the effectiveness of Garf+, including its original approach (Garf) and two variants designed to tackle various scenarios. Garf+ outperforms state-of-the-art methods with high precision and recall across different datasets, through learning from dirty datasets autonomously without human supervision.},
+ address = {Berlin, Heidelberg},
+ author = {Peng, Jinfeng and Cui, Hanghai and Shen, Derong and Tang, Nan and Kou, Yue and Nie, Tiezheng and Cui, Hang and Yu, Ge},
+ doi = {10.1007/s00778-025-00941-9},
+ issn = {1066-8888},
+ issue_date = {Oct 2025},
+ journal = {The VLDB Journal},
+ keyword = {Data repair, Generative adversarial network, Large language model},
+ month = {September},
+ number = {6},
+ numpages = {23},
+ publisher = {Springer-Verlag},
+ title = {GARF+: self-supervised and interpretable data cleaning with sequence generative adversarial networks: GARF+: self-supervised and interpretable data...},
+ url = {https://doi.org/10.1007/s00778-025-00941-9},
+ volume = {34},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@article{10296522,
+ abstract = {During incremental learning tasks, catastrophic forgetting occurs when old models are updated with new information. To address this issue, we propose a novel method called label strategy and adaptive weights (LSAW) that improves the incremental learning process. The label strategy introduces the old classes and solves the problem of how to reasonably use the wrong samples predicted by the old model. In the cross-entropy (CE) loss, we apply a threshold to filter the pseudolabels predicted by the old model. Subsequently, we merge the pixel samples with high probability with the current label. The probability here refers to the probability that the pixel belongs to the true class. This process enables the introduction of information from old classes that are not directly accessible in the current stage. Moreover, this information is relatively reliable, and the model exhibits confidence in its accuracy. For the remaining pixels, we retain all classes’ information through label smoothing. In the distillation function, the old class and background pixel samples are selected for distillation according to the prediction map of the old classes. The weights of the classes are adaptively updated and adjusted using specific label information from each batch and the different stages of incremental learning. As demonstrated by the results of our experiment, on three remote sensing image datasets: China Computer Federation (CCF), Potsdam, and Vaihingen, our method achieves the best results.},
+ author = {Ren, Bo and Wang, Zhao and Hou, Biao and Liu, Bo and Wu, Zitong and Chanussot, Jocelyn and Jiao, Licheng},
+ doi = {10.1109/TGRS.2023.3327379},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Remote sensing;Task analysis;Semantic segmentation;Data models;Training;Feature extraction;Predictive models;Incremental learning;land cover classification;semantic segmentation},
+ month = {},
+ number = {},
+ pages = {1-15},
+ title = {Incremental Land Cover Classification via Label Strategy and Adaptive Weights},
+ volume = {61},
+ year = {2023}
+}

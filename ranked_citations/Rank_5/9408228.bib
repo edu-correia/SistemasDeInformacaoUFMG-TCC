@@ -1,0 +1,14 @@
+@article{9408228,
+ abstract = {Just-In-Time (JIT) defect models are classification models that identify the code commits that are likely to introduce defects. Cross-project JIT models have been introduced to address the suboptimal performance of JIT models when historical data is limited. However, many studies built cross-project JIT models using a pool of mixed data from multiple projects (i.e., data merging)—assuming that the properties of defect-introducing commits of a project are similar to that of the other projects, which is likely not true. In this paper, we set out to investigate the interpretation of JIT defect models that are built from individual project data and a pool of mixed project data with and without consideration of project-level variances. Through a case study of 20 datasets of open source projects, we found that (1) the interpretation of JIT models that are built from individual projects varies among projects; and (2) the project-level variances cannot be captured by a JIT model that is trained from a pool of mixed data from multiple projects without considering project-level variances (i.e., a global JIT model). On the other hand, a mixed-effect JIT model that considers project-level variances represents the different interpretations better, without sacrificing performance, especially when the contexts of projects are considered. The results hold for different mixed-effect learning algorithms. When the goal is to derive sound interpretation of cross-project JIT models, we suggest that practitioners and researchers should opt to use a mixed-effect modelling approach that considers individual projects and contexts.},
+ author = {Lin, Dayi and Tantithamthavorn, Chakkrit and Hassan, Ahmed E.},
+ doi = {10.1109/TSE.2021.3073920},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Context modeling;Data models;Predictive models;Measurement;Training;Merging;Planning;Just-in-time defect prediction;data merging;mixed-effect model;cross-project defect prediction},
+ month = {Aug},
+ number = {8},
+ pages = {2969-2986},
+ title = {The Impact of Data Merging on the Interpretation of Cross-Project Just-In-Time Defect Models},
+ volume = {48},
+ year = {2022}
+}

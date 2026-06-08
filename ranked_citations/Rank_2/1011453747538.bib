@@ -1,0 +1,18 @@
+@article{10.1145/3747538,
+ abstract = {The past few years have seen a surge of interest in choreographic programming, a programming paradigm for concurrent and distributed systems. The paradigm allows programmers to implement a distributed interaction protocol with a single high-level program, called a choreography, and then mechanically project it into correct implementations of its participating processes. A choreography can be expressed as a λ-term parameterized by constructors for creating data “at” a process and for communicating data between processes. Through this lens, recent work has shown how one can add choreographies to mainstream languages like Java, or even embed choreographies as a DSL in languages like Haskell and Rust. These new choreographic languages allow programmers to write in applicative style (like in functional programming) and write higher-order choreographies for better modularity. But the semantics of functional choreographic languages is not well-understood. Whereas typical λ-calculi can have their operational semantics defined with just a few rules, existing models for choreographic λ-calculi have dozens of complex rules and no clear or agreed-upon evaluation strategy. We show that functional choreographic programming is simple. Beginning with the Chorλ model from previous work, we strip away inessential features to produce a “core” model called λχ. We discover that underneath Chorλ’s apparently ad-hoc semantics lies a close connection to non-strict λ-calculi; we call the resulting evaluation strategy semilenient. Then, inspired by previous non-strict calculi, we develop a notion of choreographic evaluation contexts and a special commute rule to simplify and explain the unusual semantics of functional choreographic languages. The extra structure leads us to a presentation of λχ with just ten rules, and a discovery of three missing rules in previous presentations of Chorλ. We also show how the extra structure comes with nice properties, which we use to simplify the correspondence proof between choreographies and their projections. Our model serves as both a principled foundation for functional choreographic languages and a good entry point for newcomers.},
+ address = {New York, NY, USA},
+ articleno = {269},
+ author = {Plyukhin, Dan and Qin, Xueying and Montesi, Fabrizio},
+ doi = {10.1145/3747538},
+ issue_date = {August 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Choreographies, Concurrency, λ-calculus},
+ month = {August},
+ number = {ICFP},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Relax! The Semilenient Core of Choreographic Programming (Functional Pearl)},
+ url = {https://doi.org/10.1145/3747538},
+ volume = {9},
+ year = {2025}
+}

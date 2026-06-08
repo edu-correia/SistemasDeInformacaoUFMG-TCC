@@ -1,0 +1,16 @@
+@article{10.1613/jair.1.14741,
+ abstract = {Anomaly detection (AD) task corresponds to identifying the true anomalies among a given set of data instances. AD algorithms score the data instances and produce a ranked list of candidate anomalies. The ranked list of anomalies is then analyzed by a human to discover the true anomalies. Ensemble of tree-based anomaly detectors trained in an unsupervised manner and scoring based on uniform weights for ensembles are shown to work well in practice. However, the manual process of analysis can be laborious for the human analyst when the number of false-positives is very high. Therefore, in many real-world AD applications including computer security and fraud prevention, the anomaly detector must be configurable by the human analyst to minimize the effort on false positives. One important way to configure the detector is by providing true labels (nominal or anomaly) for a few instances. Recent work on active anomaly discovery has shown that greedily querying the top-scoring instance and tuning the weights of ensembles based on label feedback allows us to quickly discover true anomalies. This paper makes four main contributions to improve the state-of-the-art in anomaly discovery using tree-based ensembles. First, we provide an important insight that explains the practical successes of unsupervised tree-based ensembles and active learning based on greedy query selection strategy. We also show empirical results on real-world data to support our insights and theoretical analysis to support active learning. Second, we develop a novel batch active learning algorithm to improve the diversity of discovered anomalies based on a formalism called compact description to describe the discovered anomalies. Third, we develop a novel active learning algorithm to handle streaming data setting. We present a data drift detection algorithm that not only detects the drift robustly, but also allows us to take corrective actions to adapt the anomaly detector in a principled manner. Fourth, we present extensive experiments to evaluate our insights and our tree-based active anomaly discovery algorithms in both batch and streaming data settings. Our results show that active learning allows us to discover significantly more anomalies than state-of-the-art unsupervised baselines, our batch active learning algorithm discovers diverse anomalies, and our algorithms under the streaming-data setup are competitive with the batch setup.},
+ address = {El Segundo, CA, USA},
+ author = {Das, Shubhomoy and Islam, Md Rakibul and Kannappan Jayakodi, Nitthilan and Doppa, Janardhan Rao},
+ doi = {10.1613/jair.1.14741},
+ issn = {1076-9757},
+ issue_date = {Sep 2024},
+ journal = {J. Artif. Int. Res.},
+ month = {September},
+ numpages = {44},
+ publisher = {AI Access Foundation},
+ title = {Effectiveness of Tree-based Ensembles for Anomaly Discovery: Insights, Batch and Streaming Active Learning},
+ url = {https://doi.org/10.1613/jair.1.14741},
+ volume = {80},
+ year = {2024}
+}

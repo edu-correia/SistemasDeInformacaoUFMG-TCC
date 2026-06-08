@@ -1,0 +1,14 @@
+@inproceedings{6300171,
+ abstract = {A Flash Translation Layer (FTL) determines the physical location of each written page on a NAND flash storage. Hot/cold data separation prevents placing data with different degrees of hotness together and is critical for an FTL to improve its performance. In existing FTLs, separation of hot and cold data was achieved by exploiting either temporal or spatial locality of the workloads. The both types of localities were not considered at the same time. In addition, in FTLs that consider the spatial locality, the storage is divided into fixedsize partitions, whose size cannot be adapted according to the workloads. Measurement results show that, a single fixed partition size cannot fit all the workloads, and the preferred partition size for a given workload may not be fixed all the time during the execution of the workload.In this paper, an FTL called DuLASP (Dual Localities with Adaptive Space Partitioning) is proposed. DuLASP considers both temporal and spatial localities of the workloads to achieve hot/cold data separation. Moreover, it incorporates a proposed technique called adaptive space partitioning (ASP) to adaptively and dynamically adjust the partition size according to the executed workloads. ASP achieves the goal by periodically evaluating the suitableness of partition size configuration and adjusting the partition size. Evaluation of the suitableness of a partition size is done mainly based on the temporal information of the data access, and the adjustment of the partition size is performed by merging neighboring partitions (i.e., increasing partition size) or splitting partitions (i.e., decreasing partition size).Experimental results on 7 realistic or benchmark-based workloads show that considering both types of localities has performance improvement (in terms of cleaning cost) of up to 16.8 times (3.1 times in average), compared to that considering only a single type of locality. Moreover, adaptive space partitioning also has significant performance improvement (i.e., by up to 92%, 23.8% in average), compared to the best fixed partitioning.},
+ author = {ChangCheng, Chung-Tai and Chen, Hsin-Hung and Chang, Da-Wei},
+ booktitle = {2012 IEEE International Conference on Embedded and Real-Time Computing Systems and Applications},
+ doi = {10.1109/RTCSA.2012.66},
+ issn = {2325-1301},
+ keyword = {Cleaning;Silicon;Flash memory;Benchmark testing;Indexes;Merging;Performance evaluation;FTL;hot/cold data separation;temporal locality;spatial locality},
+ month = {Aug},
+ number = {},
+ pages = {388-391},
+ title = {DuLASP: A Workload-Aware Flash Translation Layer Exploiting both Temporal and Spatial Localities},
+ volume = {},
+ year = {2012}
+}

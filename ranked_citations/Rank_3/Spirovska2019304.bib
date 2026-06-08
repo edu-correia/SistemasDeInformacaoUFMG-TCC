@@ -1,0 +1,15 @@
+@conference{Spirovska2019304,
+ abstract = {Geo-replicated data platforms are the backbone of several large-scale online services. Transactional Causal Consistency (TCC) is an attractive consistency level for building such platforms. TCC avoids many anomalies of eventual consistency, eschews the synchronization costs of strong consistency, and supports interactive read-write transactions. Partial replication is another attractive design choice for building geo-replicated platforms, as it reduces storage requirements and update propagation costs. This paper presents Paris, the first TCC system that supports partial replication and implements non-blocking parallel read operations. The latter reduce read latency which is of paramount importance for the performance of read-intensive applications. Paris relies on a novel protocol to track dependencies, called Universal Stable Time (UST). By means of a lightweight background gossip process, UST identifies a snapshot of the data that has been installed by every data center (DC) in the system. Hence, transactions can consistently read from such a snapshot on any server in any replication site without having to block. Moreover, Paris requires only one timestamp to track dependencies and define transactional snapshots, thereby achieving resource efficiency and scalability. We evaluate Paris on an AWS deployment composed of up to 10 replication sites. We demonstrate a performance gain of non-blocking reads vs. a blocking alternative (up to 1.47x higher throughput with 5.91x lower latency for read-dominated workloads and up to 1.46x higher throughput with 20.56x lower latency for write-heavy workloads). We also show that the throughput penalty incurred to implement causal consistency, compared to variant without the causal consistency guarantees, is as low as 20% for read-heavy workloads and 37% for write-heavy workloads. We furthermore show that Paris scales well with the number of DCs and partitions, while being able to handle larger datasets than existing solutions that assume full replication. © 2019 IEEE.},
+ author = {Spirovska, Kristina and Didona, Diego and Zwaenepoel, Willy},
+ doi = {10.1109/ICDCS.2019.00038},
+ journal = {Proceedings - International Conference on Distributed Computing Systems},
+ note = {Cited by: 20; All Open Access; Green Open Access},
+ pages = {304 - 316},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Paris: Causally consistent transactions with non-blocking reads and partial replication},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85068724641?origin=resultslist},
+ volume = {2019-July},
+ year = {2019}
+}

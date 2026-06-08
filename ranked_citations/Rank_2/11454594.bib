@@ -1,0 +1,14 @@
+@article{11454594,
+ abstract = {Large-scale transformers are central to modern semantic communication, yet their high computational and communication costs hinder deployment on resource-constrained edge devices. This paper introduces a training-free framework for adaptive token merging, a novel mechanism that compresses transformer representations at runtime by selectively merging semantically redundant tokens under per-layer similarity thresholds. Unlike prior fixed-ratio reduction, our approach couples merging directly to input redundancy, enabling data-dependent adaptation that balances efficiency and task relevance without retraining. We cast the discovery of merging strategies as a multi-objective optimization problem and leverage Bayesian optimization to approximate the Pareto front trade-offs between accuracy, inference cost, and communication cost. On ImageNet classification, we match the accuracy of the unmodified transformer with 30% fewer floating-point operations per second and under 20% of the original communication cost, while for visual question answering our method achieves performance competitive with the full LLaVA model at less than one-third of the compute and one-tenth of the bandwidth. Finally, we show that our adaptive merging is robust across varying channel conditions and provides inherent privacy benefits, substantially degrading the efficacy of model inversion attacks. Our framework provides a practical and versatile solution for deploying powerful transformer models in resource-limited edge intelligence scenarios.},
+ author = {Erak, Omar and Alhussein, Omar and Abou-Zeid, Hatem and Bennis, Mehdi and Muhaidat, Sami},
+ doi = {10.1109/OJCOMS.2026.3676928},
+ issn = {2644-125X},
+ journal = {IEEE Open Journal of the Communications Society},
+ keyword = {Transformers;Merging;Semantic communication;Costs;Adaptation models;Optimization;Computational modeling;Accuracy;Privacy;Feature extraction;Edge inference;semantic communication;token communication;transformers},
+ month = {},
+ number = {},
+ pages = {4112-4128},
+ title = {Adaptive Token Merging for Efficient Transformer Semantic Communication at the Edge},
+ volume = {7},
+ year = {2026}
+}

@@ -1,0 +1,15 @@
+@conference{Lee2025869,
+ abstract = {Reduced-precision data formats are crucial for cost-effective serving of large language models (LLMs). While numerous reduced-precision formats have been introduced thus far, they often require intrusive modifications to the software frameworks or are rather unconventional for widespread adoption across hardware vendors. In this paper, we instead focus on recent industry-driven variants of block floating-point (BFP) formats and conduct a comprehensive analysis to push their limits for efficient LLM serving. Our analysis shows that existing ultra low-bit BFP variants struggle to provide reasonable language model performance due to outlier values in blocks. To address the outliers with BFPs, we propose MX+, a cost-effective and non-intrusive extension designed for seamless integration into the microscaling (MX) formats. MX+ builds on the key insight that the outlier does not need to use its exponent field in the element data type, which allows us to repurposethe exponent field as an extended mantissa to increase the precision of the outlier element. Our evaluation shows that MX+ achieves significantly higher model performance compared to the 4-bit MX format (MXFP4) with negligible storage overhead and slowdown, thus offering a compelling alternative to MXFP4 or MXFP6 for efficient LLM inference. © 2025 Copyright held by the owner/author(s).},
+ author = {Lee, Jungi and Park, Junyong and Cha, Soohyun and Cho, Jaehoon and Sim, Jaewoong},
+ doi = {10.1145/3725843.3756118},
+ journal = {Proceedings of the Annual International Symposium on Microarchitecture, MICRO},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {869 - 883},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021315552?origin=resultslist},
+ volume = {Part of 213862},
+ year = {2025}
+}

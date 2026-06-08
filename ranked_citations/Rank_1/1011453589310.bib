@@ -1,0 +1,18 @@
+@article{10.1145/3589310,
+ abstract = {Embedding-based deep recommendation models (EDRMs), which contain small dense models and large embedding tables, are widely used in industry. Embedding communication constitutes the main cost for the distributed training of EDRMs, and thus we propose two strategies to improve its efficiency, i.e.,embedding tiering andpre-fetching. In particular, embedding tiering uses AllReduce to communicate popular embeddings that are accessed frequently. This is counter-intuitive as embeddings belong to the sparse embedding tables, but reasonable because the access pattern of popular embeddings resembles dense models. Pre-fetching starts communication early for embeddings that receive no updates such that they are removed from the critical path of training. We implement embedding tiering and pre-fetching in a system called FEC and compare it with the state-of-the-art systems on real datasets. The results show that FEC consistently outperforms the existing methods on all datasets, and its speed can be up to 6.65x and 2.42x in terms of embedding communication time and training throughput compared with the best performing baseline.},
+ address = {New York, NY, USA},
+ articleno = {165},
+ author = {Ma, Kaihao and Yan, Xiao and Cai, Zhenkun and Huang, Yuzhen and Wu, Yidi and Cheng, James},
+ doi = {10.1145/3589310},
+ issue_date = {June 2023},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {deep learning, distributed training, recommendation models},
+ month = {June},
+ number = {2},
+ numpages = {21},
+ publisher = {Association for Computing Machinery},
+ title = {FEC: Efficient Deep Recommendation Model Training with Flexible Embedding Communication},
+ url = {https://doi.org/10.1145/3589310},
+ volume = {1},
+ year = {2023}
+}

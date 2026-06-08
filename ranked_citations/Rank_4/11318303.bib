@@ -1,0 +1,14 @@
+@inproceedings{11318303,
+ abstract = {This paper presents a PRISMA-grounded survey of Natural Language Processing (NLP) methods for code review assistance and bug detection in multilingual, cross-repository settings. Adoption remains hindered by inflated gains from repository leakage, weak baselines, and missing calibration. The review applied dual-reviewer screening across IEEE Xplore, ACM Digital Library, Scopus, Web of Science, and arXiv, conducted quality appraisal, organized a task-signal-model taxonomy, and performed science mapping with meta-analysis where metrics align. Split integrity was audited with repositoryor project-grouped temporal partitions that prevent file or commit overlap; leakage controls included training-only vocabulary fitting and nested tuning with a temporal embargo. The corpus spans pull-request and issue datasets with linked reviews, SZZ-derived bug-inducing change corpora, Defects4Jlinked commits, review-comment threads, and multilingual repositories. The findings synthesize evidence that reported performance is often overstated by repository/topic leakage and uncalibrated thresholds; repository-grouped temporal splits alter model rankings relative to random splits; textual artifacts complement but do not replace code-aware signals; and calibrated classifiers reduce false alarms at comparable recall. The study proposes deployment-grade, reproducible standards: report Area Under the Precision-Recall Curve (AUPRC), F1score (F1), and Precision at k with calibration via Expected Calibration Error (ECE); enforce repository-grouped temporal splits; and document batching, cache, and explainability/logging policies with environment lock files and hashed prompts. The practical outcome is a set of templates and per-repository scorecards that align Continuous Integration/Continuous Delivery (CI/CD) and integrated development environment (IDE) constraints with evaluation, including a $\mathbf{1 0 0 ~ m s}$ pre-merge latency budget and tokens/sec plus cost per 1 k pull requests.},
+ author = {Thombre, Sudhir Manikrao and P, Kavitha Rani},
+ booktitle = {2025 International Conference on Computational Intelligence and Knowledge Economy (ICCIKE)},
+ doi = {10.1109/ICCIKE67021.2025.11318303},
+ issn = {},
+ keyword = {Surveys;Vocabulary;Codes;Reviews;Computer bugs;Throughput;Natural language processing;Calibration;Multilingual;Tuning;Code Review Automation;Bug-Inducing Change Detection;Natural Language Processing (NLP);RepositoryGrouped Temporal Splits;Cross-Repository Generalization;Probability Calibration (ECE);Precision at k,},
+ month = {Nov},
+ number = {},
+ pages = {253-258},
+ title = {Advances in Code Review and Bug Detection Using NLP},
+ volume = {},
+ year = {2025}
+}

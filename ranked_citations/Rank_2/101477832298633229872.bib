@@ -1,0 +1,17 @@
+@article{10.14778/3229863.3229872,
+ abstract = {PolarFS is a distributed file system with ultra-low latency and high availability, designed for the POLARDB database service, which is now available on the Alibaba Cloud. PolarFS utilizes a lightweight network stack and I/O stack in user-space, taking full advantage of the emerging techniques like RDMA, NVMe, and SPDK. In this way, the end-to-end latency of PolarFS has been reduced drastically and our experiments show that the write latency of PolarFS is quite close to that of local file system on SSD. To keep replica consistency while maximizing I/O throughput for PolarFS, we develop ParallelRaft, a consensus protocol derived from Raft, which breaks Raft's strict serialization by exploiting the out-of-order I/O completion tolerance capability of databases. ParallelRaft inherits the understand-ability and easy implementation of Raft while providing much better I/O scalability for PolarFS. We also describe the shared storage architecture of PolarFS, which gives a strong support for POLARDB.},
+ author = {Cao, Wei and Liu, Zhenjun and Wang, Peng and Chen, Sen and Zhu, Caifeng and Zheng, Song and Wang, Yuhui and Ma, Guoqing},
+ doi = {10.14778/3229863.3229872},
+ issn = {2150-8097},
+ issue_date = {August 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {14},
+ pages = {1849–1862},
+ publisher = {VLDB Endowment},
+ title = {PolarFS: an ultra-low latency and failure resilient distributed file system for shared storage cloud database},
+ url = {https://doi.org/10.14778/3229863.3229872},
+ volume = {11},
+ year = {2018}
+}

@@ -1,0 +1,18 @@
+@article{10.1162/coli_a_00339,
+ abstract = {Participants in an asynchronous conversation e.g., forum, e-mail interact with each other at different times, performing certain communicative acts, called speech acts e.g., question, request. In this article, we propose a hybrid approach to speech act recognition in asynchronous conversations. Our approach works in two main steps: a long short-term memory recurrent neural network LSTM-RNN first encodes each sentence separately into a task-specific distributed representation, and this is then used in a conditional random field CRF model to capture the conversational dependencies between sentences. The LSTM-RNN model uses pretrained word embeddings learned from a large conversational corpus and is trained to classify sentences into speech act types. The CRF model can consider arbitrary graph structures to model conversational dependencies in an asynchronous conversation. In addition, to mitigate the problem of limited annotated data in the asynchronous domains, we adapt the LSTM-RNN model to learn from synchronous conversations e.g., meetings, using domain adversarial training of neural networks. Empirical evaluation shows the effectiveness of our approach over existing ones: i LSTM-RNNs provide better task-specific representations, ii conversational word embeddings benefit the LSTM-RNNs more than the off-the-shelf ones, iii adversarial training gives better domain-invariant representations, and iv the global CRF model improves over local models.},
+ address = {Cambridge, MA, USA},
+ author = {Joty, Shafiq and Mohiuddin, Tasnim},
+ doi = {10.1162/coli_a_00339},
+ issn = {0891-2017},
+ issue_date = {December 2018},
+ journal = {Comput. Linguist.},
+ month = {December},
+ number = {4},
+ numpages = {36},
+ pages = {859–894},
+ publisher = {MIT Press},
+ title = {Modeling speech acts in asynchronous conversations: A neural-crf approach},
+ url = {https://doi.org/10.1162/coli_a_00339},
+ volume = {44},
+ year = {2018}
+}

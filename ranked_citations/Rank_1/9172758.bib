@@ -1,0 +1,14 @@
+@inproceedings{9172758,
+ abstract = {Maintaining tracks on High-Value Targets (HVTs) in dense multi-target environments remains a computationally challenging problem. Approaches must trade off hypothesis management with state estimation accuracy in the presence of finite sensing and computational capabilities. This problem becomes more difficult when sensors provide additional, infrequent features: information that correlates track states over long timescales such as target size and color, or unique identifiers such as a license plate. Traditional real-time Multi-Hypothesis Tracking (MHT) algorithms must prune hypotheses before feature information arrives, often removing the correct association hypothesis from the solution space. Graph-Based Track stitching (GBT) algorithms suffer from two related problems: they rely on an upstream tracking algorithm to correctly associate measurements across short timescales, and must still associate tracks in the presence of infrequent feature information. As a result, the HVT tracking problem requires correctly assigning reports to tracks on both short and long timescales. In this paper, we extend the Approximate Track Automata (ATA) algorithm to perform dynamic hypothesis management given a set of HVT hypotheses and feature information models. The original ATA algorithm applied a single strategy to manage the entire hypothesis space; we tailor that approach here given HVTs and target features. We compare traditional tracking metrics such as root mean square error, probability of track, and track purity for HVT and background targets. In addition, we investigate the effect of scaling the number of Integer Linear Program (ILP) variables, i.e. the number of MHT and ATA hypotheses, on these metrics. Interestingly, we note that while solving ILPs is (in general) NP-complete, the ILP constraint matrices and cost vectors contain structure that often results in efficient runtimes in practice. We offer possible explanations as to why the ILP problem structure allows this near-polynomial runtime.},
+ author = {Finn, Lucas and Schoenecker, Steven and Bookman, Lake and Grimes, John},
+ booktitle = {2020 IEEE Aerospace Conference},
+ doi = {10.1109/AERO47225.2020.9172758},
+ issn = {1095-323X},
+ keyword = {Target tracking;Sensitivity;Runtime;Heuristic algorithms;Automata;Kinematics;Sensor phenomena and characterization},
+ month = {March},
+ number = {},
+ pages = {1-9},
+ title = {Approximate Track Automata - Combining the Best of MHT and GBT for High Value Target Tracking},
+ volume = {},
+ year = {2020}
+}

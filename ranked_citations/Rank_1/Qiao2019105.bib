@@ -1,0 +1,15 @@
+@article{Qiao2019105,
+ abstract = {We present both sequential and data parallel approaches to build hierarchical minimum spanning forest (MSF) or tree (MST) in Euclidean space (EMSF/EMST) for applications whose input N points are uniformly or boundedly distributed in Euclidean space. Each iteration of the sequential approach takes O(N) time complexity through combining Borůvka's algorithm with an improved component-based neighborhood search algorithm, namely sliced spiral search, which is a newly proposed improvement to Bentley's spiral search for finding a component graph's closest outgoing point on the plane. It works based on the uniqueness property in Euclidean space, and allows O(1) time complexity for one search from a query point to find the component's closest outgoing point at different iterations of Borůka's algorithm. The data parallel approach includes a newly proposed two-direction breadth-first search (BFS) implementation on graphics processing unit (GPU) platform, which is specialized for selecting a spanning tree's minimum outgoing weight. This GPU two-direction parallel BFS enables a tree traversal operation to start from any one of its vertex acting as root. These GPU parallel implementations work by assigning N threads with one thread associated to one input point, one thread occupies O(1) local memory and the whole algorithm occupies O(N) global memory. Experiments are conducted on both uniformly distributed data sets and TSPLIB database. We evaluate computation time of the proposed approaches on more than 80 benchmarks with size N growing up to 10<sup>6</sup> points on personal laptop. © 2018 Elsevier B.V.},
+ author = {Qiao, Wen-bao and Créput, Jean-charles},
+ doi = {10.1016/j.asoc.2018.10.046},
+ journal = {Applied Soft Computing Journal},
+ note = {Cited by: 6},
+ pages = {105 - 120},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {GPU implementation of Borůvka's algorithm to Euclidean minimum spanning tree based on Elias method},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85058979996?origin=resultslist},
+ volume = {76},
+ year = {2019}
+}

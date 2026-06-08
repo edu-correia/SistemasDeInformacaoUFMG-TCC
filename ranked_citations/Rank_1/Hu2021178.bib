@@ -1,0 +1,14 @@
+@conference{Hu2021178,
+ abstract = {Key-value stores based on log-structured merge-tree (LSM-tree), e.g. LevelDB by Google and RocksDB by Facebook, have been widely used in a lot of cyber-physical systems scenarios to provide flexible data access and high performance. Compaction is a necessary operation to delete some invalid data, reduce the data size and improve the efficiency of reading and writing. However, compaction would stall write requests, which significantly degrades system performance. This paper studies the effect of compaction on tail latency that shows frequent latency spikes. These spikes would cause poor user experience and have already concerned by industrial researchers. Furthermore, the number of involved SSTables proportionally decides the height of latency spikes. We propose the limited compaction to only allow a part of SSTables involved in the compaction. We implement the limited compaction with a basic method to choose the SSTables randomly and a selective method to choose the SSTables according to their overlapped ranges with the next level. Experimental results on LevelDB with comprehensive benchmarks have shown that the proposed methods can effectively reduce the tail latency, while inducing an acceptable write amplification. © 2021 Owner/Author.},
+ author = {Hu, Yongchao and Du, Yajuan},
+ doi = {10.1145/3412841.3442073},
+ journal = {Proceedings of the ACM Symposium on Applied Computing},
+ note = {Cited by: 3},
+ pages = {178 - 181},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Reducing tail latency of LSM-tree based key-value store via limited compaction},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85104983596?origin=resultslist},
+ year = {2021}
+}

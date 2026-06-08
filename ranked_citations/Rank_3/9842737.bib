@@ -1,0 +1,14 @@
+@inproceedings{9842737,
+ abstract = {Java natively supports serialisation and deserialisation, features that are necessary to enable distributed systems to exchange Java objects. Deserialisation of data from malicious sources can lead to security exploits including remote code execution because by default Java does not validate deserialised data. In the absence of validation, a carefully crafted payload can trigger arbitrary functionality. The state-of-the-art general mitigation strategy for deserialisation exploits in Java is deserialisation filtering that validates the contents of an object input stream before the object is deserialised using user-provided filters. In this paper we describe a novel technique called ds-prefix for automatic synthesis of deserialisation filters (as regular expressions) from examples. We focus on synthesis of allowlists (permitted behaviours) as they provide a better level of security. ds-prefix is based on deserialisation heuristics and specifically targets synthesis of deserialisation allowlists. We evaluate our approach by executing ds-prefix on popular open-source systems and show that ds-prefix can produce filters preventing real CVEs using a small number of training examples. We also compare our approach with other synthesis tools which demonstrates that ds-prefix outperforms existing tools and achieves better F1-score.},
+ author = {Vorobyov, Kostyantyn and Gauthier, François and Bae, Sora and Krishnan, Padmanabhan and O'Donoghue, Rebecca},
+ booktitle = {2022 IEEE 46th Annual Computers, Software, and Applications Conference (COMPSAC)},
+ doi = {10.1109/COMPSAC54236.2022.00123},
+ issn = {0730-3157},
+ keyword = {Training;Java;Filtering;Synthesizers;Conferences;Merging;Security;Security;Synthesis;Regular expressions;Deserialisation filtering},
+ month = {June},
+ number = {},
+ pages = {736-745},
+ title = {Synthesis of Java Deserialisation Filters from Examples},
+ volume = {},
+ year = {2022}
+}

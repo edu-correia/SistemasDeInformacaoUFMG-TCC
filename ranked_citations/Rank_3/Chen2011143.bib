@@ -1,0 +1,14 @@
+@conference{Chen2011143,
+ abstract = {To achieve scalable data intensive analytics, we investigate methods to integrate general purpose analytic computation into a query pipeline using User Defined Functions (UDFs). However, an existing UDF cannot act as a block operator with chunk-wise input along the tuple-wise query processing pipeline, therefore unable to deal with the application semantics definable on the set of incoming tuples representing a single object or falling in a time window, and unable to leverage external computation engines for efficient batch processing. To enable the data intensive computation pipeline, we introduce a new kind of UDFs called Set-In Set-Out (SISO) UDFs. A SISO UDF is a block operator for processing the input tuples and returning the resulting tuples chunk by chunk. Operated in the query processing pipeline, a SISO UDF pools a chunk of input tuples, dispatches them to GPUs or an analytic engine in batch, materializes and then streams out the results. This behavior differentiates SISO UDF from all the existing ones, and makes efficient integration of analytic computation and data management feasible. We have implemented the SISO UDF framework by extending the PostgreSQL query engine, and further demonstrated the use of SISO UDF with GPU-enabled analytical query evaluation. Our experiments show that the proposed approach is scalable and efficient. © 2011 ACM.},
+ author = {Chen, Qiming and Wu, Ren and Hsu, Meichun and Zhang, Bin},
+ doi = {10.1145/2076623.2076641},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 3},
+ pages = {143 - 151},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Extend core UDF framework for GPU-enabled analytical query evaluation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84855306749?origin=resultslist},
+ year = {2011}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3805636,
+ abstract = {Retrieval services increasingly operate over continuously updated corpora, yet must keep latency and cost predictable. In practice, many pipelines rely on TTL-based caching with periodic refresh, which inevitably creates stale windows. We formalize the staleness-latency-cost tradeoff and prove a lower bound for periodic TTL refresh: the staleness violation rate is at least pdep(τ)/2, where pdep(τ) is the probability that a query depends on an update committed within the TTL interval tau. The bound follows from a refresh-phase argument and is stated for the periodic-refresh and dependency model analyzed in this paper.We introduce EviDex, a provenance-weighted evidence-path index that avoids periodic answer refresh by continuously compacting a log-structured commit stream into intent-partitioned evidence-path buckets. Queries retrieve ranked multi-hop evidence paths with provenance, yielding low-latency lookup with streaming consistency. We prove admissible pruning preserves exact top-B ranking (Lemma 1); in our study it reduces candidate paths by 67.3%.We conduct a large-scale measurement study on two workloads chosen to span a high-stakes bursty stream and a broad public revision stream. The clinical workload has 170K documents, and the Wikipedia workload contains 2.84M revision events. We compare against 12 baselines spanning streaming-aware caching, system-level incremental indexing, and production near-real-time search (OpenSearch). At T = 15 minutes, EviDex achieves 1.3% evidence-set violation on clinical and 1.1% on Wikipedia, compared to 2.4% and 2.1% for the strongest streaming-aware baseline (adaptive TTL). EviDex costs 0.68 per 1k queries on clinical, 42% cheaper than adaptive TTL at better freshness. At scale, on 16 nodes with 10M documents, the evidence-path lookup service (lookup-only; excluding LLM generation) reaches 1,856 q/s with p99 = 2.14s. We report this lookup-service scaling separately from the end-to-end clinical QA results.Finally, we validate end-to-end impact in a safety-critical clinical QA stress test with 800 questions rated by 5 physicians (ICC = 0.862). EviDex achieves 0.884 clinical correctness [0.860-0.908], with macro-SCER of 0.84%.},
+ address = {New York, NY, USA},
+ articleno = {38},
+ author = {Li, Rui and Cao, Shuang and Liu, Ruihua and Duprey, Alexandre},
+ doi = {10.1145/3805636},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {streaming retrieval, performance measurement, freshness, staleness, tradeoffs, scalability, provenance, online indexing, retrieval-augmented generation},
+ month = {May},
+ number = {2},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {EviDex: Provenance-Weighted Evidence-Path Indexing for Fresh and Auditable Retrieval under Continuous Updates},
+ url = {https://doi.org/10.1145/3805636},
+ volume = {10},
+ year = {2026}
+}

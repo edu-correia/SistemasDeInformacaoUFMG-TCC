@@ -1,0 +1,14 @@
+@inproceedings{11445818,
+ abstract = {Model merging has emerged as a promising approach for multi-task learning (MTL), offering a data-efficient alternative to conventional fine-tuning. However, with the rapid development of the open-source AI ecosystem and the increasing availability of fine-tuned foundation models, existing model merging methods face two key limitations: (i) They are primarily designed for in-house fine-tuned models, making them less adaptable to diverse model sources with partially unknown model and task information, (ii) They struggle to scale effectively when merging numerous model checkpoints. To address these challenges, we formulate model merging as a constrained optimization problem and introduce a novel approach: Frank-Wolfe Merging (FW-Merging). Inspired by Frank-Wolfe optimization, our approach iteratively selects the most relevant model in the pool to minimize a linear approximation of the objective function and then executes a local merging similar to the Frank-Wolfe update. The objective function is designed to capture the desired behavior of the target-merged model, while the fine-tuned candidate models define the constraint set. More importantly, FW-Merging serves as an orthogonal technique for existing merging methods, seamlessly integrating with them to further enhance accuracy performance. Our experiments show that FW-Merging scales across diverse model sources, remaining stable with 16 irrelevant models and improving by $\mathbf{1 5. 3 \%}$ with 16 relevant models on 20 CV tasks, while maintaining constant memory overhead-unlike the linear overhead of data-informed merging methods. Compared with the state-of-the-art approaches, FW-Merging surpasses the data-free merging method by 32.8% and outperforms the data-informed Adamerging by 8.39% when merging 20 ViT models. Our code is open-sourced at here.},
+ author = {Chen, Hao Mark and Hu, Shell Xu and Luk, Wayne and Hospedales, Timothy and Fan, Hongxiang},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.00324},
+ issn = {2380-7504},
+ keyword = {LoRa;Radio access networks;Regional area networks;Communication systems;Protocols;HTTP;Data communication;Radio communication;Amplitude shift keying;Internet;model merging;optimization;large language model},
+ month = {Oct},
+ number = {},
+ pages = {3390-3400},
+ title = {FW-Merging: Scaling Model Merging with Frank-Wolfe Optimization},
+ volume = {},
+ year = {2025}
+}

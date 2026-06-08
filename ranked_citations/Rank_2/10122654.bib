@@ -1,0 +1,14 @@
+@article{10122654,
+ abstract = {Point clouds have been employed extensively in machine perception applications. Farthest point sampling (FPS) is a critical kernel for point cloud processing. With the rapid growth of point cloud scale, FPS introduces a large number of memory accesses, which become the bottleneck of the large-scale point cloud processing. In this article, we present QuickFPS, an architecture and algorithm co-design of FPS in large-scale point clouds. First, we systemically analyze the characteristics of FPS and put forward a bucket-based FPS algorithm. The algorithm introduces a two-level tree data structure to organize the large-scale point cloud into multiple buckets. By using two mechanisms named merged computation and implicit computation for the buckets, the external memory accesses and compute cost are significantly reduced. Then, we design an efficient domain-specific accelerator for FPS in large-scale point clouds. The accelerator takes advantage of different forms of parallelism and further improves the accelerator’s efficiency. Finally, we evaluate QuickFPS with several widely used point cloud datasets, which include small-scale and large-scale point clouds (up to 120 000 points). Overall, QuickFPS achieves performance speedups of  $43.4\times$  and  $12.2\times$  compared to GTX 1080Ti GPU and state-of-the-art point cloud accelerator PointAcc, respectively.},
+ author = {Han, Meng and Wang, Liang and Xiao, Limin and Zhang, Hao and Zhang, Chenhao and Xu, Xiangrong and Zhu, Jianfeng},
+ doi = {10.1109/TCAD.2023.3274922},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Point cloud compression;Runtime;Neural networks;Graphics processing units;Parallel processing;Costs;Computer architecture;Architecture-algorithm co-design;farthest point sampling (FPS);k-d tree;point cloud},
+ month = {Nov},
+ number = {11},
+ pages = {4011-4024},
+ title = {QuickFPS: Architecture and Algorithm Co-Design for Farthest Point Sampling in Large-Scale Point Clouds},
+ volume = {42},
+ year = {2023}
+}

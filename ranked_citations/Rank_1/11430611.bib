@@ -1,0 +1,14 @@
+@article{11430611,
+ abstract = {Disaggregated memory (DM) architectures decouple compute servers (CSs) from memory servers (MSs) and rely on RDMA to provide low-latency access to remote memory. Building an efficient distributed B+Tree index for DM key–value (KV) stores is challenging: insert, delete, and update (IDU) operations must be highly concurrent without overloading MS CPUs, while structural modification operations (SMOs) such as splits and merges still require careful coordination. FAUNUS is a distributed B+Tree for RDMA-based DM KV-stores whose IDU fast path is non-blocking: IDU operations that do not trigger an SMO complete without acquiring locks, using only RDMA reads, writes, and atomics on compact KV-blocks that store a fingerprint and a pointer to an out-of-place KV-item. Conflicting IDUs on the same KV-block synchronize through RDMA compare-and-swap, allowing up to $C$ concurrent non-conflicting IDUs per leaf, where $C$ is the leaf capacity, while avoiding deadlocks due to failed or slow clients. SMOs are handled on a separate, infrequent slow path, where FAUNUS uses locks on internal nodes and leaves to safely perform structural changes. We evaluate FAUNUS with a detailed simulation-based analysis against state-of-the-art RDMA B+Tree designs such as Sherman and Marlin. FAUNUS reduces IDU latency, the number of RDMA operations, and RDMA atomic operations per IDU, while keeping SMOs rare under a wide range of workloads. As a result, overall performance is dominated by the non-blocking IDU fast path.},
+ author = {Vaisman, Bar and Belkar, Shahar and Stern, Yam and Cohen, Reuven},
+ doi = {10.1109/TCC.2026.3672997},
+ issn = {2168-7161},
+ journal = {IEEE Transactions on Cloud Computing},
+ keyword = {Servers;Trees (botanical);Indexes;Synchronization;Memory management;Concurrency control;Resource management;Layout;Architecture;Telecommunication traffic},
+ month = {},
+ number = {},
+ pages = {1-15},
+ title = {Faunus: A Non-Blocking Distributed B+Tree Index for RDMA-based Disaggregated Memory},
+ volume = {},
+ year = {2026}
+}

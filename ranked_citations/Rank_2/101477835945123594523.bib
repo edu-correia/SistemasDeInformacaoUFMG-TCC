@@ -1,0 +1,17 @@
+@article{10.14778/3594512.3594523,
+ abstract = {Distributed transaction systems incur extensive cross-node communication to execute and commit serializable OLTP transactions. As a result, their performance greatly suffers. Caching data at nodes that execute transactions can cut down remote reads. Batching transactions for validation and persistence can amortize the communication cost during committing. However, caching and batching can significantly increase the likelihood of conflicts, causing expensive aborts.In this paper, we develop Hackwrench to address the challenge of caching and batching. Instead of aborting conflicted transactions, Hackwrench tries to repair them using fine-grained re-execution by tracking the dependencies of operations among a batch of transactions. Tracked dependencies allow Hackwrench to selectively invalidate and re-execute only those operations necessary to "fix" the conflict, which is cheaper than aborting and executing an entire batch of transactions. Evaluations using TPC-C and other micro-benchmarks show that Hackwrench can outperform existing commercial and research systems including FoundationDB, Calvin, COCO, and Sundial under comparable settings.},
+ author = {Dong, Zhiyuan and Wang, Zhaoguo and Zhang, Xiaodong and Xu, Xian and Zhao, Changgeng and Chen, Haibo and Panda, Aurojit and Li, Jinyang},
+ doi = {10.14778/3594512.3594523},
+ issn = {2150-8097},
+ issue_date = {April 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {April},
+ number = {8},
+ numpages = {14},
+ pages = {1930–1943},
+ publisher = {VLDB Endowment},
+ title = {Fine-Grained Re-Execution for Efficient Batched Commit of Distributed Transactions},
+ url = {https://doi.org/10.14778/3594512.3594523},
+ volume = {16},
+ year = {2023}
+}

@@ -1,0 +1,13 @@
+@article{WU201743,
+ abstract = {Managing servers integration to realize distributed data computing framework is an important concern. Regardless of the underlying architecture and the actual distributed system’s complexity, such framework gives programmers an abstract view of systems to achieve variously data-intensive applications. However, some state-of-the-art frameworks need too much library dependencies and parameters configuration, or lack extensibility in application programming. Moreover, general framework’s precise design is a nontrivial work, which is fraught with challenges of task scheduling, message communication and computing efficiency, etc. To address these problems, we present a general, scalable and programmable parallel computing framework called SunwayMR, which only needs GCC/G++ environment. We argue it from the following aspects: (1) Distributed data partitioning, message communication and task organization are given to support transparent application execution on parallel hardware. By searching threads table of each node, the task gets an idle thread (with preferred node IP address) for executing data partition. A novel communication component, SunwayMRHelper, is employed to merge periodical results synchronously. Through identifying whether current node is master or slave, SunwayMR deals with the periodical task’s results differently. (2) As for optimizations, a simple fault tolerance is given to resume data-parallel applications, and thread-level stringstream is utilized to boost computing. To ensure ease-of-use, open Application Programming Interface (API) excerpts can be invoked by various of applications with fewer handwritten code than OpenMPI/MPI. We conduct extensively experimental studies to evaluate the performance of SunwayMR over real-world datasets. Results indicate that SunwayMR (runs on 16 computational nodes) outperforms Spark in various applications, and has good scaling with data sizes, nodes and threads.},
+ author = {Renke Wu and Linpeng Huang and Peng Yu and Haojie Zhou},
+ doi = {https://doi.org/10.1016/j.future.2017.01.018},
+ issn = {0167-739X},
+ journal = {Future Generation Computer Systems},
+ keyword = {Parallel processing, Computer software, Software engineering, Software development environment and technique, Distributed programming and environment, SunwayMR},
+ pages = {43-56},
+ title = {SunwayMR: A distributed parallel computing framework with convenient data-intensive applications programming},
+ url = {https://www.sciencedirect.com/science/article/pii/S0167739X17300584},
+ volume = {71},
+ year = {2017}
+}

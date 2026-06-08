@@ -1,0 +1,14 @@
+@article{11126868,
+ abstract = {Satellite-derived chlorophyll-a (Chl-a) data are crucial for monitoring and understanding aquatic ecosystems. However, existing satellite Chl-a products are typically sensor-specific, requiring separate model development and calibration for each sensor, which introduces inconsistencies and complicates multisensor data merging. This proof-of-concept study proposes a novel transformer-based framework to ingest spectral data from different sensors with one unified model. A key innovation of this model is to learn latent representations of the spectral response functions (SRF) and top-of-atmosphere (TOA) reflectance, as opposed to the typical approach to treat each band with a nominal central wavelength. In addition, this study presents a simple yet effective augmentation method for satellite match-up datasets containing TOA reflectance paired with field-measured Chl-a. By training on a combined augmented MODIS, MERIS, VIIRS, and OLCI matchup datasets, the transformer-based sensor-agnostic model achieves encouraging results. Specifically, the model-derived Chl-a aligns well with field observations, captures realistic oceanographic features, and maintains robust intersensor consistency. Although its performance is below that of four baseline models trained separately for each individual sensor, the transformer architecture has unmatched generalization capability due to inherent parameter-sharing mechanisms—such as shared feature embeddings across bands and uniform attention structures across samples. Beyond Chl-a a retrieval, this transformer-based architecture holds considerable promise as a foundation model for ocean color remote sensing, capable of flexible adaptation across diverse satellite platforms.},
+ author = {Zheng, Guangming},
+ doi = {10.1109/TGRS.2025.3599368},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Satellite broadcasting;Data models;Satellites;Transformers;Signal to noise ratio;Optical sensors;Training;MODIS;Image color analysis;Sea measurements;Deep learning;geophysical data;multisource data fusion;ocean;optical data;water},
+ month = {},
+ number = {},
+ pages = {1-21},
+ title = {Transformer-Based Sensor-Agnostic Model for Satellite Chlorophyll Retrieval},
+ volume = {63},
+ year = {2025}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3763144,
+ abstract = {In many programming paradigms, some program entities are only valid within delimited regions of the   program, such as resources that might be automatically deallocated at the end of specific scopes. Outside their   live scopes, the corresponding entities are no longer valid – they are permanently invalidated. Sometimes, even   within the live scope of a resource, the use of that resource must become temporarily invalid, such as when   iterating over a mutable collection, as mutating the collection during iteration might lead to undefined behavior.   However, high-level general-purpose programming languages rarely allow this information to be reflected on   the type level. Most previously proposed solutions to this problem have relied on restricting either the aliasing   or the capture of variables, which can reduce the expressiveness of the language. In this paper, we propose a   higher-rank polymorphic type-and-effect system to statically track the permanent and temporary invalidation   of sensitive values and resources, without any aliasing or capture restrictions. We use Boolean-algebraic types   (unions, intersections, and negations) to precisely model the side effects of program terms and guarantee   they are invalidation-safe. Moreover, we present a complete and practical type inference algorithm, whereby   programmers only need to annotate the types of higher-rank and polymorphically-recursive functions. Our   system, nicknamed InvalML, has a wide range of applications where tracking invalidation is needed, including   stack-based and region-based memory management, iterator invalidation, data-race-free concurrency, mutable   state encapsulation, type-safe exception and effect handlers, and even scope-safe metaprogramming.},
+ address = {New York, NY, USA},
+ articleno = {366},
+ author = {Gao, Cunyuan and Parreaux, Lionel},
+ doi = {10.1145/3763144},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {effect systems, higher-rank polymorphism, type inference},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {31},
+ publisher = {Association for Computing Machinery},
+ title = {A Lightweight Type-and-Effect System for Invalidation Safety: Tracking Permanent and Temporary Invalidation with Constraint-Based Subtype Inference},
+ url = {https://doi.org/10.1145/3763144},
+ volume = {9},
+ year = {2025}
+}

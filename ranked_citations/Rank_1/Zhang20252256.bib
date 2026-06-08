@@ -1,0 +1,16 @@
+@article{Zhang20252256,
+ abstract = {Approximate Membership Query (AMQ) filters such as Cuckoo filter are probabilistic data structures designed for set membership queries, with constant memory overhead and low time complexity. Previous works can enhance the cuckoo filter to support memory resizing and adapt to an increasing number of set elements. However, most of them can only support coarse-grained memory expansion at the filter or mini-filter level. In this paper, we propose a new Bucket-level Elastic Cuckoo Filter (BECF), to support the fine-grained bucket-level expansion. Our BECF combines cuckoo filter with consistent hashing technique: It divides a hash-ring into non-overlapping segments, and stores the elements mapped to a segment into the corresponding filter bucket. To allow a dynamic number of segments on a hash-ring, we support the splitting of a segment into two sub-segments. We design a segment re-assignment technique, that borrows extra bits from an element fingerprint to construct a longer segment prefix and re-assign it to another bucket. We minimize data movements between the corresponding buckets of the two sub-segments, and preserve the high time efficiency of a cuckoo filter after the expansion. Our experiments show that BECF attains 37% lower memory cost (while holding the same number of elements), 12% higher insertion speed and 20% faster query speed than other designs. We also describe how to apply set operations (intersection, union and subtraction) over two data sets encoded by BECF. Its advantages are the ability to merge two BECFs with different sizes and the low merging time cost. © 2025 IEEE.},
+ author = {Zhang, Yongchao and Xiao, Qingjun and Guo, Chenyang and Pan, Guannan and Huang, Jun and He, Kun and Miao, Yu and Li, Wenjin},
+ doi = {10.1109/TON.2025.3565545},
+ journal = {IEEE Transactions on Networking},
+ note = {Cited by: 0},
+ number = {5},
+ pages = {2256 - 2275},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Bucket-Level Elastic Cuckoo Filter for Dynamic Set Membership Query and Encoded Set Operations},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105019516950?origin=resultslist},
+ volume = {33},
+ year = {2025}
+}

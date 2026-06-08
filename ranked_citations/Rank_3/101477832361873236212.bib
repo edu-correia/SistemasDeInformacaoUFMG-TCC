@@ -1,0 +1,17 @@
+@article{10.14778/3236187.3236212,
+ abstract = {Interactive analytics increasingly involves querying for quantiles over sub-populations of high cardinality datasets. Data processing engines such as Druid and Spark use mergeable summaries to estimate quantiles, but summary merge times can be a bottleneck during aggregation. We show how a compact and efficiently mergeable quantile sketch can support aggregation workloads. This data structure, which we refer to as the moments sketch, operates with a small memory footprint (200 bytes) and computationally efficient (50ns) merges by tracking only a set of summary statistics, notably the sample moments. We demonstrate how we can efficiently estimate quantiles using the method of moments and the maximum entropy principle, and show how the use of a cascade further improves query time for threshold predicates. Empirical evaluation shows that the moments sketch can achieve less than 1 percent quantile error with 15\texttimes{} less overhead than comparable summaries, improving end query time in the MacroBase engine by up to 7\texttimes{} and the Druid engine by up to 60\texttimes{}.},
+ author = {Gan, Edward and Ding, Jialin and Tai, Kai Sheng and Sharan, Vatsal and Bailis, Peter},
+ doi = {10.14778/3236187.3236212},
+ issn = {2150-8097},
+ issue_date = {July 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {1647–1660},
+ publisher = {VLDB Endowment},
+ title = {Moment-based quantile sketches for efficient high cardinality aggregation queries},
+ url = {https://doi.org/10.14778/3236187.3236212},
+ volume = {11},
+ year = {2018}
+}

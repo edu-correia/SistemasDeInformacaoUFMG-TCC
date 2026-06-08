@@ -1,0 +1,12 @@
+@article{HAN2014210,
+ abstract = {Coarse Mesh Finite Difference (CMFD) has been widely adopted as an effective way to accelerate the source iteration of transport calculation. However in a core with hexagonal assemblies there are non-hexagonal meshes around the edges of assemblies, causing a problem for CMFD if the CMFD equations are still to be solved via tri-diagonal matrix inversion by simply scanning the whole core meshes in different directions. To solve this problem, we propose an unequal mesh CMFD formulation that combines the non-hexagonal cells on the boundary of neighboring assemblies into non-regular hexagonal cells. We also investigated the alternative hardware acceleration of using graphics processing units (GPU) with graphics card in a personal computer. The tool CUDA is employed, which is a parallel computing platform and programming model invented by the company NVIDIA for harnessing the power of GPU. To investigate and implement these two acceleration methods, a 2-D hexagonal core transport code using the method of characteristics (MOC) is developed. A hexagonal mini-core benchmark problem is established to confirm the accuracy of the MOC code and to assess the effectiveness of CMFD and GPU parallel acceleration. For this benchmark problem, the CMFD acceleration increases the speed 16 times while the GPU acceleration speeds it up 25 times. When used simultaneously, they provide a speed gain of 292 times.},
+ author = {Yu Han and Xiaofeng Jiang and Dezhong Wang},
+ doi = {https://doi.org/10.1016/j.nucengdes.2014.09.038},
+ issn = {0029-5493},
+ journal = {Nuclear Engineering and Design},
+ pages = {210-222},
+ title = {CMFD and GPU acceleration on method of characteristics for hexagonal cores},
+ url = {https://www.sciencedirect.com/science/article/pii/S0029549314005512},
+ volume = {280},
+ year = {2014}
+}

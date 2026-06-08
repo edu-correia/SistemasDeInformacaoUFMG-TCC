@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749703,
+ abstract = {Many modern key-value stores rely on an in-memory index to map the location of each data entry in storage. The size of this index often becomes a memory bottleneck that makes it difficult to scale the system to large data sizes. To address this problem, the state-of-the-art approach is to structure this index as a succinct perfect hash table using only ≈ 4 bits per key. The downside is that the hash table encoding is computationally expensive to parse and may harm overall system performance.We introduce Sphinx, a succinct perfect hash table reengineered for high performance on commodity CPUs. Sphinx is encoded in a manner that lends itself to efficient access using rank and select primitives, and it uses auxiliary metadata to decode common hash table slots instantaneously. Sphinx is also expandable and parallelizable. We compare Sphinx to the best alternatives and show that it leads to a 2x reduction in query latency, update latency, and memory footprint.},
+ author = {Maghrebi, Sajad Faghfoor and Dayan, Niv},
+ doi = {10.14778/3749646.3749703},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {4424–4437},
+ publisher = {VLDB Endowment},
+ title = {Sphinx: A Succinct Perfect Hash Index for x86},
+ url = {https://doi.org/10.14778/3749646.3749703},
+ volume = {18},
+ year = {2025}
+}

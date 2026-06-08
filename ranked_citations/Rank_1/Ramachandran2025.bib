@@ -1,0 +1,14 @@
+@conference{Ramachandran2025,
+ abstract = {Vision Graph Neural Networks (Vision GNNs, or ViGs) represent images as unstructured graphs, achieving state-of-the-art performance in computer vision tasks such as image classification, object detection, and instance segmentation. Dynamic Image Graph Construction (DIGC) builds image graphs by connecting patches (nodes) based on feature similarity, and is dynamically repeated in each ViG layer following GNN-based patch (node) feature updates. However, DIGC constitutes over 50% of end-to-end ViG inference latency, rising to 95% at high image resolutions, making it the dominant computational bottleneck. While hardware acceleration holds promise, prior works primarily optimize graph construction algorithmically, often compromising DIGC's flexibility, accuracy, or generality.To address these limitations, we propose a streaming, deeply pipelined FPGA accelerator for DIGC, featuring on-chip buffers that process input features in small, uniform blocks. Our design minimizes external memory traffic via localized computation and performs efficient parallel sorting with local merge-sort and global k-way merging directly on streaming input blocks via heap insertion. This modular architecture scales seamlessly across image resolutions, ViG layer types, and model sizes and variants, and supports DIGC across diverse ViG-based vision backbones. The design achieves high clock frequencies post place-and-route due to the statically configured parallelism minimizing critical path delay and delivers up to 16.6× and 6.8× speedups over optimized CPU and GPU DIGC baselines. © 2025 IEEE.},
+ author = {Ramachandran, Anvitha and Parikh, Dhruv and Prasanna, Viktor},
+ doi = {10.1109/HPEC67600.2025.11196178},
+ journal = {2025 IEEE High Performance Extreme Computing Conference, HPEC 2025},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating Dynamic Image Graph Construction on FPGA for Vision GNNs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021478956?origin=resultslist},
+ year = {2025}
+}

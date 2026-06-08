@@ -1,0 +1,18 @@
+@article{10.1145/3808666,
+ abstract = {Latency anomalies—persistent or transient increases in round-trip time (RTT)—are a common feature of residential Internet performance. When multiple users simultaneously experience anomalies at the same destination, it may indicate shared infrastructure issues, routing behavior, or congestion. However, inferring such shared behavior is challenging in practice. This is because the magnitude of these anomalies can vary significantly across devices, even within the same ISP and geographic area, and detailed network topology information is often unavailable due to platform limitations or privacy constraints. In this work, we study whether devices that experience a shared latency anomaly observe similar changes in RTT magnitude using a topology-agnostic approach. Using a four-month dataset of high-frequency RTT measurements from 99 residential probes in Chicago, we detect shared anomalies and analyze their consistency in amplitude and duration without relying on traceroutes or explicit path information. Building on prior change-point detection techniques, we find that many shared anomalies affect users similarly in amplitude, particularly within the same ISP. Leveraging this insight, we develop a sampling algorithm that reduces redundancy in detected anomalies by selecting representative devices under user-defined constraints. Our approach covers 95% of aggregate anomaly impact with less than half the total probes used in our deployment. Compared to two baselines, we show that our approach selects a significantly higher number of unique anomalies at similar coverage levels. Additionally, our analysis suggests that geographic diversity can play an important role in selecting probes for a single ISP even within a single city. These findings highlight the potential of using anomaly amplitude and duration as topology-independent signals for scalable monitoring, troubleshooting, and cost-effective sampling designs in residential Internet performance measurement.},
+ address = {New York, NY, USA},
+ articleno = {18},
+ author = {Sharma, Taveesh and Chu, Andrew and Schmitt, Paul and Bronzino, Francesco and Marwell, Nicole P. and Feamster, Nick},
+ doi = {10.1145/3808666},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Netw.},
+ keyword = {change point detection, latency, network observability, probe selection},
+ month = {June},
+ number = {CoNEXT2},
+ numpages = {25},
+ publisher = {Association for Computing Machinery},
+ title = {Less is More: Optimizing Probe Selection Using Shared Latency Anomalies},
+ url = {https://doi.org/10.1145/3808666},
+ volume = {4},
+ year = {2026}
+}

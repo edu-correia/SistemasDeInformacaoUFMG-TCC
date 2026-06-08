@@ -1,0 +1,14 @@
+@article{8057821,
+ abstract = {Although advanced motion vector prediction (AMVP) modes based on motion estimation (ME) are selected significantly less due to the merge mode newly adopted in the high-efficiency video coding (HEVC), integer ME (IME) still occupies a large amount of computation in HEVC because the HEVC supports a highly flexible block partitioning structure. Introduction of the merge mode in HEVC substantially affects the optimal search algorithm of IME. Therefore, this gives a chance to reduce the computational complexity of ME with marginal drop of the compression efficiency. This paper proposes a new IME algorithm that significantly reduces its search ranges. Computational complexity of the proposed algorithm is reduced without serious degradation in coding efficiency by obtaining additional accurate motion vector predictors (MVPs) in a bottom-up order and searching narrow regions around multiple MVPs. These bottom-up MVPs are obtained from the prediction units (PUs) in the coding units (CUs) in the hierarchically lower level, which share the pixel area either completely or partially with the current PU. Although the encoder should perform the proposed IME in a bottom-up order from the smallest CUs to the larger CUs, several other processes, such as fractional ME and merges mode are performed in a top-down order to exploit several fast algorithms already adopted in the HEVC test model encoder. To keep compatibility with HEVC standard, the bottom-up MVPs are utilized for only IME. The bitstream is generated using standard AMVP. According to the simulation results, it is confirmed that the proposed algorithm improves the accuracy of MVPs, which leads to the reduction of IME computational complexity up to 81.95% on average with the Bjøntegaard delta bitrate of 0.39%.},
+ author = {Kim, Tae Sung and Rhee, Chae Eun and Lee, Hyuk-Jae and Chae, Soo-Ik},
+ doi = {10.1109/TCSVT.2017.2759245},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Encoding;High efficiency video coding;Prediction algorithms;Motion estimation;Computational complexity;Algorithm design and analysis;High efficiency video coding (HEVC);integer motion estimation (IME);motion vector prediction (MVP);bottom-up approach},
+ month = {Dec},
+ number = {12},
+ pages = {3398-3411},
+ title = {Fast Integer Motion Estimation With Bottom-Up Motion Vector Prediction for an HEVC Encoder},
+ volume = {28},
+ year = {2018}
+}

@@ -1,0 +1,15 @@
+@article{Ramanathan200878,
+ abstract = {Specification inference tools typically mine commonalities among states at relevant program points. For example, to infer the invariants that must hold at all calls to a procedure p requires examining the state abstractions found at all call-sites to p. Unfortunately, existing approaches to building these abstractions require being able to explore all paths (either static or dynamic) to all of p's call-sites to derive specifications with any measure of confidence. Because programs that have complex control-flow structure may induce a large number of paths, naive path exploration is impractical. In this paper, we propose a new specification inference technique that allows us to efficiently explore statically all paths to a program point. Our approach builds static path profiles, profile information constructed by a static analysis that accumulates predicates valid along different paths to a program point. To make our technique tractable, we employ a summarization scheme to merge predicates at join points based on the frequency with which they occur on different paths. For example, predicates present on a majority of static paths to all call-sites of any procedure p forms the pre-condition of p. We have implemented a tool, marga, based on static path profiling. Qualitative analysis of the specifications inferred by marga indicates that it is more accurate than existing static mining techniques, can be used to derive useful specification even for APIs that occur infrequently (statically) in the program, and is robust against imprecision that may arise from examination of infeasible or infrequently occurring dynamic paths. A comparison of the specifications generated using marga with a dynamic specification inference engine based on cute, an automatic unit test generation tool, indicates that marga generates comparably precise specifications with smaller cost. © 2008 Springer-Verlag.},
+ author = {Ramanathan, Murali Krishna and Sen, Koushik and Grama, Ananth and Jagannathan, Suresh},
+ doi = {10.1007/978-3-540-69166-2_6},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1},
+ pages = {78 - 92},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Protocol inference using static path profiles},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/48949103756?origin=resultslist},
+ volume = {5079 LNCS},
+ year = {2008}
+}

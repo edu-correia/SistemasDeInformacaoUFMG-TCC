@@ -1,0 +1,14 @@
+@inproceedings{10444855,
+ abstract = {Compilers face an intrinsic tradeoff between compilation speed and code quality. The tradeoff is particularly stark in a dynamic setting where JIT compilation time contributes to application runtime. Many systems now employ multiple compilation tiers, where one tier offers fast compile speed while another has much slower compile speed but produces higher quality code. With proper heuristics on when to use each, the overall performance is better than using either compiler in isolation. At the introduction of WebAssembly into the Web platform in 2017, most engines employed optimizing compilers and pre-compiled entire modules before execution. Yet since that time, all Web engines have introduced new “baseline” compiler tiers for Wasm to improve startup time. Further, many new non-web engines have appeared, some of which also employ simple compilers. In this paper, we demystify single-pass compilers for Wasm, explaining their internal algorithms and tradeoffs, as well as providing a detailed empirical study of those employed in production. We show the design of a new single-pass compiler for a research Wasm engine that integrates with an in-place interpreter and host garbage collector using value tags, while also supporting flexible instrumentation. In experiments, we measure the effectiveness of optimizations targeting value tags and find, somewhat surprisingly, that the runtime overhead can be reduced to near zero. We also assess the relative compile speed and execution time of six baseline compilers and place these baseline compilers in a two-dimensional tradeoff space with other execution tiers for Wasm.},
+ author = {Titzer, Ben L.},
+ booktitle = {2024 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO57630.2024.10444855},
+ issn = {2643-2838},
+ keyword = {Codes;Runtime;Benchmark testing;Registers;Resource management;Engines;Optimization;compilers;JITs;single-pass;baseline;compilation time;tradeoff;instrumentation WebAssembly},
+ month = {March},
+ number = {},
+ pages = {207-220},
+ title = {Whose Baseline Compiler is it Anyway?},
+ volume = {},
+ year = {2024}
+}

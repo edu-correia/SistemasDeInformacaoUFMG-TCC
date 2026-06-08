@@ -1,0 +1,14 @@
+@article{7890416,
+ abstract = {Max-trees, or component trees, are graph structures that represent the connected components of an image in a hierarchical way. Nowadays, many application fields rely on images with high-dynamic range or floating point values. Efficient sequential algorithms exist to build trees and compute attributes for images of any bit depth. However, we show that the current parallel algorithms perform poorly already with integers at bit depths higher than 16 bits per pixel. We propose a parallel method combining the two worlds of flooding and merging max-tree algorithms. First, a pilot max-tree of a quantized version of the image is built in parallel using a flooding method. Later, this structure is used in a parallel leaf-to-root approach to compute efficiently the final max-tree and to drive the merging of the sub-trees computed by the threads. We present an analysis of the performance both on simulated and actual 2D images and 3D volumes. Execution times are about 20× better than the fastest sequential algorithm and speed-up goes up to 30-40 on 64 threads.},
+ author = {Moschini, Ugo and Meijster, Arnold and Wilkinson, Michael H. F.},
+ doi = {10.1109/TPAMI.2017.2689765},
+ issn = {1939-3539},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ keyword = {Merging;Algorithm design and analysis;Buildings;Parallel algorithms;Data structures;Dynamic range;Heuristic algorithms;Connected filters;hierarchical image representation;parallel algorithms},
+ month = {March},
+ number = {3},
+ pages = {513-526},
+ title = {A Hybrid Shared-Memory Parallel Max-Tree Algorithm for Extreme Dynamic-Range Images},
+ volume = {40},
+ year = {2018}
+}

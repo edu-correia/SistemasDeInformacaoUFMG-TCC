@@ -1,0 +1,14 @@
+@article{9121955,
+ abstract = {Instance segmentation is typically based on an object detection framework. Semantic segmentation is conducted on the bounding boxes that are returned by detectors. NMS (non-maximum suppression) is a common post-processing operation in instance segmentation and object detection tasks. It is typically used after bounding box regression to eliminate redundant bounding boxes. The evaluation criteria for object detection require that the bounding box be as close as possible to the ground truth, but they do not emphasize the integrity of the included object. However, sometimes the bounding boxes cannot contain the complete objects, and the parts beyond the bounding boxes cannot be correctly predicted in the subsequent semantic segmentation. To solve this problem, we propose the Syncretic-NMS algorithm. The algorithm takes traditional NMS as the first step and processes the bounding boxes obtained by traditional NMS, judges the neighboring bounding boxes of each bounding box, and combines the neighboring boxes that are strongly correlated with the corresponding bounding boxes. The coordinates of the merged box are the four coordinate extremes of the bounding box and the highly relevant neighboring box. The neighboring box with strong correlation is merged with the corresponding bounding box. Based on an analysis of the influences of corresponding factors, the criteria for correlation judgment are specified. Experimental results on the MS COCO dataset demonstrate that Syncretic-NMS can steadily increase the accuracy of instance segmentation, while experimental results on the Cityscapes dataset prove that the algorithm can adapt to application scenario changes. The computational complexity of Syncretic-NMS is the same as that of traditional NMS. Syncretic-NMS is easy to implement, requires no additional training, and can be easily integrated into the available instance segmentation framework.},
+ author = {Chu, Jun and Zhang, Yiqing and Li, Shaoming and Leng, Lu and Miao, Jun},
+ doi = {10.1109/ACCESS.2020.3003917},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Object detection;Image segmentation;Detectors;Correlation;Pipelines;Merging;Complexity theory;Instance segmentation;non-maximum suppression;correlation judgment;object localization;object detection},
+ month = {},
+ number = {},
+ pages = {114705-114714},
+ title = {Syncretic-NMS: A Merging Non-Maximum Suppression Algorithm for Instance Segmentation},
+ volume = {8},
+ year = {2020}
+}

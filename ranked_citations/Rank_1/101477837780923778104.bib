@@ -1,0 +1,17 @@
+@article{10.14778/3778092.3778104,
+ abstract = {Data-centric ML pipelines extend traditional machine learning (ML) pipelines—of feature transformations and ML model training—by outer loops for data cleaning, augmentation, and feature engineering to create high-quality input data. Existing lossless matrix compression applies lightweight compression schemes to numeric matrices and performs linear algebra operations such as matrix-vector multiplications directly on the compressed representation but struggles to efficiently rediscover structural data redundancy. Compressed operations are effective at fitting data in available memory, reducing I/O across the storage-memory-cache hierarchy, and improving instruction parallelism. The applied data cleaning, augmentation, and feature transformations provide a rich source of information about data characteristics such as distinct items, column sparsity, and column correlations. In this paper, we introduce BWARE—an extension of AWARE for workload-aware lossless matrix compression—that pushes compression through feature transformations and engineering to leverage information about structural transformations. Besides compressed feature transformations, we introduce a novel technique for lightweight morphing of a compressed representation into workload-optimized compressed representations without decompression. BWARE shows substantial end-to-end runtime improvements, reducing the execution time for training data-centric ML pipelines from days to hours.},
+ author = {Baunsgaard, Sebastian and Boehm, Matthias},
+ doi = {10.14778/3778092.3778104},
+ issn = {2150-8097},
+ issue_date = {November 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {15},
+ pages = {440–454},
+ publisher = {VLDB Endowment},
+ title = {Morphing-Based Compression for Data-Centric ML Pipelines},
+ url = {https://doi.org/10.14778/3778092.3778104},
+ volume = {19},
+ year = {2025}
+}

@@ -1,0 +1,13 @@
+@article{QI2025104465,
+ abstract = {High Dynamic Range (HDR) imaging through multi-exposure fusion aims to reconstruct the full scene radiance by merging multiple Low Dynamic Range (LDR) images. A critical challenge is the ghosting artifact, induced by object motion or camera shake in dynamic scenes. Current deep learning methods often lack fine-grained, pixel-level control and tend to apply uniform processing across simple and challenging regions, hindering effective adaptive computational resource allocation. This paper presents SDF-Former, a novel HDR deghosting network. Its core innovation is the Statistical Deviation Fuzzy Membership (SDFM) mechanism, which uses fuzzy logic to quantify the statistical deviation of local pixel features. This enables the precise identification of challenging regions, such as motion edges and saturated areas, providing pixel-level difficulty awareness. To leverage this awareness, we design a cross-domain collaborative framework with a FEM and a FAT. This framework integrates the strengths of spatial-domain feature alignment with frequency-domain global modeling. The membership map from SDFM acts as an adaptive gating signal, selectively activating the computationally demanding FAT module. This approach directs global context modeling to focus more intensively on critical regions, thus ensuring inference efficiency. Extensive evaluations on public HDR datasets demonstrate that SDF-Former achieves state-of-the-art performance in both quantitative metrics and visual quality, showing clear advantages in complex scenarios involving large-scale motion and extreme exposures. By fusing fuzzy statistics-based, pixel-level adaptive control with efficient cross-domain processing, SDF-Former provides a computationally optimized solution for high-quality dynamic HDR reconstruction.},
+ author = {Ying Qi and Zhaoyuan Huang and Qiushi Li and Jian Li and Teng Wan and Qiang Zhang},
+ doi = {https://doi.org/10.1016/j.cag.2025.104465},
+ issn = {0097-8493},
+ journal = {Computers & Graphics},
+ keyword = {High dynamic range imaging, Deghosting, Fuzzy membership, Cross-domain fusion, Transformer, Adaptive computation},
+ pages = {104465},
+ title = {SDF-Former: A cross-domain HDR deghosting network with Statistical Deviation Fuzzy Membership},
+ url = {https://www.sciencedirect.com/science/article/pii/S0097849325003061},
+ volume = {133},
+ year = {2025}
+}

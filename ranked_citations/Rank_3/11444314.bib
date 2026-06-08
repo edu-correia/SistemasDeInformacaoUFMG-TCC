@@ -1,0 +1,14 @@
+@inproceedings{11444314,
+ abstract = {To advance real-world fashion image editing, we analyze existing two-stage pipelines-mask generation followed by diffusion-based editing-which overly prioritize generator optimization while neglecting mask controllability. This results in two critical limitations: I) poor user-defined flexibility (coarse-grained human masks restrict edits to predefined regions like upper torso; fine-grained clothes masks preserve poses but forbid style/length customization). II) weak pose robustness (mask generators fail due to articulated poses and miss rare regions like waist, while human parsers remain limited by predefined categories). To address these gaps, we propose Pose-Star, a framework that dynamically recomposes body structures (e.g., neck, chest, etc.) into anatomy-aware masks (e.g., chest-length) for user-defined edits. In Pose-Star, we calibrate diffusion-derived attention (Star tokens) via skeletal keypoints to enhance rare structure localization in complex poses, suppress noise through phase-aware analysis of attention dynamics (Convergence → Stabilization → Divergence) with threshold masking and sliding-window fusion, and refine edges via cross-self attention merging and Canny alignment. This work bridges controlled benchmarks and open-world demands, pioneering anatomy-aware, pose-robust editing and laying the foundation for industrial fashion image editing.},
+ author = {Dong, Yuran and Ye, Mang},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01468},
+ issn = {2380-7504},
+ keyword = {Filtering;Filters;Circuits;Circuits and systems;Feedback;Location awareness;Pixel;Videos;Protocols;Mobile communication;image editing;fashion image editing;user-defined editing region;pose robustness;stable diffusion},
+ month = {Oct},
+ number = {},
+ pages = {1-10},
+ title = {Pose-Star: Anatomy-Aware Editing for Open-World Fashion Images},
+ volume = {},
+ year = {2025}
+}

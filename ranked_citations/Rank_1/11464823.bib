@@ -1,0 +1,14 @@
+@inproceedings{11464823,
+ abstract = {Existing KV cache compression methods generally operate on discrete tokens or non-semantic chunks. However, such approaches often lead to semantic fragmentation, where linguistically coherent units are disrupted, causing irreversible information loss and degradation in model performance. To address this, we introduce SemantiCache, a novel compression framework that preserves semantic integrity by aligning the compression process with the semantic hierarchical nature of language. Specifically, we first partition the cache into semantically coherent chunks by delimiters, which are natural semantic boundaries. Within each chunk, we introduce a computationally efficient Greedy Seed-Based Clustering (GSC) algorithm to group tokens into semantic clusters. These clusters are further merged into semantic cores, enhanced by a Proportional Attention mechanism that re-balances the reduced attention contributions of the merged tokens. Extensive experiments across diverse benchmarks and models demonstrate that SemantiCache accelerates the decoding stage of inference by up to 2.61× and substantially reduces memory footprint, while maintaining performance comparable to the original model.},
+ author = {Wu, Shunlong and Lin, Hai and Chen, Shaoshen and Lu, Tingwei and Zeng, Yongqin and Zhan, Shaoxiong and Zheng, Hai-Tao and Kim, Hong-Gee},
+ booktitle = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+ doi = {10.1109/ICASSP55912.2026.11464823},
+ issn = {2379-190X},
+ keyword = {Protocols;HTTP;Wide area networks;Communication systems;Computer networks;Large language models;Machine learning;Attention mechanisms;Deep learning;Artificial intelligence;Large Language Models;KV Cache Compression;Efficient Inference},
+ month = {May},
+ number = {},
+ pages = {19562-19566},
+ title = {SemantiCache: Efficient KV Cache Compression Via Semantic Chunking and Clustered Merging},
+ volume = {},
+ year = {2026}
+}

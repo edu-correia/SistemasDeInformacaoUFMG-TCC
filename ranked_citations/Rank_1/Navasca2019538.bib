@@ -1,0 +1,14 @@
+@conference{Navasca2019538,
+ abstract = {Big Data systems are typically implemented in object-oriented languages such as Java and Scala due to the quick development cycle they provide. These systems are executed on top of a managed runtime such as the Java Virtual Machine (JVM), which requires each data item to be represented as an object before it can be processed. This representation is the direct cause of many kinds of severe ineiciencies. We developed Gerenuk, a compiler and runtime that aims to enable a JVM-based data-parallel system to achieve near-native eiciency by transforming a set of statements in the system for direct execution over inlined native bytes. The key insight leading to Gerenuk’s success is two-fold: (1) analytics workloads often use immutable and conined data types. If we speculatively optimize the system and user code with this assumption, the transformation can be made tractable. (2) The low of data starts at a deserialization point where objects are created from a sequence of native bytes and ends at a serialization point where they are turned back into a byte sequence to be sent to the disk or network. This low naturally deines a speculative execution region (SER) to be transformed. Gerenuk compiles a SER speculatively into a version that can operate directly over native bytes that come from the disk or network. The Gerenuk runtime aborts the SER execution upon violations of the immutability and coninement assumption and switches to the slow path by deserializing the bytes and re-executing the original SER. Our evaluation on Spark and Hadoop demonstrates promising results. © 2019 Copyright held by the owner/author(s).},
+ author = {Navasca, Christian and Cai, Cheng and Nguyen, Khanh and Demsky, Brian and Lu, Shan and Kim, Miryung and Xu, Guoqing Harry},
+ doi = {10.1145/3341301.3359643},
+ journal = {SOSP 2019 - Proceedings of the 27th ACM Symposium on Operating Systems Principles},
+ note = {Cited by: 26; All Open Access; Gold Open Access},
+ pages = {538 - 553},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Gerenuk: Thin computation over big native data using speculative program transformation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85076752337?origin=resultslist},
+ year = {2019}
+}

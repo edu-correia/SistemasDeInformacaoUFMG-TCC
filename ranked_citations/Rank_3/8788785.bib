@@ -1,0 +1,14 @@
+@inproceedings{8788785,
+ abstract = {Several applications in urban planning, ride-sharing or marketing, require access to the location popularity of a geographical area (e.g., city block, city, county) in near real-time and at different resolutions. To conceptualize such an access, imagine a visualization tool to view a heatmap of location popularity of a region on-the-fly as a user interacts seamlessly by zooming in and out. The access method required to enable such a seamless visualization must support: 1) updating the heatmap cells frequently as the raw data (e.g., check-ins) arrives at a high rate in a streaming fashion, and 2) splitting and merging the adjacent cells quickly to support zooming in and out, respectively. This is challenging because the most useful metric for location popularity, location entropy, requires counting the number of unique visits per user, and hence: 1) a large data structure should be maintained and updated per cell, and 2) the adjacent cells must be aggregated/disaggregated quickly while the unique visits are not additive. Due to these challenges, the previous techniques for OLAP cubes, streaming sketches and index structures are not effective. In this paper, we propose a new index structure called MR-Cube that approximates the popularity by maintaining sketches of streamed data per cell, supports time-decay for older visits and aggregates the non-additive location popularity quickly and accurately at different resolutions. We evaluate the accuracy and efficiency of MR-Cube using real-world and synthetic datasets and show its utility for our application.},
+ author = {Constantinou, George and Anastasiou, Chrysovalantis and Stripelis, Dimitris and Shahabi, Cyrus},
+ booktitle = {2019 20th IEEE International Conference on Mobile Data Management (MDM)},
+ doi = {10.1109/MDM.2019.00-77},
+ issn = {2375-0324},
+ keyword = {Measurement;Data structures;Indexes;Spatial resolution;Merging;Entropy;Heating systems;location popularity, location entropy, approximation},
+ month = {June},
+ number = {},
+ pages = {27-36},
+ title = {MR-Cubes: On-the-Fly Computation of Location Popularity from Check-in Data Streams},
+ volume = {},
+ year = {2019}
+}

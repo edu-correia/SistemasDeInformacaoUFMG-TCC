@@ -1,0 +1,14 @@
+@inproceedings{8644531,
+ abstract = {Deeper models and larger datasets are two major ingredients for applying deep learning (DL) on real-world problems, which inevitably shifts model training from on a single GPU card to on a GPU clusters due to limited GPU memory and time-to-solution requirements. High-speed low-latency RDMA-capable network fabrics like Infiniband and RoCE play an important role on coping with enoumous data exchanged during training. DL frameworks are built upon these fabrics with various APIs including IPoIB, MPI and RDMA Verbs. Tradeoffs are made between performance and usability when adapting DL frameworks onto RDMA-capable networks, which may result in high-performance yet hard-to-maintain and hard-to-merge code if improper design choices are made. This paper presents our approach to adapt MXNet, a modular versatile DL framework onto RDMA-capable networks. Dividing the training process on MXN et into P2P communication and A11Reduce commnunication, we add incremental optimizations on its message passing code. Experiments show that our approach exhibits near-linear speedups, whose parallel efficiency reaches 96% compared to 53% of the original IPoIB version when scaling to 100 GPU cards. In contrast to other MPI-based porting approach, our modifications are limited within MXNet's Parameter Server module, which is transparent for upper-layer operations, thus making no sacrifice on features like auto recovery and user-controlled consistency view.},
+ author = {Liu, Chang and Wei, Jianwen and Wang, Yi-Chao and Wen, Minhua and See, Simon and Lin, James},
+ booktitle = {2018 IEEE 24th International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/PADSW.2018.8644531},
+ issn = {1521-9097},
+ keyword = {Training;Servers;Deep learning;Graphics processing units;Ethernet;Computational modeling;Fabrics;RDMA;Deep Learning;network},
+ month = {Dec},
+ number = {},
+ pages = {473-480},
+ title = {Optimizing Deep Learning Frameworks Incrementally to Get Linear Speedup: A Comparison Between IPoIB and RDMA Verbs},
+ volume = {},
+ year = {2018}
+}

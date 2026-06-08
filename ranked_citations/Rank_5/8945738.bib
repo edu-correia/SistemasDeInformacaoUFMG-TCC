@@ -1,0 +1,14 @@
+@inproceedings{8945738,
+ abstract = {A code clone (in short, clone) is a code fragment that is identical or similar to other code fragments in source code. The presence of clone is known as bad smell, which is phenomena of source code to be refactored. A motivation of refactoring (merging) clones is to reduce the size of source code. An existing study proposed a technique to estimate reduced lines of code by merging clones; however, there are two issues in the existing technique: (1) the existing technique does not consider the refactorability of clones in spite that it is difficult or even impossible to merge some clones due to the limitation of programming languages; (2) in the case that multiple clones are overlapping, the existing technique only considers one of them can be merged. Due to the above issues, estimated reducible LoC is occasionally different from the actual number. Consequently, in this research, we propose a new technique to calculate a reducible LoC. The proposed technique is free from the two issues, and it calculates a reducible LoC fully automatically. The proposed technique performs a loop processing of (a) detecting clones, (b) merging them, (c) compiling the edited source files, and (d) testing them. After finishing the loop, reducible LoC is calculated from the edited source files. This paper also includes comparison results of the proposed technique and the existing one. In the comparisons, we confirmed that a reducible LoC which was calculated with considering refactorability is 25% of a reducible LoC which was estimated without considering refactorability. We also confirmed that the proposed technique was able to merge clones that were not counted in the existing technique.},
+ author = {Nakagawa, Tasuku and Higo, Yoshiki and Matsumoto, Junnosuke and Kusumoto, Shinji},
+ booktitle = {2019 26th Asia-Pacific Software Engineering Conference (APSEC)},
+ doi = {10.1109/APSEC48747.2019.00046},
+ issn = {2640-0715},
+ keyword = {Cloning;Merging;Computer languages;Maintenance engineering;Tools;Testing;Software systems;Software maintenance;code clone;refactoring},
+ month = {Dec},
+ number = {},
+ pages = {284-291},
+ title = {How Compact Will My System Be? A Fully-Automated Way to Calculate LoC Reduced by Clone Refactoring},
+ volume = {},
+ year = {2019}
+}

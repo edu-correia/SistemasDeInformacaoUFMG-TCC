@@ -1,0 +1,18 @@
+@article{10.1145/3675371,
+ abstract = {A concurrent binary tree (CBT) is a GPU-friendly data-structure suitable for the generation of bisection based terrain tessellations, i.e., adaptive triangulations over square domains. In this paper, we expand the benefits of this data-structure in two respects. First, we show how to bring bisection based tessellations to arbitrary polygon meshes rather than just squares. Our approach consists of mapping a triangular subdivision primitive, which we refer to as a bisector, to each halfedge of the input mesh. These bisectors can then be subdivided adaptively to produce conforming triangulations solely based on halfedge operators. Second, we alleviate a limitation that restricted the triangulations to low subdivision levels. We do so by using the CBT as a memory pool manager rather than an implicit encoding of the triangulation as done originally. By using a CBT in this way, we concurrently allocate and/or release bisectors during adaptive subdivision using shared GPU memory. We demonstrate the benefits of our improvements by rendering planetary scale geometry out of very coarse meshes. Performance-wise, our triangulation method evaluates in less than 0.2ms on console-level hardware.},
+ address = {New York, NY, USA},
+ articleno = {31},
+ author = {Benyoub, Anis and Dupuy, Jonathan},
+ doi = {10.1145/3675371},
+ issue_date = {August 2024},
+ journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+ keyword = {GPU, level-of-detail, real-time, rendering, subdivision},
+ month = {August},
+ number = {3},
+ numpages = {18},
+ publisher = {Association for Computing Machinery},
+ title = {Concurrent Binary Trees for Large-Scale Game Components},
+ url = {https://doi.org/10.1145/3675371},
+ volume = {7},
+ year = {2024}
+}

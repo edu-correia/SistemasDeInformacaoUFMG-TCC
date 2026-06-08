@@ -1,0 +1,18 @@
+@article{10.1145/3715729,
+ abstract = {Scalable static analyzers are popular tools for finding incorrect, inefficient, insecure, and hard-to-maintain code early during the development process. Because not all warnings reported by a static analyzer are immediately useful to developers, many static analyzers provide a way to suppress warnings, e.g., in the form of special comments added into the code. Such suppressions are an important mechanism at the interface between static analyzers and software developers, but little is currently known about them. This paper presents the first in-depth empirical study of suppressions of static analysis warnings, addressing questions about the prevalence of suppressions, their evolution over time, the relationship between suppressions and warnings, and the reasons for using suppressions. We answer these questions by studying projects written in three popular languages and suppressions for warnings by four popular static analyzers. Our findings show that (i) suppressions are relatively common, e.g., with a total of 7,357 suppressions in 46 Python projects, (ii) the number of suppressions in a project tends to continuously increase over time, (iii) surprisingly, 50.8% of all suppressions do not affect any warning and hence are practically useless, (iv) some suppressions, including useless ones, may unintentionally hide future warnings, and (v) common reasons for introducing suppressions include false positives, suboptimal configurations of the static analyzer, and misleading warning messages. These results have actionable implications, e.g., that developers should be made aware of useless suppressions and the potential risk of unintentional suppressing, that static analyzers should provide better warning messages, and that static analyzers should separately categorize warnings from third-party libraries.},
+ address = {New York, NY, USA},
+ articleno = {FSE014},
+ author = {Hu, Huimin and Wang, Yingying and Rubin, Julia and Pradel, Michael},
+ doi = {10.1145/3715729},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Static code analysis, false positives, warning management},
+ month = {June},
+ number = {FSE},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {An Empirical Study of Suppressed Static Analysis Warnings},
+ url = {https://doi.org/10.1145/3715729},
+ volume = {2},
+ year = {2025}
+}

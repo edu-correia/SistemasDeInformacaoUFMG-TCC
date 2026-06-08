@@ -1,0 +1,18 @@
+@article{10.1145/3290387,
+ abstract = {Distributed system replication is widely used as a means of fault-tolerance and scalability. However, it provides a spectrum of consistency choices that impose a dilemma for clients between correctness, responsiveness and availability. Given a sequential object and its integrity properties, we automatically synthesize a replicated object that guarantees state integrity and convergence and avoids unnecessary coordination. Our approach is based on a novel sufficient condition for integrity and convergence called well-coordination that requires certain orders between conflicting and dependent operations. We statically analyze the given sequential object to decide its conflicting and dependent methods and use this information to avoid coordination. We present novel coordination protocols that are parametric in terms of the analysis results and provide the well-coordination requirements. We implemented a tool called Hamsaz that can automatically analyze the given object, instantiate the protocols and synthesize replicated objects. We have applied Hamsaz to a suite of use-cases and synthesized replicated objects that are significantly more responsive than the strongly consistent baseline.},
+ address = {New York, NY, USA},
+ articleno = {74},
+ author = {Houshmand, Farzin and Lesani, Mohsen},
+ doi = {10.1145/3290387},
+ issue_date = {January 2019},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Consistency, Distributed Systems, Invariant-Preserving, Program Synthesis, Well-Coordination},
+ month = {January},
+ number = {POPL},
+ numpages = {32},
+ publisher = {Association for Computing Machinery},
+ title = {Hamsaz: replication coordination analysis and synthesis},
+ url = {https://doi.org/10.1145/3290387},
+ volume = {3},
+ year = {2019}
+}

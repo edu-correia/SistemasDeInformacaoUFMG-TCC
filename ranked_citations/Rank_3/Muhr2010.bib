@@ -1,0 +1,14 @@
+@conference{Muhr2010,
+ abstract = {We present our hybrid system for the PAN challenge at CLEF 2010. Our system performs plagiarism detection for translated and non-translated externally as well as intrinsically plagiarized document passages. Our external plagiarism detection approach is formulated as an information retrieval problem, using heuristic post processing to arrive at the final detection results. For the retrieval step, source documents are split into overlapping blocks which are indexed via a Lucene instance. Suspicious documents are similarly split into consecutive overlapping boolean queries which are performed on the Lucene index to retrieve an initial set of potentially plagiarized passages. For performance reasons queries might get rejected via a heuristic before actually being executed. Candidate hits gathered via the retrieval step are further post-processed by performing sequence analysis on the passages retrieved from the index with respect to the passages used for querying the index. By applying several merge heuristics bigger blocks are formed from matching sequences. German and Spanish source documents are first translated using word alignment on the Europarl corpus before entering the above detection process. For each word in a translated document several translations are produced. Intrinsic plagiarism detection is done by finding major changes in style measured via word suffixes after the documents have been partitioned by an linear text segmentation algorithm. Our approach lead us to the third overall rank with an overall score of 0.6948.},
+ author = {Muhr, Markus and Kern, Roman and Zechner, Mario and Granitzer, Michael},
+ journal = {CEUR Workshop Proceedings},
+ note = {Cited by: 13},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {External and intrinsic plagiarism detection using a cross-lingual retrieval and segmentation system: Lab report for PAN at CLEF 2010},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84922032114?origin=resultslist},
+ volume = {1176},
+ year = {2010}
+}

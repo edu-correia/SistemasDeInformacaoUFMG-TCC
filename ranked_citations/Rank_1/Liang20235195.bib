@@ -1,0 +1,14 @@
+@conference{Liang20235195,
+ abstract = {Video Question Answering (VideoQA) aims to comprehend intricate relationships, actions, and events within video content, as well as the inherent links between objects and scenes, to answer text-based questions accurately. Transferring knowledge from the cross-modal pre-trained model CLIP is a natural approach, but its dual-tower structure hinders fine-grained modality interaction, posing challenges for direct application to VideoQA tasks. To address this issue, we introduce a Language-Guided Visual Aggregation (LGVA) network. It employs CLIP as an effective feature extractor to obtain language-aligned visual features with different granularities and avoids resource-intensive video pre-training. The LGVA network progressively aggregates visual information in a bottom-up manner, focusing on both regional and temporal levels, and ultimately facilitating accurate answer prediction. More specifically, it employs local cross-attention to combine pre-extracted question tokens and region embeddings, pinpointing the object of interest in the question. Then, graph attention is utilized to aggregate regions at the frame level and integrate additional captions for enhanced detail. Following this, global cross-attention is used to merge sentence and frame-level embeddings, identifying the video segment relevant to the question. Ultimately, contrastive learning is applied to optimize the similarities between aggregated visual and answer embeddings, unifying upstream and downstream tasks. Our method conserves resources by avoiding large-scale video pre-training and simultaneously demonstrates commendable performance on the NExT-QA, MSVD-QA, MSRVTT-QA, TGIF-QA, and ActivityNet-QA datasets, even outperforming some end-to-end trained models. Our code is available at https://github.com/ecoxial2007/LGVA-VideoQA. © 2023 ACM.},
+ author = {Liang, Xiao and Wang, Di and Wang, Quan and Wan, Bo and An, Lingling and He, Lihuo},
+ doi = {10.1145/3581783.3613909},
+ journal = {MM 2023 - Proceedings of the 31st ACM International Conference on Multimedia},
+ note = {Cited by: 7},
+ pages = {5195 - 5203},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Language-Guided Visual Aggregation Network for Video Question Answering},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179555041?origin=resultslist},
+ year = {2023}
+}

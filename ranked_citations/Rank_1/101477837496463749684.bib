@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749684,
+ abstract = {Understanding the causal relationships between treatments and outcomes is fundamental in various areas. Causal inference aims to estimate the effect of one variable on another, and critically relies on access to those variables as well as the key confounders. Unfortunately, data analysts often start with datasets lacking these columns, leading to incorrect estimations. Relational data repositories hold significant potential to augment such datasets with an admissible set of confounders necessary for causal analysis. While recent work has advocated for this potential, these approaches face notable limitations. They either assume the existence of a complete causal diagram over all datasets in the repository, which is impractical; rely on computationally infeasible techniques that do not scale to large data repositories with many features; or can only detect confounders in the absence of causal relations, and are thus ineffective when a causal effect exists.We observe that the asymmetry between causes and effects used in causal discovery can be exploited to directly identify confounders for causal queries. In this paper, we establish a connection between the existence of confounders and the presence of unconfounded ancestors of the treatment variable in the underlying causal diagram—without requiring access to the diagram. This makes it feasible to iteratively discover confounders until an admissible set is constructed. We propose Suna, a highly optimized, GPU-compatible system that implements a novel end-to-end algorithm for discovering confounders within large relational data repositories. Experiments on both real-world and synthetic datasets demonstrate that our system effectively discovers high-quality confounders. Furthermore, Suna employs algorithmic optimizations to accelerate confounder discovery without materializing joins. Our experiments show that Suna finds high-quality confounders while running &gt;100x faster than existing confounder discovery systems.},
+ author = {Liu, Jiaxiang and Xia, Siyuan and Alabi, Daniel and Wu, Eugene},
+ doi = {10.14778/3749646.3749684},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {4158–4170},
+ publisher = {VLDB Endowment},
+ title = {Suna: Scalable Causal Confounder Discovery over Relational Data},
+ url = {https://doi.org/10.14778/3749646.3749684},
+ volume = {18},
+ year = {2025}
+}

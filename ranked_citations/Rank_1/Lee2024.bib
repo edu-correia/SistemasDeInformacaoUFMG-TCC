@@ -1,0 +1,13 @@
+@conference{Lee2024,
+ abstract = {Flash memory is the de facto standard for data persistence in data-intensive systems. Despite its benefits, this type of memory has at least one severe disadvantage: it is offered only as part of tightly closed Solid-State Drives (SSDs). To access an SSD, applications need to resort to one of many possible I/O frameworks, which themselves are wrappers around a block interface abstraction, the NVMe standard. These levels of indirection impact how applications are structured and prevent them from benefiting from the full power of Flash-based devices. In this paper, we argue that SSDs should instead interact with applications via CXL. CXL is a new technology driven by an Intel-led consortium that allows systems to maintain coherence between a host’s memory and memory from attached peripherals. With CXL, a device can expose a range of Flash-backed addresses through the server’s memory. One implementation option is to allow applications to read and write to that range and let the device convert them to Flash operations. In our SSD, however, we pick a different option. The device exposes what we call a Database Kernel (DBK) through a CXL-backed memory range. Read/writes against a kernel would trigger database-centric computations that the kernel would perform inside the device. We show examples of DBKs to support different database functionalities and discuss their benefits. We believe that CXL and Database Kernels can support a new generation of heterogeneous database platforms with unprecedented efficiency, performance, and functionality. © 2024 CIDR. All Rights Reserved.},
+ author = {Lee, Sangjin and Lerner, Alberto and Bonnet, Philippe and Cudré-Mauroux, Philippe},
+ journal = {14th Conference on Innovative Data Systems Research, CIDR 2024},
+ note = {Cited by: 16},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Database Kernels: Seamless Integration of Database Systems and Fast Storage via CXL},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105029830438?origin=resultslist},
+ year = {2024}
+}

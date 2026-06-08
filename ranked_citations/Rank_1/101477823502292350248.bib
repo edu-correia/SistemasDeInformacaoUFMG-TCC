@@ -1,0 +1,17 @@
+@article{10.14778/2350229.2350248,
+ abstract = {In the real world a graph is often fragmented and distributed across different sites. This highlights the need for evaluating queries on distributed graphs. This paper proposes distributed evaluation algorithms for three classes of queries: reachability for determining whether one node can reach another, bounded reachability for deciding whether there exists a path of a bounded length between a pair of nodes, and regular reachability for checking whether there exists a path connecting two nodes such that the node labels on the path form a string in a given regular expression. We develop these algorithms based on partial evaluation, to explore parallel computation. When evaluating a query Q on a distributed graph G, we show that these algorithms possess the following performance guarantees, no matter how G is fragmented and distributed: (1) each site is visited only once; (2) the total network traffic is determined by the size of Q and the fragmentation of G, independent of the size of G; and (3) the response time is decided by the largest fragment of G rather than the entire G. In addition, we show that these algorithms can be readily implemented in the MapReduce framework. Using synthetic and real-life data, we experimentally verify that these algorithms are scalable on large graphs, regardless of how the graphs are distributed.},
+ author = {Fan, Wenfei and Wang, Xin and Wu, Yinghui},
+ doi = {10.14778/2350229.2350248},
+ issn = {2150-8097},
+ issue_date = {July 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {1304–1316},
+ publisher = {VLDB Endowment},
+ title = {Performance guarantees for distributed reachability queries},
+ url = {https://doi.org/10.14778/2350229.2350248},
+ volume = {5},
+ year = {2012}
+}

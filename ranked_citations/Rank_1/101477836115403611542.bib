@@ -1,0 +1,17 @@
+@article{10.14778/3611540.3611542,
+ abstract = {A single-master database has limited update capacity because a single node handles all updates. A multi-master database potentially has higher update capacity because the load is spread across multiple nodes. However, the need to coordinate updates and ensure durability can generate high network traffic. Reducing network load is particularly important in a cloud environment where the network infrastructure is shared among thousands of tenants. In this paper, we present Taurus MM, a shared-storage multi-master database optimized for cloud environments. It implements two novel algorithms aimed at reducing network traffic plus a number of additional optimizations. The first algorithm is a new type of distributed clock that combines the small size of Lamport clocks with the effective support of distributed snapshots of vector clocks. The second algorithm is a new hybrid page and row locking protocol that significantly reduces the number of lock requests sent over the network. Experimental results on a cluster with up to eight masters demonstrate superior performance compared to Aurora multi-master and CockroachDB.},
+ author = {Depoutovitch, Alex and Chen, Chong and Larson, Per-Ake and Ng, Jack and Lin, Shu and Xiong, Guanzhu and Lee, Paul and Boctor, Emad and Ren, Samiao and Wu, Lengdong and Zhang, Yuchen and Sun, Calvin},
+ doi = {10.14778/3611540.3611542},
+ issn = {2150-8097},
+ issue_date = {August 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {13},
+ pages = {3488–3500},
+ publisher = {VLDB Endowment},
+ title = {Taurus MM: Bringing Multi-Master to the Cloud},
+ url = {https://doi.org/10.14778/3611540.3611542},
+ volume = {16},
+ year = {2023}
+}

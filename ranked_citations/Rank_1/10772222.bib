@@ -1,0 +1,14 @@
+@article{10772222,
+ abstract = {Graph neural network (GNN) ushered in a new era of machine learning with interconnected datasets. While traditional neural networks can only be trained on independent samples, GNN allows for the inclusion of intersample interactions in the training process. This gain, however, incurs additional memory cost, rendering most GNNs unscalable for real-world applications involving vast and complicated networks with tens of millions of nodes (e.g., social circles, web graphs, and brain graphs). This means that storing the graph in the main memory can be difficult, let alone training the GNN model with significantly less GPU memory. While much of the recent literature has focused on either mini-batching GNN methods or quantization, graph reduction methods remain largely scarce. Furthermore, present graph reduction approaches have several drawbacks. First, most graph reduction focuses only on the inference stage (e.g., condensation, pruning, and distillation) and requires full graph GNN training, which does not reduce training memory footprint. Second, many methods focus solely on the graph’s structural aspect, ignoring the initial population feature-label distribution, resulting in a skewed postreduction label distribution. Here, we propose a feature-label constrained graph net collapse (FALCON) to address these limitations. Our three core contributions lie in: 1) designing FALCON, a topology-aware graph reduction technique that preserves feature-label distribution by introducing a K-means clustering with a novel dimension-normalized Euclidean distance; 2) implementation of FALCON with other state-of-the-art (SOTA) memory reduction methods (i.e., mini-batched GNN and quantization) for further memory reduction; and 3) extensive benchmarking and ablation studies against SOTA methods to evaluate FALCON memory reduction. Our comprehensive results show that FALCON can significantly collapse various public datasets (e.g., PPI and Flickr to as low as 34% of the total nodes) while keeping equal prediction quality across GNN models. Our FALCON code is available at https://github.com/basiralab/FALCON.},
+ author = {Adnel, Christopher and Rekik, Islem},
+ doi = {10.1109/TNNLS.2024.3497330},
+ issn = {2162-2388},
+ journal = {IEEE Transactions on Neural Networks and Learning Systems},
+ keyword = {Graph neural networks;Training;Memory management;Streams;Time complexity;Quantization (signal);Graphics processing units;Merging;Learning systems;Brain modeling;Affordable AI;graph neural networks (GNN);graph reduction;graph topology;memory efficiency},
+ month = {July},
+ number = {7},
+ pages = {12695-12706},
+ title = {FALCON: Feature-Label Constrained Graph Net Collapse for Memory-Efficient GNNs},
+ volume = {36},
+ year = {2025}
+}

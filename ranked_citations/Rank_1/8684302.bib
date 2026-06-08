@@ -1,0 +1,14 @@
+@article{8684302,
+ abstract = {The scalable video coding extensions of the High Efficient Video Coding (HEVC) standard (SHVC) have adopted a new quadtree-structured coding unit (CU). The SHVC test model (SHM) needs to test seven intermode sizes and one intramode size at depth levels of “0,” “1,” “2,” and four intermode sizes and two intramode sizes at a depth level of “3” for interframe CUs. It checks all possible depth levels and prediction modes to find the one with the lowest rate distortion cost using the Lagrange multiplier method in the mode decision procedure to achieve high coding efficiency at the expense of computational complexity. Furthermore, it utilizes the conventional approach for the base layer (BL) and enhancement layer (EL) coding to support SNR/spatial scalable coding. Both the intralayer and interlayer predictions should be performed for each EL CU. Although there is a large amount of interlayer redundancy that can be exploited to speed up the EL encoding, the mode decision procedure is independently performed for the BL and the ELs. In this paper, we propose a content-adaptive mode decision algorithm to reduce the SHVC complexity at the ELs. When the major characteristics of the CUs, such as mode complexity and motion activity, can be estimated early and used for adjusting the mode decision procedure, unnecessary mode and CU size searches can be avoided. First, an experimental analysis is performed to study the interlayer and spatiotemporal correlations in the coding information and the interlevel correlations among the quadtree structures. Based on these correlations, three parameters, including the conditional probability of a SKIP/Merge mode, motion activity, and mode complexity, are defined to describe the video content and are further utilized to adaptively adjust the EL mode decision procedure. The experimental results show that the proposed algorithm can reduce the coding time for ELs by 62%-67% with less than a 1.5% Bjontegaard rate increase compared to the original SHVC encoder.},
+ author = {Shen, Liquan and Feng, Guorui},
+ doi = {10.1109/TMM.2019.2909859},
+ issn = {1941-0077},
+ journal = {IEEE Transactions on Multimedia},
+ keyword = {Encoding;Complexity theory;Correlation;Video coding;Copper;Standards;Prediction algorithms;SHVC;scalable video coding;mode decision;interlayer correlation},
+ month = {Nov},
+ number = {11},
+ pages = {2714-2725},
+ title = {Content-Based Adaptive SHVC Mode Decision Algorithm},
+ volume = {21},
+ year = {2019}
+}

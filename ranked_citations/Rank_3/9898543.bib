@@ -1,0 +1,14 @@
+@inproceedings{9898543,
+ abstract = {As a high-speed byte-addressable storage media similar to DRAM, Intel Optane DC Persistent Memory (PMem) has drawn the interest from the research community for its high throughput and low latency. These properties propel the migration of in-DRAM data structures, such as hash tables, to the PMem. However, existing PMem hash table designs do not recognize that the PMem is also a block device with an access unit of 256 bytes. Consequently, they carry out writes in sizes that are an order of magnitude smaller than the PMem access unit, leading to high write amplification. To improve their performance, we propose Buffered Hash Table (BHT) design. BHT batches multiple writes into in-DRAM buffers and then merges them into hash table buckets in the PMem, reducing the number of small writes. BHT also employs a PMem-based writeahead log to prevent data loss. Our experiments show that BHT provides up to 2.3X and 2.8X higher write throughput, assuming the DRAM space is sufficiently available, compared to the stateof-the-art hash indexes, namely CCEH and Dash, respectively.},
+ author = {Zhong, Chen and Challa, Prajwal and Zhao, Xingsheng and Jiang, Song},
+ booktitle = {2022 IEEE 11th Non-Volatile Memory Systems and Applications Symposium (NVMSA)},
+ doi = {10.1109/NVMSA56066.2022.00011},
+ issn = {2575-257X},
+ keyword = {Performance evaluation;Nonvolatile memory;Merging;Random access memory;Propulsion;Media;Throughput;Persistent Memory;Hash Table;DRAM Buffer},
+ month = {Aug},
+ number = {},
+ pages = {8-13},
+ title = {Buffered Hash Table: Leveraging DRAM to Enhance Hash Indexes in the Persistent Memory},
+ volume = {},
+ year = {2022}
+}

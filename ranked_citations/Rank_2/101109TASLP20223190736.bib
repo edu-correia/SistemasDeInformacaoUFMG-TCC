@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2022.3190736,
+ abstract = {Spoken language recognition (SLR) refers to the automatic process used to determine the language present in a speech sample. SLR is an important task in its own right, for example, as a tool to analyze or categorize large amounts of multi-lingual data. Further, it is also an essential tool for selecting downstream applications in a work flow, for example, to chose appropriate speech recognition or machine translation models. SLR systems are usually composed of two stages, one where an embedding representing the audio sample is extracted and a second one which computes the final scores for each language. In this work, we approach the SLR task as a detection problem and implement the second stage as a probabilistic linear discriminant analysis (PLDA) model. We show that discriminative training of the PLDA parameters gives large gains with respect to the usual generative training. Further, we propose a novel hierarchical approach where two PLDA models are trained, one to generate scores for clusters of highly-related languages and a second one to generate scores conditional to each cluster. The final language detection scores are computed as a combination of these two sets of scores. The complete model is trained discriminatively to optimize a cross-entropy objective. We show that this hierarchical approach consistently outperforms the non-hierarchical one for detection of highly related languages, in many cases by large margins. We train our systems on a collection of datasets including over 100 languages, and test them both on matched and mismatched conditions, showing that the gains are robust to condition mismatch.},
+ author = {Ferrer, Luciana and Castan, Diego and McLaren, Mitchell and Lawson, Aaron},
+ doi = {10.1109/taslp.2022.3190736},
+ issn = {2329-9290},
+ issue_date = {2022},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {July},
+ numpages = {15},
+ pages = {2396–2410},
+ publisher = {IEEE Press},
+ title = {A Discriminative Hierarchical PLDA-Based Model for Spoken Language Recognition},
+ url = {https://doi.org/10.1109/TASLP.2022.3190736},
+ volume = {30},
+ year = {2022}
+}

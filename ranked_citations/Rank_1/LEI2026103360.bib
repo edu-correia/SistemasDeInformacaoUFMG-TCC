@@ -1,0 +1,13 @@
+@article{LEI2026103360,
+ abstract = {Large Vision–Language Models (LVLMs) excel in multimodal tasks, but their high computational cost, driven by the large number of image tokens, severely limits inference efficiency. While existing training-free methods reduce token counts to accelerate inference, they often struggle to preserve model performance. This trade-off between efficiency and accuracy poses the key challenge in accelerating Large Vision–Language Model (LVLM) inference without retraining. In this paper, we analyze the rank of attention matrices across layers and discover that image token redundancy peaks in two specific VLM layers: many tokens convey nearly identical information, yet still participate in subsequent computations. Leveraging this insight, we propose Ctp2Fic, a new two-stage coarse-to-fine token compression framework. Specifically, in the Coarse-grained Text-guided Pruning stage, we dynamically assign a weight to each visual token based on its semantic relevance to the input instruction and prune low-weight tokens that are unrelated to the task. During the Fine-grained Image-based Clustering stage, we apply a lightweight clustering algorithm to merge semantically similar tokens into compact, representative ones, thus further reducing the sequence length. Our framework requires no model fine-tuning and seamlessly integrates into existing LVLM inference pipelines. Extensive experiments demonstrate that Ctp2Fic outperforms state-of-the-art acceleration techniques in both inference speed and accuracy, achieving superior efficiency and performance without retraining.},
+ author = {Yulong Lei and Zishuo Wang and Jinglin Xu and Yuxin Peng},
+ doi = {https://doi.org/10.1016/j.displa.2026.103360},
+ issn = {0141-9382},
+ journal = {Displays},
+ keyword = {Large Vision–Language Models, Inference acceleration, Token compression, Training-free framework},
+ pages = {103360},
+ title = {Ctp2Fic: From coarse-grained token pruning to fine-grained token clustering for LVLM inference acceleration},
+ url = {https://www.sciencedirect.com/science/article/pii/S0141938226000235},
+ volume = {92},
+ year = {2026}
+}

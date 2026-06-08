@@ -1,0 +1,14 @@
+@inproceedings{5567897,
+ abstract = {In this paper, Aiming at the characteristic of simple feature class polygon aggregation in multi-core environment, the improved algorithm divides spatial data for the polygon in simple feature class using STR (Sort-Tile-Recursive) tree index, it reduces the number of reading disk during searching polygons in the spatial database. The algorithm is based on the feature of STR-tree index, first of all it traverses the STR tree using the middle order traversal and returns the results, then do cascaded mergence for the traversal results of the STR index tree. That is for the built STR-tree index, recursively traverse each node using the middle traversal method, start from the root node of every layer, traverse the current STR tree branch in the order of starting from the beginning to the left, root, right. When the traversal of this layer is finished, we store the traversal results into the father node in the form of a pointer. We will get the middle traversal table of the STR tree. And this method fully takes into account the spatial aggregation characteristic of distributed polygon. At last, cascaded mergence is taken for the STR index tree. As the logical structure of traversal results remains the STR tree essentially, and merger operation is from the traversal mergence from the nodes of the first layer in the STR tree. Namely, firstly merge the leaf nodes of STR, then merge the nodes in the upper layer of the leaf nodes, traverse like that until the root of STR tree. Finally the STR tree was parallelized using parallel programming model OPENMP, we fully use the CPU computing power of multi-core computing environments. For the access features of massive data, we have designed and implemented the algorithm of data organization and building approach. At the same time, we compare the realization in this paper with general traversal polygon aggregation algorithm. The experiments show that this realization has high efficiency for large amounts data during the polygons aggregation. Functions based on this algorithm developed for practical problems can solve the polygon aggregation efficiency of large-scale and complex polygon data layer.},
+ author = {Xie, Zhong and Chen, Zhanlong and Wu, Liang and Ma, Lina and Song, Miaomiao},
+ booktitle = {2010 18th International Conference on Geoinformatics},
+ doi = {10.1109/GEOINFORMATICS.2010.5567897},
+ issn = {2161-0258},
+ keyword = {Indexes;Algorithm design and analysis;Dynamic scheduling;Data models;Computational modeling;Arrays;Aggregates;polygon aggregation;spatial cluster;STR Index Tree;simple data model},
+ month = {June},
+ number = {},
+ pages = {1-6},
+ title = {Polygon aggregation algorithm using the simple data model in multicore environment considering spatial cluster},
+ volume = {},
+ year = {2010}
+}

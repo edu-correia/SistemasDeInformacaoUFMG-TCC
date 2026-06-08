@@ -1,0 +1,15 @@
+@article{Jung2025144927,
+ abstract = {Various devices such as smart cars, healthcare systems, and IoT platforms generate a massive amount of time series data. This type of data exhibits unique characteristics that pose new challenges for in-memory indexes, including heavy insert rates, monotonically increasing keys, and workloads dominated by range queries. In this paper, we propose a new in-memory index, Segmented Block-based Tree (SB-Tree), designed specifically for time series workloads. To support high insert throughput, SB-Tree decouples the index into a search layer and a data layer, and updates the search layer asynchronously to reduce write amplification. It introduces a shortcut mechanism to reduce tree traversal overhead and uses segmented blocks with per-thread data blocks to minimize contention during inserts. In addition, SB-Tree employs a lightweight block allocator to reduce system call overhead during memory management. We evaluate SB-Tree using synthetic time series workloads with varying levels of delayed data, inserting up to 1 billion keys across 80 threads. Our results show that SB-Tree outperforms state-of-the-art in-memory indexes, achieving up to 7× higher throughput on insert-only workloads and 2.4× lower 99.99th percentile tail latency on scan workloads compared to state-of-the-art. © IEEE. 2025 IEEE.},
+ author = {Jung, Christine Euna and Hwang, Jaesang and Na, Yedam and Lee, Haena and Kim, Wook-Hee},
+ doi = {10.1109/ACCESS.2025.3598736},
+ journal = {IEEE Access},
+ note = {Cited by: 0; All Open Access; Gold Open Access; Green Open Access},
+ pages = {144927 - 144940},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SB-Tree: A B+-Tree for In-Memory Time Series Databases with Segmented Block},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105013231126?origin=resultslist},
+ volume = {13},
+ year = {2025}
+}

@@ -1,0 +1,20 @@
+@article{10.1145/3651619,
+ abstract = {Graph summarization has become integral for managing and analyzing large-scale graphs in diverse real-world applications, including social networks, biological networks, and communication networks. Existing methods for graph summarization often face challenges, being either computationally expensive, limiting their applicability to large graphs, or lacking the incorporation of node attributes. In response, we introduce SsAG, an efficient and scalable lossy graph summarization method designed to preserve the essential structure of the original graph.SsAG computes a sparse representation (summary) of the input graph, accommodating graphs with node attributes. The summary is structured as a graph on supernodes (subsets of vertices of G), where weighted superedges connect pairs of supernodes. The methodology focuses on constructing a summary graph with k supernodes, aiming to minimize the reconstruction error (the difference between the original graph and the graph reconstructed from the summary) while maximizing homogeneity with respect to the node attributes. The construction process involves iteratively merging pairs of nodes.To enhance computational efficiency, we derive a closed-form expression for efficiently computing the reconstruction error (RE) after merging a pair, enabling constant-time approximation of this score. We assign a weight to each supernode, quantifying their contribution to the score of pairs, and utilize a weighted sampling strategy to select the best pair for merging. Notably, a logarithmic-sized sample achieves a summary comparable in quality based on various measures. Additionally, we propose a sparsification step for the constructed summary, aiming to reduce storage costs to a specified target size with a marginal increase in RE.Empirical evaluations across diverse real-world graphs demonstrate that SsAG exhibits superior speed, being up to 17 \texttimes{} faster, while generating summaries of comparable quality. This work represents a significant advancement in the field, addressing computational challenges and showcasing the effectiveness of SsAG in graph summarization.},
+ address = {New York, NY, USA},
+ articleno = {141},
+ author = {Ali, Sarwan and Ahmad, Muhammad and Beg, Maham Anwer and Khan, Imdad Ullah and Faizullah, Safiullah and Khan, Muhammad Asad},
+ doi = {10.1145/3651619},
+ issn = {1556-4681},
+ issue_date = {July 2024},
+ journal = {ACM Trans. Knowl. Discov. Data},
+ keyword = {Graph summarization, attributed graphs, graph sparsification},
+ month = {April},
+ number = {6},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {
+SsAG: Summarization and Sparsification of Attributed Graphs},
+ url = {https://doi.org/10.1145/3651619},
+ volume = {18},
+ year = {2024}
+}

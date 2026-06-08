@@ -1,0 +1,14 @@
+@inproceedings{11401605,
+ abstract = {Large Language Models (LLMs) excel at evaluating machine translation (MT), but their scale and cost hinder deployment on edge devices and in privacy-sensitive workflows. We ask: how small can you get while still detecting meaning-altering translation errors? Focusing on English → German Critical Error Detection (CED), we benchmark sub-2 B models (LFM2-350M, Qwen-3 0.6B/1.7B, Llama-3.2-1B-Instruct, Gemma-3-1B) across WMT21, WMT22, and SynCED-EnDe 2025. Our framework standardizes prompts, applies lightweight logit-bias calibration and majority voting, and reports both semantic quality (MCC, F1-ERR/F1-NOT) and compute metrics (VRAM, latency, throughput). Results reveal a clear sweet spot around one billion parameters: Gemma-3-1B provides the best quality-efficiency trade-off, reaching $\text{MCC}=0.77$ with F 1 -ERR $=0.98$ on SynCEDEnDe 2025 after merged-weights fine-tuning, while maintaining 400 ms single-sample latency on a MacBook Pro M4 Pro (24 GB). At larger scale, Qwen-3-1.7B attains the highest absolute MCC ($\mathbf{+ 0. 1 1}$ over Gemma) but with higher compute cost. In contrast, ultra-small models ($<0.6$ B) remain usable with few-shot calibration yet under-detect entity and number errors. Overall, compact, instruction-tuned LLMs-augmented with lightweight calibration and small-sample supervision, can deliver trustworthy, on-device CED for MT, enabling private, low-cost error screening in realworld translation pipelines. All datasets, prompts, and scripts are publicly available at our GitHub repository.11The code and instructions are available at: https://github.com/AppliedMachineLearning-Lab/How-small-can-you-get},
+ author = {Chopra, Muskaan and Sparrenberg, Lorenz and Khanna, Sarthak and Sifa, Rafet},
+ booktitle = {2025 IEEE International Conference on Big Data (BigData)},
+ doi = {10.1109/BigData66926.2025.11401605},
+ issn = {2573-2978},
+ keyword = {Cloud computing;Translation;Costs;Large language models;Image edge detection;Computational modeling;Semantics;Calibration;Multilingual;Machine translation;Large Language Models (LLMs);Machine Translation (MT);Critical Error Detection (CED);Edge AI;On-Device Inference},
+ month = {Dec},
+ number = {},
+ pages = {5410-5417},
+ title = {How Small Can You Go? Compact Language Models for On-Device Critical Error Detection in Machine Translation},
+ volume = {},
+ year = {2025}
+}

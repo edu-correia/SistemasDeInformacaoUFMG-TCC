@@ -1,0 +1,14 @@
+@inproceedings{11445381,
+ abstract = {Existing text-to-image models often rely on parameter fine-tuning techniques such as Low-Rank Adaptation (LoRA) to customize visual attributes. However, when combining multiple LoRA models for content-style fusion tasks, unstructured modifications of weight matrices often lead to undesired feature entanglement between content and style attributes. We propose QR-LoRA, a novel fine-tuning framework leveraging $Q R$ decomposition for structured parameter updates that effectively separate visual attributes. Our key insight is that the orthogonal $Q$ matrix naturally minimizes interference between different visual features, while the upper triangular $R$ matrix efficiently encodes attributespecific transformations. Our approach fixes both $Q$ and $R$ matrices while only training an additional task-specific $\Delta R$ matrix. This structured design reduces trainable parameters to half of conventional LoRA methods and supports effective merging of multiple adaptations without crosscontamination due to the strong disentanglement properties between $\Delta R$ matrices. Experiments demonstrate that $Q R$ LoRA achieves superior disentanglement in content-style fusion tasks, establishing a new paradigm for parameterefficient, disentangled fine-tuning in generative models. The project page is available at: https://luna-ai-lab.github.io/QR-LoRA/},
+ author = {Yang, Jiahui and Ma, Yongjia and Di, Donglin and Cui, Jianxun and Li, Hao and Chen, Wei and Xie, Yan and Yang, Xun and Zuo, Wangmeng},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01634},
+ issn = {2380-7504},
+ keyword = {LoRa;Videos;Data communication;Text to video;Protocols;Video equipment;HTTP;Internet;Web services;Radio communication;qr-lora; lora},
+ month = {Oct},
+ number = {},
+ pages = {17587-17597},
+ title = {QR-LoRA: Efficient and Disentangled Fine-Tuning via QR Decomposition for Customized Generation},
+ volume = {},
+ year = {2025}
+}

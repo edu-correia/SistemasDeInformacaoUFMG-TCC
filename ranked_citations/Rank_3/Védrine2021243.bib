@@ -1,0 +1,15 @@
+@article{Védrine2021243,
+ abstract = {Verification of numerical accuracy properties in modern software remains an important and challenging task. One of its difficulties is related to unstable tests, where the execution can take different branches for real and floating-point numbers. This paper presents a new verification technique for numerical properties, named Runtime Abstract Interpretation (RAI), that, given an annotated source code, embeds into it an abstract analyzer in order to analyze the program behavior at runtime. RAI is a hybrid technique combining abstract interpretation and runtime verification that aims at being sound as the former while taking benefit from the concrete run to gain greater precision from the latter when necessary. It solves the problem of unstable tests by surrounding an unstable test by two carefully defined program points, forming a so-called split-merge section, for which it separately analyzes different executions and merges the computed domains at the end of the section. Our implementation of this technique in a toolchain called FLDBox relies on two basic tools, FLDCompiler, that performs a source-to-source transformation of the given program and defines the split-merge sections, and an instrumentation library FLDLib that provides necessary primitives to explore relevant (partial) executions of each section and propagate accuracy properties. Initial experiments show that the proposed technique can efficiently and soundly analyze numerical accuracy for industrial programs on thin numerical scenarios. © 2021, Springer Nature Switzerland AG.},
+ author = {Védrine, Franck and Jacquemin, Maxime and Kosmatov, Nikolai and Signoles, Julien},
+ doi = {10.1007/978-3-030-67067-2_12},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1; All Open Access; Green Open Access},
+ pages = {243 - 266},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Runtime Abstract Interpretation for Numerical Accuracy and Robustness},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85101538472?origin=resultslist},
+ volume = {12597 LNCS},
+ year = {2021}
+}

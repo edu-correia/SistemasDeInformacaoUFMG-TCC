@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749693,
+ abstract = {We study the subgraph matching problem, which is to find all subgraph isomorphisms of a given pattern graph p in a data graph G. Traditional approaches typically use a backtracking search approach or worst-case optimal join, both of which directly operate on p. In this paper, we revisit the tree decomposition based approach. For a complex pattern graph p, we find its optimal tree decomposition T based on the fractional hypertree width, where a node in T represents a subgraph of p, which is also called a bag, and a node in p may appear in multiple bags in T. The tree decomposition based approach initially computes and materializes the matches of subgraphs specified by the bags, then treats these matches as new relations and employs an acyclic join to compute the matches of p itself. However, previous approaches fail to integrate the tree decomposition with effective join attribute orders, and conversely, previous join attribute ordering approaches do not consider the need to share computations in multiple bags. Additionally, the materialization strategies in previous tree decomposition based approaches can lead to high computation costs. In this paper, we propose a new subgraph matching algorithm ASDMatch (Adaptive Shared Decomposition-based matching). We propose a new dynamic programming approach that finds optimal attribute orders for each bag based on a cost model that incorporates the computation sharing. Furthermore, we introduce a new adaptive materialization strategy to reduce the computation cost. We confirmed that our ASDMatch outperforms state-of-the-art algorithms and can process many challenging queries that previous algorithms can not finish within the time limit.},
+ author = {Li, Qiyan and Yu, Jeffrey Xu and He, Zongyan},
+ doi = {10.14778/3749646.3749693},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {4282–4294},
+ publisher = {VLDB Endowment},
+ title = {Subgraph Matching: A New Decomposition Based Approach},
+ url = {https://doi.org/10.14778/3749646.3749693},
+ volume = {18},
+ year = {2025}
+}

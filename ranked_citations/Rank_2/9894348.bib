@@ -1,0 +1,14 @@
+@inproceedings{9894348,
+ abstract = {Concolic execution is widely used for binary analysis and is commonly embedded in hybrid fuzzing to find bugs. However, implicit flows in loops can hinder concolic execution and lead to the reduction of code coverage. The implicit flow variables cannot be symbolized and will block the constraint solver from generating new inputs. We propose a new approach to mitigate the problem. We obtain the implicit flow variables by taint analysis in advance and symbolize them during the concolic execution. Then, when the symbols of the variables are in the path constraints and need to be solved, we backtrack to the corresponding loops and perform static symbolic executions in the loops. During the static symbolic executions, we relate the variables with the input symbols by state merging and solve the constraints to generate inputs for new execution paths. We present SIFOL, a hybrid fuzzer based on Driller, and evaluate it on CB-multios. Results show that SIFOL has 5.4% higher code coverage than Driller and finds 5.9% more crashes. Furthermore, after manually adding implicit flows and checks to the target programs, SIFOL only drops 2.6% on coverage and 5.6% on the crash number, while Driller is severely affected (drops 46.1% on coverage and 47.1% on the crash number).},
+ author = {Zeng, Yicheng and Peng, Jiaqian and Zhao, Zhihui and Song, Zhanwei and Zhu, Hongsong and Sun, Limin},
+ booktitle = {2022 IEEE International Performance, Computing, and Communications Conference (IPCCC)},
+ doi = {10.1109/IPCCC55026.2022.9894348},
+ issn = {2374-9628},
+ keyword = {Codes;Merging;Computer bugs;Symbols;Fuzzing;concolic execution;hybrid fuzzing;implicit flow},
+ month = {Nov},
+ number = {},
+ pages = {290-297},
+ title = {SIFOL: Solving Implicit Flows in Loops for Concolic Execution},
+ volume = {},
+ year = {2022}
+}

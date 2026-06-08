@@ -1,0 +1,18 @@
+@article{10.1145/3450703,
+ abstract = {Networks model a variety of complex phenomena across different domains. In many applications, one of the most essential tasks is to align two or more networks to infer the similarities between cross-network vertices and to discover potential node-level correspondence. In this article, we propose ELRUNA (elimination rule-based network alignment), a novel network alignment algorithm that relies exclusively on the underlying graph structure. Under the guidance of the elimination rules that we defined, ELRUNA computes the similarity between a pair of cross-network vertices iteratively by accumulating the similarities between their selected neighbors. The resulting cross-network similarity matrix is then used to infer a permutation matrix that encodes the final alignment of cross-network vertices. In addition to the novel alignment algorithm, we improve the performance of local search, a commonly used postprocessing step for solving the network alignment problem, by introducing a novel selection method RAWSEM (random-walk-based selection method) based on the propagation of vertices’ mismatching across the networks. The key idea is to pass on the initial levels of mismatching of vertices throughout the entire network in a random-walk fashion. Through extensive numerical experiments on real networks, we demonstrate that ELRUNA significantly outperforms the state-of-the-art alignment methods in terms of alignment accuracy under lower or comparable running time. Moreover, ELRUNA is robust to network perturbations such that it can maintain a close-to-optimal objective value under a high level of noise added to the original networks. Finally, the proposed RAWSEM can further improve the alignment quality with a smaller number of iterations compared with the naive local search method.Reproducibility: The source code and data are available at https://tinyurl.com/uwn35an.},
+ address = {New York, NY, USA},
+ articleno = {1.7},
+ author = {Qiu, Zirou and Shaydulin, Ruslan and Liu, Xiaoyuan and Alexeev, Yuri and Henry, Christopher S. and Safro, Ilya},
+ doi = {10.1145/3450703},
+ issn = {1084-6654},
+ issue_date = {December 2021},
+ journal = {ACM J. Exp. Algorithmics},
+ keyword = {Data mining, combinatorial optimization, graph matching, graph mining, network alignment},
+ month = {July},
+ numpages = {32},
+ publisher = {Association for Computing Machinery},
+ title = {ELRUNA: Elimination Rule-based Network Alignment},
+ url = {https://doi.org/10.1145/3450703},
+ volume = {26},
+ year = {2021}
+}

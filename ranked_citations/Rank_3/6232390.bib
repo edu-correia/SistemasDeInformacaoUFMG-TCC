@@ -1,0 +1,14 @@
+@inproceedings{6232390,
+ abstract = {Due to its better scalability, Key-Value (KV) store has superseded traditional relational databases for many applications, such as data deduplication, on-line multi-player gaming, and Internet services like Amazon and Facebook. The KV store efficiently supports two operations (key lookup and KV pair insertion) through an index structure that maps keys to their associated values. The KV store is also commonly used to implement the chunk index in data deduplication, where a chunk ID (SHA1 value computed based on the chunk's content) is a key and its associative chunk metadata (e.g., physical storage location, stream ID) is the value. For a deduplication system, typically the number of chunks is too large to store the KV store solely in RAM. Thus, the KV store maintains a large (hash-table based) index structure in RAM to index all KV pairs stored on secondary storage. Hence, its available RAM space limits the maximum number of KV pairs that can be stored. Moving the index data structure from RAM to flash can possibly overcome the space limitation. In this paper, we propose efficient KV store on flash with a Bloom Filter based index structure called BloomStore. The unique features of the BloomStore include (1) no index structure is required to be stored in RAM so that a small RAM space can support a large number of KV pairs and (2) both index structure and KV pairs are stored compactly on flash memory to improve its performance. Compared with the state-of-the-art KV store designs, the BloomStore achieves a significantly better key lookup performance and roughly the same insertion performance with multiple times less RAM usage based on our experiments with deduplication workloads.},
+ author = {Lu, Guanlin and Nam, Young Jin and Du, David H. C.},
+ booktitle = {2012 IEEE 28th Symposium on Mass Storage Systems and Technologies (MSST)},
+ doi = {10.1109/MSST.2012.6232390},
+ issn = {2160-1968},
+ keyword = {Ash;Random access memory;Buffer storage;Throughput;Indexing;Scalability},
+ month = {April},
+ number = {},
+ pages = {1-11},
+ title = {BloomStore: Bloom-Filter based memory-efficient key-value store for indexing of data deduplication on flash},
+ volume = {},
+ year = {2012}
+}

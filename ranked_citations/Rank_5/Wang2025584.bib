@@ -1,0 +1,14 @@
+@conference{Wang2025584,
+ abstract = {Merge conflicts in Distributed Version Control Systems (DVCS) like Git are a persistent challenge in the software development lifecycle. If not handled properly or overlooked, they can lead to issues like hindering collaboration and introducing errors. While automated resolution methods exist, prevailing approaches - such as multi-class classification and direct code generation - often suffer from limited interpretability, demanding substantial manual effort to refine predictions, and risk producing subtly flawed code. Critically, existing research often overlooks a prevalent conflict type: adjacent-line conflicts, where independent edits to contiguous lines are flagged by tools like Git. Our empirical analysis reveals that these make up a substantial portion of all conflicts. Moreover, they can often be resolved using simple patterns.Motivated by these limitations and empirical findings, we propose a novel approach: modeling merge conflict resolution as edit script selection. Instead of predicting abstract categories or generating code from scratch, our method makes a binary decision for each atomic line-level edit script contributing to the conflict: accept or reject. Our method inherently makes the reasoning behind proposed solutions transparent, as decisions directly correspond to individual, developer-authored code modifications. It also aligns closely with how developers naturally approach conflict analysis by considering each change in context. Our method applies to the vast majority (94.18%) of conflicts that can be correctly resolved without introducing any novel code lines - that is, lines not present in any of the parent versions being merged; this selection process directly yields the resolved code by applying the chosen subset of existing edits. We developed EditFusion, a deep learning model that performs edit script selection by leveraging semantic embeddings and edit metadata. Extensive evaluation on large-scale, real-world datasets demonstrates both the prevalence of adjacent-line conflicts and EditFusion's superior performance in accurately resolving conflicts compared to baselines. Our work represents an attempt towards more transparent, intuitive, and practical automated merge conflict resolution. © 2025 IEEE.},
+ author = {Wang, Changxin and Xu, Lei and Wang, Rundong and Ma, Yiming and Zhang, Weifeng},
+ doi = {10.1109/ASE63991.2025.00055},
+ journal = {Proceedings - 2025 40th IEEE/ACM International Conference on Automated Software Engineering, ASE 2025},
+ note = {Cited by: 0},
+ pages = {584 - 596},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {EditFusion: Resolving Code Merge Conflicts via Edit Selection},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105034638206?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@conference{Lin2023,
+ abstract = {The depth completion task aims to fill in the missing depth values of a sparse depth map to obtain a dense depth map, which is crucial for application of computer vision especially autonomous driving. Since acquiring a dense or even semi-dense ground-truth depth map for supervised training is laborious and difficult, sparse depth map is used to achieve semi-supervised learning. But the sparse depth map has not enough valid values, which means it cannot provide effective constraint. Therefore, we merge multi-frame point clouds from LiDAR sequences into a same frame to improve the density of sparse depth map and enhance the constraints of depth labels in semi-supervised learning. So a semi-supervised multimodal multitask framework is proposed which includes two sub-networks: LiDAR odometry and depth completion network. The LiDAR odometry sub-network takes LiDAR sequences as input and achieves self-supervised learning based on geometric consistency between sequences. Based on the pose estimated by odometry network, we use differential projection module (DPM) to obtain a denser merged depth map. The depth completion sub-network takes binocular image and sparse depth map as input, and realizes semi-supervised learning with supervision of the stereo view synthesis and the merged depth map from LiDAR odometry branch. These two sub-networks can be trained in a multitask fashion with the help of DPM. The experiments conducted on the KITTI dataset show that the proposed method outperforms other state-of-the-art methods. © 2023 SPIE.},
+ author = {Lin, Junli and Qin, Huabiao and Chen, Guancheng and Peng, Qi},
+ doi = {10.1117/12.2685000},
+ journal = {Proceedings of SPIE - The International Society for Optical Engineering},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Semi-supervised Depth Completion with Fusion of LiDAR Sequences and Stereo Imagery},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85176500474?origin=resultslist},
+ volume = {12709},
+ year = {2023}
+}

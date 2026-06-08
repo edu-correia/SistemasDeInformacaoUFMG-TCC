@@ -1,0 +1,22 @@
+@article{CHOCHLOV2017110,
+ abstract = {Context
+Feature location is the task of finding the source code that implements specific functionality in software systems. A common approach is to leverage textual information in source code against a query, using Information Retrieval (IR) techniques. To address the paucity of meaningful terms in source code, alternative, relevant source-code descriptions, like change-sets could be leveraged for these IR techniques. However, the extent to which these descriptions are useful has not been thoroughly studied.
+Objective
+This work rigorously characterizes the efficacy of source-code lexical annotation by change-sets (ACIR), in terms of its best-performing configuration.
+Method
+A tool, implementing ACIR, was used to study different configurations of the approach and to compare them to a baseline approach (thus allowing comparison against other techniques going forward). This large-scale evaluation employs eight subject systems and 600 features.
+Results
+It was found that, for ACIR: (1) method level granularity demands less search effort; (2) using more recent change-sets improves effectiveness; (3) aggregation of recent change-sets by change request, decreases effectiveness; (4) naive, text-classification-based filtering of “management” change-sets also decreases the effectiveness. In addition, a strongly pronounced dichotomy of subject systems emerged, where one set recorded better feature location using ACIR and the other recorded better feature location using the baseline approach. Finally, merging ACIR and the baseline approach significantly improved performance over both standalone approaches for all systems.
+Conclusion
+The most fundamental finding is the importance of rigorously characterizing proposed feature location techniques, to identify their optimal configurations. The results also suggest it is important to characterize the software systems under study when selecting the appropriate feature location technique. In the past, configuration of the techniques and characterization of subject systems have not been considered first-class entities in research papers, whereas the results presented here suggests these factors can have a big impact.},
+ author = {Muslim Chochlov and Michael English and Jim Buckley},
+ doi = {https://doi.org/10.1016/j.infsof.2017.04.003},
+ issn = {0950-5849},
+ journal = {Information and Software Technology},
+ keyword = {Feature location, Version histories, Dataset expansion, Software systems’ characterization, Search effort},
+ pages = {110-126},
+ title = {A historical, textual analysis approach to feature location},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950584917303397},
+ volume = {88},
+ year = {2017}
+}

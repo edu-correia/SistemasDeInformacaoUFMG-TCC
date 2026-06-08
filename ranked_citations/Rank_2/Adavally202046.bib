@@ -1,0 +1,14 @@
+@conference{Adavally202046,
+ abstract = {Sparse matrix computations have witnessed a resurgence with the pervasive use of deep neural networks. Leveraging sparsity enables efficiency of storage by avoiding storing zeroes. However, sparse representations incur metadata computational overheads - software needs to process the metadata (or indexe) that describes row/column locations of non-zero values before it can access the corresponding data values. There have been several formats proposed for representing sparse matrices including Compressed Sparse Row (CSR), Coordinate (COO), Bitmaps, Run-length encoding, and hierarchical representations. Each representation achieves different levels of memory compression and incurs different levels of computational complexity depending on the sparsity (percentage of zero values). We seek answers to the following: (i) at what sparsity levels is it worth eliminating compressed representation of matrices and use the dense representation that includes both zeros and non-zero values, and (ii) even if we use compressed data representation, will it be useful to expand the matrices internally to eliminate metadata processing overheads? In this paper we propose the use of a special hardware called ExPress that expands compressed matrices into dense data, eliminating metadata computations from the main processing element. Our ExPress hardware is configurable so that it can expand from different compressed formats. Our experiments for matrix-vector multiplication using several DNN workloads show performance gains of 43%, 33% and 11% on average over software implementations that use CSR, Bitmap and Run-length encoding respectively. ExPress shows performance gains over sparse software codes for sparsity up to 70%. Further, ExPress simultaneously achieves energy improvement by reducing the instruction overhead of sparsity-aware computations. © 2020 ACM.},
+ author = {Adavally, Shashank and Gulur, Nagendra and Kavi, Krishna and Weaver, Alex and Dutta, Pranoy and Wang, Benjamin},
+ doi = {10.1145/3422575.3422777},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 4},
+ pages = {46 - 60},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ExPress: Simultaneously Achieving Storage, Execution and Energy Efficiencies in Moderately Sparse Matrix Computations},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85103557844?origin=resultslist},
+ year = {2020}
+}

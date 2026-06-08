@@ -1,0 +1,15 @@
+@article{10.1145/3766542,
+ abstract = {Parallel fuzzing introduces two key steps: task division and task merging to improve efficiency and effectiveness. However, existing works lack effective analysis of task results during task merging; they employ simple differential seed distribution strategies during task division, which cannot prevent task conflicts. Moreover, there is a lack of coordination between task division and task merging phases, and the task division process does not fully utilize feedback information from task merging, reducing the collaboration efficiency between parallel sub-nodes.In this paper, we first introduce a dual-loop multi-phase parallel framework. Under this framework, we combine the “exploration” capability of Structure-Unaware (SU) task division strategy with the “exploitation” capability of Structure-Aware (SA) task division strategy to form a new hybrid task division strategy, aiming to improve the efficiency and effectiveness of parallel fuzzing. Meanwhile, in the task merging phase, we design a comprehensive information collection mechanism that can effectively analyze task results, and in the task division phase, we can further iterate the hybrid task division strategy based on real-time testing feedback. We implement PFuzzer according to the proposed scheme. In our evaluation experiments, PFuzzer successfully discovered vulnerabilities in carefully fuzzed programs that baseline fuzzers failed to detect. Furthermore, on the Fuzzbench test suite, PFuzzer discovered more code branches in most programs. Most importantly, the PFuzzer framework demonstrates good scalability, effectively parallelizing different base fuzzing engines.},
+ address = {New York, NY, USA},
+ author = {Gu, Taotao and Wang, Tong and Li, Xiang and Lu, Shuaibing and Nie, Yuanping and Zhang, Zhaowei and Kuang, Xiaohui and Zhao, Gang},
+ doi = {10.1145/3766542},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Parallel fuzzing, Vulnerability detection, Seed scheduling, Task division, Task merging},
+ month = {September},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Parallel Fuzzing based on Sub-tasks Scheduling},
+ url = {https://doi.org/10.1145/3766542},
+ year = {2025}
+}

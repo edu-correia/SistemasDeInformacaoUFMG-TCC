@@ -1,0 +1,15 @@
+@article{Pan2026,
+ abstract = {Caffe, one of the most popular deep learning frameworks, trains models by reading training data from the storage engine, LevelDB, and feeding it into the computation engine. This paper analyzes the challenges faced by data reading in Caffe Training: (1) Fetch, Parse, and Transform—the three steps of reading each image—are serial, and each image is read sequentially; (2) Frequent disk I/O—each image read triggers an I/O operation—significantly increases the data reading time; (3) Caffe calls LevelDB's range query method to read training data, but this leads to unnecessary pointer comparison operations, wasting CPU resources; (4) Since LevelDB reads training data in key order during range queries, the fixed order of training data across epochs may cause overfitting and lower the model's test accuracy. Based on these challenges, this paper proposes Parallel Read, Out-of-Order Optimization, and Adaptive Design strategies to design a new I/O layer, PROAD, for Caffe that systematically reconstructs and optimizes LevelDB's original data reading mechanism, thus improving LevelDB I/O performance for Caffe Training. The Parallel Read method pipelines the Fetch, Parse, and Transform steps and accelerates reading via large block reads; Out-of-Order Optimization discards the range scan feature of LevelDB, allowing Caffe to read training data in a random manner during training, avoiding the original key comparison overhead and providing a boost to model accuracy; while the Adaptive Design method supports efficient reading of training data with different resolutions. Based on these designs, this paper implements PROAD and deploys it in Caffe for performance evaluation. Experimental results show that Caffe with PROAD significantly improves data reading performance during training, especially for high-resolution datasets, where data reading time in Caffe with PROAD is reduced by 14%–42% compared to Caffe with LevelDB and 6%–34% compared to Caffe with LMDB. Furthermore, Caffe with PROAD improves model test accuracy due to the Out-of-Order Optimization strategy, while consuming relatively reasonable memory resources. © 2025},
+ author = {Pan, Yubiao and Tian, Ailing and Zhang, Huizhen},
+ doi = {10.1016/j.parco.2025.103181},
+ journal = {Parallel Computing},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PROAD: Boosting Caffe Training via improving LevelDB I/O performance with Parallel Read, Out-of-Order Optimization, and Adaptive Design},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105024450237?origin=resultslist},
+ volume = {127},
+ year = {2026}
+}

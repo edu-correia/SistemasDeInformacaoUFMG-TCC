@@ -1,0 +1,14 @@
+@conference{Yao2018306,
+ abstract = {Key-value (KV) stores play an increasingly critical role in supporting diverse large-scale applications in modern data centers hosting terabytes of KV items which even might reside on a single server due to virtualization purpose. The combination of ever growing volume of KV items and storage/application consolidation is driving a trend of high storage density for KV stores. Shingled Magnetic Recording (SMR) represents a promising technology for increasing disk capacity, but it comes at a cost of poor random write performance and severe I/O amplification. Applications/software working with SMR devices need to be designed and optimized in an SMR-friendly manner. In this work, we present SEALDB, a Log-Structured Merge tree (LSM-Tree) based key-value store that is specifically optimized for and works well with SMR drives via adequately addressing the poor random writes and severe I/O amplification issues. First, for LSM-Trees, SEALDB concatenates SSTables of each compaction, and groups them into sets. Taking sets as the basic unit for compactions, SEALDB improves compaction efficiency by mitigating random I/Os. Second, SEALDB creates varying size bands on HM-SMR drives, named dynamic bands. Dynamic bands not only accommodate the storage of sets, but also eliminate the auxiliary write amplification from SMR drives. We demonstrate the advantages of SEALDB via extensive experiments in various workloads. Overall, SEALDB delivers impressive performance improvement. Compared with LevelDB, SEALDB is 3.42 times faster on random load due to improved compaction efficiency and eliminated auxiliary write amplification on SMR drives. © 2018 IEEE.},
+ author = {Yao, Ting and Tan, Zhihu and Wan, Jiguang and Huang, Ping and Zhang, Yiwen and Xie, Changsheng and He, Xubin},
+ doi = {10.1109/IPDPS.2018.00040},
+ journal = {Proceedings - 2018 IEEE 32nd International Parallel and Distributed Processing Symposium, IPDPS 2018},
+ note = {Cited by: 6},
+ pages = {306 - 315},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A set-aware key-value store on shingled magnetic recording drives with dynamic band},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85052237704?origin=resultslist},
+ year = {2018}
+}

@@ -1,0 +1,14 @@
+@article{10504649,
+ abstract = {This system paper documents the technical foundations for the extension of the Topology ToolKit (TTK) to distributed-memory parallelism with the Message Passing Interface (MPI). While several recent papers introduced topology-based approaches for distributed-memory environments, these were reporting experiments obtained with tailored, mono-algorithm implementations. In contrast, we describe in this paper a versatile approach (supporting both triangulated domains and regular grids) for the support of topological analysis pipelines, i.e., a sequence of topological algorithms interacting together, possibly on distinct numbers of processes. While developing this extension, we faced several algorithmic and software engineering challenges, which we document in this paper. Specifically, we describe an MPI extension of TTK’s data structure for triangulation representation and traversal, a central component to the global performance and generality of TTK’s topological implementations. We also introduce an intermediate interface between TTK and MPI, both at the global pipeline level, and at the fine-grain algorithmic level. We provide a taxonomy for the distributed-memory topological algorithms supported by TTK, depending on their communication needs and provide examples of hybrid MPI+thread parallelizations. Detailed performance analyses show that parallel efficiencies range from 20% to 80% (depending on the algorithms), and that the MPI-specific preconditioning introduced by our framework induces a negligible computation time overhead. We illustrate the new distributed-memory capabilities of TTK with an example of advanced analysis pipeline, combining multiple algorithms, run on the largest publicly available dataset we have found (120 billion vertices) on a standard cluster with 64 nodes (for a total of 1536 cores). Finally, we provide a roadmap for the completion of TTK’s MPI extension, along with generic recommendations for each algorithm communication category.},
+ author = {Le Guillou, Eve and Will, Michael and Guillou, Pierre and Lukasczyk, Jonas and Fortin, Pierre and Garth, Christoph and Tierny, Julien},
+ doi = {10.1109/TVCG.2024.3390219},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Pipelines;Parallel processing;Data structures;Memory management;Topology;Clustering algorithms;Software algorithms;Topological data analysis;high-performance computing;distributed-memory algorithms},
+ month = {Aug},
+ number = {8},
+ pages = {5875-5892},
+ title = {TTK is Getting MPI-Ready},
+ volume = {30},
+ year = {2024}
+}

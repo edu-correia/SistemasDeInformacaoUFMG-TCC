@@ -1,0 +1,14 @@
+@inproceedings{8776903,
+ abstract = {Bitmap indexes use bit arrays or bit vectors and answer queries by performing bitwise logical operations on these bitmaps, which speed-up query processing. In order to min-imize storage space, bitmap indexes are stored in compressed form. Consequently, to perform insert operation, each one of the bitmaps needs to be updated to reflect a new row, which can be prohibitively costly. With regard to this bottleneck, researchers have come up with models like Update Conscious Bitmaps(UCB) [3], which uses Word Aligned Hybrid Encoding(WAH) [3]. UCB brings the concept of Existence Bitvector, which comes with a high probability of becoming uncompressible. Also it requires a lot of pointer maintenance for the updated rows. To overcome the above issues [2] introduces Upbit, which uses Update vectors for each bit vector. This makes updation easy as compared to the delete followed by insert technique used in UCB. It also increases the compressiblity of the bit vector becoming un-compressible by regularly merging the value and update bit vectors. But whenever this merging is done, that particular query is delayed. We propose to parallelize the task of merging value bit vectors and corresponding update bit vectors.},
+ author = {Sriharsha, Chigullapally and Kumar, Piyush and Jindal, Akshay},
+ booktitle = {2019 9th International Conference on Cloud Computing, Data Science & Engineering (Confluence)},
+ doi = {10.1109/CONFLUENCE.2019.8776903},
+ issn = {},
+ keyword = {Merging;Indexes;Decoding;Python;Maintenance engineering;Encoding;Instruction sets},
+ month = {Jan},
+ number = {},
+ pages = {625-629},
+ title = {Upbit with Parallelized Merge},
+ volume = {},
+ year = {2019}
+}

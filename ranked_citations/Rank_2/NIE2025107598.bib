@@ -1,0 +1,13 @@
+@article{NIE2025107598,
+ abstract = {The inherent out-of-place update characteristic of the Log-Structured Merge tree (LSM tree) cannot guarantee persistent deletion within a specific time window, leading to potential data privacy and security issues. Existing solutions like Lethe-Fade ensure time-constrained persistent deletion but introduce considerable write overhead, worsening the write amplification issue, particularly for key–value stores on ZNS SSD. To address this problem, we propose a zone-aware persistent deletion scheme for key–value store engines. Targeting mitigating the write amplification induced by level compaction, we design an adaptive SSTable selection strategy for each level in the LSM tree. Additionally, as the SSTable with deletion records would become invalid after the persistent deletion timer reaches its threshold, we design a tombstone-aware zone allocation strategy to reduce the data migration induced by garbage collection. In further, we optimize the victim zone selection in GC to reduce the invalid migration of tombstone files. Experimental results demonstrate that our scheme effectively ensures that most outdated physical versions are deleted before reaching the persistent deletion time threshold. When deleting 10% of keys in the key–value store engine, this scheme reduces write amplification by 74.7% and the garbage collection-induced write by 87.3% compared to the Lethe-Fade scheme.},
+ author = {Shiqiang Nie and Tong Lei and Jie Niu and Qihan Hu and Song Liu and Weiguo Wu},
+ doi = {https://doi.org/10.1016/j.future.2024.107598},
+ issn = {0167-739X},
+ journal = {Future Generation Computer Systems},
+ keyword = {ZNS SSD, Data deletion, NAND flash, LSM-tree, Key–value store},
+ pages = {107598},
+ title = {Time-constrained persistent deletion for key–value store engine on ZNS SSD},
+ url = {https://www.sciencedirect.com/science/article/pii/S0167739X24005624},
+ volume = {164},
+ year = {2025}
+}

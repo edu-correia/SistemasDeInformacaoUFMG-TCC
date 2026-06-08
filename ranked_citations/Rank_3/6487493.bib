@@ -1,0 +1,14 @@
+@article{6487493,
+ abstract = {NAND flash memory has become an essential storage medium for various mobile devices, but it has some idiosyncrasies, such as out-of-place updates and bulk erase operations, which impair the I/O performance of those devices. In particular, the random write performance is strongly influenced by the overhead of a Flash Translation Layer (FTL) that hides the idiosyncrasies of NAND flash memory. To reduce the FTL overhead, operating systems need to be adapted for FTL, but widely used mobile operating systems still mainly adopt algorithms designed for traditional hard disk drives. Although there have been recent studies on rearranging write patterns into a sequential form in the operating system, these approaches fail to produce sequential write patterns under complicated workloads, and FTL still suffers from significant garbage collection overhead. If the operating system can be made aware of the write patterns that FTL requires, the overhead can be alleviated even under random write workloads. In this paper, we propose a system-wide cooperative optimization scheme, where the operating system communicates with the underlying FTL and generates write patterns that FTL can exploit to reduce the overhead. The proposed scheme was implemented on a real mobile device, and the experimental results show that the proposed scheme constantly improves performance under diverse workloads.},
+ author = {Shim, Hyotaek and Kim, Jin-Soo and Maeng, Seungryoul},
+ doi = {10.1109/TC.2013.74},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Performance evaluation;Operating systems;Switches;Benchmark testing;Throughput;Hard disks;Mobile handsets;NAND flash memory;flash translation layer;page cache;I/O scheduler;mobile system},
+ month = {Aug},
+ number = {8},
+ pages = {2052-2065},
+ title = {System-Wide Cooperative Optimization for NAND Flash-Based Mobile Systems},
+ volume = {63},
+ year = {2014}
+}

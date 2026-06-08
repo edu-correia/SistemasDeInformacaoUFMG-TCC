@@ -1,0 +1,16 @@
+@conference{Khazaie2023540,
+ abstract = {The establishment of the AGM bound on the size of intermediate results of natural join queries has led to the development of several so-called worst-case join algorithms. These algorithms provably produce intermediate results that are (asymptotically) no larger than the final result of the join. The most notable ones are the Recursive Join, its successor, the Generic Join and the Leapfrog-Trie-Join. While algorithmically efficient, however, all of these algorithms require the availability of index structures that allow tuple lookups using the prefix of a key. Key-prefix-lookups in relational database systems are commonly supported by tree-based index structures since hash-based indices only support full-key lookups. In this paper, we study a wide variety of main-memory-oriented index structures that support key-prefix-lookups with a specific focus on supporting the Generic Join. Based on that study, we develop a novel, best-of-breed index structure called Sonic that combines the fast build and point lookup properties of hashtables with the prefix-lookups capabilities of trees and tries. To evaluate the performance of a variety of indices for worst-case optimal joins in a modern code-generating DBMS, we leveraged flexible, compile-time metaprogramming features to build a framework that creates highly efficient code, interweaving (at a microarchitectural level) a generic join implementation with any appropriate index structure. We demonstrate experimentally that in that framework, Sonic outperforms the fastest existing approaches by up to 2.5 times when supporting the Generic Join algorithm. © 2023 Copyright held by the owner/author(s)},
+ author = {Khazaie, Ahmad and Pirk, Holger},
+ doi = {10.48786/edbt.2023.46},
+ journal = {Advances in Database Technology - EDBT},
+ note = {Cited by: 2},
+ number = {3},
+ pages = {540 - 551},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SonicJoin: Fast, Robust and Worst-case Optimal},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85165044286?origin=resultslist},
+ volume = {26},
+ year = {2023}
+}

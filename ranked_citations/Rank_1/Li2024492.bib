@@ -1,0 +1,15 @@
+@article{Li2024492,
+ abstract = {LSM-Tree based key-value stores commonly suffer from the issue of read amplification, as the retrieval of a particular key typically requires examination of multiple layers of SSTables. To enhance query performance, a bloom filter is commonly employed, although it is susceptible to the problem of false positives, which leads to additional I/Os. To mitigate the issue of false positives, the bloom filter size can be increased, but this in turn results in higher memory consumption. In response, we have developed LayerBF, a space allocation strategy for layered bloom filters. By leveraging access frequency, LayerBF dynamically allocates bits-per-key of bloom filters in each layer. Hotter layers are allocated a larger space, while colder layers are allocated a smaller space. This approach reduces the average false positive rate, improves storage read performance, and simultaneously minimizes memory consumption. We have implemented LayerBF in the widely used RocksDB key-value store and evaluated its performance with and without LayerBF on both hard disk drives (HDDs) and solid-state drives (SSDs). The evaluation results demonstrate that LayerBF improves read performance by 5% to 14% and reduces the false positive rate by 8% to 10%. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2024.},
+ author = {Li, Jiaoyang and Fan, Zhixin and Yue, Yinliang and Yao, Zekun and Liu, Jinzhou and Zhou, Jiang},
+ doi = {10.1007/978-981-97-2387-4_33},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 0},
+ pages = {492 - 506},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LayerBF: A Space Allocation Policy for Bloom Filter in LSM-Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85192791286?origin=resultslist},
+ volume = {14333 LNCS},
+ year = {2024}
+}

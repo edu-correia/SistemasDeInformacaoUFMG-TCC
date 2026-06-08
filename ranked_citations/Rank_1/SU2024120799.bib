@@ -1,0 +1,13 @@
+@article{SU2024120799,
+ abstract = {Dynamic streaming data is widespread in various real-world scenarios, and the distribution may change under unforeseen disturbances. The decrease in predicted performance caused by distribution change is known as concept drift. Many online learning algorithms utilize an ensemble of multiple classifiers to mitigate the impact but the generalization is constrained by the fitting capability of base classifiers. Deep neural networks have strong fitting ability and work well in static and offline learning environments while they may struggle in both dynamic adaptation and real-time learning. An Elastic Online Deep Learning (EODL) is proposed for dynamic streaming data with concept drift, which merges the fast adaptability of online ensemble methods and the fitting ability of deep neural networks. In the EODL model, each hidden layer is attached to a classifier, also called the intermediate classifier. These intermediate classifiers are regarded as base classifiers to obtain the ensemble prediction result. Then a depth adaption strategy is proposed to select different depth subnetworks for adapting the different distribution of new coming data through intermediate classifiers. With more in-distribution data arrived, deeper depth subnetworks will be selected through weights adjustment, and their training is based on the trained shallower subnetworks. When the data distribution changes, EODL will timely select shallower depth subnetworks to rapidly relearn the new data distribution. Moreover, a parameter adaption strategy is proposed for mitigating the optimization conflict, which might occur in the backpropagation of hidden layers shared by intermediate classifiers when they have different predictions. The strategy works by setting an adaptive learning rate for each subnetwork located at different depths. Experimental results demonstrate that the EODL model can efficiently adapt to changes in dynamic streaming data and outperforms recent online learning models.},
+ author = {Rui Su and Husheng Guo and Wenjian Wang},
+ doi = {https://doi.org/10.1016/j.ins.2024.120799},
+ issn = {0020-0255},
+ journal = {Information Sciences},
+ keyword = {Dynamic streaming data, Concept drift, Online deep learning, Elastic network structure},
+ pages = {120799},
+ title = {Elastic online deep learning for dynamic streaming data},
+ url = {https://www.sciencedirect.com/science/article/pii/S0020025524007138},
+ volume = {676},
+ year = {2024}
+}

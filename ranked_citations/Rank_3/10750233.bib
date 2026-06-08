@@ -1,0 +1,14 @@
+@article{10750233,
+ abstract = {Remote sensing image fusion aims to generate a high-resolution multi/hyperspectral image by combining a high-resolution image with limited spectral data and a low-resolution image rich in spectral information. Current deep learning (DL) methods typically employ convolutional neural networks (CNNs) or Transformers for feature extraction and information integration. While CNNs are efficient, their limited receptive fields restrict their ability to capture global context. Transformers excel at learning global information but are computationally expensive. Recent advancements in the state space model (SSM), particularly Mamba, present a promising alternative by enabling global perception with low complexity. However, the potential of SSM for information integration remains largely unexplored. Therefore, we propose FusionMamba, an innovative method for efficient remote sensing image fusion. Our contributions are twofold. First, to effectively merge spatial and spectral features, we expand the single-input Mamba block to accommodate dual inputs, creating the FusionMamba block, which serves as a plug-and-play solution for information integration. Second, we incorporate Mamba and FusionMamba blocks into an interpretable network architecture tailored for remote sensing image fusion. Our designs utilize two U-shaped network branches, each primarily composed of four-directional (FD) Mamba blocks, to extract spatial and spectral features separately and hierarchically. The resulting feature maps are sufficiently merged in an auxiliary network branch constructed with FusionMamba blocks. Furthermore, we improve the representation of spectral information through an enhanced channel attention module. Quantitative and qualitative valuation results across six datasets demonstrate that our method achieves the state-of-the-art (SOTA) performance, underscoring the effectiveness of FusionMamba. The code is available at https://github.com/PSRben/FusionMamba.},
+ author = {Peng, Siran and Zhu, Xiangyu and Deng, Haoyu and Deng, Liang-Jian and Lei, Zhen},
+ doi = {10.1109/TGRS.2024.3496073},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Feature extraction;Image fusion;Remote sensing;Pansharpening;Transformers;Sensors;Deep learning;Convolution;Computational complexity;Neural networks;Deep learning (DL);hyperspectral pansharpening;pansharpening;remote sensing image fusion;state space model (SSM)},
+ month = {},
+ number = {},
+ pages = {1-16},
+ title = {FusionMamba: Efficient Remote Sensing Image Fusion With State Space Model},
+ volume = {62},
+ year = {2024}
+}

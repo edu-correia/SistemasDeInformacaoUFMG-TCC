@@ -1,0 +1,16 @@
+@article{Zhu2019760,
+ abstract = {Log-structured merge tree has been adopted by many distributed storage systems. It decomposes a large database into multiple parts: an in-writing part and several read-only ones. Records are firstly written into a memory-optimized structure and then compacted into in-disk structures periodically. It achieves high write throughput. However, it brings side effect that read requests have to go through multiple structures to find the required record. In a distributed database system, different parts of the LSM-tree are stored in distributed fashion. To this end, a server in the query layer has to issues multiple network communications to pull data items from the underlying storage layer. Coming to its rescue, this work proposes a precise data access strategy which includes: an efficient structure with low maintaining overhead designed to test whether a record exists in the in-writing part of the LSM-tree; a lease-based synchronization strategy proposed to maintain consistent copies of the structure on remote query servers.We further prove the technique is capable of working robustly when the LSM-Tree is re-organizing multiple structures in the backend. It is also fault-tolerant, which is able to recover the structures used in data access after node failures happen. Experiments using the YCSB benchmark show that the solution has 6x throughput improvement over existing methods. © 2018, Higher Education Press and Springer-Verlag GmbH Germany, part of Springer Nature.},
+ author = {Zhu, Tao and Hu, Huiqi and Qian, Weining and Zhou, Huan and Zhou, Aoying},
+ doi = {10.1007/s11704-018-7198-6},
+ journal = {Frontiers of Computer Science},
+ note = {Cited by: 2},
+ number = {4},
+ pages = {760 - 777},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Fault-tolerant precise data access on distributed log-structured merge-tree},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85056348442?origin=resultslist},
+ volume = {13},
+ year = {2019}
+}

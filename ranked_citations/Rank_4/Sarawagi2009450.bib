@@ -1,0 +1,14 @@
+@conference{Sarawagi2009450,
+ abstract = {We propose efficient techniques for processing various Top-K count queries on data with noisy duplicates. Our method differs from existing work on duplicate elimination in two significant ways: First, we dedup on the fly only the part of the data needed for the answer - a requirement in massive and evolving sources where batch deduplication is expensive. The non-local nature of the problem of partitioning data into duplicate groups, makes it challenging to filter only those tuples forming the K largest groups. We propose a novel method of successively collapsing and pruning records which yield an order of magnitude reduction in running time compared to deduplicating the entire data first. Second, we return multiple high scoring answers to handle situations where it is impossible to resolve if two records are indeed duplicates of each other. Since finding even the highest scoring deduplication is NP-hard, the existing approach is to deploy one of many variants of score-based clustering algorithms which do not easily generalize to finding multiple groupings. We model deduplication as a segmentation of a linear embedding of records and present a polynomial time algorithm for finding the R highest scoring answers. This method closely matches the accuracy of an exact exponential time algorithm on several datasets. Copyright 2009 ACM.},
+ author = {Sarawagi, Sunita and Deshpande, Vinay S. and Kasliwal, Sourabh},
+ doi = {10.1145/1516360.1516413},
+ journal = {Proceedings of the 12th International Conference on Extending Database Technology: Advances in Database Technology, EDBT'09},
+ note = {Cited by: 4; All Open Access; Gold Open Access},
+ pages = {450 - 461},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Top-K count queries over imprecise duplicates},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/70349162329?origin=resultslist},
+ year = {2009}
+}

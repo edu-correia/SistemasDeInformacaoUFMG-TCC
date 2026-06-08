@@ -1,0 +1,14 @@
+@conference{Liu20252,
+ abstract = {Video Generation Model (VGM), as a representative of multi-modal large models, has revolutionized the productivity of video content creation. VGMs are compute-bound due to adopting the Diffusion Transformer (i.e., DiT) structure. Sparsification is a common method for accelerating compute-intensive models. Still, sparse VGMs cannot fully exploit the effective throughput (i.e., TOPS <sup>1</sup>) of GPUs. FPGAs are good candidates for accelerating sparse deep learning models. However, existing FPGA accelerators still face low throughput (<2TOPS) on VGMs due to the significant gap in peak computing performance (PCP) with GPUs (>21×). To achieve a higher throughput than GPUs, FPGA-based acceleration of sparse VGMs still faces the following challenges: large redundancy in activations, low performance of DSPs under hybrid precision, and under-utilization using static compilation for online compression. To tackle these challenges, we propose FlightVGM, the first FPGA accelerator for efficient VGM inference with activation sparsification and hybrid precision. In FlightVGM, our motivation stems from VGMs exhibiting different compression preferences in various dimensions and layers. To exploit the video frames’ similarity in the temporal and spatial dimensions, we propose a spatial-temporal online activation sparsification architecture, reducing the computational cost by 3.17×. To provide a good trade-off between the accuracy and efficiency of VGMs, we employ fixed-point precision for linear layers and retain floating-point precision for attention layers. Then, we propose a floating-fixed hybrid precision DSP58 expansion architecture on the AMD V80 FPGA, boosting the PCP by 3.26×. Finally, to make FlightVGM available to various workloads, we propose a dynamic-static combined adaptive scheduling method for low-overhead online sparsification, improving the computation utilization by 2.75×. Implemented on the AMD V80 FPGA, FlightVGM surpasses NVIDIA 3090 GPU by 1.30× in performance and 4.49× in energy efficiency on various sparse VGM workloads. © 2025 Copyright held by the owner/author(s).},
+ author = {Liu, Jun and Zeng, Shulin and Ding, Li and Soedarmadji, Widyadewi and Zhou, Hao and Wang, Zehao and Li, Jinhao and Li, Jintao and Dai, Yadong and Wen, Kairui and He, Shan and Sun, Yaqi and Wang, Yu and Dai, Guohao},
+ doi = {10.1145/3706628.3708864},
+ journal = {FPGA 2025 - Proceedings of the 2025 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+ note = {Cited by: 11; All Open Access; Gold Open Access},
+ pages = {2 - 13},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FlightVGM: Efficient Video Generation Model Inference with Online Sparsification and Hybrid Precision on FPGAs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105000132728?origin=resultslist},
+ year = {2025}
+}

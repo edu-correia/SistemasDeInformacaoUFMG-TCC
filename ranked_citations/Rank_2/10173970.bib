@@ -1,0 +1,14 @@
+@inproceedings{10173970,
+ abstract = {Test input generation is one of the key applications of symbolic execution (SE). However, being a path-sensitive technique, SE often faces path explosion even when creating a branch-adequate test suite. Path-merging symbolic execution (PM-SE) alleviates the path explosion problem by summarizing regions of code into disjunctive constraints, thus traversing at once a set of paths with the same prefixes. Previous work has shown that PM-SE can reduce run-time up to 38%, though these improvements can be impaired if the summarized code results in complex constraints or introduces additional symbols that increase the number of branching points in the later execution.Considering these trade-offs, examining the ability of PM-SE to generate branch-adequate test inputs is an open research problem. This paper investigates it by developing a technique that extracts structural coverage-related queries from disjoint constraints. Using this approach, we extend PM-SE to generate branch-adequate test inputs.Experiments compare the effectiveness and efficiency of test input generation by SE and PM-SE techniques. Results show that those techniques are complementary. For some programs, PM-SE yields faster coverage, with fewer generated tests, while for others, SE performs better. In addition, each technique covers branches that the other fails to discover.},
+ author = {Hussein, Soha and McCamant, Stephen and Sherman, Elena and Sharma, Vaibhav and Whalen, Mike},
+ booktitle = {2023 IEEE/ACM International Conference on Automation of Software Test (AST)},
+ doi = {10.1109/AST58925.2023.00012},
+ issn = {2833-9061},
+ keyword = {Codes;Automation;Symbols;Explosions;Software;Faces;Symbolic Execution;Path merging;veritesting;program analysis;test input generation;test case generation},
+ month = {May},
+ number = {},
+ pages = {79-89},
+ title = {Structural Test Input Generation for 3-Address Code Coverage Using Path-Merged Symbolic Execution},
+ volume = {},
+ year = {2023}
+}

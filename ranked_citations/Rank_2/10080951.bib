@@ -1,0 +1,14 @@
+@article{10080951,
+ abstract = {For the reduction of JPEG compression artifacts, there have been many methods using deep neural networks. Most of them use the JPEG compression quality factor (QF) as prior knowledge in designing and training the networks. However, since the images we get from the Internet are often recompressed, the given QF is not so informative or misleading. Also, early works validated their methods on low QFs less than 50, while recent smartphones use high QFs larger than or equal to 90. In this paper, we propose a new JPEG artifacts reduction network considering the above-stated problems. Specifically, to extract quality information from the input image itself instead of the QF provided in the header of the JPEG file, we use a variational autoencoder (VAE) and regard its latent vector as quality information. In designing the artifact reduction network, we let the network change flexibly according to the input image quality by employing a deformable offset gating (DOG) network. The gating network and VAE are merged as our overall network, dubbed DOG-VAE, where the information from the VAE is used to adjust the DOG network according to the input quality. The DOG-VAE is trained end-to-end with the QFs in the range of [10], [90]. Extensive experiments validate that our method achieves comparable results to the state-of-the-art method for monochrome images and better results for color images. Our codes are available at https://github.com/yunjh410/DOGNet.},
+ author = {Yoon, Jeonghwan and Cho, Nam Ik},
+ doi = {10.1109/ACCESS.2023.3261268},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Image restoration;Image coding;Transform coding;Convolution;Quantization (signal);Deep learning;JPEG artifacts removal;quantization;image restoration;recompression;deformable convolution;convolutional neural network (CNN)},
+ month = {},
+ number = {},
+ pages = {30282-30291},
+ title = {JPEG Artifact Reduction Based on Deformable Offset Gating Network Controlled by a Variational Autoencoder},
+ volume = {11},
+ year = {2023}
+}

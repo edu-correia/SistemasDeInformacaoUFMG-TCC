@@ -1,0 +1,14 @@
+@inproceedings{6969537,
+ abstract = {Connected Component Labeling (CCL) is one of the most important step in pattern recognition and image processing. It assigns labels to the pixels such that adjacent pixels sharing the same features are assigned the same label. Typically, CCL requires several passes over the data. We focus on two-pass technique where each pixel is given a provisional label in the first pass whereas an actual label is assigned in the second pass. We present a scalable parallel two-pass CCL algorithm, called PAREMSP, which employs a scan strategy and the best union-find technique called REMSP, which uses REM'S algorithm for storing label equivalence information of pixels in a 2-D image. In the first pass, we divide the image among threads and each thread runs the scan phase along with REMSP simultaneously. In the second phase, we assign the final labels to the pixels. As REMSP is easily parallelizable, we use the parallel version of REMSP for merging the pixels on the boundary. Our experiments show the scalability of PAREMSP achieving speedups up to 20.1 using 24 cores on shared memory architecture using OpenMP for an image of size 465.20 MB. We find that our proposed parallel algorithm achieves linear scaling for a large resolution fixed problem size as the number of processing elements are increased. Additionally, the parallel algorithm does not make use of any hardware specific routines, and thus is highly portable.},
+ author = {Gupta, Siddharth and Palsetia, Diana and Patwary, Md. Mostofa Ali and Agrawal, Ankit and Choudhary, Alok},
+ booktitle = {2014 IEEE International Parallel & Distributed Processing Symposium Workshops},
+ doi = {10.1109/IPDPSW.2014.152},
+ issn = {},
+ keyword = {Arrays;Algorithm design and analysis;Labeling;Decision trees;Parallel algorithms;Corporate acquisitions;CCL;OpenMP;Union-FInd;Image Processing;Pattern Recognition},
+ month = {May},
+ number = {},
+ pages = {1355-1362},
+ title = {A New Parallel Algorithm for Two-Pass Connected Component Labeling},
+ volume = {},
+ year = {2014}
+}

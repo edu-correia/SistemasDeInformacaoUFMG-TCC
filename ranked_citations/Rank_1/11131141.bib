@@ -1,0 +1,14 @@
+@article{11131141,
+ abstract = {Autonomous aerial vehicle (AAV) object detection in aerial images presents substantial value but also considerable challenges. UAV images often exhibit characteristics such as a high proportion of small objects, dense distributions, and significant scale variations, which present considerable challenges for accurate detection. To address these issues, we propose the ISDC-YOLO algorithm, which is based on inverted bottleneck structures and Semantic Detail Fusion techniques. First, the P5 layer, which has the highest parameter count and is primarily designed for detecting large objects, is removed from the backbone. Meanwhile, the P2, P3, and P4 layers, which specialize in detecting medium and small objects, are merged, with P2 and P3 serving as detection heads to enhance the model’s focus on small objects. Subsequently, a lightweight C2F-DOB module, based on the Inverted Bottleneck architecture, is designed to capture richer contextual information while maintaining a lightweight design. Next, a Semantic and Detail Fusion (SDFM) module is designed to fuse fine-grained information from shallow feature maps with semantic information from deep feature maps. Finally, the detection head is replaced with a Dynamic Head, allowing the integration of scale, spatial, and task awareness within a single module. Extensive experiments on the VisDrone dataset demonstrate that compared with YOLOv8s, ISDC-YOLOv8(128) achieves improvements of 9.8% in Recall and 9.2% in mAP@0.5, while reducing parameter count by 47.8%. On the AI-TOD dataset, Recall and mAP@0.5 increase by 11.7% and 9.3%, respectively, further validating its effectiveness and generalization on Solar Panel Defect datasets (SPDs). The improved model achieves enhanced detection accuracy while maintaining a lightweight architecture, validating the effectiveness of the proposed optimization strategies and outperforming other classical models.},
+ author = {Wang, Chen and Liu, Fen},
+ doi = {10.1109/ACCESS.2025.3600840},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Feature extraction;Autonomous aerial vehicles;Convolution;Accuracy;Semantics;Remote sensing;Head;YOLO;Computational modeling;Standards;Aerial images;YOLOv8;small target detection;C2F-DOB;SDFM},
+ month = {},
+ number = {},
+ pages = {147874-147891},
+ title = {ISDC-YOLO: A Lightweight Small Object Detection Algorithm Based on Inverted Bottleneck and Semantic Detail Fusion Network for UAV Aerial Image},
+ volume = {13},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@article{11419833,
+ abstract = {In-network computing (INC) offloads parts of the functionality of a distributed system to programmable switches. Once we move the computation into the network, failures may cause loss of essential information and disrupt the operation of these systems. To ensure high availability in the event of switch failures, the current state-of-the-art replicates state across multiple INCs. They achieve this by using state-machine replication, ensuring that INC replicas are consistent by coordinating the replication between multiple INC nodes. In this paper, we demonstrate that decoupling the consistency guarantees from the replication reduces the overhead of INC fault tolerance. We present RESIST, a system for building fault-tolerant INC using asynchronous replication and replay-based recovery. We propose new techniques for logging information and different replay techniques to restore INC systems according to consistency semantics. Furthermore, we apply RESIST techniques to existing INC functionalities, including event synchronization for distributed simulations and aggregation for distributed training. Our prototype of RESIST enables fault tolerance for INC applications on BMv2 and in a testbed with Tofino ASICs. Experiments show that the system provides fault tolerance with negligible overhead for non-failure scenarios and recovers from failures in less than 0.2 s.},
+ author = {Parizotto, Ricardo and Haque, Israat and Schaeffer-Filho, Alberto},
+ doi = {10.1109/TCC.2026.3669680},
+ issn = {2168-7161},
+ journal = {IEEE Transactions on Cloud Computing},
+ keyword = {Fault tolerant systems;Fault tolerance;Resists;Synchronization;Servers;Semantics;Clocks;Registers;Switches;Computational modeling;Consistency;fault tolerance;offloading;programmable networks},
+ month = {},
+ number = {},
+ pages = {1-12},
+ title = {Keep Calm but Log for Trouble: Coordination-Free Fault-Tolerance for In-Switch Applications},
+ volume = {},
+ year = {2026}
+}

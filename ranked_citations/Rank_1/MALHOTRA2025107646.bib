@@ -1,0 +1,22 @@
+@article{MALHOTRA2025107646,
+ abstract = {Context:
+Software defect prediction (SDP) is a prominent research area focussed on anticipating defects early in the software lifecycle. Traditional machine learning models are based on static features, which are not enough to capture contextual information in the source code. In recent years, researchers have also developed deep learning models that extract semantic information from source code using the abstract syntax tree (AST). These approaches often combine static and semantic features by a simple merger operation.
+Objective:
+The article aims to address the limitations of the existing models by utilizing advanced feature extraction and integration techniques. It develops a deep learning model that can effectively prioritize the crucial features and intelligently combine the static and semantic features to provide robust predictions
+Method:
+The article proposes a novel model namely, dual-attention-based hierarchical gated BiGRU (DHG-BiGRU). The model first employs a static feature extractor (StatFE) and a semantic feature extractor (SemFE) to capture static and semantic features, respectively. Next, the outputs from StatFE and SemFE are passed to individual BiGRUs. The BiGRU output associated with the semantic features is subsequently processed by a dual attention mechanism (DAM), that captures the complex semantic information with emphasis on the most crucial features. Afterward, the hierarchical gated fusion (HGF) meticulously merges the static and semantic features. Finally, these integrated features are passed through a sigmoid function to predict defects.
+Results:
+The extensive experiments on extensively utilized datasets from the PROMISE repository reveal that DHG-BiGRU performs significantly better than the most advanced models and consistently achieves higher precision, recall and f-measure, demonstrating a reliable prediction capability.
+Conclusion:
+The results of the study underscore the potential advanced feature extraction and integration techniques for SDP. By achieving considerable improvements over state-of-the-art techniques, the proposed approach paves the way for sophisticated defect prediction models to improve software quality and reliability.},
+ author = {Ruchika Malhotra and Priya Singh},
+ doi = {https://doi.org/10.1016/j.infsof.2024.107646},
+ issn = {0950-5849},
+ journal = {Information and Software Technology},
+ keyword = {Software defect prediction, Software quality, Abstract syntax tree, Bidirectional gated recurrent unit, Deep semantic learning, Natural language processing},
+ pages = {107646},
+ title = {DHG-BiGRU: Dual-attention based hierarchical gated BiGRU for software defect prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950584924002519},
+ volume = {179},
+ year = {2025}
+}

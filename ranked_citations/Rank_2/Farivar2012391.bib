@@ -1,0 +1,14 @@
+@conference{Farivar2012391,
+ abstract = {Iterative-convergence algorithms are frequently used in a variety of domains to build models from large data sets. Cluster implementations of these algorithms are commonly realized using parallel programming models such as MapReduce. However, these implementations suffer from significant performance bottlenecks, especially due to large volumes of network traffic resulting from intermediate data and model updates during the iterations. To address these challenges, we propose partitioned iterative convergence (PIC), a new approach to programming and executing iterative convergence algorithms on frameworks like MapReduce. In PIC, we execute the iterative-convergence computation in two phases - the best-effort phase, which quickly produces a good initial model and the top-off phase, which further refines this model to produce the final solution. The best-effort phase iteratively performs the following steps: (a) partition the input data and the model to create several smaller, model-building sub-problems, (b) independently solve these sub-problems using iterative convergence computations, and (c) merge solutions of the sub-problems to create the next version of the model. This partitioned, loosely coupled execution of the computation produces a model of good quality, while drastically reducing network traffic due to intermediate data and model updates. The top-off phase further refines this model by employing the original iterative-convergence computation on the entire (un-partitioned) problem until convergence. However, the number of iterations executed in the top-off phase is quite small, resulting in a significant overall improvement in performance. We have implemented a library for PIC on top of the Hadoop MapReduce framework, and evaluated it using five popular iterative-convergence algorithms (Page Rank, K-Means clustering, neural network training, linear equation solver and image smoothing). Our evaluations on clusters ranging from 6 nodes to 256 nodes demonstrate a 2.5X-4X speedup compared to conventional implementations using Hadoop. © 2012 IEEE.},
+ author = {Farivar, Reza and Raghunathan, Anand and Chakradhar, Srimat and Kharbanda, Harshit and Campbell, Roy H.},
+ doi = {10.1109/CLUSTER.2012.84},
+ journal = {Proceedings - 2012 IEEE International Conference on Cluster Computing, CLUSTER 2012},
+ note = {Cited by: 6},
+ pages = {391 - 401},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PIC: Partitioned iterative convergence for clusters},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84870720970?origin=resultslist},
+ year = {2012}
+}

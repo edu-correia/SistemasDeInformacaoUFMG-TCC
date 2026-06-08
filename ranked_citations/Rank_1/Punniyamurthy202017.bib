@@ -1,0 +1,14 @@
+@conference{Punniyamurthy202017,
+ abstract = {In multi-GPU and multi-chiplet GPU systems exhibiting NUMAbehavior, information about addresses accessed by threads is crucial for various optimizations such as data/thread co-location andcache/scratchpad memory management. To make optimal decisionsand avoid runtime overhead, knowledge about dynamic, potentiallydata-dependent access patterns should be available before kernelexecution. Existing approaches require rewriting of applications orcan only capture static, data-independent patterns. In this paper, wepropose TAFE, a framework for accurate dynamic thread addressfootprint estimation of GPU applications. TAFE combines minimalstatic address pattern annotations with dynamic data dependencytracking to compute threadblock-specific address footprints priorto kernel launch. We propose a low-overhead software mechanismto track dynamic data-dependencies and provide an optional lightweight hardware extension to support transparent tracking.We evaluate TAFE on different NUMA GPU system configurations. TAFE achieves 91% estimation accuracy across a wide rangeof access patterns while incurring less than 3% tracking and estimation overhead. We further demonstrate benefits of using TAFEfor efficient data/compute co-location. A TAFE-optimized thread/-page mapping, can reduce off-chip traffic by 23% (up to 62%) whilerequiring only minimal, architecture-oblivious annotations fromprogrammer. Furthermore, a TAFE-optimized system achieves onaverage 45% and 32% (up to 2x) higher performance comparedto an unoptimized baseline and 10% and 22% over existing static,data-independent schemes across multiple system configurations.  © 2020 Association for Computing Machinery.},
+ author = {Punniyamurthy, Kishore and Gerstlauer, Andreas},
+ doi = {10.1145/3410463.3414641},
+ journal = {Parallel Architectures and Compilation Techniques - Conference Proceedings, PACT},
+ note = {Cited by: 4},
+ pages = {17 - 29},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TAFE: Thread address footprint estimation for capturing data/thread locality in GPU systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85094217496?origin=resultslist},
+ year = {2020}
+}

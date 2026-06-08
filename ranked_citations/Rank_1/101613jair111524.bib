@@ -1,0 +1,18 @@
+@article{10.1613/jair.1.11524,
+ abstract = {This article describes REBA, a knowledge representation and reasoning architecture for robots that is based on tightly-coupled transition diagrams of the domain at two different levels of granularity. An action language is extended to support non-boolean fluents and non-deterministic causal laws, and used to describe the domain's transition diagrams, with the fine-resolution transition diagram being defined as a refinement of the coarse-resolution transition diagram. The coarse-resolution system description, and a history that includes prioritized defaults, are translated into an Answer Set Prolog (ASP) program. For any given goal, inference in the ASP program provides a plan of abstract actions. To implement each such abstract action, the robot automatically zooms to the part of the fine-resolution transition diagram relevant to this abstract transition. The zoomed fine-resolution system description, and a probabilistic representation of the uncertainty in sensing and actuation, are used to construct a partially observable Markov decision process (POMDP). The policy obtained by solving the POMDP is invoked repeatedly to implement the abstract transition as a sequence of concrete actions. The fine-resolution outcomes of executing these concrete actions are used to infer coarse-resolution outcomes that are added to the coarse-resolution history and used for subsequent coarse-resolution reasoning. The architecture thus combines the complementary strengths of declarative programming and probabilistic graphical models to represent and reason with non-monotonic logic-based and probabilistic descriptions of uncertainty and incomplete domain knowledge. In addition, we describe a general methodology for the design of software components of a robot based on these knowledge representation and reasoning tools, and provide a path for proving the correctness of these components. The architecture is evaluated in simulation and on a mobile robot finding and moving target objects to desired locations in indoor domains, to show that the architecture supports reliable and efficient reasoning with violation of defaults, noisy observations and unreliable actions, in complex domains.},
+ address = {El Segundo, CA, USA},
+ author = {Sridharan, Mohan and Gelfond, Michael and Zhang, Shiqi and Wyatt, Jeremy},
+ doi = {10.1613/jair.1.11524},
+ issn = {1076-9757},
+ issue_date = {May 2019},
+ journal = {J. Artif. Int. Res.},
+ month = {May},
+ number = {1},
+ numpages = {94},
+ pages = {87–180},
+ publisher = {AI Access Foundation},
+ title = {REBA: a refinement-based architecture for knowledge representation and reasoning in robotics},
+ url = {https://doi.org/10.1613/jair.1.11524},
+ volume = {65},
+ year = {2019}
+}

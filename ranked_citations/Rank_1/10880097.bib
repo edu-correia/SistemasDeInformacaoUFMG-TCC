@@ -1,0 +1,14 @@
+@article{10880097,
+ abstract = {Post-quantum cryptography (PQC) has rapidly evolved in response to the emergence of quantum computers, with the US National Institute of Standards and Technology (NIST) selecting four finalist algorithms for PQC standardization in 2022, including the Falcon digital signature scheme. Hawk is currently the only lattice-based candidate in NIST Round 2 additional signatures. Falcon and Hawk are based on the NTRU lattice, offering compact signatures, fast generation, and verification suitable for deployment on resource-constrained Internet-of-Things (IoT) devices. Despite the popularity of ML-DSA and ML-KEM, research on NTRU-based schemes has been limited due to their complex algorithms and operations. Falcon and Hawk's performance remains constrained by the lack of parallel execution in crucial operations like the Number Theoretic Transform (NTT) and Fast Fourier Transform (FFT), with data dependency being a significant bottleneck. This paper enhances NTRU-based schemes Falcon and Hawk through hardware/software co-design on a customized Single-Instruction-Multiple-Data (SIMD) processor, proposing new SIMD hardware units and instructions to expedite these schemes along with software optimizations to boost performance. Our NTT optimization includes a novel layer merging technique for SIMD architecture to reduce memory accesses, and the use of modular algorithms (Signed Montgomery and Improved Plantard) targets various modulus data widths to enhance performance. We explore applying layer merging to accelerate fixed-point FFT at the SIMD instruction level and devise a dual-issue parser to streamline assembly code organization to maximize dual-issue utilization. A System-on-chip (SoC) architecture is devised to improve the practical application of the processor in real-world scenarios. Evaluation on 28 $nm$nm technology and field programmable gate array (FPGA) platform shows that our design and optimizations can increase the performance of Hawk signature generation and verification by over 7$\times$×.},
+ author = {Ye, Zewen and Huang, Junhao and Huang, Tianshun and Bai, Yudan and Li, Jinze and Zhang, Hao and Li, Guangyan and Chen, Donglong and Cheung, Ray C. C. and Huang, Kejie},
+ doi = {10.1109/TC.2025.3540647},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Single instruction multiple data;NIST;Internet of Things;Polynomials;Digital signatures;Optimization;Computers;Computer architecture;Lattices;Hardware;Post-quantum cryptography;NTRU;falcon;hawk;RISC-V;system-on-chip},
+ month = {May},
+ number = {5},
+ pages = {1649-1662},
+ title = {PQNTRU: Acceleration of NTRU-Based Schemes via Customized Post-Quantum Processor},
+ volume = {74},
+ year = {2025}
+}

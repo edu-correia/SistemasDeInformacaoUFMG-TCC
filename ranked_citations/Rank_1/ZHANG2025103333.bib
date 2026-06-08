@@ -1,0 +1,13 @@
+@article{ZHANG2025103333,
+ abstract = {Tensor multiplication holds a pivotal position in numerous applications. The existing accelerators predominantly rely on inner or outer products for their computational strategies, yet these methodologies encounter obstacles such as excessive storage overhead, underutilization of parallelism, and merging costs. To tackle the challenges, we propose an acceleration technique that integrates a hybrid product approach with a tailored hardware. Our design can accommodate tensor multiplications of various scales, boasting exceptional scalability. First, we employ a hybrid product approach for tensor multiplications, strategically leveraging various methods – including inner, outer, and Hadamard products – to optimize different stages of submatrices computations. Second, we devise a dedicated architecture that seamlessly aligns with hybrid product, leveraging dataflow paradigm to map tensor multiplication efficiently onto the hardware. Third, we design a sliding-window partial reuse FIFO (SWFIFO), alongside a data reorder and scheduling unit to accelerate data retrieval. For general matrix multiplication (GEMM), our design demonstrates an average speedup of 17.62× and 9.47% energy consumption over Nvidia’s V100 GPU. Furthermore, it surpasses Google’s TPU (size of 256 × 256) by an average of 3.76×, TPUv2 (size of 128 × 128) by 3.19× and Eyeriss by 3.8×. When evaluated on eight neural network models, our design yields a performance boost of 2.89× over TPU and 2.19× over Eyeriss.},
+ author = {Zhiyuan Zhang and Zhihua Fan and Wenming Li and Yuhang Qiu and Zhen Wang and Xiaochun Ye and Dongrui Fan and Xuejun An},
+ doi = {https://doi.org/10.1016/j.sysarc.2025.103333},
+ issn = {1383-7621},
+ journal = {Journal of Systems Architecture},
+ keyword = {Tensor multiplication, Hybrid product, Dataflow, Accelerator},
+ pages = {103333},
+ title = {Accelerating tensor multiplication by exploring hybrid product with hardware and software co-design},
+ url = {https://www.sciencedirect.com/science/article/pii/S1383762125000050},
+ volume = {159},
+ year = {2025}
+}

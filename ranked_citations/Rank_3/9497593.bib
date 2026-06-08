@@ -1,0 +1,14 @@
+@inproceedings{9497593,
+ abstract = {A Binary Decision Diagram (BDD) is a data structure that can be used for efficient representation of Boolean functions. It allows storing a Boolean function of many variables and manipulating with it. For a given Boolean function, a BDD can be created statically or dynamically. The static creation has usually high demands on memory and time, therefore, it can be applied only to functions of few variables. On the other hand, the dynamic creation has less demands on computation time and memory, therefore, it is more preferable in case of real-world problems that usually deal with functions containing many variables. The dynamic creation is based on a fact that a function of many variables can be viewed as a composition of several smaller functions. Using this idea, BDDs of smaller functions are firstly created and then they are combined together to obtain a BDD of the whole function. The time needed for dynamic creation of a BDD depends on several factors. In case of a Boolean function that can be viewed as a composition of several smaller functions merged using an associative binary operation (e.g., AND, OR, NAND, NOR), time needed to create the final BDD can be influenced by the order in which the smaller functions are processed to obtain a BDD representing the whole function. This processing order is known as fold strategy and, generally, two basic strategies can be defined. These strategies are left (right) fold, in which the functions are processed from left to right (from right to left), and tree fold, when the functions at odd positions are merged with their right neighbors and this process is repeated until we obtain the final BDD. In this paper, we analyze influence of these two strategies on time needed to create a BDD representing Boolean function that is defined in a disjunctive normal form. The experimental analysis is primarily realized using our C++library for creation and manipulation with decision diagrams named as TeDDy (Templated Decision Diagram library).},
+ author = {Mrena, Michal and Kvassay, Miroslav},
+ booktitle = {2021 International Conference on Information and Digital Technologies (IDT)},
+ doi = {10.1109/IDT52577.2021.9497593},
+ issn = {2575-677X},
+ keyword = {Boolean functions;Software libraries;Heuristic algorithms;Memory management;Cache memory;Programmable logic arrays;Binary decision diagrams;binary decision diagram;Boolean function;left fold;reliability analysis;right fold;structure function;tree fold},
+ month = {June},
+ number = {},
+ pages = {341-352},
+ title = {Comparison of Left Fold and Tree Fold Strategies in Creation of Binary Decision Diagrams},
+ volume = {},
+ year = {2021}
+}

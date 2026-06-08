@@ -1,0 +1,13 @@
+@article{ZHAO2026104013,
+ abstract = {Multiple Instance Learning (MIL) has achieved significant success in whole slide image (WSI) analysis. However, the complexity and heterogeneity in WSIs remain fundamental challenges for MIL problem due to the various information in each WSI. However, existing MIL methods face challenges in effectively aggregating diverse patch information into robust and predictive WSI representations. While Vision Transformers (ViTs) and clustering-based approaches have shown promise, they are often computationally intensive and fail to fully capture task-specific features and slide-specific variability. To address these limitations, we propose PTCMIL, a novel Prompt Token Clustering-based ViT for MIL aggregation. Unlike conventional two-stage clustering methods in MIL, PTCMIL introduces learnable prompt tokens into the Vision Transformer (ViT) backbone, enabling slide-specific, task-aware clustering through projection-based token clustering. By guiding clustering with prediction objectives and generating compact cluster prototypes through token merging, PTCMIL effectively captures both patch diversity and task-relevant patterns. Our key contributions include: (1) A prompt-driven clustering mechanism that learns meaningful prototypes without relying on expensive global clustering or patch sampling; (2) An efficient merging strategy to construct interpretable and compact WSI-level representations; and (3) A pooling module that supports both classification and survival analysis tasks. Extensive experiments across eleven benchmark datasets-including breast, lung, colorectal, and prostate cancer WSIs-demonstrate that PTCMIL consistently outperforms state-of-the-art MIL baselines in classification, survival prediction, and domain adaptation tasks. Our results highlight PTCMIL’s potential as a practical and generalizable solution for large-scale computational pathology. The code is available at https://github.com/ubc-tea/PTCMIL.},
+ author = {Beidi Zhao and Sangmook Kim and Hao Chen and Chen Zhou and Zu-hua Gao and Gang Wang and Xiaoxiao Li},
+ doi = {https://doi.org/10.1016/j.media.2026.104013},
+ issn = {1361-8415},
+ journal = {Medical Image Analysis},
+ keyword = {Multiple instance learning, Prompt learning, Clustering},
+ pages = {104013},
+ title = {PTCMIL: multiple instance learning via prompt token clustering for whole slide image analysis},
+ url = {https://www.sciencedirect.com/science/article/pii/S1361841526000824},
+ volume = {111},
+ year = {2026}
+}

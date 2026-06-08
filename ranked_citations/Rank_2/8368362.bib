@@ -1,0 +1,14 @@
+@inproceedings{8368362,
+ abstract = {K-mer counting is a fundamental operation in DNA research and genome analytics; its application includes estimating genome assembly, understanding similarities in genomic samples, and merging a newly processed genome with a reference genome. As the genome dataset becomes larger and larger, designing a highly optimized distributed-memory implementation becomes more and more important. Current distributed-memory solutions have two limitations: they have a high memory footprint, and they do not provide advanced optimizations for loading enormous genome datasets into memory. Based on these observations, we present Bloomfish, a distributed, memory-efficient, scalable solution to the limits of current work. To keep a low memory footprint, Bloomfish leverages the compact hash array design of the single-node Jellyfish system and the optimized workflow of the high-performance MapReduce framework Mimir. We have also codesigned Mimir's I/O to efficiently load enormous datasets. We ran Bloomfish on the Tianhe-2 supercomputer with large sequence datasets (up to 24 TB). Our results show that Bloomfish achieves unprecedented scalability in genome analytics.},
+ author = {Gao, Tao and Guo, Yanfei and Wei, Yanjie and Wang, Bingqiang and Lu, Yutong and Cicotti, Pietro and Balaji, Pavan and Taufer, Michela},
+ booktitle = {2017 IEEE 23rd International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS.2017.00033},
+ issn = {1521-9097},
+ keyword = {Genomics;Bioinformatics;Optimization;Supercomputers;DNA;Arrays;Scalability;K-mer counting;Genome analysis;MapReduce;Memory efficiency;I/O optimization;Performance and scalability},
+ month = {Dec},
+ number = {},
+ pages = {170-179},
+ title = {Bloomfish: A Highly Scalable Distributed K-mer Counting Framework},
+ volume = {},
+ year = {2017}
+}

@@ -1,0 +1,14 @@
+@inproceedings{8046334,
+ abstract = {Kernel Samepage Merging (KSM) is a Linux kernel module for improving memory utilization by searching and merging the redundant memory pages. When working with the hypervisors, such as Kernel-based Virtual Machine, KSM helps share identical memory pages of the hosted virtual servers so as to increase the server density. Nevertheless, while KSM improves the efficiency of the host system, it hurts the performance of the virtualized systems since part of the CPU cycles is spent on exploring the page sharing opportunities. In this paper, two optimization schemes, selective page comparison and checksum computation acceleration, are proposed to improve the KSM efficiency, as well as to reduce the CPU burden at the same time. Selective page comparison skips the expensive content comparison operations, which are performed by default in the original KSM for examining redundant pages, for the frequently-changing pages according to their checksums. Checksum computation acceleration shifts the CPU load of the page checksum calculation to the GPU by leveraging the in-kernel computation acceleration framework, KGPU. We implemented the two optimizations, and evaluated their performance with the web server workloads on the virtualized servers. Our results show that the speed of the page-merging process is improved by a factor of up to 1.64 with the both optimization schemes. To the best of our knowledge, we believe this is the first attempt to accelerate the KSM with the GPU, and our work paves a road toward a more sophisticated, GPU-enabled memory deduplication algorithm.},
+ author = {Lin, Wei-Cheng and Tu, Chia-Heng and Yeh, Chih-Wei and Hung, Shih-Hao},
+ booktitle = {2017 IEEE 23rd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)},
+ doi = {10.1109/RTCSA.2017.8046334},
+ issn = {2325-1301},
+ keyword = {Servers;Acceleration;Optimization;Merging;Kernel;Graphics processing units;Memory management},
+ month = {Aug},
+ number = {},
+ pages = {1-6},
+ title = {GPU acceleration for Kernel Samepage Merging},
+ volume = {},
+ year = {2017}
+}

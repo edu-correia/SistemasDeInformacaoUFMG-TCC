@@ -1,0 +1,13 @@
+@article{ZHOU2022103801,
+ abstract = {Currently, model predictive control (MPC) for adaptive cruise control (ACC) systems relies on the prediction of the leader’s motion to plan the follower’s trajectory. However, such predictions must be accurate to guarantee string stability, which represents an ongoing challenge for machine learning approaches. This issue can be circumvented by simply incorporating the leader’s history, which follows from Newell’s car-following (CF) model where a trajectory under congestion corresponds to a temporal–spatial shift of the leader’s past trajectories. By leveraging this insight, this paper develops a family of MPC models based on Newell’s CF model, labeled Newell MPCs, which are safe and can reduce traffic congestion. Specifically, We first present baseline Newell MPCs to replicate the original Newell’s CF model, including the Xbound-Model, which uses the shifted leader trajectory as an upper envelope; and the Xref-Model, which adopts the shifted leader trajectory as a reference to avoid the issue of infeasible solution triggered by hard constraints. To further improve the control performance, we propose the XV-Model which uses the leader speed history as an additional reference to enhance the model robustness and regulate speed over/under-shootings. In addition, we extend the single-leader Newell’s model through incorporating multiple leaders and propose the Xmul-Model, which can achieve driver anticipation, and correspondingly reduce reaction time and improve string stability. Finally, based on the XV-Model, we present two additional extensions: (i) the XVrelax-Model, which incorporates driver relaxation to achieve smooth response to merging traffic; and (ii) the XVss-Model, which achieves strict string stability to further dampen traffic oscillations. The proposed Newell MPCs are tested using both numerical simulations and field studies on a stock 2019 Honda Civic using Openpilot and Comma.ai; the source code is available at https://github.com/HaoZhouGT/openpilot.},
+ author = {Hao Zhou and Anye Zhou and Tienan Li and Danjue Chen and Srinivas Peeta and Jorge Laval},
+ doi = {https://doi.org/10.1016/j.trc.2022.103801},
+ issn = {0968-090X},
+ journal = {Transportation Research Part C: Emerging Technologies},
+ keyword = {MPC, Adaptive cruise control, Newell’s car following, String stability, Openpilot},
+ pages = {103801},
+ title = {Congestion-mitigating MPC design for adaptive cruise control based on Newell’s car following model: History outperforms prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0968090X22002285},
+ volume = {142},
+ year = {2022}
+}

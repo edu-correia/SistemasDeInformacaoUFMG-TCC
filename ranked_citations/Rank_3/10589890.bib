@@ -1,0 +1,14 @@
+@inproceedings{10589890,
+ abstract = {With the widespread use of container technology, attackers may invade the kernel by maliciously executing certain system calls, causing damage to the host and other containers. In order to reduce the attack surface of the underlying system, Docker supports specifying a container's allowlist of system calls with seccomp configurations. Java is a mainstream programming language used by the container projects in the Docker Hub, but how to generate the allowlist of system calls for Java containers is still an open question. Firstly, most of previous efforts about container allowlist of system calls focused on the C/C++ binary code rather than Java bytecode. Secondly, some existing works on Java bytecode mainly paid attention to the security vulnerabilities analysis, and cannot be used to analyze system calls required by Java programs. In this paper, we propose the first bytecode-based system call analysis approach, named SWAT 4J, tailored for Java containers operating on x86_64 architecture. SWAT4J can generate the allowlist of system calls required for Java containers by combining static and dynamic analysis. For static analysis, SWAT4J can identify the indirect calling relationships between Java bytecode and system calls, and determine the system calls required for a containerized application. For dynamic analysis, SWAT4J can trace the system calls required for container startup. The seccomp configuration file is optimized through the combining set of system calls. In the end, we experimented with 5 types of popular open source Java containers projects from Docker Official Images. Compared to 323 system calls in Ubuntu 16.04, SWAT4J successfully reduce the number of system calls by 56.04%-59.44%, and reduce the probability of vulnerabilities without affecting the functionality of the container.},
+ author = {Xu, Yijiang and Zhou, Muxian and Gao, Qing and Zhang, Shikun and Wu, Zhonghai},
+ booktitle = {2024 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+ doi = {10.1109/SANER60148.2024.00101},
+ issn = {2640-7574},
+ keyword = {Java;Computer languages;Linux;Merging;Static analysis;Computer architecture;Containers;Java Container;System Call;Seccomp;Static Analysis},
+ month = {March},
+ number = {},
+ pages = {929-939},
+ title = {SWAT4J: Generating System Call Allowlist for Java Container Attack Surface Reduction},
+ volume = {},
+ year = {2024}
+}

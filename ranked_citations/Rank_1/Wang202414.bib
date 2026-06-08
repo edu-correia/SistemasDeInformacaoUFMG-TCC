@@ -1,0 +1,14 @@
+@conference{Wang202414,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is a widely used computational kernel for many applications. The performance of existing vectorization-oriented and locality-optimized SpMV works is limited by increasing additional memory accesses to the output vector or using expensive gather operations. To address these issues, we present the Vectorized Non-Empty Column (VNEC), a novel SpMV storage format aiming to optimize locality and vectorization while alleviating the existing limitations. The VNEC chunks the sparse matrix by rows and removes the empty columns from each row block to improve input vector locality and reduce extra output vector memory access. It can also relieve the cost of expensive gather operations by padding zeros and employing less costly vector load instruction. Specifically, we design two variants of VNEC for different non-zero distributions and propose an effective heuristic selection model by introducing the Intra-Row Density (IRD) to evaluate which variant is suitable for optimizing a given matrix. Experimental results show that in a multicore environment, VNEC achieves up to 6.94× speedup (2.10× on average) against the standard MKL SpMV routine on the x86 CPU and up to 5.92× speedup (1.73× on average) over ArmPL on the ARM CPU. We emphasize that the VNEC format is practical for real-world iterative applications because of its low preprocessing overhead for format conversion. © 2024 IEEE.},
+ author = {Wang, Luhan and Jia, Haipeng and Xu, Lei and Wei, Cunyang and Li, Kun and Jiang, Xianmeng and Zhang, Yunquan},
+ doi = {10.1109/IPDPS57955.2024.00011},
+ journal = {Proceedings - 2024 IEEE International Parallel and Distributed Processing Symposium, IPDPS 2024},
+ note = {Cited by: 4},
+ pages = {14 - 25},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {VNEC: A Vectorized Non-Empty Column Format for SpMV on CPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85198905694?origin=resultslist},
+ year = {2024}
+}

@@ -1,0 +1,13 @@
+@article{HAN2024176,
+ abstract = {City modeling and generation have attracted an increased interest in various applications, including gaming, urban planning, and autonomous driving. Unlike previous works focused on the generation of single objects or indoor scenes, the huge volumes of spatial data in cities pose a challenge to the generative models. Furthermore, few publicly available 3D real-world city datasets also hinder the development of methods for city generation. In this paper, we first collect over 3,000,000 geo-referenced objects for the cities of New York, Zurich, Tokyo, Berlin, Boston, and several other large cities. Based on this dataset, we propose AETree, a tree-structured auto-encoder neural network, for city generation. Specifically, we first propose a novel Spatial-Geometric Distance (SGD) metric to measure the similarity between building layouts and then construct a binary tree over the raw geometric data of the building based on the SGD metric. Next, we present a tree-structured network whose encoder learns to extract and merge spatial information from the bottom-up iteratively. The resulting global representation is reversely decoded for reconstruction or generation. To address the issue of long-dependency as the level of the tree increases, a Long Short-Term Memory (LSTM) Cell is employed as a basic network element of the proposed AETree. Moreover, we introduce a novel metric, Overlapping Area Ratio (OAR), to quantitatively evaluate the generation results. Experiments on the collected dataset demonstrate that the proposed model outperforms baseline models, such as LayoutTransformer and LayoutVAE, in terms of key metrics. Specifically, the proposed model achieves a Jensen–Shannon Divergence (JSD) of 0.0033, compared to 0.0041 and 0.0061 for LayoutTransformer and LayoutVAE, respectively. Similarly, for the Overall Accuracy Rate (OAR), the proposed model scores 1.66, significantly better than 28.24 and 19.01 for the baseline models Furthermore, the latent features learned by AETree can serve downstream urban planning applications. Project webpage is available at https://ai4ce.github.io/RealCity3D.},
+ author = {Wenyu Han and Congcong Wen and Lazarus Chok and Yan Liang Tan and Sheung Lung Chan and Hang Zhao and Chen Feng},
+ doi = {https://doi.org/10.1016/j.isprsjprs.2024.01.010},
+ issn = {0924-2716},
+ journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+ keyword = {City generation, Real-world city datasets, Tree-structured neural network, Urban planning applications},
+ pages = {176-189},
+ title = {Autoencoding tree for city generation and applications},
+ url = {https://www.sciencedirect.com/science/article/pii/S0924271624000194},
+ volume = {208},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@conference{Häubl2008105,
+ abstract = {In several Java VMs, strings consist of two separate objects: metadata like the string length are stored in the actual string object, while the string characters are stored in a character array. This separation causes an unnecessary overhead. Each string method must access both objects, which leads to a bad cache behavior and reduces the execution speed. We propose to merge the character array with the string's metadata object at run time. This results in a new layout of strings with better cache performance, fewer field accesses, and less memory overhead. We implemented this optimization for Sun Microsystems' Java HotSpot™ VM, so that the optimization is performed automatically at run time and requires no actions on the part of the programmer. The original class String is transformed into the optimized version and the bytecodes of all methods that allocate string objects are rewritten. All these transformations are performed by the Java HotSpot™ VM when a class is loaded. Therefore, the time overhead of the transformations is negligible. Benchmarks show a reduction of the average used memory after a full garbage collection and an improved performance. The performance of the SPECjbb2005 benchmark increases by 8%, and the average used memory after a full garbage collection is reduced by 19%. The peak performance of SPECjvm98 is improved by 8% on average, with a maximum speedup of 62%. © 2008 ACM.},
+ author = {Häubl, Christian and Wimmer, Christian and Mössenböck, Hanspeter},
+ doi = {10.1145/1411732.1411747},
+ journal = {Principles and Practice of Programming in Java - Proceedings of the 6th International Conference, PPPJ 2008},
+ note = {Cited by: 2},
+ pages = {105 - 114},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimized strings for the Java HotSpot™ virtual machine},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/59249084353?origin=resultslist},
+ year = {2008}
+}

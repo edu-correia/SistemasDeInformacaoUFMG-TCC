@@ -1,0 +1,15 @@
+@article{Chen201889,
+ abstract = {Key-value (KV) stores have become a backbone of large-scale applications in today’s data centers. Write-optimized data structures like the Log-Structured Merge-tree (LSM-tree) and their variants are widely used in KV storage systems. Conventional LSM-tree organizes KV items into multiple, successively larger components, and uses compaction to push KV items from one smaller component to another adjacent larger component until the KV items reach the largest component. Unfortunately, LSM-tree has severe file retention phenomenon. File retention phenomenon means that lots of SSTables locate in one component and then too many SSTables are involved in one compaction, which causes one compaction occupies long time and causes front-end writing pauses or even stops frequently. We propose a new compaction scheduling scheme called Slot, and implement it on LevelDB. The main idea of Slot is to combine score centric priority based compaction scheduling with time-slice centric fairness based compaction scheduling to alleviate the file retention and then decrease the write amplification of LSM-tree based key/value stores. Slot avoids too many files involved in one compaction and decreases the frequency of write pause or write stop. We conduct extensive evaluations and the experimental results demonstrate that Slot keeps the writing procedure more smoothly and outperforms LevelDB by 20–210% on write throughput without sacrificing the read latency. © Springer Nature Switzerland AG 2018.},
+ author = {Chen, Lidong and Yue, Yinliang and Wang, Haobo and Wu, Jianhua},
+ doi = {10.1007/978-3-030-05051-1_7},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 4},
+ pages = {89 - 105},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A priority and fairness mixed compaction scheduling mechanism for LSM-tree based KV-stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85058648247?origin=resultslist},
+ volume = {11334 LNCS},
+ year = {2018}
+}

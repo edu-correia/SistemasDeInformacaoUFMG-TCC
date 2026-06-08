@@ -1,0 +1,14 @@
+@article{10384405,
+ abstract = {Searchable symmetric encryption (SSE) schemes allow a client to store encrypted data with a storage provider and retrieve corresponding documents without revealing the content or search keywords to the provider. However, achieving efficient SSE schemes often comes at the cost of statistical information leakage, including search, access and size patterns. The known solutions from fully homomorphic encryption or oblivious RAM often admit poor performances due to significant computational and communication overheads. Additionally, the demand for rich search expressiveness, such as Boolean queries, further complicates the design. In this paper, we introduce NEMO, a novel SSE achieving a good balance between efficiency, security and query expressiveness. NEMO utilizes function secret sharing (FSS) and replicated secret sharing-based multi-party computation (MPC) protocol, but is highly optimized for large database. For functionality, NEMO supports arbitrary Boolean queries and enables dynamic updates in a multi-user setting. For security, NEMO achieves minimal leakage by eliminating all search, access, and size patterns, while only allowing the leakage of Boolean formulas in queries. Regarding efficiency, we propose a new FSS for multi-point functions, effectively batching multiple distributed point functions, and an infix-to-postfix conversion algorithm for Boolean formula to reduce the communication rounds in the MPC protocol. A proof-of-concept implementation of NEMO demonstrates its efficiency, with a search latency of approximately 622 ms for a conjunction query with 8 keywords, even with a dataset exceeding 1 million documents.},
+ author = {Li, Jianhao and Wang, Jiabei and Zhang, Rui and Xin, Yansen and Xu, Wenhan},
+ doi = {10.1109/TIFS.2024.3351433},
+ issn = {1556-6021},
+ journal = {IEEE Transactions on Information Forensics and Security},
+ keyword = {Cryptography;Servers;Security;Indexes;Databases;Protocols;Access control;Searchable encryption;boolean query;function secret sharing (FSS);multiparty computation (MPC)},
+ month = {},
+ number = {},
+ pages = {2594-2608},
+ title = {NEMO: Practical Distributed Boolean Queries With Minimal Leakage},
+ volume = {19},
+ year = {2024}
+}

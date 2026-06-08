@@ -1,0 +1,16 @@
+@article{Jeong2017369,
+ abstract = {Thanks to remarkably fast random reads and rapidly decreasing prices per bit, flash storage has been regarded as a promising alternative to traditional hard disk drives (HDDs). Although flash storage has many distinguished hardware features, it still suffers from the poor I/O performance in the case of update operations. Due to the absence of in-place updates, differently from HDDs, flash storage needs to modify data through out-of-place updates. For this reason, it is required to continuously renew the mapping information between a logical page address and its new physical address, invalidating its old physical address. When the invalidated pages swallow most of free space in flash storage, the actions of garbage reclamation are needed. Since the actions of garbage reclamation are very costly, it is crucial to reduce the number of update operations for the use of flash storage in enterprise-scale database systems. In this light, we propose a new buffering scheme that evicts dirty pages without writing them to storage, thereby reducing the amount of update operations considerably. That is, our buffering scheme enables the flushing-less evictions of dirty pages. To correctly read a page undergoing its flushing-less eviction, we propose a new on-the-fly redo mechanism that enables restoring the lost updates of the page in normal database processing. For fast execution of the on-the-fly redo, we maintain memory-resident log data of a reasonable size. To show the performance advantages of the proposed scheme, we performed extensive experiments based on the TPC-C benchmark, by running them on the open-sourced Berkeley DB equipped with/without our scheme. The results show that our scheme yields a much better performance by reducing the amount of page updates significantly. © 2017 ComSIS Consortium. All rights reserved.},
+ author = {Jeong, Kyosung and Lim, Sungchae and Lee, Kichun and Kim, Sang-Wook},
+ doi = {10.2298/CSIS160830014J},
+ journal = {Computer Science and Information Systems},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {2},
+ pages = {369 - 392},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A flash-aware buffering scheme with the on-the-fly redo for efficient data management in flash storage},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85021980617?origin=resultslist},
+ volume = {14},
+ year = {2017}
+}

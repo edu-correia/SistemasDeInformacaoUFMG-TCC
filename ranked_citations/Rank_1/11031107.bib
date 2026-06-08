@@ -1,0 +1,14 @@
+@article{11031107,
+ abstract = {Salient Object Detection (SOD) aims to identify the most attention-grabbing regions in an image and focuses on distinguishing salient objects from their backgrounds. Current SOD methods primarily use a discriminative approach, which works well for clear images but struggles in complex scenes with similar colors and textures between objects and backgrounds. To address these limitations, we introduce the diffusion-based salient object detection model (DiffSOD), which leverages a noise-to-image denoising process within a diffusion framework, enhancing saliency detection in both RGB and RGB-D images. Unlike conventional fusion-based SOD methods that directly merge RGB and depth information, we treat RGB and depth as distinct conditions, i.e., the appearance condition and the structure condition, respectively. These conditions serve as controls within the diffusion UNet architecture, guiding the denoising process. To facilitate this guidance, we employ two specialized control adapters: the appearance control adapter and the structure control adapter. Moreover, conventional denoising UNet models may struggle when handling low-quality depth maps, potentially introducing detrimental cues into the denoising process. To mitigate the impact of low-quality depth maps, we introduce a quality-aware filter. This filter selectively processes only high-quality depth data, ensuring that the denoising process is based on reliable information. Comparative evaluations on benchmark datasets have shown that DiffSOD substantially surpasses existing RGB and RGB-D saliency detection methods, improving average performance by 1.5% and 1.2% respectively, thus setting a new benchmark for diffusion-based dense prediction models in visual saliency detection.},
+ author = {Song, Mengke and Li, Luming and Yu, Xu and Chen, Chenglizhao},
+ doi = {10.1109/TIP.2025.3576993},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Noise reduction;Visualization;Saliency detection;Object detection;Background noise;Diffusion models;Transformers;Noise;Process control;Feature extraction;Visual saliency detection (VSD);diffusion;control adapter;quality-aware},
+ month = {},
+ number = {},
+ pages = {3903-3917},
+ title = {Pushing the Boundaries of Salient Object Detection: A Denoising-Driven Approach},
+ volume = {34},
+ year = {2025}
+}

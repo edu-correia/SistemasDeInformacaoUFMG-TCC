@@ -1,0 +1,13 @@
+@article{WANG2026130987,
+ abstract = {Occupancy prediction plays a crucial role in the field of autonomous driving due to its accurate geometric recognition and the ability to handle corner case scenarios. Existing methods learn more accurate occupancy predictions through long-range modeling between consecutive frames. However, maintaining semantic category consistency during the long-range modeling process is a major challenge. In this paper, we present SLOcc, a novel framework for selective interaction and long-range modeling. Initially, on the basis of the existing multi-frame voxel fusion occupancy prediction framework (denoted as slow voxel), we devise fast voxel features. By leveraging these fast voxel features, we introduce the abundant semantic features of images into the occupancy prediction model, termed Semantic Prior-augmented Voxel Generation (SPVG). Subsequently, to identify the important regions of interest shared by fast and slow voxel features, we formulate the Selective Voxel Cross-Fusion (SVCF) method to merge the regions of interest of both types of voxels. Finally, to ensure a thorough interaction of the rich features within multiple frames, we successively apply SPVG and SVCF along the timeline to sample and aggregate historical multi-frame data, thereby accomplishing Spatiotemporal Information Interaction Modeling, known as Long-range Modeling with Continuous Spatial Sampling (LMCSS). Ultimately, SLOcc is capable of generating robust occupancy voxel feature maps, thus enhancing the semantic consistency of occupancy prediction. Extensive experiments on the nuScenes and SemanticKITTI dataset demonstrate that SLOcc attains remarkable performance enhancements in 3D occupancy prediction tasks, especially in handling complex traffic scenarios and dynamic objects. Our method surpasses the previous state-of-the-art by 1.90% in terms of mIoU, and SLOcc also exhibits excellent performance in 3D object detection. Our code will be available at https://github.com/wjyxx/SLOcc.},
+ author = {Junyin Wang and Chenghu Du and Tongao Ge and Shengwu Xiong},
+ doi = {https://doi.org/10.1016/j.eswa.2025.130987},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Image view transformation, Bird’s-eye view perception, Occupancy prediction, Multiframe processing},
+ pages = {130987},
+ title = {SLOcc: Selective interaction and long-range modelling for occupancy prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425046020},
+ volume = {308},
+ year = {2026}
+}

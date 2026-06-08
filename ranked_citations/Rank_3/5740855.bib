@@ -1,0 +1,14 @@
+@article{5740855,
+ abstract = {A Flash Translation Layer (FTL) provides a block device interface on top of flash memory to support disk-based file systems. Due to the erase-before-write feature of flash memory, an FTL usually performs out-of-place updates and uses a cleaning procedure to reclaim stale data. A hybrid address translation (HAT)-based FTL combines coarse-grained and fine-grained address translation to achieve good performance while keeping the size of the mapping information small. In this paper, we propose a new HAT-based FTL, called ROSE, which includes three novel techniques for reducing the cleaning cost. First, it reduces high-cost reclamation by preventing data in an entire-block sequential write from being placed into multiple physical blocks while eliminating the cleaning cost resulting from mispredicting random or semisequential writes as sequential ones. Second, it uses a merge-aware cleaning policy that considers both the block age and the merge cost in a HAT-based FTL for improving the cleaning efficiency. Third, it delays the erasure of obsolete blocks and reuses their free pages for buffering more writes. Simulation results show that the proposed FTL outperforms existing HAT-based FTLs in terms of both cleaning cost and flash write time by up to 47 times and 1.6 times, respectively.},
+ author = {Chiao, Mong-Ling and Chang, Da-Wei},
+ doi = {10.1109/TC.2011.67},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Cleaning;Flash memory;Switches;Memory management;Writing;File systems;Merging;Storage management;performance;NAND flash memory;flash translation layer (FTL).},
+ month = {June},
+ number = {6},
+ pages = {753-766},
+ title = {ROSE: A Novel Flash Translation Layer for NAND Flash Memory Based on Hybrid Address Translation},
+ volume = {60},
+ year = {2011}
+}

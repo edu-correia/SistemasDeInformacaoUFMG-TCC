@@ -1,0 +1,16 @@
+@article{Sadoghi2013997,
+ abstract = {Multiversion databases store both current and historical data. Rows are typically annotated with timestamps representing the period when the row is/was valid. We develop novel techniques for reducing index maintenance in multiversion databases, so that indexes can be used effectively for analytical queries over current data without being a heavy burden on transaction throughput. To achieve this end, we re-design persistent index data structures in the storage hierarchy to employ an extra level of indirection. The indirection level is stored on solid state disks that can support very fast random I/Os, so that traversing the extra level of indirection incurs a relatively small overhead. The extra level of indirection dramatically reduces the number of magnetic disk I/Os that are needed for index updates, and localizes maintenance to indexes on updated attributes. Further, we batch insertions within the indirection layer in order to reduce physical disk I/Os for indexing new records. By reducing the index maintenance overhead on transactions, we enable operational data stores to create more indexes to support queries. We have developed a prototype of our indirection proposal by extending the widely used Generalized Search Tree (GiST) open-source project, which is also employed in PostgreSQL. Our working implementation demonstrates that we can significantly reduce index maintenance and/or query processing cost, by a factor of 3. For insertions of new records, our novel batching technique can save up to 90% of the insertion time. © 2013 VLDB Endowment.},
+ author = {Sadoghi, Mohammad and Ross, Kenneth A. and Canim, Mustafa and Bhattacharjee, Bishwaranjan},
+ doi = {10.14778/2536222.2536226},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 25},
+ number = {11},
+ pages = {997 - 1008},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Making updates disk-I/O friendly using SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84891094945?origin=resultslist},
+ volume = {6},
+ year = {2013}
+}

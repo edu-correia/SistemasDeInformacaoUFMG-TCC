@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920942,
+ abstract = {Incorporating probabilities into the semantics of incomplete databases has posed many challenges, forcing systems to sacrifice modeling power, scalability, or treatment of relational algebra operators. We propose an alternative approach where the underlying relational database always represents a single world, and an external factor graph encodes a distribution over possible worlds; Markov chain Monte Carlo (MCMC) inference is then used to recover this uncertainty to a desired level of fidelity. Our approach allows the efficient evaluation of arbitrary queries over probabilistic databases with arbitrary dependencies expressed by graphical models with structure that changes during inference. MCMC sampling provides efficiency by hypothesizing modifications to possible worlds rather than generating entire worlds from scratch. Queries are then run over the portions of the world that change, avoiding the onerous cost of running full queries over each sampled world. A significant innovation of this work is the connection between MCMC sampling and materialized view maintenance techniques: we find empirically that using view maintenance techniques is several orders of magnitude faster than naively querying each sampled world. We also demonstrate our system's ability to answer relational queries with aggregation, and demonstrate additional scalability through the use of parallelization on a real-world complex model of information extraction. This framework is sufficiently expressive to support probabilistic inference not only for answering queries, but also for inferring missing database content from raw evidence.},
+ author = {Wick, Michael and McCallum, Andrew and Miklau, Gerome},
+ doi = {10.14778/1920841.1920942},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {11},
+ pages = {794–804},
+ publisher = {VLDB Endowment},
+ title = {Scalable probabilistic databases with factor graphs and MCMC},
+ url = {https://doi.org/10.14778/1920841.1920942},
+ volume = {3},
+ year = {2010}
+}

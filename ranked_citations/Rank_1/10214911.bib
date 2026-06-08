@@ -1,0 +1,14 @@
+@inproceedings{10214911,
+ abstract = {The Doubly Connected Edge List (DCEL) is a popular data structure for representing planar subdivisions and is used to accelerate spatial applications like map overlay, graph simplification, and subdivision traversal. Current DCEL implementations assume a standalone machine environment, which does not scale when processing the large dataset sizes that abound in today’s spatial applications. This paper proposes a Distributed Doubly Connected Edge List (DDCEL) data structure extending the DCEL to a distributed environment. The DDCEL constructor undergoes a two-phase paradigm to generate the subdivision’s vertices, half-edges, and faces. After spatially partitioning the input data, the first phase runs the sequential DCEL construction algorithm on each data partition in parallel. The second phase then iteratively merges information from multiple data partitions to generate the shared data structure. Our experimental evaluation with real data of road networks of up to 563 million line segments shows significant performance advantages of the proposed approach over the existing techniques.},
+ author = {Abdelhafeez, Laila and Magdy, Amr and Tsotras, Vassilis J.},
+ booktitle = {2023 24th IEEE International Conference on Mobile Data Management (MDM)},
+ doi = {10.1109/MDM58254.2023.00029},
+ issn = {2375-0324},
+ keyword = {Roads;Aggregates;Data structures;Partitioning algorithms;Iterative methods;Faces;DCEL;Distributed;Polygonization},
+ month = {July},
+ number = {},
+ pages = {122-131},
+ title = {DDCEL: Efficient Distributed Doubly Connected Edge List for Large Spatial Networks},
+ volume = {},
+ year = {2023}
+}

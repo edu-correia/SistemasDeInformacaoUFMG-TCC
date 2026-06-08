@@ -1,0 +1,14 @@
+@inproceedings{5571754,
+ abstract = {Today's distributed file system architectures scale well to large amounts of data. Their performance, however, is often limited by their metadata server. In this paper, we reconsider the database backend of the metadata server and propose a design that simplifies implementation and enhances performance.In particular, we argue that the concept of log-structured merge (LSM) trees is a better foundation for the storage layer of a metadata server than the traditionally used B-trees. We present BabuDB, a database that relies on LSM-tree-like index structures, and describe how it stores file system metadata.We show that our solution offers better scalability and performance than equivalent ext4 and Berkeley DB-based metadata server implementations. Our experiments include real-world metadata traces from a Linux kernel build and an IMAP mail server. Results show that BabuDB is up to twice as fast as the ext4-based backend and outperforms a Berkeley DB setup by an order of magnitude.},
+ author = {Stender, Jan and Kolbeck, Björn and Högqvist, Mikael and Hupfeld, Felix},
+ booktitle = {2010 International Workshop on Storage Network Architecture and Parallel I/Os},
+ doi = {10.1109/SNAPI.2010.14},
+ issn = {},
+ keyword = {Indexes;Java;Servers;Kernel;Layout;Linux;File System Metadata;BabuDB;LSM trees},
+ month = {May},
+ number = {},
+ pages = {51-58},
+ title = {BabuDB: Fast and Efficient File System Metadata Storage},
+ volume = {},
+ year = {2010}
+}

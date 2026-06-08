@@ -1,0 +1,17 @@
+@article{10.14778/2994509.2994510,
+ abstract = {A lot of real-life data are of graph nature. However, it is not until recently that business begins to exploit data's connectedness for business insights. On the other hand, RDBMSs are a mature technology for data management, but they are not for graph processing. Take graph traversal, a common graph operation for example, it heavily relies on a graph primitive that accesses a given node's neighborhood. We need to join tables following foreign keys to access the nodes in the neighborhood if an RDBMS is used to manage graph data. Graph exploration is a fundamental building block of many graph algorithms. But this simple operation is costly due to a large volume of I/O caused by the massive amount of table joins. In this paper, we present G-SQL, our effort toward the integration of a RDBMS and a native in-memory graph processing engine. G-SQL leverages the fast graph exploration capability provided by the graph engine to answer multi-way join queries. Meanwhile, it uses RDBMSs to provide mature data management functionalities, such as reliable data storage and additional data access methods. Specifically, G-SQL is a SQL dialect augmented with graph exploration functionalities and it dispatches query tasks to the in-memory graph engine and its underlying RDMBS. The G-SQL runtime coordinates the two query processors via a unified cost model to ensure the entire query is processed efficiently. Experimental results show that our approach greatly expands capabilities of RDBMs and delivers exceptional performance for SQL-graph hybrid queries.},
+ author = {Ma, Hongbin and Shao, Bin and Xiao, Yanghua and Chen, Liang Jeff and Wang, Haixun},
+ doi = {10.14778/2994509.2994510},
+ issn = {2150-8097},
+ issue_date = {August 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {900–911},
+ publisher = {VLDB Endowment},
+ title = {G-SQL: fast query processing via graph exploration},
+ url = {https://doi.org/10.14778/2994509.2994510},
+ volume = {9},
+ year = {2016}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11196679,
+ abstract = {Large-scale anonymized network sensing is essential for network protection, as it enables community-based privacy-preserving traffic analysis. Recently, the Anonymized Network Sensing Graph Challenge achieves this need by processing anonymized source-to-destination traffic matrices derived from packet capture files. However, the provided GraphBLAS reference implementation employs Hypersparse Compressed Sparse Row (HyperCSR) format, which suffers from indirect memory access patterns and complex maintenance overhead when handling extremely sparse matrices with billions of dimensions. To address these limitations, we propose SANST, an efficient anonymized network sensing scheme that employs sorted triplets instead of HyperCSR format for traffic matrix representation. Specifically, we employ a hybrid sorting strategy that combines range-based bucket partitioning with adaptive intra-bucket sorting to construct sorted triplets from packet capture files. Second, we introduce a hierarchical parallel merge algorithm to achieve presorted-aware matrix addition, fully parallelizing the matrix aggregation with balanced workload. Finally, we develop a direct IPv4 address mapping method enabling parallel single-traversal analysis of global traffic matrix. Experimental results demonstrate that SANST achieves 3.03× performance improvement and over 2.91× memory reduction compared to the official reference implementation, with a throughput of 33.58 million packets per second. We make our code public at https://github.com/Jianyu98/SANST.},
+ author = {Wang, Jianyu and Tang, Wenzi and Shi, Chenglong and Zhang, Zhe and Chen, Dan and Chen, Miaojiang and Xiao, Wenjing},
+ booktitle = {2025 IEEE High Performance Extreme Computing Conference (HPEC)},
+ doi = {10.1109/HPEC67600.2025.11196679},
+ issn = {2643-1971},
+ keyword = {Memory management;Network analyzers;Performance gain;Throughput;Sensors;Partitioning algorithms;Maintenance;Sparse matrices;Protection;Sorting;Graph;Network Analysis;Sorted Triplets;Parallelization},
+ month = {Sep.},
+ number = {},
+ pages = {1-7},
+ title = {SANST: Sensing Anonymized Network via Sorted Triplets},
+ volume = {},
+ year = {2025}
+}

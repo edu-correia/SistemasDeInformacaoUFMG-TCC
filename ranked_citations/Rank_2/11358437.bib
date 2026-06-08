@@ -1,0 +1,14 @@
+@article{11358437,
+ abstract = {The groundbreaking segment anything model (SAM), built on a vision transformer (ViT) design with millions of parameters and trained on the large SA-1B dataset, acts as a vision foundation model that can be used for various segmentation tasks. However, this model cannot be directly applied to the semantic segmentation of remote sensing images, as it tends to oversegment objects rather than preserving their semantics. Furthermore, it does not align well with object boundaries, which are usually required for the high-accuracy segmentation of high-resolution remote sensing images. To address this issue, we adjust the image encoder and mask decoder of SAM and propose a high-resolution and low-resolution SAM-based semantic segmentation (HL-SAM-Seg) network. The image encoder is extensively adjusted to comprise an adapter, a high-resolution (high-res) path, and a low-resolution (low-res) path. The latter two paths extract and update the high-res and low-res features, which are merged in the mask decoder to perform multiclass segmentation. Specifically, we design a high-resolution and low-resolution (HL) module inserted into the transformer blocks of the low-res path to align and update the low-res and high-res features. Experimental results on the International Society for Photogrammetry and Remote Sensing (ISPRS) Vaihingen, ISPRS Potsdam, and FloodNet datasets show that the proposed HL-SAM-Seg outperformed conventional state-of-the-art semantic segmentation algorithms overall, with underperformance in some small sample categories. Moreover, it has fewer trainable parameters, suggesting the potential for leveraging SAM for remote sensing image segmentation.},
+ author = {Xiong, Siting and Wu, Linfeng and Zhang, Bochen and Zhang, Dejin and Tao, Yu and Tang, Yuzhi},
+ doi = {10.1109/TGRS.2026.3655448},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Remote sensing;Feature extraction;Semantic segmentation;Decoding;Semantics;Transformers;Adaptation models;Training;Informatics;Computational modeling;Deep learning;remote sensing image;segment anything model (SAM);semantic segmentation},
+ month = {},
+ number = {},
+ pages = {1-14},
+ title = {HL-SAM-Seg: Complementary High- and Low-Resolution Features Based on SAM for Remote Sensing Image Semantic Segmentation},
+ volume = {64},
+ year = {2026}
+}

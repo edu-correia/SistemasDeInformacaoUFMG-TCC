@@ -1,0 +1,15 @@
+@conference{Colgrove20151683,
+ abstract = {Although ash storage has largely replaced hard disks in consumer class devices, enterprise workloads pose unique challenges that have slowed adoption of ash in "performance tier" storage appliances. In this paper, we describe Purity, the foundation of Pure Storage's Flash Arrays, the first all-ash enterprise storage system to support compression, deduplication, and high-availability. Purity borrows techniques from modern database and keyvalue storage architectures, and introduces novel storage primitives that have wide applicability to data management systems. For instance, all writes in Purity are monotonic, and deletions are handled using an atomic predicate-based tuple elision primitive. Purity's redundancy mechanisms are optimized for SSD failure modes and performance characteristics, allowing for fast recovery from component failures and lower space overhead than the best hard disk systems. We built deduplication and data compression schemes atop these primitives. Flash changes storage capacity/performance tradeoffs: unlike disk-based systems, ash deployments are rarely performance bound. A single Purity appliance can provide over 7 GiB/s of throughput on 32 KiB random I/Os, even through multiple device failures, and while providing asynchronous off-site replication. Typical installations have 99:9% latencies under 1ms, and production arrays average 5:4× data reduction and 99:999% availability. Purity takes advantage of storage performance increasing more rapidly than computational performance to build a simpler (with respect to engineering, installation, and management) scale-up storage appliance that supports hundreds of terabytes of highly-available, high-performance storage. The resulting performance and capacity supports many customer deployments of multiple applications, including scaleout and parallel systems, such as MongoDB and Oracle RAC, on a single Purity appliance.},
+ author = {Colgrove, John and Davis, John D. and Hayes, John and Miller, Ethan L. and Sandvig, Cary and Sears, Russell and Tamches, Ari and Vachharajani, Neil and Wang, Feng},
+ doi = {10.1145/2723372.2742798},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 73},
+ pages = {1683 - 1694},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Purity: Building fast, highly-available enterprise flash storage from commodity components},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84957549463?origin=resultslist},
+ volume = {2015-May},
+ year = {2015}
+}

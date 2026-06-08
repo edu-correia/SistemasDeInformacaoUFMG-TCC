@@ -1,0 +1,16 @@
+@article{Rashelbach20231230,
+ abstract = {Open vSwitch (OVS) is a widely used open-source virtual switch implementation. In this work, we seek to scale up OVS to support hundreds of thousands of OpenFlow rules by accelerating the core component of its data-path - the packet classification mechanism. To do so we use NuevoMatch, a recent algorithm that uses neural network inference to match packets, and promises significant scalability and performance benefits. We overcome the primary algorithmic challenge of the slow training rate in the vanilla NuevoMatch, speeding it up by over three orders of magnitude. This improvement enables two design options to integrate NuevoMatch with OVS: (1) as an extra caching layer in front of OVS's megaflow cache, and (2) using it to completely replace OVS's data-path while performing classification directly on OpenFlow rules, and obviating control-path upcalls. Comprehensive evaluation on real-world packet traces and ClassBench rules demonstrates geometric mean speedups of 1.9× and 12.3× for the first and second designs, respectively, for 500K rules, with the latter also supporting up to 60K OpenFlow rule updates/second, by far exceeding the original OVS. © 1993-2012 IEEE.},
+ author = {Rashelbach, Alon and Rottenstreich, Ori and Silberstein, Mark},
+ doi = {10.1109/TNET.2022.3215143},
+ journal = {IEEE/ACM Transactions on Networking},
+ note = {Cited by: 3},
+ number = {3},
+ pages = {1230 - 1243},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scaling by Learning: Accelerating Open vSwitch Data Path With Neural Networks},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85141645185?origin=resultslist},
+ volume = {31},
+ year = {2023}
+}

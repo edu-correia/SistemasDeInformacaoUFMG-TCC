@@ -1,0 +1,17 @@
+@article{10.14778/1453856.1453965,
+ abstract = {Despite the intense interest towards realizing the Semantic Web vision, most existing RDF data management schemes are constrained in terms of efficiency and scalability. Still, the growing popularity of the RDF format arguably calls for an effort to offset these drawbacks. Viewed from a relational-database perspective, these constraints are derived from the very nature of the RDF data model, which is based on a triple format. Recent research has attempted to address these constraints using a vertical-partitioning approach, in which separate two-column tables are constructed for each property. However, as we show, this approach suffers from similar scalability drawbacks on queries that are not bound by RDF property value. In this paper, we propose an RDF storage scheme that uses the triple nature of RDF as an asset. This scheme enhances the vertical partitioning idea and takes it to its logical conclusion. RDF data is indexed in six possible ways, one for each possible ordering of the three RDF elements. Each instance of an RDF element is associated with two vectors; each such vector gathers elements of one of the other types, along with lists of the third-type resources attached to each vector element. Hence, a sextuple-indexing scheme emerges. This format allows for quick and scalable general-purpose query processing; it confers significant advantages (up to five orders of magnitude) compared to previous approaches for RDF data management, at the price of a worst-case five-fold increase in index space. We experimentally document the advantages of our approach on real-world and synthetic data sets with practical queries.},
+ author = {Weiss, Cathrin and Karras, Panagiotis and Bernstein, Abraham},
+ doi = {10.14778/1453856.1453965},
+ issn = {2150-8097},
+ issue_date = {August 2008},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {1},
+ numpages = {12},
+ pages = {1008–1019},
+ publisher = {VLDB Endowment},
+ title = {Hexastore: sextuple indexing for semantic web data management},
+ url = {https://doi.org/10.14778/1453856.1453965},
+ volume = {1},
+ year = {2008}
+}

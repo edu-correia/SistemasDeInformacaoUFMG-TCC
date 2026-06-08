@@ -1,0 +1,14 @@
+@article{10506617,
+ abstract = {Function-as-a-Service (FaaS) is a promising cloud computing model known for its scalability and elasticity. In various application domains, FaaS workflows have been widely adopted to manage user requests and complete computational tasks efficiently. Motivated by the fact that function containers collaboratively use the image layer's memory, co-placing functions would leverage memory sharing to reduce cluster memory footprint, this article studies layer-wise memory sharing for serverless functions. We find that overwhelming memory sharing by placing containers in the same cluster machine may lead to performance deterioration and Service Level Objective (SLO) violations due to the increased CPU pressure. We investigate how to maximally reduce cluster memory footprint via layer-wise memory sharing for serverless workflows while guaranteeing their SLO. First, we study the container memory sharing problem under serverless workflows with a static Directed Acyclic Graph (DAG) structure. We prove it is NP-Hard and propose a 2-approximation algorithm, namely MDP. Then we consider workflows with dynamic DAG structure scenarios, where the memory sharing problem is also NP-Hard. We design a Greedy-based algorithm called GSP to address this issue. We implement a carefully designed prototype on the OpenWhisk platform, and our evaluation results demonstrate that both MDP and GSP achieve a balanced and satisfying state, effectively reducing up to 63$\%$% of cache memory usage while guaranteeing serverless workflow SLO.},
+ author = {Cheng, Dazhao and Yan, Kai and Cai, Xinquan and Gong, Yili and Hu, Chuang},
+ doi = {10.1109/TPDS.2024.3391858},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Containers;Memory management;Heuristic algorithms;Clustering algorithms;Cache memory;Scalability;Directed acyclic graph;Serverless computing;serverless cluster;container placement;scheduling},
+ month = {June},
+ number = {6},
+ pages = {1074-1091},
+ title = {SLO-Aware Function Placement for Serverless Workflows With Layer-Wise Memory Sharing},
+ volume = {35},
+ year = {2024}
+}

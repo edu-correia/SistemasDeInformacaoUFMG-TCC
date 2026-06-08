@@ -1,0 +1,14 @@
+@article{10713276,
+ abstract = {Local-first software embraces data replication as a means to achieve scalability and offline availability. A crucial ingredient of local-first software are mergeable data types, like conflict-free replicated data types (CRDTs), which feature eventual consistency by enabling processes to access data locally and later merge it with other replicas in an asynchronous manner. Notably, the merging process needs to adhere to application constraints for correctness. Ensuring such application-level invariants poses a challenge, as developers must reason about the replicated program state and resort to manual synchronization of specific application components to enforce the invariant. This paper introduces ConLoc (Consistent Local-First Software), a novel system designed to automatically enforce safety and maintain invariants in local-first applications. ConLoc effectively addresses the issue of preserving invariants in the execution of programs with replicated data types, including CRDTs. Our approach is able to verify the correctness of many CRDTs examined in the literature and in implementations, such the ones used in the Riak database. ConLoc ensures that applications are automatically synchronized correctly, resulting in substantial latency and throughput improvements when compared to sequential execution, while upholding the same set of invariants.},
+ author = {Köhler, Mirko and Zakhour, George and Weisenburger, Pascal and Salvaneschi, Guido},
+ doi = {10.1109/TSE.2024.3477723},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Software;Synchronization;Safety;Java;Scalability;Middleware;Merging;Logic;Libraries;Data structures;Replication;consistency;verification;CRDT;Java},
+ month = {Jan},
+ number = {1},
+ pages = {53-65},
+ title = {Consistent Local-First Software: Enforcing Safety and Invariants for Local-First Applications},
+ volume = {51},
+ year = {2025}
+}

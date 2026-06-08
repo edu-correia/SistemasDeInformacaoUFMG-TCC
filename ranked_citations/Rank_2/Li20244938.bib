@@ -1,0 +1,14 @@
+@conference{Li20244938,
+ abstract = {Read-modify-writes (RMWs) are increasingly observed in practical key-value (KV) storage workloads to support fine-grained updates. To make RMWs efficient, one approach is to write deltas (i.e., changes to current values) to the log-structured merge-tree (LSM-tree), yet it increases the read overhead caused by retrieving and combining a chain of deltas. We propose a notion called key-delta (KD) separation to support efficient reads and RMWs in LSM-tree KV stores under RMW-intensive workloads. KD separation aims to store deltas in separate storage areas and group deltas into storage units called buckets, such that all deltas of a key are kept in the same bucket and can be all together accessed in subsequent reads. To this end, we build KDSep, a middleware layer that realizes KD separation and integrates KDSep into state-of-the-art LSM-tree KV stores (e.g., RocksDB and BlobDB). We show that KDSep achieves significant I/O throughput gains and read latency reduction under RMW-intensive workloads while preserving the efficiency in general workloads.  © 2024 IEEE.},
+ author = {Li, Jinhong and Ren, Yanjing and Han, Shujie and Lee, Patrick P.C.},
+ doi = {10.1109/ICDE60146.2024.00375},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 7},
+ pages = {4938 - 4950},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Enhancing LSM-Tree Key-Value Stores for Read-Modify-Writes via Key-Delta Separation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85200465784?origin=resultslist},
+ year = {2024}
+}

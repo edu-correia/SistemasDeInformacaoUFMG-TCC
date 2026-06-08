@@ -1,0 +1,15 @@
+@article{10.1145/3817051,
+ abstract = {Key-value (KV) separation has emerged as a pivotal solution to tackle write amplification in LSM-tree-based KV stores (LSM stores). However, the garbage collection (GC) mechanism essential for reclaiming obsolete values introduces substantial overheads: (i) Additional LSM-tree I/O operations degrade foreground performance and cause data inconsistency issues; (ii) Exacerbated write amplification arises from excessive valid data migration in update-intensive workloads. Moreover, existing GC optimization schemes fundamentally struggle to balance space overhead, write amplification, and system performance. In this paper, we propose HeapKV, a high-performance KV-separated LSM store that improves GC efficiency through three key technologies: (i) A lightweight two-level index and a global garbage view decouple GC operations of value storage from the LSM-tree, eliminating additional I/O operations; (ii) A novel valid data migration scheme mitigates write amplification during space reclamation by in-place overwrites and logical data copying; (iii) SSD-conscious I/O optimizations featuring asynchronous value flushing, fast read paths and concurrent prefetching for range queries. Extensive experiments demonstrate that HeapKV achieves 40%–7.4 \texttimes{} higher throughput under diverse workloads with lower write/space amplification, compared to other state-of-the-art KV-separated LSM stores.},
+ address = {New York, NY, USA},
+ author = {Lu, Kai and Zhou, Yuanhui and Wang, Nengjie and Wan, Jiguang and Huang, Bisheng and Zhang, Yang and Zhang, Jinpeng and Dong, Yu},
+ doi = {10.1145/3817051},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {LSM-tree, key-value store, key-value separation, garbage collection, SSD},
+ month = {June},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {HeapKV: Enabling Efficient Garbage Collection for KV-Separated LSM Stores on Modern SSDs},
+ url = {https://doi.org/10.1145/3817051},
+ year = {2026}
+}

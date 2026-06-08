@@ -1,0 +1,14 @@
+@article{11217412,
+ abstract = {It looks very attractive to coordinate racetrack-memory (RM) and stochastic-computing (SC) jointly to build an ultra-low power neuron-architecture. However, the above combination has always been questioned in a fatal weakness that the heavy valid-bits collection of Racetrack Memory-Magnetic Tunnel Junctions(RM-MTJ), a.k.a. accumulative parallel counters (APCs), cannot physically match the requirement for energy-efficient in-memory DNNs. Fortunately, a recently developed Transverse-Read (TR) provides a lightweight collection of valid-bits by detecting domain-wall resistance between a couple of MTJs on a single nanowire. In this work, we first propose a neuron-architecture that utilizes parallel TRs to build an ultra-fast valid-bits collection scheme specifically targeted at Multiply-Accumulate (MAC) units for in-RTM DNNs, where the multiplication operation inherently involves two operands. To solve the huge storage for full stochastic sequences caused by the limited TR banks, a hybrid coding, pseudo-fractal compression, is designed to generate stochastic sequences by segments. To overcome the misalignment by the parallel early-termination, an asynchronous schedule of TR is further designed to regularize the vectorization, in which the valid-bits from different lanes are merged in multiple RM-stacks for vector-level valid-bits collection. However, an inherent defect of TR, i.e., neighbor parts cannot be accessed simultaneously, could limit the throughput of the parallel vector multiplication, therefore, an interleaving data placement is used for full utilization of the memory bus among different vectors. The experimental results demonstrate that the SC-MAC architecture with TR achieves $2.88\boldsymbol{\times}$2.88×–$4.40\boldsymbol{\times}$4.40× speedup over CORUSCANT (the state-of-the-art process-in-RM architecture), while simultaneously reducing energy consumption by $1.26\boldsymbol{\times}$1.26×–$1.42\boldsymbol{\times}$1.42×.},
+ author = {Wang, Jihe and Zhang, Zhiying and Dong, Xingwu and Wang, Danghui},
+ doi = {10.1109/TC.2025.3623868},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Computer architecture;Energy efficiency;Vectors;Logic gates;Energy consumption;Resistance;Parallel processing;Throughput;Voltage;Schedules;Stochastic computing;MAC;racetrack memory;transverse read},
+ month = {Jan},
+ number = {1},
+ pages = {13-28},
+ title = {A Transverse-Read-Assisted Fast Valid-Bits Collection in Stochastic Computing MACs for Energy-Efficient in-RTM DNNs},
+ volume = {75},
+ year = {2026}
+}

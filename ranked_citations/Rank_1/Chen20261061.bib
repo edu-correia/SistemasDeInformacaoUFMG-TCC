@@ -1,0 +1,16 @@
+@article{Chen20261061,
+ abstract = {log-structured merge (LSM) tree-based key-value (KV) stores organize writes into hierarchical batches to optimize write performance. However, the notorious compaction process and multilevel query mechanism of LSM-tree severely hurt system performance. Our preliminary experiments show that 1) When compaction occurs in the L<sub>0</sub> and L<sub>1</sub> of the LSM-tree, it may saturate system computation and memory resources, ultimately causing the entire system to stall and 2) large number of iterative retrievals across multiple levels is usually required to locate the queried data, while redundant key range overlap in L<sub>0</sub> further increases the overhead. Based on these observations, we introduce Re-LSM<sup>+</sup>, a resistive random-access memory (ReRAM)-based Processing-in-Memory framework for LSM-based KV Stores. In Re-LSM<sup>+</sup>, we offload compaction tasks from the higher levels of the LSM-tree to the PIM processing part. A highly parallel ReRAM compaction accelerator is designed by breaking down the three-phase compaction process into basic logic operations. Additionally, we design an index table and a multilayer Bloom filter for different levels to improve the query efficiency of the LSM-tree. Evaluation results from db_bench show that Re-LSM<sup>+</sup> achieves a 2.37x improvement in random write throughput compared to RocksDB. Furthermore, the ReRAM-based compaction accelerator achieves a 68.16x speedup over the CPU-based implementation and reduces energy consumption to 25.5x. © 1982-2012 IEEE.},
+ author = {Chen, Zehao and Zhang, Kai and Wei, Qian and Su, Nan and Zhang, Yuhao and Shen, Zhaoyan and Yu, Dongxiao and Ju, Lei},
+ doi = {10.1109/TCAD.2025.3591410},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 0},
+ number = {2},
+ pages = {1061 - 1074},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A ReRAM-Based Processing-in-Memory Framework for LSM-Based Key-Value Store},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105012316306?origin=resultslist},
+ volume = {45},
+ year = {2026}
+}

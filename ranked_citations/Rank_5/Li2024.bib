@@ -1,0 +1,13 @@
+@conference{Li2024,
+ abstract = {Sparsely activated Mixture-of-Experts (SMoE) has shown promise to scale up the learning capacity of neural networks, however, they have issues like: (a) High Memory Usage, due to duplication of the network layers into multiple copies as experts; and (b) Redundancy in Experts, as common learning-based routing policies suffer from representational collapse. Therefore, vanilla SMoE models are memory inefficient and non-scalable, especially for resource-constrained downstream scenarios. In this paper, we ask: Can we craft a compact SMoE model by consolidating expert information? What is the best recipe to merge multiple experts into fewer but more knowledgeable experts? Our pilot investigation reveals that conventional model merging methods fail to be effective in such expert merging for SMoE. The potential reasons are: (1) redundant information overshadows critical experts; (2) appropriate neuron permutation for each expert is missing to bring all of them in alignment. To address these challenges, we propose a novel merging algorithm for SMoE, i.e., M-SMoE, which leverages routing statistics to guide expert merging. Specifically, it starts with neuron permutation alignment for experts; then, dominant experts and their “group members” are formed based on routing policies; lastly, every expert group is merged into a single expert by utilizing each expert's activation frequency as their weight for merging, thus diminishing the impact of insignificant experts. Moreover, we draw an interesting observation that our proposed merging promotes a low dimensionality in the merged expert's weight space, naturally paving the way for additional compression. Hence, our final method, MC-SMoE (i.e., Merge, then Compress SMoE), further decomposes the merged experts into low-rank and structural sparse alternatives. Extensive experiments across 8 benchmarks validate the effectiveness of our proposals. For instance, our MC-SMoE achieves up to 80% memory and a 20% FLOPs reduction, with virtually no loss in performance. © 2024 12th International Conference on Learning Representations, ICLR 2024. All rights reserved.},
+ author = {Li, Pingzhi and Zhang, Zhenyu and Yadav, Prateek and Sung, Yi-Lin and Cheng, Yu and Bansal, Mohit and Chen, Tianlong},
+ journal = {12th International Conference on Learning Representations, ICLR 2024},
+ note = {Cited by: 22},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MERGE, THEN COMPRESS: DEMYSTIFY EFFICIENT SMOE WITH HINTS FROM ITS ROUTING POLICY},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85197090033?origin=resultslist},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{9045617,
+ abstract = {Key-value store has played a critical role in many large-scale data storage applications. The log-structured merge-tree (LSM-tree) based key-value store achieves excellent performance on write-intensive workloads which is mainly benefited from the mechanism of converting a batch of random writes into sequential writes. However, LSM-tree doesn't improve a lot in read-intensive workloads which takes a higher latency. The main reason lies in the hierarchical search mechanism in LSM-tree structure. The key challenge is how to propose new strategies based on the existing LSM-tree structure to improve read efficiency and reduce read amplifications.This paper proposes Tidal-tree, a novel data structure where data flows inside LSM-tree like Tidal waves. Tidal-tree targets at improving read efficiency in read-intensive workloads. Tidal-tree allows frequently accessed files at the bottom of LSM-tree to move to higher positions, thereby reducing read latency. Tidal-tree also makes LSM-tree into a variable shape to cater for different characteristic workloads. To evaluate the performance of Tidal-tree, we conduct a series of experiments using standard benchmarks from YCSB. The experimental results show that Tidal-tree can significantly improve read efficiency and reduce read amplifications compared with representative schemes.},
+ author = {Wang, Yi and Wu, Shangyu and Mao, Rui},
+ booktitle = {2020 25th Asia and South Pacific Design Automation Conference (ASP-DAC)},
+ doi = {10.1109/ASP-DAC47756.2020.9045617},
+ issn = {2153-697X},
+ keyword = {Compaction;Indexes;Data structures;Shape;Standards;Buffer storage;Storage system;key-value store;LSM-tree;read amplifications;write amplifications},
+ month = {Jan},
+ number = {},
+ pages = {307-312},
+ title = {Towards Read-Intensive Key-Value Stores with Tidal Structure Based on LSM-Tree},
+ volume = {},
+ year = {2020}
+}

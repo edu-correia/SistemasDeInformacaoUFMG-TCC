@@ -1,0 +1,14 @@
+@article{11145329,
+ abstract = {Shared L1-memory clusters of streamlined instruction processors (processing elements - PEs) are commonly used as building blocks in modern, massively parallel computing architectures (e.g. GP-GPUs). Scaling out these architectures by increasing the number of clusters incurs computational and power overhead, caused by the requirement to split and merge large data structures in chunks and move chunks across memory hierarchies via the high-latency global interconnect. Scaling up the cluster reduces buffering, copy, and synchronization overheads. However, the complexity of a fully connected cores-to-L1-memory crossbar grows quadratically with Processing Element (PE)-count, posing a major physical implementation challenge. We present TeraPool, a physically implementable, ${\boldsymbol >} 1000$>1000 floating-point-capable RISC-V PEs scaled-up cluster design, sharing a Multi-MegaByte ${\boldsymbol >} 4000$>4000-banked L1 memory via a low latency hierarchical interconnect (1-7/9/11 cycles, depending on target frequency). Implemented in 12 nm FinFET technology, TeraPool achieves near-gigahertz frequencies (910 MHz) typical, 0.80 V/25 $^{\boldsymbol{\circ}}$∘C. The energy-efficient hierarchical PE-to-L1-memory interconnect consumes only 9-13.5 pJ for memory bank accesses, just 0.74-1.1${\boldsymbol \times}$× the cost of a FP32 FMA. A high-bandwidth main memory link is designed to manage data transfers in/out of the shared L1, sustaining transfers at the full bandwidth of an HBM2E main memory. At 910 MHz, the cluster delivers up to 1.89 single precision TFLOP/s peak performance and up to 200 GFLOP/s/W energy efficiency (at a high IPC/PE of 0.8 on average) in benchmark kernels, demonstrating the feasibility of scaling a shared-L1 cluster to a thousand PEs, four times the PE count of the largest clusters reported in literature.},
+ author = {Zhang, Yichao and Bertuletti, Marco and Zhang, Chi and Riedel, Samuel and Shen, Diyou and Wang, Bowen and Vanelli-Coralli, Alessandro and Benini, Luca},
+ doi = {10.1109/TC.2025.3603692},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Bandwidth;Artificial intelligence;Memory management;Energy efficiency;Data transfer;Computational modeling;Physical design;Low latency communication;Computers;Synchronization;Manycore;RISC-V;scalability;physical design aware.},
+ month = {Nov},
+ number = {11},
+ pages = {3667-3681},
+ title = {TeraPool: A Physical Design Aware, 1024 RISC-V Cores Shared-L1-Memory Scaled-Up Cluster Design With High Bandwidth Main Memory Link},
+ volume = {74},
+ year = {2025}
+}

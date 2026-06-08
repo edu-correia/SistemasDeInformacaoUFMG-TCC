@@ -1,0 +1,16 @@
+@conference{Sears2008526,
+ abstract = {Rose<sup>1</sup> is a database storage engine for high-throughput repli-cation. It targets seek-limited, write-intensive transaction processing workloads that perform near real-time decision support and analytical processing queries. Rose uses log structured merge (LSM) trees to create full database repli-cas using purely sequential I/O, allowing it to provide or-ders of magnitude more write throughput than B-tree based replicas. Also, LSM-trees cannot become fragmented and provide fast, predictable index scans. Rose's write performance relies on replicas' ability to per-form writes without looking up old values. LSM-tree lookups have performance comparable to B-tree lookups. If Rose read each value that it updated then its write throughput would also be comparable to a B-tree. Although we target replication, Rose provides high write throughput to any ap-plication that updates tuples without reading existing data, such as append-only, streaming and versioning databases. We introduce a page compression format that takes ad-vantage of LSM-tree's sequential, sorted data layout. It in-creases replication throughput by reducing sequential I/O, and enables efficient tree lookups by supporting small page sizes and doubling as an index of the values it stores. Any scheme that can compress data in a single pass and provide random access to compressed values could be used by Rose. Replication environments have multiple readers but only one writer. This allows Rose to provide atomicity, consis-tency and isolation to concurrent transactions without re-sorting to rollback, blocking index requests or interfering with maintenance tasks. Rose avoids random I/O during replication and scans, leaving more I/O capacity for queries than existing systems, and providing scalable, real-time replication of seek-bound workloads. Analytical models and experiments show that Rose provides orders of magnitude greater replication band-width over larger databases than conventional techniques. © 2008 VLDB Endowment.},
+ author = {Sears, Russell and Callaghan, Mark and Brewer, Eric},
+ doi = {10.14778/1453856.1453914},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 38},
+ number = {1},
+ pages = {526 - 537},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Rose: Compressed, logstructured replication},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/75949086376?origin=resultslist},
+ volume = {1},
+ year = {2008}
+}

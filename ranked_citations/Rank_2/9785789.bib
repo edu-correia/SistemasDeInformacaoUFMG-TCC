@@ -1,0 +1,14 @@
+@article{9785789,
+ abstract = {In recent years, cyber threats and malicious software attacks have been escalated on various platforms. Therefore, it has become essential to develop automated machine learning methods for defending against malware. In the present study, we propose stacked bidirectional long short-term memory (Stacked BiLSTM) and generative pre-trained transformer based (GPT-2) deep learning language models for detecting malicious code. We developed language models using assembly instructions extracted from .text sections of malicious and benign Portable Executable (PE) files. We treated each instruction as a sentence and each .text section as a document. We also labeled each sentence and document as benign or malicious, according to the file source. We created three datasets from those sentences and documents. The first dataset, composed of documents, was fed into a Document Level Analysis Model (DLAM) based on Stacked BiLSTM. The second dataset, composed of sentences, was used in Sentence Level Analysis Models (SLAMs) based on Stacked BiLSTM and DistilBERT, Domain Specific Language Model GPT-2 (DSLM-GPT2), and General Language Model GPT-2 (GLM-GPT2). Lastly, we merged all assembly instructions without labels for creating the third dataset; then we fed a custom pre-trained model with it. We then compared malware detection performances. The results showed that the pre-trained model improved the DSLM-GPT2 and GLM-GPT2 detection performance. The experiments showed that the DLAM, the SLAM based on DistilBERT, the DSLM-GPT2, and the GLM-GPT2 achieved 98.3%, 70.4%, 86.0%, and 76.2% F1 scores, respectively.},
+ author = {Demırcı, Denız and şahın, Nazenın and şirlancis, Melıh and Acarturk, Cengiz},
+ doi = {10.1109/ACCESS.2022.3179384},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Malware;Feature extraction;Codes;Analytical models;Static analysis;Natural language processing;Transformers;Malware detection;static analysis;stacked BiLSTM;GPT-2},
+ month = {},
+ number = {},
+ pages = {58488-58502},
+ title = {Static Malware Detection Using Stacked BiLSTM and GPT-2},
+ volume = {10},
+ year = {2022}
+}

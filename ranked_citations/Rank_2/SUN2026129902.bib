@@ -1,0 +1,13 @@
+@article{SUN2026129902,
+ abstract = {In recent years, contrastive learning has attracted considerable attention in the recommendation domain owing to its ability to extract valuable supervisory signals from large-scale unsupervised data. However, existing graph augmentation-based contrastive learning strategies often compromise the structural integrity of the original graph views to enhance model robustness. This trade-off can lead to the loss of global information, ultimately degrading overall model performance. Moreover, during the aggregation process in graph neural networks (GNNs), indiscriminate information merging across layers may result in the loss of fine-grained details. To address these issues, we propose a novel algorithm: Randomized singular value decomposition (SVD)-based Graph-enhanced Contrastive Learning for Recommendation (RS-GCL). In particular, RS-GCL leverages randomized SVD to generate two fully connected contrastive views that retain global collaborative signals. The first view is constructed using a smaller q value, reducing the original graph to a low-dimensional embedded representation that captures essential user preference information. The second view uses a larger q value to obtain a more accurate approximation, thereby preserving finer structural details of the original graph. In addition, we introduce a set of layer-wise aggregation coefficients to mitigate the oversmoothing problem commonly encountered in GNNs. Extensive experiments on multiple benchmark datasets demonstrate that RS-GCL significantly outperforms existing state-of-the-art recommendation models. Further analysis reveals its strong robustness in addressing challenges such as data sparsity and popularity bias, underscoring its effectiveness in real-world recommendation scenarios. The code for RS-GCL is publicly available at: https://github.com/3endurance/RS-GCL.},
+ author = {Jing Sun and Xingchen Peng and Ganghui Li and Fangmei Chen},
+ doi = {https://doi.org/10.1016/j.eswa.2025.129902},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Recommendation system, Contrastive learning, Graph neural network, Randomized SVD},
+ pages = {129902},
+ title = {RS-GCL: Randomized SVD-based graph-enhanced contrastive learning for recommendation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425035171},
+ volume = {299},
+ year = {2026}
+}

@@ -1,0 +1,13 @@
+@article{CAO2026114834,
+ abstract = {Entity Resolution (ER) aims to identify and merge records that refer to the same entity across diverse data sources. Entity blocking is a key step in entity resolution, as it reduces computational complexity by efficiently generating candidate pairs to minimize redundant comparisons. Recent deep learning-based blocking methods show promise but often require large amounts of labeled data and struggle to capture fine-grained semantics. To address these challenges, we propose an unsupervised entity blocking framework based on contrastive learning with multi-granularity dynamic fusion. The framework consists of two stages: the embedding stage and the block generation stage. In the embedding stage, positive samples are created via data augmentation, with other instances in the batch serving as negatives. To enhance fine-grained semantics, the stage enables interactions among instance vectors and integrates global context through a multi-level similarity fusion mechanism. The fused representations are then used to fine-tune a pre-trained language model via contrastive learning. In the block generation stage, the fine-tuned model produces record embeddings, which are aggregated via average pooling. These aggregated embeddings are then used for efficient similarity computation and candidate ranking, ultimately generating high-quality candidate pairs. This framework effectively balances global semantics and local details, enabling accurate and efficient entity blocking without any labeled data. Experiments on real-world datasets demonstrate that the proposed UCL-Blocker consistently outperforms existing approaches, achieving a 3.92% higher Fα score than the current best blocking method Sudowoodo, verifying the effectiveness of the proposed framework.},
+ author = {Yupeng Cao and Niannian Shi and Yaxin Wei and Shumei Liu and Chenchen Sun and Bin Yang and Yisheng An},
+ doi = {https://doi.org/10.1016/j.asoc.2026.114834},
+ issn = {1568-4946},
+ journal = {Applied Soft Computing},
+ keyword = {Unsupervised entity blocking, Contrastive learning, Dynamic fusion, Data augmentation},
+ pages = {114834},
+ title = {UCL-Blocker: Unsupervised contrastive learning with multi-granularity dynamic fusion for entity blocking},
+ url = {https://www.sciencedirect.com/science/article/pii/S1568494626002826},
+ volume = {193},
+ year = {2026}
+}

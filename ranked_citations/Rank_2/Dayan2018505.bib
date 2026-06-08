@@ -1,0 +1,14 @@
+@conference{Dayan2018505,
+ abstract = {We show that all mainstream LSM-tree based key-value stores in the literature and in industry suboptimally trade between the I/O cost of updates on one hand and the I/O cost of lookups and storage space on the other. The reason is that they perform equally expensive merge operations across all levels of LSM-tree to bound the number of runs that a lookup has to probe and to remove obsolete entries to reclaim storage space. With state-of-the-art designs, however, merge operations from all levels of LSM-tree but the largest (i.e., most merge operations) reduce point lookup cost, long range lookup cost, and storage space by a negligible amount while significantly adding to the amortized cost of updates. To address this problem, we introduce Lazy Leveling, a new design that removes merge operations from all levels of LSM-tree but the largest. Lazy Leveling improves the worst-case complexity of update cost while maintaining the same bounds on point lookup cost, long range lookup cost, and storage space. We further introduce Fluid LSM-tree, a generalization of the entire LSM-tree design space that can be parameterized to assume any existing design. Relative to Lazy Leveling, Fluid LSM-tree can optimize more for updates by merging less at the largest level, or it can optimize more for short range lookups by merging more at all other levels. We put everything together to design Dostoevsky, a key-value store that adaptively removes superfluous merging by navigating the Fluid LSM-tree design space based on the application workload and hardware. We implemented Dostoevsky on top of RocksDB, and we show that it strictly dominates state-of-the-art designs in terms of performance and storage space. © 2018 Association for Computing Machinery.},
+ author = {Dayan, Niv and Idreos, Stratos},
+ doi = {10.1145/3183713.3196927},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 168; All Open Access; Gold Open Access},
+ pages = {505 - 520},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Dostoevsky: Better space-time trade-offs for LSM-tree based key-value stores via adaptive removal of superfluous merging},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85048787340?origin=resultslist},
+ year = {2018}
+}

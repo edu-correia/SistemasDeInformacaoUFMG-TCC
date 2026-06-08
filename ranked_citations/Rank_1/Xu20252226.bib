@@ -1,0 +1,16 @@
+@article{Xu20252226,
+ abstract = {Sparse matrix-vector/matrix multiplication, namely SpMMul, has become a fundamental operation during model inference in various domains. Previous studies have explored numerous optimizations to accelerate it. However, to enable efficient end-to-end inference, the following challenges remain unsolved: 1) incomplete design space and time-consuming preprocessing. Previous methods optimize SpMMul in limited loops and neglect the potential space exploration for further optimization, resulting in >30% waste of computing power. In addition, the preprocessing overhead in SparseTIR and DTC-SpMM is 1000× larger than sparse computing; 2) incompatibility between static dataflow and dynamic input. A static dataflow can not always be efficient to all input, leading to >80% performance loss; and 3) simplistic algorithm performance analysis. Previous studies primarily analyze performance from algorithmic advantages, without considering other aspects like hardware and data features. To tackle the above challenges, we present DA-SpMMul, a Data-Aware heuristic GPU implementation for SpMMul in multiplatforms. DA-SpMMul creatively proposes: 1) complete design space based on theoretical computations and nontrivial implementations without preprocessing. We propose three orthogonal design principles based on theoretical computations and provide nontrivial implementations on standard formats, eliminating the complex preprocessing; 2) feature-enabled adaptive algorithm selection mechanism. We design a heuristic model to enable algorithm selection considering various features; and 3) comprehensive algorithm performance analysis. We extract the features from multiple perspectives and present a comprehensive performance analysis of all algorithms. DA-SpMMul supports PyTorch on both NVIDIA and AMD and achieves an average speedup of 3.33×and 3.02× over NVIDIA cuSPARSE, and 12.05× and 8.32× over AMD rocSPARSE for sparse matrix-vector multiplication and sparse matrix-matrix multiplication, and up to 1.48× speedup against the state-of-the-art open-source algorithm. Integrated with graph neural network framework, PyG, DA-SpMMul achieves up to 1.22× speedup on GCN inference. © 1982-2012 IEEE.},
+ author = {Xu, Jiaming and Huang, Shan and Li, Jinhao and Huang, Guyue and Xie, Yuan and Wang, Yu and Dai, Guohao},
+ doi = {10.1109/TCAD.2024.3518413},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 2},
+ number = {6},
+ pages = {2226 - 2239},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Enabling Efficient Sparse Multiplications on GPUs With Heuristic Adaptability},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85212765532?origin=resultslist},
+ volume = {44},
+ year = {2025}
+}

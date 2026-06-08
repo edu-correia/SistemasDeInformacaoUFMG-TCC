@@ -1,0 +1,16 @@
+@article{Kawahito20041065,
+ abstract = {We present a new memory access optimization for Java to perform aggressive code motion for speculatlvely optimizing memory accesses by applying partial redundancy elimination (PRE) techniques. First, to reduce as many barriers as possible and to enhance code motion, we perform alias analysis to identify all the regions in which each object reference is not aliased. Secondly, we find all the possible barriers. Finally, we perform code motions in three steps. For the first step, we apply a non-speculative PRE algorithm to move load instructions and their following instructions in the backwards direction of the control flow graph. For the second step, we apply a speculative PRE algorithm to move some of them aggressively before the conditional branches. For the third step, we apply our modified version of a non-speculative PRE algorithm to move store instructions in the forward direction of the control flow graph and to even move some of them after the merge points. We implemented our new algorithm in our production-level Java just-in-time compiler. Our experimental results show that our speculative algorithm improves the average (maximum) performance by 13.1% (90.7%) for jBYTEmark and 1.4% (4.4%) for SPECjvm98 over the fastest algorithm previously described, while it increases the average (maximum) compilation time by 0.9% (2.9%) for both benchmark suites. Copyright © 2004 John Wiley & Sons, Ltd.},
+ author = {Kawahito, Motohiro and Komatsu, Hideaki and Nakatani, Toshio},
+ doi = {10.1002/spe.604},
+ journal = {Software - Practice and Experience},
+ note = {Cited by: 8},
+ number = {11},
+ pages = {1065 - 1090},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Partial redundancy elimination for access expressions by speculative code motion},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/4444315493?origin=resultslist},
+ volume = {34},
+ year = {2004}
+}

@@ -1,0 +1,15 @@
+@article{10.1145/3779221,
+ abstract = {The rapid pace of artificial intelligence (AI) and machine learning techniques has necessitated the development of large-scale models that rely on energy-intensive data centers, thereby raising environmental sustainability. Simultaneously, the increasing significance of privacy rights has led to the emergence of Privacy-Preserving Machine Learning (PPML) technologies, which aim to ensure data confidentiality. Although homomorphic encryption (HE) facilitates computations on encrypted data, it entails considerable computational costs and challenges, which impede the effective deployment of privacy-enhancing applications with large models.To create a more sustainable and secure AI world, we propose LIME, a pure HE-based PPML solution, by integrating two techniques: element-wise channel-to-slot packing (ECSP) and power-of-two channel pruning (PCP). ECSP leverages abundant slots to pack multiple samples within ciphertexts, facilitating batch inference. PCP prunes the channels of convolutional layers by powers of two, thereby reducing computational demands and enhancing the packing capabilities of pruned models. Additionally, we implement the ReLU-before-addition block in ResNet to mitigate accuracy degradation caused by approximations with quadratic polynomials.We evaluated LIME using ResNet-20 on CIFAR-10, VGG-11 on CIFAR-100, and ResNet-18 on Tiny-ImageNet. Using the original models, LIME attains up to 2.1% and 8.4% accuracy improvements over the methods of Lee et al.&nbsp;(IEEE ACCESS’21) and AESPA&nbsp;(arXiv:2201.06699), which employ high- and low-degree polynomial ReLU approximations, respectively. Even with 75% parameter pruning, LIME retains higher accuracy than AESPA. Using the state-of-the-art ORION (ASPLOS ’25) as the convolution backend and evaluating on the original models, LIME achieves speedups of 41.5 (times)  and 8 (times)  over ORION integrated with Lee et al. and AESPA, respectively. For models pruned by 90%, these speedups increase to 202.5 (times) and 35.1 (times) , respectively.},
+ address = {New York, NY, USA},
+ author = {Wang, Huan-Chih and Wu, Ja-Ling},
+ doi = {10.1145/3779221},
+ issn = {1551-6857},
+ journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+ keyword = {Privacy-Preserving Machine Learning, Homomorphic Encryption, Batch Encryption, Model Compression},
+ month = {December},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {LIME: High-Performance Private Inference with Lightweight Model and Batch Encryption},
+ url = {https://doi.org/10.1145/3779221},
+ year = {2025}
+}

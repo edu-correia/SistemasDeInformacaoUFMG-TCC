@@ -1,0 +1,14 @@
+@article{11115970,
+ abstract = {Sample entropy (SampEn) is an algorithm within information entropy that enables effective analysis of biological signals. Due to the need for extensive similarity matching operations, the SampEn calculation process is time-consuming. Although a series of fast SampEn algorithms have been proposed, they remain time-intensive when processing large data volumes. Additionally, previous field-programmable gate array (FPGA)-based hardware accelerators designed for SampEn suffer from architectural design limitations, consuming substantial on-chip memory resources and operating at low frequencies. In this article, we propose FASE, an FPGA-based accelerator for lightweight sample entropy (LW-SampEn) with Monte Carlo (MC) sampling. The FASE design comprises two main parts: algorithm and hardware optimizations. On the algorithmic side, we introduce MC sampling into the merge-sort-based LW-SampEn algorithm, named MCLW-SampEn. MCLW-SampEn effectively reduces the computation load for large data volumes while maintaining algorithmic accuracy. For hardware, we first design efficient sorting and allocation modules to address boundary localization and load imbalance issues in previous accelerator designs. Then, we replicate the computation across the main phases to enable parallel processing. Finally, we deploy the design on the Pynq-Z2 board for validation. Experimental results show that the proposed MCLW-SampEn algorithm achieves an average speed up of  $3\times $  over the LW-SampEn algorithm, with accuracy losses kept within 0.5%. Compared to state-of-the-art (SOTA) designs, FASE achieves an average speed up of  $12.8\times $  while reducing power consumption by 89.3%. Ablation studies indicate that, for the same algorithm, FASE offers a  $7.4\times $  speedup over related FPGA designs.},
+ author = {Liu, Jiayu and Li, Yuanhang and Huang, Zhengyang and Chen, Chao and Chen, Ruiqi and da Silva, Bruno},
+ doi = {10.1109/TVLSI.2025.3593020},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Hardware;Sorting;Field programmable gate arrays;Entropy;Vectors;System-on-chip;Optimization;Location awareness;Time series analysis;Resource management;Field-programmable gate array (FPGA);Monte Carlo (MC) sampling;parallel computation;sample entropy},
+ month = {Oct},
+ number = {10},
+ pages = {2883-2896},
+ title = {FASE: An FPGA-Based Accelerator for Lightweight Sample Entropy With Monte Carlo Sampling},
+ volume = {33},
+ year = {2025}
+}

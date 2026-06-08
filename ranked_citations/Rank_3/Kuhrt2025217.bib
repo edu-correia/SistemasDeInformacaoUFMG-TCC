@@ -1,0 +1,15 @@
+@conference{Kuhrt2025217,
+ abstract = {As sorting a database table may require expensive comparisons, e.g., due to column count or column types such as long or international strings, optimizing the count and cost of comparisons is important. Adaptive sorting avoids comparisons by exploiting pre-existing order in the input. If N keys happen to be sorted or reverse-sorted, N − 1 comparisons suffice, in contrast to log<sub>2</sub>(N!) comparisons in the expected and worst cases. Ideally, adaptive sorting ensures graceful degradation from the best case to the expected case, e.g., by merging sorted runs pre-existing in the input. Adaptive sorting has proven successful for integer keys but not for large keys, e.g., when comparing symbols or characters in text strings, bytes or words in binary strings, or column values in database rows. On the other hand, using longest common prefixes or offset-value codes, sorting N strings with K characters, bytes, or columns can be limited to N × K comparisons. If those comparisons are the dominant cost of sorting, e.g., due to interpreted execution of predicates etc., the cost of sorting is linear in the input size and, in fact, equal to the cost of verifying a claimed and correct sort order. By leveraging and combining a variety of techniques, some old and proven in practice, some new yet equally sound, we introduce sorting techniques that are efficient, scalable, and adaptive; that degrade gracefully from N − 1 to log<sub>2</sub>(N!) comparisons of strings or of database rows; and that guarantee at most 1.042N × K comparisons of bytes or of column values in the worst case. We offer algorithm analyses and experimental results to test our hypotheses and support our claims. © 2025 Gesellschaft fur Informatik (GI). All rights reserved.},
+ author = {Kuhrt, Marius and Seeger, Bernhard and Wild, Sebastian and Graefe, Goetz},
+ doi = {10.18420/BTW2025-10},
+ journal = {Lecture Notes in Informatics (LNI), Proceedings - Series of the Gesellschaft fur Informatik (GI)},
+ note = {Cited by: 0},
+ pages = {217 - 239},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Adaptive sorting for large keys, strings, and database rows},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105037456114?origin=resultslist},
+ volume = {P-361},
+ year = {2025}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3746405.3746437,
+ abstract = {Cloud storage services such as Amazon S3, Azure Blob Storage, and Google Cloud Storage are widely used to store raw data for machine learning applications. When the data is later processed, the analysis predominantly focuses on regions of interest (such as a small bounding box in a larger image) and discards uninteresting regions. Machine learning applications can significantly accelerate their I/O if they push this data filtering step to the cloud. Prior work has proposed different methods to partially read array (tensor) objects, such as chunking, reading a contiguous byte range, and evaluating a lambda function. No method is optimal; estimating the total time and cost of a data retrieval requires an understanding of the data serialization order, the chunk size and platform-specific properties. This paper introduces ArrayMorph, a cloud-based array data storage system that automatically determines which is the best method to use to retrieve regions of interest from data on the cloud. ArrayMorph formulates data accesses as hyperslab queries, and optimizes them using a multi-phase cost-based approach. ArrayMorph seamlessly integrates with Python/PyTorch-based ML applications, and is experimentally shown to transfer up to 9.8X less data than existing systems. This makes ML applications run up to 1.7X faster and 9X cheaper than prior solutions.},
+ author = {Jiang, Ruochen and Blanas, Spyros},
+ doi = {10.14778/3746405.3746437},
+ issn = {2150-8097},
+ issue_date = {May 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {14},
+ pages = {3189–3202},
+ publisher = {VLDB Endowment},
+ title = {ArrayMorph: Optimizing Hyperslab Queries on the Cloud for Machine Learning Pipelines},
+ url = {https://doi.org/10.14778/3746405.3746437},
+ volume = {18},
+ year = {2025}
+}

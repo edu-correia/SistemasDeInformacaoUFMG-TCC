@@ -1,0 +1,14 @@
+@inproceedings{9767391,
+ abstract = {In this paper, we propose FedTour, a federated learning-based method for training tourism object recognition models, which utilizes short-distance direct communication between user devices and maximizes the model performance within a limited number of updates. In FedTour, whenever two user devices are within range, they first exchange metadata including the learning degree (e.g., recognition accuracy) of their models, and determine whether it is effective to integrate the peer model by using a regressor trained with various pairs of models with different accuracy to predict the accuracy of the merged model. Once it is deemed effective, the model parameters are exchanged and the model is updated using FedAvg (averaging weights of two models of user devices). By carefully setting the threshold of whether FedAvg is applied or not, model performance is improved within a limited number of model parameter exchanges resulting in lower power consumption of user devices. We conducted a simulation using mobile phone trace data of actual users in a real sightseeing area and evaluated the improvement in accuracy of a CNN model that recognizes 10 objects while limiting the number of model parameter exchanges to only 40. Results show FedTour increased the initial model accuracy by 112%, while the baseline gossip-based method achieved 69%.},
+ author = {Tomita, Shusaku and Talusan, Jose Paolo and Nakamura, Yugo and Suwa, Hirohiko and Yasumoto, Keiichi},
+ booktitle = {2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)},
+ doi = {10.1109/PerComWorkshops53856.2022.9767391},
+ issn = {},
+ keyword = {Performance evaluation;Training;Power demand;Conferences;Computational modeling;Predictive models;Collaborative work;Federated learning;Tourism object detection;Participatory learning;Direct communication},
+ month = {March},
+ number = {},
+ pages = {667-673},
+ title = {FedTour: Participatory Federated Learning of Tourism Object Recognition Models with Minimal Parameter Exchanges between User Devices},
+ volume = {},
+ year = {2022}
+}

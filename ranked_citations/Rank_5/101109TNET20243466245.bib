@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2024.3466245,
+ abstract = {Merkle trees play a crucial role in blockchain networks in organizing network state. They allow proving a particular value of an entry in the state to a node that maintains only the root of the Merkle trees, a hash-based signature computed over the data in a hierarchical manner. Verification of particular state entries is crucial in reaching a consensus on the execution of a block where state information is required in the processing of its transactions. For instance, a payment transaction should be based on the balance of the two involved accounts. The proof length affects the network communication and is typically logarithmic in the state size. In this paper, we take advantage of typical transaction characteristics for better organizing Merkle trees to improve blockchain network performance. We focus on the common transaction processing where Merkle proofs are jointly provided for multiple accounts. We first provide lower bounds for the communication cost that are based on the distribution of accounts involved in the transactions. We then describe algorithms that consider traffic patterns for significantly reducing it. The algorithms are inspired by various coding methods such as Huffman coding, partition and weight balancing. We also generalize our approach towards the encoding of smart contract transactions that involve an arbitrary number of accounts. Likewise, we rely on real blockchain data to show the savings allowed by our approach. The experimental evaluation is based on transactions from the Ethereum network and demonstrates cost reduction for both payment transactions and smart contract transactions.},
+ author = {Mizrahi, Avi and Koren, Noam and Rottenstreich, Ori and Cassuto, Yuval},
+ doi = {10.1109/TNET.2024.3466245},
+ issn = {1063-6692},
+ issue_date = {Dec. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {October},
+ number = {6},
+ numpages = {15},
+ pages = {5326–5340},
+ publisher = {IEEE Press},
+ title = {Traffic-Aware Merkle Trees for Shortening Blockchain Transaction Proofs},
+ url = {https://doi.org/10.1109/TNET.2024.3466245},
+ volume = {32},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{7584925,
+ abstract = {Current major big data analytical stacks often consist of a general-purpose, multi-staged cluster computation framework (e.g. Hadoop) and a SQL query execution system (e.g. Hive) on its top. In such stacks, a key factor of query execution performance is the efficiency of data shuffling between two execution stages (e.g. Map/Reduce). However, current stacks often execute data shuffling in a data-oblivious way, which means that for structured data processing, various useful information about the shuffled data and the queries on the data is simply wasted. Specifically, this problem makes two optimization opportunities lost: i) unnecessary records cannot be filtered in advance, ii) column-oriented compression algorithms cannot be applied. To solve the problem, in this paper, we have designed and implemented a novel data shuffling mechanism in Hadoop, called Structured Data Shuffling (S-Shuffle), which avoids the low efficiencies of traditional data shuffling by carefully leveraging the rich information in data and queries provided by Hive. Our experimental results with industry-standard TPC-H benchmark show that by using S-Shuffle, the performance of SQL query processing on Hadoop can be improved by up to 2.4x..},
+ author = {Tang, Dixin and Liu, Taoying and Lee, Rubao and Liu, Hong and Li, Wei},
+ booktitle = {2016 IEEE International Congress on Big Data (BigData Congress)},
+ doi = {10.1109/BigDataCongress.2016.20},
+ issn = {},
+ keyword = {Optimization;Compression algorithms;Big data;Sorting;Aggregates;Computational modeling;Sparks;Big data analytical stacks;Structured data processing;MapReduce;Data shuffling;Cross-layer optimization},
+ month = {June},
+ number = {},
+ pages = {91-100},
+ title = {A Case Study of Optimizing Big Data Analytical Stacks Using Structured Data Shuffling},
+ volume = {},
+ year = {2016}
+}

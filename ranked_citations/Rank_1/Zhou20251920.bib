@@ -1,0 +1,16 @@
+@article{Zhou20251920,
+ abstract = {LSM-tree-based Key-value systems are widely used in many internet applications, known for their superior write performance. Compaction operations, responsible for maintaining the pyramidal storage structure of the LSM-tree to ensure acceptable read performance, pose significant performance bottlenecks. The application of high-performance SSDs and lightweight user-space file systems in LSM storage alleviates IO bandwidth bottlenecks, but it amplifies the computational resource consumption of compaction when KV is small and medium, shifting the bottleneck from IO to computation. To mitigate the computational bottleneck of compaction, we propose GPComp, a GPU-accelerated compaction strategy for high-performance SSDs with lightweight user-space file systems. GPComp features efficient GPU compaction units and a CPU-GPU cooperative compaction acceleration strategy. We introduce a user-space file system specifically designed for LSM storage, TopFS-GPU. It implements an SPDK-based SSD-GPU P2P IO stack to enhance data transfer throughput in GPU-accelerated Compaction. It features an asynchronous write-back cache strategy, facilitating mixed read-write workloads in LSM-tree-based key-value systems. Additionally, our pipeline mechanism overlaps GPU computations with SSD-GPU IO, increasing system throughput. Implemented based on LevelDB, GPComp shows up to a 2.65x increase in average write throughput and a 2.32x improvement in mixed read-write throughput, with a P99 tail latency reduction of up to 169.65% compared to state-of-the-art methods. © 1990-2012 IEEE.},
+ author = {Zhou, Hao and Chen, Yuanhui and Zeng, Wu and Cui, Lixiao and Wang, Gang and Liu, Xiaoguang},
+ doi = {10.1109/TPDS.2025.3586616},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 2},
+ number = {9},
+ pages = {1920 - 1936},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {GPComp: Using GPU and SSD-GPU Peer to Peer DMA to Accelerate LSM-Tree Compaction for Key-Value Store},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105010341879?origin=resultslist},
+ volume = {36},
+ year = {2025}
+}

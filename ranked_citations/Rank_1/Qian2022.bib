@@ -1,0 +1,16 @@
+@article{Qian2022,
+ abstract = {Many journaling file systems currently use non-volatile memory-express (NVMe) solid-state drives (SSDs) as external journal devices to improve the input and output (I/O) performance. However, when facing microwrite workloads, which are typical of many applications, they suffer from severe I/O fluctuations and the NVMe SSD utilization is extremely low. The experimental results indicate that this phenomenon arises mainly because writing back data to backend file systems on hard disk drives is much slower than journal writing, causing journal writing to frequently freeze because of the two-phase mechanism. We, therefore, propose a merging-in-memory (MIM) acceleration architecture to stabilize and boost the I/O performance for such journaling file systems. MIM employs an efficient data structure of hash-table-based multiple linked lists in memory, which not only merges random microwrites into sequential large blocks to speed up writebacks but also provides additional gains in terms of reducing the frequency of write addressing and object opening and closing. Using a prototype implementation in Ceph FileStore, we experimentally show that MIM not only eliminates severe fluctuations but also improves the I/O operations per second by roughly 1×–12× and reduces the write latency by 75%–98%. © 2021, Science China Press and Springer-Verlag GmbH Germany, part of Springer Nature.},
+ author = {Qian, Lin and Tang, Bin and Ye, Baoliu and Wu, Jianyu and Wang, Xiaoliang and Lu, Sanglu},
+ doi = {10.1007/s11432-019-2808-x},
+ journal = {Science China Information Sciences},
+ note = {Cited by: 6; All Open Access; Bronze Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Stabilizing and boosting I/O performance for file systems with journaling on NVMe SSD},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85101884209?origin=resultslist},
+ volume = {65},
+ year = {2022}
+}

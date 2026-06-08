@@ -1,0 +1,14 @@
+@inproceedings{10588443,
+ abstract = {Semantic segmentation of 3D LiDAR point clouds, essential for autonomous driving and infrastructure management, is best achieved by supervised learning, which demands extensive annotated datasets and faces the problem of domain shifts. We introduce a new 3D semantic segmentation pipeline that leverages aligned scenes and state-of-the-art 2D segmentation methods, avoiding the need for direct 3D annotation or reliance on additional modalities such as camera images at inference time. Our approach generates 2D views from LiDAR scans colored by sensor intensity and applies 2D semantic segmentation to these views using a camera-domain pretrained model. The segmented 2D outputs are then back-projected onto the 3D points, with a simple voting-based estimator that merges the labels associated to each 3D point. Our main contribution is a global pipeline for 3D semantic segmentation requiring no prior 3D annotation and not other modality for inference, which can be used for pseudo-label generation. We conduct a thorough ablation study and demonstrate the potential of the generated pseudo-labels for the Unsupervised Domain Adaptation task.},
+ author = {Caunes, Andrew and Chateau, Thierry and Frémont, Vincent},
+ booktitle = {2024 IEEE Intelligent Vehicles Symposium (IV)},
+ doi = {10.1109/IV55156.2024.10588443},
+ issn = {2642-7214},
+ keyword = {Point cloud compression;Training;Three-dimensional displays;Laser radar;Annotations;Semantic segmentation;Pipelines},
+ month = {June},
+ number = {},
+ pages = {2192-2197},
+ title = {3D Can Be Explored In 2D : Pseudo-Label Generation for LiDAR Point Clouds Using Sensor-Intensity-Based 2D Semantic Segmentation},
+ volume = {},
+ year = {2024}
+}

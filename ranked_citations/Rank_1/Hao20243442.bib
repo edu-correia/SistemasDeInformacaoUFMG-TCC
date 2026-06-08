@@ -1,0 +1,16 @@
+@article{Hao20243442,
+ abstract = {A B-Tree is the most widely used range index for larger-than memory data systems. It organizes data in pages (usually 4 KB) that efficiently align with disk IO operations, fully utilizing each IO operation to narrow down the search space. On the other hand, a B-Tree’s page-based organization leads to inefficient caching and high write amplification, as it needs to cache the entire page as a whole while often only a small subset of records are hot, and it needs to write the entire page for a single record update. The key insight of this paper is to separate cache pages from disk pages, i.e., a cache page is no longer a pure mirror of its disk content, but instead, it forms a judiciously chosen subset of the disk page that is worth caching, and can absorb both read and write operations in a consistent manner. Based on this insight, we propose Bf-Tree, a modern B-Tree that is read-write-optimized by building a new variable-length buffer pool to manage such cache pages, called mini-pages. Bf-Tree uses this in-memory buffer pool to support efficient record-level caching, buffering recent updates, caching range gaps, as well as mirrors of disk pages when needed. We implement a fully featured and modern Bf-Tree in Rust with 13k lines of code, and show that Bf-Tree is 2.5× faster than RocksDB (LSM-Tree) for scan operations, 6× faster than a B-Tree for write operations, and 2×faster than both B-Trees and LSM-Trees for point lookups. We believe these results firmly establish a new standard for database storage engines of the future. © 2024, VLDB Endowment. All rights reserved.},
+ author = {Hao, Xiangpeng and Chandramouli, Badrish},
+ doi = {10.14778/3681954.3682012},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 7},
+ number = {11},
+ pages = {3442 - 3455},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Bf-Tree: A Modern Read-Write-Optimized Concurrent Larger-Than-Memory Range Index},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85205374759?origin=resultslist},
+ volume = {17},
+ year = {2024}
+}

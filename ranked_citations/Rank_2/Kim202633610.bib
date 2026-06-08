@@ -1,0 +1,15 @@
+@article{Kim202633610,
+ abstract = {Mixture-of-Experts (MoE) architectures, while computationally efficient, suffer from a critical Memory-latency bottleneck. The need to store all experts in GPU memory or to incur high I/O latency when offloading them to CPU severely hinders their practical deployment. To address this, we propose ADEPT (Adaptive Domain-aware Expert Prefetching Technique), a framework designed to optimize expert management during LLM inference under memory-constrained GPU environments. ADEPT employs a twostage strategy. First, during the prefill phase, it analyzes the input's semantic domain to selectively preload only relevant experts, minimizing peak memory usage. Second, during token-by-token decoding, a localityaware mechanism predicts and preemptively loads upcoming experts into the GPU cache, effectively hiding I/O latency. Evaluated across diverse domains, ADEPT demonstrates significant efficiency gains in two key aspects: 1) in terms of latency, simulation results show a 50% reduction in I/O wait time, while real-world validation confirms a 3.45× speedup over standard offloading baselines by mitigating system overheads and 2) in terms of memory, it yields a 33% decrease in peak usage compared to a full-loading approach. Our findings demonstrate that this principled approach significantly improves the practical deployability of MoE models on cost-effective hardware, making them a more viable option for latency-sensitive applications. © 2026 The Authors.},
+ author = {Kim, Hangyeol and Woo, Honguk and Kim, Younghwan},
+ doi = {10.1109/ACCESS.2026.3665697},
+ journal = {IEEE Access},
+ note = {Cited by: 0; All Open Access; Gold Open Access; Green Open Access},
+ pages = {33610 - 33624},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Two-Stage Expert Offloading for Domain-Aware MoE Inference},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105030598456?origin=resultslist},
+ volume = {14},
+ year = {2026}
+}

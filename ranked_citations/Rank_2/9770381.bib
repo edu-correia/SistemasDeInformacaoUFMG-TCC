@@ -1,0 +1,14 @@
+@article{9770381,
+ abstract = {In this article, we propose a method for the interactive visualization of medium-scale dynamic heightfields without visual artifacts. Our data fall into a category too large to be rendered directly at full resolution, but small enough to fit into GPU memory without pre-filtering and data streaming. We present the real-world use case of unfiltered flood simulation data of such medium scale that need to be visualized in real time for scientific purposes. Our solution facilitates compute shaders to maintain a guaranteed watertight triangulation in GPU memory that approximates the interpolated heightfields with view-dependent, continuous levels of detail. In each frame, the triangulation is updated incrementally by iteratively refining the cached result of the previous frame to minimize the computational effort. In particular, we minimize the number of heightfield sampling operations to make adaptive and higher-order interpolations viable options. We impose no restriction on the number of subdivisions and the achievable level of detail to allow for extreme zoom ranges required in geospatial visualization. Our method provides a stable runtime performance and can be executed with a limited time budget. We present a comparison of our method to three state-of-the-art methods, in which our method is competitive to previous non-watertight methods in terms of runtime, while outperforming them in terms of accuracy.},
+ author = {Cornel, Daniel and Zechmeister, Silvana and Gröller, Eduard and Waser, Jürgen},
+ doi = {10.1109/TVCG.2022.3173081},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Surface reconstruction;Merging;Data visualization;Real-time systems;Rendering (computer graphics);Interpolation;Graphics processing units;Visualization techniques and methodologies;heightfield rendering;terrain rendering;level of detail;tessellation},
+ month = {Sep.},
+ number = {9},
+ pages = {3888-3899},
+ title = {Watertight Incremental Heightfield Tessellation},
+ volume = {29},
+ year = {2023}
+}

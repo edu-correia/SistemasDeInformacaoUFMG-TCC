@@ -1,0 +1,14 @@
+@article{11429150,
+ abstract = {Key-value stores have become pivotal in the management of data for modern large-scale data centers. Unlike the log-structured merge (LSM) tree, the B$^\epsilon$ε tree enhances read performance by mitigating read amplification and by leveraging the temporal locality of keys in the buffer area of its internal nodes. However, its inability to fully harness the high parallelism of solid-state drives (SSDs) limits its effectiveness. This limitation stems from traditional SSDs concealing their parallelism from the host system. The advent of open-channel SSDs (OCSSDs), which expose the physical data storage layout to the host system, provides a unique opportunity to leverage SSDs’ inherent high parallelism in read/write operations. This article introduces a novel high-parallelism B$^\epsilon$ε (HP-B$^\epsilon$ε) indexing scheme designed for OCSSDs. The scheme specifically addresses conflicts between parallel units (PUs) during read operations, substantially improving read performance of the B$^\epsilon$ε indexing approach. To our knowledge, this is the first study to adapt the B$^\epsilon$ε indexing scheme for the OCSSD architecture, and our experimental results are promising.},
+ author = {Qiu, Chi-Liang and Liao, Yao-Yu and Chen, Tseng-Yi and Chang, Yuan-Hao},
+ doi = {10.1109/TPDS.2026.3672185},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Indexing;Trees (botanical);Parallel processing;Solid state drives;Optimization;Layout;Translation;Throughput;Memory;Hardware;Open-channel SSD;high parallelism;indexing scheme;B  $^\epsilon$      ε      tree},
+ month = {May},
+ number = {5},
+ pages = {1107-1120},
+ title = {Unlocking SSD Parallelism: A High-Performance B$^\epsilon$ε-Tree Framework for OCSSDs},
+ volume = {37},
+ year = {2026}
+}

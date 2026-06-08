@@ -1,0 +1,18 @@
+@article{10.1145/3428242,
+ abstract = {TypeScript is a dynamically typed language widely used to develop large-scale applications nowadays. These applications are usually designed with complex class or interface hierarchies and have highly polymorphic behaviors. These object-oriented (OO) features will lead to inefficient inline caches (ICs) or trigger deoptimizations, which impact the performance of TypeScript applications.  To address this problem, we introduce an inline caching design called hidden inheritance (HI). The basic idea of HI is to cache the static information of class or interface hierarchies into hidden classes, which are leveraged to generate efficient inline caches for improving the performance of OO-style TypeScript programs. The HI design is implemented in a TypeScript engine STSC (Static TypeScript Compiler) including a static compiler and a runtime system. STSC statically generates hidden classes and enhanced inline caches, which are applied to generate specialized machine code via ahead-of-time compilation (AOTC) or just-in-time compilation (JITC). To evaluate the efficiency of this technique, we implement STSC on a state-of-the-art JavaScript virtual machine V8 and demonstrate its performance improvements on industrial benchmarks and applications.},
+ address = {New York, NY, USA},
+ articleno = {174},
+ author = {Wu, Zhefeng and Sun, Zhe and Gong, Kai and Chen, Lingyun and Liao, Bin and Jin, Yihua},
+ doi = {10.1145/3428242},
+ issue_date = {November 2020},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {AOTC, Hidden Classes, Inline Caches, JITC, JavaScript, STSC, TypeScript},
+ month = {November},
+ number = {OOPSLA},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Hidden inheritance: an inline caching design for TypeScript performance},
+ url = {https://doi.org/10.1145/3428242},
+ volume = {4},
+ year = {2020}
+}

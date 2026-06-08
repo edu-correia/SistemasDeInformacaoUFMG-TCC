@@ -1,0 +1,13 @@
+@article{WANG2026116958,
+ abstract = {Accurate and efficient prediction of indoor airflow and temperature distributions is essential for building energy optimization and occupant comfort control. However, traditional CFD simulations are computationally intensive, limiting their integration into real-time or design-iterative workflows. This study proposes a component-based machine learning (CBML) surrogate modeling approach to replace conventional CFD simulation for fast prediction of indoor air flow speed and temperature fields. The model consists of three neural networks: a convolutional autoencoder with residual connections (CAER) to extract and compress flow features, a multilayer perceptron (MLP) to map inlet velocities to latent representations, and a convolutional neural network (CNN) as an aggregator to combine single-inlet features into dual-inlet scenarios. A two-dimensional room with varying left and right air inlet velocities is used as a benchmark case, with CFD simulations providing training and testing data. Results show that the CBML model accurately and fast predicts two-component aggregated speed and temperature fields across both training and testing datasets. For 95 % of the flow field, the maximum absolute error is below 0.08 m/s in speed prediction and 0.4 °C in temperature prediction. Compared to monolithic surrogate models, the modular CBML structure enhances model transparency and flexibility while maintaining accuracy. Additionally, t-SNE visualization of the latent space confirms the model’s ability to differentiate and aggregate inlet-specific features in a physically consistent manner. This approach offers a promising solution for real-time indoor environmental prediction and provides novel opportunities for the integration of data-driven prediction in iterative processes of building design and control.},
+ author = {Shaofan Wang and Nils Thuerey and Philipp Geyer},
+ doi = {https://doi.org/10.1016/j.enbuild.2026.116958},
+ issn = {0378-7788},
+ journal = {Energy and Buildings},
+ keyword = {Indoor environment prediction, CFD simulation, Component-based machine learning (CBML), Data-driven model, Reduced order model (ROM)},
+ pages = {116958},
+ title = {Component-based machine learning for indoor flow and temperature fields prediction: latent feature aggregation and flow interaction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0378778826000186},
+ volume = {354},
+ year = {2026}
+}

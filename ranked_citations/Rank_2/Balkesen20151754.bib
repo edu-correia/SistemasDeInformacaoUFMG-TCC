@@ -1,0 +1,16 @@
+@article{Balkesen20151754,
+ abstract = {Existing main-memory hash join algorithms for multi-core can be classified into two camps. Hardware-oblivious hash join variants do not depend on hardware-specific parameters. Rather, they consider qualitative characteristics of modern hardware and are expected to achieve good performance on any technologically similar platform. The assumption behind these algorithms is that hardware is now good enough at hiding its own limitations - through automatic hardware prefetching, out-of-order execution, or simultaneous multi-threading (SMT) - to make hardware-oblivious algorithms competitive without the overhead of carefully tuning to the underlying hardware. Hardware-conscious implementations, such as (parallel) radix join , aim to maximally exploit a given architecture by tuning the algorithm parameters (e.g., hash table sizes) to the particular features of the architecture. The assumption here is that explicit parameter tuning yields enough performance advantages to warrant the effort required. This paper compares the two approaches under a wide range of workloads (relative table sizes, tuple sizes, effects of sorted data, etc.) and configuration parameters (VM page sizes, number of threads, number of cores, SMT, SIMD, prefetching, etc.). The results show that hardware-conscious algorithms generally outperform hardware-oblivious ones. However, on specific workloads and special architectures with aggressive simultaneous multi-threading, hardware-oblivious algorithms are competitive. The main conclusion of the paper is that, in existing multi-core architectures, it is still important to carefully tailor algorithms to the underlying hardware to get the necessary performance. But processor developments may require to revisit this conclusion in the future. © 1989-2012 IEEE.},
+ author = {Balkesen, Çağri and Teubner, Jens and Alonso, Gustavo and Özsu, M. Tamer},
+ doi = {10.1109/TKDE.2014.2313874},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 57},
+ number = {7},
+ pages = {1754 - 1766},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Main-Memory Hash Joins on Modern Processor Architectures},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84959493208?origin=resultslist},
+ volume = {27},
+ year = {2015}
+}

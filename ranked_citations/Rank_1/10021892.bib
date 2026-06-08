@@ -1,0 +1,14 @@
+@article{10021892,
+ abstract = {This paper introduces an efficient algorithm for persistence diagram computation, given an input piecewise linear scalar field $f$f defined on a $d$d-dimensional simplicial complex $\mathcal {K}$K, with $d \leq 3$d≤3. Our work revisits the seminal algorithm “PairSimplices” (Edelsbrunner et al. 2002), (Zomorodian, 2010) with discrete Morse theory (DMT) (Forman, 1998), (Robins et al. 2011), which greatly reduces the number of input simplices to consider. Further, we also extend to DMT and accelerate the stratification strategy described in “PairSimplices” (Edelsbrunner et al. 2002), (Zomorodian, 2010) for the fast computation of the $0^{th}$ and $(d-1)^{th}$(d-1)th diagrams, noted $\mathcal {D}_{0}(f)$D0(f) and $\mathcal {D}_{d-1}(f)$Dd-1(f). Minima-saddle persistence pairs ($\mathcal {D}_{0}(f)$D0(f)) and saddle-maximum persistence pairs ($\mathcal {D}_{d-1}(f)$Dd-1(f)) are efficiently computed by processing, with a Union-Find, the unstable sets of 1-saddles and the stable sets of $(d-1)$(d-1)-saddles. This fast pre-computation for the dimensions 0 and $(d-1)$(d-1) enables an aggressive specialization of (Bauer et al. 2014) to the 3D case, which results in a drastic reduction of the number of input simplices for the computation of $\mathcal {D}_{1}(f)$D1(f), the intermediate layer of the sandwich. Finally, we document several performance improvements via shared-memory parallelism. We provide an open-source implementation of our algorithm for reproducibility purposes. Extensive experiments indicate that our algorithm improves by two orders of magnitude the time performance of the seminal “PairSimplices” algorithm it extends. Moreover, it also improves memory footprint and time performance over a selection of 14 competing approaches, with a substantial gain over the fastest available approaches, while producing a strictly identical output.},
+ author = {Guillou, Pierre and Vidal, Jules and Tierny, Julien},
+ doi = {10.1109/TVCG.2023.3238008},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Data mining;Feature extraction;Data visualization;Data analysis;Three-dimensional displays;Stars;Sea surface;discrete Morse theory;persistence diagrams;scalar data;Topological data analysis},
+ month = {April},
+ number = {4},
+ pages = {1897-1915},
+ title = {Discrete Morse Sandwich: Fast Computation of Persistence Diagrams for Scalar Data – An Algorithm and a Benchmark},
+ volume = {30},
+ year = {2024}
+}

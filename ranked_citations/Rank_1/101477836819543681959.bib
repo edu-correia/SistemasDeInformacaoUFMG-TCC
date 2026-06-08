@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3681959,
+ abstract = {Approximate Nearest Neighbor Search (ANNS) is a fundamental and critical component in many applications, including recommendation systems and large language model-based applications. With the advancement of multimodal neural models, which transform data from different modalities into a shared high-dimensional space as feature vectors, cross-modal ANNS aims to use the data vector from one modality (e.g., texts) as the query to retrieve the most similar items from another (e.g., images or videos). However, there is an inherent distribution gap between embeddings from different modalities, and cross-modal queries become Out-of-Distribution (OOD) to the base data. Consequently, state-of-the-art ANNS approaches suffer poor performance for OOD workloads.In this paper, we quantitatively analyze the properties of the OOD workloads to gain an understanding of their ANNS efficiency. Unlike single-modal workloads, we reveal OOD queries spatially deviate from base data, and the k-nearest neighbors of an OOD query are distant from each other in the embedding space. The property breaks the assumptions of existing ANNS approaches and mismatches their design for efficient search. With the insights from the OOD workloads, we propose pRojected bipartite Graph (RoarGraph), an efficient ANNS graph index that is built under the guidance of query distribution. Extensive experiments show that RoarGraph significantly outperforms state-of-the-art approaches on modern cross-modal datasets, achieving up to 3.56\texttimes{} faster search speed at a 90% recall rate for OOD queries.},
+ author = {Chen, Meng and Zhang, Kai and He, Zhenying and Jing, Yinan and Wang, X. Sean},
+ doi = {10.14778/3681954.3681959},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {15},
+ pages = {2735–2749},
+ publisher = {VLDB Endowment},
+ title = {RoarGraph: A Projected Bipartite Graph for Efficient Cross-Modal Approximate Nearest Neighbor Search},
+ url = {https://doi.org/10.14778/3681954.3681959},
+ volume = {17},
+ year = {2024}
+}

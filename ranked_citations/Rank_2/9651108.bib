@@ -1,0 +1,14 @@
+@inproceedings{9651108,
+ abstract = {In this paper, we present a novel 3D structure-awareness image-based point cloud compression scheme, which applies the proposed Symmetry based Convolutional Neural Pyramid (SCNP) to compress colored point clouds view-by-view for 3D model transmission. Input a 3D model to the system, a preprocessing step is first applied to represent the input point cloud as a sequence of view-specific six-dimensional (6D) images, where each pixel is characterized by an RGB color vector and a XYZ 3D point. The transformed 6D images preserve the regular grid structure and thus the redundant information is easy to be removed by conventional image/video compression techniques. Our SCNP first represents each 6D image as a multiple-level pyramid structure for progressively compressing and transmission. The lowest resolution image at the highest level of the pyramid is then decomposed into multiple patches with each of them being coded as the index of a small dictionary through vector quantization. The residual images at other levels are also represented by the vector quantization codes with different patch sizes for progressively reconstructing the input colored point cloud. This process results in a multiple description coding scheme for 3D point cloud compression. With the pre-learned set of dictionaries, the projected view-specific 6D images of the input 3D model are encoded one-by-one to obtain the compressed results for 3D model transmission. In the receiver end, the 3D model is reconstructed by merging all the reconstructed point clouds where each of them is decoded from the corresponding view-specific image. Finally, the conventional 3D reconstruction approach has been applied to remove redundant 3D points for reconstructing the 3D model. Experiments demonstrate the effectiveness of our approach which attains better performance than the current state-of-the-art point cloud compression methods.},
+ author = {Vadivel, Gokulnath and Cheng, Shyi-Chyi and Huang, Chin-Chao and Su, Jui-Yuan},
+ booktitle = {2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)},
+ doi = {10.1109/ISPACS51563.2021.9651108},
+ issn = {},
+ keyword = {Point cloud compression;Convolutional codes;Solid modeling;Three-dimensional displays;Image coding;Dictionaries;Convolution;convolutional neural pyramid;image-based point cloud compression;symmetry based image interpolation;vector quantization},
+ month = {Nov},
+ number = {},
+ pages = {1-2},
+ title = {Progressive Point Cloud Compression with the Fusion of Symmetry Based Convolutional Neural Pyramid and Vector Quantization},
+ volume = {},
+ year = {2021}
+}

@@ -1,0 +1,21 @@
+@article{SHAOCHEN2024854,
+ abstract = {Purpose
+Assembly action recognition plays an important role in assembly process monitoring and human-robot collaborative assembly. Previous works overlook the interaction relationship between hands and operated objects and lack the modeling of subtle hand motions, which leads to a decline in accuracy for fine-grained action recognition. This paper aims to model the hand-object interactions and hand movements to realize high-accuracy assembly action recognition.
+Design/methodology/approach
+In this paper, a novel multi-stream hand-object interaction network (MHOINet) is proposed for assembly action recognition. To learn the hand-object interaction relationship in assembly sequence, an interaction modeling network (IMN) comprising both geometric and visual modeling is exploited in the interaction stream. The former captures the spatial location relation of hand and interacted parts/tools according to their detected bounding boxes, and the latter focuses on mining the visual context of hand and object at pixel level through a position attention model. To model the hand movements, a temporal enhancement module (TEM) with multiple convolution kernels is developed in the hand stream, which captures the temporal dependences of hand sequences in short and long ranges. Finally, assembly action prediction is accomplished by merging the outputs of different streams through a weighted score-level fusion. A robotic arm component assembly dataset is created to evaluate the effectiveness of the proposed method.
+Findings
+The method can achieve the recognition accuracy of 97.31% and 95.32% for coarse and fine assembly actions, which outperforms other comparative methods. Experiments on human-robot collaboration prove that our method can be applied to industrial production.
+Originality/value
+The author proposes a novel framework for assembly action recognition, which simultaneously leverages the features of hands, objects and hand-object interactions. The TEM enhances the representation of dynamics of hands and facilitates the recognition of assembly actions with various time spans. The IMN learns the semantic information from hand-object interactions, which is significant for distinguishing fine assembly actions.},
+ author = {Li Shaochen and Zhenyu Liu and Yu Huang and Daxin Liu and Guifang Duan and Jianrong Tan},
+ doi = {https://doi.org/10.1108/RIA-01-2024-0020},
+ issn = {2754-6969},
+ journal = {Robotic Intelligence and Automation},
+ keyword = {Assembly action recognition, Multi-stream network, Hand-object interaction, Hand movement, Object detection},
+ number = {6},
+ pages = {854-870},
+ title = {A novel multi-stream hand-object interaction network for assembly action recognition},
+ url = {https://www.sciencedirect.com/science/article/pii/S275469692400023X},
+ volume = {44},
+ year = {2024}
+}

@@ -1,0 +1,13 @@
+@article{NGUYEN2024112014,
+ abstract = {Attacks against computer systems exploiting software vulnerabilities can cause substantial damage to the cyber infrastructure of our modern society and economy. To minimize the consequences, it is vital to detect and fix vulnerabilities as soon as possible. Just-in-time vulnerability detection (JIT-VD) discovers vulnerability-prone (“dangerous”) commits to prevent them from being merged into source code and causing vulnerabilities. By JIT-VD, the commits’ authors, who understand the commits properly, can review these dangerous commits and fix them if necessary while the relevant modifications are still fresh in their minds. In this paper, we propose CodeJIT, a novel graph-based code-centric learning-based approach for just-in-time vulnerability detection. The key idea of CodeJIT is that the meaning of the code changes of a commit is the direct and deciding factor for determining if the commit is dangerous for the code. Based on that idea, we design a novel graph-based representation, Code Transformation Graph (CTG) to represent the semantics of code changes in terms of both code syntactic structure and program dependencies. A graph neural network (GNN) model is developed to capture the meaning of the code changes represented by our graph-based representation and learn to discriminate between dangerous and safe commits. We conducted experiments to evaluate the JIT-VD performance of CodeJIT on a dataset of 20K+ dangerous and safe commits in 506 real-world projects from 1998 to 2022. Our results show that CodeJIT significantly improves the state-of-the-art JIT-VD methods by up to 66% in Recall, 136% in Precision, and 68% in F1. Moreover, CodeJIT correctly classifies nearly 9/10 of dangerous/safe (benign) commits and even detects 69 commits that fix a vulnerability yet produce other issues in source code.},
+ author = {Son Nguyen and Thu-Trang Nguyen and Thanh Trong Vu and Thanh-Dat Do and Kien-Tuan Ngo and Hieu Dinh Vo},
+ doi = {https://doi.org/10.1016/j.jss.2024.112014},
+ issn = {0164-1212},
+ journal = {Journal of Systems and Software},
+ keyword = {Just-in-time vulnerability detection, Code-centric, Code change representation, Graph-based model, Commit-level bugs},
+ pages = {112014},
+ title = {Code-centric learning-based just-in-time vulnerability detection},
+ url = {https://www.sciencedirect.com/science/article/pii/S0164121224000578},
+ volume = {214},
+ year = {2024}
+}

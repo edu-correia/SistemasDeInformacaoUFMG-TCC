@@ -1,0 +1,16 @@
+@article{He2023,
+ abstract = {The Log-Structured Merge Tree (LSM-Tree) is widely used in key-value (KV) stores because of its excwrite performance. But LSM-Tree-based KV stores still have the overhead of write-ahead log and write stall caused by slow L0 flush and L0-L1 compaction. New byte-addressable, persistent memory (PM) devices bring an opportunity to improve the write performance of LSM-Tree. Previous studies on PM-based LSM-Tree have not fully exploited PM's "dual role"of main memory and external storage. In this article, we analyze two strategies of memtables based on PM and the reasons write stall problems occur in the first place. Inspired by the analysis result, we propose FlatLSM, a specially designed flat LSM-Tree for non-volatile memory based KV stores. First, we propose PMTable with separated index and data. The PM Log utilizes the Buffer Log to store KVs of size less than 256B. Second, to solve the write stall problem, FlatLSM merges the volatile memtables and the persistent L0 into large PMTables, which can reduce the depth of LSM-Tree and concentrate I/O bandwidth on L0-L1 compaction. To mitigate write stall caused by flushing large PMTables to SSD, we propose a parallel flush/compaction algorithm based on KV separation. We implemented FlatLSM based on RocksDB and evaluated its performance on Intel's latest PM device, the Intel Optane DC PMM with the state-of-the-art PM-based LSM-Tree KV stores, FlatLSM improves the throughput 5.2× on random write workload and 2.55× on YCSB-A.  © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {He, Kewen and An, Yujie and Luo, Yijing and Liu, Xiaoguang and Wang, Gang},
+ doi = {10.1145/3579855},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 11},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FlatLSM: Write-Optimized LSM-Tree for PM-Based KV Stores},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85153791261?origin=resultslist},
+ volume = {19},
+ year = {2023}
+}

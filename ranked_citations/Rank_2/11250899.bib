@@ -1,0 +1,14 @@
+@article{11250899,
+ abstract = {We present a neural radiance field (NeRF)-based large-scale reconstruction system that fuses lidar and vision data to generate high-quality reconstructions that are geometrically accurate and capture photorealistic texture. Our system adopts the state-of-the-art NeRF representation to additionally incorporate lidar. Adding lidar data adds strong geometric constraints on the depth and surface normals, which is particularly useful when modeling uniform texture surfaces which contain ambiguous visual reconstruction cues. A key contribution of this work is a novel method to quantify the epistemic uncertainty of the lidar-visual NeRF reconstruction by estimating the spatial variance of each point location in the radiance field given the sensor observations from the cameras and lidar. This provides a principled approach to evaluate the contribution of each sensor modality to the final reconstruction. In this way, reconstructions that are uncertain (due to, e.g., uniform visual texture, limited observation viewpoints, or little lidar coverage) can be identified and removed. Our system is integrated with a real-time pose-graph lidar simultaneous localisation and mapping (SLAM) system, which is used to bootstrap a structure-from-motion reconstruction procedure. It also helps to properly constrain the overall metric scale, which is essential for the lidar depth loss. The refined SLAM trajectory can then be divided into submaps using spectral clustering to group sets of covisible images together. This submapping approach is more suitable for visual reconstruction than distance-based partitioning. Our uncertainty estimation is particularly effective when merging submaps, as their boundaries often contain artifacts due to limited observations. We demonstrate the reconstruction system using a multicamera, lidar sensor suite in experiments involving both robot-mounted and handheld scanning. Our test datasets cover a total area of more than $\text{20 000 m}^{2}$, including multiple university buildings and an aerial survey of a multistorey building. Quantitative evaluation is provided by comparing with maps produced by a commercial tripod scanner.},
+ author = {Tao, Yifu and Fallon, Maurice},
+ doi = {10.1109/TRO.2025.3633844},
+ issn = {1941-0468},
+ journal = {IEEE Transactions on Robotics},
+ keyword = {Laser radar;Image reconstruction;Neural radiance field;Robot sensing systems;Three-dimensional displays;Robots;Uncertainty;Accuracy;Cameras;Surface reconstruction;Mapping;neural radiance field (NeRF);RGB-D perception;sensor fusion;uncertainty estimation},
+ month = {},
+ number = {},
+ pages = {98-114},
+ title = {SiLVR: Scalable Lidar-Visual Radiance Field Reconstruction With Uncertainty Quantification},
+ volume = {42},
+ year = {2026}
+}

@@ -1,0 +1,15 @@
+@article{Gupta2026213,
+ abstract = {Vision Transformers (ViTs) demonstrate remarkable performance in computer vision tasks; however, their high computational and memory requirements hinder their deployment in resource-constrained edge environments. In the presented paper, a novel layer merging strategy is proposed that adapts pruning techniques originally developed for Large Language Models (LLMs) to Vision Transformers (ViT). The proposed method systematically fuses consecutive transformer layers based on activation similarity, effectively reducing model depth and computational complexity without necessitating additional training or fine-tuning. To calculate activation similarity, layer activations are first used to construct a Euclidean distance matrix, which is then transformed via a diffusion kernel to capture the intrinsic geometric structure of the data. Normalized Pairwise Information Bottleneck (NPIB) metric is applied to the low-dimensional matrix to quantify mutual information between layers, effectively identifying redundant features and guiding the merging process. To further enhance the robustness of activation extraction, a refined image selection strategy is introduced that takes advantage of the WordNet hierarchy to construct a balanced subset of 2200 images from the ImageNet validation set, thus mitigating class imbalance issues. Extensive experiments on a diverse set of models reveal that merging 1 to 2 consecutive encoder layers produces significant reductions in parameters (8–16%), inference latency (2.9–5.4 ms) and FLOPs (8–16%), with only a marginal drop (approximately 2–6%, DeiT-Base model) in Top-1 accuracy. However, more aggressive merging leads to a substantial performance decline, underscoring the importance of identifying a ‘sweet spot’ for layer merging. In cases where aggressive merging is required, subsequent fine-tuning may be necessary to recover accuracy. Other methods, such as token pruning and parameter pruning, do not offer all the benefits of layer pruning—namely, reductions in storage, memory usage, and FLOPs. These results underscore the potential of layer merging as a practical approach for optimizing ViTs for resource-limited applications. © The Author(s), under exclusive license to Springer Nature Switzerland AG 2026.},
+ author = {Gupta, Shivam},
+ doi = {10.1007/978-3-032-03072-6_17},
+ journal = {Lecture Notes in Networks and Systems},
+ note = {Cited by: 0},
+ pages = {213 - 229},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing Vision Transformers Strategy: A Novel Layer Merging Strategy for Resource-Constrained Environments},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105022170742?origin=resultslist},
+ volume = {1600 LNNS},
+ year = {2026}
+}

@@ -1,0 +1,18 @@
+@article{10.1109/TASLP.2015.2392944,
+ abstract = {The hybrid deep neural network (DNN) and hidden Markov model (HMM) has recently achieved dramatic performance gains in automatic speech recognition (ASR). The DNN-based acoustic model is very powerful but its learning process is extremely time-consuming. In this paper, we propose a novel DNN-based acoustic modeling framework for speech recognition, where the posterior probabilities of HMM states are computed from multiple DNNs (mDNN), instead of a single large DNN, for the purpose of parallel training towards faster turnaround. In the proposed mDNN method all tied HMM states are first grouped into several disjoint clusters based on data-driven methods. Next, several hierarchically structured DNNs are trained separately in parallel for these clusters using multiple computing units (e.g. GPUs). In decoding, the posterior probabilities of HMM states can be calculated by combining outputs from multiple DNNs. In this work, we have shown that the training procedure of the mDNN under popular criteria, including both frame-level cross-entropy and sequence-level discriminative training, can be parallelized efficiently to yield significant speedup. The training speedup is mainly attributed to the fact that multiple DNNs are parallelized over multiple GPUs and each DNN is smaller in size and trained by only a subset of training data. We have evaluated the proposed mDNN method on a 64-hour Mandarin transcription task and the 320-hour Switchboard task. Compared to the conventional DNN, a 4-cluster mDNN model with similar size can yield comparable recognition performance in Switchboard (only about 2% performance degradation) with a greater than 7 times speed improvement in CE training and a 2.9 times improvement in sequence training, when 4 GPUs are used.},
+ author = {Zhou, Pan and Jiang, Hui and Dai, Li-Rong and Hu, Yu and Liu, Qing-Feng},
+ doi = {10.1109/taslp.2015.2392944},
+ issn = {2329-9290},
+ issue_date = {April 2015},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ keyword = {cross entropy training, data partition, deep neural networks (DNN), model parallelism, multiple DNNs (mDNN), parallel training, sequence training, speech recognition, state clustering},
+ month = {April},
+ number = {4},
+ numpages = {12},
+ pages = {631–642},
+ publisher = {IEEE Press},
+ title = {State-clustering based multiple deep neural networks modeling approach for speech recognition},
+ url = {https://doi.org/10.1109/TASLP.2015.2392944},
+ volume = {23},
+ year = {2015}
+}

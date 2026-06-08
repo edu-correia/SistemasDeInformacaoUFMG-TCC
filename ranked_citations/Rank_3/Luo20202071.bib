@@ -1,0 +1,14 @@
+@conference{Luo20202071,
+ abstract = {We introduce Rosetta, a probabilistic range filter designed specifically for LSM-tree based key-value stores. The core intuition is that we can sacrifice filter probe time because it is not visible in end-to-end key-value store performance, which in turn allows us to significantly reduce the filter false positive rate for every level of the tree. Rosetta indexes all binary prefixes of a key using a hierarchically arranged set of Bloom filters. It then converts each range query into multiple probes, one for each non-overlapping binary prefix. Rosetta has the ability to track workload patterns and adopt a beneficial tuning for each individual LSM-tree run by adjusting the number of Bloom filters it uses and how memory is spread among them to optimize the FPR/CPU cost balance. We show how to integrate Rosetta in a full system, RocksDB, and we demonstrate that it brings as much as a 40x improvement compared to default RocksDB and 2-5x improvement compared to state-of-the-art range filters in a variety of workloads and across different levels of the memory hierarchy (memory, SSD, hard disk). We also show that, unlike state-of-the-art filters, Rosetta brings a net benefit in RocksDB's overall performance, i.e., it improves range queries without losing any performance for point queries. © 2020 Association for Computing Machinery.},
+ author = {Luo, Siqiang and Chatterjee, Subarna and Ketsetsidis, Rafael and Dayan, Niv and Qin, Wilson and Idreos, Stratos},
+ doi = {10.1145/3318464.3389731},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 77},
+ pages = {2071 - 2086},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Rosetta: A Robust Space-Time Optimized Range Filter for Key-Value Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85086269866?origin=resultslist},
+ year = {2020}
+}

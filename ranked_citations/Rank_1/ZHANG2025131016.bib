@@ -1,0 +1,13 @@
+@article{ZHANG2025131016,
+ abstract = {Hyperspectral Image (HSI) Classification is crucial in remote sensing and various practical applications. Traditional methods face significant challenges: CNN-based approaches have limited receptive fields, while Transformer-based models, though effective in modeling long-range dependencies, are computationally expensive for high-dimensional hyperspectral data. To address these issues, we propose ConvMamba, a framework that combines the advantages of the State Space Model (SSM) for long-sequence modeling with the capability of CNNs for local spatial feature extraction, thereby enhancing computational efficiency. Specifically, we introduce the Mamba-Conv structure, which leverages Mamba (a linear sequence model) to establish dependencies between the central pixel (the pixel to be classified) and a wide range of neighboring pixels, achieving the integration of spectral information from the central pixel with spatial information from the surrounding pixels. Concurrently, CNN compensates for the linear sequence model’s limitations in modeling local spatial invariance, accelerating model convergence. Additionally, to further enhance spectral-spatial information fusion, we propose a novel fusion structure, CenterFusion. This structure explicitly fuses patch-level features obtained through 1D convolution with the central pixel information extracted by Mamba. This fusion fully utilizes the spectral information contained in the central pixel and the spatial information in the surrounding pixels, further improving classification performance. Extensive experiments on three benchmark hyperspectral datasets demonstrate that ConvMamba achieves state-of-the-art performance while significantly reducing computational costs. Ablation studies further validate the effectiveness of the key components in the proposed framework. The source code of ConvMamba is publicly available at https://github.com/zhysess/ConvMamba.},
+ author = {Haoyuan Zhang and Hui Liu and Zexi Shi and Shanjun Mao and Ning Chen},
+ doi = {https://doi.org/10.1016/j.neucom.2025.131016},
+ issn = {0925-2312},
+ journal = {Neurocomputing},
+ keyword = {Hyperspectral image analysis, Mamba, State space model, Feature fusion},
+ pages = {131016},
+ title = {ConvMamba: Combining Mamba with CNN for hyperspectral image classification},
+ url = {https://www.sciencedirect.com/science/article/pii/S0925231225016881},
+ volume = {652},
+ year = {2025}
+}

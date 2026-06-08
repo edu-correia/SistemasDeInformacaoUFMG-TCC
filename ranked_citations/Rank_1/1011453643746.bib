@@ -1,0 +1,18 @@
+@article{10.1145/3643746,
+ abstract = {The Linux kernel is highly-configurable, with a build system that takes a configuration file as input and automatically tailors the source code accordingly. Configurability, however, complicates testing, because different configuration options lead to the inclusion of different code fragments. With thousands of patches received per month, Linux kernel maintainers employ extensive automated continuous integration testing. To attempt patch coverage, i.e., taking all changed lines into account, current approaches either use configuration files that maximize total statement coverage or use multiple randomly-generated configuration files, both of which incur high build times without guaranteeing patch coverage. To achieve patch coverage without exploding build times, we propose krepair, which automatically repairs configuration files that are fast-building but have poor patch coverage to achieve high patch coverage with little effect on build times. krepair works by discovering a small set of changes to a configuration file that will ensure patch coverage, preserving most of the original configuration file’s settings. Our evaluation shows that, when applied to configuration files with poor patch coverage on a statistically-significant sample of recent Linux kernel patches, krepair achieves nearly complete patch coverage, 98.5% on average, while changing less than 1.53% of the original default configuration file in 99% of patches, which keeps build times 10.5x faster than maximal configuration files.},
+ address = {New York, NY, USA},
+ articleno = {20},
+ author = {Y\i{}ld\i{}ran, Necip Faz\i{}l and Oh, Jeho and Lawall, Julia and Gazzillo, Paul},
+ doi = {10.1145/3643746},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {software configuration, build systems, static analysis},
+ month = {July},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Maximizing Patch Coverage for Testing of Highly-Configurable Software without Exploding Build Times},
+ url = {https://doi.org/10.1145/3643746},
+ volume = {1},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@conference{Haubenschild2020877,
+ abstract = {For decades, ARIES has been the standard for logging and recovery in database systems. ARIES offers important features like support for arbitrary workloads, fuzzy checkpoints, and transparent index recovery. Nevertheless, many modern in-memory database systems use more lightweight approaches that have less overhead and better multi-core scalability but only work well for the in-memory setting. Recently, a new class of high-performance storage engines has emerged, which exploit fast SSDs to achieve performance close to pure in-memory systems but also allow out-of-memory workloads. For these systems, ARIES is too slow whereas in-memory logging proposals are not applicable. In this work, we propose a new logging and recovery design that supports incremental and fuzzy checkpointing, index recovery, out-of-memory workloads, and low-latency transaction commits. Our continuous checkpointing algorithm guarantees bounded recovery time. Using per-thread logging with minimal synchronization, our implementation achieves near-linear scalability on multi-core CPUs. We implemented and evaluated these techniques in our LeanStore storage engine. For working sets that fit in main memory, we achieve performance close to that of an in-memory approach, even with logging, checkpointing, and dirty page writing enabled. For the out-of-memory scenario, we outperform a state-of-the-art ARIES implementation by a factor of two. © 2020 Association for Computing Machinery.},
+ author = {Haubenschild, Michael and Sauer, Caetano and Neumann, Thomas and Leis, Viktor},
+ doi = {10.1145/3318464.3389716},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 39; All Open Access; Gold Open Access},
+ pages = {877 - 892},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Rethinking Logging, Checkpoints, and Recovery for High-Performance Storage Engines},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85086275230?origin=resultslist},
+ year = {2020}
+}

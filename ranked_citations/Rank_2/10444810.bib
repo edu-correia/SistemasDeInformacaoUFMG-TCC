@@ -1,0 +1,14 @@
+@inproceedings{10444810,
+ abstract = {Regular Expressions (REs) matching is crucial to identify strings exhibiting certain morphological properties in a data stream, resulting paramount in contexts such as deep packet inspection in computer security and genome analysis in bioinformatics. Yet, due to their intrinsic data-dependence characteristics, REs represent a complex computational kernel, and numerous solutions investigate pattern-matching efficiency in different directions. However, most of them lack a comprehensive ruleset optimization approach to truly push the pattern matching performance when considering multiple REs together. Thus, exploiting REs morphological similarities within the same dataset allows memory reduction when storing the patterns and drastically improves the dataset-matching throughput. Based on this observation, we propose the Multi-RE Finite State Automata (MFSA) that extends the Finite State Automata (FSA) model to improve REs parallelization by leveraging similarities within a specific application ruleset. We design a multi-level compilation framework to manage REs merging and optimization to produce MFSA(s). Furthermore, we extend iNFAnt algorithm for MFSAs execution with the novel iMFAnt engine. Our evaluation investigates the MFSA size-reduction impact and the execution throughput compared with the one of multiple FSA in both single-and multi-threaded configurations. This approach shows an average 71.95% compression in terms of states, introducing limited compilation time overhead. Besides, best iMFAnt achieves a geomean $5.99\times$ throughput improvement and $4.05\times$ speedup against single and multiple parallel FSAs.},
+ author = {Cicolini, Luisa and Carloni, Filippo and Santambrogio, Marco D. and Conficconi, Davide},
+ booktitle = {2024 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO57630.2024.10444810},
+ issn = {2643-2838},
+ keyword = {Merging;Automata;Throughput;Bioinformatics;Kernel;Optimization;Pattern matching;pattern matching;multi-level compilation;regular expressions;automata merging;parallel execution},
+ month = {March},
+ number = {},
+ pages = {193-206},
+ title = {One Automaton to Rule Them All: Beyond Multiple Regular Expressions Execution},
+ volume = {},
+ year = {2024}
+}

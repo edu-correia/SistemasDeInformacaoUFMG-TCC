@@ -1,0 +1,14 @@
+@inproceedings{7336054,
+ abstract = {Transactional Memory (TM) is promising to make parallel programming easier. There have been many hardware implementations of transactional memory (HTM) proposed to improve the performance, but they still suffer from some overheads when a transaction commits or aborts. So, we have been developing a novel new HTM design, called DCTM, which enables transactions of arbitrary size to commit or abort in a fixed number of cycles -- typically one cycle. DCTM stores values of data modified in a transaction into an L1 cache. Each cache checks the conflict between transactions through the bus snooping every time another cache broadcasts a transactional modification of data, and so, when a transaction commits, other concurrent and conflicting transactions can abort immediately. The sophisticated cache coherency control of DCTM can permit multiple caches to contain their own dirty lines of the same memory address. This feature enables a committing transaction to publish all of data modified in the transaction at once, while it leaves them in its local cache. The cache broadcasts only a simple signal of committing, and doesn't write back nor send any other signal for cache coherency. DCTM delays the write-back of such left data -- with merging to an up-to-date line data when there are multiple dirty lines of the same address in the system -- into main memory until the data is accessed again. In this paper, we refine the implementation of DCTM and present the detailed design of the cache control. As a simulation result, DCTM achieves the performance improvement of 1.1~79.7% in comparison to a TM system which detects conflicts when a transaction tries to commit.},
+ author = {Ichii, Sekai and Tashiro, Saki and Nunome, Atsushi and Hirata, Hiroaki and Shibayama, Kiyoshi},
+ booktitle = {2015 3rd International Conference on Applied Computing and Information Technology/2nd International Conference on Computational Science and Intelligence},
+ doi = {10.1109/ACIT-CSI.2015.38},
+ issn = {},
+ keyword = {Hardware;Instruction sets;Memory management;Computers;Multicore processing;System recovery;hardware transactional memory;cache coherency;shared-memory multiprocessor;parallel architecture},
+ month = {July},
+ number = {},
+ pages = {154-161},
+ title = {Hardware Transactional Memory with Delayed-Committing},
+ volume = {},
+ year = {2015}
+}

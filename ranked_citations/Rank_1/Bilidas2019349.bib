@@ -1,0 +1,15 @@
+@conference{Bilidas2019349,
+ abstract = {The RDF data model has emerged as the most prominent way to interlink and exchange data on the Web due to its simplicity in the form of subject predicate object statements, but this simplicity comes with the cost of having to execute a large number of joins in order to get the desirable query results. Numerous approaches exist that aim to treat this problem, mainly focusing on disk based storage. In this work we consider a main memory setting and present a physical design and query method aiming to exploit spatial locality for efficient in-memory processing. Our design is also amenable to straightforward parallelization, something crucial for main memory database systems. Specifically, we present a join implementation that allows to achieve any desired degree of parallelism on arbitrary join queries and RDF graphs stored in memory using compact vertical partitioning. We use an adaptive join processing approach, such that we take advantage of complete or even partial ordering of RDF data, which is compactly stored in order to increase spatial locality and keep memory consumption low, coupled with an ID-to-Position vector index used when ordering does not allow for efficient scanning of the input relation. We have implemented an in-memory prototype that experimentally shows the efficiency and scalability of our proposal, taking advantage of continuously growing sizes of main memory and multi-core environments of modern hardware. Specifically, we show that for a machine with 128 GB of main memory and 16 cores, which is a reasonable amount for an average modern server, our prototype can store and query RDF graphs with up to two billion triples, and it outperforms centralized and distributed state of the art approaches. © 2019 Copyright held by the owner/author(s).},
+ author = {Bilidas, Dimitris and Koubarakis, Manolis},
+ doi = {10.5441/002/edbt.2019.31},
+ journal = {Advances in Database Technology - EDBT},
+ note = {Cited by: 2},
+ pages = {349 - 360},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scalable parallelization of RDF joins on multicore architectures},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85064940309?origin=resultslist},
+ volume = {2019-March},
+ year = {2019}
+}

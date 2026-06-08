@@ -1,0 +1,13 @@
+@article{HU2024105053,
+ abstract = {With the increasing application of embedded mobile devices in various fields, lightweight real-time semantic segmentation systems have attracted more and more attention. Many current methods have successfully reduced the model's parameters, but they have led to low model accuracy, diminishing their practical value. In recent years, the Transformer architecture has achieved good results in many tasks, effectively capturing long-range dependencies and enhancing accuracy. However, the Transformer is not adept at extracting local features, and the model's computational cost is generally too high, hindering real-time inference implementation. We propose a lightweight semantic segmentation network called LCBFormer-Net, which embeds Transformer units between asymmetric encoders and decoders to fully leverage their advantages. On the encoder side, we design the Lightweight Multi-Fusion Unit (LMFU) and Partition Grouping Shuffle Channel Attention (PGSCA). The former fully utilizes input features, merging information multiple times through multiple branches and employing depthwise convolutions with dilation rate to further obtain sufficient features. The latter includes a lightweight grouped channel attention, better guide feature extraction. The Lightweight Context Broadcast Transformer (LCB Transformer) is the Transformer unit we designed, with a lightweight structure that significantly reduces GPU memory consumption. It also improves self-attention and feed-forward networks, enhancing the model's robustness. The decoder includes the Multi-scale Semantic Information Attention Fusion (MSIAF) module, guiding the fusion of features at three different scales and employing a hybrid attention mechanism with both channel and spatial attention to guide feature extraction. LCBFormer-Net achieves good segmentation results with a parameter count of 0.88 M on multiple challenging datasets with diverse scenes.},
+ author = {Kaidi Hu and Zongxia Xie and Qinghua Hu},
+ doi = {https://doi.org/10.1016/j.imavis.2024.105053},
+ issn = {0262-8856},
+ journal = {Image and Vision Computing},
+ keyword = {Lightweight neural network, Vision transformer, Real-time semantic segmentation, Multi-scale fusion, Attention mechanism},
+ pages = {105053},
+ title = {Lightweight convolutional neural networks with context broadcast transformer for real-time semantic segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0262885624001574},
+ volume = {146},
+ year = {2024}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3728955,
+ abstract = {Validating the correctness of network protocol implementations is highly challenging due to the oracle and traceability problems. The former determines when a protocol implementation can be considered buggy, especially when the bugs do not cause any observable symptoms. The latter allows developers to understand how an implementation violates the protocol specification, thereby facilitating bug fixes. Unlike existing works that rarely take both problems into account, this work considers both and provides an effective solution using recent advances in large language models (LLMs). Our key observation is that network protocols are often released with structured specification documents, a.k.a. RFC documents, which can be systematically translated to formal protocol message specifications via LLMs. Such specifications, which may contain errors due to the hallucination of LLMs, are used as a quasi-oracle to validate protocol parsers, while the validation results in return gradually refine the oracle. Since the oracle is derived from the document, any bugs we find in a protocol implementation can be traced back to the document, thus addressing the traceability problem. We have extensively evaluated our approach using nine network protocols and their implementations written in C, Python, and Go. The results show that our approach outperforms the state-of-the-art and has detected 69 bugs, with 36 confirmed. The project also demonstrates the potential for fully automating software validation based on natural language specifications, a process previously considered predominantly manual due to the need to understand specification documents and derive expected outputs for test inputs.},
+ address = {New York, NY, USA},
+ articleno = {ISSTA078},
+ author = {Zheng, Mingwei and Xie, Danning and Shi, Qingkai and Wang, Chengpeng and Zhang, Xiangyu},
+ doi = {10.1145/3728955},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Large language model, Network protocol parsers, Traceability},
+ month = {June},
+ number = {ISSTA},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Validating Network Protocol Parsers with Traceable RFC Document Interpretation},
+ url = {https://doi.org/10.1145/3728955},
+ volume = {2},
+ year = {2025}
+}

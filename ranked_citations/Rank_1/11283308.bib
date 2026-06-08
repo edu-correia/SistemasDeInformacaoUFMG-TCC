@@ -1,0 +1,14 @@
+@inproceedings{11283308,
+ abstract = {Retrieval-Augmented Generation (RAG) systems are widely adopted to enhance Large Language Models (LLMs) with external knowledge, particularly in domains requiring up-todate and precise information. However, conventional RAG approaches often fail in safety-critical industrial domains like aviation, where documents possess rigid hierarchical structures (e.g., Technical Instruction Manuals(TIMs)). These exhibit contextual disintegration, resulting in semantic ambiguity, overspecialization, and critical hallucination risks. This paper introduces DeepPerception-RAG, a novel framework designed to address these limitations by integrating document hierarchy awareness directly into the retrieval process. The core innovation lies in a Parallel Depth-Aware Retrieval engine, where sparse (BM25) and dense (vector) retrieval pathways independently apply a sophisticated, logarithmic depth-aware scoring function to re-rank candidates. This function intelligently balances semantic relevance with hierarchical preference. The optimized results from both paths are merged, and a final, standardized LLM-based arbitration mechanism with robust fault tolerance resolves topranked conflicts. A confidence-based fallback guarantees system resilience. Rigorous evaluation on the newly constructed AeroRef150 benchmark - 150 queries across five question types demonstrates that DeepPerception-RAG achieves 91.3% Gold Path Coverage (GPC) and reduces hallucination rates by over $\mathbf{8 0 \%}$ compared to baselines. This work contributes a state-of-the-art, resilient RAG framework, a hierarchical benchmark methodology, and a novel dataset for high-fidelity retrieval in complex industrial documentation.},
+ author = {Huang, Tianjin and Zhu, Xingdong and Liu, Kai and Zhao, Peng},
+ booktitle = {2025 5th International Conference on Electronic Information Engineering and Computer Science (EIECS)},
+ doi = {10.1109/EIECS67708.2025.11283308},
+ issn = {},
+ keyword = {Fault tolerance;Technological innovation;Semantics;Retrieval augmented generation;Fault tolerant systems;Manuals;Benchmark testing;Vectors;Robustness;Text processing;Retrieval-Augmented Generation;Hierarchical Text Processing;Depth-Aware Retrieval;Information Retrieval},
+ month = {Sep.},
+ number = {},
+ pages = {370-375},
+ title = {A Resilient, Multi-Layered RAG Framework for High-Fidelity Retrieval in Complex Technical Manuals},
+ volume = {},
+ year = {2025}
+}

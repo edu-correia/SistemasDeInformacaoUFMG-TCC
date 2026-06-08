@@ -1,0 +1,14 @@
+@inproceedings{4429976,
+ abstract = {Existing SIMD extensions cannot efficiently vectorize the histogram function due to memory collisions. We propose two techniques to avoid this problem. In the first, a hierarchical structure of three levels is proposed. In order to provide n-way parallelism, auxiliary arrays that have n and n/2 subarrays are used in the first and second level, respectively. The last level has the primary histogram array. Indirect SIMD load and store instructions are designed in order to access different elements of different subarrays. The different subarrays in the lower levels are merged and finally at the end, the calculated results are stored in the primary histogram array. In the second method, parallel comparators are used in order to count the number of subwords within a media register that are the same. Thereafter, these numbers are added to the values of the histogram array simultaneously. Experimental results obtained by extending the SimpleScalar toolset show that proposed techniques improve the performance compared to the fastest scalar version by a factor of 7.37 and 5.52, respectively.},
+ author = {Shahbahrami, Asadollah and Juurlink, Ben and Vassiliadis, Stamatis},
+ booktitle = {2007 IEEE International Conf. on Application-specific Systems, Architectures and Processors (ASAP)},
+ doi = {10.1109/ASAP.2007.4429976},
+ issn = {1063-6862},
+ keyword = {Histograms;Pixel;Parallel processing;Image storage;Laboratories;Image retrieval;Video sequences;Image segmentation;Image processing;Pattern recognition;Subword Parallelism;Multimedia Extensions;Histogram Calculation},
+ month = {July},
+ number = {},
+ pages = {174-179},
+ title = {SIMD Vectorization of Histogram Functions},
+ volume = {},
+ year = {2007}
+}

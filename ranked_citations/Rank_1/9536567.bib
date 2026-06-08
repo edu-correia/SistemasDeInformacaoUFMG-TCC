@@ -1,0 +1,14 @@
+@article{9536567,
+ abstract = {In modern solid-state drives (SSDs), a flash translation layer (FTL) is the core engine performing the logical-to-physical address translations. However, the increasing capacity of SSDs requires a large DRAM space to hold the mapping table in a page-level FTL. Due to the limited size of built-in DRAM, existing FTL schemes selectively cache some active mapping entries in DRAM, while store the entire mapping table on flash. However, the low cache hit ratio introduced by the traditional mapping entry eviction policy degrades the access performance of SSDs. In this article, we propose a novel FTL, hot-clusterity FTL (HCFTL), to improve the hit ratio of cached mapping table (CMT) of SSDs with limited cache space. HCFTL clusters mapping entries, which are newly evicted from the cache, into dynamic translation pages (DTPs). Reading entries from DTPs will increase the CMT hit ratio due to spatial and temporal localities. Because the logical page numbers (LPNs) in a DTP are not consecutive, we introduce two different efficient index structures to speedup the lookup of mapping entries in DTPs. Furthermore, to make the DTP index highly accurate, we additionally allocate an auxiliary cache to buffer the mapping entries newly evicted from CMT, and produce dynamic pages with minimum difference between the maximal and the minimal LPNs of entries in those pages. Our experiments show that HCFTL can improve the CMT hit ratio by up to 41.1% and decrease the system response time by up to 33.3%, compared to baseline FTL schemes.},
+ author = {Pan, Yubiao and Chen, Hao and Zhao, Jianing and Xu, Yinlong},
+ doi = {10.1109/TCAD.2021.3112142},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Random access memory;Ash;Indexes;Computer science;Time factors;Hard disks;Engines;Flash memory;hit ratio;mapping table;performance},
+ month = {Aug},
+ number = {8},
+ pages = {2477-2489},
+ title = {HCFTL: A Locality-Aware Flash Translation Layer for Efficient Address Translation},
+ volume = {41},
+ year = {2022}
+}

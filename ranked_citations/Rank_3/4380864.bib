@@ -1,0 +1,14 @@
+@inproceedings{4380864,
+ abstract = {Pointer bugs associated with dynamically-allocated objects resulting in out-of-bounds memory access are an important class of software bugs. Because such bugs cannot be detected easily via static-checking techniques, dynamic monitoring schemes have been proposed. However, the key challenge with dynamic monitoring schemes is the runtime overhead (slowdowns of the order of lOx are common). Previous approaches have used thread-level speculation (TLS) to reduce the overhead. However, the approaches still incur substantial slowdowns while requiring complex TLS hardware. We make the key observation that because the monitor code and user code are largely and unambiguously independent, TLS hardware with all its complexity to handle speculative parallelism is unnecessary. We explicitly multithread the monitor code in which a thread checks one access and use SMT to exploit the parallelism in the monitor code. Despite multithreading the monitor code on SMT, dynamic monitoring slows down the user thread due to two problems: instruction overhead and insufficient overlap among the monitor threads. To address instruction overhead, we exploit the natural locality in the user thread addresses and memoize recent checks in a small table called the allocation-record-cache (ARC). However, programs making and accessing many small memory allocations cause many ARC misses and incur significant runtime overhead. To address this issue, we make a second key observation that because adjacent memory objects result in ARC entries with contiguous address ranges, the entries can be merged into one by simply merging the ranges into one. This merging increases the effective size of the ARC. Finally, insufficient overlap among monitor threads occurs because of inefficient synchronization to protect the allocation data structure updated by the user thread and read by the monitor threads. We make the third key observation that because monitor-thread reads occur for every check but user-thread writes occur only in allocations and deallocations, monitor reads are much more frequent than user writes. We propose a locking strategy, called biased lock, which puts the locking overhead on the writer away from the readers. We show that starting from a runtime overhead of 414% our scheme reduces this overhead to a respectable 24% running three monitor threads on an SMT using a 256-entry ARC with merging and biased lock.},
+ author = {Wang, Jin-Yi and Shue, Yen-Shiang and Vijaykumar, T. N. and Bagchi, Saurabh},
+ booktitle = {2006 International Conference on Computer Design},
+ doi = {10.1109/ICCD.2006.4380864},
+ issn = {1063-6404},
+ keyword = {Surface-mount technology;Monitoring;Yarn;Computer bugs;Runtime;Merging;Hardware;Multithreading;Protection;Data structures},
+ month = {Oct},
+ number = {},
+ pages = {514-521},
+ title = {Pesticide: Using SMT to Improve Performance of Pointer-Bug Detection},
+ volume = {},
+ year = {2006}
+}

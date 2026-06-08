@@ -1,0 +1,16 @@
+@article{Zheng20251040,
+ abstract = {Finding the triangles of large scale graphs is a fundamental graph mining task in many applications, such as motif detection, microscopic evolution, and link prediction. The recent works on triangle counting can be classified into merge-based or binary search-based paradigms. The merge-based triangle counting paradigm locates the triangles using the set intersection operation, which suffers from the random memory access problem. The binary search-based triangle counting paradigm sets the neighbors of the source vertex of an edge as the lookup array and searches the neighbors of the destination vertex. There are lots of expensive lock operations needed in the binary search-based paradigm, which leads to low thread efficiency. In this paper, we aim to improve the triangle counting efficiency on GPU by designing a lock-free policy named Skiff to implement a hash-based triangle counting algorithm. In Skiff, we first design a hash trie data layout to meet the coalesced memory access model and then propose a lock-free policy to reduce the conflicts of the hash trie. In addition, we use a level array to manage the index of the hash trie to make sure the nodes of the hash trie can be quickly located. Furthermore, we implement a CTA thread organization model to reduce the load imbalance of the real-world graphs. We conducted extensive experiments on NVIDIA GPUs to show the performance of Skiff. The results show that Skiff can achieve a good system performance improvement than the state-of-the-art (SOTA) works. © 1968-2012 IEEE.},
+ author = {Zheng, Zhigao and Wan, Guojia and Jiang, Jiawei and Hu, Chuang and Liu, Hao and Mumtaz, Shahid and Du, Bo},
+ doi = {10.1109/TC.2024.3504295},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 2},
+ number = {3},
+ pages = {1040 - 1052},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Lock-Free Triangle Counting on GPU},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85210306895?origin=resultslist},
+ volume = {74},
+ year = {2025}
+}

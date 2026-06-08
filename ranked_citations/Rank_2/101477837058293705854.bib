@@ -1,0 +1,17 @@
+@article{10.14778/3705829.3705854,
+ abstract = {Bitmap indexes are widely used for read-intensive analytical workloads because they are clustered and offer efficient reads with a small memory footprint. However, they are generally inefficient to update. As analytical applications are increasingly fused with transactional applications, leading to the emergence of hybrid transactional/analytical processing (HTAP), it is desirable that bitmap indexes support efficient concurrent real-time updates. In this paper, we propose Concurrent Updatable Bitmap indexing (CUBIT) that offers efficient real-time updates that scale with the number of CPU cores used and do not interfere with queries. Our design relies on three principles. First, we employ a horizontal bitwise representation of updated bits, which enables efficient atomic updates without locking entire bitvectors. Second, we propose a lightweight snapshotting mechanism that allows queries to run on separate snapshots and provides a wait-free progress guarantee. Third, we consolidate updates in a latch-free manner, providing a strong progress guarantee. Our evaluation shows that CUBIT offers 3--16\texttimes{} higher throughput and 3--220\texttimes{} lower latency than state-of-the-art updatable bitmap indexes. CUBIT's update-friendly nature widens the applicability of bitmap indexing. Experimenting with OLAP workloads with standard, batched updates shows that CUBIT overcomes the maintenance downtime and outperforms DuckDB by 1.2--2.7\texttimes{} on TPC-H. For HTAP workloads with real-time updates, CUBIT achieves 2--11\texttimes{} performance improvement over the state-of-the-art approaches.},
+ author = {Wang, Junchang and Athanassoulis, Manos},
+ doi = {10.14778/3705829.3705854},
+ issn = {2150-8097},
+ issue_date = {October 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {October},
+ number = {2},
+ numpages = {14},
+ pages = {399–412},
+ publisher = {VLDB Endowment},
+ title = {CUBIT: Concurrent Updatable Bitmap Indexing},
+ url = {https://doi.org/10.14778/3705829.3705854},
+ volume = {18},
+ year = {2024}
+}

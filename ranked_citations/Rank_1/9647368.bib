@@ -1,0 +1,14 @@
+@inproceedings{9647368,
+ abstract = {Persistent key-value storage with high write perform-ance is mainly built on Log-Structured-Merge Tree (LSM-tree), but LSM-tree has inherent high I/O amplification problems. Key-value separation reduces the problem of I/O amplification by storing only the keys in the LSM-tree. However, the current key-value separation design does not fully consider the speed difference between sequential writing and random writing. And because of garbage collection, subsequent write operations will be affected and cause write pauses. The purpose of HSKV is to achieve high update performance in key-value separation under update-intensive workloads. HSKV uses hash-based data grouping to sequentially write key-value pairs into storage, and cache hot data in the memory to speed up reading and writing. We evaluate HSKV with some existing storage systems, and HSKV can increase the update throughput by up to 4.5×.},
+ author = {Chen, Shanshan and Ma, Zhenyu and Gao, Jun and An, Wentao},
+ booktitle = {2021 IEEE 3rd International Conference on Frontiers Technology of Information and Computer (ICFTIC)},
+ doi = {10.1109/ICFTIC54370.2021.9647368},
+ issn = {},
+ keyword = {Technological innovation;Conferences;Throughput;Cache storage;Key-value system;LSM-Tree;key-value separation;hash;cache},
+ month = {Nov},
+ number = {},
+ pages = {453-456},
+ title = {HSKV: A Key-Value Storage Scheme Using Hash to Reduce Write Pause},
+ volume = {},
+ year = {2021}
+}

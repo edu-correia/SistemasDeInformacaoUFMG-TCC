@@ -1,0 +1,14 @@
+@conference{Zhong2014233,
+ abstract = {In large IoT systems, many millions of records reach back-end servers every second from devices that generate data automatically and continuously. The receiving servers have to process and store these high volumes of data and support interactive ad-hoc and real-time queries that require data to be searched quickly. Servers typically create bitmap indexes to reduce the quantity of data that needs to be examined to find needles in haystacks. Building a bitmap index, particularly when data continues to arrive at high rate, incurs appreciable CPU consumption. Memory efficiency also becomes a concern as bitmap indexes can take up space in proportion with the numbers of logical fields per record - rather than the actual numbers of fields populated with data. This paper describes a bitmap index creation method called Para SAIL (for Parallel Sets of Aligned Index Lines). Para SAIL focuses on maximizing the speedup from parallel execution by avoiding write-write and write-read cache line conflicts among CPUs. It is thus well positioned to benefit from systems with high numbers of cores - from mainstream multicore processors such as Intel® Xeon® E5 and E7 machines, to many-core engines such as Intel® Xeon Phi™ coprocessors. Para SAIL also obtains space efficiencies by creating a clustered bitmap index for an attribute value or range that only occurs intermittently in the data. An evaluation using data from an oceanographic dataset shows that Para SAIL running on Xeon Phi coprocessor system indexes 473 million records per second and produces dense bitmaps that don't require further compression. © 2014 IEEE.},
+ author = {Zhong, Tao and Doshi, Kshitij A. and Deng, Gang},
+ doi = {10.1109/CyberC.2014.49},
+ journal = {Proceedings - 2014 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery, CyberC 2014},
+ note = {Cited by: 4},
+ pages = {233 - 240},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ParaSAIL: Bitmap indexing using many cores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84921023656?origin=resultslist},
+ year = {2014}
+}

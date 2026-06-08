@@ -1,0 +1,14 @@
+@inproceedings{10825283,
+ abstract = {Log-Structured Merge Tree (LSM-Tree) is widely employed in key-value (kv) store owing to its exceptional performance in write-intensive workloads. LSMTree appends kv pairs to memory initially, and only when the memory capacity reaches a threshold does it flush the data to disk. However, in comparison to write, read operations often entail more disk access, resulting in relatively a slower response speed. Although LSM-Tree utilizes an index structure to expedite read operations, its performance enhancement remains limited. In addition, LSM-Tree fails to consider the read hotness of each sorted string table (SSTable) during compaction, leading to significant fluctuations in performance. This paper introduces HL-LSM, a novel LSM-Tree. HL-LSM utilizes learned index to replace original index to save system overhead and improve read performance. Moreover, a lightweight read hotness statistics is devised to optimize the compaction and assess the feasibility of each SSTable in constructing a learned index. In order to evaluate the performance of HL-LSM, we constructed a system prototype, HLDB, based on WiscKey. Experiment demonstrates that in read-intensive scenarios, HLDB is able to reduce the overall system latency by nearly 10% compared to WiscKey. Furthermore, it was observed that the optimization effect of HL-LSM improves as the variance of hotness value distribution increases.},
+ author = {Tan, Hong and Li, Hui and Wang, Xiaopeng and Huang, Weixiang and Huang, Runhuai and Deng, Shaowen and Wu, Jianping},
+ booktitle = {2024 IEEE International Conference on Big Data (BigData)},
+ doi = {10.1109/BigData62323.2024.10825283},
+ issn = {2573-2978},
+ keyword = {Fluctuations;System performance;Prototypes;Big Data;Compaction;Indexes;Optimization;LSM-Tree;read hotness;learned index;compaction optimization},
+ month = {Dec},
+ number = {},
+ pages = {3992-3999},
+ title = {HL-LSM: A LSM-Tree Combined with Read Hotness and Learned Index},
+ volume = {},
+ year = {2024}
+}

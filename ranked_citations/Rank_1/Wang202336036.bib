@@ -1,0 +1,14 @@
+@conference{Wang202336036,
+ abstract = {Activation compressed training provides a solution towards reducing the memory cost of training deep neural networks (DNNs). However, state-of-the-art work combines a search of quantization bit-width with the training, which makes the procedure complicated and less transparent. To this end, we propose a simple and effective method to compress DNN training. Our method is motivated by an instructive observation: DNN backward propagation mainly utilizes the low-frequency component (LFC) of the activation maps, while the majority of memory is for caching the high-frequency component (HFC) during the training. This indicates the HFC of activation maps is highly redundant and compressible, which inspires our proposed Dual ActIVation PrecISION (DIVISION). During the training, DIVISION preserves a high-precision copy of LFC and compresses the HFC into a light-weight copy with low numerical precision. This can significantly reduce the memory cost while maintaining a competitive model accuracy. Experiment results show DIVISION has better comprehensive performance than state-of-the-art methods, including over 10× compression of activation maps and competitive training throughput, without loss of model accuracy. The source code is available at https://github.com/guanchuwang/division. © 2023 Proceedings of Machine Learning Research. All rights reserved.},
+ author = {Wang, Guanchu and Liu, Zirui and Jiang, Zhimeng and Liu, Ninghao and Zou, Na and Hu, Xia},
+ journal = {Proceedings of Machine Learning Research},
+ note = {Cited by: 2},
+ pages = {36036 - 36057},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DIVISION: Memory Efficient Training via Dual Activation Precision},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85174420517?origin=resultslist},
+ volume = {202},
+ year = {2023}
+}

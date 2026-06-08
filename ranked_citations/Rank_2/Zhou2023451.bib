@@ -1,0 +1,13 @@
+@conference{Zhou2023451,
+ abstract = {Cloud storage is gaining popularity because of features such as pay-as-you-go that significantly reduces storage costs. However, the community has not sufficiently explored its contract model and latency characteristics. As LSM-Tree-based key-value stores (LSM stores) become the building block for numerous cloud applications, how cloud storage would impact the performance of key-value accesses is vital. This study reveals the significant latency variances of Amazon Elastic Block Store (EBS) under various I/O pressures, which challenges LSM store read performance on cloud storage. To reduce the corresponding tail latency, we propose Calcspar, a contract-aware LSM store for cloud storage, which efficiently addresses the challenges by regulating the rate of I/O requests to cloud storage and absorbing surplus I/O requests with the data cache. We specifically developed a fluctuation-aware cache to lower the high latency brought on by workload fluctuations. Additionally, we build a congestion-aware IOPS allocator to reduce the impact of LSM store internal operations on read latency. We evaluated Calcspar on EBS with different real-world workloads and compared it to the cutting-edge LSM stores. The results show that Calcspar can significantly reduce tail latency while maintaining regular read and write performance, keeping the 99<sup>th</sup> percentile latency under 550µs and reducing average latency by 66%. © 2023 by The USENIX Association All Rights Reserved.},
+ author = {Zhou, Yuanhui and Zhou, Jian and Chen, Shuning and Xu, Peng and Wu, Peng and Wang, Yanguang and Liu, Xian and Zhan, Ling and Wan, Jiguang},
+ journal = {Proceedings of the 2023 USENIX Annual Technical Conference, ATC 2023},
+ note = {Cited by: 7},
+ pages = {451 - 465},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Calcspar: A Contract-Aware LSM Store for Cloud Storage with Low Latency Spikes},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85180365143?origin=resultslist},
+ year = {2023}
+}

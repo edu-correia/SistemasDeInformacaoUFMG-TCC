@@ -1,0 +1,18 @@
+@article{10.1145/3360597,
+ abstract = {We develop powerful and general techniques to mechanically verify realistic programs that manipulate heap-represented graphs. These graphs can exhibit well-known organization principles, such as being a directed acyclic graph or a disjoint-forest; alternatively, these graphs can be totally unstructured. The common thread for such structures is that they exhibit deep intrinsic sharing and can be expressed using the language of graph theory. We construct a modular and general setup for reasoning about abstract mathematical graphs and use separation logic to define how such abstract graphs are represented concretely in the heap. We develop a Localize rule that enables modular reasoning about such programs, and show how this rule can support existential quantifiers in postconditions and smoothly handle modified program variables. We demonstrate the generality and power of our techniques by integrating them into the Verified Software Toolchain and certifying the correctness of seven graph-manipulating programs written in CompCert C, including a 400-line generational garbage collector for the CertiCoq project. While doing so, we identify two places where the semantics of C is too weak to define generational garbage collectors of the sort used in the OCaml runtime. Our proofs are entirely machine-checked in Coq.},
+ address = {New York, NY, USA},
+ articleno = {171},
+ author = {Wang, Shengyi and Cao, Qinxiang and Mohan, Anshuman and Hobor, Aquinas},
+ doi = {10.1145/3360597},
+ issue_date = {October 2019},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {CompCert, Coq, Graph-manipulating programs, Separation logic, VST},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {Certifying graph-manipulating C programs via localizations within data structures},
+ url = {https://doi.org/10.1145/3360597},
+ volume = {3},
+ year = {2019}
+}

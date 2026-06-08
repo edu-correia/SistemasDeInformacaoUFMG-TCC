@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2023.3286879,
+ abstract = {Sketch-based method has emerged as a promising direction for per-flow measurement in data center networks. Usually in such a measurement system, a sketch data structure is placed as a whole at one switch for counting all passing packets, but when summarizing measurement results from multiple switches, the overall accuracy is generally constrained by a few individual switches with small-sized sketches due to their limited memory resources. To address this problem, in this paper, we present Distributed Sketch, a new method for per-flow network measurement in data center networks. In Distributed Sketch, each network path is associated with a logical sketch, whose data structure is collectively maintained by all the switches along the path; meanwhile, each switch multiplexes its physical sketch to the constructions of the logical sketches of all the paths it belongs to. With Distributed Sketch, switches collaborate to measure network flows, and the network-wide measurement workload is fairly distributed among all the switches in the network. We implement Distributed Sketch with P4 on commodity hardware programmable switch, and in particular, to overcome the limitation that hardware switches do not support float-point computation, we present an optimal approximation method that involves only integer operations. We also propose an In-band Network Telemetry (INT) based method for addressing the challenges in deploying Distributed Sketch in large-scale data centers. Experiment results and theoretical analysis show that our proposed method is lightweight regarding measurement overhead, and by aggregating and making fair uses of resources from all the switches in the network, Distributed Sketch achieves a higher measurement accuracy compared with the state-of-the-art solutions.},
+ author = {Gu, Liyuan and Tian, Ye and Chen, Wei and Wei, Zhongxiang and Wang, Cenman and Zhang, Xinming},
+ doi = {10.1109/tnet.2023.3286879},
+ issn = {1063-6692},
+ issue_date = {Feb. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {June},
+ number = {1},
+ numpages = {16},
+ pages = {411–426},
+ publisher = {IEEE Press},
+ title = {Per-Flow Network Measurement With Distributed Sketch},
+ url = {https://doi.org/10.1109/TNET.2023.3286879},
+ volume = {32},
+ year = {2023}
+}

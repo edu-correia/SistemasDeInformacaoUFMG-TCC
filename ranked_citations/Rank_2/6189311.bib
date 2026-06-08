@@ -1,0 +1,14 @@
+@article{6189311,
+ abstract = {Flash memory-based disks (or simply flash disks) have been widely used in today's computer systems. With their continuously increasing capacity and dropping price, it is envisioned that some database systems will operate on flash disks in the near future. However, the I/O characteristics of flash disks are different from those of magnetic hard disks. Motivated by this, we study the core of query processing in row-based database systems-join processing-on flash storage media. More specifically, we propose a new framework, called DigestJoin, to optimize nonindexed join processing by reducing the intermediate result size and exploiting fast random reads of flash disks. DigestJoin consists of two phases: 1) projecting the join attributes followed by a join on the projected attributes, and 2) fetching the full tuples that satisfy the join to produce the final join results. While the problem of tuple/page fetching with the minimum I/O cost (in the second phase) is intractable, we propose three heuristic page-fetching strategies for flash disks. We have implemented DigestJoin and conducted extensive experiments on a real flash disk. Our evaluation results based on TPC-H data sets show that DigestJoin clearly outperforms the traditional sort-merge join and hash join under a wide range of system configurations.},
+ author = {Li, Yu and On, Sai Tung and Xu, Jianliang and Choi, Byron and Hu, Haibo},
+ doi = {10.1109/TC.2012.86},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Ash;Hard disks;Indexes;Schedules;Central Processing Unit;query processing;database indexing;flash memories;hash join;nonindexed join processing optimization;flash storage-based systems;flash memory-based disks;flash disks;query processing;row-based database systems;flash storage media;DigestJoin;tuple fetching;page fetching;heuristic page-fetching strategies;TPC-H data sets;sort-merge join;Ash;Hard disks;Indexes;Schedules;Central Processing Unit;flash memory;Ash;Hard disks;Indexes;Schedules;Central Processing Unit;relational databases;Query processing;joins},
+ month = {July},
+ number = {7},
+ pages = {1417-1431},
+ title = {Optimizing Nonindexed Join Processing in Flash Storage-Based Systems},
+ volume = {62},
+ year = {2013}
+}

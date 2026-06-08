@@ -1,0 +1,14 @@
+@article{9509371,
+ abstract = {Packet classification is a critical component in network appliances. Software Defined Networking and cloud computing update the rulesets frequently for flexible policy configuration. Tuple Space Search (TSS), implemented in Open vSwitch (OVS), achieves fast rule updating at the sacrifice of the classification rate. In TSS, each tuple is managed by a hash table and classifying a packet needs to go through all hash tables. Merging tuples can reduce the number of hash tables, but inevitably increases the hash conflicts that may even worsen the classification performance in some cases. No existing algorithm meets the need of both fast packet classification and online rule updating. In this paper, we propose Convolutional Neural Network (CNN)-based Range Partition (CRP) to achieve fast packet classification and online update simultaneously. CRP exploits CNN-based image recognition to quickly partition tuples into range spaces upon the change of ruleset distribution, which reduces hash operations while avoiding rule overlapping caused by hashing many rules to the same location of the hash table. Experimental results demonstrate that CRP achieves  $3.2\times $  classification speed and  $4.2\times $  update speed on average compared with state-of-the-art algorithms. We also implement CRP in OVS. The throughput of CRP-OVS is  $10\times $  that of native OVS.},
+ author = {Zhang, Xinyi and Xie, Gaogang and Wang, Xin and Zhang, Penghao and Li, Yanbiao and Salamatian, Kavé},
+ doi = {10.1109/TNET.2021.3100114},
+ issn = {1558-2566},
+ journal = {IEEE/ACM Transactions on Networking},
+ keyword = {Decision trees;IP networks;Software;Merging;Image recognition;Convolutional neural networks;Transforms;Packet classification;Software Defined Networking (SDN);Open vSwitch (OVS)},
+ month = {Dec},
+ number = {6},
+ pages = {2765-2778},
+ title = {Fast Online Packet Classification With Convolutional Neural Network},
+ volume = {29},
+ year = {2021}
+}

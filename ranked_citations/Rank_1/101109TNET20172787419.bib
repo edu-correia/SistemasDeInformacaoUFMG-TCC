@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2017.2787419,
+ abstract = {This paper studies the problem of compressing the forwarding information base FIB, but taking a wider perspective. Indeed, FIB compression goes beyond sheer compression, as the gain in memory use obtained from the compression has consequences on the updates that will have to be applied to the compressed FIB. We are interested in the situation where forwarding rules can change over time, e.g., due to border gateway protocol BGP route updates. Accordingly, we frame FIB compression as an online problem and design competitive online algorithms to solve it. In contrast to prior work which mostly focused on static optimizations, we study an online variant of the problem where routes can change over time and where the number of updates to the FIB is taken into account explicitly. The reason to consider this version of the problem is that leveraging temporal locality while accounting for the number of FIB updates helps to keep routers CPU load low and reduces the number of FIB updates to be transferred, e.g., from the network-attached software-defined network controller to a remote switch. This paper introduces a formal model which is an interesting generalization of several classic online aggregation problems. Our main contribution is an Ow-competitive algorithm, where ${w}$ is the length of an IP address. We also derive a lower bound which shows that our result is asymptotically optimal within a natural class of algorithms, based on so-called sticks.},
+ author = {Bienkowski, Marcin and Sarrar, Nadi and Schmid, Stefan and Uhlig, Steve},
+ doi = {10.1109/tnet.2017.2787419},
+ issn = {1063-6692},
+ issue_date = {February 2018},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {February},
+ number = {1},
+ numpages = {14},
+ pages = {591–604},
+ publisher = {IEEE Press},
+ title = {Online Aggregation of the Forwarding Information Base: Accounting for Locality and Churn},
+ url = {https://doi.org/10.1109/TNET.2017.2787419},
+ volume = {26},
+ year = {2018}
+}

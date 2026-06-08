@@ -1,0 +1,18 @@
+@article{10.1145/3591292,
+ abstract = {Inductive relations offer a powerful and expressive way of writing   program specifications while facilitating compositional reasoning.   Their widespread use by proof assistant users has made them a   particularly attractive target for proof engineering tools such as   QuickChick, a property-based testing tool for Coq which can   automatically derive generators for values satisfying an inductive   relation.   However, while such generators are generally efficient, there is   an infrequent yet seemingly inevitable situation where their   performance greatly degrades: when multiple inductive relations   constrain the same piece of data.    In this paper, we introduce an algorithm for merging two such   inductively defined properties that share an index. The algorithm   finds shared structure between the two relations, and creates a   single merged relation that is provably equivalent to the   conjunction of the two.   We demonstrate, through a series of case studies,   that the merged relations can improve the performance of automatic   generation by orders of magnitude, as well as simplify mechanized   proofs by getting rid of the need for nested induction and tedious   low-level book-keeping.},
+ address = {New York, NY, USA},
+ articleno = {178},
+ author = {Prinz, Jacob and Lampropoulos, Leonidas},
+ doi = {10.1145/3591292},
+ issue_date = {June 2023},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {merging, inductive relations, QuickChick},
+ month = {June},
+ number = {PLDI},
+ numpages = {20},
+ publisher = {Association for Computing Machinery},
+ title = {Merging Inductive Relations},
+ url = {https://doi.org/10.1145/3591292},
+ volume = {7},
+ year = {2023}
+}

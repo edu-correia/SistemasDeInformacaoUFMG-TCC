@@ -1,0 +1,14 @@
+@article{11522802,
+ abstract = {Partial speech inpainting, replacing a few words within a genuine utterance via voice cloning to alter its meaning, is an emerging audio deepfake threat. Unlike fully synthesized speech, the manipulated content constitutes only 2–7% of the utterance, and existing benchmarks are limited to single-region tampering with utterance-level labels. To enable systematic study of this problem, we introduce MIST, a large-scale multilingual dataset spanning six languages with 1–3 independently inpainted word-level segments per utterance, generated through LLM-guided semantic replacement and neural voice cloning, totaling approximately 497k tampered utterances with precise temporal annotations. To establish a benchmark for this task, we further introduce ISA, a backbone-agnostic coarse-to-fine localization framework that recovers all tampered regions without prior knowledge of their count; and SF1@τ, a segment-level F1 metric based on temporal IoU matching that jointly evaluates region counting and boundary precision. Zero-shot experiments confirm that utterance-level classifiers trained on fully synthesized speech fail on MIST (SF1@0.5 ≤ 1.7% across all backbones), while fine-tuning on MIST annotations dramatically improves performance: the Wav2Vec2-AASIST backbone improves from 1.2% to 29.2%, and the strongest backbone (WavLM-AASIST) reaches SF1@0.5 = 33.5%, demonstrating that the primary bottleneck is training data rather than inference methodology. The dataset, code, and evaluation toolkit are publicly available.},
+ author = {Vu, Tung and Nguyen, Yen and Nguyen, Hai and Pham, Cuong and Tran, Cong},
+ doi = {10.1109/ACCESS.2026.3694045},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Multilingual;Modeling;Windows;Speech;Cloning;Signal detection;Location awareness;Training;Labeling;Merging;Audio deepfake detection;audio forensics;multi-region tampering localization;partial speech inpainting;speech manipulation dataset;temporal localization;voice cloning},
+ month = {},
+ number = {},
+ pages = {1-1},
+ title = {MIST: A Multilingual Dataset and Benchmark for Fine-Grained Audio Inpainting Tampering Localization},
+ volume = {},
+ year = {2026}
+}

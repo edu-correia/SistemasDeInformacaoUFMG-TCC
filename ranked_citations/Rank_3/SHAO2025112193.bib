@@ -1,0 +1,13 @@
+@article{SHAO2025112193,
+ abstract = {With the widespread deployment of Internet of Things (IoT) devices in Intelligent Transportation Systems (ITS), real-time spatiotemporal data has grown rapidly. Hybrid data-bases have emerged as the mainstream solution for managing such data. The LSM R*-tree, which integrates Log-Structured Merge-trees (LSM-trees) for time-series ingestion and R*-trees for spatial queries, is now a widely used spatiotemporal index. However, storage schemes based on LSM R*-tree structures involve real-time index construction, leading to significant overhead and write latency. To address these challenges, this paper proposes a prebuilt index-based data storage workflow that shifts index construction ahead of data writing. This approach allows the database to directly apply the prebuilt index at write time, thereby minimizing real-time construction costs and enhancing write performance. To support index prebuild, we propose a lightweight embedding scheme, Index2Vec, specifically designed for R*-tree structures. Based on this, we extend the Transformer architecture and develop the R*-tree Prediction Network for ITS (RTPN4ITS), which achieves efficient inference on resource-constrained edge devices. Experimental results show that the prebuilt R*-tree index improves query efficiency by up to 90% over time-index-only schemes and enhances write performance by nearly 50% compared to real-time indexing. The proposed RTPN4ITS model achieves robust accuracy across varying traffic densities, reaching 85% accuracy in dense conditions. Moreover, the Index2Vec embedding enhances the Transformer’s structural awareness. In summary, this paper proposes an efficient prebuilt indexing strategy and lightweight embedding-based model for real-time spatiotemporal data management in ITS.},
+ author = {Yiran Shao and Kangshuai Zhang and Yong Zhou and Zhenwu Chen and Yang Yang and Lei Peng},
+ doi = {https://doi.org/10.1016/j.engappai.2025.112193},
+ issn = {0952-1976},
+ journal = {Engineering Applications of Artificial Intelligence},
+ keyword = {Spatiotemporal data storage, Prebuild index, Index prediction, Index embedding},
+ pages = {112193},
+ title = {Prebuilt spatiotemporal index: An exploration of efficient real-time data storage in intelligent transportation systems},
+ url = {https://www.sciencedirect.com/science/article/pii/S0952197625022018},
+ volume = {161},
+ year = {2025}
+}

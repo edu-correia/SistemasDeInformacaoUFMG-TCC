@@ -1,0 +1,18 @@
+@article{10.1145/3472769,
+ abstract = {As the size of data generated every day grows dramatically, the computational bottleneck of computer systems has shifted toward storage devices. The interface between the storage and the computational platforms has become the main limitation due to its limited bandwidth, which does not scale when the number of storage devices increases. Interconnect networks do not provide simultaneous access to all storage devices and thus limit the performance of the system when executing independent operations on different storage devices. Offloading the computations to the storage devices eliminates the burden of data transfer from the interconnects. Near-storage computing offloads a portion of computations to the storage devices to accelerate big data applications. In this article, we propose a generic near-storage sort accelerator for data analytics, NASCENT2, which utilizes Samsung SmartSSD, an NVMe flash drive with an on-board FPGA chip that processes data in situ.NASCENT2 consists of dictionary decoder, sort, and shuffle FPGA-based accelerators to support sorting database tables based on a key column with any arbitrary data type. It exploits data partitioning applied by data processing management systems, such as SparkSQL, to breakdown the sort operations on colossal tables to multiple sort operations on smaller tables. NASCENT2 generic sort provides 2 \texttimes{} speedup and 15.2 \texttimes{} energy efficiency improvement as compared to the CPU baseline. It moreover considers the specifications of the SmartSSD (e.g., the FPGA resources, interconnect network, and solid-state drive bandwidth) to increase the scalability of computer systems as the number of storage devices increases. With 12 SmartSSDs, NASCENT2 is 9.9\texttimes{} (137.2 \texttimes{}) faster and 7.3 \texttimes{} (119.2 \texttimes{}) more energy efficient in sorting the largest tables of TPCC and TPCH benchmarks than the FPGA (CPU) baseline.},
+ address = {New York, NY, USA},
+ articleno = {16},
+ author = {Salamat, Sahand and Zhang, Hui and Ki, Yang Seok and Rosing, Tajana},
+ doi = {10.1145/3472769},
+ issn = {1936-7406},
+ issue_date = {June 2022},
+ journal = {ACM Trans. Reconfigurable Technol. Syst.},
+ month = {January},
+ number = {2},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {NASCENT2: Generic Near-Storage Sort Accelerator for Data Analytics on SmartSSD},
+ url = {https://doi.org/10.1145/3472769},
+ volume = {15},
+ year = {2022}
+}

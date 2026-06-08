@@ -1,0 +1,13 @@
+@article{DI2024108261,
+ abstract = {Technical or biologically irrelevant differences caused by different experiments, times, or sequencing platforms can generate batch effects that mask the true biological information. Therefore, batch effects are typically removed when analyzing single-cell RNA sequencing (scRNA-seq) datasets for downstream tasks. Existing batch correction methods usually mitigate batch effects by reducing the data from different batches to a lower dimensional space before clustering, potentially leading to the loss of rare cell types. To address this problem, we introduce a novel single-cell data batch effect correction model using Biological-noise Decoupling Autoencoder (BDA) and Central-cross Loss termed BDACL. The model initially reconstructs raw data using an auto-encoder and conducts preliminary clustering. We then construct a similarity matrix and a hierarchical clustering tree to delineate relationships within and between different batches. Finally, we introduce a Central-cross Loss (CL). This loss leverages cross-entropy loss to prompt the model to better distinguish between different cluster labels. Additionally, it employs the Central Loss to encourage samples to form more compact clusters in the embedding space, thereby enhancing the consistency and interpretability of clustering results to mitigate differences between different batches. The primary innovation of this model lies in reconstructing data with an auto-encoder and gradually merging smaller clusters into larger ones using a hierarchical clustering tree. By using reallocated cluster labels as training labels and employing the Central-cross Loss, the model effectively eliminates batch effects in an unsupervised manner. Compared to current methods, BDACL can mitigate batch effects without losing rare cell types.},
+ author = {Zhangjie Di and Bo Yang and Meng Li and Yue Wu and Hong Ji},
+ doi = {https://doi.org/10.1016/j.compbiolchem.2024.108261},
+ issn = {1476-9271},
+ journal = {Computational Biology and Chemistry},
+ keyword = {ScRNA-seq data integration, Deep learning, Batch effect correction},
+ pages = {108261},
+ title = {Batch effects correction in scRNA-seq based on biological-noise decoupling autoencoder and central-cross loss},
+ url = {https://www.sciencedirect.com/science/article/pii/S1476927124002494},
+ volume = {113},
+ year = {2024}
+}

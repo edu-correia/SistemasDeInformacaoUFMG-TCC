@@ -1,0 +1,14 @@
+@inproceedings{9059958,
+ abstract = {In this contribution, we present the implementation of a resource-saving, 24-channels, high-performance, Tapped Delay-Line (TDL) based, Time-to-Digital Converter (TDC) implemented in a Xilinx 20-nm Kintex UltraScale (XCKU040-2FFVA1156E) Field Programmable Gate Array (FPGA) device hosted in a general purpose evaluation board (EVB) KCU105. The term high-performance is not only referred to high-resolution, which is equal to 305 fs over full-scale range of 10.24 μs and single-shot precision below 8.5 ps r.m.s. with maximum operative rate up to 50 MHz per channel, but high-performance also means design flexibility, modularity and, last but not least, low time-to-market and implementation costs. High-resolution over a so wide dynamic-range is provided by Nutt-interpolation. In this way, each one of the 24-channels produces a 25-bit wide timestamp, with LSB of 305 fs, obtained merging a coarse and a fine measure. The coarse contribution is obtained by sampling a 12-bit counter clocked at 400 MHz, whereas the fine part of the measure is returned by the sub-interpolation of eight 512 taps long TDLs by means of a Super Wave Union (SuperWU) algorithm. This choice allows to achieve resolution, in average, sixteen times better than the propagation delay characteristic of the technology in use. The TDLs are implemented with the carry-chains, i.e. the CARRY8 primitive, available into the fabric of the XCKU040 device. Moreover, each channel is equipped with a decoder and a "bin-by-bin" dynamic calibrator able to compensate at best the non-linearity due to the difference among propagation delays of the CARRY8 blocks and the relative temperature drifts. Thanks to the configurability and the modularity provided by the FPGA structure, the presented architecture can be easily migrated on different families of Xilinx UltraScale and UltraScale+ FPGAs and System-on-Chips (SoCs). The read-out is performed via USB 3.0.},
+ author = {Lusardi, N. and Garzetti, F. and Corna, N. and Marco, R. De and Geraci, A.},
+ booktitle = {2019 IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)},
+ doi = {10.1109/NSS/MIC42101.2019.9059958},
+ issn = {2577-0829},
+ keyword = {Field programmable gate arrays;Decoding;Interpolation;Propagation delay;Calibration;Logic gates;Merging;Time-to-Digital Converter (TDC);Tapped Delay-Line (TDL);Decimated Delay-Line (DDL);Field Programmable Gate Array (FPGA);System-on-Chip (SoC);Bubble Errors;thermometric-to-binary converter;decoder;bin-by-bin calibration},
+ month = {Oct},
+ number = {},
+ pages = {1-4},
+ title = {Very High-Performance 24-Channels Time-to-Digital Converter in Xilinx 20-nm Kintex UltraScale FPGA},
+ volume = {},
+ year = {2019}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3660821,
+ abstract = {Modern programming languages promote software reuse via package managers that facilitate the integration of inter-dependent software libraries. Software reuse comes with the challenge of dependency bloat, which refers to unneeded and excessive code incorporated into a project through reused libraries. Such bloat exhibits security risks and maintenance costs, increases storage requirements, and slows down load times. In this work, we conduct a large-scale, fine-grained analysis to understand bloated dependency code in the PyPI ecosystem. Our analysis is the first to focus on different granularity levels, including bloated dependencies, bloated files, and bloated methods. This allows us to identify the specific parts of a library that contribute to the bloat. To do so, we analyze the source code of 1,302 popular Python projects and their 3,232 transitive dependencies. For each project, we employ a state-of-the-art static analyzer and incrementally construct the fine-grained project dependency graph (FPDG), a representation that captures all inter-project dependencies at method-level.Our reachability analysis on the FPDG enables the assessment of bloated dependency code in terms of several aspects, including its prevalence in the PyPI ecosystem, its relation to software vulnerabilities, its root causes, and developer perception. Our key finding suggests that PyPI exhibits significant resource underutilization: more than 50% of dependencies are bloated. This rate gets worse when considering bloated dependency code at a more subtle level, such as bloated files and bloated methods. Our fine-grained analysis also indicates that there are numerous vulnerabilities that reside in bloated areas of utilized packages (15% of the defects existing in PyPI). Other major observations suggest that bloated code primarily stems from omissions during code refactoring processes and that developers are willing to debloat their code: Out of the 36 submitted pull requests, developers accepted and merged 30, removing a total of 35 bloated dependencies. We believe that our findings can help researchers and practitioners come up with new debloating techniques and development practices to detect and avoid bloated code, ensuring that dependency resources are utilized efficiently.},
+ address = {New York, NY, USA},
+ articleno = {114},
+ author = {Drosos, Georgios-Petros and Sotiropoulos, Thodoris and Spinellis, Diomidis and Mitropoulos, Dimitris},
+ doi = {10.1145/3660821},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {software bloat, dependencies, debloating, call graph, Python, PyPI},
+ month = {July},
+ number = {FSE},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Bloat beneath Python’s Scales: A Fine-Grained Inter-Project Dependency Analysis},
+ url = {https://doi.org/10.1145/3660821},
+ volume = {1},
+ year = {2024}
+}

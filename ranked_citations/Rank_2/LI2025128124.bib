@@ -1,0 +1,13 @@
+@article{LI2025128124,
+ abstract = {The retinal vessels in the human fundus are the unique microvessels that can be observed non-invasively and refined segmentation is crucial for the diagnosis of related diseases. Nevertheless, current methods frequently neglect tiny capillary structures and are burdened with substantial computational overhead. To tackle these challenges,we propose a lightweight dual-branch network with frequency-aware decomposition, termed FreqUNet, capable of rapidly and accurately restoring thin vessels from complex fundus images. Initially, the proposed model employs the Discrete Wavelet Transform (DWT) to decompose the input image into two subgraphs. The low-frequency subgraph encapsulates the predominant structural details, whereas the high-frequency subgraph retains an amount of texture and edge information. Subsequently, within the low-frequency branch, the meticulously designed spatial frequency feature activation module (SFFA) integrates selective state space model (S6) into the spatial domain feature extraction process and employs Fourier Transform to further extract information in frequency domain, thereby generating refined vessel backbones. Meanwhile, with the high-frequency branch, the proposed cascaded dilated convolution activation unit (CDCA) is utilized to captures local texture features of microvessels at multiple scales.By halving the input resolution, this design considerably reduces computational demands without compromising informative content, while simultaneously enabling the network to capture more discriminative features and suppress noise artifacts. Ultimately, we employ a cross-frequency feature aggregation module (CFA) to merge the outputs of the two branches, leading to enhanced segmentation performance of retinal vessels through a standard decoder. We evaluated the proposed model on three public datasets: DRIVE, STARE and CHASE. The experimental results reveal that, in contrast to state-of-the-art methods, FreqUNet can achieve better statistical indicators and visualization results.},
+ author = {Ke Li and Yujiao Zhang and Tianfu Wang and Baiying Lei},
+ doi = {https://doi.org/10.1016/j.eswa.2025.128124},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Retinal vessel segmentation, Discrete wavelet transform, State space model, Dual-branch, Cross-frequency fusion},
+ pages = {128124},
+ title = {FreqUNet: a lightweight dual-branch network with frequency-aware decomposition for retinal vessel segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425017452},
+ volume = {287},
+ year = {2025}
+}

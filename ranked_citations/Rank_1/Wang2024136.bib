@@ -1,0 +1,14 @@
+@conference{Wang2024136,
+ abstract = {The random write performance is critical for a wide range of applications in the cloud. To accelerate such applications, researchers have proposed to realize a log structure in the file system (e.g., F2FS) to support out-of-place updates, so that random data writes can be converted to sequential ones that are more friendly to the physical storage devices. However, file systems are generally complex and internally tightly-coupled, and these proposals usually require writing new file systems from scratch, thus being impractical in many scenarios where the upper-layer applications need specific features and functionalities of existing file systems (like ext4 and xfs). Our insight is that it is more general and practical to realize out-of-place updates in the much simpler block layer in the kernel. Based on this insight, in this paper we present OnionDisk, a log-structured virtual block device (i.e., virtual disk) that efficiently realizes random data writes as sequential data log appends, allowing existing file systems (such as ext4, F2FS, and XFS) to stack on for achieving high random write performance. We design an LSM (log-structured-merge) tree based, address-optimized index for mapping the logical disk addresses of the virtual block device to the physical disk addresses of the data log, and implement a lightweight log cleaning mechanism to support fast deletions. Moreover, OnionDisk employs a dynamic polling mechanism to further improve write performance. Evaluation shows that incorporating OnionDisk into mainstream file systems can reduce the write latency by up to 6.5× and improve the throughput by up to 3.3× compared to these file systems without using OnionDisk.  © 2024 ACM.},
+ author = {Wang, Shiyu and Zhang, Zhihao and Zhang, Yiming},
+ doi = {10.1145/3678015.3680489},
+ journal = {APSys 2024 - Proceedings of the 15th ACM SIGOPS Asia-Pacific Workshop on Systems},
+ note = {Cited by: 1},
+ pages = {136 - 143},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {OnionDisk: A Log-Structured Write-Optimal Virtual Block Device},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85205119631?origin=resultslist},
+ year = {2024}
+}

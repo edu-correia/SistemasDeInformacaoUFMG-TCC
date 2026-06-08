@@ -1,0 +1,14 @@
+@inproceedings{7828388,
+ abstract = {Single linkage (SLINK) hierarchical clustering algorithm is a preferred clustering algorithm over traditional partitioning-based clustering as it does not require the number of clusters as input. But, due to its high time complexity and inherent data dependencies, it does not scale well for large datasets. To the best of our knowledge, all existing parallel SLINK algorithms are based on the traditional SLINK algorithm and thus require large number of computing resources. In this paper, we present a novel optimization of SLINK algorithm, GridSLINK, which is an order of magnitude faster than the existing state-of-the-art implementation. The optimization in GridSLINK comes from reduction in number of distance calculations required by SLINK. This reduction is achieved by exploiting spatial locality of data points and using an adaptive gridding technique. GridSLINK is parallelized for distributed memory systems. Scalable performance is achieved for increasing number of compute nodes. The proposed parallel algorithm, dGridSLINK, is benchmarked against the best existing parallel algorithm in literature and found to outperform the latter for all the real datasets considered. dGridSLINK can cluster millions of data points in few seconds/minutes using a small number of processing elements, without compromising the quality of clustering.},
+ author = {Goyal, Poonam and Kumari, Sonal and Sharma, Sumit and Kumar, Dhruv and Kishore, Vivek and Balasubramaniam, Sundar and Goyal, Navneet},
+ booktitle = {2016 IEEE 18th International Conference on High Performance Computing and Communications; IEEE 14th International Conference on Smart City; IEEE 2nd International Conference on Data Science and Systems (HPCC/SmartCity/DSS)},
+ doi = {10.1109/HPCC-SmartCity-DSS.2016.0047},
+ issn = {},
+ keyword = {Algorithm design and analysis;Clustering algorithms;Partitioning algorithms;Merging;Parallel algorithms;Approximation algorithms;Data structures;Parallel computing;multi-core;multi-node;clustering;SLINK;adaptive gridding},
+ month = {Dec},
+ number = {},
+ pages = {268-275},
+ title = {A Fast, Scalable SLINK Algorithm for Commodity Cluster Computing Exploiting Spatial Locality},
+ volume = {},
+ year = {2016}
+}

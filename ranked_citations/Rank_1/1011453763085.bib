@@ -1,0 +1,18 @@
+@article{10.1145/3763085,
+ abstract = {Effect handlers are a programming language feature that has recently gained   popularity. They allow for non-local yet structured control flow and subsume   features like generators, exceptions, asynchronicity, etc. However,   implementations of effect handlers currently often sacrifice features to enable efficient implementations.   Meta-tracing just-in-time (JIT) compilers promise to yield the performance of a   compiler by implementing an interpreter. They record execution   in a trace, dynamically detect hot loops, and aggressively optimize those using   information available at runtime. They excel at optimizing dynamic control   flow, which is exactly what effect handlers introduce.   We present the first evaluation of tracing JIT compilation specifically   for effect handlers. To this end, we developed RPython-based tracing JIT implementations for   Eff, Effekt, and Koka by compiling them to a common bytecode format.   We evaluate the performance, discuss which classes of effectful programs are optimized  well and how our additional optimizations influence performance. We also benchmark against   a baseline of state-of-the-art mainstream language implementations.},
+ address = {New York, NY, USA},
+ articleno = {307},
+ author = {Gai\ss{}ert, Marcial and Bolz-Tereick, CF and Brachth\"{a}user, Jonathan Immanuel},
+ doi = {10.1145/3763085},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Effect Handlers, Tracing JIT},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Tracing Just-in-Time Compilation for Effects and Handlers},
+ url = {https://doi.org/10.1145/3763085},
+ volume = {9},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@article{7299692,
+ abstract = {The internal state of the complex modern processors often needs to be dumped out frequently during postsilicon validation. Since the caches hold most of the state, the volume of data dumped and the transfer time are dominated by the large caches present in the architecture. The limited bandwidth to transfer data present in these large caches off-chip results in stalling the processor for long durations when dumping the cache contents off-chip. To alleviate this, we propose to transfer only those cache lines that were updated since the previous dump. Since maintaining a bit-vector with a separate bit to track the status of individual cache lines is expensive, we propose two methods: 1) where a bit tracks multiple cache lines and 2) an Interval Table which stores only the starting and ending addresses of continuous runs of updated cache lines. Both methods require significantly lesser space compared with a bit-vector, and allow the designer to choose the amount of space to allocate for this design-for-debug feature. The impact of reducing storage space is that some nonupdated cache lines are dumped too. We attempt to minimize such overheads. We propose a scheme to share such cache update tracking hardware (or Update Trackers) across multiple caches in case of physically distributed caches so that they are replicated fewer times, thereby limiting the area overhead. We show that the proposed Update Trackers occupy less than 1% of cache area for both the shared and distributed caches.},
+ author = {Chandran, Sandeep and Sarangi, Smruti R. and Panda, Preeti Ranjan},
+ doi = {10.1109/TVLSI.2015.2480378},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Program processors;Greedy algorithms;Merging;Hardware;Debugging;Very large scale integration;Aerospace electronics;Cache compression;parameterized design-for-debug (DFD) architecture;postsilicon validation;processor debug;state dump-driven debugging.;Cache compression;parameterized design-for-debug (DFD) architecture;postsilicon validation;processor debug;state dump-driven debugging},
+ month = {May},
+ number = {5},
+ pages = {1794-1807},
+ title = {Area-Aware Cache Update Trackers for Postsilicon Validation},
+ volume = {24},
+ year = {2016}
+}

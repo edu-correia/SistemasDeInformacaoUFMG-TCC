@@ -1,0 +1,16 @@
+@article{Qiu20244746,
+ abstract = {Given an evolving tensor time series and multiple time ranges, how can we compute Tucker decomposition for each time range efficiently and accurately? Tucker decomposition has been widely used in a variety of applications to obtain latent factors of tensor data. For example, Tucker decomposition on air pollution data allows us to analyze and compare air pollution patterns between different locations during different periods of time. In these applications, a common need is to compute Tucker decomposition for a given time range. Furthermore, real-world tensor time series are typically evolving in the time dimension. Such needs call for a data structure that can efficiently and accurately support range queries of Tucker decomposition and stream updates. Unfortunately, existing methods do not support either range queries or stream updates. For methods that do not support range queries, they have to re-compute from scratch for each query. Not until 2021 has a data structure called Zoom-Tucker been proposed to support range queries via block-wise preprocessing. However, Zoom-Tucker does not support stream updates and, more critically, suffers from a reluctant efficiency–accuracy tradeoff — a large block size causes inaccuracy, while a small block size leads to inefficiency. This challenging problem has remained open for years prior to our work. To solve this challenging problem, we propose TUCKET, a data structure that can efficiently and accurately handle both range queries and stream updates. Our key idea is to design a new data structure that we call a stream segment tree by generalizing the segment tree, a data structure that was originally invented for computational geometry. For a range query of length L, our TUCKET can find O(log L) nodes (called the hit set) from the tree and efficiently stitch their preprocessed decompositions to answer the range query. We also propose an algorithm to optimally prune the hit set via an approximation of subtensor decomposition. For the T-th stream update, our TUCKET modifies only amortized O(1) nodes and only O(logT) nodes in the worst case. Extensive evaluation demonstrates that our TUCKET consistently achieves the highest efficiency and accuracy across four large-scale datasets. Our TUCKET achieves at least 3 times lower latency and at least 1.4 times smaller reconstruction error than Zoom-Tucker on all datasets. The full version can be found at https://github.com/q-rz/TUCKET/blob/main/TUCKET-Full.pdf. © 2024, VLDB Endowment. All rights reserved.},
+ author = {Qiu, Ruizhong and Jang, Jun-Gi and Lin, Xiao and Liu, Lihui and Tong, Hanghang},
+ doi = {10.14778/3704965.3704980},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 5; All Open Access; Green Open Access},
+ number = {13},
+ pages = {4746 - 4759},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TUCKET: A Tensor Time Series Data Structure for Efficient and Accurate Factor Analysis over Time Ranges},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85217077887?origin=resultslist},
+ volume = {17},
+ year = {2024}
+}

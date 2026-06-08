@@ -1,0 +1,13 @@
+@article{YU2024112656,
+ abstract = {Aspect-based sentiment analysis (ABSA) aims to predict the sentiment polarity towards given aspects in a sentence. Recent research has highlighted that graph neural networks based on syntactic dependency trees effectively convey rich syntactic information and are suitable for ABSA tasks. Most existing work typically adopt either dependency type or minimum distance between nodes in the original syntactic tree to construct different views. However, existing work overlooks the high-dimensional local feature information in dependency relations, resulting in inadequate exploration of this view. Meanwhile, most work ignores that the minimum distance view and the dependency view can be complementary and integrated in syntactic analysis. Unfortunately, directly adding the two views introduces noise issues, leading to unsatisfactory results after their integration. To address these issues, this paper introduces an integrating dual syntactic views graph convolutional network (IDSV-GCN) model that seamlessly integrates dependency type view and minimum distance view, enabling comprehensive utilization of syntactic structure and information. To better address the computation of weights in the dependency type view, we innovatively propose a fusion attention mechanism. This approach effectively captures both global and local feature information. To more effectively integrate the two views and reduce the impact of noise, we employ a syntactic mask layer to filter out noise in the dependency type view and highlighting important dependency feature information. Then, we construct a minimum distance weight matrix based on the matrix obtained from the dependency type view. Finally, we merge the two matrices and feed them into the GCN to facilitate the model’s learning of syntactic information. Experimental results on three widely-used benchmark datasets demonstrate that our proposed IDSV-GCN model outperforms state-of-the-art methods.},
+ author = {Mei Yu and Feng Peng and Yue Zhao and Wenbin Zhang and Jian Yu and Mankun Zhao},
+ doi = {https://doi.org/10.1016/j.knosys.2024.112656},
+ issn = {0950-7051},
+ journal = {Knowledge-Based Systems},
+ keyword = {Aspect-based sentiment analysis, Graph convolutional network, Syntactic dependency parsing},
+ pages = {112656},
+ title = {IDSV-GCN: Integrating Dual Syntactic Views Graph Convolutional Network for aspect-based sentiment analysis},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950705124012905},
+ volume = {305},
+ year = {2024}
+}

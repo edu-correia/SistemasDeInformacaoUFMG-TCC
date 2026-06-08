@@ -1,0 +1,14 @@
+@article{6698391,
+ abstract = {We present a symbolic execution-based technique for cross-checking programs accelerated using SIMD or OpenCL against an unaccelerated version, as well as a technique for detecting data races in OpenCL programs. Our techniques are implemented in KLEE-CL, a tool based on the symbolic execution engine KLEE that supports symbolic reasoning on the equivalence between expressions involving both integer and floating-point operations. While the current generation of constraint solvers provide effective support for integer arithmetic, the situation is different for floating-point arithmetic, due to the complexity inherent in such computations. The key insight behind our approach is that floating-point values are only reliably equal if they are essentially built by the same operations. This allows us to use an algorithm based on symbolic expression matching augmented with canonicalisation rules to determine path equivalence. Under symbolic execution, we have to verify equivalence along every feasible control-flow path. We reduce the branching factor of this process by aggressively merging conditionals, if-converting branches into select operations via an aggressive phi-node folding transformation. To support the Intel Streaming SIMD Extension (SSE) instruction set, we lower SSE instructions to equivalent generic vector operations, which in turn are interpreted in terms of primitive integer and floating-point operations. To support OpenCL programs, we symbolically model the OpenCL environment using an OpenCL runtime library targeted to symbolic execution. We detect data races by keeping track of all memory accesses using a memory log, and reporting a race whenever we detect that two accesses conflict. By representing the memory log symbolically, we are also able to detect races associated with symbolically-indexed accesses of memory objects. We used KLEE-CL to prove the bounded equivalence between scalar and data-parallel versions of floating-point programs and find a number of issues in a variety of open source projects that use SSE and OpenCL, including mismatches between implementations, memory errors, race conditions and a compiler bug.},
+ author = {Collingbourne, Peter and Cadar, Cristian and Kelly, Paul H.J.},
+ doi = {10.1109/TSE.2013.2297120},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Vectors;Kernel;Computational modeling;Computer architecture;Semantics;Programming;Parallel processing;Data-parallel code;floating point;symbolic execution;SIMD;OpenCL;KLEE-CL},
+ month = {July},
+ number = {7},
+ pages = {710-737},
+ title = {Symbolic Crosschecking of Data-Parallel Floating-Point Code},
+ volume = {40},
+ year = {2014}
+}

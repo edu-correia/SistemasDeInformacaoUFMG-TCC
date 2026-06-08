@@ -1,0 +1,14 @@
+@article{11352826,
+ abstract = {This letter proposes R-VoxelMap, a novel voxel mapping method that constructs accurate voxel maps using a geometry-driven recursive plane fitting strategy to enhance the localization accuracy of online LiDAR odometry. VoxelMap and its variants typically fit and check planes using all points in a voxel, which may lead to plane parameter deviation caused by outliers, over segmentation of large planes, and incorrect merging across different physical planes. To address these issues, R-VoxelMap utilizes a geometry-driven recursive construction strategy based on an outlier detect-and-reuse pipeline. Specifically, for each voxel, accurate planes are first fitted while separating outliers using random sample consensus (RANSAC). The remaining outliers are then propagated to deeper octree levels for recursive processing, ensuring a detailed representation of the environment. In addition, a point distribution-based validity check algorithm is devised to prevent erroneous plane merging. Extensive experiments on diverse open-source LiDAR(-inertial) simultaneous localization and mapping (SLAM) datasets validate that our method achieves higher accuracy than other state-of-the-art approaches, with comparable efficiency and memory usage.},
+ author = {Xi, Haobo and Zhang, Shiyong and Dong, Qianli and Tong, Yunze and Wu, Songyang and Yuan, Jing and Zhang, Xuebo},
+ doi = {10.1109/LRA.2026.3653337},
+ issn = {2377-3766},
+ journal = {IEEE Robotics and Automation Letters},
+ keyword = {Accuracy;Odometry;Octrees;Merging;Laser radar;Point cloud compression;Fitting;Uncertainty;Trees (botanical);Pipelines;SLAM;range sensing;mapping},
+ month = {March},
+ number = {3},
+ pages = {2402-2409},
+ title = {R-VoxelMap: Accurate Voxel Mapping With Recursive Plane Fitting for Online LiDAR Odometry},
+ volume = {11},
+ year = {2026}
+}

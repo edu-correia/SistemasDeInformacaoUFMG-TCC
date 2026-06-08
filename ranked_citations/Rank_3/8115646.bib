@@ -1,0 +1,14 @@
+@inproceedings{8115646,
+ abstract = {Reverse engineering binary code is notoriously difficult and, especially, understanding a binary's dynamic data structures. Existing data structure analyzers are limited wrt. program comprehension: they do not detect complex structures such as skip lists, or lists running through nodes of different types such as in the Linux kernel's cyclic doubly-linked list. They also do not reveal complex parent-child relationships between structures. The tool DSI remedies these shortcomings but requires source code, where type information on heap nodes is available. We present DSIbin, a combination of DSI and the type excavator Howard for the inspection of C/C++ binaries. While a naive combination already improves upon related work, its precision is limited because Howard's inferred types are often too coarse. To address this we auto-generate candidates of refined types based on speculative nested-struct detection and type merging; the plausibility of these hypotheses is then validated by DSI. We demonstrate via benchmarking that DSIbin detects data structures with high precision.},
+ author = {Rupprecht, Thomas and Chen, Xi and White, David H. and Boockmann, Jan H. and Lüttgen, Gerald and Bos, Herbert},
+ booktitle = {2017 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+ doi = {10.1109/ASE.2017.8115646},
+ issn = {},
+ keyword = {Tools;Shape;Data structures;Linux;Kernel;Benchmark testing;Merging;Data structure identification;reverse engineering;dynamic data structures;pointer programs;type recovery},
+ month = {Oct},
+ number = {},
+ pages = {331-341},
+ title = {DSIbin: Identifying dynamic data structures in C/C++ binaries},
+ volume = {},
+ year = {2017}
+}

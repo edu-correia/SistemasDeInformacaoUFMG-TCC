@@ -1,0 +1,14 @@
+@inproceedings{9050145,
+ abstract = {In order to accelerate the improvement of the blockchain's efficiency of tracing fresh data, this paper proposes a novel method of tracing data based on LevelDB. In the process of blockchain source tracing, it is necessary to query data in the history database This paper proposes an improved method for querying high-fresh data in memory while consuming a small amount of space on the commonly used database LevelDB in the blockchain. Hash indexes are applied to LevelDB's memory and build hash indexes on MemTable and Immutable MemTable respectively. When MemTable is converted to Immutable MemTable and data is stored from memory to disk, the index will be converted and deleted accordingly to prevent the index from occupying too much space. Indexing the data in memory makes the query speed of fresh data faster and because of the amount of data will not be too large, the serious hash conflicts will not be resulted in. The experimental results show that the query speed for data in memory has been improved with the limition of writing performance impaction.},
+ author = {Liu, Xinhua and Yu, Xirui and Ma, Xiaolin and Kuang, Hailan},
+ booktitle = {2020 12th International Conference on Measuring Technology and Mechatronics Automation (ICMTMA)},
+ doi = {10.1109/ICMTMA50254.2020.00179},
+ issn = {2157-1481},
+ keyword = {Mechatronics;Automation;Databases;Memory management;Blockchains;Compaction;Indexes;Blockchain;LevelDB;Hash index},
+ month = {Feb},
+ number = {},
+ pages = {823-827},
+ title = {A Method to Improve the Fresh Data Query Efficiency of Blockchain},
+ volume = {},
+ year = {2020}
+}

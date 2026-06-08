@@ -1,0 +1,14 @@
+@article{11348025,
+ abstract = {Anomaly detection in system logs has attracted considerable interest with the development of deep learning and big data. Many methods and approaches have achieved good results in log anomaly detection, but exploiting the rich dependencies hidden in log data remains an extremely challenging task. Recently, Transformer-based models, such as LogBERT, represent a strong and promising foundation thanks to their ability to capture rich contextual information within log sequences. The limitation of these models is that they mainly treat logs as a sequence of discrete tokens, neglecting the crucial and continuous information embedded in the temporal and numerical dynamics between events. This limitation can lead to a high false positive rate, thus reducing the practical utility of the model. In this work, we propose DualBERT, a hybrid framework designed to address this gap. Our approach leverages a dual-model architecture: 1) a primary Transformer (LogBERT) to analyze the log’s symbolic key sequence; 2) a parallel and specialized parameter model represented by an LSTM-based regressor that analyzes inter-event features such as temporal deltas and cyclic patterns. The anomaly scores of both models are then fused using an XGBoost classifier to produce a final robust decision. We conduct a rigorous and fully supervised evaluation on the HDFS benchmark dataset. Our results demonstrate that DualBERT achieves an F1 score of 98.75%, significantly surpassing the satisfactorily evaluated LogBERT benchmark (98.29%). This improvement is mainly due to a substantial increase in accuracy (from 96.64% to 97.70%) and a 43% reduction in the false positive rate. Our results confirm that merging symbolic sequence analysis with dedicated inter-event dynamic modeling is an effective strategy to create a more reliable and practical system for real-world logarithmic anomaly detection.},
+ author = {Alzamil, Ahmed and Guesmi, Ramzi and Alghadhban, Amer and Guesmi, Tawfik and Kachouri, Abdennaceur},
+ doi = {10.1109/ACCESS.2026.3653996},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Anomaly detection;Transformers;Deep learning;Adaptation models;Training;Numerical models;Benchmark testing;Analytical models;Accuracy;Semantics;Log anomaly detection;deep learning;transformer;LogBERT;feature fusion;dual-model architecture;time-series analysis;XGBoost},
+ month = {},
+ number = {},
+ pages = {11369-11384},
+ title = {DualBERT: Fusing Symbolic and Temporal Dynamics for High-Precision Log Anomaly Detection},
+ volume = {14},
+ year = {2026}
+}

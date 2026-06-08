@@ -1,0 +1,14 @@
+@conference{Kaushik202423,
+ abstract = {Log-structured merge (LSM) tree is an ingestion-optimized data structure that is widely used in modern NoSQL key-value stores. To support high throughput for writes, LSM-trees maintain an in-memory buffer that absorbs the incoming entries before writing them to slower secondary storage. We point out that the choice of the data structure and implementation of the memory buffer has a significant impact on the overall performance of LSM-based storage engines. In fact, even with the same implementation of the buffer, the performance of a storage engine can vary by up to several orders of magnitude if there is a shift in the input workload. In this paper, we benchmark the performance of LSM-based storage engines with different memory buffer implementations and under different workload characteristics. We experiment with four buffer implementations, namely, (i) vector, (ii) skip-list, (iii) hash skip-list, and (iv) hash linked-list, and for each implementation, we vary any design choices (such as bucket count in a hash skip-list and prefix length in a hash linked-list). We present a comprehensive performance benchmark for each buffer configuration, and highlight how the relative performance of the different buffer implementations varies with a shift in input workload. Lastly, we present a guideline for selecting the appropriate buffer implementation for a given workload and performance goal. © 2024 Owner/Author.},
+ author = {Kaushik, Shubham and Sarkar, Subhadeep},
+ doi = {10.1145/3662165.3662766},
+ journal = {DBTest 2024 - Proceedings of the 10th International Workshop on Testing Database Systems},
+ note = {Cited by: 3; All Open Access; Gold Open Access},
+ pages = {23 - 29},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Anatomy of the LSM Memory Buffer: Insights & Implications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85197281360?origin=resultslist},
+ year = {2024}
+}

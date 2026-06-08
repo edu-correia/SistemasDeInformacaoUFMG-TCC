@@ -1,0 +1,17 @@
+@article{10.14778/3598581.3598585,
+ abstract = {We present WiscSort, a new approach to high-performance concurrent sorting for existing and future byte-addressable storage (BAS) devices. WiscSort carefully reduces writes, exploits random reads by splitting keys and values during sorting, and performs interference-aware scheduling with thread pool sizing to avoid I/O bandwidth degradation. We introduce the BRAID model which encompasses the unique characteristics of BAS devices. Many state-of-the-art sorting systems do not comply with the BRAID model and deliver sub-optimal performance, whereas WiscSort demonstrates the effectiveness of complying with BRAID. We show that WiscSort is 2-7x faster than competing approaches on a standard sort benchmark. We evaluate the effectiveness of key-value separation on different key-value sizes and compare our concurrency optimizations with various other concurrency models. Finally, we emulate generic BAS devices and show how our techniques perform well with various combinations of hardware properties.},
+ author = {Banakar, Vinay and Wu, Kan and Patel, Yuvraj and Keeton, Kimberly and Arpaci-Dusseau, Andrea C. and Arpaci-Dusseau, Remzi H.},
+ doi = {10.14778/3598581.3598585},
+ issn = {2150-8097},
+ issue_date = {May 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {14},
+ pages = {2103–2116},
+ publisher = {VLDB Endowment},
+ title = {WiscSort: External Sorting for Byte-Addressable Storage},
+ url = {https://doi.org/10.14778/3598581.3598585},
+ volume = {16},
+ year = {2023}
+}

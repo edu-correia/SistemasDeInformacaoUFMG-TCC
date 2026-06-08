@@ -1,0 +1,14 @@
+@conference{Xanthakis202643,
+ abstract = {Log-structured merge-tree (LSM) engines such as RocksDB achieve high write throughput by buffering updates in memory and propagating them to disk through background compactions. However, once intermediate levels become saturated, the engine must synchronously compact large volumes of data before it can accept new writes, leading to multi-second write stalls even at moderate overall storage utilization.We present Rabbit, a compaction design that bounds the amount of compulsory compaction work on the ingest path. Rather than relying on compaction scheduling or deferral, Rabbit changes the granularity at which compaction is performed and prioritizes low-amplification key ranges, allowing the engine to unblock writes after compacting abounded amount of data.Our evaluation using a RocksDB-based prototype shows that Rabbit performs subsecond write stalls in our evaluated workloads without increasing write amplification relative to the default leveled compaction policy.  © 2026 Copyright held by the owner/author(s).},
+ author = {Xanthakis, Giorgos and Katsarakis, Antonis and Saloustros, Georgios and Bilas, Angelos},
+ doi = {10.1145/3805687.3806260},
+ journal = {Proceedings of the 6th Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems, CHEOPS 2026},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {43 - 49},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Compaction Size and Tail Latency in LSM-based Key-Value Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105038352392?origin=resultslist},
+ year = {2026}
+}

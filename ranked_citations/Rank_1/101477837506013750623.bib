@@ -1,0 +1,17 @@
+@article{10.14778/3750601.3750623,
+ abstract = {High-reliability distributed coordination services have become an indispensable part of modern large-scale distributed systems. Popular coordination services (e.g., ZooKeeper) adopt a single-writer design to provide a centralized service for managing system metadata, including various configuration information and data catalogs, and to provide distributed synchronization functions. With the continuous increase in metadata size and the scale of distributed systems, these coordination services gradually become performance bottlenecks due to their limitations in capacity, read and write performance, and scalability.To bridge the gaps, we propose FDBKeeper, a novel solution that enables scalable coordination services on distributed ACID key-value database systems. Our motivation is that transactional key-value stores (i.e., FoundationDB) meet the demands of performance and scalability required by large-scale distributed systems over coordination service. To leverage these advantages, coordination services can be implemented as an upper layer on top of distributed ACID key-value databases. Our experimental results demonstrate that FDBKeeper significantly outperforms ZooKeeper across key metrics. Additionally, FDBKeeper reduces hardware resource costs on average by 33% in the production environment, resulting in substantial monetary cost savings. We have successfully replaced ZooKeeper with FDBKeeper in the production-grade ClickHouse cluster deployment.},
+ author = {Zhu, Jun-Peng and Zhang, Lingfeng and Cai, Peng and Zhou, Xuan and Zhao, Peisen and Wang, Xue and Tang, Linpeng},
+ doi = {10.14778/3750601.3750623},
+ issn = {2150-8097},
+ issue_date = {August 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {13},
+ pages = {5004–5016},
+ publisher = {VLDB Endowment},
+ title = {FDBKeeper: Enabling Scalable Coordination Services for Metadata Management Using Distributed Key-Value Databases},
+ url = {https://doi.org/10.14778/3750601.3750623},
+ volume = {18},
+ year = {2025}
+}

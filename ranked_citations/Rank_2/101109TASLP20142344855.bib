@@ -1,0 +1,18 @@
+@article{10.1109/TASLP.2014.2344855,
+ abstract = {The data sparsity problem is addressed by using the decision tree state clusters as the training targets for the state-of-the-art context-dependent (CD) deep neural network (DNN) systems. The CD states within a cluster cannot be distinguished at the frame level. We surmise that the state clustering may cause an issue for the standard CD-DNNs, which has so far not been addressed in the literature. In this paper, a logistic regression framework is proposed for the CD-DNNs based on a set of broad phone classes to address both the data sparsity and the clustering problems. To address the data sparsity issue, the triphones are clustered into shorter biphones with broad phone contexts under multiple articulatory categories. A DNN is trained to discriminate the disjoint biphone clusters within each articulatory category. The regression bases are formed by the concatenated log posterior probabilities of all the broad phone DNNs. Logistic regression is used to transform the regression bases into the triphone state posteriors. Clustering of the regression parameters is used to reduce the regression model complexity while still achieving unique acoustic scores for all possible triphones. Based on some approximations, the regression model can be trained as a sparse softmax layer and its parameters can be learned by optimizing the cross-entropy criterion. The experimental results on a broadcast news transcription task reveal that the proposed regression-based CD-DNN significantly outperforms the standard CD-DNN. The best system provides a 1.3% absolute word error rate reduction compared to the best standard CD-DNN system.},
+ author = {Wang, Guangsen and Sim, Khe Chai},
+ doi = {10.1109/taslp.2014.2344855},
+ issn = {2329-9290},
+ issue_date = {November 2014},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ keyword = {logistic regression, deep neural network, context dependent modeling, articulatory features},
+ month = {November},
+ number = {11},
+ numpages = {10},
+ pages = {1660–1669},
+ publisher = {IEEE Press},
+ title = {Regression-based context-dependent modeling of deep neural networks for speech recognition},
+ url = {https://doi.org/10.1109/TASLP.2014.2344855},
+ volume = {22},
+ year = {2014}
+}

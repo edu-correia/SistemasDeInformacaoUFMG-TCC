@@ -1,0 +1,14 @@
+@inproceedings{11485199,
+ abstract = {With the deployment of deep neural networks to edge devices, low-bit (e.g., 4-bit) quantization has become a key technology for reducing computational and storage overhead. However, at low bit-widths, conventional one-dimensional activation functions face the challenge of numerical diversity loss, where a large number of features are merged into a limited number of quantization levels, resulting in significant information loss. For 4-bit quantized neural networks, this paper proposes Bivariate Lookup Table Activation, based on adaptive channel grouping. This method utilizes the channel locality of memory layout to design a channel cyclic shift operator without additional copies. Crucially, it introduces a correlation-based static reordering mechanism. By employing a spatial flattening strategy and a greedy sequence construction algorithm, the method maps semantically correlated channels to physically adjacent positions offline, thereby maximizing the validity of context information without increasing inference overhead. Coupled with a differentiable training technique based on bilinear interpolation it achieves the joint optimization of LUT parameters and network weights, overcoming the context-independent limitation of traditional one-dimensional activation functions. By introducing features from physically adjacent channels as context inputs, this paper constructs a two-dimensional mapping relationship that expands the theoretical input combinations from 16 to 256 without increasing the input bit-width, thereby enhancing the diversity of output feature representation. Experimental results demonstrate that this paper achieves $\mathbf{4}$-bit quantization performance of $\mathbf{6 9. 1 \%}$ (Top-1 accuracy) on ResNet-18 (ImageNet) and 77.5% ($\text{mAP}_{0.5}$) on YOLOv5s (Pascal VOC), respectively, outperforming existing methods such as LSQ. Furthermore, it adds a negligible storage overhead of only 128 bytes per layer, effectively balancing accuracy and efficiency in edge inference.},
+ author = {Wang, Xiyu and Chen, Changlin and Zhang, Bohao and Xu, Jia and Liu, Jiali and Zhang, Ye and Liu, Haijun and Li, Zhiwei},
+ booktitle = {2026 5th International Conference on Electronics Technology and Artificial Intelligence (ETAI)},
+ doi = {10.1109/ETAI68332.2026.11485199},
+ issn = {},
+ keyword = {Field programmable gate arrays;Circuits;Logic gates;Integrated circuits;Network topology;Protocols;Network architecture;Pixel;Communications technology;HTTP;Neural Network Quantization;4-bit Quantization;Differentiable LUT;Bilinear Interpolation},
+ month = {March},
+ number = {},
+ pages = {1-7},
+ title = {Neural Network Quantization Based on 4-Bit Bivariate Lookup Table Activation*},
+ volume = {},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{10321658,
+ abstract = {This letter presents VoxelMap++: a voxel mapping method with plane merging which can effectively improve the accuracy and efficiency of LiDAR(-inertial) based simultaneous localization and mapping (SLAM). This map is a collection of voxels that contains one plane feature with 3DOF representation and corresponding covariance estimation. Considering map will contain a large number of coplanar features (kid planes), these kid planes' can be regarded as the measurements with covariance of a larger plane (father plane). Thus, we have designed a plane merging module based on the union-find. This merging module is capable of distinguishing co-plane relationship within various voxels, then merge these kid planes to estimate the father plane by minimizing the trace of covariance. After merging, the father plane exhibits more accurate compare to kids plane, with decreasing of uncertainty, which improve the accuracy of LiDAR(-inertial) odometry. Experiments on different environments demonstrate the superior of VoxelMap++ compared with other state-of-the-art methods (see our attached video). Our implementation is open-sourced on GitHub which is applicable for both non-repetitive scanning LiDARs and traditional scanning LiDAR.},
+ author = {Wu, Chang and You, Yuan and Yuan, Yifei and Kong, Xiaotong and Zhang, Ying and Li, Qiyan and Zhao, Kaiyong},
+ doi = {10.1109/LRA.2023.3333736},
+ issn = {2377-3766},
+ journal = {IEEE Robotics and Automation Letters},
+ keyword = {Laser radar;Odometry;Merging;Estimation;Point cloud compression;Fitting;Robustness;Mapping;union-find;localization;simultaneous localization and mapping (SLAM)},
+ month = {Jan},
+ number = {1},
+ pages = {427-434},
+ title = {VoxelMap++: Mergeable Voxel Mapping Method for Online LiDAR(-Inertial) Odometry},
+ volume = {9},
+ year = {2024}
+}

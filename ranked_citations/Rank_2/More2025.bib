@@ -1,0 +1,14 @@
+@conference{More2025,
+ abstract = {Conventional database indexes, although popular, are not memory efficient and usually do not take the data distribution of the underlying workloads into account, which may lead to performance issues. In recent years, substantial research has focused on enhancing the performance of index lookups and reducing the memory footprint of the indexes. One promising research area is the development of learned indexes, which can deliver notable performance gains over traditional indexing methods. Methods like ALEX and LIPP facilitate updates in learned index frameworks but at the cost of higher memory consumption and slower query performance. We introduce a lightweight updatable learned index, called FALCON (FPGA Accelerated Lightweight COmpression-based learNed index). FALCON is the first FPGA-based lightweight learned index that supports updates and insertion. This approach devises an effective compression technique facilitating faster key lookups. Our experiments involved first evaluating a CPU-based implementation of our approach against existing leading learned index approaches. With a CPU-based implementation of FALCON, we observed an average performance boost of 25 × during the Build phase and more than 2.2 × speedup during the Lookup phase on SOSD benchmark datasets, along with a 26 × improvement in memory efficiency. We also evaluated FALCON's performance with frequent updates, in which it achieved around 3.5 × better memory efficiency compared to existing updatable learned indexes, such as ALEX. For the datasets exhibiting uniform distribution, we achieved a similar update throughput as ALEX, while in the case of skewed distribution, ALEX performed better. Nonetheless, runtime and memory usage usually escalate as data size scales, prompting us to employ FPGA to accelerate the build phase of our approach. We then evaluated FALCON's FPGA-based implementation against the CPU-based counterpart, in which it achieved a build stage speedup of 17 ×, and a total speedup of 5.5 ×. Against the FPGA-based RadixSpline, we achieved a total of 7.6 × better performance on FPGA. © 2025 Copyright held by the owner/author(s).},
+ author = {More, Geetesh and Ray, Suprio and Kent, Kenneth B.},
+ doi = {10.1145/3733723.3733737},
+ journal = {Scalable Scientific Data Management 37th International Conference, SSDBM 2025 - Proceedings},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FALCON: FPGA Accelerated Lightweight Updatable Learned Index},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105036522037?origin=resultslist},
+ year = {2025}
+}

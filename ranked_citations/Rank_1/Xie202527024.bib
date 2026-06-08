@@ -1,0 +1,14 @@
+@conference{Xie202527024,
+ abstract = {The Mixture of Experts (MoE) architecture enables efficient model scaling through conditional computation, where only subset of parameters are activated per input. However, this distributed architecture poses unprecedented challenges for model compression, as conventional quantization methods optimized for dense networks prove inadequate. This paper introduces a specialized quantization framework for MoE architectures, motivated by our discovery that weight matrices across expert networks exhibit distinctive channel-wise outlier distributions, necessitating a more nuanced compression approach. Through theoretical analysis incorporating Fisher Information matrices and condition number characteristics, we establish a fundamental relationship between layer functionality and quantization sensitivity, demonstrating that down-projection layers inherently demand higher precision compared to up-projection layers. Leveraging these insights, we develop an automated channel-wise quantization framework that dynamically determines optimal bit-width allocations while maintaining minimal computational overhead through efficient statistical approximations. When evaluated on the Mixtral-8x7b-v0.1 architecture, our methodology demonstrates a 3.96% improvement over existing state-of-the-art approaches across natural language understanding benchmarks, while achieving superior compression ratios. Code is available at: https://github.com/cei1ing4/FineGrained-MoE-Quantization. © 2025 Association for Computational Linguistics.},
+ author = {Xie, Zhanhao and Ma, Yuexiao and Zheng, Xiawu and Chao, Fei and Sui, Wanchen and Li, Yong and Li, Shen and Ji, Rongrong},
+ doi = {10.18653/v1/2025.findings-acl.1386},
+ journal = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+ note = {Cited by: 2; All Open Access; Gold Open Access},
+ pages = {27024 - 27037},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Automated Fine-Grained Mixture-of-Experts Quantization},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105028556079?origin=resultslist},
+ year = {2025}
+}

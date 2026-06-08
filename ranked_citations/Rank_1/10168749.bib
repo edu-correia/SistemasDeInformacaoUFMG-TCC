@@ -1,0 +1,14 @@
+@article{10168749,
+ abstract = {Perspective distortions and crowd variations make crowd counting a challenging task in computer vision. To tackle it, many previous works have used multi-scale architecture in deep neural networks (DNNs). Multi-scale branches can be either directly merged (e.g. by concatenation) or merged through the guidance of proxies (e.g. attentions) in the DNNs. Despite their prevalence, these combination methods are not sophisticated enough to deal with the per-pixel performance discrepancy over multi-scale density maps. In this work, we redesign the multi-scale neural network by introducing a hierarchical mixture of density experts, which hierarchically merges multi-scale density maps for crowd counting. Within the hierarchical structure, an expert competition and collaboration scheme is presented to encourage contributions from all scales; pixel-wise soft gating nets are introduced to provide pixel-wise soft weights for scale combinations in different hierarchies. The network is optimized using both the crowd density map and the local counting map, where the latter is obtained by local integration on the former. Optimizing both can be problematic because of their potential conflicts. We introduce a new relative local counting loss based on relative count differences among hard-predicted local regions in an image, which proves to be complementary to the conventional absolute error loss on the density map. Experiments show that our method achieves the state-of-the-art performance on five public datasets, i.e. ShanghaiTech, UCF_CC_50, JHU-CROWD++, NWPU-Crowd and Trancos. Our codes will be available at https://github.com/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting.},
+ author = {Du, Zhipeng and Shi, Miaojing and Deng, Jiankang and Zafeiriou, Stefanos},
+ doi = {10.1109/TIP.2023.3289290},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Estimation;Neural networks;Task analysis;Feature extraction;Computer architecture;Optimization;Deep learning;Crowd counting;multi-scale neural network;mixture of experts;relative local counting},
+ month = {},
+ number = {},
+ pages = {3664-3678},
+ title = {Redesigning Multi-Scale Neural Network for Crowd Counting},
+ volume = {32},
+ year = {2023}
+}

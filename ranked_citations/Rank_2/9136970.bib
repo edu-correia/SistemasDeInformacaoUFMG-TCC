@@ -1,0 +1,14 @@
+@inproceedings{9136970,
+ abstract = {The most widely adopted approach for layout capacitance extraction is pattern matching, where a layout is partitioned into small sections and matched against a pre-characterized pattern library. The capacitance formula associated with the matched pattern is used to compute the capacitance. The pattern matching approach can meet the speed and capacity requirements for large ASICs, but the pattern library and associated formula must be manually created by experienced engineers through a tedious process. For each new process node or any change to the technology profile, this process has to be repeated, causing a heavy burden on the EDA vendors and delays in PDK releases by the foundries. In this paper, we propose an automatic approach that significantly reduces the effort and time compared with the manual approach for the pattern matching method for capacitance extraction. Our approach consists of the following steps: 1) generate sample geometries that cover the problem space, 2) for each sample geometry, call a field solver to compute the capacitance value, 3) use unsupervised learning with the field solver values and foundry values as guidance to cluster geometries into patterns and derive the capacitance formula, and 4) use supervised learning to train a neural network that will be used to classify any layout geometry into a pattern in the library, which will be used at the extraction time. Experiment results show the proposed approach achieves satisfactory accuracy well above the foundry requirements and runs as fast as traditional pattern matching software. Although our approach is only demonstrated for 2D, it is the first framework using the automatic procedure and machine learning in capacitance extraction. As the interconnect structures and foundry requirements become more complex, our approach may be attractive to EDA vendors and foundries.},
+ author = {Li, Zhixing and Shi, Weiping},
+ booktitle = {2020 21st International Symposium on Quality Electronic Design (ISQED)},
+ doi = {10.1109/ISQED48828.2020.9136970},
+ issn = {1948-3287},
+ keyword = {Geometry;Three-dimensional displays;Layout;Neural networks;Capacitance;Libraries;Foundries;EDA;VLSI;interconnect;automatic pre-characterization;pattern matching;neural network;machine learning;parasitic capacitance extraction},
+ month = {March},
+ number = {},
+ pages = {457-464},
+ title = {Layout Capacitance Extraction Using Automatic Pre-Characterization and Machine Learning},
+ volume = {},
+ year = {2020}
+}

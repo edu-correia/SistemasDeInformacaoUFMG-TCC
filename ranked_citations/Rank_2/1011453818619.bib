@@ -1,0 +1,15 @@
+@article{10.1145/3818619,
+ abstract = {With the rapid advancement of artificial intelligence (AI), particularly the widespread adoption of large language models (LLMs) in code comprehension and analysis, their strong semantic parsing capabilities have introduced new threats to software security. Attackers can exploit LLMs to reverse-engineer the deeper semantic logic of code, steal core algorithms, or uncover vulnerabilities, thereby endangering software intellectual property and system security. This work introduces SemAder, a structure–semantics joint induction framework that generates adversarial yet function-preserving binaries to mislead LLMs’ functional judgments in binary analysis, thereby reducing the reliability of LLM-assisted semantic analysis during reverse engineering. SemAder comprises three core components: (1) a control-flow-labeled induced corpus annotated with structural tags and code semantics; (2) a hybrid similarity-driven corpus selection mechanism that favors structural proximity with semantic divergence; and (3) a reinforcement-learning-driven semantic fusion pipeline that incorporates constant externalization and context-aware semantic enhancement to strengthen induction against high-capability LLMs. Experimental results across eight LLM evaluators demonstrate that SemAder consistently shifts model predictions toward the induced target category, achieving an average induction gap of 0.77 and maintaining effectiveness under adversarial prompt variants and multi-agent post-processing workflows. SemAder also misleads the CLAP code classification model (− 63.5% original-class confidence) and reduces similarity scores across four binary similarity detectors (Asm2Vec, BinDiff, SAFE, Gemini) to an average of 0.51, with only 12.7% average binary size increase and 8.8% average runtime overhead.},
+ address = {New York, NY, USA},
+ author = {Wang, Yingqi and Kang, Fei and Shu, Hui and Xiong, XiaoBing and Yang, Ju},
+ doi = {10.1145/3818619},
+ issn = {2471-2566},
+ journal = {ACM Trans. Priv. Secur.},
+ keyword = {LLM-assisted reverse engineering, binary code analysis, adversarial code transformation, structure-semantics joint induction},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {SemAder: Evading LLM-Based Binary Code Analysis via Structure-Semantics Joint Induction},
+ url = {https://doi.org/10.1145/3818619},
+ year = {2026}
+}

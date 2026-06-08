@@ -1,0 +1,15 @@
+@conference{Müller20151123,
+ abstract = {For decades researchers have studied the duality of hashing and sorting for the implementation of the relational operators, especially for efficient aggregation. Depending on the underlying hardware and software architecture, the specifically implemented algorithms, and the data sets used in the experiments, different authors came to different conclusions about which is the better approach. In this paper we argue that in terms of cache efficiency, the two paradigms are actually the same. We support our claim by showing that the complexity of hashing is the same as the complexity of sorting in the external memory model. Furthermore we make the similarity of the two approaches obvious by designing an algorithmic framework that allows to switch seamlessly between hashing and sorting during execution. The fact that we mix hashing and sorting routines in the same algorithmic framework allows us to leverage the advantages of both approaches and makes their similarity obvious. On a more practical note, we also show how to achieve very low constant factors by tuning both the hashing and the sorting routines to modern hardware. Since we observe a complementary dependency of the constant factors of the two routines to the locality of the input, we exploit our framework to switch to the faster routine where appropriate. The result is a novel relational aggregation algorithm that is cache-efficient-independently and without prior knowledge of input skew and output cardinality-, highly parallelizable on modern multi-core systems, and operating at a speed close to the memory bandwidth, thus outperforming the state-of-the-art by up to 3:7×.},
+ author = {Müller, Ingo and Sanders, Peter and Lacurie, Arnaud and Lehner, Wolfgang and Färber, Franz},
+ doi = {10.1145/2723372.2747644},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 50; All Open Access; Green Open Access},
+ pages = {1123 - 1136},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Cache-efficient aggregation: Hashing is sorting},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84957590473?origin=resultslist},
+ volume = {2015-May},
+ year = {2015}
+}

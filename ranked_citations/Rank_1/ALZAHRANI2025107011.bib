@@ -1,0 +1,13 @@
+@article{ALZAHRANI2025107011,
+ abstract = {Class imbalance is a persistent challenge in medical classification tasks, where instances of disease are often underrepresented. To tackle this issue, we introduce a pioneering data augmentation framework that merges variational autoencoders (VAEs) with particle swarm optimization (PSO), guided by a support vector machine (SVM) margin function. Unlike traditional oversampling methods, such as SMOTE and its SVM-based extensions, which interpolate linearly in the input space, our method generates synthetic samples in a learned, low-dimensional latent space. This unique feature ensures that the augmented data is both diverse and semantically meaningful. The VAE captures a smooth latent representation of complex medical data. At the same time, PSO is used to identify latent points whose reconstructions lie near the SVM decision boundary, which are areas of high uncertainty critical for enhancing classifier robustness. A diversity-aware penalty in the PSO objective discourages redundancy and promotes coverage of the minority class distribution, mitigating mode collapse. By integrating generative modeling with discriminative margin-based guidance, the method generates synthetic data that extends beyond simple convex combinations, resulting in improved generalization. Experiments on two real-world cancer detection datasets show significant enhancements in classification performance. Using the proposed augmentation strategy, a random forest classifier achieved 92.11 % accuracy and an F1-score of 88.75 %, surpassing the baseline (89.47 % accuracy, 84.62 % F1) while maintaining a high precision of 98.61 %. These results underscore the potential of our approach in boosting recall and overall model performance on imbalanced medical datasets, instilling optimism for its practical application.},
+ author = {Mohammed S. Al-zahrani and Fawaz W. Alsaade and Fuad E. Alsaadi},
+ doi = {https://doi.org/10.1016/j.rineng.2025.107011},
+ issn = {2590-1230},
+ journal = {Results in Engineering},
+ keyword = {Data augmentation, Over-sampling, Support vector classifier, Particle swarm algorithm, Random forest, Mass spectrometry, Breast cancer detection},
+ pages = {107011},
+ title = {Variational autoencoder‐guided data augmentation for imbalanced medical diagnostics},
+ url = {https://www.sciencedirect.com/science/article/pii/S2590123025030671},
+ volume = {27},
+ year = {2025}
+}

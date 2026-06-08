@@ -1,0 +1,15 @@
+@article{Yang2024324,
+ abstract = {Due to the urgent demand for managing massive spatial data, various spatial data management systems built on distributed NoSQL databases have emerged. However, current systems usually employ coarse MBR to approximate spatial objects in order to accelerate spatial operations; this leads to numerous mismatched spatial objects entering the time-consuming refinement process and thus limits retrieval efficiency. Moreover, since spatial objects vary in size and shape, their index levels will exhibit distinct differences when building grid-based spatial indexes. However, few systems consider these distribution differences, which results in many invalid query windows during the query process and exerts high pressure on the underlying parallelism. To overcome these issues, we propose a grid-based management system for massive spatial data, named GridMesa. First, within GridMesa, an adaptive grid-based approximation model for spatial objects (called Grid-AM) is proposed that can accelerate the underlying spatial computations. The cost model of Grid-AM is further analyzed to estimate the adaptive approximation granularity and thereby balance the filtering and refinement costs. Second, GridMesa incorporates a NoSQL-based storage scheme that integrates Grid-AM with HBase. The storage scheme also includes a novel secondary index for recording the distribution of spatial objects, which helps improve the quality of query windows. Finally, on the top of this storage scheme, GridMesa also implements efficient query algorithms to support data retrieval, including the range and kNN queries. Extensive experiments with real-world datasets demonstrate that GridMesa outperforms available popular NoSQL-based systems, e.g., GeoMesa, GeoWave, etc. © 2024},
+ author = {Yang, Xiangyang and Guan, Xuefeng and Pang, Zhaoxing and Kui, Xing and Wu, Huayi},
+ doi = {10.1016/j.future.2024.02.010},
+ journal = {Future Generation Computer Systems},
+ note = {Cited by: 7},
+ pages = {324 - 339},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {GridMesa: A NoSQL-based big spatial data management system with an adaptive grid approximation model},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85185843587?origin=resultslist},
+ volume = {155},
+ year = {2024}
+}

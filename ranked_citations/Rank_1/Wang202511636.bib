@@ -1,0 +1,15 @@
+@conference{Wang202511636,
+ abstract = {Knowledge conflict arises from discrepancies between information in the context of a large language model (LLM) and the knowledge stored in its parameters. This can hurt performance when using standard decoding techniques, which tend to ignore the context. Existing test-time contrastive methods seek to address this by comparing the LLM's output distribution with and without the context and adjust the model according to the contrast between them. However, we find that these methods frequently misjudge the degree of conflict and struggle to handle instances that vary in their amount of conflict, with static methods over-adjusting when conflict is absent. We propose a fine-grained, instance-level approach called ADACAD, which dynamically infers the weight of adjustment based on the degree of conflict, as measured by the Jensen-Shannon divergence between distributions representing contextual and parametric knowledge. Across four LLMs, six question-answering (QA) and three summarization datasets, we demonstrate that ADACAD consistently outperforms other decoding baselines with average QA accuracy gains of 14.21% (absolute) over a static contrastive baseline, and improves the factuality of summaries by 6.19 (AlignScore). Lastly, we show that while contrastive baselines hurt performance when conflict is absent, ADACAD mitigates these losses, making it more applicable to real-world datasets in which some examples have conflict and others do not. © 2025 Association for Computational Linguistics.},
+ author = {Wang, Han and Prasad, Archiki and Stengel-Eskin, Elias and Bansal, Mohit},
+ doi = {10.18653/v1/2025.naacl-long.581},
+ journal = {Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies: Long Papers, NAACL-HLT 2025},
+ note = {Cited by: 5; All Open Access; Gold Open Access},
+ pages = {11636 - 11652},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ADACAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105027429723?origin=resultslist},
+ volume = {1},
+ year = {2025}
+}

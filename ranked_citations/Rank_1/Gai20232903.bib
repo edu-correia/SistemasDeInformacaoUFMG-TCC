@@ -1,0 +1,16 @@
+@article{Gai20232903,
+ abstract = {It is increasingly important for the next-generation exascale supercomputers to extend its applications beyond traditional high-performance computing (HPC) scenarios, so as to achieve high social and economic benefit. Similar to Amazon Web Services (AWS) and Alibaba Cloud, cloud-style virtual HPC service is a promising application scenario on supercomputers, for which remote block storage is the key to provide tenants with supercomputers' extremely high storage performance. Unfortunately, the state-of-the-art block storage software systems (such as URSA and Ceph) cannot adapt to the advanced hardware features of supercomputers. This article presents UrsaX, an efficient block storage service for our next-generation Tianhe exascale supercomputer that is equipped with the high-performance global express (GLEX) network and nonvolatile memory express (NVMe) SSDs. UrsaX's virtual disks, which can be mounted like normal physical ones, enable not only traditional HPC applications but also supercomputer-oblivious POSIX applications to enjoy the high performance of supercomputers. At the core of UrsaX is with a novel design of the efficient integration of on-disk block I/O and in-network message transfer on supercomputers. UrsaX utilizes the NVMe Fabrics kernel module to expand the NVMe standard on the supercomputer network, and separates metadata I/O and data I/O of blocks, respectively, being handled over the mini packet (MP) and remote direct memory access (RDMA) protocols. We thoroughly explore the design space for remote block storage on supercomputers, including parallelism, scalability, fault tolerance, and consistency. We conduct an extensive evaluation on a subset of our exascale supercomputer consisting of 44 storage machines (each with four NVMe SSDs). The result shows that UrsaX achieves local-storage-level I/O latency (tens of microseconds) while being able to linearly increase the aggregate performance (IOPS and throughput) as the system scale increases, an order of magnitude higher than the state-of-the-art block storage systems. © 2023 IEEE.},
+ author = {Gai, Shun and Zhang, Yiming and Xie, Xuchao and Chen, Haowen and Zhao, Xi and Dong, Yong and Song, Zhenlong},
+ doi = {10.1109/TCAD.2023.3237983},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 0},
+ number = {9},
+ pages = {2903 - 2914},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {UrsaX: Integrating Block I/O and Message Transfer for Ultrafast Block Storage on Supercomputers},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85147262813?origin=resultslist},
+ volume = {42},
+ year = {2023}
+}

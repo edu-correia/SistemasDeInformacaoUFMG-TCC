@@ -1,0 +1,15 @@
+@conference{Lee2020925,
+ abstract = {Sparse matrix multiplication (spGEMM) is widely used to analyze the sparse network data, and extract important information based on matrix representation. As it contains a high degree of data parallelism, many efficient implementations using data-parallel programming platforms such as CUDA and OpenCL have been introduced on graphic processing units (GPUs). Several well-known spGEMM techniques, such as cuS- PARSE and CUSP, often do not utilize the GPU resources fully, owing to the load imbalance between threads in the expansion process and high memory contention in the merge process. Furthermore, even though several outer-product-based spGEMM techniques are proposed to solve the load balancing problem on expansion, they still do not utilize the GPU resources fully, because severe computation load variations exist among the multiple thread blocks.To solve these challenges, this paper proposes a new optimization pass called Block Reorganizer, which balances the total computations of each computing unit on target GPUs, based on the outer-product-based expansion process, and reduces the memory pressure during the merge process. For expansion, it first identifies the actual computation amount for each block, and then performs two thread block transformation processes based on their characteristics: 1) B-Splitting to transform a heavy-computation blocks into multiple small blocks and 2) B- Gathering to aggregate multiple small-computation blocks to a larger block. While merging, it improves the overall performance by performing B-Limiting to limit the number of blocks on each computing unit. Experimental results show that it improves the total performance of kernel execution by 1.43x, on an average, when compared to the row-product-based spGEMM, for NVIDIA Titan Xp GPUs on real-world datasets. © 2020 IEEE.},
+ author = {Lee, Jeongmyung and Kang, Seokwon and Yu, Yongseung and Jo, Yong-Yeon and Kim, Sang-Wook and Park, Yongjun},
+ doi = {10.1109/ICDE48307.2020.00085},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 23},
+ pages = {925 - 936},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimization of GPU-based sparse matrix multiplication for large sparse networks},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85085862760?origin=resultslist},
+ volume = {2020-April},
+ year = {2020}
+}

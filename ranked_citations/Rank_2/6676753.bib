@@ -1,0 +1,14 @@
+@inproceedings{6676753,
+ abstract = {Skew mitigation has been a major concern in distributed programming frameworks like MapReduce. It is becoming more prominent with the increasing complexity in user requirements and computation involved. We present Chisel, a self-regulating skew detection and mitigation policy for MapReduce applications. The novelty of the approach is that it involves no scanning or sampling of input data to detect skew and hence incurs low overhead, provides better resource utilization and maintains output order and file structure. It is also transparent to the users and can be used as a plugin whenever required. We use Hadoop to implement our skew handling policies. Chisel implements two skew handling policies for mitigating skew. It does late skew detection for map operators i.e at the last wave of map execution, where skewed maps are selected on the basis of remaining time to complete. More maps are created dynamically over remaining data per block. An early skew detection i.e before starting shuffle phase, is done for reduce operator. This prevents the expensive shuffle and sort phases from delaying skew detection and job completion time. Multiple reducers are created per skewed partition, each shuffling data from a subset of total maps and starts processing it when their portion of maps are over. They need not wait for the completion of all the maps. Therefore, the barrier between map and reduce phase no longer remains a constraint for effective resource utilization. Chisel additionally implements an online job profiler to determine the start point of reduce tasks and also modifies the capacity scheduler to distribute reduce tasks evenly in the cluster. Chisel significantly decreases the overall execution time of jobs and increases resource utilization. Improvement depends directly upon the availability of resources in the cluster and skewness in the job.},
+ author = {Dhawalia, Prateek and Kailasam, Sriram and Janakiram, Dharanipragada},
+ booktitle = {2013 IEEE Sixth International Conference on Cloud Computing},
+ doi = {10.1109/CLOUD.2013.43},
+ issn = {2159-6190},
+ keyword = {Resource management;Containers;Parallel processing;Programming;Merging;Computer architecture;Optimization;MapReduce;Skew handling;Load balancing;Scheduling},
+ month = {June},
+ number = {},
+ pages = {652-660},
+ title = {Chisel: A Resource Savvy Approach for Handling Skew in MapReduce Applications},
+ volume = {},
+ year = {2013}
+}

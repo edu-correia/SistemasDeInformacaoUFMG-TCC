@@ -1,0 +1,14 @@
+@conference{Hong20241166,
+ abstract = {We propose the SaSpGEMM: a parallel sparse general matrix-matrix multiplication (SpGEMM) to avoid the overhead of sorting. The typical workflow of SpGEMM contains: size prediction, memory allocation, numeric calculation and sorting. However, sorting has always been overlooked as a bottleneck in the performance of SpGEMM. It constitutes an average of 30% in HASH and 55% in ESC during the calculation stage. The key idea behind SaSpGEMM is to leverage the compressed sparse row (CSR) storage format's feature of increasing index order of elements in the same row which is sorted during preprocessing, preserving intermediate products ordered consistently. To achieve this, we introduce a linked list-based accumulator (LLA) designed for batch insertion while maintaining order with a low time complexity. We provide a comprehensive empirical evidence showing that SaSpGEMM outperforms other methods based on time complexity analysis. Compared to three state-of-the-art methods ESC, SPA, and HASH on both x86 (Intel Xeon Gold 6348) and ARM (Phytium2000+) architectures, our method achieves an average speedup of 2.82x, 5.24x, 1.16x (with a maximum speedup of 34.4x, 195x, 23.3x) on the Intel Xeon Gold 6348. On the Phytium2000+, it achieves an average speedup of 2.21x, 4,65x, 1.05x (with a maximum speedup of 40.93x, 146.7x, 9.03x).  © 2024 Owner/Author.},
+ author = {Hong, Chuhe and Wang, Qinglin and Mao, Runzhang and Liang, Yuechao and Xia, Rui and Liu, Jie},
+ doi = {10.1145/3673038.3673054},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {1166 - 1175},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SaSpGEMM: Sorting-Avoiding Sparse General Matrix-Matrix Multiplication on Multi-Core Processors},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85202442996?origin=resultslist},
+ year = {2024}
+}

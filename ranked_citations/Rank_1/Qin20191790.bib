@@ -1,0 +1,15 @@
+@conference{Qin20191790,
+ abstract = {The freshness of web page indices is the key to improving searching quality of search engines. In Baidu, the major search engine in China, we have developed DirectLoad, an index updating system for efficiently delivering the webscale indices to nationwide data centers. However, the web-scale index updating suffers from increasingly high data volumes during network transmission and inefficient I/O transactions due to slow disk operations. DirectLoad accelerates the index updating streams from two aspects: 1) DirectLoad effectively cuts down the overwhelmingly high volume of indices in transmission by removing the redundant data across versions, and mutates regular operations in a key-value storage system for successful accesses to the deduplicated datasets. 2) DirectLoad significantly improves the I/O efficiency by replacing the LSMTree with a memory-resident table (memtable) and appendingonly-files (AOFs) on disk. Specifically, the write amplification stemming from sorting operations on disk is eliminated, and a lazy garbage collection policy further improves the I/O performance at the software level. In addition, DirectLoad directly manipulates the SSD native interfaces to remove the write amplification at the hardware level. In practice, 63% updating bandwidth has been saved due to the deduplication, and the write throughput to SSDs is increased by 3x. The index updating cycle of our production workloads has been compressed from 15 days to 3 days after deploying DirectLoad. In this paper, we show the effectiveness and efficiency of an in-memory index updating system, which is disruptive to the framework in a conventional memory hierarchy. We hope that this work contributes a strong case study in the system research literature. © 2019 IEEE.},
+ author = {Qin, An and Xiao, Mengbai and Ma, Jin and Tan, Dai and Lee, Rubao and Zhang, Xiaodong},
+ doi = {10.1109/ICDE.2019.00195},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 8},
+ pages = {1790 - 1801},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DirectLoad: A fast web-scale index system across large regional centers},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85067995914?origin=resultslist},
+ volume = {2019-April},
+ year = {2019}
+}

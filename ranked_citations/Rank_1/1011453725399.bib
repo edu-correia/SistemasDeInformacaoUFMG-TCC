@@ -1,0 +1,18 @@
+@article{10.1145/3725399,
+ abstract = {Recent advancements in AI have enabled models to map real-world entities, such as product images, into high-dimensional vectors, making approximate nearest neighbor search (ANNS) crucial for various applications. Often, these vectors are associated with additional attributes like price, prompting the need for range-filtered ANNS where users seek similar items within specific attribute ranges. Naive solutions like pre-filtering and post-filtering are straightforward but inefficient. Specialized indexes, such as SeRF, SuperPostFiltering, and iRangeGraph, have been developed to address these queries effectively. However, these solutions do not support dynamic updates, limiting their practicality in real-world scenarios where datasets frequently change.To address these challenges, we propose DIGRA, a novel dynamic graph index for range-filtered ANNS. DIGRA supports efficient dynamic updates while maintaining a balance among query efficiency, update efficiency, indexing cost, and result quality. Our approach introduces a dynamic multi-way tree structure combined with carefully integrated ANNS indices to handle range filtered ANNS efficiently. We employ a lazy weight-based update mechanism to significantly reduce update costs and adopt optimized choice of ANNS index to lower construction and update overhead. Experimental results demonstrate that DIGRA achieves superior trade-offs, making it suitable for large-scale dynamic datasets in real-world applications.},
+ address = {New York, NY, USA},
+ articleno = {148},
+ author = {Jiang, Mengxu and Yang, Zhi and Zhang, Fangyuan and Hou, Guanhao and Shi, Jieming and Zhou, Wenchao and Li, Feifei and Wang, Sibo},
+ doi = {10.1145/3725399},
+ issue_date = {June 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {dynamic indexing, range-filtering approximate nearest neighbor search, vector database},
+ month = {June},
+ number = {3},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {DIGRA: A Dynamic Graph Indexing for Approximate Nearest Neighbor Search with Range Filter},
+ url = {https://doi.org/10.1145/3725399},
+ volume = {3},
+ year = {2025}
+}

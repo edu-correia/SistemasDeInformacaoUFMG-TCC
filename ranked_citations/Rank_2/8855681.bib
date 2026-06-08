@@ -1,0 +1,14 @@
+@inproceedings{8855681,
+ abstract = {In data analytics applications, join is a general and time consuming operation. Optimizing join algorithms can benefit the query processing significantly. The emerging of GPUs provides a massive parallelism solution for improving the performance of the join operation. The hash join (HJ) and sort merge join (SMJ), which are two widely used join algorithms, have been proved effective for efficient join processing on the GPUs. Both algorithms have their own advantages and drawbacks, offering the chance of combining the advantages of HJ and SMJ on GPUs. In processing join operation on GPUs, data need to be transmitted between the CPU and the GPU due to the discrete GPU memory design, which causes performance degradation because of the high PCIe data transfer overhead. As GPUs are becoming more powerful than before, the performance gap between data transmission and GPU execution increases, which makes it even harder to implement an efficient join on GPUs. In this paper, we focus on the optimization of join algorithms on GPUs. We propose the Parallel Hybrid Join algorithm on GPUs(PHYJ) to combine the advantages of HJ and SMJ, and overlap the data communication and GPU execution with a pipeline mechanism. In our evaluation, the PHYJ shows up to 1.72X and 1.55X speedup over the up-to-date HJ and SMJ algorithms respectively on a NVIDIA GTX 1080ti-Pascal GPU. On the TitanV-Volta GPU, up to 1.54X and 1.42X improvements can be achieved over the baseline HJ and SMJ algorithms respectively.},
+ author = {Guo, Chengxin and Chen, Hong and Zhang, Feng and Li, Cuiping},
+ booktitle = {2019 IEEE 21st International Conference on High Performance Computing and Communications; IEEE 17th International Conference on Smart City; IEEE 5th International Conference on Data Science and Systems (HPCC/SmartCity/DSS)},
+ doi = {10.1109/HPCC/SmartCity/DSS.2019.00216},
+ issn = {},
+ keyword = {Graphics processing units;Instruction sets;Probes;Data communication;Sorting;Computer architecture;Pipelines;Join Algorithms, Graphics Processing Unit, Hybrid Designs},
+ month = {Aug},
+ number = {},
+ pages = {1572-1579},
+ title = {Parallel Hybrid Join Algorithm on GPU},
+ volume = {},
+ year = {2019}
+}

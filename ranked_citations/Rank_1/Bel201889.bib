@@ -1,0 +1,14 @@
+@conference{Bel201889,
+ abstract = {Removing hard drives from a data center may expose sensitive data, such as encryption keys or passwords. To prevent exposure, data centers have security policies in place to physically secure drives in the system, and securely delete data from drives that are removed. Despite advances in security technology and best practices, implementation of these security measures is often done incorrectly. We anticipate that physical security will fail, and fixing the issue after the failure is costly and ineffective. We propose Inkpack, a protocol that prevents an attacker from reading data from a drive removed from the data center even if the attacker has the user key linked to the data. An implementation of this protocol encrypts data, and secret splits the key over a number of drives. Recovering the key requires communicating with other drives, thereby denying access to the data if a few drives have been removed. Inkpack also requires the system to verify the validity of individual drives before normal operation. A prototype created within the Ceph storage system executed individual key split, key rebuild, and drive validation operations in 100-150 μs. We also show that our protocol is sensitive to small data write overheads, demonstrating potential performance gains if implemented on smart solid state storage devices, and propose a solution to increase performance. © 2018 Copyright held by the owner/author(s).},
+ author = {Bel, Oceane and Chang, Kenneth and Bittman, Daniel and Long, Darrell D.E. and Isozaki, Hiroshi and Miller, Ethan L.},
+ doi = {10.1145/3211890.3211899},
+ journal = {SYSTOR 2018 - Proceedings of the 11th ACM International Systems and Storage Conference},
+ note = {Cited by: 0; All Open Access; Green Open Access},
+ pages = {89 - 100},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Inkpack: A secure, data-exposure resistant storage system},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85051382734?origin=resultslist},
+ year = {2018}
+}

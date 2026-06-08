@@ -1,0 +1,14 @@
+@inproceedings{6012891,
+ abstract = {Transactional Memory (TM) promises to increase programmer productivity by making it easier to write correct parallel programs. In fulfilling this goal, a TM system should maximize its performance with limited hardware resources. Conflict detection is an essential element for maintaining correctness among concurrent transactions in a TM system. Hardware signatures have been proposed as an area-efficient method for detecting conflicts. However, signatures can degrade TM performance by falsely declaring conflicts. Hence, increasing the quality of signatures within a given hardware budget is a crucial issue for TM to be adopted as a mainstream programming model. In this paper, we propose a simple and effective signature design, unified signature. Instead of using separate read- and write-signatures, as is often done in TM systems, we implement a single signature to track all read- and write-accesses. By merging read- and write-signatures, a unified signature can effectively enlarge the signature size without additional overhead. Within the constraints of a given hardware budget, a TM system with a unified signature outperforms a baseline system with the same hardware budget by reducing the number of falsely detected conflicts. Even though the unified signature scheme incurs read-after-read dependencies, we show that these false dependencies do not negate the benefit of unified signatures for practical signature sizes. A TM system with 2K-bit unified signatures achieves average speedups of 22% over baseline TM systems.},
+ author = {Choi, Woojin and Draper, Jeff},
+ booktitle = {2011 IEEE International Parallel & Distributed Processing Symposium},
+ doi = {10.1109/IPDPS.2011.81},
+ issn = {1530-2075},
+ keyword = {Hardware;Benchmark testing;Programming;Indexes;Genomics;Monitoring;Bioinformatics},
+ month = {May},
+ number = {},
+ pages = {817-827},
+ title = {Unified Signatures for Improving Performance in Transactional Memory},
+ volume = {},
+ year = {2011}
+}

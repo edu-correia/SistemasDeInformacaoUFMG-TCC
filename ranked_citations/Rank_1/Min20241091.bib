@@ -1,0 +1,16 @@
+@article{Min20241091,
+ abstract = {Disaggregated memory separates compute and memory resources into independent pools connected by fast RDMA (Remote Direct Memory Access) networks, which can improve memory utilization, reduce cost, and enable elastic scaling of compute and memory resources. Hash indexes provide high-performance single-point operations and are widely used in distributed systems and databases. However, under disaggregated memory, existing hash indexes suffer from write performance degradation due to high resize overhead and concurrency control overhead. Traditional write-optimized hash indexes are not efficient for disaggregated memory and sacrifice read performance. In this paper, we propose SepHash, a write-optimized hash index for disaggregated memory. First, SepHash proposes a two-level separate segment structure that significantly reduces the bandwidth consumption of resize operations. Second, SepHash employs a low-latency concurrency control strategy to eliminate unnecessary mutual exclusion and check overhead during insert operations. Finally, SepHash designs an efficient cache and filter to accelerate read operations. The evaluation results show that, compared to state-of-the-art distributed hash indexes, SepHash achieves a 3.3× higher write performance while maintaining comparable read performance. © 2024, VLDB Endowment. All rights reserved.},
+ author = {Min, Xinhao and Lu, Kai and Liu, Pengyu and Wan, Jiguang and Xie, Changsheng and Wang, Daohui and Yao, Ting and Wu, Huatao},
+ doi = {10.14778/3641204.3641218},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 8},
+ number = {5},
+ pages = {1091 - 1104},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SepHash: A Write-Optimized Hash Index On Disaggregated Memory via Separate Segment Structure},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85190463978?origin=resultslist},
+ volume = {17},
+ year = {2024}
+}

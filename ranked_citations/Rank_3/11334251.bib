@@ -1,0 +1,14 @@
+@inproceedings{11334251,
+ abstract = {As Large Language Models (LLMs) become integral software components in modern applications, unauthorized model derivations through fine-tuning, merging, and redistribution have emerged as critical software engineering challenges. Unlike traditional software where clone detection and license compliance are well-established, the LLM ecosystem lacks effective mechanisms to detect model lineage and enforce licensing agreements. This gap is particularly problematic when open-source model creators, such as Meta’s LLaMA, require derivative works to maintain naming conventions for attribution, yet no technical means exist to verify compliance.To fill this gap, treating LLMs as software artifacts requiring provenance tracking, we present TensorGuard, a gradient-based fingerprinting framework for LLM similarity detection and family classification. Our approach extracts model-intrinsic behavioral signatures by analyzing gradient responses to random input perturbations across tensor layers, operating independently of training data, watermarks, or specific model formats. TensorGuard supports the widely-adopted safetensors format and constructs high-dimensional fingerprints through statistical analysis of gradient features. These fingerprints enable two complementary capabilities: direct pairwise similarity assessment between arbitrary models through distance computation, and systematic family classification of unknown models via the K-Means clustering algorithm with domain-informed centroid initialization using known base models. Experimental evaluation on 58 models comprising 8 base models and 50 derivatives across five model families (Llama, Qwen, Gemma, Phi, Mistral) demonstrates 94% classification accuracy under our centroid-initialized K-Means clustering. Our work establishes a new paradigm for model similarity detection, bridging traditional software engineering practices with modern LLM distribution and compliance challenges.},
+ author = {Wu, Zehao and Zhao, Yanjie and Wang, Haoyu},
+ booktitle = {2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+ doi = {10.1109/ASE63991.2025.00044},
+ issn = {2643-1572},
+ keyword = {Computational modeling;Ecosystems;Training data;Watermarking;Fingerprint recognition;Licenses;Software;Data models;Data mining;Software engineering;large language models;model fingerprinting;model similarity detection;model family classification},
+ month = {Nov},
+ number = {},
+ pages = {445-456},
+ title = {TensorGuard: Gradient-Based Model Fingerprinting for LLM Similarity Detection and Family Classification},
+ volume = {},
+ year = {2025}
+}

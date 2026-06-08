@@ -1,0 +1,16 @@
+@article{McAllister2022,
+ abstract = {Many social-media and IoT services have very large working sets consisting of billions of tiny (≈100 B) objects. Large, flash-based caches are important to serving these working sets at acceptable monetary cost. However, caching tiny objects on flash is challenging for two reasons: (i) SSDs can read/write data only in multi-KB "pages"that are much larger than a single object, stressing the limited number of times flash can be written; and (ii) very few bits per cached object can be kept in DRAM without losing flash's cost advantage. Unfortunately, existing flash-cache designs fall short of addressing these challenges: write-optimized designs require too much DRAM, and DRAM-optimized designs require too many flash writes.We present Kangaroo, a new flash-cache design that optimizes both DRAM usage and flash writes to maximize cache performance while minimizing cost. Kangaroo combines a large, set-associative cache with a small, log-structured cache. The set-associative cache requires minimal DRAM, while the log-structured cache minimizes Kangaroo's flash writes. Experiments using traces from Meta and Twitter show that Kangaroo achieves DRAM usage close to the best prior DRAM-optimized design, flash writes close to the best prior write-optimized design, and miss ratios better than both. Kangaroo's design is Pareto-optimal across a range of allowed write rates, DRAM sizes, and flash sizes, reducing misses by 29% over the state of the art. These results are corroborated by analytical models presented herein and with a test deployment of Kangaroo in a production flash cache at Meta.  © 2022 Copyright held by the owner/author(s).},
+ author = {McAllister, Sara and Berg, Benjamin and Tutuncu-Macias, Julian and Yang, Juncheng and Gunasekar, Sathya and Lu, Jimmy and Berger, Daniel S. and Beckmann, Nathan and Ganger, Gregory R.},
+ doi = {10.1145/3542928},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 7; All Open Access; Hybrid Gold Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Kangaroo: Theory and Practice of Caching Billions of Tiny Objects on Flash},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85140916052?origin=resultslist},
+ volume = {18},
+ year = {2022}
+}

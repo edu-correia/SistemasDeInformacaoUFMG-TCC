@@ -1,0 +1,14 @@
+@article{10741575,
+ abstract = {Effective feature representation is pivotal in numerous remote sensing image (RSI) interpretation tasks. Notably, a distinct attribute of RSIs is their inclination toward multiscale feature dependence. Previous research predominantly focuses on designing intricate and complex networks or modules to encapsulate rich multiscale features. However, these approaches compromise on either the model’s compactness or its representational efficacy, thereby constraining the practical deployment of remote sensing technologies, particularly in limited-capacity environments like small-scale devices or on-orbit satellites. In this study, we explore the problem of how to augment the diversity of encoded features while avoiding heavy parameter scale growth in deep convolutional neural networks (CNNs). We proposed an adaptive multiscale framework RISV which presents two key features: 1) rich scale information: during training, RISV decomposes each convolutional layer into various-sized convolutions, extracting multiscale characteristics; and 2) small model volume: RISV incorporates a differentiable elect layer after each convolutional layer, adaptively calculating and polarizing channel importance during learning. After training, the added convolution kernel and the significant channels selected by the elect layer will be linearly equivalent merged, minimizing the impact of pruning on the model’s feature extraction capability. Different from traditional model slimming, it focused on a slimmed-down network while enhancing the representation of multiscale features in RSIs. Versatile and adaptable across various model frameworks like VGG and ResNet. Experimental results demonstrate that our methodology not only preserves accuracy across standard skeletal frameworks but also attains a compression ratio exceeding 80%, surpassing the baseline by an average of 40%. Furthermore, the application of GradCAM on the NWPU dataset reveals our method’s proficiency in acquiring detailed and accurate subject information from RSIs. The source code can be available at https://github.com/GeoX-Lab/RISV.},
+ author = {Ye, Dingqi and Peng, Jian and Guo, Wang and Li, Haifeng},
+ doi = {10.1109/TGRS.2024.3490666},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Feature extraction;Training;Remote sensing;Adaptation models;Computer architecture;Kernel;Computational modeling;Accuracy;Image coding;Representation learning;Compact representation learning;multiscale information augmentation learning;parameter-scale overload;remote sensing image (RSI) feature extraction},
+ month = {},
+ number = {},
+ pages = {1-13},
+ title = {Adaptive Multiscale Slimming Network Learning for Remote Sensing Image Feature Extraction},
+ volume = {62},
+ year = {2024}
+}

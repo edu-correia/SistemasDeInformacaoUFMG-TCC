@@ -1,0 +1,18 @@
+@article{10.1145/3802048,
+ abstract = {In-database prediction queries that apply machine learning (ML) pipelines to perform data analysis are prevalent in many applications. Since data stored in databases is typically tabular, tree-based models are particularly well-suited and thus widely adopted for such tasks. When ML inference with a decision tree or random forest appears on a SQL predicate, existing works first perform ML inference and then determine whether the inference result satisfies the predicate. However, this leads to redundant feature tests on the tree node during the predicate evaluation. To determine whether one data record satisfies the predicate, it is possible to perform feature tests only on partial internal nodes of the tree. We identify that these redundant feature tests are caused by specific sibling and ancestor nodes. In particular, we propose the sibling-centric elimination with the merging-based subtree collapse method, and the ancestor-centric elimination with the sliding-based subtree recombination method. We implement a prototype system, called ReTree, based on DuckDB. Our experiments show that ReTree achieves a 2.56x speedup on average over DuckDB for prediction query execution and outperforms other solutions.},
+ address = {New York, NY, USA},
+ articleno = {171},
+ author = {Liu, Mingxi and Ding, Zhengyuan and Zhang, Chenyang and Pan, Qingfeng and Su, Huayou and Zhang, Zhao and Xu, Chen and Ruan, Qingsong},
+ doi = {10.1145/3802048},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {query planning, query optimization, tree-based model inference},
+ month = {May},
+ number = {3},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Eliminating Redundant Feature Tests in Decision Tree and Random Forest Inference on SQL Predicates},
+ url = {https://doi.org/10.1145/3802048},
+ volume = {4},
+ year = {2026}
+}

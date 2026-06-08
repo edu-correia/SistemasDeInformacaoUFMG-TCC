@@ -1,0 +1,14 @@
+@conference{Jeong2024229,
+ abstract = {Kernel concurrency bugs are notoriously difficult to identify, while their consequences severely threaten the reliability and security of the entire system. Especially in the kernel, developers should consider not only locks but also memory barriers to prevent out-of-order execution from breaking the correctness of concurrent execution. Incorrect use of memory barriers may cause non-intuitive concurrency bugs that manifest due to out-of-order execution, which we refer to as OoO bugs.This paper aims to identify OoO bugs in the kernel. We devise a mechanism to emulate out-of-order execution while kernel code is executed, called OEMU. Inspired by how a processor reorders memory accesses, OEMU makes the subtle and non-deterministic behavior of out-of-order execution systematically controllable. Based on OEMU, we propose Ozz, a new testing tool designed to effectively identify kernel OoO bugs. The key feature of Ozz is its ability to deterministically control both out-of-order execution and concurrent execution caused by thread interleavings, enabling comprehensive testing of their combined effects. Our evaluation shows that OEMU is effective in reproducing previously-reported kernel OoO bugs, demonstrating its strong capability of controlling out-of-order execution. Furthermore, with Ozz, we identify 11 new OoO bugs in the latest version of the Linux kernel, subsequently confirmed and patched by kernel developers. © 2024 Copyright held by the owner/author(s).},
+ author = {Jeong, Dae R. and Choi, Yewon and Lee, Byoungyoung and Shin, Insik and Kwon, Youngjin},
+ doi = {10.1145/3694715.3695944},
+ journal = {SOSP 2024 - Proceedings of the 2024 ACM SIGOPS 30th Symposium on Operating Systems Principles},
+ note = {Cited by: 5; All Open Access; Gold Open Access},
+ pages = {229 - 248},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {OZZ: Identifying Kernel Out-of-Order Concurrency Bugs with In-Vivo Memory Access Reordering},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85215511297?origin=resultslist},
+ year = {2024}
+}

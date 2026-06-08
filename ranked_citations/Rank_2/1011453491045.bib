@@ -1,0 +1,18 @@
+@article{10.1145/3491045,
+ abstract = {Flash-based solid state drives (SSDs) have gained a central role in the infrastructure of large-scale datacenters, as well as in commodity servers and personal devices. The main limitation of flash media is its inability to support update-in-place: after data has been written to a physical location, it has to be erased before new data can be written to it. Moreover, SSDs support read and write operations in granularity of pages, while erasures are performed on entire blocks, which often contain hundreds of pages. When erasing a block, any valid data it stores must be rewritten to a clean location. As an SSD eventually wears out with progressing number of erasures, the efficiency of the management algorithm has a significant impact on its endurance. In this paper we first formally define the SSD management problem. We then explore this problem from an algorithmic perspective, considering it in both offline and online settings. In the offline setting, we present a near-optimal algorithm that, given any input, performs a negligible number of rewrites (relative to the input length). We also discuss the hardness of the offline problem. In the online setting, we first consider algorithms that have no prior knowledge about the input. We prove that no deterministic algorithm outperforms the greedy algorithm in this setting, and discuss the possible benefit of randomization. We then augment our model, assuming that each request for a page arrives with a prediction of the next time the page is updated. We design an online algorithm that uses such predictions, and show that its performance improves as the prediction error decreases. We also show that the performance of our algorithm is never worse than that guaranteed by the greedy algorithm, even when the prediction error is large. We complement our theoretical findings with an empirical evaluation of our algorithms, comparing them with the state-of-the-art scheme. The results confirm that our algorithms exhibit an improved performance for a wide range of input traces.},
+ address = {New York, NY, USA},
+ articleno = {33},
+ author = {Lange, Tomer and Naor, Joseph (Seffi) and Yadgar, Gala},
+ doi = {10.1145/3491045},
+ issue_date = {December 2021},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {flash translation layer, garbage collection},
+ month = {December},
+ number = {3},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Offline and Online Algorithms for SSD Management},
+ url = {https://doi.org/10.1145/3491045},
+ volume = {5},
+ year = {2021}
+}

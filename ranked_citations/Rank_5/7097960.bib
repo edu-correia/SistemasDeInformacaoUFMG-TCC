@@ -1,0 +1,14 @@
+@inproceedings{7097960,
+ abstract = {Threads usually do not use all available resource son a processor at the same time. For example, some program regions are dominated by memory access instructions while leaving computing units idling, or on the contrary are busy calculating but not using memory I/O. This observation points to an optimization opportunity that if the overall system throughput is the goal, one thread can "piggyback" on another thread without significantly hurting the other thread's performance if the first thread only uses CPU resources that are not heavily used by the other. Clearly the "piggybacking" opportunities are an instruction-level mechanism and OS-level resource management cannot efficiently leverage them. In this paper we propose a new compiler transformation that merges two or multiple program sat instruction level to take advantage of the resource piggybacking opportunities. In particular, we propose program profiling techniques to identify good merging candidates and develop transformation to merge the programs while maintain their original semantics. We evaluated our approach on synthesized benchmarks and 3 NPB benchmarks. In one case, we achieve50% speedup over running the pre-merged benchmarks serially, or 30% speedup over running them in parallel and letting OSmanage their execution.},
+ author = {Chen, Yuanfang and Li, Xiaoming},
+ booktitle = {2015 IEEE 29th International Conference on Advanced Information Networking and Applications},
+ doi = {10.1109/AINA.2015.175},
+ issn = {2332-5658},
+ keyword = {Merging;Bandwidth;Instruction sets;Memory management;Message systems;Corporate acquisitions;Optimization;compiler optimization;OpenMP;thread merging},
+ month = {March},
+ number = {},
+ pages = {118-125},
+ title = {A Thread Merging Transformation to Improve Throughput of Multiple Programs},
+ volume = {},
+ year = {2015}
+}

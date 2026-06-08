@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920984,
+ abstract = {The need to improve a suboptimal execution plan picked by the query optimizer for a repeatedly run SQL query arises routinely. Complex expressions, skewed or correlated data, and changing conditions can cause the optimizer to make mistakes. For example, the optimizer may pick a poor join order, overlook an important index, use a nested-loop join when a hash join would have done better, or cause an expensive, but avoidable, sort to happen. SQL tuning is also needed while tuning multi-tier services to meet service-level objectives. The difficulty of SQL tuning can be lessened considerably if users and higher-level tuning tools can tell the optimizer: "I am not satisfied with the performance of the plan p being used for the query Q that runs repeatedly. Can you generate a (δ%) better plan?" This paper designs, implements, and evaluates Xplus which, to our knowledge, is the first query optimizer to provide this feature. Xplus goes beyond the traditional plan-first-execute-next approach: Xplus runs some (sub)plans proactively, collects monitoring data from the runs, and iterates. A nontrivial challenge is in choosing a small set of plans to run. Xplus guides this process efficiently using an extensible architecture comprising SQL-tuning experts with different goals, and a policy to arbitrate among the experts. We show the effectiveness of Xplus on real-life tuning scenarios created using TPC-H queries on a PostgreSQL database.},
+ author = {Herodotou, Herodotos and Babu, Shivnath},
+ doi = {10.14778/1920841.1920984},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {12},
+ pages = {1149–1160},
+ publisher = {VLDB Endowment},
+ title = {Xplus: a SQL-tuning-aware query optimizer},
+ url = {https://doi.org/10.14778/1920841.1920984},
+ volume = {3},
+ year = {2010}
+}

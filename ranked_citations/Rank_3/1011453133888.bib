@@ -1,0 +1,18 @@
+@article{10.1145/3133888,
+ abstract = {System failures resulting from configuration errors are one of the major reasons for the compromised reliability of today's software systems. Although many techniques have been proposed for configuration error detection, these approaches can generally only be applied after an error has occurred. Proactively verifying configuration files is a challenging problem, because 1) software configurations are typically written in poorly structured and untyped “languages”, and 2) specifying rules for configuration verification is challenging in practice. This paper presents ConfigV, a verification framework for general software configurations. Our framework works as follows: in the pre-processing stage, we first automatically derive a specification. Once we have a specification, we check if a given configuration file adheres to that specification. The process of learning a specification works through three steps. First, ConfigV parses a training set of configuration files (not necessarily all correct) into a well-structured and probabilistically-typed intermediate representation. Second, based on the association rule learning algorithm, ConfigV learns rules from these intermediate representations. These rules establish relationships between the keywords appearing in the files. Finally, ConfigV employs rule graph analysis to refine the resulting rules. ConfigV is capable of detecting various configuration errors, including ordering errors, integer correlation errors, type errors, and missing entry errors. We evaluated ConfigV by verifying public configuration files on GitHub, and we show that ConfigV can detect known configuration errors in these files.},
+ address = {New York, NY, USA},
+ articleno = {64},
+ author = {Santolucito, Mark and Zhai, Ennan and Dhodapkar, Rahul and Shim, Aaron and Piskac, Ruzica},
+ doi = {10.1145/3133888},
+ issue_date = {October 2017},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Association Rule Learning, Configuration Files, Configuration Verification, Program Synthesis},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {20},
+ publisher = {Association for Computing Machinery},
+ title = {Synthesizing configuration file specifications with association rule learning},
+ url = {https://doi.org/10.1145/3133888},
+ volume = {1},
+ year = {2017}
+}

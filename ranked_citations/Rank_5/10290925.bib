@@ -1,0 +1,14 @@
+@article{10290925,
+ abstract = {Over the last decade merge trees have been proven to support a plethora of visualization and analysis tasks since they effectively abstract complex datasets. This paper describes the ExTreeM-Algorithm: A scalable algorithm for the computation of merge trees via extremum graphs. The core idea of ExTreeM is to first derive the extremum graph $\mathcal{G}$ of an input scalar field $f$ defined on a cell complex $\mathcal{K}$, and subsequently compute the unaugmented merge tree of $f$ on $\mathcal{G}$ instead of $\mathcal{K}$; which are equivalent. Any merge tree algorithm can be carried out significantly faster on $\mathcal{G}$, since $\mathcal{K}$ in general contains substantially more cells than $\mathcal{G}$. To further speed up computation, ExTreeM includes a tailored procedure to derive merge trees of extremum graphs. The computation of the fully augmented merge tree, i.e., a merge tree domain segmentation of $\mathcal{K}$, can then be performed in an optional post-processing step. All steps of ExTreeM consist of procedures with high parallel efficiency, and we provide a formal proof of its correctness. Our experiments, performed on publicly available datasets, report a speedup of up to one order of magnitude over the state-of-the-art algorithms included in the TTK and VTK-m software libraries, while also requiring significantly less memory and exhibiting excellent scaling behavior.},
+ author = {Lukasczyk, Jonas and Will, Michael and Wetzels, Florian and Weber, Gunther H. and Garth, Christoph},
+ doi = {10.1109/TVCG.2023.3326526},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Topology;Manifolds;Task analysis;Memory management;Data visualization;Classification algorithms;Data analysis;Scalar field topology;merge trees;persistence pairs;high performance computing},
+ month = {Jan},
+ number = {1},
+ pages = {1085-1094},
+ title = {ExTreeM: Scalable Augmented Merge Tree Computation via Extremum Graphs},
+ volume = {30},
+ year = {2024}
+}

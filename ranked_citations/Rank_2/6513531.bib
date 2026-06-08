@@ -1,0 +1,14 @@
+@inproceedings{6513531,
+ abstract = {This paper addresses the dynamic energy consumption in L1 data cache interfaces of out-of-order superscalar processors. The proposed Multiple Access Low Energy Cache (MALEC) is based on the observation that consecutive memory references tend to access the same page. It exhibits a performance level similar to state of the art caches, but consumes approximately 48% less energy. This is achieved by deliberately restricting accesses to only 1 page per cycle, allowing the utilization of single-ported TLBs and cache banks, and simplified lookup structures of Store and Merge Buffers. To mitigate performance penalties it shares memory address translation results between multiple memory references, and shares data among loads to the same cache line. In addition, it uses a Page-Based Way Determination scheme that holds way information of recently accessed cache lines in small storage structures called way tables that are closely coupled to TLB lookups and are able to simultaneously service all accesses to a particular page. Moreover, it removes the need for redundant tag-array accesses, usually required to confirm way predictions. For the analyzed workloads, MALEC achieves average energy savings of 48% in the L1 data memory subsystem over a high performance cache interface that supports up to 2 loads and 1 store in parallel. Comparing MALEC and the high performance interface against a low power configuration limited to only 1 load or 1 store per cycle reveals 14% and 15% performance gain requiring 22% less and 48% more energy, respectively. Furthermore, Page-Based Way Determination exhibits coverage of 94%, which is a 16% improvement over the originally proposed line-based way determination.},
+ author = {Boettcher, Matthias and Gabrielli, Giacomo and Al-Hashimi, Bashir M. and Kershaw, Danny},
+ booktitle = {2013 Design, Automation & Test in Europe Conference & Exhibition (DATE)},
+ doi = {10.7873/DATE.2013.085},
+ issn = {1530-1591},
+ keyword = {Out of order;Computational efficiency;Random access memory},
+ month = {March},
+ number = {},
+ pages = {368-373},
+ title = {MALEC: A Multiple Access Low Energy Cache},
+ volume = {},
+ year = {2013}
+}

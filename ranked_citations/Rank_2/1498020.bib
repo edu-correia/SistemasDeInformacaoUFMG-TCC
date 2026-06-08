@@ -1,0 +1,14 @@
+@inproceedings{1498020,
+ abstract = {Nuclear Overhauser effect (NOE) distance restraints are the main experimental data from protein nuclear magnetic resonance (NMR) spectroscopy for computing a complete three dimensional solution structure including sidechain conformations. In general NOE restraints must be assigned before they can be used in a structure determination program. NOE assignment is very time-consuming to do manually, challenging to fully automate, and has become a key bottleneck for high-throughput NMR structure determination. The difficulty in automated NOE assignment is ambiguity: there can be tens of possible different assignments for an NOE peak based solely on its chemical shifts. Previous automated NOE assignment approaches rely on an ensemble of structures, computed from a subset of all the NOEs, to iteratively filter ambiguous assignments. These algorithms are heuristic in nature, provide no guarantees on solution quality or running time, and are slow in practice. In this paper we present an accurate, efficient NOE assignment algorithm. The algorithm first invokes the algorithm in (L. Wang, et. al., 2004) to compute an accurate backbone structure using only two backbone residual dipolar couplings (RDCs) per residue. The algorithm then filters ambiguous NOE assignments by merging an ensemble of intra-residue vectors from a protein rotamer database, together with internuclear vectors from the computed backbone structure. The protein rotamer database was built from ultra-high resolution structures (<1.0 /spl Aring/) in the Protein Data Bank (PDB). The algorithm has been successfully applied to assign more than 1,700 NOE distance restraints with better than 90% accuracy on the protein human ubiquitin using real experimentally-recorded NMR data. The algorithm assigns these NOE restraints in less than one second on a single-processor workstation.},
+ author = {Wang, L. and Donald, B.R.},
+ booktitle = {2005 IEEE Computational Systems Bioinformatics Conference (CSB'05)},
+ doi = {10.1109/CSB.2005.13},
+ issn = {},
+ keyword = {Libraries;Proteins;Nuclear magnetic resonance;Iterative algorithms;Spine;Filters;Databases;Spectroscopy;Chemicals;Heuristic algorithms},
+ month = {Aug},
+ number = {},
+ pages = {189-202},
+ title = {An efficient and accurate algorithm for assigning nuclear overhauser effect restraints using a rotamer library ensemble and residual dipolar couplings},
+ volume = {},
+ year = {2005}
+}

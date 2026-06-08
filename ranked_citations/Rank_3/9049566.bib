@@ -1,0 +1,14 @@
+@inproceedings{9049566,
+ abstract = {Most recent CRDT techniques rely on a causal broadcast primitive to provide guarantees on the delivery of operation deltas. Such a primitive is unfortunately hard to implement efficiently in large open networks, whose membership is often difficult to track. As an alternative, we argue in this paper that pure state-based CRDTs can be efficiently implemented by encoding states as specialized Merkle trees, and that this approach is well suited to open networks where many nodes may join and leave. At the core of our contribution lies a new kind of Merkle tree, called Merkle Search Tree (MST), that implements a balanced search tree while maintaining key ordering. This latter property makes it particularly efficient in the case of updates on sets of sequential keys, a common occurrence in many applications. We use this new data structure to implement a distributed event store, and show its efficiency in very large systems with low rates of updates. In particular, we show that in some scenarios our approach is able to achieve both a 66% reduction of bandwidth cost over a vector-clock approach, as well as a 34% improvement in consistency level. We finally suggest other uses of our construction for distributed databases in open networks.},
+ author = {Auvolat, Alex and Taïani, François},
+ booktitle = {2019 38th Symposium on Reliable Distributed Systems (SRDS)},
+ doi = {10.1109/SRDS47363.2019.00032},
+ issn = {2575-8462},
+ keyword = {Costs;Distributed databases;Bandwidth;Data structures;Encoding;Peer-to-peer computing;Reliability;Merkle trees, search trees, CRDT, IoT, georeplicated systems, peer-to-peer, anti-entropy},
+ month = {Oct},
+ number = {},
+ pages = {221-22109},
+ title = {Merkle Search Trees: Efficient State-Based CRDTs in Open Networks},
+ volume = {},
+ year = {2019}
+}

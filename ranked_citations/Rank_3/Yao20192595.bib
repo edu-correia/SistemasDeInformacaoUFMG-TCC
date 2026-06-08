@@ -1,0 +1,16 @@
+@article{Yao20192595,
+ abstract = {Key-value (KV) stores play an increasingly critical role in supporting diverse large-scale applications in modern data centers hosting terabytes of KV items which even might reside on a single server due to virtualization purposes. The combination of the ever-growing volume of KV items and storage/application consolidation is driving a trend of high storage density for KV stores. Shingled Magnetic Recording (SMR) represents a promising technology for increasing disk capacity, which however comes with the increased complexity of handling random writes. To take the best advantages of SMR drives, applications are expected to work in an SMR-friendly way. In this work, we present SEALDB, a Log-Structured Merge tree (LSM-tree) based key-value store that is specifically optimized for SMR drives via avoiding random writes and the corresponding write amplification on SMR drives. First, for LSM-trees, SEALDB collects and groups participating data of each compaction into sets. Using a set as the basic unit for compactions, SEALDB improves compaction efficiency by reducing random I/Os. Second, SEALDB creates variable sized bands on original HM-SMR drives, named dynamic bands. Dynamic bands store sets in an SMR-friendly way to eliminate the auxiliary write amplification from SMR drives. Third, SEALDB employs two light-weight garbage collection (GC) policies to further improve the space efficiency. We demonstrate the advantages of SEALDB via extensive experiments with various workloads. Overall, SEALDB delivers impressive performance compared with LevelDB, e.g., 3.42×3.42×/2.65×2.65× faster for random writes (without or with GCs), and 3.96×3.96× faster for sequential reads. © 1990-2012 IEEE.},
+ author = {Yao, Ting and Tan, Zhihu and Wan, Jiguang and Huang, Ping and Zhang, Yiwen and Xie, Changsheng and He, Xubin},
+ doi = {10.1109/TPDS.2019.2918219},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 19},
+ number = {11},
+ pages = {2595 - 2607},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SEALDB: An Efficient LSM-tree Based KV Store on SMR Drives with Sets and Dynamic Bands},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85077449793?origin=resultslist},
+ volume = {30},
+ year = {2019}
+}

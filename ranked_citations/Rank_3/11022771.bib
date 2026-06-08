@@ -1,0 +1,14 @@
+@article{11022771,
+ abstract = {Erasure codes (EC) have been widely adopted to provide high data reliability with low storage costs in clusters. Due to the deletion and out-of-place update operations, some data blocks are invalid, which unfortunately arouses the tedious garbage collection (GC) problem. Several limitations still plague existing designs: substantial network traffic, unbalanced traffic load, and low read/write performance after GC. This paper proposes FastGC, a fast garbage collection method that merges the old stripes into a new stripe and reclaims invalid blocks. FastGC quickly generates an efficient merge solution by stripe grouping and bit sequences operations to minimize network traffic and maintains data block distributions of the same stripe to ensure read performance. It carefully allocates the storage space for new stripes during merging to eliminate the discontinuous free spaces that affect write performance. Furthermore, to accelerate the parity updates after merging, FastGC greedily schedules the transmission links for multi-stripe updates to balance the traffic load across nodes and adopts a maximum flow algorithm to saturate the bandwidth utilization. Comprehensive evaluation results show via simulations and Alibaba ECS experiments that FastGC can significantly reduce 10.36%-81.22% of the network traffic and 34.25%-72.36% of the GC time while maintaining read/write performance after GC.},
+ author = {Zhou, Hai and Feng, Dan and Hu, Yuchong and Wang, Wei and Huang, Huadong},
+ doi = {10.1109/TC.2025.3575914},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Telecommunication traffic;Codes;Recycling;Encoding;Schedules;Computers;Maintenance engineering;Writing;Merging;Training;Erasure coding;storage clusters;garbage collection;stripe merge},
+ month = {Aug},
+ number = {8},
+ pages = {2827-2840},
+ title = {Fast Garbage Collection in Erasure-Coded Storage Clusters},
+ volume = {74},
+ year = {2025}
+}

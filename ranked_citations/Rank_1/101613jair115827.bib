@@ -1,0 +1,16 @@
+@article{10.1613/jair.1.15827,
+ abstract = {SAT solving in large distributed environments has previously led to some famous results and to impressive speedups for selected inputs. However, in terms of general-purpose SAT solving, prior approaches still cannot make efficient use of a large number of processors. We aim to address this issue with a complete and systematic overhaul of the distributed solver HordeSat with a focus on its algorithmic building blocks. In particular, we present a communication-efficient approach to clause sharing, careful buffering and filtering of produced clauses, and effective orchestration of state-of-the-art solver backends. In extensive evaluations, our approach named MallobSat significantly outperforms an updated HordeSat, doubling its mean speedup. Our clause sharing results in effective parallelization even if all threads execute identical solver programs that only differ based on which clauses they import at which times. We thus argue that MallobSat is not a portfolio solver with the added bonus of clause sharing but rather a clause-sharing solver where adding some explicit diversification is useful but not essential. We also discuss the last four iterations of the International SAT Competition (2020–2023), where our system ranked very favorably, and identify several previously unsolved competition problems that MallobSat solved successfully. Last but not least, our approach is malleable, i.e., supports running on a fluctuating set of resources, which allows us to combine parallel job processing and parallel SAT solving in a flexible manner for best resource efficiency},
+ address = {El Segundo, CA, USA},
+ author = {Schreiber, Dominik and Sanders, Peter},
+ doi = {10.1613/jair.1.15827},
+ issn = {1076-9757},
+ issue_date = {Sep 2024},
+ journal = {J. Artif. Int. Res.},
+ month = {September},
+ numpages = {59},
+ publisher = {AI Access Foundation},
+ title = {MallobSat: Scalable SAT Solving by Clause Sharing},
+ url = {https://doi.org/10.1613/jair.1.15827},
+ volume = {80},
+ year = {2024}
+}

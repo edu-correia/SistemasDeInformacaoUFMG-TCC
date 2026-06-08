@@ -1,0 +1,16 @@
+@article{Zhang2023980,
+ abstract = {Based on a log-structured merge (LSM) tree, the key-value (KV) storage system can provide high reading performance and optimize random writing performance. It is widely used in modern data storage systems like e-commerce, online analytics, and real-time communication. An LSM tree stores new KV data in the memory and flushes to disk in batches. To prevent data loss in memory if there is an unexpected crash, RocksDB appends updating data in the write-ahead log (WAL) before updating the memory. However, synchronous WAL significantly reduces writing performance. In this paper, we present a new WAL mechanism named MyWAL. It directly manages raw devices (or partitions) instead of saving data on a traditional file system. These can avoid useless metadata updating and write data sequentially on disks. Experimental results show that MyWAL can significantly improve the data writing performance of RocksDB compared to the traditional WAL for small KV data on solid-state disks (SSDs), as much as five to eight times faster. On non-volatile memory express soild-state drives (NVMe SSDs) and non-volatile memory (NVM), MyWAL can improve data writing performance by 10%–30%. Furthermore, the results of YCSB (Yahoo! Cloud Serving Benchmark) show that the latency decreased by 50% compared with SpanDB. © 2023, Zhejiang University Press.},
+ author = {Zhang, Xiao and Li, Mengyu and Ngulube, Michael and Chen, Yonghao and Zhao, Yiping},
+ doi = {10.1631/FITEE.2200496},
+ journal = {Frontiers of Information Technology and Electronic Engineering},
+ note = {Cited by: 0},
+ number = {7},
+ pages = {980 - 993},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MyWAL: performance optimization by removing redundant input/output stack in key-value store; [MyWAL: 一种基于精简输入输出堆栈的键值存储系统性能优化方案]},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85165740593?origin=resultslist},
+ volume = {24},
+ year = {2023}
+}

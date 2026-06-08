@@ -1,0 +1,14 @@
+@inproceedings{1320038,
+ abstract = {XML plays an important role in delivering data over the Internet, and the need to store and manipulate XML in its native format has become increasingly relevant. This growing need necessitates work on developing native XML operators, especially for one as fundamental as sort. We present NEXSORT, an algorithm that leverages the hierarchical nature of XML to efficiently sort an XML document in external memory. In a fully sorted XML document, children of every nonleaf element are ordered according to a given sorting criterion. Among NEXSORT's uses is in combination with structural merge as the XML version of sort-merge join, which allows us to merge large XML documents using only a single pass once they are sorted. The hierarchical structure of an XML document limits the number of possible legal orderings among its elements, which means that sorting XML is fundamentally "easier" than sorting a flat file. We prove that the I/O lower bound for sorting XML in external memory is /spl Theta/(max{n,nlog/sub m/(k/B)}), where n is the number of blocks in the input XML document, m is the number of main memory blocks available for sorting, B is the number of elements that can fit in one block, and k is the maximum fan-out of the input document tree. We show that NEXSORT performs within a constant factor of this theoretical lower bound. In practice we demonstrate, even with a naive implementation, NEXSORT significantly outperforms a regular external merge sort of all elements by their key paths, unless the XML document is nearly flat, in which case NEXSORT degenerates essentially to external merge sort.},
+ author = {Silberstein, A. and Jun Yang},
+ booktitle = {Proceedings. 20th International Conference on Data Engineering},
+ doi = {10.1109/ICDE.2004.1320038},
+ issn = {1063-6382},
+ keyword = {Sorting;XML;Internet;Merging;Remuneration;Computer science;Law;Legal factors;Data models;Engineering profession},
+ month = {April},
+ number = {},
+ pages = {695-706},
+ title = {NEXSORT: sorting XML in external memory},
+ volume = {},
+ year = {2004}
+}

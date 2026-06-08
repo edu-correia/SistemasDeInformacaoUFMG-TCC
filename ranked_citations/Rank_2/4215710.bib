@@ -1,0 +1,14 @@
+@inproceedings{4215710,
+ abstract = {Pattern matching is a crucial task in several critical network services such as intrusion detection and policy management. As the complexity of rule-sets increases, traditional string matching engines are being replaced by more sophisticated regular expression engines. To keep up with line rates, deal with denial of service attacks and provide predictable resource provisioning, the design of such engines must allow examining payload traffic at several gigabits per second and provide worst case speed guarantees. While regular expression matching using deterministic finite automata (DFA) is a well studied problem in theory, its implementation either in software or specialized hardware is complicated by prohibitive memory requirements. This is especially true for DFAs representing complex regular expressions present in practical rule-sets. In this paper, we introduce a novel method to drastically reduce the DFA memory requirement and still provide worst-case speed guarantees. Specifically, we merge several "non-equivalent" states in a DFA by introducing labels on their input and output transitions. We then propose a data structure to represent the merged states and the transition labels. We show that, with very few assumptions about the original DFA, such a transformation results in significant compression in the DFA representation. We have implemented a state merging and transition labeling algorithm for DFAs, and show that for Snort and Bro security rule-sets, state merging results in memory reductions of an order of magnitude.},
+ author = {Becchi, M. and Cadambi, S.},
+ booktitle = {IEEE INFOCOM 2007 - 26th IEEE International Conference on Computer Communications},
+ doi = {10.1109/INFCOM.2007.128},
+ issn = {0743-166X},
+ keyword = {Merging;Doped fiber amplifiers;Engines;Pattern matching;Intrusion detection;Computer crime;Payloads;Automata;Hardware;Data structures},
+ month = {May},
+ number = {},
+ pages = {1064-1072},
+ title = {Memory-Efficient Regular Expression Search Using State Merging},
+ volume = {},
+ year = {2007}
+}

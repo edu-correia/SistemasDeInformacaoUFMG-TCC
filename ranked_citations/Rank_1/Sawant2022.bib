@@ -1,0 +1,16 @@
+@article{Sawant2022,
+ abstract = {The success of the convolutional neural network (CNN) comes with a tremendous growth of diverse CNN structures, making it hard to deploy on limited-resource platforms. These over-sized models contain a large amount of filters in the convolutional layers, which are responsible for almost 99% of the computation. The key question here arises: Do we really need all those filters? By removing entire filters, the computational cost can be significantly reduced. Hence, in this article, a filter pruning method, a process of discarding a subset of unimportant or weak filters from the original CNN model, is proposed, which alleviates the shortcomings of over-sized CNN architectures at the cost of storage space and time. The proposed filter pruning strategy is adopted to compress the model by assigning additional importance weights to convolutional filters. These additional importance weights help each filter learn its responsibility and contribute more efficiently. We adopted different initialization strategies to learn more about filters from different aspects and prune accordingly. Furthermore, unlike existing pruning approaches, the proposed method uses a predefined error tolerance level instead of the pruning rate. Extensive experiments on two widely used image segmentation datasets: Inria and AIRS, and two widely known CNN models for segmentation: TernausNet and standard U-Net, verify that our pruning approach can efficiently compress CNN models with almost negligible or no loss of accuracy. For instance, our approach could significantly reduce 85% of all floating point operations (FLOPs) from TernausNet on Inria with a negligible drop of 0.32% in validation accuracy. This compressed network is six-times smaller and almost seven-times faster (on a cluster of GPUs) than that of the original TernausNet, while the drop in the accuracy is less than 1%. Moreover, we reduced the FLOPs by 84.34% without significantly deteriorating the output performance on the AIRS dataset for TernausNet. The proposed pruning method effectively reduced the number of FLOPs and parameters of the CNN model, while almost retaining the original accuracy. The compact model can be deployed on any embedded device without any specialized hardware. We show that the performance of the pruned CNN model is very similar to that of the original unpruned CNN model. We also report numerous ablation studies to validate our approach. © 2022 by the authors.},
+ author = {Sawant, Shrutika S. and Wiedmann, Marco and Göb, Stephan and Holzer, Nina and Lang, Elmar W. and Götz, Theresa},
+ doi = {10.3390/app122111184},
+ journal = {Applied Sciences (Switzerland)},
+ note = {Cited by: 11; All Open Access; Gold Open Access; Green Open Access},
+ number = {21},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Compression of Deep Convolutional Neural Network Using Additional Importance-Weight-Based Filter Pruning Approach},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85141860953?origin=resultslist},
+ volume = {12},
+ year = {2022}
+}

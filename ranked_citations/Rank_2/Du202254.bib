@@ -1,0 +1,14 @@
+@conference{Du202254,
+ abstract = {Sparse linear algebra operators are memory bound due to low compute to memory access ratio and irregular data access patterns. The exceptional bandwidth improvement provided by the emerging high-bandwidth memory (HBM) technologies, coupled with the ability of FPGAs to customize the memory hierarchy and compute engines, brings the potential to significantly boost the performance of sparse linear algebra operators. In this paper we identify four challenges when developing high-performance sparse linear algebra accelerators on HBM-equipped FPGAs - - low HBM bandwidth utilization with conventional sparse storage, limited on-chip memory capacity being the bottleneck when scaling to multiple HBM channels, low compute occupancy due to bank conflicts and inter-iteration carried dependencies, and timing closure on multi-die heterogeneous fabrics. We conduct an in-depth case study on sparse matrix-vector multiplication (SpMV) to explore techniques that tackle the four challenges. These techniques include (1) a customized sparse matrix format tailored for HBMs, (2) a scalable on-chip buffer design that combines replication and banking, (3) best practices of using HLS to implement hardware modules that dynamically resolve bank conflicts and carried dependencies for achieving high compute occupancy, and (4) a split-kernel design methodology for frequency optimization. Using the techniques, we demonstrate HiSparse, a high-performance SpMV accelerator on a multi-die HBM-equipped FPGA device. We evaluated HiSparse on a variety of matrix datasets. The results show that HiSparse achieves a high frequency and delivers promising speedup with increased bandwidth efficiency when compared to prior arts on CPUs, GPUs, and FPGAs. © 2022 ACM.},
+ author = {Du, Yixiao and Hu, Yuwei and Zhou, Zhongchun and Zhang, Zhiru},
+ doi = {10.1145/3490422.3502368},
+ journal = {FPGA 2022 - Proceedings of the 2022 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+ note = {Cited by: 68},
+ pages = {54 - 64},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {High-Performance Sparse Linear Algebra on HBM-Equipped FPGAs Using HLS: A Case Study on SpMV},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85125625968?origin=resultslist},
+ year = {2022}
+}

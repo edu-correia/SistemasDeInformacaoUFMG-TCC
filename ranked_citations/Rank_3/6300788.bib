@@ -1,0 +1,14 @@
+@inproceedings{6300788,
+ abstract = {In order to balance the deduplication rate which is an important evaluation metric that determines the disk space saved and the performance influenced by the throughput, and to enhance the capability of the dedupliacation system, a Read Request Sorting and Reorganization Strategy is proposed for avoiding the bottleneck of random read disk detention. The algorithm addresses the data read performance which becomes a critical bottleneck. The random reads require random disk seeks which affects IO throughputs in deduplication systems significantly. The algorithm caches the read requests in the pipeline pool, then utilizes the strategy to divide the IO requests into groups in accordance with the block id which uniquely identifies the block, and merges the identical requests to avoid the promotion of the workload. Then the system sorts the requests on the basis of sequence of fingerprints in Block Index. We built our prototype system based on the sparing index and pipeline parallelism to enhance the improved efficiency of deduplication cluster, and introduce new techniques and structure to accelerate the IO performance.},
+ author = {Xing, Qianqian and Li, Feng and Li, Jie},
+ booktitle = {2012 Fourth International Conference on Computational and Information Sciences},
+ doi = {10.1109/ICCIS.2012.270},
+ issn = {},
+ keyword = {Indexes;Pipelines;Prototypes;Sorting;File systems;Parallel processing;Acceleration;deduplication;IO performance;Sparse Index;IO pipeline;Read Request Sort and Reorganization},
+ month = {Aug},
+ number = {},
+ pages = {1021-1024},
+ title = {RRSR: A Read Request Sorting and Reorganization Strategy to Improve Data Read Performance for Deduplication Systems Based on Sparse Index and Pipeline Parallelism},
+ volume = {},
+ year = {2012}
+}

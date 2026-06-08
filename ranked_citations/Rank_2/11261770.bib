@@ -1,0 +1,14 @@
+@inproceedings{11261770,
+ abstract = {Large language model (LLM) pruning with fixed N:M structured sparsity significantly limits the expressivity of the sparse model, yielding sub-optimal performance. On the contrary, support for more than one N:M pattern to provide sparse representational freedom yields a costly overhead in the hardware. To mitigate these challenges for LLMs, we first present a flexible layer-wise outlier-density-aware N:M sparsity (FLOW) selection method. FLOW enables the identification of optimal layer-wise N and M values (from a given range) by simultaneously accounting for the presence and distribution of outliers, allowing a higher degree of representational freedom. To deploy the sparse models with such N:M flexibility, we then present a flexible low overhead, digital computein-memory architecture (FlexCiM). FlexCiM enables support for diverse sparsity patterns by partitioning a digital CiM (DCiM) macro into smaller sub-macros which are adaptively aggregated and disaggregated through distribution and merging mechanisms for different values of N and M. Extensive experiments on both transformer-based and recurrence-based state space foundation models (SSMs) demonstrate FLOW to outperform existing alternatives with an accuracy improvement of up to 36%, while FlexCiM delivers up to 1.75× lower inference latency and 1.5× lower energy consumption compared to existing sparse accelerators. Code is available at: https://github.com/FLOW-open-project/FLOW},
+ author = {Ramachandran, Akshat and Kundu, Souvik and Raha, Arnab and Kundu, Shamik and Mathaikutty, Deepak K. and Krishna, Tushar},
+ booktitle = {2025 IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)},
+ doi = {10.1109/ISLPED65674.2025.11261770},
+ issn = {1558-111X},
+ keyword = {Energy consumption;Accuracy;Foundation models;Large language models;Merging;Low power electronics;Computer architecture;Transformers;In-memory computing;Hardware},
+ month = {Aug},
+ number = {},
+ pages = {1-7},
+ title = {Accelerating LLM Inference with Flexible N:M Sparsity via A Fully Digital Compute-in-Memory Accelerator},
+ volume = {},
+ year = {2025}
+}

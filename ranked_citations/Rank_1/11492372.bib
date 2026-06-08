@@ -1,0 +1,14 @@
+@inproceedings{11492372,
+ abstract = {Adapting person re-identification (reID) models to new target environments remains a challenging problem that is typically addressed using unsupervised domain adaptation (UDA) methods. Recent works show that when labeled data originates from several distinct sources (e.g., datasets and cameras), considering each source separately and applying multi-source domain adaptation (MSDA) typically yields higher accuracy and robustness compared to blending the sources and performing conventional UDA. However, state-of-the-art MSDA methods learn domain-specific backbone models or require access to source domain data during adaptation, resulting in significant growth in training parameters and computational cost. In this paper, a Source-free Adaptive Gated Experts (SAGE-reID) method is introduced for person reID. Our SAGE-reID is a cost-effective, source-free MSDA method that first trains individual source-specific low-rank adapters (LoRA) through source-free UDA. Then, a lightweight gating network is introduced and trained to dynamically assign optimal merging weights for fusion of LoRA experts, enabling effective cross-domain knowledge transfer. While the number of backbone parameters remains constant across source domains, LoRA experts scale linearly but remain negligible in size (ď 2% per source), reducing both the memory consumption and risk of overfitting. Extensive experiments conducted on three challenging benchmarks – Market-1501, DukeMTMC-reID, and MSMT17 – indicate that SAGE-reID can outperform state-of-the-art methods while remaining computationally efficient. Our code is available: https://github.com/nehdiii/SAGE-reID},
+ author = {Nehdi, Taha Mustapha and Mrabah, Nairouz and Belal, Atif and Pedersoli, Marco and Granger, Eric},
+ booktitle = {2026 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+ doi = {10.1109/WACV61042.2026.00181},
+ issn = {2642-9381},
+ keyword = {Through-silicon vias;Filtering;Filters;Integrated circuits;LoRa;Protocols;Communication systems;Data communication;HTTP;Telecommunications;person re-identification;multi-source domain adaptation;source-free adaptation;low-rank adapters;expert merging},
+ month = {March},
+ number = {},
+ pages = {1809-1819},
+ title = {Low-Rank Expert Merging for Multi-Source Domain Adaptation in Person Re-Identification},
+ volume = {},
+ year = {2026}
+}

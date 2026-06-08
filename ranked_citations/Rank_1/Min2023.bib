@@ -1,0 +1,16 @@
+@article{Min2023,
+ abstract = {Key-value SSDs (KVSSDs) introduced so far are limited in their use as an alternative to the key-value store running on the host due to the following technical limitations. First, they were designed only for a single tenant, limiting the use of multiple tenants. Second, they mainly focused on designing indexes for primary key-based searches, without supporting various queries using a combination of primary key and non-primary attribute-based searches. This article proposes Cerberus, a Log Structured Merged (LSM) tree-based KVSSD armed with (1) namespace and performance isolation for multiple tenants in a multi-tenant environment and (2) capability for processing non-primary attribute-based search queries. Specifically, Cerberus identifies the tenant's namespace and splits a single large LSM-tree into namespace-specific LSM-tree indexes for tenants. Cerberus also manages secondary LSM-tree indexes to enable non-primary attribute-based data access and fast search query processing. With the SSD-internal CPU/DRAM resources, Cerberus supports non-primary attribute-based search queries and handles complex queries that are combined with search and computing operations. We prototyped Cerberus on the Cosmos+ OpenSSD platform. When there are multiple tenants, Cerberus exhibits up to 2.9× higher read throughput and negligible write overhead compared to existing KVSSD. Cerberus also shows lower latency by up to 9.31× for non-primary attribute-based queries.  © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Min, Donghyun and Kim, Kihyun and Moon, Chaewon and Khan, Awais and Lee, Seungjin and Yun, Changhwan and Chung, Woosuk and Kim, Youngjae},
+ doi = {10.1145/3590153},
+ journal = {ACM Transactions on Embedded Computing Systems},
+ note = {Cited by: 2},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Multi-tenant Key-value SSD with Secondary Index for Search Query Processing and Analysis},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85168774663?origin=resultslist},
+ volume = {22},
+ year = {2023}
+}

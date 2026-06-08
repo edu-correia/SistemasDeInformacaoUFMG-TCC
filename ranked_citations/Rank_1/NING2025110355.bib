@@ -1,0 +1,13 @@
+@article{NING2025110355,
+ abstract = {Accurate lesion segmentation in ultrasound images faces the unique challenge that adjacent tissues (i.e., background) share similar intensity and often exhibit richer texture patterns than the lesion region (i.e., foreground). This work presents a decomposition-coupling network, called DC-Net, to deal with this challenge in a (foreground-background) saliency map disentanglement-fusion manner. The DC-Net consists of decomposition and coupling subnets, and the former preliminarily disentangles original image into foreground and background saliency maps, followed by the latter for accurate segmentation under the assistance of saliency prior fusion. The coupling subnet involves three aspects of fusion strategies, including: (1) regional feature aggregation (via differentiable context pooling operator in the encoder) to adaptively preserve local contextual details with the larger receptive field during dimension reduction; (2) relation-aware representation fusion (via cross-correlation fusion module in the decoder) to efficiently fuse low-level visual characteristics and high-level semantic features during resolution restoration; (3) dependency-aware prior incorporation (via coupler) to reinforce foreground-salient representation with the complementary information derived from background representation. Furthermore, a harmonic loss function is introduced to encourage the network to focus more attention on low-confidence and hard pixels. The proposed method is evaluated on two ultrasound lesion segmentation tasks, achieving better performance than second best methods (i.e., dice similarity coefficient: 73.96 ± 0.36 (+4.18%)/76.25 ± 1.89 (+3.88%), mean intersection over union/jaccard index: 64.26 ± 0.48 (+5.07%)/65.28 ± 2.24 (+6.46%), precision: 75.82 ± 1.16 (+8.07%)/79.35 ± 1.92 (+3.07%), 95% hausdorff distance: 5.44 ± 0.10 (+5.39%)/6.22 ± 0.26 (+5.18%) on breast/thyroid ultrasound). Our proposed DC-Net can adapt to multiple ultrasound segmentation tasks and achieve remarkable performance improvement. Our code is available at https://github.com/smu-myx/DC-Net.},
+ author = {Zhenyuan Ning and Yixiao Mao and Xiaotong Xu and Qianjin Feng and Shengzhou Zhong and Yu Zhang},
+ doi = {https://doi.org/10.1016/j.engappai.2025.110355},
+ issn = {0952-1976},
+ journal = {Engineering Applications of Artificial Intelligence},
+ keyword = {Lesion segmentation, Ultrasound image, Saliency map, Deep learning},
+ pages = {110355},
+ title = {DC-Net: Decomposing and coupling saliency map for lesion segmentation in ultrasound images},
+ url = {https://www.sciencedirect.com/science/article/pii/S0952197625003550},
+ volume = {148},
+ year = {2025}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/1409060.1409081,
+ abstract = {We present an efficient computational algorithm for functions represented by a nonlinear piecewise constant approximation called cuts. Our main contribution is a single traversal algorithm for merging cuts that allows for arbitrary pointwise computation, such as addition, multiplication, linear interpolation, and multi-product integration. A theoretical error bound of this approach can be proved using a statistical interpretation of cuts. Our algorithm extends naturally to computation with many cuts and maps easily to modern GPUs, leading to significant advantages over existing methods based on wavelet approximation. We apply this technique to the problem of realistic lighting and material design under complex illumination with arbitrary BRDFs. Our system smoothly integrates all-frequency relighting of shadows and reflections with dynamic per-pixel shading effects, such as bump mapping and spatially varying BRDFs. This combination of capabilities is typically missing in current systems. We represent illumination and precomputed visibility as nonlinear sparse vectors; we then use our cut merging algorithm to simultaneously interpolate visibility cuts at each pixel, and compute the triple product integral of the illumination, interpolated visibility, and dynamic BRDF samples. Finally, we present a two-pass, data-driven approach that exploits pilot visibility samples to optimize the construction of the light tree, leading to more efficient cuts and reduced datasets.},
+ address = {New York, NY, USA},
+ articleno = {128},
+ author = {Cheslack-Postava, Ewen and Wang, Rui and Akerlund, Oskar and Pellacini, Fabio},
+ doi = {10.1145/1409060.1409081},
+ issn = {0730-0301},
+ issue_date = {December 2008},
+ journal = {ACM Trans. Graph.},
+ month = {December},
+ number = {5},
+ numpages = {10},
+ publisher = {Association for Computing Machinery},
+ title = {Fast, realistic lighting and material design using nonlinear cut approximation},
+ url = {https://doi.org/10.1145/1409060.1409081},
+ volume = {27},
+ year = {2008}
+}

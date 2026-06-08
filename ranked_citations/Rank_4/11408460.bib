@@ -1,0 +1,14 @@
+@inproceedings{11408460,
+ abstract = {Tensor parallelism (TP) in large-scale LLM inference and training introduces frequent collective operations that dominate inter-GPU communication. While in-switch computing, exemplified by NVLink SHARP (NVLS), accelerates collective operations by reducing redundant data transfer, its communication-centric design philosophy introduces the mismatch between its communication mode and the memory semantic requirement of LLM's computation kernel. Such a mismatch isolates the compute and communication phases, resulting in underutilized resources and limited overlap in multi-GPU systems. To address the limitation, we propose CAIS, the first ComputeAware In-Switch computing framework that aligns communication modes with computation's memory semantics requirement. CAIS consists of three integral techniques: (1) compute-aware ISA and microarchitecture extension to enable compute-aware in-switch computing. (2) merging-aware TB (Thread Block) coordination to improve the temporal alignment for efficient request merging. (3) graph-level dataflow optimizer to achieve a tight cross-kernel overlap. Evaluations on LLM workloads show that CAIS achieves $1.38 \times$ average end-to-end training speedup over the SOTA NVLS-enabled solution, and $1.61 \times$ over T3, the SOTA compute-communicate overlap solutions but do not leverage NVLS, demonstrating its effectiveness in accelerating TP on multi-GPU systems.},
+ author = {Zhang, Chen and Zhang, Qijun and Zhou, Zhuoshan and Diao, Yijia and Wang, Haibo and Zhou, Zhe and Tu, Zhipeng and Li, Zhiyao and Sun, Guangyu and Song, Zhuoran and Ji, Zhigang and Leng, Jingwen and Guo, Minyi},
+ booktitle = {2026 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
+ doi = {10.1109/HPCA68181.2026.11408460},
+ issn = {2378-203X},
+ keyword = {Training;Microarchitecture;Tensors;Philosophical considerations;Semantics;Memory management;Merging;Performance gain;Parallel processing;Kernel},
+ month = {Jan},
+ number = {},
+ pages = {1-15},
+ title = {Towards Compute-Aware In-Switch Computing for LLMs Tensor-Parallelism on Multi-GPU Systems},
+ volume = {},
+ year = {2026}
+}

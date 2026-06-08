@@ -1,0 +1,14 @@
+@inproceedings{9787867,
+ abstract = {Scientific datasets are often analyzed and visualized using isosurfaces. The connected components at or above the isovalue defining these isosurfaces are called superlevel-set components. The vertex set of these superlevel-set components can be used to compute local statistics, such as mean temperature or histogram per component, or to segment the data. However, in datasets produced by acquisition devices or simulations, noise induces many spurious components that clutter the visualization and analysis results. Many of these spurious components would disappear if the data values were slightly adjusted. The notion of persistence captures the stability of a component with respect to function value changes, and so we are interested in computing persistence quickly. Locality of computation is critical for parallel scalability, minimization of communication in a distributed environment, or an out-of-core processing. The recently introduced merge forest attained high performance by exploiting locality, thereby avoiding communication until needed to resolve a feature query. We extend the merge forest to support persistence-based queries and study the locality of these queries by evaluating the traversals of regions of data during a query. We confirm that the majority of evaluated datasets have the property that the noise is mostly local, and thus can be efficiently eliminated without performing a global analysis. Finally, we compare the query running times with those of a triplet merge tree because a triplet merge tree answers all proposed queries in constant time and can be constructed from a merge tree in linear time.},
+ author = {Klacansky, Pavol and Gyulassy, Attila and Bremer, Peer-Timo and Pascucci, Valerio},
+ booktitle = {2022 IEEE 15th Pacific Visualization Symposium (PacificVis)},
+ doi = {10.1109/PacificVis53943.2022.00021},
+ issn = {2165-8773},
+ keyword = {Human computer interaction;Temperature distribution;Histograms;Scalability;Forestry;Data structures;Minimization;Human-centered computing- Visualization- Visu-alization application domains-Scientific visualization},
+ month = {April},
+ number = {},
+ pages = {121-130},
+ title = {A Study of the Locality of Persistence-Based Queries and Its Implications for the Efficiency of Localized Data Structures},
+ volume = {},
+ year = {2022}
+}

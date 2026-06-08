@@ -1,0 +1,17 @@
+@article{10.14778/2732977.2732979,
+ abstract = {Providing the ability to elastically use more or fewer servers on demand (scale out and scale in) as the load varies is essential for database management systems (DBMSes) deployed on today's distributed computing platforms, such as the cloud. This requires solving the problem of dynamic (online) data placement, which has so far been addressed only for workloads where all transactions are local to one sever. In DBMSes where ACID transactions can access more than one partition, distributed transactions represent a major performance bottleneck. Scaling out and spreading data across a larger number of servers does not necessarily result in a linear increase in the overall system throughput, because transactions that used to access only one server may become distributed.In this paper we present Accordion, a dynamic data placement system for partition-based DBMSes that support ACID transactions (local or distributed). It does so by explicitly considering the affinity between partitions, which indicates the frequency in which they are accessed together by the same transactions. Accordion estimates the capacity of a server by explicitly considering the impact of distributed transactions and affinity on the maximum throughput of the server. It then integrates this estimation in a mixed-integer linear program to explore the space of possible configurations and decide whether to scale out. We implemented Accordion and evaluated it using H-Store, a shared-nothing in-memory DBMS. Our results using the TPC-C and YCSB benchmarks show that Accordion achieves benefits compared to alternative heuristics of up to an order of magnitude reduction in the number of servers used and in the amount of data migrated.},
+ author = {Serafini, Marco and Mansour, Essam and Aboulnaga, Ashraf and Salem, Kenneth and Rafiq, Taha and Minhas, Umar Farooq},
+ doi = {10.14778/2732977.2732979},
+ issn = {2150-8097},
+ issue_date = {August 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {1035–1046},
+ publisher = {VLDB Endowment},
+ title = {Accordion: elastic scalability for database systems supporting distributed transactions},
+ url = {https://doi.org/10.14778/2732977.2732979},
+ volume = {7},
+ year = {2014}
+}

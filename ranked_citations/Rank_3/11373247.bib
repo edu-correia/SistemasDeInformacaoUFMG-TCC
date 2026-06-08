@@ -1,0 +1,14 @@
+@article{11373247,
+ abstract = {In recent years, the growth of city tourism demand has promoted the development of point-of-interest (POI) recommendations. However, when tourists travel together, they do not dynamically integrate the pReferences of members, resulting in unsatisfactory crowd recommendation results. In order to solve the above problems, this article proposes the POI recommendation method for city tourism crowd. First, this study proposes binary Jaccard-DBSCAN (BJ-DBSCAN), an algorithm that transforms complex contrast sets into efficient bit-parallel computations via binary-matrix representation, while leveraging the Jaccard distance to precisely capture the semantic similarity across users’ interest-point sets. This approach preserves the clustering quality characteristic of DBSCAN, and at the same time significantly improves the efficiency of distance-matrix computation on large-scale data. Second, the urban POI recommendation algorithm based on CEA-RPCMLP-HGNN is proposed. In this algorithm, the channel external attention (CEA) module’s channel attention dynamically allocates weights to crowd members depending on the scenario, and external attention subsequently merges the weighted individual preferences to produce a crowd-level preference representation. The residual pointwise convolutional multilayer perceptron (RPCMLP) module employs residual connections to avoid loss of preference information during propagation and applies point convolution to the fused crowd preference for effective transformation and deep integration—thereby enhancing both the accuracy and stability of the recommendation results. Ablation experiments on the Mafengwo and CAMRa2011 datasets validated that combining residual connections with point-convolution structures effectively supports crowd preference fusion and feature transformation. The results demonstrated a substantial performance gain. Compared with baseline methods, our model achieved significantly better accuracy on crowd POI recommendations, as measured by HR@5 and HR@10.},
+ author = {Zhang, Jing and Li, Xingyue and Li, Bing and Xu, Yuguang and Su, Jing},
+ doi = {10.1109/JIOT.2026.3661560},
+ issn = {2327-4662},
+ journal = {IEEE Internet of Things Journal},
+ keyword = {Clustering algorithms;Accuracy;Adaptation models;Heuristic algorithms;Urban areas;Computational modeling;Computational efficiency;Attention mechanisms;Propagation losses;Convolution;Attention mechanism;convolutional multilayer perceptron;crowd sensing;point-of-interest (POI);recommendation method},
+ month = {May},
+ number = {9},
+ pages = {19006-19017},
+ title = {CEA-RPCMLP-HGNN: Point-of-Interest Recommendation Method for City Tourism Crowd},
+ volume = {13},
+ year = {2026}
+}

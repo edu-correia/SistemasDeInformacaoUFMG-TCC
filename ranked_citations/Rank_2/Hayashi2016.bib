@@ -1,0 +1,15 @@
+@conference{Hayashi2016,
+ abstract = {The One Degree Imager - Portal, Pipeline, and Archive (ODI-PPA) has included the Image Explorer interactive image visualization tool since it went operational. Portal users were able to quickly open up several ODI images within any HTML5 capable web browser, adjust the scaling, apply color maps, and perform other basic image visualization steps typically done on a desktop client like DS9. However, the original design of the Image Explorer required lossless PNG tiles to be generated and stored for all raw and reduced ODI images thereby taking up tens of TB of spinning disk space even though a small fraction of those images were being accessed by portal users at any given time. It also caused significant overhead on the portal web application and the Apache webserver used by ODI-PPA. We found it hard to merge in improvements made to a similar deployment in another project's portal. To address these concerns, we re-architected Image Explorer from scratch and came up with ImageX, a set of microservices that are part of the IU Trident project software suite, with rapid interactive visualization capabilities useful for ODI data and beyond. We generate a full resolution JPEG image for each raw and reduced ODI FITS image before producing a JPG tileset, one that can be rendered using the ImageX frontend code at various locations as appropriate within a web portal (for example: on tabular image listings, views allowing quick perusal of a set of thumbnails or other image sifting activities). The new design has decreased spinning disk requirements, uses AngularJS for the client side Model/View code (instead of depending on backend PHP Model/View/Controller code previously used), OpenSeaDragon to render the tile images, and uses nginx and a lightweight NodeJS application to serve tile images thereby significantly decreasing the Time To First Byte latency by a few orders of magnitude. We plan to extend ImageX for non-FITS images including electron microscopy and radiology scan images, and its featureset to include basic functions like image overlay and colormaps. Users needing more advanced visualization and analysis capabilities could use a desktop tool like DS9+IRAF on another IU Trident project called StarDock, without having to download Gigabytes of FITS image data. © COPYRIGHT SPIE. Downloading of the abstract is permitted for personal use only.},
+ author = {Hayashi, Soichi and Gopu, Arvind and Kotulla, Ralf and Young, Michael D.},
+ doi = {10.1117/12.2233425},
+ journal = {Proceedings of SPIE - The International Society for Optical Engineering},
+ note = {Cited by: 2; All Open Access; Green Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ImageX: New and improved image explorer for astronomical images and beyond},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85006375382?origin=resultslist},
+ volume = {9913},
+ year = {2016}
+}

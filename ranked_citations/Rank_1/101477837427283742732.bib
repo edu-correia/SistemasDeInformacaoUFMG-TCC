@@ -1,0 +1,17 @@
+@article{10.14778/3742728.3742732,
+ abstract = {Timeseries monitoring systems such as Prometheus play a crucial role in gaining observability of the underlying system infrastructure. These systems collect timeseries metrics from various system components and perform monitoring queries over periodic window-based aggregations (i.e., rule queries). However, despite wide adoption, the operational costs and query latency of rule queries remain high. In this paper, we identify major bottlenecks associated with repeated data scans and query computations concerning window overlaps in rule queries, and present PromSketch, an approximation-first query framework as intermediate caches for monitoring systems. It enables low operational costs and query latency, by combining approximate window-based query frameworks and sketch-based precomputation. PromSketch is implemented as a standalone module that can be integrated into Prometheus and VictoriaMetrics, covering 70% of Prometheus' aggregation over time queries. Our evaluation shows that PromSketch achieves up to a two-order-of-magnitude reduction in query latency over Prometheus and VictoriaMetrics, while lowering operational dollar costs of query processing by three orders of magnitude compared to Prometheus and by at least 4\texttimes{} compared to VictoriaMetrics with at most 5% average errors across statistics.},
+ author = {Zhu, Zeying and Chamberlain, Jonathan and Wu, Kenny and Starobinski, David and Liu, Zaoxing},
+ doi = {10.14778/3742728.3742732},
+ issn = {2150-8097},
+ issue_date = {April 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {April},
+ number = {8},
+ numpages = {14},
+ pages = {2348–2361},
+ publisher = {VLDB Endowment},
+ title = {Approximation-First Timeseries Query At Scale},
+ url = {https://doi.org/10.14778/3742728.3742732},
+ volume = {18},
+ year = {2025}
+}

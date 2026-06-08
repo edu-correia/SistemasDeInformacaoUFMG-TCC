@@ -1,0 +1,14 @@
+@inproceedings{8663752,
+ abstract = {In recent years, the Spark memory computing framework has risen rapidly, and the data processing speed has been greatly improved. However, the upper limit of speed is limited by the Spark memory size. The most typical one is the large table Join algorithm, which uses the Sort Merge Join algorithm by default. For the problems such as frequent memory shortage (OOM), serious GC, large Shuffle overhead, and heavy time consuming, we propose a Join algorithm based on memory monitoring and batch processing, which is based on the signaling data scene of LTE network. We first analyze four aspects: data files, memory usage, batch processing, and runtime monitoring. Then, in the data organization mode of Parquet+Snappy, we control the data flow of Join in batches through memory monitoring, and optimize the default Join by combining BloomFilter and local Hash Join. The experiments show that our optimized Join algorithm alleviates the problem of insufficient memory to some extent and reduces the load imbalance caused by data skew. The overall running time is better than that of the default Join algorithm.},
+ author = {Kefei, Cheng and Zhao, Luo and Ke, Zhou and Xianjun, Deng and Xudong, Chen},
+ booktitle = {2018 IEEE 9th International Conference on Software Engineering and Service Science (ICSESS)},
+ doi = {10.1109/ICSESS.2018.8663752},
+ issn = {2327-0594},
+ keyword = {Sparks;Monitoring;Partitioning algorithms;Memory management;Batch production systems;Filtering algorithms;Organizations;large table Join;OOM;memory monitoring;batch processing;BloomFilter},
+ month = {Nov},
+ number = {},
+ pages = {1096-1103},
+ title = {A Spark Join Algorithm Based on Memory Monitoring and Batch Processing},
+ volume = {},
+ year = {2018}
+}

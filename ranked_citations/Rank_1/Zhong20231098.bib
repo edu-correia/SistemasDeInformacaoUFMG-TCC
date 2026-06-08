@@ -1,0 +1,15 @@
+@conference{Zhong20231098,
+ abstract = {By providing non-volatility with DRAM-comparable performance, the emerging persistent memory (PMem) is propelling new key-value (KV) store designs. The recently released Intel Optane DC PMem now shifts the persistent boundary from memory up to CPU caches, which further eliminates the needs of cacheline flush instructions used in extensive KV stores. However, we uncover via testbed experiments that this change can even degrade the performance of existing KV stores once directly deploying them atop the new generation of the Optane PMem, stemming mainly from the mismatch of access granularities and heavy software designs.In this paper, we present CacheKV, the first KV store built atop persistent CPU caches. CacheKV allocates per-core sub-MemTable in CPU caches with a lazy index update mechanism, so as to fast absorb incoming writes. It then proposes a copy-based flush mechanism to convert small-sized cacheline evictions into large-sized flushes to suppress the write amplification. CacheKV finally accelerates read operations via periodically compacting the sub-skiplists. Extensive testbed experiments show that CacheKV improves the write throughput by 19.5× on average in the write-dominated environment without compromising the read performance, when compared to the state-of-the-art KV stores for the PMem.  © 2023 IEEE.},
+ author = {Zhong, Yijie and Shen, Zhirong and Yu, Zixiang and Shu, Jiwu},
+ doi = {10.1109/ICDE55515.2023.00089},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 10},
+ pages = {1098 - 1111},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Redesigning High-Performance LSM-based Key-Value Stores with Persistent CPU Caches},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85167657906?origin=resultslist},
+ volume = {2023-April},
+ year = {2023}
+}

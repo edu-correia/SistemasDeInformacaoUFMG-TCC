@@ -1,0 +1,14 @@
+@conference{Tang2022226,
+ abstract = {Primary and secondary indices in LSM-tree-based key-value (KV) stores play significant roles for real-world applications, but they suffer severe I/O amplification due to compaction operations. Prior works show that KV separation can mitigate the I/O amplification under various workloads for either primary or secondary indices. However, range queries of primary and secondary indices only achieve suboptimal efficiency for two reasons: (1) KV separation improves insert/update performance by sacrificing the performance of range queries, (2) range queries of primary and secondary indices may conflict with each other. We observe that it can maximize the range query performance by maintaining purely sequential reads(i.e., strict sequentiality), on SSD devices. Moreover, range queries can be improved even in loose sequentiality. Based on these observations, we propose RISE, aiming to improve the Range query performance of prImary and SEcondary indices by leveraging the strict and loose sequentiality of SSD devices. RISE follows the basic design of KV separation and divides the value log into multiple groups. First, to achieve loose sequentiality, it adopts a key-range data grouping policy to bound the key range of primary indices but relaxes the internal key order in each group; Second, RISE proposes a co-location garbage collection(GC) policy to maintain strict sequentiality for the secondary index; Third, RISE employs a parallel parsing policy to accelerate the parsing process of secondary indices. We implement RISE and the decoupled secondary index of SineKV on top of WiscKey and HashKV for comparison. Evaluations show that RISE can outperform the range query performance of WiscKey and HashKV by 21.3% and 23% for the primary index and 29.8% and 31% for the secondary index. Besides, RISE can provide reasonable update performance and accelerate the value parsing phase of GC by 17.9%.  © 2022 ACM.},
+ author = {Tang, Chenlei and Wan, Jiguang and Tan, Zhihu and Li, Guokuan},
+ doi = {10.1145/3542929.3563479},
+ journal = {SoCC 2022 - Proceedings of the 13th Symposium on Cloud Computing},
+ note = {Cited by: 3},
+ pages = {226 - 239},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating range queries of primary and secondary indices for key-value separation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85143257093?origin=resultslist},
+ year = {2022}
+}

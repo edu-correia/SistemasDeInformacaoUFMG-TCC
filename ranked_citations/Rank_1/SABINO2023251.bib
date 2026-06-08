@@ -1,0 +1,13 @@
+@article{SABINO2023251,
+ abstract = {A myriad of intersection tests is necessary for culling algorithms to answer intersection queries in the field of ray tracing, so BVHs are employed to accelerate such queries. OBB-based BVHs usually outperform their AABB-based counterparts in terms of culling efficiency but OBBs are more expensive to compute than AABBs. On the other hand, state-of-the-art BVH builders require linear complexity OBB building algorithms. PCA-based methods run in linear time but demand high memory bandwidth and offer poorly fitting OBBs due to statistical bias. To address these problems, we propose building OBBs with the intermediate use of an orthogonal sets of polytopes (ODOPs) that stores the unbiased topological features of the mesh and enables a straightforward conversion to OBB without the need for vertex processing. This method supports both vertices and parametric differentiable swept volumes. This approach interfaces to state-of-the-art BVH builders by swapping AABBs in favor of ODOP routines. Experiments show that OBB-BVHs built using this method usually outperform AABB-BVHs in terms of SAH costs. Moreover, the OBB-BVHs tested are observed to return query results using fewer intersection tests compared to AABB-BVHs. The ODOP-BVH has been tested only on static scenes in the current version of this work.},
+ author = {Rodolfo Sabino and Creto Augusto Vidal and Joaquim Bento Cavalcante-Neto and José Gilvan Rodrigues Maia},
+ doi = {https://doi.org/10.1016/j.cag.2023.08.028},
+ issn = {0097-8493},
+ journal = {Computers & Graphics},
+ keyword = {Bounding Volume Hierarchy, Oriented Bounding Box, Ray tracing},
+ pages = {251-261},
+ title = {Building Oriented Bounding Boxes by the intermediate use of ODOPs},
+ url = {https://www.sciencedirect.com/science/article/pii/S0097849323002091},
+ volume = {116},
+ year = {2023}
+}

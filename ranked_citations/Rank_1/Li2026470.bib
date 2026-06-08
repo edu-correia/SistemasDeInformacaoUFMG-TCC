@@ -1,0 +1,15 @@
+@article{Li2026470,
+ abstract = {In the big data era, LSM-tree based KV-stores become the core engine of databases due to their write performance and scalability. However, the multi-layered structure and KV paradigm lead to substantial performance bottlenecks during read operations, particularly when processing complex query workloads. To address the critical limitations of MyRocks—especially its suboptimal query path execution strategies and inflexible parameter configurations in complex query processing—we propose an Adaptive Pathway Optimization (APO) framework that significantly enhances query performance through a multi-phase collaborative optimization approach. First, during the query parsing phase, a multi-branch path matching (MPM) technique is introduced to dynamically generate multiple sets of optimized parameter configurations to expand the search space of the query optimizer. It effectively circumvents the local optimum limitations inherent in traditional optimizers. Second, in the feature extraction phase, a dependency chain regulation (DCR) strategy is proposed to analyze the implicit dependencies between query logic and underlying KV operations, construct a parameter-path-operation association matrix, and filter high-value optimization candidates, thereby minimizing ineffective search efforts. Finally, an adaptive parameter adjustment (APA) model is developed to take path features as input and utilizes a pre-trained network to predict the optimal execution plan, enabling dynamic decision-making and enhancing resource utilization efficiency. The experiments utilize three real-world datasets IMDB, Chinook, and OpenFlights, to evaluate APO in comparison to native MyRocks. The results demonstrate that APO substantially improves query efficiency by significantly reducing execution time and latency in complex join query scenarios. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2026.},
+ author = {Li, Xiang and Gao, Gaimei and Zhang, Qiang and Ge, Jiake and Chai, Yanfeng},
+ doi = {10.1007/978-981-95-5716-5_29},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {470 - 485},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {APO: Adaptive Pathway Optimization for Complex Query Tasks Based on KV-Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105031066139?origin=resultslist},
+ volume = {16114 LNCS},
+ year = {2026}
+}

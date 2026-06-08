@@ -1,0 +1,14 @@
+@inproceedings{11400932,
+ abstract = {Fine-tuning large language models (LLMs) for specialized tasks is resource-intensive and challenging to scale across multiple domains. Model merging, which directly combines parameters from fine-tuned LLMs without additional training, has emerged as an efficient alternative. However, traditional merging methods, such as linear interpolation, often degrade performance due to destructive interference between conflicting parameters. To address these limitations, we propose Layer-Adaptive Spherical Linear Interpolation (Layer-Adaptive SLERP), a novel merging strategy that i) follows a geometry-preserving SLERP path and ii) assigns layer-specific coefficients that respect the distinct roles of attention, feed-forward and embedding blocks. Across 50+ merges spanning six architectures and seven parameter scales ($0.5 ~\mathrm{B}-7 ~\mathrm{B}$), we demonstrate that our method significantly improves merging stability and task-specific performance. Results indicate that the merged 7B variant attains competitive leaderboard performance and supports production-scale deployments, confirming the method's robustness and applicability to realworld adaptation tasks.},
+ author = {Rage, Lilian and Lalain, Youri and Escriva, Mathis and Roberge, Martial and Lemaistre, Paul and Rochet, André-Louis and Réus, Gérard and Bhuyan, Bikram Pratim},
+ booktitle = {2025 IEEE International Conference on Big Data (BigData)},
+ doi = {10.1109/BigData66926.2025.11400932},
+ issn = {2573-2978},
+ keyword = {Training;Interpolation;Fuses;Large language models;Merging;Geometric modeling;Interference;Data models;Stability analysis;Robustness;Model Merging;Large Language Models;Geometric interpolation;Foundation models;Scalable Deployment},
+ month = {Dec},
+ number = {},
+ pages = {6992-7001},
+ title = {Geometric Model Merging for Efficient and Scalable Adaptation of Large Language Models},
+ volume = {},
+ year = {2025}
+}

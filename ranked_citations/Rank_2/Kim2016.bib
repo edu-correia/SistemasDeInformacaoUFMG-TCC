@@ -1,0 +1,14 @@
+@conference{Kim2016,
+ abstract = {For SSD-based RAID systems, the Diff-RAID technique has been proposed to reduce the probability of correlated multiple failures among SSDs by differentiating the amount of written data to each SSD. Although Diff-RAID works well for workloads with many small random writes (which require frequent parity updates), it does not perform well with recent data center workloads (e.g., key-value stores) which are dominated by large sequential writes (i.e., full stripe writes). In order to efficiently differentiate the amount of written data to each SSD for data center workloads, full stripe writes should be converted to partial stripe writes. However, a naive solution such as using a large chunk size significantly degrades the lifetime of SSDs because of a large increase in parity updates. In this paper, we propose a new lifetime management technique, DA-RAID, which overcomes the limitation of Diff-RAID by using deduplication-assisted partial stripe writes. In DA-RAID, a full stripe write can be converted to a partial stripe write so that the age differentiation among SSDs can be supported without increasing the amount of parity updates. Our experimental results show that DA-RAID can effectively sustain the age difference among SSDs even for data center workloads (for which Diff-RAID fails) without additional parity updates. DA-RAID achieves similar age differences among SSDs as Diff-RAID with a large chunk size while reducing the amount of parity updates by 32% over Diff-RAID. © 2016 IEEE.},
+ author = {Kim, Taejin and Lee, Sungjin and Park, Jisung and Kim, Jihong},
+ doi = {10.1109/NVMSA.2016.7547184},
+ journal = {2016 5th Non-Volatile Memory Systems and Applications Symposium, NVMSA 2016},
+ note = {Cited by: 7},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient lifetime management of SSD-based RAIDs using dedup-assisted partial stripe writes},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84986592886?origin=resultslist},
+ year = {2016}
+}

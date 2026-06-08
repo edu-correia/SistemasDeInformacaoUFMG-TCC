@@ -1,0 +1,13 @@
+@article{MYLONAKIS2017709,
+ abstract = {In the field of nuclear reactor analysis, multi-physics calculations that account for the bonded nature of the neutronic and thermal-hydraulic phenomena are of major importance for both reactor safety and design. So far in the context of Monte-Carlo neutronic analysis a kind of “serial” algorithm has been mainly used for coupling with thermal-hydraulics. The main motivation of this work is the interest for an algorithm that could maintain the distinct treatment of the involved fields within a tight coupling context that could be translated into higher convergence rates and more stable behaviour. This work investigates the possibility of replacing the usually used “serial” iteration with an approximate Newton algorithm. The selected algorithm, called Approximate Block Newton, is actually a version of the Jacobian-free Newton Krylov method suitably modified for coupling mono-disciplinary solvers. Within this Newton scheme the linearised system is solved with a Krylov solver in order to avoid the creation of the Jacobian matrix. A coupling algorithm between Monte-Carlo neutronics and thermal-hydraulics based on the above-mentioned methodology is developed and its performance is analysed. More specifically, OpenMC, a Monte-Carlo neutronics code and COBRA-EN, a thermal-hydraulics code for sub-channel and core analysis, are merged in a coupling scheme using the Approximate Block Newton method aiming to examine the performance of this scheme and compare with that of the “traditional” serial iterative scheme. First results show a clear improvement of the convergence especially in problems where significant coolant density gradients appear.},
+ author = {Antonios G. Mylonakis and M. Varvayanni and N. Catsaros},
+ doi = {https://doi.org/10.1016/j.anucene.2017.07.014},
+ issn = {0306-4549},
+ journal = {Annals of Nuclear Energy},
+ keyword = {Multiphysics, Monte-Carlo, Neutronics, Thermal-hydraulics, Coupling, Jacobian-free Newton Krylov, Approximate block Newton, OpenMC},
+ pages = {709-725},
+ title = {A Newton-based Jacobian-free approach for neutronic-Monte Carlo/thermal-hydraulic static coupled analysis},
+ url = {https://www.sciencedirect.com/science/article/pii/S0306454917300464},
+ volume = {110},
+ year = {2017}
+}

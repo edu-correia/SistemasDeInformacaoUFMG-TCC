@@ -1,0 +1,17 @@
+@article{10.14778/3632093.3632098,
+ abstract = {A key need in different disciplines is to perform analytics over fast-paced data streams, similar in nature to the traditional OLAP analytics in relational databases - i.e., with filters and aggregates. Storing unbounded streams, however, is not a realistic, or desired approach due to the high storage requirements, and the delays introduced when storing massive data. Accordingly, many synopses/sketches have been proposed that can summarize the stream in small memory (usually sufficiently small to be stored in RAM), such that aggregate queries can be efficiently approximated, without storing the full stream. However, past synopses predominantly focus on summarizing single-attribute streams, and cannot handle filters and constraints on arbitrary subsets of multiple attributes efficiently. In this work, we propose OmniSketch, the first sketch that scales to fast-paced and complex data streams (with many attributes), and supports count aggregates with filters on multiple attributes, dynamically chosen at query time. The sketch offers probabilistic guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution. We demonstrate experimentally with both real and synthetic data that the sketch outperforms the state-of-the-art, and that it can approximate complex ad-hoc queries within the configured accuracy guarantees, with small memory requirements.},
+ author = {Punter, Wieger R. and Papapetrou, Odysseas and Garofalakis, Minos},
+ doi = {10.14778/3632093.3632098},
+ issn = {2150-8097},
+ issue_date = {November 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {13},
+ pages = {319–331},
+ publisher = {VLDB Endowment},
+ title = {OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates},
+ url = {https://doi.org/10.14778/3632093.3632098},
+ volume = {17},
+ year = {2023}
+}

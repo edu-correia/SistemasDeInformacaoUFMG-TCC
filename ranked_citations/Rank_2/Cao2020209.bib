@@ -1,0 +1,13 @@
+@conference{Cao2020209,
+ abstract = {Persistent key-value stores are widely used as building blocks in today's IT infrastructure for managing and storing large amounts of data. However, studies of characterizing real-world workloads for key-value stores are limited due to the lack of tracing/analyzing tools and the difficulty of collecting traces in operational environments. In this paper, we first present a detailed characterization of workloads from three typical RocksDB production use cases at Facebook: UDB (a MySQL storage layer for social graph data), ZippyDB (a distributed key-value store), and UP2X (a distributed key-value store for AI/ML services). These characterizations reveal several interesting findings: first, that the distribution of key and value sizes are highly related to the use cases/applications; second, that the accesses to key-value pairs have a good locality and follow certain special patterns; and third, that the collected performance metrics show a strong diurnal pattern in the UDB, but not the other two. We further discover that although the widely used key-value benchmark YCSB provides various workload configurations and key-value pair access distribution models, the YCSBtriggered workloads for underlying storage systems are still not close enough to the workloads we collected due to ignorance of key-space localities. To address this issue, we propose a key-range based modeling and develop a benchmark that can better emulate the workloads of real-world key-value stores. This benchmark can synthetically generate more precise key-value queries that represent the reads and writes of key-value stores to the underlying storage system. Copyright © Proc. of the 18th USENIX Conference on File and Storage Tech., FAST 2020. All rights reserved.},
+ author = {Cao, Zhichao and Dong, Siying and Vemuri, Sagar and Du, David H.C.},
+ journal = {Proceedings of the 18th USENIX Conference on File and Storage Technologies, FAST 2020},
+ note = {Cited by: 383},
+ pages = {209 - 223},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Characterizing, modeling, and benchmarking RocksDB Key-value workloads at Facebook},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85086232816?origin=resultslist},
+ year = {2020}
+}

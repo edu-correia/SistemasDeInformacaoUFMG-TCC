@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749686,
+ abstract = {Query scheduling is a critical task that directly impacts query performance in database management systems (DBMS). Deeply integrated schedulers, which require changes to DBMS internals, are usually customized for a specific engine and can take months to implement. In contrast, non-intrusive schedulers make coarse-grained decisions, such as controlling query admission and re-ordering query execution, without requiring modifications to DBMS internals. They require much less engineering effort and can be applied across a wide range of DBMS engines, offering immediate benefits to end users. However, most existing non-intrusive scheduling systems rely on simplified cost models and heuristics that cannot accurately model query interactions under concurrency and different system states, possibly leading to suboptimal scheduling decisions.This work introduces IconqSched, a new, principled non-intrusive scheduler that optimizes the execution order and timing of queries to enhance total end-to-end runtime as experienced by the user — query queuing time plus system runtime. Unlike previous approaches, IconqSched features a novel predictor, Iconq, which treats the DBMS as a black box and accurately estimates the system runtime of concurrently executed queries under different system states. Using these predictions, IconqSched is able to capture system runtime variations across different query mixes and system loads. It then employs a greedy scheduling algorithm to effectively determine which queries to submit and when to submit them. We compare IconqSched to other schedulers in terms of end-to-end runtime using realistic workload traces. On Postgres, IconqSched reduces end-to-end runtime by up to 16.5\% on average and 33.6\% in the tail. Similarly, on Redshift, it reduces end-to-end runtime by up to 14.4\% on average and 22.9\% in the tail.},
+ author = {Wu, Ziniu and Markakis, Markos and Liu, Chunwei and Chen, Peter Baile and Narayanaswamy, Balakrishnan and Kraska, Tim and Madden, Samuel},
+ doi = {10.14778/3749646.3749686},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {4185–4198},
+ publisher = {VLDB Endowment},
+ title = {Improving DBMS Scheduling Decisions with Accurate Performance Prediction on Concurrent Queries},
+ url = {https://doi-org.ez27.periodicos.capes.gov.br/10.14778/3749646.3749686},
+ volume = {18},
+ year = {2025}
+}

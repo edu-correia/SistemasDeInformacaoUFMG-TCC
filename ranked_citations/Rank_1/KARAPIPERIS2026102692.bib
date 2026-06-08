@@ -1,0 +1,13 @@
+@article{KARAPIPERIS2026102692,
+ abstract = {Record linkage holds a crucial position in data management and analysis by identifying and merging records from disparate data sets that pertain to the same real-world entity. As data volumes grow, the intricacies of record linkage amplify, presenting challenges, such as potential redundancies and computational complexities. This paper introduces DynaHash, a novel randomized record linkage mechanism that utilizes (a) the MinHash technique to generate compact representations of blocking keys and (b) Hamming Locality-Sensitive Hashing (LSH) to construct the blocking structure from these vectors. By employing these methods, DynaHash offers theoretical guarantees of accuracy and achieves sublinear runtime complexities, with appropriate parameter tuning. It comprises two key components: a persistent storage system for permanently storing the blocking structure to ensure complete results, and an in-memory component for generating very fast partial results by summarizing the persisted blocking structure. Additionally, DynaHash leverages Multi-Probe matching to scan multiple neighboring blocks, in terms of their Hamming distances, in order to find matches. Our theoretical work derives a decrease factor in the space requirements, which depends on the Hamming threshold, compared with the baseline LSH. Our experimental evaluation against three state-of-the-art methods on six real-world data sets demonstrates DynaHash’s exceptional recall rates and query times, which are at least 2× faster than its competitors and do not depend on the size of the underlying data sets.},
+ author = {Dimitrios Karapiperis and Christos Tjortjis and Vassilios S. Verykios},
+ doi = {https://doi.org/10.1016/j.is.2026.102692},
+ issn = {0306-4379},
+ journal = {Information Systems},
+ keyword = {Record linkage, Locality-sensitive hashing, Multi-Probe matching},
+ pages = {102692},
+ title = {DynaHash: An efficient blocking structure for streaming record linkage},
+ url = {https://www.sciencedirect.com/science/article/pii/S0306437926000062},
+ volume = {138},
+ year = {2026}
+}

@@ -1,0 +1,16 @@
+@conference{Qin2017986,
+ abstract = {Existing data analytics systems have approached predictive model training exclusively from a data-parallel perspective. Data examples are partitioned to multiple workers and training is executed concurrently over different partitions, under various synchronization policies that emphasize speedup or convergence. Since models with millions and even billions of features become increasingly common nowadays, model management becomes an equally important task for effective training. In this paper, we present a general framework for parallelizing stochastic optimization algorithms over massive models that cannot fit in memory. We extend the lockfree HOGWILD!-family of algorithms to disk-resident models by vertically partitioning the model offline and asynchronously updating the resulting partitions online. Unlike HOGWILD!, concurrent requests to the common model are minimized by a preemptive push-based sharing mechanism that reduces the number of disk accesses. Experimental results on real and synthetic datasets show that the proposed framework achieves improved convergence over HOGWILD! and is the only solution scalable to massive models. © 2017 VLDB Endowment.},
+ author = {Qin, Chengjie and Torres, Martin and Rusu, Florin},
+ doi = {10.14778/3115404.3115405},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 8},
+ number = {10},
+ pages = {986 - 997},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scalable asynchronous gradient descent optimization for out-of-core models},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85029560558?origin=resultslist},
+ volume = {10},
+ year = {2017}
+}

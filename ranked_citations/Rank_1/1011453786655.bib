@@ -1,0 +1,18 @@
+@article{10.1145/3786655,
+ abstract = {Retrieval-Augmented Generation enhances Large Language Models by integrating external knowledge, which reduces hallucinations but increases prompt length. This increase leads to higher computational costs and longer Time to First Token. To mitigate this issue, existing solutions aim to reuse the preprocessed KVCache of each retrieved chunk to accelerate RAG. However, the lack of cross-chunk contextual information leads to a significant drop in generation quality, leaving the potential benefits of KVCache reuse largely unfulfilled.The challenge lies in how to reuse the precomputed KVCache chunk while preserving generation quality. We propose FusionRAG, a novel inference framework that optimizes both the preprocessing and reprocessing stages of RAG. In the offline preprocessing stage, we embed information from other related text chunks into each chunk, while in the online reprocessing stage, we recompute the KVCache for tokens that the model focuses on. As a result, we achieve a better trade-off between generation quality and efficiency. According to our experiments, FusionRAG significantly improves generation quality at the same recomputation ratio compared to previous state-of-the-art solutions. By recomputing fewer than 15% of the tokens, FusionRAG achieves up to 70% higher normalized-F1 scores than baselines and reduces TTFT by 2.66-9.39\texttimes{} compared to Full Attention.},
+ address = {New York, NY, USA},
+ articleno = {41},
+ author = {Wang, Jiahao and Xie, Weiyu and Zhang, Mingxing and Zhang, Boxin and Dong, Jianwei and Zhu, Yuening and Lin, Chen and Tang, Jingqi and Han, Yaochen and Ai, Zhiyuan and Chen, Xianglin and Wu, Yongwei and Jiang, Congfeng},
+ doi = {10.1145/3786655},
+ issue_date = {February 2026},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {large language models, retrieval-augmented generation, kvcache, prefix caching, inference acceleration, cache management},
+ month = {April},
+ number = {1},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {From Prefix Cache to Fusion RAG Cache: Accelerating LLM Inference in Retrieval-Augmented Generation},
+ url = {https://doi.org/10.1145/3786655},
+ volume = {4},
+ year = {2026}
+}

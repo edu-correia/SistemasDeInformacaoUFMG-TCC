@@ -1,0 +1,16 @@
+@article{Khalid20212171,
+ abstract = {Employing general-purpose graphics processing units (GPGPU) with the help of OpenCL has resulted in greatly reducing the execution time of data-parallel applications by taking advantage of the massive available parallelism. However, when a small data size application is executed on GPU there is a wastage of GPU resources as the application cannot fully utilize GPU compute-cores. There is no mechanism to share a GPU between two kernels due to the lack of operating system support on GPU. In this paper, we propose the provision of a GPU sharing mechanism between two kernels that will lead to increasing GPU occupancy, and as a result, reduce execution time of a job pool. However, if a pair of the kernel is competing for the same set of resources (i.e., both applications are compute-intensive or memory-intensive), kernel fusion may also result in a significant increase in execution time of fused kernels. Therefore, it is pertinent to select an optimal pair of kernels for fusion that will result in significant speedup over their serial execution. This research presents FusionCL, a machine learning-based GPU sharing mechanism between a pair of OpenCL kernels. FusionCL identifies each pair of kernels (from the job pool), which are suitable candidates for fusion using a machine learning-based fusion suitability classifier. Thereafter, from all the candidates, it selects a pair of candidate kernels that will produce maximum speedup after fusion over their serial execution using a fusion speedup predictor. The experimental evaluation shows that the proposed kernel fusion mechanism reduces execution time by 2.83× when compared to a baseline scheduling scheme. When compared to state-of-the-art, the reduction in execution time is up to 8%. © 2021, The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature.},
+ author = {Khalid, Yasir Noman and Aleem, Muhammad and Ahmed, Usman and Prodan, Radu and Islam, Muhammad Arshad and Iqbal, Muhammad Azhar},
+ doi = {10.1007/s00607-021-00958-2},
+ journal = {Computing},
+ note = {Cited by: 5},
+ number = {10},
+ pages = {2171 - 2202},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FusionCL: a machine-learning based approach for OpenCL kernel fusion to increase system performance},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85107423402?origin=resultslist},
+ volume = {103},
+ year = {2021}
+}

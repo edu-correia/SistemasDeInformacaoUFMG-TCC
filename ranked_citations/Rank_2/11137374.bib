@@ -1,0 +1,14 @@
+@article{11137374,
+ abstract = {Supervised human activity recognition (HAR) with sensor data typically demands substantial labeled datasets to train robust models. Contrastive learning offers a self-supervised alternative by leveraging data augmentation to improve representation learning. However, most existing augmentation methods operate independently on either the time or channel dimension and often introduce unstructured noise, which can distort meaningful temporal and spectral patterns. To address these limitations, we present a novel P-Mix data augmentation method for contrastive learning in HAR tasks, specifically designed to be compatible with the SimCLR framework. P-Mix is a customized data augmentation method tailored to sensor data for HAR, which slices and recombines both the time and channel dimensions, merging multiple temporal segments to encourage the model to explore the underlying relationships and variations in the data in an unsupervised setting. To capture motion cycles and long-term dependencies, we employ shorter temporal segments as fundamental processing units along the time dimension. By incorporating structured noise patterns based on motion cycle characteristics within these segments, we effectively enhance the model’s robustness and generalization capabilities. Extensive evaluations across five HAR benchmarks demonstrate that P-Mix achieves consistent improvements over the strongest baseline (resample), delivering relative F1-score gains ranging from 1.87% (USC-HAD: 85.63% versus 83.93%) to 6.53% (DSADS: 97.24% versus 91.28%) through controlled multidimensional fusion. These results demonstrate the effectiveness of our approach in optimizing data generation and augmentation strategies for HAR tasks.},
+ author = {Chen, Yingjie and Xie, Qi and Cui, Wenxuan and Chen, Liming and Song, Houbing Herbert and Zhu, Tao},
+ doi = {10.1109/TAI.2025.3601599},
+ issn = {2691-4581},
+ journal = {IEEE Transactions on Artificial Intelligence},
+ keyword = {Data augmentation;Noise;Human activity recognition;Data models;Contrastive learning;Artificial intelligence;Motion segmentation;Computer science;Feature extraction;Data mining;Activity recognition;contrastive learning;data augmentation;self-supervised learning;sensor data},
+ month = {March},
+ number = {3},
+ pages = {1500-1511},
+ title = {P-Mix: A Data Augmentation Method for Contrastive Learning Based Human Activity Recognition},
+ volume = {7},
+ year = {2026}
+}

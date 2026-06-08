@@ -1,0 +1,14 @@
+@article{7145402,
+ abstract = {Mergesort is the most widely-known external sorting algorithm, which is used when the data being sorted do not fit into the available main memory. There have been several attempts to improve mergesort by reducing I/O time, since mergesort is I/O intensive. However, these methods assumed that mergesort runs on hard disk drives (HDDs). Flash-based solid state drives (SSDs) are emerging as next generation storage devices and becoming alternatives to HDDs. SSDs outperform HDDs in access latency, because they have no physical arms to move. In addition, SSDs benefit from their inner structure by exploiting internal parallelism, resulting in high I/O bandwidth. Previous methods for improving mergesort focused on reducing random access cost, which is insignificant on SSDs. In this paper we propose an external mergesort algorithm for SSDs called FMsort. FMsort calculates a block read order which is the order of blocks needed in the merge phase. With a block read order, a number of blocks required during the merge phase are read into main memory via multiple asynchronous I/Os. Our experiments show that FMsort outperforms other mergesort algorithms, at an invisible cost of calculating a block read order.},
+ author = {Lee, Joonhee and Roh, Hongchan and Park, Sanghyun},
+ doi = {10.1109/TC.2015.2451631},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Sorting;Flash memories;Bandwidth;Parallel processing;Solids;Memory management;Indexes;Mergesort;External sorting;Flash-based SSDs;DBMS;Mergesort;external sorting;flash-based SSDs;DBMS},
+ month = {May},
+ number = {5},
+ pages = {1518-1527},
+ title = {External Mergesort for Flash-Based Solid State Drives},
+ volume = {65},
+ year = {2016}
+}

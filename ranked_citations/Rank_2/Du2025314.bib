@@ -1,0 +1,14 @@
+@conference{Du2025314,
+ abstract = {Hardware Transactional Memory (HTM) simplifies concurrent programming and can accelerate multithreaded execution through lock elision. Non-Volatile Memory (NVM) combines the speed and byte addressability of DRAM with the durability of storage, enabling the construction of high-performance, persistent data structures. Unfortunately, the write-back instructions typically needed to ensure post-crash consistency in NVM cause HTM transactions to abort, precluding the straightforward combination of HTM and persistent data structures. The problem goes away on machines with persistent caches, but these require special battery-backed circuitry and are far from commonplace. To combine HTM and persistent data structures, we advocate for buffered durable linearizability (BDL), a relaxed correctness criterion that enables recovery to a "recent" consistent state in the wake of a crash, allowing writes-back to occur outside transactions. Significantly, BDL retains the persistence guarantees of storage systems - -such as databases backed by disks or flash - -that have relied on buffering for decades. The combination of HTM and buffered durability enables three separate usage scenarios. First, we add durability to an existing HTM-based structure (a van Emde Boas tree due to Khalaji et al.); second, we use HTM to simplify an existing persistent structure (a skiplist due to Wang et al.); third, we "back port" an HTM-based structure optimized for persistent caches (a hash table due to Zhang et al.) to work well on more conventional processors. The first two scenarios yield several-fold improvements in throughput; the third sees very little slowdown. © 2025 Association for Computing Machinery. All rights reserved.},
+ author = {Du, Mingzhe and Su, Ziheng and Scott, Michael L.},
+ doi = {10.1145/3694906.3743321},
+ journal = {Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {314 - 327},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Reconciling Hardware Transactional Memory and Persistent Programming with Buffered Durability},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105012712847?origin=resultslist},
+ year = {2025}
+}

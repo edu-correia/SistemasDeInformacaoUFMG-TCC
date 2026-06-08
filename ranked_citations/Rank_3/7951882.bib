@@ -1,0 +1,14 @@
+@inproceedings{7951882,
+ abstract = {As an open source implementation of GFS, Hadoop Distributed File System (HDFS) has high efficiency on handling the large files. However, due to its own master-slave structure and the storage of metadata, the efficiency is low when dealing with massive small files. It occupies large amount of NameNode memory, reduces access efficiency, and delays concurrent user access. In order to improve this performance efficiency, this paper studies the method of processing small files on HDFS. According to the file storage process, this paper proposes a small file processing scheme based on index mechanism. Before the file is uploaded to the HDFS cluster, the file size is measured. The small files are indexed and merged. If it is a small file, then it will be indexed and processed. And it will be created an index file to save the index information of the small file. At the same time, this scheme introduces the distributed caching strategy to further optimize the I/O operation of small files, so as to improve the reading speed. Experimental results show that compared with the original HDFS and HAR scheme, this scheme has a great improvement in obtain memory efficiency and consumption of memory resources.},
+ author = {Wenjuan Cheng and Miaomiao Zhou and Bing Tong and Junhong Zhu},
+ booktitle = {2017 IEEE 2nd International Conference on Cloud Computing and Big Data Analysis (ICCCBDA)},
+ doi = {10.1109/ICCCBDA.2017.7951882},
+ issn = {},
+ keyword = {Indexes;Memory management;Size measurement;Lead;Prefetching;Performance analysis;HDFS;small file merging process;storage efficiency},
+ month = {April},
+ number = {},
+ pages = {44-48},
+ title = {Optimizing small file storage process of the HDFS which based on the indexing mechanism},
+ volume = {},
+ year = {2017}
+}

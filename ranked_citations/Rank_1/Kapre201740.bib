@@ -1,0 +1,14 @@
+@conference{Kapre201740,
+ abstract = {We can enhance the performance and efficiency of deflection-routed FPGA overlay NoCs by exploiting the cascading feature of the Xilinx Ultra Scale Block RAMs. This allows us to (1) harden the multiplexers in the NoC switch crossbars, and (2) efficiently add buffering support to deflection-routing. While buffering is not required for correct operation of a deflection routed NoC, it can boost network throughputs for large system sizes under heavy load and allow functional support for fixed-length, multi-flit NoC traffic. Since the multiplexer controls of the cascaded RAMs can be driven from user-logic, the NoC routing function can be implementing in LUTs while the data is steered across the dedicated cascade multiplexers and links. Thus, our approach uses hard resources in the Block RAM architecture to absorb the bulk of the cost of a NoC in the form of crossbar multiplexing, as well as packet queuing. For the XCVU9P UltraScale+ FPGA, we show how to map the 72b Hoplite NoC router at a cost of 3FIFO blocks, 64 LUTs, and 40 FFs per switch while operating at ≈727 MHz (400 MHz in 60×12 grid). This reduces LUT count by1.4× and FF cost by 2× over a pure LUT-based implementation while also being 1.2× faster. For uniform RANDOM traffic, we boost throughputs of a 16×16 NoC by 50-60%, reduce worst-case packet latency by ≈40%, and lower energy use by 10-40%over classic buffer less deflection-routing at injection rates of 15-20% and higher with 16-deep buffers. When compared to hard NoC router designs, our BRAM-based soft NoC also closes the area gap to under a factor of two instead of the 20-23× gap claimed in earlier studies. © 2017 IEEE.},
+ author = {Kapre, Nachiket},
+ doi = {10.1109/FCCM.2017.15},
+ journal = {Proceedings - IEEE 25th Annual International Symposium on Field-Programmable Custom Computing Machines, FCCM 2017},
+ note = {Cited by: 8},
+ pages = {40 - 47},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Implementing FPGA overlay NoCs using the Xilinx UltraScale memory cascades},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85027718532?origin=resultslist},
+ year = {2017}
+}

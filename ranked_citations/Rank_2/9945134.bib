@@ -1,0 +1,14 @@
+@inproceedings{9945134,
+ abstract = {Generative Adversarial Networks (GANs) have been used in the field of speech enhancement due to their huge potentials in reducing the noise mixed in the signals. Most of existing GAN-based speech enhancement approaches either operate on time domain or exploit the magnitude spectra in time-frequency domain, but lack consideration of direct optimization of the phase. In this paper, we propose a GAN architecture for speech enhancement based on gated linear units (GLUs) and Dual-Path Transformers (DPTs), which simultaneously deals with the amplitude and phase information on the time-frequency domain. The generator of the proposed GAN architecture is designed following an autoencoder structure fed by the real and imaginary parts of the time-frequency frames. The encoder of the generator is constructed by multiple cascaded convolutional GLUs (ConvGLUs), while the decoder consists of two groups of cascaded deconvolutional GLUs (DeconvGLUs), one for the real part of the spectrogram and the other for the imaginary part. The GLUs are adopted since they are potential in avoiding the gradient vanishing issue dwelling in deep architectures by providing a linear path for the gradients while retaining non-linear capabilities. Aiming at capturing the long-range dependent features in speech, we place DPTs between the encoder and the decoder of the generator, which contains multi-head attention modules and Bi-directional Gated Recurrent Units (BiGRUs). Moreover, the DPT structure is also merged with multiple one-dimensional convolutional layers in the discriminator of the GAN. Such a design not only improves the speech enhancement performance of GAN by focusing on multiple features of speech, but also reducing the volume of model parameters of GAN. Experimental results suggest that the proposed GAN architecture outperforms the existing benchmark GANs in terms of both objective speech intelligibility and quality with less computational complexity.},
+ author = {Zhang, Dehui and Dong, Anming and Yu, Jiguo and Cao, Yi and Zhang, Chuanting and Zhou, You},
+ booktitle = {2022 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+ doi = {10.1109/SMC53654.2022.9945134},
+ issn = {2577-1655},
+ keyword = {Time-frequency analysis;Computer architecture;Speech enhancement;Logic gates;Generative adversarial networks;Transformers;Generators;Deep Learning;Due-Path Transformer;Gated Linear Unit;Generative adversarial network (GAN);Speech Enhancement;Phase Denoising},
+ month = {Oct},
+ number = {},
+ pages = {2563-2568},
+ title = {Speech Enhancement Generative Adversarial Network Architecture with Gated Linear Units and Dual-Path Transformers},
+ volume = {},
+ year = {2022}
+}

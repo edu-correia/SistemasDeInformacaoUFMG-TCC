@@ -1,0 +1,15 @@
+@article{Jeong2020188256,
+ abstract = {A log-structured merge-tree-based key value store (LSMKV) is an append-only database for storing and retrieving unstructured data, especially in a write-intensive environment. This database uses hierarchical components to store and manage data. Upper-level components have a shorter data lifespan and a higher access locality than lower-level components. Hence, the data access latency of the upper-level components significantly affects the performance of the entire database. Hybrid solid-state drives (SSD) composed of media with different access speeds can improve the performance of an LSMKV by storing the upper-level components using a fast storage space. However, many hybrid SSDs use fast storage spaces to store data that are frequently allocated to the same logical address; they are not suitable for storing append-only component data, which are allocated to adjacent logical addresses. This article proposes a hybrid SSD-management method to reduce the data access latency of append-only LSMKVs and increase the durability of hybrid SSDs. The proposed method allocates the data of upper-level components to a fast storage space using the level information of the data as a hint. This study utilizes dynamic data separation to determine the components to be placed in the fast storage space, NAND block management to store the data with similar lifespans in the same fast NAND block, and a data-relocation method to migrate long-lived data from the fast NAND region to another NAND region. Experimental results indicate that the proposed method reduces the average I/O latency by an average of 12% and increases the device durability by an average of 22%. © 2020 Institute of Electrical and Electronics Engineers Inc.. All rights reserved.},
+ author = {Jeong, Joonyong and Kwak, Jaewook and Lee, Daeyong and Choi, Seungdo and Lee, Jungkeol and Choi, Jungwook and Song, Yong Ho},
+ doi = {10.1109/ACCESS.2020.3031322},
+ journal = {IEEE Access},
+ note = {Cited by: 3; All Open Access; Gold Open Access; Green Open Access},
+ pages = {188256 - 188268},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Level aware data placement technique for hybrid NAND flash storage of log-structured merge-tree based key-value store system},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85102782591?origin=resultslist},
+ volume = {8},
+ year = {2020}
+}

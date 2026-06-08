@@ -1,0 +1,16 @@
+@article{Zhang2020,
+ abstract = {Block storage provides virtual disks that can be mounted by virtual machines (VMs). Although erasure coding (EC) has been widely used in many cloud storage systems for its high efficiency and durability, current EC schemes cannot provide high-performance block storage for the cloud. This is because they introduce significant overhead to small write operations (which perform partial write to an entire EC group), whereas cloud-oblivious applications running on VMs are often small-write-intensive. We identify the root cause for the poor performance of partial writes in state-of-the-art EC schemes: for each partial write, they have to perform a time-consuming write-after-read operation that reads the current value of the data and then computes and writes the parity delta, which will be used to "patch" the parity in journal replay. In this article, we present a speculative partial write scheme (called PARIX) that supports fast small writes in erasure-coded storage systems. We transform the original formula of parity calculation to use the data deltas (between the current/original data values), instead of the parity deltas, to calculate the parities in journal replay. For each partial write, this allows PARIX to speculatively log only the new value of the data without reading its original value. For a series of n partial writes to the same data, PARIX performs pure write (instead of write-after-read) for the last n-1 ones while only introducing a small penalty of an extra network round-trip time to the first one. Based on PARIX, we design and implement PARIX Block Storage (PBS), an efficient block storage system that provides high-performance virtual disk service for VMs running cloud-oblivious applications. PBS not only supports fast partial writes but also realizes efficient full writes, background journal replay, and fast failure recovery with strong consistency guarantees. Both microbenchmarks and trace-driven evaluation show that PBS provides efficient block storage and outperforms state-of-the-art EC-based systems by orders of magnitude. © 2020 ACM.},
+ author = {Zhang, Yiming and Li, Huiba and Liu, Shengyun and Xu, Jiawei and Xue, Guangtao},
+ doi = {10.1145/3365839},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 27},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PBS: An Efficient Erasure-Coded Block Storage System Based on Speculative PartialWrites},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85083761024?origin=resultslist},
+ volume = {16},
+ year = {2020}
+}

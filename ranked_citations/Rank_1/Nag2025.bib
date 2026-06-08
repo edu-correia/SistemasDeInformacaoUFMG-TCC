@@ -1,0 +1,14 @@
+@conference{Nag2025,
+ abstract = {We pose a new problem, In-2-4D, for generative 4D (i.e., 3D + motion) inbetweening to interpolate two single-view images. In contrast to video/4D generation from only text or a single image, our interpolative task can leverage more precise motion control to better constrain the generation. Given two monocular RGB images representing the start and end states of an object in motion, our goal is to generate and reconstruct the motion in 4D, without making assumptions on the object category, motion type, length, or complexity. To handle such arbitrary and diverse motions, we utilize a foundational video interpolation model for motion prediction. However, large frame-to-frame motion gaps can lead to ambiguous interpretations. To this end, we employ a hierarchical approach to identify keyframes that are visually close to the input states while exhibiting significant motions, then generate smooth fragments between them. For each fragment, we construct a 3D representation of the keyframe using Gaussian Splatting (3DGS). The temporal frames within the fragment guide the motion, enabling their transformation into dynamic 3DGS through a deformation field. To improve temporal consistency and refine the 3D motion, we expand the self-attention of multi-view diffusion across timesteps and apply rigid transformation regularization. Finally, we merge the independently generated 3D motion segments by interpolating boundary deformation fields and optimizing them to align with the guiding video, ensuring smooth and flicker-free transitions. Through extensive qualitative and quantitive experiments as well as a user study, we demonstrate the effectiveness of our method and design choices. Project Page & Source Code: https://in-2-4d.github.io/. © 2025 Copyright held by the owner/author(s).},
+ author = {Nag, Sauradip and Cohen-Or, Daniel and Zhang, Hao and Amiri, Ali Mahdavi},
+ doi = {10.1145/3757377.3763904},
+ journal = {Proceedings - SIGGRAPH Asia 2025 Conference Papers, SA 2025},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {In-2-4D: Inbetweening from Two Single-View Images to 4D Generation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105032502039?origin=resultslist},
+ year = {2025}
+}

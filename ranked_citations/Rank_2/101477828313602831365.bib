@@ -1,0 +1,17 @@
+@article{10.14778/2831360.2831365,
+ abstract = {MapReduce and Spark are two very popular open source cluster computing frameworks for large scale data analytics. These frameworks hide the complexity of task parallelism and fault-tolerance, by exposing a simple programming API to users. In this paper, we evaluate the major architectural components in MapReduce and Spark frameworks including: shuffle, execution model, and caching, by using a set of important analytic workloads. To conduct a detailed analysis, we developed two profiling tools: (1) We correlate the task execution plan with the resource utilization for both MapReduce and Spark, and visually present this correlation; (2) We provide a break-down of the task execution time for in-depth analysis. Through detailed experiments, we quantify the performance differences between MapReduce and Spark. Furthermore, we attribute these performance differences to different components which are architected differently in the two frameworks. We further expose the source of these performance differences by using a set of micro-benchmark experiments. Overall, our experiments show that Spark is about 2.5x, 5x, and 5x faster than MapReduce, for Word Count, k-means, and PageRank, respectively. The main causes of these speedups are the efficiency of the hash-based aggregation component for combine, as well as reduced CPU and disk overheads due to RDD caching in Spark. An exception to this is the Sort workload, for which MapReduce is 2x faster than Spark. We show that MapReduce's execution model is more efficient for shuffling data than Spark, thus making Sort run faster on MapReduce.},
+ author = {Shi, Juwei and Qiu, Yunjie and Minhas, Umar Farooq and Jiao, Limei and Wang, Chen and Reinwald, Berthold and \"{O}zcan, Fatma},
+ doi = {10.14778/2831360.2831365},
+ issn = {2150-8097},
+ issue_date = {September 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {13},
+ numpages = {12},
+ pages = {2110–2121},
+ publisher = {VLDB Endowment},
+ title = {Clash of the titans: MapReduce vs. Spark for large scale data analytics},
+ url = {https://doi.org/10.14778/2831360.2831365},
+ volume = {8},
+ year = {2015}
+}

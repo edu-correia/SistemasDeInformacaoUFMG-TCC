@@ -1,0 +1,18 @@
+@article{WANG2025,
+ abstract = {Objective
+This study develops and validates an automated, text-driven pipeline that integrates Natural Language Processing (NLP) with the AcciMap systemic-accident framework to identify, cluster, and quantify multi-level risk factors in Chinese bus-accident reports. The aims were to (1) automatically extract causal factor statements from unstructured accident narratives, (2) map extracted factors onto the six socio-technical AcciMap levels, and (3) construct a quantitative, network-based representation of cross-level causal linkages to inform targeted safety interventions.
+Methods
+We analyzed 127 Chinese bus accident reports (2019–2024) from the Safehoo platform. A domain-adapted NLP pipeline was implemented: (1) Named Entity Recognition (NER) using BiLSTM-CRF with lexicon-enhanced tokenization to extract factor instances across six AcciMap levels; (2) Generating semantic embeddings using CoSENT-fine-tuned BERT (Bidirectional Encoder Representations from Transformers); (3) Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN), optimized via Optuna Bayesian search, identified 18 distinct risk factor categories; (4) AcciMap network models quantified relationships using Total Co-occurrence Indices (TCI) and centrality metrics (degree, betweenness, closeness, eigenvector). Core nodes were identified using composite centrality scores (80th percentile threshold).
+Results
+The pipeline produced 18 interpretable factor clusters spanning government, regulator, enterprise, management, employee, and work environment levels. Network analysis of the TCI matrix revealed regulatory deficits and employee behaviors as primary hubs: The three highest composite centrality scores corresponded to driver operational errors (emp2), weak driver safety awareness (emp1), and formalistic regulatory supervision (reg1). Emp2 and emp1 had the largest degree and closeness centralities (emp2 degree = 25.8; emp1 degree = 24.5), and emp2 showed the highest betweenness (0.36), indicating its role in bridging disparate factor groups. Government-level factors were relatively peripheral but contributed indirectly by weakening regulatory and enterprise controls. Environment factors (e.g., aging infrastructure, reduced visibility) acted as triggering conditions with moderate centrality. Strong propagation paths highlighted reg1–mgmt1–emp2 and reg1–ent2 as frequent, high–weight associations.
+Conclusions
+Combining CoSENT-enhanced sentence embeddings, unsupervised clustering, and AcciMap-based network quantification enables scalable extraction and systemic interpretation of causal factors from unstructured bus-accident narratives. Results indicate that strengthening regulatory enforcement, improving enterprise safety management and managerial accountability, and targeting frontline driver behaviors should be coordinated to break multi-level risk propagation chains. The pipeline offers a reproducible method for automated, policy-relevant causal analysis and can guide prioritized interventions and monitoring in urban passenger transport safety.},
+ author = {Ruisong Wang and Xuejun Niu and Dan Zhao and Jin Wang},
+ doi = {https://doi.org/10.1080/15389588.2025.2587852},
+ issn = {1538-9588},
+ journal = {Traffic Injury Prevention},
+ keyword = {Bus accidents, AcciMap framework, natural language processing, causal analysis, risk assessment},
+ title = {Examination of risk factors in bus accidents: merging the AcciMap framework with natural language processing methods},
+ url = {https://www.sciencedirect.com/science/article/pii/S1538958825002255},
+ year = {2025}
+}

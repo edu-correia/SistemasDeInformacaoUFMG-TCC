@@ -1,0 +1,14 @@
+@inproceedings{10631143,
+ abstract = {As the main workload of many scientific and machine learning applications, sparse matrix-matrix multiplication (spGEMM) has become a hot research field. The current spG EMM workloads exhibit sparsity and irregularity, leading to computational inefficiencies on traditional hardware platforms and motivating numerous customized accelerators. These spe-cialized hardware designs typically accelerate only one type of spGEMM dataflow (such as Inner-Product, Outer-Product, or Gustavson), yet the computational efficiency of the same spG EMM kernel can vary significantly under different dataflows. Flexagon is the first spGEMM accelerator to support multiple dataflows, but its MRN (Merger-Reduction Network) design causes a lot of data blocking and load imbalance, which limits its performance. In this work, we propose Sparm, which achieves efficient merging of psums (partial sums) for different dataflows through a specialized indexing unit. Sparm addresses the performance bottlenecks encountered by Flexagon when facing highly sparse matrices. Furthermore, Sparm employs a row/column prefetcher to load the streaming matrices proactively and thus significantly reduces the amount of DRAM access. We conduct simulations using a cycle-accurate simulator on workloads from various application domains, and the results demonstrate that Sparm achieves average performance gains of 2.62× and 1.35× compared to state-of-the-art spGEMM accelerators SIGMA and Flexagon. Meanwhile, Sparm brings only a small amount of additional hardware overhead over Flexagon.},
+ author = {Luo, Shengbai and Wang, Bo and Shi, Yihao and Zhang, Xueyi and Xue, Qingshan and Ma, Sheng},
+ booktitle = {2024 IEEE 35th International Conference on Application-specific Systems, Architectures and Processors (ASAP)},
+ doi = {10.1109/ASAP61560.2024.00034},
+ issn = {2160-052X},
+ keyword = {Program processors;Prefetching;Merging;Systems architecture;Random access memory;Machine learning;Performance gain;Sparse Matrix Multiplication;Domain-Specific accelerator;Dataflow;Data Reuse},
+ month = {July},
+ number = {},
+ pages = {122-130},
+ title = {Sparm: A Sparse Matrix Multiplication Accelerator Supporting Multiple Dataflows},
+ volume = {},
+ year = {2024}
+}

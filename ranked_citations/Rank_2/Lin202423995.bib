@@ -1,0 +1,16 @@
+@article{Lin202423995,
+ abstract = {Traditional LSM-tree-based key-value storage systems face significant read amplification issues due to the multi-level structure of LSM-tree, the unordered SSTable files in Level 0, and the lack of an in-memory index structure for key-value pairs. We observed that, under the influence of workloads with locality features, key-value pairs exhibit a range-specific access intensity. Addressing the three reasons for LSM-tree read amplification, we have utilized the range-specific access intensity of workload to propose a multi-tree structure consisting of a B+ tree, a single-level hot tree, and an LSM-tree with partition-based Level 0. This aims to enhance the read performance of LSM-tree-based key-value storage systems. We designed the prototype, MTDB, based on LevelDB. The experimental results show that MTDB’s read performance is 1.62× to 2.02× that of LevelDB, and it approaches or exceeds the read performance of KVell and Bourbon while reducing memory overhead by 58.85%–86%. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2024.},
+ author = {Lin, Xinwei and Pan, Yubiao and Feng, Wenjuan and Zhang, Huizhen and Lin, Mingwei},
+ doi = {10.1007/s11227-024-06382-5},
+ journal = {Journal of Supercomputing},
+ note = {Cited by: 1},
+ number = {16},
+ pages = {23995 - 24025},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MTDB: an LSM-tree-based key-value store using a multi-tree structure to improve read performance},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85200153388?origin=resultslist},
+ volume = {80},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@article{10140179,
+ abstract = {Transformer-based architectures start to emerge in single image super resolution (SISR) and have achieved promising performance. However, most existing vision Transformer-based SISR methods still have two shortcomings: (1) they divide images into the same number of patches with a fixed size, which may not be optimal for restoring patches with different levels of texture richness; and (2) their position encodings treat all input tokens equally and hence, neglect the dependencies among them. This paper presents a HIPA, which stands for a novel Transformer architecture that progressively recovers the high resolution image using a hierarchical patch partition. Specifically, we build a cascaded model that processes an input image in multiple stages, where we start with tokens with small patch sizes and gradually merge them to form the full resolution. Such a hierarchical patch mechanism not only explicitly enables feature aggregation at multiple resolutions but also adaptively learns patch-aware features for different image regions, e.g., using a smaller patch for areas with fine details and a larger patch for textureless regions. Meanwhile, a new attention-based position encoding scheme for Transformer is proposed to let the network focus on which tokens should be paid more attention by assigning different weights to different tokens, which is the first time to our best knowledge. Furthermore, we also propose a multi-receptive field attention module to enlarge the convolution receptive field from different branches. The experimental results on several public datasets demonstrate the superior performance of the proposed HIPA over previous methods quantitatively and qualitatively. We will share our code and models when the paper is accepted.},
+ author = {Cai, Qing and Qian, Yiming and Li, Jinxing and Lyu, Jun and Yang, Yee-Hong and Wu, Feng and Zhang, David},
+ doi = {10.1109/TIP.2023.3279977},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Transformers;Feature extraction;Convolution;Image restoration;Superresolution;Visualization;Computer architecture;Image restoration;single image super-resolution;hierarchical patch transformer;attention-based position embedding},
+ month = {},
+ number = {},
+ pages = {3226-3237},
+ title = {HIPA: Hierarchical Patch Transformer for Single Image Super Resolution},
+ volume = {32},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11420654,
+ abstract = {Neural network (NN) accelerators with multi-chipmodule (MCM) architectures enable integration of massive computation capability; however, they face challenges of computing resource underutilization and off-chip communication overheads. Traditional parallelization schemes for NN inference on MCM architectures, such as intra-layer parallelism and inter-layer pipelining, show incompetency in breaking through both challenges, limiting the scalability of MCM architectures. We observed that existing works typically deploy layers separately rather than considering them jointly. This underexploited dimension leads to compromises between system computation and communication, thus hindering optimal utilization, especially as hardware/software scale. To address this limitation, we propose Scope, a merged pipeline framework incorporating this overlooked multi-layer dimension, thereby achieving improved throughput and scalability by relaxing tradeoffs between computation, communication and memory costs. This new dimension, however, adds to the complexity of design space exploration (DSE). To tackle this, we develop a series of search algorithms that achieves exponential-to-linear complexity reduction, while identifying solutions that rank in the top 0.05% of performance. Experiments show that Scope achieves up to $1.73 \times$ throughput improvement while maintaining similar energy consumption for ResNet-152 inference compared to state-of-the-art approaches.},
+ author = {Huang, Zongle and Jia, Hongyang and Zou, Kaiwei and Liu, Yongpan},
+ booktitle = {2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)},
+ doi = {10.1109/ASP-DAC66049.2026.11420654},
+ issn = {2153-697X},
+ keyword = {Navigation;Scalability;Artificial neural networks;Computer architecture;Throughput;Inference algorithms;Complexity theory;Space exploration;Partitioning algorithms;Pipeline processing;NN inference;MCM;chiplet;scheduling;DSE},
+ month = {Jan},
+ number = {},
+ pages = {1336-1342},
+ title = {Scope: A Scalable Merged Pipeline Framework for Multi-Chip-Module NN Accelerators},
+ volume = {},
+ year = {2026}
+}

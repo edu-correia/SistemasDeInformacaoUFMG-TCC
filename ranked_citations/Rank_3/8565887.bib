@@ -1,0 +1,14 @@
+@article{8565887,
+ abstract = {Flash memory based solid state drives (SSDs) have emerged as a new alternative to replace magnetic disks due to their high performance and low power consumption. However, random writes on SSDs are much slower than SSD reads. Therefore, traditional index structures, which are designed based on the symmetrical I/O property of magnetic disks, cannot completely exert the high performance of SSDs. In this paper, we propose an SSD-optimized linear hashing index called Self-Adaptive Linear Hashing (SAL-hashing) to reduce small random-writes to SSDs that are caused by index operations. The contributions of our work are manifold. First, we propose to organize the buckets of a linear hashing index into groups and sets to facilitate coarse-grained writes and adaptivity to access patterns. A group consisting of a fixed number of buckets is proposed to transform small random writes to buckets into coarse-grained writes and in turn improve write performance of the index. A set consists of a number of groups, and we propose to employ different split strategies for each set. With this mechanism, SAL-hashing is able to adapt to the changes of access patterns. Second, we attach a log region to each set, and amortize the cost of reads and writes by committing updates to the log region in batch. Third, in order to reduce search cost, each log region is equipped with Bloom filters to index update logs. We devise a cost-based online algorithm to adaptively merge the log region with the corresponding set when the set becomes search-intensive. Fourth, we propose a new technique called virtual split to optimize the search performance of SAL-hashing. Finally, we propose a new scheme for the management of the log buffer. We conduct extensive experiments on real SSDs. The results suggest that our proposal is self-adaptive according to the change of access patterns, and outperforms several competitors under various workloads.},
+ author = {Jin, Peiquan and Yang, Chengcheng and Wang, Xiaoliang and Yue, Lihua and Zhang, Dezhi},
+ doi = {10.1109/TKDE.2018.2884714},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Indexes;Parallel processing;Proposals;Bandwidth;Terminology;Drives;Linear hashing;solid state drives;self-adaptive},
+ month = {March},
+ number = {3},
+ pages = {519-532},
+ title = {SAL-Hashing: A Self-Adaptive Linear Hashing Index for SSDs},
+ volume = {32},
+ year = {2020}
+}

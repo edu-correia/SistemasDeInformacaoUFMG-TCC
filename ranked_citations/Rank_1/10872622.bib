@@ -1,0 +1,14 @@
+@inproceedings{10872622,
+ abstract = {The Log-Structured Merge Tree (LSM tree) is a prevalent data structure in numerous databases and storage systems due to its efficient indexing capabilities for record insertion and deletion. However, the LSM tree records data changes by appending to new data blocks, which means that outdated blocks are not immediately overwritten or purged. This can lead to a proliferation of redundant data across multiple blocks. The present paper introduces a partition-based merge data storage approach to address this issue. This paper proposes a data storage methodology that leverages partition merging. It segments the LSM tree's data storage blocks into several sub-blocks ("Blocks") and employs an index tree to facilitate organized storage. Utilizing a sliding window mechanism to identify which Blocks require merging and matching data to eliminate redundancies, this approach effectively tackles the problem of data redundancy. Our evaluation indicates that implementing the data merging strategy has resulted in a 25% increase in storage space utilization for the LSM tree and has enhanced query performance by 10%.},
+ author = {Huang, Jiawei and Xue, Meiting and Li, Chenpu and Zhang, Huan and Zhao, Bei},
+ booktitle = {2024 2nd International Conference on Computer, Vision and Intelligent Technology (ICCVIT)},
+ doi = {10.1109/ICCVIT63928.2024.10872622},
+ issn = {},
+ keyword = {Computer vision;Databases;Merging;Memory;Termination of employment;Data structures;Indexing;LSM tree;Key-Value Store;Data Redundancy;Application Managed Storage},
+ month = {Nov},
+ number = {},
+ pages = {1-6},
+ title = {DynamicKV: Data Storage Strategy Based on Partition Merging of Log-Structured Merge Tree},
+ volume = {},
+ year = {2024}
+}

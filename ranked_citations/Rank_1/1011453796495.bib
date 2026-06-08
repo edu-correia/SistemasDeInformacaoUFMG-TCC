@@ -1,0 +1,15 @@
+@article{10.1145/3796495,
+ abstract = {Zoned Namespace (ZNS) defines a new abstraction for host software to flexibly manage storage in flash-based SSDs as append-only zones. It also provides a Zone Append primitive to further boost the write performance of ZNS SSDs by exploiting intra-zone parallelism. However, making Zone Append effective for reliable and scalable storage, in the form of a RAID array of multiple ZNS SSDs, is non-trivial, since Zone Append offloads address management to ZNS SSDs and requires hosts to specifically manage RAID stripes across multiple drives. We propose ZapRAID, a high-performance log-structured RAID system for ZNS SSDs by carefully exploiting Zone Append to achieve high write parallelism and lightweight stripe management. ZapRAID adopts a group-based data layout with a coarse-grained ordering across multiple groups of stripes, such that it can use small-size metadata for stripe management on a per-group basis under Zone Append. It further adopts hybrid data management to simultaneously achieve intra-zone and inter-zone parallelism through a careful combination of both Zone Write and Zone Append primitives. We implement ZapRAID as a user-space block device, and evaluate ZapRAID using microbenchmarks, trace-driven experiments, and real-application experiments. Our evaluation results show that ZapRAID achieves high write throughput and maintains high performance in normal reads, degraded reads, crash recovery, and full-drive recovery.},
+ address = {New York, NY, USA},
+ author = {Li, Jinhong and Geng, Yiyang and Wang, Qiuping and Han, Shujie and Lee, Patrick P. C.},
+ doi = {10.1145/3796495},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {Zoned Storage, RAID},
+ month = {February},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {The Design and Implementation of a High-Performance Log-Structured RAID System for ZNS SSDs},
+ url = {https://doi.org/10.1145/3796495},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{1637533,
+ abstract = {We propose a novel adaptive approach based on the Reproducing Kernel Particle Method (RKPM) to extract the cortical surfaces of the brain from three-dimensional (3-D) magnetic resonance images (MRIs). To formulate the discrete equations of the deformable model, a flexible particle shape function is employed in the Galerkin approximation of the weak form of the equilibrium equations. The proposed support generation method ensures that support of all particles cover the entire computational domains. The deformable model is adaptively adjusted by dilating the shape function and by inserting or merging particles in the high curvature regions or regions stopped by the target boundary. The shape function of the particle with a dilation parameter is adaptively constructed in response to particle insertion or merging. The proposed method offers flexibility in representing highly convolved structures and in refining the deformable models. Self-intersection of the surface, during evolution, is prevented by tracing backward along gradient descent direction from the crest interface of the distance field, which is computed by fast marching. These operations involve a significant computational cost. The initial model for the deformable surface is simple and requires no prior knowledge of the segmented structure. No specific template is required, e.g., an average cortical surface obtained from many subjects. The extracted cortical surface efficiently localizes the depths of the cerebral sulci, unlike some other active surface approaches that penalize regions of high curvature. Comparisons with manually segmented landmark data are provided to demonstrate the high accuracy of the proposed method. We also compare the proposed method to the finite element method, and to a commonly used cortical surface extraction approach, the CRUISE method. We also show that the independence of the shape functions of the RKPM from the underlying mesh enhances the convergence speed of the deformable model.},
+ author = {Meihe Xu and Thompson, P.M. and Toga, A.W.},
+ doi = {10.1109/TMI.2006.873614},
+ issn = {1558-254X},
+ journal = {IEEE Transactions on Medical Imaging},
+ keyword = {Kernel;Deformable models;Shape;Equations;Merging;Data mining;Magnetic resonance;Magnetic resonance imaging;Computer interfaces;Computational efficiency;Adaptive refinement;cortex extraction;MRI;reproducing kernel particle},
+ month = {June},
+ number = {6},
+ pages = {755-767},
+ title = {Adaptive reproducing kernel particle method for extraction of the cortical surface},
+ volume = {25},
+ year = {2006}
+}

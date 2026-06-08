@@ -1,0 +1,17 @@
+@article{10.14778/3352063.3352124,
+ abstract = {With data explosion in scale and variety, OLAP databases play an increasingly important role in serving real-time analysis with low latency (e.g., hundreds of milliseconds), especially when incoming queries are complex and ad hoc in nature. Moreover, these systems are expected to provide high query concurrency and write throughput, and support queries over structured and complex data types (e.g., JSON, vector and texts).In this paper, we introduce AnalyticDB, a real-time OLAP database system developed at Alibaba. AnalyticDB maintains all-column indexes in an asynchronous manner with acceptable overhead, which provides low latency for complex ad-hoc queries. Its storage engine extends hybrid row-column layout for fast retrieval of both structured data and data of complex types. To handle large-scale data with high query concurrency and write throughput, AnalyticDB decouples read and write access paths. To further reduce query latency, novel storage-aware SQL optimizer and execution engine are developed to fully utilize the advantages of the underlying storage and indexes. AnalyticDB has been successfully deployed on Alibaba Cloud to serve numerous customers (both large and small). It is capable of holding 100 trillion rows of records, i.e., 10PB+ in size. At the same time, it is able to serve 10m+ writes and 100k+ queries per second, while completing complex queries within hundreds of milliseconds.},
+ author = {Zhan, Chaoqun and Su, Maomeng and Wei, Chuangxian and Peng, Xiaoqiang and Lin, Liang and Wang, Sheng and Chen, Zhe and Li, Feifei and Pan, Yue and Zheng, Fang and Chai, Chengliang},
+ doi = {10.14778/3352063.3352124},
+ issn = {2150-8097},
+ issue_date = {August 2019},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {2059–2070},
+ publisher = {VLDB Endowment},
+ title = {AnalyticDB: real-time OLAP database system at Alibaba cloud},
+ url = {https://doi.org/10.14778/3352063.3352124},
+ volume = {12},
+ year = {2019}
+}

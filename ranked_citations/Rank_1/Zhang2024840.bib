@@ -1,0 +1,16 @@
+@article{Zhang2024840,
+ abstract = {Stochastic gradient descent (SGD) is widely used for training generalized linear models (GLMs), such as support vector machine and logistic regression, on large industry datasets. Such a training consumes plenty of computing power and therefore plenty of accelerators are proposed to accelerate the GLM training. However, real-world datasets are always highly sparse. For example, YouTube's social network connectivity contains only 2.31% nonzero elements (NZs). It is not trivial to design an accelerator that is able to efficiently train on a sparse dataset that is stored in a compressed sparse format (e.g., compressed sparse row (CSR) format). The design of such an accelerator faces three challenges: 1) bank conflicts, which may happen when multiple processing engines in the accelerator access multiple memory banks; 2) complex interconnections, which are necessary to allow all processing engines to access any memory bank; and 3) high-synchronization overhead, since each sample in sparse dataset has a different number of NZs and these elements have different distributions, thus it is hard to overlap gradient computation and model update of neighboring batches. To this end, we propose SparseACC, a sparsity-aware accelerator for training generalized linear models (GLMs). SparseACC is based on two key mechanisms. First, a software/hardware co-design approach solves the first two design challenges by proposing a novel bank-conflict-free (BCF) and bank-balanced CSR format. Second, a weight-aware ping-pong model solves the third challenge, thus maximizing the utilization of the processing engines. SparseACC leverages these two mechanisms to orchestrate training over sparse datasets, such that the training time decreases linearly with the sparsity of the dataset. We prototype SparseACC on a Xilinx Alveo U280 FPGA (Xilinx, 2020). The experimental evaluation shows that SparseACC converges up to 3.5× , 18× , 38× , and 110× faster than the state-of-the-art counterparts on a sparse accelerator, a Tesla V100 GPU, an Intel i9-10900k CPU, and a dense accelerator, respectively.  © 1982-2012 IEEE.},
+ author = {Zhang, Jie and Huang, Hongjing and Sun, Jie and Luna, Juan Gomez and Mutlu, Onur and Wang, Zeke},
+ doi = {10.1109/TCAD.2023.3324276},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 0},
+ number = {3},
+ pages = {840 - 853},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SparseACC: A Generalized Linear Model Accelerator for Sparse Datasets},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85174807587?origin=resultslist},
+ volume = {43},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11010255,
+ abstract = {In order to improve the operational efficiency of the Weather Research and Forecast (WRF) model, the OpenACC instruction is used to accelerate the microphysics scheme embedded in the Weather Research and Forecast model. As one of the time-consuming physical parameterization schemes, the WRF Planetary Boundary Layer Microphysics Scheme (YSU) is parallelized to the graphics processing unit. Several methods were used to rewrite the original Fortran code to improve parallelism, including loop-in-shift, improved array dimensions, and so on. The transcoding tool GPUFORT is also applied to generate HIP C code for an explicit kernel that can be executed on a domestic accelerator. In addition, on this basis, the performance analysis is done and the merging kernel is optimized to reduce the time overhead of starting the kernel as much as possible. The project was tested by using multiple heterogeneous platforms including NVIDIA and domestic accelerators, as well as a variety of compilers, and the acceleration effects of different situations were compared. Experimental results show that under the premise of passing the correctness verification, the heterogeneous optimized version of YSU achieves a 19.90-fold acceleration on a single NVIDIA Tesla P100 accelerator card and a 17.33-fold acceleration on a single domestic accelerator. The acceleration effect of the domestic accelerator in the physical parameterization scheme reflects the successful application of the domestic accelerator in the WRF model.},
+ author = {Teng, Guofeng and Ren, Danqin and Zhang, Lei},
+ booktitle = {2025 4th International Symposium on Computer Applications and Information Technology (ISCAIT)},
+ doi = {10.1109/ISCAIT64916.2025.11010255},
+ issn = {},
+ keyword = {Codes;Optimization methods;Weather forecasting;Transcoding;Life estimation;Predictive models;Parallel processing;Performance analysis;Reliability;Kernel;parallelization;OpenACC;WRF model;acceleration card;GPUFORT},
+ month = {March},
+ number = {},
+ pages = {1074-1080},
+ title = {Acceleration of WRF Physical Parameterization Scheme YSU via OpenACC directives},
+ volume = {},
+ year = {2025}
+}

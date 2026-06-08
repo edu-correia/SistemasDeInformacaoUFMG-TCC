@@ -1,0 +1,14 @@
+@inproceedings{8791992,
+ abstract = {One common characteristic of modern workloads such as cloud, big data, and machine learning is memory intensiveness. In detail, such workloads tend to have a huge working set and low locality. Especially, the size of working sets is rapidly growing so that cannot be fully accommodated by a DRAM based main memory. Worse yet, the cloud computing systems, which has been pervasive since few decades ago, are continuously reducing the size of DRAM per CPU and encouraging memory overcommitment. Consequently, efficient and effective out-of-core memory management is becoming more important. Though a number of memory management mechanisms for such situations have proposed, manual analysis and optimization are still required for optimal performance of each workload due to the wide variety of data access patterns. However, existing tools for memory access analysis are not appropriate to be used here because those are not designed for extraction of the dynamic data access pattern of modern workloads. When those tools are used for the purpose, those incur unacceptably high overheads for unnecessarily accurate analysis results. To mitigate this situation, we introduce a tool that is designed for the purpose. Basically, the tool employs a memory access tracking technique based on page table entry access bit, which incurs only minimal overhead. It also provides a technique for an effective tradeoff between profiling overheads and accuracy of the output by dynamically adjusting number of tracking regions. By adopting the technique, this tool can control the level of overheads and output accuracy in bounded range that user specified regardless of the size of target workloads. The overhead can be lowered even enough to be used for online target workloads while still providing useful quality of the extracted data access pattern. The main contributions of this paper are: 1) introduce of the data access patterns profiler tool designed for modern memory-intensive workloads, and 2) empirical memory access pattern analysis of various realistic workloads.},
+ author = {Park, SeongJae and Lee, Yunjae and Kim, Yoonhee and Yeom, Heon Y.},
+ booktitle = {2019 IEEE 4th International Workshops on Foundations and Applications of Self* Systems (FAS*W)},
+ doi = {10.1109/FAS-W.2019.00054},
+ issn = {},
+ keyword = {Monitoring;Tools;Kernel;Random access memory;Target tracking;Instruments;Data mining;data access pattern;memory-intensive workloads;profiler;performance;optimization},
+ month = {June},
+ number = {},
+ pages = {200-204},
+ title = {Profiling Dynamic Data Access Patterns with Bounded Overhead and Accuracy},
+ volume = {},
+ year = {2019}
+}

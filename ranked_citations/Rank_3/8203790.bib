@@ -1,0 +1,14 @@
+@inproceedings{8203790,
+ abstract = {Flash translation layers (FTLs) are the core embedded software (also known as firmware) of NAND flash-based solid-state drives (SSDs). The relentless pursuit of high-performance SSDs renders FTLs increasingly complex and intricate. Therefore, testing and validating FTLs are crucial and challenging tasks. Directly testing and validating FTLs on SSD hardware are common practices though, they are time-consuming and cumbersome because 1) the testing speed is limited by the hardware speed of SSDs and 2) just reproducing bugs can be challenging, let alone locating and root causing the bugs. This work presents virtual stress testing (VST), a simulation framework to enable executing SSD FTLs on PCs or servers against virtual SRAM, DRAM, and flash emulated by host-side main memory. FTL function calls, such as moving data from flash to DRAM, are served by the VST framework. Therefore, VST can test FTLs without SSD hardware requirements nor SSD speed limitations, and root causing bugs becomes manageable tasks. We apply VST to representative SSD design, OpenSSD, which is actively utilized and maintained by SSD and FTL communities. Experimental results show that VST can test FTLs at a speed up to 375 GB/s, which is several hundred times faster than directly testing FTLs on SSD hardware. Moreover, we successfully discover seven new FTL bugs in the OpenSSD design using VST, which is a solid evidence of VST's bug-discovering effectiveness.},
+ author = {Liu, Ren-Shuo and Chang, Yun-Sheng and Hung, Chih-Wen},
+ booktitle = {2017 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},
+ doi = {10.1109/ICCAD.2017.8203790},
+ issn = {1558-2434},
+ keyword = {Random access memory;Testing;Computer bugs;Stress;Hardware;Servers;Software;Embedded software;software testing;software debugging;systems simulation;data storage systems;disk drives;flash memories},
+ month = {Nov},
+ number = {},
+ pages = {283-290},
+ title = {VST: A virtual stress testing framework for discovering bugs in SSD flash-translation layers},
+ volume = {},
+ year = {2017}
+}

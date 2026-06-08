@@ -1,0 +1,15 @@
+@conference{Bernstein20151295,
+ abstract = {Scaling-out a database system typically requires partitioning the database across multiple servers. If applications do not partition perfectly, then transactions accessing multiple partitions end up being distributed, which has well-known scalability challenges. To address them, we describe a high-performance transaction mechanism that uses optimistic concurrency control on a multi-versioned tree-structured database stored in a shared log. The system scales out by adding servers, without partitioning the database. Our solution is modeled on the Hyder architecture, published by Bernstein, Reid, and Das at CIDR 2011. We present the design and evaluation of the first full implementation of that architecture. The core of the system is a log roll-forward algorithm, called meld, that does optimistic concurrency control. Meld is inherently sequential and is therefore the main bottleneck. Our main algorithmic contributions are optimizations to meld that significantly increase transaction throughput. They use a pipelined design that parallelizes meld onto multiple threads. The slowest pipeline stage is much faster than the original meld algorithm, yielding a 3x improvement of system throughput over the original meld algorithm. Copyright 2015 ACM.},
+ author = {Bernstein, Philip A. and Das, Sudipto and Ding, Bailu and Pilman, Markus},
+ doi = {10.1145/2723372.2737788},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 38},
+ pages = {1295 - 1309},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing optimistic concurrency control for tree-structured, log-structured databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84957582176?origin=resultslist},
+ volume = {2015-May},
+ year = {2015}
+}

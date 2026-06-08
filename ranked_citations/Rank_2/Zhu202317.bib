@@ -1,0 +1,14 @@
+@conference{Zhu202317,
+ abstract = {Bloom Filters (BFs) are typically employed to alleviate unnecessary disk accesses to facilitate point lookup in LSM trees. They are particularly beneficial when there is a significant performance difference between probing a Bloom filter (hashing and accessing memory) and accessing data (on secondary storage). However, this gap is decreasing as SSDs and NVMs have increasingly lower latency, to the point that the cost of accessing data can be comparable to that of hashing and filter probing, especially for large key sizes that results in high hashing cost. In addition, BFs are beneficial for empty queries while they are a burden for positive queries (i.e., on existing keys). Also, with larger datasets, the total consumed memory also increases, making it less feasible to keep all BFs in memory. Coupling this, with the increasing price of memory and the need to reduce the memory-to-data ratio in many practical deployments, we are seeing an increased memory pressure. In this setting, fewer BF blocks are cached, thus causing additional storage accesses, since they have to be fetched in memory to answer a query. In this PhD work, we introduce SHaMBa (Shared Hash Modular Bloom Filter), a new LSM-based key-value engine that addresses both (a) the increasing hashing overhead and (b) the sub-optimal performance when BFs do not fit in memory. First, SHaMBa decouples the hashing cost from the data size by sharing a single hash digest across different levels. Second, SHaMBa applies a workload-aware BF skipping policy based on Modular Bloom Filter (i.e., a set of mini-BFs that replace a single large BF) to avoid accessing BFs when they are not useful. Our evaluation shows that SHaMBa reduces the CPU cost for BF probing, and substantially outperforms the state of the art under memory pressure. © 2023 Copyright for this paper by its authors.},
+ author = {Zhu, Zichen},
+ journal = {CEUR Workshop Proceedings},
+ note = {Cited by: 1},
+ pages = {17 - 20},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SHaMBa: Reducing Bloom Filter Overhead in LSM Trees},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85169425026?origin=resultslist},
+ volume = {3452},
+ year = {2023}
+}

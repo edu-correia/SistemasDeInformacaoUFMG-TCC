@@ -1,0 +1,14 @@
+@article{11072094,
+ abstract = {While CNN-based methods have been the cornerstone of medical image segmentation due to their promising performance and robustness, they suffer from limitations in capturing long-range dependencies. Transformer-based approaches are currently prevailing since they enlarge the receptive field to model global contextual correlations. To further extract rich representations, some extensions of U-Net employ multi-scale feature extraction and fusion modules to obtain improved performance. Inspired by this idea, we propose TransCeption for medical image segmentation, a pure transformer-based U-shaped network incorporating an inception-like module in the encoder and adopting a contextual bridge for better feature fusion. The design proposed in this work is based on three core principles. (i) The patch merging module in the encoder is redesigned to use ResInception Patch Merging (RIPM). The Multi-Branch (MB) transformer has the same number of branches as the outputs of RIPM. Combining the two modules enables the model to capture a multi-scale representation within a single stage. (ii) We apply an Intra-stage Feature Fusion (IFF) module following the MB transformer to enhance the aggregation of feature maps from all branches and particularly focus on the interaction between the different channels at all scales. (iii) In contrast to a bridge that only contains token-wise self-attention, we propose a Dual Transformer Bridge that also includes channel-wise self-attention to exploit correlations between scales at different stages from a dual perspective. Extensive experiments on multi-organ and skin lesion segmentation tasks show the superiority of TransCeption to previous work. The code is publicly available on GitHub.},
+ author = {Azad, Reza and Jia, Yiwei and Aghdam, Ehsan Khodapanah and Cohen-Adad, Julien and Merhof, Dorit},
+ doi = {10.26599/CVM.2025.9450407},
+ issn = {2096-0662},
+ journal = {Computational Visual Media},
+ keyword = {Transformers;Merging;Decoding;Image segmentation;Computational modeling;Bridges;Computer architecture;Semantics;Medical diagnostic imaging;Feature extraction;transformer;medical image segmentation;multi-scale feature fusion;inception},
+ month = {October},
+ number = {5},
+ pages = {1079-1095},
+ title = {TransCeption: Enhancing Medical Image Segmentation with an Inception-Like Transformer Design for Efficient Feature Fusion},
+ volume = {11},
+ year = {2025}
+}

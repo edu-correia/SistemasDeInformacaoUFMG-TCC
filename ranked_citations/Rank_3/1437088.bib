@@ -1,0 +1,14 @@
+@inproceedings{1437088,
+ abstract = {Counting networks are well studied parallel and distributed data structures, which are useful in synchronization applications such as distributed counting and load balancing. However, current constructions of counting networks are static, since their width (the degree of parallelism), and hence the size of the network, have to be fixed in advance. This present an obstacle in efficiently implementing them in a large distributed system whose size may be changing, due to nodes joining and leaving the network. The authors presented an adaptive construction of the bitonic counting network. The network tunes its width to the system size in a distributed and local way. With high probability, the effective "width" of the network is Omega(N/log2  N), where N is the number of nodes currently in the system, and the effective '"depth" of the network is O(log2 N). In contrast, a static implementation would have the same width irrespective of the system size. When the system size changes, the network adapts by splitting or merging its components. All decisions and actions are decentralized: these include the decision of when to split and merge the components, and the action of splitting and merging them. The construction is layered on an overlay network which provides an efficient peer-to-peer lookup service, and uses the recursive structure present in the bitonic network to adapt its implementation. Though the bitonic network was discussed, the technique could be applied to build an adaptive implementation of any distributed data structure which could be decomposed in a recursive way},
+ author = {Tirthapura, S.},
+ booktitle = {25th IEEE International Conference on Distributed Computing Systems (ICDCS'05)},
+ doi = {10.1109/ICDCS.2005.10},
+ issn = {1063-6927},
+ keyword = {Adaptive systems;Peer to peer computing;Parallel processing;Data structures;Merging;Wires;Load management;Application software;Computer networks;Distributed computing},
+ month = {June},
+ number = {},
+ pages = {241-250},
+ title = {Adaptive Counting Networks},
+ volume = {},
+ year = {2005}
+}

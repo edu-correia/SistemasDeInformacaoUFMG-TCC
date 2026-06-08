@@ -1,0 +1,18 @@
+@article{10.1145/3564593,
+ abstract = {Label Propagation is not only a well-known machine learning algorithm for classification but also an effective method for discovering communities and connected components in networks. We propose a new Direction-optimizing Label Propagation Algorithm&nbsp;(DOLPA) framework that enhances the performance of the standard Label Propagation Algorithm&nbsp;(LPA), increases its scalability, and extends its versatility and application scope. As a central feature, the DOLPA framework relies on the use of frontiers and alternates between label push and label pull operations to attain high performance. It is formulated in such a way that the same basic algorithm can be used for finding communities or connected components in graphs by only changing the objective function used. Additionally, DOLPA has parameters for tuning the processing order of vertices in a graph to reduce the number of edges visited and improve the quality of solution obtained. We present the design and implementation of the enhanced algorithm as well as our shared-memory parallelization of it using OpenMP. We also present an extensive experimental evaluation of our implementations using the LFR benchmark and real-world networks drawn from various domains. Compared with an implementation of LPA for community detection available in a widely used network analysis software, we achieve at most five times the F-Score while maintaining similar runtime for graphs with overlapping communities. We also compare DOLPA against an implementation of the Louvain method for community detection using the same LFR-graphs and show that DOLPA achieves about three times the F-Score at just 10% of the runtime. For connected component decomposition, our algorithm achieves orders of magnitude speedups over the basic LP-based algorithm on large-diameter graphs, up to 13.2\texttimes{} speedup over the Shiloach-Vishkin algorithm, and up to 1.6\texttimes{} speedup over Afforest on an Intel Xeon processor using 40 threads.},
+ address = {New York, NY, USA},
+ articleno = {1.12},
+ author = {Liu, Xu and Lumsdaine, Andrew and Halappanavar, Mahantesh and Barker, Kevin and Gebremedhin, Assefaw},
+ doi = {10.1145/3564593},
+ issn = {1084-6654},
+ issue_date = {December 2022},
+ journal = {ACM J. Exp. Algorithmics},
+ keyword = {Community detection, connected components, label propagation, direction-optimizing},
+ month = {December},
+ numpages = {31},
+ publisher = {Association for Computing Machinery},
+ title = {Direction-optimizing Label Propagation Framework for Structure Detection in Graphs: Design, Implementation, and Experimental Analysis},
+ url = {https://doi.org/10.1145/3564593},
+ volume = {27},
+ year = {2022}
+}

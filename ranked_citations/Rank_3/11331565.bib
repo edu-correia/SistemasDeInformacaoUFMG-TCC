@@ -1,0 +1,14 @@
+@inproceedings{11331565,
+ abstract = {During the last decade, graph databases have emerged as a flexible and expressive solution for handling highly interconnected and knowledge data. Graph pattern matching (GPM) is a core problem for these databases, aiming to find all subgraphs in a graph $G$ that are isomorphic to a query graph $Q$. Commercial systems support GPM through an expressive graph query language, Cypher, which is an implementation of the ISOGQL standard. However, for large graph data, GPM remains computationally intensive. Existing distributed approaches suffer from limitations: they use non-standard query languages; lack formal background, hindering comparison; or are designed for specific systems, hindering integration. Furthermore, distributed evaluation of graph queries has received less attention than for relational or RDF queries. In this paper, we provide a formalization for executing GPM in a distributed context using an ISO-GQL implementation like Cypher. The novelty is a new algorithm that fragments the query based on the boundary nodes of distant machines. After receiving partial results, a parallel algorithm merges and filters them to obtain complete results, controlled by a coordinator in a centralized data assembly architecture. This formalization can be easily implemented over any graph system and for any ISO-GQL implementation. We validate our framework through an implementation on Neo4j AuraDB and experiments on real-world datasets, demonstrating significant performance gains for complex queries in a distributed context compared to intractable single-node execution.},
+ author = {Boudaoud, Abdelkrim and Mahfoud, Houari},
+ booktitle = {2025 International Conference on Intelligent Computer Systems, Data Science and Applications (IC2SDA)},
+ doi = {10.1109/IC2SDA68097.2025.11331565},
+ issn = {},
+ keyword = {Ciphers;Distributed databases;Knowledge graphs;Performance gain;Resource description framework;Systems support;Database languages;Parallel algorithms;Pattern matching;Standards;Distributed Graph Database;Knowledge Graph;Graph Pattern Matching;Isomorphism;Neo4j;Cypher},
+ month = {Nov},
+ number = {},
+ pages = {1-8},
+ title = {A Framework for Querying Distributed Graph Data Using Cypher},
+ volume = {},
+ year = {2025}
+}

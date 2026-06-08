@@ -1,0 +1,15 @@
+@article{Cafagna20173,
+ abstract = {This paper proposes a category- and selection-enabled nearest neighbor join (NNJ) between relation r and relation s, with similarity on T and support for category attributes C and selection predicate θ. Our solution does not suffer from redundant fetches and index false hits, which are the main performance bottlenecks of current nearest neighbor join techniques. A category-enabled NNJ leverages the category attributes C for query evaluation. For example, the categories of relation r can be used to limit relation s accessed at most once. Solutions that are not category-enabled must process each category independently and end up fetching, either from disk or memory, the blocks of the input relations multiple times. A selection-enabled NNJ performs well independent of whether the DBMS optimizer pushes the selection down or evaluates it on the fly. In contrast, index-based solutions suffer from many index false hits or end up in an expensive nested loop. Our solution does not constrain the physical design, and is efficient for row- as well as column-stores. Current solutions for column-stores use late materialization, which is only efficient if the data is clustered on the category attributes C. Our evaluation algorithm finds, for each outer tuple r, the inner tuples that satisfy the equality on the category and have the smallest distance to r with only one scan of both inputs. We experimentally evaluate our solution using a data warehouse that manages analyses of animal feeds. © 2017 Elsevier Ltd},
+ author = {Cafagna, Francesco and Böhlen, Michael H. and Bracher, Annelies},
+ doi = {10.1016/j.is.2017.01.006},
+ journal = {Information Systems},
+ note = {Cited by: 3; All Open Access; Green Open Access},
+ pages = {3 - 16},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Category- and selection-enabled nearest neighbor joins},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85013667920?origin=resultslist},
+ volume = {68},
+ year = {2017}
+}

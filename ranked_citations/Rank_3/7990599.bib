@@ -1,0 +1,14 @@
+@article{7990599,
+ abstract = {The latest video coding standard, high efficiency video coding (HEVC), aims to achieve better coding efficiency than the H.264/AVC standard. To improve the coding performance of HEVC, tools and structures are included that also increase the computational complexity of encoding, especially for the mode decisions in the coding unit (CU), which is a structural element in the HEVC. For each CU size, the HEVC encoder performs mode decision and motion estimation using all prediction unit (PU) types and incurs massive computational burdens. In this paper, we investigate the depth correlation between the current and the collocated CU to avoid irrelevant CU procedure and truncate some PU predictions as a result. We also investigate the relationship of the rate-distortion (RD) costs after the Merge/SKIP prediction. By analyzing different CU sizes and quantization parameters, we build a mathematical model to represent the relationship for the RD costs after the Merge/SKIP prediction with an adaptive termination of the CU procedure. In addition, the relationship of the RD costs after the Merge/SKIP prediction and 2N$\boldsymbol {\times }2\text{N}$ mode is also explored. Search range reduction is used to further speed up our algorithm. Experimental results show that our algorithm can reduce the coding time by up to 80%, and provide average coding time savings of 46%, 45%, and 52%, for low delay B, low delay P, and random access configurations, respectively. Moreover, the proposed algorithm is able to maintain coding performance similar to HM 11.0. The proposed scheme outperforms previous work in terms of both the coding speed and the RD performance.},
+ author = {Tai, Kuang-Han and Hsieh, Min-Yuan and Chen, Mei-Juan and Chen, Chia-Yen and Yeh, Chia-Hung},
+ doi = {10.1109/TBC.2017.2722239},
+ issn = {1557-9611},
+ journal = {IEEE Transactions on Broadcasting},
+ keyword = {Encoding;Correlation;Quantization (signal);Prediction algorithms;Delays;Computational complexity;HEVC encoder;coding unit;prediction unit;rate-distortion cost;early termination;mode decision},
+ month = {Dec},
+ number = {4},
+ pages = {680-692},
+ title = {A Fast HEVC Encoding Method Using Depth Information of Collocated CUs and RD Cost Characteristics of PU Modes},
+ volume = {63},
+ year = {2017}
+}

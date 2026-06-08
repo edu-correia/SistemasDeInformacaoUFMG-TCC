@@ -1,0 +1,17 @@
+@article{10.14778/2904483.2904489,
+ abstract = {Traditional database queries follow a simple model: they define constraints that each tuple in the result must satisfy. This model is computationally efficient, as the database system can evaluate the query conditions on each tuple individually. However, many practical, real-world problems require a collection of result tuples to satisfy constraints collectively, rather than individually. In this paper, we present package queries, a new query model that extends traditional database queries to handle complex constraints and preferences over answer sets. We develop a full-fledged package query system, implemented on top of a traditional database engine. Our work makes several contributions. First, we design PaQL, a SQL-based query language that supports the declarative specification of package queries. We prove that PaQL is at least as expressive as integer linear programming, and therefore, evaluation of package queries is in general NP-hard. Second, we present a fundamental evaluation strategy that combines the capabilities of databases and constraint optimization solvers to derive solutions to package queries. The core of our approach is a set of translation rules that transform a package query to an integer linear program. Third, we introduce an offline data partitioning strategy allowing query evaluation to scale to large data sizes. Fourth, we introduce SketchRefine, a scalable algorithm for package evaluation, with strong approximation guarantees ((1 ± ε)6-factor approximation). Finally, we present extensive experiments over real-world and benchmark data. The results demonstrate that SketchRefine is effective at deriving high-quality package results, and achieves runtime performance that is an order of magnitude faster than directly using ILP solvers over large datasets.},
+ author = {Brucato, Matteo and Beltran, Juan Felipe and Abouzied, Azza and Meliou, Alexandra},
+ doi = {10.14778/2904483.2904489},
+ issn = {2150-8097},
+ issue_date = {March 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {March},
+ number = {7},
+ numpages = {12},
+ pages = {576–587},
+ publisher = {VLDB Endowment},
+ title = {Scalable package queries in relational database systems},
+ url = {https://doi.org/10.14778/2904483.2904489},
+ volume = {9},
+ year = {2016}
+}

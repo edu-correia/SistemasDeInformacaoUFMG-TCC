@@ -1,0 +1,18 @@
+@article{10.1145/3763083,
+ abstract = {Abstract interpretation provides a systematic framework for static analysis, where widening operators are crucial for ensuring termination when analyzing programs over infinite-height lattices. Current abstract interpreters apply widening operations and fixpoint detection uniformly across all variables at the identified widening point (e.g., control-flow loop headers), leading to costly computations. Through our empirical study, we observe that infinite ascending chains typically originate from only a subset of variables involved in value-flow cycles, providing opportunities for selective widening and targeted fixpoint detection. This paper introduces an efficient approach to optimize abstract interpretation over non-relational domains through selective widening guided by value-flow analysis. We develop a modular and condensed value-flow graph (MVFG) that enables precise identification of variables requiring widening by detecting value-flow cycles across procedure boundaries. Our MVFG design incorporates efficient shortcut edges that summarize interprocedural value flows, achieving the precision of context-sensitive analysis but with linear complexity. By aligning value-flow cycles with the weak topological ordering (WTO) of the control-flow graph, we identify the minimal set of variables requiring widening operations, applying widening exclusively to variables that participate in value-flow back edges. Our evaluation on large-scale open-source projects shows that our selective widening approach reduces analysis time by up to 41.2% while maintaining identical precision. The method significantly reduces the number of widened variables by up to 99.5%, with greater benefits observed in larger codebases.},
+ address = {New York, NY, USA},
+ articleno = {305},
+ author = {Wang, Jiawei and Cheng, Xiao and Sui, Yulei},
+ doi = {10.1145/3763083},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Abstract interpretation, value-flow analysis, widening},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Efficient Abstract Interpretation via Selective Widening},
+ url = {https://doi.org/10.1145/3763083},
+ volume = {9},
+ year = {2025}
+}

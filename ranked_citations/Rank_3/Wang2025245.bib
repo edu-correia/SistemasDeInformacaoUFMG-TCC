@@ -1,0 +1,15 @@
+@article{Wang2025245,
+ abstract = {In mixed read/write (r/w) workloads, Key-Value stores that utilize Log-Structured Merge trees face significant write amplification (WA) due to frequent writing, resulting in extensive data compaction. While current LSM-based KV stores effectively address WA in write-heavy workloads, they struggle with increased block cache invalidation and increased r/w I/O conflicts in mixed r/w workloads. This paper introduces REXIO, a novel indexing approach to reduce WA. It decouples RAM from Solid State Drives (SSDs) and stores addresses of KV pairs in the In-RAM hashing table, which reduces buffer invalidations and eliminates unnecessary data reorganization to lower extra I/Os, thereby reducing I/O conflicts. Additionally, REXIO stores keys and values in different blocks and employs In-blocking logging to optimize updating and deleting. The experimental results show that REXIO achieves a 68.3% reduction of WA and 3.4x throughput compared to state-of-the-art LSM-Tree approaches. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2025.},
+ author = {Wang, Zizhao and Qu, Qiang and Han, Nan and Deng, Zhelang and Ma, Yizhuo and Huang, Xiaowen and Meng, Jintao},
+ doi = {10.1007/978-981-96-0579-8_18},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) },
+ note = {Cited by: 0},
+ pages = {245 - 258},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {REXIO: Indexing for Low Write Amplification by Reducing Extra I/Os in Key-Value Store Under Mixed Read/Write Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85211343712?origin=resultslist},
+ volume = {15436 LNCS},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@conference{Huang202510708,
+ abstract = {While long-context inference is crucial for advancing large language model (LLM) applications, its prefill speed remains a significant bottleneck. Current approaches, including sequence parallelism strategies and compute reduction through approximate attention mechanisms, still fall short of delivering optimal inference efficiency. This hinders scaling the inputs to longer sequences and processing long-context queries in a timely manner. To address this, we introduce APB, an efficient long-context inference framework that leverages multi-host approximate attention to enhance prefill speed by reducing compute and enhancing parallelism simultaneously. APB introduces a communication mechanism for essential key-value pairs within a sequence parallelism framework, enabling a faster inference speed while maintaining task performance. We implement APB by incorporating a tailored FLASHATTN kernel alongside optimized distribution strategies, supporting diverse models and parallelism configurations. APB achieves speedups of up to 9.2×, 4.2×, and 1.6× compared with FLASHATTN, RINGATTN, and STARATTN, respectively, without any observable task performance degradation. We provide the implementation and experiment code of APB in https://github.com/thunlp/APB. © 2025 Association for Computational Linguistics.},
+ author = {Huang, Yuxiang and Li, Mingye and Han, Xu and Xiao, Chaojun and Zhao, Weilin and Sun, Ao and Zhou, Hao and Zhou, Jie and Liu, Zhiyuan and Sun, Maosong},
+ doi = {10.18653/v1/2025.acl-long.525},
+ journal = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+ note = {Cited by: 1},
+ pages = {10708 - 10727},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {APB: Accelerating Distributed Long-Context Inference by Passing Compressed Context Blocks across GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021029547?origin=resultslist},
+ volume = {1},
+ year = {2025}
+}

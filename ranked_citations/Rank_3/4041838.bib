@@ -1,0 +1,14 @@
+@inproceedings{4041838,
+ abstract = {Predication facilitates high-bandwidth fetch and large static scheduling regions, but has typically been too complex to implement comprehensively in out-of-order micro architectures. This paper describes dataflow predication, which provides per-instruction predication in a dataflow ISA, low predication computation overheads similar to VLIW ISAs, and low complexity out-of-order issue. A two-bitfield in each instruction specifies whether an instruction is predicated, in which case, an arriving predicate token determines whether an instruction should execute. Dataflow predication incorporates three features that reduce predication overheads. First, dataflow predicate computation permits computation of compound predicates with virtually no overhead instructions. Second, early mispredication termination squashes in-flight instructions with false predicates at any time, eliminating the overhead of falsely predicated paths. Finally, implicit predication mitigates the fanout overhead of dataflow predicates by reducing the number of explicitly predicated instructions, by predicating only the heads of dependence chains. Dataflow predication also exposes new compiler optimizations - such as disjoint instruction merging and path-sensitive predicate removal - for increased performance of predicated code in an out-of-order design},
+ author = {Smith, Aaron and Nagarajan, Ramadass and Sankaralingam, Karthikeyan and McDonald, Robert and Burger, Doug and Keckler, Stephen W. and McKinley, Kathryn S.},
+ booktitle = {2006 39th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO'06)},
+ doi = {10.1109/MICRO.2006.17},
+ issn = {2379-3155},
+ keyword = {Instruction sets;Out of order;Switches;Microarchitecture;VLIW;Computer aided instruction;Optimizing compilers;Merging;Size control;Dynamic scheduling},
+ month = {Dec},
+ number = {},
+ pages = {89-102},
+ title = {Dataflow Predication},
+ volume = {},
+ year = {2006}
+}

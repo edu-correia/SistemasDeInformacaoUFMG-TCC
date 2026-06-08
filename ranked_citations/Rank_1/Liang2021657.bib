@@ -1,0 +1,13 @@
+@conference{Liang2021657,
+ abstract = {Log-Structured Merge-Tree (LSM-tree) based key-value (KV) store provides write-intensive applications with high throughput on Hard Disk Drive (HDD). Recently, the emerging Interlaced Magnetic Recording (IMR) technology makes the IMR based HDD become another desirable option to construct a cost-effective KV store because of its high areal density. Nevertheless, we observe that deploying LSM-tree based KV store on IMR based HDD may suffer noticeable degradation on throughput of incoming reads/writes. Thus, this paper presents KVIMR, a data management for constructing a cost-effective yet high-throughput LSM-tree based KV store on IMR based HDD. KVIMR is architected as a middleware, interposed between LSM-tree based KV store and IMR based HDD, to embrace the compatibility for mainstream LSMtree based KV store implementations with limited modifications. Technically, KVIMR adopts a novel Compaction-aware Track Allocation scheme, which leverages the special properties behind the compaction process to remedy the throughput degradation. KVIMR further utilizes a novel Merged RMW approach to improve the efficiency of persisting a multi-tracksized file of KV store into IMR tracks with the ensured crash consistency. Our evaluations on several well-known LSMtree based KV store implementations reveal that KVIMR not only improves the overall throughput by up to 1.55× under write-intensive workloads but even achieves 2.17× higher throughput under high space usage of HDD, as compared with the state-of-the-art track allocation scheme for IMR. © 2021 USENIX Annual Technical Conference. All rights reserved.},
+ author = {Liang, Yuhong and Yang, Tsun-Yu and Yang, Ming-Chang},
+ journal = {2021 USENIX Annual Technical Conference},
+ note = {Cited by: 10},
+ pages = {657 - 671},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {KVIMR: Key-value store aware data management middleware for interlaced magnetic recording based hard disk drive},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85111739115?origin=resultslist},
+ year = {2021}
+}

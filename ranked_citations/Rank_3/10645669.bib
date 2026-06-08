@@ -1,0 +1,14 @@
+@inproceedings{10645669,
+ abstract = {Even though many games feature complex 3D environments, 3D pathfinding remains a challenging problem. Representing large 3D maps can require a lot of memory, and pathfinding instances must be solved very quickly while the game is running. In this work we develop an efficient solution to 3D pathfinding by building a reduced, hierarchical grid representation within which we can extend traditional 2D navigation mesh (navmesh) pathing. Starting from an octree representation, we merge adjacent cells while preserving their convexity to obtain a coarser representation that greatly reduces path computation costs. We then build a navigation graph from this octree within which we can search for paths using the popular A* search algorithm. To increase the quality of the paths we obtain we implemented two forms of path refinement: a visibilitybased path pruning heuristic, and a 3D extension of the classic “funnel” algorithm that computes minimal homotopic paths. We further extend our work to handle dynamic environments with local and efficient updates to the octree and the movement graph. Experiments on a variety of scenarios show that our approach remains fast and efficient even for very large 3D maps and could be used for real-time pathfinding in video games. A detailed comparison with the state-of-the-art JPS-3D algorithm shows that our approach produces shorter path lengths while being faster on long path instances. We implemented our work in Unity, one of the most popular game engines, as an effort to make pathfinding in 3D environments accessible to game developers.},
+ author = {Massonnat, Quentin and Verbrugge, Clark},
+ booktitle = {2024 IEEE Conference on Games (CoG)},
+ doi = {10.1109/CoG60054.2024.10645669},
+ issn = {2325-4289},
+ keyword = {Video games;Three-dimensional displays;Costs;Navigation;Heuristic algorithms;Octrees;Memory management;3D pathfinding;octree;navigation mesh;dynamic pathfinding},
+ month = {Aug},
+ number = {},
+ pages = {1-8},
+ title = {Efficient Octree-based 3D Pathfinding},
+ volume = {},
+ year = {2024}
+}

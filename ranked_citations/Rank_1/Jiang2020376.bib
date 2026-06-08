@@ -1,0 +1,14 @@
+@conference{Jiang2020376,
+ abstract = {SpMM (multiplication of a sparse matrix and a dense matrix) and SDDMM (sampled dense-dense matrix multiplication) are at the core of many scientific, machine learning, and data mining applications. Because of the irregular memory accesses, the two kernels have poor data locality, and data movement overhead is a bottleneck for their performance. To overcome this issue, previous works have proposed using tiling and data reorganization to enhance data reuse. Despite their success in improving the performance for many sparse matrices, we find that the efficacy of existing techniques largely depends on how the non-zeros are distributed in a sparse matrix. In this work, we propose a novel row-reordering technique to improve data locality for SpMM and SDDMM on GPUs. The goal of such row reordering is to place similar rows close to each other, allowing them to be processed together, and thus providing better temporal locality for the values of the dense matrix. We focus on performing the row-reordering efficiently, by using a hierarchical clustering procedure optimized by locality-sensitive hashing. We also investigate when row-reordering is useful, and what factors the performance gains from our method are correlated to. Experimental evaluation using 1084 sparse matrices from SuiteSparse collection and Network Repository shows that our technique achieves up to 2.91x speedup for SpMM and up to 3.19x speedup for SDDMM against the state-of-the-art alternatives on an Nvidia P100 GPU. © 2020 Association for Computing Machinery.},
+ author = {Jiang, Peng and Hong, Changwan and Agrawal, Gagan},
+ doi = {10.1145/3332466.3374546},
+ journal = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPOPP},
+ note = {Cited by: 64},
+ pages = {376 - 388},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A novel data transformation and execution strategy for accelerating sparse matrix multiplication on GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85082396654?origin=resultslist},
+ year = {2020}
+}

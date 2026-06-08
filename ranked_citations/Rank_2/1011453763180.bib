@@ -1,0 +1,18 @@
+@article{10.1145/3763180,
+ abstract = {Optimizing performance on top of modern runtime systems with just-in-time (JIT) compilation is a challenge   for a wide range of applications from browser-based applications on mobile devices to large-scale server   applications. Developers often rely on sampling-based profilers to understand where their code spends its   time. Unfortunately, sampling of JIT-compiled programs can give inaccurate and sometimes unreliable results.   To assess accuracy of such profilers, we would ideally want to compare their results to a known ground   truth. With the complexity of today’s software and hardware stacks, such ground truth is unfortunately not   available. Instead, we propose a novel technique to approximate a ground truth by accurately slowing down a   Java program at the machine-code level, preserving its optimization and compilation decisions as well as its   execution behavior on modern CPUs.   Our experiments demonstrate that we can slow down benchmarks by a specific amount, which is a challenge   because of the optimizations in modern CPUs, and we verified with hardware profiling that on a basic-block   level, the slowdown is accurate for blocks that dominate the execution. With the benchmarks slowed down to   specific speeds, we confirmed that Async-profiler, JFR, JProfiler, and YourKit maintain original performance   behavior and assign the same percentage of run time to methods. Additionally, we identify cases of inaccuracy   caused by missing debug information, which prevents the correct identification of the relevant source code.   Finally, we tested the accuracy of sampling profilers by approximating the ground truth by the slowing down   of specific basic blocks and found large differences in accuracy between the profilers.  We believe, our slowdown-based approach is the first practical methodology to assess the accuracy of   sampling profilers for JIT-compiling systems and will enable further work to improve the accuracy of profilers.},
+ address = {New York, NY, USA},
+ articleno = {402},
+ author = {Burchell, Humphrey and Marr, Stefan},
+ doi = {10.1145/3763180},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Accuracy, Ground Truth, Profiling, Sampling},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Divining Profiler Accuracy: An Approach to Approximate Profiler Accuracy through Machine Code-Level Slowdown},
+ url = {https://doi.org/10.1145/3763180},
+ volume = {9},
+ year = {2025}
+}

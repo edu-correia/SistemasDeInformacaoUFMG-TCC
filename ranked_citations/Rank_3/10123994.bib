@@ -1,0 +1,14 @@
+@article{10123994,
+ abstract = {Estimating the Jaccard similarity between two or more streaming sets is a fundamental problem with many applications, such as mining the co-occurrences of host communication behaviors in IP networks and the co-purchasing behaviors of online users in E-commence systems. For a “streaming” data set, its elements arrive sequentially at the stream processing engine, whose working memory is limited in size. To meet the resource constraint, the data set must be stored as a compressed format called a “sketch”, so that millions or even billions of such sets can be held in the memory of the engine. To strike a balance between memory cost and similarity estimation accuracy, many sketching algorithms were proposed, such as MinHash, HyperLogLog and theta sketch. As far as we know, most of previous solutions fail to handle the fully dynamic streaming sets that allow both the insertion and the deletion of elements. Although PCSA±, and virtual odd sketch (VOS) partially solves the deletion problem, their memory efficiency and estimation accuracy can be fundamentally improved. In this article, we propose a multi-resolution odd sketch (MROS), which allows more accurate similarity estimation with less memory consumption. Its design is to encode a streaming set into multiple layers of odd sketches with exponentially reducing sampling probabilities. No matter a set is small or large, we can pick a suitable sampling probability to accurately estimate its cardinality. Next, we present an algorithm to estimate the extended Jaccard similarity of multiple streaming sets. Their compressed MROS summaries are merged by bitwise XOR, which in turn helps estimate the cardinality of symmetric difference of the multiple sets. Then, using these estimated cardinalities as observations, we estimate the size of an arbitrary set expression, which is connected by union $\bigcup$, intersection $\bigcap$, relative complement $\setminus$, and symmetric difference $\Delta$. Our evaluation results show that its accuracy outperforms MinHash, KMV, PCSA± and VOS, and it can support element deletion.},
+ author = {Xiao, Qingjun and Yang, Shiwei and Li, Panpan and Li, Kangying and Wen, Lin},
+ doi = {10.1109/TNSE.2023.3275809},
+ issn = {2327-4697},
+ journal = {IEEE Transactions on Network Science and Engineering},
+ keyword = {Itemsets;Estimation;Social networking (online);Engines;Measurement;Heuristic algorithms;Fingerprint recognition;Data sketching;data stream;Jaccard similarity},
+ month = {May},
+ number = {3},
+ pages = {2399-2414},
+ title = {Multi-Resolution Odd Sketch for Mining Extended Jaccard Similarity of Dynamic Streaming sets},
+ volume = {11},
+ year = {2024}
+}

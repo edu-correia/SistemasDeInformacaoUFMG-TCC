@@ -1,0 +1,14 @@
+@conference{Ji2011805,
+ abstract = {Modern General Purpose Graphics Processing Units (GPGPUs) provide high degrees of parallelism in computation and memory access, making them suitable for data parallel applications such as those using the elastic MapReduce model. Yet designing a MapReduce framework for GPUs faces significant challenges brought by their multi-level memory hierarchy. Due to the absence of atomic operations in the earlier generations of GPUs, existing GPU MapReduce frameworks have problems in handling input/output data with varied or unpredictable sizes. Also, existing frameworks utilize mostly a single level of memory, i.e., the relatively spacious yet slow global memory. In this work, we attempt to explore the potential benefit of enabling a GPU MapReduce framework to use multiple levels of the GPU memory hierarchy. We propose a novel GPU data staging scheme for MapReduce workloads, tailored toward the GPU memory hierarchy. Centering around the efficient utilization of the fast but very small shared memory, we designed and implemented a GPU MapReduce framework, whose key techniques include (1) shared memory staging area management, (2) thread-role partitioning, and (3) intra-block thread synchronization. We carried out evaluation with five popular MapReduce workloads and studied their performance under different GPU memory usage choices. Our results reveal that exploiting GPU shared memory is highly promising for the Map phase (with an average 2.85x speedup over using global memory only), while in the Reduce phase the benefit of using shared memory is much less pronounced, due to the high input-to-output ratio. In addition, when compared to Mars, an existing GPU MapReduce framework, our system is shown to bring a significant speedup in Map/Reduce phases. © 2011 IEEE.},
+ author = {Ji, Feng and Ma, Xiaosong},
+ doi = {10.1109/IPDPS.2011.80},
+ journal = {Proceedings - 25th IEEE International Parallel and Distributed Processing Symposium, IPDPS 2011},
+ note = {Cited by: 37},
+ pages = {805 - 816},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Using shared memory to accelerate mapreduce on graphics processing units},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/80053264087?origin=resultslist},
+ year = {2011}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3192965.3192966,
+ abstract = {Modern application domains such as Composite Event Recognition (CER) and real-time Analytics require the ability to dynamically refresh query results under high update rates. Traditional approaches to this problem are based either on the materialization of subresults (to avoid their recomputation) or on the recomputation of subresults (to avoid the space overhead of materialization). Both techniques have recently been shown suboptimal: instead of materializing results and subresults, one can maintain a data structure that supports efficient maintenance under updates and can quickly enumerate the full query output, as well as the changes produced under single updates. Unfortunately, these data structures have been developed only for aggregate-join queries composed of equi-joins, limiting their applicability in domains such as CER where temporal joins are commonplace. In this paper, we present a new approach for dynamically evaluating queries with multi-way θ-joins under updates that is effective in avoiding both materialization and recomputation of results, while supporting a wide range of applications. To do this we generalize Dynamic Yannakakis, an algorithm for dynamically processing acyclic equi-join queries. In tandem, and of independent interest, we generalize the notions of acyclicity and free-connexity to arbitrary θ-joins. We instantiate our framework to the case where θ-joins are only composed of equalities and inequalities (&lt;, ≤, =, &gt;, ≥) and experimentally compare this algorithm, called IEDyn, to state of the art CER systems as well as incremental view maintenance engines. IEDyn performs consistently better than the competitor systems with up to two orders of magnitude improvements in both time and memory consumption.},
+ author = {Idris, Muhammad and Ugarte, Mart\'{\i}n and Vansummeren, Stijn and Voigt, Hannes and Lehner, Wolfgang},
+ doi = {10.14778/3192965.3192966},
+ issn = {2150-8097},
+ issue_date = {March 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {March},
+ number = {7},
+ numpages = {13},
+ pages = {733–745},
+ publisher = {VLDB Endowment},
+ title = {Conjunctive queries with inequalities under updates},
+ url = {https://doi.org/10.14778/3192965.3192966},
+ volume = {11},
+ year = {2018}
+}

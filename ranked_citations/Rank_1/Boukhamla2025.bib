@@ -1,0 +1,16 @@
+@article{Boukhamla2025,
+ abstract = {Accurate segmentation of cardiac structures in magnetic resonance imaging (MRI) is essential for reliable diagnosis and management of cardiovascular disease. Although numerous robust models have been proposed, no single segmentation model consistently outperforms others across all cases, and models that excel on one dataset may not achieve similar accuracy on others or when the same dataset is expanded. This study introduces FCTransNet, an ensemble-based computer-aided diagnosis system that leverages the complementary strengths of Vision Transformer (ViT) models (specifically TransUNet, SwinUNet, and SegFormer) to address these challenges. To achieve this, we propose a novel pixel-level fusion technique, the Intelligent Weighted Summation Technique (IWST), which reconstructs the final segmentation mask by integrating the outputs of the ViT models and accounting for their diversity. First, a dedicated U-Net module isolates the region of interest (ROI) from cine MRI images, which is then processed by each ViT to generate preliminary segmentation masks. The IWST subsequently fuses these masks to produce a refined final segmentation. By using a local window around each pixel, IWST captures specific neighborhood details while incorporating global context to enhance segmentation accuracy. Experimental validation on the ACDC dataset shows that FCTransNet significantly outperforms individual ViTs and other deep learning-based methods, achieving a Dice Score (DSC) of 0.985 and a mean Intersection over Union (IoU) of 0.914 in the end-diastolic phase. In addition, FCTransNet maintains high accuracy in the end-systolic phase with a DSC of 0.989 and an IoU of 0.908. These results underscore FCTransNet’s ability to improve cardiac MRI segmentation accuracy. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2024.},
+ author = {Boukhamla, Assia and Azizi, Nabiha and Belhaouari, Samir Brahim},
+ doi = {10.1007/s10489-024-06085-7},
+ journal = {Applied Intelligence},
+ note = {Cited by: 4},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Intelligent mask image reconstruction for cardiac image segmentation through local–global fusion},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85214024431?origin=resultslist},
+ volume = {55},
+ year = {2025}
+}

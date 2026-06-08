@@ -1,0 +1,15 @@
+@article{Yao2024402,
+ abstract = {Persistent key-value(KV) stores are mainly designed based on the Log-Structured Merge-tree(LSM-tree) for high write performance, yet the LSM-tree suffers from the inherently high I/O amplification which influences the read and write performance when KV stores grow in size. KV separation mitigates I/O amplification by storing only keys in the LSM-tree while values are in separated storage. However, the KV separation breaks the key sequence of values, which influences their range query performance. We propose TrieKV make the most of the hard-disk drives(HDD)’s sequential read performance advantages to improve range query performance. TrieKV uses a dynamic prefix index and a collaborative KV data merging and sorting mechanism to manage values after KV separation. Compared with the typical KV separation storage system WiscKey, TrieKV achieves 2.35× range query performance under HDD. Meanwhile, TrieKV also performs better than WiscKey in all six YCSB workloads. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2024.},
+ author = {Yao, Zekun and Song, Yang and Yue, Yinliang and Liu, Jinzhou and Fan, Zhixin},
+ doi = {10.1007/978-981-97-2387-4_27},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 0},
+ pages = {402 - 416},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TrieKV: Managing Values After KV Separation to Optimize Scan Performance in LSM-Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85192861976?origin=resultslist},
+ volume = {14333 LNCS},
+ year = {2024}
+}

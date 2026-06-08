@@ -1,0 +1,14 @@
+@inproceedings{7818593,
+ abstract = {Sorting is an important computation kernel used in a lot of fields such as image processing, data compression, and database operation. There have been many attempts to accelerate sorting using FPGAs. Most of them are based on merge sort algorithm. Merge sorter trees are tree-structured architectures for large-scale sorting. If a merge sorter tree with K input leaves merges N elements, merge phases are performed recursively, so its time complexity is O(NlogK(N)). Hence, to achieve higher sorting performance, it is effective to increase the number of input leaves K. However, the hardware resource usage is O(K). It is difficult to efficiently implement a merge sorter tree with many input leaves. Ito et al. have recently proposed an algorithm which can reduce the hardware complexity of a merge sorter tree with K input leaves from O(K) to O(log(K)). However, they only report the evaluation results when K is 8 and 16. In this paper, we propose a cost-effective and scalable merge sorter tree architecture based on their algorithm. We show that our design achieves almost the same performance compared to the conventional design of which the hardware complexity is O(K). We implement a merge sorter tree with 1,024 input leaves on a Xilinx XC7VX485T-2 FPGA and show that the proposed architecture has 52.4x better logic slice utilization with only 1.31x performance degradation compared with the conventional design. We succeed in implementing a very large merge sorter tree with 4,096 input leaves which cannot be implemented using the conventional design. This tree achieves a merging throughput of 149 million 64-bit elements per second while using 1.72% of slices and 7.48% of Block RAMs of the FPGA.},
+ author = {Usui, Takuma and Van Chu, Thiem and Kise, Kenji},
+ booktitle = {2016 Fourth International Symposium on Computing and Networking (CANDAR)},
+ doi = {10.1109/CANDAR.2016.0023},
+ issn = {2379-1896},
+ keyword = {Hardware;Sorting;Field programmable gate arrays;Computer architecture;Steady-state;Complexity theory;Algorithm design and analysis;Field programmable gate arrays;Merging;Sorting;Low-cost;Hardware specialization},
+ month = {Nov},
+ number = {},
+ pages = {47-56},
+ title = {A Cost-Effective and Scalable Merge Sorter Tree on FPGAs},
+ volume = {},
+ year = {2016}
+}

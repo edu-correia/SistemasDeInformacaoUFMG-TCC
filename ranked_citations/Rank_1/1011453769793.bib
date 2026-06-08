@@ -1,0 +1,18 @@
+@article{10.1145/3769793,
+ abstract = {Concurrency-control (CC) mechanisms are essential for ensuring consistency in large-scale key-value stores, but traditional approaches face significant challenges. Mechanisms like 2PL and OCC incur high CPU overheads. Timestamp-based mechanisms are faster but require storing timestamps for every key, resulting in substantial space overhead and numerous I/O operations in disk-based systems. We address these challenges by decomposing timestamp-based CC schemes into two components: a timestamp storage system and a CC protocol. We then show that the timestamp storage system can approximate timestamps for keys not used by ongoing transactions, substantially reducing memory requirements and I/O while maintaining correctness for various protocols (STO, MVTO, and TicToc). We introduce FPSketch, an approximate timestamp storage system, and our evaluation with SplinterDB shows that FPSketch outperforms 2PL and OCC by up to 14\texttimes{} on some workloads and disk-based CC systems by up to 5.9\texttimes{}. Remarkably, FPSketch with just 32KiB of memory yields performance comparable to an idealized in-memory implementations in our evaluation. FPSketch makes timestamp-based concurrency control mechanisms practical for disk-based key-value stores.},
+ address = {New York, NY, USA},
+ articleno = {328},
+ author = {Hwang, Deukyeon and Conway, Alex and Garcia Alvarado, Carlos and Yuan, Jun and Ben-David, Naama and Johnson, Rob and Szekeres, Adriana},
+ doi = {10.1145/3769793},
+ issue_date = {December 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {approximate timestamp storage, disk-based key-value store, timestamp-based concurrency control (CC)},
+ month = {December},
+ number = {6},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Focus! Fast On-disk Concurrency-control Using Sketches},
+ url = {https://doi.org/10.1145/3769793},
+ volume = {3},
+ year = {2025}
+}

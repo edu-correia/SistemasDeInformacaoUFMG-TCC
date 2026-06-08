@@ -1,0 +1,18 @@
+@article{10.1145/3725240,
+ abstract = {We study the problem of privately releasing an approximate minimum spanning tree (MST). Given a graph G = (V, E, W) where V is a set of n vertices, E is a set of m undirected edges, and W ∈ ℝ|E| is an edge-weight vector, our goal is to publish an approximate MST under edge-weight differential privacy, as introduced by Sealfon in PODS 2016, where V and E are considered public and the weight vector is private. Our neighboring relation is 𝓁∞-distance on weights: for a sensitivity parameter Δ∞, graphs G = (V, E, W ) and G' = (V, E, W') are neighboring if ||W -W'||∞ ≤ Δ∞). Existing private MST algorithms face a trade-off, sacrificing either computational efficiency or accuracy. We show that it is possible to get the best of both worlds: With a suitable random perturbation of the input that does not suffice to make the weight vector private, the result of any non-private MST algorithm will be private and achieves a state-of-the-art error guarantee. Furthermore, by establishing a connection to Private Top-k Selection [Steinke and Ullman, FOCS '17], we give the first privacy-utility trade-off lower bound for MST under approximate differential privacy, demonstrating that the error magnitude, ~O(n3/2), is optimal up to logarithmic factors. That is, our approach matches the time complexity of any non-private MST algorithm and at the same time achieves optimal error. We complement our theoretical treatment with experiments that confirm the practicality of our approach.},
+ address = {New York, NY, USA},
+ articleno = {103},
+ author = {Pagh, Rasmus and Retschmeier, Lukas and Wu, Hao and Zhang, Hanwen},
+ doi = {10.1145/3725240},
+ issue_date = {May 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {differential privacy, minimum spanning tree},
+ month = {June},
+ number = {2},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Optimal Bounds for Private Minimum Spanning Trees via Input Perturbation},
+ url = {https://doi.org/10.1145/3725240},
+ volume = {3},
+ year = {2025}
+}

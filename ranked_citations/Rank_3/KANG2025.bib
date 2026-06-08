@@ -1,0 +1,21 @@
+@article{KANG2025,
+ abstract = {Background
+Objective structured clinical examinations (OSCEs) are widely used for assessing medical student competency, but their evaluation is resource-intensive, requiring trained evaluators to review 15-minute videos. The physical examination (PE) component typically constitutes only a small portion of these recordings; yet, current automated approaches struggle with processing long medical videos due to computational constraints and difficulties maintaining temporal context.
+Objective
+This study aims to determine whether multimodal large language models (MM-LLMs) can effectively segment PE periods within OSCE videos without previous training, potentially reducing the evaluation burden on both human graders and automated assessment systems.
+Methods
+We analyzed 500 videos from 5 OSCE stations at University of Texas Southwestern Simulation Center, each 15 minutes long, by using hand-labeled PE periods as ground truth. Frames were sampled at 1, 2, or 3 seconds. A pose detection preprocessing step filtered frames without people. Six MM-LLMs performed frame-level classification into encounter states by using a standardized prompt. To enforce temporal consistency, we used a hidden Markov model with Viterbi decoding, merging states into 3 primary activities (consulting/notes, physical examination, and no doctor) and adding a brief edge buffer to avoid truncating true PE segments. Performance was computed per video and averaged across the dataset by using recall, precision, intersection over union (IOU), and predicted PE length with 95% CIs.
+Results
+At 1-second sampling, GPT-4o achieved recall of 0.998 (95% CI 0.994-1.000), IOU of 0.784 (95% CI 0.765-0.803), and precision of 0.792 (95% CI 0.774-0.811), identifying a mean of 175 (SD 83) seconds of content per video as PE versus a mean labeled PE of 126 (SD 61) seconds, yielding an 81% reduction in video needing review (from 900 to 175 seconds). Across stations, recall remained high, with expected IOU variability linked to examination format and camera geometry. Increasing the sampling interval modestly decreased recall while slightly improving IOU and precision. Comparative baselines (eg, Gemini 2.0 Flash, Gemma 3, and Qwen2.5-VL variants) demonstrated trade-offs between recall and overselection; GPT-4o offered the best balance among high-recall models. Error analysis highlighted false negatives during occluded or verbally guided maneuvers and false positives during preparatory actions, suggesting opportunities for camera placement optimization and multimodal fusion (eg, audio cues).
+Conclusions
+Integrating zero-shot MM-LLMs with minimal-supervision temporal modeling effectively segments PE periods in OSCE videos without requiring extensive training data. This approach significantly reduces review time while maintaining clinical assessment integrity, demonstrating that artificial intelligence methods combining zero-shot capabilities and light supervision can be optimized for medical education’s specific requirements. This technique establishes a foundation for more efficient and scalable clinical skill assessment across diverse medical education settings.},
+ author = {Shinyoung Kang and Michael Holcomb and David Hein and Ameer Hamza Shakur and Thomas Dalton and Andrew Jamieson},
+ doi = {https://doi.org/10.2196/76586},
+ issn = {2817-1705},
+ journal = {JMIR AI},
+ keyword = {artificial intelligence, AI, medical education, multimodal large language models, video segmentation},
+ title = {Physical Examination Identification in Medical Education Videos: Zero-Shot Multimodal AI With Temporal Sequence Optimization Study},
+ url = {https://www.sciencedirect.com/science/article/pii/S2817170525001073},
+ volume = {4},
+ year = {2025}
+}

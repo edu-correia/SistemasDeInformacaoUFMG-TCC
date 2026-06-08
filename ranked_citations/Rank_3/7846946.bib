@@ -1,0 +1,14 @@
+@inproceedings{7846946,
+ abstract = {Memory deduplication improves memory density by merging identical memory pages in multi-tenanted cloud. However, memory deduplication is vulnerable to memory disclosure attacks and covert channel attacks. The covert channel bases on the difference in write access time on deduplicated memory pages that are re-created by Copy-on-Write technique. Prior works have shown that malicious attackers can make use of COW time difference to achieve their purpose, for example identifying whether apps run in a VM or creating a communication channel between VMs. While this kind of attack uses a characteristic of shared resource of a VM and does not violate the security restrictions, it's very difficult to detect and prevent. In the paper, we propose a novel group-based memory deduplication scheme to defeat the inter-group covert channel attack. VMs in the same group can do memory sharing with each other if and only if the owners of them known a shared secret groupID value. The proposed scheme is implemented on KVM/KSM virtualized environment. Further evaluation shows that group-based scheme can provide inter-group isolation with tolerable impact on the memory efficiency.},
+ author = {Ning, Fangxiao and Zhu, Min and You, Ruibang and Shi, Gang and Meng, Dan},
+ booktitle = {2016 IEEE Trustcom/BigDataSE/ISPA},
+ doi = {10.1109/TrustCom.2016.0063},
+ issn = {2324-9013},
+ keyword = {Virtual machining;Cloud computing;Virtual machine monitors;Linux;Receivers;Memory management;Kernel;covert channel;memory deduplication;group-based;virtual machine;KSM},
+ month = {Aug},
+ number = {},
+ pages = {194-200},
+ title = {Group-Based Memory Deduplication against Covert Channel Attacks in Virtualized Environments},
+ volume = {},
+ year = {2016}
+}

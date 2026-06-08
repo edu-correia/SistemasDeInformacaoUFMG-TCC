@@ -1,0 +1,14 @@
+@inproceedings{11080623,
+ abstract = {Match-action programmable switches enable highperformance custom packet processing without custom hardware. However, these switches are expensive and cannot currently be reasonably shared between multiple tenants since a switch provider cannot guarantee a share of the switch resources such as SRAM or TCAM for each tenant. Each match-action pipeline executes only a single program, and merging P4 source code from multiple tenants into a combined program gives no guarantee that the combined program fits onto the pipeline. We want to overcome this by showing how to divide the resources of an RMT-based matchaction pipeline into slices which can be rented out individually. The resource usage of a program is checked if it matches the slice to enable safe composition with other programs. By giving shared access to most of the PHV, our approach allows for large numbers of programs on a shared pipeline. We implemented our approach for the Tofino programmable switch and successfully limited the resource usage of real P4 programs. Our evaluation shows that slicing often results in the same (and sometimes even higher) number of programs that can be accommodated on a switch, compared to merging P4 programs without resource guarantees. Additionally, our approach significantly reduces the computation time to determine that a composition does not fit onto a switch.},
+ author = {Krude, Johannes and Frei, Felix and Ahmadiyeh, Pedram and Glebke, René and Stoffers, Mirko and Wehrle, Klaus},
+ booktitle = {2025 IEEE 11th International Conference on Network Softwarization (NetSoft)},
+ doi = {10.1109/NetSoft64993.2025.11080623},
+ issn = {2693-9789},
+ keyword = {Source coding;Pipelines;Merging;Random access memory;Hardware;match-action pipeline;multitenancy;slicing},
+ month = {June},
+ number = {},
+ pages = {468-476},
+ title = {Slicing Match-Action Pipeline Resources for Multitenancy on Programmable Switches},
+ volume = {},
+ year = {2025}
+}

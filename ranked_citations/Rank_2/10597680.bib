@@ -1,0 +1,14 @@
+@inproceedings{10597680,
+ abstract = {Non- Volatile Memory (NVM) offers low-latency, non-volatility, and byte-addressability, positioning it as a highly promising device for database performance enhancement. Cur-rent research primarily focuses on utilizing LSM-Tree in con-junction with NVM to reduce write amplification and alleviate write stall issues. However, the comprehensive potential of NVM in simultaneously augmenting both read and write performances remains underexplored. And the previous NVM-enhanced LSM-Tree also ignores the sensitivity of NVM to small-grained random reads and writes, which we believe is the key to further improving read and write performance. To address these issues, we propose BushStore, an innovative LSM-Tree variant specifically optimized for NVM. BushStore is designed with a three-level architecture, where the higher levels of BushStore contain a group of immutable, non-clustered B+Trees, replacing traditional SSTables. By storing the non-leaf nodes in the DRAM and the leaf nodes in NVM, and separating the data pages from the indexes, these B+Trees are able to exhibit high performance for diverse read and write operations. Our approach encompasses four key techniques to significantly boost system efficiency: First, we develop novel data structures that localize read/write operations to confined NVM areas, enhancing access speed. Second, we optimize the key-value data handling during flushing and compaction phases, leveraging the superior scanning and sequantial writing capabilities of B+Trees to ex-pedite write and compaction processes. Third, we dynamically adjust the B+Tree sizes, enabling a balanced and optimized flushing and compaction process, thereby improving overall write performance. Fourth, we implement a lazy-delete Cuckoo filtering and lazy-persistent allocation strategy to accelerate query and compaction processes. Evaluations show that BushStore exhibits high performance and scalability under synthetic and real work-loads, and achieves an average performance improvement of 3.3x in random write throughput and 4.3x in random read throughput compared to the state-of-the-art MioDB system.},
+ author = {Wang, Zhenghao and Shou, Lidan and Chen, Ke and Zhou, Xuan},
+ booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE60146.2024.00316},
+ issn = {2375-026X},
+ keyword = {Performance evaluation;Sensitivity;Nonvolatile memory;Scalability;Random access memory;Writing;Throughput;Non-Volatile Memory;Key-Value Store;LogStructured Merge-Tree;B+Tree},
+ month = {May},
+ number = {},
+ pages = {4127-4139},
+ title = {BushStore: Efficient B+Tree Group Indexing for LSM-Tree in Non-Volatile Memory},
+ volume = {},
+ year = {2024}
+}

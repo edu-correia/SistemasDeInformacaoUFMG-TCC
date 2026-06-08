@@ -1,0 +1,14 @@
+@article{9393375,
+ abstract = {This paper presents a novel meta-algorithm, Partition-Merge (PM), which takes existing centralized algorithms for graph computation and makes them distributed and faster. In a nutshell, PM divides the graph into small subgraphs using our novel randomized partitioning scheme, runs the centralized algorithm on each partition separately, and then stitches the resulting solutions to produce a global solution. We demonstrate the efficiency of the PM algorithm on two popular problems: computation of Maximum A Posteriori (MAP) assignment in an arbitrary pairwise Markov Random Field (MRF) and modularity optimization for community detection. We show that the resulting distributed algorithms for these problems become fast, which run in time linear in the number of nodes in the graph. Furthermore, PM leads to performance comparable - or even better - to that of the centralized algorithms as long as the graph has polynomial growth property. More precisely, if the centralized algorithm is a C-factor approximation with constant C ≥ 1, the resulting distributed algorithm is a (C+δ)-factor approximation for any small δ > 0; and even if the centralized algorithm is a non-constant (e.g., logarithmic) factor approximation, then the resulting distributed algorithm becomes a constant factor approximation. For general graphs, we compute explicit bounds on the loss of performance of the resulting distributed algorithm with respect to the centralized algorithm. To show the efficiency of our algorithm, we conducted extensive experiments both on real-world networks and on synthetic networks. The experiments demonstrate that the PM algorithm provides a good trade-off between accuracy and running time.},
+ author = {Blondel, Vincent and Jung, Kyomin and Kohli, Pushmeet and Shah, Devavrat and Won, Seungpil},
+ doi = {10.1109/ACCESS.2021.3070490},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Partitioning algorithms;Approximation algorithms;Inference algorithms;Heuristic algorithms;Distributed algorithms;Optimization;Clustering algorithms;Approximate MAP;graphical model;modularity optimization;partition},
+ month = {},
+ number = {},
+ pages = {54032-54055},
+ title = {Partition-Merge: Distributed Inference and Modularity Optimization},
+ volume = {9},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@conference{Wang20241247,
+ abstract = {Benefiting from the self-attention mechanism, Transformer models have attained impressive contextual comprehension capabilities for lengthy texts. The requirements of highthroughput inference arise as the large language models (LLMs) become increasingly prevalent, which calls for large-scale token parallel processing (LTPP). However, existing dynamic sparse accelerators struggle to effectively handle LTPP, as they solely focus on separate stage optimization, and with most efforts confined to computational enhancements. By re-examining the endto- end flow of dynamic sparse acceleration, we pinpoint an everoverlooked opportunity that the LTPP can exploit the intrinsic coordination among stages to avoid excessive memory access and redundant computation. Motivated by our observation, we present SOFA, a cross-stage compute-memory efficient algorithmhardware co-design, which is tailored to tackle the challenges posed by LTPP of Transformer inference effectively. We first propose a novel leading zero computing paradigm, which predicts attention sparsity by using log-based add-only operations to avoid the significant overhead of prediction. Then, a distributed sorting and a sorted updating FlashAttention mechanism are proposed with cross-stage coordinated tiling principle, which enables finegrained and lightweight coordination among stages, helping optimize memory access and latency. Further, we propose a SOFA accelerator to support these optimizations efficiently. Extensive experiments on 20 benchmarks show that SOFA achieves 9.5× speed up and 71.5× higher energy efficiency than Nvidia A100 GPU. Compared to eight SOTA accelerators, SOFA achieves an average 15.8× energy efficiency, 10.3× area efficiency and 9.3× speed up, respectively. © 2024 IEEE.},
+ author = {Wang, Huizheng and Fang, Jiahao and Tang, Xinru and Yue, Zhiheng and Li, Jinxi and Qin, Yubin and Guan, Sihan and Yang, Qinze and Wang, Yang and Li, Chao and Hu, Yang and Yin, Shouyi},
+ doi = {10.1109/MICRO61859.2024.00093},
+ journal = {Proceedings of the Annual International Symposium on Microarchitecture, MICRO},
+ note = {Cited by: 23},
+ pages = {1247 - 1263},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SOFA: A Compute-Memory Optimized Sparsity Accelerator via Cross-Stage Coordinated Tiling},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85213355831?origin=resultslist},
+ year = {2024}
+}

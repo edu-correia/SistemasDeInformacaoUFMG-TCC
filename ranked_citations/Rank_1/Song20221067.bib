@@ -1,0 +1,14 @@
+@conference{Song20221067,
+ abstract = {Information extraction aims to provide required high-quality RDF triples for knowledge graph which is the basis of knowledge construction. The current two mainstream methods include a joint model concentrates on using deep learning to extract entities and relationships and a pipeline model based on sequential extraction. The joint method will be limited by the number of parameters and the types of parameters, this will lead to the loss of calculation results. In the pipeline model, the result of entity extraction needs to be substituted into the relationship classification, and this usually causes the interference of redundant entities to the relationship classification. For the joint training model, in the training process, entities and relationships are extracted at the same time. The results of extractions are continuously transmitted to each other during training and influence each other. If a certain parameter limit is deleted during the extraction of one type of result, the extraction result of the other side will also be deleted of the same type, which will eventually cause some results to be lost. For the pipeline model, if entities are first extracted, then relations are classified. In the process of entity extraction, invalid entity pairs with no matching relationship will be generated. This causes the convolution training speed to slow down. In this paper, in order to solve such problems in entity and relationship extraction, we propose an entity relationship extraction model includes Dilated Gate unit convolutional layers with Weight Pointer Networks, named this structure as DGWPN. This is helpful to obtain more receptive fields and multiple triples models. The advantages of our model are demonstrated through the comparison of multiple groups of experiments. The experimental results show that our method outperforms other current different baseline models on the SKE and CHIP data sets, about 5.3% higher than the current mainstream Bi-LSTM with CRF model on precision, and about 5.6% higher on F1 value, which indicates that our model can extract more high-quality triples for the construction of knowledge graphs. © 2021 IEEE.},
+ author = {Song, Yipei and Lin, Rongheng and Zou, Hua},
+ doi = {10.1109/HPCC-DSS-SmartCity-DependSys53884.2021.00167},
+ journal = {2021 IEEE 23rd International Conference on High Performance Computing and Communications, 7th International Conference on Data Science and Systems, 19th International Conference on Smart City and 7th International Conference on Dependability in Sensor, Cloud and Big Data Systems and Applications, HPCC-DSS-SmartCity-DependSys 2021},
+ note = {Cited by: 1},
+ pages = {1067 - 1074},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Triple Extraction of Knowledge Graphs with DGWPN},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85132412056?origin=resultslist},
+ year = {2022}
+}

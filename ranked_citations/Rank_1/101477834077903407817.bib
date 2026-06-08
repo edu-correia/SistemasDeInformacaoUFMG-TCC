@@ -1,0 +1,17 @@
+@article{10.14778/3407790.3407817,
+ abstract = {An emerging class of data systems partition their data and precompute approximate summaries (i.e., sketches and samples) for each segment to reduce query costs. They can then aggregate and combine the segment summaries to estimate results without scanning the raw data. However, given limited storage space each summary introduces approximation errors that affect query accuracy. For instance, systems that use existing mergeable summaries cannot reduce query error below the error of an individual precomputed summary. We introduce CoopStore, a query system that optimizes item frequency and quantile summaries for accuracy when aggregating over multiple segments. Compared to conventional mergeable summaries, CoopStore leverages additional memory available for summary construction and aggregation to derive a more precise combined result. This reduces error by up to 25 x over interval aggregations and 4.5 x over data cube aggregations on industrial datasets compared to standard summarization methods, with provable worst-case error guarantees.},
+ author = {Gan, Edward and Bailis, Peter and Charikar, Moses},
+ doi = {10.14778/3407790.3407817},
+ issn = {2150-8097},
+ issue_date = {August 2020},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {12},
+ numpages = {14},
+ pages = {2174–2187},
+ publisher = {VLDB Endowment},
+ title = {CoopStore: optimizing precomputed summaries for aggregation},
+ url = {https://doi.org/10.14778/3407790.3407817},
+ volume = {13},
+ year = {2020}
+}

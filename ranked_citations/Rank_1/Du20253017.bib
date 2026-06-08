@@ -1,0 +1,14 @@
+@conference{Du20253017,
+ abstract = {Transformer architecture has been widely adopted across numerous models. As the core component of the Trans-former, the attention mechanism has a computational complexity of O(n<sup>2</sup>) compared to linear transformations, making it a major computational bottleneck when handling long sequences. Although quantization has proven to be an ef-fective method for accelerating model inference, existing quantization approaches struggle to support ultra-low-bit formats for attention. To address this, we propose a Triton-based low-bit FlashAttention accelerator design. Specif-ically, this work leverages operator fusion techniques to merge the dequantization process with matrix multiplication, reducing memory access overhead. In addition, a mixed-precision quantization strategy is employed to miti-gate quantization error and preserve model accuracy. Compared to FlashAttention2, the kernel has a 2.4× speedup ratio and an end-to-end inference 1.2× speedup. Exper-imental results demonstrate that the proposed kernel im-proves inference speed and memory efficiency while main-taining accuracy, offering a novel approach for deploying large models with low latency and resource consumption on edge devices. Our code is available at https:/github.com/Charles2530/lowbit-quant-fa2. © 2025 IEEE.},
+ author = {Du, Jinyang and Guo, Jinyang and Ding, Yifu},
+ doi = {10.1109/ICCVW69036.2025.00315},
+ journal = {Proceedings - 2025 IEEE/CVF International Conference on Computer Vision Workshops, ICCV-W 2025},
+ note = {Cited by: 0},
+ pages = {3017 - 3026},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Low-Bit FlashAttention Accelerated Operator Design Based on Triton},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105035184775?origin=resultslist},
+ year = {2025}
+}

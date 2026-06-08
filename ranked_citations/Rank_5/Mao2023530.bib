@@ -1,0 +1,14 @@
+@conference{Mao2023530,
+ abstract = {The performance of an LSM-tree-based system heavily relies on the compaction strategy employed. Two main categories of compaction strategies exist: leveled and stack-based. Leveled compaction offers several advantages. Firstly, its incremental merge style enables breaking down large compactions into smaller sub-compactions through partitioning. This partitioning enhances parallelism during compaction execution, reduces write stalling, and improves disk utilization. Additionally, for specific workloads like sequential insertions, it allows moving entire files to lower levels without the need for rewriting them, thus saving disk I/O. These moves are known as trivial-moves. On the other hand, stack-based policies typically lack support for these desired properties. Their large compactions either perform no partitioning or rely on naive partitioning methods, resulting in limited opportunities for parallelism and trivial-moves.The goal of this paper is to facilitate the compaction advantages of leveled strategies in stack-based systems, hence creating a hybrid strategy that combines the advantages of both worlds. To achieve this, we propose two novel coordinated partitioning algorithms, namely Local-Range and Global-Range. These algorithms can be applied to any stack-based compaction strategy to enhance parallelism during compactions and create more opportunities for trivial-moves, resulting in improved overall compaction cost. We extend RocksDB to support partitioning on stack-based strategies and conduct a comparative analysis against several baselines using various workloads. The experimental results demonstrate that the Global-Range partitioning method significantly enhances compaction performance with minimal overhead.  © 2023 IEEE.},
+ author = {Mao, Qizhong and Hristidis, Vagelis},
+ doi = {10.1109/BigData59044.2023.10386222},
+ journal = {Proceedings - 2023 IEEE International Conference on Big Data, BigData 2023},
+ note = {Cited by: 2},
+ pages = {530 - 535},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Increase Merge Efficiency in LSM Trees Through Coordinated Partitioning of Sorted Runs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85184985237?origin=resultslist},
+ year = {2023}
+}

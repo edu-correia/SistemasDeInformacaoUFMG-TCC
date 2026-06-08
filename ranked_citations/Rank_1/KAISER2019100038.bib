@@ -1,0 +1,13 @@
+@article{KAISER2019100038,
+ abstract = {We present an adaptive local time-stepping (ALTS) scheme for a block-structured multiresolution scheme of hyperbolic conservation laws for fluid flow. The stability of standard local time-stepping (LTS) schemes with level-dependent time-step sizes is improved by local time-step size adaptation when progressing through the underlying multi-stage time integration scheme. The novelty of the approach is that it merges flux computation and time integration of the state vector with projection and prediction operations of the multiresolution scheme [15]. This enables consistent time integration of subdomains with different refinement levels without the need for intermediate time synchronization which can be prohibitively expensive in parallel computations. Consequently, coarser subdomains are advanced in time only once finer subdomains have advanced to the same time instant. Full spatial resolution adaptivity for integrated regions after each substep is maintained. The new scheme exhibits significantly improved numerical stability as compared to previous LTS schemes due to the local time-step size adaptation at each substep. The computational overhead of the incurred additional operations is small. In applications, the ALTS scheme demonstrates the same computational efficiency as standard LTS schemes. The new scheme can be applied to any explicit single-step time-integration scheme and is independent of the employed spatial discretization scheme. The improved stability is demonstrated with several one- and two-dimensional examples of flows with one and two phases, applying second- and third-order Runge-Kutta time integration schemes.},
+ author = {Jakob W.J. Kaiser and Nils Hoppe and Stefan Adami and Nikolaus A. Adams},
+ doi = {https://doi.org/10.1016/j.jcpx.2019.100038},
+ issn = {2590-0552},
+ journal = {Journal of Computational Physics: X},
+ keyword = {Adaptive time stepping, Local time stepping, Multiresolution simulations, Shock-bubble interaction},
+ pages = {100038},
+ title = {An adaptive local time-stepping scheme for multiresolution simulations of hyperbolic conservation laws},
+ url = {https://www.sciencedirect.com/science/article/pii/S259005521930054X},
+ volume = {4},
+ year = {2019}
+}

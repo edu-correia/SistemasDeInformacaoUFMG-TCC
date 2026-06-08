@@ -1,0 +1,14 @@
+@inproceedings{9060075,
+ abstract = {Dynamic cerebral perfusion computed tomography (DCPCT) imaging has the ability to detect ischemic stroke via hemodynamic maps. However, due to multiple acquisitions protocol, DCPCT scanning imposes high radiation doses on patients and might increase their potential cancer risks. The DCPCT protocol that decreases DCPCT samples by increasing sampling intervals can greatly reduce radiation dose, but this may introduce bias in the hemodynamic maps estimation, affecting the diagnosis. To address this issue, in this study, we present a deep learning network to determine the DCPCT protocol to realize the dose-reduction task, i.e., decreasing DCPCT samples, and the diagnosis-quality task, i.e., improve hemodynamic maps accuracy. Specifically, one interpolation convolutional neural network is fully designed to estimate the DCPCT images at the sampling interval, termed as dynamic cerebral perfusion interpolation network (DCPIN). The present network treats the DCPCT measurements as a "video" to characterize the maximum temporal coherence of spatial structure among phases, and interpolates a frame at any arbitrary time step between any two frames. First, a flow computation network is used to estimate the bi-directional optical flow between two input DCPCT frames by linearly fusing to approximate the required intermediate optical flow. Second, another flow interpolation network is designed to refine the flow approximations and predict soft visibility maps. Finally, the estimated flow approximations and visibility maps are merged together to jointly predict the intermediate DCPCT frame. Experimental results on patient data clearly demonstrate that the present DCPIN can achieve promising reconstruction performance, i.e., high-quality DCPCT images and high-accuracy hemodynamic maps.},
+ author = {Li, Sui and Zhu, Manman and Li, Danyang and Gao, Qi and Bian, Zhaoying and Zeng, Dong and Ma, Jianhua},
+ booktitle = {2019 IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC)},
+ doi = {10.1109/NSS/MIC42101.2019.9060075},
+ issn = {2577-0829},
+ keyword = {Computed tomography;Interpolation;Hemodynamics;Protocols;Optical flow;Image reconstruction;Biomedical imaging},
+ month = {Oct},
+ number = {},
+ pages = {1-3},
+ title = {Task-driven Deep Learning Network for Dynamic Cerebral Perfusion Computed Tomography Protocol Determination},
+ volume = {},
+ year = {2019}
+}

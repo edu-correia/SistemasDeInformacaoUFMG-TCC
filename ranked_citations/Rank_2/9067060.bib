@@ -1,0 +1,14 @@
+@article{9067060,
+ abstract = {Streaming graph analysis extracts timely insights from evolving graphs, and has gained increasing popularity. In current practice of streaming graph analysis, incoming updates are simply cached in a buffer, until being applied onto existing graph structure to construct a new snapshot. Graph algorithms then work on the new snapshot to produce up-to-date analysis result. Nevertheless, we find that for widely used monotonic graph algorithms, the analysis process can be accelerated by preprocessing buffered updates. To this end, we propose GraPU, a streaming graph analytics system for monotonic graph algorithms. Before applying updates, GraPU preprocesses buffered updates in three consecutive stages: 1) Components-based Classification first identifies the effective graph data that are actually affected by current updates, by classifying the vertices involved in buffered updates according to the predetermined connected components in underlying graph; 2) In-buffer Precomputation generates the safe and profitable intermediate values that can be later merged onto underlying graph to facilitate convergence on new snapshots, by precomputing the values of vertices involved in buffered updates; 3) Hub-vertices Division eliminates the vertex-level load imbalance for analysis on new snapshots, by automatically identifying the high-degree vertices involved in updates and efficiently distributing their high-cost computation over multiple machines. After buffered updates are applied, GraPU calculates vertex values in new snapshots using the subgraph-centric model. GraPU further presents Load-factors Guided Balancing to achieve load balance at subgraph-level, by reassigning some vertices and edges among subgraphs beforehand. Our experimental result shows that, GraPU outperforms state-of-the-art KineoGraph by up to 20.43x.},
+ author = {Sheng, Feng and Cao, Qiang and Yao, Jie},
+ doi = {10.1109/TC.2020.2987571},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Convergence;Acceleration;Load management;Computer architecture;Topology;Classification algorithms;Load modeling;Distributed graph analysis;streaming graphs;preprocessing approaches;load balancing},
+ month = {Feb},
+ number = {2},
+ pages = {255-269},
+ title = {Exploiting Buffered Updates for Fast Streaming Graph Analysis},
+ volume = {70},
+ year = {2021}
+}

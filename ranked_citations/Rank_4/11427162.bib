@@ -1,0 +1,14 @@
+@inproceedings{11427162,
+ abstract = {Low-resource languages face significant challenges in the development of robust natural language processing (NLP) tools due to the scarcity of standardized corpora and linguistic resources. Tokenization is a critical step in natural language processing, yet existing tokenization algorithms often struggle with agglutinative and low-resourced languages due to their rich morphological structure and limited training data. In this paper, we present the creation of a corpus for Crimean Tatar, a severely under-resourced Turkic language. To address orthographic inconsistencies and dialectal spelling variations, we utilize bilingual dictionaries to normalize and consolidate different variants of the same word. Leveraging the linguistic similarity between Crimean Tatar and Turkish, we utilize a large Turkish corpus alongside a smaller Crimean Tatar corpus to adapt and improve subword tokenization algorithms such as Byte-Pair Encoding (BPE), WordPiece, and Unigram. We present a fine-tuning algorithm that incorporates a golden set of annotated tokenizations and a curated Crimean Tatar vocabulary to adjust token boundaries. To further address context-sensitive morpheme boundaries, where some morphemes should be merged or separated depending on usage, we model tokenization as a character-level sequence labeling task. A BiLSTM model trained on the golden dataset is introduced, assigning “$\mathbf{B}$” (begin) and “$\mathbf{I}$” (inside) labels to characters to predict token splits. This approach demonstrates improved handling of context-dependent segmentation and outperforms traditional tokenization methods. We provide detailed analyses of the corpus composition, normalization strategies and tokenizers creation and evaluation. Our results demonstrate that a larger corpus of a very similar agglutinative language, in this case Turkish, can improve the performance of the tokenizer, but more important is the usage of a vocabulary. However, a model which takes into account the context of characters can better tokenize words composed of morphemes than tokenizers based on learning merging rules.},
+ author = {Omer, Enghin and Mocanu, Mariana},
+ booktitle = {2025 IEEE 21st International Conference on Intelligent Computer Communication and Processing (ICCP)},
+ doi = {10.1109/ICCP68926.2025.11427162},
+ issn = {2766-8495},
+ keyword = {Vocabulary;Merging;Bidirectional long short term memory;Training data;Linguistics;Predictive models;Tokenization;Labeling;Faces;Context modeling;corpus;nlp;tokenizer;low-resource language;BiLSTM;crimean tatar},
+ month = {Oct},
+ number = {},
+ pages = {1-8},
+ title = {Subword Tokenization for Agglutinative Low-Resource Languages: A Case Study on Crimean Tatar},
+ volume = {},
+ year = {2025}
+}

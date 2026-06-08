@@ -1,0 +1,17 @@
+@article{10.14778/3778092.3778102,
+ abstract = {Machine learning for database systems has achieved significant success in various database components, such as cost estimation, query optimization, index selection, view recommendation, and semantic equivalence detection. However, these solutions typically focus on a single task and normally need a large amount of labeled data for the task to train machine learning models. Even if a solution can be adapted for a different task, it will require recollecting labeled data for each new task, which is typically much more time-consuming than model training. While dataset collection is relatively easier for some tasks, it can be prohibitively expensive for others. A natural solution is to use transfer learning techniques to adapt learned knowledge from one task to another. However, we show that naive transfer learning methods perform poorly and are only as good as training from scratch. Their failures are mainly due to three challenges: (1) the source model is not robust as it is optimized to its task only; (2) the size of the target dataset is small; and (3) the inevitable distribution shift when changing tasks.To overcome these challenges, we first study the task transfer problem in query plan representation and propose a new framework TATA for the problem. Specifically, to address the lack of robustness in the source model, TATA incorporates a self-supervised component during the pretraining stage. Specifically, we design a query plan decoder to reconstruct the original query plan from its representation, ensuring the model preserves key features. This leads to more robust and transferable query plan representations. Next, to address the issues of small datasets and distribution shift, TATA generates an arbitrary number of query plans for the target task and assigns them realistic pseudo labels. This is achieved by utilizing both strong database domain knowledge and available datasets. Through extensive experiments, we show that TATA delivers substantial improvements on task transfer, achieving up to 5\texttimes{} reduction in dataset collection cost when transferring from cost estimation to two representative target tasks: query optimization and index selection. We demonstrate compatibility with three distinct query plan representation models, establishing broader applicability than prior transfer approaches.},
+ author = {Zhao, Yue and Mo, Songsong and Cong, Gao},
+ doi = {10.14778/3778092.3778102},
+ issn = {2150-8097},
+ issue_date = {November 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {13},
+ pages = {413–425},
+ publisher = {VLDB Endowment},
+ title = {TATA: An Efficient Framework for Task Transfer in Query Plan Representation},
+ url = {https://doi.org/10.14778/3778092.3778102},
+ volume = {19},
+ year = {2025}
+}

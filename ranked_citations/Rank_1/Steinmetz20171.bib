@@ -1,0 +1,15 @@
+@article{Steinmetz20171,
+ abstract = {Conflict-directed learning is ubiquitous in constraint satisfaction problems like SAT, but has been elusive for state space search on reachability problems like classical planning. Almost all existing approaches learn nogoods relative to a fixed solution-length bound, in which case planning/reachability reduces to a constraint satisfaction problem. Here we introduce an approach to learning more powerful nogoods, that are sound regardless of solution length, i.e., that identify dead-end states for which no solution exists. The key technique we build on are critical-path heuristics h<sup>C</sup>, relative to a set C of conjunctions. These recognize a dead-end state s, returning h<sup>C</sup>(s)=∞, if s has no solution even when allowing to break up conjunctive subgoals into the elements of C. Our key idea is to learn C during search. Whenever forward search has identified an unrecognized dead-end s, where h<sup>C</sup>(s)<∞, we analyze the situation at s, and add new conjunctions into C in a way guaranteeing to obtain h<sup>C</sup>(s)=∞. Thus we learn to recognize s, as well as similar dead-ends search may encounter in the future. We furthermore learn clauses ϕ where s<sup>′</sup>⊭ϕ implies h<sup>C</sup>(s<sup>′</sup>)=∞, to avoid the overhead of computing h<sup>C</sup> on every search state. Arranging these techniques in a depth-first search, we obtain an algorithm approaching the elegance of nogood learning in constraint satisfaction, learning to refute search subtrees. We run comprehensive experiments on solvable and unsolvable planning benchmarks. In cases where forward search can identify dead-ends, and where h<sup>C</sup> dead-end detection is effective, our techniques reduce the depth-first search space size by several orders of magnitude, and often result in state-of-the-art performance. © 2016 Elsevier B.V.},
+ author = {Steinmetz, Marcel and Hoffmann, Jörg},
+ doi = {10.1016/j.artint.2016.12.002},
+ journal = {Artificial Intelligence},
+ note = {Cited by: 18},
+ pages = {1 - 37},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {State space search nogood learning: Online refinement of critical-path dead-end detectors in planning},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85007289990?origin=resultslist},
+ volume = {245},
+ year = {2017}
+}

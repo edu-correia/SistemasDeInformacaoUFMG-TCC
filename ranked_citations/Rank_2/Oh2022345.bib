@@ -1,0 +1,13 @@
+@conference{Oh2022345,
+ abstract = {In this work, we present exF2FS, a transactional log-structured filesystem. The proposed filesystem consists of three key components: Membership-Oriented Transaction, Stealing-Enabled Transaction, and Shadow Garbage Collection. Membership-Oriented Transaction allows the transaction to span multiple files where the application can explicitly specify the files associated with a transaction. Stealing-Enabled Transaction allows the application to execute the transaction with a small amount of memory and to encapsulate many updates, e.g., hundreds of files with tens of GBs in total size, with a single transaction. Shadow Garbage Collection allows the log-structured filesystem to perform garbage collection without affecting the failure-atomicity of ongoing transactions. The transaction support in exF2FS is carefully trimmed to meet the critical needs of the application while minimizing the code complexity and avoiding any performance side effects. With exF2FS, SQLite multi-file transaction throughput increases by 24× against the multi-file transaction of stock SQLite. RocksDB throughput increases by 87% when it implements the compaction as a filesystem transaction. © AST 2022.All rights reserved.},
+ author = {Oh, Joontaek and Ji, Sion and Kim, Yongjin and Won, Youjip},
+ journal = {Proceedings of the 20th USENIX Conference on File and Storage Technologies, FAST 2022},
+ note = {Cited by: 15},
+ pages = {345 - 361},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {exF2FS: Transaction Support in Log-Structured Filesystem},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85140991996?origin=resultslist},
+ year = {2022}
+}

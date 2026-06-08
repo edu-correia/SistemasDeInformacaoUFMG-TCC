@@ -1,0 +1,13 @@
+@article{FENG201744,
+ abstract = {We describe a simple and fast algorithm for identifying friends-of-friends features and prove its correctness. The algorithm avoids unnecessary expensive neighbor queries, uses minimal memory overhead, and rejects slowdown in high over-density regions. We define our algorithm formally based on pair enumeration, a problem that has been heavily studied in fast 2-point correlation codes and our reference implementation employs a dual KD-tree correlation function code. We construct features in a hierarchical tree structure, and use a splay operation to reduce the average cost of identifying the root of a feature from O[logL] to O[1] (L is the size of a feature) without additional memory costs. This reduces the overall time complexity of merging trees from O[LlogL] to O[L], reducing the number of operations per splay by orders of magnitude. We next introduce a pruning operation that skips merge operations between two fully self-connected KD-tree nodes. This improves the robustness of the algorithm, reducing the number of merge operations in high density peaks from O[δ2] to O[δ]. We show that for cosmological data set the algorithm eliminates more than half of merge operations for typically used linking lengths b∼0.2 (relative to mean separation). Furthermore, our algorithm is extremely simple and easy to implement on top of an existing pair enumeration code, reusing the optimization effort that has been invested in fast correlation function codes.},
+ author = {Y. Feng and C. Modi},
+ doi = {https://doi.org/10.1016/j.ascom.2017.05.004},
+ issn = {2213-1337},
+ journal = {Astronomy and Computing},
+ keyword = {Cosmology, Halo, Simulation, Algorithm, Feature identification},
+ pages = {44-51},
+ title = {A fast algorithm for identifying friends-of-friends halos},
+ url = {https://www.sciencedirect.com/science/article/pii/S221313371630066X},
+ volume = {20},
+ year = {2017}
+}

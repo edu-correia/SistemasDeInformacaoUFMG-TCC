@@ -1,0 +1,17 @@
+@article{10.14778/3151106.3151110,
+ abstract = {Linear algebra operations are at the core of many Machine Learning (ML) programs. At the same time, a considerable amount of the effort for solving data analytics problems is spent in data preparation. As a result, end-to-end ML pipelines often consist of (i) relational operators used for joining the input data, (ii) user defined functions used for feature extraction and vectorization, and (iii) linear algebra operators used for model training and cross-validation. Often, these pipelines need to scale out to large datasets. In this case, these pipelines are usually implemented on top of dataflow engines like Hadoop, Spark, or Flink. These dataflow engines implement relational operators on row-partitioned datasets. However, efficient linear algebra operators use block-partitioned matrices. As a result, pipelines combining both kinds of operators require rather expensive changes to the physical representation, in particular re-partitioning steps. In this paper, we investigate the potential of reducing shuffling costs by fusing relational and linear algebra operations into specialized physical operators. We present BlockJoin, a distributed join algorithm which directly produces block-partitioned results. To minimize shuffling costs, BlockJoin applies database techniques known from columnar processing, such as index-joins and late materialization, in the context of parallel dataflow engines. Our experimental evaluation shows speedups up to 6\texttimes{} and the skew resistance of BlockJoin compared to state-of-the-art pipelines implemented in Spark.},
+ author = {Kunft, Andreas and Katsifodimos, Asterios and Schelter, Sebastian and Rabl, Tilmann and Markl, Volker},
+ doi = {10.14778/3151106.3151110},
+ issn = {2150-8097},
+ issue_date = {September 2017},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {13},
+ numpages = {12},
+ pages = {2061–2072},
+ publisher = {VLDB Endowment},
+ title = {Blockjoin: efficient matrix partitioning through joins},
+ url = {https://doi.org/10.14778/3151106.3151110},
+ volume = {10},
+ year = {2017}
+}

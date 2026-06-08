@@ -1,0 +1,13 @@
+@article{GARCIAAROCA2024121636,
+ abstract = {In this paper, we present an algorithm designed to automatically merge predictions from a collection of individual prediction methods coded in R. The algorithm employs varying weights and decision rules to ascertain the optimal amalgamation of these methods, with the aim of forecasting historical time series data while minimizing human intervention. The algorithm serves as an automated component within the artificial intelligence toolkit. The proposed algorithm (al), denoted as “alPCA” is founded on principal component analysis (PCA), hence the acronym. Commencing with 52 configurations of 11 distinct methods available in R, we calculate several loss functions: specifically, scaled Mean Absolute Percentage Error (sMAPE) and Mean Absolute Scaled Error (MASE) for both fitting (Training Phase) and prediction (Validation Phase), along with Root Mean Squared Error (RMSE) and Overall Weighted Average (OWA) solely for prediction (Validation Phase). We then employ PCA to reduce the error matrix derived from this data to one or two dimensions. Subsequently, the methods are ranked based on their proximity to the highest score. A probability distribution is fitted to this proximity metric, and utilizing the percentiles of these values, the optimal methods for combination are selected. We propose three categories of weights derived from the PCA scores, encompassing the fitting sMAPE (Training Phase) and the prediction sMAPE (Validation Phase), to facilitate the amalgamation process. This approach is applied to seven distinct univariate time series across diverse domains, including automobile sales, electricity production, and CO2 levels. Additionally, a set of 100 random monthly series from the M4 competition is included in the analysis. To assess the predictive precision of our algorithm, we compare its performance against three widely utilized combined prediction algorithms available in R. We evaluate the outcomes in Test Phase (unseen data) using four distinct loss functions and conduct a sensitivity analysis to gauge the algorithm's robustness and efficacy across various specifications.},
+ author = {Carlos García-Aroca and Mª {Asunción Martínez-Mayoral} and Javier Morales-Socuéllamos and José Vicente Segura-Heras},
+ doi = {https://doi.org/10.1016/j.eswa.2023.121636},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Forecasting, Time series methods, Forecasting combination, Principal component analysis, Intelligent Manufacturing},
+ pages = {121636},
+ title = {An algorithm for automatic selection and combination of forecast models},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417423021383},
+ volume = {237},
+ year = {2024}
+}

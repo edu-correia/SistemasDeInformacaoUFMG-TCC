@@ -1,0 +1,13 @@
+@article{ZHANG2025127670,
+ abstract = {Red–green–blue-depth (RGB-D) indoor scene parsing is a vital research topic in computer vision. Here, features acquired from different layers of the backbone are further processed to obtain a better prediction image. These images have different sizes and contain different information, but the labels used to supervise them are the same, resulting in large inconsistencies. Moreover, in training images, several categories are represented by a relatively small proportion of the total number of categories, resulting in poor training results. To address these problems, this article proposes an inter- and intra-information balance network (IIBNet). First, to offset the category imbalance within features, a region balance module using a region attention module is employed to merge four pairs of features obtained from the RGB and depth backbone networks, adjusting the proportion of different categories allocated in the feature. Second, to address the problem of feature-information imbalance across layers, information is transferred between two branches, reducing the diversity of information across different layers. The first branch is a channel-wise information-interaction branch, which employs self-knowledge distillation (Self-KD) as a tool for information transfer. Self-KD, in which the student and teacher networks are the same, allows features to learn from each other. The second branch is a spatial-wise information-interaction branch, which transfers the lowest-level feature information to the higher-level features. Based on extensive testing on two large indoor-scene-parsing datasets, IIBNet is observed to outperform state-of-the-art methods on three metrics.The source code and results are available at https://github.com/kolaloaver/IIBNet.},
+ author = {Yuming Zhang and Fangfang Qiang and Wujie Zhou and Weiqing Yan and Lv Ye},
+ doi = {https://doi.org/10.1016/j.eswa.2025.127670},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Red–green–blue-depth indoor scene parsing, Inter- and intra-information balance network, Self-knowledge distillation, Information-interaction branch, Region balance module},
+ pages = {127670},
+ title = {IIBNet: Inter- and Intra-Information balance network with Self-Knowledge distillation and region attention for RGB-D indoor scene parsing},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425012928},
+ volume = {282},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@article{Wang201864,
+ abstract = {With the data volume increasing, key-value (KV) store plays an important role in today’s storage systems due to its flexible architecture and good scalability. There are two types of data organization in current KV stores: key-order layout and write-order layout, which organize records according to key order and write sequence, respectively. While the former and the latter layouts deliver high throughput for range-query and write operations respectively, neither of them can perform well for both write and range-query operations. In this paper, we propose a hybrid KV store, KT-Store, which combines the key-order and write-order layout together to improve performance. More specifically, KT-Store stores keys and value metadata into a LSM-tree, and stores values into multiple tables called TrieTables. By inserting the value among multiple TrieTables in a key-order fashion leveraging a trie, and into a specific TrieTable in a write-order fashion, KT-Store can obtain the advantages of existing two layout types and avoid their shortcomings. We implement KT-Store in RocksDB 5.7.2. Extensive evaluations demonstrate that KT-Store can simultaneously obtain encouraging write and range-query performance: compared with key-order based RocksDB, the write performance is improved by 4.3× -12.6× on HDDs; compared with write-order based Wisckey, KT-Store has 4.2× -112.6 range-query performance on HDDs. Besides, KT-Store also has encouraging performance on SSDs. © IFIP International Federation for Information Processing 2018.},
+ author = {Wang, Haobo and Yue, Yinliang and He, Shuibing and Wang, Weiping},
+ doi = {10.1007/978-3-030-05677-3_6},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1; All Open Access; Green Open Access},
+ pages = {64 - 76},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {KT-store: A key-order and write-order hybrid key-value store with high write and range-query performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85059692371?origin=resultslist},
+ volume = {11276 LNCS},
+ year = {2018}
+}

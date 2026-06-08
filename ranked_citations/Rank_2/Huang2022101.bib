@@ -1,0 +1,13 @@
+@conference{Huang2022101,
+ abstract = {Storage engine is a crucial component in relational databases (RDBs). With the emergence of Internet services and applications, a recent technical trend is to deploy a Log-structured Merge Tree (LSM-tree) based storage engine. Although such an approach can achieve high performance and efficient storage space usage, it also brings a critical double-logging problem—In LSM-tree based RDBs, both the upper RDB layer and the lower storage engine layer implement redundant logging facilities, which perform synchronous and costly I/Os for data persistence. Unfortunately, such “double protection” does not provide extra benefits but only incurs heavy and unnecessary performance overhead. In this paper, we propose a novel solution, called Passive Data Persistence Scheme (PASV), to address the double-logging problem in LSM-tree based RDBs. By completely removing Write-ahead Log (WAL) in the storage engine layer, we develop a set of mechanisms, including a passive memory buffer flushing policy, an epoch-based data persistence scheme, and an optimized partial data recovery process, to achieve reliable and low-cost data persistence during normal runs and also fast and efficient recovery upon system failures. We implement a fully functional, open-sourced prototype of PASV based on Facebook's MyRocks. Evaluation results show that our solution can effectively improve system performance by increasing throughput by up to 49.9% and reducing latency by up to 89.3%, and it also saves disk I/Os by up to 42.9% and reduces recovery time by up to 4.8%. © AST 2022.All rights reserved.},
+ author = {Huang, Kecheng and Shen, Zhaoyan and Jia, Zhiping and Shao, Zili and Chen, Feng},
+ journal = {Proceedings of the 20th USENIX Conference on File and Storage Technologies, FAST 2022},
+ note = {Cited by: 7},
+ pages = {101 - 115},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Removing Double-Logging with Passive Data Persistence in LSM-tree based Relational Databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85140994169?origin=resultslist},
+ year = {2022}
+}

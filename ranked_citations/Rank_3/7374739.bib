@@ -1,0 +1,14 @@
+@article{7374739,
+ abstract = {Stacked DRAM used as the last-level caches (LLCs) in multicore systems delivers performance enhancement due to its capacity benefit. While the performance of LLC depends heavily upon its block replacement policy, the conventional replacement policy needs redesigning to exploit the best of DRAM cache and avoid its drawbacks. The existing DRAM cache insertion policy blindly forwards victim lines replaced from L3 to the off-chip memory, regardless of the potential for increased hits by placing a fraction of them in the DRAM cache. Nevertheless, a naïve design that steers all dirty victims to the DRAM cache introduces excessive writeback traffic, which aggravates capacity misses and DRAM interference. To leverage insertions in terms of writeback or fill requests, we propose a collective writeback and fill policy that adapts to the distinct access patterns of heterogeneous workloads based on runtime misses and writeback efficiency. The synthesis result shows that the new policy has only a small hardware overhead. According to the experimental results on the gem5 simulator, the new policy increases harmonic instruction per cycle throughput by 18%, 11.6%, and 11.7%, respectively, compared with the Always Writeback (AW)-Always Fill policy, Never Writeback Adaptive DRAM Placement policy, and AW Adaptive DRAM Placement policy on 64-MB alloy cache, while the improvement is 19.3%, 13.7%, and 14.5% on 64-MB MissMap cache.},
+ author = {Yin, Shouyi and Xu, Weizhi and Li, Jiakun and Liu, Leibo and Wei, Shaojun},
+ doi = {10.1109/TVLSI.2015.2507597},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Random access memory;Metals;Hardware;Multicore processing;Interference;Very large scale integration;Runtime;DRAM cache;fill policy;last-level cache (LLC);probability;writeback policy.;DRAM cache;fill policy;last-level cache (LLC);probability;writeback policy},
+ month = {July},
+ number = {7},
+ pages = {2548-2561},
+ title = {CWFP: Novel Collective Writeback and Fill Policy for Last-Level DRAM Cache},
+ volume = {24},
+ year = {2016}
+}

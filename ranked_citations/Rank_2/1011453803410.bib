@@ -1,0 +1,15 @@
+@article{10.1145/3803410,
+ abstract = {Open source software (OSS) vulnerabilities pose significant security risks to downstream applications. While vulnerability databases provide valuable information for mitigation, many security patches are released silently in new commits of OSS repositories without explicit indications of their security impact. This makes it challenging for software maintainers and users to detect and address these vulnerabilities. There are a few approaches for detecting vulnerability-fixing commits (VFCs), but most of these approaches leverage commit messages, which would miss silent VFCs. On the other hand, there are some approaches for detecting silent VFCs based on code change patterns, but they often fail to characterize vulnerability fix patterns, thereby lacking effectiveness. For example, some approaches analyze each hunk in known VFCs, in isolation, to learn vulnerability fix patterns; but vulnerability fixes are often associated with multiple hunks, in which cases correlations of code changes across those hunks are essential for characterizing the vulnerability fixes.To address these problems, we first conduct a large-scale empirical study on 11,900 VFCs across six programming languages, in which we found that over 70% of VFCs involve multiple hunks with various types of correlations. Based on our findings, we propose Fixseeker, a graph-based approach that extracts the various correlations between code changes at the hunk level to detect silent vulnerability fixes. Our evaluation demonstrates that Fixseeker outperforms state-of-the-art approaches across multiple programming languages, achieving a high F1 score of 0.818 on average in balanced datasets and consistently improving F2 score, AUC-ROC, and AUC-PR scores by 10.64%, 5.34%, and 10.34% on imbalanced datasets compared to the best baseline methods. Our evaluation also indicates the generality of Fixseeker across different vulnerability types and repository sizes.},
+ address = {New York, NY, USA},
+ author = {Cheng, Yiran and Zhang, Ting and Shar, Lwin Khin and Lang, Zhe and Lo, David and Lv, Shichao and Fang, Dongliang and Shi, Zhiqiang and Sun, Limin},
+ doi = {10.1145/3803410},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Vulnerability-fixing commit, Open source software, Graph learning},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Fixseeker: An Empirical Driven Graph-based Approach for Detecting Silent Vulnerability Fixes in Open Source Software},
+ url = {https://doi.org/10.1145/3803410},
+ year = {2026}
+}

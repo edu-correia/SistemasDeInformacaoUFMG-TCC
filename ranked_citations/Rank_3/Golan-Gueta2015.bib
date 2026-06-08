@@ -1,0 +1,14 @@
+@conference{Golan-Gueta2015,
+ abstract = {Log-structured data stores (LSM-DSs) are widely accepted as the state-of-the-art implementation of key-value stores. They replace random disk writes with sequential I/O, by accumulating large batches of updates in an in-memory data structure and merging it with the on-disk store in the background. While LSM-DS implementations proved to be highly successful at masking the I/O bottleneck, scaling them up on multicore CPUs remains a challenge. This is nontrivial due to their often rich APIs, as well as the need to coordinate the RAM access with the background I/O. We present cLSM, an algorithm for scalable concurrency in LSM-DS, which exploits multiprocessor-friendly data structures and non-blocking synchronization. cLSM supports a rich API, including consistent snapshot scans and general non-blocking read-modify-write operations. We implement cLSM based on the popular LevelDB keyvalue store, and evaluate it using intensive synthetic workloads as well as ones from production web-serving applications. Our algorithm outperforms state of the art LSM-DS implementations, improving throughput by 1.5x to 2.5x. Moreover, cLSM demonstrates superior scalability with the number of cores (successfully exploiting twice as many cores as the competition). Copyright © 2015 ACM 978-1-4503-3238-5/15/04⋯ $15.00.},
+ author = {Golan-Gueta, Guy and Bortnikov, Edward and Hillel, Eshcar and Keidar, Idit},
+ doi = {10.1145/2741948.2741973},
+ journal = {Proceedings of the 10th European Conference on Computer Systems, EuroSys 2015},
+ note = {Cited by: 84},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scaling concurrent log-structured data stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84929603680?origin=resultslist},
+ year = {2015}
+}

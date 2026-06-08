@@ -1,0 +1,17 @@
+@article{10.14778/2856318.2856321,
+ abstract = {In-memory databases rely on pointer-intensive data structures to quickly locate data in memory. A single lookup operation in such data structures often exhibits long-latency memory stalls due to dependent pointer dereferences. Hiding the memory latency by launching additional memory accesses for other lookups is an effective way of improving performance of pointer-chasing codes (e.g., hash table probes, tree traversals). The ability to exploit such inter-lookup parallelism is beyond the reach of modern out-of-order cores due to the limited size of their instruction window. Instead, recent work has proposed software prefetching techniques that exploit inter-lookup parallelism by arranging a set of independent lookups into a group or a pipeline, and navigate their respective pointer chains in a synchronized fashion. While these techniques work well for highly regular access patterns, they break down in the face of irregularity across lookups. Such irregularity includes variable-length pointer chains, early exit, and read/write dependencies.This work introduces Asynchronous Memory Access Chaining (AMAC), a new approach for exploiting inter-lookup parallelism to hide the memory access latency. AMAC achieves high dynamism in dealing with irregularity across lookups by maintaining the state of each lookup separately from that of other lookups. This feature enables AMAC to initiate a new lookup as soon as any of the in-flight lookups complete. In contrast, the static arrangement of lookups into a group or pipeline in existing techniques precludes such adaptivity. Our results show that AMAC matches or outperforms state-of-the-art prefetching techniques on regular access patterns, while delivering up to 2.3x higher performance under irregular data structure lookups. AMAC fully utilizes the available microarchitectural resources, generating the maximum number of memory accesses allowed by hardware in both single- and multi-threaded execution modes.},
+ author = {Kocberber, Onur and Falsafi, Babak and Grot, Boris},
+ doi = {10.14778/2856318.2856321},
+ issn = {2150-8097},
+ issue_date = {December 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {December},
+ number = {4},
+ numpages = {12},
+ pages = {252–263},
+ publisher = {VLDB Endowment},
+ title = {Asynchronous memory access chaining},
+ url = {https://doi.org/10.14778/2856318.2856321},
+ volume = {9},
+ year = {2015}
+}

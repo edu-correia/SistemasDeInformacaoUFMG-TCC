@@ -1,0 +1,14 @@
+@article{8772183,
+ abstract = {Due to the emergence of new network applications, current IP lookup engines must support high bandwidth, low lookup latency, and the ongoing growth of IPv6 networks. However, the existing solutions are not designed to address jointly these three requirements. This paper introduces SHIP, an IPv6 lookup algorithm that exploits prefix characteristics to build a data structure designed to meet future application requirements. Based on the prefix length distribution and prefix density, prefixes are first clustered into groups sharing similar characteristics and then encoded in hybrid trie-trees. The resulting memory-efficient and scalable data structure can be stored in low-latency memories and allows the traversal process to be parallelized and pipelined in order to support high packet bandwidth in hardware. In addition, SHIP supports incremental updates. Evaluated on real and synthetic IPv6 prefix tables, SHIP has a logarithmic scaling factor in terms of the number of memory accesses and a linear memory consumption scaling. Compared with other well-known approaches, SHIP reduces the required amount of memory per prefix by 87%. When implemented on a state-of-the-art field-programmable gate array (FPGA), the proposed architecture can support processing 588 million packets per second.},
+ author = {Stimpfling, Thibaut and Bélanger, Normand and Langlois, J. M. Pierre and Savaria, Yvon},
+ doi = {10.1109/TNET.2019.2926230},
+ issn = {1558-2566},
+ journal = {IEEE/ACM Transactions on Networking},
+ keyword = {IP networks;Marine vehicles;Data structures;Memory management;Complexity theory;Field programmable gate arrays;Bandwidth;Networking;forwarding;FIB;associative memory;algorithm;IPv6 lookup},
+ month = {Aug},
+ number = {4},
+ pages = {1529-1542},
+ title = {SHIP: A Scalable High-Performance IPv6 Lookup Algorithm That Exploits Prefix Characteristics},
+ volume = {27},
+ year = {2019}
+}

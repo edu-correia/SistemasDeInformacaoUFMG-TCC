@@ -1,0 +1,14 @@
+@article{11360750,
+ abstract = {In data-intensive microservice-based systems, frequent and large-scale inter-service communication poses a critical performance bottleneck, degrading throughput and escalating latency. Existing solutions exhibit notable limitations: microservice merging sacrifices loose coupling and system evolvability; resource-aware scheduling enhances communication efficiency but fails to reduce data volume; dynamic deployment reduces network distances while introducing compute-resource contention; and unnecessary data transfer elimination remains ineffective under massive data loads. Hence, to overcome these challenges, we propose iRUC, an approach for inter-service data communication Reduction via Unified Computation. In particular, we first design GraphQL+, an executable declarative language that extends GraphQL with service-interaction semantics to achieve unified, cross-language modeling of data processing and transmission across microservices. Second, we develop an LLM-based multi-agent system leveraging Claude 4.5 Sonnet and Gemini 2.5 Pro to automatically parse microservice code and synthesize corresponding GraphQL+ models. Third, we implement the unified execution engine for GraphQL+ models, including the database gateway that preserves microservice database autonomy while enabling cross-database queries. This design enables iRUC to perform the unified modeling and execution of data processing and transmission across microservices, thereby significantly reducing inter-service data transfer while maintaining microservice independence. Experimental evaluation on nine GitHub open-source microservice projects deployed on Huawei Cloud demonstrates iRUC’s effectiveness: compared with the unnecessary transfer elimination, dynamic deployment, and serverless computing approaches, iRUC improves throughput by 5.57$\times$×, 1.52$\times$×, and 1.87$\times$×, respectively, while reducing latency to 7.7%, 40.7%, and 37.4% of those approaches. These results show that iRUC achieves significant performance improvements in large-scale data processing scenarios.},
+ author = {Wang, Puwei and Liu, Ruiheng and Huang, Keman and Du, Xiaoyong},
+ doi = {10.1109/TSE.2026.3656819},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Microservice architectures;Data processing;Databases;Data transfer;Data models;Codes;Throughput;Engines;Computational modeling;Software development management;Inter-Service data communication;GraphQL+;LLM-based multi-agent system;unified computation},
+ month = {April},
+ number = {4},
+ pages = {1198-1214},
+ title = {iRUC: Reducing Inter-Microservice Data Communication in Data-Intensive Systems via Unified Computation},
+ volume = {52},
+ year = {2026}
+}

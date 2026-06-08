@@ -1,0 +1,14 @@
+@article{11175208,
+ abstract = {Despite the considerable advancements in cross-domain image translation, a significant challenge remains in addressing information asymmetric translation tasks such as SAR-to-Optical and Sketch-to-Instance conversions. These tasks involve transforming data from a domain with limited information into one with more detailed and richer content. Traditional CNN-based methods, while effective at capturing intricate details, often struggle to grasp the overall structural composition of the image, leading to unintended blending or merging of distinct regions within the generated images. In light of these limitations, research has increasingly turned toward Transformers. Though Transformers excel at capturing global structures, they often lack the ability to preserve fine-grained details. Recognizing the importance of both detailed features and structural relationships in information asymmetric translation tasks, we introduce the CNN-Swin Hybrid Network (CSHNet). This network employs a novel bottleneck architecture featuring two key modules: Swin Embedded CNN (SEC) and CNN Embedded Swin (CES), which together form the SEC-CES-Bottleneck (SCB). Within this structure, SEC capitalizes on CNN’s capability for detailed feature extraction while incorporating the Swin Transformer’s inherent structural bias. In contrast, CES preserves the Swin Transformer’s strength in maintaining global structural integrity, while compensating for CNN’s tendency to emphasize detail. In addition to the SCB architecture, CSHNet integrates two essential components designed to improve cross-domain information retention and ensure structural consistency. The Interactive Guided Connection (IGC) fosters dynamic information exchange between SEC and CES, encouraging a deeper understanding of image details. At the same time, Adaptive Edge Perception Loss (AEPL) is implemented to preserve well-defined structural boundaries throughout the translation process. Experimental evaluations demonstrate that CSHNet surpasses current state-of-the-art methods, achieving superior results in both visualization and performance metrics across scene-level and instance-level datasets. Our code is available at: https://github.com/XduShi/CSHNet},
+ author = {Yang, Xi and Shi, Haoyuan and Wang, Zihan and Wang, Nannan and Gao, Xinbo},
+ doi = {10.1109/TCSVT.2025.3612484},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Transformers;Translation;Convolutional neural networks;Feature extraction;Computer vision;Generative adversarial networks;Training;Image synthesis;Stacking;Semantics;CNN;swin transformer;SEC-CES-bottleneck (SCB);interactive guided connection (IGC);adaptive edge perception loss (AEPL)},
+ month = {Feb},
+ number = {2},
+ pages = {1862-1875},
+ title = {CSHNet: A Novel Information Asymmetric Image Translation Method},
+ volume = {36},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{10900479,
+ abstract = {The pretrain-finetune paradigm brings about the release of numerous model weights. Under this background, model merging is becoming increasingly popular, as it enables a model to handle multiple tasks by fusing model weights from these tasks, without the need for labeled data, additional training, or high training costs. Though with great potential, model merging suffers from severe performance degradation due to the interference among model weights. And existing model merging methods (i.e., static merging) commonly provide a single set of merging coefficients for all the input samples and do not distinguish layers based on the severity of weight interference, which may not be the optimal solution. In this paper, we propose MoW-Merging, a dynamic model merging method based on Mixture of Weights. First, we apply a gating network to adaptively generate merging coefficients depending on the input samples, realizing sample-wisely dynamic merging and automated classifier selection. The gating network is lightweight and is trained with only a small number of unlabeled data. Further, we utilize a weight similarity metric to judge the severity of weight interference of each layer and apply suitable merging methods to different layers. The proposed MoW-Merging shows plug-and-play capabilities and can be seamlessly combined with various model merging methods to greatly boost their performance. The effectiveness of MoW-Merging is validated by comprehensive experiments on various classical and newly-established benchmarks under multiple settings. The code is available at https://github.com/harveyhuang18/Mixture_of_Weights.},
+ author = {Ye, Peng and Huang, Chenyu and Shen, Mingzhu and Chen, Tao and Huang, Yongqi and Ouyang, Wanli},
+ doi = {10.1109/TCSVT.2025.3544680},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Interference;Adaptation models;Computational modeling;Data models;Multitasking;Measurement;Costs;Supervised learning;Dynamic model merging;mixture of weights;multi-task learning;supervised finetuning},
+ month = {Aug},
+ number = {8},
+ pages = {7925-7939},
+ title = {Dynamic Model Merging With Mixture of Weights},
+ volume = {35},
+ year = {2025}
+}

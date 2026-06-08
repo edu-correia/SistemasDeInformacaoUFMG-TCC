@@ -1,0 +1,13 @@
+@article{WANG2023104976,
+ abstract = {Hematoxylin and eosin stained whole slide images (WSIs) are the gold standard for pathologists and medical professionals for tumor diagnosis, surgery planning, and postoperative examinations. In recent years, due to the rapidly emerging field of deep learning, there have been many convolutional neural networks (CNNs) and Transformer based models applied to computational pathology for accurate segmentation. However, the generalization ability and robustness of models often affect the diagnosis and prognosis of cancer, and we attempt to effectively combine the advantage of CNN which excels in sparse WSI segmentation while Transformer excels in dense cases. In this paper, We propose a novel feature fusion strategy, DHUnet, which utilizes Swin Transformer and ConvNeXt modules with a dual-branch hierarchical U-shaped architecture to fuse global and local features for WSI segmentation. Firstly, a WSI is divided into small patches, which are put into the global and local encoders to generate hierarchical features in parallel. Then, with the help of global–local fusion modules and skip connections, the decoder can fully obtain the global coarse and local fine-grained information during the upsampling process. The proposed Cross-scale Expand Layer can make the patches with the same center but different scales recover the input resolution gradually at each stage. Finally, all the projected pixel-level patch masks are merged to restore the final WSI tumor segmentation. Extensive experiments demonstrate that DHUnet has excellent performance and generalization ability for WSI segmentation, achieving the best segmentation results on three datasets with different types of cancer, densities, and target sizes. The code and pre-processed datasets will be publicly available at https://github.com/pengsl-lab/DHUnet.},
+ author = {Lian Wang and Liangrui Pan and Hetian Wang and Mingting Liu and Zhichao Feng and Pengfei Rong and Zuo Chen and Shaoliang Peng},
+ doi = {https://doi.org/10.1016/j.bspc.2023.104976},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {Whole slide images, Segmentation, Transformers, Convolutional neural networks, Cancer},
+ pages = {104976},
+ title = {DHUnet: Dual-branch hierarchical global–local fusion network for whole slide image segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809423004093},
+ volume = {85},
+ year = {2023}
+}

@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2021.3131879,
+ abstract = {Multi-field packet classification is a crucial component in modern software-defined data center networks. To achieve high throughput and low latency, state-of-the-art algorithms strive to fit the rule lookup data structures into on-die caches; however, they do not scale well with the number of rules. We present a novel approach, &lt;italic&gt;NuevoMatch&lt;/italic&gt;, which improves the memory scaling of existing methods. A new data structure, &lt;italic&gt;Range Query Recursive Model Index&lt;/italic&gt; (RQ-RMI), is the key component that enables NuevoMatch to replace most of the accesses to main memory with model inference computations. We describe an efficient training algorithm that guarantees the correctness of the RQ-RMI-based classification. The use of RQ-RMI allows the rules to be compressed into neural networks that fit into the hardware cache. Further, it takes advantage of the growing support for fast neural network processing in modern CPUs, such as wide vector instructions, achieving a latency of tens of nanoseconds per lookup. Our evaluation using 500K multi-field rules from the standard ClassBench benchmark shows a geometric mean compression factor of &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$4.9times $ &lt;/tex-math&gt;&lt;/inline-formula&gt;, &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$8times $ &lt;/tex-math&gt;&lt;/inline-formula&gt;, and &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$82times $ &lt;/tex-math&gt;&lt;/inline-formula&gt;, and average performance improvement of &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$2.4times $ &lt;/tex-math&gt;&lt;/inline-formula&gt;, &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$2.6times $ &lt;/tex-math&gt;&lt;/inline-formula&gt;, and &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$1.6times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; in throughput compared to CutSplit, NeuroCuts, and TupleMerge, all state-of-the-art algorithms.},
+ author = {Rashelbach, Alon and Rottenstreich, Ori and Silberstein, Mark},
+ doi = {10.1109/tnet.2021.3131879},
+ issn = {1063-6692},
+ issue_date = {June 2022},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {December},
+ number = {3},
+ numpages = {15},
+ pages = {1073–1087},
+ publisher = {IEEE Press},
+ title = {A Computational Approach to Packet Classification},
+ url = {https://doi.org/10.1109/TNET.2021.3131879},
+ volume = {30},
+ year = {2021}
+}

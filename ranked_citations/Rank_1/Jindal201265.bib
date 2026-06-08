@@ -1,0 +1,15 @@
+@article{Jindal201265,
+ abstract = {Vertical and Horizontal partitions allow database administrators (DBAs) to considerably improve the performance of business intelligence applications. However, finding and defining suitable horizontal and vertical partitions is a daunting task even for experienced DBAs. This is because the DBA has to understand the physical query execution plans for each query in the workload very well to make appropriate design decisions. To facilitate this process several algorithms and advisory tools have been developed over the past years. These tools, however, still keep the DBA in the loop. This means, the physical design cannot be changed without human intervention. This is problematic in situations where a skilled DBA is either not available or the workload changes over time, e.g. due to new DB applications, changed hardware, an increasing dataset size, or bursts in the query workload. In this paper, we present AutoStore: a self-tuning data store which rather than keeping the DBA in the loop, monitors the current workload and partitions the data automatically at checkpoint time intervals - without human intervention. This allows AutoStore to gradually adapt the partitions to best fit the observed query workload. In contrast to previous work, we express partitioning as a One-Dimensional Partitioning Problem (1DPP), with Horizontal (HPP) and Vertical Partitioning Problem (VPP) being just two variants of it. We provide an efficient O <sup>2</sup>P (One-dimensional Online Partitioning) algorithm to solve 1DPP. O<sup>2</sup>P is faster than the specialized affinity-based VPP algorithm by more than two orders of magnitude, and yet it does not loose much on partitioning quality. AutoStore is a part of the OctopusDB vision of a One Size Fits All Database System [13]. Our experimental results on TPC-H datasets show that AutoStore outperforms row and column layouts by up to a factor of 2. © 2012 Springer-Verlag.},
+ author = {Jindal, Alekh and Dittrich, Jens},
+ doi = {10.1007/978-3-642-33500-6_5},
+ journal = {Lecture Notes in Business Information Processing},
+ note = {Cited by: 40},
+ pages = {65 - 80},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Relax and let the database do the partitioning online},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84866674549?origin=resultslist},
+ volume = {126 LNBIP},
+ year = {2012}
+}

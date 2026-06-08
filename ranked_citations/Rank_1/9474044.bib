@@ -1,0 +1,14 @@
+@inproceedings{9474044,
+ abstract = {The popular Log-Structured Merge (LSM) tree based Key-Value (KV) stores make trade-offs between write cost and read cost via different merge policies, i.e., leveling and tiering. It has been widely documented that leveling severely hampers write throughput, while tiering hampers read throughput. The characteristics of modern workloads are seriously challenging LSM-tree based KV stores for high performance and high scalability on SSDs. In this work, we present PTierDB, an LSM-tree based KV store that strikes the better balance between read cost and write cost for small data on SSD via an adaptive tiering principle and three merge policies in the LSM-tree, leveraging both the sequential and random performance characteristics of SSDs. Adaptive tiering introduces two merge principles: prefix-based data split which bounds the lookup cost and coexisted merge and move which reduces data merging. Based on adaptive tiering, three merge policies make decisions to merge-sort or move data during the merging processes for different levels. We demonstrate the advantages of PTierDB with both microbenchmarks and YCSB workloads. Experimental results show that, compared with state-of-the-art KV stores and the KV implementations with popular merge policies, PTierDB achieves a better balance between read cost and write cost, and yields up to 2.5x improvement in the performance and 50% reduction of write amplification.},
+ author = {Liu, Li and Zhou, Ke},
+ booktitle = {2021 Design, Automation & Test in Europe Conference & Exhibition (DATE)},
+ doi = {10.23919/DATE51398.2021.9474044},
+ issn = {1558-1101},
+ keyword = {Scalability;Merging;Buildings;Throughput},
+ month = {Feb},
+ number = {},
+ pages = {796-801},
+ title = {PTierDB: Building Better Read-Write Cost Balanced Key-Value Stores for Small Data on SSD},
+ volume = {},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@inproceedings{7846386,
+ abstract = {State-of-the-art compilers provide a large set of conservative optimizations that aim to improve the performance, most often omitting the energy consumption impact. Low Level Virtual Machine (LLVM) compiler infrastructure [1] has a dedicated set of optimizations for loops such as loop-invariant code motion, loop simply and many others. Each optimization is organized as a separate pass in LLVM [1] and a mix of object creational patterns is used to create the passes. This paper introduces a new loop optimization designed for LLVM [1], namely loop fusion. Loop fusion merges two successive loops by adding the content of the second loop into the first loop and deleting the second loop, when the following conditions are fulfilled: (1) the loops have to have the same number of iterations, (2) there should be no code between the two loops and (3) there should be no data dependencies between the two loops, that is the two loops should be independent (two loops are defined as dependent when the first loop needs to finish its processing, namely all its iterations, in order to start executing the second loop). The independence criterion is not equal to parallelism (e.g. two loops can be independent but it might not be possible to execute them in parallel). The fusion of two loops cuts in half the number of threads that would be otherwise required to execute them. By decreasing the number of threads, the parallelization overhead is reduced, thus the energy consumption is decreased. The impact of the loop fusion algorithm on both performance and energy consumption will be also discussed in this paper.},
+ author = {Ştirb, Iulia and Ciocârlie, Horia},
+ booktitle = {2016 IEEE 17th International Symposium on Computational Intelligence and Informatics (CINTI)},
+ doi = {10.1109/CINTI.2016.7846386},
+ issn = {2471-9269},
+ keyword = {Optimization;Energy consumption;Parallel processing;Instruction sets;Mathematical model;Production facilities;loop fusion optimization;compiler;energy consumption;performance;parallel computation},
+ month = {Nov},
+ number = {},
+ pages = {000099-000104},
+ title = {Improving performance and energy consumption with loop fusion optimization and parallelization},
+ volume = {},
+ year = {2016}
+}

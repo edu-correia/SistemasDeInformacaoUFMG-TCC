@@ -1,0 +1,15 @@
+@article{Aksenov202618,
+ abstract = {Efficient support of transactional and analytical queries in one database is extremely complicated since they require different approaches to storing the data. The standard solution is to separate a database into OLTP and OLAP parts, where the OLTP part is always up-to-date, while the OLAP part is maintained as fresh as possible. It is common for database entities to have a hierarchy: for example, in a social network a person can have several posts, while each post can have several comments. Unfortunately, the existing approaches do not treat subordinate entities as first-class citizens and do not allow fast scans over them; for example, scanning over comments under a specific user’s posts would be inefficient. To make such scans efficient, we need to store data for each entity in a separate structure while maintaining the consistency of the cross-entity analytical queries. Without additional synchronization, for example, while scanning comments on a specific user’s post, we could read the comments under posts that have not been committed yet. In this work, we designed an OLAP part of the storage that treats each entity in a hierarchy as a first-class citizen and maintains the consistency of analytical queries. Our implementation supports multiple concurrent analytical queries and a single writer that pulls the updates from the OLTP part. The preliminary experiments show that treating each entity as a first-class citizen improves the performance of analytical queries over subordinate entities. © The Author(s), under exclusive license to Springer Nature Switzerland AG 2026.},
+ author = {Aksenov, Vitaly and Kokorin, Ilya and Stoiko, Nikolai},
+ doi = {10.1007/978-3-032-06751-7_2},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {18 - 32},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient OLAP Support of Hierarchical Data Almost in Real-Time},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105019504692?origin=resultslist},
+ volume = {16185 LNCS},
+ year = {2026}
+}

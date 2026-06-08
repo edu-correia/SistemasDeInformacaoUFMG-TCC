@@ -1,0 +1,14 @@
+@inproceedings{11083352,
+ abstract = {Key-value (KV) stores built on Log-Sturctured Merge (LSM) trees have become fundamental in handling large-scale data in modern applications. While LSM-trees are optimized for high write throughput, they suffer from degraded read performance. Caching is one of the main techniques to improve the performance of read operations. Traditional block caches have several issues: 1. They store redundant data for point lookups by caching entire blocks even when only a single KV pair is needed. 2. Frequent compaction operations cause cached blocks to become invalid, leading to increased disk I/Os and higher costs. 3. Block cache does not store global ordering information, so for range queries, the system must repeatedly fetch, sort, and merge data from multiple blocks to generate results, leading to substantial overhead.In this paper, we introduce OmniCache, a unified cache system that stores the results of both point lookups and range queries in LSM-tree based KV stores to optimize read performance. Omni-Cache employs a hybrid data structure, combining a hash table and skip-list, to dynamically store fine-grained results with global ordering. Our system reduces redundant data, mitigates cache invalidation from compaction, and improves query performance. Experimental evaluations show that OmniCache avoids 39% disk read traffic by reducing block cache invalidation. OmniCache also improves throughput up to 2.72x in read-heavy workloads and up to 1.85x in write-heavy workloads.},
+ author = {Geng, Yiyang and Xu, Huai and Zhang, Yanyong and Zhang, Fuxin},
+ booktitle = {2024 IEEE International Conference on High Performance Computing and Communications (HPCC)},
+ doi = {10.1109/HPCC64274.2024.00056},
+ issn = {},
+ keyword = {Costs;High performance computing;Throughput;Data structures;Compaction;LSM-tree;Key-Value Store;Caches},
+ month = {Dec},
+ number = {},
+ pages = {353-360},
+ title = {OmniCache: A Unified Cache for Efficient Query Handling in LSM-tree Based Key-Value Stores},
+ volume = {},
+ year = {2024}
+}

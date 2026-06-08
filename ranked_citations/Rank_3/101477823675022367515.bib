@@ -1,0 +1,17 @@
+@article{10.14778/2367502.2367515,
+ abstract = {In analytical applications, database systems often need to sustain workloads with multiple concurrent scans hitting the same table. The Cooperative Scans (CScans) framework, which introduces an Active Buffer Manager (ABM) component into the database architecture, has been the most effective and elaborate response to this problem, and was initially developed in the X100 research prototype. We now report on the the experiences of integrating Cooperative Scans into its industrial-strength successor, the Vectorwise database product. During this implementation we invented a simpler optimization of concurrent scan buffer management, called Predictive Buffer Management (PBM). PBM is based on the observation that in a workload with long-running scans, the buffer manager has quite a bit of information on the workload in the immediate future, such that an approximation of the ideal OPT algorithm becomes feasible. In the evaluation on both synthetic benchmarks as well as a TPC-H throughput run we compare the benefits of naive buffer management (LRU) versus CScans, PBM and OPT; showing that PBM achieves benefits close to Cooperative Scans, while incurring much lower architectural impact.},
+ author = {\'{S}witakowski, Micha\l{} and Boncz, Peter and Zukowski, Marcin},
+ doi = {10.14778/2367502.2367515},
+ issn = {2150-8097},
+ issue_date = {August 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {1759–1770},
+ publisher = {VLDB Endowment},
+ title = {From cooperative scans to predictive buffer management},
+ url = {https://doi.org/10.14778/2367502.2367515},
+ volume = {5},
+ year = {2012}
+}

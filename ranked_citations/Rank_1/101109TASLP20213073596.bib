@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2021.3073596,
+ abstract = {Voice activity detection is an essential pre-processing component for speech-related tasks such as automatic speech recognition (ASR). Traditional supervised VAD systems obtain frame-level labels from an ASR pipeline by using, e.g., a Hidden Markov model. These ASR models are commonly trained on clean and fully transcribed data, limiting VAD systems to be trained on clean or synthetically noised datasets. Therefore, a major challenge for supervised VAD systems is their generalization towards noisy, real-world data. This work proposes a data-driven teacher-student approach for VAD, which utilizes vast and unconstrained audio data for training. Unlike previous approaches, only weak labels during teacher training are required, enabling the utilization of any real-world, potentially noisy dataset. Our approach firstly trains a teacher model on a source dataset (Audioset) using clip-level supervision. After training, the teacher provides frame-level guidance to a student model on an unlabeled, target dataset. A multitude of student models trained on mid- to large-sized datasets are investigated (Audioset, Voxceleb, NIST SRE). Our approach is then respectively evaluated on clean, artificially noised, and real-world data. We observe significant performance gains in artificially noised and real-world scenarios. Lastly, we compare our approach against other unsupervised and supervised VAD methods, demonstrating our method's superiority.},
+ author = {Dinkel, Heinrich and Wang, Shuai and Xu, Xuenan and Wu, Mengyue and Yu, Kai},
+ doi = {10.1109/taslp.2021.3073596},
+ issn = {2329-9290},
+ issue_date = {2021},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {April},
+ numpages = {14},
+ pages = {1542–1555},
+ publisher = {IEEE Press},
+ title = {Voice Activity Detection in the Wild: A Data-Driven Approach Using Teacher-Student Training},
+ url = {https://doi.org/10.1109/TASLP.2021.3073596},
+ volume = {29},
+ year = {2021}
+}

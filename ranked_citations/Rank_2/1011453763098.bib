@@ -1,0 +1,18 @@
+@article{10.1145/3763098,
+ abstract = {Regression testing is an essential part of software development, but it suffers from the presence of flaky tests – tests that pass and fail non-deterministically when run on the same code. These unpredictable failures waste developers’ time and often hide real bugs. Prior work showed that fine-tuned large language models (LLMs) can classify flaky tests into different categories with very high accuracy. However, we find that prior approaches over-estimated the accuracy of the models due to incorrect experimental design and unrealistic datasets – making the flaky test classification problem seem simpler than it is.    In this paper, we first show how prior flaky test classifiers over-estimate the prediction accuracy due to 1) flawed experiment design and 2) mis-representation of the real distribution of flaky (and non-flaky) tests in their datasets. After we fix the experimental design and construct a more realistic dataset (which we name FlakeBench), the prior state-of-the-art model shows a steep drop in F1-score, from 81.82% down to 56.62%. Motivated by these observations, we develop a new training strategy to fine-tune a flaky test classifier, FlakyLens, that improves the classification F1-score to 65.79% (9.17pp higher than the state-of-the-art). We also compare FlakyLens against recent pre-trained LLMs, such as CodeLlama and DeepSeekCoder, on the same classification task. Our results show that FlakyLens consistently outperforms these models, highlighting that general-purpose LLMs still fall short on this specialized task.    Using our improved flaky test classifier, we identify the important tokens in the test code that influence the models in making correct or incorrect predictions. By leveraging attribution scores computed per code token in each test, we investigate the tokens that have higher impact on the flaky test classifier’s decision-making per flaky test category. To assess the influence of these important tokens, we introduce adversarial perturbation using these important tokens into the tests and observe whether the model’s predictions change. Our findings show that, when introducing perturbations using the most important tokens, the classification accuracy can change by as much as -18.37pp. These results highlight that these models still struggle to generalize beyond their training data and rely on identifying category-specific tokens (instead of understanding their semantic context), calling for further research into more robust training methodologies.},
+ address = {New York, NY, USA},
+ articleno = {320},
+ author = {Rahman, Shanto and Dutta, Saikat and Shi, August},
+ doi = {10.1145/3763098},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {flaky test classification, flaky tests, large language models},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Understanding and Improving Flaky Test Classification},
+ url = {https://doi.org/10.1145/3763098},
+ volume = {9},
+ year = {2025}
+}

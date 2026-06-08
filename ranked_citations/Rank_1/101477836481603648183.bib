@@ -1,0 +1,17 @@
+@article{10.14778/3648160.3648183,
+ abstract = {Indexing is a core technique for accelerating predicate evaluation in databases. After many years of effort, the indexing performance has reached its peak on the existing hardware infrastructure. We propose to use ray tracing (RT) cores to move the indexing performance and efficiency to another level by addressing the following technical challenges: (1) the lack of an efficient mapping of predicate evaluation to a ray tracing job and (2) the poor performance by the heavy and imbalanced ray load when processing skewed datasets. These challenges set obstacles to effectively exploiting RT cores for predicate evaluation.In this paper, we propose RTScan, an approach that leverages RT cores to accelerate index scans. RTScan transforms the evaluation of conjunctive predicates into an efficient ray tracing job in a three-dimensional space. A set of techniques are designed in RTScan, i.e., Uniform Encoding, Data Sieving, and Matrix RT Refine, which significantly enhances the parallelism of scans on RT cores while lightening and balancing the ray load. With the proposed techniques, RTScan achieves high performance for datasets with either uniform or skewed distributions and queries with different selectivities. Extensive evaluations demonstrate that RTScan enhances the scan performance on RT cores by five orders of magnitude and outperforms the state-of-the-art approach on CPU by up to 4.6\texttimes{}.},
+ author = {Lv, Yangming and Zhang, Kai and Wang, Ziming and Zhang, Xiaodong and Lee, Rubao and He, Zhenying and Jing, Yinan and Wang, X. Sean},
+ doi = {10.14778/3648160.3648183},
+ issn = {2150-8097},
+ issue_date = {February 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {13},
+ pages = {1460–1472},
+ publisher = {VLDB Endowment},
+ title = {RTScan: Efficient Scan with Ray Tracing Cores},
+ url = {https://doi.org/10.14778/3648160.3648183},
+ volume = {17},
+ year = {2024}
+}

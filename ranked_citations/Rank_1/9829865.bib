@@ -1,0 +1,14 @@
+@article{9829865,
+ abstract = {Quantization is a prominent approach to compress model sizes of deep neural networks (DNNs), which clusters high-precision weights into a smaller set of quantization levels and represents high-precision weights by low-precision indexes. To achieve the same accuracy, nonuniform quantized DNNs (NUQ-DNNs) with unequal quantization intervals need lower index precision than uniform quantized DNNs (UQ-DNNs) with equal intervals, achieving smaller model sizes. Hence, deploying NUQ-DNNs on accelerators costs less on- and off-chip memory accesses than UQ-DNNs, which are more valuable for edge devices. However, accelerating NUQ-DNNs is nontrivial, since weight indexes cannot be directly used for computations. Previous NUQ-DNN accelerators adopt standard convolutions by decoding weight indexes into actual-weights multiplied with activations, causing abundant look-up overhead and redundant computations. In this work, we propose a weight-repetition-aware activation aggregating (WPAA) convolution approach to accelerate inference of variable-precision NUQ- and UQ-DNNs. By merging convolutions of multiple kernels, WPAA requires no look-up operation and removes redundant computations. Based on WPAA, we design a generic quantized DNN accelerator (GQNA). Furthermore, we propose a layer-adaptive kernel-reordering merging scheme to off-line adjust merging order of kernels for minimizing energy consumption of GQNA. Implemented under TSMC 28-nm technology, GQNA achieves 31.9 and 32.6 TOPS/W energy efficiency for 1-b UQ- and NUQ-VGG-16, respectively.},
+ author = {Yang, Jianxun and Tu, Fengbin and Li, Yixuan and Wang, Yiqi and Liu, Leibo and Wei, Shaojun and Yin, Shouyi},
+ doi = {10.1109/TCSI.2022.3188899},
+ issn = {1558-0806},
+ journal = {IEEE Transactions on Circuits and Systems I: Regular Papers},
+ keyword = {Kernel;Indexes;Quantization (signal);Matrix decomposition;Merging;Convolutional codes;Standards;Convolution optimization;nonuniform quantization;deep neural network (DNN) accelerator;redundant computation;variable-precision DNNs},
+ month = {Oct},
+ number = {10},
+ pages = {4069-4082},
+ title = {GQNA: Generic Quantized DNN Accelerator With Weight-Repetition-Aware Activation Aggregating},
+ volume = {69},
+ year = {2022}
+}

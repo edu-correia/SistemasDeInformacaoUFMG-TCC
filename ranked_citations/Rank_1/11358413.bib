@@ -1,0 +1,14 @@
+@article{11358413,
+ abstract = {Autonomous vehicles must recognize their surroundings and distinguish between dynamic and static objects to avoid collisions. Most recent moving object segmentation (MOS) studies project LiDAR point-cloud streams into multiple views to capture spatio-temporal cues. When a single view proves insufficient, the common strategy is to combine or convert views. However, existing methods rebuild features in full 3D space during conversion, significantly increasing time and memory costs. They also depend on high-end graphics processing units, which limits their on-board deployment. We introduce SwiftMOS, a lightweight framework centered on a direct view transformation module that rapidly converts bird's-eye view to range view without restoring 3D features. Direct view transformation leverages precomputed grids and view-specific hint maps to efficiently map coordinates, and an addition-fusion feature flow quickly merges past and current frames to capture the spatio-temporal context. Extensive quantitative and qualitative experiments on the SemanticKITTI dataset confirm the validity and real-time capability of the proposed method. SwiftMOS achieves a substantial latency reduction while maintaining competitive performance. It operates within the typical LiDAR scan rate on on-board hardware and also achieves robust performance on the Sipailou Campus Dataset, underscoring its practicality for real-world autonomous driving.},
+ author = {Lee, Minjae and Kim, Ungsik and Kim, Gun-Woo and Lee, Suwon},
+ doi = {10.1109/LRA.2026.3655199},
+ issn = {2377-3766},
+ journal = {IEEE Robotics and Automation Letters},
+ keyword = {Feature extraction;Three-dimensional displays;Laser radar;Real-time systems;Point cloud compression;Semantics;Hardware;Sensors;Autonomous vehicles;Vehicle dynamics;Computer vision for transportation;deep learning for visual perception;object detection;segmentation and categorization},
+ month = {March},
+ number = {3},
+ pages = {2873-2880},
+ title = {SwiftMOS: A Fast and Lightweight Moving Object Segmentation via Feature Flowing Direct View Transformation},
+ volume = {11},
+ year = {2026}
+}

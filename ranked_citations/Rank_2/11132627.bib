@@ -1,0 +1,14 @@
+@inproceedings{11132627,
+ abstract = {GPUs have been heavily utilized in diverse applications, and numerous approaches, including kernel fusion, have been proposed to boost GPU efficiency through concurrent kernel execution. However, these approaches generally overlook the opportunities to mitigate warp stalls and improve instruction level parallelism (ILP) in inter-kernel resource sharing. To address this issue, we introduce GOPTX, a novel design for kernel fusion that improves ILP through deliberate weaving instructions at the PTX level. GOPTX establishes a merged control flow graph (CFG) from original kernels, enabling to interleaving of instructions that were sequentially executed by default and minimizing pipeline stalls on data hazards. We further propose a latency-aware instruction weaving algorithm for more efficient instruction scheduling and an adaptive code slicing method to enlarge the scheduling space. Experimental evaluation demonstrates that GOPTX achieves an average speedup of $\mathbf{1 1. 2 \%}$ over the baseline concurrent execution, with a maximum improvement of 23%. The hardware resource utilization statistics show significant enhancements in eligible warps per cycle and resource use.},
+ author = {Wu, Kan and Lin, Zejia and Xi, Mengyue and Zheng, Zhongchun and Pan, Wenxuan and Zhang, Xianwei and Lu, Yutong},
+ booktitle = {2025 62nd ACM/IEEE Design Automation Conference (DAC)},
+ doi = {10.1109/DAC63849.2025.11132627},
+ issn = {},
+ keyword = {Design automation;Pipelines;Graphics processing units;Parallel processing;Weaving;Hazards;Hardware;Resource management;Flow graphs;Kernel;GPU;Kernel Fusion;ILP;Warp Stall;Data Hazard},
+ month = {June},
+ number = {},
+ pages = {1-7},
+ title = {GoPTX: Fine-grained GPU Kernel Fusion by PTX-level Instruction Flow Weaving},
+ volume = {},
+ year = {2025}
+}

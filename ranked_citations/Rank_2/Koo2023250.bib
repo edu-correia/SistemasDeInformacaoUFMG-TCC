@@ -1,0 +1,16 @@
+@article{Koo2023250,
+ abstract = {Flash memory technologies rely on flash translation layer (FTL) to manage no in-place update and garbage collection. Current FTL management schemes do not exploit the semantics of the accessed data. In this paper, we explore how semantic knowledge can be exploited to build and maintain indexes for stored data automatically. Data indexing is a critical enabler to accelerate many database applications and big data analytics. Unlike traditional per-table or per-file indexes that are managed separately from the data, we propose to maintain indexes on a per-flash page basis. Our approach, called FLash IndeXeR (FLIXR), builds and maintains page-level indexes whenever a page is written into the flash. FLIXR updates the indexes alongside any data updates at page granularity. The cost of the index update is hidden in the page write delays. FLIXR stores index data for each page within the FTL entry associated with that page, thereby piggybacking index access on a page access request. FLIXR accesses the index data in each FTL entry to determine whether the associated page stores data with a given key. FLIXR achieves 52.6% performance improvement for TPC-C and TPC-H benchmarks, compared to the conventional host-side indexing mechanism.  © 1968-2012 IEEE.},
+ author = {Koo, Gunjae and Oh, Yunho and Tseng, Hung-Wei and Ro, Won Woo and Annavaram, Murali},
+ doi = {10.1109/TC.2022.3154602},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 4; All Open Access; Hybrid Gold Open Access},
+ number = {1},
+ pages = {250 - 263},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FLIXR: Embedding Index Into Flash Translation Layer in SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85125318138?origin=resultslist},
+ volume = {72},
+ year = {2023}
+}

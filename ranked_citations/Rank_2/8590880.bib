@@ -1,0 +1,14 @@
+@inproceedings{8590880,
+ abstract = {It is effective to remove false dependencies to efficiently perform out-of-order (OoO) execution which improves single thread performance. Hardware register renaming removes these dependencies, but it is one of the bottlenecks of the processor because of its complexity. The use of a STRAIGHT architecture is one of the approaches that allow the compiler to remove these dependencies. Because the source operand is specified as the distance between the producer instruction and consumer instruction and there is no register overwriting, no false dependency occurs. Instead, the compiler must generate code that satisfies the constraint of specifying operands as constant distances that are not dependent on the execution path. Although the basic algorithms for realizing the constraint are already known, the machine code generated thereby cannot achieve high performance because it is necessary to execute many inter-register transfer instructions added by compiler to satisfy the constraints. This paper presents an efficient algorithm that uses data flow analysis to determine the value causing an increase in the number of executed instructions and improve the performance by spilling them on the stack. We developed a compiler that implements the proposed method using LLVM and evaluated using CoreMark as a benchmark. The number of executed instructions was reduced by approximately 31 %, and the execution performance improved by up to 32 %.},
+ author = {Koizumi, Toru and Nakae, Satoshi and Fukuda, Akifumi and Irie, Hidetsugu and Sakai, Shuichi},
+ booktitle = {2018 Sixth International Symposium on Computing and Networking Workshops (CANDARW)},
+ doi = {10.1109/CANDARW.2018.00026},
+ issn = {},
+ keyword = {Registers;Merging;Hardware;Parallel processing;Out of order;compiler;static analysis;instruction level parallelism},
+ month = {Nov},
+ number = {},
+ pages = {92-98},
+ title = {Reduction of Instruction Increase Overhead by STRAIGHT Compiler},
+ volume = {},
+ year = {2018}
+}

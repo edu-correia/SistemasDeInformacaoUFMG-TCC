@@ -1,0 +1,14 @@
+@conference{Shen2024448,
+ abstract = {NVMe Zoned Namespace (ZNS) devices partition the storage space into sequential-write zones, notably reducing the costs of address mapping, garbage collection (GC), and overprovisioning. Log-Structured Merge (LSM) tree-based databases convert random writes into sequential writes and can thus be efficiently handled by ZNS devices. Efficient zone-allocation methods play a pivotal role in maximizing the performance of LSM tree-based store running on ZNS devices. However, existing zone-allocation methods encounter high write-amplification factors due to inaccurate lifetime estimation solely based on the LSM-tree levels. To address this, this paper proposes an overlapping-aware zone-allocation method, termed OAZA, which efficiently selects suitable zones to place data. First, OAZA estimates the data lifetime by considering both the LSM-tree level of the data and the relative data hotness within the same tree level. Secondly, OAZA intelligently selects an appropriate zone to store the data based on the estimated lifetime. Experimental results demonstrate that OAZA outperforms two zone-allocation methods that correlate data lifetime merely to the tree level. Specially, OAZA reduces the amount of GC-induced data copy by average factors of 2.7 × and 1.7× in comparison to the two methods, respectively. Additionally, OAZA achieves an impressively low write-amplification factor of 1.1 ×, outperforming the factors of 1.2× and 1.3× achieved by the two compared methods, respectively. © 2024 IEEE.},
+ author = {Shen, Jingcheng and Yang, Lang and Long, Linbo and Liu, Renping and Tan, Zhenhua and Gao, Congming and Jiang, Yi},
+ doi = {10.1109/ASP-DAC58780.2024.10473944},
+ journal = {Proceedings of the Asia and South Pacific Design Automation Conference, ASP-DAC},
+ note = {Cited by: 8},
+ pages = {448 - 453},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Overlapping Aware Zone Allocation for LSM Tree-Based Store on ZNS SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85189366555?origin=resultslist},
+ year = {2024}
+}

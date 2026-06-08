@@ -1,0 +1,14 @@
+@inproceedings{8638394,
+ abstract = {Merging and sorting algorithms are the backbone of many modern computer applications. As such, efficient implementations are desired. Recent architectural advancements in CPUs (Central Processing Units), such as wider and more powerful vector instructions, allow for algorithmic improvements. This paper presents a new approach to merge sort using vector instructions. Traditional approaches to vectorized sorting typically utilize a bitonic sorting network (Batcher's Algorithm) which adds significant overhead. Our approach eliminates the overhead from this approach. We start with a branch-avoiding merge algorithm and then use the Merge Path algorithm to split up merging between the different SIMD lanes. Testing demonstrates that the algorithm not only surpasses the SIMD based bitonic counterpart, but that it is over 2.94x faster than a traditional merge, merging over 300M keys per second in one thread and over 16B keys per second in parallel. Our new sort reaches is over 5x faster than quicksort and 2x faster than Intel's IPP library sort, sorting over 5.3M keys per second for a single processor and in parallel over 500M keys per second and a speedup of over 2x from a traditional merge sort.},
+ author = {Watkins, Alex and Green, Oded},
+ booktitle = {2018 IEEE/ACM 8th Workshop on Irregular Applications: Architectures and Algorithms (IA3)},
+ doi = {10.1109/IA3.2018.00012},
+ issn = {},
+ keyword = {Sorting;Merging;Instruction sets;Software algorithms;Partitioning algorithms;Approximation algorithms;Sorting;Branch-Avoiding;Algorithm-and-Architecture-Co-design;Increased-control-flow},
+ month = {Nov},
+ number = {},
+ pages = {37-44},
+ title = {A Fast and Simple Approach to Merge and Merge Sort Using Wide Vector Instructions},
+ volume = {},
+ year = {2018}
+}

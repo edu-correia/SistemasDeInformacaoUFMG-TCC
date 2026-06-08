@@ -1,0 +1,14 @@
+@conference{Wei2022,
+ abstract = {Log-structured merge (LSM) tree based key-value (KV) stores organize writes into hierarchical batches for high-speed writing. However, the notorious compaction process of LSM-tree severely hurts system performance. It not only involves huge I/O operations but also consumes tremendous computation and memory resources. In this paper, first we find that when compaction happens in the high levels (i.e., L0, L1) of the LSM-tree, it may saturate all system computation and memory resources, and eventually stall the whole system. Based on this observation, we present Re-LSM, a ReRAM-based Processing-in-Memory (PIM) framework for LSMbased Key-Value Store. Specifically, in Re-LSM, we propose to offload certain computation and memory-intensive tasks in the high levels of the LSM-tree to the ReRAM-based PIM space. A high parallel ReRAM compaction accelerator is designed by decomposing the three-phased compaction into basic logic operating units. Evaluation results based on db_bench and YCSB show that Re-LSM achieves 2.2× improvement on the throughput of random writes compared to RocksDB, and the ReRAM-based compaction accelerator speedups the CPU-based implementation by 64.3× and saves 25.5× energy.  © 2022 Association for Computing Machinery.},
+ author = {Wei, Qian and Shen, Zhaoyan and Tong, Yiheng and Jia, Zhiping and Ju, Lei and Chen, Jiezhi and Li, Bingzhe},
+ doi = {10.1145/3508352.3549392},
+ journal = {IEEE/ACM International Conference on Computer-Aided Design, Digest of Technical Papers, ICCAD},
+ note = {Cited by: 6},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Re-LSM: A ReRAM-based processing-in-memory framework for LSM-based key-value store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85145650606?origin=resultslist},
+ year = {2022}
+}

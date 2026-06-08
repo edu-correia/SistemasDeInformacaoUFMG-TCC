@@ -1,0 +1,16 @@
+@article{Lam2024,
+ abstract = {Ensuring relative consistency in executing temporal queries to access real-time sensor data streams maintained in a database is a challenging problem, particularly when data transmission delays are lengthy and highly variable. Due to the unordered arrivals of sensor data, the databases may contain numerous open data versions (ODVs) with undefined validity intervals. Accessing ODVs may violate the relative consistency requirements of temporal queries, resulting in incorrect results. Although the Re-execution with Every Update (REU) method can resolve this issue, it may introduce heavy re-execution costs and significant delays in query completion. In this article, we study the problem of retrieving data items with temporal consistency requirements in a multi-data-stream database. To balance response time and meet the relative consistency requirements of queries, we introduce an enhanced REU mechanism called Re-Execution with Deadline (RED). Moreover, we propose a novel optional mechanism called Backward Execution Option (BEO) for temporal queries to achieve relative consistency in their execution with quick results by relaxing the data freshness constraints. By combining RED with BEO, we formulate the Repeated BEO (RBEO) to further reduce the query response time. We extend the timestamped key-value store MVLevelDB into MVLevelDB<sup>+</sup> to implement the proposed mechanisms. To reduce the query re-execution cost as required in RED and REU, we designed the Query Pool with Execution State (QpES) mechanism to achieve relative consistency in query execution with lower checking overhead and only one re-execution. We conducted extensive evaluation experiments on MVLevelDB<sup>+</sup> using benchmark programs to illustrate their performance characteristics on handling temporal queries in the modeled IoT system. © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Lam, Kam-Yiu and Zhao, Xiaofei and Zhu, Chunjiang and Kuo, Tei-Wei},
+ doi = {10.1145/3694787},
+ journal = {ACM Transactions on Embedded Computing Systems},
+ note = {Cited by: 0},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MVLevelDB+: Meeting Relative Consistency Requirements of Temporal Queries in Sensor Stream Databases},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85214564996?origin=resultslist},
+ volume = {24},
+ year = {2024}
+}

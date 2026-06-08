@@ -1,0 +1,14 @@
+@inproceedings{6927413,
+ abstract = {Priority queues are abstract data structures where each element is associated with a priority, and the highest priority element is always retrieved first from the queue. The data structure is widely used within databases, including the last stage of a merge-sort, forecasting read-ahead I/O to stream data for the merge-sort, and replacement selection sort. Typical software implementations use a balanced binary tree-based structure, providing O(log N) time for both enqueue and dequeue operations. To improve the performance, we propose several scalable and high-speed FPGA-based implementations of a priority queue. Our insight is that the above listed applications primarily use priority queues through “replace” operations, which remove the highest priority element and place a new element into the queue. Thus, our designs are customized for this operation, allowing for a simple and scalable architecture. We implement three priority queue designs, including use of a register-based array, register-based tree, and BRAM-based tree, which have different benefits and trade-offs of throughput, frequency, and maximum size. More importantly, all designs achieve O(1) time between replace operations. To incorporate the best aspects of our designs, we propose a Hybrid Priority Queue (H-PQ), which combines a register-based array with multiple BRAM-based trees. This design provides, on average, very fast access times to the top items in the queue (through the register-based array), while scaling to large priority queue sizes (through the BRAM-based trees). In our evaluations, we find that H-PQ achieves 4.3x speedup and 21.5x energy efficiency, compared with the Xeon CPU implementations.},
+ author = {Huang, Muhuan and Lim, Kevin and Cong, Jason},
+ booktitle = {2014 24th International Conference on Field Programmable Logic and Applications (FPL)},
+ doi = {10.1109/FPL.2014.6927413},
+ issn = {1946-1488},
+ keyword = {Throughput;Field programmable gate arrays;Arrays;Registers;Clocks;Software;Database systems},
+ month = {Sep.},
+ number = {},
+ pages = {1-4},
+ title = {A scalable, high-performance customized priority queue},
+ volume = {},
+ year = {2014}
+}

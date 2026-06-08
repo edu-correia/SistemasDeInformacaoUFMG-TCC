@@ -1,0 +1,16 @@
+@article{Malik2022,
+ abstract = {We can overcome the pessimism in worst-case routing latency analysis of timing-predictable Network-on-Chip (NoC) workloads by single-digit factors through the use of a hybrid field-programmable gate array (FPGA)-optimized NoC and workload-adapted regulation. Timing-predictable FPGA-optimized NoCs such as HopliteBuf integrate stall-free FIFOs that are sized using offline static analysis of a user-supplied flow pattern and rates. For certain bursty traffic and flow configurations, static analysis delivers very large, sometimes infeasible, FIFO size bounds and large worst-case latency bounds. Alternatively, backpressure-based NoCs such as HopliteBP can operate with lower latencies for certain bursty flows. However, they suffer from severe pessimism in the analysis due to the effect of pipelining of packets and interleaving of flows at switch ports. As we show in this article, a hybrid FPGA NoC that seamlessly composes both design styles on a per-switch basis delivers the best of both worlds, with improved feasibility (bounded operation) and tighter latency bounds. We select the NoC switch configuration through a novel evolutionary algorithm based on Maximum Likelihood Estimation (MLE). For synthetic (RANDOM, LOCAL) and real-world (SpMV, Graph) workloads, we demonstrate ≈2-3× improvements in feasibility and ≈1-6.8× in worst-case latency while requiring an LUT cost only ≈1-1.5× larger than the cheapest HopliteBuf solution. We also deploy and verify our NoC (PL) and MLE framework (PS) on a Pynq-Z1 to adapt and reconfigure NoC switches dynamically. We can further improve a workload's routability by learning to surgically tune regulation rates for each traffic trace to maximize available routing bandwidth. We capture critical dependency between traces by modelling the regulation space as a multivariate Gaussian distribution and learn the distribution's parameters using Covariance Matrix Adaptation Evolution Strategy (CMA-ES). We also propose nested learning, which learns switch configurations and regulation rates in tandem. Compared with stand-alone switch learning, this symbiotic nested learning helps achieve ≈ 1.5× lower cost constrained latency, ≈ 3.1× faster individual rates, and ≈ 1.4× faster mean rates. We also evaluate improvements to vanilla NoCs' routing using only stand-alone rate learning (no switch learning), with ≈ 1.6× lower latency across synthetic and real-world benchmarks.  © 2022 Association for Computing Machinery.},
+ author = {Malik, Gurshaant and Lang, Ian Elmore and Pellizzoni, Rodolfo and Kapre, Nachiket},
+ doi = {10.1145/3507699},
+ journal = {ACM Transactions on Reconfigurable Technology and Systems},
+ note = {Cited by: 1},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HopliteML: Evolving Application Customized FPGA NoCs with Adaptable Routers and Regulators},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85146421205?origin=resultslist},
+ volume = {15},
+ year = {2022}
+}

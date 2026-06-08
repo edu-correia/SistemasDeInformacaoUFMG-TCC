@@ -1,0 +1,14 @@
+@inproceedings{9156884,
+ abstract = {Maximally Stable Extremal Regions (MSER) algorithms are based on the component tree and are used to detect invariant regions. OpenCV MSER, the most popular MSER implementation, uses a linked list to associate pixels with ERs. The data-structure of an ER contains the attributes of a head and a tail linked node, which makes OpenCV MSER hard to be performed in parallel using existing parallel component tree strategies. Besides, pixel extraction (i.e. extracting the pixels in MSERs) in OpenCV MSER is very slow. In this paper, we propose two novel MSER algorithms, called Fast MSER V1 and V2. They first divide an image into several spatial partitions, then construct sub-trees and doubly linked lists (for V1) or a labelled image (for V2) on the partitions in parallel. A novel sub-tree merging algorithm is used in V1 to merge the sub-trees into the final tree, and the doubly linked lists are also merged in the process. While V2 merges the sub-trees using an existing merging algorithm. Finally, MSERs are recognized, the pixels in them are extracted through two novel pixel extraction methods taking advantage of the fact that a lot of pixels in parent and child MSERs are duplicated. Both V1 and V2 outperform three open source MSER algorithms (28 and 26 times faster than OpenCV MSER), and reduce the memory of the pixels in MSERs by 78%.},
+ author = {Xu, Hailiang and Xie, Siqi and Chen, Fan},
+ booktitle = {2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+ doi = {10.1109/CVPR42600.2020.00344},
+ issn = {2575-7075},
+ keyword = {Erbium;Partitioning algorithms;Merging;Feature extraction;Indexes;Memory management;Parallel algorithms},
+ month = {June},
+ number = {},
+ pages = {3377-3386},
+ title = {Fast MSER},
+ volume = {},
+ year = {2020}
+}

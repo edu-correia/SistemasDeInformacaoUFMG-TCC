@@ -1,0 +1,14 @@
+@inproceedings{8815549,
+ abstract = {This paper presents a parallel computing approach that is employed to reconstruct original information bits from a non-recursive convolutional codeword in noise, with the goal of reducing the decoding latency without compromising the performance. This goal is achieved by means of cutting a received codeword into a number of sub-codewords (SCWs) and feeding them into a two-stage decoder. At the first stage, SCWs are decoded in parallel using the Viterbi algorithm or equivalently the brute force algorithm. Major challenge arises when determining the initial state of the trellis diagram for each SCW, which is uncertain except for the first one; and such results in multiple decoding outcomes for every SCW. To eliminate or more precisely exploit the uncertainty, an Euclidean-distance minimization algorithm is employed to merge neighboring SCWs; and this is called the merging stage, which can also run in parallel. Our work reveals that the proposed two-stage decoder is optimal and has its latency growing logarithmically, instead of linearly as for the Viterbi algorithm, with respect to the codeword length. Moreover, it is shown that the decoding latency can be further reduced by employing artificial neural networks for the SCW decoding. Computer simulations are conducted for two typical convolutional codes, and the results confirm our theoretical analysis.},
+ author = {Wang, Jinfei and Ma, Yi and Xue, Songyan and Yi, Na and Tafazolli, Rahim and Dodgson, Terence E.},
+ booktitle = {2019 IEEE 20th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)},
+ doi = {10.1109/SPAWC.2019.8815549},
+ issn = {1948-3252},
+ keyword = {Convolutional codes;Wireless communication;Uncertainty;Viterbi algorithm;Noise;Signal processing algorithms;Artificial neural networks;Parallel processing;Minimization;Decoding;Parallel computing;channel decoding;convolutional codes;artificial neural network},
+ month = {July},
+ number = {},
+ pages = {1-5},
+ title = {Parallel Decoding for Non-recursive Convolutional Codes and Its Enhancement Through Artificial Neural Networks},
+ volume = {},
+ year = {2019}
+}

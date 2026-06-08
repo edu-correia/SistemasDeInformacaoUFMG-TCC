@@ -1,0 +1,17 @@
+@article{10.14778/2021017.2021019,
+ abstract = {Scaling the performance of shared-everything transaction processing systems to highly-parallel multicore hardware remains a challenge for database system designers. Recent proposals alleviate locking and logging bottlenecks in the system, leaving page latching as the next potential problem. To tackle the page latching problem, we propose physiological partitioning (PLP). The PLP design applies logical-only partitioning, maintaining the desired properties of shared-everything designs, and introduces a multi-rooted B+Tree index structure (MRBTree) which enables the partitioning of the accesses at the physical page level. Logical partitioning and MRBTrees together ensure that all accesses to a given index page come from a single thread and, hence, can be entirely latch-free; an extended design makes heap page accesses thread-private as well. Eliminating page latching allows us to simplify key code paths in the system such as B+Tree operations leading to more efficient and maintainable code. Profiling a prototype PLP system running on different multicore machines shows that it acquires 85% and 68% fewer contentious critical sections, respectively, than an optimized conventional design and one based on logical-only partitioning. PLP also improves performance up to 40% and 18%, respectively, over the existing systems.},
+ author = {Pandis, Ippokratis and T\"{o}z\"{u}n, Pinar and Johnson, Ryan and Ailamaki, Anastasia},
+ doi = {10.14778/2021017.2021019},
+ issn = {2150-8097},
+ issue_date = {July 2011},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {10},
+ numpages = {12},
+ pages = {610–621},
+ publisher = {VLDB Endowment},
+ title = {PLP: page latch-free shared-everything OLTP},
+ url = {https://doi.org/10.14778/2021017.2021019},
+ volume = {4},
+ year = {2011}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3025111.3025125,
+ abstract = {Transaction processing database management systems (DBMSs) are critical for today's data-intensive applications because they enable an organization to quickly ingest and query new information. Many of these applications exceed the capabilities of a single server, and thus their database has to be deployed in a distributed DBMS. The key factor affecting such a system's performance is how the database is partitioned. If the database is partitioned incorrectly, the number of distributed transactions can be high. These transactions have to synchronize their operations over the network, which is considerably slower and leads to poor performance. Previous work on elastic database repartitioning has focused on a certain class of applications whose database schema can be represented in a hierarchical tree structure. But many applications cannot be partitioned in this manner, and thus are subject to distributed transactions that impede their performance and scalability.In this paper, we present a new on-line partitioning approach, called Clay, that supports both tree-based schemas and more complex "general" schemas with arbitrary foreign key relationships. Clay dynamically creates blocks of tuples to migrate among servers during repartitioning, placing no constraints on the schema but taking care to balance load and reduce the amount of data migrated. Clay achieves this goal by including in each block a set of hot tuples and other tuples co-accessed with these hot tuples. To evaluate our approach, we integrate Clay in a distributed, main-memory DBMS and show that it can generate partitioning schemes that enable the system to achieve up to 15\texttimes{} better throughput and 99% lower latency than existing approaches.},
+ author = {Serafini, Marco and Taft, Rebecca and Elmore, Aaron J. and Pavlo, Andrew and Aboulnaga, Ashraf and Stonebraker, Michael},
+ doi = {10.14778/3025111.3025125},
+ issn = {2150-8097},
+ issue_date = {November 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {4},
+ numpages = {12},
+ pages = {445–456},
+ publisher = {VLDB Endowment},
+ title = {Clay: fine-grained adaptive partitioning for general database schemas},
+ url = {https://doi.org/10.14778/3025111.3025125},
+ volume = {10},
+ year = {2016}
+}

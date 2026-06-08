@@ -1,0 +1,14 @@
+@inproceedings{5477123,
+ abstract = {XML indexing and search has become an important topic, and twig joins are key building blocks in XML search systems. This paper describes a novel approach using a nested loop twig join algorithm, which combines several existing techniques to speed up evaluation of XML queries. We combine structural summaries, path indexing and prefix path partitioning to reduce the amount of data read by the join. This effect is amplified by only reading data for leaf query nodes, and inferring data for internal nodes from the structural summary. Skipping is used to speed up merges where query leaves have differing selectivity. Multiple access methods are implemented as materialized views instead of succinct secondary indexes for better locality. This redundancy is made affordable in terms of space by using compression in a back-end with columnar storage. We have implemented an experimental prototype, which shows a speedup of two orders of magnitude on XPath queries with value predicates, when compared to existing open source and commercial systems using a subset of the techniques. Space usage is also improved.},
+ author = {Grimsmo, Nils and Bjørklund, Truls Amundsen and Torbjørnsen, Øystein},
+ booktitle = {2010 Second International Conference on Advances in Databases, Knowledge, and Data Applications},
+ doi = {10.1109/DBKDA.2010.8},
+ issn = {},
+ keyword = {XML;Books;Databases;Indexing;Prototypes;Application software;Information science;Partitioning algorithms;Query processing;Internet;XML;query processing;column store},
+ month = {April},
+ number = {},
+ pages = {204-213},
+ title = {XLeaf: Twig Evaluation with Skipping Loop Joins and Virtual Nodes},
+ volume = {},
+ year = {2010}
+}

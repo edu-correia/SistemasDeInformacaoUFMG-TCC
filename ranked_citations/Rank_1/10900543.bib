@@ -1,0 +1,14 @@
+@article{10900543,
+ abstract = {The point cloud registration is a prerequisite for many applications in computer vision and robotics. Most existing methods focus on the registration of point clouds with high overlap. While some learning-based methods address low-overlap cases, they struggle in out-of-distribution scenarios with extremely low-overlap ratios. This article introduces a novel framework dubbed L-PR, designed to register unordered low-overlap multiview point clouds leveraging light detection and ranging (LiDAR) fiducial markers. We refer to them as LiDAR fiducial markers, but they are the same as the popular AprilTag and ArUco markers—thin sheets of paper that do not affect the 3-D geometry of the environment. We first propose an improved adaptive threshold marker detection method to provide robust detection results when the viewpoints among point clouds change dramatically. Then, we formulate the unordered multiview point cloud registration problem as a maximum a posteriori (MAP) problem and develop a framework consisting of two levels of graphs to address it. The first-level graph, constructed as a weighted graph, is designed to efficiently and optimally infer initial values of scan poses from the unordered set. The second-level graph is constructed as a factor graph. By globally optimizing the variables on the graph, including scan poses, marker poses, and marker corner positions, we tackle the MAP problem. We perform both qualitative and quantitative experiments to demonstrate that the proposed method outperforms previous state-of-the-art (SOTA) methods in addressing challenging low-overlap cases. Specifically, the proposed method can serve as a convenient, efficient, and low-cost tool for applications such as 3-D asset collection from sparse scans, training data collection in unseen scenes, reconstruction of degraded scenes, and merging large-scale low-overlap 3-D maps, which existing methods struggle with. We also collect a new dataset named Livox-3DMatch using L-PR and incorporate it into the training of the SOTA learning-based methods, which brings evident improvements for them across various benchmarks. We release the open-source code implementation and datasets at: https://github.com/yorklyb/L-PR.},
+ author = {Liu, Yibo and Shan, Jinjun and Haridevan, Amaldev and Zhang, Shuo},
+ doi = {10.1109/TIM.2025.3544745},
+ issn = {1557-9662},
+ journal = {IEEE Transactions on Instrumentation and Measurement},
+ keyword = {Point cloud compression;Fiducial markers;Laser radar;Three-dimensional printing;Visualization;Training data;Calibration;Training;Translation;Registers;Dataset;light detection and ranging (LiDAR) fiducial marker;low-overlap;multiview point cloud;registration},
+ month = {},
+ number = {},
+ pages = {1-14},
+ title = {L-PR: Exploiting LiDAR Fiducial Marker for Unordered Low-Overlap Multiview Point Cloud Registration},
+ volume = {74},
+ year = {2025}
+}

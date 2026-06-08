@@ -1,0 +1,15 @@
+@article{Qian2022144,
+ abstract = {Cache plays an important role in providing high throughput and low latency network storage service for I/O intensive applications. One major challenge is that performance of storage degrades significantly even with cache at backend while facing microwrite workload. A straightforward approach is to use cache at client to merge microwrites into sequential write. However, we notice that direct merging within block causes severe fragments problem. Specifically, simple cache update policy pollutes cache which leads to I/O performance degradation. In this paper, we introduce FastCache, a two level of cache based on hash table and linked list to store data slice and variable-position merging schema to convert random microwrites into sequential write. To avoid cache pollution, we design a new cache update policy based on measurable threshold to control flushing and Poisson distribution sampling to find the most suitable entries to be evicted. We implement FastCache in FastCFS and conduct extensive evaluations under benchmark FIO and real workload. We show that FastCache outperforms LRU and HCCache in terms of IOPS and access latency. The experimental results demonstrate that IOPS can be improved by up to 10 ×, and the access latency with FastCache decreases by 50%–90%. © 2022, Springer Nature Switzerland AG.},
+ author = {Qian, Lin and Ye, BaoLiu and Wang, XiaoLiang and Qu, Zhihao and Duan, Weiguo and Zhao, Ming},
+ doi = {10.1007/978-3-030-95388-1_10},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 2},
+ pages = {144 - 160},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FastCache: A Client-Side Cache with Variable-Position Merging Schema in Network Storage System},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85126224220?origin=resultslist},
+ volume = {13156 LNCS},
+ year = {2022}
+}

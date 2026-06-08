@@ -1,0 +1,14 @@
+@inproceedings{9402009,
+ abstract = {Library developers can provide classes and methods with underdetermined specifications that allow flexibility in future implementations. Library users may write code that relies on a specific implementation rather than on the specification, e.g., assuming mistakenly that the order of elements cannot change in the future. Prior work proposed the NonDex approach that detects such wrong assumptions. We present a novel approach, called DexFix, to repair wrong assumptions on underdetermined specifications in an automated way. We run the NonDex tool on 200 open-source Java projects and detect 275 tests that fail due to wrong assumptions. The majority of failures are from iterating over HashMap/HashSet collections and the getDeclaredFields method. We provide several new repair strategies that can fix these violations in both the test code and the main code. DexFix proposes fixes for 119 tests from the detected 275 tests. We have already reported fixes for 102 tests as GitHub pull requests: 74 have been merged, with only 5 rejected, and the remaining pending.},
+ author = {Zhang, Peilun and Jiang, Yanjie and Wei, Anjiang and Stodden, Victoria and Marinov, Darko and Shi, August},
+ booktitle = {2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)},
+ doi = {10.1109/ICSE43902.2021.00018},
+ issn = {1558-1225},
+ keyword = {Java;Maintenance engineering;Tools;Libraries;Open source software;Software engineering;Software development management},
+ month = {May},
+ number = {},
+ pages = {50-61},
+ title = {Domain-Specific Fixes for Flaky Tests with Wrong Assumptions on Underdetermined Specifications},
+ volume = {},
+ year = {2021}
+}

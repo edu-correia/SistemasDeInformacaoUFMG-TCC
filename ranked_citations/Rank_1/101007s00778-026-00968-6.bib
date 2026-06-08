@@ -1,0 +1,18 @@
+@article{10.1007/s00778-026-00968-6,
+ abstract = {We study the problem of temporal database indexing, i.e., indexing versions of a database table in an evolving database. Although modern machines include large memory chips, data volumes quickly exceed resources, making it infeasible to keep the entire history in memory. Therefore we require temporal indices that optimize main memory usage while remaining scalable as the history grows. We depart from the classic indexing approach, where all data versions are indexed in a single data structure, and propose LIT, a hybrid index that decouples the management of the current and past states of the indexed column. LIT includes optimized indexing modules for current (i.e., live) and past (i.e., dead) records, supporting efficient queries and updates. Furthermore, our extended approach LIT+ handles record versions in memory using LIT bounded by a memory budget, while managing older versions (fossils) that exceed the budget on disk. We show that LIT outperforms state-of-the-art solutions by orders of magnitude while using space linearly proportional to the number of indexed record versions, making it suitable for main-memory temporal data management. In addition, we also show that LIT+ efficiently indexes long database histories on disk while maintaining scalability and query performance.},
+ address = {Berlin, Heidelberg},
+ author = {Simatis, Panagiotis and Christodoulou, George and Bouros, Panagiotis and Mamoulis, Nikos},
+ doi = {10.1007/s00778-026-00968-6},
+ issn = {1066-8888},
+ issue_date = {Apr 2026},
+ journal = {The VLDB Journal},
+ keyword = {Temporal data, Query processing, Indexing},
+ month = {March},
+ number = {3},
+ numpages = {26},
+ publisher = {Springer-Verlag},
+ title = {Scalable lighting-fast temporal indexing: Scalable lighting-fast temporal indexing},
+ url = {https://doi.org/10.1007/s00778-026-00968-6},
+ volume = {35},
+ year = {2026}
+}

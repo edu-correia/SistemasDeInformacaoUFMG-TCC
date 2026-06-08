@@ -1,0 +1,18 @@
+@article{10.1145/3547645,
+ abstract = {To date, the most effective approach to compiling strict, higher-order functional languages (such as OCaml, Scheme, and SML) has been to use whole-program techniques to convert the program to a first-order monomorphic representation that can be optimized using traditional compilation techniques. This approach, popularized by MLton, has limitations, however. We are interested in exploring a different approach to compiling such languages, one that preserves the higher-order and polymorphic character of the program throughout optimization. To enable such an approach, we must have effective analyses that both provide precise information about higher-order programs and that scale to larger units of compilation. This paper describes one such analysis for determining the extent of variable bindings. We classify the extent of variables as either register (only one binding instance can be live at any time), stack (the lifetimes of binding instances obey a LIFO order), or heap (binding lifetimes are arbitrary). These extents naturally connect variables to the machine resources required to represent them. We believe that precise information about binding extents will enable efficient management of environments, which is a key problem in the efficient compilation of higher-order programs. At the core of the paper is the 3CPS intermediate representation, which is a factored CPS-based intermediate representation (IR) that statically marks variables to indicate their binding extent. We formally specify the management of this binding structure by means of a small-step operational semantics and define a static analysis that determines the extents of the variables in a program. We evaluate our analysis using a standard suite of SML benchmark programs. Our implementation gets surprisingly high yield and exhibits scalable performance. While this paper uses a CPS-based IR, the algorithm and results are easily transferable to other λ-calculus IRs, such as ANF.},
+ address = {New York, NY, USA},
+ articleno = {114},
+ author = {Quiring, Benjamin and Reppy, John and Shivers, Olin},
+ doi = {10.1145/3547645},
+ issue_date = {August 2022},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Intermediate Representation, Higher-Order Flow Analysis, Continuation-Passing Style, Compilers},
+ month = {August},
+ number = {ICFP},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Analyzing binding extent in 3CPS},
+ url = {https://doi.org/10.1145/3547645},
+ volume = {6},
+ year = {2022}
+}

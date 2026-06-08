@@ -1,0 +1,14 @@
+@inproceedings{11383400,
+ abstract = {Transparent triage, privacy protections, and ensuring that assignments occur in a prompt manner are vital to successful student grievance processing. This work presents CampusIssueMiner, a pipeline that processes code-mixed campus complaints in a unified way and which redacts personally identifiable information, relying on end-to-end processing with transformer-based named-entity recognition and rules followed by salted hashing. Preliminary severity estimates and ticket triage advice are provided via a small multitask model; we identify duplicate reports with dual-encoder contrastive retrieval with MinHash-Lsh and cross-encoder entailment; and we model early escalation with gradient-boosted survival on queue and workload features. Probability outputs are calibrated using temperature scaling, and conformal risk bands are used to support abstention and Top-2 recommendation. Evaluations against a Python-Simulated corpus and a completely synthetic dataset to reflect local vocabulary, code-mixing ratios, class priors, and arrival rates. On five-fold cross validation, the system achieves a severity macro-F1 of 0.84, routing Top-1 accuracy of 0.89, Top-2 accuracy of 0.96, duplicate-merge precision of 0.93, pairwise F0.5 of 0.90, and AUROC of 0.90 for SLA-breach prediction with ECE of 0.03. The median time taken from detection to assignment decreases by 34%, in comparison to a rules baseline in simulations. Severity bands, destinations, breach probabilities, and deduplication clusters can be accessed by staff through an HTTP API and dashboard. If synthetic data are present, the results demonstrate that palmprint-based privacy-preserving code-mixing can offer reliable triage signals for campus operations.},
+ author = {Dr.T.Mohanraj and S, Visvasa Raja},
+ booktitle = {2025 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)},
+ doi = {10.1109/ICECMSN68058.2025.11383400},
+ issn = {},
+ keyword = {Training;Privacy;Data privacy;Vocabulary;Accuracy;Pipelines;Routing;Transformers;Reliability;Synthetic data;Campus operations;Code-Mixed text;Data anonymization;Deduplication;Helpdesk triage;Ticket routing;Severity estimation;SLA breach prediction},
+ month = {Nov},
+ number = {},
+ pages = {1801-1807},
+ title = {CampusIssueMiner: Privacy-Preserving Triage of Code-Mixed Campus Grievances},
+ volume = {},
+ year = {2025}
+}

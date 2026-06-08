@@ -1,0 +1,16 @@
+@article{Ding2024,
+ abstract = {LSM-based key-value stores suffer from sub-optimal performance due to their slow and heavy background compactions. The compaction brings severe CPU and network overhead on high-speed disaggregated storage. This article further reveals that data-intensive compression in compaction consumes a significant portion of CPU power. Moreover, the multi-threaded compactions cause substantial CPU contention and network traffic during high-load periods. Based on the above observations, we propose fine-grained dynamical compaction offloading by leveraging the modern Data Processing Unit (DPU) to alleviate the CPU and network overhead. To achieve this, we first customized a file system to enable efficient data access for DPU. We then leverage the Arm cores on the DPU to meet the burst CPU and network requirements to reduce resource contention and data movement. We further employ dedicated hardware-based accelerators on the DPU to speed up the compression in compactions. We integrate our DPU-offloaded compaction with RocksDB and evaluate it with NVIDIA’s latest Bluefield-2 DPU on a real system. The evaluation shows that the DPU is an effective solution to solve the CPU bottleneck and reduce data traffic of compaction. The results show that compaction performance is accelerated by 2.86 to 4.03 times, system write and read throughput is improved by up to 3.2 times and 1.4 times respectively, and host CPU contention and network traffic are effectively reduced compared to the fine-tuned CPU-only baseline. © 2024 Copyright held by the owner/author(s).},
+ author = {Ding, Chen and Zhou, Jian and Lu, Kai and Li, Sicen and Xiong, Yiqin and Wan, Jiguang and Zhan, Ling},
+ doi = {10.1145/3656584},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 7; All Open Access; Gold Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {D2Comp: Efficient Offload of LSM-tree Compaction with Data Processing Units on Disaggregated Storage},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85204960038?origin=resultslist},
+ volume = {21},
+ year = {2024}
+}

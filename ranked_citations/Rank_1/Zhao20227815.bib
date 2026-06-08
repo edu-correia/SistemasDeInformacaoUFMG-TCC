@@ -1,0 +1,16 @@
+@article{Zhao20227815,
+ abstract = {Although log-structured merge trees (LSM-trees) are commonly adopted in many NoSQLs as they can significantly improve the write performance in updating a database, most of the proposed LSM-trees are concentrated on storing a single version of data. On the other hand, in many Internet of Things (IoT) applications, it is important to maintain the old versions of data in addition to the latest version. In this article, we introduce our design and implementation of an enhancement of LevelDB to multiversion LevelDB (called MVLevelDB) with the purpose to efficiently support temporal queries on multiversion data in IoT applications. Based on the temporal consistency, we formulated the log-structured multiversion tree (LSMV-tree) to be implemented into MVLevelDB. In LSMV-tree, each data version is associated with two time-stamps to define its validity interval, and both the data versions and the components are time-sorted to improve the efficiency in searching data in processing temporal queries. To handle the problem of multicomponents data versions, we designed the data version duplication (DvD) method in which a data version will be duplicated in the next component if it is valid while its component is being flushed from the main memory to disk storage. Extensive experiments using a benchmark program have been performed to investigate the performance of MVLevelDB as compared with LevelDB both in writing and reading data.  © 2014 IEEE.},
+ author = {Zhao, Xiaofei and Lam, Kam-Yiu and Zhu, Chunjiang and Chow, Chi-Yin and Kuo, Tei-Wei},
+ doi = {10.1109/JIOT.2021.3113994},
+ journal = {IEEE Internet of Things Journal},
+ note = {Cited by: 6},
+ number = {10},
+ pages = {7815 - 7825},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MVLevelDB: Using Log-Structured Tree to Support Temporal Queries in IoT},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85115668710?origin=resultslist},
+ volume = {9},
+ year = {2022}
+}

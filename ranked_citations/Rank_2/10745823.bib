@@ -1,0 +1,14 @@
+@article{10745823,
+ abstract = {In the era of big data, social network services continuously modify social connections, leading to dynamic and evolving graph data structures. These evolving graphs, vital for representing social relationships, pose significant memory challenges as they grow over time. To address this, storage-class-memory (SCM) emerges as a cost-effective solution alongside DRAM. However, contemporary graph evolution processes often scatter neighboring vertices across multiple pages, causing weak graph spatial locality and high-TLB misses during traversals. This article introduces SCM-Based graph-evolving aware data arranger (GEAR), a joint management middleware optimizing data arrangement on SCMs to enhance graph traversal efficiency. SCM-based GEAR comprises multilevel page allocation, locality-aware data placement, and dual-granularity wear leveling techniques. Multilevel page allocation prevents scattering of neighbor vertices relying on managing each page in a finer-granularity, while locality-aware data placement reserves space for future updates, maintaining strong graph spatial locality. The dual-granularity wear leveler evenly distributes updates across SCM pages with considering graph traversing characteristics. Evaluation results demonstrate SCM-based GEAR’s superiority, achieving 23% to 70% reduction in traversal time compared to state-of-the-art frameworks.},
+ author = {Wang, Wen-Yi and Wu, Chun-Feng and Chen, Yun-Chih and Kuo, Tei-Wei and Chang, Yuan-Hao},
+ doi = {10.1109/TCAD.2024.3447222},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Performance evaluation;Integrated circuits;Gears;Social networking (online);Memory management;Random access memory;Scattering;Distance measurement;Resource management;Middleware;Checkpointing;evolving graph;graph;HW/SW Co-design;memory management;middleware;non-volatile memory;system software},
+ month = {Nov},
+ number = {11},
+ pages = {3674-3684},
+ title = {GEAR: Graph-Evolving Aware Data Arranger to Enhance the Performance of Traversing Evolving Graphs on SCM},
+ volume = {43},
+ year = {2024}
+}

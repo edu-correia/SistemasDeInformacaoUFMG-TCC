@@ -1,0 +1,16 @@
+@article{Youssef2026562,
+ abstract = {Large-scale data analytics workflows ingest massive input data into various data structures, including graphs and key-value datastores. These data structures undergo multiple transformations and computations and are typically reused in incremental and iterative analytics workflows. Persisting in-memory views of these data structures enables reusing them beyond the scope of a single program run while avoiding repetitive raw data ingestion overheads. Memory-mapped I/O enables persisting in-memory data structures without data serialization and deserialization overheads. However, memory-mapped I/O lacks the key feature of persisting consistent snapshots of these data structures for incremental ingestion and processing. The obstacles to efficient virtual memory snapshots using memory-mapped I/O include background writebacks outside the application’s control, and the significantly high storage footprint of such snapshots. To address these limitations, we present Privateer, a memory and storage management tool that enables storage-efficient virtual memory snapshotting while also optimizing snapshot I/O performance. We integrated Privateer into Metall, a state-of-the-art persistent memory allocator for C++, and the Lightning Memory-Mapped Database (LMDB), a widely-used key-value datastore in data analytics and machine learning. Privateer optimized application performance by 1.22× when storing data structure snapshots to node-local storage, and up to 16.7× when storing snapshots to a parallel file system. Privateer also optimizes storage efficiency of incremental data structure snapshots by up to 11× using data deduplication and compression. © 1990-2012 IEEE.},
+ author = {Youssef, Karim and Iwabuchi, Keita and Gokhale, Maya and Feng, Wu-Chun and Pearce, Roger},
+ doi = {10.1109/TPDS.2025.3646133},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 0; All Open Access; Green Open Access},
+ number = {2},
+ pages = {562 - 574},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing Management of Persistent Data Structures in High-Performance Analytics},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105026234767?origin=resultslist},
+ volume = {37},
+ year = {2026}
+}

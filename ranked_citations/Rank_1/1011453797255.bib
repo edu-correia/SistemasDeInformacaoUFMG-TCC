@@ -1,0 +1,15 @@
+@article{10.1145/3797255,
+ abstract = {We propose an I/O stack for ZNS based flash storage in mobile environment, ZMS. The zone interface is known to save the flash storage from two fundamental issues which modern flash storage suffers from: logical-to-physical mapping table size and garbage collection overhead. Through extensive study, we find that realizing the zone interface in mobile environment is more challenging due to the unique characteristics of mobile environment: the lack of on-device memory in mobile flash storage and the frequent fsync() calls in mobile applications. Aligned with this, we identify the root causes that need to be addressed in realizing the zone interface in mobile I/O stack: write buffer thrashing and tiny synchronous file update. We develop a file system, block I/O layer, and device firmware techniques to address the above mentioned two issues. The three key techniques in ZMS are (i) IOTailor, (ii) budget-based in-place update, and (iii) multi-granularity logical-to-physical mapping. We also implement copy offloading and propose a new overprovisioned space configuration for the F2FS file system to address the host-side garbage collection overhead. Evaluation on a real production platform shows that ZMS improves the write amplification by 2.9–6.4 \texttimes{} and the random write performance by 5.0–13.6 \texttimes{}. With the three techniques, ZMS shows a significant performance improvement in writing the data blocks to the multiple zones concurrently, in executing SQLite transactions, in launching the applications, and in playing video files.},
+ address = {New York, NY, USA},
+ author = {Hwang, Joo-Young and Kim, Seokhwan and Park, Daejun and Song, Yonggil and Han, Junyoung and Choi, SeungHyun and Cho, Sangyeun and Won, Youjip},
+ doi = {10.1145/3797255},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {Zoned storage, Zoned UFS, F2FS, Flash translation layer},
+ month = {February},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Advanced I/O Stack for Efficient Zone-based Mobile Flash Storage},
+ url = {https://doi.org/10.1145/3797255},
+ year = {2026}
+}

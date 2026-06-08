@@ -1,0 +1,14 @@
+@inproceedings{9139792,
+ abstract = {Currently, the fastest comparison-based sorting implementation on GPUs is implemented using a parallel pairwise merge sort algorithm (Thrust library). To achieve fast runtimes, the number of threads t to sort the input of N elements is fine-tuned experimentally for each generation of Nvidia GPUs in such a way that the number of elements E = N/t that each thread accesses in each merging round results in a small (empirically measured) number of shared memory contentions, known as bank conflicts, while balancing the number of global memory accesses and latency-hiding through thread oversubscription/occupancy.In this paper, we show that for every choice of E <; w, such that E and w are co-prime, there exists an input permutation on which every warp of w threads of the Thrust merge sort is effectively reduced to using at most ⌈w/E⌉ threads due to sequentialization of shared memory accesses due to bank conflicts. Note that this matches the trivial worst-case bound on the loss of parallelism due to memory contentions for any warp accessing wE contiguous shared memory locations.Our proof is constructive, i.e., we are able to automatically construct such permutation for every value of E. We also show in practice that such constructed inputs result in up to ~50% slowdown, compared to the performance on random inputs, on modern GPU hardware.},
+ author = {Berney, Kyle and Sitchinava, Nodari},
+ booktitle = {2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS47924.2020.00119},
+ issn = {1530-2075},
+ keyword = {Instruction sets;Graphics processing units;Runtime;Merging;Memory modules;Sorting;Computational modeling;GPGPU;sorting;bank conflicts;worst-case},
+ month = {May},
+ number = {},
+ pages = {1133-1142},
+ title = {Engineering Worst-Case Inputs for Pairwise Merge Sort on GPUs},
+ volume = {},
+ year = {2020}
+}

@@ -1,0 +1,14 @@
+@conference{Dong20257952,
+ abstract = {As large language models continue to scale up, knowledge editing techniques that modify models' internal knowledge without full retraining have gained significant attention. MEMIT, a prominent batch editing algorithm, stands out for its capability to perform mass knowledge modifications. However, we uncover that MEMIT's editing efficacy significantly deteriorates when processing batches containing multiple edits sharing the same subject. Our analysis reveals this stems from MEMIT's key value modeling framework: identical keys (derived from the shared subject) are forced to represent different values (corresponding to different knowledge), resulting in update conflicts during editing. Addressing this issue, we propose MEMIT-Merge, an enhanced approach that merges value computation processes for facts sharing the same subject, effectively resolving the performance degradation in same-subject batch editing scenarios. Experimental results demonstrate that when MEMIT's edit success rate drops to around 50% at larger batch sizes, MEMIT-Merge maintains a success rate exceeding 90%, showcasing remarkable robustness to subject entity collisions. The code is available at https://github.com/NUSTM/MEMIT-Merge. © 2025 Association for Computational Linguistics.},
+ author = {Dong, Zilu and Shen, Xiangqing and Xia, Rui},
+ doi = {10.18653/v1/2025.findings-acl.415},
+ journal = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {7952 - 7960},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MEMIT-Merge: Addressing MEMIT's Key-Value Conflicts in Same-Subject Batch Editing for LLMs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105028602457?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@article{9812623,
+ abstract = {Automatic segmentation of plant images is a hot issue in plant phenotyping research. It is also one of the core technologies for applications such as crop growth process monitoring and pest identification. Due to the different scales and sizes of fruits, branches and leaves of fruit and vegetable plants in the natural environment, and irregular edges, it is difficult to accurately segment. In order to accurately segment crop seedlings in natural environment and realize automatic measurement of seedling location and phenotype, this paper proposes a crop seedling plant segmentation network model that fuses the semantic and edge information of target regions. The backbone network is composed of the UNET network, which guides the backbone network to perceive the plant edge information when extracting features; uses the spatial hole feature pyramid to build a feature fusion module, which fuses the features extracted by the UNET backbone network and the edge perception module. Combining edge-aware loss and feature fusion loss, a joint loss function is constructed for overall network optimization. The encoder-decoder network is referenced in the study. The encoding network uses densenet to reuse and fuse multi-layer features to improve the way of information transmission; the decoding network uses transposed convolution for upsampling, combined with layer jump connections to fuse shallow detail information and deep semantic information; add a hole between encoding and decoding Atrous spatial pyramid pooling (ASPP) to extract feature maps of different receptive fields to integrate multi-scale features and aggregate contextual information. The experimental results show that under the same network training parameters, the average cross-merging rate and average recall rate obtained by testing the method in this paper are 58.13% and 64.72%, respectively, which are better than the segmentation results corresponding to the manually labeled samples; in addition, adding in the training samples After 10% of the outdoor seedling images, the average pixel accuracy of the proposed method on the outdoor test set can reach 90.54%, with good generalization ability.},
+ author = {Zuo, Xin and Lin, Hong and Wang, Dong and Cui, Zhongwei},
+ doi = {10.1109/ACCESS.2022.3187825},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Image segmentation;Feature extraction;Crops;Image edge detection;Training;Semantics;Image color analysis;Plant segmentation;regional semantic information;edge sensing module},
+ month = {},
+ number = {},
+ pages = {95281-95293},
+ title = {A Method of Crop Seedling Plant Segmentation on Edge Information Fusion Model},
+ volume = {10},
+ year = {2022}
+}

@@ -1,0 +1,14 @@
+@conference{Mei2017142,
+ abstract = {Key-value stores are increasingly adopting LSM-trees as their enabling data structure in the backend storage, and persisting their clustered data through a file system. A file system is expected to not only provide file/directory abstraction to organize data but also retain the key benefits of LSMtrees, namely, sequential and aggregated I/O patterns on the physical device. Unfortunately, our in-depth experimental analysis reveals that some of these benefits of LSM-trees can be completely negated by the underlying file level indexes from the perspectives of both data layout and I/O processing. As a result, the write performance of LSM-trees is kept at a level far below that promised by the sequential bandwidth offered by the storage devices. In this paper, we address this problem and propose LDS, an LSM-tree based Direct Storage system that manages the storage space and provides simplified consistency control by exploiting the copy-on-write nature of the LSM-tree structure, so as to fully reap the benefits of LSM-trees. Running LSM-trees on LDS as a baseline for comparison, we evaluate LSM-trees on three representative file systems (EXT4, F2FS, BTRFS) with HDDs and SSDs respectively, to study the performance potentials of LSM-trees. Evaluation results show that the write throughputs of LSM-trees can be improved by from 1.8× to 3× on HDDs, and from 1.3× to 2.5× on SSDs, by employing the LSM-tree friendly data layout of LDS. © 2017 Association for Computing Machinery.},
+ author = {Mei, Fei and Cao, Qiang and Jiang, Hong and Tian, Lei},
+ doi = {10.1145/3127479.3127486},
+ journal = {SoCC 2017 - Proceedings of the 2017 Symposium on Cloud Computing},
+ note = {Cited by: 24},
+ pages = {142 - 156},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LSM-tree managed storage for large-scale key-value store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85032436311?origin=resultslist},
+ year = {2017}
+}

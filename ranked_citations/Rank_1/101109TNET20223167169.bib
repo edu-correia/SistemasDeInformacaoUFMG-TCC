@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2022.3167169,
+ abstract = {The past decades have seen a proliferation of middlebox deployment in various scenarios, including backbone networks and cloud networks. Since flows have to traverse specific service function chains (SFCs) for security and performance enhancement, it becomes much complex for SFC routing due to routing loops, traffic dynamics and scalability requirement. The existing SFC routing solutions may consume many resources (e.g., TCAM) on the data plane and lead to massive overhead on the control plane, which decrease the scalability of middlebox networks. Due to SFC requirement and potential routing loops, solutions like traditional default paths (e.g., using ECMP) that are widely used in non-middlebox networks will no longer be feasible. In this paper, we present and implement a scalable and flexible middlebox policy enforcement (SAFE-ME) system to minimize the TCAM usage and control overhead. To this end, we design the smart tag operations for construction of default SFC paths with less TCAM rules in the data plane, and present lightweight SFC routing update with less control overhead for dealing with traffic dynamics in the control plane. We implement our solution and evaluate its performance with experiments on both physical platform (Pica8) and Programming Protocol-independent Packet Processors (P4) based data plane, as well as large-scale simulations. Both experimental and simulation results show that SAFE-ME can greatly improve scalability (e.g., TCAM cost, update delay, and control overhead) in middlebox networks, especially for large-scale clouds. For example, our system can reduce the control traffic overhead by about 85% while achieving almost the similar middlebox load, compared with state-of-the-art solutions.},
+ author = {Xu, Hongli and Xi, Peng and Zhao, Gongming and Liu, Jianchun and Qian, Chen and Huang, Liusheng},
+ doi = {10.1109/TNET.2022.3167169},
+ issn = {1063-6692},
+ issue_date = {Oct. 2022},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {April},
+ number = {5},
+ numpages = {16},
+ pages = {2246–2261},
+ publisher = {IEEE Press},
+ title = {SAFE-ME: Scalable and Flexible Policy Enforcement in Middlebox Networks},
+ url = {https://doi.org/10.1109/TNET.2022.3167169},
+ volume = {30},
+ year = {2022}
+}

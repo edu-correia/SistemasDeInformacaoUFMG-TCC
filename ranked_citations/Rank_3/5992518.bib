@@ -1,0 +1,14 @@
+@inproceedings{5992518,
+ abstract = {Stream processor is efficient for media applications as it exploits the features of media processing, such as data parallelism, producer-consumer locality and so on. However, the loosely coupled structure between host and stream processor makes the communication between scalar and SIMD part costly and scheduling across kernels less flexible. Besides, the kernel loading time adds additional cost. When the stream length becomes shorter the performance degradation caused by these factors is unacceptable. In addition to the loosely coupled structure, lack of efficient support for chained scalar and SIMD kernels makes the case worse. To overcome these shortcomings of stream processor, we propose a target architecture named AIFSP, which merges the host and stream processor together into a tightly coupled structure with both scalar and SIMD part. The whole processor can run in a single or dual instruction flow mode, adaptive to the characteristic of applications. When running in a single instruction flow mode, costless communication between scalar and SIMD part, flexible scheduling across kernels and zero kernel loading time can be achieved, the speedup for short streams can reach 2.6x, while in dual instruction flow mode, the scalar and SIMD kernels can run concurrently on scalar and SIMD part of AIFSP, thus kernel overlapping is realized and about 20% performance improving can be attained when SIMD width is set to 8, with the increase of SIMD width, the performance gain will be larger.},
+ author = {Wang, Yaohua and Chen, Shuming and Wan, Jianghua and Zhang, Kai and Chen, Shenggang},
+ booktitle = {2011 IEEE Computer Society Annual Symposium on VLSI},
+ doi = {10.1109/ISVLSI.2011.62},
+ issn = {2159-3477},
+ keyword = {Kernel;Streaming media;Process control;Microcontrollers;Loading;Media;Performance gain;Stream Processor;Stream Length Effect;Enhanced Scalar Processor;Kernel Overlapping},
+ month = {July},
+ number = {},
+ pages = {272-277},
+ title = {AIFSP: An Adaptive Instruction Flow Stream Processor},
+ volume = {},
+ year = {2011}
+}

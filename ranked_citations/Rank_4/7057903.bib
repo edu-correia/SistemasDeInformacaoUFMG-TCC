@@ -1,0 +1,14 @@
+@inproceedings{7057903,
+ abstract = {In structured overlay networks with millions of nodes, it is essential to optimize the extent to which routing paths are shortened for more efficient message routing. However, various metrics, such as the physical positions of nodes, network latencies, node lifespan, and node availability, other than the number of hops, can be considered. Methods have been proposed to efficiently design extended algorithms that consider metrics other than the number of hops. However, a real world application requires a suitable set of metrics, and the set varies by application. We propose mergeable flexible routing tables (mergeable-FRT), a routing algorithm design framework for structured overlays, which supports the efficient design of algorithms. Mergeable-FRT-based extended algorithms can be designed by merging existing algorithms, so that algorithms with new metrics or algorithms to which are added new metrics can be designed by reusing existing algorithms. In mergeable-FRT, algorithms are defined using a sequence of sticky entry sieve functions and can be merged by merging these sequences. However, when these sequences are merged repeatedly, the effect of extensions is much stronger than the effect of path length reduction, and the number of hops progressively increases. Mergeable-FRT therefore defines a minimum through parameter to control the effect of sticky entry sieves and supports the balancing of the effect due to extensions with that due to the reduction of path length. For mergeable-FRT algorithms based on FRT-Chord with arbitrary extensions, we prove that the path length is O(log |N|) by configuring a minimum through parameter when routing tables are converged. Using sticky entry sieves, we design and implement group FRT-Chord (GFRT-Chord) and proximity-aware FRT-Chord (PFRT-Chord) and their merged algorithms, PGFRT-Chord and GPFRT-Chord. Experimental results show that the extended algorithms have merged features inherited from the original algorithms and that the minimum through parameter supports control of the effect of extensions.},
+ author = {Nagao, Hiroya and Shudo, Kazuyuki},
+ booktitle = {2015 International Conference on Information Networking (ICOIN)},
+ doi = {10.1109/ICOIN.2015.7057903},
+ issn = {2332-5658},
+ keyword = {Routing;Algorithm design and analysis;Measurement;Merging;Clustering algorithms;Silicon;Availability},
+ month = {Jan},
+ number = {},
+ pages = {312-317},
+ title = {Mergeable flexible routing tables: A design framework for reusable structured overlay algorithms},
+ volume = {},
+ year = {2015}
+}

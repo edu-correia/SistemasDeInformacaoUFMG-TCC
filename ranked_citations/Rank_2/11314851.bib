@@ -1,0 +1,14 @@
+@article{11314851,
+ abstract = {Spatiotemporal trajectory data’s sparsity, irregularity, and fine-grained nature pose significant processing challenges. To address this, we introduce PointFormer, a deep learning framework. We demonstrate its efficacy through aircraft type identification, a quantifiable task that requires mining distinct flight patterns of different types from large-scale historical flight trajectories. At the first stage of this work, we employ Grad-CAM to demonstrate that points within trajectory sequences exhibit uneven contributions to predictions. Motivated by this, we propose the point-to-dynamic-voxel mapping and resampling (PMR) module, which dynamically merges redundant points by mapping clustered neighbors into sequence-specific voxels and employs farthest point sampling (FPS) to retain discriminative points. This generates a structured key-point sequence, thus enabling small-batch parallel training while ensuring no loss of critical information. Furthermore, to directly address irregular point dispersion, we design multiscale consistent point embedding (MSCPE) using three distinct sliding window scales. PointFormer achieves significant and consistent gains, with PMR, MSCPE, and their combination delivering +14.9%, +7.2%, and +19.2% average improvements, respectively, across varying aircraft type combinations.},
+ author = {Zhang, Jinjin and Zhang, Yunzhou and Ge, Fawei and Zhang, Tengda},
+ doi = {10.1109/JSEN.2025.3645936},
+ issn = {1558-1748},
+ journal = {IEEE Sensors Journal},
+ keyword = {Trajectory;Aircraft;Transformers;Spatiotemporal phenomena;Feature extraction;Airports;Marine vehicles;Intelligent sensors;Encoding;Training;Aircraft type recognition;continuous point embedding;flight mode mining;point-to-dynamic voxel mapping;spatiotemporal data analysis},
+ month = {Feb},
+ number = {4},
+ pages = {5757-5768},
+ title = {PointFormer: A Spatiotemporal Data-Guided Algorithm for Aircraft Type Recognition},
+ volume = {26},
+ year = {2026}
+}

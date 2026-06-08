@@ -1,0 +1,14 @@
+@conference{Lim2019247,
+ abstract = {Modern data centers aim to take advantage of high parallelism in storage devices for I/O intensive applications such as storage servers, cache systems, and key-value stores. Key-value stores are the most typical applications that should provide a highly reliable service with high-performance. To increase the I/O performance of key-value stores, many data centers have actively adopted next-generation storage devices such as Non-Volatile Memory Express (NVMe) based Solid State Devices (SSDs). NVMe SSDs and its protocol are characterized to provide a high degree of parallelism. However, they may not guarantee predictable performance while providing high performance and parallelism. For example, heavily mixed read and write requests can result in performance degradation of throughput and response time due to the interference between the requests and internal operations (e.g., Garbage Collection (GC)). To minimize the interference and provide higher performance, this paper presents IsoKV, an isolation scheme for key-value stores by exploiting internal parallelism in SSDs. IsoKV manages the level of parallelism of SSD directly by running application-driven flash management scheme. By storing data with different characteristics in each dedicated internal parallel units of SSD, IsoKV reduces interference between I/O requests. Also, IsoKV synchronizes the LSM-tree logic and data management in SSD to eliminate GC. We implement IsoKV on RocksDB and evaluate it using Open-Channel SSD. Our extensive experiments have shown that IsoKV improves overall throughput and response time on average 1.20× and 43% compared with the existing scheme, respectively. © 2019 IEEE.},
+ author = {Lim, Heerak and Kim, Hwajung and Myung, Kihyeon and Young, Heon and Son, Yongseok},
+ doi = {10.1109/HiPC.2019.00039},
+ journal = {Proceedings - 26th IEEE International Conference on High Performance Computing, HiPC 2019},
+ note = {Cited by: 5},
+ pages = {247 - 256},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {IsoKV: An Isolation Scheme for Key-Value Stores by Exploiting Internal Parallelism in SSD},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85080148837?origin=resultslist},
+ year = {2019}
+}

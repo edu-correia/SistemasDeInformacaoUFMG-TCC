@@ -1,0 +1,16 @@
+@article{Zeng2025,
+ abstract = {Concolic execution follows the execution paths of concrete inputs, capable of generating new inputs for unexplored code by solving negated path constraints. However, implicit flows can hinder concolic execution, reducing the code coverage. Implicit flows occur when inputs influence control flow, and the control flow variation affects the values of some variables. During concolic execution, the preceding path selections limit the potential values of these variables. This limitation may result in unsolvable constraints, subsequently restricting the generation of new inputs for unexplored paths. Our insight is that following the same preceding paths is unnecessary, and we can adapt preceding paths to make the latest constraints solvable. We divide states into general states and implicit-flow-solving states (IFSSs). We utilize the general states to perform concolic execution. When solving constraints influenced by implicit flows, we switch to the IFSSs. We use the IFSSs to explore the relevant code region and adapt paths. To mitigate path explosion and construct the relation between inputs and the variables, we merge the IFSSs. State merging does not burden the general states, and we limit the code regions for the IFSSs to minimize the introduced overhead. Finally, we replace the variable symbols in the target constraints with new expressions and attempt to solve the new constraints. We implement our approach in Backsolver and build a test suite to evaluate it. Backsolver successfully identifies all the implicit flows in the test suite and resolves most of them. When evaluated on six real-world binaries, Backsolver resolves the highest number of branches related to implicit flows in total. Besides, Backsolver has the highest code coverage in PlutoSVG and finds a 0-day vulnerability. We reported the vulnerability and obtained a CVE ID.  © 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Zeng, Yicheng and Song, Zhanwei and Lv, Guo and Zhou, Yu and Zhu, Hongsong and Sun, Limin},
+ doi = {10.1145/3712194},
+ journal = {ACM Transactions on Software Engineering and Methodology},
+ note = {Cited by: 0},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Backsolver: Adapting Preceding Execution Paths to Solve Constraints for Concolic Execution},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/86000581405?origin=resultslist},
+ volume = {34},
+ year = {2025}
+}

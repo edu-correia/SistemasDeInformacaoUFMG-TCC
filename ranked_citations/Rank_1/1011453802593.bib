@@ -1,0 +1,15 @@
+@article{10.1145/3802593,
+ abstract = {As deep neural networks (DNNs) continue to grow in scale and complexity, GPU memory limitations have become a significant challenge for DNN model training, especially on resource-constrained commercial GPUs. While model quantization facilitates memory-efficient training, it often necessitates a trade-off between quantization granularity and model accuracy. And quantization imposes additional computational overhead, which adversely affects the training throughput and apportions out the performance gains it brings. In this paper, we propose FDSR, an adaptive tensor quantization method that leverages frequency domain division and similarity-based data reuse to break the memory bottleneck in visual model training. FDSR leverages the frequency-domain characteristics of tensors in terms of memory consumption and model accuracy, and proposes a fine-grained tensor quantization with different quantization bit-widths. It adaptively optimizes the quantization parameters according to model accuracy during training while employing sparsification according to data frequency-domain features, minimizing memory consumption and accuracy loss. To counteract the computational cost, FDSR incorporates a novel similarity-based reuse strategy that avoids redundant quantization/dequantization computations, further enhanced by a tailored Locality-Sensitive Hashing (LSH) mechanism and optimized kernels. Experimental results demonstrate that FDSR achieves an average of 10.20 \texttimes{} activation memory compression with only 1.10% average accuracy loss across various models on the commercial GPU. Compared to the state-of-the-art quantization methods, FDSR improves memory optimization by up to 68.6% and increases throughput by up to 25.55%, with consistent performance improvements on different GPU architectures.},
+ address = {New York, NY, USA},
+ author = {Liu, Song and Li, Fei and Zhao, Chenyu and Xia, Qin and Nie, Shiqiang and Wang, Jinyu and Wu, Weiguo},
+ doi = {10.1145/3802593},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {Deep Neural Networks, Adaptive Tensor Quantization, Tensor Reuse, Similarity Analysis},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {FDSR: Efficient Model Training via Adaptive Tensor Quantization Based on Frequency Domain Division and Similarity Data Reuse},
+ url = {https://doi.org/10.1145/3802593},
+ year = {2026}
+}

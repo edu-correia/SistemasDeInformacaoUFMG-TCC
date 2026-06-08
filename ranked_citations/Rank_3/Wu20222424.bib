@@ -1,0 +1,16 @@
+@article{Wu20222424,
+ abstract = {Erasure coding is widely used in distributed storage systems (DSSs) to efficiently achieve fault tolerance. However, when the original data need to be updated, erasure coding must update every encoded block, resulting in long update time and high bandwidth consumption. Exiting solutions are mainly focused on coding schemes to minimize the size of transmitted update information, while ignoring more efficient utilization of bandwidth among update racks. In this article, we propose a parallel Cross-rack Pipelining Update scheme (CPU), which divides the update information into small-size units and transmits these units in parallel along with an update pipeline path among multiple racks. The performance of CPU is mainly determined by slice size and update path. More slices bring finer-grained parallel transmissions over cross-rack links, but also introduces more overheads. An update path that traverses all racks with large-bandwidth links provide short update time. We formulate the proposed pipelining update scheme as an optimization problem, based on a new theoretical pipelining update model. We prove the optimization problem is NP-hard and develop a heuristic algorithm to solve it based on the features of practical DSSs and our implementations, including Big chunk and Small overhead. Specifically, we determine the best update path first by solving a max-min problem and then decide the slice size. We further simplify the slice size selection by offline learning a range of interesting (RoI), in which all slice sizes provide similar performance. We implement CPU and conduct experiments on Amazon EC2 under a variety of scenarios. The results show that CPU can reduce the average update time by 48.2 percent, compared with the state-of-the-art update schemes.  © 2013 IEEE.},
+ author = {Wu, Haiqiao and Du, Wan and Gong, Peng and Wu, Dapeng Oliver},
+ doi = {10.1109/TCC.2020.3035526},
+ journal = {IEEE Transactions on Cloud Computing},
+ note = {Cited by: 6},
+ number = {4},
+ pages = {2424 - 2436},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CPU: Cross-Rack-Aware Pipelining Update for Erasure-Coded Storage},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85145021142?origin=resultslist},
+ volume = {10},
+ year = {2022}
+}

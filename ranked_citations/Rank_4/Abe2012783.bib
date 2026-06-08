@@ -1,0 +1,14 @@
+@conference{Abe2012783,
+ abstract = {Stream data have become ubiquitous with the development of sensing devices, and therefore stream processing technology has also gained significance. A requirement of stream data processing is to provide persistence to stream data. This is simple, however it is not a trivial problem because, to provide persistence to data, data should be written to a persistent device such as disk. Disk access speed tends to be degraded by random accesses, and multiple queries exacerbate the problem. In this paper, we propose an efficient archiving method for data streams. The first technique is referred to as goperator merge. h It merges multiple operators to a single operator. Since the number of operators accessing the disk is reduced from N to 1 for each stream, the number of disk accesses is reduced, thereby accelerating archiving. The second technique is referred to as gwrite control. h It divides archiving procedures into three parts, it then assigns threads for each part so that the threads run simultaneously. The first thread conducts operators, the second writes tuples to a shared intermediate region on disk, and the third reads tuples from it and finalizes the writing of tuples. Controlling the threads so that they do not interfere with disk accesses accelerates archiving. Experiments showed that our proposal dramatically improved performance compared with the nave method. With a tuple size of 10KB, our proposed system did not violate any deadline misses until the input rate reached 100 tuples /s. © 2012 IEEE.},
+ author = {Abe, Taiga and Kawashima, Hideyuki and Kitagawa, Hiroyuki},
+ doi = {10.1109/WAINA.2012.227},
+ journal = {Proceedings - 26th IEEE International Conference on Advanced Information Networking and Applications Workshops, WAINA 2012},
+ note = {Cited by: 1},
+ pages = {783 - 788},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An efficient stream archiving method by operator merge and write control},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84860764298?origin=resultslist},
+ year = {2012}
+}

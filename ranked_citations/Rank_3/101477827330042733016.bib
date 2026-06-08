@@ -1,0 +1,17 @@
+@article{10.14778/2733004.2733016,
+ abstract = {Summingbird is an open-source domain-specific language implemented in Scala and designed to integrate online and batch MapReduce computations in a single framework. Summingbird programs are written using dataflow abstractions such as sources, sinks, and stores, and can run on different execution platforms: Hadoop for batch processing (via Scalding/Cascading) and Storm for online processing. Different execution modes require different bindings for the dataflow abstractions (e.g., HDFS files or message queues for the source) but do not require any changes to the program logic. Furthermore, Summingbird can operate in a hybrid processing mode that transparently integrates batch and online results to efficiently generate up-to-date aggregations over long time spans. The language was designed to improve developer productivity and address pain points in building analytics solutions at Twitter where often, the same code needs to be written twice (once for batch processing and again for online processing) and indefinitely maintained in parallel. Our key insight is that certain algebraic structures provide the theoretical foundation for integrating batch and online processing in a seamless fashion. This means that Summingbird imposes constraints on the types of aggregations that can be performed, although in practice we have not found these constraints to be overly restrictive for a broad range of analytics tasks at Twitter.},
+ author = {Boykin, Oscar and Ritchie, Sam and O'Connell, Ian and Lin, Jimmy},
+ doi = {10.14778/2733004.2733016},
+ issn = {2150-8097},
+ issue_date = {August 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {13},
+ numpages = {11},
+ pages = {1441–1451},
+ publisher = {VLDB Endowment},
+ title = {Summingbird: a framework for integrating batch and online MapReduce computations},
+ url = {https://doi.org/10.14778/2733004.2733016},
+ volume = {7},
+ year = {2014}
+}

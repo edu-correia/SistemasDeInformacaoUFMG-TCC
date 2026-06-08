@@ -1,0 +1,16 @@
+@article{Keshani2024,
+ abstract = {Call Graphs are a rich data source and form the foundation for advanced static analyses that can, for example, detect security vulnerabilities or dead code. This information is invaluable when it is immediately available, such as in the output of a build system. Call Graph generation is a whole-program analysis: not just the application, but also all its dependencies are processed together. Recent work has shown that even advanced static analyses can use summarization techniques to substantially improve runtime; however, existing analyses focus on soundness, and as such remain very expensive. When executed in the build system, which typically has limited resources, even powerful servers suffer from slow build times, rendering these analyses impractical in today’s fast-paced development. In this paper, we aim to strike a balance between improving static analyses while remaining practical for use cases that require quick results in low-resource environments. We propose a summarization-based implementation of a Class-Hierarchy Analysis algorithm for call graph generation of Java programs. Our approach leverages the fact that dependency sets often do not change between builds: we can generate call graphs for these dependencies, cache their generation for subsequent builds, and using a novel stitching algorithm, Frankenstein, merge all partial results into a complete call graph for the whole program. Our evaluation results show that this lightweight approach can substantially outperform existing frameworks. In terms of speed improvements, Frankenstein surpasses the baselines by up to 38%, requiring an average of just 388 Megabytes of memory. This makes the proposed approach practical for build systems with limited memory resources. Despite these optimizations, our generated call graphs maintain a near-identical set of edges when compared to the baselines, achieving an F <sub>1</sub> score of up to 0.98. This summarization-based approach for call graph generation paves the way for using extended static analyses in build processes. © 2023, The Author(s).},
+ author = {Keshani, Mehdi and Gousios, Georgios and Proksch, Sebastian},
+ doi = {10.1007/s10664-023-10388-7},
+ journal = {Empirical Software Engineering},
+ note = {Cited by: 5; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Frankenstein: fast and lightweight call graph generation for software builds},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85176962979?origin=resultslist},
+ volume = {29},
+ year = {2024}
+}

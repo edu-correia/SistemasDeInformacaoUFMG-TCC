@@ -1,0 +1,15 @@
+@article{10.1145/3797269,
+ abstract = {Severe software defects can lead to significant issues and even result in substantial financial losses. As a result, automated code defect detection has garnered widespread attention. To fix these defects as soon as possible, Just-In-Time Defect Prediction (JIT-DP) and Just-In-Time Defect Localization (JIT-DL) have been investigated. Specifically, JIT-DP aims to predict commit-level defects when a code change is submitted, and JIT-DL aims to perform line-level defect localization before they lead to failures. Several methods have been developed for JIT-DP and JIT-DL, with those using Code Pre-Trained Models (CPTMs) leading to the best results. However, most previous studies concentrate on JIT-DP, even though JIT-DL is arguably more crucial. Identifying which specific lines of a commit are defective facilitates the prediction of whether the commit is defective. Therefore, we propose a Multi-Task Learning method (JIT-MTL) designed to address both JIT-DP and JIT-DL. Specifically, we train a CPTM to simultaneously identify defective commits and lines. The line-level predictions are directly used for JIT-DL, while the commit-level predictions for the same commit are merged to determine the results for JIT-DP. To enhance the accuracy of line-level predictions, we provide the CPTM with additional commit-level information, including commit-level defect code representation and expert features. Experimental results on the JIT-Defect4J dataset show that JIT-MTL outperforms the state-of-the-art baselines, with improvements of 14% in F1 in JIT-DP, 53.9% in Top-10 Accuracy, and 36.4% in Top-5 Accuracy in JIT-DL.},
+ address = {New York, NY, USA},
+ author = {Shen, Zongwen and Zou, Wentao and Chen, Xiang and Ge, Jidong and Li, Chuanyi and Cao, Shuai and Zhang, Xuewei and Huang, LiGuo and Luo, Bin},
+ doi = {10.1145/3797269},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Just-In-Time Defect Prediction, Just-In-Time Defect Localization, Defect Code Representation, Multi-Task Learning},
+ month = {February},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {JIT-MTL: Just-in-Time Defect Localization and Prediction with Multi-Task Learning},
+ url = {https://doi.org/10.1145/3797269},
+ year = {2026}
+}

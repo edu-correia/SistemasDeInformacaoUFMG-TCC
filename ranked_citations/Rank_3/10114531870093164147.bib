@@ -1,0 +1,17 @@
+@article{10.1145/3187009.3164147,
+ abstract = {Storing a database (rows and indexes) entirely in non-volatile memory (NVM) potentially enables both high performance and fast recovery. To fully exploit parallelism on modern CPUs, modern main-memory databases use latch-free (lock-free) index structures, e.g. Bw-tree or skip lists. To achieve high performance NVM-resident indexes also need to be latch-free. This paper describes the design of the BzTree, a latch-free B-tree index designed for NVM. The BzTree uses a persistent multi-word compare-and-swap operation (PMwCAS) as a core building block, enabling an index design that has several important advantages compared with competing index structures such as the Bw-tree. First, the BzTree is latch-free yet simple to implement. Second, the BzTree is fast - showing up to 2x higher throughput than the Bw-tree in our experiments. Third, the BzTree does not require any special-purpose recovery code. Recovery is near-instantaneous and only involves rolling back (or forward) any PMwCAS operations that were in-flight during failure. Our end-to-end recovery experiments of BzTree report an average recovery time of 145 μs. Finally, the same BzTree implementation runs seamlessly on both volatile RAM and NVM, which greatly reduces the cost of code maintenance.},
+ author = {Arulraj, Joy and Levandoski, Justin and Minhas, Umar Farooq and Larson, Per-Ake},
+ doi = {10.1145/3187009.3164147},
+ issn = {2150-8097},
+ issue_date = {January 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {January},
+ number = {5},
+ numpages = {13},
+ pages = {553–565},
+ publisher = {VLDB Endowment},
+ title = {Bztree: a high-performance latch-free range index for non-volatile memory},
+ url = {https://doi.org/10.1145/3187009.3164147},
+ volume = {11},
+ year = {2018}
+}

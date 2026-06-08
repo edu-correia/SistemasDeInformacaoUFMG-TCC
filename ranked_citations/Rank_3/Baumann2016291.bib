@@ -1,0 +1,16 @@
+@article{Baumann2016291,
+ abstract = {Analytical workloads in data warehouses often include heavy joins where queries involve multiple fact tables in addition to the typical star-patterns, dimensional grouping and selections. In this paper we propose a new processing and storage framework called bitwise dimensional co-clustering (BDCC) that avoids replication and thus keeps updates fast, yet is able to accelerate all these foreign key joins, efficiently support grouping and pushes down most dimensional selections. The core idea of BDCC is to cluster each table on a mix of dimensions, each possibly derived from attributes imported over an incoming foreign key and this way creating foreign key connected tables with partially shared clusterings. These are later used to accelerate any join between two tables that have some dimension in common and additionally permit to push down and propagate selections (reduce I/O) and accelerate aggregation and ordering operations. Besides the general framework, we describe an algorithm to derive such a physical co-clustering database automatically and describe query processing and query optimization techniques that can easily be fitted into existing relational engines. We present an experimental evaluation on the TPC-H benchmark in the Vectorwise system, showing that co-clustering can significantly enhance its already high performance and at the same time significantly reduce the memory consumption of the system. © 2016, Springer-Verlag Berlin Heidelberg.},
+ author = {Baumann, Stephan and Boncz, Peter and Sattler, Kai-Uwe},
+ doi = {10.1007/s00778-015-0417-y},
+ journal = {VLDB Journal},
+ note = {Cited by: 6},
+ number = {3},
+ pages = {291 - 316},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Bitwise dimensional co-clustering for analytical workloads},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84954309255?origin=resultslist},
+ volume = {25},
+ year = {2016}
+}

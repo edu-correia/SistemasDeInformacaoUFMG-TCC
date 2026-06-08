@@ -1,0 +1,15 @@
+@conference{Chen202353,
+ abstract = {In scenarios with write-intensive workloads, LSM-tree-based key-value stores, such as RocksDB, suffer from compaction-induced performance degradation. RocksDB provides configurable compaction options to mitigate the severe read/write amplification problems associated with compaction. The advent of the Data Processing Unit (DPU) allows us to better utilize the configurable options of RocksDB to guide the key-value store system in choosing a suitable compaction strategy with prior knowledge of the workload characteristics. This paper proposes iKnowFirst, an efficient DPU-assisted key-value store. iKnowFirst (1) sets a data buffer on the DPU and separates hot-cold data to relieve the pressure of subsequent LSM-tree compaction, (2) senses the characteristics of the workloads in advance, and dynamically guides RocksDB to choose different compaction modes or enable/disable compaction when the workloads change, to cope with the scenario of write outbreak, and (3) implements an auto-selecting interface for compaction strategies selection. Our prototype implementation and experimental results show that iKnowFirst achieves 3.2× improvement compared to the original RocksDB on write-intensive and highly skewed workloads while showing acceptable performance under read-intensive workloads. © 2023 IEEE.},
+ author = {Chen, Jiahong and Wang, Shengzhe and Zhang, Zhihao and Wu, Suzhen and Mao, Bo},
+ doi = {10.1109/ASAP57973.2023.00022},
+ journal = {Proceedings of the International Conference on Application-Specific Systems, Architectures and Processors},
+ note = {Cited by: 4},
+ pages = {53 - 60},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {iKnowFirst: An Efficient DPU-Assisted Compaction for LSM-Tree-Based Key-Value Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85174850168?origin=resultslist},
+ volume = {2023-July},
+ year = {2023}
+}

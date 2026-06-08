@@ -1,0 +1,18 @@
+@article{10.1145/3203194,
+ abstract = {We present a new approach for rendering all triangles in a model in front-to-back order without the need for sorting at runtime. The method can be used for rendering order-dependent transparency effects, or to minimize overdraw, for example. The key distinguishing component in the approach is its negligible runtime cost and therefore the ease with which it can be incorporated into rendering engines. More specifically, given a viewpoint, the runtime simply selects a presorted triangle list, which we call in-depth buffers, to be rendered at full speed. These in-depth buffers are even optimized for post-transform vertex cache efficiency. The result is unmatched in front-to-back rendering performance. The difficulty is computing the smallest set of in-depth buffers required. This reduces to a graph problem that we prove to be NP-hard. Nevertheless, we have found an optimization heuristic that produces good results, particularly when visually imperceptible fragment ordering mistakes are allowed.},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {Han, Songfang and Chen, Ge and Nehab, Diego and Sander, Pedro V.},
+ doi = {10.1145/3203194},
+ issue_date = {July 2018},
+ journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+ keyword = {visibility, vertex caching, translucent rendering, Efficient rendering},
+ month = {July},
+ number = {1},
+ numpages = {14},
+ publisher = {Association for Computing Machinery},
+ title = {In-Depth Buffers},
+ url = {https://doi.org/10.1145/3203194},
+ volume = {1},
+ year = {2018}
+}

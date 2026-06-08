@@ -1,0 +1,14 @@
+@article{1327594,
+ abstract = {When performing aggressive optimizations and parallelization to exploit features of advanced architectures, optimizing and parallelizing compilers need to quantitatively assess the profitability of any transformations in order to achieve high performance. Useful optimizations and parallelization can be performed if it is known that certain points-to relationships would hold with high or low probabilities. For instance, if the probabilities are low, a compiler could transform programs to perform data speculation or partition iterations into threads in speculative multithreading, or it would avoid conducting code specialization. Consequently, it is essential for compilers to incorporate pointer analysis techniques that can estimate the possibility for every points-to relationship that it would hold during the execution. However, conventional pointer analysis techniques do not provide such quantitative descriptions and, thus, hinder compilers from more aggressive optimizations, such as thread partitioning in speculative multithreading, data speculations, code specialization, etc. We address this issue by proposing a probabilistic points-to analysis technique to compute the probability of every points-to relationship at each program point. A context-sensitive interprocedural algorithm has been implemented based on the iterative data flow analysis framework, and has been incorporated into SUIF and MachSUIF. Experimental results show this technique can estimate the probabilities of points-to relationships in benchmark programs with reasonable small errors, about 4.6 percent on average. Furthermore, the current implementation cannot disambiguate heap and array elements. The errors are further significantly reduced when the future implementation incorporates techniques to disambiguate heap and array elements.},
+ author = {Peng-Sheng Chen and Yuan-Shin Hwang and Ju, R.D.-C. and Lee, J.K.},
+ doi = {10.1109/TPDS.2004.56},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Optimizing compilers;Profitability;Program processors;Multithreading;Computer architecture;Hardware;Partitioning algorithms;Iterative algorithms;Data analysis;Multithreading;speculation;interprocedural program analysis;points-to analysis;compilers;optimization.},
+ month = {Oct},
+ number = {10},
+ pages = {893-907},
+ title = {Interprocedural probabilistic pointer analysis},
+ volume = {15},
+ year = {2004}
+}

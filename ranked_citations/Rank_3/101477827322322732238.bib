@@ -1,0 +1,17 @@
+@article{10.14778/2732232.2732238,
+ abstract = {To meet the challenge of processing rapidly growing graph and network data created by modern applications, a number of distributed graph processing systems have emerged, such as Pregel and GraphLab. All these systems divide input graphs into partitions, and employ a "think like a vertex" programming model to support iterative graph computation. This vertex-centric model is easy to program and has been proved useful for many graph algorithms. However, this model hides the partitioning information from the users, thus prevents many algorithm-specific optimizations. This often results in longer execution time due to excessive network messages (e.g. in Pregel) or heavy scheduling overhead to ensure data consistency (e.g. in GraphLab). To address this limitation, we propose a new "think like a graph" programming paradigm. Under this graph-centric model, the partition structure is opened up to the users, and can be utilized so that communication within a partition can bypass the heavy message passing or scheduling machinery. We implemented this model in a new system, called Giraph++, based on Apache Giraph, an open source implementation of Pregel. We explore the applicability of the graph-centric model to three categories of graph algorithms, and demonstrate its flexibility and superior performance, especially on well-partitioned data. For example, on a web graph with 118 million vertices and 855 million edges, the graph-centric version of connected component detection algorithm runs 63X faster and uses 204X fewer network messages than its vertex-centric counterpart.},
+ author = {Tian, Yuanyuan and Balmin, Andrey and Corsten, Severin Andreas and Tatikonda, Shirish and McPherson, John},
+ doi = {10.14778/2732232.2732238},
+ issn = {2150-8097},
+ issue_date = {November 2013},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {12},
+ pages = {193–204},
+ publisher = {VLDB Endowment},
+ title = {From "think like a vertex" to "think like a graph"},
+ url = {https://doi.org/10.14778/2732232.2732238},
+ volume = {7},
+ year = {2013}
+}

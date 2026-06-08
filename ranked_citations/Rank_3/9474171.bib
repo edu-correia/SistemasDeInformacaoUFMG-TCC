@@ -1,0 +1,14 @@
+@inproceedings{9474171,
+ abstract = {Computing convolutional layers in frequency domain can largely reduce the computation overhead for training and inference of convolutional neural networks (CNNs). However, existing designs with such an idea require repeated spatial- and frequency-domain transforms due to the absence of nonlinear functions in the frequency domain, as such it makes the benefit less attractive for low-latency inference. This paper presents a fully spectral CNN approach by proposing a novel adaptive Rectified Linear Unit (ReLU) activation in spectral domain. The proposed design maintains the non-linearity in the network while taking into account the hardware efficiency in algorithm level. The spectral model size is further optimized by merging and fusing layers. Then, a customized hardware architecture is proposed to implement the designed spectral network on FPGA device with DSP optimizations for 8-bit fixed point multipliers. Our hardware accelerator is implemented on Intel's Arria 10 device and applied to the MNIST, SVHN, AT&T and CIFAR-10 datasets. Experimental results show a speed improvement of 6 × ~ 10 × and 4 × ~ 5.7 × compared to state-of-the-art spatial or FFT-based designs respectively, while achieving similar accuracy across the benchmark datasets.},
+ author = {Liu, Shuanglong and Fan, Hongxiang and Luk, Wayne},
+ booktitle = {2021 Design, Automation & Test in Europe Conference & Exhibition (DATE)},
+ doi = {10.23919/DATE51398.2021.9474171},
+ issn = {1558-1101},
+ keyword = {Training;Three-dimensional displays;Frequency-domain analysis;Merging;Hardware;Reduced order systems;Task analysis},
+ month = {Feb},
+ number = {},
+ pages = {1530-1535},
+ title = {Accelerating Fully Spectral CNNs with Adaptive Activation Functions on FPGA},
+ volume = {},
+ year = {2021}
+}

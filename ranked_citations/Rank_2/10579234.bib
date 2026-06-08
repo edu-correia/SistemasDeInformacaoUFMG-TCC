@@ -1,0 +1,14 @@
+@inproceedings{10579234,
+ abstract = {Several methods exist today to accelerate Machine Learning(ML) or Deep-Learning(DL) model performance for training and inference. However, modern techniques that rely on various graph and operator parallelism methodologies rely on search space optimizations which are costly in terms of power and hardware usage. Especially in the case of inference, when the batch size is 1 and execution is on CPUs, or for power-constrained edge devices, current techniques can become costly, complicated or inapplicable. To ameliorate this, we present a Critical-Path-based Linear Clustering approach to exploit inherent parallel paths in ML dataflow graphs. Our task parallelization approach further optimizes the structure of graphs via cloning and prunes them via constant propagation and dead-code elimination. Contrary to other work, we generate readable and executable parallel Pytorch+Python code from input ML models in ONNX format via a new tool that we have built called Ramiel. This allows us to benefit from other downstream acceleration techniques like intra-op parallelism and potentially pipeline parallelism. Our preliminary results on several ML graphs demonstrate up to 1.9× speedup over serial execution and outperform some of the current mechanisms in both compile and runtimes. Lastly, our methods are lightweight and fast enough so that they can be used effectively for power and resource-constrained devices, while still enabling downstream optimizations.},
+ author = {Das, Srinjoy and Rauchwerger, Lawrence},
+ booktitle = {2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS57955.2024.00070},
+ issn = {1530-2075},
+ keyword = {Training;Distributed processing;Runtime;Codes;Pipelines;Cloning;Parallel processing;Machine/Deep Learning;ML models;Dataflow Graphs;Parallelization;Clustering;Pytorch;ONNX},
+ month = {May},
+ number = {},
+ pages = {728-739},
+ title = {Automatic Task Parallelization of Dataflow Graphs in ML/DL Models},
+ volume = {},
+ year = {2024}
+}

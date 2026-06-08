@@ -1,0 +1,14 @@
+@inproceedings{10305845,
+ abstract = {Containers are the technology for Linux to isolate execution environments. By distributing a container image, which is a collection of files contained in the container, users can use an execution environment that includes the necessary files and libraries. However, container images are tens to hundreds of megabytes in size and require many network resources to be transferred. Especially in low-bandwidth network environments like edge computing, frequent image updating can be difficult and affect other services’ communication. In this paper, we propose a method to reduce the data size required for image updates using delta encoding. We use delta encoding to reduce data size and finish updating quickly, but generating and applying deltas is a time-consuming operation. Our method proposes DeltaMerging which enables faster delta generation by merging existing deltas, and Di3FS which applies deltas lazily. The proposed method reduces the data size required to update container images from 5 to 40% of that of existing methods. Also, the time required to generate and apply deltas is greatly reduced with DeltaMerging and Di3FS. Furthermore, the performance degradation of the application in the container was almost negligible.},
+ author = {Matsumoto, Naoki and Kotani, Daisuke and Okabe, Yasuo},
+ booktitle = {2023 IEEE International Conference on Cloud Engineering (IC2E)},
+ doi = {10.1109/IC2E59103.2023.00009},
+ issn = {2694-0825},
+ keyword = {Degradation;Image coding;Linux;Merging;Containers;Encoding;Libraries;Container;Delta encoding;Edge computing},
+ month = {Sep.},
+ number = {},
+ pages = {1-10},
+ title = {Efficient Container Image Updating in Low-bandwidth Networks with Delta Encoding},
+ volume = {},
+ year = {2023}
+}

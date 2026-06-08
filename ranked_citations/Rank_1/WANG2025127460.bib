@@ -1,0 +1,13 @@
+@article{WANG2025127460,
+ abstract = {Program induction-based semantic parsing is a crucial method for addressing complex knowledge base question answering. Traditional methods typically convert natural language questions into multi-step executable programs, which often require large amounts of accurately annotated “question-program” pairs to achieve high performance. Unfortunately, generating such high-quality annotated data is usually labor-intensive and relies on manual effort from domain experts, resulting in insufficient annotated data in real-world scenarios. To improve model performance in data-constrained environments, we propose DADA-CQA, a complex question answering method that uses difficulty-aware active data augmentation. This method leverages active learning to generate synthetic “question-program” pairs that resemble error samples in the validation set. First, representative error samples are clustered, then selected to create program templates. Second, these templates are instantiated by applying replacement rules within a KB-based program generation algorithm to produce synthetic programs with diverse compositions and correct arguments. Next, the synthetic programs are translated into semantically consistent synthetic questions using a prompt-based question generation method. Finally, these dynamically generated synthetic pairs are merged with the original training set for further training. Additionally, we introduce a voting ranker based on weighted voting mechanism to improve the prediction accuracy of multiple candidate programs during inference. Experimental results on KQA Pro demonstrate that DADA-CQA consistently outperforms previous baselines in both fully-supervised and low-resource settings, validating the effectiveness of difficulty-aware active data augmentation in improving model performance and training efficiency.},
+ author = {Dong Wang and Sihang Zhou and Cong Zhou and Ke Liang and Chuanli Wang and Jian Huang},
+ doi = {https://doi.org/10.1016/j.eswa.2025.127460},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Program induction, Complex question answering, Active data augmentation, Synthetic pair generation, Voting ranker},
+ pages = {127460},
+ title = {Complex knowledge base question answering with difficulty-aware active data augmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425010826},
+ volume = {280},
+ year = {2025}
+}

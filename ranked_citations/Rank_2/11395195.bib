@@ -1,0 +1,14 @@
+@inproceedings{11395195,
+ abstract = {Modern AI accelerators adopt dataflow architectures to achieve both high peak throughput (TOPS) and energy efficiency (TOPS/W). These designs feature wide datapaths and hierarchical scratchpad memories that supply dense compute arrays with high-bandwidth data access and extensive operand reuse. Complementing the compute–memory subsystem is a lightweight control path that orchestrates data movement, program loading, and register initialization. To reduce energy and area overheads, conventional processor features—such as instruction caches, execution stacks, and branch speculation—are deliberately omitted. While this streamlined design maximizes efficiency, it shifts a critical responsibility onto the compiler: transforming complex kernels into highly compact instruction streams that must fit entirely within the limited instruction buffers (IBUFFs) of the accelerator’s programmable units.In this paper, we introduce two novel compiler transformations—Loop Absorption (LA) and Loop Index Set Merging (LISM) for ultra compact code generation. Loop Absorption merges isomorphic sibling operations into a single loop body, while LISM unifies adjacent loops with similar bodies into a unified iteration space. Together, these complementary techniques eliminate redundant code patterns and produce compact hierarchical loop nests. We implement LA and LISM in the IBM Spyre compiler and evaluate them on diverse deep learning workloads including ResNet-50, Inception-v3, SSD, and BERT-Large. Across these models, our combined approach achieves a geometric mean compression of 1.48× over the baseline, enabling layers that previously exceeded IBUFF capacity to compile successfully.},
+ author = {Chatarasi, Prasanth and Gatea, Alex and Mahjour, Bardia and Zhang, Jintao and Mannari, Alberto and Bowler, Chris and Jain, Shubham and Jaliseh, Masoud Ataei and Khoun, Nicole and Kumar, Kamlesh and Srinivasan, Viji and Venkataramani, Swagath},
+ booktitle = {2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO68049.2026.11395195},
+ issn = {},
+ keyword = {Codes;Program processors;Absorption;Redundancy;Merging;Loading;Throughput;Registers;Kernel;Optimization},
+ month = {Jan},
+ number = {},
+ pages = {44-56},
+ title = {Eliminating Redundancy: Ultra-compact Code Generation for Programmable Dataflow Accelerators},
+ volume = {},
+ year = {2026}
+}

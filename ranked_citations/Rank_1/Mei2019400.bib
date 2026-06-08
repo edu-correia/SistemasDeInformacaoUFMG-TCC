@@ -1,0 +1,16 @@
+@article{Mei2019400,
+ abstract = {Key-value stores are increasingly adopting LSM-trees as their enabling data structure in the backend block storage, and persisting their clustered data through a block manager, usually a file system. In general, a file system is expected to not only provide file/directory abstraction to organize data but also retain the key benefits of LSM-trees, namely, sequential and aggregated I/O patterns on the physical device. Unfortunately, our in-depth experimental analysis reveals that some of these benefits of LSM-trees can be completely negated by the underlying file level indexes from the perspectives of both data layout and I/O processing. As a result, the write performance of LSM-trees is kept at a level far below that promised by the sequential bandwidth offered by the storage devices. In this paper, we address this problem and propose LDS, an LSM-tree Direct Storage system that manages the storage space based on the LSM-tree objects and provides simplified consistency control by leveraging the copy-on-write nature of the LSM-tree structure, to fully reap the benefits of LSM-trees. Running LevelDB, a popular LSM-tree based key-value store, on LDS as a baseline, comparing that to LevelDB running on three representative file systems (ext4, f2fs, btrfs) with HDDs and SSDs, respectively, we evaluate and study the performance potentials of LSM-trees. Evaluation results show that the write throughputs of LevelDB can be improved by from 1.8× to 3× on HDDs, and from 1.3× to 2.5× on SSDs, by employing the LSM-tree friendly data layout of LDS. © 2018 IEEE.},
+ author = {Mei, Fei and Cao, Qiang and Jiang, Hong and Tian, Lei},
+ doi = {10.1109/TPDS.2018.2864209},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 17},
+ number = {2},
+ pages = {400 - 414},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LSM-Tree Managed Storage for Large-Scale Key-Value Store},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85051389247?origin=resultslist},
+ volume = {30},
+ year = {2019}
+}

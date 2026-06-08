@@ -1,0 +1,14 @@
+@conference{Li2026259,
+ abstract = {Sparse matrix-sparse vector multiplication (SpMSpV) is a core primitive in graph analytics and scientific computing, also arising in spiking neural networks for event-driven spike propagation. On GPUs, the performance of the prevalent and efficient SpMSpV paradigm is often bottlenecked by the write-back phase of accumulating non-zero multiply-accumulate results; its many-to-one index scatter pattern causes severe conflicts and poor bandwidth utilization on GPUs. We present VDHA, a GPU-based weighted SpMSpV kernel that leverages block-private hash tables for local aggregation, substantially reducing write conflicts and improving memory coalescing. To further amplify this benefit, we incorporate column splitting with lightweight reordering to expose more locality, and employ a fetch-compute-writeback pipeline to overlap hash computation with memory accesses. Extensive evaluation on over 300 matrices with more than 5 million nonzeros, including web-scale graphs (Konect/LAW) and scientific workloads (SuiteSparse), shows that VDHA consistently outperforms state-of-the-art baselines. On web graphs, it achieves a 1.41× geometric-mean speedup (up to 3.42×), while on SuiteSparse it delivers 1.13× (up to 2.55×). We also provide a lightweight predictive model that identifies matrices favorable to VDHA with 91.3% accuracy.  © 2026 Owner/Author.},
+ author = {Li, Yuchen and Pan, Zhe and Qu, Peng and Zhang, Youhui},
+ doi = {10.1145/3774934.3786447},
+ journal = {Proceedings of the 31st ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming, PPoPP 2026},
+ note = {Cited by: 0},
+ pages = {259 - 272},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {VDHA: Vector-Driven Hash Aggregation for Sparse Matrix-Sparse Vector Multiplication on GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105029765351?origin=resultslist},
+ year = {2026}
+}

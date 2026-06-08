@@ -1,0 +1,15 @@
+@conference{Rosinosky202156,
+ abstract = {Stream processing frameworks allow processing massive amounts of data shortly after it is produced, and enable a fast reaction to events in scenarios such as data center monitoring, smart transportation, or telecommunication networks. Many scenarios depend on the fast and reliable processing of incoming data, requiring low end-To-end latencies from the ingest of a new event to the corresponding output. The occurrence of faults jeopardizes these guarantees: Currently-leading high-Availability solutions for stream processing such as Spark Streaming or Apache Flink's implement passive replication through snapshotting, requiring a stop-The-world operation to recover from a failure. Active replication, while incurring higher deployment costs, can overcome these limitations and allow to mask the impact of faults and match stringent end-To-end latency requirements. We present the design, implementation, and evaluation of active replication in the popular Apache Flink platform. Our study explores two alternative designs, a leader-based approach leveraging external services (Kafka and ZooKeeper) and a leaderless implementation leveraging a novel deterministic merging algorithm. Our evaluation using a series of microbenchmarks and a SaaS cloud monitoring scenario on a 37-server cluster show that the actively-replicated Flink can fully mask the impact of faults on end-To-end latency.  © 2021 IEEE.},
+ author = {Rosinosky, Guillaume and Schmidt, Florian and Bodunov, Oleh and Fetzer, Christof and Martin, Andre and Riviere, Etienne},
+ doi = {10.1109/SRDS53918.2021.00015},
+ journal = {Proceedings of the IEEE Symposium on Reliable Distributed Systems},
+ note = {Cited by: 3; All Open Access; Green Open Access},
+ pages = {56 - 66},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Active replication for latency-sensitive stream processing in Apache Flink},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85122983074?origin=resultslist},
+ volume = {2021-September},
+ year = {2021}
+}

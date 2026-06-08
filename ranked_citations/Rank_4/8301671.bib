@@ -1,0 +1,14 @@
+@inproceedings{8301671,
+ abstract = {Various benchmarks exist for assessing performance characteristics of commodity hardware utilized in high performance computing (HPC) cluster environments. An additional assessment of bandwidth for Intel's 44-core processors considers network saturation via message passing focused on indirectly connected cores. The benchmark developed in this work provides a means of measuring bandwidth of two Broadwell nodes when communicating inter-chassis with all cores of each node utilized. This benchmark was developed in three phases using Message Passing Interface (MPI). First, the bandwidth measure was tested for MPI_Send operations in point-to-point communication. Second, the merge sort algorithm was implemented as a means of assessing bandwidth and a tree-structured communication algorithm was developed and implemented to maximize internode communication and minimize intra-node communication. Third, the benchmark was tuned to the configuration of the Distributed Environment for Academic Computing (DEAC) Cluster. A second benchmark removing local computation from the merge sort algorithm effectively performs a gather operation in a tree-structure. These benchmarks were tested and compared with relevant Intel MPI Benchmarks (IMB) tests. In the developed benchmarks, the nodes requested significantly more bandwidth than in the existing MPI_Gather operation and IMB benchmarks due to the large size of the messages simultaneously placed on the network.},
+ author = {Freedman, Riana J. and Valles, Damian},
+ booktitle = {2018 IEEE 8th Annual Computing and Communication Workshop and Conference (CCWC)},
+ doi = {10.1109/CCWC.2018.8301671},
+ issn = {},
+ keyword = {Bandwidth;Benchmark testing;Local area networks;Hardware;Clustering algorithms;Sockets;Message passing;HPC;network;benchmark;merge sort;gather},
+ month = {Jan},
+ number = {},
+ pages = {502-508},
+ title = {A communication benchmark tailored to intel broadwell nodes and tuned to the DEAC cluster},
+ volume = {},
+ year = {2018}
+}

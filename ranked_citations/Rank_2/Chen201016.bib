@@ -1,0 +1,15 @@
+@article{Chen201016,
+ abstract = {Scaling-out data-intensive analytics is generally made by means of parallel computation for gaining CPU bandwidth, and incremental computation for balancing workload. Combining these two mechanisms is the key to support large scale stream analytics. Map-Reduce (M-R) is a programming model for supporting parallel computation over vast amounts of data on large clusters of commodity machines. Through a simple interface with two functions, map and reduce, this model facilitates parallel implementation of data intensive applications. In-DB M-R allows these functions to be embedded within standard queries to exploit the SQL expressive power, and allows them to be executed by the query engine with fast data access and reduced data move. However, when the data form infinite streams, the semantics and scale-out capability of M-R are challenged. To solve this problem, we propose to integrate M-R with the continuous query model characterized by Cut-Rewind (C-R), i.e. cut a query execution based on some granule of the stream data and then rewind the state of the query without shutting it down, for processing the next chunk of stream data. This approach allows an M-R query with full SQL expressive power to be applied to dynamic stream data chunk by chunk for continuous, window-based stream analytics. Our experience shows that integrating M-R and C-R can provide a powerful combination for parallelized and granulized stream processing. This combination enables us to scale-out stream analytics "horizontally" based on the M-R model, and "vertically" based on the C-R model. The proposed approach has been prototyped on a commercial and proprietary parallel database engine. Our preliminary experiments reveal the merit of using query engine for near-real-time parallel and incremental stream analytics. © 2010 Springer-Verlag Berlin Heidelberg.},
+ author = {Chen, Qiming and Hsu, Meichun},
+ doi = {10.1007/978-3-642-16961-8_9},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 4},
+ pages = {16 - 34},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Continuous MapReduce for in-DB stream analytics},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/78649512353?origin=resultslist},
+ volume = {6428 LNCS},
+ year = {2010}
+}

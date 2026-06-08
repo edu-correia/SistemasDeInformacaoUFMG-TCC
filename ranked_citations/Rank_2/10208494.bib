@@ -1,0 +1,14 @@
+@inproceedings{10208494,
+ abstract = {Video-based Emotional Reaction Intensity (ERI) estimation measures the intensity of subjects’ reactions to stimuli along several emotional dimensions from videos of the subject as they view the stimuli. We propose a multi-modal architecture for video-based ERI combining video and audio information. Video input is encoded spatially first, frame-by-frame, combining features encoding holistic aspects of the subjects’ facial expressions and features encoding spatially localized aspects of their expressions. Input is then combined across time: from frame-to-frame using gated recurrent units (GRUs), then globally by a transformer. We handle variable video length with a regression token that accumulates information from all frames into a fixed-dimensional vector independent of video length. Audio information is handled similarly: spectral information extracted within each frame is integrated across time by a cascade of GRUs and a transformer with regression token. The video and audio regression tokens’ outputs are merged by concatenation, then input to a final fully connected layer producing intensity estimates. Our architecture achieved excellent performance on the Hume-Reaction dataset in the ERI Esimation Challenge of the Fifth Competition on Affective Behavior Analysis in-the-Wild (ABAW5). The Pearson Correlation Coefficients between estimated and subject self-reported scores, averaged across all emotions, were 0.455 on the validation dataset and 0.4547 on the test dataset, well above the baselines. The transformer’s self-attention mechanism enables our architecture to focus on the most critical video frames regardless of length. Ablation experiments establish the advantages of combining holistic/local features and of multi-modal integration. Code available at https://github.com/HKUST-NISL/ABAW5.},
+ author = {Fang, Yini and Wu, Liang and Jumelle, Frederic and Shi, Bertram},
+ booktitle = {2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+ doi = {10.1109/CVPRW59228.2023.00631},
+ issn = {2160-7516},
+ keyword = {Visualization;Codes;Face recognition;Estimation;Computer architecture;Logic gates;Transformers},
+ month = {June},
+ number = {},
+ pages = {5934-5939},
+ title = {Integrating Holistic and Local Information to Estimate Emotional Reaction Intensity},
+ volume = {},
+ year = {2023}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3571236,
+ abstract = {Automatic differentiation (AD) is conventionally understood as a family of distinct algorithms, rooted in two “modes”—forward and reverse—which are typically presented (and implemented) separately. Can there be only one? Following up on the AD systems developed in the JAX and Dex projects, we formalize a decomposition of reverse-mode AD into (i) forward-mode AD followed by (ii) unzipping the linear and non-linear parts and then (iii) transposition of the linear part.    To that end, we define a (substructurally) linear type system that can prove a class of functions are (algebraically) linear. Our main results are that forward-mode AD produces such linear functions, and that we can unzip and transpose any such linear function, conserving cost, size, and linearity. Composing these three transformations recovers reverse-mode AD. This decomposition also sheds light on checkpointing, which emerges naturally from a free choice in unzipping let expressions. As a corollary, checkpointing techniques are applicable to general-purpose partial evaluation, not just AD.    We hope that our formalization will lead to a deeper understanding of automatic differentiation and that it will simplify implementations, by separating the concerns of differentiation proper from the concerns of gaining efficiency (namely, separating the derivative computation from the act of running it backward).},
+ address = {New York, NY, USA},
+ articleno = {43},
+ author = {Radul, Alexey and Paszke, Adam and Frostig, Roy and Johnson, Matthew J. and Maclaurin, Dougal},
+ doi = {10.1145/3571236},
+ issue_date = {January 2023},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {transpose, partial evaluation, decomposition, automatic differentiation},
+ month = {January},
+ number = {POPL},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {You Only Linearize Once: Tangents Transpose to Gradients},
+ url = {https://doi.org/10.1145/3571236},
+ volume = {7},
+ year = {2023}
+}

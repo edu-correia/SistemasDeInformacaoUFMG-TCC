@@ -1,0 +1,16 @@
+@article{Li20242301,
+ abstract = {Efficient key-value (KV) store becomes important for concurrent and distributed systems to deliver high performance. The promising learned indexes leverage deep-learning models to complement existing KV stores and obtain significant performance improvements. However, existing schemes show limited scalability in concurrent systems due to containing high dependency among data. The practical system performance decreases when inserting a large amount of new data due to triggering frequent and inefficient retraining operations. Moreover, existing learned indexes become inefficient in distributed systems, since different machines incur high overheads to guarantee the data consistency when the index structures dynamically change. To address these problems in concurrent and distributed systems, we propose a fine-grained learned index scheme with high scalability, called FineStore, which constructs independent models with a flattened data structure under the trained data array to concurrently process the requests with low overheads. FineStore processes the new requests in-place with the support of non-blocking retraining, hence adapting to the new distributions without blocking the systems. In the distributed systems, different machines efficiently leverage the extended RCU barrier to guarantee the data consistency. We evaluate FineStore via YCSB and real-world datasets, and extensive experimental results demonstrate that FineStore improves the performance respectively by up to 1.8× and 2.5× than state-of-the-art XIndex and Masstree. We have released the open-source codes of FineStore for public use in GitHub. © 1989-2012 IEEE.},
+ author = {Li, Pengfei and Hua, Yu and Jia, Jingnan and Zuo, Pengfei},
+ doi = {10.1109/TKDE.2023.3327009},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 2},
+ number = {6},
+ pages = {2301 - 2315},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Fast Learned Key-Value Store for Concurrent and Distributed Systems},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85176356029?origin=resultslist},
+ volume = {36},
+ year = {2024}
+}

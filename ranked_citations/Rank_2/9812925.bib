@@ -1,0 +1,14 @@
+@inproceedings{9812925,
+ abstract = {As one of the most popular in-memory cache systems, Redis provides low-latency and high-performance data access for modern internet services. However, in large-scale Redis systems, the access skewness and locality in storage workloads induce a small number of hot-spot instances with degraded system performance and massive cold instances with low CPU utilization. This paper proposes HPUCache to address the hot-spots via data copying and cold instances via instance merging. HPUCache fully utilizes the cached mapping in Redis client, and dynamically updates this mapping to enable access to the multiple data copies. Hence it can manage multiple copies achieving both Redis client compatibility and high user access performance. It also proposes an asynchronous instance merging strategy based on disk snapshots and temporal caches, which separates the massive data movement from the critical user access path to achieve high performance instance merging. We integrate HPUCache into Redis. Experiments under two types of workloads show that, compared to the native Redis design, HPUCache achieves 2.4× and 3.5× performance gains, 2× and 6× CPU utilization gains respectively.},
+ author = {Wang, Qianli and Wu, Si and Li, Yongkun and Xu, Yinlong and Chen, Fei and Wang, Pengcheng and Han, Lei},
+ booktitle = {2022 IEEE/ACM 30th International Symposium on Quality of Service (IWQoS)},
+ doi = {10.1109/IWQoS54832.2022.9812925},
+ issn = {1548-615X},
+ keyword = {System performance;Merging;Web and internet services;Quality of service;Performance gain;Resource management;Low latency communication},
+ month = {June},
+ number = {},
+ pages = {1-10},
+ title = {HPUCache: Toward High Performance and Resource Utilization in Clustered Cache via Data Copying and Instance Merging},
+ volume = {},
+ year = {2022}
+}

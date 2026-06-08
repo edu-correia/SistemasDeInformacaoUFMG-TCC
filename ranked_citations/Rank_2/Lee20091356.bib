@@ -1,0 +1,16 @@
+@article{Lee20091356,
+ abstract = {This paper focuses on the problem of improving throughput of distributed query processing in an RDBMS-based data integration system. Although a buffer pool can be used in an RDBMS to cache disk pages in memory to reduce disk accesses, it cannot be used for data integration queries since its foundation, the memory-disk hierarchy, does not exist. The lack of a data sharing mechanism limits system throughput because unnecessary data requests increase burden on data sources and redundant resultant data transfers waste network bandwidth. To address the problem, we present a new technique called request window, which can detect and exploit data sharing opportunities among concurrent queries. Request window exploits a new stream request locality which reflects common query interests among independent users in a short time period. The existence of such a locality makes it possible to collect a group of related data requests and process them as a batch by request window. Evaluation on a PostgreSQL-based data integration system shows that request window can significantly increase system throughput when running a distributed TPC-H workload. © 2009 IEEE.},
+ author = {Lee, Rubao and Xu, Zhiwei},
+ doi = {10.1109/TC.2009.80},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 4},
+ number = {10},
+ pages = {1356 - 1368},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Exploiting stream request locality to improve query throughput of a data integration system},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/70349443413?origin=resultslist},
+ volume = {58},
+ year = {2009}
+}

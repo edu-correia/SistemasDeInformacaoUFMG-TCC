@@ -1,0 +1,18 @@
+@article{10.1145/3696465,
+ abstract = {Efficient simulation of quantum circuits has become indispensable with the rapid development of quantum hardware. The primary simulation methods are based on state vectors and tensor networks. As the number of qubits and quantum gates grows larger in current quantum devices, traditional state-vector-based quantum circuit simulation methods prove inadequate due to the overwhelming size of the Hilbert space and extensive entanglement. Consequently, brutal force tensor network simulation algorithms become the only viable solution in such scenarios. The two main challenges faced in tensor network simulation algorithms are optimal contraction path finding and efficient execution on modern computing devices, with the latter determining the actual efficiency. In this study, we investigate the optimization of such tensor network simulations on modern GPUs and propose general optimization strategies from two aspects: computational efficiency and accuracy. First, we propose to transform critical Einstein summation operations into GEMM operations, leveraging the specific features of tensor network simulations to amplify the efficiency of GPUs. Second, by analyzing the data characteristics of quantum circuits, we employ extended precision to ensure the accuracy of simulation results and mixed precision to fully exploit the potential of GPUs, resulting in faster and more precise simulations. Our numerical experiments demonstrate that our approach can achieve a 3.96\texttimes{} reduction in verification time for random quantum circuit samples in the 18-cycle case of Sycamore, with sustained performance exceeding 21 TFLOPS on one A100. This method can be easily extended to the 20-cycle case, maintaining the same performance, accelerating by 12.5\texttimes{} compared to the state-of-the-art CPU-based results and 4.48–6.78\texttimes{} compared to the state-of-the-art GPU-based results reported in the literature. Furthermore, the strategies presented in this article hold general applicability for accelerating problems that can be tackled by contracting tensor networks such as graphical models and combinatorial optimizations.},
+ address = {New York, NY, USA},
+ articleno = {26},
+ author = {Pan, Feng and Gu, Hanfeng and Kuang, Lvlin and Liu, Bing and Zhang, Pan},
+ doi = {10.1145/3696465},
+ issue_date = {December 2024},
+ journal = {ACM Transactions on Quantum Computing},
+ keyword = {Quantum computing, quantum circuit simulation, tensor network, GPU},
+ month = {November},
+ number = {4},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Efficient Quantum Circuit Simulation by Tensor Network Methods on Modern GPUs},
+ url = {https://doi.org/10.1145/3696465},
+ volume = {5},
+ year = {2024}
+}

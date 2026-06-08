@@ -1,0 +1,14 @@
+@inproceedings{5958217,
+ abstract = {We present Communix, a collaborative deadlock immunity framework for Java programs. Deadlock immunity enables applications to avoid deadlocks that they previously encountered. Dimmunix [1], our deadlock immunity system, detects deadlocks and saves their signatures at runtime, then avoids execution flows that match these signatures; a signature is an abstraction of the execution flow that led to deadlock. Dimmunix needs all the deadlock bugs in an application to manifest, in all possible ways, in order to provide full protection against deadlocks for that application. Communix addresses this shortcoming by distributing the deadlock signatures produced by Dimmunix. The signatures of a deadlock can protect against the deadlock any user connected to the Internet and running the same application, even if he/she did not experience the deadlock yet. Besides signature distribution, Communix provides signature validation and generalization. Signature validation ensures that the incoming signatures match the target applications, and protect the users against malicious signatures. Signature generalization keeps the repository of deadlock signatures compact, by merging multiple deadlock signatures into one signature. Communix is application agnostic, i.e., it is applicable to any Java application. Communix is efficient and scalable, and can effectively protect Java applications against malicious signatures.},
+ author = {Jula, Horatiu and Tözün, Pinar and Candea, George},
+ booktitle = {2011 IEEE/IFIP 41st International Conference on Dependable Systems & Networks (DSN)},
+ doi = {10.1109/DSN.2011.5958217},
+ issn = {2158-3927},
+ keyword = {System recovery;Servers;Synchronization;Java;History;Computer bugs;Internet},
+ month = {June},
+ number = {},
+ pages = {181-188},
+ title = {Communix: A framework for collaborative deadlock immunity},
+ volume = {},
+ year = {2011}
+}

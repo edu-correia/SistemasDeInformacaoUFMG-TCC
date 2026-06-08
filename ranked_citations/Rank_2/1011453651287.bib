@@ -1,0 +1,18 @@
+@article{10.1145/3651287,
+ abstract = {LOD construction is typically implemented as a preprocessing step that requires users to wait before they are able to view the results in real time. We propose an incremental LOD generation approach for point clouds that allows us to simultaneously load points from disk, update an octree-based level-of-detail representation, and render the intermediate results in real time while additional points are still being loaded from disk. LOD construction and rendering are both implemented in CUDA and share the GPU's processing power, but each incremental update is lightweight enough to leave enough time to maintain real-time frame rates.Our approach is able to stream points from an SSD and update the octree on the GPU at rates of up to 580 million points per second (~9.3GB/s) on an RTX 4090 and a PCIe 5.0 SSD. Depending on the data set, our approach spends an average of about 1 to 2 ms to incrementally insert 1 million points into the octree, allowing us to insert several million points per frame into the LOD structure and render the intermediate results within the same frame.},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {Sch\"{u}tz, Markus and Herzberger, Lukas and Wimmer, Michael},
+ doi = {10.1145/3651287},
+ issue_date = {May 2024},
+ journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+ keyword = {LOD, Octree, Point Cloud Rendering},
+ month = {May},
+ number = {1},
+ numpages = {20},
+ publisher = {Association for Computing Machinery},
+ title = {SimLOD: Simultaneous LOD Generation and Rendering for Point Clouds},
+ url = {https://doi.org/10.1145/3651287},
+ volume = {7},
+ year = {2024}
+}

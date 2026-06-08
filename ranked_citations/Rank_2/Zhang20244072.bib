@@ -1,0 +1,14 @@
+@conference{Zhang20244072,
+ abstract = {Key-Value Stores (KVS) implemented with log-structured merge-tree (LSM-tree) have gained widespread ac-ceptance in storage systems. Nonetheless, a significant challenge arises in the form of high write amplification due to the compaction process. While KV-separated LSM-trees successfully tackle this issue, they also bring about substantial space am-plification problems, a concern that cannot be overlooked in cost-sensitive scenarios. Garbage collection (GC) holds significant promise for space amplification reduction, yet existing GC strategies often fall short in optimization performance, lacking thorough consideration of workload characteristics. Additionally, current KV-separated LSM-trees also ignore the adverse effect of the space amplification in the index LSM-tree. In this paper, we systematically analyze the sources of space amplification of KV-separated LSM-trees and introduce Scavenger, which achieves a better trade-off between performance and space amplification. Scavenger initially proposes an I/O-efficient garbage collection scheme to reduce I/O overhead and incorporates a space-aware compaction strategy based on compensated size to minimize the space amplification of index LSM-trees. Extensive experiments show that Scavenger significantly improves write performance and achieves lower space amplification than other KV-separated LSM-trees (including BlobDB, Titan, and TerarkDB).  © 2024 IEEE.},
+ author = {Zhang, Jianshun and Wang, Fang and Qiu, Sheng and Wang, Yi and Ou, Jiaxin and Huang, Junxun and Li, Baoquan and Fang, Peng and Feng, Dan},
+ doi = {10.1109/ICDE60146.2024.00312},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 6; All Open Access; Green Open Access},
+ pages = {4072 - 4085},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scavenger: Better Space-Time Trade-Offs for Key-Value Separated LSM-trees},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85200505792?origin=resultslist},
+ year = {2024}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3611479.3611480,
+ abstract = {We study the set similarity join problem, which retrieves all pairs of similar sets from two collections of sets for a given distance function. Existing exact solutions employ a signature-based filter-verification framework: If two sets are similar, they must have at least one signature in common, otherwise they can be pruned safely. We observe that the choice of the signature scheme has a significant impact on the performance. Unfortunately, choosing a good signature scheme is hard because the performance heavily depends on the characteristics of the underlying dataset.To address this problem, we propose a hybrid signature composition that leverages the most selective portion of each signature scheme. Sets with an unselective primary signature are detected, and the signatures are replaced with a more selective secondary signature. We propose a generic framework called TwoL and a cost model to balance the computational overhead and the selectivity of the signature schemes. We implement our framework with two complementary signature schemes for Jaccard similarity and Hamming distance, resulting in effective two-level hybrid indexes that join datasets with diverse characteristics efficiently. TwoL consistently outperforms state-of-the-art set similarity joins on a benchmark with 13 datasets that cover a wide range of data characteristics.},
+ author = {Schmitt, Daniel and Kocher, Daniel and Augsten, Nikolaus and Mann, Willi and Miller, Alexander},
+ doi = {10.14778/3611479.3611480},
+ issn = {2150-8097},
+ issue_date = {July 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {2686–2698},
+ publisher = {VLDB Endowment},
+ title = {A Two-Level Signature Scheme for Stable Set Similarity Joins},
+ url = {https://doi.org/10.14778/3611479.3611480},
+ volume = {16},
+ year = {2023}
+}

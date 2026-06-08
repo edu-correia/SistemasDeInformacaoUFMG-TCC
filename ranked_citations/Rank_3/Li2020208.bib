@@ -1,0 +1,14 @@
+@conference{Li2020208,
+ abstract = {In order to ensure data durability and crash consistency, the LSM-tree based key-value stores suffer from high WAL synchronization overhead. Fortunately, the advent of NVM offers an opportunity to address this issue. However, NVM is currently too expensive to meet the demand of massive storage systems. Therefore, the hybrid NVM and SSD storage system provides a more cost-efficient solution. This paper proposes HiLSM, a key-value store for hybrid NVM-SSD storage systems. According to the characteristics of hybrid storage mediums, HiLSM adopts hybrid data structures consisting of the log-structured memory and the LSM-tree. Aiming at the issue of write stalls in write intensive scenario, a fine-grained data migration strategy is proposed to make the data migration start as early as possible. Aiming at the performance gap between NVM and SSD, a multi-threaded data migration strategy is proposed to make the data migration complete as soon as possible. Aiming at the LSM-tree's inherent issue of write amplification, a data filtering strategy is proposed to make data updates be absorbed in NVM as much as possible. We compare HiLSM with the state-of-the-art key-value stores via extensive experiments and the results show that HiLSM achieves 1.3x higher throughput for write, 10x higher throughput for read and 79% less write traffic under the skewed workload. © 2020 ACM.},
+ author = {Li, Wenjie and Jiang, Dejun and Xiong, Jin and Bao, Yungang},
+ doi = {10.1145/3387902.3392621},
+ journal = {17th ACM International Conference on Computing Frontiers 2020, CF 2020 - Proceedings},
+ note = {Cited by: 24},
+ pages = {208 - 216},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HiLSM: An LSM-based key-value store for hybrid NVM-SSD storage systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85085937472?origin=resultslist},
+ year = {2020}
+}

@@ -1,0 +1,14 @@
+@inproceedings{9283510,
+ abstract = {As users' demand for large-capacity storage continues to grow, the widely used NAND flash memory always adopts multi-bit per cell and 3D-stacking technology to improve the storage density however impairing flash performance. Modern flash chips allow flash blocks to switch between multi-bit per cell and one-bit per cell, which gives the potential to benefit from the high performance of Single-Level Cells (SLC, i.e. one-bit per cell). However, the semantic gap caused by the block I/O interface and flash translation layer (FTL) prevents the performance of the underlying flash memory from being fully utilized. In this paper, we propose a log-structured file system, called DualFS. DualFS allows flash blocks to switch between the original-mode and SLC-mode in a free manner and uses these SLC blocks to accelerate critical requests. DualFS dynamically adjusts the capacity of the SLC-mode area according to the total size of valid data to maintain the device a negligible capacity degradation. Besides, DualFS draws advantages from the Open-Channel solid-state disk (SSD) by using software semantic information to guide data placement and management. In particular, since writing the same amount of data to the SLC block will impair more endurance, DualFS proposes a novel life management scheme which throttles the ratio of writing to SLC-mode area within a certain window, thereby accurately control the endurance of SSD. Last, DualFS integrates the garbage collection (GC) procedure, which is directly driven by the file system and merges the GC of the SLC-mode area and the original-mode area. The experiment results show that DualFS offers an average 22.2% performance improvement than the state of art flash file system based on the open-channel SSD. Compared with other storage systems based on flash block dual-mode switching feature, the average performance of DualFS also exhibits considerable improvements by 13.3% to 24.6%. Moreover, DualFS effectively reduces the read response time under different read/write ratios and precisely manage the device endurance.},
+ author = {Wu, Bing and Peng, Mengye and Feng, Dan and Tong, Wei},
+ booktitle = {2020 IEEE 38th International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD50377.2020.00028},
+ issn = {2576-6996},
+ keyword = {File systems;Semantics;Switches;Writing;Software;Time factors;Flash memories;Flash;Open Channel SSD;Dual Mode},
+ month = {Oct},
+ number = {},
+ pages = {65-72},
+ title = {DualFS: A Coordinative Flash File System with Flash Block Dual-mode Switching},
+ volume = {},
+ year = {2020}
+}

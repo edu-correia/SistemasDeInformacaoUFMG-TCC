@@ -1,0 +1,17 @@
+@article{10.14778/2047485.2047491,
+ abstract = {Read-optimized columnar databases use differential updates to handle writes by maintaining a separate write-optimized delta partition which is periodically merged with the read-optimized and compressed main partition. This merge process introduces significant overheads and unacceptable downtimes in update intensive systems, aspiring to combine transactional and analytical workloads into one system.In the first part of the paper, we report data analyses of 12 SAP Business Suite customer systems. In the second half, we present an optimized merge process reducing the merge overhead of current systems by a factor of 30. Our linear-time merge algorithm exploits the underlying high compute and bandwidth resources of modern multi-core CPUs with architecture-aware optimizations and efficient parallelization. This enables compressed in-memory column stores to handle the transactional update rate required by enterprise applications, while keeping properties of read-optimized databases for analytic-style queries.},
+ author = {Krueger, Jens and Kim, Changkyu and Grund, Martin and Satish, Nadathur and Schwalb, David and Chhugani, Jatin and Plattner, Hasso and Dubey, Pradeep and Zeier, Alexander},
+ doi = {10.14778/2047485.2047491},
+ issn = {2150-8097},
+ issue_date = {September 2011},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1},
+ numpages = {12},
+ pages = {61–72},
+ publisher = {VLDB Endowment},
+ title = {Fast updates on read-optimized databases using multi-core CPUs},
+ url = {https://doi.org/10.14778/2047485.2047491},
+ volume = {5},
+ year = {2011}
+}

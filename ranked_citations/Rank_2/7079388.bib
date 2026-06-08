@@ -1,0 +1,14 @@
+@article{7079388,
+ abstract = {Embedded transaction design inside solid state drives (SSDs) is an attractive way to support system consistency with low overhead due to the no-overwrite property of flash memory. Recent research proposes shadow paging variants to reduce write traffic to SSDs for longer lifetime while leveraging the random performance of SSDs. However, writes in transactions usually are small, and the page-aligned shadow paging protocols still incur high write amplification, which hurts SSD lifetime. In this paper, we propose an embedded transaction protocol, DiffTx, which differentially logs partial page updates in a write-ahead logging way and writes full page updates in a shadow paging way, aiming at low write amplification. DiffTx further improves transaction performance using two techniques. First, by clustering mapping metadata of full page updates with differential data of partial page updates in a single record, DiffTx tracks pages of each transaction at low overhead. Second, DiffTx removes the write ordering on commit by delaying the completeness check of writes, leveraging the clean-state write property of flash memory. Experiments show that DiffTx improves throughput by 25.9 percent and halves write traffic on average compared to TxFlash, a typical embedded transaction protocol for flash memory.},
+ author = {Lu, Youyou and Shu, Jiwu and Guo, Jia and Zhu, Peng},
+ doi = {10.1109/TC.2015.2419664},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Ash;Protocols;Flash memories;Parallel processing;Indexing;Error correction codes;Solid State Drive;Flash Memory;Transactional SSD;Differential Transaction;Crash Recovery;Consistency;Solid state drive;flash memory;transactional SSD;differential transaction;crash recovery;consistency},
+ month = {Feb},
+ number = {2},
+ pages = {627-639},
+ title = {Supporting System Consistency with Differential Transactions in Flash-Based SSDs},
+ volume = {65},
+ year = {2016}
+}

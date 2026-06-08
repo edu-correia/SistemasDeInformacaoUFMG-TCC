@@ -1,0 +1,16 @@
+@article{Eugster2026,
+ abstract = {Implementing distributed cloud-based applications commonly at the basis of user-facing services goes through several challenges. In particular, such applications must be scalable to accommodate increasingly large user bases, providing consistency on accesses to shared data while executing on highly distributed concurrent commodity hardware. In addition, as these applications are subject to workload fluctuations, they must be elastic, i.e., able to scale out to accommodate workload increases as well as to scale back in to avoid over-provisioning and thus unnecessarily high costs in case of workload decreases. This article presents AEON, a programming framework that supports the development of scalable elastic cloud-based distributed applications. In short, AEON leverages two synergistic “levels” of programming: I. An application programming language (APL) allows programmers to conceive scalable applications using the popular actor paradigm, augmented with an intuitive notion of event to capture non-interleaved executions across multiple actors as needed for non-trivial shared data, all the while avoiding error-prone manual concurrency control. That is, based on a simple type-based ownership analysis asserting that references in AEON applications follow a DAG-based referencing structure, events are executed efficiently in a serializable fashion leveraging a lightweight synchronization protocol which is also exploited for creating consistent snapshots of the distributed application’s shared data. II. An elasticity programming language (EPL) allows application managers to define policies for guiding efficient fine-grained automated scaling—in and out—of applications at runtime. While these policies refer to applications written with I, they only refer to high-level abstractions in those (e.g., types of actors and methods), are inversely not referred to by them, and avoid side-effects to minimize effects on application performance. After presenting our programming framework with its language design choices and runtime system implementation, we present a study applying it to several use cases, and evaluate its performance. In short, our application programming language (APL)’s synchronization model scales better than manual locking or the use of automated traditional two-phase locking with existing actor languages, or the use of an external transactional store; under workload fluctuations our elasticity programming language (EPL) allows programs to be executed with significantly improved performance without increased resource usage, or with similar performance but significantly fewer resources. © 2026 Copyright held by the owner/author(s).},
+ author = {Eugster, Patrick and Ravi, Srivatsan and Sang, Bo},
+ doi = {10.1145/3777545},
+ journal = {ACM Transactions on Computer Systems},
+ note = {Cited by: 0; All Open Access; Hybrid Gold Open Access},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Programming Scalable Elastic Services with AEON},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105038431867?origin=resultslist},
+ volume = {44},
+ year = {2026}
+}

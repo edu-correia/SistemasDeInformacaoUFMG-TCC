@@ -1,0 +1,14 @@
+@conference{Sarkar2024165,
+ abstract = {Sparse Mixture of Expert (SMoE) models have emerged as a scalable alternative to dense models in language modeling. These models use conditionally activated feedforward subnetworks in transformer blocks, allowing for a separation between total model parameters and per-example computation. However, large token-routed SMoE models face a significant challenge: during inference, the entire model must be used for a sequence or a batch, resulting in high latencies in a distributed setting that offsets the advantages of per-token sparse activation. Our research explores task-specific model pruning to inform decisions about designing SMoE architectures, mainly modulating the choice of expert counts in pretraining. We investigate whether such pruned models offer advantages over smaller SMoE models trained from scratch, when evaluating and comparing them individually on tasks. To that end, we introduce an adaptive task-aware pruning technique UNCURL to reduce the number of experts per MoE layer in an offline manner post-training. Our findings reveal a threshold pruning factor for the reduction that depends on the number of experts used in pretraining, above which, the reduction starts to degrade model performance. These insights contribute to our understanding of model design choices when pretraining with SMoE architectures, particularly useful when considering task-specific inference optimization for later stages. © 2024 Proceedings of Machine Learning Research.},
+ author = {Sarkar, Soumajyoti and Lausen, Leonard and Cevher, Volkan and Zha, Sheng and Brox, Thomas and Karypis, George},
+ journal = {Proceedings of Machine Learning Research},
+ note = {Cited by: 0},
+ pages = {165 - 181},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Revisiting SMoE Language Models by Evaluating Inefficiencies with Task Specific Expert Pruning},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85216792376?origin=resultslist},
+ volume = {262},
+ year = {2024}
+}

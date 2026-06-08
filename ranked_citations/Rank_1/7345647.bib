@@ -1,0 +1,14 @@
+@inproceedings{7345647,
+ abstract = {In this paper we introduce a workflow-based aligner for fast and accurate mapping of short RNA sequences on a cluster of server nodes equipped with multicore processors. Our solution extends HPG Aligner BW, a sequencer that employs the Burrows-Wheeler transform to map a large number of RNA fragments (reads) rapidly, combined with the Smith-Waterman algorithm to deal with conflictive reads. HPG Aligner BW is organized as three consecutive workflows that incrementally build a meta-exon and a splice junctions structure with the information of mapped reads and discovered splice junctions, respectively. This information is in turn leveraged to align difficult reads that could not been mapped during previous stages. The message-passing extension of HPG Aligner BW distributes the workload among the nodes of a cluster, efficiently merging the partitioned meta-exon and splice junctions structures in order to preserve the aligner sensitivity, while exploiting multi-threading to take advantage of all the processor cores available in the servers.},
+ author = {Martínez, Héctor and Barrachina, Sergio and Castillo, Maribel and Tárraga, Joaquín and Medina, Ignacio and Dopazo, Joaquín and Quintana-Ortí, Enrique S.},
+ booktitle = {2015 IEEE Trustcom/BigDataSE/ISPA},
+ doi = {10.1109/Trustcom.2015.631},
+ issn = {},
+ keyword = {Junctions;Genomics;Bioinformatics;RNA;Servers;Multicore processing;Program processors;RNA;short-read alignment;Burrows-Wheeler transform;Smith-Watermans algorithm;high performance computing;multicore processors;clusters},
+ month = {Aug},
+ number = {},
+ pages = {190-195},
+ title = {Scalable RNA Sequencing on Clusters of Multicore Processors},
+ volume = {3},
+ year = {2015}
+}

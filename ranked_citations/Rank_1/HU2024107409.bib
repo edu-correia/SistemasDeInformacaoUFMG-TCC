@@ -1,0 +1,22 @@
+@article{HU2024107409,
+ abstract = {Context:
+Fault localization (FL) techniques are employed to identify the relationship between program statements and failures by analyzing runtime information. They rely on the statistics of input data to explore the underlying correlation rooted in it. Consequently, the quality of input data is of utmost importance for FL. However, in practice, passing tests significantly outnumber failing tests regarding a fault. This leads to a class imbalance challenge that can adversely affect the effectiveness of FL.
+Objective:
+To tackle the issue of imbalanced data in fault localization, we propose PRAM: a deeP semantic-awaRe dAta augmentation Method to improve the effectiveness of FL methods.
+Method:
+PRAM utilizes program dependencies to enhance the semantic context, thus showing how a failure is caused. Then, PRAM employs mixup method to synthesize new failing test samples by merging two real failing test cases with a random ratio to balance the input data. Finally, PRAM feeds the balanced data consisting of synthesized failing test cases and original test cases to FL techniques. To evaluate the effectiveness of PRAM, we conducted large-scale experiments on 330 versions of nine large-sized real programs for six state-of-the-art FL methods, two data optimization methods and two data augmentation methods.
+Results:
+Our experimental results show that PRAM outperforms in most cases for Top-K metrics and reduces the number of checked statements from 40.38% to 80.04% compared with the original FL methods. Furthermore, PRAM reduces the checked statements from 16.92% to 56.98% for data optimization methods and from 12.48% to 26.82% for data augmentation methods.
+Conclusion:
+The experimental results show that PRAM is not only more effective than the original FL methods but also more effective than two representative data optimization methods and two data augmentation methods, which indicates that PRAM is a universal effective data augmentation method for various FL methods.},
+ author = {Jian Hu and Yan Lei},
+ doi = {https://doi.org/10.1016/j.infsof.2024.107409},
+ issn = {0950-5849},
+ journal = {Information and Software Technology},
+ keyword = {Imbalanced data, Fault localization, Semantics-aware, Data augmentation},
+ pages = {107409},
+ title = {A deep semantics-aware data augmentation method for fault localization},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950584924000144},
+ volume = {168},
+ year = {2024}
+}

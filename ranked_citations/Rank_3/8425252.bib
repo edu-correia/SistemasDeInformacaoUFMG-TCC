@@ -1,0 +1,14 @@
+@inproceedings{8425252,
+ abstract = {GPUs continue to increase the number of streaming multiprocessors (SMs) to provide increasingly higher compute capabilities. To construct a scalable crossbar network-on-chip (NoC) that connects the SMs to the memory controllers, a cluster structure is introduced in modern GPUs in which several SMs are grouped together to share a network port. Because of network port sharing, clustered GPUs face severe NoC congestion, which creates a critical performance bottleneck. In this paper, we target redundant network traffic to mitigate GPU NoC congestion. In particular, we observe that in many GPU-compute applications, different SMs in a cluster access shared data. Issuing redundant requests to access the same memory location wastes valuable NoC bandwidth - we find on average 19.4% (and up to 48%) of the requests to be redundant. To reduce redundant NoC traffic, we propose intracluster coalescing (ICC) to merge memory requests from different SMs in a cluster. Our evaluation results show that ICC achieves an average performance improvement of 9.7% (and up to 33%) over a conventional design.},
+ author = {Wang, Lu and Zhao, Xia and Kaeli, David and Wang, Zhiying and Eeckhout, Lieven},
+ booktitle = {2018 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS.2018.00108},
+ issn = {1530-2075},
+ keyword = {Graphics processing units;Bandwidth;Instruction sets;Kernel;Merging;Hardware;Scheduling;cluster locality;coalescing;NoC pressure},
+ month = {May},
+ number = {},
+ pages = {990-999},
+ title = {Intra-Cluster Coalescing to Reduce GPU NoC Pressure},
+ volume = {},
+ year = {2018}
+}

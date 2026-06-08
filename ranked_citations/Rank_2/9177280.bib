@@ -1,0 +1,14 @@
+@article{9177280,
+ abstract = {Log-structured merge (LSM) tree key-value (KV) stores have been widely deployed in many NoSQL and SQL systems, serving online big data applications such as social networking, graph processing, machine learning, etc. The batch processing of sorted data merging (i.e., compaction) in LSM-tree key-value stores improves the write efficiency, and some lazy compaction methods have been proposed to accumulate more data within a batch. However, these batched writing methods lead to significant tail latency, which is unacceptable for online processing. Aiming to optimize both latency and throughput, we propose a novel Lower-level Driven Compaction (LDC) method which breaks the limitations of the traditional upper-level driven compaction manner and triggers practical compaction actions bottom-up, with the benefits of both decreasing the compaction granularity for smaller latency and reducing write amplification for higher throughput. Furthermore, we extend LDC to Adaptive LDC (ALDC) by adding an adaptive policy to adjust the key compaction threshold to fit the changes of workloads’ features. The experimental results indicate that ALDC reduces the tail latency significantly and meanwhile achieves a much higher and stable throughput compared with existing approaches.},
+ author = {Chai, Yunpeng and Chai, Yanfeng and Wang, Xin and Wei, Haocheng and Wang, Yangyang},
+ doi = {10.1109/TKDE.2020.3019264},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Compaction;Throughput;Writing;Merging;Performance evaluation;Big Data applications;Social networking (online);LSM-tree;compaction;KV store;tail latency;self-adaption},
+ month = {June},
+ number = {6},
+ pages = {2595-2609},
+ title = {Adaptive Lower-Level Driven Compaction to Optimize LSM-Tree Key-Value Stores},
+ volume = {34},
+ year = {2022}
+}

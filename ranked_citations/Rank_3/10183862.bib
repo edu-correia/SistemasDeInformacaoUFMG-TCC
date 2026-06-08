@@ -1,0 +1,14 @@
+@article{10183862,
+ abstract = {Vision Transformers (ViTs) split an image into fixed-size patches as tokens. This strategy has succeeded in computer vision tasks, but introduces considerable tokens similar in semantics and appearances. This work proposes Token Merger to spot redundant tokens and merge them into a compact representation to accelerate ViTs. For each forward inference, the Token Merger first identifies meta tokens to represent meaningful cues of the image content, then adaptively merges similar tokens into a uniform one referring to meta tokens. To pursue a reasonable tradeoff between accuracy and efficiency, we further introduce learnable gates to adaptively decide the token merge ratios of different layers. As a generalizable module, Token Merger can be easily plugged into different layers of ViTs to boost their efficiency. Visualizations show that Token Merger progressively merges tokens and finally learns a compact set of tokens representing clear semantics. Compared with token pruning methods, Token Merger is more effective in preserving meaning contextual cues, thus performs and generalizes substantially better in different vision tasks. Extensive experiments and comparisons with other state-of-the-art downsampling methods also demonstrate its promising performance. For instance, it reduces 95% tokens and accelerates the inference speed by 62%. Meanwhile, the ImageNet classification accuracy only drops by 0.4%. The code will be available.},
+ author = {Feng, Zhanzhou and Zhang, Shiliang},
+ doi = {10.1109/TIP.2023.3293763},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Corporate acquisitions;Transformers;Semantics;Task analysis;Visualization;Merging;Computational efficiency;Image recognition;transformer;sparese representation},
+ month = {},
+ number = {},
+ pages = {4156-4169},
+ title = {Efficient Vision Transformer via Token Merger},
+ volume = {32},
+ year = {2023}
+}

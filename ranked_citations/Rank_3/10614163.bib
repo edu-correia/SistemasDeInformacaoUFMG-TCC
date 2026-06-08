@@ -1,0 +1,14 @@
+@article{10614163,
+ abstract = {In the field of Post-Quantum Cryptography (PQC), which typically demands more memory and relatively lower performance compared to Elliptic-Curve Cryptography (ECC), recent studies have been actively focused on neon-based parallel implementations for the 64-bit ARMv8-based Cortex-A series. However, research into implementing PQC on the widely adopted 32-bit ARMv7-based Cortex-A series remains insufficient. In this paper, we present the first instance of optimized implementation of Crystals-Kyber and Crystals-Dilithium, a Key Encapsulation Mechanism (KEM) and a Digital Signature Algorithm (DSA) selected by National Institute of Standards and Technology (NIST) for standardization, on a 32-bit ARMv7-based Cortex-A device. For computational efficiency, we finely tune widely used signed Montgomery multiplication and Barrett multiplication methods to take full advantage of the computational capabilities of NEON engine, a kind of Single-Instruction-Multiple-Data (SIMD) extension, available on the target device. Particularly, we propose improvements to internal parameters and operational techniques in Montgomery and Barrett arithmetic to preserve parallel processing logic. Moreover, we present an optimized merging technique tailored for the NEON engine of ARMv7, aimed at accelerating Number Theoretic Transform (NTT)-based polynomial multiplication. Compared to the state-of-the-art codes of PQM4, our approach achieves significant performance enhancements in Kyber and Dilithium: 62% (54%) for NTT, 50% (62%) for Point multiplication, and 56% (55%) for inverse NTT (NTT-1). Regarding the complete schemes, our implementations outperform the vectorized reference implementations, showing improvements of 50% (14%) in Key Generation, 43% (41%) in Encapsulation (Signing), and 52% (21%) in Decapsulation (Verifying) processes for Kyber768 (Dilithium3), respectively.},
+ author = {Kim, Youngbeom and Yoon, Seungyong and Seo, Seog Chung},
+ doi = {10.1109/ACCESS.2024.3435451},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Optimization;Polynomials;Security;Parallel processing;Quantum cryptography;Elliptic curves;NIST Standards;Computational efficiency;Vector processors;ARMv7 Cortex-A series;NEON;efficient implementation;software optimization;vectorization implementation;embedded security;post-quantum cryptography;Crystals-Kyber;Crystals-Dilithium},
+ month = {},
+ number = {},
+ pages = {104414-104428},
+ title = {Vectorized Implementation of Kyber and Dilithium on 32-bit Cortex-A Series},
+ volume = {12},
+ year = {2024}
+}

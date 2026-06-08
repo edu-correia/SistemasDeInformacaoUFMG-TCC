@@ -1,0 +1,14 @@
+@inproceedings{11112970,
+ abstract = {Many cloud databases provide fine-grained regular snapshots and sparsely deleted snapshots based on importance, and dynamically maintain large-scale snapshots to ensure data security and mine the value of cold data. However, in existing snapshot technologies, the write amplification feature of Copy-on-Write (CoW) introduces additional expensive I/O operations in a cloud environment. In Redirect-on-Write (RoW), the modified data blocks are scattered among the snapshots, resulting in a dependency between the snapshots, which seriously affects the recovery performance. In this paper, we observed that access to snapshots has the characteristics of locality and continuity. We therefore propose an efficient Batch-Based Snapshot index, called BBS, which batches snapshot indexes according to database workload and access behavior of snapshots. Specifically, we use two key techniques: Shared-Subtrees Indexing and Batch-Based Dividing, to perform split dependency of the snapshot index. The snapshot index dependency chain is divided into batches, and there is no dependency on snapshot indexes between batches. In-batch snapshot indexes reduce memory overhead by sharing subtrees. The index can directly locate data blocks instead of iterative traversal. At the same time, the design of the snapshot index deletion method is adapted to the snapshot sparse deletion model. We have implemented a working system in Ceph. Evaluation results on datasets demonstrate that, compared with existing techniques, BBS can effectively balance the overhead between index memory capacity and recovery time.},
+ author = {Peng, Xiaoshuang and Fan, Xiaopeng and Cheng, Shi and Meng, Lingbin and Fu, Cuiyun and Zhou, Wenchao and Weng, Chuliang},
+ booktitle = {2025 IEEE 41st International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE65448.2025.00317},
+ issn = {2375-026X},
+ keyword = {Performance evaluation;Databases;Data security;Loading;Cows;Data engineering;Indexes;Iterative methods;Data mining;Indexing;Snapshot recovery;Index;Block device},
+ month = {May},
+ number = {},
+ pages = {4248-4261},
+ title = {BBS: Batch-Based Snapshot for the Cloud Database Backup},
+ volume = {},
+ year = {2025}
+}

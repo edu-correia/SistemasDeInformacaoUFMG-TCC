@@ -1,0 +1,17 @@
+@article{10.14778/2994509.2994513,
+ abstract = {In-memory caching of intermediate data and eager combining of data in shuffle buffers have been shown to be very effective in minimizing the re-computation and I/O cost in distributed data processing systems like Spark and Flink. However, it has also been widely reported that these techniques would create a large amount of long-living data objects in the heap, which may quickly saturate the garbage collector, especially when handling a large dataset, and hence would limit the scalability of the system. To eliminate this problem, we propose a lifetime-based memory management framework, which, by automatically analyzing the user-defined functions and data types, obtains the expected lifetime of the data objects, and then allocates and releases memory space accordingly to minimize the garbage collection overhead. In particular, we present Deca, a concrete implementation of our proposal on top of Spark, which transparently decomposes and groups objects with similar lifetimes into byte arrays and releases their space altogether when their lifetimes come to an end. An extensive experimental study using both synthetic and real datasets shows that, in comparing to Spark, Deca is able to 1) reduce the garbage collection time by up to 99.9%, 2) to achieve up to 22.7x speed up in terms of execution time in cases without data spilling and 41.6x speedup in cases with data spilling, and 3) to consume up to 46.6% less memory.},
+ author = {Lu, Lu and Shi, Xuanhua and Zhou, Yongluan and Zhang, Xiong and Jin, Hai and Pei, Cheng and He, Ligang and Geng, Yuanzhen},
+ doi = {10.14778/2994509.2994513},
+ issn = {2150-8097},
+ issue_date = {August 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {936–947},
+ publisher = {VLDB Endowment},
+ title = {Lifetime-based memory management for distributed data processing systems},
+ url = {https://doi.org/10.14778/2994509.2994513},
+ volume = {9},
+ year = {2016}
+}

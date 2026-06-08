@@ -1,0 +1,14 @@
+@article{10843851,
+ abstract = {Nowadays, meta-learning is the mainstream method for solving few-shot synthetic aperture radar (SAR) target classification, devoted to learning a lot of empirical knowledge from the source domain to quickly recognize the novel classes after seeing only a few samples. However, obtaining the source domain with sufficiently labeled SAR images is difficult, leading to limited transferable empirical knowledge from the source to the target domain. Moreover, most existing methods only rely on visual images to learn the targets' feature representations, resulting in poor feature discriminability in few-shot situations. To tackle the above problems, we propose a novel visual-semantic cooperative network (VSC-Net) that involves visual and semantic dual classification to compensate for the inaccuracy of visual classification through semantic classification. First, we design textual semantic descriptions of SAR targets to exploit rich semantic information. Then, the designed textual semantic descriptions are encoded by the text encoder of the pretrained large vision language model to obtain class semantic embeddings of targets. In the visual classification stage, we develop the semantic-based visual prototype calibration module to project the class semantic embeddings to the visual space to calibrate the visual prototypes, improving the reliability of the prototypes computed from a few support samples. Besides, semantic consistency loss is proposed to constrain the accuracy of the class semantic embeddings projected to the visual space. During the semantic classification stage, the visual features of query samples are mapped into the semantic space, and their classes are predicted via searching for the nearest class semantic embeddings. Furthermore, we introduce a visual indication loss to modify the semantic classification using the calibrated visual prototypes. Ultimately, query samples' classes are decided by merging the visual and semantic classification results. We conduct adequate experiments on the SAR target dataset, which validate VSC-Net's few-shot classification efficacy.},
+ author = {Wang, Siyuan and Wang, Yinghua and Zhang, Xiaoting and Zhang, Chen and Liu, Hongwei},
+ doi = {10.1109/JSTARS.2025.3530442},
+ issn = {2151-1535},
+ journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+ keyword = {Semantics;Visualization;Prototypes;Synthetic aperture radar;Radar polarimetry;Metalearning;Calibration;Training;Accuracy;Vectors;Few-shot;semantic;synthetic aperture radar (SAR);target classification;vision language model (VLM)},
+ month = {},
+ number = {},
+ pages = {6532-6550},
+ title = {Visual-Semantic Cooperative Learning for Few-Shot SAR Target Classification},
+ volume = {18},
+ year = {2025}
+}

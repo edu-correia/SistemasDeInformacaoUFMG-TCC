@@ -1,0 +1,14 @@
+@article{11506321,
+ abstract = {Structured pruning with fixed N:M sparsity ratios in large language models (LLMs) significantly constrains model expressivity, often leading to suboptimal accuracy. While supporting multiple N:M configurations can enhance representational flexibility, such a capability typically introduces substantial hardware complexity and overhead. To overcome these limitations, we first present FLOW, a flexible, layer-wise, outlier-density-aware N:M sparsity selection framework. FLOW adaptively determines the optimal N and M values per layer within a specified range by jointly considering the magnitude and distribution of outliers, thereby improving sparsity allocation and model fidelity. Extending this idea, we introduce FLOW++, which generalizes flexible N:M sparsity to the temporal domain for reasoning LLMs. FLOW++ enables temporal pruning by dynamically adapting sparsity patterns across reasoning thought types. To support efficient deployment of models with such dynamically varying sparsity patterns, we propose FlexCiM, a flexible, low-overhead, digital compute-in-memory (DCiM) architecture. FlexCiM partitions the DCiM macro into smaller submacros, which are adaptively aggregated and disaggregated through distribution and merging mechanisms for different values of N and M. We conduct experiments across different LLM families and state-space models and conclusively demonstrate that the proposed algorithm-hardware co-design framework achieves up to 36% higher accuracy,  $1.75\times $  faster inference, and  $1.5\times $  lower energy consumption compared to existing alternatives, establishing an effective balance between flexibility and hardware efficiency in sparse LLM inference. Code is available at: https://github.com/FLOW-open-project/FLOW},
+ author = {Ramachandran, Akshat and Kundu, Souvik and Raha, Arnab and Kundu, Shamik and Mathaikutty, Deepak A. and Krishna, Tushar},
+ doi = {10.1109/TVLSI.2026.3686720},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Feeds;Antennas;Broadcasting;Broadcast technology;Circuits;Very large scale integration;System-on-chip;Adders;Integrated circuits;Application specific integrated circuits;Compute-in-memory;dynamic N:M sparsity;efficient inference;sparse large language model (LLM) accelerator;sparsity},
+ month = {},
+ number = {},
+ pages = {1-11},
+ title = {Algorithm–Hardware Co-Design of Digital Compute-in-Memory Architecture Supporting Flexible and Temporal N:M Sparsity},
+ volume = {},
+ year = {2026}
+}

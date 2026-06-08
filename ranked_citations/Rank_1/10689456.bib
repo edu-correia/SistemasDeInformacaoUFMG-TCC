@@ -1,0 +1,14 @@
+@article{10689456,
+ abstract = {Pointer operations are common in programs written in modern programming languages such as C/C++ and Java. While widely used, pointer operations often suffer from bugs like null pointer exceptions that make software systems vulnerable and unstable. However, precisely verifying the absence of null pointer exceptions is notoriously slow as we need to inspect a huge number of pointer-dereferencing operations one by one via expensive techniques like SMT solving. We observe that, among all pointer-dereferencing operations in a program, a large number can be proven to be safe by lightweight preprocessing. Thus, we can avoid employing costly techniques to verify their nullity. The impacts of lightweight preprocessing techniques are significantly less studied and ignored by recent works. In this paper, we propose a new technique, BONA, which leverages the synergistic effects of two classic preprocessing analyses. The synergistic effects between the two preprocessing analyses allow us to recognize a lot more safe pointer operations before a follow-up costly nullity verification, thus improving the scalability of the whole null exception analysis. We have implemented our synergistic preprocessing procedure in two state-of-the-art static analyzers, KLEE and Pinpoint. The evaluation results demonstrate that BONA itself is fast and can finish in a few seconds for programs that KLEE and Pinpoint may require several minutes or even hours to analyze. Compared to the vanilla versions of KLEE and Pinpoint, BONA respectively enables them to achieve up to 1.6x and 6.6x speedup (1.2x and 3.8x on average) with less than 0.5% overhead. Such a speedup is significant enough as it allows KLEE and Pinpoint to check more pointer-dereferencing operations in a given time budget and, thus, discover over a dozen previously unknown null pointer exceptions in open-source projects.},
+ author = {Sun, Yi and Wang, Chengpeng and Fan, Gang and Shi, Qingkai and Zhang, Xiangyu},
+ doi = {10.1109/TSE.2024.3466551},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Static analysis;Codes;Computer bugs;Electronic mail;Detectors;Sun;Sensitivity;Null exception analysis;static analysis;dataflow analysis;symbolic execution;and path sensitivity},
+ month = {Nov},
+ number = {11},
+ pages = {3022-3036},
+ title = {Fast and Precise Static Null Exception Analysis With Synergistic Preprocessing},
+ volume = {50},
+ year = {2024}
+}

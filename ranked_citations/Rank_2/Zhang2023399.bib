@@ -1,0 +1,14 @@
+@conference{Zhang2023399,
+ abstract = {Pruning algorithms and sparse matrix-matrix multiplication (SpMM) kernels have been widely studied to accelerate DNN inference on GPUs. However, unstructured pruning spoils the regularity of data layout and incurs undesired speedup performance. Prior structured pruning methods remove weights coarsely and cause significant accuracy loss. In this work, we co-design Re-compact Pruning and SpMM kernel to achieve high acceleration while maintaining accuracy. Re-compact Pruning compacts both the sparse rows and columns with similar sparse patterns into dense blocks, on which the vector pruning is performed. An SpMM kernel is designed to fully leverage the regularity of the pruned matrix. It contains a Tile Padding operation to balance the workloads, a Tile Sorting operation to enable loop unrolling during compilation, and a Merge Write-back strategy to reduce the memory accesses. Experimental results show that our Re-compact Pruning and SpMM kernel outperform its counterparts by 4.53 ×, 4.44 ×, and 3.24 × for accelerating ResNet50, NMT, and Transformer, respectively. © 2023 IEEE.},
+ author = {Zhang, Yuling and Ren, Ao and Chen, Xianzhang and Lin, Qiu and Tan, Yujuan and Liu, Duo},
+ doi = {10.1109/ICCD58817.2023.00066},
+ journal = {Proceedings - IEEE International Conference on Computer Design: VLSI in Computers and Processors},
+ note = {Cited by: 1},
+ pages = {399 - 406},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Re-compact: Structured Pruning and SpMM Kernel Co-design for Accelerating DNNs on GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85182343937?origin=resultslist},
+ year = {2023}
+}

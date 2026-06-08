@@ -1,0 +1,17 @@
+@article{10.14778/3025111.3025120,
+ abstract = {Classic database indexes (e.g., B+-Tree), though speed up queries, suffer from two main drawbacks: (1) An index usually yields 5% to 15% additional storage overhead which results in non-ignorable dollar cost in big data scenarios especially when deployed on modern storage devices. (2) Maintaining an index incurs high latency because the DBMS has to locate and update those index pages affected by the underlying table changes. This paper proposes Hippo a fast, yet scalable, database indexing approach. It significantly shrinks the index storage and mitigates maintenance overhead without compromising much on the query execution performance. Hippo stores disk page ranges instead of tuple pointers in the indexed table to reduce the storage space occupied by the index. It maintains simplified histograms that represent the data distribution and adopts a page grouping technique that groups contiguous pages into page ranges based on the similarity of their index key attribute distributions. When a query is issued, Hippo leverages the page ranges and histogram-based page summaries to recognize those pages such that their tuples are guaranteed not to satisfy the query predicates and inspects the remaining pages. Experiments based on real and synthetic datasets show that Hippo occupies up to two orders of magnitude less storage space than that of the B+-Tree while still achieving comparable query execution performance to that of the B+-Tree for 0.1% -- 1% selectivity factors. Also, the experiments show that Hippo outperforms BRIN (Block Range Index) in executing queries with various selectivity factors. Furthermore, Hippo achieves up to three orders of magnitude less maintenance overhead and up to an order of magnitude higher throughput (for hybrid query/update workloads) than its counterparts.},
+ author = {Yu, Jia and Sarwat, Mohamed},
+ doi = {10.14778/3025111.3025120},
+ issn = {2150-8097},
+ issue_date = {November 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {4},
+ numpages = {12},
+ pages = {385–396},
+ publisher = {VLDB Endowment},
+ title = {Two birds, one stone: a fast, yet lightweight, indexing scheme for modern database systems},
+ url = {https://doi.org/10.14778/3025111.3025120},
+ volume = {10},
+ year = {2016}
+}

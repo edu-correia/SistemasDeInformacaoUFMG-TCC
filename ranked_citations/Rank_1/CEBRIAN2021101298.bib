@@ -1,0 +1,13 @@
+@article{CEBRIAN2021101298,
+ abstract = {Column-level segmentation of depth images is an energy-efficient strategy to perform 3D perception in autonomous-driving systems. These systems must perform 3D perception in real time through a pipeline of multiple tasks, which benefits from proposals that prioritize low complexity and short execution time over high levels of accuracy. For many years, column-level segmentation of depth images has been solved with the Stixels proposal, which uses an optimization algorithm with O(n2) computational complexity. This manuscript is an extended version of the ICCS paper “GPU-accelerated RDP Algorithm for Data Segmentation” (Cebrian and Moure, 2020). We present an alternative column-level segmentation proposal based on the RDP split-and-merge strategy, which has O(n⋅logn) computational complexity. The qualitative results obtained with the KITTI and Synthia image datasets evidence that our proposal can generate depth representations with greater compression and accuracy than the Stixels proposal. More importantly, we engineered a massively parallel design optimized for the low-power, GPU-accelerated embedded systems typically used for autonomous driving applications. For the datasets above, our proposal runs on a low-power NVIDIA Volta GPU 22 to 68 times faster than Stixels GPU-accelerated code. Additionally, our code achieves higher performance speedups as the computational capabilities and size of depth images increase.},
+ author = {P. Cebrian and J.C. Moure},
+ doi = {https://doi.org/10.1016/j.jocs.2021.101298},
+ issn = {1877-7503},
+ journal = {Journal of Computational Science},
+ keyword = {GPU acceleration, Data segmentation, Segmented parallel reduction},
+ pages = {101298},
+ title = {Massively-parallel column-level segmentation of depth images},
+ url = {https://www.sciencedirect.com/science/article/pii/S1877750321000016},
+ volume = {50},
+ year = {2021}
+}

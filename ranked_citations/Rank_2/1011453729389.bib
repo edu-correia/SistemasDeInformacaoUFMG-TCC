@@ -1,0 +1,18 @@
+@article{10.1145/3729389,
+ abstract = {Binary diffing technique aims to identify differences/similarities in executable files without source code access. Its potential applications in various software security tasks, such as vulnerability search, code clone detection, and malware analysis have generated a large body of literature over the past few years. A recurring theme in binary diffing research is to evaluate the resilience against the impact of compiler optimization, which is the most common source leading to syntactic differences in binary code. Despite claims by most binary diffing papers that they are immune to compiler optimization, recent studies have highlighted a pressing need for the research community to revisit these optimization-resilience claims.   In this paper, we investigate peephole optimization's impact on binary diffing. Mainstream compilers feature a multitude of peephole optimization rules, facilitating local rewriting of input programs to replace instruction sequences within a window (i.e., peephole) with shorter and/or faster equivalents. Our research reveals that peephole optimization primarily affects binary code differences at the intra-procedural level, which contradicts the assumptions made by basic-block centric comparison approaches. We customized an LLVM translation validation tool to investigate the impact of peephole optimization from the overall optimization process. Our experimental results demonstrate 1) peephole optimization modifies binary code during the whole optimization process, and 2) no existing basic-block centric comparison tools can properly deal with all changes caused by peephole optimization, leading to further performance loss in downstream applications. Our study introduces a "peephole-oriented" test suite, designed to isolate and measure the impact of peephole optimizations on binary code. This suite provides a new perspective for evaluating the resilience of binary diffing tools against subtle, intra-procedural code changes, setting a new benchmark for future tool development. Our findings reveal critical insights that challenge existing assumptions in binary diffing, highlighting the need for more robust analysis techniques.},
+ address = {New York, NY, USA},
+ articleno = {FSE119},
+ author = {Ren, Xiaolei and Ren, Mengfei and Lei, Yu and Ming, Jiang},
+ doi = {10.1145/3729389},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Binary Code Differences, Peephole Optimization, Software Security},
+ month = {June},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Revisiting Optimization-Resilience Claims in Binary Diffing Tools: Insights from LLVM Peephole Optimization Analysis},
+ url = {https://doi.org/10.1145/3729389},
+ volume = {2},
+ year = {2025}
+}

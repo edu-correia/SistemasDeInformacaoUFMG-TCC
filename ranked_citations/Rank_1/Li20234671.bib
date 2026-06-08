@@ -1,0 +1,16 @@
+@article{Li20234671,
+ abstract = {Sparse matrix-matrix multiplication (SpMM) is an important kernel in multiple areas, e.g., data analytics and machine learning. Due to the low on-chip memory requirement, the consistent data format, and the simplified control logic, Gustavson's algorithm is a promising backbone algorithm for SpMM on hardware accelerators. However, the off-chip memory traffic still limits the performance of the algorithm, especially on embedded FPGAs. Previous researchers optimize Gustavson's algorithm targeting high bandwidth memory-based architectures and their solutions cannot be directly applied to embedded FPGAs with traditional DDRs. In this work, we propose an efficient Gustavson-based SpMM accelerator on embedded FPGAs. The proposed design fully considers the feature of off-chip memory access on embedded FPGAs and the dataflow of Gustavson's algorithm. First, we analyze the parallelism of the algorithm and propose to perform the algorithm with element-wise parallelism, which reduces the idle time of processing elements caused by synchronization. Further, we show a counter-intuitive example that the traditional cache leads to worse performance. Then, we propose a novel access pattern-aware cache scheme called SpCache, which provides quick responses to reduce bank conflicts caused by irregular memory accesses and combines streaming and caching to handle requests that access ordered elements of unpredictable length. Moreover, we propose to perform the merge on part of partial results, which removes some redundant merges in the naive implementation and has little postprocessing overhead. Finally, we conduct experiments on the Xilinx Zynq-UltraScale ZCU106 platform with a set of benchmarks from the SuiteSparse matrix collection. The experimental results show that the proposed design achieves an average 1.75× performance speedup compared to the baseline.  © 1982-2012 IEEE.},
+ author = {Li, Shiqing and Huai, Shuo and Liu, Weichen},
+ doi = {10.1109/TCAD.2023.3281719},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 19; All Open Access; Green Open Access},
+ number = {12},
+ pages = {4671 - 4680},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An Efficient Gustavson-Based Sparse Matrix-Matrix Multiplication Accelerator on Embedded FPGAs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85161016785?origin=resultslist},
+ volume = {42},
+ year = {2023}
+}

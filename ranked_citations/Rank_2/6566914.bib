@@ -1,0 +1,14 @@
+@inproceedings{6566914,
+ abstract = {Virtual routers are increasingly being studied, as an important building block to enable network virtualization. In a virtual router platform, multiple virtual router instances coexist, each having its own FIB (Forwarding Information Base). In this context, memory scalability and route updates are two major challenges. Existing approaches addressed one of these challenges but not both. In this paper, we present a trie merging approach, which compactly represents multiple FIBs by a merged trie and a table of next-hop-pointer arrays to achieve good memory scalability, while supporting fast incremental updates by avoiding the use of leaf pushing during merging. Experimental results show that storing the merged trie requires limited memory space, e.g., we only need 10MB memory space to store the merged trie for 14 full FIBs from IPv4 core routers, achieving a memory reduction by 87% when compared to the total size of the individual tries. We implement our approach in an SRAM (Static Random Access Memory)-based lookup pipeline. Using our approach, an on-chip SRAM-based lookup pipeline with 5 external stages is sufficient to store the 14 full IPv4 FIBs. Furthermore, our approach can guarantee a minimum update overhead of one write bubble per update, as well as a high lookup throughput of one lookup per clock cycle, which corresponds to a throughput of 251 million lookups per second in the implementation.},
+ author = {Luo, Layong and Xie, Gaogang and Salamatian, Kavé and Uhlig, Steve and Mathy, Laurent and Xie, Yingke},
+ booktitle = {2013 Proceedings IEEE INFOCOM},
+ doi = {10.1109/INFCOM.2013.6566914},
+ issn = {0743-166X},
+ keyword = {Arrays;Merging;Memory management;Scalability;IP networks;Routing},
+ month = {April},
+ number = {},
+ pages = {1222-1230},
+ title = {A trie merging approach with incremental updates for virtual routers},
+ volume = {},
+ year = {2013}
+}

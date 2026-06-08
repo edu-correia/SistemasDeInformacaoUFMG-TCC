@@ -1,0 +1,14 @@
+@article{11037505,
+ abstract = {DNS resolvers are an important measurement targets in the IPv4/IPv6 Internet for cybersecurity and network management. However, due to the vast address space of IPv6, it is infeasible to discover IPv6 DNS resolvers using brute-force Internet-wide scanning as in IPv4. To address this issue, researchers have developed target generation algorithms (TGAs) to discover active targets in the IPv6 address space. However, most TGAs utilize ICMP as the probing protocol, and depend on large, high-quality ICMP seed address datasets. When the same TGA methods are applied to the UDP/53 protocol, which has a limited number of seed addresses, the efficiency of discovering DNS resolvers is low. To solve this issue, we developed 6Hound to efficiently discover DNS resolvers in the IPv6 Internet. To mitigate the scarcity of UDP/53 seed addresses, we proposed the Pattern-merged Tree, which strategically expands the scanning space by utilizing ICMP seed addresses. To efficiently discover de-aliased active addresses within these merged patterns, we proposed a hierarchical multi-armed bandit to control the distribution of probe packets. We introduced the Sliced Address Generation algorithm and a dynamic alias detection mechanism to enhance the hit rate of each detection round and avoid the misleading effects of aliased addresses. In the experiments conducted in the native IPv6 Internet, we discovered about a million de-aliased active DNS resolver addresses under a budget scale of 50M, which is 110% to 465% higher than the state-of-the-art baseline methods.},
+ author = {Zhang, Zhichao and Cheng, Yanan and Zhang, Zhaoxin and Liu, Xinran and Li, Ning},
+ doi = {10.1109/TNSM.2025.3580281},
+ issn = {1932-4537},
+ journal = {IEEE Transactions on Network and Service Management},
+ keyword = {Domain Name System;Internet;Heuristic algorithms;Protocols;Deep learning;6G mobile communication;Training;Resource management;Reinforcement learning;Probes;IPv6 scanning;DNS resolver;Internet-wide scanning;reinforcement learning;target generation},
+ month = {Oct},
+ number = {5},
+ pages = {4336-4354},
+ title = {6Hound: An Efficient IPv6 DNS Resolver Discovery Model Based on Reinforcement Learning},
+ volume = {22},
+ year = {2025}
+}

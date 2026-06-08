@@ -1,0 +1,14 @@
+@article{11316404,
+ abstract = {Code smell detection is critical for maintaining software quality and enabling effective refactoring, yet much prior work identifies only one smell at a time. This single-label framing misses the real-world complexity where a code element can exhibit multiple co-occurring smells. We address this gap by creating a unified multi-label dataset that combines four existing datasets at two levels—method-level and class-level—covering Long Method (LM), Feature Envy (FE), God Class (GC), and Data Class (DC). Our approach models correlations (co-occurrence) among these smells and links them to feature-importance analyses to identify the metrics that drive each label. We evaluate three multi-label strategies—Binary Relevance, Label Powerset, and Classifier Chains—paired with Decision Tree and Random Forest classifiers. We use a 5-fold stratified cross-validation for each single-level dataset. To prevent data leakage, we implement a 5-fold GroupKFold for the unified dataset, along with an in-fold grid search for hyperparameter tuning. Performance is reported via Jaccard, Hamming Loss, and Exact Match. On the unified Truth-only dataset, Classifier Chains with Random Forest achieves the highest Jaccard (0.3351), while Binary Relevance with Random Forest attains the lowest Hamming Loss (0.0288) and the highest Exact Match (0.8847). Overall, the unified dataset enables simultaneous detection of multiple smells in one model and protocol, reveals where inter-label correlations are informative (LM–FE) and where they are not (GC–DC), and maintains distribution properties for fair comparison, yielding results that are more realistic and easier to reuse.},
+ author = {Alhadeaf, Haneen M. and Alrashoud, Mubarak},
+ doi = {10.1109/ACCESS.2025.3648907},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Codes;Iron;Measurement;Feature extraction;Merging;Correlation;Multi label classification;Complexity theory;Software quality;Software engineering;Code smells;code smell correlation;code smells detection;feature importance;multi-label classification;software quality},
+ month = {},
+ number = {},
+ pages = {714-737},
+ title = {A Unified Multi-Label Code Smell Dataset for Code Smell Detection at Different Granularities},
+ volume = {14},
+ year = {2026}
+}

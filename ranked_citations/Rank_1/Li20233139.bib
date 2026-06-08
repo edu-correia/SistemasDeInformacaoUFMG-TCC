@@ -1,0 +1,16 @@
+@article{Li20233139,
+ abstract = {Object detection is a fundamental computer vision task that simultaneously predicts the category and localization of the targets of interest. Recently one-stage (also termed 'dense') detectors have gained much attention over two-stage ones due to their simple pipeline and friendly application to end devices. Dense object detectors basically formulate object detection as dense classification and localization (i.e., bounding box regression). The classification is usually optimized by Focal Loss and the box location is commonly learned under Dirac delta distribution. A recent trend for dense detectors is to introduce an individual prediction branch to estimate the quality of localization, which facilitates the classification to improve detection performance. This paper delves into the representations of the above three fundamental elements: quality estimation, classification and localization. Three problems are discovered in existing practices, including (1) the inconsistent usage of the quality estimation and classification between training and inference, (2) the inflexible Dirac delta distribution for localization, and (3) the deficient and implicit guidance for accurate quality estimation. To address these problems, we design new representations for these elements. Specifically, we merge the quality estimation into the class prediction vector to form a joint representation, use a vector to represent arbitrary distribution of box locations, and extract discriminant feature descriptors from the distribution vector for more reliable quality estimation. The improved representations eliminate the inconsistency risk and accurately depict the flexible distribution in real data, but contain continuous labels, which is beyond the scope of Focal Loss. We then propose Generalized Focal Loss (GFocal) that generalizes Focal Loss from its discrete form to the continuous version for successful optimization. Extensive experiments demonstrate the effectiveness of our method, without sacrificing the efficiency both in training and inference. Based on GFocal, we construct a considerably fast and lightweight detector termed NanoDet under mobile settings, which is 1.8 AP higher, 2x faster and 6x smaller than scaled YoloV4-Tiny. © 1979-2012 IEEE.},
+ author = {Li, Xiang and Lv, Chengqi and Wang, Wenhai and Li, Gang and Yang, Lingfeng and Yang, Jian},
+ doi = {10.1109/TPAMI.2022.3180392},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ note = {Cited by: 268},
+ number = {3},
+ pages = {3139 - 3153},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Generalized Focal Loss: Towards Efficient Representation Learning for Dense Object Detection},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85132743903?origin=resultslist},
+ volume = {45},
+ year = {2023}
+}

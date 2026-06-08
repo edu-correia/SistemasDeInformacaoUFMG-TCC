@@ -1,0 +1,14 @@
+@inproceedings{4756118,
+ abstract = {Terrains are challenging geometric objects for real-time rendering and interactive manipulation. State-of-the-art terrain rendering systems use custom, multi-resolution, representations like geometry clipmaps for fast rendering on the GPU. In this paper, we present a system that exploits the power and flexibility of the modern GPUs to store, render, and manipulate terrains with minimal CPU involvement. The central idea is to use a regular-grid representation and fixed size blocks/tiles that change in resolution. The potentially visible portion of the terrain is cached at the highest necessary resolution and is rendered from the GPU. The CPU sends a light geometry template which is expanded by the Geometry Shader to the triangles, using the heights stored in the GPU Cache. The CPU performs a coarse culling of the tiles with the GPU performing fine culling. The GPU cache is updated continuously as the viewpoint changes. Our system enables the terrain to be modified procedurally or edited interactively on the GPU with no CPU involvement. The terrain can also interact with a large number of external objects in real-time entirely within the GPU. We achieve a consistent rendering rate of 100 frames per second with terrain modification and interactions as well as a triangle rate of upto 350 million per second on an Nvidia 8800 GTX GPU for large terrains, with a CPU load below 10%.},
+ author = {Bhattacharjee, Shiben and Patidar, Suryakant and Narayanan, P.J.},
+ booktitle = {2008 Sixth Indian Conference on Computer Vision, Graphics & Image Processing},
+ doi = {10.1109/ICVGIP.2008.85},
+ issn = {},
+ keyword = {Geometry;Rendering (computer graphics);Tiles;Information technology;Physics;Computer vision;Computer graphics;Image processing;Aerospace simulation;Geographic Information Systems;Terrain Rendering;Terrain;GPU Techniques;GPU;Physics on terrain;Terrain Editing},
+ month = {Dec},
+ number = {},
+ pages = {551-559},
+ title = {Real-Time Rendering and Manipulation of Large Terrains},
+ volume = {},
+ year = {2008}
+}

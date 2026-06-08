@@ -1,0 +1,14 @@
+@inproceedings{9460540,
+ abstract = {To satisfy high reliability accompanied by space efficiency requirements, erasure coding is elected to substitute replication as a redundancy mechanism of in-memory clusters. More often than not, the use of erasure coding is limited to read-intensive applications, in which data in erasure-coded clusters are rarely updated. The essential rationale is that update penalty incurred by parity-synchronizations makes long write latency compared with read latency counterpart.In this paper, we propose F-Write: a fast RDMA-supported write optimization scheme for erasure-coded in-memory clusters. It entails two distinct features: 1) an extended version of consistency protocol called Fast2PC is created. It directly modifies remote memory regions using one-sided WRITE verb provided by RDMA to implement the operations of transaction log, and records multiple transactions in the log to submit together, effectively curtailing network latency; 2) a speculative update approach is given to substitute immediate update. Aggregated undo transactions are handled speculatively to synchronize parity blocks in the background when parity blocks are needed. For multiple writes to an identical data block at different times-tamps, only the original and the latest data blocks are involved in calculating parity blocks, thus mitigating encoding latency. Experimental results indicate that F-Write has lower latency, higher throughput compared to the candidate write schemes. Moreover, the impact on recovery time is negligible. Specifically, under the update-intensive workloads, F-Write cuts down write latency by more than 61%, thereby boosting system throughput by a factor of at least 2.6x.},
+ author = {Xu, Bin and Huang, Jianzhong and Cao, Qiang and Qin, Xiao and Xie, Ping},
+ booktitle = {2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS49936.2021.00091},
+ issn = {1530-2075},
+ keyword = {Distributed processing;Protocols;Redundancy;Throughput;Boosting;Encoding;Synchronization;In-memory cluster;Erasure encoding;Remote direct memory access;Write optimization},
+ month = {May},
+ number = {},
+ pages = {817-826},
+ title = {F-Write: Fast RDMA-supported Writes in Erasure-coded In-memory Clusters},
+ volume = {},
+ year = {2021}
+}

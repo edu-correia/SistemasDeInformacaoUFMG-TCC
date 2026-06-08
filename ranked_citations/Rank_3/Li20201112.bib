@@ -1,0 +1,15 @@
+@conference{Li20201112,
+ abstract = {—Secondary indexing is highly demanded for key-value stores by many applications to accelerate query performance. Current secondary indices on key-value stores are typically built on top of the primary index. In a secondary key query, the primary index has to be accessed to fetch the records, with the retrieved primary keys from the secondary index. The record fetching process invokes lots of point lookups in the primary index and exacerbates the read amplification. In this paper, we present SineKV, a decoupled Secondary indexing Key-Value store, aiming to avoid fetching records from the primary index and improve the secondary key query performance. Firstly, SineKV separates the records from the indices and keeps each index pointing to the record values independently. Secondly, SineKV proposes a mapping-based lazy index maintenance strategy to ensure the consistency of secondary indices. Finally, SineKV leverages the CMB feature of the underlying NVMe SSDs to guarantee crash consistency. We implement and evaluate SineKV against LevelDB and WiscKey based designs. The evaluations show SineKV outperforms LevelDB and WiscKey based systems by up to 6.12× and 2.78× under microbenchmark and mixed workloads. ©2020 IEEE},
+ author = {Li, Fei and Lu, Youyou and Yang, Zhe and Shu, Jiwu},
+ doi = {10.1109/ICDCS47774.2020.00071},
+ journal = {Proceedings - International Conference on Distributed Computing Systems},
+ note = {Cited by: 17},
+ pages = {1112 - 1122},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SineKV: Decoupled secondary indexing for lsm-based key-value stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85101959914?origin=resultslist},
+ volume = {2020-November},
+ year = {2020}
+}

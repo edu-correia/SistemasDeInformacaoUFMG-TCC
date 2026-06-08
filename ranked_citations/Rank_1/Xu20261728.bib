@@ -1,0 +1,15 @@
+@conference{Xu20261728,
+ abstract = {In this paper, we consider the problem of efficiently serving multi-tenant requests for large language models (LLMs) equipped with compositions of multiple Low-Rank Adaptation (LoRA) adapters, aiming to optimize inference throughput, latency, and GPU memory usage. Existing multi-tenant inference systems are primarily architected for a one-to-one mapping between requests and single adapters, limiting their efficiency in handling compositions of multiple LoRA adapters. To address these issues, we propose DyMerge-LoRA, a novel inference serving system specifically designed for high-throughput multi-tenant scenarios by dynamically fusing corresponding LoRA adapters on the GPU. DyMerge-LoRA introduces a Base Adapter Manager (BAM) for efficient GPU memory management of individual basic adapters, a LoRA-Aware Greedy Scheduler (LAG) for batching, and a Mapping-based Adapter Fusion Matrix-Vector Multiplication (MAF-MVM) kernel for high computational throughput. Experimental evaluations conducted on multiple setups demonstrate that DyMerge-LoRA achieves up to 1.1-4× improvement in inference throughput compared to state-of-the-art methods, significantly reduces TTFT, and effectively mitigates GPU memory consumption, validating its effectiveness and performance advantages under diverse workload conditions.  © 2026 Owner/Author.},
+ author = {Xu, Rui and Chen, Long and Lao, Huazheng and Zhang, Jinquan and Zhu, Xia},
+ doi = {10.1145/3770854.3780270},
+ journal = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ note = {Cited by: 0},
+ pages = {1728 - 1738},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DyMerge-LoRA: On-GPU Post-Merge Fusion for High-Throughput Multi-Tenant Composite LoRA Serving},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105038082772?origin=resultslist},
+ volume = {1-A},
+ year = {2026}
+}

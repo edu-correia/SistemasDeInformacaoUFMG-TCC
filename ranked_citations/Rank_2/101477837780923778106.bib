@@ -1,0 +1,17 @@
+@article{10.14778/3778092.3778106,
+ abstract = {Incremental querying of multiple concurrent patterns in dynamic graphs is essential for various real-world applications. However, existing solutions face two limitations, particularly in multi-core architecture. First, performance isolation deteriorates under concurrent queries due to coarse-grained scheduling strategies, where long-running queries block shorter ones. Second, these approaches struggle with generating high-quality query plans for multi-query graphs efficiently. To address these limitations, we introduce AQUILA, a high-concurrency system designed for efficient multi-query processing in dynamic graphs on multi-core. First, AQUILA decouples concurrent queries into a combination of operators with specific functionalities, and these operators transmit intermediate results to each other, forming a matching flow. Operator-level workload and resource scheduling strategies are employed to achieve performance isolation. Second, AQUILA adopts the matching tree to represent the query plan. A greedy algorithm is designed to construct matching trees by jointly extracting common subgraphs and generating an efficient matching order, enhanced by subgraph relation optimizations with the subgraph relation graph. Extensive experiments demonstrate that AQUILA outperforms existing approaches by 1–3 orders of magnitude in real-time query metrics.},
+ author = {Zou, Ziqi and Zhang, Hao and Yao, Jiaxin and Zhao, Kangfei and Zhang, Zhiwei and Gao, Sen and Hao, Jingpeng and Yuan, Ye and Wang, Guoren},
+ doi = {10.14778/3778092.3778106},
+ issn = {2150-8097},
+ issue_date = {November 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {13},
+ pages = {468–480},
+ publisher = {VLDB Endowment},
+ title = {Aquila: A High-Concurrency System for Incremental Graph Query},
+ url = {https://doi.org/10.14778/3778092.3778106},
+ volume = {19},
+ year = {2025}
+}

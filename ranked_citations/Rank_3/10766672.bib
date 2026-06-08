@@ -1,0 +1,14 @@
+@article{10766672,
+ abstract = {Robots reason about the environment through dedicated representations. Popular choices for dense representations exploit Truncated Signed Distance Functions (TSDF) and Octree data structures. However, TSDF provides a projective or non-projective signed distance obtained directly from depth measurements that overestimate the Euclidean distance. Octrees, despite being memory efficient, require tree traversal and can lead to increased runtime in large scenarios. Other representations based on the Gaussian Process (GP) distance fields are appealing due to their probabilistic and continuous nature, but the computational complexity is a concern. In this letter, we present an online efficient mapping framework that seamlessly couples GP distance fields and the fast-access OpenVDB data structure. The key aspect is a latent Local GP Signed Distance Field (L-GPDF) contained in a local VDB structure that allows fast queries of the Euclidean distance, surface properties and their uncertainties for arbitrary points in the field of view. Probabilistic fusion is then performed by merging the inferred values of these points into a global VDB structure that is efficiently maintained over time. After fusion, the surface mesh is recovered, and a global GP Signed Distance Field (G-GPDF) is generated and made available for downstream applications to query accurate distance and gradients. A comparison with the state-of-the-art frameworks shows superior efficiency and accuracy of the inferred distance field and comparable reconstruction performance.},
+ author = {Wu, Lan and Le Gentil, Cedric and Vidal-Calleja, Teresa},
+ doi = {10.1109/LRA.2024.3505814},
+ issn = {2377-3766},
+ journal = {IEEE Robotics and Automation Letters},
+ keyword = {Accuracy;Octrees;Uncertainty;Sensors;Probabilistic logic;Euclidean distance;Memory management;Computational complexity;Vegetation;Scalability;Gaussian process distance field;OpenVDB;Euclidean distance field;gradient field;mapping},
+ month = {Jan},
+ number = {1},
+ pages = {374-381},
+ title = {VDB-GPDF: Online Gaussian Process Distance Field With VDB Structure},
+ volume = {10},
+ year = {2025}
+}

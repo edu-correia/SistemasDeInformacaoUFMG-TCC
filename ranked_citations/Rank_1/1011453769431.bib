@@ -1,0 +1,15 @@
+@article{10.1145/3769431,
+ abstract = {Reconstructing a high-resolution (HR) image from its degraded low-resolution (LR) counterpart facilitates humans to explore more details from the high-quality version. Current image super-resolution (SR) approaches mainly focus on mining richer context through carefully-designed network architectures and optimization objectives within a centralized environment. However, these approaches lack effective data protection and generate unsatisfactory results in practical scenario, due to the degradation gap between public training data (e.g., bicubic downsampling) and real-world personal data captured by different imaging devices. To address these issues, we introduce a novel collaborative learning paradigm, SRGuardian, comprising the personalized SR model for encoding individual-specific imaging information and a shared model for learning general image patterns across individuals. Specifically, SRGuardian inherits a distributed training framework that involves two stages: degradation-aware individual training and personalized parameter fusion. During individual training, we employ a customized degradation generator to encode personalized imaging priors for accurate reconstruction, coupled with a perceptual contrastive regularizer that aligns image representations between the current model and its historical counterparts, thereby enhancing semantic consistency. In the model fusion stage, parameters from personalized models are amalgamated via a hybrid strategy to construct a shared model, where layers responsible for general representation are shared among individuals and layers capturing personal details are retained locally. The integration of these two stages empowers our SRGuardian to achieve both privacy preservation and high-fidelity image rendering. Extensive experiments conducted on two real-world image SR datasets (i.e., RealSR and DRealSR) with various backbones demonstrate that our method significantly surpasses existing approaches in terms of image fidelity and quantitative metrics.},
+ address = {New York, NY, USA},
+ author = {Yang, Yue and Zhang, Ru and Ma, Fan},
+ doi = {10.1145/3769431},
+ issn = {1551-6857},
+ journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+ keyword = {Real-World Image Super-Resolution, Personalization, Privacy Preservation, Image Degradation Prior},
+ month = {September},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Empowering Personalized and Privacy-Preserving for Image Super-Resolution with Decentralized Collaboration},
+ url = {https://doi.org/10.1145/3769431},
+ year = {2025}
+}

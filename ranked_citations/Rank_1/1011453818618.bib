@@ -1,0 +1,15 @@
+@article{10.1145/3818618,
+ abstract = {The prevalence of dynamic tensor shapes, driven by applications like language model serving with varying sequence lengths, is a defining characteristic of modern deep neural networks. This dynamism poses a fundamental challenge: reconciling the need for intensive, offline code generation to achieve peak performance with the demand for low-latency, adaptive execution to handle unpredictable runtime tensor shapes. Consequently, mainstream strategies are ineffective. Vendor-provided libraries, while highly optimized for a subset of common shapes, suffer performance degradation on unconventional ones. Static tensor compilers are hamstrung by prohibitive just-in-time compilation overheads for each new shape. While recent dynamic-shape compilers offer an alternative, they rely on predefined shape ranges, making them brittle when inputs fall outside these bounds. To resolve this tension, we present MoonPoly, a dynamic-shape tensor compiler that introduces micro-kernel polymerization. Our approach decouples these conflicting requirements through a two-stage process. In the offline stage, it performs intensive auto-tuning to generate a set of micro-kernels and corresponding performance models. The online stage then performs adaptive execution, rapidly assembling a near-optimal tensor operator on-the-fly, guided by a lightweight cost model. Evaluated on an NVIDIA A100 GPU, MoonPoly achieves an average operator-level speedup of 1.27 \texttimes{} over the cuBLAS library across a diverse set of operators and data types, which in turn yields end-to-end inference acceleration for a variety of models, including BERT, the Vision Transformer, and large language models.},
+ address = {New York, NY, USA},
+ author = {Zhang, Yangyu and Li, Guangli and Yu, Feng and Luo, Fan and Sun, Qianqi and Wang, Xueying and Zhao, Jiacheng and Cui, Huimin and Feng, Xiaobing and Xue, Jingling},
+ doi = {10.1145/3818618},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {Tensor Compilers, Deep Learning Systems, Dynamic-Shape Neural Networks},
+ month = {June},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {MoonPoly: Bridging Code Generation and Adaptive Execution via Micro-Kernel Polymerization for Optimizing Dynamic-Shape Tensor Operators},
+ url = {https://doi.org/10.1145/3818618},
+ year = {2026}
+}

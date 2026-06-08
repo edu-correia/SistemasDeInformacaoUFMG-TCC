@@ -1,0 +1,16 @@
+@article{Kanellis20254910,
+ abstract = {Modern large-scale services such as search engines, messaging platforms, and serverless functions, rely on key-value (KV) stores to maintain high performance at scale. When such services are deployed in constrained memory environments, they present challenging requirements: point operations requiring high throughput, working sets much larger than main memory, and natural skew in key access patterns. Traditional KV stores, based on LSM-and B-Trees, have been widely used to handle such use cases, but they often suffer from suboptimal use of modern hardware resources. The FASTER project, developed as a high-performance open-source KV storage library, has demonstrated remarkable success in both inmemory and hybrid storage environments. However, when tasked with serving large skewed workloads, it faced challenges, including high indexing and compactions overheads, and inefficient management of non-overlapping read-hot and write-hot working sets. In this paper, we introduce F2 (for FASTER v2), an evolution of FASTER designed to meet the requirements of large skewed workloads common in industry applications. F2 adopts a two-tier record-oriented design to handle larger-than-memory skewed workloads, along with new concurrent latch-free mechanisms and components to maximize performance on modern hardware. To realize this design, F2 tackles key challenges and introduces several innovations, including new latch-free algorithms for multi-threaded log compaction, a two-level hash index to reduce indexing overhead for cold records, and a read-cache for serving read-hot records. Our evaluation shows that F2 achieves 2–11.9× better throughput compared to existing KV stores, effectively serving the target workload. F2 is open-source and available as part of the FASTER project. © 2025, VLDB Endowment. All rights reserved.},
+ author = {Kanellis, Konstantinos and Chandramouli, Badrish and Hart, Ted and Venkataraman, Shivaram},
+ doi = {10.14778/3750601.3750615},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 0},
+ number = {12},
+ pages = {4910 - 4923},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {From FASTER to F2: Evolving Concurrent Key-Value Store Designs for Large Skewed Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105016675115?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@conference{Luo2022485,
+ abstract = {Parallel shared-nothing data management systems have been widely used to exploit a cluster of machines for efficient and scalable data processing. When a cluster needs to be dynamically scaled in or out, data must be efficiently rebalanced. Ideally, data rebalancing should have a low data movement cost, incur a small overhead on data ingestion and query processing, and be performed online without blocking reads or writes. However, existing parallel data management systems often exhibit certain limitations and drawbacks in terms of efficient data rebalancing. In this paper, we introduce DynaHash, an efficient data rebalancing approach that combines dynamic bucketing with extendible hashing for shared-nothing OLAP-style parallel data management systems. DynaHash dynamically partitions the records into a number of buckets using extendible hashing to achieve good a load balance with small rebalancing costs. We further describe an end-to-end implementation of the proposed approach inside an open-source Big Data Management System (BDMS), Apache AsterixDB. Our implementation exploits the out-of-place update design of LSM-trees to efficiently rebalance data without blocking concurrent reads and writes. Finally, we have conducted performance experiments using the TPC-H benchmark and we present the results here.  © 2022 IEEE.},
+ author = {Luo, Chen and Carey, Michael J.},
+ doi = {10.1109/ICDE53745.2022.00041},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 4},
+ pages = {485 - 497},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DynaHash: Efficient Data Rebalancing in Apache AsterixDB},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85136431776?origin=resultslist},
+ volume = {2022-May},
+ year = {2022}
+}

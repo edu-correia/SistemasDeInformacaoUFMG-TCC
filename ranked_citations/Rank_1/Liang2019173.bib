@@ -1,0 +1,16 @@
+@article{Liang2019173,
+ abstract = {We present the parallel implementation of a non-iterative mesh generation algorithm, named conforming to interface structured adaptive mesh refinement (CISAMR). The partitioning phase is tightly integrated with a microstructure reconstruction algorithm to determine the optimized arrangement of partitions based on shapes/sizes of particles. Each processor then creates a structured sub-mesh with one layer of ghost elements for its designated partition. h-adaptivity and r-adaptivity phases of the CISAMR algorithm are also carried out independently in each sub-mesh. Processors then communicate to merge mesh/hanging nodes along faces shared between neighboring partitions. The final mesh is constructed by performing face-swapping and element subdivision phases, after which a minimal communication phase is required in 3D CISAMR to merge new nodes created on partition boundaries. Several example problems, together with scalability tests demonstrating a super-linear speedup, are provided to show the application of parallel CISAMR for generating massive conforming meshes. © 2018, Springer-Verlag GmbH Germany, part of Springer Nature.},
+ author = {Liang, Bowen and Nagarajan, Anand and Soghrati, Soheil},
+ doi = {10.1007/s00466-018-1664-8},
+ journal = {Computational Mechanics},
+ note = {Cited by: 12},
+ number = {1},
+ pages = {173 - 195},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scalable parallel implementation of CISAMR: a non-iterative mesh generation algorithm},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85058837896?origin=resultslist},
+ volume = {64},
+ year = {2019}
+}

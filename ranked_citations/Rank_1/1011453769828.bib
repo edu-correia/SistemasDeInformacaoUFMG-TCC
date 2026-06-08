@@ -1,0 +1,18 @@
+@article{10.1145/3769828,
+ abstract = {Logic bugs can cause DBMSs to silently produce incorrect results for a given query, posing significant threats to software reliability and remaining challenging to detect. Join is a fundamental operation in DBMSs, enabling the combination of data from multiple tables; however, due to its complexity, it is also susceptible to logic bugs. Existing works detect logic bugs in join optimizations by altering query hints and system variables to alter the optimizer's choice of execution plans. However, these approaches struggle to detect logic bugs when query hints or system variables fail to influence the optimizer's behavior, or when the logic bugs reside in join implementation code that is unrelated to optimization. In this paper, we present Set Relation Synthesis (SRS), a black-box testing approach that detects logic bugs of join implementation in DBMSs by leveraging set relations among different join operations. SRS applies transformations to the original join queries, including modifications to join types, join orders, and join conditions, while ensuring that the outputs of both the original and transformed queries preserve the expected set relations. Violations of these set relations indicate potential logic bugs. We realized SRS and evaluated it on five widely-used and extensively-tested DBMSs: MySQL, MariaDB, TiDB, PostgreSQL, and DuckDB. SRS uncovered 33 previously unknown and unique bugs, all of which have been confirmed, with 12 already fixed. Among these, 33 are logic bugs, demonstrating SRS's effectiveness and practicality in detecting logic bugs in the implementation of join operations within DBMSs.},
+ address = {New York, NY, USA},
+ articleno = {363},
+ author = {Lai, Jinhui and Zhang, Chi and Li, Bingyan and Liang, Chenglin and Liang, Jie and Wu, Zhiyong and Fu, Jingzhou and Jiang, Yu and Xu, Zichen},
+ doi = {10.1145/3769828},
+ issue_date = {December 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {DBMS testing, join operation, logic bugs},
+ month = {December},
+ number = {6},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {SRS: Detecting Logic Bugs of Join Implementation in DBMSs via Set Relation Synthesis},
+ url = {https://doi.org/10.1145/3769828},
+ volume = {3},
+ year = {2025}
+}

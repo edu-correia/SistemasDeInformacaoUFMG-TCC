@@ -1,0 +1,17 @@
+@article{10.14778/2350229.2350275,
+ abstract = {This paper presents new alternatives to the well-known Bloom filter data structure. The Bloom filter, a compact data structure supporting set insertion and membership queries, has found wide application in databases, storage systems, and networks. Because the Bloom filter performs frequent random reads and writes, it is used almost exclusively in RAM, limiting the size of the sets it can represent.This paper first describes the quotient filter, which supports the basic operations of the Bloom filter, achieving roughly comparable performance in terms of space and time, but with better data locality. Operations on the quotient filter require only a small number of contiguous accesses. The quotient filter has other advantages over the Bloom filter: it supports deletions, it can be dynamically resized, and two quotient filters can be efficiently merged.The paper then gives two data structures, the buffered quotient filter and the cascade filter, which exploit the quotient filter advantages and thus serve as SSD-optimized alternatives to the Bloom filter. The cascade filter has better asymptotic I/O performance than the buffered quotient filter, but the buffered quotient filter outperforms the cascade filter on small to medium data sets. Both data structures significantly outperform recently-proposed SSD-optimized Bloom filter variants, such as the elevator Bloom filter, buffered Bloom filter, and forest-structured Bloom filter. In experiments, the cascade filter and buffered quotient filter performed insertions 8.6--11 times faster than the fastest Bloom filter variant and performed lookups 0.94--2.56 times faster.},
+ author = {Bender, Michael A. and Farach-Colton, Martin and Johnson, Rob and Kraner, Russell and Kuszmaul, Bradley C. and Medjedovic, Dzejla and Montes, Pablo and Shetty, Pradeep and Spillane, Richard P. and Zadok, Erez},
+ doi = {10.14778/2350229.2350275},
+ issn = {2150-8097},
+ issue_date = {July 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {11},
+ pages = {1627–1637},
+ publisher = {VLDB Endowment},
+ title = {Don't thrash: how to cache your hash on flash},
+ url = {https://doi.org/10.14778/2350229.2350275},
+ volume = {5},
+ year = {2012}
+}

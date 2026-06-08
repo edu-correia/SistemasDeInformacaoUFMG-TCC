@@ -1,0 +1,13 @@
+@article{SAEEDIZADEH2024111966,
+ abstract = {Neural Architecture Search (NAS) has significantly improved the accuracy of image classification and segmentation. However, these methods concentrate on finding segmentation structures for natural or medical applications. In this study, we introduce a NAS approach based on gradient optimization to identify ideal cell designs for road segmentation. To the best of our knowledge, this work represents the first application of gradient-based NAS to road extraction. Taking insight from the U-Net model and its successful variations in different image segmentation tasks, we propose NAS-enhanced U-Net, illustrated by an equal number of cells in both encoder and decoder levels. While cross-entropy combined with dice loss is commonly used in many segmentation tasks, road extraction brings up a unique challenge due to class imbalance. To address this, we introduce a combination of loss function. This function merges cross-entropy with weighted Dice loss, focusing on elevating the importance of the road class by assigning it a weight (⍵), while background Dice values are disregarded. The results indicate that the optimal weight for the proposed model equals 2. Additionally, our work challenges the assumption that increased model parameters or depth inherently leads to improved performance. Therefore, we establish search spaces 2,3,4,5,6,7 and 8 to automatically choose the optimal depth for model. We present promising segmentation results for our proposed method, achieved without any pretraining on the Massachusetts road dataset. Furthermore, these results are compared with those of 14 models categorized into four groups: U-Net, Segnet, FCN8, and Nas-U-Net.},
+ author = {Narges Saeedizadeh and Seyed Mohammad Jafar Jalali and Burhan Khan and Parham Mohsenzadeh Kebria and Shady Mohamed},
+ doi = {https://doi.org/10.1016/j.knosys.2024.111966},
+ issn = {0950-7051},
+ journal = {Knowledge-Based Systems},
+ keyword = {Neural architecture search, U-net, NAS-enhanced U-Net, Road segmentation, Loss function, Deep learning},
+ pages = {111966},
+ title = {A new optimization approach based on neural architecture search to enhance deep U-Net for efficient road segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950705124006002},
+ volume = {296},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@conference{Adavally20226,
+ abstract = {Sparse matrices are very common types of information used in scientific and machine learning applications including deep neural networks. Sparse data representations lead to storage efficiencies by avoiding storing zero values. However, sparse representations incur metadata computational overheads - software first needs to find row/column locations of non-zero values before performing necessary computations. Such metadata accesses involve indirect memory accesses (of the form a[b[i]] where a[.] and b[.] are large arrays) and they are cache and prefetch-unfriendly, resulting in frequent load stalls. In this paper, we will explore a dedicated hardware for a memory-side accelerator called Hardware Helper Thread (HHT) that performs all the necessary index computations to fetch only the nonzero elements from sparse matrix and sparse vector and supply those values to the primary core, creating heterogeneity within a single CPU core. We show both performance gains and energy savings of HHT for sparse matrix-dense vector multiplication (SpMV) and sparse matrix-sparse vector multiplication (SpMSpV). The ASIC HHT shows average performance gains ranging between 1.7 and 3.5 depending on the sparsity levels, vector-widths used by RISCV vector instructions and if the Vector (in Matrix-Vector multiplication) is sparse or dense. We also show energy savings of 19% on average when ASIC HHT is used compared to baseline (for SpMV), and the HHT requires 38.9% of a RISCV core area.  © 2022 IEEE.},
+ author = {Adavally, Shashank and Weaver, Alex and Vasireddy, Pranathi and Kavi, Krishna and Mehta, Gayatri and Gulur, Nagendra},
+ doi = {10.1109/IPDPSW55747.2022.00012},
+ journal = {Proceedings - 2022 IEEE 36th International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2022},
+ note = {Cited by: 2},
+ pages = {6 - 15},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HETEROGENEOUS ARCHITECTURE FOR SPARSE DATA PROCESSING},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85136192625?origin=resultslist},
+ year = {2022}
+}

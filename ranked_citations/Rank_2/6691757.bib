@@ -1,0 +1,14 @@
+@inproceedings{6691757,
+ abstract = {In large scale applications of genome analysis, compressed indexes are very useful to avoid the memory usage imposed by suffix arrays. FM-Index is one of the most important such compressed indexes. While it is very memory efficient, its construction requires much larger working memory during construction than the final index itself. Specifically, the Burrows-Wheeler transform (BWT), which is computed on its way to constructing FM-Index, requires a suffix array, which is larger than BWT and FM-Index. To address this, there have been many efforts to compute the Burrows-Wheeler in a smaller space, one of the fastest of which achieves a linear time complexity. Since it is unlikely that any sequential algorithm achieves a sublinear time complexity, the next logical step is a parallel algorithm that achieves a sublinear critical path with a space requirement smaller than suffix arrays. In this paper, we propose such an algorithm. It is based on a divide-and-conquer algorithm, which can be efficiently executed with task parallel models. We evaluated our algorithm on human genome data and obtained almost the same speed with BWT-IS, which is the known fastest algorithm.},
+ author = {Hayashi, Shinya and Taura, Kenjiro},
+ booktitle = {2013 IEEE International Conference on Big Data},
+ doi = {10.1109/BigData.2013.6691757},
+ issn = {},
+ keyword = {Arrays;Indexes;Time complexity;Transforms;Merging;Genomics;Bioinformatics;Burrows-Wheeler transform;suffix array;parallel computing},
+ month = {Oct},
+ number = {},
+ pages = {43-50},
+ title = {Parallel and memory-efficient Burrows-Wheeler transform},
+ volume = {},
+ year = {2013}
+}

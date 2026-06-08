@@ -1,0 +1,20 @@
+@article{GUILLAMET2025109057,
+ abstract = {Background and Objective:
+Hybrid forecasting methods aim to overcome the limitations of classical statistical approaches and deep learning models. While statistical methods provide interpretability, they often lack predictive power. Conversely, deep learning models achieve high accuracy but act as “black boxes.” This study introduces the Comprehensive Cross-Correlation and Lagged Linear Regression Deep Learning (CCLR-DL) framework, combining statistical and deep learning techniques to enhance both forecasting accuracy and interpretability. Unlike existing hybrid methods that combine statistical filtering with deep learning, CCLR-DL integrates causal statistical selection with neural forecasting, producing interpretable predictors and consistently achieving higher accuracy than models without feature selection or other standard baselines.
+Methods:
+The CCLR-DL framework integrates cross-correlation analysis, lagged multiple linear regression, and Granger causality testing with advanced deep learning architectures. This dual-phase approach first identifies causally significant predictors and then fits them into a deep learning model for multivariate time series forecasting. The framework was validated using a real-world dataset of clinical visits and diagnoses from 6.3 million individuals collected over 10 years.
+Results:
+In the evaluated setting, the CCLR-DL framework outperformed baseline models, achieving an average Root Mean Square Error (RMSE) improvement of 19.8% over univariate models, 60.1% over no feature selection, and 51.9% over random selection. The causality phase ensured that all selected predictors demonstrated a significant Granger-causal (GC) relationship. Simpler recurrent architectures, particularly bidirectional Long Short-Term Memory units (BiLSTM), yielded the most accurate forecasts by effectively capturing nonlinear temporal dependencies.
+Conclusions:
+By addressing the challenges of both prediction accuracy and model transparency, the CCLR-DL framework offers a new approach for high-dimensional, multivariate time series forecasting. In healthcare settings, it may enable decision-makers to anticipate demand shifts with greater reliability, allowing earlier staff scheduling, more efficient resource allocation, and reduced waiting times. In our evaluation, it consistently outperformed baseline strategies, delivering measurable improvements that translate into thousands of patient visits being forecasted more accurately across large populations.},
+ author = {Guillem Hernández Guillamet and Francesc López Seguí and Josep Vidal Alaball and Beatriz López},
+ doi = {https://doi.org/10.1016/j.cmpb.2025.109057},
+ issn = {0169-2607},
+ journal = {Computer Methods and Programs in Biomedicine},
+ keyword = {Deep learning, Feature selection, Granger causality, Health demand modeling, Multivariate time-series forecasting},
+ pages = {109057},
+ title = {CCLR-DL: A novel statistics and deep learning hybrid method for feature selection and forecasting healthcare demand},
+ url = {https://www.sciencedirect.com/science/article/pii/S0169260725004742},
+ volume = {272},
+ year = {2025}
+}

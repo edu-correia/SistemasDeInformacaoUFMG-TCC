@@ -1,0 +1,14 @@
+@conference{Challa2025122,
+ abstract = {Log Structured Merge Tree (LSM-Tree) is the core data structure that powers many modern key-value storage engines for its high write throughput property. To enable high speed writes, LSM-Tree ingests updates in an out-of-place manner and organizes key-value items into multiple levels of exponentially increasing capacities. To service fast data access, LSM-Tree frequently performs compaction operation, where data between two consecutive levels is sort-merged and written down to the lower level in granularity of SSTable. This compaction operation is known to cause high write amplification, which is the main threat to the LSM-tree’s design objective of achieving high write performance. To tackle high write amplification of compactions in LSM-Tree, we propose a new compaction approach called Collapsed, which capitalizes on the skewed nature of key density within a level. Breaking away from the conventional approach of bounding compaction between two levels, Collapsed compaction enables data to be moved across multiple levels at once, avoiding unnecessary rewrites. Using index keys of SSTables, Collapsed compaction determines the amount of data that will be written to a level and identifies the ideal last level to which a compaction will be performed. We have implemented a prototype of Collapsed into RocksDB named CollapseDB. Experimental results show that compared to state-of-the-art LSM-trees, CollapseDB can significantly lower write amplification, up to 40% compared to RocksDB. © 2025 Copyright held by the owner/author(s).},
+ author = {Challa, Prajwal and Wang, Yan and Jiang, Song},
+ doi = {10.1145/3757347.3759136},
+ journal = {Proceedings of the 18th ACM International Systems and Storage Conference, SYSTOR 2025},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {122 - 135},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CollapseDB: Exploring Multi-Level Compaction in LSM-Trees to Enhance Write Performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105017704954?origin=resultslist},
+ year = {2025}
+}

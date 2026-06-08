@@ -1,0 +1,15 @@
+@article{Redwan2025,
+ abstract = {Accurate product price prediction is a major challenge in modern e-commerce. Product value depends on images, textual descriptions, and categorical attributes, yet many methods under utilize these modalities jointly. This paper presents a multimodal deep learning framework for price regression using two architectures. The first is an attention-based Functional API model that applies EfficientNetB1 for visual features, pre-trained GloVe embeddings with a bidirectional LSTM for text, and trainable embeddings for categorical inputs, combined via late fusion. The second is a lightweight Sequential API model that uses a compact convolutional network for image features and a dense layer to merge modalities, targeting computational efficiency for resource-limited deployments. Both models are trained on the same category-filtered dataset (≥20 per class) with a single price–decile-stratified train/validation/test split (seed 42). Evaluation uses Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and the coefficient of determination (R<sup>2</sup>) on the original price scale after inverse transformation. Headline numbers are aggregated over repeated initializations on the same split (seeds {13, 21, 42, 77, 123}) and reported as mean ± SD with 95% confidence intervals. The Functional API model shows stronger performance under the same split and seeds, achieving MAE 5.37±0.08 (95% CI [5.27, 5.47]), RMSE 7.32±0.08 (95% CI [7.22, 7.42]), and R<sup>2</sup>=0.702±0.007 (95% CI [0.693, 0.711]). The Sequential API model attains lower accuracy (MAE = 8.13, RMSE = 10.88, R<sup>2</sup>=0.43) but reduced training time and memory footprint. Ablation studies on the same split with repeated seeds isolate the effects of visual backbones, text encoders, fusion with/without attention, and loss functions. Preprocessing details, calibration checks, and decile and category-wise error summaries support transparency and reproducibility. The results establish a clear benchmark for multimodal regression in retail pricing, balancing predictive accuracy with operational feasibility. © 2025 The Author(s)},
+ author = {Redwan, Kazi and Datto, Sourav and Ahmed, Mustakim and Masum, Habibur Rahman and Sohan, Md. Faruk Abdullah Al and Shufian, Abu},
+ doi = {10.1016/j.array.2025.100565},
+ journal = {Array},
+ note = {Cited by: 2; All Open Access; Gold Open Access; Green Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A multimodal deep learning framework for integrating visual, textual and categorical features in retail price estimation},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105021046437?origin=resultslist},
+ volume = {28},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@article{10.1145/3773291,
+ abstract = {Transaction fee mechanisms are pivotal elements of blockchain economies, as they resolve the inherent scarcity in the number of transactions that can be added to each block. First-price auction mechanisms implemented by early blockchain protocols, however, contributed to pronounced intra-block disparities, unpredictable waiting times, high congestion, and other inefficiencies. To mitigate these effects, alternative fee market mechanism have been proposed, e.g., Ethereum’s EIP-1559.In this paper, we investigate the ramifications of EIP-1559 on system performance and user experience. Although we prove that EIP-1559 exhibits chaotic behavior even under optimal conditions, we demonstrate that the influence of this chaotic behavior on the primary design objective of the fee mechanism – blocks whose long-term average size equals the target –- is limited. Our theoretical bound shows that block sizes in the EIP-1559 mechanism are lower bounded by target utilization –- half-full blocks – and the upper bound is capped at 6% beyond the target. These findings are confirmed by an empirical evaluation that shows that the average discrepancy has been 2.9% under Proof-of-Work and decreases to around 1% or less following Ethereum’s transition to Proof-of-Stake. However, the chaotic oscillations in block sizes and the slow adjustments during periods of demand bursts (e.g., NFT drops) result in undesirable inter-block variations in mining rewards and compromise the overall user experience. To address these issues, we propose an alternative base fee adjustment rule, characterized by a learning rate that adapts according to an additive increase, multiplicative decrease (AIMD) update scheme. Our data-driven simulations show that the latter robustly outperforms the EIP-1559 protocol across various demand scenarios.},
+ address = {New York, NY, USA},
+ author = {Leonardos, Stefanos and Reijsbergen, Dani\"{e}l and Monnot, Barnab\'{e} and Piliouras, Georgios},
+ doi = {10.1145/3773291},
+ journal = {Distrib. Ledger Technol.},
+ keyword = {Ethereum, EIP-1559, transaction fee mechanisms, posted-prices, system performance, user experience},
+ month = {October},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Dynamics of Ethereum’s EIP-1559 Transaction Fee Mechanism},
+ url = {https://doi.org/10.1145/3773291},
+ year = {2025}
+}

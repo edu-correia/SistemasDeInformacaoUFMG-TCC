@@ -1,0 +1,17 @@
+@article{10.14778/2168651.2168652,
+ abstract = {Modern business applications and scientific databases call for inherently dynamic data storage environments. Such environments are characterized by two challenging features: (a) they have little idle system time to devote on physical design; and (b) there is little, if any, a priori workload knowledge, while the query and data workload keeps changing dynamically. In such environments, traditional approaches to index building and maintenance cannot apply. Database cracking has been proposed as a solution that allows on-the-fly physical data reorganization, as a collateral effect of query processing. Cracking aims to continuously and automatically adapt indexes to the workload at hand, without human intervention. Indexes are built incrementally, adaptively, and on demand. Nevertheless, as we show, existing adaptive indexing methods fail to deliver workload-robustness; they perform much better with random workloads than with others. This frailty derives from the inelasticity with which these approaches interpret each query as a hint on how data should be stored. Current cracking schemes blindly reorganize the data within each query's range, even if that results into successive expensive operations with minimal indexing benefit.In this paper, we introduce stochastic cracking, a significantly more resilient approach to adaptive indexing. Stochastic cracking also uses each query as a hint on how to reorganize data, but not blindly so; it gains resilience and avoids performance bottlenecks by deliberately applying certain arbitrary choices in its decision-making. Thereby, we bring adaptive indexing forward to a mature formulation that confers the workload-robustness previous approaches lacked. Our extensive experimental study verifies that stochastic cracking maintains the desired properties of original database cracking while at the same time it performs well with diverse realistic workloads.},
+ author = {Halim, Felix and Idreos, Stratos and Karras, Panagiotis and Yap, Roland H. C.},
+ doi = {10.14778/2168651.2168652},
+ issn = {2150-8097},
+ issue_date = {February 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {12},
+ pages = {502–513},
+ publisher = {VLDB Endowment},
+ title = {Stochastic database cracking: towards robust adaptive indexing in main-memory column-stores},
+ url = {https://doi.org/10.14778/2168651.2168652},
+ volume = {5},
+ year = {2012}
+}

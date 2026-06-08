@@ -1,0 +1,16 @@
+@article{Balmau2020,
+ abstract = {Log-Structured Merge Key-Value stores (LSM KVs) are designed to offer good write performance, by capturing client writes in memory, and only later flushing them to storage. Writes are later compacted into a tree-like data structure on disk to improve read performance and to reduce storage space use. It has been widely documented that compactions severely hamper throughput. Various optimizations have successfully dealt with this problem. These techniques include, among others, rate-limiting flushes and compactions, selecting among compactions for maximum effect, and limiting compactions to the highest level by so-called fragmented LSMs. In this article, we focus on latencies rather than throughput. We first document the fact that LSM KVs exhibit high tail latencies. The techniques that have been proposed for optimizing throughput do not address this issue, and, in fact, in some cases, exacerbate it. The root cause of these high tail latencies is interference between client writes, flushes, and compactions. Another major cause for tail latency is the heterogeneous nature of the workloads in terms of operation mix and item sizes whereby a few more computationally heavy requests slow down the vast majority of smaller requests. We introduce the notion of an Input/Output (I/O) bandwidth scheduler for an LSM-based KV store to reduce tail latency caused by interference of flushing and compactions and by workload heterogeneity. We explore three techniques as part of this I/O scheduler: (1) opportunistically allocating more bandwidth to internal operations during periods of low load, (2) prioritizing flushes and compactions at the lower levels of the tree, and (3) separating client requests by size and by data access path. SILK+ is a new open-source LSM KV that incorporates this notion of an I/O scheduler. © 2020 ACM.},
+ author = {Balmau, Oana and Dinu, Florin and Zwaenepoel, Willy and Gupta, Karan and Chandhiramoorthi, Ravishankar and Didona, Diego},
+ doi = {10.1145/3380905},
+ journal = {ACM Transactions on Computer Systems},
+ note = {Cited by: 21},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SILK+ Preventing Latency Spikes in Log-Structured Merge Key-Value Stores Running Heterogeneous Workloads},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85086759897?origin=resultslist},
+ volume = {36},
+ year = {2020}
+}

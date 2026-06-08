@@ -1,0 +1,18 @@
+@article{10.1145/3805648,
+ abstract = {Sparsity is a crucial optimization technique for deep neural networks, significantly reducing storage and bandwidth requirements while enhancing computational efficiency. In recent years, driven by the rapid advancement of deep neural networks, accelerators targeting sparse computation have emerged as a significant area of research. NVIDIA introduced 2:4 fine-grained structured sparsity starting with the Ampere architecture, which doubles the peak throughput of Tensor Cores by retaining only two out of every four elements. However, the constraints imposed by structured sparsity on parameters may compromise model accuracy. In contrast, unstructured sparsity enables maximum sparsity while maintaining model accuracy. Nevertheless, the irregular distribution of non-zero elements (NNZs) in unstructured sparse matrices introduces complex memory access patterns and load imbalances, preventing the direct utilization of GPU Tensor Cores. Consequently, computation typically relies on CUDA cores via sparse libraries such as cuSPARSE, leaving the powerful computational capabilities of Tensor Cores underutilized. To address this limitation, we extend the Tensor Core architecture inspired by Gustavson's dataflow and propose a re-structured row offline compression format tailored for the inference stage. This format integrates seamlessly with the extended architecture to achieve highly efficient unstructured sparse-dense matrix multiplication. Experimental results demonstrate that with negligible area and power overheads, our method achieves an average speedup of 3.54x compared to cuSPARSE and 1.2x compared to state-of-the-art Tensor Core extensions.},
+ address = {New York, NY, USA},
+ articleno = {50},
+ author = {Cui, Jianfeng and Yuan, Bo and Jiang, Zekun and Liu, Sheng and Lu, Kai},
+ doi = {10.1145/3805648},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {tensor cores, spmm, gpgpus, unstructured sparsity, dnns, weight prune},
+ month = {May},
+ number = {2},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {RELL-STC: An Efficient SpMM Extension of Sparse Tensor Core with Re-structured ELLPACK and Gustavson Dataflow},
+ url = {https://doi.org/10.1145/3805648},
+ volume = {10},
+ year = {2026}
+}

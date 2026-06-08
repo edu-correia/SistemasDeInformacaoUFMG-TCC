@@ -1,0 +1,14 @@
+@conference{Zhang2014777,
+ abstract = {Write-optimized data structures like Log-Structured Merge-tree (LSM-tree) and its variants are widely used in key-value storage systems like Big Table and Cassandra. Due to deferral and batching, the LSM-tree based storage systems need background compactions to merge key-value entries and keep them sorted for future queries and scans. Background compactions play a key role on the performance of the LSM-tree based storage systems. Existing studies about the background compaction focus on decreasing the compaction frequency, reducing I/Os or confining compactions on hot data key-ranges. They do not pay much attention to the computation time in background compactions. However, the computation time is no longer negligible, and even the computation takes more than 60% of the total compaction time in storage systems using flash based SSDs. Therefore, an alternative method to speedup the compaction is to make good use of the parallelism of underlying hardware including CPUs and I/O devices. In this paper, we analyze the compaction procedure, recognize the performance bottleneck, and propose the Pipelined Compaction Procedure (PCP) to better utilize the parallelism of CPUs and I/O devices. Theoretical analysis proves that PCP can improve the compaction bandwidth. Furthermore, we implement PCP in real system and conduct extensive experiments. The experimental results show that the pipelined compaction procedure can increase the compaction bandwidth and storage system throughput by 77% and 62% respectively. © 2014 IEEE.},
+ author = {Zhang, Zigang and Yue, Yinliang and He, Bingsheng and Xiong, Jin and Chen, Mingyu and Zhang, Lixin and Sun, Ninghui},
+ doi = {10.1109/IPDPS.2014.85},
+ journal = {Proceedings of the International Parallel and Distributed Processing Symposium, IPDPS},
+ note = {Cited by: 44},
+ pages = {777 - 786},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Pipelined compaction for the LSM-tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84906673040?origin=resultslist},
+ year = {2014}
+}

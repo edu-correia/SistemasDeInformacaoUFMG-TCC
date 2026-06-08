@@ -1,0 +1,13 @@
+@article{DAI2023279,
+ abstract = {Accurate and efficient pancreas segmentation is the basis for subsequent diagnosis and qualitative treatment of pancreatic cancer. Segmenting the pancreas from abdominal CT images is a challenging task because the morphology of the pancreas varies greatly among different individuals and may be affected by problems such as the unbalanced category and blurred boundaries. This paper proposes a two-stage Trans-Deformer network to solve these problems of pancreas segmentation. To be specific, we first use 2D Unet for coarse segmentation to generate candidate regions of the pancreas. In the fine segmentation stage, we propose to integrate deformable convolution into Vision Transformer (VIT) for solving the deformation problem of the pancreas. For the problem of blurred boundaries caused by low contrast in the pancreas, a multi-input module based on wavelet decomposition is proposed to make our network pay more attention to high-frequency texture information. In addition, we propose using the Scale Inter-active Fusion (SIF) module to merge local features and global features. Our method was evaluated on the public NIH dataset including 82 abdominal contrast-enhanced CT volumes and the public MSD dataset including 281 abdominal contrast-enhanced CT volumes via fourfold cross-validation. We have achieved the average Dice Similarity Coefficient (DSC) values of 89.89 ± 1.82 % on the NIH dataset, and 91.22 ± 1.37 % on the MSD dataset, outperforming other exiting state-of-the-art pancreas segmentation methods.},
+ author = {Shunbo Dai and Yu Zhu and Xiaoben Jiang and Fuli Yu and Jiajun Lin and Dawei Yang},
+ doi = {https://doi.org/10.1016/j.neucom.2022.10.060},
+ issn = {0925-2312},
+ journal = {Neurocomputing},
+ keyword = {Pancreas segmentation, Deformable convolution, Vision transformer, Wavelet decomposition, Deep supervision},
+ pages = {279-293},
+ title = {TD-Net: Trans-Deformer network for automatic pancreas segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0925231222013418},
+ volume = {517},
+ year = {2023}
+}

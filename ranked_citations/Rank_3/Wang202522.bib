@@ -1,0 +1,14 @@
+@conference{Wang202522,
+ abstract = {Modern distributed file systems (DFSs) rely on metadata server clusters to manage large-scale files and achieve scalability. However, the hierarchical namespace structure and dynamic user workloads pose severe challenges for efficient metadata partitioning and load balancing. Existing approaches primarily focus on identifying and redistributing hot metadata to address imbalances. While these load-balancing strategies offer potential benefits, they often reduce metadata locality, ultimately failing to improve the end-to-end job completion time - a key metric prioritized by users. Although recent research reveals that learning-based approaches are effective in predicting hotspots, they have been shown to be less effective in improving metadata performance. We revisit metadata load balancing strategies and propose a learning-based metadata load balance framework Origami, which focuses on minimizing end-to-end job completion time rather than equalizing loads. Origami first decomposes the overhead of metadata operations and assesses the impact of migration decisions on user requests, allowing us to compute the benefits of migration decisions for job completion time when future requests are known. Subsequently, Origami propose the Meta-OPT algorithm to determine near-optimal migration decisions. Finally, we implemented OrigamiFS, on which we collected statistical data to train and validate ML-models capable of predicting migration benefits. By predicting the benefits of migration decisions and employing Meta-OPT to quickly explore nearly optimal migration decisions, Origami makes a better trade-off between load balancing and namespace locality. Our evaluation shows that compared to state-of-the-art methods, Origami increases aggregated metadata throughput by 1.12-2.51 × across three real-world workloads, and enhances end-to-end throughput by 1.11-2.02 ×. © 2025 Copyright held by the owner/author(s).},
+ author = {Wang, Yiduo and Tang, Wenda and Meng, Linghang and Li, Liang and Wu, Jie},
+ doi = {10.1145/3754598.3754617},
+ journal = {54th International Conference on Parallel Processing, ICPP 2025 - Main Conference Proceedings},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {22 - 32},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Origami: Efficient ML-Driven Metadata Load Balancing for Distributed File Systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105026444096?origin=resultslist},
+ year = {2025}
+}

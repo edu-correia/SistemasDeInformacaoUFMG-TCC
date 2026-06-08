@@ -1,0 +1,18 @@
+@article{10.1145/3709712,
+ abstract = {The kd-tree is one of the most widely used data structures to manage multi-dimensional data. Due to the ever-growing data volume, it is imperative to consider parallelism in kd-trees. However, we observed challenges in existing parallel kd-tree implementations, for both constructions and updates.The goal of this paper is to develop efficient in-memory kd-trees by supporting high parallelism and cache-efficiency. We propose the Pkd-tree (Parallel kd-tree), a parallel kd-tree that is efficient both in theory and in practice. The Pkd-tree supports parallel tree construction, batch update (insertion and deletion), and various queries including k-nearest neighbor search, range query, and range count. We proved that our algorithms have strong theoretical bounds in work (sequential time complexity), span (parallelism), and cache complexity. Our key techniques include 1) an efficient construction algorithm that optimizes work, span, and cache complexity simultaneously, and 2) reconstruction-based update algorithms that guarantee the tree to be weight-balanced. With the new algorithmic insights and careful engineering effort, we achieved a highly optimized implementation of the Pkd-tree.We tested Pkd-tree with various synthetic and real-world datasets, including both uniform and highly skewed data. We compare the Pkd-tree with state-of-the-art parallel kd-tree implementations. In all tests, with better or competitive query performance, Pkd-tree is much faster in construction and updates consistently than all baselines. We released our code.},
+ address = {New York, NY, USA},
+ articleno = {62},
+ author = {Men, Ziyang and Shen, Zheqi and Gu, Yan and Sun, Yihan},
+ doi = {10.1145/3709712},
+ issue_date = {February 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {kd-tree, parallel algorithms, parallel trees, spatial partition trees},
+ month = {February},
+ number = {1},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Parallel kd-tree with Batch Updates},
+ url = {https://doi.org/10.1145/3709712},
+ volume = {3},
+ year = {2025}
+}

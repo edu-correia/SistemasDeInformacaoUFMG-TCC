@@ -1,0 +1,14 @@
+@conference{Psaroudakis2026443,
+ abstract = {Elasticsearch (ES) is a distributed search and analytics engine consisting of a cluster of nodes, each hosting a disjoint subset of data. ES has a shared-nothing architecture that relies on local disks to store cluster data such as index files, transaction logs, and cluster state metadata. This stateful architecture couples compute with storage, and leads to different data tiers (e.g., hot, warm, cold, frozen) of hardware and configurations that the administrator chooses from to balance cost, performance, and high availability. In this paper, we show a new serverless architecture that decouples compute from storage. Serverless ES offloads data to an affordable, highly available cloud object store, while supporting the same APIs and read-after-write semantics. We show why and how this stateless architecture simplifies the tiers to just two: indexing and search, allowing indexing and searching practically limitless data while scaling each tier independently. We describe how we wrap index data in a custom batch commit format to the object store to decrease upload costs by up to 100x, how we batch transaction log uploads to decrease upload costs by up to 30x, and how we delete files from the object store. We experimentally show that Serverless ES can get twice the indexing throughput of (stateful) ES on comparable compute hardware by using object storage for durability instead of replication, and can scale linearly to match ingestion workloads.  © 2025 Copyright is held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Psaroudakis, Iraklis and Salehi, Pooya and Bryan, Jason and Fernández Castaño, Francisco and Cully, Brendan and Kumar, Ankita and Andersen, Henning and Repantis, Thomas},
+ doi = {10.1145/3772052.3772245},
+ journal = {SoCC 2025 - Proceedings of the 2025 ACM Symposium on Cloud Computing},
+ note = {Cited by: 0},
+ pages = {443 - 455},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Serverless Elasticsearch: the Architecture Transformation from Stateful to Stateless},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105028644623?origin=resultslist},
+ year = {2026}
+}

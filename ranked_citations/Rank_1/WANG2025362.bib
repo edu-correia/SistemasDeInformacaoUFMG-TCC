@@ -1,0 +1,13 @@
+@article{WANG2025362,
+ abstract = {This paper implements the CUDA and hybrid CUDA/MPI parallel computation based on GPGPU heterogeneous parallel strategies for the direct discontinuous method (DDG) on 3D unstructured grids. The direct discontinuous Galerkin method inherits the compactness of the discontinuous Galerkin (DG) method, making it well-suited for large-scale parallelization. Firstly, we present the full single-GPU implementation of the three-dimensional (3D) DDG method with cell-level parallelism and face-level parallelism. Herein, all the numerical operators including volume integration, face integration (numerical fluxes), conservation variables calculation, and time iteration, are implemented by designing the corresponding kernel functions. Especially, we implement several key memory access optimization strategies, which are crucial for performance improvement. Operators merging and shared memory utilizing reduces the number of global access. Such memory Coalescing and data structure reconstruction apparently enhances the efficiency of global memory access. To align with data access pattern, we employ atomic operations to eliminate data race conditions. Furthermore, we propose a full hybrid GPU/CPU heterogeneous parallel strategy to implement multi-GPU parallelization of the DDG method, where asynchronization optimization is introduced to fully overlap communication and computation and basically eliminates the communication overhead. Finally, several numerical tests are conducted on Tesla V100 Cards to show performance of the parallelization. In addition, we utilize the NVIDIA performance testing tool, nvprof, to evaluate multiple metrics of the kernel functions and conduct a detailed analysis of the results. In the tests of parallel scalability, the weak scaling efficiency achieves 97% from 4 to 32 GPU cards, and the strong scaling efficiency is 90% from 1 to 8 GPU cards.},
+ author = {Jiaxin Wang and Kun Wang and Zhen-Guo Yan and Xiaofeng He and Tiegang Liu},
+ doi = {https://doi.org/10.1016/j.matcom.2024.09.034},
+ issn = {0378-4754},
+ journal = {Mathematics and Computers in Simulation},
+ keyword = {Direct discontinuous Galerkin, GP-GPU parallelism, Hybrid CPU/GPU heterogeneous parallelism, Numerical simulation of Navier–Stokes equations},
+ pages = {362-391},
+ title = {GPGPU-based heterogeneous parallel implementation of direct discontinuous Galerkin methods},
+ url = {https://www.sciencedirect.com/science/article/pii/S0378475424003896},
+ volume = {229},
+ year = {2025}
+}

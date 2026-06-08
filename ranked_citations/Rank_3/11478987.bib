@@ -1,0 +1,14 @@
+@inproceedings{11478987,
+ abstract = {In-network classification involves packets to be classified directly within network devices, reducing communication latency and processing overhead. However, ensuring trustworthy in-network inference is challenging, as overconfident predictions from embedded classifiers can lead to incorrect or unsafe packet handling. State-of-the-art (SOTA) systems such as IIsy and pForest translate ML models into symbolic rules for switch-level execution but fail to provide confidence-aware decisions or resource-optimized rule tables. We propose CRISP-Confidence-filtered Rule-based In-network Switching Pipeline, a novel framework that enhances symbolic in-network classification with trust and efficiency. CRISP leverages Random Forest models to generate ternary match-action rules deployable in P4 data planes and introduces: (1) a calibrated confidence estimation mechanism to reject low-confidence predictions at runtime, and (2) a greedy rule compression strategy to reduce TCAM usage without sacrificing decision accuracy. We experiment with the Iris and UNSW-NB15 datasets, evaluating CRISP in terms of prediction accuracy, calibration quality, and rule table memory consumption. Our observations show that CRISP achieves up to $\mathbf{5 0 \%}$ rule reduction, maintains high classification accuracy, and filters unreliable predictions, enabling scalable and dependable in-network inference.},
+ author = {Rajan, G Kavin and Ravi, Nagarathna},
+ booktitle = {2026 National Conference on Communications (NCC)},
+ doi = {10.1109/NCC68160.2026.11478987},
+ issn = {2993-2645},
+ keyword = {Payloads;Filtering;Filters;Circuits and systems;Internet of Things;Communication systems;High-speed networks;Protocols;Internet;Routing;In-network inference;latency;match-action tables;greedy algorithms;rule merging;memory optimization},
+ month = {Feb},
+ number = {},
+ pages = {709-714},
+ title = {CRISP: Calibrated Rule Inference for Trustworthy In-Network Classification},
+ volume = {},
+ year = {2026}
+}

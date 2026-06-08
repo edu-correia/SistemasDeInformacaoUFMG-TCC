@@ -1,0 +1,13 @@
+@article{MA2024105312,
+ abstract = {Transformers have achieved impressive performance in visual tasks. Position encoding, which equips vectors (elements of input tokens, queries, keys, or values) with sequence specificity, effectively alleviates the lack of permutation relation in transformers. In this work, we first clarify that both position encoding and additional position-specific operations will introduce positional information when participating in self-attention. On this basis, most existing position encoding methods are equivalent to special affine transformations. However, this encoding method lacks the correlation of vector content interaction. We further propose Spatial Aggregation Vector Encoding (SAVE) that employs transition matrices to recombine vectors. We design two simple yet effective modes to merge other vectors, with each one serving as an anchor. The aggregated vectors control spatial contextual connections by establishing two-dimensional relationships. Our SAVE can be plug-and-play in vision transformers, even with other position encoding methods. Comparative results on three image classification datasets show that the proposed SAVE performs comparably to current position encoding methods. Experiments on detection tasks show that the SAVE improves the downstream performance of transformer-based methods. Code is available at https://github.com/maxiao0234/SAVE.},
+ author = {Xiao Ma and Zetian Zhang and Rong Yu and Zexuan Ji and Mingchao Li and Yuhan Zhang and Qiang Chen},
+ doi = {https://doi.org/10.1016/j.imavis.2024.105312},
+ issn = {0262-8856},
+ journal = {Image and Vision Computing},
+ keyword = {Vision transformers, Position encoding, Spatial interactions},
+ pages = {105312},
+ title = {SAVE: Encoding spatial interactions for vision transformers},
+ url = {https://www.sciencedirect.com/science/article/pii/S0262885624004177},
+ volume = {152},
+ year = {2024}
+}

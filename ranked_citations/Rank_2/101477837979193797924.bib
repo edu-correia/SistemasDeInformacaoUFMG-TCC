@@ -1,0 +1,17 @@
+@article{10.14778/3797919.3797924,
+ abstract = {HTAP systems aim to support large-scale transaction processing while preserving real-time analytics over fresh operational data. Achieving this dual goal requires carefully ensuring workload isolation and data freshness. However, this is a challenge that existing systems often struggle to meet, as they rely on static, coarse-grained storage configurations, such as duplicating full data across dual storage model (row and column store) or storing data in a single model. These incur excessive synchronization overhead that degrades data freshness or compromises workload isolation under mixed workloads. To this end, we present Jasper, a joint adaptive storage mechanism that dynamically configures fine-grained storage layouts based on workload characteristics. Jasper performs workload-aware horizontal and vertical partitioning and selectively materializes column store replicas for update-sparse, query-intensive partitions. This design ensures strong workload isolation while minimizing unnecessary data redundancy, significantly reducing synchronization overhead and improving data freshness. We implement Jasper in TiDB and conduct extensive evaluations using both standard benchmarks and a real-world TiDB production workload. Extensive evaluations on both benchmarks and real-world TiDB production workloads show that Jasper cuts workload completion time by 20.43%–40.59%, delivering state-of-the-art performance in balancing isolation and freshness for HTAP systems.},
+ author = {Ding, Zhenghao and Zhang, Xinyi and Zhang, Chao and Sun, Yishen and Xu, Kai and Lu, Wei and Du, Xiaoyong},
+ doi = {10.14778/3797919.3797924},
+ issn = {2150-8097},
+ issue_date = {February 2026},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {6},
+ numpages = {14},
+ pages = {1142–1155},
+ publisher = {VLDB Endowment},
+ title = {Breaking the Isolation-Freshness Trade-off: Joint Adaptive Storage Optimization for HTAP Systems},
+ url = {https://doi.org/10.14778/3797919.3797924},
+ volume = {19},
+ year = {2026}
+}

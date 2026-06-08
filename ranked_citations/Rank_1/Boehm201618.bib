@@ -1,0 +1,15 @@
+@article{Boehm201618,
+ abstract = {The OpenSHMEM Library Specification has evolved considerably since version 1.0. Recently, non-blocking implicit Remote Memory Access (RMA) operations were introduced in OpenSHMEM 1.3. These provide a way to achieve better overlap between communication and computation. However, the implicit non-blocking operations do not provide a separate handle to track and complete the individual RMA operations. They are guaranteed to be completed after either a shmem_quiet(), shmem barrier() or a shmem_barrier_all() is called. These are global completion and synchronization operations. Though this semantic is expected to achieve a higher message rate for the applications, the drawback is that it does not allow fine-grained control over the completion of RMA operations. In this paper, first, we introduce non-blocking RMA operations with requests, where each operation has an explicit request to track and complete the operation. Second, we introduce interfaces to merge multiple requests into a single request handle. The merged request tracks multiple user-selected RMA operations, which provides the flexibility of tracking related communication operations with one request handle. Lastly, we explore the implications in terms of performance, productivity, usability and the possibility of defining different patterns of communication via merging of requests. Our experimental results show that a well designed and implemented OpenSHMEM stack can hide the overhead of allocating and managing the requests. The latency of RMA operations with requests is similar to blocking and implicit non-blocking RMA operations.We test our implementation with the Scalable Synthetic Compact Applications (SSCA #1) benchmark and observe that using RMA operations with requests and merging of these requests outperform the implementation using blocking RMA operations and implicit non-blocking operations by 49% and 74% respectively. © Springer International Publishing AG 2016.},
+ author = {Boehm, Swen and Pophale, Swaroop and Venkata, Manjunath Gorentla},
+ doi = {10.1007/978-3-319-50995-2_2},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 2},
+ pages = {18 - 34},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Evaluating OpenSHMEM explicit remote memory access operations and merged requests},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85009476433?origin=resultslist},
+ volume = {10007 LNCS},
+ year = {2016}
+}

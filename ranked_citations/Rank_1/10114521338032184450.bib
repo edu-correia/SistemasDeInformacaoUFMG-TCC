@@ -1,0 +1,18 @@
+@article{10.1145/2133803.2184450,
+ abstract = {We develop a new &lt;it&gt;k&lt;/it&gt;-means clustering algorithm for data streams of points from a Euclidean space. We call this algorithm StreamKM++. Our algorithm computes a small weighted sample of the data stream and solves the problem on the sample using the &lt;it&gt;k&lt;/it&gt;-means++ algorithm of Arthur and Vassilvitskii (SODA '07). To compute the small sample, we propose two new techniques. First, we use an adaptive, nonuniform sampling approach similar to the &lt;it&gt;k&lt;/it&gt;-means++ seeding procedure to obtain small coresets from the data stream. This construction is rather easy to implement and, unlike other coreset constructions, its running time has only a small dependency on the dimensionality of the data. Second, we propose a new data structure, which we call coreset tree. The use of these coreset trees significantly speeds up the time necessary for the adaptive, nonuniform sampling during our coreset construction.We compare our algorithm experimentally with two well-known streaming implementations: BIRCH [Zhang et al. 1997] and StreamLS [Guha et al. 2003]. In terms of quality (sum of squared errors), our algorithm is comparable with StreamLS and significantly better than BIRCH (up to a factor of 2). Besides, BIRCH requires significant effort to tune its parameters. In terms of running time, our algorithm is slower than BIRCH. Comparing the running time with StreamLS, it turns out that our algorithm scalesmuch better with increasing number of centers. We conclude that, if the first priority is the quality of the clustering, then our algorithm provides a good alternative to BIRCH and StreamLS, in particular, if the number of cluster centers is large. We also give a theoretical justification of our approach by proving that our sample set is a small coreset in low-dimensional spaces.},
+ address = {New York, NY, USA},
+ articleno = {2.4},
+ author = {Ackermann, Marcel R. and M\"{a}rtens, Marcus and Raupach, Christoph and Swierkot, Kamil and Lammersen, Christiane and Sohler, Christian},
+ doi = {10.1145/2133803.2184450},
+ issn = {1084-6654},
+ issue_date = {2012},
+ journal = {ACM J. Exp. Algorithmics},
+ keyword = {<it>k</it>-means, Clustering, coresets, data stream},
+ month = {May},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {StreamKM++: A clustering algorithm for data streams},
+ url = {https://doi.org/10.1145/2133803.2184450},
+ volume = {17},
+ year = {2012}
+}

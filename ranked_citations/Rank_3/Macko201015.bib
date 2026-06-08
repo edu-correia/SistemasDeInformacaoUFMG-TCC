@@ -1,0 +1,13 @@
+@conference{Macko201015,
+ abstract = {Many file systems reorganize data on disk, for example to defragment storage, shrink volumes, or migrate data between different classes of storage. Advanced file system features such as snapshots, writable clones, and deduplication make these tasks complicated, as moving a single block may require finding and updating dozens, or even hundreds, of pointers to it. We present Backlog, an efficient implementation of explicit back references, to address this problem. Back references are file system meta-data that map physical block numbers to the data objects that use them. We show that by using LSM-Trees and exploiting the write-anywhere behavior of modern file systems such as NetApp R WAFL R or btrfs, we can maintain back reference meta-data with minimal overhead (one extra disk I/O per 102 block operations) and provide excellent query performance for the common case of queries covering ranges of physically adjacent blocks.},
+ author = {Macko, Peter and Seltzer, Margo and Smith, Keith A.},
+ journal = {Proceedings of FAST 2010: 8th USENIX Conference on File and Storage Technologies},
+ note = {Cited by: 18},
+ pages = {15 - 28},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Tracking back references in a write-anywhere file system},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85077071467?origin=resultslist},
+ year = {2010}
+}

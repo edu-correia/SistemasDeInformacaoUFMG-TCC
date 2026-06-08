@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749727,
+ abstract = {Deciding query equivalence has played an essential role in many real-world applications, including evaluating the accuracy of text-to-SQL models, where one needs to compare model-generated queries against ground truth queries. Although query equivalence is undecidable in general, researchers have developed two significant approaches to check query equivalence: formal verification-based and test-case-based. Verification-based solutions ensure correctness but may lack support for advanced SQL features and cross-database adaptability. Test cases are versatile but suffer from ad-hoc constraints and potential incorrectness (false positives).In this paper, we propose ParSEval, a Plan-aware SQL Equivalence evaluation framework to generate test database instances for given queries. We observed that existing test data generation methods fail to fully explore the query structure. To address this limitation, ParSEval formally models specific behaviors of each query operator and considers all possible execution paths of the logical query plan by adapting the notion of branch coverage. We validated the effectiveness and efficiency of ParSEval on four datasets with AI-generated and human-crafted queries. The experimental results show that ParSEval supports up to 40% more query pairs than state-of-the-art verification-based approaches. Compared to existing test-case-based approaches, ParSEval reveals more non-equivalent pairs while being 21\texttimes{} faster.},
+ author = {Chen, Chunyu and Miao, Zhengjie and Zhang, Yong and Wang, Jiannan},
+ doi = {10.14778/3749646.3749727},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {4750–4762},
+ publisher = {VLDB Endowment},
+ title = {ParSEval: Plan-Aware Test Database Generation for SQL Equivalence Evaluation},
+ url = {https://doi.org/10.14778/3749646.3749727},
+ volume = {18},
+ year = {2025}
+}

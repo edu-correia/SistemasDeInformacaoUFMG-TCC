@@ -1,0 +1,14 @@
+@article{11154911,
+ abstract = {Self-supervised monocular depth estimation (MDE) typically employs convolutional neural networks (CNNs) or Transformers to predict scene depth. However, CNNs struggle with long-range dependencies, while Transformers face quadratic scaling in self-attention, making high-resolution depth estimation challenging. To address these issues, we propose CVDepth, a hybrid CNN-Vmamba-based depth estimation model. Inspired by recent advancements in the VMamba architecture, which reduces computational complexity from quadratic to linear while maintaining the capability to capture long-range dependencies, CVDepth integrates a CNN-based encoder for extracting local features and a VMamba-based decoder for aggregating global information efficiently. To further enhance the model’s performance, we incorporate an attention mechanism within the Vmamba structure to improve feature interaction and localglobal information fusion. Additionally, we introduce a multiscale aggregation attention module (MAAM) that merges multilayer features with attention mechanisms to produce refined spatial and channel information. Our experiments on multiple datasets demonstrate that CVDepth outperforms other CNN and transformer-based models in self-supervised depth estimation. Moreover, CVDepth exhibits lower parameters and computational complexity, making it a more efficient and accurate solution for high-resolution depth estimation. The codes and trained models are available at https://github.com/jssc-ZhaoBG/jssc-CVDepth.},
+ author = {Zhao, Baigan and Wang, Jiejia and Guo, Zhiyang and Zhang, Zhihua and Hu, Huihui and Ma, Chunhui and Li, Ruifeng},
+ doi = {10.1109/JSEN.2025.3605401},
+ issn = {1558-1748},
+ journal = {IEEE Sensors Journal},
+ keyword = {Depth measurement;Feature extraction;Transformers;Computational modeling;Computer architecture;Decoding;Sensors;Attention mechanisms;Training;Semantics;Deep learning;mamba;monocular depth estimation (MDE);self-supervised learning},
+ month = {Oct},
+ number = {20},
+ pages = {38383-38392},
+ title = {Self-Supervised Monocular Depth Estimation Using Hybrid CNN-VMamba Architecture},
+ volume = {25},
+ year = {2025}
+}

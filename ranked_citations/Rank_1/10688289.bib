@@ -1,0 +1,14 @@
+@inproceedings{10688289,
+ abstract = {Surface reconstruction from multi-view images without pose prior is challenging. Recent advances integrate incremental Structure from Motion (SfM) pipeline into surface optimization, enabling simultaneous surface reconstruction and pose estimation. However, due to the inherent incremental registration scheme of SfM, the efficiency of these methods is far from satisfactory, e.g., reconstruction of an object captured by 49 images costs over 9 hours using a high-end GPU. Inspired by divide-and-conquer strategy, we present a Parallel Surface Reconstruction method, coined as ParaSurRe, where image collections are divided into non-overlapped clusters and the incremental reconstructions are performed individually in each cluster. Owing to image partitioning, each cluster only accurately reconstructs a part of the surface. The major challenge is to merge multiple partial neural implicit surfaces into a complete one. We propose a confidence-aware surface fusion strategy and a geometry-guided refinement to tackle this issue. Experiments on real-world datasets demonstrate that ParaSurRe reconstructs delicate surfaces from unposed images, and achieves competitive pose estimation performance compared with state-of-the-art methods, with up to 6.5× speedup on a scene captured by 81 images.},
+ author = {Li, Wenyu and Ye, Zongxin and Liu, Sidun and Zhang, Ziteng and Wang, Xi and Qiao, Peng and Dou, Yong},
+ booktitle = {2024 IEEE International Conference on Multimedia and Expo (ICME)},
+ doi = {10.1109/ICME57554.2024.10688289},
+ issn = {1945-788X},
+ keyword = {Training;Surface reconstruction;Three-dimensional displays;Structure from motion;Pose estimation;Pipelines;Graphics processing units;Surface Reconstruction;Neural Radiance Fields;Structure from Motion;Pose Estimation},
+ month = {July},
+ number = {},
+ pages = {1-6},
+ title = {ParaSurRe: Parallel Surface Reconstruction with No Pose Prior},
+ volume = {},
+ year = {2024}
+}

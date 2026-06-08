@@ -1,0 +1,18 @@
+@article{10.1145/3798219,
+ abstract = {The Ethereum ecosystem, which secures over $381 billion in assets, fundamentally relies on client APIs as the sole interface between users and the blockchain. However, these critical APIs suffer from widespread implementation inconsistencies, which can lead to financial discrepancies, degraded user experiences, and threats to network reliability. Despite this criticality, existing testing approaches remain manual and incomplete: they require extensive domain expertise, struggle to keep pace with Ethereum's rapid evolution, and fail to distinguish genuine bugs from acceptable implementation variations. We present APIDiffer, the first specification-guided differential testing framework designed to automatically detect API inconsistencies across Ethereum's diverse client ecosystem. APIDiffer transforms API specifications into comprehensive test suites through two key innovations: (1) specification-guided test input generation that creates both syntactically valid and invalid requests enriched with real-time blockchain data, and (2) specification-aware false positive filtering that leverages large language models to distinguish genuine bugs from acceptable variations. Our evaluation across all 11 major Ethereum clients reveals the pervasiveness of API bugs in production systems. APIDiffer uncovered 72 bugs, with 90.28% already confirmed or fixed by developers, including one critical error in the official specifications themselves. Beyond these raw numbers, APIDiffer achieves up to 89.67% higher code coverage than existing tools and reduces false positive rates by 37.38%. The Ethereum community's response validates our impact: developers have integrated our test cases, expressed interest in adopting our methodology, and escalated one bug to the official Ethereum Project Management meeting. By making APIDiffer open-source, we enable continuous validation of Ethereum client API implementations, thereby strengthening the foundational integrity of the entire Ethereum ecosystem.},
+ address = {New York, NY, USA},
+ articleno = {111},
+ author = {Ma, Jie and He, Ningyu and Xi, Jinwen and Xing, Mingzhe and Liu, Liangxin and Luo, Jiushenzi and Fu, Xiaopeng and Wu, Chiachih and Wang, Haoyu and Gao, Ying and Yue, Yinliang},
+ doi = {10.1145/3798219},
+ issue_date = {April 2026},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Differential Testing, Ethereum, Ethereum Client API, Large Language Models},
+ month = {April},
+ number = {OOPSLA1},
+ numpages = {31},
+ publisher = {Association for Computing Machinery},
+ title = {When Specifications Meet Reality: Uncovering API Inconsistencies in Ethereum Infrastructure},
+ url = {https://doi.org/10.1145/3798219},
+ volume = {10},
+ year = {2026}
+}

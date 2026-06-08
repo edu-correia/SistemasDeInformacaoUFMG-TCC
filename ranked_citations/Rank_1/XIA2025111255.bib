@@ -1,0 +1,13 @@
+@article{XIA2025111255,
+ abstract = {Forward-looking sonar is a critical technology for underwater information acquisition, but complex environment and equipment limitation introduce significant noise, degrading image quality and hindering AI-based interpretation. Current self-supervised denoising methods, primarily designed for optical images, struggle to address inherent structural noise and restore local details of imaging targets. Additionally, these methods lack ground truth for evaluation, complicating the application of reference-based metrics in sonar denoising tasks. To address these issues, this paper proposes a wavelet fusion-based conditional blind-spot network (WFC-BSN) for sonar image denoising without needing ground truth data. The core of this network is the wavelet transform fusion block (WTFB), which decomposes feature maps into multiple frequency-domain components, merging summed and differential features. This enhances the receptive field and boosts the network’s ability to recover fine details. Moreover, WFC-BSN introduces Blind-Self Displacement Loss, comprising Blind-Spot Displacement Loss and Self-Similar Displacement Loss. The former enhances noise robustness through data perturbations, and the latter improves structural reconstruction by retaining original pixel information. We also present a novel method for generating sonar ground truth by extracting noise-free feature from continuous frames. This method utilizes forward-looking sonar data collected from real ocean environment to construct a clean-noise paired dataset, enabling reference-based denoising performance evaluation. Experimental results demonstrate that whether for high- or low-frequency sonar images, WFC-BSN surpasses both traditional non-learning and existing self-supervised denoising techniques in effectiveness and detail preservation. Additionally, denoised images show improved accuracy in detection tasks, underscoring the method’s efficacy and practical value in underwater applications. Code and Dataset can be found at https://github.com/xzq-2000/WFC-BSN.},
+ author = {Ziqi Xia and Jie Li and Wenpei Jiao and Chunyan Zhang and Jianlei Zhang and Guangming Xie},
+ doi = {https://doi.org/10.1016/j.engappai.2025.111255},
+ issn = {0952-1976},
+ journal = {Engineering Applications of Artificial Intelligence},
+ keyword = {Forward-looking sonar, Image denoising, Self-supervised learning, Ground truth, Blind-spot network},
+ pages = {111255},
+ title = {WFC-BSN: Wavelet fusion-based conditional blind-spot network for self-supervised forward sonar denoising},
+ url = {https://www.sciencedirect.com/science/article/pii/S0952197625012564},
+ volume = {157},
+ year = {2025}
+}

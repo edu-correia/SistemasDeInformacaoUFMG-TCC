@@ -1,0 +1,14 @@
+@conference{Dai2022130,
+ abstract = {Graph mining, which fnds specifc patterns in the graph, is becoming increasingly important in various domains. We point out that accelerating graph mining suffers from the following challenges: (1) Heavy comparison for pruning: Pruning technique is widely used to reduce search space in graph mining. It applies constraints on vertex indices and involves massive index comparisons. (2) Low parallelism of set operations: The typical graph mining algorithms can be expressed as a series of set operations between neighbors of vertices, which suffer from low parallelism if vertices are streaming to the computation units. (3) Heavy data transfer: Graph mining needs to transfer intermediate data with two orders of magnitude larger than the original data volume between CPU and memory. To tackle these challenges, we propose DIMMining with four techniques from algorithm to architecture perspectives. The Index Pre-comparison scheme is proposed for efcient pruning. We introduce the self anchor and neighbor partition to enable pre-comparison for vertex indices. Thus, we can reduce comparisons during runtime. We propose a Flexible BCSR (Bitmap with Compressed Sparse Row) format to enable parallelism for set operations from the data structure perspective, which works on continuous vertices without memory space overheads. The Systolic Merge Array is designed to further explore the parallelism on discontinuous vertices from the architecture perspective. Then, we propose a DIMM-based Near-Memory-Computing architecture, which eliminates the large-volume data transfer between the computation and the memory. Extensive experimental results on real-world graphs show that DIMMining achieves 222.23× and 139.51× speedup compared with FPGAs and CPUs, and 3.61× speedup over the state-of-the-art graph mining architecture.  © 2022 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Dai, Guohao and Zhu, Zhenhua and Fu, Tianyu and Wei, Chiyue and Wang, Bangyan and Li, Xiangyu and Xie, Yuan and Yang, Huazhong and Wang, Yu},
+ doi = {10.1145/3470496.3527388},
+ journal = {Proceedings - International Symposium on Computer Architecture},
+ note = {Cited by: 56; All Open Access; Gold Open Access},
+ pages = {130 - 145},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DIMMining: Pruning-Efficient and Parallel Graph Mining on Near-Memory-Computing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85132813830?origin=resultslist},
+ year = {2022}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11444071,
+ abstract = {Model merging is a technique that combines multiple finetuned models into a single model without additional training, allowing a free-rider to cheaply inherit specialized capabilities. This study investigates methodologies to suppress unwanted model merging by free-riders. Existing methods such as model watermarking or fingerprinting can only detect merging in hindsight. In contrast, we propose a first proactive defense against model merging. Specifically, our defense method modifies the model parameters so that the model is disrupted if the model is merged with any other model, while its functionality is kept unchanged if not merged with others. Our approach consists of two modules, rearranging MLP parameters and scaling attention heads, which push the model out of the shared basin in parameter space, causing the merging performance with other models to degrade significantly. We conduct extensive experiments on image classification, image generation, and text classification to demonstrate that our defense severely disrupts merging while retaining the functionality of the post-protect model. Our code is available on Github: https://github.com/ISCT-W/PaRaMS},
+ author = {Junhao, Wei and Zhe, Yu and Sakuma, Jun},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01644},
+ issn = {2380-7504},
+ keyword = {Guns;IP networks;Communication systems;Telecommunications;Protocols;Amplitude shift keying;LoRa;Computer networks;HTTP;Amplitude modulation;model merging;model privacy},
+ month = {Oct},
+ number = {},
+ pages = {17698-17707},
+ title = {Disrupting Model Merging: A Parameter-Level Defense without Sacrificing Accuracy},
+ volume = {},
+ year = {2025}
+}

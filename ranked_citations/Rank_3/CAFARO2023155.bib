@@ -1,0 +1,13 @@
+@article{CAFARO2023155,
+ abstract = {UDDSketch is a recent algorithm for accurate tracking of quantiles in data streams, derived from the DDSketch algorithm. UDDSketch provides accuracy guarantees covering the full range of quantiles independently of the input distribution and greatly improves the accuracy with regard to DDSketch. In this paper we show how to compress and fuse two or more data streams (or datasets) by leveraging the mergeability of the UDDSketch data summaries. In general, two summaries on two data streams are said to be mergeable if there exists an algorithm that allows combining the two summaries into a single one related to the union of the two datasets, simultaneously preserving the error and size guarantees. The property of mergeability of a sketch enables the parallel and distributed processing of big volume data streams that can be compressed and fused by means of such mergeable data structures. Among the applications strictly related to accurate tracking of quantiles, requiring parallel and/or distributed processing we recall here estimating the latency of a web site, database query optimizers and the need of succinctly summarizing the distribution of values occurring over a sensor network. We prove that UDDSketch is fully mergeable and introduce PUDDSketch, a parallel version of UDDSketch suitable for message-passing based architectures. We formally prove its correctness and compare it to a parallel version of DDSketch, showing through extensive experimental results that our parallel algorithm almost always outperforms the parallel DDSketch algorithm with regard to the overall accuracy in determining the quantiles. Moreover, we also design and implement parallel versions of both the state of the art KLL and REQ sequential algorithms in order to compare and contrast PUDDSketch versus the corresponding parallel algorithms. Our experiments clearly show that PUDDSketch is faster or on par with regard to parallel running time, whilst providing simultaneously greater accuracy.},
+ author = {Massimo Cafaro and Catiuscia Melle and Italo Epicoco and Marco Pulimeno},
+ doi = {https://doi.org/10.1016/j.inffus.2022.08.005},
+ issn = {1566-2535},
+ journal = {Information Fusion},
+ keyword = {Quantiles, Sketches, Message-passing},
+ pages = {155-165},
+ title = {Data stream fusion for accurate quantile tracking and analysis},
+ url = {https://www.sciencedirect.com/science/article/pii/S1566253522000975},
+ volume = {89},
+ year = {2023}
+}

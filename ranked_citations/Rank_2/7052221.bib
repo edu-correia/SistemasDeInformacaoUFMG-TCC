@@ -1,0 +1,14 @@
+@inproceedings{7052221,
+ abstract = {We have proposed a processor called Auto-Memoization Processor which is based on computation reuse, and merged it with speculative multi-threading based on value prediction into a mechanism called Parallel Speculative Execution. The processor dynamically detects functions and loop iterations as reusable blocks, and registers their inputs and outputs into the table called Reuse Table automatically. Then, when the processor detects the same block, to apply computation reuse to the block, the processor compares the current input sequence with the previous input sequences registered in Reuse Table. In this paper, we propose a hinting technique for Auto-Memoization Processor based on static binary analysis. The hint indicates two distinctive types of input for loop bodies. One input type is unchanging value. When applying computation reuse to a loop, the processor can skip comparing such unchanging inputs with the values on Reuse Table. The other input type is unmonotonous changing value. The loops which have unmonotonous changing inputs will not benefit from computation reuse, and the processor can stop applying useless computation reuse to such loop iterations. By hinting these types of input to the processor, the overhead of Auto-Memoization Processor can be reduced. The result of the experiment with SPEC CPU95 benchmark suite shows that the hinting technique improves the maximum speedup from 40.6%to 51.8%, and the average speedup from 11.9% to 16.5%.},
+ author = {Tsumura, Takanori and Shibata, Yuuki and Kamimura, Kazutaka and Tsumura, Tomoaki and Nakashima, Yasuhiko},
+ booktitle = {2014 Second International Symposium on Computing and Networking},
+ doi = {10.1109/CANDAR.2014.49},
+ issn = {2379-1896},
+ keyword = {Registers;Indexes;Parallel processing;Delays;Engines;Impedance matching;Lattices},
+ month = {Dec},
+ number = {},
+ pages = {426-432},
+ title = {Hinting for Auto-Memoization Processor Based on Static Binary Analysis},
+ volume = {},
+ year = {2014}
+}

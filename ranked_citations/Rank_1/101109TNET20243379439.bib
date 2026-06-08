@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2024.3379439,
+ abstract = {A key feature of federated learning (FL) is to preserve the data privacy of end users. However, there still exist potential privacy leakage in exchanging gradients under FL. As a result, recent research often explores the differential privacy (DP) approaches to add noises to the computing results to address privacy concerns with low overheads, which however degrade the model performance. In this paper, we strike the balance of data privacy and efficiency by utilizing the pervasive social connections between users. Specifically, we propose SCFL, a novel Social-aware Clustered Federated Learning scheme, where mutually trusted individuals can freely form a social cluster and aggregate their raw model updates (e.g., gradients) inside each cluster before uploading to the cloud for global aggregation. By mixing model updates in a social group, adversaries can only eavesdrop the social-layer combined results, but not the privacy of individuals. As such, SCFL considerably enhances model utility without sacrificing privacy in a low-cost and highly feasible manner. We unfold the design of SCFL in three steps. i) Stable social cluster formation. Considering users’ heterogeneous training samples and data distributions, we formulate the optimal social cluster formation problem as a federation game and devise a fair revenue allocation mechanism to resist free-riders. ii) Differentiated trust-privacy mapping. For the clusters with low mutual trust, we design a customizable privacy preservation mechanism to adaptively sanitize participants’ model updates depending on social trust degrees. iii) Distributed convergence. A distributed two-sided matching algorithm is devised to attain an optimized disjoint partition with Nash-stable convergence. Experiments on Facebook network and MNIST/CIFAR-10 datasets validate that our SCFL can effectively enhance learning utility, improve user payoff, and enforce customizable privacy protection.},
+ author = {Wang, Yuntao and Su, Zhou and Pan, Yanghe and Luan, Tom H. and Li, Ruidong and Yu, Shui},
+ doi = {10.1109/tnet.2024.3379439},
+ issn = {1063-6692},
+ issue_date = {Oct. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {October},
+ number = {5},
+ numpages = {15},
+ pages = {3654–3668},
+ publisher = {IEEE Press},
+ title = {Social-Aware Clustered Federated Learning With Customized Privacy Preservation},
+ url = {https://doi.org/10.1109/TNET.2024.3379439},
+ volume = {32},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@conference{Chen2022,
+ abstract = {Contrastive learning (CL) has been the de facto technique for self-supervised representation learning (SSL), with impressive empirical success such as multi-modal representation learning. However, traditional CL loss only considers negative samples from a minibatch, which could cause biased gradients due to the non-decomposibility of the loss. For the first time, we consider optimizing a more generalized contrastive loss, where each data sample is associated with an infinite number of negative samples. We show that directly using minibatch stochastic optimization could lead to gradient bias. To remedy this, we propose an efficient Bayesian data augmentation technique to augment the contrastive loss into a decomposable one, where standard stochastic optimization can be directly applied without gradient bias. Specifically, our augmented loss defines a joint distribution over the model parameters and the augmented parameters, which can be conveniently optimized by a proposed stochastic expectation-maximization algorithm. Our framework is more general and is related to several popular SSL algorithms. We verify our framework on both small scale models and several large foundation models, including SSL of ImageNet and SSL for vision-language representation learning. Experiment results indicate the existence of gradient bias in all cases, and demonstrate the effectiveness of the proposed method on improving previous state of the arts. Remarkably, our method can outperform the strong MoCo-v3 under the same hyper-parameter setting with only around half of the minibatch size; and also obtains strong results in the recent public benchmark ELEVATER for few-shot image classification. © 2022 Neural information processing systems foundation. All rights reserved.},
+ author = {Chen, Changyou and Duan, Jiali and Chen, Yiran and Zhang, Jianyi and Tran, Son Dinh and Xu, Yi and Chen, Liqun and Zeng, Belinda and Chilimbi, Trishul},
+ journal = {Advances in Neural Information Processing Systems},
+ note = {Cited by: 20},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Why do We Need Large Batchsizes in Contrastive Learning? A Gradient-Bias Perspective},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85163201670?origin=resultslist},
+ volume = {35},
+ year = {2022}
+}

@@ -1,0 +1,14 @@
+@conference{Jiang2025739,
+ abstract = {Timeseries data compression is a critical issue in timeseries databases. So far, many compression algorithms have been proposed, in which lossy compression algorithms generally achieve superior compression ratios compared to their lossless counterparts. However, existing lossy compression algorithms do not account for the storage characteristics of timeseries databases. This paper proposes a novel two-phase compatible lossy compression method named TopcDB for LSM-tree-based timeseries databases. TopcDB addresses two critical challenges in existing approaches: error accumulation during compaction and inefficient compression for small data chunks. It employs an adaptive two-phase compression architecture: Phase 1 utilizes quantization-based error-bounded compression for in-memory chunks. Phase 2 applies entropy encoding with level-aware chunk sizing for LSM-tree-based persistent storage. The novelty of TopcDB includes a merge-friendly Lorenzo predictor, linearscale quantization with mathematical error guarantees, and geometric chunk scaling aligned with compaction patterns. Experimental results show that TopcDB achieves 4.1-8.3 × higher compression ratios than Prometheus while improving write throughput by 147%. Compared to state-of-the-art lossy compressors, TopcDB maintains 1.1-2.8 × and 1.1-1.4 × higher compression ratios for in-order and out-of-order data, respectively. Our proposal eliminates error propagation during compaction through phase-isolated compression strategies, making it particularly suitable for industrial timeseries workloads with strict precision requirements.  © 2025 IEEE.},
+ author = {Jiang, Zijian and Jin, Peiquan},
+ doi = {10.1109/ISPA67752.2025.00100},
+ journal = {Proceedings - 2025 IEEE International Symposium on Parallel and Distributed Processing with Applications, ISPA 2025},
+ note = {Cited by: 0},
+ pages = {739 - 746},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TopcDB: Two-Phase Compactable Lossy Compression for Timeseries Databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105030134070?origin=resultslist},
+ year = {2025}
+}

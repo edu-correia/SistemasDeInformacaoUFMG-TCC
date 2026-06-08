@@ -1,0 +1,14 @@
+@article{9662661,
+ abstract = {Accurate gland segmentation in histology tissue images is a critical but challenging task. Although deep models have demonstrated superior performance in medical image segmentation, they commonly require a large amount of annotated data, which are hard to obtain due to the extensive labor costs and expertise required. In this paper, we propose an intra- and inter-pair consistency-based semi-supervised (I2CS) model that can be trained on both labeled and unlabeled histology images for gland segmentation. Considering that each image contains glands and hence different images could potentially share consistent semantics in the feature space, we introduce a novel intra- and inter-pair consistency module to explore such consistency for learning with unlabeled data. It first characterizes the pixel-level relation between a pair of images in the feature space to create an attention map that highlights the regions with the same semantics but on different images. Then, it imposes a consistency constraint on the attention maps obtained from multiple image pairs, and thus filters low-confidence attention regions to generate refined attention maps that are then merged with original features to improve their representation ability. In addition, we also design an object-level loss to address the issues caused by touching glands. We evaluated our model against several recent gland segmentation methods and three typical semi-supervised methods on the GlaS and CRAG datasets. Our results not only demonstrate the effectiveness of the proposed due consistency module and Obj-Dice loss, but also indicate that the proposed I2CS model achieves state-of-the-art gland segmentation performance on both benchmarks.},
+ author = {Xie, Yutong and Zhang, Jianpeng and Liao, Zhibin and Verjans, Johan and Shen, Chunhua and Xia, Yong},
+ doi = {10.1109/TIP.2021.3136716},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Glands;Image segmentation;Semantics;Feature extraction;Histopathology;Training;Data models;Gland segmentation;semi-supervised learning;pairwise learning;deep convolutional neural network},
+ month = {},
+ number = {},
+ pages = {894-905},
+ title = {Intra- and Inter-Pair Consistency for Semi-Supervised Gland Segmentation},
+ volume = {31},
+ year = {2022}
+}

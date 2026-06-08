@@ -1,0 +1,16 @@
+@article{Zhan2025,
+ abstract = {Research on LSM-tree optimization for ZNS-based SSDs has garnered significant attention. Existing studies primarily focus on reducing garbage collection overhead by ensuring consistent data block lifetimes within a zone. While many works address cascading write amplification between LSM-trees and ZNS SSDs, few evaluate the effectiveness of existing WA reduction strategies on ZNS. Block compaction, a commonly adopted optimization approach, reduces write amplification by shrinking the compaction granularity to the data block level and remapping reusable data blocks. However, Block compaction causes fragmentation in ZNS SSDs, increasing data migration and write amplification during zone reclamation. Moreover, fragmentation reduces the prefetch cache hit rate of ZNS file systems, thereby increasing data block read latency and negatively impacting user read operations and range lookup performance. Additionally, block compaction with a low proportion of reusable data blocks generates more random read operations, leading to higher compaction latency and blocking user read/write operations. To address these issues, we propose the Randomness-Resistant Block-grained Compaction (RBC) strategy. RBC uses a remapping table to track the location of fragmented data blocks, allowing for more efficient prefetch cache utilization. Furthermore, RBC reduces the data migration overhead caused by fragmentation by delaying the reclamation of highly fragmented zones and migrating remapped data blocks during idle periods. RBC introduces a dynamic compaction strategy that applies block-level compaction for high dirty block ratios and switches to file-level compaction for low dirty block ratios. Additionally, it implements a low-CPU-overhead dirty block detection strategy. Experimental results show that RBC improves throughput by 69% and 37% compared to traditional RocksDB and other block-grained compaction methods, respectively. RBC also improves range query performance by 1.75x compared to other block-grained compaction techniques. © 2025 Copyright held by the owner/author(s).},
+ author = {Zhan, Tianqi and Feng, Dan and Li, Shu and Wang, Zhengyong and Tong, Wei},
+ doi = {10.1145/3764588},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RBC: A Randomness-Resistant Block-Grained Compaction Strategy for ZNS SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105026666215?origin=resultslist},
+ volume = {22},
+ year = {2025}
+}

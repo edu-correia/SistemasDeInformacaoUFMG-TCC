@@ -1,0 +1,14 @@
+@inproceedings{9370334,
+ abstract = {Flow-sensitive points-to analysis provides better precision than its flow-insensitive counterpart. Traditionally performed on the control-flow graph, it incurs heavy analysis overhead. For performance, staged flow-sensitive analysis (SFS) is conducted on a pre-computed def-use (value-flow) graph where points-to sets of variables are propagated across def-use chains sparsely rather than across control-flow in the control-flow graph. SFS makes the propagation of different objects' points-to sets sparse (multiple-object sparsity), however, it suffers from redundant propagation between instructions of the same object's points-to sets (single-object sparsity). The points-to set of an object is often duplicated, resulting in redundant propagation and storage, especially in real-world heap-intensive programs. We notice that a simple graph prelabelling extension can identify much of this redundancy in a pre-analysis. With this pre-analysis, multiple nodes (instructions) in the value-flow graph can share an individual memory object's points-to set rather than each node maintaining its own points-to set for that single object. We present object versioning for flow-sensitive points-to analysis, a finer single-object sparsity technique which maintains the same precision while allowing us to avoid much of the redundancy present in propagating and storing points-to sets. Our experiments conducted on 15 open-source programs, when compared with SFS, show that our approach runs up to 26.22× faster (5.31× on average), and reduces memory usage by up to 5.46× (2.11 × on average).},
+ author = {Barbar, Mohamad and Sui, Yulei and Chen, Shiping},
+ booktitle = {2021 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO51591.2021.9370334},
+ issn = {},
+ keyword = {Redundancy;Labeling;Optimization;Open source software;points-to analysis;flow-sensitivity;sparse value-flow graph},
+ month = {Feb},
+ number = {},
+ pages = {222-235},
+ title = {Object Versioning for Flow-Sensitive Pointer Analysis},
+ volume = {},
+ year = {2021}
+}

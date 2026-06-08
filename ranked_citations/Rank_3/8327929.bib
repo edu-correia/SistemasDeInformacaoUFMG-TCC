@@ -1,0 +1,14 @@
+@article{8327929,
+ abstract = {Software-Defined Networking enables flexible flow control by caching rules at OpenFlow switches. Wildcard rule caching enables management of traffic aggregates, reduces flow setup queries, and simplifies policy management. However, to guarantee correct packet matching, some rules that depend on the requested rule need to be cached as well, which leads to unnecessary flow table bloat and potential overflow. We have proposed a scheme called CAching rules in Buckets (CAB) to mitigate the dependency issue by partitioning the field space into buckets and caching rules associated with the requested buckets. In this paper, we propose the Adaptive Cache ManagEment (ACME) for CAB, which dynamically adjusts the sizes and shapes of buckets according to incoming traffic to achieve more efficient flow table utilization. The improvement also includes preloading rules that span a wide field space to reduce bandwidth usage in the control channel. We formalize the caching policies for CAB-ACME to guarantee the semantic correctness of packet classification. We evaluate the performance of CAB-ACME through software-based simulations and a prototype built with the OpenDaylight controller and hardware switches from multiple vendors. The results show that, compared with other rule caching schemes, CAB-ACME reduces the cache miss rate by one order of magnitude and the control channel bandwidth usage by a half. ACME also helps maintain a steadier performance under dynamic traffic changes compared with the baseline CAB design.},
+ author = {Yan, Bo and Xu, Yang and Chao, H. Jonathan},
+ doi = {10.1109/TNET.2018.2815983},
+ issn = {1558-2566},
+ journal = {IEEE/ACM Transactions on Networking},
+ keyword = {Control systems;Adaptive systems;Bandwidth;Adaptation models;Aerospace electronics;Memory management;Data centers;SDN;wildcard rule caching;adaptive cache management},
+ month = {April},
+ number = {2},
+ pages = {962-975},
+ title = {Adaptive Wildcard Rule Cache Management for Software-Defined Networks},
+ volume = {26},
+ year = {2018}
+}

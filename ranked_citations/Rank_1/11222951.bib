@@ -1,0 +1,14 @@
+@article{11222951,
+ abstract = {With the rapid development of large multimodal models (LMMs), multimodal understanding applications are emerging. As most LMM inference requests originate from edge devices with limited computational capabilities, the predominant inference pipeline involves directly forwarding the input data to an edge server which handles all computations. However, this approach introduces high transmission latency due to limited uplink bandwidth of edge devices and significant computation latency caused by the prohibitive number of visual tokens, thus hindering delay-sensitive tasks and degrading user experience. To address this challenge, we propose a task-oriented feature compression (TOFC) method for multimodal understanding in a device-edge co-inference framework, where visual features are merged by clustering and encoded by a learnable and selective entropy model before feature projection. Specifically, we employ density peaks clustering based on $K$K nearest neighbors to reduce the number of visual features, thereby minimizing both data transmission and computational complexity. Subsequently, a learnable entropy model with hyperprior is utilized to encode and decode merged features, further reducing transmission overhead. To enhance compression efficiency, multiple entropy models are adaptively selected based on the characteristics of the visual features, enabling a more accurate estimation of the probability distribution. Comprehensive experiments on seven visual question answering benchmarks validate the effectiveness of the proposed TOFC method. Results show that TOFC achieves up to 52% reduction in data transmission overhead and 63% reduction in system latency while maintaining identical task performance, compared with neural compression ELIC.},
+ author = {Yuan, Cheng and Liu, Zhening and Lv, Jiashu and Shao, Jiawei and Jiang, Yufei and Zhang, Jun and Li, Xuelong},
+ doi = {10.1109/TMC.2025.3626724},
+ issn = {1558-0660},
+ journal = {IEEE Transactions on Mobile Computing},
+ keyword = {Visualization;Entropy;Feature extraction;Data communication;Servers;Computational modeling;Image coding;Redundancy;Bandwidth;Uplink;Distributed inference;large multimodal models;edge artificial intelligence;task-oriented communication},
+ month = {April},
+ number = {4},
+ pages = {4762-4775},
+ title = {Task-Oriented Feature Compression for Multimodal Understanding via Device-Edge Co-Inference},
+ volume = {25},
+ year = {2026}
+}

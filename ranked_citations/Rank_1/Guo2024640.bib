@@ -1,0 +1,14 @@
+@conference{Guo2024640,
+ abstract = {Sparse Matrix-Vector Multiplication (SpMV) plays a crucial role in scientific computing, but severe load imbalance among threads restricts its performance. Previous load-balancing methods have primarily ignored the CPU's cache line-based memory access characteristics and the impact of data locality during workload evaluation and partitioning, leading to limited effect in load balancing. To address this issue, we propose a cache-aware memory load-balancing SpMV algorithm, CAMLB-SpMV, based on the Compressed Sparse Row (CSR) format. We evaluate all memory access loads of CSR-based SpMV at the cache line level and utilize a sliding window to record accesses to x, enabling the load evaluation to perceive data locality. Finally, the total workload is evenly distributed to threads to achieve load-balancing. Experimental results on 2661 sparse matrices from SuiteSparse sparse matrix dataset demonstrate that CAMLB-SpMV surpasses Intel MKL, Merge-Based, CSR5-AVX512, and CVR by an average factor of 1.16x, 1.19x, 2.16x, and 1.17x (up to 13.77x, 7.45x, 15.89x, and 8.63x), respectively, on Intel Xeon Platinum 9242. Moreover, it outperforms AMD AOCL, Merge-Based, and CSR5-AVX2 by an average factor of 2.70x, 1.62x, and 3.40x (up to 25.03x, 4.36x, and 13.7x) on AMD EPYC 7542.  © 2024 Owner/Author.},
+ author = {Guo, Jihu and Xia, Rui and Liu, Jie and Zhu, Xiaoxiong and Zhang, Xiang},
+ doi = {10.1145/3673038.3673042},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 4; All Open Access; Gold Open Access},
+ pages = {640 - 649},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CAMLB-SpMV: An Efficient Cache-Aware Memory Load-Balancing SpMV on CPU},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85202446661?origin=resultslist},
+ year = {2024}
+}

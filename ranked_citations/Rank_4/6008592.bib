@@ -1,0 +1,14 @@
+@inproceedings{6008592,
+ abstract = {Two major performance issues of Flash NAND are the write latency for random writes, and the lifetime of NAND chips. Several methods, mainly focusing on the Flash Translation Layer (FTL) or the Flash Buffer Management have been proposed to address these problems. In this paper, we propose an idea of reducing write traffic to Flash by the following steps: First we avoid repeated writes to Flash SSD by finding the redundant writes using a cryptographic HASH cipher. We design a set of acceleration techniques to reduce the latency overhead of this extra computational cost. Then we propose a PCM-based buffer extender for Flash SSD where we write the frequent updates to hot pages of Flash into PCM layer, which allows in-page update. Finally, while merging the PCM updated data to the Flash page, we use a special merging technique to change the flushes into sequential flushes, as sequential writes on Flash are almost thrice as fast as random writes. We maintain the redundant write finder mechanism in PCM. We test our design using a trace-driven simulator. The results show that compared to the traditional design technique, lifetime of Flash SSD can be more than quadrupled, while consuming 20% less power to do so with some improvement in write performance as well.},
+ author = {Pathak, Suraj and Tay, Y.C. and Qingsong Wei},
+ booktitle = {2011 International Green Computing Conference and Workshops},
+ doi = {10.1109/IGCC.2011.6008592},
+ issn = {},
+ keyword = {Phase change materials;Ash;Fingerprint recognition;Flash memory;Encryption;Merging;Acceleration;NAND;Phase-Change Memory;Energy},
+ month = {July},
+ number = {},
+ pages = {1-6},
+ title = {Power and endurance aware Flash-PCM memory system},
+ volume = {},
+ year = {2011}
+}

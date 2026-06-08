@@ -1,0 +1,14 @@
+@article{10717873,
+ abstract = {Recently, numerous complexity control approaches have been proposed to achieve the target encoding complexity. However, only few of them were developed for VVC encoders. This paper fills this gap by proposing an efficient and flexible complexity control approach for VVC. The support for both Acceleration Ratio Control (ARC) and Encoding Time Control (ETC) makes our method highly versatile for various applications. At first, we introduce a sequence-level complexity estimation model to merge the ARC and ETC tasks. Then, four key modules are involved for complexity control: complexity allocation, complexity estimation, encoding configuration decision, and feedback. Specifically, we hierarchically allocate the complexity budget to three coding levels: GOP, frame, and Basic Unit (BU). Each BU’s allocation weight is decided by its SSIM distortion, whereby the perceptual quality can be ensured. The multi-complexity configurations are established by altering the partition depth and number of reference frames. Via tuning each BU’s configuration according to its target acceleration ratio and adaptively updating the control strategies based on the feedback, our scheme can precisely realize any achievable acceleration targets within one-pass encoding. Moreover, each BU’s un-accelerated reference encoding time, which is used to calculate its target acceleration ratio, is estimated by SVR models. Experiments prove that for both the ARC and ETC tasks, our scheme can precisely achieve a wide range of complexity targets (30%  $\sim ~100$ %) with negligible RD loss in PSNR and SSIM, outperforming other state-of-the-art methods.},
+ author = {Zhao, Yan and Zhu, Chen and Xu, Jun and Lu, Guo and Song, Li and Ma, Siwei},
+ doi = {10.1109/TBC.2024.3475811},
+ issn = {1557-9611},
+ journal = {IEEE Transactions on Broadcasting},
+ keyword = {Complexity theory;Encoding;Estimation;Resource management;Visualization;Standards;Partitioning algorithms;Distortion;Copper;Video recording;Versatile video coding (VVC);complexity control;complexity estimation;block partition;motion estimation},
+ month = {March},
+ number = {1},
+ pages = {96-110},
+ title = {An Efficient and Flexible Complexity Control Method for Versatile Video Coding},
+ volume = {71},
+ year = {2025}
+}

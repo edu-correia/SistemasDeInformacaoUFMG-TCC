@@ -1,0 +1,14 @@
+@conference{Chae20241495,
+ abstract = {LSM-Tree-based key-value stores such as HBase, RocksDB, and Cassandra use a fixed data block size. In this study, we show that using a fixed block size can lead to unnecessary read amplification and cache pollution. To address this issue, we propose a dynamic data block size control method to store small key-values in small data blocks and large key-values in large data blocks to minimize disk I/Os. However, using small data blocks for small key-values can result in performance issues due to increased disk seeks. To mitigate this problem, we implement a two-level cache system, which involves a lower level conventional BlockCache for storing larger, coarse-grained data blocks and an upper level cache, KVCache, for storing smaller, fine-grained key-value pairs. Our experiments show that the dynamic data block size control and fine-grained KVCache help effectively reduce read amplification and improve read performance in HBase. © 2024 Copyright is held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Chae, Sangeun and Kim, Wonbae and Han, Daegyu and Kim, Jeongmin and Nam, Beomseok},
+ doi = {10.1145/3605098.3635898},
+ journal = {Proceedings of the ACM Symposium on Applied Computing},
+ note = {Cited by: 0},
+ pages = {1495 - 1503},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing Read Performance of HBase through Dynamic Control of Data Block Sizes and KVCache},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85197662831?origin=resultslist},
+ year = {2024}
+}

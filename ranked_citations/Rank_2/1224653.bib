@@ -1,0 +1,14 @@
+@inproceedings{1224653,
+ abstract = {This paper proposes a new approach to image compression based on image segmentation using the EM algorithm and combined with BTC (block truncation coding) and VQ (vector quantization). The main idea is to decompose the image into homogeneous and nonhomogeneous blocks and then compress them using BTC or VQ. This block classification is achieved using an image segmentation based on the EM (expectation-maximization) algorithm. The use of the EM algorithm results in a good robust segmentation with well behaved boundaries. The segmented image is then used to specify whether BTC or VQ is used to encode a block by assessing if it contains all pixels from a homogeneous or nonhomogeneous region. BTC provides a simple and effective method for coding blocks which contain a lot of information or distinct edges due to its two-level quantizer. However, its lowest attainable bit rate is limited and it often introduces blocking effect in homogeneous regions. VQ on the other hand is more efficient due to a multilevel quantizer and thus results in better compression ratios. However, it does not retain any spatial information about the edges, resulting in stair casing effects. Previous attempts to combine both techniques into a hybrid algorithm only make use of simple measures such as image variance. Results for medical images show that this approach yields significant improvements over traditional BTC or VQ coding when used alone.},
+ author = {Kanafani, Q. and Beghdadi, A. and Fookes, C.},
+ booktitle = {Seventh International Symposium on Signal Processing and Its Applications, 2003. Proceedings.},
+ doi = {10.1109/ISSPA.2003.1224653},
+ issn = {},
+ keyword = {Image segmentation;Image coding;Vector quantization;Image storage;Robustness;Pixel;Biomedical imaging;Degradation;Compression algorithms;Signal processing},
+ month = {July},
+ number = {},
+ pages = {113-116 vol.1},
+ title = {Segmentation-based image compression using BTC-VQ technique},
+ volume = {1},
+ year = {2003}
+}

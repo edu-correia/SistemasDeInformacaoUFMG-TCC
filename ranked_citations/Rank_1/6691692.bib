@@ -1,0 +1,14 @@
+@inproceedings{6691692,
+ abstract = {Conservative estimates place the amount of data expected to be created by mankind this year to exceed several thousand exabytes. Given the enormous data deluge, and in spite of recent advances in main memory capacities, there is a clear and present need to move beyond algorithms that assume in-core (main-memory) computation. One fundamental task in Information Retrieval and text analytics requires the maintenance of local and global term frequencies from within large enterprise document corpora. This can be done with a counting hash-table; they associate keys to frequencies. In this paper, we will study the design landscape for the development of such an out-of-core counting hash table targeted at flash storage devices. Flash devices have clear benefits over traditional hard drives in terms of latency of access and energy efficiency. However, due to intricacies in their design, random writes can be relatively expensive and can degrade the life of the flash device. Counting hash tables are a challenging case for the flash drive because this data structure is inherently dependent upon the randomness of the hash function; frequency updates are random and may incur random expensive random writes. We demonstrate how to overcome this challenge by designing a hash table with two related hash functions, one of which exhibits a data placement property with respect to the other. Specifically, we focus on three designs and evaluate the trade-offs among them along the axes of query performance, insert and update times, and I/O time using real-world data and an implementation of TF-IDF.},
+ author = {Clemons, Tyler and Faisal, S M and Tatikonda, Shirish and Aggarwal, Charu and Parthasarathy, Srinivasan},
+ booktitle = {2013 IEEE International Conference on Big Data},
+ doi = {10.1109/BigData.2013.6691692},
+ issn = {},
+ keyword = {Random access memory;Ash;Internet;Context;Performance evaluation;Encyclopedias},
+ month = {Oct},
+ number = {},
+ pages = {7-14},
+ title = {Hash in a flash: Hash tables for flash devices},
+ volume = {},
+ year = {2013}
+}

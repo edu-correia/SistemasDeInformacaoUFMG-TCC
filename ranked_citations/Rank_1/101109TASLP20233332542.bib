@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2023.3332542,
+ abstract = {Accents pose significant challenges for speech recognition systems. Although joint automatic speech recognition (ASR) and accent recognition (AR) training has been proven effective in handling multi-accent scenarios, current multi-task ASR-AR approaches overlook the granularity differences between tasks. Fine-grained units capture pronunciation-related accent characteristics, while coarse-grained units are better for learning linguistic information. Moreover, an explicit interaction of two tasks can provide complementary information and improve the other's performance, but it is rarely used by existing approaches. In this paper, we propose a novel Decoupling and Interacting Multi-task Network (DIMNet) for joint speech and accent recognition, which is comprised of a connectionist temporal classification (CTC) branch, an AR branch, an ASR branch, and a bottom feature encoder. Specifically, AR and ASR are first decoupled by separated branches and two-granular modeling units to learn task-specific representations. The AR branch is from our previously proposed linguistic-acoustic bimodal AR model and the ASR branch is an encoder-decoder based Conformer model. Then, for the task interaction, the CTC branch provides aligned text for the AR task, while accent embeddings extracted from our AR model are incorporated into the ASR branch's encoder and decoder. Finally, during ASR inference, a cross-granular rescoring method is introduced to fuse the complementary information from the CTC and attention decoder after the decoupling. Our experiments on English and Chinese datasets demonstrate the effectiveness of the DIMNet, which achieves &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;${21.45%}$&lt;/tex-math&gt;&lt;/inline-formula&gt;/&lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;${28.53%}$&lt;/tex-math&gt;&lt;/inline-formula&gt; AR accuracy relative improvement and &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;${32.33%}$&lt;/tex-math&gt;&lt;/inline-formula&gt;/&lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;${14.55%}$&lt;/tex-math&gt;&lt;/inline-formula&gt; ASR error rate relative reduction over a published standard baseline, respectively.},
+ author = {Shao, Qijie and Guo, Pengcheng and Yan, Jinghao and Hu, Pengfei and Xie, Lei},
+ doi = {10.1109/TASLP.2023.3332542},
+ issn = {2329-9290},
+ issue_date = {2024},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {November},
+ numpages = {12},
+ pages = {459–470},
+ publisher = {IEEE Press},
+ title = {Decoupling and Interacting Multi-Task Learning Network for Joint Speech and Accent Recognition},
+ url = {https://doi.org/10.1109/TASLP.2023.3332542},
+ volume = {32},
+ year = {2023}
+}

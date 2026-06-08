@@ -1,0 +1,18 @@
+@article{10.14778/3712221.3712241,
+ abstract = {Shortest distance computation is a fundamental operation in graph-related applications, especially in location-based services. The most efficient method is hop-labeling, which can answer queries in microseconds. However, when the traffic condition changes dynamically, they need a long time to maintain or an even longer time to re-construct, making it hard to catch up with numerous or frequent updates. As a result, real-life applications still rely on slow graph searching algorithms. To improve the hop labeling construction efficiency, we resort to GPU for its high parallelism power and propose the G2H index. Specifically, we first analyze the relation of the graph partitions, index performance, and parallelism to identify the most suitable partition scheme for G2H, with a hybrid scheme and optimized node ordering for faster contraction. Then, we propose a label-pruning method to reduce the label construction workload with several strategies designed to balance and improve the parallel label construction. Finally, experiments on real-life networks show that our G2H can finish construction within seconds for large urban networks and under one minute for large region networks with 6M vertices, which is several times faster than the state-of-the-art methods. Besides, G2H can answer hundreds of millions of queries per second, achieving two orders of magnitude acceleration.},
+ author = {Li, Jiajia and Chen, Yongzhi and Zhang, Mengxuan and Li, Lei},
+ doi = {10.14778/3712221.3712241},
+ issn = {2150-8097},
+ issue_date = {November 2024},
+ journal = {Proc. VLDB Endow.},
+ keyword = {shortest distance, tree decomposition, GPU, road network},
+ month = {November},
+ number = {3},
+ numpages = {14},
+ pages = {770–783},
+ publisher = {VLDB Endowment},
+ title = {A CPU-GPU Hybrid Labelling Algorithm for Massive Shortest Distance Queries on Road Networks},
+ url = {https://doi.org/10.14778/3712221.3712241},
+ volume = {18},
+ year = {2024}
+}

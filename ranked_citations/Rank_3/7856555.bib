@@ -1,0 +1,14 @@
+@inproceedings{7856555,
+ abstract = {Packet classification is a core problem for OpenFlow-based software-defined networking switches, which required 38 packet header fields per flow to be examined against thousands of rules in a ruleset. With the trend of continue growing number of fields in a rule and the number of rules in rule set, it will be a great challenge to design a high performance packet classification solution with the capability to easy update new rule and fields. In this paper, we present a scalable many-field packet classification algorithm with varying rulesets and its prototype implementation on a graphics processing unit. The proposed algorithm constructs multiple lookup tables and merges partial lookup results for a small ruleset to accelerate the overall packet classification process by using effective bit positions in a ruleset with three selecting metrics: wildcard ratio, independence index, and diversity index. Those lookup tables made with effective bit positions are flat with a low rule replication ratio. Besides, they are adjustable to meet different implementation environments for a good performance scalability between different ruleset sizes. Our prototype on a single NVIDIA K20C GPU achieves 198 MPPS, 186 MPPS, 163 MPPS throughput for 1K, 32K, and 100K 15-field ruleset.},
+ author = {Hsieh, Cheng-Liang and Weng, Ning},
+ booktitle = {2016 ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS)},
+ doi = {10.1145/2881025.2881036},
+ issn = {},
+ keyword = {Scalability;Hardware;Computer architecture;Packet Classification;GPU;SDN},
+ month = {March},
+ number = {},
+ pages = {13-24},
+ title = {Many-field packet classification for software-defined networking switches},
+ volume = {},
+ year = {2016}
+}

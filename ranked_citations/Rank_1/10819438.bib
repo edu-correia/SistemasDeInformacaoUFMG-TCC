@@ -1,0 +1,14 @@
+@article{10819438,
+ abstract = {In the study of incremental object detection, knowledge distillation and data replay are effective methods to mitigate catastrophic forgetting. However, current research on single-stage detectors is limited, single-stage detector outputs often contain excessive negative sample information, and direct application of knowledge distillation to them is ineffective. To address this, this paper proposes a multi-level foreground prompt incremental learning algorithm for single-stage detectors like YOLO, including foreground prompts at the image level, feature map level, and knowledge level. First, to obtain fewer but more representative replay samples, representative images with a high number of old class foregrounds are selected by maximizing sample structure distance, providing direct foreground information at the image level. Second, the feature map output by the teacher model is used as a feature-level prompt, with a feature distillation loss guiding the student model to encode new class foreground information in less significant channels of the old feature map, reducing interference. Lastly, the teacher model’s inference output serves as a knowledge-level prompt, and the adaptive select object method is introduced to avoid foreground conflict in traditional knowledge distillation, enhancing the model’s plasticity by selectively merging foreground information. Extensive experiments on PASCAL VOC and MS COCO datasets demonstrate that this approach significantly improves model plasticity while maintaining stability.},
+ author = {Mo, Jianwen and Zou, Ronghua and Yuan, Hua},
+ doi = {10.1109/ACCESS.2024.3524539},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Adaptation models;YOLO;Feature extraction;Incremental learning;Stability analysis;Detectors;Data models;Computational modeling;Training;Knowledge engineering;Catastrophic forgetting;incremental learning;knowledge distillation;object detection},
+ month = {},
+ number = {},
+ pages = {4048-4066},
+ title = {Multi-Level Foreground Prompt for Incremental Object Detection},
+ volume = {13},
+ year = {2025}
+}

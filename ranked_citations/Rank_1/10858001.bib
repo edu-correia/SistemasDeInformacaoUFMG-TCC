@@ -1,0 +1,14 @@
+@article{10858001,
+ abstract = {This paper proposes RCP, a new reversible coherence protocol that ensures invisible speculative load execution (ISLE) with low overhead. The protocol is designed by systematically extending the existing coherence protocol to incorporate speculative loads and states. Instead of considering the protocol as a black-box and adding external structures or applying patches in previous work, the protocol modifications overcome the key drawbacks in recent schemes that contribute to unnecessary overhead. RCP can be combined with processor mechanisms highlighted in recent work that eliminate the effects of speculative instructions on other instructions to comprehensively protection against speculative execution attacks (a.k.a. ideal invisible speculation or IIS), as strong as speculative taint tracking (STT). The protocol is implemented in Gem5 and verified with Murphi. The results show that, RCP only incurs average overhead of 7.7% and 7.4% for SPEC2017 and PARSEC, respectively. In comparison, MuonTrap, the existing solution with the lowest overhead, incurs 10.7% and 9.3% on average for the two with the same hardware resource. When used as a component for the comprehensive protection, the design based on RCP reduces the overhead of STT by 1.59× (8.4% vs 22.5%).},
+ author = {Wu, You and Qian, Xuehai},
+ doi = {10.1109/TDSC.2025.3535374},
+ issn = {1941-0018},
+ journal = {IEEE Transactions on Dependable and Secure Computing},
+ keyword = {Protocols;Coherence;Protection;Interference;Privacy;Microarchitecture;Load modeling;Delays;Codes;Transmitters;Hardware security;microarchitecture;coherence protocol;side channel},
+ month = {July},
+ number = {4},
+ pages = {3647-3660},
+ title = {Low-Overhead Reversible Coherence Protocol},
+ volume = {22},
+ year = {2025}
+}

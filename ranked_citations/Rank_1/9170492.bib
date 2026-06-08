@@ -1,0 +1,14 @@
+@article{9170492,
+ abstract = {Persistent key-value (KV) stores are an integral part of storage infrastructure in data centers. Emerging non-volatile memory (NVM) technologies are potential alternatives for future memory architecture design. In this study, we use NVM to optimize the KV store and propose RangeKV, an LSM-tree based persistent KV store built on a heterogeneous storage architecture. RangeKV uses RangeTab in NVM to manage L0 data and increases L0 capacity to reduce the number of LSM tree levels and system compactions. RangeKV pre-constructs the hash index of RangeTab data to reduce NVM access times and adopts a double-buffer structure to reduce LSM-tree write amplification due to compactions. We implement RangeKV based on RocksDB and conduct a comparative test and performance evaluation with RocksDB and NoveLSM. The test results show that the overall random write throughput is improved by 4.5× to 5.7× compared to RocksDB. In addition, RangeKV has a significant performance advantage over NoveLSM.},
+ author = {Zhan, Ling and Lu, Kai and Cheng, Zhilong and Wan, Jiguang},
+ doi = {10.1109/ACCESS.2020.3017651},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Compaction;Nonvolatile memory;Random access memory;Delays;Indexes;Performance evaluation;System performance;Key-value store;log-structured merge-tree;hybrid storage;non-volatile memory;hash index},
+ month = {},
+ number = {},
+ pages = {154518-154529},
+ title = {RangeKV: An Efficient Key-Value Store Based on Hybrid DRAM-NVM-SSD Storage Structure},
+ volume = {8},
+ year = {2020}
+}

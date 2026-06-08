@@ -1,0 +1,14 @@
+@inproceedings{9680450,
+ abstract = {In the era of big data, key-value storage systems based on Log-Structure Merge tree (LSM-tree) are widely used in numerous industries. LSM-Tree is divided into two parts, one part is in the memory and the other part is on the hard disk. When writing data, first write to the memory, when the Immutable Memtable in the memory is full of data, then write to the disk to output a Sorted String Table (SSTable) file. However, the use of writing data from memory to disk is single-threaded. When the Immutable Memtable writes data to the disk, it will block other threads. This article uses multiple Immutable Memtables and multi-threaded writing to solve the single-thread blocking problem. By running the benchmarks of LevelDB to analyze the experiment, the experimental results indicate a higher improvement.},
+ author = {Gao, Yuan and Xie, Ping and Hua, Wendi and Lv, Meng and Lu, Jiating},
+ booktitle = {2021 20th International Symposium on Distributed Computing and Applications for Business Engineering and Science (DCABES)},
+ doi = {10.1109/DCABES52998.2021.00046},
+ issn = {2473-3636},
+ keyword = {Industries;Multithreading;Instruction sets;Writing;Big Data;Benchmark testing;Hard disks;Key-Value store;Multi-Threading;Write performance;Read performance;LSM-Tree;Immutable Memtable},
+ month = {Dec},
+ number = {},
+ pages = {155-158},
+ title = {Improve the Performance of LSM-Tree based on Key-Value via Multithreading},
+ volume = {},
+ year = {2021}
+}

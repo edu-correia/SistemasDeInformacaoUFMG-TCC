@@ -1,0 +1,14 @@
+@article{8794560,
+ abstract = {Topological approaches to data analysis can answer complex questions about the number, connectivity, and scale of intrinsic features in scalar data. However, the global nature of many topological structures makes their computation challenging at scale, and thus often limits the size of data that can be processed. One key quality to achieving scalability and performance on modern architectures is data locality, i.e., a process operates on data that resides in a nearby memory system, avoiding frequent jumps in data access patterns. From this perspective, topological computations are particularly challenging because the implied data structures represent features that can span the entire data set, often requiring a global traversal phase that limits their scalability. Traditionally, expensive preprocessing is considered an acceptable trade-off as it accelerates all subsequent queries. Most published use cases, however, explore only a fraction of all possible queries, most often those returning small, local features. In these cases, much of the global information is not utilized, yet computing it dominates the overall response time. We address this challenge for merge trees, one of the most commonly used topological structures. In particular, we propose an alternative representation, the merge forest, a collection of local trees corresponding to regions in a domain decomposition. Local trees are connected by a bridge set that allows us to recover any necessary global information at query time. The resulting system couples (i) a preprocessing that scales linearly in practice with (ii) fast runtime queries that provide the same functionality as traditional queries of a global merge tree. We test the scalability of our approach on a shared-memory parallel computer and demonstrate how data structure locality enables the analysis of large data with an order of magnitude performance improvement over the status quo. Furthermore, a merge forest reduces the memory overhead compared to a global merge tree and enables the processing of data sets that are an order of magnitude larger than possible with previous algorithms.},
+ author = {Klacansky, Pavol and Gyulassy, Attila and Bremer, Peer-Timo and Pascucci, Valerio},
+ doi = {10.1109/TVCG.2019.2934257},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Vegetation;Forestry;Feature extraction;Data structures;Scalability;Acceleration;Task analysis;Merge tree;parallel computation;topology},
+ month = {Jan},
+ number = {1},
+ pages = {173-183},
+ title = {Toward Localized Topological Data Structures: Querying the Forest for the Tree},
+ volume = {26},
+ year = {2020}
+}

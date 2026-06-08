@@ -1,0 +1,14 @@
+@article{9757235,
+ abstract = {Recently, convolutional neural networks (CNN) have been widely used in image processing and computer vision. GPUs are often used to accelerate the CNN, but performance is limited by high computational costs and memory usage of the convolution. Prior studies exploited approximate computing to reduce the computational costs. However, they only reduced the amount of the computation, thereby its performance is bottlenecked by the memory bandwidth due to an increased memory intensity. In addition, load imbalance between warps caused by approximation also inhibits the performance improvement. In this paper, we propose a processing-in-memory (PIM) solution that reduces the amount of data movement and computation through the Approximate Data Comparison (ADC-PIM). Instead of determining the value similarity after loading the data to the GPU, the ADC-PIM unit located on 3D-stacked memory compares the similarity and transfers only the selected representative data to the GPU. The GPU performs convolution on the representative data transferred from the ADC-PIM, and reuses the calculated results based on the similarity information. To reduce the increase in memory latency caused by the in-memory data comparison, we propose a two-level PIM architecture that exploits both the DRAM bank and TSV stage. By dividing the comparisons into multiple banks and then merging the results on the TSV stage, the ADC-PIM effectively hides the delay caused by the comparisons. To ease the load balancing on the GPU, the ADC-PIM performs data reorganization by assigning the representative data to addresses that are computed based on the comparison result. Experimental results show that the proposed ADC-PIM provides a 43% speedup and 32% energy saving with less than a 1% accuracy drop.},
+ author = {Choi, Jungwoo and Lee, Hyuk-Jae and Rhee, Chae Eun},
+ doi = {10.1109/JETCAS.2022.3167391},
+ issn = {2156-3365},
+ journal = {IEEE Journal on Emerging and Selected Topics in Circuits and Systems},
+ keyword = {Convolution;Graphics processing units;Approximate computing;Bandwidth;Through-silicon vias;Table lookup;Random access memory;Processing-in-memory;approximate computing;convolutional neural networks;GPU},
+ month = {June},
+ number = {2},
+ pages = {458-471},
+ title = {ADC-PIM: Accelerating Convolution on the GPU via In-Memory Approximate Data Comparison},
+ volume = {12},
+ year = {2022}
+}

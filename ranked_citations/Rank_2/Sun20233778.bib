@@ -1,0 +1,16 @@
+@article{Sun20233778,
+ abstract = {LSM-tree-based key-value stores (KV stores) render high-performance read/write services to data-intensive applications. KV stores employ an SSTable-based Coarse-Grained Compaction (CGC) mechanism, which involves a huge amount of data that do not need to be updated, thereby bringing a high write amplification (WA) and long tail latency. To address this issue, we propose a Fine-Grained Compaction (FGC) mechanism anchored on a Log-Structured patched-Merge tree (LSpM-tree) - a new data organization that averts rewriting irrelevant data into disks amid compaction. A cluster, the basic unit in FGC, encloses several patches and a redirection table, where each patch has an array of KV regions. We devise three compaction modes powered by the LSpM-tree, and we implement a high-performance key-value store, named FGKV. The extensive experiments show that FGKV improves the random-write throughput by up to 121%, 36.8%, 38.6%, and 15.2% compared with LevelDB, RocksDB, LDC, and ALDC, respectively. FGKV lowers the WA of the alternative KV stores by up to 50%. FGKV boosts read performance by up to 122%, 51.4%, 96.6%, and 368%, respectively, and FGKV curbs the 99th percentile latency of LevelDB, RocksDB, LDC, and ALDC by up to 78.2%, 77.6%, 78.3%, and 73.1% under YCSB A, respectively. Moreover, FGKV is readily extended to the other KV stores.  © 2013 IEEE.},
+ author = {Sun, Hui and Chen, Guanzhong and Yue, Yinliang and Qin, Xiao},
+ doi = {10.1109/TCC.2023.3329646},
+ journal = {IEEE Transactions on Cloud Computing},
+ note = {Cited by: 13},
+ number = {4},
+ pages = {3778 - 3796},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Improving LSM-Tree Based Key-Value Stores with Fine-Grained Compaction Mechanism},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85179582581?origin=resultslist},
+ volume = {11},
+ year = {2023}
+}

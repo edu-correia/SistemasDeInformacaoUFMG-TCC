@@ -1,0 +1,18 @@
+@article{10.1145/3725329,
+ abstract = {Parquet is the most commonly used file format to store data in a columnar, binary structure. The format also supports storing nested data in this flattened columnar layout. However, many query engines either do not support nested data or process it with substantially worse performance than relational data. In this work, we close this gap and present a new way to leverage relational query engines for nested data that is stored in this flat columnar file format. Specifically, we demonstrate how to process nested Parquet files much more efficiently. Our approach does not store a copy of the data in an internal format but reads directly from the Parquet file. During query computation, the required flat columns are scanned independently and the nesting is reconstructed using joins with on-the-fly generated join keys. Our approach can be easily integrated into existing query engines to support querying nested Parquet files. Furthermore, we achieve orders of magnitude faster analytical query performance than existing solutions, which makes it a valuable addition.},
+ address = {New York, NY, USA},
+ articleno = {192},
+ author = {Rey, Alice and Rieger, Maximilian and Neumann, Thomas},
+ doi = {10.1145/3725329},
+ issue_date = {June 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {database systems, nested data processing, parquet},
+ month = {June},
+ number = {3},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Nested Parquet Is Flat, Why Not Use It? How To Scan Nested Data With On-the-Fly Key Generation and Joins},
+ url = {https://doi.org/10.1145/3725329},
+ volume = {3},
+ year = {2025}
+}

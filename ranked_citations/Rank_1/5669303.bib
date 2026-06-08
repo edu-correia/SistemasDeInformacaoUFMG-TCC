@@ -1,0 +1,14 @@
+@article{5669303,
+ abstract = {We investigate how to efficiently build bounding volume hierarchies (BVHs) with surface area heuristic (SAH) on the Intel Many Integrated Core (MIC) Architecture. To achieve maximum performance, we use four key concepts: progressive 10-bit quantization to reduce cache footprint with negligible loss in BVH quality; an AoSoA data layout that allows efficient streaming and SIMD processing; high-performance SIMD kernels for binning and partitioning; and a parallelization framework with several build-specific optimizations. The resulting system is more than an order of magnitude faster than today's high-end GPU builders for comparable BVHs; it is usually faster even than spatial median builders; it can build SAH BVHs almost as fast as existing GPUs and CPUs- and CPU-based approaches can build regular grids; and in aggregate "build+render” performance is significantly faster than the best published numbers for either of these systems, be it CPU or GPU, BVH, kd-tree, or grid.},
+ author = {Wald, Ingo},
+ doi = {10.1109/TVCG.2010.251},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Merging;Kernel;Instruction sets;Layout;Arrays;Registers;Bounding volume hierarchies (BVHs);parallel BVH construction;surface area heuristic (SAH);Intel MIC architecture.},
+ month = {Jan},
+ number = {1},
+ pages = {47-57},
+ title = {Fast Construction of SAH BVHs on the Intel Many Integrated Core (MIC) Architecture},
+ volume = {18},
+ year = {2012}
+}

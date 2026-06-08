@@ -1,0 +1,14 @@
+@conference{Kalmuk2024188,
+ abstract = {Database systems built on traditional storage subsystems typically store their data in small blocks referred to as data pages (commonly sized in a multiple of 4KB for historical reasons). These traditional storage subsystems, for example network attached block storage, were designed for efficient random-access I/O patterns at the block level, and the block size is usually configurable by the application based on its needs. For large scale analytic databases in cloud environments, these traditional storage subsystems are not cost effective when compared to cloud object storage, and database systems that exploit them risk becoming uncompetitive. This paper describes the modernization of the storage architecture of Db2 Warehouse, a traditional full feature and high-performance database system with 3 decades of development, to exploit the new paradigm of cost-effective storage for the cloud. We discuss a solution based on the integration of LSM trees as part of the storage subsystem, that enables Db2 Warehouse to efficiently store data pages within object storage, and through the application of special techniques to minimize read and write latencies as well as all of the amplification factors (write, read, and storage), achieve not only storage cost savings, but also higher performance. Further, by retaining the traditional data page format, we are able to avoid significantly re-architecting the database kernel and thereby retain the substantial capabilities and optimizations of the existing system.  © 2024 Owner/Author.},
+ author = {Kalmuk, David and Garcia-Arellano, Christian and Barber, Ronald and Sidle, Richard and Rakopoulos, Kostas and Roumani, Hamdi and Minor, William and Cheung, Alexander and Hooper, Robert C. and Emmerton, Matthew and Hoggard, Zach and Walkty, Scott and Perez, Patrick and Santars, Aleksandrs and Chen, Michael and Olan, Matthew and Zilio, Daniel C. and Sayyid, Imran and Li, Humphrey and Rampurkar, Ketan and Ramachandran, Krishna K. and Shen, Yiren},
+ doi = {10.1145/3626246.3653393},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {188 - 200},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Native Cloud Object Storage in Db2 Warehouse: Implementing a Fast and Cost-Efficient Cloud Storage Architecture},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85196400107?origin=resultslist},
+ year = {2024}
+}

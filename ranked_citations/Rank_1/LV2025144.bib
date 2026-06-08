@@ -1,0 +1,13 @@
+@article{LV2025144,
+ abstract = {The Kolmogorov–Arnold Network (KAN) is a new-generation neural network. It provides an alternative to multilayer perceptrons (MLPs). PoolFormer showed that pooling alone can mix features efficiently. We propose PoolKANNeXt, a CNN that merges the KAN structure with pooling-based feature mixing. This design targets high accuracy with a low number of the learnable parameters. We evaluated PoolKANNeXt on six image datasets, five biomedical and one general (CIFAR-10). The model comprises four stages. In the stem stage, a ConvNeXt-style patchify block converts each 224 × 224 × 3 image into a 56 × 56 × 96 tensor. In the main stage, average pooling first mixes local features; then two parallel 3 × 3 convolutions—one followed by GELU and the other by Swish—extract complementary representations, and a 1 × 1 convolution scales the combined output and adds it back to the input via a residual connection. In the downsampling stage, strided 3 × 3 convolutions halve spatial dimensions and double the channel count. In the output stage, global average pooling produces a feature vector that feeds into a softmax classifier. PoolKANNeXt achieved over 90 % accuracy on all datasets and reached 99.43 % on CIFAR-10, ranking among the top five models on that benchmark. PoolKANNeXt offers a lightweight yet powerful architecture. Its innovative combination of pooling and dual-activation KAN blocks yields strong performance across diverse tasks. The design is scalable and adaptable to larger or more complex datasets.},
+ author = {Fangxing Lv and Qing Wei and Yuwen Huang and Turker Tuncer and Sengul Dogan and Fatih Özyurt},
+ doi = {https://doi.org/10.1016/j.aej.2025.05.073},
+ issn = {1110-0168},
+ journal = {Alexandria Engineering Journal},
+ keyword = {PoolKANNeXt, Kolmogorov Arnold Network, CNN, Computer Vision, Image classification},
+ pages = {144-152},
+ title = {PoolKANNeXt: A new pooling-based Kolmogorov Arnold convolutional neural network},
+ url = {https://www.sciencedirect.com/science/article/pii/S1110016825007021},
+ volume = {128},
+ year = {2025}
+}

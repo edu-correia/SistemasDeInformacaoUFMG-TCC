@@ -1,0 +1,18 @@
+@article{10.1145/3805649,
+ abstract = {Personalized decentralized federated learning (PDFL) seeks to tailor models to heterogeneous clients without a central coordinator, yet gossip-style mixing on large graphs dilutes minority signals and assumes any-to-any connectivity. We present SemanticDFL, a fully decentralized, pull-based personalization layer that organizes peers into a hierarchical semantic overlay network (SON). Each client publishes a compact top-P model signature; proximity-bounded discovery forms zones that are clustered using affinity propagation and stewarded by replica-backed super-peers that route bounded-fanout similarity queries. Clients then pull only the K most similar models for personalized aggregation, concentrating communication and computation where they matter most. We prove a lower bound that links spectral mixing and data heterogeneity to an irreducible mis-aggregation penalty for graph-oblivious, push-based overlays, thereby motivating the proposed similarity-aware pull method. A prototype and large-scale evaluation on FMNIST, Tiny ImageNet, Google Speech Commands, and 20 Newsgroups under Dirichlet and pathological splits (50--400 peers on the EU SLICES testbed) show that SemanticDFL improves final accuracy by 3--12% over strong decentralized personalized baselines, reaches target accuracy with ≈2.5\texttimes{} fewer rounds than FedAvg, and requires ≈1.3\texttimes{} fewer rounds than the best DPFL alternative. It adds only ≈1.7--12.6% per-round overhead across all settings while maintaining Recall@K ≈ 0.88--1.00, positioning similarity-aware pull over semantic overlays as a scalable path to high-quality personalization in decentralized FL.},
+ address = {New York, NY, USA},
+ articleno = {51},
+ author = {Dogani, Javad and Khastkhodaei, Mostafa and Khunjush, Farshad and Laoutaris, Nikolaos},
+ doi = {10.1145/3805649},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {keywords{personalized federated learning, decentralized federated learning, peer-to-peer learning, semantic overlay networks, similarity-aware aggregation, non-iid learning}},
+ month = {May},
+ number = {2},
+ numpages = {37},
+ publisher = {Association for Computing Machinery},
+ title = {SemanticDFL: Similarity-Aware Pull-based Personalized Decentralized Federated Learning},
+ url = {https://doi.org/10.1145/3805649},
+ volume = {10},
+ year = {2026}
+}

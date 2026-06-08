@@ -1,0 +1,16 @@
+@article{Currim2024,
+ abstract = {The query optimization phase within a database management system (DBMS) ostensibly finds the fastest query execution plan from a potentially large set of enumerated plans, all of which correctly compute the same result of the specified query. Sometimes the cost-based optimizer selects a slower plan, for a variety of reasons. Previous work has focused on increasing the performance of specific components, often a single operator, within an individual DBMS. However, that does not address the fundamental question: from where does this suboptimality arise, across DBMSes generally? In particular, the contribution of each of many possible factors to DBMS suboptimality is currently unknown. To identify the root causes of DBMS suboptimality, we first introduce the notion of empirical suboptimality of a query plan chosen by the DBMS, indicated by the existence of a query plan that performs more efficiently than the chosen plan, for the same query. A crucial aspect is that this can be measured externally to the DBMS, and thus does not require access to its source code. We then propose a novel predictive model to explain the relationship between various factors in query optimization and empirical suboptimality. Our model associates suboptimality with the factors of complexity of the schema, of the underlying data on which the query is evaluated, of the query itself, and of the DBMS optimizer. The model also characterizes concomitant interactions among these factors. This model induces a number of specific hypotheses that were tested on multiple DBMSes. We performed a series of experiments that examined the plans for thousands of queries run on four popular DBMSes. We tested the model on over a million of these query executions, using correlational analysis, regression analysis, and causal analysis, specifically Structural Equation Modeling (SEM). We observed that the dependent construct of empirical suboptimality prevalence correlates positively with nine specific constructs characterizing four identified factors that explain in concert much of the variance of suboptimality of two extensive benchmarks, across these disparate DBMSes. This predictive model shows that it is the common aspects of these DBMSes that predict suboptimality, not the particulars embedded in the inordinate complexity of each of these DBMSes. This paper thus provides a new methodology to study mature query optimizers, identifies underlying DBMS-independent causes for the observed suboptimality, and quantifies the relative contribution of each of these causes to the observed suboptimality. This work thus provides a roadmap for fundamental improvements of cost-based query optimizers.  © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Currim, Sabah and Snodgrass, Richard T. and Suh, Young-Kyoon},
+ doi = {10.1145/3636425},
+ journal = {ACM Transactions on Database Systems},
+ note = {Cited by: 2},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Identifying the Root Causes of DBMS Suboptimality},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85189094733?origin=resultslist},
+ volume = {49},
+ year = {2024}
+}

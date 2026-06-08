@@ -1,0 +1,17 @@
+@article{10.14778/3734839.3734852,
+ abstract = {In aggregation queries, predicate parameters often reveal user intent. Protecting these parameters is critical for user privacy, regardless of whether the database is public or private. While most existing works focus on private data settings, we address a public data setting where the server has access to the database. Current solutions for this setting either require additional setups (e.g., non-colluding servers, hardware enclaves) or are inefficient for practical workloads. Furthermore, they often do not support range predicates or boolean combinations commonly seen in real-world use cases.To address these limitations, we built HADES, a fully homomorphic encryption (FHE) based private aggregation system for public data that supports point, range predicates, and boolean combinations. Our one-round HADES protocol efficiently generates predicate indicators by leveraging the plaintext form of public data records. It introduces a novel elementwise-mapping operation and an optimized reduction algorithm, achieving latency efficiency within a limited noise budget. Our highly scalable, multi-threaded implementation improves performance over previous one-round FHE solutions by 204x to 6574x on end-to-end TPC-H queries, reducing aggregation time on 1M records from 15 hours to 38 seconds.},
+ author = {Liu, Xiaoyuan and Trieu, Ni and Gupta, Trinabh and Ahmad, Ishtiyaque and Song, Dawn},
+ doi = {10.14778/3734839.3734852},
+ issn = {2150-8097},
+ issue_date = {March 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {March},
+ number = {7},
+ numpages = {13},
+ pages = {2159–2171},
+ publisher = {VLDB Endowment},
+ title = {HADES: Range-Filtered Private Aggregation on Public Data},
+ url = {https://doi.org/10.14778/3734839.3734852},
+ volume = {18},
+ year = {2025}
+}

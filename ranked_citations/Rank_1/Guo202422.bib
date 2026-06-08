@@ -1,0 +1,15 @@
+@article{Guo202422,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is extensively used in scientific computing and often accounts for a significant portion of the overall computational overhead. Therefore, improving the performance of SpMV is crucial. However, sparse matrices exhibit a sporadic and irregular distribution of non-zero elements, resulting in workload imbalance among threads and challenges in vectorization. To address these issues, numerous efforts have focused on optimizing SpMV based on the hardware characteristics of computing platforms. In this paper, we present an optimization on CSR-Based SpMV, since the CSR format is the most widely used and supported by various high-performance sparse computing libraries, on a novel MIMD computing platform Pezy-SC3s. Based on the hardware characteristics of Pezy-SC3s, we tackle poor data locality, workload imbalance, and vectorization challenges in CSR-Based SpMV by employing matrix chunking, applying Atomic Cache for workload scheduling, and utilizing SIMD instructions during performing SpMV. As the first study to investigate SpMV optimization on Pezy-SC3s, we evaluate the performance of our work by comparing it with the CSR-Based SpMV and SpMV provided by Nvidia’s CuSparse. Through experiments conducted on 2092 matrices obtained from SuiteSparse, we demonstrate that our optimization achieves a maximum speedup ratio of x17.63 and an average of x1.56 over CSR-Based SpMV and an average bandwidth utilization of 35.22% for large-scale matrices (nnz≥10<sup>6</sup>) compared with 36.17% obtained using CuSparse. These results demonstrate that our optimization effectively harnesses the hardware resources of Pezy-SC3s, leading to improved performance of CSR-Based SpMV. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2024.},
+ author = {Guo, Jihu and Liu, Jie and Wang, Qinglin and Zhu, Xiaoxiong},
+ doi = {10.1007/978-981-97-0801-7_2},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 7},
+ pages = {22 - 39},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimizing CSR-Based SpMV on a New MIMD Architecture Pezy-SC3s},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85187798252?origin=resultslist},
+ volume = {14488 LNCS},
+ year = {2024}
+}

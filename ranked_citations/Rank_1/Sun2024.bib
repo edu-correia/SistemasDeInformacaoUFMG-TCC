@@ -1,0 +1,16 @@
+@article{Sun2024,
+ abstract = {Log-structured-merge tree or LSM-tree is a technological underpinning in key-value (KV) stores to support a wide range of performance-critical applications. By conducting data re-organization in the background by virtue of compaction operations, the KV stores have the potential to swiftly service write requests with sequential batched disk writes and read requests for KV items constantly sorted by the compaction. Compaction demands high I/O bandwidth and CPU speed to facilitate quality service to user read/write requests. With the emergence of high-speed SSDs, CPUs are increasingly becoming a performance bottleneck. To mitigate the bottleneck limiting the KV-store's performance and that of the applications supported by the store, we propose a system - gLSM - to leverage GPGPU to remarkably accelerate the compaction operations. gLSM fully utilizes the parallelism and computational capability inside GPGPUs to improve the compaction performance. We design a driver framework to parallelize compaction operations handled between a pair of CPU and GPGPU. We employ data independence and GPGPU-orient radix-sorting algorithm to concurrently conduct compaction. A key-value separation method is devised to slash the transfer of data volume from CPU-side memory to the GPGPU counterpart. The results reveal that gLSM improves the throughput and compaction bandwidth by up to a factor of 2.9 and 26.0, respectively, compared with the four state-of-the-art KV stores. gLSM also reduces the write latency by 73.3%. gLSM exhibits a performance improvement by up to 45% compared against its variant where there are no KV separation and collaboration sort modules. © 2024 Copyright held by the owner/author(s)},
+ author = {Sun, Hui and Xu, Jinfeng and Jiang, Xiangxiang and Chen, Guanzhong and Yue, Yinliang and Qin, Xiao},
+ doi = {10.1145/3633782},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 15},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {gLSM: Using GPGPU to Accelerate Compactions in LSM-tree-based Key-value Stores},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85185704589?origin=resultslist},
+ volume = {20},
+ year = {2024}
+}

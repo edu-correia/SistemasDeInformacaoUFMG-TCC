@@ -1,0 +1,20 @@
+@article{YANG2024108400,
+ abstract = {Background and objective
+Accurate prognosis prediction for cancer patients plays a significant role in the formulation of treatment strategies, considerably impacting personalized medicine. Recent advancements in this field indicate that integrating information from various modalities, such as genetic and clinical data, and developing multi-modal deep learning models can enhance prediction accuracy. However, most existing multi-modal deep learning methods either overlook patient similarities that benefit prognosis prediction or fail to effectively capture diverse information due to measuring patient similarities from a single perspective. To address these issues, a novel framework called multi-modal multi-view graph convolutional networks (MMGCN) is proposed for cancer prognosis prediction.
+Methods
+Initially, we utilize the similarity network fusion (SNF) algorithm to merge patient similarity networks (PSNs), individually constructed using gene expression, copy number alteration, and clinical data, into a fused PSN for integrating multi-modal information. To capture diverse perspectives of patient similarities, we treat the fused PSN as a multi-view graph by considering each single-edge-type subgraph as a view graph, and propose multi-view graph convolutional networks (GCNs) with a view-level attention mechanism. Moreover, an edge homophily prediction module is designed to alleviate the adverse effects of heterophilic edges on the representation power of GCNs. Finally, comprehensive representations of patient nodes are obtained to predict cancer prognosis.
+Results
+Experimental results demonstrate that MMGCN outperforms state-of-the-art baselines on four public datasets, including METABRIC, TCGA-BRCA, TCGA-LGG, and TCGA-LUSC, with the area under the receiver operating characteristic curve achieving 0.827 ± 0.005, 0.805 ± 0.014, 0.925 ± 0.007, and 0.746 ± 0.013, respectively.
+Conclusions
+Our study reveals the effectiveness of the proposed MMGCN, which deeply explores patient similarities related to different modalities from a broad perspective, in enhancing the performance of multi-modal cancer prognosis prediction. The source code is publicly available at https://github.com/ping-y/MMGCN.},
+ author = {Ping Yang and Wengxiang Chen and Hang Qiu},
+ doi = {https://doi.org/10.1016/j.cmpb.2024.108400},
+ issn = {0169-2607},
+ journal = {Computer Methods and Programs in Biomedicine},
+ keyword = {Cancer prognosis prediction, Multi-modal data, Patient similarity network, Multi-view learning, Graph convolutional networks},
+ pages = {108400},
+ title = {MMGCN: Multi-modal multi-view graph convolutional networks for cancer prognosis prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0169260724003936},
+ volume = {257},
+ year = {2024}
+}

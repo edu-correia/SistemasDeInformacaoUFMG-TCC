@@ -1,0 +1,15 @@
+@article{10.1145/3796239,
+ abstract = {Log parsing transforms unstructured logs into structured templates for downstream analysis. Syntax-based parsers are fast but lose accuracy on logs that deviate from predefined rules. Recently, large language models (LLMs) based log parsers have shown superior parsing accuracy but face three issues: (1) manual labeling for fine-tuning or in-context learning, (2) high cost from large volumes and limited context size of LLMs, and (3) privacy risks with commercial models. We present LibreLog, an unsupervised approach using open-source LLMs to enhance privacy and reduce cost while achieving state-of-the-art accuracy. LibreLog groups logs with a fixed-depth tree, then parses each group via: (i) similarity scoring-based retrieval augmented generation, (ii) self-reflection to refine templates, and (iii) a template memory to reduce LLM queries. On LogHub-2.0, LibreLog achieves GA 87.2, PA 85.4, FGA 82.3, and FTA 65.1, PA and FTA outperforming prior state-of-the-art LLM-based parsers by 13.7% and 6.9%, respectively. LibreLog processes all logs in 5.94 hours, a 1.7 times speedup over the fastest LLM parser. Using a larger LLM only for self-reflection further improves PA to 86.3 and FTA to 68.3 with a moderate runtime cost increase (31%). In short, LibreLog addresses privacy and cost concerns of using commercial LLMs while achieving state-of-the-art parsing efficiency and accuracy.},
+ address = {New York, NY, USA},
+ author = {Ma, Zeyang and Kim, Dongjae Jae and Chen, Tse-Hsun (Peter)},
+ doi = {10.1145/3796239},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Log parsing, Log analysis, Software logs},
+ month = {February},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Unsupervised, Accurate, and Efficient Log Parsing Using Smaller Open-Source Large Language Models},
+ url = {https://doi.org/10.1145/3796239},
+ year = {2026}
+}

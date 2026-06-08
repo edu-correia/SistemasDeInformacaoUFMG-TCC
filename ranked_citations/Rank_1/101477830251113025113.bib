@@ -1,0 +1,17 @@
+@article{10.14778/3025111.3025113,
+ abstract = {A key-value store (KVS), such as memcached and Redis, is widely used as a caching layer to augment the slower persistent backend storage in data centers. DRAM-based KVS provides fast key-value access, but its scalability is limited by the cost, power and space needed by the machine cluster to support a large amount of DRAM. This paper offers a 10X to 100X cheaper solution based on flash storage and hardware accelerators. In BlueCache key-value pairs are stored in flash storage and all KVS operations, including the flash controller are directly implemented in hardware. Furthermore, BlueCache includes a fast interconnect between flash controllers to provide a scalable solution. We show that BlueCache has 4.18X higher throughput and consumes 25X less power than a flash-backed KVS software implementation on x86 servers. We further show that BlueCache can outperform DRAM-based KVS when the latter has more than 7.4% misses for a read-intensive aplication. BlueCache is an attractive solution for both rack-level appliances and data-center-scale key-value cache.},
+ author = {Xu, Shuotao and Lee, Sungjin and Jun, Sang-Woo and Liu, Ming and Hicks, Jamey and Arvind},
+ doi = {10.14778/3025111.3025113},
+ issn = {2150-8097},
+ issue_date = {November 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {4},
+ numpages = {12},
+ pages = {301–312},
+ publisher = {VLDB Endowment},
+ title = {Bluecache: a scalable distributed flash-based key-value store},
+ url = {https://doi.org/10.14778/3025111.3025113},
+ volume = {10},
+ year = {2016}
+}

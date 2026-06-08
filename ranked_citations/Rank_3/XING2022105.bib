@@ -1,0 +1,13 @@
+@article{XING2022105,
+ abstract = {The system calls provide the main interface for user processes to request the kernel services, however, for any specific process, most of them will not be needed. If a user process is compromised, those unnecessary system calls can be abused to attack the kernel and the other processes. To migrate this problem, the seccomp mechanism has been merged into the Linux kernel to limit the available system calls according to a system call whitelist. However, it is still a challenge to automatically and effectively generate a minimal but complete system call whitelist for a specific user process. In this paper, we develop a toolkit named TAILOR that mainly relies on the static analysis to generate a mapping table for the standard library from the library functions to their corresponding system calls based on the source code analysis. Then for any application that invokes system calls via the standard library, we can just compare the called library functions in the application with the mapping table to obtain required system calls. TAILOR solves the problems during source-level standard library analysis, which consist of the difficulty in macro function identification, unchained calling tree caused by macro aliases, and the difficulty in identifying the function scope via static analysis. Our experiments on 50 popular general terminal commands show that our tool can reduce 88% system calls for them and block about 74% potential vulnerabilities from malicious system calls.},
+ author = {Yunlong Xing and Jiahao Cao and Kun Sun and Fei Yan and Shengye Wan},
+ doi = {https://doi.org/10.1016/j.future.2022.04.016},
+ issn = {0167-739X},
+ journal = {Future Generation Computer Systems},
+ keyword = {System call restriction, Attack surface reduction, Whitelist generation, Software security, System enhancement, Static analysis},
+ pages = {105-113},
+ title = {The devil is in the detail: Generating system call whitelist for Linux seccomp},
+ url = {https://www.sciencedirect.com/science/article/pii/S0167739X2200139X},
+ volume = {135},
+ year = {2022}
+}

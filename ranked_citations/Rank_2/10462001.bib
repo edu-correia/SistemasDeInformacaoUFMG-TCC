@@ -1,0 +1,14 @@
+@article{10462001,
+ abstract = {Traffic flow forecasting is essential and challenging to intelligent city management and public safety. In this paper, we attempt to use a pure self-attention method in traffic flow forecasting. However, when dealing with input sequences, including large-scale regions’ historical records, it is difficult for the self-attention mechanism to focus on the most relevant ones for forecasting. To address this issue, we design a progressive space-time self-attention mechanism named ProSTformer, which can reduce self-attention computation times from thousands to tens. Our design is based on two pieces of prior knowledge in the traffic flow forecasting literature: (i) spatiotemporal dependencies can be factorized into spatial and temporal dependencies; (ii) adjacent regions have more influences than distant regions, and temporal characteristics of closeness, period and trend are more important than crossed relations between them. Our ProSTformer has two characteristics. First, each block in ProSTformer highlights the unique dependencies, ProSTformer progressively focuses on spatial dependencies from local to global regions, on temporal dependencies from closeness, period and trend to crossed relations between them, and on external dependencies such as weather conditions, temperature and day-of-week. Second, we use the Tensor Rearranging technique to force the model to compute self-attention only to adjacent regions and to the unique temporal characteristic. Then, we use the Patch Merging technique to greatly reduce self-attention computation times to distant regions and crossed temporal relations. We evaluate ProSTformer on two traffic datasets and find that it performs better than sixteen baseline models. The code is available at https://github.com/yanxiao1930/ProSTformer_code/tree/main.},
+ author = {Yan, Xiao and Gan, Xianghua and Tang, Jingjing and Zhang, Dapeng and Wang, Rui},
+ doi = {10.1109/TITS.2024.3367754},
+ issn = {1558-0016},
+ journal = {IEEE Transactions on Intelligent Transportation Systems},
+ keyword = {Forecasting;Transformers;Spatiotemporal phenomena;Market research;Computational modeling;Predictive models;Deep learning;Traffic flow forecasting;deep learning;transformer;self-attention mechanism;spatial-temporal learning},
+ month = {Sep.},
+ number = {9},
+ pages = {10802-10816},
+ title = {ProSTformer: Progressive Space-Time Self-Attention Model for Short-Term Traffic Flow Forecasting},
+ volume = {25},
+ year = {2024}
+}

@@ -1,0 +1,15 @@
+@article{10.1145/3810241,
+ abstract = {REpresentation State Transfer (REST) is an architectural style for designing web applications that enables scalable, stateless communication between clients and servers via common HTTP techniques. Web APIs that employ the REST style are known as RESTful (or REST) APIs. When using or testing a RESTful API, developers often refer to its specifications, which are typically defined by open-source standards such as the OpenAPI Specification (OAS). However, writing and updating these specifications can be very time-consuming and error-prone, which can negatively affect the use of RESTful APIs, especially when software requirements change. Many tools and methods have been proposed to solve this problem, including Respector and Swagger Core. OAS generation can be regarded as a common text-generation task that produces a formal description of API endpoints from source code. A potential approach for this may involve using Large Language Models (LLMs), which have strong capabilities in both code understanding and text generation. Motivated by this, we propose a novel approach to generate the OASs of RESTful APIs using LLMs: LLM-based RESTful API-Specification Generation (LRASGen). To the best of our knowledge, this is the first technique to use LLMs to generate OASs directly from RESTful API source code. Compared with existing tools and methods, LRASGen can even generate OASs when the implementation is incomplete (e.g., with partial code, missing annotations/comments, etc.). To evaluate LRASGen's performance, we conducted a series of empirical studies on 53 real-world RESTful APIs, identifying the following entities: endpoint-methods, endpoint-parameter, parameter-constraint, and endpoint-response. These APIs were developed in five programming languages using ten frameworks. The results show that LRASGen can generate accurate specifications, and can cover an average of 43.54% more entities than the developer-provided specifications. LRASGen also outperforms the current state-of-the-art technique, Respector, across all evaluated APIs, on four identification tasks: LRASGen achieved performance improvements of 54.17% in endpoint-method identification; 28.3% in endpoint-parameter identification; 98.6% in parameter-constraint identification; and 74.8% in endpoint-response identification.},
+ address = {New York, NY, USA},
+ author = {Deng, Sida and Huang, Rubing and Zhang, Man and Cui, Chenhui and Towey, Dave and Wang, Rongcun},
+ doi = {10.1145/3810241},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {RESTful API, OpenAPI Specification, Large Language Model},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {LRASGen: LLM-based RESTful API Specification Generation},
+ url = {https://doi.org/10.1145/3810241},
+ year = {2026}
+}

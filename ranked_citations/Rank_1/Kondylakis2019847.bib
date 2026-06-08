@@ -1,0 +1,16 @@
+@article{Kondylakis2019847,
+ abstract = {Many modern applications produce massive streams of data series that need to be analyzed, requiring efficient similarity search operations. However, the state-of-the-art data series indexes that are used for this purpose do not scale well for massive datasets in terms of performance, or storage costs. We pinpoint the problem to the fact that existing summarizations of data series used for indexing cannot be sorted while keeping similar data series close to each other in the sorted order. To address this problem, we present Coconut, the first data series index based on sortable summarizations and the first efficient solution for indexing and querying streaming series. The first innovation in Coconut is an inverted, sortable data series summarization that organizes data series based on a z-order curve, keeping similar series close to each other in the sorted order. As a result, Coconut is able to use bulk loading and updating techniques that rely on sorting to quickly build and maintain a contiguous index using large sequential disk I/Os. We then explore prefix-based and median-based splitting policies for bottom-up bulk loading, showing that median-based splitting outperforms the state of the art, ensuring that all nodes are densely populated. Finally, we explore the impact of sortable summarizations on variable-sized window queries, showing that they can be supported in the presence of updates through efficient merging of temporal partitions. Overall, we show analytically and empirically that Coconut dominates the state-of-the-art data series indexes in terms of construction speed, query speed, and storage costs. © 2019, Springer-Verlag GmbH Germany, part of Springer Nature.},
+ author = {Kondylakis, Haridimos and Dayan, Niv and Zoumpatianos, Kostas and Palpanas, Themis},
+ doi = {10.1007/s00778-019-00573-w},
+ journal = {VLDB Journal},
+ note = {Cited by: 28},
+ number = {6},
+ pages = {847 - 869},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Coconut: sortable summarizations for scalable indexes over static and streaming data series},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85074008252?origin=resultslist},
+ volume = {28},
+ year = {2019}
+}

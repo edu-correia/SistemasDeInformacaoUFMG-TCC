@@ -1,0 +1,14 @@
+@article{10239249,
+ abstract = {Automatic modulation classification (AMC) enables significant applications in both the military and civilian domains. Inspired by the great success of deep learning (DL), a dual-stream neural network using in-phase/quadrature (I/Q) and amplitude/phase (A/P) data has made a superior performance. However, this dual-stream model is oversized (large number of parameters) and time-consuming (high inference time). To deal with that, a novel lightweight single stream neural network made up of group convolutional layer and transformer encoder layer is proposed. Specifically, the group convolutional layer divides the input tensor into different groups for convolution, which needs fewer parameters and has lower computational complexity than commonly used convolutional layers. For the transformer encoder layer, it can generate all time steps’ outputs in parallel by using multi-head attention scheme, which is impossible for the commonly used recurrent-like layers (i.e., the recurrent-like layers output all time steps one by one.). Furthermore, a novel class center distance expansion loss incorporating the cross entropy loss is proposed for model training, which can enlarge the distance of different class centers Finally, the overlapping risk of different class features is reduced. As a result, the inference time of the proposed FastMLDNN is  $13\times $  faster than MLDNN, and the model size is near  ${}\frac {1}{6}$  as MLDNN, which only sacrifices 0.12% in accuracy. The source code has been released in the github: https://github.com/Singingkettle/ChangShuoRadioRecognition/tree/main/configs/fastmldnn.},
+ author = {Chang, Shuo and Yang, Zheng and He, Jiashuo and Li, Rong and Huang, Sai and Feng, Zhiyong},
+ doi = {10.1109/TCCN.2023.3309010},
+ issn = {2332-7731},
+ journal = {IEEE Transactions on Cognitive Communications and Networking},
+ keyword = {Modulation;Hidden Markov models;Task analysis;Feature extraction;Entropy;Convolution;Transformers;Automatic modulation classification;deep neural network;group convolutional layer;transformer layer;multi-loss functions},
+ month = {Dec},
+ number = {6},
+ pages = {1503-1518},
+ title = {A Fast Multi-Loss Learning Deep Neural Network for Automatic Modulation Classification},
+ volume = {9},
+ year = {2023}
+}

@@ -1,0 +1,15 @@
+@article{JU2019217,
+ abstract = {Motivation
+Glycans are large molecules with specific tree structures. Glycans play important roles in a great variety of biological processes. These roles are primarily determined by the fine details of their structures, making glycan structural identification highly desirable. Mass spectrometry (MS) has become the major technology for elucidation of glycan structures. Most de novo approaches to glycan structural identification from mass spectra fall into three categories: enumerating followed by filtering approaches, heuristic and dynamic programming-based approaches. The former suffers from its low efficiency while the latter two suffer from the possibility of missing the actual glycan structures. Thus, how to reliably and efficiently identify glycan structures from mass spectra still remains challenging.
+Results
+In this study we propose an efficient and reliable approach to glycan structure identification using tree merging strategy. Briefly, for each MS peak, our approach first calculated monosaccharide composition of its corresponding fragment ion, and then built a constraint that forces these monosaccharides to be directly connected in the underlying glycan tree structure. According to these connecting constraints, we next merged constituting monosaccharides of the glycan into a complete structure step by step. During this process, the intermediate structures were represented as subtrees, which were merged iteratively until a complete tree structure was generated. Finally the generated complete structures were ranked according to their compatibility to the input mass spectra. Unlike the traditional enumerating followed by filtering strategy, our approach performed deisomorphism to remove isomorphic subtrees, and ruled out invalid structures that violates the connection constraints at each tree merging step, thus significantly increasing efficiency. In addition, all complete structures satisfying the connection constraints were enumerated without any missing structure. Over a test set of 10 N-glycan standards, our approach accomplished structural identification in minutes and gave the manually-validated structure first three highest score. We further successfully applied our approach to profiling and subsequent structure assignment of glycans released from glycoprotein mAb, which was in perfect agreement with previous studies and CE analysis.},
+ author = {Fusong Ju and Jingwei Zhang and Dongbo Bu and Yan Li and Jinyu Zhou and Hui Wang and Yaojun Wang and Chuncui Huang and Shiwei Sun},
+ doi = {https://doi.org/10.1016/j.compbiolchem.2019.03.015},
+ issn = {1476-9271},
+ journal = {Computational Biology and Chemistry},
+ pages = {217-224},
+ title = {De novo glycan structural identification from mass spectra using tree merging strategy},
+ url = {https://www.sciencedirect.com/science/article/pii/S1476927119301975},
+ volume = {80},
+ year = {2019}
+}

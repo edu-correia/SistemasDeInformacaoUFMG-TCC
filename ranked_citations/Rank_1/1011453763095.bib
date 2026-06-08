@@ -1,0 +1,18 @@
+@article{10.1145/3763095,
+ abstract = {Practical encrypted neural network inference under the CKKS fully homomorphic encryption (FHE) scheme relies heavily on accelerating two key kernel operations: Matrix-Vector Multiplication (MVM) and Convolution (Conv). However, existing solutions—such as expert-tuned libraries and domain-specific languages—are designed in an ad hoc manner, leading to significant inefficiencies caused by excessive rotations. We introduce MKR, a novel composition-based compiler approach that optimizes MVM and Conv kernel operations for DNN models under CKKS within a unified framework. MKR decomposes each kernel into composable units, called MetaKernels, to enhance SIMD parallelism within ciphertexts (via horizontal batching) and computational parallelism across them (via vertical batching). Our approach tackles previously unaddressed challenges, including reducing rotation overhead through a rotation-aware cost model for data packing, while also ensuring high slot utilization, uniform handling of inputs with arbitrary sizes, and compatibility with the output tensor layout. Implemented in a production-quality FHE compiler, MKR achieves inference time speedups of 10.08\texttimes{}–185.60\texttimes{} for individual MVM and Conv kernels and 1.75\texttimes{}–11.84\texttimes{} for end-to-end inference compared to a state-of-the-art FHE compiler. Moreover, MKR enables homomorphic execution of large DNN models, where prior methods fail, significantly advancing the practicality of FHE compilers.},
+ address = {New York, NY, USA},
+ articleno = {317},
+ author = {Yuan, Peng and Liu, Yan and Lai, JianXin and Li, Long and Sui, Tianxiang and Xiao, Linjie and Zhang, Xiaojing and Zhu, Qing and Xue, Jingling},
+ doi = {10.1145/3763095},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {CKKS, FHE, FHE Compilers, MetaKernel},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {MetaKernel: Enabling Efficient Encrypted Neural Network Inference through Unified MVM and Convolution},
+ url = {https://doi.org/10.1145/3763095},
+ volume = {9},
+ year = {2025}
+}

@@ -1,0 +1,16 @@
+@article{Zhao202413681,
+ abstract = {Sparse matrix-vector multiplication (SpMV) plays a critical role in a wide range of linear algebra computations, particularly in scientific and engineering disciplines. However, the irregular memory access patterns, extensive memory usage, high bandwidth requirements, and underutilization of parallelism hinder the computational efficiency of SpMV on GPUs. In this paper, we propose a novel approach called block-wise dynamic mixed-precision (BDMP) to address these challenges. Our methodology involves partitioning the original matrix into uniformly sized blocks, with each block’s size determined by considering architectural characteristics and accuracy requirements. Additionally, we dynamically assign precision to each block using a precision selection method that takes into account the value distribution of the original sparse matrix. We develop two distinct SpMV computation algorithms for BDMP: BDMP-PBP (Precision-based partitioning) and BDMP-TCKI (Tailored compression and kernel implementation). BDMP-PBP partitions the matrix into two independent matrices for separate computations based on block precision, offering flexibility for integration with other optimization techniques. Meanwhile, BDMP-TCKI focuses on achieving significant thread-level parallelism and memory utilization by tailoring an appropriate compressed storage format and kernel implementation for each block. We compare BDMP with NVIDIA’s cuSPARSE library and three state-of-the-art SpMV methods, including SELLP, MergeBase, and BalanceCSR, using matrices from the University of Florida’s SuiteSparse dataset collection. BDMP-PBP and BDMP-TCKI show average speedups up to 2.64× and 2.91× on Turing RTX 2080Ti, and up to 2.99× and 3.22× on Ampere A100. The results demonstrate that BDMP enables the optimization of computation speed without compromising the precision necessary for reliable results. © The Author(s) 2024.},
+ author = {Zhao, Zhixiang and Zhang, Guoyin and Wu, Yanxia and Hong, Ruize and Yang, Yiqing and Fu, Yan},
+ doi = {10.1007/s11227-024-05949-6},
+ journal = {Journal of Supercomputing},
+ note = {Cited by: 6; All Open Access; Hybrid Gold Open Access},
+ number = {10},
+ pages = {13681 - 13713},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Block-wise dynamic mixed-precision for sparse matrix-vector multiplication on GPUs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85187436461?origin=resultslist},
+ volume = {80},
+ year = {2024}
+}

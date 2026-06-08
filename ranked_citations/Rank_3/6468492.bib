@@ -1,0 +1,14 @@
+@inproceedings{6468492,
+ abstract = {DBSCAN is a well-known density based clustering algorithm capable of discovering arbitrary shaped clusters and eliminating noise data. However, parallelization of Dbscan is challenging as it exhibits an inherent sequential data access order. Moreover, existing parallel implementations adopt a master-slave strategy which can easily cause an unbalanced workload and hence result in low parallel efficiency. We present a new parallel Dbscan algorithm (Pdsdbscan) using graph algorithmic concepts. More specifically, we employ the disjoint-set data structure to break the access sequentiality of Dbscan. In addition, we use a tree-based bottom-up approach to construct the clusters. This yields a better-balanced workload distribution. We implement the algorithm both for shared and for distributed memory. Using data sets containing up to several hundred million high-dimensional points, we show that Pdsdbscan significantly outperforms the master-slave approach, achieving speedups up to 25.97 using 40 cores on shared memory architecture, and speedups up to 5,765 using 8,192 cores on distributed memory architecture.},
+ author = {Patwary, Md. Mostofa Ali and Palsetia, Diana and Agrawal, Ankit and Liao, Wei-keng and Manne, Fredrik and Choudhary, Alok},
+ booktitle = {SC '12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
+ doi = {10.1109/SC.2012.9},
+ issn = {2167-4337},
+ keyword = {Clustering algorithms;Merging;Noise;Data structures;Partitioning algorithms;Vegetation;Instruction sets;Density based clustering;Union-Find algorithm;Disjoint-set data structure},
+ month = {Nov},
+ number = {},
+ pages = {1-11},
+ title = {A new scalable parallel DBSCAN algorithm using the disjoint-set data structure},
+ volume = {},
+ year = {2012}
+}

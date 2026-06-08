@@ -1,0 +1,14 @@
+@inproceedings{6627734,
+ abstract = {Packet classification is an enabling function for a variety of Internet applications such as access control, quality of service and differentiated services. Decision-tree and decomposition are the most well-known algorithmic approaches. Compared to architectural solutions, both approaches are memory and performance inefficient, falling short of the needs of high-speed networks. EffiCuts, the state-of-the-art decision-tree technique, significantly reduces memory overhead of classic cutting algorithms with separated trees and equidense cuts. However, it suffers from too many memory accesses and a large number of separated trees. Besides, EffiCuts needs comparator circuitry to support equidense cuts, which makes it less practical. Decomposition based schemes, such as BV, can leverage the parallelism offered by modern hardware for memory accesses, but they have poor storage scalability. In this paper, we propose Hybrid Cuts, a combination of decomposition and decision-tree techniques that improves storage and performance simultaneously. The decomposition part of Hybrid Cuts has the benefits of traditional decomposition-based techniques without the trouble of aggregating results from a large number of bit vectors or a set of big lookup tables. Meanwhile, thanks to the clever partitioning of the rule set, an efficient cutting algorithm following the decomposition can build short decision trees with significant reduction on rule replications. Using Class Bench, we show that Hybrid Cuts achieves similar memory reduction compared to EffiCuts, but it outperforms EffiCuts significantly in terms of memory accesses for packet classification. In addition, Hybrid Cuts is more practical for implementation than EffiCuts, which maintains complicated data structures and requires special hardware support for efficient cuts.},
+ author = {Li, Wenjun and Li, Xianfeng},
+ booktitle = {2013 IEEE 21st Annual Symposium on High-Performance Interconnects},
+ doi = {10.1109/HOTI.2013.12},
+ issn = {2332-5569},
+ keyword = {Vectors;Algorithm design and analysis;Decision trees;Classification algorithms;Partitioning algorithms;Hardware;Scalability;Packet Classification;Decomposition;Decision-Tree;Rule Replication;Performance},
+ month = {Aug},
+ number = {},
+ pages = {41-48},
+ title = {HybridCuts: A Scheme Combining Decomposition and Cutting for Packet Classification},
+ volume = {},
+ year = {2013}
+}

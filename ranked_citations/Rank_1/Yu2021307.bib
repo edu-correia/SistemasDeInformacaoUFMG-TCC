@@ -1,0 +1,15 @@
+@conference{Yu2021307,
+ abstract = {Lossy compression is becoming an indispensable technique for the success of today's extreme-scale highperformance computing projects that produce vast volumes of data during scientific simulations or instrument data acquisitions. Comprehensively understanding the compression quality and performance of different lossy compressors is critical to selecting the best-fit compressors and using them properly and efficiently in practice. A few lossy compression assessment tools (e.g., Z-checker) have been developed, but none of them support the execution in a GPU environment. This is a significant gap because many recent extreme-scale applications and lossy compressors (e.g., cuSZ) can run entirely within GPUs. In this work, we develop an efficient lossy compression measuring system (called cuZ-Checker) on the GPU platform, which aims to perform the lossy compression quality and performance assessment completely within the GPU environment. Our contribution is threefold. (1) We develop a novel GPU-based lossy compression measuring framework using a computation pattern-based design approach. This approach classifies the computing-intensive metrics into three categories based on their patterns which creates large opportunities for kernel fusion and data reuse. (2) For each pattern in cuZ-Checker, we develop a CUDA kernel and provide fine-grained optimizations to boost its performance. (3) We thoroughly evaluate our cuZ-checker on a V100 GPU using four real-world scientific application datasets. Experiments show that cuZ-Checker can significantly accelerate the overall lossy compression assessment performance by 23X~31X compared with the OpenMP-based multithreading CPU performance. To the best of our knowledge, this is the first lossy compression measuring system designed for GPU devices.  ©2021 IEEE.},
+ author = {Yu, Xiaodong and Di, Sheng and Gok, Ali Murat and Tao, Dingwen and Cappello, Franck},
+ doi = {10.1109/Cluster48925.2021.00065},
+ journal = {Proceedings - IEEE International Conference on Cluster Computing, ICCC},
+ note = {Cited by: 3},
+ pages = {307 - 319},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CuZ-Checker: A GPU-Based Ultra-Fast Assessment System for Lossy Compressions},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85126017370?origin=resultslist},
+ volume = {2021-September},
+ year = {2021}
+}

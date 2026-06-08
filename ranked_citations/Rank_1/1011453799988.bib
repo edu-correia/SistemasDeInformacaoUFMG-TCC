@@ -1,0 +1,15 @@
+@article{10.1145/3799988,
+ abstract = {Flash translation layer (FTL) plays a crucial role in NAND flash memory-based solid state drives (SSDs), abstracting the complexities of flash memory operations such as address translation, garbage collection, and wear leveling. As flash memory capacities continue to grow, particularly with advancements in 3D flash and high-density flash technology, the challenges associated with efficient FTL design become increasingly prominent. The escalating demand for DRAM space to accommodate the larger address mapping table for FTL in modern SSD, coupled with the performance degradation caused by GC-induced write amplification, necessitates innovative FTL solutions that can optimize both read and write performance while maintaining memory efficiency. In this work, we introduce Seg-FTL, a novel FTL solution to significantly enhance the read and write performance of flash storage system, by integrating the segment-based FTL with a dynamic linear model. The segment-based FTL compresses the contiguous logical page numbers (LPNs) to physical page numbers (PPNs) mappings into segments, allowing more mapping entries to be cached in the limited DRAM. The dynamic linear model synchronously updates with changes in LPN-PPN mapping entries, improving the hit ratio for read requests, especially random reads. Furthermore, a novel dynamic memory allocation scheme is designed for the mapping cache, minimizing fragmentation and enhancing security in memory-constrained embedded systems. The results show that Seg-FTL achieves average performance improvements of 1.10 \texttimes{} to 3.81 \texttimes{} in standard benchmarks, and peak gains of up to 9.37 \texttimes{} under high-concurrency scenarios, compared with the state-of-the-art FTLs.},
+ address = {New York, NY, USA},
+ author = {Fu, Xuanxuan and cui, jinhua and Li, Lu and Chen, Feiyu and Wen, Canghao and Yang, Laurence T.},
+ doi = {10.1145/3799988},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {Flash Translation Layer (FTL), Solid State Drives (SSDs), linear model, Garbage Collection (GC), Write amplification, Dynamic memory allocation.},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Seg-FTL: A new Segment-Based FTL with Dynamic Linear Model for Enhanced SSD Performance},
+ url = {https://doi.org/10.1145/3799988},
+ year = {2026}
+}

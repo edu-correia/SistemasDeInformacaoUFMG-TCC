@@ -1,0 +1,14 @@
+@article{11199315,
+ abstract = {Deploying large, pretrained models on resource limited devices remains a fundamental challenge in machine learning. While model merging and low-rank compression represent two common options, they generally employ static approaches such as factorization with a fixed rank (e.g., singular value decomposition) or weight averaging, producing some degradation in performance. This work introduces Adaptive Rank Pruning (ARP), a dynamic, layer-wise optimization of the rank during merging by using a variance-thresholding criterion, creating a unified high quality approach to compression and merging. ARP does not require retraining and is evaluated through rigorous comparisons on both classical methods (SVD) and modern state-of-the-art baselines (LoRA and QLoRA). Extensive experiments on vision (ResNet) and language (BERT) tasks show that ARP achieves a better accuracy–compression trade-off ratio, producing up to  $2.5\times $  model size reduction with less than 4% accuracy loss. We further demonstrate ARP on edge hardware (Raspberry Pi 4, Google Pixel 6), validating its ability to reduce inference latency and energy consumption compared to alternative methods. Our results reveal ARP as a robust and effective approach for deploying adaptable AI in real-world constrained environments.},
+ author = {Vedhanth, M. and Mahadevi, S. and Kumar, Anil},
+ doi = {10.1109/ACCESS.2025.3619975},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Adaptation models;Merging;Computational modeling;Accuracy;Model compression;Artificial intelligence;Vectors;Filters;Arithmetic;Redundancy;Accuracy;adaptive rank pruning;compression ratios;constrained settings;fine-tuned models;large pre-trained models;low-rank approximation;model compression;model merging;neural networks;resource demands;singular value decomposition;stability;trade-offs;variance thresholds;parameter-efficient fine-tuning (PEFT);edge deployment},
+ month = {},
+ number = {},
+ pages = {177036-177056},
+ title = {Adaptive Rank Pruning: Dynamic Low-Rank Model Merging and Compression for Efficient AI Deployment},
+ volume = {13},
+ year = {2025}
+}

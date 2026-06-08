@@ -1,0 +1,14 @@
+@inproceedings{11342543,
+ abstract = {Stable diffusion is an outstanding image generation model for text-to-image, but its time-consuming generation process remains a challenge due to the quadratic complexity of attention operations. Recent token merging methods improve efficiency by reducing the number of tokens during attention operations, but often overlook the characteristics of attention-based image generation models, limiting their effectiveness. In this paper, we propose local representative token guided merging (ReToM), a novel token merging strategy applicable to any attention mechanism in image generation. To merge tokens based on various contextual information, ReToM defines local boundaries as windows within attention inputs and adjusts window sizes. Furthermore, we introduce a representative token, which represents the most representative token per window by computing similarity at a specific timestep and selecting the token with the highest average similarity. This approach preserves the most salient local features while minimizing computational overhead. Experimental results show that ReToM achieves a 6.2% improvement in FID and higher CLIP scores compared to the baseline, while maintaining comparable inference time. We empirically demonstrate that ReToM is effective in balancing visual quality and computational efficiency.},
+ author = {Lee, Min-Jeong and Kim, Hee-Dong and Lee, Seong-Whan},
+ booktitle = {2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+ doi = {10.1109/SMC58881.2025.11342543},
+ issn = {},
+ keyword = {Training;Visualization;Attention mechanisms;Image synthesis;Computational modeling;Merging;Text to image;Diffusion models;Transformers;Computational efficiency;stable diffusion model;token merging;transformer;text-to-image generation},
+ month = {Oct},
+ number = {},
+ pages = {966-971},
+ title = {Local Representative Token Guided Merging for Text-to-Image Generation},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@conference{Song2018299,
+ abstract = {As modern computer systems face the challenge of managing large data, filesystems must deal with a large number of files. This leads to amplified concerns of metadata and data operations. Filesystems in Linux manage the metadata of files by constructing in-memory structures such as directory entry (dentry) and inode. However, we found inefficiencies in metadata management mechanisms, especially in the path traversal mechanism of Linux file systems when searching for a dentry in the dentry cache. In this paper, we optimize metadata operations of path traversing by searching for the dentry in the backward manner. By using the backward finding mechanism, we can find the target dentry with reduced number of dentry cache lookups when compared with the original forward finding mechanism. However, this backward path lookup mechanism complicates permission guarantee of each path component. We addess this issue by proposing the use of a permission-granted list. We have evaluated our optimized techniques with several benchmarks including real-world workload. The experimental results show that our optimizations improve path lookup latency by up to 40% and overall throughput by up to 56% in real-world benchmarks which has a number of path-deepen files. © 2018 Association for Computing Machinery.},
+ author = {Song, Nae Young and Kim, Hwajung and Han, Hyuck and Yeom, Heon Young},
+ doi = {10.1145/3149457.3149468},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 0},
+ pages = {299 - 308},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient dentry lookup with backward finding mechanism},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85044388452?origin=resultslist},
+ year = {2018}
+}

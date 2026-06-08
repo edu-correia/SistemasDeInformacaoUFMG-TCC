@@ -1,0 +1,15 @@
+@article{10.1145/3799990,
+ abstract = {Call graph construction serves as a foundational component in Python static analysis and software engineering. However, it faces significant challenges due to the language's unique characteristics. That is, the dynamic typing system, extensive use of third-party libraries, and runtime-dependent behaviors in Python create substantial obstacles for traditional static analysis methods. Although these methods typically achieve high precision, they suffer from low recall, making it difficult to strike a balance between soundness and precision. In this paper, we present InferCG, a hybrid framework that addresses these limitations by combining coarse-grained static analysis with large language model (LLM)–based semantic reasoning. InferCG first constructs a high-recall candidate call set using permissive name- and arity-based matching, and then employs powerful LLMs such as DeepSeek and Qwen to semantically filter implausible edges. This two-stage design balances recall and precision without requiring dynamic execution or extensive type annotations. Experiments on curated open-source Python projects and the DyPyBench benchmark demonstrate that InferCG outperforms state-of-the-art static tools, which achieves up to 13.9% improvement in average recall and a 5.0% gain in average F1 score over PyCG. Moreover, in a real-world vulnerable-function detection scenario, InferCG enables more accurate reachability analysis than dependency-based tools.},
+ address = {New York, NY, USA},
+ author = {Xiang, Dongming and Wu, Shichao and Tu, Hanqian and Lin, Wang and Ding, Zuohua},
+ doi = {10.1145/3799990},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Call Graph, Python, static analysis, LLM},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {InferCG: Enhancing Python Call Graph Generation via Static Analysis and Large Language Models},
+ url = {https://doi.org/10.1145/3799990},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10907136,
+ abstract = {HPG is a portable library for gridding and degridding non-uniformly distributed visibility data for synthetic aperture imaging. The library is designed for performance portability, and is implemented using the Kokkos C++ Performance Portability Ecosystem, a High Performance Software Foundation project that was initially developed under the US Department of Energy's Exascale Computing Project. The HPG implementation uses portable C++, which compiles to optimized code on CPUs as well as GPUs. The library implements general purpose algorithms that can be used with any user-defined convolution kernels, and is thus applicable to most visibility-based gridding algorithms. It is currently being used by groups within the National Radio Astronomy Observatory in the implementation of A-projection, W-projection, AW-projection, full polarization, spectral line, continuum, and mosaic imaging. Performance testing at NRAO has demonstrated a speedup of up to 160x on GPUs versus CASA-based gridding on a single CPU core. Although the algorithms are inherently optimized for GPU execution, the code can be compiled, unchanged, for OpenMP or even serial CPU execution, which provides a significant benefit for code development and debugging. Hooks provided by Kokkos also support fine-grained performance profiling on all architectures, promoting ease of use during performance optimization. The library is currently undergoing an update to merge a variant that was implemented for the DSA-2000 radio camera imaging pipeline software. Early tests of the merged code promise an approximate 2x speedup versus the current version of HPG on a wide range of GPUs. This performance improvement is achieved through various algorithm refinements, including an option to use mixed precision arithmetic, which is targeted to more affordable GPUs having low double precision floating point performance. After the new version of HPG is complete, the identical library will be used by both NRAO and radio camera imaging codes. This talk will present the design of the HPG library and some aspects of its implementation, describe how it is being used by various applications, show results of some performance tests in several applications, discuss the critical imaging parameters that affect performance, and provide an overview of plans for future development.},
+ author = {Pokorny, Martin},
+ booktitle = {2025 United States National Committee of URSI National Radio Science Meeting (USNC-URSI NRSM)},
+ doi = {10.23919/USNC-URSINRSM66067.2025.10907136},
+ issn = {},
+ keyword = {Codes;Radio astronomy;Software algorithms;Pipelines;C++ languages;Cameras;Libraries;Software;Optimization;Testing},
+ month = {Jan},
+ number = {},
+ pages = {281-281},
+ title = {HPG: A High Performance Gridding Library},
+ volume = {},
+ year = {2025}
+}

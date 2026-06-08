@@ -1,0 +1,16 @@
+@article{Singh2021,
+ abstract = {Given an input stream S of size N, a φ-heavy hitter is an item that occurs at least φN times in S. The problem of finding heavy-hitters is extensively studied in the database literature.We study a real-time heavy-hitters variant in which an element must be reported shortly after we see its T = φN-th occurrence (and hence it becomes a heavy hitter). We call this the Timely Event Detection (TED) Problem. The TED problem models the needs of many real-world monitoring systems, which demand accurate (i.e., no false negatives) and timely reporting of all events from large, high-speed streams with a low reporting threshold (high sensitivity).Like the classic heavy-hitters problem, solving the TED problem without false-positives requires large space (ω (N) words). Thus in-RAM heavy-hitters algorithms typically sacrifice accuracy (i.e., allow false positives), sensitivity, or timeliness (i.e., use multiple passes).We show how to adapt heavy-hitters algorithms to external memory to solve the TED problem on large high-speed streams while guaranteeing accuracy, sensitivity, and timeliness. Our data structures are limited only by I/O-bandwidth (not latency) and support a tunable tradeoff between reporting delay and I/O overhead. With a small bounded reporting delay, our algorithms incur only a logarithmic I/O overhead.We implement and validate our data structures empirically using the Firehose streaming benchmark. Multi-threaded versions of our structures can scale to process 11M observations per second before becoming CPU bound. In comparison, a naive adaptation of the standard heavy-hitters algorithm to external memory would be limited by the storage device's random I/O throughput, i.e., ≈100K observations per second.  © 2021 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Singh, Shikha and Pandey, Prashant and Bender, Michael A. and Berry, Jonathan W. and Farach-Colton, Martín and Johnson, Rob and Kroeger, Thomas M. and Phillips, Cynthia A.},
+ doi = {10.1145/3472392},
+ journal = {ACM Transactions on Database Systems},
+ note = {Cited by: 0; All Open Access; Green Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Timely Reporting of Heavy Hitters Using External Memory},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85121288710?origin=resultslist},
+ volume = {46},
+ year = {2021}
+}

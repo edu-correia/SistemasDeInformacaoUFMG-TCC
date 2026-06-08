@@ -1,0 +1,14 @@
+@inproceedings{11126286,
+ abstract = {Scaling Graph Neural Network (GNN) training on large-scale graph data poses a critical challenge for implementing GNN applications on real-world giant graphs. The size of real-world graphs often exceeds the memory capacity of accelerator devices, necessitating the use of multiple devices or host memory for training. While expanding memory space alleviates the out-of-memory problem, this approach introduces another bottleneck through heavy communication via low-bandwidth interconnection. Therefore, achieving efficient, scalable GNN training on large-scale graphs requires addressing both capacity and communication issues. To overcome the limitations of previous methods, this work proposes an alternative approach: satisfying memory requirements by reducing the size of data used in training rather than expanding memory capacity. We introduce CoCoA, an end-to-end GNN training solution for large-scale graphs, achieved through a Co-designed algorithm and hardware optimized for Compressed graph inputs. In this work, we initially compress the input graph, considering both edges and node embeddings. The compression method is optimized using the homophily characteristics of GNN datasets based on node merging and vector quantization. After the compression step, the dedicated accelerator is designed and optimized for computing over a compressed graph, minimizing decompression overhead. The proposed architecture supports early aggregation methods to avoid redundant data loading and computation. As a result, CoCoA enables data compression for full-batch GNN training at $10 \times$ compression ratio with acceptable accuracy degradation. Our proposed CoCoA system, using a single device with 16GB memory, achieves up to a $351.2 \times$ speedup over the baseline system.},
+ author = {Han, Yunki and Shin, Jaekang and Park, Gunhee and Kim, Lee-Sup},
+ booktitle = {2024 ACM/IEEE International Conference On Computer Aided Design (ICCAD)},
+ doi = {10.1145/3676536.3676835},
+ issn = {1558-2434},
+ keyword = {Training;Degradation;Accuracy;Vector quantization;Memory management;Merging;Data compression;Training data;Graph neural networks;Hardware;Graph Neural Networks;Compression;Hardware Architecture},
+ month = {Oct},
+ number = {},
+ pages = {1-9},
+ title = {CoCoA: Algorithm-Hardware Co-Design for Large-Scale GNN Training Using Compressed Graph},
+ volume = {},
+ year = {2024}
+}

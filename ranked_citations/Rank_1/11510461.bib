@@ -1,0 +1,14 @@
+@inproceedings{11510461,
+ abstract = {In search for more efficient video compression capability than versatile video coding (VVC), joint video experts team (JVET) launched exploration work on new video coding technologies beyond VVC in 2021. In 2023, audio video coding standard (AVS) workgroup started to explore the new video coding technologies beyond AVS3 and released a software platform named exploration video model (EVM). In EVM, the candidates of merge mode are reordered according to the template matching (TM) cost to reduce the candidate index signaling overhead. After reordering, the TM-based refinement is applied to the candidate to improve the accuracy of the motion derived in merge mode. However, it is found that the bi-prediction candidates are usually more effective than uni-prediction candidates despite the TM cost in non-low-delay pictures, while the current reordering method only relies on the TM cost. And when performing TM-based refinement, the motions of the two reference picture lists (RPLs) are processed independently without joint optimization. To solve these issues, an adaptive motion candidate reordering method and an improved TM motion refinement method which is based on the joint motion search are proposed in this paper. In the proposed candidate reordering method, the TM cost of uni-prediction candidate is weighted by a factor greater than 1 to prioritize the bi-prediction candidates. And in the proposed motion refinement method, the reference template of the bi-predicted block is obtained by averaging the templates of two predicted blocks, such that the motions of the two RPLs are jointly optimized. The proposed methods were implemented on top of EVM-0.9, it is reported that $\{-0.18 \%(\mathrm{Y}),-0.43 \%(\mathrm{U}),-0.08 \%(~\mathrm{V})\}$ and $\{-0.03 \%(\mathrm{Y}),- 0.06 \%(\mathrm{U}), 0.18 \%(~\mathrm{V})\}$ BD-rate reductions are achieved under random access and low-delay B configurations, respectively, with negligible runtime increase. Due to the good trade-off, the proposed methods have been adopted to EVM platform.},
+ author = {Li, Hongbo and Zhong, Yucheng and Zhu, Jiabao and Lai, Wanglin and Ma, Licong and Chen, Jie and Liao, Ru-ling and Li, Xinwei and Ye, Yan and Yu, Li},
+ booktitle = {2026 Data Compression Conference (DCC)},
+ doi = {10.1109/DCC66757.2026.00041},
+ issn = {2375-0359},
+ keyword = {Costing;Costs;Bismuth;Business intelligence;Codes;Videos;Merging;Refining;Joints;Encoding},
+ month = {March},
+ number = {},
+ pages = {332-341},
+ title = {Improvements on Template Matching Merge Mode for the Next Generation of AVS},
+ volume = {},
+ year = {2026}
+}

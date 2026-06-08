@@ -1,0 +1,14 @@
+@inproceedings{8396562,
+ abstract = {The manual translation of informally defined requirements into statecharts, from which source code can be generated automatically, can be an error-prone, laborintensive process. Design errors sometimes propagate into final implementation code, only to be discovered during testing and verification. However, the requirements that the software needs to satisfy can be formally defined via temporal logics. In this paper, an approach to automatically synthesize flight-software hybrid-controllers for dynamic systems from formal specifications is given. First, specifications for a specific control functionality are defined by a set of linear temporal logic formulas. These, together with a model of the dynamical system, are then used as inputs to the Caltech-developed temporal logic planning toolbox (TuLiP), which searches for a control design. This results in a controller that is hybrid as it combines a finite state controller together with low-level continuous control actions. We map the resulting controller design to UML statecharts, which can be given as input to the Statechart Autocoder (SCA) developed by the Jet Propulsion Laboratory. SCA maps statechart controller designs to software implementation C code suitable for flight applications. By construction, the resulting code will meet the original formal design specifications, thus eliminating latent design errors. This paper describes the new 2nd generation interface developed to specify and convert the TuLiP-produced design to more optimized (e.g., reduced number of states and transitions) input UML (as XML file) for the JPL Statechart Autocoder. By applying intermediate optimization procedures, in which indistinguishable states are merged and transitions are grouped, the size of the statechart and the resulting code is reduced substantially. This is demonstrated by revisiting our 2016 speed-controller example showing reduction by more than 75% of the states synthesized in the original example.},
+ author = {Haesaert, S. and Reder, L.J. and Murray, R.M.},
+ booktitle = {2018 IEEE Aerospace Conference},
+ doi = {10.1109/AERO.2018.8396562},
+ issn = {},
+ keyword = {Software;Unified modeling language;Cost accounting;Games;Complexity theory;Propulsion;Planning},
+ month = {March},
+ number = {},
+ pages = {1-17},
+ title = {Progress towards flight software hybrid controllers from formal specifications},
+ volume = {},
+ year = {2018}
+}

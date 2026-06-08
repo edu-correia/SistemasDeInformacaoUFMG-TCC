@@ -1,0 +1,18 @@
+@article{10.1145/3547622,
+ abstract = {Many problem domains, including program synthesis and rewrite-based optimization, require searching astronomically large spaces of programs. Existing approaches often rely on building specialized data structures—version-space algebras, finite tree automata, or e-graphs—to compactly represent such spaces. At their core, all these data structures exploit independence of subterms; as a result, they cannot efficiently represent more complex program spaces, where the choices of subterms are entangled. We introduce equality-constrained tree automata (ECTAs), a new data structure, designed to compactly represent large spaces of programs with entangled subterms. We present efficient algorithms for extracting programs from ECTAs, implemented in a performant Haskell library, ecta. Using the ecta library, we construct Hectare, a type-driven program synthesizer for Haskell. Hectare significantly outperforms a state-of-the-art synthesizer Hoogle+—providing an average speedup of 8\texttimes{}—despite its implementation being an order of magnitude smaller.},
+ address = {New York, NY, USA},
+ articleno = {91},
+ author = {Koppel, James and Guo, Zheng and de Vries, Edsko and Solar-Lezama, Armando and Polikarpova, Nadia},
+ doi = {10.1145/3547622},
+ issue_date = {August 2022},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {type systems, program synthesis, e-graphs, Haskell},
+ month = {August},
+ number = {ICFP},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Searching entangled program spaces},
+ url = {https://doi.org/10.1145/3547622},
+ volume = {6},
+ year = {2022}
+}

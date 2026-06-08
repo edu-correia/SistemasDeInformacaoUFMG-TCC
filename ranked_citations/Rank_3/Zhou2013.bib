@@ -1,0 +1,14 @@
+@conference{Zhou2013,
+ abstract = {With the popularity of big data and cloud computing, data parallel framework MapReduce based data warehouse systems are used widely. Column store is a default data placement in these systems. Traditionally star join is a core operation in the data warehouse. However, little related work study star join in column store and MapReduce environments. This paper proposes two new cache conscious algorithms Multi-Fragment-Replication Join (MFRJ) and MapReduce-Invisible Join (MRIJ) in MapReduce environments. All these algorithms avoid fact table data movement and are cache conscious in each MapReduce node. In addition, fact table is partitioned into several column groups for cache optimization in MFRJ; One group contains all of foreign key columns and each measure column is a group. In MRIJ, each column is separately processed one by one which has higher cache utilization and avoids frequently cache miss from one column to the other column. MRIJ is composed of several map operation on dimension tables and one MapRe-duce job. We also apply MRIJ on RCFile in Hive. All operations are processed in mapping phase and avoid high cost of shuffle and reduce operation. If the dimension tables are big enough and cannot cache in local memory, MRIJ is divided into two phases, firstly each dimension table join with corresponding foreign key column in fact table as commonly map reduce join concurrently or serially; secondly all internal results joined for final results based on position index. This strategy also can be applied to other multi-table join. In order to reduce network I/O, dimension table and the fact table foreign key column are co-location storage. Our experimental results in cluster environments show that our algorithms outperform existing approaches in Hive system. Copyright 2013 ACM.},
+ author = {Zhou, Guoliang and Zhu, Yongli and Wang, Guilan},
+ doi = {10.1145/2501928.2501929},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 5},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Cache conscious star-join in MapReduce environments},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84890544555?origin=resultslist},
+ year = {2013}
+}

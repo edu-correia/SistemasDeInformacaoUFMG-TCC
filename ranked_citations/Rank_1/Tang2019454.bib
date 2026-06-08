@@ -1,0 +1,15 @@
+@article{Tang2019454,
+ abstract = {In the age of user-generated contents, the workloads imposed on information-security infrastructures become increasingly write intensive. However, existing security protocols, specifically authenticated data structures (ADSs), are historically designed based on update-in-place data structures and incur overhead when serving write-intensive workloads. In this work, we present LPAD (Log-structured Persistent Authenticated Directory), a new ADS protocol designed uniquely based on the log-structure merge trees (LSM trees) which recently gain popularity in the design of modern storage systems. On the write path, LPAD supports streaming, non-interactive updates with constant proof from trusted data owners. On the read path, LPAD supports point queries over the dynamic dataset with a polynomial proof. The key to enable this efficiency is a verifiable reorganization operation, called verifiable merge, in LPAD. Verifiable merge is secured by the execution in an enclave of trusted execution environments (TEE). To minimize the trusted computing base (TCB), LPAD places the code related to verifiable merge in enclave, and nothing else. Our implementation of LPAD on Google LevelDB codebase and on Intel SGX shows that the TCB is reduced by 20 times: The enclave size of LPAD is one thousand code lines out of more than twenty thousands code lines of a vanilla LevelDB. Under the YCSB workloads, LPAD improves the performance by an order of magnitude comparing with existing ADSs. © ICST Institute for Computer Sciences, Social Informatics and Telecommunications Engineering 2019.},
+ author = {Tang, Yuzhe and Li, Kai and Chen, Ju},
+ doi = {10.1007/978-3-030-37231-6_27},
+ journal = {Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering, LNICST},
+ note = {Cited by: 1},
+ pages = {454 - 471},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Authenticated LSM Trees with Minimal Trust},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85076889670?origin=resultslist},
+ volume = {305 LNICST},
+ year = {2019}
+}

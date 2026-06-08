@@ -1,0 +1,13 @@
+@article{JIN201911,
+ abstract = {We present a computational framework for the treatment of shear localization in metallic materials under dynamic loading, based on the integration of a shear band tracking strategy into an explicit 3D finite element formulation with embedded weak discontinuities. Within this computational framework, an embedded shear band's mid-surface is represented by an iso-surface of a level set function, which is obtained by solving a heat-conduction type boundary value problem (BVP). The solution of this BVP is carried out either globally over the entire problem domain, or locally at the level of individual elements in the mesh. In this paper, we present a detailed comparison of these global and local algorithmic implementations of the shear band tracking strategy. Numerical results obtained using these two implementations, and using a simplified formulation without shear band tracking, are presented and compared. Moreover, we compare the computational efficiency and parallel scaling performance of the local and global implementations. This comparative study shows that both implementations can simulate the initiation of two independent shear bands and their propagation past each other without merging, whereas only the global implementation can successfully simulate the merging of two branches of a single shear band. This study also confirms that the global implementation is more computationally intensive, since it requires a global system of linear equations associated with the level set BVP to be solved at each time step. Both implementations exhibit very good scalability in domain decomposition-based parallel simulations.},
+ author = {Tao Jin and Hashem M. Mourad and Curt A. Bronkhorst},
+ doi = {https://doi.org/10.1016/j.finel.2018.11.001},
+ issn = {0168-874X},
+ journal = {Finite Elements in Analysis and Design},
+ keyword = {Shear localization, Embedded weak-discontinuity finite element methods, Shear band tracking strategies, Elastic-viscoplastic materials, Explicit dynamic analysis},
+ pages = {11-31},
+ title = {A comparative study of shear band tracking strategies in three-dimensional finite elements with embedded weak discontinuities},
+ url = {https://www.sciencedirect.com/science/article/pii/S0168874X18304438},
+ volume = {155},
+ year = {2019}
+}

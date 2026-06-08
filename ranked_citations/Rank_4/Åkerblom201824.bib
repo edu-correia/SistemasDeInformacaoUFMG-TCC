@@ -1,0 +1,14 @@
+@conference{Åkerblom201824,
+ abstract = {Array algorithms where operations are applied to disjoint parts of an array lend themselves well to parallelism, since parallel threads can operate on the parts of the array without synchronisation. However, implementing such algorithms requires programmer diligence to verify that a thread does not accidentally access an element of the array while another thread is updating the same element. An off-by-one error can lead to data-races and non-deterministic bugs which are notoriously hard to track down. Previous work on Kappa, a capability-based type system, provides data-race freedom for concurrent, object-oriented programs, even in the presence of concurrent mutating accesses to the same object. In this paper we show how Kappa can be extended to handle concurrent programming with arrays. By defining array capabilities which grant access to (parts of) an array, we can piggy-back on the existing type system in a straightforward fashion. We illustrate how split and merge operations integrate with Kappa in practise by discussing the implementation of a divide-and-conquer quicksort algorithm. We explore the semantics of the Kappa extension by using a simple imperative calculus and sketch on how it could be implemented efficiently. © 2018 ACM.},
+ author = {Åkerblom, Beatrice and Castegren, Elias and Wrigstad, Tobias},
+ doi = {10.1145/3219753.3219757},
+ journal = {ARRAY 2018 - Proceedings of the 5th ACM SIGPLAN International Workshop on Libraries, Languages, and Compilers for Array Programming, co-located with PLDI 2018},
+ note = {Cited by: 2},
+ pages = {24 - 33},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Parallel programming with arrays in Kappa},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85063581090?origin=resultslist},
+ year = {2018}
+}

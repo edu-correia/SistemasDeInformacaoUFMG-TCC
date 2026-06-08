@@ -1,0 +1,16 @@
+@article{Willerval20242069,
+ abstract = {In the relational database realm, there has been a shift towards novel hybrid database architectures combining the properties of transaction processing (OLTP) and analytical processing (OLAP). OLTP workloads are made up by read and write operations on a small number of rows and are typically addressed by indexes such as B+trees. On the other side, OLAP workloads consists of big read operations that scan larger parts of the dataset. To address both workloads some databases introduced an architecture using a buffer or delta partition.Precisely, changes are accumulated in a write-optimized delta partition while the rest of the data is compressed in the read-optimized main partition. Periodically, the delta storage is merged in the main partition. In this paper we investigate for the first time how this architecture can be implemented and behaves for RDF graphs. We describe in detail the indexing-structures one can use for each partition, the merge process as well as the transactional management.We study the performances of our triple store, which we call qEndpoint, over two popular benchmarks, the Berlin SPARQL Benchmark (BSBM) and the recent Wikidata Benchmark (WDBench). We are also studying how it compares against other public Wikidata endpoints. This allows us to study the behavior of the triple store for different workloads, as well as the scalability over large RDF graphs. The results show that, compared to the baselines, our triple store allows for improved indexing times, better response time for some queries, higher insert and delete rates, and low disk and memory footprints, making it ideal to store and serve large Knowledge Graphs. © 2024 – The authors. Published by IOS Press.. This is an open access article distributed under the terms of the https://creativecommons.org/licenses/by/4.0/, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.},
+ author = {Willerval, Antoine and Diefenbach, Dennis and Bonifati, Angela},
+ doi = {10.3233/SW-243616},
+ journal = {Semantic Web},
+ note = {Cited by: 0; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ number = {5},
+ pages = {2069 - 2087},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {qEndpoint: A novel triple store architecture for large RDF graphs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105034919744?origin=resultslist},
+ volume = {15},
+ year = {2024}
+}

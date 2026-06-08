@@ -1,0 +1,14 @@
+@inproceedings{7530043,
+ abstract = {In this paper, we propose an effective kernel implementation for an application of the finite difference method (FDM) by merging computations of central-difference and explicit time expansion schemes without IF statements inside the loops. The effectiveness of the implementation depends on the CPU architecture and execution situation, such as the problem size and the number of MPI processes and OpenMP threads. We adopt auto-tuning (AT) technology to select the best implementation. The AT function for the selection, referred to as "code selection", is implemented in an AT language, namely, ppOpen-AT. The results of experiments conducted using current advanced CPUs (Xeon Phi, Ivy Bridge, and FX10) indicated that crucial speedups of conventional AT are achieved by code selection. In particular, the heaviest kernels achieved speedups of 4.21x (Xeon Phi), 2.52x (Ivy Bridge), and 2.03x (FX10).},
+ author = {Katagiri, Takahiro and Matsumoto, Masaharu and Ohshima, Satoshi},
+ booktitle = {2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)},
+ doi = {10.1109/IPDPSW.2016.49},
+ issn = {},
+ keyword = {Distributed processing;Conferences;Auto-tuning;ppOpen-AT;Code Selection;Hybrid MPI/OpenMP;Many-core Architectures},
+ month = {May},
+ number = {},
+ pages = {1488-1495},
+ title = {Auto-Tuning of Hybrid MPI/OpenMP Execution with Code Selection by ppOpen-AT},
+ volume = {},
+ year = {2016}
+}

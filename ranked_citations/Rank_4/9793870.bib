@@ -1,0 +1,14 @@
+@inproceedings{9793870,
+ abstract = {At IVU Traffic Technologies, continuous integration (CI) pipelines build, analyze, and test the code for inadvertent effects before pull requests are merged. However, compiling the entire code base and executing all regression tests for each pull request is infeasible due to prohibitively long feedback times. Regression test selection (RTS) aims to reduce the testing effort. Yet, existing safe RTS techniques are not suitable, as they largely rely on language-specific program analysis. The IVU code base consists of more than 13 million lines of code in Java or C/C++ and contains thousands of non-code artifacts. Regression tests commonly operate across languages, using cross-language links, or read from non-code artifacts. In this paper, we describe our build system aware multi-language RTS approach, which selectively compiles and executes affected code modules and regression tests, respectively, for a pull request. We evaluate our RTS technique on 397 pull requests, covering roughly 2,700 commits. The results show that we are able to safely exclude up to 75% of tests on average (no undetected real failures slip into the target branches) and thereby save 72% of testing time, whereas end-to-end CI pipeline time is reduced by up to 63% on average.},
+ author = {Elsner, Daniel and Wuersching, Roland and Schnappinger, Markus and Pretschner, Alexander and Graber, Maria and Dammer, René and Reimer, Silke},
+ booktitle = {2022 IEEE/ACM 44th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+ doi = {10.1145/3510457.3513078},
+ issn = {},
+ keyword = {Java;Codes;Runtime;Pipelines;Software;Performance analysis;Testing;Software testing;regression test selection;continuous integration},
+ month = {May},
+ number = {},
+ pages = {87-96},
+ title = {Build System Aware Multi-language Regression Test Selection in Continuous Integration},
+ volume = {},
+ year = {2022}
+}

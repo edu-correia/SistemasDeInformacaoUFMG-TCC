@@ -1,0 +1,15 @@
+@article{Widodo2022332,
+ abstract = {LSM-tree-based key-value stores (KVSs) with KV separation minimizes the write latency and write ampli-fication of LSM-trees by writing the KV-pairs sequentially into a log file and indexing these KV pairs in an LSM-tree. As a tradeoff, the storage device must handle the parallel writes directly from the client, which can be detrimental to some storage devices such as non-volatile memory (NVM). Such tasks can easily overload the underlying memory buffers of NVM, especially when these KVSs are configured without a filesystem to manage IO congestion and minimize the latency during parallel workloads. In this paper, we discuss how to maximize the performance of NVM in LSM-trees with KV separation called Non-Volatile KVS (NVKVS). This approach features several optimizations such as asynchronous multithreading that decouples the client and write threads and reusable write-ahead log (WAL). With these optimizations, NVKVS has three benefits. First, it minimizes the write latency by using NVM. Second, it can saturate the NVM throughput through a user-configurable worker pool and optimizations. Third, it leverages the endurance of NVM to maximize the lifespan of the SSD. Our experimental testings show that NVKVS produces better latencies and over double the throughput of other the tested KVS. © 2022 Information Processing Society of Japan.},
+ author = {Widodo, Ryan Nathanael Soenjoto and Ohtsuji, Hiroki and Hayashi, Erika and Yoshida, Eiji and Abe, Hirotake and Kato, Kazuhiko},
+ doi = {10.2197/ipsjjip.30.332},
+ journal = {Journal of Information Processing},
+ note = {Cited by: 2; All Open Access; Gold Open Access},
+ pages = {332 - 342},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {NVKVS: Non-Volatile Memory Optimized Key-Value Separated LSM-Tree},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85130705130?origin=resultslist},
+ volume = {30},
+ year = {2022}
+}

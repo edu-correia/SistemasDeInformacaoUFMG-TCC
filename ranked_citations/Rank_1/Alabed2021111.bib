@@ -1,0 +1,14 @@
+@conference{Alabed2021111,
+ abstract = {RocksDB is a general-purpose embedded key-value store used in multiple different settings. Its versatility comes at the cost of complex tuning configurations. This paper investigates maximizing the throughput of RocksDB 10 operations by auto-tuning ten parameters of varying ranges. Off-the-shelf optimizers struggle with high-dimensional problem spaces and require a large number of training samples. We propose two techniques to tackle this problem: multitask modeling and dimensionality reduction through clustering. By incorporating adjacent optimization in the model, the model converged faster and found complicated settings that other tuners could not find. This approach had an additional computational complexity overhead, which we mitigated by manually assigning parameters to each sub-goal through our knowledge of RocksDB. The model is then incorporated in a standard Bayesian Optimization loop to find parameters that maximize RocksDB's 10 throughput. Our method achieved x1.3 improvement when bench-marked against a simulation of Facebook's social graph traffic, and converged in ten optimization steps compared to other state-of-the-art methods that required fifty steps.  © 2021 ACM.},
+ author = {Alabed, Sami and Yoneki, Eiko},
+ doi = {10.1145/3437984.3458841},
+ journal = {Proceedings of the 1st Workshop on Machine Learning and Systems, EuroMLSys 2021},
+ note = {Cited by: 13; All Open Access; Gold Open Access; Green Open Access},
+ pages = {111 - 119},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {High-Dimensional Bayesian Optimization with Multi-Task Learning for RocksDB},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85106051334?origin=resultslist},
+ year = {2021}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3725688.3725691,
+ abstract = {B+-trees are prevalent in traditional database systems due to their versatility and balanced structure. While binary search is typically utilized for branch operations, it may lead to inefficient cache utilization in main-memory scenarios. In contrast, trie-based index structures drive branch operations through prefix matching. While these structures generally produce fewer cache misses and are thus increasingly popular, they may underperform in range scans because of frequent pointer chasing.This paper proposes a new high-performance B+-tree variant called Feature B+-tree (FB+-tree). Similar to employing bit or byte for branch operation in tries, FB+-tree progressively considers several bytes following the common prefix on each level of its inner nodes—referred to as features, which allows FB+-tree to benefit from prefix skewness. FB+-tree blurs the lines between B+-trees and tries, while still retaining balance. In the best case, FB+-tree almost becomes a trie, whereas in the worst case, it continues to function as a B+-tree. Meanwhile, a crafted synchronization protocol that combines the link technique and optimistic lock is designed to support efficient concurrent index access. Distinctively, FB+-tree leverages subtle atomic operations seamlessly coordinated with optimistic lock to facilitate latch-free updates, which can be easily extended to other structures. Intensive experiments on multiple workload-dataset combinations demonstrate that FB+-tree shows comparable lookup performance to state-of-the-art trie-based indexes and outperforms popular B+-trees by 2.3x ~ 3.7x under 96 threads. FB+-tree also exhibits significant potential on other workloads, especially update workloads under contention and scan workloads.},
+ author = {Chen, Yuan and Li, Ao and Li, Wenhai and Deng, Lingfeng},
+ doi = {10.14778/3725688.3725691},
+ issn = {2150-8097},
+ issue_date = {February 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {14},
+ pages = {1579–1592},
+ publisher = {VLDB Endowment},
+ title = {FB+-Tree: A Memory-Optimized B+-Tree with Latch-Free Update},
+ url = {https://doi.org/10.14778/3725688.3725691},
+ volume = {18},
+ year = {2025}
+}

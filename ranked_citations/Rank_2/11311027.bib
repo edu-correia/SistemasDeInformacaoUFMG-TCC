@@ -1,0 +1,14 @@
+@inproceedings{11311027,
+ abstract = {In recent years, a myriad of Deep Neural Network (DNN) accelerator architectures have been proposed targeting efficient Sparse Matrix-Sparse Matrix Multiplication (SpMSpM) for the edge. Most focus on the dataflow, i.e., the order in which processing elements perform multiply-accumulate operations, while overlooking the influence of memory structures. For Gustavson-based dataflows, which have been proven to be the most efficient for the mid-sparsity scenarios exhibited by sparse DNN workloads, we find that the memory structure's organization storing partial results significantly affects performance. Different DNN models, even layers within the same model, impose diverse requirements on this structure. Rigid designs, commonly assumed so far, often cause frequent merging operations that degrade performance. In this work, we advocate for the necessity of providing adaptability at this memory structure and propose QuFi, a configurable merging memory structure designed for easy integration into any Gustavson-based accelerator and tailored to edge devices. Implemented as a collection of queues across multiple memory banks, QuFi supports reconfigurability through queue fusion and dynamic clustering while providing high bandwidth. Through a detailed evaluation that considers its inclusion into a state-of-the-art accelerator design for the edge, we show that QuFi provides an average speedup of $1.64 \times$, up to 73 % reduction in off-chip memory traffic, and leads to total accelerator area savings of 17 %.},
+ author = {Navarro, Adrián and Cano, José and Abellán, José L. and Acacio, Manuel E.},
+ booktitle = {2025 IEEE 43rd International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD65941.2025.00023},
+ issn = {2576-6996},
+ keyword = {Performance evaluation;Adaptation models;Spectral efficiency;Merging;Memory management;Artificial neural networks;Organizations;Edge AI;Sparse matrices;Next generation networking;DNN accelerator;edge device;memory organization;psum merging;adaptability;performance;area},
+ month = {Nov},
+ number = {},
+ pages = {119-126},
+ title = {QuFi: Adaptive Tiled Gustavson Output Reuse for Edge Sparse DNN Accelerators},
+ volume = {},
+ year = {2025}
+}

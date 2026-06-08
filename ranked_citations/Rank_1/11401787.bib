@@ -1,0 +1,14 @@
+@inproceedings{11401787,
+ abstract = {As represented by the digital twin for ITS (Intelligent Transportation System), digital twins are evolving from simply holding static data to storing new time state values sent from real-world devices and processing them to return real-time feedback to the devices. In particular, storing time-series state data in digital twins enable, for example, ITS systems to predict intersection collisions in real time. To realize such digital twin use cases, the currently most reasonable option is to use distributed event stream processing engine such as Apache Flink to process high-frequency events sent from a huge number of real-world devices. Furthermore, a log-structured merge-tree-based keyvalue store (KVS) like RocksDB, known for its high WRITE processing performance, is also the most reasonable choice for the backend storage of state values. In such an implementation, the storage structure of time-series data in the KVS significantly impacts the access performance of READ transactions. In this paper, we first build a computational model using mathematical formulation how the storage structures of timeseries data in digital twins impact on the READ performance of the system. We then introduce a storage structure for timeseries data in digital twins, that dynamically and automatically reconfigures itself to the optimal clustering width for the workload at that moment in order to minimize response time, by using an appropriate clustering width derived from the above mentioned model. In experimental evaluations, we show that our computational model well fits to the results of real measurements. Further, experiments on a scenario in which the mix of two different transactions changes in the middle of a benchmark show that our dynamic reconfiguration method reacts the change very well and shows its effectiveness in reducing response time by 50%.},
+ author = {Onishi, Takafumi and Kanemasa, Yasuhiko},
+ booktitle = {2025 IEEE International Conference on Big Data (BigData)},
+ doi = {10.1109/BigData66926.2025.11401787},
+ issn = {2573-2978},
+ keyword = {Performance evaluation;Computational modeling;Memory;Predictive models;Data models;Time measurement;Real-time systems;Mathematical models;Digital twins;Time factors;time-series data;storage structure;digital twins},
+ month = {Dec},
+ number = {},
+ pages = {2444-2452},
+ title = {Auto-Reconfigurable Storage Structure to Minimize Read Access Time of Time-Series Data in Digital Twins},
+ volume = {},
+ year = {2025}
+}

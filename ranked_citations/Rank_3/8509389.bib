@@ -1,0 +1,14 @@
+@inproceedings{8509389,
+ abstract = {Audio streaming services have become increasingly popular due to the wide use of smart phones. More and more people are enjoying live audio broadcasting while they are doing various kinds of activities. Meanwhile, the data volume of live audio streams is also ever increasing. Searching and indexing these audio streams is still an important and open problem, with the following challenges: (i) queries on the large number of audio streams need to be answered in real-time; (ii) a live audio stream is inserted into the index continuously to enable live audio streams to appear in query results, and the number of insertions is large which often becomes a performance issue. In this application paper, we propose a multi-modal and unified log structured merge-tree (a.k.a. LSM-tree which consists of multiple inverted indices) based index to support intensive insertions and real-time search on live audio stream applications. Our index natively supports two major types of indexing techniques in audio search: text based indexing and sound based indexing. To address the challenges of live audio indexing and search, we propose an index (called RTSI) which avoids traversing multiple inverted indices to compute the score of an audio stream. In RTSI, we propose various techniques to address the technical challenges. First, for each term we use three inverted lists which contain the sorted score of popularity, freshness and relevance, respectively, such that we can compute the top-k query results efficiently. Second, we devise an upper bound for the unchecked audio streams, such that the query answering process can be terminated earlier. Third, we create mirrors for the indices that need to be merged, such that queries can be answered in real-time when the indices are merging. We conduct extensive experiments on audio streams obtained from Ximalaya. The experimental results show that RTSI can answer a large number of queries in a real-time manner while concurrently handling massive insertions.},
+ author = {Wen, Zeyi and Liu, Xingyang and Cao, Hongjian and He, Bingsheng},
+ booktitle = {2018 IEEE 34th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE.2018.00168},
+ issn = {2375-026X},
+ keyword = {Indexing;Real-time systems;Speech recognition;Search problems;Frequency modulation;Indexing;Live Audio Stream;Efficiency;Speech Recognition},
+ month = {April},
+ number = {},
+ pages = {1495-1506},
+ title = {RTSI: An Index Structure for Multi-Modal Real-Time Search on Live Audio Streaming Services},
+ volume = {},
+ year = {2018}
+}

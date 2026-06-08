@@ -1,0 +1,18 @@
+@article{10.1145/3769759,
+ abstract = {When key-value (KV) stores use SSDs for storing a large number of items, oftentimes they also require large in-memory data structures including indices and caches to be traversed to reduce IOs. This paper considers offloading most of such data structures from the costly host DRAM to secondary memory whose latency is in the microsecond range, an order of magnitude longer than those of DIMM-mounted persistent memory and currently available CXL memory devices. While emerging microsecond-latency memory, such as one based on flash memory, is likely to cost much less than DRAM, it can significantly slow down pointer-chasing on those in-memory data structures of SSD-based KV stores if naively employed, although its impact has not been well studied. This paper analyzes and evaluates the impact of microsecond-level memory latency on the throughput of SSD-based KV operations. Our analysis finds that a well-known latency-hiding technique of software prefetching for long-latency memory from user-level threads is effective for SSD-based KV stores. The novelty of our analysis lies in modeling how the interplay between prefetching and IO affects performance, from which we derive an equation that well explains the throughput degradation due to long memory latency. The model tells us that the presence of IO in KV operations significantly enhances their tolerance to memory latency, and the throughput degradation is expected to be small even if the memory latency extends to a few microseconds, leading to a finding that SSD-based KV stores can be made latency-tolerant without devising new techniques for microsecond-latency memory. To confirm this through experiments, we design a microbenchmark as well as modify existing SSD-based KV stores so that they issue prefetches for long-latency memory from user-level threads, and run them while placing most of in-memory data structures on FPGA-based memory with adjustable microsecond latency. The results demonstrate that their KV operation throughputs for varying memory latency can be well explained by our model, and the modified KV stores achieve near-DRAM throughputs for up to a memory latency of around 5 microseconds. This suggests the possibility that SSD-based KV stores involving latency-sensitive in-memory data traversal can use microsecond-latency memory as a cost-effective alternative to the host DRAM.},
+ address = {New York, NY, USA},
+ articleno = {294},
+ author = {Bando, Yosuke and Mita, Akinobu and Hiwada, Kazuhiro and Sano, Shintaro and Suzuki, Tomoya and Nakanishi, Yu and Tomida, Kazutaka and Kajihara, Hirotsugu and Kaneko, Akiyuki and Taki, Daisuke and Miyamoto, Yukimasa and Yoshida, Tomokazu and Shiozawa, Tatsuo},
+ doi = {10.1145/3769759},
+ issue_date = {December 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {cxl, key-value stores, long-latency memory, prefetch, ssd},
+ month = {December},
+ number = {6},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Analysis and Evaluation of Using Microsecond-Latency Memory for In-Memory Indices and Caches in SSD-Based Key-Value Stores: [Experiments &amp; Analysis]},
+ url = {https://doi.org/10.1145/3769759},
+ volume = {3},
+ year = {2025}
+}

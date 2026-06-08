@@ -1,0 +1,14 @@
+@inproceedings{10132228,
+ abstract = {Continuous integration (CI) pipelines are commonly used to execute regression tests before pull requests are merged. Regression test selection (RTS) aims to reduce the required testing effort and feedback time for developers. However, existing RTS techniques are imprecise for tests with cross-language links to compiled C++ binaries or unsafe if tests use external files. This is problematic because modern software in fact involves several programming languages and (non-)code artifacts such as configuration files. In this paper, we present BinaryRTS, a novel RTS technique that leverages dynamic binary instrumentation to collect the covered functions and accessed external files for each test. BinaryRTS then selects tests depending on changes issued to C++ binaries or external (non-)code artifacts. When evaluating BinaryRTS in our large-scale industrial context, we are able to exclude on average up to 74% of tests without missing real failures. We release BinaryRTS as the first publicly available RTS tool for software involving C++ code.},
+ author = {Elsner, Daniel and Kacianka, Severin and Lipp, Stephan and Pretschner, Alexander and Habermann, Axel and Graber, Maria and Reimer, Silke},
+ booktitle = {2023 IEEE Conference on Software Testing, Verification and Validation (ICST)},
+ doi = {10.1109/ICST57152.2023.00038},
+ issn = {2159-4848},
+ keyword = {Software testing;Java;Computer languages;Codes;Instruments;Source coding;Pipelines;Software testing;regression test selection;C++;cross-language links;multi-language software;non-code artifacts},
+ month = {April},
+ number = {},
+ pages = {327-338},
+ title = {BinaryRTS: Cross-language Regression Test Selection for C++ Binaries in CI},
+ volume = {},
+ year = {2023}
+}

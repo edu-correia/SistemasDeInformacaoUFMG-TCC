@@ -1,0 +1,14 @@
+@conference{Huo2025,
+ abstract = {Existing I/O middlewares for ZNS SSDs employ page-level or other conventional mapping approaches to support random writes. However, these mapping approaches present substantial challenges for managing host memory, particularly in the case of single-node, high-capacity storage. In this paper, we present a novel approach to address the problem of heavy memory overhead in ZNS SSD I/O middlewares with learned indexes. We propose ZLearnIndex, a system that takes advantage of the ZNS characteristics of the Zone Random Write Area to maintain sorted buffer structures in memory, allowing effective ordering of write requests' LBAs and learned model generation. To overcome the inefficient of learned index models, we introduce multiple enhancement strategies, including expanding sorted buffer capacity through multi-zones, implementing piecewise linear regression techniques, and integrating point models. To address scalability challenges from large LBA ranges in ZNS SSDs, we divide a ZNS SSD into small areas of a fixed size, reducing the overhead for managing range overlap. For dynamic model maintenance, we develop comprehensive mechanisms including Log-Structured management with accurate filters for handling update-induced model invalidation, and an intercept based model migration method for ZNS GC while minimizing computational overhead. Experimental evaluations show that ZLearnIndex reduces memory consumption by up to 90.7% while with only 0.3% reduction in throughput loss compared to traditional page-level mapping, validating the effectiveness of the learned indexes on ZNS SSDs. © 2025 IEEE.},
+ author = {Huo, Jingze and Li, Cheng and Xu, Yinlong},
+ doi = {10.1109/ICPADS67057.2025.11323122},
+ journal = {Proceedings of the International Conference on Parallel and Distributed Systems - ICPADS},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ZLearnIndex: Learned Index on ZNS SSDs for Space and Performance Efficiency},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105032491605?origin=resultslist},
+ year = {2025}
+}

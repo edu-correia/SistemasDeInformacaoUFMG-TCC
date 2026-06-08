@@ -1,0 +1,13 @@
+@article{SK2025114067,
+ abstract = {Video object detection and tracking (VODT) is essential in computer vision applications such as surveillance, video analytics, and autonomous systems. However, maintaining detection accuracy across consecutive frames poses challenges in high-performance video analytics (HPVA) due to motion blur, occlusions, and temporal variations. This paper introduces a Cloud-Edge integrated temporal-aware ensemble video object detection and tracking (TA-EnVODT) model to address these challenges and enable robust real-time VODT in complex scenes. Our approach integrates one- and two-stage detection models, incorporating suitable RNNs in pairs such as YOLOv5-LSTM, SSD-GRU, and Faster R-CNN-LSTM, ensuring consistent detection and tracking across video frames. We employ a weighted boxes fusion algorithm to merge bounding box predictions, generating an optimal bounding box (OBB) for each object. This design enables multi-scale object detection while preserving long-range dependencies in video sequences. A lightweight meta-learner using Tiny YOLOv5-LSTM is designed for the Edge device to perform real-time VODT. We introduce a knowledge projection strategy for distilling the knowledge from the TA-EnVODT to the meta-learner, enhancing performance by utilizing efficient loss functions. Evaluated on benchmark video datasets, the TA-EnVODT achieves better precision, recall, and FPS while reducing end-to-end delay by weighting OBB predictions based on confidence scores, making it well-suited for VODT in Cloud-Edge environments.},
+ author = {Sudha {S K} and Aji S},
+ doi = {https://doi.org/10.1016/j.knosys.2025.114067},
+ issn = {0950-7051},
+ journal = {Knowledge-Based Systems},
+ keyword = {Video Object Detection and Tracking, YOLOv5, Knowledge Projection, Weighted Boxes Fusion, Optimal Bounding Box},
+ pages = {114067},
+ title = {TA-EnVODT: A cloud-edge integrated temporal-aware ensemble for real-time video object detection and tracking using knowledge projection},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950705125011128},
+ volume = {326},
+ year = {2025}
+}

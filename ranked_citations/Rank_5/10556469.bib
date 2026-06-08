@@ -1,0 +1,14 @@
+@inproceedings{10556469,
+ abstract = {Developers regularly have to resolve merge conflicts, i.e., two conflicting sets of changes to the same files in different branches, which can be tedious and error-prone. To resolve conflicts, developers typically: keep the local version (KL) or the remote version (KR) of the code. They also sometimes manually edit both versions into a single one (ME). However, most existing techniques only support merging the local and remote versions (the ME strategy).We recently proposed RPreDICTOR, a machine learning-based approach to support developers in choosing how to resolve a conflict (by KL, KR, or ME), by predicting their resolution strategy. In its original design, RPredictor uses a set of Evolution History Features (EHF s) that capture: the magnitude of the changes in conflict, their evolution, and the experience of the developers involved.In this paper, we proposed and evaluated a new set of Branch Edit Features (BEFs), that capture the fine-grained edits that were performed on each branch of the conflict. We learned multiple lessons. First, BEFs provided lower effectiveness (F-score) than the original EHFs. Second, combining BEFs with EHFs still did not improve the effectiveness of EHF s, it provided the same f-score. Third, the feature set that provided highest effectiveness in our experiments was the combination of EHFs with a subset of BEFs that captures the number of insertions performed in the local branch, but this combination only improved EHFs by 3 pp. f-score. Finally, our experiments also share the lesson that some feature sets provided higher C-score (i.e., the safety of the technique’s mistakes) as a trade-off for lower f-scores. This may be valued by developers and we believe that it should be studied in the future.},
+ author = {Aldndni, Waad and Servant, Francisco and Meng, Na},
+ booktitle = {2024 IEEE/ACM 32nd International Conference on Program Comprehension (ICPC)},
+ doi = {},
+ issn = {2643-7171},
+ keyword = {Codes;Merging;Decision making;Metadata;Prediction algorithms;Safety;History;merge conflicts;conflict resolution;prediction},
+ month = {April},
+ number = {},
+ pages = {149-160},
+ title = {Understanding the Impact of Branch Edit Features for the Automatic Prediction of Merge Conflict Resolutions},
+ volume = {},
+ year = {2024}
+}

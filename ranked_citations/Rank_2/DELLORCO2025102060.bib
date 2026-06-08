@@ -1,0 +1,13 @@
+@article{DELLORCO2025102060,
+ abstract = {This paper empirically explores the resilience of the current Android ecosystem against stegomalware, which involves both Java/Kotlin and native code. To this aim, we rely on a methodology that goes beyond traditional approaches by hiding malicious Java code and extending it to encoding and dynamically loading native libraries at runtime. By merging app resources, steganography, and repackaging, the methodology seamlessly embeds malware samples into the assets of a host app, making detection significantly more challenging. We implemented the methodology in a tool, StegoPack, which allows the extraction and execution of the payload at runtime through reverse steganography. We used StegoPack to embed well-known DEX and native malware samples over 14 years into real Android host apps. We then challenged top-notch antivirus engines, which previously had high detection rates on the original malware, to detect the embedded samples. Our results reveal a significant reduction in the number of detections (up to zero in most cases), indicating that current detection techniques, while thorough in analyzing app code, largely disregard app assets, leading us to believe that steganographic adversaries are not even included in the adversary models of most deployed defensive analysis systems. Thus, we propose potential countermeasures for StegoPack to detect steganographic data in the app assets and the dynamic loader used to execute malware.},
+ author = {Danilo Dell’Orco and Giorgio Bernardinetti and Giuseppe Bianchi and Alessio Merlo and Alessandro Pellegrini},
+ doi = {https://doi.org/10.1016/j.pmcj.2025.102060},
+ issn = {1574-1192},
+ journal = {Pervasive and Mobile Computing},
+ keyword = {Mobile security, Android stegomalware, Packing},
+ pages = {102060},
+ title = {Would you mind hiding my malware? Building malicious Android apps with StegoPack},
+ url = {https://www.sciencedirect.com/science/article/pii/S1574119225000495},
+ volume = {111},
+ year = {2025}
+}

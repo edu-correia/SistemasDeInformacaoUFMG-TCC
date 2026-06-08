@@ -1,0 +1,14 @@
+@inproceedings{10181631,
+ abstract = {Channel pruning is a popular method for compressing convolutional neural networks (CNNs) while maintaining acceptable accuracy. Most existing channel pruning methods use the approach of zeroing unnecessary filters and then removing them. To address the limitations of existing approaches, methods of creating forcibly filter redundancy and then removing redundant filters have been proposed without heuristic knowledge. However, these methods also use a deformed gradient to make filters identical, and performance degradation is inevitable because the parameters cannot be updated using the original gradients. To solve these problems, this study proposes RepSGD, which can compress CNNs simply and efficiently. RepSGD inserts a new point-wise convolution layer after the existing standard convolution layer. Subsequently, only new point-wise convolution layers are trained to produce filter redundancy (i.e., to make the filters identical), whereas the standard convolution layers are trained using the original gradient. After training, RepSGD merges two consecutive convolution layers into one convolution layer. Subsequently, the redundant filters in the merged convolution layer are pruned. Because RepSGD does not change the original architecture of the CNN, additional inference computation is not required, and it is possible to support training from scratch. In addition, using the original gradient in RepSGD optimizes the objective function of the CNNs better. We show that RepSGD outperforms existing pruning methods in various models and datasets through extensive experiments.},
+ author = {Kim, Nam Joon and Kim, Hyun},
+ booktitle = {2023 IEEE International Symposium on Circuits and Systems (ISCAS)},
+ doi = {10.1109/ISCAS46773.2023.10181631},
+ issn = {2158-1525},
+ keyword = {Training;Degradation;Convolution;Circuits and systems;Computational modeling;Redundancy;Computer architecture;CNN;Channel Pruning;Network Compression;Reparameterization},
+ month = {May},
+ number = {},
+ pages = {1-5},
+ title = {RepSGD: Channel Pruning Using Reparamerization for Accelerating Convolutional Neural Networks},
+ volume = {},
+ year = {2023}
+}

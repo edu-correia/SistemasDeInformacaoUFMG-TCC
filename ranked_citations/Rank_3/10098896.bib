@@ -1,0 +1,14 @@
+@article{10098896,
+ abstract = {Horizon extraction and fault detection are essential in seismic interpretation and are closely related to each other. Most existing methods tend to deal with these two tasks independently, and may not work well in interpreting seismic images with complex geologic structures. We propose a multi-task learning (MTL) network with two branches to extract all horizons and detect faults simultaneously by estimating a relative geologic time (RGT) map as well as computing a fault map. These two branches share training datasets, feature maps, and network parameters during the training. The RGT estimation branch, constructed with a transformer architecture, is more lightweight compared with previous convolutional neural network (CNN) methods but provides a larger and structure-oriented receptive field to adaptively capture global structural information for estimating a globally optimal RGT map. The fault detection branch is a simple CNN, which merges feature maps shared by the transformer and the derivatives of the estimated RGT to compute a fault map. The fault detection branch provides boundary control for the RGT estimation branch, while the latter provides global constraints for the former to improve its robustness to noise. Note that our RGT estimation by globally fitting all structures in a seismic image is a volumetric horizon interpretation method with which we are able to obtain a whole volume of horizons, all at once, by simply extracting contours of the RGT map. In our method, we further enable convenient human interactions by integrating manually interpreted horizons (or horizon segments) into the network, which imposes expert knowledge on the network to estimate reasonable RGT results from seismic images with complex fault systems, unconformities, and poor data quality. Moreover, when using 3-D horizons as constraints, we are able to decompose the computational expensive 3-D RGT estimation from a seismic volume into independently parallel 2-D estimations slice by slice and combine them to obtain a laterally consistent 3-D result.},
+ author = {Yang, Jiarun and Wu, Xinming and Bi, Zhengfa and Geng, Zhicheng},
+ doi = {10.1109/TGRS.2023.3264593},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Estimation;Feature extraction;Transformers;Fault detection;Three-dimensional displays;Task analysis;Geology;Fault;horizon;multi-task learning (MTL);relative geologic time (RGT);transformer},
+ month = {},
+ number = {},
+ pages = {1-20},
+ title = {A Multi-Task Learning Method for Relative Geologic Time, Horizons, and Faults With Prior Information and Transformer},
+ volume = {61},
+ year = {2023}
+}

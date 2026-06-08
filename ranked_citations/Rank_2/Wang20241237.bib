@@ -1,0 +1,14 @@
+@conference{Wang20241237,
+ abstract = {The Solid State Drives (SSD) based key-value stores face significant challenges in achieving deterministic access latency. We experimentally observe the long-tail latency is mainly caused by I/O blocking induced by SSD's internal tasks. In this paper, we propose an SSD-based SIndex to store hundreds of billions of block-mapping entries for the latency-critical cloud block storage. To hide the latency fluctuations induced by garbage collection and buffer flushing, SIndex proposes an inter-SSD I/O scheduling based on read/write separation and SSD state transition, while adopting opportunistic request speculation and balancing mechanism to mitigate read disturbance and I/O contention. Moreover, SIndex introduces a write-staging buffer cache and a two-stage sync mechanism to preferentially buffer updated data before synchronizing them to SSDs. We evaluate the SIndex prototype with a variety of benchmarks and real-world traces on commodity SSDs. SIndex is demonstrated to outperform RocksDB and other approaches by up to 11.2 × in tail latency without affecting the throughput performance.  © 2024 Owner/Author.},
+ author = {Wang, Shucheng and Zhou, Kaiye and Guo, Zhandong and Cao, Qiang and Xu, Jun and Yao, Jie},
+ doi = {10.1145/3673038.3673041},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 3; All Open Access; Gold Open Access},
+ pages = {1237 - 1246},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SIndex: An SSD-based Large-scale Indexing with Deterministic Latency for Cloud Block Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85202444211?origin=resultslist},
+ year = {2024}
+}

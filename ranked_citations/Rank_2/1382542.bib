@@ -1,0 +1,14 @@
+@inproceedings{1382542,
+ abstract = {Bounded model checking (BMC) is an incomplete property checking method that is based on a finite unfolding of the transition relation to disprove the correctness of a set of properties or to prove them for a limited execution length from the initial states. Current BMC techniques repeatedly concatenate the original transition relation to unfold the circuit with increasing depths. In this paper we present a method that is based on a dual unfolding scheme. The first unfolding is non-initialized and progressively simplifies concatenated frames of the transition relation. The tail of the simplified frames is then applied in the second unfolding, which starts from the initial state and checks the properties. We use a circuit graph representation for all functions and perform simplification by merging vertices that are functionally equivalent under given input constraints. In the noninitialized unfolding, previous time frames progressively tighten these constraints thus leading to an asymptotic simplification of the transition relation. As a side benefit, our method can find inductive invariants constructively by detecting when vertices are functionally equivalent across time frames. This information is then used to further simplify the transition relation and, in some cases, prove unbounded correctness of properties. Our experiments using industrial property checking problems demonstrate that the presented method significantly improves the efficiency of BMC.},
+ author = {Kuehlmann, A.},
+ booktitle = {IEEE/ACM International Conference on Computer Aided Design, 2004. ICCAD-2004.},
+ doi = {10.1109/ICCAD.2004.1382542},
+ issn = {1092-3152},
+ keyword = {Circuits;Concatenated codes;Tail;Merging;Industrial relations;Safety;History;Engines;Heuristic algorithms;Detection algorithms},
+ month = {Nov},
+ number = {},
+ pages = {50-57},
+ title = {Dynamic transition relation simplification for bounded property checking},
+ volume = {},
+ year = {2004}
+}

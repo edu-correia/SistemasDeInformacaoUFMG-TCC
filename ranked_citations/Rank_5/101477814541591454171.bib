@@ -1,0 +1,17 @@
+@article{10.14778/1454159.1454171,
+ abstract = {Sorting a list of input numbers is one of the most fundamental problems in the field of computer science in general and high-throughput database applications in particular. Although literature abounds with various flavors of sorting algorithms, different architectures call for customized implementations to achieve faster sorting times.This paper presents an efficient implementation and detailed analysis of MergeSort on current CPU architectures. Our SIMD implementation with 128-bit SSE is 3.3X faster than the scalar version. In addition, our algorithm performs an efficient multiway merge, and is not constrained by the memory bandwidth. Our multi-threaded, SIMD implementation sorts 64 million floating point numbers in less than0.5 seconds on a commodity 4-core Intel processor. This measured performance compares favorably with all previously published results.Additionally, the paper demonstrates performance scalability of the proposed sorting algorithm with respect to certain salient architectural features of modern chip multiprocessor (CMP) architectures, including SIMD width and core-count. Based on our analytical models of various architectural configurations, we see excellent scalability of our implementation with SIMD width scaling up to 16X wider than current SSE width of 128-bits, and CMP core-count scaling well beyond 32 cores. Cycle-accurate simulation of Intel's upcoming x86 many-core Larrabee architecture confirms scalability of our proposed algorithm.},
+ author = {Chhugani, Jatin and Nguyen, Anthony D. and Lee, Victor W. and Macy, William and Hagog, Mostafa and Chen, Yen-Kuang and Baransi, Akram and Kumar, Sanjeev and Dubey, Pradeep},
+ doi = {10.14778/1454159.1454171},
+ issn = {2150-8097},
+ issue_date = {August 2008},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {2},
+ numpages = {12},
+ pages = {1313–1324},
+ publisher = {VLDB Endowment},
+ title = {Efficient implementation of sorting on multi-core SIMD CPU architecture},
+ url = {https://doi.org/10.14778/1454159.1454171},
+ volume = {1},
+ year = {2008}
+}

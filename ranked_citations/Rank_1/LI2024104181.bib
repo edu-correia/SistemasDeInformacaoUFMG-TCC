@@ -1,0 +1,13 @@
+@article{LI2024104181,
+ abstract = {Recent years have seen a significant rise in gigapixel-level image/video capture systems and benchmarks with high-resolution wide (HRW) shots. Different from close-up shots like MS COCO, the higher resolution and wider field of view raise new research and application problems, such as how to perform accurate and efficient object detection with such large input in low-power edge devices like UAVs. There are several unique challenges in HRW shots. (1) Sparse information: the objects of interest cover less area. (2) Various scale: there is 10 to 100× object scale change in one single image. (3) Incomplete objects: the sliding window strategy to handle the large input leads to truncated objects at the window edge. (4) Multi-scale information: it is unclear how to use multi-scale information in training and inference. Consequently, directly using a close-up detector leads to inaccuracy and inefficiency. In this paper, we systematically investigate this problem and bridge the gap between object detection in close-up and HRW shots, by introducing a novel sparse architecture that can be integrated with common networks like ConvNet and Transformer. It leverages alternative sparse learning to complementarily fuse coarse-grained and fine-grained features to (1) adaptively extract valuable information from (2) different object scales. We also propose a novel Cross-window Non-Maximum Suppression (C-NMS) algorithm to (3) improve the box merge from different windows. Furthermore, we propose a (4) simple yet effective multi-scale training and inference strategy to improve accuracy. Experiments on two benchmarks with HRW shots, PANDA and DOTA-v1.0, demonstrate that our methods significantly improve accuracy (up to 5.8%) and speed (up to 3×) over SotAs, for both ConvNet or Transformer based detectors, on edge devices. Our code is open-sourced and available at https://github.com/liwenxi/SparseFormer.},
+ author = {Wenxi Li and Yuchen Guo and Jilai Zheng and Haozhe Lin and Chao Ma and Lu Fang and Xiaokang Yang},
+ doi = {https://doi.org/10.1016/j.cviu.2024.104181},
+ issn = {1077-3142},
+ journal = {Computer Vision and Image Understanding},
+ keyword = {Object detection, Super high-resolution, Wide shots},
+ pages = {104181},
+ title = {Bridging the gap between object detection in close-up and high-resolution wide shots},
+ url = {https://www.sciencedirect.com/science/article/pii/S1077314224002625},
+ volume = {249},
+ year = {2024}
+}

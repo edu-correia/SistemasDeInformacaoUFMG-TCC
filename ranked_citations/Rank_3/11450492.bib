@@ -1,0 +1,14 @@
+@article{11450492,
+ abstract = {Accurate elevation estimation from a single remote sensing image is pivotal for applications such as 3-D city modeling. However, state-of-the-art (SOTA) deep learning methods face a critical trade-off: Convolutional neural networks (CNNs) excel at preserving local details but struggle with global context, while Transformers capture long-range dependencies but often oversmooth fine structures and are computationally expensive. This architectural dilemma frequently leads to blurred elevation boundaries and structurally inconsistent estimations in complex scenes. To address this, we introduce elevation-CVMamba, an innovative dual-branch network that effectively synergizes these complementary strengths. One branch employs a CNN to preserve high-fidelity local textures, while the other leverages a vision Mamba encoder to efficiently model long-range spatial relationships. Critically, these parallel feature streams are intelligently merged by our novel content-aware channelwise fusion module, which learns to dynamically arbitrate the contribution of local and global features based on scene content. Extensive evaluations on the DFC2019, ISPRS Potsdam, and Vaihingen datasets demonstrate that elevation-CVMamba outperforms SOTA methods. Specifically, our approach reduces the MAE by 18.54% on DFC2019, 2.44% on Potsdam, and 14.75% on Vaihingen compared to the strongest baselines. This performance is achieved with exceptional efficiency, requiring 75.33% fewer parameters than a strong baseline such as DepthFormer. Qualitatively, the framework shows a superior ability to reconstruct distinct building boundaries and subtle terrain details, confirming its practical value for real-world applications.},
+ author = {Pan, Haiyan and Yu, Hao and Hong, Zhonghua and Zhou, Ruyan and Tao, Jiang and Jiang, Chenchen and Han, Yanling and Zhang, Yun},
+ doi = {10.1109/JSTARS.2026.3676428},
+ issn = {2151-1535},
+ journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+ keyword = {Remote sensing;Transformers;Convolutional neural networks;Estimation;Computer architecture;Image reconstruction;Feature extraction;Accuracy;Urban areas;Earth;Deep learning;dual-branch architecture;elevation estimation;feature fusion;single-view remote sensing;vision mamba (VMamba)},
+ month = {},
+ number = {},
+ pages = {11844-11859},
+ title = {Elevation-CVMamba: Elevation Estimation of Single-View Remote Sensing Image by Integrating CNN and VMamba},
+ volume = {19},
+ year = {2026}
+}

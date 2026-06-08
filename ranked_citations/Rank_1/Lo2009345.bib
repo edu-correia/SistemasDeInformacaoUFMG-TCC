@@ -1,0 +1,14 @@
+@conference{Lo2009345,
+ abstract = {Many testing and analysis techniques use finite state models to validate and verify the quality of software systems. Since the specification of such models is complex and time-consuming, researchers defined several techniques to extract finite state models from code and traces. Automatically generating models requires much less effort than designing them, and thus eases the verification and validation of large software systems. However, when models are inferred automatically, the precision of the mining process is critical. Behavioral models mined with imprecise processes can include many spurious behaviors, and can thus compromise the results of testing and analysis techniques that use those models. In this paper, we increase the precision of automata inferred from execution traces, by leveraging two learning techniques. We first mine execution traces to infer statistically significant temporal properties that capture relations between non consecutive and possibly distant events. We then incrementally refine a simple initial automaton by merging likely equivalent states. We identify equivalent states by analyzing set of consecutive events, and we use the inferred temporal properties to evaluate whether two equivalent states can be merged or not. We merge equivalent states only if the merging does violate any temporal property, since a merging that violates temporal properties is likely to introduce an imprecise generalization. Our generalization process that preserves temporal properties while merging states avoids breaking non-local relations, and thus solves one of the major cause of overgeneralized models. Thus, mined properties steer the learning of behavioral models. The technique is completely automated and generates an automaton that both accepts the input traces and satisfies the mined temporal properties. We evaluated our solution by comparing models inferred with and without checking mined temporal properties. Results show that our steering process can significantly improve precision without noticeable loss of recall. Copyright 2009 ACM.},
+ author = {Lo, David and Mariani, Leonardo and Pezzè, Mauro},
+ doi = {10.1145/1595696.1595761},
+ journal = {ESEC-FSE'09 - Proceedings of the Joint 12th European Software Engineering Conference and 17th ACM SIGSOFT Symposium on the Foundations of Software Engineering},
+ note = {Cited by: 86; All Open Access; Green Open Access},
+ pages = {345 - 354},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Automatic steering of behavioral model inference},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/77949397710?origin=resultslist},
+ year = {2009}
+}

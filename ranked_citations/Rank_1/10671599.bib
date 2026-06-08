@@ -1,0 +1,14 @@
+@article{10671599,
+ abstract = {Urban green spaces significantly influence the production and lifestyle of individuals. Deep learning methods using convolutional neural network (CNN) as the encoder have weak global feature extraction capabilities, often missing individual trees or small areas of low vegetation. Transformer series models have weak local feature extraction capabilities and perform poorly in distinguishing between small categories such as trees and low vegetation. Therefore, we propose a novel dual-encoder semantic segmentation model, swin transformer and resnet50 dual-encoder net (STRD-Net), which integrates a parallel swin transformer (ST) framework and a CNN framework, capable of accepting two different channel ratio images as input, enabling the model to capture both global and local features. In the ST encoder, a convolutional block attention module (CBAM) is added to the head to overcome the “salt-and-pepper” noise effect in extraction results. A new patch merging (NPM) module is added after each ST module to further enhance the local feature extraction capabilities of the ST encoder for urban green spaces. In the CNN encoder, an enhanced atrous spatial pyramid pooling (EASPP) module is added after the Resnet50 backbone extraction network to expand the receptive field of the CNN encoder and enhance the global feature extraction capabilities for urban green spaces. The model includes a single skip connection to ensure extraction accuracy while saving computational resources. Results on the Vaihingen and Potsdam datasets indicate that STRD-Net improves both local and global feature extraction capabilities in the extraction of urban green spaces. The code will be available at https://github.com/learn-zhezhe/STRD-Net.},
+ author = {Yu, Mouzhe and He, Liheng and Shen, Zhehui and Lv, Meng},
+ doi = {10.1109/TGRS.2024.3456898},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Feature extraction;Remote sensing;Transformers;Semantic segmentation;Vegetation mapping;Normalized difference vegetation index;Convolutional neural networks;Dual-encoder;land object extraction;remote sensing images;semantic segmentation;urban green spaces},
+ month = {},
+ number = {},
+ pages = {1-13},
+ title = {STRD-Net: A Dual-Encoder Semantic Segmentation Network for Urban Green Space Extraction},
+ volume = {62},
+ year = {2024}
+}

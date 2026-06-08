@@ -1,0 +1,16 @@
+@article{Huang2020,
+ abstract = {Log-structured merge tree (LSM-tree) is adopted by many distributed storage systems. It contains a Memtable and a number of SSTables. The Memtable is an in-memory structure and the SSTable is a disk-based structure. Data records are horizontally partitioned over the primary key and stored in different SSTables. Data writes on records are first served by the Memtable and then compacted to SSTables periodically. Although this design optimizes data writes by avoiding random disk writes, it is unfriendly to read request since the results should be retrieved and merged from both Memtable and SSTables. In particular, when the Memtable and SSTables are distributed on different nodes, it incurs expensive costs to serve range queries. A range query on non-primary key columns has to scan all partitions, which generates many network and I/O expenses. In this paper, we propose a partition pruning strategy to save cost for range queries. A statistics cache is designed to determine whether a partition contains the desired data or not, which enables read requests to avoid scanning useless partitions. As records can be updated in Memtable freely, to prevent incorrect filtering, a version-based cache synchronization strategy is proposed to ensure the queries to obtain the latest data state. We implement the proposed method in an open source distributed database and conduct comprehensive experiments. Experimental results reveal that the performance of range queries increased 30% ~ 40% with our partition pruning technique. © 2019, Higher Education Press and Springer-Verlag GmbH Germany, part of Springer Nature.},
+ author = {Huang, Chenchen and Hu, Huiqi and Wei, Xing and Qian, Weining and Zhou, Aoying},
+ doi = {10.1007/s11704-019-8234-x},
+ journal = {Frontiers of Computer Science},
+ note = {Cited by: 3},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Partition pruning for range query on distributed log-structured merge-tree},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85076913126?origin=resultslist},
+ volume = {14},
+ year = {2020}
+}

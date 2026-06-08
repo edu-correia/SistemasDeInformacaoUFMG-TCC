@@ -1,0 +1,16 @@
+@article{Stylianakis2024,
+ abstract = {Key-value (KV) stores based on the LSM tree have become a foundational layer in the storage stack of datacenters and cloud services. Current approaches for achieving reliability and availability favor reducing network traffic and send to replicas only new KV pairs. As a result, they perform costly compactions to reorganize data in both the primary and backup nodes, which increases device I/O traffic and CPU overhead, and eventually hurts overall system performance. In this article, we describe Tebis, an efficient LSM-based KV store that reduces I/O amplification and CPU overhead for maintaining the replica index. We use a primary-backup replication scheme that performs compactions only on the primary nodes and sends pre-built indexes to backup nodes, avoiding all compactions in backup nodes. Our approach includes an efficient mechanism to deal with pointer translation across nodes in the pre-built region index. Our results show that Tebis reduces resource utilization on backup nodes compared to performing full compactions: throughput is increased by 1.06 to 2.90×, CPU efficiency is increased by 1.21 to 2.78×, and I/O amplification is reduced by 1.7 to 3.27×, whereas network traffic increases by up to 1.32 to 3.76x.  © 2024 Copyright held by the owner/author(s).},
+ author = {Stylianakis, Giorgos and Saloustros, Giorgos and Chiotakis, Orestis and Xanthakis, Giorgos and Bilas, Angelos},
+ doi = {10.1145/3658672},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 2; All Open Access; Bronze Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Index Shipping for Efficient Replication in LSM Key-Value Stores with Hybrid KV Placement},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85196498195?origin=resultslist},
+ volume = {20},
+ year = {2024}
+}

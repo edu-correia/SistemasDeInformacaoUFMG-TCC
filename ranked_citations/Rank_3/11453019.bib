@@ -1,0 +1,14 @@
+@inproceedings{11453019,
+ abstract = {Physics-Informed Neural Networks have shown great potential for solving partial differential equations. However, they face the challenge of spectral bias when addressing problems with highly oscillatory solutions, such as the Helmholtz equation. While multi-scale PINNs mitigate this issue by employing a predefined frequency dictionary, their performance heavily relies on a prior frequency selection, often resulting in initial dictionaries laden with redundant frequencies. This paper introduces a dynamic dictionary construction mechanism designed for intelligent allocation of network resources. The core of this methodology is a two-stage process: First, by applying a non-uniform fast fourier transform to analyze the spectral characteristics of the source term and boundary conditions, the dominant frequency can be automatically and reliably identified, thereby only constructing the relevant basis functions and eliminating redundancy at the source; Then, through an iterative process of training, residual analysis, and dictionary expansion, the necessary high-frequency components missing in the current solution are discovered and adaptively merged. Crucially, the dictionary expansion is guided by a criterion of relative energy contribution, ensuring that only the most significant frequencies are added at each step. Numerical experiments on 1D and 2D Helmholtz equations demonstrate that our method maintains high accuracy while significantly reducing the number of required sub-networks, effectively lowering model complexity and computational overhead.},
+ author = {Zhang, Liangxing and Wang, Jian},
+ booktitle = {2026 International Conference on Communication Networks and Machine Learning (CNML)},
+ doi = {10.1109/CNML68938.2026.11453019},
+ issn = {},
+ keyword = {Training;Dictionaries;Accuracy;Fast Fourier transforms;Neural networks;Mathematical models;Numerical models;Resource management;Reliability;Spectral analysis;Physics-informed neural networks;Helmholtz equations;High-frequency problem;Spectral bias},
+ month = {Jan},
+ number = {},
+ pages = {1075-1080},
+ title = {An Efficient Helmholtz Equation Solver via Dynamic Physics-Informed Neural Networks},
+ volume = {},
+ year = {2026}
+}

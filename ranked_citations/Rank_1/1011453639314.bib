@@ -1,0 +1,18 @@
+@article{10.1145/3639314,
+ abstract = {Data processing engines increasingly leverage distributed file systems for scalable, cost-effective storage. While the Apache Parquet columnar format has become a popular choice for data storage and retrieval, the immutability of Parquet files renders it impractical to meet the demands of frequent updates in contemporary analytical workloads. Log-Structured Tables (LSTs), such as Delta Lake, Apache Iceberg, and Apache Hudi, offer an alternative for scenarios requiring data mutability, providing a balance between efficient updates and the benefits of columnar storage. They provide features like transactions, time-travel, and schema evolution, enhancing usability and enabling access from multiple engines. Moreover, engines like Apache Spark and Trino can be configured to leverage the optimizations and controls offered by LSTs to meet specific business needs. Conventional benchmarks and tools are inadequate for evaluating the transformative changes in the storage layer resulting from these advancements, as they do not allow us to measure the impact of design and optimization choices in this new setting.In this paper, we propose a novel benchmarking approach and metrics that build upon existing benchmarks, aiming to systematically assess LSTs. We develop a framework, LST-Bench, which facilitates effective exploration and evaluation of the collaborative functioning of LSTs and data processing engines through tailored benchmark packages. A package is a mix of use patterns reflecting a target workload; LST-Bench makes it easy to define a wide range of use patterns and combine them into a package, and we include a baseline package for completeness. Our assessment demonstrates the effectiveness of our framework and benchmark packages in extracting valuable insights across diverse environments. The code for LST-Bench is open source and is available at https://github.com/microsoft/lst-bench/.},
+ address = {New York, NY, USA},
+ articleno = {59},
+ author = {Camacho-Rodr\'{\i}guez, Jes\'{u}s and Agrawal, Ashvin and Gruenheid, Anja and Gosalia, Ashit and Petculescu, Cristian and Aguilar-Saborit, Josep and Floratou, Avrilia and Curino, Carlo and Ramakrishnan, Raghu},
+ doi = {10.1145/3639314},
+ issue_date = {February 2024},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {SQL analytics, benchmarking, data warehousing, log-structured tables},
+ month = {March},
+ number = {1},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {LST-Bench: Benchmarking Log-Structured Tables in the Cloud},
+ url = {https://doi.org/10.1145/3639314},
+ volume = {2},
+ year = {2024}
+}

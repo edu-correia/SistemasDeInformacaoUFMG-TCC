@@ -1,0 +1,14 @@
+@article{11503135,
+ abstract = {Compared with replication-based storage, erasure-coded storage suffers from high update overhead due to long update paths and intensive random I/O. Existing parity logging methods often fail to satisfy the performance requirements of modern applications because of high latency and low throughput. To address this issue, we propose TSUE+, an efficient update framework with a swift recycling mechanism. TSUE+ divides updates into synchronous and asynchronous stages. In the synchronous stage, updates are stored as replica-style data logs, transforming random I/O into sequential writes through a space-for-time tradeoff. In the asynchronous stage, logs are recycled and merged into original data and parity blocks, reclaiming temporary storage overhead. To further reduce recycling costs, TSUE+ employs a three-layer log structure and locality-aware recycling that exploits spatiotemporal access patterns. We evaluated TSUE+ against state-of-the-art update mechanisms under diverse erasure coding schemes across heterogeneous storage devices, including HDDs, SATA SSDs, NVMe SSDs, and PMEM. Experiments were conducted using real-world traces from MSR Cambridge, Alibaba Cloud, and Tencent Cloud, as well as synthetic worst-case workloads. Results show that TSUE+ consistently achieves substantial performance improvements across all platforms while maintaining strong robustness under tail-latency and worst-case evaluations. Moreover, by enabling prompt log recycling, avoiding unnecessary overwrites, and improving update granularity, TSUE+ also mitigates SSD write wear and extends device lifespan.},
+ author = {Wei, Zheng and Xing, Jing and Gu, Yida and Huang, Wenjing and Ma, Yili and Dai, Dong and Tan, Guangming and Tao, Dingwen},
+ doi = {10.1109/TPDS.2026.3689540},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Radio broadcasting;Frequency modulation;Central Processing Unit;Electronic circuits;Integrated circuits;Memory modules;Telecommunication traffic;Radio access networks;Regional area networks;Computer networks;Erasure code;incremental update;spatio-temporal locality;swift recycling mechanism},
+ month = {July},
+ number = {7},
+ pages = {1571-1588},
+ title = {TSUE+: An Efficient Update Framework With Swift Recycling Mechanism for Erasure-Coded Cluster File Systems},
+ volume = {37},
+ year = {2026}
+}

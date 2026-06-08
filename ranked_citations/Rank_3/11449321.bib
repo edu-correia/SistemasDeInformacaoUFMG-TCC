@@ -1,0 +1,14 @@
+@inproceedings{11449321,
+ abstract = {With the surge of big data, database systems are increasingly embedded in application backends to enhance user experience and enable deeper analytics. To meet real-time demands, data centers adopt accelerators, yet memory bandwidth has become a key bottleneck as processor speeds outpace memory advancements. This has driven growing interest in near-data computing to alleviate bandwidth limitations and boost performance. We propose LISA-SQL, a low-cost, FPGA-based in-storage accelerator for SQL databases that integrates computation directly within SSDs. We optimize data management and garbage collection through strategic buffer space allocation within the SSD, anticipating data transfers from DRAM, and implement a dynamic buffer caching system that efficiently manages data flow using DRAM mapping and buffer status tables. Our solution also enhances sort and merge join operations by utilizing DRAM and SSD bandwidth with range partitioning to reduce latency. Furthermore, we reduce write amplification via trim commands and precise logical-to-physical mapping, and bypass the conventional Flash Translation Layer through an internal mapping scheme in the accelerator, significantly cutting host-storage communication overhead. Experimental results show that LISA-SQL achieves up to 2.34× speedup over conventional in-storage accelerators, 3.56× over a 128-thread CPU, and reduces garbage collection overhead by up to 2.81×.},
+ author = {Kuo, Yen-Shi and Wang, Wan-Ching and Liu, Chun-Wei and Wu, Chun-Feng and Lai, Bo-Cheng},
+ booktitle = {2025 IEEE 14th Non-Volatile Memory Systems and Applications Symposium (NVMSA)},
+ doi = {10.1109/NVMSA66678.2025.00019},
+ issn = {2575-257X},
+ keyword = {Translation;Nonvolatile memory;Random access memory;Full stack;Bandwidth;Dynamic scheduling;User experience;Real-time systems;Resource management;Surges;In-storage-computing;data-management;SQL-database;buffer-caching-mechanism},
+ month = {Aug},
+ number = {},
+ pages = {63-68},
+ title = {LISA-SQL: Low-Cost in-Storage Accelerator for SQL Databases},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3643761,
+ abstract = {SQL is the most commonly used front-end language for data-intensive scalable computing (DISC) applications due to its broad presence in new and legacy workflows and shallow learning curve. However, DISC-backed SQL introduces several layers of abstraction that significantly reduce the visibility and transparency of workflows, making it challenging for developers to find and fix errors in a query. When a query returns incorrect outputs, it takes a non-trivial effort to comprehend every stage of the query execution and find the root cause among the input data and complex SQL query. We aim to bring the benefits of step-through interactive debugging to DISC-powered SQL with DeSQL.Due to the declarative nature of SQL, there are no ordered atomic statements to place a break point to monitor the flow of data. DeSQL’s automated query decomposition breaks a SQL query into its constituent sub-queries, offering natural locations for setting breakpoints and monitoring intermediate data. However, due to advanced query optimization and translation in DISC systems, a user query rarely matches the physical execution, making it challenging to associate subqueries with their intermediate data. DeSQL performs fine-grained taint analysis to dynamically map the subqueries to their intermediate data, while also recognizing subqueries removed by the optimizers. For such subqueries, DeSQL efficiently regenerates the intermediate data from a nearby subquery’s data. On the popular TPC-DC benchmark, DeSQL provides a complete debugging view in 13% less time than the original job time while incurring an average overhead of 10% in addition to retaining Apache Spark’s scalability. In a user study comprising 15 participants engaged in two debugging tasks, we find that participants utilizing DeSQL identify the root cause behind a wrong query output in 74% less time than the de-facto, manual debugging.},
+ address = {New York, NY, USA},
+ articleno = {35},
+ author = {Haroon, Sabaat and Brown, Chris and Gulzar, Muhammad Ali},
+ doi = {10.1145/3643761},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Debugging, SQL, Data-Intensive Scalable Computing},
+ month = {July},
+ number = {FSE},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {DeSQL: Interactive Debugging of SQL in Data-Intensive Scalable Computing},
+ url = {https://doi.org/10.1145/3643761},
+ volume = {1},
+ year = {2024}
+}

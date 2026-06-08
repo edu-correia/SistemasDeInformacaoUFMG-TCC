@@ -1,0 +1,14 @@
+@conference{Riegger2018173,
+ abstract = {Blockchains yield to new workloads in database management systems and K/V-Stores. Distributed Ledger Technology (DLT) is a technique for managing transactions in’trustless’ distributed systems. Yet, clients of nodes in blockchain networks are backed by’trustworthy’ K/V-Stores, like LevelDB or RocksDB in Ethereum, which are based on Log-Structured Merge Trees (LSM-Trees). However, LSM-Trees do not fully match the properties of blockchains and enterprise workloads. In this paper, we claim that Partitioned B-Trees (PBT) fit the properties of this DLT: uniformly distributed hash keys, immutability, consensus, invalid blocks, unspent and off-chain transactions, reorganization and data state / version ordering in a distributed log-structure. PBT can locate records of newly inserted key-value pairs, as well as data of unspent transactions, in separate partitions in main memory. Once several blocks acquire consensus, PBTs evict a whole partition, which becomes immutable, to secondary storage. This behavior minimizes write amplification and enables a beneficial sequential write pattern on modern hardware. Furthermore, DLT implicate some type of log-based versioning. PBTs can serve as MV-Store for data storage of logical blocks and indexing in multi-version concurrency control (MVCC) transaction processing. © 2018 Copyright held by the owner/author(s).},
+ author = {Riegger, Christian and Vinçon, Tobias and Petrov, Ilia},
+ doi = {10.1145/3282373.3282402},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 7},
+ pages = {173 - 182},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient data and indexing structure for blockchains in enterprise systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85061117820?origin=resultslist},
+ year = {2018}
+}

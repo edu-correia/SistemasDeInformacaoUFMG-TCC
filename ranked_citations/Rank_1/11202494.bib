@@ -1,0 +1,14 @@
+@article{11202494,
+ abstract = {State-of-the-art (SOTA) methods for cell instance segmentation are based on deep learning (DL) semantic segmentation approaches, focusing on distinguishing foreground pixels from background pixels. In order to identify cell instances from foreground pixels (e.g., pixel clustering), most methods decompose instance information into pixel-wise objectives, such as distances to foreground-background boundaries (distance maps), heat gradients with the center point as heat source (heat diffusion maps), and distances from the center point to foreground-background boundaries with fixed angles (star-shaped polygons). However, pixel-wise objectives may lose significant geometric properties of the cell instances, such as shape, curvature, and convexity, which require a collection of pixels to represent. To address this challenge, we present a novel pixel clustering method, called Ceb (for Cell boundaries), to leverage cell boundary features and labels to divide foreground pixels into cell instances. Starting with probability maps generated from semantic segmentation, Ceb first extracts potential foreground-foreground boundaries (i.e., boundary candidates) with a revised Watershed algorithm. For each boundary candidate, a boundary feature representation (called boundary signature) is constructed by sampling pixels from the current foreground-foreground boundary as well as the neighboring background-foreground boundaries. Next, a lightweight boundary classifier is used to predict its binary boundary label based on the corresponding boundary signature. Finally, cell instances are obtained by dividing or merging neighboring regions based on the predicted boundary labels. Extensive experiments on six datasets demonstrate that Ceb outperforms existing pixel clustering methods on semantic segmentation probability maps. Moreover, Ceb achieves highly competitive performance compared to state-of-the-art cell instance segmentation methods. The code is available at: https://github.com/pxliang/Ceb},
+ author = {Liang, Peixian and Ding, Yifan and Zhang, Yizhe and Chen, Jianxu and Zheng, Hao and Wang, Hongxiao and Zhang, Yejia and Meng, Guangyu and Weninger, Tim and Niemier, Michael and Hu, X. Sharon and Chen, Danny Z.},
+ doi = {10.1109/TMI.2025.3621093},
+ issn = {1558-254X},
+ journal = {IEEE Transactions on Medical Imaging},
+ keyword = {Instance segmentation;Watersheds;Heating systems;Feature extraction;Active contours;Semantics;Semantic segmentation;Shape;Prediction algorithms;Clustering algorithms;Cell instance segmentation;optimal instance matching;boundary classification;temporal instance consistency},
+ month = {April},
+ number = {4},
+ pages = {1311-1324},
+ title = {Cell Instance Segmentation: The Devil Is in the Boundaries},
+ volume = {45},
+ year = {2026}
+}

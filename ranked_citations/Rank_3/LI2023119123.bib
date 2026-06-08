@@ -1,0 +1,13 @@
+@article{LI2023119123,
+ abstract = {Image denoising is a fundamental task in low-level computer vision. The well-known CNN-UNet model with encoder and decoder has shown excellent denoising performance. The encoder adopts downsample modules such as pooling, convolution and patch merging to reduce the feature map size. The downsample module is very important for feature transformation between adjacent feature layers. However, these plain downsample modules are incapable of removing noise during feature transformation. It is expected that the downsample module can play the role of removing noise while executing feature transformation. Therefore, we design a patch merging refiner (PMR) downsample module, which utilizes subspace projection to learn a set of restoration basis from the feature space and projects the patch merging feature onto such space, to remove noise and retain the authentic information of feature space while executing feature transformation. Subsequently, from the perspective of the non-local mechanism, we carry out group convolution (GC) block module on PMR to restore high-frequency detail. Finally, by integrating the two modules into the commonly-used UNet model, we construct a PMR-UNet architecture. Experiments on synthetic and real-world noise images demonstrate that our architecture has stronger anti-noise power and surpasses the state-of-the-art denoisers in both quantitative measure and visual perception.},
+ author = {Jinming Li and Wei Guan},
+ doi = {https://doi.org/10.1016/j.ins.2023.119123},
+ issn = {0020-0255},
+ journal = {Information Sciences},
+ keyword = {Image denoising, Computer vision, UNet, Patch merging refiner, Group convolution},
+ pages = {119123},
+ title = {Patch merging refiner embedding UNet for image denoising},
+ url = {https://www.sciencedirect.com/science/article/pii/S0020025523007089},
+ volume = {641},
+ year = {2023}
+}

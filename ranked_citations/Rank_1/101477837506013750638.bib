@@ -1,0 +1,17 @@
+@article{10.14778/3750601.3750638,
+ abstract = {Automating index design has been an active area of research for decades due to the significant impact that indexes have on query performance and database efficiency. Existing approaches range from brute-force search to cost-based optimizations and, more recently, machine learning techniques. However, many suffer from high computational costs, reliance on inaccurate cost models, or the need for deep integration with database internals.We introduce SQL:Trek, a time-efficient tool for automated index design that operates entirely as an external utility. SQL:Trek leverages query compiler cost models to identify effective indexes while mitigating false positives through execution on a lightweight simulation database. This approach enables fast, iterative index selection without modifying database internals, making it broadly applicable across relational databases, including most MySQL® and PostgreSQL® derivative databases.Our evaluation demonstrates that SQL:Trek delivers significant query performance improvements while keeping index selection computationally efficient, with most workloads analyzed in under five minutes. Unlike many cost-based what-if analysis methods, SQL:Trek significantly improved performance of many production workloads while avoiding the majority of detrimental index recommendations caused by optimizer misestimates. These results highlight SQL:Trek as a practical, scalable solution for automated index tuning in modern database environments.},
+ author = {Lightstone, Sam and Wang, Ping},
+ doi = {10.14778/3750601.3750638},
+ issn = {2150-8097},
+ issue_date = {August 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {13},
+ pages = {5210–5222},
+ publisher = {VLDB Endowment},
+ title = {SQL:Trek Automated Index Design at Airbnb},
+ url = {https://doi.org/10.14778/3750601.3750638},
+ volume = {18},
+ year = {2025}
+}

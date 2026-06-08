@@ -1,0 +1,13 @@
+@conference{Zhao202547752,
+ abstract = {Low-Rank Adaptation (LoRA) has emerged as a popular technique for fine-tuning large language models (LLMs) to various domains due to its modular design and widespread availability on platforms like Huggingface. This modularity has sparked interest in combining multiple LoRAs to enhance LLM capabilities. However, existing methods for LoRA composition primarily focus on task-specific adaptations that require additional training, and current model merging techniques often fail to fully leverage LoRA's modular nature, leading to parameter interference and performance degradation. In this paper, we investigate the feasibility of disassembling and reassembling multiple LoRAs at a finer granularity, analogous to assembling LEGO blocks. We introduce the concept of Minimal Semantic Units (MSUs), where the parameters corresponding to each rank in LoRA function as independent units. These MSUs demonstrate permutation invariance and concatenation-summation equivalence properties, enabling flexible combinations to create new LoRAs. Building on these insights, we propose the LoRA-LEGO framework. This framework conducts rank-wise parameter clustering by grouping MSUs from different LoRAs into k clusters. The centroid of each cluster serves as a representative MSU, enabling the assembly of a merged LoRA with an adjusted rank of k. Additionally, we apply a dual reweighting strategy to optimize the scale of the merged LoRA. Experiments across various benchmarks demonstrate that our method outperforms existing approaches in LoRA merging. © 2025 13th International Conference on Learning Representations, ICLR 2025. All rights reserved.},
+ author = {Zhao, Ziyu and Shen, Tao and Zhu, Didi and Li, Zexi and Su, Jing and Wang, Xuwu and Wu, Fei},
+ journal = {13th International Conference on Learning Representations, ICLR 2025},
+ note = {Cited by: 0},
+ pages = {47752 - 47769},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MERGING LORAS LIKE PLAYING LEGO: PUSHING THE MODULARITY OF LORA TO EXTREMES THROUGH RANK-WISE CLUSTERING},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105010212750?origin=resultslist},
+ year = {2025}
+}

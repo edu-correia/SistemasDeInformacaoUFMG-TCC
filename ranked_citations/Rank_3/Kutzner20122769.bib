@@ -1,0 +1,16 @@
+@article{Kutzner20122769,
+ abstract = {We propose a family of algorithms for efficiently merging on contemporary GPUs, so that each algorithm requires O(mlog( n/m + 1)) element comparisons, where m and n are the sizes of the input sequences with m ≤ n. According to the lower bounds for merging all proposed algorithms are asymptotically optimal regarding the number of necessary comparisons. First we introduce a parallely structured algorithm that splits a merging problem of size 2l into 2i subproblems of size 2l-i, for some arbitrary i with (0 ≤ i ≤ l). This algorithm represents a merger for i = l but it is rather inefficient in this case. The efficiency is boosted by moving to a two stage approach where the splitting process stops at some predetermined level and transfers control to several parallely operating block-mergers. We formally prove the asymptotic optimality of the splitting process and show that for symmetrically sized inputs our approach delivers up to 4 times faster runtimes than the thrust::merge function that is part of the Thrust library. For assessing the value of our merging technique in the context of sorting we construct and evaluate aMergeSort on top of it. In the context of our benchmarking the resulting MergeSort clearly outperforms the Merge- Sort implementation provided by the Thrust library as well as Cederman's GPU optimized variant of QuickSort. Copyright © 2012 The Institute of Electronics, Information and Communication Engineers.},
+ author = {Kutzner, Arne and Kim, Pok-Son and Park, Won-Kwang},
+ doi = {10.1587/transinf.E95.D.2769},
+ journal = {IEICE Transactions on Information and Systems},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {12},
+ pages = {2769 - 2777},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Asymptotically optimal merging on manycore GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84870673096?origin=resultslist},
+ volume = {E95-D},
+ year = {2012}
+}

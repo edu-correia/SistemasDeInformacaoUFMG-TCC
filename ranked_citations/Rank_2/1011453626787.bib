@@ -1,0 +1,18 @@
+@article{10.1145/3626787,
+ abstract = {Write buffer overflow is a widespread and prevalent memory safety violation in C/C++, reported as the top vulnerability in 2022 and 2023. Secure memory allocators are generally used to protect systems against attacks that may exploit buffer overflows. Existing allocators mainly rely on two types of countermeasures to prevent or detect write overflows: canaries and guard pages, each with pros and cons in terms of detection latency and memory footprint.For virtualized cloud applications, this paper follows the Out of Hypervisor (OoH) trend and introduces GuaNary, a safety guard against write overflows, allowing synchronous detection at a low memory footprint cost. OoH is a new virtualization research axis introduced in 2022 advocating the exposure of hardware features for virtualization to the guest OS so that its processes can take advantage of them. Based on the OoH principle, GuaNary leverages Intel Sub-Page write Permission (SPP), a recent hardware virtualization feature that allows to write-protect guest memory at the granularity of 128B (namely, sub-page) instead of 4KB. We implement a software stack, LeanGuard, which promotes the utilization of SPP from inside virtual machines by new secure allocators that use GuaNary. Our evaluation shows that for the same number of protected buffers, LeanGuard consumes 8.3\texttimes{} less memory than SlimGuard, a recent state-of-art secure allocator. Further, for the same memory consumption, LeanGuard allows protecting 25\texttimes{} more buffers than SlimGuard.},
+ address = {New York, NY, USA},
+ articleno = {56},
+ author = {Bitchebe, Stella and Kone, Yves and Olivier, Pierre and Boukhobza, Jalil and Bromberg, Y\'{e}rom-David and Hagimont, Daniel and Tchana, Alain},
+ doi = {10.1145/3626787},
+ issue_date = {December 2023},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {buffer overflow detection, intel spp, secure heap memory allocator, virtualized clouds},
+ month = {December},
+ number = {3},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {GuaNary: Efficient Buffer Overflow Detection In Virtualized Clouds Using Intel EPT-based Sub-Page Write Protection Support},
+ url = {https://doi.org/10.1145/3626787},
+ volume = {7},
+ year = {2023}
+}

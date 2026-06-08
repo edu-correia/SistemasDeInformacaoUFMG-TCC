@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2024.3451983,
+ abstract = {The training of sound event detection (SED) models remains a challenge of insufficient supervision due to limited frame-wise labeled data. Mainstream research on this problem has adopted semi-supervised training strategies that generate pseudo-labels for unlabeled data and use these data for the training of a model. Recent works further introduce multi-task training strategies to impose additional supervision. However, the auxiliary tasks employed in these methods either lack frame-wise guidance or exhibit unsuitable task designs. Furthermore, they fail to exploit inter-task relationships effectively, which can serve as valuable supervision. In this paper, we introduce a novel task, sound occurrence and overlap detection (SOD), which detects predefined sound activity patterns, including non-overlapping and overlapping cases. On the basis of SOD, we propose a cross-task collaborative training framework that leverages the relationship between SED and SOD to improve the SED model. Firstly, by jointly optimizing the two tasks in a multi-task manner, the SED model is encouraged to learn features sensitive to sound activity. Subsequently, the cross-task consistency regularization is proposed to promote consistent predictions between SED and SOD. Finally, we propose a pseudo-label selection method that uses inconsistent predictions between the two tasks to identify potential wrong pseudo-labels and mitigate their confirmation bias. In the inference phase, only the trained SED model is used, thus no additional computation and storage costs are incurred. Extensive experiments on the DESED dataset demonstrate the effectiveness of our method.},
+ author = {Guan, Yadong and Han, Jiqing and Song, Hongwei and Deng, Shiwen and Zheng, Guibin and Zheng, Tieran and He, Yongjun},
+ doi = {10.1109/TASLP.2024.3451983},
+ issn = {2329-9290},
+ issue_date = {2024},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {August},
+ numpages = {13},
+ pages = {3947–3959},
+ publisher = {IEEE Press},
+ title = {Sound Activity-Aware Based Cross-Task Collaborative Training for Semi-Supervised Sound Event Detection},
+ url = {https://doi.org/10.1109/TASLP.2024.3451983},
+ volume = {32},
+ year = {2024}
+}

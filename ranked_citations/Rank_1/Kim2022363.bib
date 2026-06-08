@@ -1,0 +1,13 @@
+@conference{Kim2022363,
+ abstract = {Persistent key-value stores (KVSs) are fundamental building blocks of modern software products. A KVS stores persistent states for the products in the form of objects associated with their keys. Confidential computing (e.g., Intel Software Guard Extensions (SGX)) can help KVS protect data from unwanted leaks or manipulation if the KVS is adapted to use the protected memory efficiently. The characteristics of KVSs accommodating a large volume of data amplify one of the well-known performance bottlenecks of SGX, the limited size of the protected memory. An existing mechanism, Speicher, applied common techniques to overcome this. However, its design decision does not scale because the required protected memory size increases rapidly as the KVS receives additional data, resulting from the design choice to hide the long latency of Merkle tree-based freshness verification. We find that the unique characteristics of the log-structured merge (LSM) tree, a data structure that most popular persistent KVSs have, help reduce the high cost of protected memory consumption. We design TWEEZER on top of this observation by extending RocksDB, one of the most popular open-source persistent KVSs. We compare the performance of TWEEZER with the reproduced version of Speicher. Our evaluation using the standard db_bench reveals that TWEEZER outperforms Speicher by 1.94∼6.23× resulting in a reduction of slowdown due to confidential computing from 16∼30× to 4∼9×. © AST 2022.All rights reserved.},
+ author = {Kim, Igjae and Kim, J. Hyun and Chung, Minu and Moon, Hyungon and Noh, Sam H.},
+ journal = {Proceedings of the 20th USENIX Conference on File and Storage Technologies, FAST 2022},
+ note = {Cited by: 11},
+ pages = {363 - 379},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Log-Structured Merge Tree-aware Message Authentication Scheme for Persistent Key-Value Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85140985633?origin=resultslist},
+ year = {2022}
+}

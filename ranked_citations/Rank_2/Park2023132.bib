@@ -1,0 +1,14 @@
+@conference{Park2023132,
+ abstract = {Popular software key-value stores such as LevelDB and RocksDB are often tailored for efficient writing. Yet, they tend to also perform well on read operations. This is because while data is initially stored in a format that favors writes, it is later transformed by the DB in the background into a format that better accommodates reads. Write-optimized key-value stores can still block writes. This happens when those background workers cannot keep up with the foreground insertion workload.This paper advocates for a hardware-accelerated key-value store, enabling performance-critical operations, like background data reorganization and queries, to execute directly on storage instead of a host as existing key-value stores do. This better hides background work latency, prevents it from blocking foreground writes, and improves overall I/O efficiency. Our prototype, called KV-CSD, is a key-value based computational storage device consisting of an NVMe SSD and a System-on-a-Chip (SoC) that implements an ordered key-value store atop the SSD. Through offloaded processing, KV-CSD streamlines data insertion, reduces host-device data movement for both background data reorganization and query processing, and shows up to 10.6× lower write times and up to 7.4× faster queries compared to the current state-of-the-art software key-value stores on a real scientific dataset.  © 2023 IEEE.},
+ author = {Park, Inhyuk and Zheng, Qing and Manno, Dominic and Yang, Soonyeal and Lee, Jason and Bonnie, David and Settlemyer, Bradley and Kim, Youngjae and Chung, Woosuk and Grider, Gary},
+ doi = {10.1109/CLUSTER52292.2023.00019},
+ journal = {Proceedings - IEEE International Conference on Cluster Computing, ICCC},
+ note = {Cited by: 13},
+ pages = {132 - 144},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {KV-CSD: A Hardware-Accelerated Key-Value Store for Data-Intensive Applications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179519571?origin=resultslist},
+ year = {2023}
+}

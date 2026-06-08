@@ -1,0 +1,14 @@
+@article{7164299,
+ abstract = {Hadoop MapReduce is a leading open source framework that supports the realization of the Big Data revolution and serves as a pioneering platform in ultra large amount of information storing and processing. However, tuning a MapReduce system has become a difficult task because a large number of parameters restrict its performance, many of which are related with shuffle, a complicated phase between map and reduce functions, including sorting, grouping, and HTTP transferring. During shuffle phase, a large mount of time is spent on disk I/O due to the low speed of data throughput. In this paper, we build a mathematical model to judge the computing complexity of different operating orders within map-side shuffle, so that a faster execution can be achieved through reconfiguring the order of sorting and grouping. Furthermore, a three-dimensional exploring space of the performance is expanded, with which, some sampled features during shuffle stage, such as key number, spilling file number, and the variances of intermediate results, are collected to support the evaluation of computing complexity of each operating order. Thus, an optimized reconfiguration of map-side shuffle architecture can be achieved within Hadoop without extra disk I/O induced. Comparing with the original Hadoop implementation, the results show that our reconfigurable architecture gains up to 2.37χ speedup to finish the map-side shuffle work.},
+ author = {Wang, Jihe and Qiu, Meikang and Guo, Bing and Zong, Ziliang},
+ doi = {10.1109/TCC.2015.2459707},
+ issn = {2168-7161},
+ journal = {IEEE Transactions on Cloud Computing},
+ keyword = {Sorting;Complexity theory;Space exploration;Computer architecture;Instruction sets;Merging;Distributed databases;MapReduce;big data;shuffle;optimization;reconfigure;sort;group;exploration},
+ month = {April},
+ number = {2},
+ pages = {418-431},
+ title = {Phase-Reconfigurable Shuffle Optimization for Hadoop MapReduce},
+ volume = {8},
+ year = {2020}
+}

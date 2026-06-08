@@ -1,0 +1,13 @@
+@article{ZHONG2024110756,
+ abstract = {Fast and accurate object detection in foggy weather is crucial for visual tasks such as autonomous driving and video surveillance. Existing methods typically preprocess images with enhancement techniques before the object detector, so that the real-time performance of object detection decreases to some extent. Meanwhile, many popular object detection models rely solely on visual features for localization and classification. When fog is present, visual features would be so adversely impacted that the detection accuracy sharply decreases. Therefore, we propose an end-to-end prior knowledge-guided network called DR-YOLO for object detection in foggy weather. DR-YOLO integrates the atmospheric scattering model and the co-occurrence relation graph as prior knowledge into the entire training process of the detector. Firstly, Restoration Subnet Module (RSM) is designed to employ the atmospheric scattering model to guide the learning direction of the detector for dehazing features. Specifically, it is only adopted during the training process and does not increase the time cost of detection process. Secondly, for guiding the detector to pay more attention to potential co-occurring objects in the same scene, we introduce Relation Reasoning Attention Module (RRAM) that utilizes the co-occurrence relation graph to supplement deficient visual features in foggy weather. In addition, DR-YOLO employs Adaptive Feature Fusion Module (AFFM) to effectively merge the key features from the backbone and neck for the needs of RRAM and RSM. Finally, we conduct experiments on clear, synthetic and real-world foggy datasets to demonstrate the effectiveness of DR-YOLO. The source code is available at https://github.com/wenxinss/DR-YOLO.},
+ author = {Fujin Zhong and Wenxin Shen and Hong Yu and Guoyin Wang and Jun Hu},
+ doi = {https://doi.org/10.1016/j.patcog.2024.110756},
+ issn = {0031-3203},
+ journal = {Pattern Recognition},
+ keyword = {Object detection, Foggy weather, Prior knowledge, End-to-end network},
+ pages = {110756},
+ title = {Dehazing & Reasoning YOLO: Prior knowledge-guided network for object detection in foggy weather},
+ url = {https://www.sciencedirect.com/science/article/pii/S0031320324005077},
+ volume = {156},
+ year = {2024}
+}

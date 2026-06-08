@@ -1,0 +1,14 @@
+@inproceedings{10702289,
+ abstract = {Loop unrolling is a common compiler optimization technique that reduces the execution count of loop branch instructions and improves program performance by merging multiple iterations of a loop body into a single iteration. In LLVM, the native loop unrolling model considers only the impact of the number of instructions within the loop body when computing the unrolling factor, without accounting for subsequent optimizations and register resources. To address this issue, a new loop unrolling model is proposed that takes into account subsequent superword level parallelism (SLP) vectorization and register pressure. When computing the unrolling factor, the model uses the benefit for SLP (BSLP) model to identify loops that can be vectorized by SLP after loop unrolling and calculates the unrolling factor to support subsequent SLP vectorization. The register pressure-aware loop unrolling (RPLU) model adjusts the unrolling factor to mitigate excessive register pressure, thereby reducing the impact of register spills. Experimental results show that, compared to the loop unrolling model in LLVM, this model can compute more effective loop unrolling factors and improve program performance. The average speedup on the SPEC CPU 2006 benchmark suite is 2.0%, with a maximum speedup of 5.1%, and the average speedup on the TSVC benchmark suite is 5.1%, with a maximum speedup of 34.4%.},
+ author = {Ye, Zilong and Jiao, Jiye},
+ booktitle = {2024 20th International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD)},
+ doi = {10.1109/ICNC-FSKD64080.2024.10702289},
+ issn = {},
+ keyword = {Program processors;Computational modeling;Merging;Benchmark testing;Parallel processing;Knowledge discovery;Registers;Optimization;Fuzzy systems;compiler optimization;loop unrolling;unrolling factor;vectorization;register pressure},
+ month = {July},
+ number = {},
+ pages = {1-6},
+ title = {Loop Unrolling Based on SLP and Register Pressure Awareness},
+ volume = {},
+ year = {2024}
+}

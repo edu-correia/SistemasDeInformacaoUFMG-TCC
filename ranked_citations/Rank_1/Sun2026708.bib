@@ -1,0 +1,14 @@
+@conference{Sun2026708,
+ abstract = {S3-compatible object storage has become ubiquitous, used by an ever-expanding range of applications. Workload traces show that many of these applications treat object storage like a traditional file system, with many small reads and writes, yet object storage implementations have not kept up. Optimized for bulk storage, these systems cannot efficiently exploit modern SSDs, requiring large hardware installations to achieve operation rates typical of local file systems on modest machines.ZStore is a highly-efficient object store designed for modern hardware, providing strong consistency (per-key linearizability) via a novel architecture which replicates data over independent perdevice shared logs, using NVMe-over-Fabrics as its backend storage protocol. Based on a 3-node symmetric active-active cell, ZStore performs small reads and writes with minimal I/O amplification (beyond replication factor) while supporting object sizes up to the S3 maximum of 5 TB and optional erasure coding for objects larger than 128 KB. ZStore guarantees single-key linearizability using a two-phase coordination mechanism, tracking in-flight writes so that reads of stable data can be handled on a single gateway, with a heavier-weight multi-node read protocol used only when interfering writes are detected. Our evaluation shows ZStore achieving nearly an order of magnitude improvement in IOPS over widely-used systems (MinIO and Ceph) when evaluated on comparable hardware.  © 2025 Copyright held by the owner/author(s).},
+ author = {Sun, Shuwen and Khor, Isaac and Shin, Ji-Yong and Desnoyers, Peter},
+ doi = {10.1145/3772052.3772272},
+ journal = {SoCC 2025 - Proceedings of the 2025 ACM Symposium on Cloud Computing},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {708 - 721},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Fast, Efficient, and Strongly-Consistent Object Store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105028560529?origin=resultslist},
+ year = {2026}
+}

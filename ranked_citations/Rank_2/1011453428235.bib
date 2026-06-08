@@ -1,0 +1,18 @@
+@article{10.1145/3428235,
+ abstract = {Academia has spent much effort into making context-sensitive analyses practical, with great profit. However, the implementation of context-sensitive optimizations, in contrast to analyses, is still not practical, due to code-size explosion. This growth happens because current technology requires the cloning of full paths in the Calling Context Tree. In this paper, we present a solution to this problem. We combine finite state machines and dynamic dispatching to allow fully context-sensitive specialization while cloning only functions that are effectively optimized. This technique makes it possible to apply very liberal optimizations, such as context-sensitive constant propagation, in large programs—something that could not have been easily done before. We demonstrate the viability of our idea by formalizing it in Prolog, and implementing it in LLVM. As a proof of concept, we have used our state machines to implement context-sensitive constant propagation in LLVM. The binaries produced by traditional full cloning are 2.63 times larger than the binaries that we generate with our state machines. When applied on Mozilla Firefox, our optimization increases binary size from 7.2MB to 9.2MB. Full cloning, in contrast, yields a binary of 34MB.},
+ address = {New York, NY, USA},
+ articleno = {167},
+ author = {Poesia, Gabriel and Pereira, Fernando Magno Quint\~{a}o},
+ doi = {10.1145/3428235},
+ issue_date = {November 2020},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Compiler, Context-sensitive optimization, Dynamic dispatch},
+ month = {November},
+ number = {OOPSLA},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Dynamic dispatch of context-sensitive optimizations},
+ url = {https://doi.org/10.1145/3428235},
+ volume = {4},
+ year = {2020}
+}

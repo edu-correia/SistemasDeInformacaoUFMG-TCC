@@ -1,0 +1,14 @@
+@conference{Pfander2018,
+ abstract = {The optimization of performance of complex simulation codes with high computational demands, such as Octo-Tiger, is an ongoing challenge. Octo-Tiger is an astrophysics code simulating the evolution of star systems based on the fast multipole method using adaptive octrees as the central data structure. Octo-Tiger was implemented using high-level C++ libraries, specifically HPX and Vc, which allows its use on different hardware platforms. Recently, we have demonstrated excellent scalability in a distributed setting. In this paper, we study the node-level performance of Octo-Tiger on an Intel Knights Landing platform. We focus on Octo-Tiger's fast multipole method, as it is the computationally most demanding component. By using HPX and a futurization approach, we can efficiently traverse the adaptive octrees in parallel. On the core-level, threads process sub-grids using multiple 1074-element stencils. In numerical experiments, simulating the time evolution of a rotating star on an Intel Xeon Phi 7250 Knights Landing processor, Octo-Tiger shows good parallel efficiency. For the fast multipole algorithm, we achieved up to 408 GFLOPS, resulting in a speedup of 2x compared to a 24-core Skylake-SP platform, using the same high-level abstractions. © 2018 Association for Computing Machinery.},
+ author = {Pfander, David and Daib, Gregor and Marcello, Dominic and Kaiser, Hartmut and Pflüger, Dirk},
+ doi = {10.1145/3204919.3204938},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating octo-tiger: Stellar mergers on intel knights landing with HPX},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85048800638?origin=resultslist},
+ year = {2018}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3796195.3796199,
+ abstract = {Learned indexes have attracted significant attention for their potential to deliver substantial performance and space savings over traditional index structures. Their advantage lies in replacing explicit key comparisons with model-based computation that predicts the position of a search key in a sorted array. However, prediction errors prevent models from precisely locating keys, requiring a last-mile search over a candidate range. Both model evaluation and last-mile search can be expensive, limiting the performance.We propose LiBox, a hierarchical, box-based learned index that overcomes these limitations. LiBox partitions a sorted key array into "boxes" such that: (1) the box containing a search key can be identified with zero error using a simple linear regression function, and (2) the last-mile search within a box requires only a single AVX-512 instruction. This design yields a highly predictable and efficient lookup, with each query involving a fixed, minimal number of instructions and memory accesses. By allocating modest extra space within each box to handle irregular key distributions, LiBox supports both read and write queries at near array-access speed. Furthermore, its reorganization operations can be aligned with workload read/write intensity, enabling high-performance reads while hiding structural modification costs.We propose LiBox, a hierarchical box-based learned index that addresses these limitations. LiBox partitions a sorted key array into disjoint "boxes" such that: (1) the box containing a search key can be identified without error using a simple linear regression function, and (2) the last-mile search within a box usually requires only a single AVX-512 vector instruction. This design yields a highly predictable and efficient lookup process, with each query involving a fixed and minimal number of instructions and memory accesses. By allocating a modest amount of additional space within each box to accommodate irregular key distributions, LiBox supports both read and write queries at near-array-access speed.We implemented LiBox and conducted an extensive experimental evaluation. The results demonstrate that it significantly outperforms both state-of-the-art learned indexes (e.g., ALEX, LIPP) and non-learned indexes (e.g., ART) while achieving comparable or better space efficiency.},
+ author = {Zhou, Jian and Wang, Luna and Zhao, Shuaihua and Zhong, Chen and Jiang, Song},
+ doi = {10.14778/3796195.3796199},
+ issn = {2150-8097},
+ issue_date = {January 2026},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {5},
+ numpages = {13},
+ pages = {836–848},
+ publisher = {VLDB Endowment},
+ title = {LiBox: A Learned Index as an Array to Minimize Last-Mile Search},
+ url = {https://doi.org/10.14778/3796195.3796199},
+ volume = {19},
+ year = {2026}
+}

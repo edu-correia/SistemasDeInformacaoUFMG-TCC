@@ -1,0 +1,15 @@
+@article{10.1145/3807782,
+ abstract = {Large Language Models (LLMs) are the new dominant application but suffer from high memory and computational cost. Ternary LLMs have been proposed for easier deployment on edge platforms as 2-bit ternary weights {-1, 0, +1} can reduce the model size by 16 \texttimes{} compared to FP32 representations. In addition, ternary General Matrix Multiplication (GEMM) can reduce the computational complexity by performing addition and subtraction operations with non-zero weights only. However, existing CPU and GPU do not support native 2-bit operations, and existing libraries like PyTorch and CUDA do not have dedicated computing kernels for ternary weights. Moreover, existing sparse formats like Compressed Sparse Column are not optimized for ternary values, causing extra storage and decompression overhead. In this paper, we accelerate ternary LLMs on edge devices through efficient data formats and specialized computing kernels. We propose an efficient ternary sparse data format storing only the indices of non-zero values and simplifying the decompression at runtime. We also design a novel ternary GEMM algorithm that performs sparse addition on activations instead of multiplication to reduce the computation complexity. It achieves a 4 \texttimes{} theoretical speedup over dense GEMM with 50% sparsity in weights. We have implemented these algorithms and optimized computing kernels on both x86 CPU and Nvidia GPUs. Evaluation results show that they achieve 1.3-3.9 \texttimes{} speedup over Eigen Sparse GEMM, 3.3-6.9 \texttimes{} speedup over PyTorch Sparse GEMM, and around 5.5 \texttimes{} speedup over cuSPARSE. The GPU implementation can serve Llama-3 3B and 8B models on an RTX-3080Ti with 22 and 7 tokens/s, while the full-precision versions run out of memory.},
+ address = {New York, NY, USA},
+ author = {Zhu, Shien and Fu, Guanshujie and Kjoseva, Mila and Alonso, Gustavo},
+ doi = {10.1145/3807782},
+ issn = {1539-9087},
+ journal = {ACM Trans. Embed. Comput. Syst.},
+ keyword = {Large Language Models (LLMs), Sparse General Matrix Multiplication (GEMM), Edge Computing},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Efficient Addition-Based Sparse GEMM for Fast Ternary Large Language Model Inference on Edge Devices},
+ url = {https://doi.org/10.1145/3807782},
+ year = {2026}
+}

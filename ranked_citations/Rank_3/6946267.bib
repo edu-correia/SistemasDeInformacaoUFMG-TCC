@@ -1,0 +1,14 @@
+@inproceedings{6946267,
+ abstract = {The B±tree is the most widely used index structure in the current commercial database systems. We introduces new B±tree algorithms in which tree-structure modifications such as page splits or merges are executed as atomic actions. A B±tree structure modification, once executed to completion will never be undone no matter if the transaction that triggered such a structure modification commits or aborts later on. In ARIESrestart recovery from a system crash, the redo pass of ARIES will always produce a structurally consistent B±tree, on which undo operations by backward-rolling transactions can be performed. A database transaction can contain any number of operations of the form “fetch the first (or next) matching record”, “insert a record”, or “delete a record”, where database records are identified by their primary keys. Repeatable-read-level isolation for transactions is achieved by key-range locking.},
+ author = {Jaluta, Ibrahim},
+ booktitle = {2014 International Conference on Information Science, Electronics and Electrical Engineering},
+ doi = {10.1109/InfoSEEE.2014.6946267},
+ issn = {},
+ keyword = {Latches;Indexes;Vegetation;Concurrent computing;Concurrency control;Protocols;B-trees;concurrency;tree-structure-modification;logging;key-range locking},
+ month = {April},
+ number = {},
+ pages = {1968-1975},
+ title = {Transaction management in B-tree-indexed database systems},
+ volume = {3},
+ year = {2014}
+}

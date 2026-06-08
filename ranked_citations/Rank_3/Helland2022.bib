@@ -1,0 +1,13 @@
+@conference{Helland2022,
+ abstract = {Modern cloud data centers are busy places that share lots of resources. It is common for services to fluctuate in their responsiveness, sometimes becoming slow or very slow. Many distributed systems experience cascading slowness as one or a few slow servers (or their network) bring the entire system to its knees. Non-transactional work copes by using idempotent retries bypassing the laggards. For transactional databases, it's not so simple. This paper sketches a design for a distributed database providing responsive snapshot isolation transactions even when some of its servers and connections stop or, more perniciously, just slow down. We present a thought experiment for a decoupled transactions database system that avoids cascading slowdown when a subset of its servers are sick but not necessarily dead. The goal is to provide low tail latency online transactions atop servers and networks that may sometimes go slow. Assume at most F recalcitrant servers in the database. Can we design a robust system that makes predictable progress while not waiting for F slow servers? Can we use these ideas for practical deployments in modern data centers with availability zones and today's expected operational challenges? This hypothetical design explores techniques to dampen application visible jitter in a database system running in a cloud datacenter when most of the servers are responsive. This inevitably causes us to examine the nature of a database's knowledge of correctness and how that can exist without a centralized authority. © 2022 12th Annual Conference on Innovative Data Systems Research, CIDR 2022. All rights reserved.},
+ author = {Helland, Pat},
+ journal = {12th Annual Conference on Innovative Data Systems Research, CIDR 2022},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Decoupled Transactions: Low Tail Latency Online Transactions Atop Jittery Servers},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85175711554?origin=resultslist},
+ year = {2022}
+}

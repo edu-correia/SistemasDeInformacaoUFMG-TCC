@@ -1,0 +1,17 @@
+@article{10.14778/2350229.2350246,
+ abstract = {In today's Web and social network environments, query workloads include ad hoc and OLAP queries, as well as iterative algorithms that analyze data relationships (e.g., link analysis, clustering, learning). Modern DBMSs support ad hoc and OLAP queries, but most are not robust enough to scale to large clusters. Conversely, "cloud" platforms like MapReduce execute chains of batch tasks across clusters in a fault tolerant way, but have too much overhead to support ad hoc queries.Moreover, both classes of platform incur significant overhead in executing iterative data analysis algorithms. Most such iterative algorithms repeatedly refine portions of their answers, until some convergence criterion is reached. However, general cloud platforms typically must reprocess all data in each step. DBMSs that support recursive SQL are more efficient in that they propagate only the changes in each step --- but they still accumulate each iteration's state, even if it is no longer useful. User-defined functions are also typically harder to write for DBMSs than for cloud platforms.We seek to unify the strengths of both styles of platforms, with a focus on supporting iterative computations in which changes, in the form of deltas, are propagated from iteration to iteration, and state is efficiently updated in an extensible way. We present a programming model oriented around deltas, describe how we execute and optimize such programs in our REX runtime system, and validate that our platform also handles failures gracefully. We experimentally validate our techniques, and show speedups over the competing methods ranging from 2.5 to nearly 100 times.},
+ author = {Mihaylov, Svilen R. and Ives, Zachary G. and Guha, Sudipto},
+ doi = {10.14778/2350229.2350246},
+ issn = {2150-8097},
+ issue_date = {July 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {1280–1291},
+ publisher = {VLDB Endowment},
+ title = {REX: recursive, delta-based data-centric computation},
+ url = {https://doi.org/10.14778/2350229.2350246},
+ volume = {5},
+ year = {2012}
+}

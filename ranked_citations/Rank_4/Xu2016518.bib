@@ -1,0 +1,14 @@
+@conference{Xu2016518,
+ abstract = {Out of memory (OOM) errors occur frequently in data-intensive applications that run atop distributed data-parallel frameworks, such as MapReduce and Spark. In these applications, the memory space is shared by the framework and user code. Since the framework hides the details of distributed execution, it is challenging for users to pinpoint the root causes and fix these OOM errors. This paper presents a comprehensive characteristic study on 123 real-world OOM errors in Hadoop and Spark applications. Our major findings include: (1) 12% errors are caused by the large data buffered/cached in the framework, which indicates that it is hard for users to configure the right memory quota to balance the memory usage of the framework and user code. (2) 37% errors are caused by the unexpected large runtime data, such as large data partition, hotspot key, and large key/value record. (3) Most errors (64%) are caused by memory-consuming user code, which carelessly processes unexpected large data or generates large in-memory computing results. Among them, 13% errors are also caused by the unexpected large runtime data. (4) There are three common fix patterns (used in 34% errors), namely changing the memory/dataflow-related configurations, dividing runtime data, and optimizing user code logic. Our findings inspire us to propose potential solutions to avoid the OOM errors: (1) providing dynamic memory management mechanisms to balance the memory usage of the framework and user code at runtime; (2) providing users with memory+disk data structures, since accumulating large computing results in in-memory data structures is a common cause (15% errors). © 2015 IEEE.},
+ author = {Xu, Lijie and Dou, Wensheng and Zhu, Feng and Gao, Chushu and Liu, Jie and Zhong, Hua and Wei, Jun},
+ doi = {10.1109/ISSRE.2015.7381844},
+ journal = {2015 IEEE 26th International Symposium on Software Reliability Engineering, ISSRE 2015},
+ note = {Cited by: 15},
+ pages = {518 - 529},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Experience report: A characteristic study on out of memory errors in distributed data-parallel applications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84964854487?origin=resultslist},
+ year = {2016}
+}

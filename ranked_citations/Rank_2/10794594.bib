@@ -1,0 +1,14 @@
+@article{10794594,
+ abstract = {Despite the prevailing transition from single-task to multi-task approaches in video anomaly detection, we observe that many adopt sub-optimal frameworks for individual proxy tasks. Motivated by this, we contend that optimizing single-task frameworks can advance both single- and multi-task approaches. Accordingly, we leverage middle-frame prediction as the primary proxy task, and introduce an effective hybrid framework designed to generate accurate predictions for normal frames and flawed predictions for abnormal frames. This hybrid framework is built upon a bi-directional structure that seamlessly integrates both vision transformers and ConvLSTMs. Specifically, we utilize this bi-directional structure to fully analyze the temporal dimension by predicting frames in both forward and backward directions, significantly boosting the detection stability. Given the transformer’s capacity to model long-range contextual dependencies, we develop a convolutional temporal transformer that efficiently associates feature maps from all context frames to generate attention-based predictions for target frames. Furthermore, we devise a layer-interactive ConvLSTM bridge that facilitates the smooth flow of low-level features across layers and time-steps, thereby strengthening predictions with fine details. Anomalies are eventually identified by scrutinizing the discrepancies between target frames and their corresponding predictions. Several experiments conducted on public benchmarks affirm the efficacy of our hybrid framework, whether used as a standalone single-task approach or integrated as a branch in a multi-task approach. These experiments also underscore the advantages of merging vision transformers and ConvLSTMs for video anomaly detection. The implementation of our hybrid framework is available at https://github.com/SHENGUODONG19951126/ConvTTrans-ConvLSTM.},
+ author = {Shen, Guodong and Ouyang, Yuqi and Lu, Junru and Yang, Yixuan and Sanchez, Victor},
+ doi = {10.1109/TIP.2024.3512369},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Transformers;Multitasking;Computer vision;Pipelines;Decoding;Bidirectional control;Benchmark testing;Training;Periodic structures;Feature extraction;Video anomaly detection;vision transformer;ConvLSTM;bi-directional structure;single-task;multi-task},
+ month = {},
+ number = {},
+ pages = {6865-6880},
+ title = {Advancing Video Anomaly Detection: A Bi-Directional Hybrid Framework for Enhanced Single- and Multi-Task Approaches},
+ volume = {33},
+ year = {2024}
+}

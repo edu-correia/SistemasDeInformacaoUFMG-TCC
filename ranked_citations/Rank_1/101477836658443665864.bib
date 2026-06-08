@@ -1,0 +1,17 @@
+@article{10.14778/3665844.3665864,
+ abstract = {Partitioning a large graph into smaller subgraphs by minimizing the number of cutting vertices and edges, namely cut size or replication factor, plays a crucial role in distributed graph processing tasks. However, many prior works have primarily focused on optimizing the cut size by considering only vertex balance or edge balance, leading to significant workload imbalance and consequently hindering the performance of downstream tasks. Therefore, in this paper, we address the dual-balanced graph partition problem that minimizes the cut size while simultaneously guaranteeing both vertex and edge balance. We propose a lightweight effective two-phase framework, namely fine-grained splitting and merging (FSM), which decomposes the graph into more and smaller partitions and then merges them. FSM offers the flexibility of integrating with various state-of-the-art single-balanced techniques. We develop two efficient algorithms Fast Merging and Precise Merging to enable trade-offs between computational efficiency and partitioning quality. Experimental results on large real-world graphs demonstrate that FSM achieves state-of-the-art cut size while maintaining dual balance. The runtime for downstream tasks PageRank, connected component, and diameter estimation, can be reduced by a large proportion, up to 9.43%, 11.35%, and 17.94%, respectively.},
+ author = {Liu, Chengjun and Peng, Zhuo and Zheng, Weiguo and Zou, Lei},
+ doi = {10.14778/3665844.3665864},
+ issn = {2150-8097},
+ issue_date = {May 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {14},
+ pages = {2378–2391},
+ publisher = {VLDB Endowment},
+ title = {FSM: A Fine-Grained Splitting and Merging Framework for Dual-Balanced Graph Partition},
+ url = {https://doi.org/10.14778/3665844.3665864},
+ volume = {17},
+ year = {2024}
+}

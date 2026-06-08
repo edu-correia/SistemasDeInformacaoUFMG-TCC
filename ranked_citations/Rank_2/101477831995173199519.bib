@@ -1,0 +1,17 @@
+@article{10.14778/3199517.3199519,
+ abstract = {Many modern applications produce massive amounts of data series that need to be analyzed, requiring efficient similarity search operations. However, the state-of-the-art data series indexes that are used for this purpose do not scale well for massive datasets in terms of performance, or storage costs. We pinpoint the problem to the fact that existing summarizations of data series used for indexing cannot be sorted while keeping similar data series close to each other in the sorted order. This leads to two design problems. First, traditional bulk-loading algorithms based on sorting cannot be used. Instead, index construction takes place through slow top-down insertions, which create a non-contiguous index that results in many random I/Os. Second, data series cannot be sorted and split across nodes evenly based on their median value; thus, most leaf nodes are in practice nearly empty. This further slows down query speed and amplifies storage costs. To address these problems, we present Coconut. The first innovation in Coconut is an inverted, sortable data series summarization that organizes data series based on a z-order curve, keeping similar series close to each other in the sorted order. As a result, Coconut is able to use bulk-loading techniques that rely on sorting to quickly build a contiguous index using large sequential disk I/Os. We then explore prefix-based and median-based splitting policies for bottom-up bulk-loading, showing that median-based splitting outperforms the state of the art, ensuring that all nodes are densely populated. Overall, we show analytically and empirically that Coconut dominates the state-of-the-art data series indexes in terms of construction speed, query speed, and storage costs.},
+ author = {Kondylakis, Haridimos and Dayan, Niv and Zoumpatianos, Kostas and Palpanas, Themis},
+ doi = {10.14778/3199517.3199519},
+ issn = {2150-8097},
+ issue_date = {February 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {14},
+ pages = {677–690},
+ publisher = {VLDB Endowment},
+ title = {Coconut: a scalable bottom-up approach for building data series indexes},
+ url = {https://doi.org/10.14778/3199517.3199519},
+ volume = {11},
+ year = {2018}
+}

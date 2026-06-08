@@ -1,0 +1,14 @@
+@conference{Fu2024448,
+ abstract = {Achieving high performance for Sparse Matrix-Matrix Multiplication (SpMM) has received increasing research attention, especially on multi-core CPUs, due to the large input data size in applications such as graph neural networks (GNNs). Most existing solutions for SpMM computation follow the ahead-of-time (AOT) compilation approach, which compiles a program entirely before it is executed. AOT compilation for SpMM faces three key limitations: unnecessary memory access, additional branch overhead, and redundant instructions. These limitations stem from the fact that crucial information pertaining to SpMM is not known until runtime. In this paper, we propose JITSpMM, a just-in-time (JIT) assembly code generation framework to accelerated SpMM computation on multi-core CPUs with SIMD extensions. First, JITSpMM integrates the JIT assembly code generation technique into three widely-used workload division methods for SpMM to achieve balanced workload distribution among CPU threads. Next, with the availability of runtime information, JITSpMM employs a novel technique, coarse-grain column merging, to maximize instruction-level parallelism by unrolling the performance-critical loop. Furthermore, JITSpMM intelligently allocates registers to cache frequently accessed data to minimizing memory accesses, and employs selected SIMD instructions to enhance arithmetic throughput. We conduct a performance evaluation of JITSpMM and compare it two AOT baselines. The first involves existing SpMM implementations compiled using the Intel icc compiler with auto-vectorization. The second utilizes the highly-optimized SpMM routine provided by Intel MKL. Our results show that JITSpMM provides an average improvement of 3.8× and 1.4×, respectively.  © 2024 IEEE.},
+ author = {Fu, Qiang and Rolinger, Thomas B. and Huang, H. Howie},
+ doi = {10.1109/CGO57630.2024.10444827},
+ journal = {CGO 2024 - Proceedings of the 2024 IEEE/ACM International Symposium on Code Generation and Optimization},
+ note = {Cited by: 4},
+ pages = {448 - 459},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {JITSPMM: Just-in-Time Instruction Generation for Accelerated Sparse Matrix-Matrix Multiplication},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85187220273?origin=resultslist},
+ year = {2024}
+}

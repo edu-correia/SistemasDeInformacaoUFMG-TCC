@@ -1,0 +1,15 @@
+@conference{Jin2021547,
+ abstract = {Many big data systems employ LSM (Log-Structured Merge)tree-based key-value stores, such as RocksDB and Cassandra. LSM-tree has a multi-level data structure and can transform random writes into sequential ones by compaction operations. However, the compaction operations in LSM-tree introduce the read/write amplification issue, which will increase the processing latency and incur throughput drops. In this paper, to eliminate the impact of compaction on the throughput stability and latency of LSM-tree, we propose a new compaction method called DLC (Delay Level-0 Compaction). We notice that workloads like OLTP are periodically high. For example, an electronic business platform may have high requests at noon and night but have few requests in the early morning. When the workload becomes high, many data will be flushed to Level-0 of LSM-tree from memory, which will trigger frequent Level-0 compaction and lower the system's throughput. The main idea of DLC is to delay Level-0 compaction at a high load and resume compaction when the system becomes low-loaded. As the low-loaded system generally has enough free CPU cores and I/O bandwidths, performing the delayed compaction will not affect the system's overall performance. Therefore, we can maintain stable throughput even when the system is high-loaded. To implement DLC, we first define a new I/O estimation model to characterize the workload. Then, we determine whether to delay Level-0 compaction according to the characteristics of the current workload. Moreover, to deal with sustained high workloads, we invent a burst compaction strategy to reduce throughput dropping and present two implementations for the bursty compaction. We implemented DLC on Myrocks and experimentally compared DLC with the original MyRocks and a state-of-the-art scheme called SILK under various OLTP workloads. The results show that DLC outperforms MyRocks and SILK in both latency and throughput stability. © 2021 Copyright held by the owner/author(s).},
+ author = {Jin, Peiquan and Li, Jianchuang and Long, Hai},
+ doi = {10.5441/002/edbt.2021.65},
+ journal = {Advances in Database Technology - EDBT},
+ note = {Cited by: 16},
+ pages = {547 - 557},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DLC: A new compaction scheme for LSM-tree with high stability and low latency},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85113714305?origin=resultslist},
+ volume = {2021-March},
+ year = {2021}
+}

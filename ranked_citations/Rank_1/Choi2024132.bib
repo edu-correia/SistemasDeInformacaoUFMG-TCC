@@ -1,0 +1,14 @@
+@conference{Choi2024132,
+ abstract = {Zoned namespace solid state drives (ZNS SSDs) provide superior capacity and life span compared to conventional namespace (CNS) SSDs at the same cost. Especially, a small-zone ZNS SSD can achieve a low write amplification factor (WAF) and performance isolation among I/O streams by providing the host with finer-grained control of the SSD’s flash chips than the large-zone counterpart. To maximize these advantages, multiple zones in a small-zone SSD should be grouped and operated simultaneously. A ZNS-aware file system encapsulates the ZNS interface and transforms a ZNS SSD into a general-purpose storage to the host layer. However, the current ZNS-aware file systems were designed for the large-zone ZNS SSDs, and thus lack the zone group management feature. This paper proposes a dynamic zone group management scheme for ZNS-aware file systems that dynamically adjusts the number of zone groups in accordance with the workload characteristics and the size of each zone group to achieve high performance at a low WAF. The proposed scheme was implemented in the F2FS. Our evaluation with FIO, Filebench and db_bench showed that, across all cases, the proposed scheme improved the performance by up to 71.2% while reducing the WAF by 29.8% in comparison to the static zone grouping scheme. © 2024 Copyright held by the owner/author(s).},
+ author = {Choi, Jungyun and Jun, Yuhun and Kim, Jongseok and Jeong, Jinkyu and Seo, Euiseong},
+ doi = {10.1145/3688351.3689151},
+ journal = {Proceedings of the 17th ACM International Systems and Storage Conference, SYSTOR 2024},
+ note = {Cited by: 2},
+ pages = {132 - 145},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An Adaptive Zone-Grouping Scheme Enabling General-Purpose File Systems on ZNS SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85206854643?origin=resultslist},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@article{9043526,
+ abstract = {Locating the tiny insulator defect object with complex backgrounds in high-resolution aerial images is a challenging task. In this paper, we propose a novel method which cascades detection and segmentation networks to identify the defect from the global and local two levels: (1) The improved Faster R-CNN is carried out to capture both defects and insulators in the entire image. ResNeXt-101 is adopted as the feature extraction network so as to fully extract features, and Feature Pyramid Network (FPN) is built to enhance the ability of detecting small targets. In addition, the Online Hard Example Mining (OHEM) training strategy is applied to solve the imbalance problem of positive and negative samples. (2) All the detected insulators are extracted and fed into the improved U-Net network to futher inspect at pixel level, we utilize the pre-trained ResNeXt-50 as the encoder of U-Net, incorporate an attention module, Spatial and Channel Squeeze & Excitation Block (SCSE), into the decoding path to highlight the meaningful information. A hybrid loss which merges binary cross entropy (BCE) loss and dice coefficient loss is designed to train our network for figuring out the class imbalance issue. The missed detection can be greatly reduced with the combination of two modified network, which makes comprehensive use of the original map information and local information. On the test set of actual images, the insulator defect recognition precision and recall of the cascade network is 91.9% and 95.7%, exhibiting strong robustness and accuracy.},
+ author = {Li, Xuefeng and Su, Hansong and Liu, Gaohua},
+ doi = {10.1109/ACCESS.2020.2982288},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Insulators;Feature extraction;Image segmentation;Object detection;Image recognition;Semantics;Training;Insulator defect detection;object detection;semantic segmentation;deep learning},
+ month = {},
+ number = {},
+ pages = {59934-59946},
+ title = {Insulator Defect Recognition Based on Global Detection and Local Segmentation},
+ volume = {8},
+ year = {2020}
+}

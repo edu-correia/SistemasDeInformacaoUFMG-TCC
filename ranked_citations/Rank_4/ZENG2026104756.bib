@@ -1,0 +1,13 @@
+@article{ZENG2026104756,
+ abstract = {The rendering engine is a cornerstone of modern web browsers, responsible for transforming heterogeneous inputs-HTML, CSS, and JavaScript-into visual page content. This complex process involves constructing and updating the render tree, which governs layout and painting, but also introduces subtle defects that manifest as robustness and security challenges. Existing browser fuzzers largely fall short in thoroughly testing the rendering engine due to two fundamental challenges: (i) the vast, multidimensional input space makes efficient exploration difficult; (ii) the periodic, incremental rendering model of modern rendering engines merges multiple updates of the render tree within each rendering cycle, reducing activation of deep pipeline logic such as layout and painting. In this paper, we aim to enhance the testing depth of the rendering pipeline-rather than simply increasing code coverage-by focusing on updating the render tree, the central data structure linking frontend inputs to backend layout and painting modules. Our approach incorporates (i) correlation-based pruning strategies for HTML elements and CSS properties to prioritize high-yield input combinations, and (ii) a time-sliced testing scheme that intentionally distributes mutations across multiple rendering cycles within a single test case, thereby increasing the trigger frequency of backend rendering modules. We implement a prototype, RTFuzz, and evaluate it extensively. Compared to state-of-the-art fuzzers Domato, FreeDom, and Minerva, RTFuzz helps uncover 43.1 %, 28.7 %, and 75.7 % more unique crashes, 83.3 % of which occur in the rendering pipeline, and further identified 20 real-world defects during long-running experiments. Ablation studies confirm that correlation-based pruning increases unique crashes by 79.2 %, and the time-sliced scheme contributes a 16.2 % improvement.},
+ author = {Yishun Zeng and Yue Wu and Xicheng Lu and Chao Zhang},
+ doi = {https://doi.org/10.1016/j.cose.2025.104756},
+ issn = {0167-4048},
+ journal = {Computers & Security},
+ keyword = {Fuzzing, Browser, Rendering engine, Defect discovery},
+ pages = {104756},
+ title = {RTFuzz: Fuzzing browsers via efficient render tree mutation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0167404825004456},
+ volume = {161},
+ year = {2026}
+}

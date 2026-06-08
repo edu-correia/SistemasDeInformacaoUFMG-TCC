@@ -1,0 +1,13 @@
+@conference{Chen202117,
+ abstract = {Key-Value (KV) stores support many crucial applications and services. They perform fast in-memory processing, but are still often limited by I/O performance. The recent emergence of high-speed commodity NVMe SSDs has propelled new KV system designs that take advantage of their ultra-low latency and high bandwidth. Meanwhile, to switch to entirely new data layouts and scale up entire databases to high-end SSDs requires considerable investment. As a compromise, we propose SpanDB, an LSM-tree-based KV store that adapts the popular RocksDB system to utilize selective deployment of high-speed SSDs. SpanDB allows users to host the bulk of their data on cheaper and larger SSDs, while relocating write-ahead logs (WAL) and the top levels of the LSM-tree to a much smaller and faster NVMe SSD. To better utilize this fast disk, SpanDB provides high-speed, parallel WAL writes via SPDK, and enables asynchronous request processing to mitigate inter-thread synchronization overhead and work efficiently with polling-based I/O. Our evaluation shows that SpanDB simultaneously improves RocksDB’s throughput by up to 8.8× and reduces its latency by 9.5-58.3%. Compared with KVell, a system designed for high-end SSDs, SpanDB achieves 96-140% of its throughput, with a 2.3-21.6× lower latency, at a cheaper storage configuration. © 2021 by The USENIX Association.},
+ author = {Chen, Hao and Ruan, Chaoyi and Li, Cheng and Ma, Xiaosong and Xu, Yinlong},
+ journal = {Proceedings of the 19th USENIX Conference on File and Storage Technologies, FAST 2021},
+ note = {Cited by: 107},
+ pages = {17 - 32},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SpanDB: A fast, cost-Effective LSM-tree based KV store on hybrid storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85102979226?origin=resultslist},
+ year = {2021}
+}

@@ -1,0 +1,16 @@
+@article{Kwon2019,
+ abstract = {In this paper, we propose a method to construct a lightweight key-value store based on the Windows native features. The main idea is providing a thin wrapper for the key-value store on top of a built-in storage inWindows, calledWindows registry. First, we define a mapping of the components in the key-value store onto the components in the Windows registry. Then, we present a hash-based multi-level registry index so as to distribute the key-value data balanced and to efficiently access them. Third, we implement basic operations of the key-value store (i.e., Get, Put, and Delete) by manipulating the Windows registry using the Windows native APIs. We call the proposed key-value store WR-Store. Finally, we propose an efficient ETL (Extract-Transform-Load) method to migrate data stored in WR-Store into any other environments that support existing key-value stores. Because the performance of the Windows registry has not been studied much, we perform the empirical study to understand the characteristics of WR-Store, and then, tune the performance of WR-Store to find the best parameter setting. Through extensive experiments using synthetic and real data sets, we show that the performance of WR-Store is comparable to or even better than the state-of-the-art systems (i.e., RocksDB, BerkeleyDB, and LevelDB). Especially, we show the scalability of WR-Store. That is, WR-Store becomes much more efficient than the other key-value stores as the size of data set increases. In addition, we show that the performance of WR-Store is maintained even in the case of intensive registry workloads where 1000 processes accessing to the registry actively are concurrently running. © 2019 by the authors.},
+ author = {Kwon, Hyuk-Yoon},
+ doi = {10.3390/app9183801},
+ journal = {Applied Sciences (Switzerland)},
+ note = {Cited by: 4; All Open Access; Gold Open Access; Green Open Access},
+ number = {18},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Constructing a lightweight key-value store based on the windows native features},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85072405253?origin=resultslist},
+ volume = {9},
+ year = {2019}
+}

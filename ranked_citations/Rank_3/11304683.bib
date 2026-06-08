@@ -1,0 +1,14 @@
+@inproceedings{11304683,
+ abstract = {Website fingerprinting (WF) attacks undermine the privacy promised by anonymizing networks such as Tor by inferring the websites a user visits from encrypted-traffic side-channels. Recent criticisms of the single-tab assumption have shifted attention to the more realistic multi-tab setting, where concurrent page loads create severe noise. Existing multi-tab studies rely on direction sequences that ignore temporal structure and therefore provide only limited discriminative power. Our experiments show that packet-level timestamps do carry extra signal, yet their raw form is fragile under overlapping tabs and timing-obfuscation defences. We propose the PacketBurst Counts (PBC) feature—a $4 \times L$ matrix that, for each time interval, stores the counts of upstream packets, downstream packets, upstream bursts and downstream bursts. PBC preserves coarse temporal structure while discarding noisy finegrained timings, striking a balance between expressiveness and robustness. Building on PBC, we design PBC-MWF, an end-to-end framework that (i) uses a residual CNN to learn local embeddings and (ii) applies an adaptive sparse transformer to capture global correlations while suppressing tab-overlap noise. Unlike prior work, which evaluates on datasets with a fixed number of tabs and reports top-k accuracy, we additionally merge datasets with varying tab-count and perform threshold-based inference; the threshold is tuned on the validation set before testing. To the best of our knowledge, PBCMWF is the first WF framework to simultaneously address the multi-tab setting's challenges of fine-grained webpage identification and resilience against WF defences. Evaluations on three public multi-tab datasets demonstrate PBC-MWF's enhanced robustness: compared against nine baselines, it surpasses the best prior method-improving F1 by up to 12.4 % on site-level, 8.4 % on page-level, and over 10 % under defenses.},
+ author = {Wei, Yuhao and Li, Zhen and Xiong, Gang and Gou, Gaopeng and Shi, Junzheng and Qin, Yingchao},
+ booktitle = {2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)},
+ doi = {10.1109/IPCCC66453.2025.11304683},
+ issn = {2374-9628},
+ keyword = {Privacy;Correlation;Noise;Fingerprint recognition;Transformers;Robustness;Timing;Noise measurement;Protection;Resilience},
+ month = {Nov},
+ number = {},
+ pages = {1-9},
+ title = {PBC-MWF: Robust Multi-Tab Website Fingerprinting via Interval-Aggregated Packet-Burst Counts},
+ volume = {},
+ year = {2025}
+}

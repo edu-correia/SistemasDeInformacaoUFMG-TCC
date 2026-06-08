@@ -1,0 +1,14 @@
+@article{9409710,
+ abstract = {The visual inspection of a hexahedral mesh with respect to element quality is difficult due to clutter and occlusions that are produced when rendering all element faces or their edges simultaneously. Current approaches overcome this problem by using focus on specific elements that are then rendered opaque, and carving away all elements occluding their view. In this work, we make use of advanced GPU shader functionality to generate a focus+context rendering that highlights the elements in a selected region and simultaneously conveys the global mesh structure and deformation field. To achieve this, we propose a gradual transition from edge-based focus rendering to volumetric context rendering, by combining fragment shader-based edge and face rendering with per-pixel fragment lists. A fragment shader smoothly transitions between wireframe and face-based rendering, including focus-dependent rendering style and depth-dependent edge thickness and halos, and per-pixel fragment lists are used to blend fragments in correct visibility order. To maintain the global mesh structure in the context regions, we propose a new method to construct a sheet-based level-of-detail hierarchy and smoothly blend it with volumetric information. The user guides the exploration process by moving a lens-like hotspot. Since all operations are performed on the GPU, interactive frame rates are achieved even for large meshes.},
+ author = {Neuhauser, Christoph and Wang, Junpeng and Westermann, Rüdiger},
+ doi = {10.1109/TVCG.2021.3074607},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Rendering (computer graphics);Strain;Visualization;Faces;Graphics processing units;Inspection;Sorting;Visualization of hex-meshes;real-time rendering;GPUs},
+ month = {Aug},
+ number = {8},
+ pages = {3505-3518},
+ title = {Interactive Focus+Context Rendering for Hexahedral Mesh Inspection},
+ volume = {27},
+ year = {2021}
+}

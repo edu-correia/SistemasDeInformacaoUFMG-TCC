@@ -1,0 +1,13 @@
+@article{LYU2025111910,
+ abstract = {Complex table question answering requires deriving precise answers to natural language questions by analyzing structurally complex tables, where cells are arbitrarily merged and header locations are flexible. Despite significant advancements in the large language model (LLM) era, current approaches for complex table reasoning suffer from two critical limitations: either (1) directly feeding the entire table into prompts, which introduces irrelevant information, or (2) requiring additional structures (e.g., graph-based representations) alongside LLMs, thereby incurring unnecessary system complexity. To address these limitations, we propose MaCTab, a Masked language modeling framework that decomposes Complex Table question answering into cloze-style tasks. Specifically, MaCTab employs two modular decomposition strategies: (1) row-/column-wise retrieval and (2) cell-wise retrieval. Both strategies explicitly retrieve answers from serialized complex tables, enabling strong standalone performance. Meanwhile, their confidence-based combination filters low-confidence outputs to yield complementary gains. Comprehensive experiments on the IM-TQA benchmark — a Table Question Answering dataset with Implicit and Multi-typed structures comprising 1,200 real-world tables from publicly available business documents and 5,000 questions — demonstrate MaCTab’s effectiveness. MaCTab achieves 96.8% exact match accuracy, marking a 43.4% absolute improvement over the previous state-of-the-art (53.4%), and surpassing the average performance of five trained human annotators (95.1%) recruited by the dataset authors. This work establishes a hybrid approach that maintains the simplicity of full-table prompting while enabling graph-free information filtering, offering a simple yet effective paradigm for multi-industry applications requiring precise interpretation of complex tabular data.},
+ author = {Jian Lyu and Zuobin Ying and Ning Shi and Jingfeng Xue and Zijie Pan and Weiping Ding and Wanlei Zhou},
+ doi = {https://doi.org/10.1016/j.engappai.2025.111910},
+ issn = {0952-1976},
+ journal = {Engineering Applications of Artificial Intelligence},
+ keyword = {Large language model, Table question answering, Complex table, Masked language model},
+ pages = {111910},
+ title = {Harnessing Large Language Models for question answering over complex tables},
+ url = {https://www.sciencedirect.com/science/article/pii/S0952197625019128},
+ volume = {160},
+ year = {2025}
+}

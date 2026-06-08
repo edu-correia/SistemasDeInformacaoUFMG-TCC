@@ -1,0 +1,17 @@
+@article{10.14778/3339490.3339495,
+ abstract = {In distributed query processing, data shuffle is one of the most costly operations. We examined scaling limitations to data shuffle that current systems and the research literature do not solve. As the number of input and output partitions increases, na\"{\i}ve shuffling will result in high fan-out and fan-in. There are practical limits to fan-out, as a consequence of limits on memory buffers, network ports and I/O handles. There are practical limits to fan-in because it multiplies the communication errors due to faults in commodity clusters impeding progress. Existing solutions that limit fan-out and fan-in do so at the cost of scaling quadratically in the number of nodes in the data flow graph. This dominates the costs of shuffling large datasets.We propose a novel algorithm called Hyper Dimension Shuffle that we have introduced in production in SCOPE, Microsoft's internal big data analytics system. Hyper Dimension Shuffle is inspired by the divide and conquer concept, and utilizes a recursive partitioner with intermediate aggregations. It yields quasilinear complexity of the shuffling graph with tight guarantees on fan-out and fan-in. We demonstrate how it avoids the shuffling graph blow-up of previous algorithms to shuffle at petabyte-scale efficiently on both synthetic benchmarks and real applications.},
+ author = {Qiao, Shi and Nicoara, Adrian and Sun, Jin and Friedman, Marc and Patel, Hiren and Ekanayake, Jaliya},
+ doi = {10.14778/3339490.3339495},
+ issn = {2150-8097},
+ issue_date = {June 2019},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {13},
+ pages = {1113–1125},
+ publisher = {VLDB Endowment},
+ title = {Hyper dimension shuffle: efficient data repartition at petabyte scale in SCOPE},
+ url = {https://doi.org/10.14778/3339490.3339495},
+ volume = {12},
+ year = {2019}
+}

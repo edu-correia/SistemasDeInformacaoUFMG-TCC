@@ -1,0 +1,21 @@
+@article{SINGH2026313,
+ abstract = {Background and motivation
+MicroRNAs (miRNAs) regulate gene expression and are critical to disease development and progression. Accurate miRNA sequence classification remains a key challenge due to short lengths, conserved motifs, and species variability. Although transformer models have shown promise, they often depend on generic tokenizers (e.g., k-mers, BPE) that disrupt biologically meaningful subsequences.
+Method
+We propose GenAI 4.0, which implements a novel technique called BioBPE, a biologically-informed extension of Byte-Pair Encoding that prioritizes the preservation of conserved miRNA motifs during vocabulary construction. Unlike frequency-only schemes, BioBPE incorporates a domain-specific weighting function into the merge scoring process to align tokenization with the biological signal. To evaluate its efficacy, we conducted a comprehensive benchmark across six transformer models using five different tokenization. Experiments were performed on binary and multiclass classification datasets from MirGeneDB v3.0.
+Results
+BioBPE-tokenized models achieved up to 8.6% improvement in classification accuracy and approximately 18–45% faster convergence to standard tokenizers. Statistical tests (paired t-tests, Wilcoxon) confirmed significance, and BioBPE achieved a mean motif preservation rate of approximately 92% across vocabulary sizes.
+Conclusions
+Our findings demonstrate that tokenization is a central determinant of success in biological sequence classification tasks, and not just a preprocessing step. By explicitly aligning token boundaries with biological structures, BioBPE bridges the gap between generic NLP tokenizers and domain-specific sequence modeling.},
+ author = {Jaskaran Singh and Narendra N. Khanna and Rajesh Singh and Laura E. Mantella and Amer M. Johri and Gavino Faa and Ekta Tiwari and John R. Laird and Mustafa Al-Maini and Esma R. Isenovic and Luca Saba and Jasjit S. Suri},
+ doi = {https://doi.org/10.1016/j.bbe.2026.02.005},
+ issn = {0208-5216},
+ journal = {Biocybernetics and Biomedical Engineering},
+ keyword = {miRNA classification, Transformer models, Byte-Pair Encoding (BPE), Tokenization, Biological motifs},
+ number = {2},
+ pages = {313-326},
+ title = {Robust and generalizable miRNA family classification using adaptive tokenization of genome sequences in transformer-based deep learning architectures},
+ url = {https://www.sciencedirect.com/science/article/pii/S0208521626000124},
+ volume = {46},
+ year = {2026}
+}

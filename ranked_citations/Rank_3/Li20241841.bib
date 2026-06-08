@@ -1,0 +1,16 @@
+@article{Li20241841,
+ abstract = {RAID (Redundant Array of Independent Disks) has been widely used to enhance read and write performance of existing storage systems. Existing software RAID do not fully utilize write performance of Serial interface SSDs (Solid State Drive). The most popular software RAID currently is Linux Multiple-Disks (MD), and the latest software RAID is StRAID. We observe that both of these software RAID methods lead to thread contention in multi-threaded mode, especially when applied to Serial interface SSDs. Multiple threads writing to same address can limit write performance. In this paper, we propose a stripe-queued and stripe-threaded merging I/O strategy. First, SSRAID segregates write requests across different stripes using a set of stripe-queues and stripe-threads to prevent interference between them. As a result, write thread contention in SSRAID is eliminated, allowing stripe-threads to maintain the highest efficiency of parallelism. Secondly, SSRAID can merge write requests from the same stripe-queue multiple times through stripe-thread, effectively reducing the number of additional write I/Os. Finally, SSRAID presents a stage buffer based on data merging. During partial stripe-write, write-induced read I/Os on the SSD are transformed into direct access to the stage buffer, effectively reducing write-induced read I/Os. Compared to StRAID, SSRAID improves average sequential write throughput by 86% and reduces average sequential write latency by 61% in the optimal case.  © 2024 IEEE.},
+ author = {Li, Peixuan and Xie, Ping and Cao, Qiang},
+ doi = {10.1109/TPDS.2024.3443083},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 0},
+ number = {10},
+ pages = {1841 - 1853},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SSRAID: A Stripe-Queued and Stripe-Threaded Merging I/O Strategy to Improve Write Performance of Serial Interface SSD RAID},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85201317141?origin=resultslist},
+ volume = {35},
+ year = {2024}
+}

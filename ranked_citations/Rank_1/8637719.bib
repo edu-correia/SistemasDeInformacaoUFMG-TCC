@@ -1,0 +1,14 @@
+@article{8637719,
+ abstract = {This paper presents a new algorithm for the fast, shared memory, multi-core computation of augmented contour trees on triangulations. In contrast to most existing parallel algorithms our technique computes augmented trees, enabling the full extent of contour tree based applications including data segmentation. Our approach completely revisits the traditional, sequential contour tree algorithm to re-formulate all the steps of the computation as a set of independent local tasks. This includes a new computation procedure based on Fibonacci heaps for the join and split trees, two intermediate data structures used to compute the contour tree, whose constructions are efficiently carried out concurrently thanks to the dynamic scheduling of task parallelism. We also introduce a new parallel algorithm for the combination of these two trees into the output global contour tree. Overall, this results in superior time performance in practice, both in sequential and in parallel thanks to the OpenMP task runtime. We report performance numbers that compare our approach to reference sequential and multi-threaded implementations for the computation of augmented merge and contour trees. These experiments demonstrate the run-time efficiency of our approach and its scalability on common workstations. We demonstrate the utility of our approach in data segmentation applications.},
+ author = {Gueunet, Charles and Fortin, Pierre and Jomier, Julien and Tierny, Julien},
+ doi = {10.1109/TPDS.2019.2898436},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Task analysis;Data visualization;Data analysis;Runtime;Parallel algorithms;Data structures;Scientific visualization;topological data analysis;task parallelism;multi-core architecture},
+ month = {Aug},
+ number = {8},
+ pages = {1889-1905},
+ title = {Task-Based Augmented Contour Trees with Fibonacci Heaps},
+ volume = {30},
+ year = {2019}
+}

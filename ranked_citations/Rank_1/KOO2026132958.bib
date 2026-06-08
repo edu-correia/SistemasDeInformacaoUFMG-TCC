@@ -1,0 +1,13 @@
+@article{KOO2026132958,
+ abstract = {On-device AI has received increasing attention due to its ability to provide personalized performance, reduce server load, and address privacy concerns. In this context, efforts have been made to deploy deep learning models on power-efficient hardware platforms, such as field-programmable gate arrays (FPGAs). Specifically, various pruning techniques have been devised to improve performance and energy consumption. However, prior pruning methods fail to achieve balanced hardware utilization, which limits actual performance gains. This paper proposes SPEED, a hardware-aware structured pruning framework integrated into FPGA-based convolutional neural network (CNN) accelerators. SPEED introduces a novel processing unit (PU)-aware kernel block pruning technique for balanced computation across a PU array. Additionally, it proposes an adaptive kernel merging technique to minimize information loss during pruning. Experiments on ResNet18, ResNet50, and YOLACT using ImageNet and Pascal VOC2012 datasets show that SPEED achieves comparable accuracy to software-based pruning methods while achieving higher throughput and lower latency, validated on two types of processing elements. Specifically, for ResNet18, SPEED removes 57.9% of parameters and 44.6% of FLOPs with only a 0.91% drop in Top-1 accuracy, and for ResNet50, it removes 73.2% of parameters and 66.0% of FLOPs with a 1.20% drop in Top-1 accuracy. FPGA benchmarking results show that SPEED efficiently converts reductions in floating-point operations into actual speedups, with little increase in hardware resource usage. When deployed on an FPGA board, SPEED improves FPS by 42.2% and enhances power efficiency by 42.7% compared to the baseline. Case studies in CNN classification and instance segmentation models demonstrate the effectiveness of SPEED as a practical pruning solution for FPGA-based CNN accelerators.},
+ author = {Kwanghyun Koo and Sunwoong Kim and Hyun Kim},
+ doi = {https://doi.org/10.1016/j.neucom.2026.132958},
+ issn = {0925-2312},
+ journal = {Neurocomputing},
+ keyword = {Neural network hardware, Accelerator architecture, Structured pruning, Field programmable gate arrays, SW-HW co-design},
+ pages = {132958},
+ title = {SPEED: Structured kernel block pruning with filter groups for efficient and elastic SW-HW co-design in FPGA-based CNN accelerators},
+ url = {https://www.sciencedirect.com/science/article/pii/S0925231226003553},
+ volume = {675},
+ year = {2026}
+}

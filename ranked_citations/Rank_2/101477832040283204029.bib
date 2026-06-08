@@ -1,0 +1,17 @@
+@article{10.14778/3204028.3204029,
+ abstract = {Node proximity queries are among the most common operations on network databases. A common measure of node proximity is random walk based proximity, which has been shown to be less susceptible to noise and missing data. Real-time processing of random-walk based proximity queries poses significant computational challenges for larger graphs with over billions of nodes and edges, since it involves solution of large linear systems of equations. Due to the importance of this operation, significant effort has been devoted to developing efficient methods for random-walk based node proximity computations. These methods either aim to speed up iterative computations by exploiting numerical properties of random walks, or rely on computation and storage of matrix inverses to avoid computation during query processing. Although both approaches have been well studied, the speedup achieved by iterative approaches does not translate to real-time query processing, and the storage requirements of inversion-based approaches prohibit their use on very large graph databases.We present a novel approach to significantly reducing the computational cost of random walk based node proximity queries with scalable indexing. Our approach combines domain graph-partitioning based indexing with fast iterative computations during query processing using Chebyshev polynomials over the complex elliptic plane. This approach combines the query processing benefits of inversion techniques with the memory and storage benefits of iterative approache. Using real-world networks with billions of nodes and edges, and top-k proximity queries as the benchmark problem, we show that our algorithm, I-Chopper, significantly outperforms existing methods. Specifically, it drastically reduces convergence time of the iterative procedure, while also reducing storage requirements for indexing.},
+ author = {Co\c{s}kun, Mustafa and Grama, Ananth and Koyut\"{u}rk, Mehmet},
+ doi = {10.14778/3204028.3204029},
+ issn = {2150-8097},
+ issue_date = {April 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {April},
+ number = {8},
+ numpages = {13},
+ pages = {840–852},
+ publisher = {VLDB Endowment},
+ title = {Indexed fast network proximity querying},
+ url = {https://doi.org/10.14778/3204028.3204029},
+ volume = {11},
+ year = {2018}
+}

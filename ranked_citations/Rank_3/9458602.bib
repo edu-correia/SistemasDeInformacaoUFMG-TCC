@@ -1,0 +1,14 @@
+@inproceedings{9458602,
+ abstract = {Key-value (KV) stores have become a major storage infrastructure on which databases, file systems, and other data management systems are built. To support efficient indexing and range search, the key-value items must be sorted. However, this sorting process can be excessively expensive. In the KV systems adopting the popular Log-Structured Merge Tree (LSM) structure or its variants, the write volume can be amplified by tens of times due to its repeated internal merge-sorting operation.In this paper we propose a KV store design that leverages relatively stable key distributions to bound the write amplification by a number as low as 4.15 in practice. The key idea is, instead of incrementally sorting KV items in the LSM’s hierarchical structure, it writes KV items right in place in an approximately sorted list, much like a bucket sort algorithm does. The design also makes it possible to keep most internal data reorganization operations off the critical path of read service. The so-called Write-in-place (Wip) scheme has been implemented with its source code publicly available. Experiment results show that WipDB improves write throughput by 3 to 8× (to around 1Mops/s on one Intel PCIe SSD) over state-of-the-art KV stores.},
+ author = {Zhao, Xingsheng and Jiang, Song and Wu, Xingbo},
+ booktitle = {2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE51399.2021.00125},
+ issn = {2375-026X},
+ keyword = {File systems;Databases;Conferences;MIMICs;Throughput;Data engineering;Approximation algorithms;key-value store;index;SSD;storage},
+ month = {April},
+ number = {},
+ pages = {1404-1415},
+ title = {WipDB: A Write-in-place Key-value Store that Mimics Bucket Sort},
+ volume = {},
+ year = {2021}
+}

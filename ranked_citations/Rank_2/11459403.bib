@@ -1,0 +1,14 @@
+@article{11459403,
+ abstract = {Complex event recognition (CER) refers to identifying specific patterns composed of several primitive events in event stores. Since full-scanning event stores to identify primitive events that hold query constraint conditions incurs costly I/O overhead, a mainstream and practical approach is to use index techniques to obtain these events. However, prior index-based approaches suffer from significant I/O and sorting overhead when processing the query with high predicate selectivity or long query window, which leads to high query latency. To address this issue, we propose ACER, a Range Bitmap-based index, to accelerate CER. First, ACER achieves a low index space overhead by grouping the events with the same type into a cluster and compressing the cluster data, reducing I/O overhead when reading indexes. Second, ACER builds Range Bitmaps for queried attributes and ensures that the events of each cluster in the index block are chronologically ordered. Then, ACER can always obtain ordered query results for a specific event type through merge operations, avoiding sorting overhead. Most importantly, ACER avoids unnecessary disk accesses in indexes and events via window-wise filtering, thus reducing the I/O overhead further. Lastly, we propose an enhanced version of ACER (ACER-E) by optimizing the read/write operation of index blocks and variable query order. Our extensive experiments demonstrate that ACER and ACER-E reduce the query latency by up to one order of magnitude compared with SOTA techniques.},
+ author = {Liu, Shizhe and Dai, Haipeng and Song, Shaoxu and Li, Meng and Zhang, Yuemeng and Wang, Hancheng and Zhang, Du and Gu, Rong and Chen, Guihai},
+ doi = {10.1109/TKDE.2026.3679736},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Feeds;Filtering;Filters;Circuits and systems;Event detection;Radio access networks;Regional area networks;Wireless sensor networks;Communication systems;Internet;Complex event recognition;bitmap indexes;window-wise filtering},
+ month = {June},
+ number = {6},
+ pages = {3385-3400},
+ title = {Accelerating Complex Event Recognition via Range Bitmap-Based Indexes With Window-Wise Filtering},
+ volume = {38},
+ year = {2026}
+}

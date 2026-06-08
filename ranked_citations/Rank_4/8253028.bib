@@ -1,0 +1,14 @@
+@inproceedings{8253028,
+ abstract = {Porting applications to CPU-GPU architecture remains a challenge to average programmers, which have to explicitly manage data transfers between the host and device memories. In this paper, we proposed an approach to optimize the data transfer operations between CPU and GPU by analysing the data dependency and reorganizing source code. We found that not only the data transmission through PCIe bus is time consuming, but also the preparation and cleaning work for data transfer operations. This cost will be dramatically increased if the program contains many kernel calls. Therefore, we firstly defined and analyzed the data copy in (out) path for each data transfer operation utilizing compiler techniques. The data copy in or copy out operation can be migrated along with its data copy path. Multiple data transfer operations could be merged into one operation if they are of the same transfer direction and their data copy paths have overlap. Migrating and merging multiple data transfer operations could obviously reduce the number of data exchange times and the system resource consumption.},
+ author = {Fu, Cong and Wang, Zhenhua and Zhai, Yanlong},
+ booktitle = {2017 16th International Symposium on Distributed Computing and Applications to Business, Engineering and Science (DCABES)},
+ doi = {10.1109/DCABES.2017.13},
+ issn = {2473-3636},
+ keyword = {Data transfer;Kernel;Graphics processing units;Merging;Optimization;Memory management;Bandwidth;GPU;data transfer;optimization;code migration;merging},
+ month = {Oct},
+ number = {},
+ pages = {23-26},
+ title = {A CPU-GPU Data Transfer Optimization Approach Based on Code Migration and Merging},
+ volume = {},
+ year = {2017}
+}

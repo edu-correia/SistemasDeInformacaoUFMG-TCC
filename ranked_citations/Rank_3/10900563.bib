@@ -1,0 +1,14 @@
+@article{10900563,
+ abstract = {Image segmentation represents a fundamental step in analyzing very high-spatial-resolution (VHR) remote sensing imagery. Its objective is to partition an image into segments that best match with geo-objects. However, the diverse appearances of geospatial objects often lead to interobject homogeneity and intraobject heterogeneity. Existing segmentation methods often struggle to accurately segment geo-objects with varying shapes and scales. To address these challenges, we propose DeepMerge, a novel method that integrates deep learning and region adjacency graphs (RAGs) to accurately segment complete geo-objects in large VHR images. DeepMerge begins with an initial over-segmentation of the image and then iteratively merges similar regions to achieve complete geo-object segmentation. A deep learning model is employed to learn the similarity between adjacent superpixel pairs. This approach only requires labels indicating whether adjacent superpixels belong to the same geo-object eliminating the need for object-level annotations, enabling weakly supervised segmentation. A cross-scale module is incorporated to capture multiscale information, enhancing the representation of superpixels. In addition, the feature distances between neighboring super-pixels are deemed as scale parameters (thresholds) to control the merging procedure, thus yielding an interpretable, predictable, stable, and optimal scale parameter 0.5. DeepMerge can achieve high segmentation accuracy in a weakly supervised manner, which is validated on large-scale remote sensing images of 0.55-m resolution covering an area of 5660 km2. The experimental results demonstrate that DeepMerge achieves the highest F value (0.9552) and the lowest total error (TE) (0.0827), accurately segmenting geo-objects of varying sizes and outperforming all competing methods.},
+ author = {Lv, Xianwei and Persello, Claudio and Li, Wangbin and Huang, Xiao and Ming, Dongping and Stein, Alfred},
+ doi = {10.1109/TGRS.2025.3544549},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Image segmentation;Merging;Remote sensing;Training;Accuracy;Data mining;Feature extraction;Deep learning;Artificial intelligence;Training data;Deep learning;image segmentation;region adjacency graph (RAG);region merging;scale parameter interpretability},
+ month = {},
+ number = {},
+ pages = {1-20},
+ title = {Deep Merge: Deep-Learning-Based Region Merging for Remote Sensing Image Segmentation},
+ volume = {63},
+ year = {2025}
+}

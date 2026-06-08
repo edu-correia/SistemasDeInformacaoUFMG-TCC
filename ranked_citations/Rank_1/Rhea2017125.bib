@@ -1,0 +1,15 @@
+@conference{Rhea2017125,
+ abstract = {We present LittleTable, a relational database that CiscoMeraki has used since 2008 to store usage statistics, event logs, and other time-series data from our customers' devices. LittleTable optimizes for time-series data by clustering tables in two dimensions. By partitioning rows by timestamp, it allows quick retrieval of recent measurements without imposing any penalty for retaining older history. By further sorting within each partition by a hierarchically-delineated key, LittleTable allows developers to optimize each table for the specific patterns with which they intend to access it. LittleTable further optimizes for time-series data by capitalizing on the reduced consistency and durability needs of our applications, three of which we present here. In particular, our applications are single-writer and append-only. At most one process inserts a given type of data collected from a given device, and applications never update rows written in the past, simplifying both lock management and crash recovery. Our most recently written data is also recoverable, as it can generally be re-read from the devices themselves, allowing LittleTable to safely lose some amount of recentlywritten data in the event of a crash. As a result of these optimizations, LittleTable is fast and efficient, even on a single processor and spinning disk. Querying an uncached table of 128-byte rows, it returns the first matching row in 31 ms, and it returns 500,000 rows/second thereafter, approximately 50% of the throughput of the disk itself. Today Meraki stores 320 TB of data across several hundred LittleTable servers system-wide. © 2017 Copyright held by the owner/author(s).},
+ author = {Rhea, Sean and Wang, Eric and Wong, Edmund and Atkins, Ethan and Storer, Nat},
+ doi = {10.1145/3035918.3056102},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 42},
+ pages = {125 - 138},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LittleTable: A time-series database and its uses},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85021251301?origin=resultslist},
+ volume = {Part F127746},
+ year = {2017}
+}

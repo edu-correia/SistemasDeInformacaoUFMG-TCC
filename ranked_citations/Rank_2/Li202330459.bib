@@ -1,0 +1,15 @@
+@article{Li202330459,
+ abstract = {Key-value store, a fundamental component in a variety of modern data-intensive applications, can benefit from the emerging persistent memory (PM) to achieve high performance. Recent research proposes hybrid PM-DRAM key-value stores, which persist key-value pairs to PM in a log-structured approach for efficient storage and maintain a volatile hash index in DRAM for fast indexing. However, they fail to achieve high performance under update-intensive workloads due to the unawareness of PM's characteristics. We propose Eukv, a hybrid PM-DRAM key-value store that supports efficient updates. Eukv: 1) leverages out-of-place updates and lazy deletions to reduce small random PM reads and writes; 2) performs concurrency control only in a volatile hash index to further reduce small random PM reads and writes introduced by persistent lock operations; 3) uses cacheline-aligned writes to take full advantage of PM's write performance; 4) improves garbage collection efficiency through hot and cold data separation; 5) employs multi-threaded garbage collection technology to reduce the impact of inefficient garbage collection on updates at high-capacity utilization. We conduct extensive evaluations on an 18-core machine equipped with Intel Optane DC Persistent Memory Modules. Experimental results demonstrate that Eukv obtains up to 5.6× speedup than the state-of-the-art hybrid PM-DRAM key-value store.  © 2013 IEEE.},
+ author = {Li, Zhengtao and Chen, Jianxi},
+ doi = {10.1109/ACCESS.2023.3261461},
+ journal = {IEEE Access},
+ note = {Cited by: 1; All Open Access; Gold Open Access; Green Open Access},
+ pages = {30459 - 30472},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Eukv: Enabling Efficient Updates for Hybrid PM-DRAM Key-Value Store},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85151535340?origin=resultslist},
+ volume = {11},
+ year = {2023}
+}

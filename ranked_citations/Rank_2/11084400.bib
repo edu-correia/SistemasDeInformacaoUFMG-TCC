@@ -1,0 +1,14 @@
+@inproceedings{11084400,
+ abstract = {We introduce a fast algorithm designed for Bounding Box Hierarchy (BBH), a hierarchical tree structure wherein leaf nodes encapsulate sets of original bounding boxes, and non-leaf nodes represent merging operations of their children. A straightforward algorithm employs a bottom-up strategy in a brute force approach to construct the tree, entailing the iterative merging of candidate pairs with the minimum distance until reaching the root node. A pivotal challenge inherent to this brute force paradigm lies in its computational bottleneck, as determining the candidate pair with the minimum distance necessitates a global operation, rendering it highly computationally intensive. Our novel approach strategically circumvents this bottleneck by introducing the computation of approximate minimum distance pairs within local neighborhoods. By using the transformation of 2D bounding boxes into 1D space through Morton coding, the computational cost associated with identifying candidate bounding boxes for merging is significantly diminished, reducing it from O(N2) to O(logN). Compared with brute force approach which has the overall time complexity O(N3), our algorithm is only O(Nlog(N). The acceleration is critical for computation sensitive applications, particularly in embedded systems and mobile devices. Our approach also supports multi-class bounding box inputs, making it particularly useful for computer vision tasks where bounding boxes are inherently associated with class labels. We validate our algorithm on both real world data and simulated data.},
+ author = {Zhu, Zhe and Jha, Sumit and Kim, Joonsoo and Gupta, Arshita and Bau, Tien C.},
+ booktitle = {2025 IEEE International Conference on Image Processing (ICIP)},
+ doi = {10.1109/ICIP55913.2025.11084400},
+ issn = {2381-8549},
+ keyword = {Computer vision;Image coding;Embedded systems;Merging;Force;Rendering (computer graphics);Mobile handsets;Iterative algorithms;Computational efficiency;Time complexity;Bounding Box Hierarchy;Morton Coding},
+ month = {Sep.},
+ number = {},
+ pages = {193-198},
+ title = {Fast Bounding Box Hierarchy},
+ volume = {},
+ year = {2025}
+}

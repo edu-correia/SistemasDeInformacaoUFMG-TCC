@@ -1,0 +1,14 @@
+@inproceedings{10693654,
+ abstract = {The Log-Structured Merge Tree (LSM Tree) is widely employed in key-value stores, ensuring efficient database read performance at the expense of increased write stall. While this stall enhances read performance, it notably degrades write efficiency. This paper examines the write stall phenomenon in LSM Tree-based key-value stores and proposes a solution: Key Space Partitioned RocksDB. This architecture comprises a MemTable backed by Storage DRAM, the Key Space Partitioned MemTable, and the Key Space Partitioned LSM Tree. Key Space Partitioned RocksDB demonstrates a $1.7\times$ enhancement in YCSB-A throughput compared to conventional RocksDB, a $3.5\times$ reduction in average GET(key) latency, and a $1.2 \times$ decrease in average PUT (key, value) latency.},
+ author = {Lim, Seungho and Yoo, Seung Won and Oh, Joontaek and Jeong, Wonseb and Song, Hyunsub and Song, Hyeonho and Lee, Donghun and Won, Youjip},
+ booktitle = {2024 13th Non-Volatile Memory Systems and Applications Symposium (NVMSA)},
+ doi = {10.1109/NVMSA63038.2024.10693654},
+ issn = {2575-257X},
+ keyword = {Degradation;Limiting;Fluctuations;Costs;Nonvolatile memory;Extraterrestrial phenomena;Databases;Random access memory;Throughput;Compaction;LSM Tree;Key Value Store;CXL;Storage},
+ month = {Aug},
+ number = {},
+ pages = {1-6},
+ title = {Key-Space Partitioned LSM Tree for CMM-H},
+ volume = {},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@article{9321162,
+ abstract = {OpenFlow is a widely adopted dataplane protocol in software-defined networking (SDN). However, the expansion of supported match fields in OpenFlow brings additional pressure to the storage space of ternary content addressable memory (TCAM) in physical device, since the arbitrary wildcard support in the match field of OpenFlow relies heavily on TCAM for looking-up speed. In this paper, a mathematical model aiming at the storage space reduction of the flow table in TCAM is presented, which is named as RETCAM. RETCAM analyzes the relationships among all the match fields and then categorize the redundancy among different fields into three types. Based on the three redundancy types, three compression algorithms named as inter-field merge, field mapping and intra-field compression are presented. The outcomes of each compression algorithm are flow entries with smaller bit-width which is sent to TCAM for flow matching. In this way, the flexibility of OpenFlow is not harmed, thus maintaining the function integrity of the original flow table. Simulation at the end shows that RETCAM saves almost about 60% of TCAM space for a given flow table with no damage to the function integrity of OpenFlow, and the compression performance stands stable with the increase of flow table size.},
+ author = {Zhang, Chaoqin and Sun, Penghao and Hu, Guangwu and Zhu, Liang},
+ doi = {10.23919/JCN.2020.000033},
+ issn = {1976-5541},
+ journal = {Journal of Communications and Networks},
+ keyword = {Routing;Random access memory;IP networks;Switches;Mathematical model;Hardware;Sun;Compression;OpenFlow;SDN;storage space optimization;TCAM},
+ month = {Dec},
+ number = {6},
+ pages = {484-492},
+ title = {RETCAM: An efficient TCAM compression model for flow table of OpenFlow},
+ volume = {22},
+ year = {2020}
+}

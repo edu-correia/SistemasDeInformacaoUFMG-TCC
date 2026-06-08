@@ -1,0 +1,15 @@
+@article{Kim2025666,
+ abstract = {Log-Structured Merge (LSM) tree-based Key-Value Stores (KVSs) are widely adopted for their high performance in write-intensive environments, but they often face performance degradation due to write stalls during compaction. Prior solutions, such as regulating I/O traffic or using multiple compaction threads, can cause unexpected drops in throughput or increase host CPU usage, while hardware-based approaches using FPGA, GPU, and DPU aimed at reducing compaction duration introduce additional hardware costs. In this study, we propose KVACCEL, a novel hardware-software co-design framework that bypasses write stalls by leveraging a dual-interface SSD. KVACCEL allocates logical NAND flash space to support both block and key-value interfaces, using the key-value interface as a temporary write buffer during write stalls. This strategy significantly reduces write stalls, optimizes resource usage, and ensures consistency between the host and device by implementing an in-device LSM-based write buffer with an iterator-based range scan mechanism. Our extensive evaluation shows that for write-intensive workloads, KVACCEL outperforms ADOC by up to 17% in terms of throughput and performance-to-CPU-utilization efficiency. For mixed read-write workloads, both demonstrate comparable performance. © 2025 IEEE.},
+ author = {Kim, Kihwan and Chung, Hyunsun and Ahn, Seonghoon and Park, Junhyeok and Jamil, Safdar and Byun, Hongsu and Lee, Myungcheol and Choi, Jinchun and Kim, Youngjae},
+ doi = {10.1109/IPDPS64566.2025.00065},
+ journal = {Proceedings of the IEEE International Parallel and Distributed Processing Symposium, IPDPS},
+ note = {Cited by: 0},
+ number = {2025},
+ pages = {666 - 677},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {KVACCEL: A Novel Write Accelerator for LSM-Tree-Based KV Stores with Host-SSD Collaboration},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105013082816?origin=resultslist},
+ year = {2025}
+}

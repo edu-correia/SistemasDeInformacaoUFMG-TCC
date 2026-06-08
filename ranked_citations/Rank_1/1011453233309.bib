@@ -1,0 +1,18 @@
+@article{10.1145/3233309,
+ abstract = {In the near future, GPUs are expected to have hardware support for real-time ray tracing in order to, e.g., help render complex lighting effects in video games and enable photorealistic augmented reality. One challenge in real-time ray tracing is dynamic scene support, that is, rebuilding or updating the spatial data structures used to accelerate rendering whenever the scene geometry changes. This paper proposes PLOCTree, an accelerator for tree construction based on the Parallel Locally-Ordered Clustering (PLOC) algorithm. Tree construction is highly memory-intensive, thus for the hardware implementation, the algorithm is rewritten into a bandwidth-economical form which converts most of the external memory traffic of the original software-based GPU implementation into streaming on-chip data traffic. As a result, the proposed unit is 3.9 times faster and uses 7.7 times less memory bandwidth than the GPU implementation. Compared to state-of-the-art hardware builders, PLOCTree gives a superior performance-quality tradeoff: it is nearly as fast as a state-of-the-art low-quality linear builder, while producing trees of similar Surface Area Heuristic (SAH) cost as a comparatively expensive binned SAH sweep builder.},
+ address = {New York, NY, USA},
+ articleno = {35},
+ author = {Viitanen, Timo and Koskela, Matias and J\"{a}\"{a}skel\"{a}inen, Pekka and Tervo, Aleksi and Takala, Jarmo},
+ doi = {10.1145/3233309},
+ issue_date = {August 2018},
+ journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+ keyword = {bounding volume hierarchy, dynamic scene, graphics hardware, ray tracing},
+ month = {August},
+ number = {2},
+ numpages = {19},
+ publisher = {Association for Computing Machinery},
+ title = {PLOCTree: A Fast, High-Quality Hardware BVH Builder},
+ url = {https://doi.org/10.1145/3233309},
+ volume = {1},
+ year = {2018}
+}

@@ -1,0 +1,13 @@
+@article{DATTA2026113868,
+ abstract = {Glioblastoma survival prediction is a vital challenge in brain tumor research, yet most existing approaches still use isolated or staged pipelines that separate tumor segmentation, feature design, and survival prediction. These staged setups often carry errors from one step to the next resulting in error accumulation, it depends on time-consuming handcrafted features, and fails to link early outputs directly to patient survival. To overcome these issues, we introduce a student–teacher framework that combines volumetric tumor segmentation and survival prediction through knowledge distillation. We introduce a segmentation framework which builds on Shifted Windows UNet Transformer (Swin-UNETR) backbone with attention modules and multi-scale pooling to segment detailed tumor structure from Magnetic Resonance Imaging (MRI) scans. We then use a multimodal Transformer to merge these imaging features with segmentation maps and patient data such as age and surgical resection. By employing an Exponential Moving Average (EMA) as the teacher of the Multimodal Transformer student, our approach transfers a stable risk signal while learning image patterns that connect with clinical outcomes. This student–teacher training eliminates the need for handcrafted radiomics and avoids the issues observed in staged pipelines. Overall, our student–teacher design frames survival prediction as a knowledge distillation problem, offering a more direct and meaningful path from raw scans to patient survival prediction. The code for our work is available here.},
+ author = {Ashis Datta and Shashwat Sarkar and Aaditya Lochan Sharma and Palash Ghosal},
+ doi = {https://doi.org/10.1016/j.engappai.2026.113868},
+ issn = {0952-1976},
+ journal = {Engineering Applications of Artificial Intelligence},
+ keyword = {Knowledge distillation, Survival prediction, Multimodal transformer, Medical segmentation, Exponential moving average},
+ pages = {113868},
+ title = {Multimodal exponential moving average-guided representation for integrated tumor-segmentation and survival prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0952197626001491},
+ volume = {167},
+ year = {2026}
+}

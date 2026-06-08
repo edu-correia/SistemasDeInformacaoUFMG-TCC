@@ -1,0 +1,15 @@
+@conference{Kuper2019,
+ abstract = {To guard against machine failures, modern internet services store multiple replicas of the same application data within and across data centers, which introduces the problem of keeping geo-distributed replicas consistent with one another in the face of network partitions and unpredictable message latency. To avoid costly and conservative synchronization protocols, many real-world systems provide only weak consistency guarantees (e.g., eventual, causal, or PRAM consistency), which permit certain kinds of disagreement among replicas. There has been much recent interest in language support for specifying and verifying such consistency properties. Although these properties are usually beyond the scope of what traditional type checkers or compiler analyses can guarantee, solver-aided languages are up to the task. Inspired by systems like Liquid Haskell [43] and Rosette [42], we believe that close integration between a language and a solver is the right path to consistent-by-construction distributed applications. Unfortunately, verifying distributed consistency properties requires reasoning about transitive relations (e.g., causality or happens-before), partial orders (e.g., the lattice of replica states under a convergent merge operation), and properties relevant to message processing or API invocation (e.g., commutativity and idempotence) that cannot be easily or efficiently carried out by general-purpose SMT solvers that lack native support for this kind of reasoning. We argue that domain-specific SMT-based tools that exploit the mathematical foundations of distributed consistency would enable both more efficient verification and improved ease of use for domain experts. The principle of exploiting domain knowledge for efficiency and expressivity that has borne fruit elsewhere – such as in the development of high-performance domain-specific languages that trade off generality to gain both performance and productivity – also applies here. Languages augmented with domain-specific, consistency-aware solvers would support the rapid implementation of formally verified programming abstractions that guarantee distributed consistency. In the long run, we aim to democratize the development of such domain-specific solvers by creating a framework for domain-specific solver development that brings new theory solver implementation within the reach of programmers who are not necessarily SMT solver internals experts. © Lindsey Kuper and Peter Alvaro.},
+ author = {Kuper, Lindsey and Alvaro, Peter},
+ doi = {10.4230/LIPIcs.SNAPL.2019.10},
+ journal = {Leibniz International Proceedings in Informatics, LIPIcs},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Toward domain-specific solvers for distributed consistency},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85069522787?origin=resultslist},
+ volume = {136},
+ year = {2019}
+}

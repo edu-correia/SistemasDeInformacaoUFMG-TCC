@@ -1,0 +1,14 @@
+@inproceedings{10992365,
+ abstract = {In this work, we propose the EarlyPR framework that identifies and predicts potential pull-request (PR) contri-butions from an open source software (OSS) project's forks, which can potentially improve the efficiency of the fork-and-pull based development in OSS projects by supporting early warning of duplicated and rejected contributions, and detection of lost contributions. Unlike traditional, PR-based studies that rely on the descriptions and contents of PRs provided by their creators, which are only available after the PRs are created, EarlyPR makes predictions before the creation of PRs by mining the forks' commit history. EarlyPR's task is challenging because of the explosive number of commit subsets in a fork's commit history that may form PRs, and the absence of resulting, real PR-related information. To tackle the challenges, we adopt the state-of-the-art, Transformer-based architecture to extract rich statistical and content information from the forks and their commits to support the prediction of potential PR contributions. And to make the algorithms scalable, we devise a TemporalFilter to find candidate PRs by mimicking the real-world processes of picking subsets of commits from a fork's commit history when creating PRs. Experimental results on real-world OSS project data suggest that EarlyPR is effective in predicting PRs, which are essentially sets of commits selected from forks to compose these PRs. Experimental results obtained using real-world OSS projects' and their forks' data suggest that EarlyPR is effective by achieving a hitting rate of 0.790 and a missing rate of 0.367 by matching the predicted and real PRs under a stringent criterion of IoU > 0.5. We further demonstrate that we can forecast the merging of PRs based on EarlyPR's predictions with an accuracy of 70.8%. In summary, the proposed approach can potentially improve the efficiency of the fork-and-pull based OSS development by making accurate and early predictions of PR contributions from the distributed, and often independently, developed forks.},
+ author = {Wu, Xiangchen and Wang, Liang and Tao, Xianping},
+ booktitle = {2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+ doi = {10.1109/SANER64311.2025.00060},
+ issn = {2640-7574},
+ keyword = {Deep learning;Accuracy;Prevention and mitigation;Merging;Transformers;Feature extraction;Prediction algorithms;Explosives;History;Open source software;Open Source Software;Fork-and-Pull Based Development;Early Prediction;Transformer},
+ month = {March},
+ number = {},
+ pages = {575-586},
+ title = {EarlyPR: Early Prediction of Potential Pull-Requests from Forks},
+ volume = {},
+ year = {2025}
+}

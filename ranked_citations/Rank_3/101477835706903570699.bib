@@ -1,0 +1,17 @@
+@article{10.14778/3570690.3570699,
+ abstract = {To sustain the input rate of high-throughput streams, modern stream processing systems rely on parallel execution. However, skewed data yield imbalanced load assignments and create stragglers that hinder scalability Deciding on a static partitioning for a given set of "hot" keys is not sufficient as these keys are not known in advance, and even worse, the data distribution can change unpredictably. Existing algorithms either optimize for a specific distribution or, in order to adapt, assume a centralized partitioner that processes every incoming tuple and observes the whole workload. However, this is not realistic in a distributed environment, where multiple parallel upstream operators exist, as the centralized partitioner itself becomes the bottleneck and limits scalabilityIn this work, we propose Dalton: a lightweight, adaptive, yet scalable partitioning operator that relies on reinforcement learning. By memoizing state and dynamically keeping track of recent experience, Dalton: i) adjusts its policy at runtime and quickly adapts to the workload, ii) avoids redundant computations and minimizes the per-tuple partitioning overhead, and iii) efficiently scales out to multiple instances that learn cooperatively and converge to a joint policy Our experiments indicate that Dalton scales regardless of the input data distribution and sustains 1.3X - 6.7X higher throughput than existing approaches.},
+ author = {Zapridou, Eleni and Mytilinis, Ioannis and Ailamaki, Anastasia},
+ doi = {10.14778/3570690.3570699},
+ issn = {2150-8097},
+ issue_date = {November 2022},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {14},
+ pages = {491–504},
+ publisher = {VLDB Endowment},
+ title = {Dalton: Learned Partitioning for Distributed Data Streams},
+ url = {https://doi.org/10.14778/3570690.3570699},
+ volume = {16},
+ year = {2022}
+}

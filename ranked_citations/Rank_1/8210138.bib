@@ -1,0 +1,14 @@
+@article{8210138,
+ abstract = {In this article, we present an efficient construction of the Game Description Language (GDL) interpreter. GDL is a first-order logic language used in the General Game Playing (GGP) framework. Syntactically, the language is a subset of Datalog and Prolog, and like those two, is based on facts and rules. Our aim was to achieve higher execution speed than anyone's of the currently available tools, including other Prolog interpreters applied to GDL. Speed is a crucial factor of the state space search methods used by most GGP agents, since the faster the GDL reasoner, the more game states can be evaluated in the allotted time. The cornerstone of our interpreter is the resolution tree which reflects the dependencies between rules. Our paradigm was to expedite any heavy workload to the preprocessing step to optimize the real-time usage. The proposed enhancements effectively maintain a balance between the time needed to build the internal data representation and the time required for data analysis during actual play. Therefore we refrain from using tree-based dictionary approaches such as TRIE to store the results of logical queries in favour of a memory-friendly linear representation and dynamic filters to reduce space complexity. Experimental results show that our interpreter outperforms the two most popular Prolog interpreters used by GGP programs: Yet Another Prolog (YAP) and ECLiPSe, respectively, in 22 and 26 games, out of the 28 tested. We give some insights into possible reasons for the edge of our approach over Prolog.},
+ author = {Świechowski, Maciej and Mańdziuk, Jacek},
+ doi = {10.1093/logcom/exu058},
+ issn = {1465-363X},
+ journal = {Journal of Logic and Computation},
+ keyword = {First-order logic;general game playing;game description language;prolog;logical programming},
+ month = {Oct},
+ number = {5},
+ pages = {1697-1727},
+ title = {Fast interpreter for logical reasoning in general game playing},
+ volume = {26},
+ year = {2016}
+}

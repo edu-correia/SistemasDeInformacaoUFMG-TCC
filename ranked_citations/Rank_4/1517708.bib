@@ -1,0 +1,14 @@
+@inproceedings{1517708,
+ abstract = {In this paper, we study the use of semantic information to improve performance of transparent query caching for dynamic content Web sites. We observe that in dynamic content Web applications, the most recently inserted items are also the ones that register the highest activity. For example, the newest books in a bookstore are also the ones more frequently browsed and bought. Hence, assuming repeatable queries, a particular read-only query response is likely to incrementally change as new rows are added to the queries tables. We avoid the cached query response invalidations that would otherwise occur due to the addition of new items by keeping the newly inserted rows in small temporary tables. This allows us to reuse cached responses for partial coverage of query results. A query result is then obtained from merging an existing cached response with one or more lightweight residual query results that involve the temporary tables. In addition, we enhance our cache with other partial coverage techniques based on per-query semantic information such as sub-range queries for all queries that match a specific template. We implement semantic query caching on top of an existing template-based cache with column-based invalidations. Our evaluation is based on a dynamic content site using the Apache Web server with Tomcat Java servlets and the MySQL relational database. We use the industry-standard TPC-W e-commerce benchmark as our benchmark application. We conclude that augmenting transparent query caching with the ability to retrieve partial results from the cache improves performance substantially in terms of latency and to a lesser extent in terms of hit-rate and throughput.},
+ author = {Soundararajan, G. and Amza, C.},
+ booktitle = {International Workshop on Data Engineering Issues in E-Commerce},
+ doi = {10.1109/DEEC.2005.25},
+ issn = {},
+ keyword = {Books;Merging;Delay;Application software;Web server;Java;Relational databases;Industrial relations;Throughput;Programming profession},
+ month = {April},
+ number = {},
+ pages = {132-138},
+ title = {Using semantic information to improve transparent query caching for dynamic content Web sites},
+ volume = {},
+ year = {2005}
+}

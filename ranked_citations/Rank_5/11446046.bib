@@ -1,0 +1,14 @@
+@inproceedings{11446046,
+ abstract = {Model merging enables efficient multi-task models by combining task-specific fine-tuned checkpoints. However, storing multiple task-specific checkpoints requires significant memory, limiting scalability and restricting model merging to larger models and diverse tasks. In this paper, we propose quantizing task vectors (i.e., the difference between pre-trained and fine-tuned checkpoints) instead of quantizing fine-tuned checkpoints. We observe that task vectors exhibit a narrow weight range, enabling lowprecision quantization ($\leq 4$ bit) within existing task vector merging frameworks. To further mitigate quantization errors within ultra-low bit precision (e.g., 2 bit), we introduce Residual Task Vector Quantization, which decomposes the task vector into a base vector and offset component. We allocate bits based on quantization sensitivity, ensuring precision while minimizing error within a memory budget. Experiments on image classification and dense prediction show our method maintains or improves model merging performance while using only 8 % of the memory required for full-precision checkpoints. Our code is available at https://aim-skku.github.io/TVQ/.},
+ author = {Kim, Youngeun and Lee, Seunghwan and Jung, Aecheon and Ryu, Bogon and Hong, Sungeun},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01870},
+ issn = {2380-7504},
+ keyword = {Through-silicon vias;Integrated circuits;Communications technology;Information and communication technology;Internet of Things;Protocols;Communication systems;Internet;HTTP;Over-the-top media services;model merging;multi-task learning;task vector quantization;weight quantization},
+ month = {Oct},
+ number = {},
+ pages = {20105-20115},
+ title = {Task Vector Quantization for Memory-Efficient Model Merging},
+ volume = {},
+ year = {2025}
+}

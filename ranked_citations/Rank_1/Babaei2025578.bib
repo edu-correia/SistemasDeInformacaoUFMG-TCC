@@ -1,0 +1,14 @@
+@conference{Babaei2025578,
+ abstract = {X-ray coronary angiography remains the clinical gold standard for visualizing coronary lumen but presents major challenges for automated analysis: low vessel contrast, overlapping anatomy, catheter occlusion, breathing/heartbeat motion and extremely thin branching vessels that fracture easily in segmentation maps. To address these issues we propose ATFNet (Attentive Temporal Fusion Network), a compact UNet++-inspired architecture that ingests short temporal stacks (four successive frames) and fuses motion and appearance cues into a single 2-D prediction. Key components are (i) SATS (Spatial Attention Temporal Squeeze), a per-frame directional spatial attention and learned temporal fusion that compresses four frames into a channel-recalibrated 2-D representation; (ii) SE_ResBlock3D/2D units that provide residual learning with squeeze-and-excitation attention in the 3D encoder and 2D decoder; (iii) DSF (Deep Supervision Fusion), which combines coarse (spatial merge) and attentive (channel-reweighted) fine kernels from multiple decoder depths into one robust output; and (iv) a topology-aware StructuredSparsityLoss (BCE-Dice base + multi-scale tree norm) together with the Lion optimizer and scheduler to stabilise and accelerate training on modest clinical data. On a manually annotated clinical XCA set, ATFNet produces noticeably more continuous, less fragmented vessel masks and improved temporal stability compared with single-frame baselines; ablation studies confirm that SATS, DSF, SE-Res blocks and the Lion optimizer each contribute to the observed gains. These results indicate that compact, attention-augmented temporal fusion, combined with a tree-aware loss, can substantially improve coronary vessel continuity and segmentation fidelity in angiographic sequences. © 2025 IEEE.},
+ author = {Babaei, Pouya and Almasganj, Farshad},
+ doi = {10.1109/ICBME68496.2025.11392168},
+ journal = {32nd National and 10th International Iranian Conference on Biomedical Engineering, ICBME 2025},
+ note = {Cited by: 0},
+ pages = {578 - 584},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Multi-Frame Coronary Vessel Segmentation in X-Ray Angiography},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105036947047?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11062760,
+ abstract = {Log-Structured Merge Tree(LSM-tree) based key-value(KV) stores have been widely used in modern databases like LevelDB and RocksDB. To balance the read and write performance, the LSM-tree structure manages KV items on disk into levels and introduces compaction operations to periodically reorganize them. However, compaction involves huge number of I/O operations and computational overhead, compromising system performance and resulting in severe I/Oamplification. We note that these I/O amplifications are closely related to the fact that the LSM-tree based KV store ignores data attributes in data placement. In this paper, we propose a data attribute-aware LSM-tree(ALSM) key-value store optimization scheme. In ALSM, we segregate KV items with different data attributes, such as hotness and sparsity, thus reducing unnecessary data rewriting during compaction. Our evaluation results based on the YCSB workloads shows that ALSM gain up to 76.9% higher throughput 44.13% lower average latency and 43.76% lower write amplification than the standard LevelDB implementation.},
+ author = {Shen, Zhaoyan and Yu, Dehao and Wei, Qian and Zhang, Kai and Zhang, Zaigui and Zhang, Liqiang and Zhao, Mengying},
+ booktitle = {2024 International Conference on Meta Computing (ICMC)},
+ doi = {10.1109/ICMC60390.2024.00013},
+ issn = {},
+ keyword = {Databases;System performance;Benchmark testing;Throughput;Compaction;Optimization;Standards;Periodic structures;KV Store;LSM-tree;I/O Amplification},
+ month = {June},
+ number = {},
+ pages = {54-63},
+ title = {ALSM: An Attribute-Aware LSM-Tree Based Key-Value Store to Reduce I/O Amplification},
+ volume = {},
+ year = {2024}
+}

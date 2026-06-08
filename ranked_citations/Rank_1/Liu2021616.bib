@@ -1,0 +1,15 @@
+@conference{Liu2021616,
+ abstract = {Bloom filter is an efficient technique to improve query performance in LSM-tree-based databases, such as RocksDB, HBase, and Cassandra. However, the original Bloom filter uses a fixed false positive rate (FPR), which makes it inefficient for mixed queries that involve both point and range queries. To solve this problem, in this paper, we present an improved Bloom filter called RoBF (Range-Query-Oriented Bloom Filter), which uses a mixture of Bloom filters and can process mixed queries on LSM-tree efficiently. We design an efficient algorithm for generating the solution based on the query distribution. We compare our proposal with the trie-based filter and find out that each has its own advantages for various scenarios. Therefore, we propose to use different filters with varied sizes for different levels on LSM-tree. Following this idea, we present an algorithm to generate specific filters with a specific size for different levels on LSM-tree to optimize the performance of mixed queries under limited memory space. We conduct comparative experiments and compare the proposed RoBF with various competitors, and the results show that RoBF can improve the performance of evaluating mixed queries by up to 6x to 30x, compared to the original Bloom filter in RocksDB. © 2021 Knowledge Systems Institute Graduate School. All rights reserved.},
+ author = {Liu, Ruicheng and Jin, Peiquan and Wan, Shouhong and Hua, Bei},
+ doi = {10.18293/SEKE2021-142},
+ journal = {Proceedings of the International Conference on Software Engineering and Knowledge Engineering, SEKE},
+ note = {Cited by: 1; All Open Access; Bronze Open Access},
+ pages = {616 - 621},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RoBF: An auto-tuning bloom filter for mixed queries on LSM-tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85114284488?origin=resultslist},
+ volume = {2021-July},
+ year = {2021}
+}

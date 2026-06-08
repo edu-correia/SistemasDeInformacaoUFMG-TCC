@@ -1,0 +1,14 @@
+@article{10959090,
+ abstract = {Three-dimensional (3D) medical image segmentation typically demands extensive labeled training samples, which is prohibitively time-consuming and requires significant expertise. Although this demand can be mitigated by special learning paradigms such as semi-supervised learning, the cost is still high due to the reader-unfriendly 3D data structure. In this paper, we seek a solution of robust 3D segmentation using extremely simplified annotation that delineates only a single slice per each volume for only a subset of the 3D samples. To this end, we propose two innovative modules: a correlation-enhanced 3D segmentation model (CE-Seg) and a hybrid 3D pseudo mask generator (Hy-Gen). CE-Seg aims to comprehensively understand the 3D targets under super-sparse single-slice supervision by maximizing its ability to mine correlations across slices, spaces and scales. Specifically, CE-Seg mimics the radiologist's interpretation by ‘seeing’ a dynamically scrolling 3D image to enrich the slice-correlated context. It also introduces a drop-then-restoration self-played task to enhance the spatial correlations of features, and uses a bidirectional cascaded attention to interactively fuse features across different scales. To train CS-Seg, Hy-Gen combines learning-based and learning-free strategies to generate reliable pseudo 3D masks as supervisions. Concretely, Hy-Gen first employs a level-set evolution to ‘spread’ the single annotation to its neighboring slices as initialization. It then builds a teacher-student framework to progressively refine the initialized 3D mask by dynamically merging the predictions of the CS-Seg's teacher-copy. Extensive experiments on three public and one in-house datasets indicate that our method exceeds eight state-of-the-art semi-supervised methods by at least 3$\%$ in dice, and is even on par with the full-supervised counterpart.},
+ author = {Zhou, Quan and Wen, Mingwei and Ding, Mingyue and Su, Yixin and Wang, Zhiwei},
+ doi = {10.1109/JBHI.2025.3559091},
+ issn = {2168-2208},
+ journal = {IEEE Journal of Biomedical and Health Informatics},
+ keyword = {Image segmentation;Three-dimensional displays;Annotations;Biomedical imaging;Training;Correlation;Feature extraction;Labeling;Data models;Uncertainty;3D medical image segmentation;single-slice supervision;semi-supervised learning},
+ month = {Aug},
+ number = {8},
+ pages = {5748-5761},
+ title = {Single-Slice Semi-Supervised 3D Medical Image Segmentation via Correlation Information Enhancement and Hybrid Pseudo Mask Generation},
+ volume = {29},
+ year = {2025}
+}

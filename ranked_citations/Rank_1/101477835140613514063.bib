@@ -1,0 +1,17 @@
+@article{10.14778/3514061.3514063,
+ abstract = {Driven by applications in graph analytics, the problem of efficiently computing all k-edge connected components (k-ECCs) of a graph G for a user-given k has been extensively and well studied. It is known that the k-ECCs of G for all possible values of k form a hierarchical structure. In this paper, we study the problem of efficiently constructing the hierarchy tree for G which compactly encodes the k-ECCs for all possible k values in space linear to the number of vertices n. All existing approaches construct the hierarchy tree in O (δ(G) \texttimes{} TKECC(G)) time, where δ(G) is the degeneracy of G and TKECC(G) is the time complexity of computing all k-ECCs of G for a specific k value. To improve the time complexity, we propose a divide-and-conquer approach running in O((log δ(G)) \texttimes{} TKECC(G)) time, which is optimal up to a logarithmic factor. However, a straightforward implementation of our algorithm would result in a space complexity of O((m+n) log δ(G)). As main memory also becomes a scarce resource when processing large-scale graphs, we further propose techniques to optimize the space complexity to 2m + O(n log δ(G)), where m is the number of edges in G. Extensive experiments on large real graphs and synthetic graphs demonstrate that our approach outperforms the state-of-the-art approaches by up to 28 times in terms of running time, and by up to 8 times in terms of main memory usage. As a by-product, we also improve the space complexity of computing all k-ECCs for a specific k to 2m + O(n).},
+ author = {Chang, Lijun and Wang, Zhiyi},
+ doi = {10.14778/3514061.3514063},
+ issn = {2150-8097},
+ issue_date = {February 2022},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {13},
+ pages = {1146–1158},
+ publisher = {VLDB Endowment},
+ title = {A near-optimal approach to edge connectivity-based hierarchical graph decomposition},
+ url = {https://doi.org/10.14778/3514061.3514063},
+ volume = {15},
+ year = {2022}
+}

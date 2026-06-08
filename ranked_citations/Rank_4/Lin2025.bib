@@ -1,0 +1,16 @@
+@article{Lin2025,
+ abstract = {Short-range queries frequently occur in real-world scenarios. Traditional LSM-Tree-based key-value storage systems handle range query requests using an iterator mechanism. However, the data required for short-range queries typically comes from only a few iterators, and the construction of unnecessary iterators in the iterator mechanism degrades range query performance. To address this issue, we propose a MemTable Retention mechanism for Level 0 and an Iterator Reduction mechanism for other levels in LSM-Tree. The former retains the Immutable MemTable, which should have been persisted to Level 0, in memory to reduce the read overhead from Level 0 during short-range queries. The latter reduces the overhead of creating unnecessary iterators through the Level Filter Table. We developed a prototype system, RIOKV, based on LevelDB. Experimental results show that, under workloads with intensive short-range queries, RIOKV’s throughput is approximately 1.18-1.58 times that of LevelDB, 1.01-1.24 times that of RemixDB, and 1.06-1.46 times that of RocksDB. In workloads with mixed range queries and writes, RIOKV’s throughput is about 1.11-3.50 times that of LevelDB, 0.94-1.16 times that of RemixDB, and 1.28-3.24 times that of RocksDB. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2024.},
+ author = {Lin, Xinwei and Pan, Yubiao and Feng, Wenjuan and Zhang, Huizhen and Lin, Mingwei},
+ doi = {10.1007/s11227-024-06735-0},
+ journal = {Journal of Supercomputing},
+ note = {Cited by: 0},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RIOKV: reducing iterator overhead for efficient short-range query in LSM-tree-based key-value stores},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85213498301?origin=resultslist},
+ volume = {81},
+ year = {2025}
+}

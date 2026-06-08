@@ -1,0 +1,14 @@
+@article{10036081,
+ abstract = {In this work, we propose a new visual odometry (VO) system that exploits the dynamic parts of an image. The key idea of our method is to identify the dynamic parts by combining semantic segmentation and optical flow and to suppress the dynamic parts in the process of VO estimation. First, movable objects are detected using the semantic segmentation. If an object contains many pixels of inconsistent optical flow, the object is considered as dynamic and merged with other dynamic objects to create a dynamic mask. Next, the ego-motion of the camera is estimated by using only the remaining static parts of the image and suppressing its dynamic parts. Unlike the other popular deep learning-based VO approaches, our method uses geometric approach based on optimization to achieve high performance. That is, the ego-motion of the camera is obtained by optimizing the correspondences obtained using the dynamic mask and optical flow consistency. Finally, the proposed method is applied to the KITTI Odometry benchmark dataset, and its performance is compared with that of the previous VO methods. Our method achieves an average of 7.67(%) translation error and 2.186 rotation error(°/100m), which imply the performance improvement by 21% and 11% from the state-of-the-art baseline, DF-VO, respectively. In addition, our method yields the RPE (Relative Pose Error) of 0.186m, which is the performance improvement by 52% against ORB-SLAM2, a popular geometry-based method. The experimental results show that the proposed VO method reliably predicts excellent visual odometry in the presence of dynamic objects.},
+ author = {Cho, Hae Min and Kim, Euntai},
+ doi = {10.1109/ACCESS.2023.3241961},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Optical flow;Feature extraction;Estimation;Cameras;Semantic segmentation;Visual odometry;Visualization;Visual odometry;dynamic environment;correspondences},
+ month = {},
+ number = {},
+ pages = {11642-11651},
+ title = {Dynamic Object-Aware Visual Odometry (VO) Estimation Based on Optical Flow Matching},
+ volume = {11},
+ year = {2023}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/2850583.2850588,
+ abstract = {Important cloud services rely on spatial-keyword queries, containing a spatial predicate and arbitrary boolean keyword queries. In particular, we study the processing of such queries in main memory to support short response times. In contrast, current state-of-the-art spatial-keyword indexes and relational engines are designed for different assumptions. Rather than building a new spatial-keyword index, we employ a cost-based optimizer to process these queries using a spatial index and a keyword index. We address several technical challenges to achieve this goal. We introduce three operators as the building blocks to construct plans for main memory query processing. We then develop a cost model for the operators and query plans. We introduce five optimization techniques that efficiently reduce the search space and produce a query plan with low cost. The optimization techniques are computationally efficient, and they identify a query plan with a formal approximation guarantee under the common independence assumption. Furthermore, we extend the framework to exploit interesting orders. We implement the query optimizer to empirically validate our proposed approach using real-life datasets. The evaluation shows that the optimizations provide significant reduction in the average and tail latency of query processing: 7- to 11-fold reduction over using a single index in terms of 99th percentile response time. In addition, this approach outperforms existing spatial-keyword indexes, and DBMS query optimizers for both average and high-percentile response times.},
+ author = {Lee, Taesung and Park, Jin-woo and Lee, Sanghoon and Hwang, Seung-Won and Elnikety, Sameh and He, Yuxiong},
+ doi = {10.14778/2850583.2850588},
+ issn = {2150-8097},
+ issue_date = {November 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {12},
+ pages = {132–143},
+ publisher = {VLDB Endowment},
+ title = {Processing and optimizing main memory spatial-keyword queries},
+ url = {https://doi.org/10.14778/2850583.2850588},
+ volume = {9},
+ year = {2015}
+}

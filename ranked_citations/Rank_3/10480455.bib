@@ -1,0 +1,14 @@
+@article{10480455,
+ abstract = {The dominance scoring problem in a multidimensional dataset is to return the number of points dominated by a given point, which is a common metric for evaluating the quality of a data point. Dominance scoring is an elementary operator for variations of the skyline operator, including top-$k$k dominating and $k$k-skyband queries. This study proposes query processing for dominance scores that operates primarily on the graphics processing unit (GPU) to fully utilize its massive processing resources and restricted memory space while reducing the transfer overhead between the central processing unit (CPU) and GPU. We introduce a heap-based multidimensional data structure with complete and well-balanced characteristics. Using our preprocessed data, we can construct a complete R-tree with the non-overlapping property, ensuring that the bounding boxes of internal nodes of the same level do not overlap, thereby reducing redundant operations. In addition, we propose two algorithms based on depth-first and breadth-first traversals to accumulate the dominance score on GPUs in parallel. Both take full advantage of the GPU's computing resources and memory space supported by the non-overlapping tree structures. Experiments on synthetic and real-world datasets demonstrate that the proposed algorithms implemented on GPUs dramatically improve the efficiency of dominance scoring.},
+ author = {Chen, Wei-Mei and Tsai, Hsin-Hung and Ling, Joon Fong},
+ doi = {10.1109/TPDS.2024.3382119},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Graphics processing units;Data structures;Central Processing Unit;Merging;Internet of Things;Instruction sets;Temperature measurement;Dominance relation;GPU;generalized heap;parallel algorithm;range query;Top-  $k$   k      dominating query;skyline},
+ month = {June},
+ number = {6},
+ pages = {919-931},
+ title = {Parallel Computation of Dominance Scores for Multidimensional Datasets on GPUs},
+ volume = {35},
+ year = {2024}
+}

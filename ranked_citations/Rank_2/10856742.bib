@@ -1,0 +1,14 @@
+@article{10856742,
+ abstract = {There is an increasing interest in data plane verification, which is designed to automatically verify network correctness through directly analyzing the data plane. Recent data plane verifiers have been able to do real-time sub-millisecond per rule verification. However, we observe that in real-world networks, individual data plane updates rarely occur. On the contrary, there are always a certain number of updates generated in a short period of time, called as burst updates, due to high-level user intend or uncertain network events. When it comes to this real-life scenario, yet, the current equivalence class (EC) based methods are unable to solve the model-wide changes problem caused by the EC itself, which significantly slows down the verification speed of burst updates. To overcome this limitation, we present EPVerifier, a fast, scalable data plane verifier accelerating burst updates verification with edge-predicate (EP). Instead of classifying packets into ECs according to global forwarding behavior, the EPVerifier uses one EP per edge to represent all packets that can pass through. Furthermore, with EPs that clearly have localized properties, we introduce a rule type extension that does not require a change in the granularity of the network model to support ACLs and NATs that are prevalent in real devices, and obtain better-performing parallelism by dividing the verification task based on switches. Experiments on both dataset simulations and real-life deployments show that EPVerifier achieves 2- $10\times $  faster data plane verification than the state-of-the-art and such advantage expand with the data plane’s complexity and update scale growth.},
+ author = {Wang, Jingyu and Zhao, Chenyang and Zhuang, Zirui and Qi, Qi and Guo, Yuebin and Sun, Haifeng and Guo, Lingqi and Liao, Jianxin},
+ doi = {10.1109/TON.2025.3528577},
+ issn = {2998-4157},
+ journal = {IEEE Transactions on Networking},
+ keyword = {Data models;Telecommunications;Switches;Firewalls (computing);Sun;Process control;Optimization;Directed graphs;Telecommunication traffic;Technological innovation;Automated tools;formal methods;network management;data plane verification;burst updates},
+ month = {June},
+ number = {3},
+ pages = {1279-1294},
+ title = {Fast and Scalable Data Plane Verification for Burst Updates With Edge-Predicate},
+ volume = {33},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{6043257,
+ abstract = {Network router virtualization has recently gained much interest in the research community, as it allows multiple virtual router instances to run on a common physical router platform. The key metrics in designing network virtual routers are (1) number of supported virtual router instances, (2) total number of prefixes, and (3) ability to quickly update the virtual table. Existing merging algorithms use leaf pushing and a shared next hop data structure to eliminate the large memory bandwidth requirement. However, the size of the shared next hop table grows linearly with the number of virtual routers. Due to the limited amount of on-chip memory and the number of I/O pins of Field Programmable Gate Arrays (FPGAs), existing designs cannot support large number of tables and/or large number of prefixes. This paper exploits the abundant parallelism and on-chip memory bandwidth available in the state-of-the-art FPGAs, and proposes a compact trie representation and a hybrid data structure to reduce the memory requirement of virtual routers. The approach does not require leaf-pushing; therefore, reduces the size of each entry of the data structure. Our algorithm demonstrates substantial reduction in the memory footprint compared with the state-of-the-art. Also, it eliminates the shared next hop information data structure and simplifies the table updates in virtual routers. Using a state-of-the-art FPGA, the proposed architecture can support up to 3.1M IPv4 prefixes. Employing the dual-ported memory available in the current FPGAs, we map the proposed data structure on a novel SRAMbased linear pipeline architecture to achieve high throughput. The post place-and-route result shows that our architecture can sustain a throughput of 394 million lookups per second, or 126 Gbps (for the minimum packet size of 40 Bytes).},
+ author = {Erdem, Og̃uzhan and Le, Hoang and Prasanna, Viktor K. and Bazlamaçcı, Cüneyt F.},
+ booktitle = {ASAP 2011 - 22nd IEEE International Conference on Application-specific Systems, Architectures and Processors},
+ doi = {10.1109/ASAP.2011.6043257},
+ issn = {2160-052X},
+ keyword = {IP networks;Data structures;Routing;Pipeline processing;Memory management;Field programmable gate arrays;Redundancy},
+ month = {Sep.},
+ number = {},
+ pages = {95-102},
+ title = {Hybrid data structure for IP lookup in virtual routers using FPGAs},
+ volume = {},
+ year = {2011}
+}

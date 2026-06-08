@@ -1,0 +1,14 @@
+@conference{Wang20243989,
+ abstract = {To optimize query parallelism techniques, substantial workloads are required with specific query plans and customized output size for each operator (denoted as cardinality constraint). To this end, a rich body of query-aware database generators (QAG) are proposed. However, the complex data dependencies hidden behind queries make previous QAGs suffer from deficiencies in supporting complex operators and controlling the generation errors. In this paper, we design a new generator Mirage supporting well for complex operators with low error bounds for cardinality constraints. First, Mirage leverages Query Rewriting and Set Transforming Rules to decouple dependencies between key and non-key columns, which could help generate each of them individually. Then, for the non-key columns, Mirage abstracts cardinality constraints of operators as placement requirements within each column's domain, and further models the generation problem as a classic bin packing problem. Finally, for the key columns, Mirage proposes a uniform representation of join cardinality constraints for all types of PK-FK joins and partitions the data according to the matching status between PK and F K columns. Then, it formulates the key population as a Constraint Programming problem, which can be solved by an existing CP Solver. The experiments show that Mirage conquers all previous work in either operator support or generation error.  © 2024 IEEE.},
+ author = {Wang, Qingshuai and Li, Hao and Hu, Zirui and Zhang, Rong and Yang, Chengcheng and Cai, Peng and Zhou, Xuan and Zhou, Aoying},
+ doi = {10.1109/ICDE60146.2024.00306},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 4},
+ pages = {3989 - 4001},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Mirage: Generating Enormous Databases for Complex Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85200452210?origin=resultslist},
+ year = {2024}
+}

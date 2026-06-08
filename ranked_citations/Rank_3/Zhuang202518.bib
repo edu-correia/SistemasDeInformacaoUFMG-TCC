@@ -1,0 +1,14 @@
+@conference{Zhuang202518,
+ abstract = {Zoned Namespace SSDs (ZNS SSDs) have emerged as a promising solution for write-intensive workloads due to their sequential write model, which aligns well with the characteristics of Log-Structured Merge-Tree (LSM-tree) commonly used in key-value (KV) stores. However, directly applying LSM-tree-based KV stores on ZNS SSDs may result in performance degradation. Our investigation reveals that data across different LSM-tree levels exhibit distinct characteristics and lifetimes, which are not adequately considered in general storage systems. To address these issues, we propose SplitLSM, a zone-aware optimization framework designed to improve the performance of LSM-tree-based key-value stores on ZNS SSDs. SplitLSM introduces a novel data allocation strategy that improves data locality and zone utilization in compaction. In addition, we enhance the compaction mechanism by considering data lifetime and zone characteristics, thus reducing unnecessary compactions and mitigating I/O overhead. Experimental results show that SplitLSM achieves up to 32.3% improvement in throughput and reduces compaction time by up to 28% over ZenFS on ZNS SSDs. ©2025 IEEE.},
+ author = {Zhuang, You-Yuan and Chen, Yi-Shen and Hsieh, Jen-Wei and Chang, Yuan-Hao},
+ doi = {10.1109/NVMSA66678.2025.00011},
+ journal = {Proceedings - 2025 14th IEEE Non-Volatile Memory Systems and Applications Symposium, NVMSA 2025},
+ note = {Cited by: 0},
+ pages = {18 - 23},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SplitLSM: Unlocking Write Efficiency with Zone-Aware Compaction for LSM-Trees on Zoned Namespace SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105037105999?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,13 @@
+@conference{Li202399,
+ abstract = {Disaggregated memory systems separate monolithic servers into different components, including compute and memory nodes, to enjoy the benefits of high resource utilization, flexible hardware scalability, and efficient data sharing. By exploiting the high-performance RDMA (Remote Direct Memory Access), the compute nodes directly access the remote memory pool without involving remote CPUs. Hence, the ordered key-value (KV) stores (e.g., B-trees and learned indexes) keep all data sorted to provide rang query service via the high-performance network. However, existing ordered KVs fail to work well on the disaggregated memory systems, due to either consuming multiple network roundtrips to search the remote data or heavily relying on the memory nodes equipped with insufficient computing resources to process data modifications. In this paper, we propose a scalable RDMA-oriented KV store with learned indexes, called ROLEX, to coalesce the ordered KV store in the disaggregated systems for efficient data storage and retrieval. ROLEX leverages a retraining-decoupled learned index scheme to dissociate the model retraining from data modification operations via adding a bias and some data-movement constraints to learned models. Based on the operation decoupling, data modifications are directly executed in compute nodes via one-sided RDMA verbs with high scalability. The model retraining is hence removed from the critical path of data modification and asynchronously executed in memory nodes by using dedicated computing resources. Our experimental results on YCSB and real-world workloads demonstrate that ROLEX achieves competitive performance on the static workloads, as well as significantly improving the performance on dynamic workloads by up to 2.2× than state-of-the-art schemes on the disaggregated memory systems. We have released the open-source codes for public use in GitHub. © 2023 by The USENIX Association. All rights reserved.},
+ author = {Li, Pengfei and Hua, Yu and Zuo, Pengfei and Chen, Zhangyu and Sheng, Jiajie},
+ journal = {Proceedings of the 21st USENIX Conference on File and Storage Technologies, FAST 2023},
+ note = {Cited by: 70},
+ pages = {99 - 113},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ROLEX: A Scalable RDMA-oriented Learned Key-Value Store for Disaggregated Memory Systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85159376438?origin=resultslist},
+ year = {2023}
+}

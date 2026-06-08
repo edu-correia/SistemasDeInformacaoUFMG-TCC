@@ -1,0 +1,15 @@
+@article{10.1145/3806055,
+ abstract = {Approximate Nearest Neighbor Search (ANNS) plays a key role in database and AI infrastructure. It exhibits extremely high memory intensity with a ∼ 1:1 compute-to-memory access ratio. Commodity Processing-in-Memory (PIM) hardware, such as the first real-world commercial product (UPMEM), is promising for overcoming the memory wall in ANNS. However, its reuse of the system DDR bus prevents the CPU and PIM cores from accessing memory simultaneously. This necessitates batch scheduling in existing systems, which, in turn, leads to severe underutilization in two scenarios: 1) inter-batch, where PIM remains idle while the CPU is copying data, and 2) intra-batch, caused by uneven load distribution of PIM cores in a batch. This paper proposes an efficient PIM-capable ANNS system named PIMANN. We observe that each PIM core has an additional, undocumented, and little-known control interface (originally used for control commands like launching PIM kernels), which could be retrofitted for fine-grained arbitration of DDR bus access. Thus, PIMANN can break the traditional batching scheduling paradigm and adopt a fine-grained scheduling paradigm. With this key idea, PIMANN introduces 1) a persistent PIM kernel to eliminate inter-batch idling, 2) per-PU query dispatching to balance real-time load across cores, and 3) microarchitecture-aware per-PU optimization to overcome inherent PU-level hardware constraints. Experiments show that PIMANN can boost throughput by 2.5-11.1 \texttimes{} compared to existing ANNS systems on CPU or GPU. The implementation of PIMANN is available at https://github.com/cds-ruc/PIM-ANNS.},
+ address = {New York, NY, USA},
+ author = {Wu, Puqing and Xie, Minhui and Zhao, Enrui and Zhang, Dafang and Wang, Jing and Liang, Xiao and Ren, Kai and Chai, Yunpeng},
+ doi = {10.1145/3806055},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {Approximate Nearest Neighbor Search (ANNS), Processing-In-Memory (PIM), UPMEM, Commodity PIM Hardware},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Unlocking PIM-Core Capabilities for Efficient ANNS on Commodity Processing-in-Memory Hardware},
+ url = {https://doi.org/10.1145/3806055},
+ year = {2026}
+}

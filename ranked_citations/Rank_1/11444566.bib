@@ -1,0 +1,14 @@
+@inproceedings{11444566,
+ abstract = {In this work, we introduce UniGS, a novel 3D Gaussian reconstruction and novel view synthesis model that predicts a high-fidelity representation of 3D Gaussians from arbitrary number of posed sparse-view images. Previous methods often regress 3D Gaussians locally on a per-pixel basis for each view and then transfer them to world space and merge them through point concatenation. In contrast, Our approach involves modeling unitary 3D Gaussians in world space and updating them layer by layer. To leverage information from multi-view inputs for updating the unitary 3D Gaussians, we develop a DETR (DEtection TRansformer)like framework, which treats 3D Gaussians as queries and updates their parameters by performing multi-view crossattention (MVDFA) across multiple input images, which are treated as keys and values. This approach effectively avoids 'ghosting' issue and allocates more 3D Gaussians to complex regions. Moreover, since the number of 3D Gaussians used as decoder queries is independent of the number of input views, our method allows arbitrary number of multi-view images as input without causing memory explosion or requiring retraining. Extensive experiments validate the advantages of our approach, showcasing superior performance over existing methods quantitatively (improving PSNR by $4.2 d B$ when trained on Objaverse and tested on the GSO benchmark) and qualitatively. Codes are at https://github.com/jwubz123/UNIG.},
+ author = {Wu, Jiamin and Liu, Kenkun and Jiang, Xiaoke and Yao, Yuan and Zhang, Lei},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02435},
+ issn = {2380-7504},
+ keyword = {Feeds;Antennas;Modulation;Pixel;Computer networks;Communication systems;Internet;Protocols;Communications technology;Radio access networks;3d gs;detr},
+ month = {Oct},
+ number = {},
+ pages = {26241-26251},
+ title = {UniGS: Modeling Unitary 3D Gaussians for Novel View Synthesis from Sparse-View Images},
+ volume = {},
+ year = {2025}
+}

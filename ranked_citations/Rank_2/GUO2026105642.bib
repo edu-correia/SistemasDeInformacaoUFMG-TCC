@@ -1,0 +1,13 @@
+@article{GUO2026105642,
+ abstract = {Accurate vehicle trajectories within intersections are crucial for offline traffic analysis tasks, including interaction assessment, delay and queue estimation, and environmental evaluation. However, collecting high-fidelity, full-coverage trajectory data remains costly and operationally challenging. While aerial or dense sensing solutions can provide precise interior trajectories, they are challenging to deploy at scale, whereas infrastructure-based detectors (e.g., monitoring and enforcement systems) at entry and exit points are largely off-the-shelf, but typically yield only sparse boundary observations for each identified vehicle. This study addresses the problem of reconstructing complete intra-intersection trajectories from extremely sparse, paired entry-exit snippets, assuming that vehicle identities and their boundary trajectory snippets are provided by upstream sensing or data-processing modules. To tackle this challenge, a hybrid physics-data approach that integrates lane-level topology priors with residual data-driven refinement is proposed. The proposed hybrid framework combines Dijkstra-based interpolation for topological consistency with a Dual-Axis Mamba-Attention (DAMA) data-driven model. The DAMA model leverages dual-branch temporal encoding (Bi-Mamba2 and Bi-LSTM) and interaction-aware attention to infer realistic interior trajectories. Extensive experiments on five scenarios from the INTERACTION benchmark, including unsignalized intersections, roundabouts, and merging cases, show that DAMA consistently outperforms both physics-based and state-of-the-art deep-learning baselines, reducing position MAE by 4-37%. Robustness tests under extreme boundary sparsity (single-sample entry/exit) and leave-one-scenario-out evaluations further confirm DAMA’s ability to degrade gracefully and generalize to unseen layouts. The application study illustrates the potential of the reconstruction framework in downstream microscopic traffic emission analysis tasks.},
+ author = {Tao Guo and Kevin Yu and Panagiotis Angeloudis and Constantinos Antoniou},
+ doi = {https://doi.org/10.1016/j.trc.2026.105642},
+ issn = {0968-090X},
+ journal = {Transportation Research Part C: Emerging Technologies},
+ keyword = {Trajectory reconstruction, Mamba, Deep learning, Physics-informed NN, Traffic emission},
+ pages = {105642},
+ title = {Reconstructing vehicle trajectories at intersections from extremely sparse entry-exit observations},
+ url = {https://www.sciencedirect.com/science/article/pii/S0968090X26001300},
+ volume = {187},
+ year = {2026}
+}

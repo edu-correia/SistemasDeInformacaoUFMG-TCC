@@ -1,0 +1,13 @@
+@article{DUTENHEFNER2026111462,
+ abstract = {Electrocardiograms (ECGs) play a crucial role in cardiovascular healthcare, requiring effective analytical models. ECG analysis is inherently hierarchical, involving multiple temporal scales from individual waveforms to intervals within heartbeats, and finally to the distances between heartbeats. Convolutional Neural Networks (CNNs) have demonstrated strong performance in ECG classification tasks due to their inductive bias toward local connectivity and translation invariance. In other domains, Transformers have emerged as powerful models for capturing long-range dependencies. This paper introduces HiT-NeXt, a hybrid hierarchical model designed to capture both local morphological patterns and global temporal dependencies by combining CNNs with transformer blocks featuring restricted attention windows. The model incorporates ConvNeXt-based convolutional layers to extract local features and perform patch merging, enabling hierarchical representation learning. Transformer blocks are constrained with local attention windows and leverage relative contextual positional encoding to incorporate positional information effectively into embeddings, enhancing robustness to translations in ECG signal patterns. Experimental results demonstrate that HiT-NeXt outperforms state-of-the-art methods on tasks including ECG abnormality classification and cardiological age prediction, achieving superior performance compared to both existing models and cardiologist evaluations.22PyTorch Implementation: https://github.com/pedroroblesduten/HiT-NeXt-ECG.},
+ author = {Pedro Dutenhefner and Turi Rezende and José {Geraldo Fernandes} and Diogo Tuler and Gabriela M.M. Paixão and Gisele Pappa and Antônio Luiz Pinho Ribeiro and Wagner {Meira Jr.}},
+ doi = {https://doi.org/10.1016/j.compbiomed.2026.111462},
+ issn = {0010-4825},
+ journal = {Computers in Biology and Medicine},
+ keyword = {ECG classification, Age prediction, Transformer model, Hierarchical model, Hybrid model},
+ pages = {111462},
+ title = {A hybrid hierarchical transformer model for ECG classification and age prediction},
+ url = {https://www.sciencedirect.com/science/article/pii/S0010482526000235},
+ volume = {203},
+ year = {2026}
+}

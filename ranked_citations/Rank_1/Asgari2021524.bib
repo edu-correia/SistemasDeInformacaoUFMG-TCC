@@ -1,0 +1,16 @@
+@article{Asgari2021524,
+ abstract = {Scientific computations with a wide range of applications in domains such as developing vaccines, forecasting the weather, predicting natural disasters, simulating aerodynamics of spacecraft, and exploring oil resources, create the main workloads of supercomputers. The key integration of such scientific computations is modeling physical phenomena that are done with the aid of partial differential equations (PDEs). Solving PDEs on supercomputers, even with those equipped with GPUs, consumes a large amount of power and yet is not as fast as desired. The main reason behind such slow processing is data dependency. The key challenge is that software techniques cannot resolve these dependencies, therefore, such applications cannot benefit from the parallelism provided by processors such as GPUs. Our key insight to address this challenge is that although we cannot resolve the dependencies, we can reduce their negative impacts by using hardware/software co-optimization. To this end, we propose breaking down the data-dependent operations into two groups of operations: a majority of parallelizable and the minority of data-dependent operations. We execute these two groups in the desired order: first, we put together all parallelizable operations and execute them all, subsequently; then, we switch to execute the small data-dependent part. As long as the data-dependent part is small, we can accelerate them by using fast hardware mechanisms. Besides, our proposed hardware mechanisms guarantee quickly switching between the two groups of operations. To follow the same order of execution, dictated by our software mechanism, and implemented in hardware, we also propose a new low-overhead compression format-sparsity is another attribute of PDEs that require compression. Furthermore, the core generic architecture of our proposed hardware allows the execution of other applications including sparse matrix-vector multiplication (SpMV) and graph algorithms. The key feature of the proposed hardware is partial reconfigurability, which on one hand, facilitates the execution of data-dependent computations, and on the other hand, allows executing broad application without changing the entire configuration. Our evaluations show that compared to GPUs, we achieve an average speedup of 15.6× for scientific computations while consuming 14× less energy. © 1968-2012 IEEE.},
+ author = {Asgari, Bahar and Hadidi, Ramyad and Krishna, Tushar and Kim, Hyesoon and Yalamanchili, Sudhakar},
+ doi = {10.1109/TC.2021.3060700},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 4},
+ number = {4},
+ pages = {524 - 538},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficiently Solving Partial Differential Equations in a Partially Reconfigurable Specialized Hardware},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85101771663?origin=resultslist},
+ volume = {70},
+ year = {2021}
+}

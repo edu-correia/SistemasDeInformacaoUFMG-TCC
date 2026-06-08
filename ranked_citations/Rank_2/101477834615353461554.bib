@@ -1,0 +1,17 @@
+@article{10.14778/3461535.3461554,
+ abstract = {Personalized PageRank (PPR) has wide applications in search engines, social recommendations, community detection, and so on. Nowadays, graphs are becoming massive and many IT companies need to deal with large graphs that cannot be fitted into the memory of most commodity servers. However, most existing state-of-the-art solutions for PPR computation only work for single-machines and are inefficient for the distributed framework since such solutions either (i) result in an excessively large number of communication rounds, or (ii) incur high communication costs in each round.Motivated by this, we present Delta-Push, an efficient framework for single-source and top-k PPR queries in distributed settings. Our goal is to reduce the number of rounds while guaranteeing that the load, i.e., the maximum number of messages an executor sends or receives in a round, can be bounded by the capacity of each executor. We first present a non-trivial combination of a redesigned parallel push algorithm and the Monte-Carlo method to answer single-source PPR queries. The solution uses pre-sampled random walks to reduce the number of rounds for the push al6gorithm. Theoretical analysis under the Massively Parallel Computing (MPC) model shows that our proposed solution bounds the communication rounds to [EQUATION] under a load of O(m/p), where m is the number of edges of the input graph, p is the number of executors, and ϵ is a user-defined error parameter. In the meantime, as the number of executors increases to p' = γ · p, the load constraint can be relaxed since each executor can hold O(γ · m/p') messages with invariant local memory. In such scenarios, multiple queries can be processed in batches simultaneously. We show that with a load of O(γ · m/p'), our Delta-Push can process γ queries in a batch with [EQUATION] rounds, while other baseline solutions still keep the same round cost for each batch. We further present a new top-k algorithm that is friendly to the distributed framework and reduces the number of rounds required in practice. Extensive experiments show that our proposed solution is more efficient than alternatives.},
+ author = {Hou, Guanhao and Chen, Xingguang and Wang, Sibo and Wei, Zhewei},
+ doi = {10.14778/3461535.3461554},
+ issn = {2150-8097},
+ issue_date = {May 2021},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {13},
+ pages = {1668–1680},
+ publisher = {VLDB Endowment},
+ title = {Massively parallel algorithms for personalized pagerank},
+ url = {https://doi.org/10.14778/3461535.3461554},
+ volume = {14},
+ year = {2021}
+}

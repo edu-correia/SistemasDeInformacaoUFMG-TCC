@@ -1,0 +1,14 @@
+@inproceedings{9711355,
+ abstract = {In autonomous driving, a LiDAR-based object detector should perform reliably at different geographic locations and under various weather conditions. While recent 3D detection research focuses on improving performance within a single domain, our study reveals that the performance of modern detectors can drop drastically cross-domain. In this paper, we investigate unsupervised domain adaptation (UDA) for LiDAR-based 3D object detection. On the Waymo Domain Adaptation [49] dataset, we identify the deteriorating point cloud quality as the root cause of the performance drop. To address this issue, we present Semantic Point Generation (SPG), a general approach to enhance the reliability of LiDAR detectors against domain shifts. Specifically, SPG generates semantic points at the predicted fore-ground regions and faithfully recovers missing parts of the foreground objects, which are caused by phenomena such as occlusions, low reflectance, or weather interference. By merging the semantic points with the original points, we obtain an augmented point cloud, which can be directly consumed by modern LiDAR-based detectors. To validate the wide applicability of SPG, we experiment with two representative detectors, PointPillars [22] and PV-RCNN [45]. On the UDA task, SPG significantly improves both detectors across all object categories of interest and at all difficulty levels. SPG can also benefit object detection in the original domain. On the Waymo Open Dataset [49] and KITTI [17], SPG improves 3D detection results of these two methods across all categories. Combined with PV-RCNN [45], SPG achieves state-of-the-art 3D detection results on KITTI.},
+ author = {Xu, Qiangeng and Zhou, Yin and Wang, Weiyue and Qi, Charles R. and Anguelov, Dragomir},
+ booktitle = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV48922.2021.01516},
+ issn = {2380-7504},
+ keyword = {Point cloud compression;Three-dimensional displays;Semantics;Training data;Detectors;Object detection;Reliability;Vision for robotics and autonomous vehicles;Detection and localization in 2D and 3D;Stereo;3D from multiview and other sensors},
+ month = {Oct},
+ number = {},
+ pages = {15426-15436},
+ title = {SPG: Unsupervised Domain Adaptation for 3D Object Detection via Semantic Point Generation},
+ volume = {},
+ year = {2021}
+}

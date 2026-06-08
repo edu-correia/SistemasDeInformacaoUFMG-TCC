@@ -1,0 +1,13 @@
+@conference{Zhang2018,
+ abstract = {LSM-tree based KV stores suffer from severe read amplification, especially for large KV stores. Even worse, many applications may issue a large amount of lookup operations to search for nonexistent keys, which wastes a lot of extra I/Os. Even though Bloom filters can be used to speedup the read performance, existing designs usually adopt a uniform setting for all Bloom filters and fail to support dynamic adjustment, thus results in a high false positive rate or large memory consumption. To address this issue, we propose ElasticBF, which constructs more small filters for each SSTable and dynamically load into memory as needed based on access frequency, so it realizes a fine-grained and elastic adjustment in running time with the same memory usage. Experiment shows that ElasticBF can achieve 1.94×-2.24× read throughput compared to LevelDB under different workloads, and preserves the same write performance. More importantly, ElasticBF is orthogonal to existing works optimizing the structure of KV stores, so it can be used as an accelerator to further speedup their read performance. © USENIX Workshop on Hot Topics in Storage and File Systems, HotStorage 2018, co-located with USENIX ATC 2018.All right reserved.},
+ author = {Zhang, Yueming and Li, Yongkun and Guo, Fan and Li, Cheng and Xu, Yinlong},
+ journal = {10th USENIX Workshop on Hot Topics in Storage and File Systems, HotStorage 2018, co-located with USENIX ATC 2018},
+ note = {Cited by: 18},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ElastiCBF: Fine-grained and Elastic bloom filter towards efficient read for LSM-tree-based KV Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85069459039?origin=resultslist},
+ year = {2018}
+}

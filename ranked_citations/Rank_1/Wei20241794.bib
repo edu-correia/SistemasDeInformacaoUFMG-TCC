@@ -1,0 +1,16 @@
+@article{Wei20241794,
+ abstract = {Blockchain systems play an important role in distributed ledgers, database systems, etc. As more and more blocks are mined, the storage burden of blockchain system is significantly increased. The current blockchain system uniformly transforms all its data into key-value (KV) items and stores them to the underlying log-structure merged tree (LSM-tree) storage engine ignoring the software semantics. Consequently, it not only aggravates the write amplification effect of the storage engine but also increases the redundancy of data query steps, resulting in the performance bottleneck of blockchain system. In this article, we propose a semantic-integrated LSM-tree-based KV storage engine for blockchain systems, called Block-LSM, which significantly improves the data synchronization and data query efficiency of blockchain system. Specifically, we first design a shared prefix scheme to transform blockchain data into ordered KV pairs to alleviate the key range overlaps of different levels in the underlying LSM-tree-based storage engine. Moreover, we propose to maintain several semantic-orientated memory buffers to isolate different kinds of blockchain data and implement memory buffer space management strategy to further improve memory efficiency. To save space overhead, Block-LSM further aggregates multiple blocks into a group and assigns the same prefix to all KV items from the same block group. We also reduce step redundancy in transaction queries by modifying the body data storage format. Finally, we implement Block-LSM in a real blockchain environment and conduct a series of comparative experiments with the typical blockchain system Ethereum. The evaluation results show that Block-LSM significantly reduces up to 7.56× storage write amplification and increases throughput by 8.64× compared with the original Ethereum design. In terms of data lookups (i.e., transaction and account lookup), Block-LSM improves the throughput by 50% compared to the original Ethereum design. © 1982-2012 IEEE.},
+ author = {Wei, Qian and Chen, Zehao and Chen, Xiaowei and Zhang, Yuhao and Cai, Xiaojun and Jia, Zhiping and Shen, Zhaoyan and Wang, Yi and Shao, Zili and Li, Bingzhe},
+ doi = {10.1109/TCAD.2023.3348771},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 0},
+ number = {6},
+ pages = {1794 - 1807},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Semantic-Integrated LSM-Tree-Based Key-Value Storage Engine for Blockchain Systems},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85181580064?origin=resultslist},
+ volume = {43},
+ year = {2024}
+}

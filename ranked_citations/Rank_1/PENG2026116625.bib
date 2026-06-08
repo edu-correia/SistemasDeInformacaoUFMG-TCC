@@ -1,0 +1,13 @@
+@article{PENG2026116625,
+ abstract = {This paper presents a computationally efficient framework for stress-constrained topology optimization using an integrated level set method that combines inexact adjoint sensitivity analysis with multigrid acceleration. The proposed methodology introduces a novel convergence criterion based on adjoint sensitivity stabilization, replacing traditional force-residual-based tolerances in iterative solvers. A dual-projection strategy is employed: sharp Heaviside functions enable accurate boundary stress evaluation, while smooth Heaviside functions govern material density evolution for stable topology updates. To reduce computational overhead, multigrid-preconditioned iterative solvers are terminated using sensitivity-based convergence criteria, yielding over an 80 % reduction in Krylov iterations for adjoint sensitivity computations. The approach tightly couples discrete adjoint formulations with velocity field parameterization, effectively eliminating intermediate density artifacts and ensuring localized stress control. Numerical studies demonstrate triple-quintuple acceleration in optimization convergence relative to conventional methods, while maintaining compliance with stress constraints within 0.5 %-3.5 % of direct-solver reference solutions. The framework also integrates p-norm stress aggregation to manage local constraint violations and supports large-scale optimization with improved numerical stability. Validation through ANSYS boundary post-processing confirms the accuracy and robustness of the proposed approach. Overall, this work presents a scalable and efficient method for high-fidelity stress-constrained topology optimization, integrating inexact sensitivity analysis, multigrid preconditioning, and specialized projection strategies to achieve accurate results with significantly reduced computational cost.},
+ author = {Hai-Jun Peng and Sundararajan Natarajan and Tiantang Yu},
+ doi = {https://doi.org/10.1016/j.apm.2025.116625},
+ issn = {0307-904X},
+ journal = {Applied Mathematical Modelling},
+ keyword = {Topology optimization, Stress constrained, Level set method, Inexact adjoint sensitivities, Multigrid preconditioning},
+ pages = {116625},
+ title = {High-performance stress-constrained topology optimization using level set method with inexact adjoint sensitivities},
+ url = {https://www.sciencedirect.com/science/article/pii/S0307904X25006997},
+ volume = {153},
+ year = {2026}
+}

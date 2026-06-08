@@ -1,0 +1,14 @@
+@conference{Zhao2025350,
+ abstract = {The kd-tree is a widely used data structure for managing multidimensional data. However, most existing kd-tree designs suffer from the memory wall - -bottlenecked by off-chip memory latency and bandwidth limitations. Processing-in-memory (PIM), an emerging architectural paradigm, offers a promising solution to this issue by integrating processors (PIM cores) inside memory modules and offloading computational tasks to these PIM cores. This approach enables low-latency on-chip memory access and provides bandwidth that scales with the number of PIM modules, significantly reducing off-chip memory traffic. This paper introduces PIM-kd-tree, the first theoretically groundec kd-tree design specifically tailored for PIM systems. The PIM-kd-tree is built upon a novel log-star tree decomposition that leverages local intra-component caching. In conjunction with other innovative techniques, including approximate counters with low overhead for updates, delayed updates for load balancing, and other PIM-friendly aspects, the PIM-kd-tree supports highly efficient batch-parallel construction, point searches, dynamic updates, orthogonal range queries, and kNN searches. Notably, all these operations are work-efficient and load-balanced even under adversarial skew, and incur only O(log∗P) communication overhead (off-chip memory traffic) per query. Furthermore, we prove that our data structure achieves whp an optimal trade-off between communication, space, and batch size. Finally, we present efficient parallel algorithms for two prominent clustering problems, density peak clustering and DBSCAN, utilizing the PIM-kd-tree and its techniques. © 2025 Association for Computing Machinery. All rights reserved.},
+ author = {Zhao, Yiwei and Kang, Hongbo and Gu, Yan and Blelloch, Guy E. and Dhulipala, Laxman and McGuffey, Charles and Gibbons, Phillip B.},
+ doi = {10.1145/3694906.3743318},
+ journal = {Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ note = {Cited by: 4; All Open Access; Gold Open Access},
+ pages = {350 - 366},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimal Batch-Dynamic kd-trees for Processing-in-Memory with Applications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105012714073?origin=resultslist},
+ year = {2025}
+}

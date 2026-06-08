@@ -1,0 +1,14 @@
+@inproceedings{9546417,
+ abstract = {Erasure coding has been widely deployed in modern large-scale storage systems for storage-efficient fault tolerance by storing stripes of data and parity chunks. Recently, enterprises explore the notion of wide stripes to suppress the fraction of parity chunks in each stripe to achieve extreme storage savings. However, how to efficiently generate wide stripes remains a non-trivial issue. In particular, re-encoding the currently stored stripes (termed narrow stripes) into wide stripes triggers substantial bandwidth overhead in relocating and regenerating the chunks for wide stripes. We propose StripeMerge, a wide-stripe generation mechanism that selects and merges narrow stripes into wide stripes, with the primary objective of minimizing the wide-stripe generation bandwidth. We prove the existence of an optimal scheme that does not incur any data transfer for wide-stripe generation, yet the optimal scheme is computationally expensive. To this end, we propose two heuristics that can be efficiently executed with only limited wide-stripe generation bandwidth overhead. We prototype StripeMerge and show via both simulations and Amazon EC2 experiments that the wide-stripe generation time can be reduced by up to 87.8% over a state-of-the-art storage scaling approach.},
+ author = {Yao, Qiaori and Hu, Yuchong and Cheng, Liangfeng and Lee, Patrick P. C. and Feng, Dan and Wang, Weichun and Chen, Wei},
+ booktitle = {2021 IEEE 41st International Conference on Distributed Computing Systems (ICDCS)},
+ doi = {10.1109/ICDCS51616.2021.00053},
+ issn = {2575-8411},
+ keyword = {Fault tolerance;Computational modeling;Conferences;Fault tolerant systems;Prototypes;Bandwidth;Data transfer},
+ month = {July},
+ number = {},
+ pages = {483-493},
+ title = {StripeMerge: Efficient Wide-Stripe Generation for Large-Scale Erasure-Coded Storage},
+ volume = {},
+ year = {2021}
+}

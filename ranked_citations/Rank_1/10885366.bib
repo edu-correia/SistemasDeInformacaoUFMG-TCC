@@ -1,0 +1,14 @@
+@inproceedings{10885366,
+ abstract = {The training process of large language models (LLMs) sometimes may raise an error, often necessitating the usage of checkpointing mechanisms to save training states periodically. However, this can lead to a waste of training time and impact performance due to frequent I/O operations. Intel Optane Data Center Persistent Memory Module (DCPMM) is a novel memory device that combines non-volatility, high bandwidth, and low latency. Intuitively, deploying LLMs on DCPMM could enhance I/O performance, but the DCPMM cannot fully adapt to the current deep learning frameworks and the read/write granularity mismatch of DCPMM needs to be resolved. To this end, we propose PMCKPT, a checkpointing scheme customized for hybrid memory architectures (DRAM-PM). PMCKPT provides a storage engine to mitigate the impact of frequent I/O operations on training. Furthermore, PMCKPT ensures data persistence and consistency through a persistence scheme based on the persistent memory development kit (PMDK). Finally, it also incorporates a checkpointing management strategy to handle historical version checkpointing and optimize storage management. We implement PMCKPT in ChatGLM and the experimental results demonstrate that PMCKPT can effectively reduce training time by about 34% compared to traditional schemes which use SSDs.},
+ author = {Chen, Gengbin and Zhu, Yuan and Li, Dingding and Tang, Yong},
+ booktitle = {2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)},
+ doi = {10.1109/ISPA63168.2024.00158},
+ issn = {2158-9208},
+ keyword = {Checkpointing;Training;Performance evaluation;Distributed processing;Large language models;Storage management;Memory architecture;Memory modules;Low latency communication;Engines;LLM;checkpointing;I/O operation;DCPMM},
+ month = {Oct},
+ number = {},
+ pages = {1183-1188},
+ title = {A LLM Checkpointing System of the Hybrid Memory Architecture},
+ volume = {},
+ year = {2024}
+}

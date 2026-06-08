@@ -1,0 +1,17 @@
+@article{10.14778/3352063.3352123,
+ abstract = {We present an overview of SAP HANA's Native Store Extension (NSE). This extension substantially increases database capacity, allowing to scale far beyond available system memory. NSE is based on a hybrid in-memory and paged column store architecture composed from data access primitives. These primitives enable the processing of hybrid columns using the same algorithms optimized for traditional HANA's in-memory columns. Using only three key primitives, we fabricated byte-compatible counterparts for complex memory resident data structures (e.g. dictionary and hash-index), compressed schemes (e.g. sparse and run-length encoding), and exotic data types (e.g. geo-spatial). We developed a new buffer cache which optimizes the management of paged resources by smart strategies sensitive to page type and access patterns. The buffer cache integrates with HANA's new execution engine that issues pipelined prefetch requests to improve disk access patterns. A novel load unit configuration, along with a unified persistence format, allows the hybrid column store to dynamically switch between in-memory and paged data access to balance performance and storage economy according to application demands while reducing Total Cost of Ownership (TCO). A new partitioning scheme supports load unit specification at table, partition, and column level. Finally, a new advisor recommends optimal load unit configurations. Our experiments illustrate the performance and memory footprint improvements on typical customer scenarios.},
+ author = {Sherkat, Reza and Florendo, Colin and Andrei, Mihnea and Blanco, Rolando and Dragusanu, Adrian and Pathak, Amit and Khadilkar, Pushkar and Kulkarni, Neeraj and Lemke, Christian and Seifert, Sebastian and Iyer, Sarika and Gottapu, Sasikanth and Schulze, Robert and Gottipati, Chaitanya and Basak, Nirvik and Wang, Yanhong and Kandiyanallur, Vivek and Pendap, Santosh and Gala, Dheren and Almeida, Rajesh and Ghosh, Prasanta},
+ doi = {10.14778/3352063.3352123},
+ issn = {2150-8097},
+ issue_date = {August 2019},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {2047–2058},
+ publisher = {VLDB Endowment},
+ title = {Native store extension for SAP HANA},
+ url = {https://doi.org/10.14778/3352063.3352123},
+ volume = {12},
+ year = {2019}
+}

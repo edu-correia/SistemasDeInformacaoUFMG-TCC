@@ -1,0 +1,18 @@
+@article{10.1145/3763176,
+ abstract = {Version space algebra (VSA) is an effective data structure for representing sets of programs and has been extensively used in program synthesis. Despite this success, a crucial shortcoming of VSA-based synthesis is its inefficiency when processing many examples. Given a set of IO examples, a typical VSA-based synthesizer runs by first constructing an individual VSA for each example and then iteratively intersecting these VSAs one by one. However, the intersection of two VSAs can be much larger than the original ones -- this effect accumulates during the iteration, making the scale of intermediate VSAs quickly explode.    In this paper, we aim to reduce the cost of intersecting VSAs in synthesis. We investigate the process of the iterative intersection and observe that, although this process may construct some huge intermediate VSAs, its final VSA is usually small in practice because only a few programs can pass all examples. Utilizing this observation, we propose the approach of multi-way intersection, which directly intersects multiple small VSAs into the final result, thus avoiding the previous bottleneck of constructing huge intermediate VSAs. Furthermore, since the previous intersection algorithm is inefficient for multiple VSAs, we design a novel algorithm to avoid most unnecessary VSA nodes. We integrated our approach into two SOTA VSA-based synthesizers: a general synthesizer based on VSA and a specialized one for the string domain, Blaze. We evaluate them over 4 different datasets, 994 synthesis tasks; the results show that our approach can significantly improve the performance of VSA-based synthesis, with up to 105 more tasks solved and a speedup of 7.36 times.},
+ address = {New York, NY, USA},
+ articleno = {398},
+ author = {Chen, Guanlin and Ji, Ruyi and Zhang, Shuhao and Xiong, Yingfei},
+ doi = {10.1145/3763176},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Inductive Program Synthesis, Intersection, Version Space Algebra},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {25},
+ publisher = {Association for Computing Machinery},
+ title = {Tunneling through the Hill: Multi-way Intersection for Version-Space Algebras in Program Synthesis},
+ url = {https://doi-org.ez27.periodicos.capes.gov.br/10.1145/3763176},
+ volume = {9},
+ year = {2025}
+}

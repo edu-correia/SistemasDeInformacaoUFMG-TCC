@@ -1,0 +1,21 @@
+@article{FANG2025101586,
+ abstract = {Objective
+This study addresses the clinical need for more accurate breast cancer screening by developing a transformer-based, multi-modal BI-RADS classification framework that integrates mammographic radiomics, deep imaging features, and RNA-Seq-derived genetic biomarkers.
+Materials and methods
+Lesion auto-segmentation was performed using Swin-UNETR and nnU-Net on a dataset of 4265 patients collected from five medical centers. Radiomics and deep features were extracted using ResNet50 and Vision Transformer (ViT) architectures, and RNA-Seq genetic features were obtained via DNABERT and TabTransformer models. The dataset included BI-RADS distributions as follows: BI-RADS 1 (853), BI-RADS 2 (1066), BI-RADS 3 (853), BI-RADS 4 (853), and BI-RADS 5 (640) patients. Prior to classification, the reliability of extracted features was evaluated via Intraclass Correlation Coefficient (ICC) analysis, and dimensionality reduction was conducted using Principal Component Analysis (PCA), followed by feature selection methods including Least Absolute Shrinkage and Selection Operator (LASSO), Recursive Feature Elimination (RFE), and Analysis of Variance (ANOVA). The refined feature set was subsequently classified using machine learning algorithms such as XGBoost, CatBoost, SVM, and Random Forest. Model performance was assessed using metrics including accuracy, area under the curve (AUC), and recall, with five-fold cross-validation and an external test set utilized to confirm generalization.
+Results
+Swin-UNETR demonstrated superior segmentation performance compared to nnU-Net (DSC = 0.94 versus 0.88). Feature-based classification leveraging radiomics and deep learning features attained a peak accuracy of 89.22 % when utilizing ViT in combination with Swin-UNETR. The integration of radiomics, deep, and genetic features further enhanced classification outcomes, with the LASSO-XGBoost model achieving 96.17 % accuracy, an AUC of 97.22 %, and a recall rate of 95.28 %. Moreover, the end-to-end deep learning approach also yielded strong results, with the ViT model (based on Swin-UNETR segmentation) attaining an accuracy of 92.68 % and an AUC of 94.81 %.
+Conclusions
+Multi-modal integration significantly outperformed unimodal approaches, demonstrating strong generalization and robustness.},
+ author = {Mingshuang Fang and Binxiong Xu},
+ doi = {https://doi.org/10.1016/j.jrras.2025.101586},
+ issn = {1687-8507},
+ journal = {Journal of Radiation Research and Applied Sciences},
+ keyword = {Radiomics, Deep learning, Genetic features, BI-RADS classification, Breast cancer diagnosis},
+ number = {3},
+ pages = {101586},
+ title = {Transformer-based multi-modal learning for breast cancer screening: Merging imaging and genetic data},
+ url = {https://www.sciencedirect.com/science/article/pii/S1687850725002985},
+ volume = {18},
+ year = {2025}
+}

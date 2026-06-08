@@ -1,0 +1,13 @@
+@article{LI2025105079,
+ abstract = {The integration of video data computation and inference is a cornerstone for the evolution of multimodal artificial intelligence (MAI). The extensive adoption and optimization of CNN-based frameworks have significantly improved the accuracy of video inference, yet they present substantial challenges for real-time and large-scale computational demands. Existing researches primarily utilize the temporal similarity between video frames to reduce redundant computations, but most of them overlooked the spatial similarity within the frames themselves. Hence, we propose STVAI, a scalable and efficient method that leverages both spatial and temporal similarities to accelerate video inference. This approach uses a parallel region merging strategy, which maintains inference accuracy and enhances the sparsity of the computation matrix. Moreover, we have optimized the computation of sparse convolutions by utilizing Tensor Cores, which accelerate dense convolution computations based on the sparsity of the tiles. Experimental results demonstrate that STVAI achieves a stable acceleration of 1.25 times faster than cuDNN implementations, with only a 5% decrease in prediction accuracy. STVAI can achieve accelerations up to 1.53x, surpassing that of existing methods. Our method can be directly applied to various CNN architectures for video inference tasks without the need for retraining the model.},
+ author = {Chuang Li and Heshi Wang and Yanhua Wen and Qingyu Shi and Qinyu Wang and Chunhua Hu and Dongchen Wu},
+ doi = {https://doi.org/10.1016/j.jpdc.2025.105079},
+ issn = {0743-7315},
+ journal = {Journal of Parallel and Distributed Computing},
+ keyword = {Convolutional neural network, Deep learning, CUDA programming, Video inference, Parallel computing},
+ pages = {105079},
+ title = {STVAI: Exploring spatio-temporal similarity for scalable and efficient intelligent video inference},
+ url = {https://www.sciencedirect.com/science/article/pii/S0743731525000462},
+ volume = {201},
+ year = {2025}
+}

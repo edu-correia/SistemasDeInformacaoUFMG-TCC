@@ -1,0 +1,14 @@
+@inproceedings{10944032,
+ abstract = {Video generation has drawn significant interest recently, pushing the development of large-scale models capable of producing realistic videos with coherent motion. Due to memory constraints, these models typically generate short video segments that are then combined into long videos. The merging process poses a significant challenge, as it requires ensuring smooth transitions and overall consistency. In this paper, we introduce Anchored Diffusion, a novel method for synthesizing relatively long and seamless videos. We extend Diffusion Transformers (DiTs) to incorporate temporal information, creating our sequence-DiT (sDiT) model for generating short video segments. Unlike previous works, we train our model on video sequences with random non-uniform temporal spacing and incorporate temporal information via external guidance, increasing flexibility and allowing it to capture both short and long-term relationships. Furthermore, during inference, we leverage the transformer architecture to modify the diffusion process, generating a batch of non-uniform sequences anchored to a common frame, ensuring consistency regardless of temporal distance. To demonstrate our method, we focus on face reenactment, a task of transforming the action from the driving video to the source face. Through comprehensive experiments, we show our approach outperforms current techniques in producing longer consistent high-quality videos while offering editing capabilities.},
+ author = {Kligvasser, Idan and Cohen, Regev and Leifman, George and Rivlin, Ehud and Elad, Michael},
+ booktitle = {2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+ doi = {10.1109/WACV61041.2025.00402},
+ issn = {2642-9381},
+ keyword = {Training;Inference mechanisms;Motion segmentation;Video sequences;Noise reduction;Merging;Memory management;Diffusion processes;Transformers;Faces;video generation;anchored diffusion;diffusion transformers;sequence-dit;temporal information;face reenactment;video consistency;video synthesis;transformer architecture;diffusion process;video editing;high-quality videos;generative ai},
+ month = {Feb},
+ number = {},
+ pages = {4087-4097},
+ title = {Anchored Diffusion for Video Face Reenactment},
+ volume = {},
+ year = {2025}
+}

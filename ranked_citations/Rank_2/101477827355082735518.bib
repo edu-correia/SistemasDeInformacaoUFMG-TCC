@@ -1,0 +1,17 @@
+@article{10.14778/2735508.2735518,
+ abstract = {Set intersection is one of the most important operations for many applications such as Web search engines or database management systems. This paper describes our new algorithm to efficiently find set intersections with sorted arrays on modern processors with SIMD instructions and high branch misprediction penalties. Our algorithm efficiently exploits SIMD instructions and can drastically reduce branch mispredictions. Our algorithm extends a merge-based algorithm by reading multiple elements, instead of just one element, from each of two input arrays and compares all of the pairs of elements from the two arrays to find the elements with the same values. The key insight for our improvement is that we can reduce the number of costly hard-to-predict conditional branches by advancing a pointer by more than one element at a time. Although this algorithm increases the total number of comparisons, we can execute these comparisons more efficiently using the SIMD instructions and gain the benefits of the reduced branch misprediction overhead. Our algorithm is suitable to replace existing standard library functions, such as std::set_intersection in C++, thus accelerating many applications, because the algorithm is simple and requires no preprocessing to generate additional data structures. We implemented our algorithm on Xeon and POWER7+. The experimental results show our algorithm outperforms the std::set_intersection implementation delivered with gcc by up to 5.2x using SIMD instructions and by up to 2.1x even without using SIMD instructions for 32-bit and 64-bit integer datasets. Our SIMD algorithm also outperformed an existing algorithm that can leverage SIMD instructions.},
+ author = {Inoue, Hiroshi and Ohara, Moriyoshi and Taura, Kenjiro},
+ doi = {10.14778/2735508.2735518},
+ issn = {2150-8097},
+ issue_date = {November 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {12},
+ pages = {293–304},
+ publisher = {VLDB Endowment},
+ title = {Faster set intersection with SIMD instructions by reducing branch mispredictions},
+ url = {https://doi.org/10.14778/2735508.2735518},
+ volume = {8},
+ year = {2014}
+}

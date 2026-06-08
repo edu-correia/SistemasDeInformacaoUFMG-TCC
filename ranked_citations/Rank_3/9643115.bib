@@ -1,0 +1,14 @@
+@inproceedings{9643115,
+ abstract = {Pediatric brain MRI is a useful tool in assessing the healthy cerebral development of children. Since many pathologies may manifest in the brainstem and cerebellum, the objective of this study was to have an automated segmentation of pediatric posterior fossa structures. These pathologies include a myriad of etiologies from congenital malformations to tumors, which are very prevalent in this age group. We propose a pediatric brain MRI segmentation pipeline composed of preprocessing, semantic segmentation and post-processing steps. Segmentation modules are composed of two ensembles of networks: generalists and specialists. The generalist networks are responsible for locating and roughly segmenting the brain areas, yielding regions of interest for each target organ. Specialist networks can then improve the segmentation performance for underrepresented organs by learning only from the regions of interest from the generalist networks. At last, post-processing consists in merging the specialist and generalist networks predictions, and performing late fusion across the distinct architectures to generate a final prediction. We conduct a thorough ablation analysis on this pipeline and assess the superiority of the methodology in segmenting the brain stem, 4th ventricle and cerebellum. The proposed methodology achieved a macro-averaged Dice index of 0.855 with respect to manual segmentation, with only 32 labeled volumes used during training. Additionally, average distances between automatically and manually segmented surfaces remained around 1mm for the three structures, while volumetry results revealed high agreement between manually labeled and predicted regions.},
+ author = {Oliveira, Hugo and Penteado, Larissa and Maciel, José Luiz and Ferraciolli, Suely Fazio and Takahashi, Marcelo Straus and Bloch, Isabelle and Junior, Roberto Cesar},
+ booktitle = {2021 34th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)},
+ doi = {10.1109/SIBGRAPI54419.2021.00025},
+ issn = {2377-5416},
+ keyword = {Cerebellum;Training;Pathology;Image segmentation;Magnetic resonance imaging;Pipelines;Semantics;biomedical image segmentation;posterior fossa structures;deep learning},
+ month = {Oct},
+ number = {},
+ pages = {121-128},
+ title = {Automatic Segmentation of Posterior Fossa Structures in Pediatric Brain MRIs},
+ volume = {},
+ year = {2021}
+}

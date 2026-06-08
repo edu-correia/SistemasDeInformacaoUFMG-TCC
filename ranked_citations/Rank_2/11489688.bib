@@ -1,0 +1,14 @@
+@inproceedings{11489688,
+ abstract = {The MPEG Gaussian Splat Coding (GSC) standard adopts the Video-based Point Cloud Compression (V-PCC) framework to compress 3D Gaussian Splatting (3DGS) data. The current V-PCC encoder uses a “fixed-grid patch segmentation” (typically 1024 units), which causes inefficient boundary splitting and oversegmentation in sparse point clouds. This results in excessive metadata overhead and suboptimal atlas image packing. To address this, we propose an Iterative AABB RAW Patch Merging algorithm that decouples the grid alignment resolution from the maximum patch size. By iteratively adjusting the RawShift parameter to shift the AABB origin to finer intervals (e.g., 512, 256, 128, 64 units), our method merges fragmented patches while maintaining V-PCC syntax compatibility. Experimental results across all 16 GSC CTC sequences demonstrate that applying alignment resolutions ranging from 9-bit to 6-bit achieves average patch count reductions between 8.96 % and 17.53 %. The 6-bit resolutions yield the best coding efficiency, with an average BD-rate gain of $-0.5 \%$ in RGB-PSNR and -0.2% in YUV-SSIM for forward facing sequences.},
+ author = {Shin, Hye-Min and Kim, Hyun-Ho and Kim, Yong-Hwan},
+ booktitle = {2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)},
+ doi = {10.1109/VRW70859.2026.00031},
+ issn = {},
+ keyword = {Motion pictures;Broadcasting;Videos;Communications technology;High frequency;Video equipment;Protocols;HTTP;Video codecs;Information and communication technology;Gaussian Splat Coding;V-PCC;Point Cloud;Patch segmentation;Image compression;1F-Video Codec;Rendering},
+ month = {March},
+ number = {},
+ pages = {143-149},
+ title = {Efficient RAW Patch Segmentation via Iterative AABB Merging for V-PCC Based Gaussian Splat Coding},
+ volume = {},
+ year = {2026}
+}

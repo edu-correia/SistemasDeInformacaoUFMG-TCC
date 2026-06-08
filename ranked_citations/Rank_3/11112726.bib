@@ -1,0 +1,14 @@
+@article{11112726,
+ abstract = {Continual Named Entity Recognition (CNER) is an evolving field that focuses on sequentially updating an existing model to incorporate new entity types. Previous CNER methods primarily utilize Knowledge Distillation (KD) to preserve prior knowledge and overcome catastrophic forgetting, strictly ensuring that the representations of old and new models remain consistent. Consequently, they often impart the model with excessive stability (i.e., retention of old knowledge) but limited plasticity (i.e., acquisition of new knowledge). To address this issue, we propose a Stability-Plasticity Trade-off (SPT) method for CNER that balances these aspects from both representation and weight perspectives. From the representation perspective, we introduce a pooling operation into the original KD, permitting a level of plasticity by consolidating representation dimensions. From the weight perspective, we dynamically merge the weights of old and new models, strengthening old knowledge while maintaining new knowledge. During this fusion, we implement a weight-guided selective mechanism to prioritize significant weights. Moreover, we develop a confidence-based pseudo-labeling approach for the current non-entity type, which predicts entity types using the old model to handle the semantic shift of the non-entity type, a challenge specific to CNER that has largely been ignored by previous methods. Extensive experiments across ten CNER settings on three benchmark datasets demonstrate that our SPT method surpasses previous CNER approaches, highlighting its effectiveness in achieving a suitable stability-plasticity trade-off.},
+ author = {Zhang, Duzhen and Li, Chenxing and Dong, Jiahua and Liu, Qi and Yu, Dong},
+ doi = {10.1109/TASLPRO.2025.3592317},
+ issn = {2998-4173},
+ journal = {IEEE Transactions on Audio, Speech and Language Processing},
+ keyword = {Adaptation models;Stability analysis;Continuing education;Stability plasticity;Named entity recognition;Training;Thermal stability;Semantics;Deep learning;Computational modeling;Continual learning;catastrophic forgetting;named entity recognition;stability-plasticity trade-offs (SPTs)},
+ month = {},
+ number = {},
+ pages = {3465-3479},
+ title = {Exploring Stability-Plasticity Trade-Offs for Continual Named Entity Recognition},
+ volume = {33},
+ year = {2025}
+}

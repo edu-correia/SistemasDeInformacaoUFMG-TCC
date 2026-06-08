@@ -1,0 +1,14 @@
+@inproceedings{11444838,
+ abstract = {Recently, Vision Large Language Models (VLLMs) with integrated vision encoders have shown promising performance in vision understanding. They encode visual content into sequences of visual tokens, enabling joint processing of visual and textual data. However, understanding videos, especially long videos, remains a challenge as the rapid growth of visual tokens during video encoding risks exceeding VLLMs' context window length and significantly escalates computational cost. To restrict the number of visual tokens, existing VLLMs either: (1) uniformly downsample videos into a fixed number of frames or (2) reducing the number of visual tokens encoded from each frame. We argue that the former neglects temporal dynamics in videos, while the latter fails to preserve spatial details within individual frame. In this work, we propose BalancedVLLM (B-VLLM), a novel VLLM framework designed to model task relevant spatio-temporal cues, while restricting the number of visual tokens within the VLLM's context window length. Central to our framework is a text-conditioned adaptive frame selection module that dynamically identifies task-relevant frames, which are further de-duplicated with a temporal frame token merging strategy. The visual tokens of these frames then undergo spatial token sampling and an optional spatial token merging strategy for granular control against the token budget. Experiments demonstrate the effectiveness of B-VLLM in balancing the number of frames and visual tokens, moreover, our proposed method introduces 10% performance gain on MVBench. Code is available at https://github.com/zhuqiangLu/B-VLLM.git.},
+ author = {Lu, Zhuqiang and Yin, Zhenfei and He, Mengwei and Wang, Zhihui and Liu, Zicheng and Wang, Zhiyong and Hu, Kun},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02276},
+ issn = {2380-7504},
+ keyword = {Feeds;Antennas;Filtering;Filters;Circuits and systems;Videos;Video equipment;Product development;Protocols;HTTP},
+ month = {Oct},
+ number = {},
+ pages = {24549-24559},
+ title = {B-VLLM: A Vision Large Language Model with Balanced Spatio-Temporal Tokens},
+ volume = {},
+ year = {2025}
+}

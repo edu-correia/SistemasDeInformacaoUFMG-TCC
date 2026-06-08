@@ -1,0 +1,14 @@
+@inproceedings{9741285,
+ abstract = {GPGPUs use the Single-Instruction-Multiple-Thread (SIMT) execution model where a group of threads— wavefront or warp—execute instructions in lockstep. When threads in a group encounter a branching instruction, not all threads in the group take the same path, a phenomenon known as control-flow divergence. The control-flow divergence causes performance degradation because both paths of the branch must be executed one after the other. Prior research has primarily addressed this issue through architectural modifications. We observe that certain GPGPU kernels with control-flow divergence have similar control-flow structures with similar instructions on both sides of a branch. This structure can be exploited to reduce control-flow divergence by melding the two sides of the branch allowing threads to reconverge early, reducing divergence. In this work, we present DARM, a compiler analysis and transformation framework that can meld divergent control-flow structures with similar instruction sequences. We show that DARM can reduce the performance degradation from control-flow divergence.},
+ author = {Saumya, Charitha and Sundararajah, Kirshanthan and Kulkarni, Milind},
+ booktitle = {2022 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO53902.2022.9741285},
+ issn = {},
+ keyword = {Degradation;Program processors;Codes;Merging;Tail;Benchmark testing;Kernel;GPGPUs;Control-Flow Divergence;Compiler Optimizations},
+ month = {April},
+ number = {},
+ pages = {1-13},
+ title = {DARM: Control-Flow Melding for SIMT Thread Divergence Reduction},
+ volume = {},
+ year = {2022}
+}

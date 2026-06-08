@@ -1,0 +1,16 @@
+@article{Wei2021,
+ abstract = {RDMA (Remote Direct Memory Access) has gained considerable interests in network-attached in-memory key-value stores. However, traversing the remote tree-based index in ordered key-value stores with RDMA becomes a critical obstacle, causing an order-of-magnitude slowdown and limited scalability due to multiple round trips. Using index cache with conventional wisdom - caching partial data and traversing them locally - usually leads to limited effect because of unavoidable capacity misses, massive random accesses, and costly cache invalidations. We argue that the machine learning (ML) model is a perfect cache structure for the tree-based index, termed learned cache. Based on it, we design and implement XStore, an RDMA-based ordered key-value store with a new hybrid architecture that retains a tree-based index at the server to perform dynamic workloads (e.g., inserts) and leverages a learned cache at the client to perform static workloads (e.g., gets and scans). The key idea is to decouple ML model retraining from index updating by maintaining a layer of indirection from logical to actual positions of key-value pairs. It allows a stale learned cache to continue predicting a correct position for a lookup key. XStore ensures correctness using a validation mechanism with a fallback path and further uses speculative execution to minimize the cost of cache misses. Evaluations with YCSB benchmarks and production workloads show that a single XStore server can achieve over 80 million read-only requests per second. This number outperforms state-of-the-art RDMA-based ordered key-value stores (namely, DrTM-Tree, Cell, and eRPC+Masstree) by up to 5.9× (from 3.7×). For workloads with inserts, XStore still provides up to 3.5× (from 2.7×) throughput speedup, achieving 53M reqs/s. The learned cache can also reduce client-side memory usage and further provides an efficient memory-performance tradeoff, e.g., saving 99% memory at the cost of 20% peak throughput.  © 2021 Association for Computing Machinery.},
+ author = {Wei, Xingda and Chen, Rong and Chen, Haibo and Zang, Binyu},
+ doi = {10.1145/3468520},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 19},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {XStore: Fast RDMA-Based Ordered Key-Value Store Using Remote Learned Cache},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85122591282?origin=resultslist},
+ volume = {17},
+ year = {2021}
+}

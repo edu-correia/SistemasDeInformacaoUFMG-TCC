@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2024.3361324,
+ abstract = {Network administrators usually realize network functions in data plane programs. They employ the network-wide program deployment that decomposes input programs into match-action tables (MATs) while deploying each MAT on a specific switch. Since MATs may be deployed on different switches, existing solutions propose the inter-switch coordination that uses the per-packet header space to deliver crucial packet processing information among switches. However, such coordination incurs non-trivial per-packet byte overhead, leading to end-to-end performance degradation. We propose Hermes, a framework that aims to minimize the per-packet byte overhead. The key idea is to formulate network-wide program deployment as a mixed-integer programming (MIP) problem with the objective of minimizing the per-packet byte overhead. Also, Hermes offers a greedy-based heuristic that solves the problem in a near-optimal and timely manner. We have implemented Hermes on Tofino switches. Compared to existing frameworks, Hermes decreases the per-packet byte overhead by 156bytes while preserving end-to-end performance in terms of flow completion time and goodput.},
+ author = {Chen, Xiang and Liu, Hongyan and Xiao, Qingjiang and Huang, Qun and Zhang, Dong and Zhou, Haifeng and Zhou, Boyang and Wu, Chunming and Liu, Xuan and Yang, Qiang},
+ doi = {10.1109/tnet.2024.3361324},
+ issn = {1063-6692},
+ issue_date = {Aug. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {April},
+ number = {4},
+ numpages = {16},
+ pages = {2842–2857},
+ publisher = {IEEE Press},
+ title = {Hermes: Low-Overhead Inter-Switch Coordination in Network-Wide Data Plane Program Deployment},
+ url = {https://doi.org/10.1109/TNET.2024.3361324},
+ volume = {32},
+ year = {2024}
+}

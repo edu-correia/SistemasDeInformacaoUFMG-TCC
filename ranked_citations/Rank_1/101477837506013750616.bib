@@ -1,0 +1,17 @@
+@article{10.14778/3750601.3750616,
+ abstract = {Indexes are one of the important access structures that help improve database performance. This paper provides a methodology to automate the entire lifecycle of index creation and management with continuous index tuning based on changing data and workload. We present novel ideas that are critical to ensuring automatic indexing seamlessly works in a production database. Our methodology avoids using an expensive clone; yet offers non-intrusive index operations (candidate isolation and evaluation with Oracle resource manager ensuring no visible impact to the user workload), and upon deployment of auto indexes ensures non-disruptive plan invalidations and timely mitigation of performance regressions. The proposed approach is unique in that it is incremental and iterative, continually creating beneficial indexes and dropping unused ones as the workload evolves. The approach even supports indexes on expressions. It performs careful validation - including computing overhead of index maintenance incurred during DML while evaluating potential benefit - and provides accountability for its actions. Performance regressions are effectively managed using Oracle's powerful SQL Plan Management (SPM) framework. For example, a new automatic index isn't dropped in response to a single statement regressing due to it; SPM instead ensures such regressing statements revert to well-performing plans even in the presence of new indexes that continue to benefit other statements. We also share results of comprehensively evaluating various automatic indexing aspects in publicly available and Oracle customer workloads. Our experiments show benefit with automatic indexing, especially in customer workload, with a 15\% improvement in performance and 60\% space reclamation potential. This automatic indexing feature is available since Oracle 19c and in Oracle Autonomous Database.},
+ author = {Chakkappen, Sunil and Kunjibettu, Shreya and McGreer, Daniel and Kishi, Masoomeh Javidi and Su, Hong and Ziauddin, Mohamed and Zait, Mohamed and Li, Zhan and Zhang, Yuying},
+ doi = {10.14778/3750601.3750616},
+ issn = {2150-8097},
+ issue_date = {August 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {14},
+ pages = {4924–4937},
+ publisher = {VLDB Endowment},
+ title = {Automatic Indexing in Oracle},
+ url = {https://doi-org.ez27.periodicos.capes.gov.br/10.14778/3750601.3750616},
+ volume = {18},
+ year = {2025}
+}

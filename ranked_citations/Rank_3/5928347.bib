@@ -1,0 +1,14 @@
+@article{5928347,
+ abstract = {XML query languages typically allow the specification of structural patterns using XPath. Usually, these structural patterns are in the form of trees (Tree-Pattern Queries—TPQs). Finding the occurrences of such patterns in an XML tree is a key operation in XML query evaluation. The multiple previous algorithms presented for this operation focus mainly on the evaluation of tree-pattern queries. Recently, requirements for flexible querying of XML data have motivated the consideration of query classes that are more expressive and flexible than TPQs for which efficient nonmain-memory evaluation algorithms are not known. In this paper, we consider a class of queries, called Partial Tree-Pattern Queries (PTPQs), which generalize and strictly contain TPQs. PTPQs represent a broad fragment of XPath which is very useful in practice. In order to process PTPQs, we introduce a set of sound and complete inference rules to characterize structural relationship derivation. We provide necessary and sufficient conditions for detecting query unsatisfiability and node redundancy. We also show that PTPQs can be represented as directed acyclic graphs augmented with the “same-path” constraints. In order to leverage existing efficient evaluation algorithms for less expressive classes of queries, we design two approaches that evaluate a PTPQ by decomposing it into a set of simpler queries: algorithm IndexTPQGen, exploits a structural summary of the XML data and evaluates a PTPQ by generating an equivalent set of TPQs and unioning their answers. Algorithm PartialPathJoin decomposes the PTPQ into partial-path queries, and merge-joins their solutions. We also develop PartialTreeStack, an original polynomial time holistic algorithm for PTPQs. To the best of our knowledge, this is the first algorithm to support the evaluation of such a broad structural fragment of XPath in the inverted lists evaluation model. We provide a theoretical analysis of our algorithm and identify cases where it is asymptotically optimal. An extensive experimental evaluation shows that it is more efficient, robust, and stable than the other two and it outperforms a state-of-the art XQuery engine on PTPQs.},
+ author = {Wu, Xiaoying and Souldatos, Stefanos and Theodoratos, Dimitri and Dalamagas, Theodore and Vassiliou, Yannis and Sellis, Timos},
+ doi = {10.1109/TKDE.2011.137},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {XML;Algorithm design and analysis;Database languages;Query processing;Polynomials;Semantics;Data models;XML query processing;XPath query evaluation;tree-pattern query;partial tree-pattern query},
+ month = {Dec},
+ number = {12},
+ pages = {2244-2259},
+ title = {Processing and Evaluating Partial Tree Pattern Queries on XML Data},
+ volume = {24},
+ year = {2012}
+}

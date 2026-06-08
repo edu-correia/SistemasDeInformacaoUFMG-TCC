@@ -1,0 +1,14 @@
+@article{10746329,
+ abstract = {Semantic change detection (SCD) for high-resolution remote sensing imagery involves simultaneously locating the changed regions and identifying the semantic change categories. Recently, a series of multitask Siamese networks have been proposed to model the SCD task by merging the binary change detection (BCD) results and the bitemporal land-cover classification (LCC) results. However, due to the large reflectance variability of the land cover in bitemporal high-resolution images, the land-cover feature clusters extracted by these methods are still considerably mixed, leading to the misidentification of change and their semantic changes types. In this article, to handle this problem, the SiamContrast method is proposed to learn temporally invariant discriminative land-cover features for SCD. As part of SiamContrast, a novel SCD contrastive loss (SCD-CL) is proposed to enhance the temporally invariant feature discrimination across bitemporal images. SCD-CL utilizes supervised contrastive learning and consists of two complementary components: mono-temporal contrastive loss (MCL) and cross-temporal contrastive loss (CCL). In particular, MCL contrasts the land-cover features within each temporal image, to enhance the mono-temporal feature discrimination. Meanwhile, CCL with a change-aware hard anchor sampling (CHAS) strategy contrasts the land-cover features across bitemporal images, to align the land cover features of the same category. To validate the effectiveness of SCD-CL, the SiamContrast method incorporates a difference feature pyramid (DFP) decoder, which leverages feature distance to model changes, allowing it to directly benefit from the discriminative features learned by SCD-CL. The comprehensive experimental results consistently confirm the effectiveness of the proposed SiamContrast in improving SCD performance, compared with the existing SCD methods. The code is available at https://github.com/wdczs/SiamContrast.},
+ author = {Wang, Jue and Zhong, Yanfei and Zhang, Liangpei},
+ doi = {10.1109/TGRS.2024.3484178},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Semantics;Feature extraction;Decoding;Contrastive learning;Remote sensing;Reflectivity;Prediction methods;Land surface;Visualization;Face recognition;Change detection;fully convolutional network (FCN);multitask learning;semantic change detection (SCD);semantic segmentation;Siamese network},
+ month = {},
+ number = {},
+ pages = {1-20},
+ title = {Semantic Change Detection Based on Supervised Contrastive Learning for High-Resolution Remote Sensing Imagery},
+ volume = {62},
+ year = {2024}
+}

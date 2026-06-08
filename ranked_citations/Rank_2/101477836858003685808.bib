@@ -1,0 +1,17 @@
+@article{10.14778/3685800.3685808,
+ abstract = {Data Governance is an increasingly critical feature of modern cloud database systems, enabling administrators to set granular access policies on their data. AWS customers want to define row or column filtering on their blob storage data and access it using popular tools such as Apache Spark. AWS EMR provides a managed and serverless solution that lets users run Spark jobs in the AWS cloud with imperative and declarative programming against their data, while securely enforcing the fine-grained access controls defined on those datasets. Spark runs its compiler and scheduler alongside the user application and embeds user-defined functions in query plans, giving a threat actor direct access to its memory space. This introduces attack vectors such as information disclosure or privilege escalation during policy enforcement, in addition to well-researched threats such as SQL side channel attacks. In this paper, we present Membrane: a novel approach to secure query plans with declarative and imperative code. The innovation comes from splitting the Spark driver in two in order to rewrite query plans with security boundaries while avoiding traditional tradeoffs when using container isolation techniques. The approach described herein enables applying fine grained data access controls to both SQL and map-reduce Spark jobs, with negligible performance and cost differences.},
+ author = {Paduroiu, Andrei and Wi, Sungheun and Yan, Yan and Burd, Roni and Farchtchi, Ruhollah and Fumarola, Giovanni Matteo},
+ doi = {10.14778/3685800.3685808},
+ issn = {2150-8097},
+ issue_date = {August 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {14},
+ pages = {3813–3826},
+ publisher = {VLDB Endowment},
+ title = {Membrane - Safe and Performant Data Access Controls in Apache Spark in the Presence of Imperative Code},
+ url = {https://doi.org/10.14778/3685800.3685808},
+ volume = {17},
+ year = {2024}
+}

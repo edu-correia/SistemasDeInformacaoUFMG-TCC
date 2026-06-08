@@ -1,0 +1,14 @@
+@inproceedings{10260541,
+ abstract = {One essential feature of an autonomous train is minimizing collision risks with third-party objects. To estimate the risk, the train must be able to identify topological information of all the rail routes ahead on which the train can possibly move, especially within merging or diverging rails. This way, the train can figure out the status of potential obstacles with respect to its route, and hence, make a timely decision. Numerous studies have successfully extracted all rail tracks without recognizing separate rail instances. Still, some image-based methods have employed hard-coded prior knowledge of railway structure and 3D data to associate left-right rails and generate rail route instances. However, we propose a rail path extraction pipeline in which left-right rail pixels of the routes are extracted and associated through a fully convolutional encoder-decoder architecture called TPE-Net. Two different regression branches for TPE-Net are proposed and trained separately to estimate the coordinates of center points of each rail route, along with their corresponding left-right pixels. Extracted rail pixels are then spatially clustered to provide topological information of all the possible train routes (ego-paths), discarding non-ego-path ones. Comparing different TPE-Net baselines and regression branch designs reveals our highest true-positive-pixel level average precision and recall of 0.9290 and 0.8864, respectively, at around 12 frames per second on a challenging, publicly released benchmark. The results also indicate that based on our proposed model selection method, the TPE-Net can reliably understand rail scene configuration and provide useful geometrical information for the autonomous train systems.},
+ author = {Ghorbanalivakili, Mohammadjavad and Kang, Jungwon and Sohn, Gunho and Beach, David and Marin, Veronica},
+ booktitle = {2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)},
+ doi = {10.1109/CASE56687.2023.10260541},
+ issn = {2161-8089},
+ keyword = {Rails;Point cloud compression;Three-dimensional displays;Tracking;Semantic segmentation;Switches;Surfaces},
+ month = {Aug},
+ number = {},
+ pages = {1-7},
+ title = {TPE-Net: Track Point Extraction and Association Network for Rail Path Proposal Generation},
+ volume = {},
+ year = {2023}
+}

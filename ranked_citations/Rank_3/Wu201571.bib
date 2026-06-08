@@ -1,0 +1,13 @@
+@conference{Wu201571,
+ abstract = {Key-value (KV) stores have become a backbone of largescale applications in today's data centers. The data set of the store on a single server can grow to billions of KV items or many terabytes, while individual data items are often small (with their values as small as a couple of bytes). It is a daunting task to efficiently organize such an ultra-large KV store to support fast access. Current KV storage systems have one or more of the following inadequacies: (1) very high data write amplifications, (2) large index set, and (3) dramatic degradation of read performance with overspill index out of memory. To address the issue, we propose LSM-trie, a KV storage system that substantially reduces metadata for locating KV items, reduces write amplification by an order of magnitude, and needs only two disk accesses with each KV read even when only less than 10% of metadata (Bloom filters) can be held in memory. To this end, LSM-trie constructs a trie, or a prefix tree, that stores data in a hierarchical structure and keeps re-organizing them using a compaction method much more efficient than that adopted for LSM-tree. Our experiments show that LSM-trie can improve write and read throughput of LevelDB, a state-of-the-art KV system, by up to 20 times and up to 10 times, respectively. © 2015 USENIX Annual Technical Conference.},
+ author = {Wu, Xingbo and Xu, Yuehai and Shao, Zili and Jiang, Song},
+ journal = {Proceedings of the 2015 USENIX Annual Technical Conference, USENIX ATC 2015},
+ note = {Cited by: 231},
+ pages = {71 - 82},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LSM-trie: An lsm-tree-based ultra-large key-value store for small data},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85046539976?origin=resultslist},
+ year = {2015}
+}

@@ -1,0 +1,14 @@
+@article{9989542,
+ abstract = {Recently significant progress has been made in 3D detection. However, it is still challenging to detect small contour objects under complex scenes. This paper proposes a novel Attention-based Multi-phase Multi-task Fusion (AMMF) that uses point-level, RoI-level, and multi-task fusions to complement the disadvantages of LiDAR and camera, to solve this challenge. First, at the feature extraction phase, AMMF uses the Low and High-level Fusion with Matching Attention (LHF-MA) and efficient FPN (eFPN) to perform point-level fusion for cross sensors and single sensor, respectively. Instead of merging each level and using expensive 3D CNN like other methods, LHF-MA fuses low-level spatial location and high-level contextual feature of 2D CNN customized feature extractors and ignores the fusion of middle levels, reducing the computational cost. Then, at the proposal generation phase, Progressive Proposal Fusion (PPF) with learned attention map is used to perform coarse-to-fine RoI-level fusion, instead of only combining coarse-grained features at high-level of network. PPF using progressively increasing IoU thresholds could avoid overfitting and improve the performance. Note that the matching attentions and learned attention maps are utilized to weigh the priority of different sensors. Moreover, to solve the sparseness of point-wise fusion between LiDAR BEV and RGB image, AMMF uses multi-task fusion that generates pseudo-LiDAR from camera by depth estimation task, to guide this point-wise fusion. Finally, AMMF performs excellently for detecting small contour objects like pedestrians, cyclists, and distant cars. On the KITTI, AMMF finishes 3.62% improvements in the moderate instance for pedestrians. It achieves a 2.21% improvement in the >50 instance of LEVEL_2 level for vehicle on the Waymo Open Dataset. And AMMF is further verified on our customized dataset consisting of challenging scenarios like strong illumination and heavy shadow cases.},
+ author = {Xie, Bangquan and Yang, Zongming and Yang, Liang and Wei, Ailin and Weng, Xiaoxiong and Li, Bing},
+ doi = {10.1109/TITS.2022.3225634},
+ issn = {1558-0016},
+ journal = {IEEE Transactions on Intelligent Transportation Systems},
+ keyword = {Feature extraction;Laser radar;Three-dimensional displays;Cameras;Multitasking;Fuses;Proposals;Attention mechanism;sensor fusion;pseudo-LiDAR;multi-stage detection;multi-task learning;small contour object 3D detection},
+ month = {Feb},
+ number = {2},
+ pages = {1692-1701},
+ title = {AMMF: Attention-Based Multi-Phase Multi-Task Fusion for Small Contour Object 3D Detection},
+ volume = {24},
+ year = {2023}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3192965.3192967,
+ abstract = {Enabling interactive data exploration at cloud scale requires minimizing end-to-end query execution latency, while guaranteeing fault tolerance, and query execution under resource-constraints. Typically, such a query execution involves orchestrating the execution of hundreds or thousands of related tasks on cloud scale clusters. Without any resource constraints, all query tasks can be scheduled to execute simultaneously (gang scheduling) while connected tasks stream data between them. When the data size referenced by a query increases, gang scheduling may be resource-wasteful or un-satisfiable with a limited, per-query resource budget. This paper introduces Bubble Execution, a new query processing framework for interactive workloads at cloud scale, that balances cost-based query optimization, fault tolerance, optimal resource management, and execution orchestration. Bubble execution involves dividing a query execution graph into a collection of query sub-graphs (bubbles), and scheduling them within a per-query resource budget. The query operators (tasks) inside a bubble stream data between them while fault tolerance is handled by persisting temporary results at bubble boundaries. Our implementation enhances our JetScope service, for interactive workloads, deployed in production clusters at Microsoft. Experiments with TPC-H queries show that bubble execution can reduce resource usage significantly in the presence of failures while maintaining performance competitive with gang execution.},
+ author = {Yint, Zhicheng and Sun, Jin and Li, Ming and Ekanayake, Jaliya and Lin, Haibo and Friedman, Marc and Blakeley, Jos\'{e} A. and Szyperski, Clemens and Devanur, Nikhil R.},
+ doi = {10.14778/3192965.3192967},
+ issn = {2150-8097},
+ issue_date = {March 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {March},
+ number = {7},
+ numpages = {13},
+ pages = {746–758},
+ publisher = {VLDB Endowment},
+ title = {Bubble execution: resource-aware reliable analytics at cloud scale},
+ url = {https://doi.org/10.14778/3192965.3192967},
+ volume = {11},
+ year = {2018}
+}

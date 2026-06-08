@@ -1,0 +1,14 @@
+@inproceedings{10635687,
+ abstract = {Multiplex immunofluorescence (MxIF) imaging is a critical tool in biomedical research, offering detailed insights into cell composition and spatial context. As an example, DAPI staining identifies cell nuclei, while CD20 staining helps segment cell membranes in MxIF. However, a persistent challenge in MxIF is saturation artifacts, which hinder single-cell level analysis in areas with over-saturated pixels. Traditional gamma correction methods for fixing saturation are limited, often incorrectly assuming uniform distribution of saturation, which is rarely the case in practice. This paper introduces a novel approach to correct saturation artifacts from a data-driven perspective. We introduce a two-stage, high-resolution hybrid generative adversarial network (HD-mixGAN), which merges unpaired (CycleGAN) and paired (pix2pixHD) network architectures. This approach is designed to capitalize on the available small-scale paired data and the more extensive unpaired data from costly MxIF data. Specifically, we generate pseudo-paired data from large-scale unpaired over-saturated datasets with a CycleGAN, and train a Pix2pixGAN using both small-scale real and large-scale synthetic data derived from multiple DAPI staining rounds in MxIF. This method was validated against various base-lines in a downstream nuclei detection task, improving the F1 score by 6% over the baseline. This is, to our knowledge, the first focused effort to address multi-round saturation in MxIF images, offering a specialized solution for enhancing cell analysis accuracy through improved image quality. The source code and implementation of the proposed method are available at https://github.com/MASILab/DAPIArtifactRemoval.git.},
+ author = {Bao, Shunxing and Guo, Junlin and Lee, Ho Hin and Deng, Ruining and Cui, Can and Remedios, Lucas W. and Liu, Quan and Yang, Qi and Xu, Kaiwen and Yu, Xin and Li, Jia and Li, Yike and Roland, Joseph T. and Liu, Qi and Lau, Ken S. and Wilson, Keith T. and Coburn, Lori A. and Landman, Bennett A. and Huo, Yuankai},
+ booktitle = {2024 IEEE International Symposium on Biomedical Imaging (ISBI)},
+ doi = {10.1109/ISBI56570.2024.10635687},
+ issn = {1945-8452},
+ keyword = {Multiplexing;Microprocessors;Source coding;Computer architecture;Network architecture;Generative adversarial networks;Immunofluorescence;Fluorescence;color saturation;GAN},
+ month = {May},
+ number = {},
+ pages = {1-5},
+ title = {Mitigating Over-Saturated Fluorescence Images Through a Semi-Supervised Generative Adversarial Network},
+ volume = {},
+ year = {2024}
+}

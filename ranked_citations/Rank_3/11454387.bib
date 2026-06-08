@@ -1,0 +1,14 @@
+@inproceedings{11454387,
+ abstract = {High-performance computing (HPC) is an essential tool for solving complex and massive computational problems in advanced scientific research fields such as application simulations in astronomy, climate science, and particle physics. This is because simulations require maximizing floating-point operations and extensive parallel processing based on large-scale data. As HPC systems evolve into heterogeneous environments combining CPUs and GPUs, new performance bottlenecks beyond simple computational overhead have emerged as major challenges. Specifically, overhead from data memory copying between CPUs and GPUs, system-wide data bottlenecks, and increased computational latency and energy consumption are becoming pervasive. Resolving these inefficiencies to save time and costs while enhancing research efficiency is the primary goal. Therefore, this study analyzes performance optimization strategies for the HPC (High-Performance Computing) application simulation code RAMSES-HR5 to design and analyze a CXL-based nextgeneration HPC architecture. First, code profiling analysis revealed that the primary bottlenecks in the existing system stem from synchronization and communication delays based on OpenMP/MPI, rather than computational overhead. Excessive wait times were particularly observed in the kmp_fork_barrier and pmpi_allreduce functions. To address this issue, we propose solutions including merging OpenMP parallelization regions, utilizing asynchronous MPI communication, and changing the AMR (Adaptive Mesh Refinement) index structure to a hash-based approach. We also explore leveraging nextgeneration devices like CXL (Compute Express Link) to resolve memory bottlenecks and maximize data sharing efficiency. These approaches are expected to enhance the performance of RAMSES-HR5 and further contribute to building a simulation environment optimized for next-generation HPC system architectures.},
+ author = {Jung, Hyun Mi and Lee, Hyunjo and Chae, Cheol-Joo},
+ booktitle = {2026 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)},
+ doi = {10.1109/ICAIIC68212.2026.11454387},
+ issn = {2831-6983},
+ keyword = {Performance evaluation;Codes;Computational modeling;High performance computing;Memory management;Random access memory;Systems architecture;Synchronization;Next generation networking;Optimization;HPC;CXL;Next generation HPC system;HPC application},
+ month = {Feb},
+ number = {},
+ pages = {1162-1165},
+ title = {The Analysis of Next-Generation HPC Architecture Based on CXL Through RAMSES-HR5 Performance Optimization},
+ volume = {},
+ year = {2026}
+}

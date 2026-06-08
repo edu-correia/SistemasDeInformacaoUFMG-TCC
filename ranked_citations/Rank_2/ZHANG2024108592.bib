@@ -1,0 +1,13 @@
+@article{ZHANG2024108592,
+ abstract = {Cardiac MRI segmentation is a significant research area in medical image processing, holding immense clinical and scientific importance in assisting the diagnosis and treatment of heart diseases. Currently, existing cardiac MRI segmentation algorithms are often constrained by specific datasets and conditions, leading to a notable decrease in segmentation performance when applied to diverse datasets. These limitations affect the algorithm’s overall performance and generalization capabilities. Inspired by ConvNext, we introduce a two-dimensional cardiac MRI segmentation U-shaped network called ConvNextUNet. It is the first application of a combination of ConvNext and the U-shaped architecture in the field of cardiac MRI segmentation. Firstly, we incorporate up-sampling modules into the original ConvNext architecture and combine it with the U-shaped framework to achieve accurate reconstruction. Secondly, we integrate Input Stem into ConvNext, and introduce attention mechanisms along the bridging path. By merging features extracted from both the encoder and decoder, a probability distribution is obtained through linear and nonlinear transformations, serving as attention weights, thereby enhancing the signal of the same region of interest. The resulting attention weights are applied to the decoder features, highlighting the region of interest. This allows the model to simultaneously consider local context and global details during the learning phase, fully leveraging the advantages of both global and local perception for a more comprehensive understanding of cardiac anatomical structures. Consequently, the model demonstrates a clear advantage and robust generalization capability, especially in small-region segmentation. Experimental results on the ACDC, LVQuan19, and RVSC datasets confirm that the ConvNextUNet model outperforms the current state-of-the-art models, particularly in small-region segmentation tasks. Furthermore, we conducted cross-dataset training and testing experiments, which revealed that the pre-trained model can accurately segment diverse cardiac datasets, showcasing its powerful generalization capabilities. The source code of this project is available at https://github.com/Zemin-Cai/ConvNextUNet.},
+ author = {Huiyi Zhang and Zemin Cai},
+ doi = {https://doi.org/10.1016/j.compbiomed.2024.108592},
+ issn = {0010-4825},
+ journal = {Computers in Biology and Medicine},
+ keyword = {Cardiac MRI segmentation, Small-region, ConvNext blocks, Attention gates},
+ pages = {108592},
+ title = {ConvNextUNet: A small-region attentioned model for cardiac MRI segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0010482524006772},
+ volume = {177},
+ year = {2024}
+}

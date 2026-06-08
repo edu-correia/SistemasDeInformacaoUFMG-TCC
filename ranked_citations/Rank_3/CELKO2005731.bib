@@ -1,0 +1,17 @@
+@incollection{CELKO2005731,
+ abstract = {Publisher Summary
+There is no set of rules for writing code that will take the best advantage of every query optimizer on every Structured Query Language (SQL) product. There are two kinds of optimizers: cost-based and rule-based. A rule-based optimizer looks at the syntax of the query and plans the execution of the query without considering the size of the tables or the statistical distribution of the data. A cost-based optimizer scrutinizes both the query and the statistical data about the database itself before deciding the best way to execute the query. There are four basic methods of getting to data: table scans or sequential reads of all the rows in the table, access via some kind of index, hashing, and bit vector indexes. Optimizers are not always able to draw conclusions that a human being can draw. The more information contained in the query, the better the chance that the optimizer will be able to find an improved execution plan. The IN predicate is really shorthand for a series of ORed equality tests. A UNION is often implemented by constructing the two result sets and then merge-sorting them together. Another trick is to use temporary tables to hold intermediate results to avoid CROSS JOINS and excessive recalculations.},
+ address = {San Francisco},
+ author = {Joe Celko},
+ booktitle = {Joe Celko's SQL for Smarties (Third edition)},
+ doi = {https://doi.org/10.1016/B978-012369379-2/50033-9},
+ edition = {Third edition},
+ editor = {Joe Celko},
+ isbn = {978-0-12-369379-2},
+ pages = {731-760},
+ publisher = {Morgan Kaufmann},
+ series = {The Morgan Kaufmann Series in Data Management Systems},
+ title = {Chapter 33 - Optimizing SQL},
+ url = {https://www.sciencedirect.com/science/article/pii/B9780123693792500339},
+ year = {2005}
+}

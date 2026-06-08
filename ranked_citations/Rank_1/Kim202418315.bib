@@ -1,0 +1,15 @@
+@article{Kim202418315,
+ abstract = {Blockchain makes heavy use of cryptographic hashing to achieve integrity and consensus in a peer-to-peer network, but hashing causes some inefficiencies. For example, blockchain stores data with their hash digest as a key in the database, so the blockchain always reads and writes data in a random order. This can affect blockchain performance, especially for account-based blockchains such as Ethereum, which must maintain a huge, hash-based data structure for accounts, called the state trie. Also, Proof-of-Work (PoW) consensus algorithm requires the miners to find a nonce that makes the block hash lower than a difficulty threshold, but ASICs with parallel hashing have made PoW use a large dataset such as the Ethash DAG for memory-hardness and ASIC-resistance. Unfortunately, verification of the nonce is not easy for many light clients, which cannot deal with the overhead caused by the dataset. This paper proposes a novel PoW mining algorithm named Trie-Hashimoto to address these issues. Trie-Hashimoto adds a nonce field in a state trie node. It then makes the miners find a nonce of every newly-created trie node for a new block such that each node has a hash digest whose prefix is equal to the block number. This can accelerate the database performance by storing the trie nodes in a sequential order. The way for Trie-Hashimoto to achieve memory-hardness is also different. It uses the block headers that any client must maintain, obviating a separate dataset. Furthermore, it allows partial verification using a few Merkle proofs of accounts, so that a client with minimal resources or even a smart contract in another interoperable blockchain can verify a block with a high probability. Finally, Trie-Hashimoto discourages big mining pools by increasing the network overhead among the miners. Our experiment on the Geth client with 500K blocks and 100M accounts shows that Trie-Hashimoto improves the transaction execution time tangibly, reducing the full synchronization time by half. It also shows that Trie-Hashimoto has enough memory-hardness as Ethash. Lastly, a Trie-Hashimoto mining pool should exchange messages highly frequently, proportional to the total number of miners.  © 2013 IEEE.},
+ author = {Kim, Jae-Yun and Lee, Junmo and Moon, Soo-Mook},
+ doi = {10.1109/ACCESS.2024.3360379},
+ journal = {IEEE Access},
+ note = {Cited by: 3; All Open Access; Gold Open Access; Green Open Access},
+ pages = {18315 - 18329},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Trie-Hashimoto: State Trie-Based Proof-of-Work Mining for Optimizing Blockchain Storage},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85184313328?origin=resultslist},
+ volume = {12},
+ year = {2024}
+}

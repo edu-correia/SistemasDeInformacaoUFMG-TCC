@@ -1,0 +1,14 @@
+@inproceedings{1684876,
+ abstract = {In this paper, we present a top-down restructuring method for Bplusmntrees in which a structure modification such as page split or merge is executed as an atomic action. Each structure modification is logged using a single redo-only log record. The execution of each structure modification involves X-latching three pages at most on two adjacent levels of the Bplusmntree for short duration. A Bplusmntree structure modification, once executed to completion can never be undone no matter if the transaction that triggered such a structure modification commits or aborts later on. Recoverability of the Bplusmntree structure is guaranteed because the redo pass of our ARIES-based recovery protocol produces a structurally consistent tree. The method improves concurrency, simplifies recovery, reduces the amount of logging, and can be used in systems that use redo-only or redo-undo recovery protocols},
+ author = {Jaluta, I. and Fekihal, M.A.},
+ booktitle = {2006 2nd International Conference on Information & Communication Technologies},
+ doi = {10.1109/ICTTA.2006.1684876},
+ issn = {},
+ keyword = {Databases;Concurrent computing;Protocols;Data engineering;Writing},
+ month = {April},
+ number = {},
+ pages = {2913-2917},
+ title = {Concurrent and Recoverable Restructuring Method for Database Indices},
+ volume = {2},
+ year = {2006}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3729362,
+ abstract = {We present UnitCon, a system for synthesizing targeted unit testsfor runtime exceptions in Java programs. Targeted unit tests aim to reveal a bug at a specific location in the program under test. This capability benefits various tasks in software development, such as patch testing, crash reproduction, or static analysis alarm inspection. However, conventional unit test generation tools are mainly designed for regression tests by maximizing code coverage; hence they are not effective at such target-specific tasks. In this paper, we propose a novel synthesis technique that effectively guides the search for targeted unit tests. The key idea is to use static analysis to prune and prioritize the search space by estimating the semantics of candidate test cases. This allows us to efficiently focus on promising unit tests that are likely to trigger runtime exceptions at the target location. According to our experiments on a suite of Java programs, our approach outperforms the state-of-the-art unit test generation tools. We also applied UnitCon for inspecting static analysis alarms for null pointer exceptions (NPEs) in 51 open-source projects and discovered 21 previously unknown NPE bugs.},
+ address = {New York, NY, USA},
+ articleno = {FSE092},
+ author = {Jang, Sujin and Ryou, Yeonhee and Lee, Heewon and Heo, Kihong},
+ doi = {10.1145/3729362},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Program analysis, Program synthesis, Software testing},
+ month = {June},
+ number = {FSE},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {UnitCon: Synthesizing Targeted Unit Tests for Java Runtime Exceptions},
+ url = {https://doi.org/10.1145/3729362},
+ volume = {2},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11231599,
+ abstract = {This study presents a post-thesis evaluation of object detection models for greenhouse automation, extending previous efforts that applied YOLOv8n to classify tomato ripeness stages in Thai agricultural settings. The original system integrated drone-based image acquisition with IoT-driven irrigation control, demonstrating that compact AI models can operate effectively even in resource-limited agricultural environments. However, its evaluation relied primarily on conventional metrics, such as mAP@50 and precision, which may overlook nuanced model behavior in real-world conditions. To address this gap, we introduce the Unified Detection Score (UDS) - a composite metric designed to provide a holistic and interpretable measure of model quality. Using the re-annotated tomato ripeness dataset from the original research (“Precision Agriculture in Thailand: Merging Drone-Assisted Object Recognition with IoT,” 2024), this study compares five YOLOv12 variants (n, s, m, l, x) against YOLOv8n and YOLOv5. Among them, YOLOv12n achieved the highest UDS of 93.3, outperforming YOLOv8n (91.9) and YOLOv5 (82.7), while maintaining a compact model size of 5.4 MB and a fast-training time of 0.52 hours. Larger YOLOv12 variants offered no significant performance advantage; in fact, YOLOv12x, despite its scale, underperformed with a UDS of 90.9 and a size of 119.5 MB. Further experiments confirmed that the original YOLOv8n training configuration (50 epochs, batch size 8) remains optimal for YOLOv12n, with extended training routines yielding negligible gains. Optimizer screening validated AdamW as the most effective choice, and hyperparameter tuning revealed that a decay of 0.0009 and a momentum of 0.975 offer the best balance of precision and stability. These findings highlight YOLOv12n as a practical and efficient successor to YOLOv8n for greenhouse automation tasks. By introducing the UDS framework and offering detailed comparisons across multiple architectures, this study contributes both a novel evaluation methodology and practical insights to help advance scalable, precision agriculture solutions.},
+ author = {Shovkovyy, Oleg and Miri, Hossein},
+ booktitle = {2025 24th International Symposium on Communications and Information Technologies (ISCIT)},
+ doi = {10.1109/ISCIT67082.2025.11231599},
+ issn = {2643-6175},
+ keyword = {YOLO;Precision agriculture;Measurement;Training;Irrigation;Automation;Green products;Merging;Object recognition;Tuning;Unified Detection Score (UDS);YOLOv12n;YOLOv8n;YOLO;object detection;precision agriculture;greenhouse automation;tomato ripeness detection;composite evaluation metric;AdamW optimizer},
+ month = {Oct},
+ number = {},
+ pages = {236-242},
+ title = {Replacing YOLOv8n with YOLOv12n in Greenhouse Automation: A Post-Thesis Evaluation Using the Unified Detection Score (UDS)},
+ volume = {},
+ year = {2025}
+}

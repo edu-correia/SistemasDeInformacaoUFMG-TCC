@@ -1,0 +1,14 @@
+@article{6327189,
+ abstract = {The transactional memory (TM) paradigm promises to increase programmer productivity by making it easier to write correct parallel programs. In fulfilling this goal, a TM system should maximize its performance with limited hardware resources. Conflict detection is an essential element for maintaining correctness among concurrent transactions in a TM system. Hardware signatures have been proposed as an area-efficient method for detecting conflicts. However, signatures can degrade TM performance by falsely declaring conflicts. Hence, improving the accuracy of signatures within a given hardware budget is a crucial issue for TM to be adopted as a mainstream programming model. In this paper, we propose a simple and effective signature design, the unified signature. Instead of using separate read- and write-signatures, we implement a single signature to track all read- and write-accesses. By merging read- and write-signatures, a unified signature can effectively enlarge the signature coverage without additional overhead. Within the constraints of a given hardware budget, a TM system with a unified signature outperforms a baseline system with the same-sized traditional signatures by reducing the number of falsely detected conflicts. Even though the unified signature scheme incurs read-read dependencies, we show that these false dependencies do not negate the benefit of unified signatures and can effectively be filtered out. A TM system with a 2-Kbit unified signature with a helper signature scheme achieves speedups of 15 percent over baseline TM with 33 percent less area and 49 percent less power.},
+ author = {Choi, Woojin and Draper, Jeffrey},
+ doi = {10.1109/TPDS.2012.292},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Hardware;Benchmark testing;Instruction sets;Merging;Indexes;Monitoring;Hardware transactional memory;conflict detection;Bloom filters;signatures;unified signatures},
+ month = {Nov},
+ number = {11},
+ pages = {2230-2239},
+ title = {Improving Utilization of Hardware Signatures in Transactional Memory},
+ volume = {24},
+ year = {2013}
+}

@@ -1,0 +1,14 @@
+@conference{Pandey20211386,
+ abstract = {Today's filters, such as quotient, cuckoo, and Morton, have a trade-off between space and speed; even when moderately full (e.g., 50%-75% full), their performance degrades nontrivially. The result is that today's systems designers are forced to choose between speed and space usage. In this paper, we present the vector quotient filter (VQF). Locally, the VQF is based on Robin Hood hashing, like the quotient filter, but uses power-of-two-choices hashing to reduce the variance of runs, and thus offers consistent, high throughput across load factors. Power-of-two-choices hashing also makes it more amenable to concurrent updates, compared to the cuckoo filter and variants. Finally, the vector quotient filter is designed to exploit SIMD instructions so that all operations have O (1) cost, independent of the size of the filter or its load factor. We show that the vector quotient filter is 2× faster for inserts compared to the Morton filter (a cuckoo filter variant and state-of-the-art for inserts) and has similar lookup and deletion performance as the cuckoo filter (which is fastest for queries and deletes), despite having a simpler design and implementation. The vector quotient filter has minimal performance decline at high load factors, a problem that has plagued modern filters, including quotient, cuckoo, and Morton. Furthermore, we give a thread-safe version of the vector quotient filter and show that insertion throughput scales 3× with four threads compared to a single thread. © 2021 Owner/Author.},
+ author = {Pandey, Prashant and Conway, Alex and Durie, Joe and Bender, Michael A. and Farach-Colton, Martin and Johnson, Rob},
+ doi = {10.1145/3448016.3452841},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 38; All Open Access; Gold Open Access},
+ pages = {1386 - 1399},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Vector Quotient Filters: Overcoming the Time/Space Trade-Off in Filter Design},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85108945624?origin=resultslist},
+ year = {2021}
+}

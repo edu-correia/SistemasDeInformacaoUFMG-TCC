@@ -1,0 +1,14 @@
+@conference{Teng201768,
+ abstract = {LSM-tree has been widely used in data management production systems for write-intensive workloads. However, as read and write workloads co-exist under LSM-tree, data accesses can experience long latency and low throughput due to the interferences to buffer caching from the compaction, a major and frequent operation in LSM-tree. After a compaction, the existing data blocks are reorganized and written to other locations on disks. As a result, the related data blocks that have been loaded in the buffer cache are invalidated since their referencing addresses are changed, causing serious performance degradations. In order to re-enable high-speed buffer caching during intensive writes, we propose Log-Structured buffered-Merge tree (simplified as LSbM-tree) by adding a compaction buffer on disks, to minimize the cache invalidations on buffer cache caused by compactions. The compaction buffer efficiently and adaptively maintains the frequently visited data sets. In LSbM, strong locality objects can be effectively kept in the buffer cache with minimum or without harmful invalidations. With the help of a small on-disk compaction buffer, LSbM achieves a high query performance by enabling effective buffer caching, while retaining all the merits of LSM-tree for write-intensive data processing, and providing high bandwidth of disks for range queries. We have implemented LSbM based on LevelDB. We show that with a standard buffer cache and a hard disk, LSbM can achieve 2x performance improvement over LevelDB. We have also compared LSbM with other existing solutions to show its strong effectiveness. © 2017 IEEE.},
+ author = {Teng, Dejun and Guo, Lei and Lee, Rubao and Chen, Feng and Ma, Siyuan and Zhang, Yanfeng and Zhang, Xiaodong},
+ doi = {10.1109/ICDCS.2017.70},
+ journal = {Proceedings - International Conference on Distributed Computing Systems},
+ note = {Cited by: 51},
+ pages = {68 - 79},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LSbM-tree: Re-Enabling Buffer Caching in Data Management for Mixed Reads and Writes},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85027274551?origin=resultslist},
+ year = {2017}
+}

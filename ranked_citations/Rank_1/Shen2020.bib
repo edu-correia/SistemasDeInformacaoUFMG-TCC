@@ -1,0 +1,13 @@
+@conference{Shen2020,
+ abstract = {LSM-based key-value stores (LSM-stores) play an important role in many storage systems. However, LSM-stores suffer from high write amplification of their compaction operations. Recently proposed key-value separated LSM-stores reduce the impact, but the garbage collection overheads of the value parts remain high. In this paper, we find that existing key-value separation approaches have to check validity of key-value items by querying the LSM-tree, and update value handles by inserting them back into the LSM-tree during garbage collection. Validity checking and value handle updating introduce heavy overheads to the LSM-tree. To this end, we propose an efficient approach to reduce expensive overheads of garbage collection, by eliminating queries and insertions of the LSM-tree. The approach consists of three key techniques: collaborative compaction, efficient garbage collection, and selective handle updating. We implement this approach atop LevelDB and name it as NovKV. Evaluations show that NovKV outperforms WiscKey by up to 1.98x on random write and 1.85x on random read. © 2020 36th International Conference on Massive Storage Systems and Technology, MSST 2020. All Rights Reserved.},
+ author = {Shen, Chen and Lu, Youyou and Li, Fei and Liu, Weidong and Shu, Jiwu},
+ journal = {36th International Conference on Massive Storage Systems and Technology, MSST 2020},
+ note = {Cited by: 7},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {NovKV: Efficient Garbage Collection for Key-Value Separated LSM-Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85180794344?origin=resultslist},
+ year = {2020}
+}

@@ -1,0 +1,13 @@
+@conference{Wu2024911,
+ abstract = {Low-rank adaptation (LoRA) is a popular approach to fine-tune pre-trained large language models (LLMs) to specific domains. This paper introduces dLoRA, an inference serving system for LoRA models. dLoRA achieves high serving efficiency by dynamically orchestrating requests and LoRA adapters in terms of two aspects: (i) dynamically merge and unmerge adapters with the base model; and (ii) dynamically migrate requests and adapters between different worker replicas. These capabilities are designed based on two insights. First, despite the allure of batching without merging a LoRA adapter into the base model, it is not always beneficial to unmerge, especially when the types of requests are skewed. Second, the autoregressive nature of LLM requests introduces load imbalance between worker replicas due to varying input and output lengths, even if the input requests are distributed uniformly to the replicas. We design a credit-based batching algorithm to decide when to merge and unmerge, and a request-adapter co-migration algorithm to decide when to migrate. The experimental results show that dLoRA improves the throughput by up to 57.9× and 26.0×, compared to vLLM and HugginFace PEFT, respectively. Compared to the concurrent work S-LoRA, dLoRA achieves up to 1.8× lower average latency. © OSDI 2024.All rights reserved.},
+ author = {Wu, Bingyang and Zhu, Ruidong and Zhang, Zili and Sun, Peng and Liu, Xuanzhe and Jin, Xin},
+ journal = {Proceedings of the 18th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2024},
+ note = {Cited by: 39},
+ pages = {911 - 927},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {dLoRA: Dynamically Orchestrating Requests and Adapters for LoRA LLM Serving},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85201320581?origin=resultslist},
+ year = {2024}
+}

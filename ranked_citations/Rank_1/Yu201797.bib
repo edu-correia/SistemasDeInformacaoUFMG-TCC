@@ -1,0 +1,14 @@
+@conference{Yu201797,
+ abstract = {The algebraic reconstruction technique (ART) is an iterative algorithm for CT (i.e., computed tomography) image reconstruction that delivers better image quality with less radiation dosage than the industry-standard filtered back projection (FBP). However, the high computational cost of ART requires researchers to turn to highperformance computing to accelerate the algorithm. Alas, existing approaches for ART suffer from in efficient design of compressed data structures and computational kernels on GPUS. Thus, this paper presents our enhanced CUDA-based CT image reconstruction tool based on the algebraic reconstruction technique (ART) or cuART. It delivers a compression and parallelization solution for ART-based image reconstruction on GPUS. We address the under-performing, but popular, GPU libraries, e.g., cuSPARSE, BRC, and CSR5, on the ART algorithm and propose a symmetrybased CSR format (SCSR) to further compress the CSR data structure and optimize data access for both SpMV and SpMV T via a column-indices permutation. We also propose sorting-based and sorting-free blocking techniques to optimize the kernel computation by leveraging the sparsity patterns of the system matrix. The end result is that cuART can reduce the memory footprint significantly and enable practical CT datasets to fit into a single GPU. The experimental results on a NVIDIA Tesla K80 GPU illustrate that our approach can achieve up to 6.8x, 7.2x, and 5.4x speedups over counterparts that use cuSPARSE, BRC, and CSR5, respectively. © 2017 ACM.},
+ author = {Yu, Xiaodong and Wang, Hao and Feng, Wu-Chun and Gong, Hao and Cao, Guohua},
+ doi = {10.1145/3075564.3078889},
+ journal = {ACM International Conference on Computing Frontiers 2017, CF 2017},
+ note = {Cited by: 9; All Open Access; Gold Open Access},
+ pages = {97 - 106},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An enhanced image reconstruction tool for computed tomography on GPUS},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85027054141?origin=resultslist},
+ year = {2017}
+}

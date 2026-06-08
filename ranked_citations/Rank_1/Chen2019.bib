@@ -1,0 +1,15 @@
+@conference{Chen2019,
+ abstract = {U.S. Landsat Analysis Ready Data (ARD) recently included the Land Surface Temperature (LST) product, which contains widespread and irregularly-shaped missing pixels due to cloud contamination or incomplete satellite coverage. Many analyses rely on complete LST images therefore techniques that accurately fill data gaps are needed. Here, the development of a partial-convolution based model with the U-Net like architecture to reconstruct the missing pixels in the ARD LST images is discussed. The original partial convolution layer is modified to consider both the convolution kernel weights and the number of valid pixels in the calculation of the mask correction ratio. In addition, the new partial merge layer is developed to merge feature maps according to their masks. Pixel reconstruction using this model was conducted using Landsat 8 ARD LST images in Colorado between 2014 and 2018. Complete LST patches (64x64) for two identical scenes acquired at different dates (up to 48 days apart) were randomly paired with ARD cloud masks to generate the model inputs. The model was trained for 10 epochs and the validation results show that the average RMSE values for a restored LST image in the unmasked, masked, and whole region are 0.29K, 1.00K, and 0.62K, respectively. In general, the model is capable of capturing the high-level semantics from the inputs and bridging the difference in acquisition dates for gap filling. The transition between the masked and unmasked regions (including the edge area of the image) in restored images is smooth and reflects realistic features (e.g., LST gradients). For large masked areas, the reference provides semantics at both low and high levels. © COPYRIGHT SPIE. Downloading of the abstract is permitted for personal use only.},
+ author = {Chen, Maosi and Newell, Benjamin H. and Sun, Zhibin and Corr, Chelsea A. and Gao, Wei},
+ doi = {10.1117/12.2529462},
+ journal = {Proceedings of SPIE - The International Society for Optical Engineering},
+ note = {Cited by: 10},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Reconstruct missing pixels of Landsat land surface temperature product using a CNN with partial convolution},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85075765309?origin=resultslist},
+ volume = {11139},
+ year = {2019}
+}

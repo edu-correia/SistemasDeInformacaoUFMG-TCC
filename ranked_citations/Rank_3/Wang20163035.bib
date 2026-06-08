@@ -1,0 +1,16 @@
+@article{Wang20163035,
+ abstract = {File system workloads are increasing write-heavy. The growing capacity of RAM in modern nodes allows many reads to be satisfied from memory while writes must be persisted to disk. Today's sophisticated local file systems like Ext4, XFS and Btrfs optimize for reads but suffer from workloads dominated by microdata (including metadata and tiny files). In this paper we present an LSM-tree-based file system, RFS, which aims to take advantages of the write optimization of LSM-tree to provide enhanced microdata performance, while offering matching performance for large files. RFS incrementally partitions the namespace into several metadata columns on a per-directory basis, preserving disk locality for directories and reducing the write amplification of LSM-trees. A writeordered log-structured layout is used to store small files efficiently, rather than embedding the contents of small files into inodes. We also propose an optimization of global bloom filters for efficient point lookups. Experiments show our library version of RFS can handle microwrite-intensive workloads 2-10 times faster than existing solutions such as Ext4, Btrfs and XFS. © Copyright 2016 The Institute of Electronics, Information and Communication Engineers.},
+ author = {Wang, Lixin and Lu, Yutong and Zhang, Wei and Lei, Yan},
+ doi = {10.1587/transinf.2015EDP7470},
+ journal = {IEICE Transactions on Information and Systems},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {12},
+ pages = {3035 - 3046},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RFS: An LSM-tree-based file system for enhanced microdata performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84999266587?origin=resultslist},
+ volume = {E99D},
+ year = {2016}
+}

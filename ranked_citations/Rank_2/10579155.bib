@@ -1,0 +1,14 @@
+@inproceedings{10579155,
+ abstract = {Counting triangles in large graphs, being a crucial problem in graph computing, has attracted significant attention from research communities. There is a large body of work dedicated to algorithmic design and efficient implementation on parallel platforms such as GPUs. Among them, the intersection-based triangle counting algorithm is found to be the most efficient approach and a few GPU implementations have been proposed following this algorithm. However, there remains a gap in understanding how these algorithms perform when confronted with diverse real-world graph datasets. It is a well-established fact that the performance of GPU code is heavily influenced by data characteristics, including graph size and node degree, often leading to issues such as workload imbalances and inefficient memory access. The goal of this study is to systematically evaluate the performance and analyze the behavior of eight recently published intersection-based triangle counting implementations. For that, we developed a unified testing framework that facilitates fast performance assessment of any triangle counting algorithm. Our experiments show that the TRUST algorithm outperforms competitors in most cases. To our surprise, the Polak algorithm, with a simple design, has displayed commendable performance across the board. Notably, it even surpasses the TRUST algorithm when processing small datasets. We conducted an in-depth analysis on the resource consumption patterns of these implementations in relation to their performance and identified key factors that contributed to their behaviors. Based on insights gained from such analysis, we proposed a novel algorithm named GroupTC that delivers outstanding performance under all types of datasets.},
+ author = {Li, Jiangbo and Xu, Zichen and Pham, Minh and Tu, Yicheng and Zhou, Qihe},
+ booktitle = {2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS57955.2024.00099},
+ issn = {1530-2075},
+ keyword = {Distributed processing;Codes;Graphics processing units;Testing;GPU;Triangle Counting},
+ month = {May},
+ number = {},
+ pages = {1070-1081},
+ title = {A Comparative Study of Intersection-Based Triangle Counting Algorithms on GPUs},
+ volume = {},
+ year = {2024}
+}

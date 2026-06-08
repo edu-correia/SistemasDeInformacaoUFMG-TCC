@@ -1,0 +1,9 @@
+@article{JiménezIslas2014_151,
+ abstract = {Computational code IMPLI-C3 is a low-RAM consumption program designed to solve three-dimensional parabolic partial differential nonlinear equations. The spatial coordinates are discretized using orthogonal collocation with Legendre polynomials while time was discretized via backward finite differences, generating an implicit method that originates a set of algebraic equations, which are solved by nonlinear relaxation for each step of time integration. Nonlinear relaxation is an iterative method that only uses the Jacobian diagonal and voids the RAM storage of the entire Jacobian matrix. This allows the simulation of physical systems that require greater number of nodes that otherwise would use too much RAM when trying to solve by Newton-Raphson. The code was successfully evaluated using several problems related to natural convection previously reported in literature, observing that nonlinear relaxation only requires 0.3%-1.5% of the memory required by Newton-Raphson for the same problems. Furthermore, one can be conclude that, in problems with many nodes, the use of multivariate Newton-Raphson is unfeasible due to high consumption of RAM that can even cause it to overflow.},
+ author = {Jiménez-Islas, H. and Calderón-Ramírez, M. and Molina-Herrera, F.I. and Martínez-González, G.M. and Navarrete-Bolaños, J.L. and Castrejón-González, E.O.},
+ number = {1},
+ pages = {259--277},
+ title = {Low-ram algorithm for solving 3-d natural convection problems using orthogonal collocation},
+ volume = {13},
+ year = {2014}
+}

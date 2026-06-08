@@ -1,0 +1,14 @@
+@conference{That2021376,
+ abstract = {In column stores, which ingest large amounts of data into multiple column groups, query performance deteriorates. Commercial column stores use log-structured merge (LSM) tree on projections to ingest data rapidly. LSM improves ingestion performance, but in column stores the sort-merge phase is I/O-intensive, which slows concurrent queries and reduces overall throughput. In this paper, we aim to reduce the sorting and merging cost that arise when data is ingested in column stores. We present LDI, a learned distribution index for column stores. LDI learns a frequency-based data distribution and constructs a bucket worth of data based on the learned distribution. Filled buckets that conform to the distribution are written out to disk; unfilled buckets are retained to achieve the desired level of sortedness, thus avoiding the expensive sort-merge phase. We present an algorithm to learn and adapt to distributions, and a robust implementation that takes advantage of disk parallelism. We compare LDI with LSM and production columnar stores using real and synthetic datasets. © 2021 IEEE.},
+ author = {That, Dai-Hai Ton and Gharehdaghi, Mohammadsaleh and Rasin, Alexander and Malik, Tanu},
+ doi = {10.1109/BigData52589.2021.9671318},
+ journal = {Proceedings - 2021 IEEE International Conference on Big Data, Big Data 2021},
+ note = {Cited by: 2},
+ pages = {376 - 387},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LDI: Learned Distribution Index for Column Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85125345678?origin=resultslist},
+ year = {2021}
+}

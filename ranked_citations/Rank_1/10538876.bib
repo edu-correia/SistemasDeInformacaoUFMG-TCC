@@ -1,0 +1,14 @@
+@inproceedings{10538876,
+ abstract = {Key-value (KV) stores play an important role in today’s online service systems, but concerns about server-side attacks hinder users from uploading their workloads. The proposal of the hardware trusted execution environment (TEE) like Intel SGX provides an alternative for trusted computing on untrusted hosts. TEE can be used to construct privacy preserving scheme for KV stores. The current research on secure persistent KV store is limited to the shielded execution framework which involves a large trusted computing base and high overhead.In this paper, we propose Pldb, a secure persistent KV store that is based on Log-Structured Merge (LSM) tree. In order to ensure security, TEE’s access to persistent storage data needs to pass through the encryption/decryption interface. This is the main overhead of secure KV data storage based on TEE design. We designed a hybrid KV storage structure, which encrypts the value data and stores it directly on the disk, thereby reducing the encryption/decryption interface calls through the TEE. With a carefully designed architecture leveraging Intel SGX, Pldb provides security properties including confidentiality, integrity, authentication, and data freshness to prevent rollback attacks. We extend LevelDB to implement a fully functional prototype system. Experiments show that our system can achieve reasonable overhead under different types of workloads.},
+ author = {Shen, Chenkai and Fan, Lei},
+ booktitle = {2023 IEEE 22nd International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)},
+ doi = {10.1109/TrustCom60117.2023.00111},
+ issn = {2324-9013},
+ keyword = {Trusted computing;Privacy;Runtime;Data integrity;Prototypes;Authentication;Memory;Trusted Execution;Intel SGX;Key-Value Store;LSM Tree},
+ month = {Nov},
+ number = {},
+ pages = {762-771},
+ title = {Pldb: Protecting LSM-based Key-Value Store using Trusted Execution Environment},
+ volume = {},
+ year = {2023}
+}

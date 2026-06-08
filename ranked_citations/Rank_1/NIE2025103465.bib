@@ -1,0 +1,13 @@
+@article{NIE2025103465,
+ abstract = {Log-Structured Merge tree (LSM-tree) based key–Value (KV) stores have become critical components in managing data for write-intensive cloud applications. With the explosive growth of unstructured data, emerging host-managed zoned storage solutions, such as high-performance Zoned NameSpace Solid State Drive (ZNS SSD) and large-capacity Shingled Magnetic Recording Hard Disk Drive (SMR HDD), present an ideal opportunity for efficient data storage. However, The state-of-the-art scheme partitions the LSM-tree on hybrid storage, placing lower levels on high-performance devices and higher levels on large-capacity devices, but it fails to address challenges in data layout and garbage collection on the hybrid storage system equipped with ZNS SSD and SMR HDD. In this paper, we propose ZoomDB, an LSM-tree KV store engine designed around KV separation and tailored for hybrid zoned storage devices. First, we integrate KV separation with zone management in LSM-tree-based hybrid storage. Specifically, keys and low-level values are placed in high-performance zones on ZNS SSDs, while high-level values are stored in large-capacity zones on SMR HDDs, optimizing both performance and storage efficiency. To further enhance data management, we introduce a hotness identification mechanism that classifies values based on access frequency, storing hot and cold values in separate zones. Finally, we propose diversity GC tailored to zones with varying access frequencies, effectively reducing data migration overhead. We implement and evaluate ZoomDB on real ZNS SSD and SMR HDD. The evaluation results demonstrate that ZoomDB reduces the number of GC-triggered writes by 77.5% on average compared to WiscKey. It achieves throughput gains of 1.79× , 3.13× , 4.01× , 4.25× , and 4.32× over WiscKey+, WiscKey, GearDB, ZoneKV, and LevelDB, respectively.},
+ author = {Shiqiang Nie and Chi Zhang and Menghan Li and Fangxing Yu and Yaming Li and Weiguo Wu},
+ doi = {https://doi.org/10.1016/j.sysarc.2025.103465},
+ issn = {1383-7621},
+ journal = {Journal of Systems Architecture},
+ keyword = {KV store, LSM-tree, KV separation, Zoned storage device, Garbage collection},
+ pages = {103465},
+ title = {ZoomDB: Building cost-effective key–value store engine on ZNS SSD and SMR HDD},
+ url = {https://www.sciencedirect.com/science/article/pii/S1383762125001377},
+ volume = {167},
+ year = {2025}
+}

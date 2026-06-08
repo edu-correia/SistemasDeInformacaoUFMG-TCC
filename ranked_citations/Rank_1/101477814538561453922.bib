@@ -1,0 +1,17 @@
+@article{10.14778/1453856.1453922,
+ abstract = {Internet applications increasingly rely on scalable data structures that must support high throughput and store huge amounts of data. These data structures can be hard to implement efficiently. Recent proposals have overcome this problem by giving up on generality and implementing specialized interfaces and functionality (e.g., Dynamo [4]). We present the design of a more general and flexible solution: a fault-tolerant and scalable distributed B-tree. In addition to the usual B-tree operations, our B-tree provides some important practical features: transactions for atomically executing several operations in one or more B-trees, online migration of B-tree nodes between servers for load-balancing, and dynamic addition and removal of servers for supporting incremental growth of the system.Our design is conceptually simple. Rather than using complex concurrency and locking protocols, we use distributed transactions to make changes to B-tree nodes. We show how to extend the B-tree and keep additional information so that these transactions execute quickly and efficiently. Our design relies on an underlying distributed data sharing service, Sinfonia [1], which provides fault tolerance and a light-weight distributed atomic primitive. We use this primitive to commit our transactions. We implemented our B-tree and show that it performs comparably to an existing open-source B-tree and that it scales to hundreds of machines. We believe that our approach is general and can be used to implement other distributed data structures easily.},
+ author = {Aguilera, Marcos K. and Golab, Wojciech and Shah, Mehul A.},
+ doi = {10.14778/1453856.1453922},
+ issn = {2150-8097},
+ issue_date = {August 2008},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {1},
+ numpages = {12},
+ pages = {598–609},
+ publisher = {VLDB Endowment},
+ title = {A practical scalable distributed B-tree},
+ url = {https://doi.org/10.14778/1453856.1453922},
+ volume = {1},
+ year = {2008}
+}

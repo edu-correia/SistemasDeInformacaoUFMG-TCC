@@ -1,0 +1,16 @@
+@article{Romanous2021333,
+ abstract = {The join and group-by aggregation are two memory intensive operators that are affecting the performance of relational databases. Hashing is a common approach used to implement both operators. Recent paradigm shifts in multi-core processor architectures have reinvigorated research into how the join and group-by aggregation operators can leverage these advances. However, the poor spatial locality of the hashing approach has hindered performance on multi-core processor architectures which rely on using large cache hierarchies for latency mitigation. Multithreaded architectures can better cope with poor spatial locality by masking memory latency with many outstanding requests. Nevertheless, the number of parallel threads, even in the most advanced multithreaded processors, such as UltraSPARC, is not enough to fully cover the main memory access latency. In this paper, we explore the hardware re-configurability of FPGAs to enable deeper execution pipelines that maintain hundreds (instead of tens) of outstanding memory requests across four FPGAs-drastically increasing concurrency and throughput. We present two end-to-end in-memory accelerators for the join and group-by aggregation operators using FPGAs. Both accelerators use massive multithreading to mask long memory delays of traversing linked-list data structures, while concurrently managing hundreds of thread states across four FPGAs locally. We explore how content addressable memories can be intermixed within our multithreaded designs to act as a synchronizing cache, which enforces locks and merges jobs together before they are written to memory. Throughput results for our hash-join operator accelerator show a speedup between 2× and 3.4× over the best multi-core approaches with comparable memory bandwidths on uniform and skewed datasets. The accelerator for the hash-based group-by aggregation operator demonstrates that leveraging CAMs achieves average speedup of 3.3× with a best case of 9.4× in terms of throughput over CPU implementations across five types of data distributions. © 2021, The Author(s).},
+ author = {Romanous, Bashar and Windh, Skyler and Absalyamov, Ildar and Budhkar, Prerna and Halstead, Robert and Najjar, Walid and Tsotras, Vassilis},
+ doi = {10.1007/s00778-020-00642-5},
+ journal = {VLDB Journal},
+ note = {Cited by: 2; All Open Access; Hybrid Gold Open Access},
+ number = {3},
+ pages = {333 - 359},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient local locking for massively multithreaded in-memory hash-based operators},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85100724669?origin=resultslist},
+ volume = {30},
+ year = {2021}
+}

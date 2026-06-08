@@ -1,0 +1,14 @@
+@article{10109754,
+ abstract = {Speech enhancement refers to suppressing the background noise to improve the perceptual quality and intelligibility of the observed noisy speech. Recently, speech enhancement algorithms based on deep neural networks (DNNs) have replaced traditional algorithms based on statistical signal processing and have become mainstream in the research field. However, most DNN-based speech enhancement methods commonly operate on the frequency domain and do not use the speech production model, which makes the models prone to under-suppress the noise or over-suppress the speech. To address the shortcoming, we propose a novel speech enhancement method integrating neural homomorphic synthesis and complex spectral masking. Specifically, we use a shared-encoder and multi-decoder neural network architecture. For the neural homomorphic synthesis branch, the speech signal is separated into excitation and vocal tract components through liftering the cepstrum, two DNN decoders are applied to estimate the target components independently, and the denoised speech is synthesized by the estimated minimum-phase signal and the noisy phase. For the spectral masking branch, another DNN decoder is adopted to estimate the complex mask of the target spectrum, and the denoised speech spectrum is obtained by masking the noisy spectrum. The two branches respectively estimate speech signals, and the final enhanced speech is obtained by merging the two branches of estimated speech. Experimental results on two popular datasets show that the proposed method achieves state-of-the-art level performance, with only 920 K model parameters.},
+ author = {Jiang, Wenbin and Yu, Kai},
+ doi = {10.1109/TASLP.2023.3271151},
+ issn = {2329-9304},
+ journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+ keyword = {Speech enhancement;Cepstrum;Neural networks;Noise measurement;Vocoders;Time-domain analysis;Discrete Fourier transforms;Deep learning;neural homomorphic synthesis;spectral masking;speech enhancement},
+ month = {},
+ number = {},
+ pages = {1758-1770},
+ title = {Speech Enhancement With Integration of Neural Homomorphic Synthesis and Spectral Masking},
+ volume = {31},
+ year = {2023}
+}

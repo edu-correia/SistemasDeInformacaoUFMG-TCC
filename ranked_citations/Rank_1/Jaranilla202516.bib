@@ -1,0 +1,14 @@
+@conference{Jaranilla202516,
+ abstract = {This study explores the implementation of heterogeneous storage into Key-Value Stores (KVSs) with the focus of leveraging Key-Value (KV) separation in a Log-Structured Merge-tree (LSM-tree)-based architecture. TodoroKV is built on top of RocksDB by configuring LSM-tree levels to use different storage devices and extending this approach to the value LOG in KV separation. We present the implementation of TodoroKV with two representative configurations, Basic and Advance, both of which reduce storage costs and offer trade-offs in write and read performance. For write-intensive workloads, TodoroKV has competitive performance with RocksDB in fast NVMe SSD while storing 96% of the data in cheaper SATA SSD. Additionally, TodoroKV-Advance exhibits lookup performance that is competitive with BlobDB. Furthermore, on all accounts, TodoroKV-Advance improves range query performance by 1.8x compared to RocksDB in NVMe-SSD. Both configurations offer 25% lower storage consumption costs than RocksDB and BlobDB in NVMe. TodoroKV further advances these improvements by integrating selective KV separation. This work is a precursor to extending LSM-tree tiered storage to remote data offloading. © 2024 Copyright is held by the owner/author(s).},
+ author = {Jaranilla, Charles and Zhao, Guangxun and Yoo, Seehwan and Cho, Seong-Je and Choi, Jongmoo},
+ doi = {10.1145/3649601.3698731},
+ journal = {2024 Research in Adaptive and Convergent Systems - Proceedings of the 2024 International Conference on Research in Adaptive and Convergent Systems, RACS 2024},
+ note = {Cited by: 0},
+ pages = {16 - 23},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TodoroKV: Tiered Storage Distribution and Refinement for KV Separation in LSM-tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021304864?origin=resultslist},
+ year = {2025}
+}

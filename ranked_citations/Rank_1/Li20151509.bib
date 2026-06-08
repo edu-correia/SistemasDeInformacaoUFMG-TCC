@@ -1,0 +1,15 @@
+@conference{Li20151509,
+ abstract = {In-memory data analytic systems that use vertical bit-parallel scan methods generally use encoding techniques. We observe that in such environments, there is an opportunity to turn skew in both the data and predicate distributions (usually a problem for query processing) into a benefit that can be leveraged to encode the column values. This paper proposes a padded encoding scheme to address this opportunity. The proposed scheme creates encodings that map common attribute values to codes that can easily be distinguished from other codes by only examining a few bits in the full code. Consequently, scans on columns stored using the padded encoding scheme can safely prune the computation without examining all the bits in the code, thereby reducing the memory bandwidth and CPU cycles that are consumed when evaluating scan queries. Our padded encoding method results in a fixed-length encoding, as fixed-length encodings are easier to manage. However, the proposed padded encoding may produce longer (fixed-length) codes than those produced by popular order-preserving encoding methods, such as dictionary-based encoding. This additional space overhead has the potential to negate the gains from early pruning of the scan computation. However, as we demonstrate empirically, the additional space overhead is generally small, and the padded encoding scheme provides significant performance improvements. Copyright © 2015 ACM.},
+ author = {Li, Yinan and Chasseur, Craig and Patel, Jignesh M.},
+ doi = {10.1145/2723372.2737787},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 15},
+ pages = {1509 - 1524},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A padded encoding scheme to accelerate scans by leveraging skew},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84957606559?origin=resultslist},
+ volume = {2015-May},
+ year = {2015}
+}

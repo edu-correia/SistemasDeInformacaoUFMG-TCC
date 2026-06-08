@@ -1,0 +1,20 @@
+@article{DEGROOT2023105200,
+ abstract = {Introduction
+Hospitals generate large amounts of data and this data is generally modeled and labeled in a proprietary way, hampering its exchange and integration. Manually annotating data element names to internationally standardized data element identifiers is a time-consuming effort. Tools can support performing this task automatically. This study aimed to determine what factors influence the quality of automatic annotations.
+Methods
+Data element names were used from the Dutch COVID-19 ICU Data Warehouse containing data on intensive care patients with COVID-19 from 25 hospitals in the Netherlands. In this data warehouse, the data had been merged using a proprietary terminology system while also storing the original hospital labels (synonymous names). Usagi, an OHDSI annotation tool, was used to perform the annotation for the data. A gold standard was used to determine if Usagi made correct annotations. Logistic regression was used to determine if the number of characters, number of words, match score (Usagi's certainty) and hospital label origin influenced Usagi's performance to annotate correctly.
+Results
+Usagi automatically annotated 30.5% of the data element names correctly and 5.5% of the synonymous names. The match score is the best predictor for Usagi finding the correct annotation. It was determined that the AUC of data element names was 0.651 and 0.752 for the synonymous names respectively. The AUC for the individual hospital label origins varied between 0.460 to 0.905.
+Discussion
+The results show that Usagi performed better to annotate the data element names than the synonymous names. The hospital origin in the synonymous names dataset was associated with the amount of correctly annotated concepts. Hospitals that performed better had shorter synonymous names and fewer words. Using shorter data element names or synonymous names should be considered to optimize the automatic annotating process. Overall, the performance of Usagi is too poor to completely rely on for automatic annotation.},
+ author = {Rowdy {de Groot} and Daniel P. Püttmann and Lucas M. Fleuren and Patrick J. Thoral and Paul W.G. Elbers and Nicolette F. {de Keizer} and Ronald Cornet},
+ doi = {https://doi.org/10.1016/j.ijmedinf.2023.105200},
+ issn = {1386-5056},
+ journal = {International Journal of Medical Informatics},
+ keyword = {Data annotation, Data interoperability, Data quality, Data standardization, OMOP CDM, Usagi},
+ pages = {105200},
+ title = {Determining and assessing characteristics of data element names impacting the performance of annotation using Usagi},
+ url = {https://www.sciencedirect.com/science/article/pii/S1386505623002186},
+ volume = {178},
+ year = {2023}
+}

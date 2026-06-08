@@ -1,0 +1,15 @@
+@conference{Leopoldseder2018126,
+ abstract = {Compilers perform a variety of advanced optimizations to improve the quality of the generated machine code. However, optimizations that depend on the data flow of a program are often limited by control-flow merges. Code duplication can solve this problem by hoisting, i.e. duplicating, instructions from merge blocks to their predecessors. However, finding optimization opportunities enabled by duplication is a nontrivial task that requires compile-time intensive analysis. This imposes a challenge on modern (just-in-time) compilers: Duplicating instructions tentatively at every control flow merge is not feasible because excessive duplication leads to uncontrolled code growth and compile time increases. Therefore, compilers need to find out whether a duplication is beneficial enough to be performed. This paper proposes a novel approach to determine which duplication operations should be performed to increase performance. The approach is based on a duplication simulation that enables a compiler to evaluate different success metrics per potential duplication. Using this information, the compiler can then select the most promising candidates for optimization. We show how to map duplication candidates into an optimization cost model that allows us to trade-off between different success metrics including peak performance, code size and compile time. We implemented the approach on top of the GraalVM and evaluated it with the benchmarks Java DaCapo, Scala DaCapo, JavaScript Octane and a micro-benchmark suite, in terms of performance, compilation time and code size increase. We show that our optimization can reach peak performance improvements of up to 40% with a mean peak performance increase of 5.89%, while it generates a mean code size increase of 9.93% and mean compile time increase of 18.44%. © 2018 Association for Computing Machinery.},
+ author = {Leopoldseder, David and Eisl, Josef and Stadler, Lukas and Simon, Doug and Würthinger, Thomas and Mössenböck, Hanspeter},
+ doi = {10.1145/3168811},
+ journal = {CGO 2018 - Proceedings of the 2018 International Symposium on Code Generation and Optimization},
+ note = {Cited by: 37},
+ pages = {126 - 137},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Dominance-based duplication simulation (DBDS)* Code Duplication to Enable Compiler Optimizations},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85052762036?origin=resultslist},
+ volume = {2018-February},
+ year = {2018}
+}

@@ -1,0 +1,16 @@
+@article{Hwang2024,
+ abstract = {Solid-state drives (SSDs) are widely adopted in mobile devices, desktop PCs, and data centers since they offer higher throughput, lower latency, and lower power consumption to modern computing systems and applications compared with hard disk drives (HDDs). However, the performance of the SSDs can be degraded depending on the I/O access pattern due to the unique characteristics of SSDs. For example, random I/O operation degrades the SSD performance since it reduces the spatial locality and induces garbage collection (GC) overhead. In this paper, we present an address reshaping scheme in a virtual file system (VFS) called sVFS for improving performance and easy deployment. To do this, it first sequentializes a random access pattern in the VFS layer which is an abstract layer on top of a more concrete file system. Thus, our scheme is independent and easily deployed on any concrete file systems, block layer configuration (e.g., RAID), and devices. Second, we adopt a mapping table for managing sequentialized addresses, which guarantees correct read operations. Third, we support transaction processing for updating the mapping table to avoid sacrificing the consistency. We implement our scheme at the VFS layer in Linux kernel 5.15.34. The evaluation results show that our scheme improve the random write throughput by up to 27%, 36%, 34%, and 2.35× using the microbenchmark and 25%, 22%, 20%, and 3.51× using the macrobenchmark compared with the existing scheme in the case of EXT4, F2FS, XFS, and BTRFS, respectively. © 2024 by the authors.},
+ author = {Hwang, Inhwi and Kim, Sunggon and Eom, Hyeonsang and Son, Yongseok},
+ doi = {10.3390/computers13110284},
+ journal = {Computers},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {11},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Sequentialized Virtual File System: A Virtual File System Enabling Address Sequentialization for Flash-Based Solid State Drives},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85210415894?origin=resultslist},
+ volume = {13},
+ year = {2024}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3583140.3583157,
+ abstract = {MVCC-based snapshot isolation promises that read queries can proceed without interfering with concurrent writes. However, as we show experimentally, in existing implementations a single long-running query can easily cause transactional throughput to collapse. Moreover, existing out-of-memory commit protocols fail to meet the scalability needs of modern multi-core systems. In this paper, we present three complementary techniques for robust and scalable snapshot isolation in out-of-memory systems. First, we propose a commit protocol that minimizes cross-thread communication for better scalability, avoids touching the write set on commit, and enables efficient fine-granular garbage collection. Second, we introduce the Graveyard Index, an auxiliary data structure that moves logically-deleted tuples out of the way of operational transactions. Third, we present an adaptive version storage scheme that enables fast garbage collection and improves scan performance of frequently-modified tuples. All techniques are engineered to scale well on multi-core processors, and together enable robust performance for complex hybrid workloads.},
+ author = {Alhomssi, Adnan and Leis, Viktor},
+ doi = {10.14778/3583140.3583157},
+ issn = {2150-8097},
+ issue_date = {February 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {13},
+ pages = {1426–1438},
+ publisher = {VLDB Endowment},
+ title = {Scalable and Robust Snapshot Isolation for High-Performance Storage Engines},
+ url = {https://doi.org/10.14778/3583140.3583157},
+ volume = {16},
+ year = {2023}
+}

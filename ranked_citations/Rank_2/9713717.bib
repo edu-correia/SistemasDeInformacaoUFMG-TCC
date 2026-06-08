@@ -1,0 +1,14 @@
+@article{9713717,
+ abstract = {We present MSeg, a composite dataset that unifies semantic segmentation datasets from different domains. A naive merge of the constituent datasets yields poor performance due to inconsistent taxonomies and annotation practices. We reconcile the taxonomies and bring the pixel-level annotations into alignment by relabeling more than 220,000 object masks in more than 80,000 images, requiring more than 1.34 years of collective annotator effort. The resulting composite dataset enables training a single semantic segmentation model that functions effectively across domains and generalizes to datasets that were not seen during training. We adopt zero-shot cross-dataset transfer as a benchmark to systematically evaluate a model's robustness and show that MSeg training yields substantially more robust models in comparison to training on individual datasets or naive mixing of datasets without the presented contributions. A model trained on MSeg ranks first on the WildDash-v1 leaderboard for robust semantic segmentation, with no exposure to WildDash data during training. We evaluate our models in the 2020 Robust Vision Challenge (RVC) as an extreme generalization experiment. MSeg training sets include only three of the seven datasets in the RVC; more importantly, the evaluation taxonomy of RVC is different and more detailed. Surprisingly, our model shows competitive performance and ranks second. To evaluate how close we are to the grand aim of robust, efficient, and complete scene understanding, we go beyond semantic segmentation by training instance segmentation and panoptic segmentation models using our dataset. Moreover, we also evaluate various engineering design decisions and metrics, including resolution and computational efficiency. Although our models are far from this grand aim, our comprehensive evaluation is crucial for progress. We share all the models and code with the community.},
+ author = {Lambert, John and Liu, Zhuang and Sener, Ozan and Hays, James and Koltun, Vladlen},
+ doi = {10.1109/TPAMI.2022.3151200},
+ issn = {1939-3539},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ keyword = {Training;Semantics;Computational modeling;Annotations;Taxonomy;Image segmentation;Benchmark testing;Robust vision;semantic segmentation;instance segmentation;panoptic segmentation;domain generalization},
+ month = {Jan},
+ number = {1},
+ pages = {796-810},
+ title = {MSeg: A Composite Dataset for Multi-Domain Semantic Segmentation},
+ volume = {45},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{7847213,
+ abstract = {Parallel file systems are important infrastructures for both cloud and high performance computing. The performance of metadata operations is critical to achieve high scalability in parallel file systems. Nevertheless, traditional parallel file systems are lack of scalable metadata service. To alleviate these problems, some previous research distributes metadata to separated large-scale clusters and uses write-optimized techniques like log-structured merge tree (LSM-tree) to store metadata. However, LSM-tree design does not consider the features of solid state drive devices (SSD) which are widely deployed in modern parallel computing systems. The design of using LSM-trees to store metadata has not explored the potential benefits of SSD devices. In this paper, we present StageFS, which is a parallel file system optimized for SSD based clusters. StageFS stores both the metadata and small files in LSM-trees for fast indexing. For larger files, the file blocks are separately stored to reduce the write amplifications. In addition, the parallel I/O feature of SSD devices is used to improve the performance of accessing directories and large files. To avoid frequent small writes, StageFS uses buffering to better utilize the bandwidth of SSD devices. Experimental results show that StageFS provides better performance in metadata operations (up to 21.28x) and small file access (1.92x to two orders of magnitude) compared with Ceph and HDFS.},
+ author = {Wu, Huijun and Zhu, Liming and Lu, Kai and Li, Gen and Wu, Dongyao},
+ booktitle = {2016 IEEE Trustcom/BigDataSE/ISPA},
+ doi = {10.1109/TrustCom.2016.0330},
+ issn = {2324-9013},
+ keyword = {Metadata;Performance evaluation;Servers;Bandwidth;Compaction;Throughput;Indexes;parallel file system;metadata;LSM-tree;small file},
+ month = {Aug},
+ number = {},
+ pages = {2147-2152},
+ title = {StageFS: A Parallel File System Optimizing Metadata Performance for SSD Based Clusters},
+ volume = {},
+ year = {2016}
+}

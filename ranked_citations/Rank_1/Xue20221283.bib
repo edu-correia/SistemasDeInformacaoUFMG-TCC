@@ -1,0 +1,14 @@
+@conference{Xue20221283,
+ abstract = {Modern time series databases come with a tag-based query interface that allows users to select time series, which are essentially sequences of timestamped data values, based on a set of specific tags. A tagging index is an important component that can efficiently provide such tag-based services. However, existing methods store tag information in external databases or time-partitioned data structures, which has a negative impact on query performance. In this paper, we present a novel abstraction for efficient queries of tag information in time series databases: a hybrid tagging index that manages all tags in one place. By managing tag information globally in a single disk-based data structure, we can fundamentally relieve memory pressure and eliminate I/O overhead of duplicate metadata from existing methods. Furthermore, the tagging index is internally partitioned by time to support time range based queries and data retention which are essential to time series databases. We implement the proposed tagging index as a standalone module which can be integrated with time series storage engines. Experiments on the TSBS benchmark show our proposed method can significantly speed up queries by on average 84.0% and 87.2% compared to Prometheus (using a time-partitioned segment method) and Graphite (using an external database for tag management), respectively.  © 2022 IEEE.},
+ author = {Xue, Jin and Wang, Zhiqi and Wang, Tianyu and Shao, Zili},
+ doi = {10.1109/IPDPS53621.2022.00127},
+ journal = {Proceedings - 2022 IEEE 36th International Parallel and Distributed Processing Symposium, IPDPS 2022},
+ note = {Cited by: 2},
+ pages = {1283 - 1293},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TagTree: Global Tagging Index with Efficient Querying for Time Series Databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85136325175?origin=resultslist},
+ year = {2022}
+}

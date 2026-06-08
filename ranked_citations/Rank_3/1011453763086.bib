@@ -1,0 +1,18 @@
+@article{10.1145/3763086,
+ abstract = {The wide adoption of deep learning in safety-critical domains has driven the need for formally verifying the robustness of neural networks. A critical challenge in this endeavor lies in addressing the inherent non-linearity of activation functions. The convex hull of the activation function has emerged as a promising solution, as it effectively tightens variable ranges and provides multi-neuron constraints, which together enhance verification precision. Given that constructing exact convex hulls is computationally expensive and even infeasible in most cases, existing research has focused on over-approximating them. Several ad-hoc methods have been devised for specific functions such as ReLU and Sigmoid. Nonetheless, there remains a substantial gap in developing broadly applicable approaches for general activation functions.   In this work, we propose WraAct, an approach to efficiently constructing tight over-approximations for activation function hulls. Its core idea is to introduce linear constraints to smooth out the fluctuations in the target function, by leveraging double-linear-piece (DLP) functions to simplify the local geometry. In this way, the problem is reduced to over-approximating DLP functions, which can be efficiently handled. We evaluate WraAct against SBLM+PDDM, the state-of-the-art (SOTA) multi-neuron over-approximation method based on decompositing functions into segments. WraAct outperforms it on commonly-used functions like Sigmoid, Tanh, and MaxPool, offering superior efficiency (average 400X faster) and precision (average 150X) while constructing fewer constraints (average 50% reduction). It can complete the computation of up to 8 input dimensions in 10 seconds. We also integrate WraAct into a neural network verifier to evaluate its capability in verification tasks. On 100 benchmark samples, it significantly enhances the single-neuron verification from under 10 to over 40, and outperforms the multi-neuron verifier PRIMA with up to additional 20 verified samples. On large networks like ResNets with 22k neurons, it can complete the verification of one sample within one minute.},
+ address = {New York, NY, USA},
+ articleno = {308},
+ author = {Ma, Zhongkui and Wang, Zihan and Bai, Guangdong},
+ doi = {10.1145/3763086},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Convexity, Neural Networks, Polytope, Robustness},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Convex Hull Approximation for Activation Functions},
+ url = {https://doi.org/10.1145/3763086},
+ volume = {9},
+ year = {2025}
+}

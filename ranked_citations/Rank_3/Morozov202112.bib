@@ -1,0 +1,14 @@
+@conference{Morozov202112,
+ abstract = {Iterative parallel algorithms can be implemented by synchronizing after each round. This bulk-synchronous parallel (BSP) pattern is inefficient when strict synchronization is not required: global synchronization is costly at scale and prohibits amortizing load imbalance over the entire execution, and termination detection is challenging with irregular data-dependent communication. We present an asynchronous communication protocol that efficiently interleaves communication with computation. The protocol includes global termination detection without obstructing computation and communication between nodes. The user's computational primitive only needs to indicate when local work is done; our algorithm detects when all processors reach this state. We do not assume that global work decreases monotonically, allowing processors to createnew work. We illustrate the utility of our solution through experiments, including two large data analysis and visualization codes: parallel particle advection and distributed union-find. Our asynchronous algorithm is several times faster with better strong scaling efficiency than the synchronous approach.  © 2021 IEEE.},
+ author = {Morozov, Dmitriy and Peterka, Tom and Guo, Hanqi and Raj, Mukund and Xu, Jiayi and Shen, Han-Wei},
+ doi = {10.1109/LDAV53230.2021.00009},
+ journal = {Proceedings - 2021 IEEE 11th Symposium on Large Data Analysis and Visualization, LDAV 2021},
+ note = {Cited by: 2},
+ pages = {12 - 21},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {IExchange: Asynchronous Communication and Termination Detection for Iterative Algorithms},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85123957980?origin=resultslist},
+ year = {2021}
+}

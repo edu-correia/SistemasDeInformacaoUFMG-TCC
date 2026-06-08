@@ -1,0 +1,13 @@
+@article{LI2023162336,
+ abstract = {Many predictive models for ambient PM2.5 concentrations rely on ground observations from a single monitoring network consisting of sparsely distributed sensors. Integrating data from multiple sensor networks for short-term PM2.5 prediction remains largely unexplored. This paper presents a machine learning approach to predict ambient PM2.5 concentration levels at any unmonitored location several hours ahead using PM2.5 observations from nearby monitoring sites from two sensor networks and the location's social and environmental properties. Specifically, this approach first applies a Graph Neural Network and Long Short-Term Memory (GNN-LSTM) network to time series of daily observations from a regulatory monitoring network to make predictions of PM2.5. This network produces feature vectors to store aggregated daily observations as well as dependency characteristics to predict daily PM2.5. The daily feature vectors are then set as the precondition of the hourly level learning process. The hourly level learning again uses a GNN-LSTM network based on daily dependency information and hourly observations from a low-cost sensor network to produce spatiotemporal feature vectors capturing the combined dependency described by daily and hourly observations. Finally, the spatiotemporal feature vectors from the hourly learning process and social-environmental data are merged and used as the input to a single-layer Fully Connected (FC) network to output the predicted hourly PM2.5 concentrations. To demonstrate the benefits of this novel prediction approach, we have conducted a case study using data collected from two sensor networks in Denver, CO, during 2021. Results show that the utilization of data from two sensor networks improves the overall performance of predicting fine-level, short-term PM2.5 concentrations compared to other baseline models.},
+ author = {Jing Li and James Crooks and Jennifer Murdock and Priyanka {de Souza} and Kirk Hohsfield and Bill Obermann and Tehya Stockman},
+ doi = {https://doi.org/10.1016/j.scitotenv.2023.162336},
+ issn = {0048-9697},
+ journal = {Science of The Total Environment},
+ keyword = {PM prediction, Graph Neural Network, Long Short-Term Memory network, Nested spatiotemporal modeling},
+ pages = {162336},
+ title = {A nested machine learning approach to short-term PM2.5 prediction in metropolitan areas using PM2.5 data from different sensor networks},
+ url = {https://www.sciencedirect.com/science/article/pii/S004896972300952X},
+ volume = {873},
+ year = {2023}
+}

@@ -1,0 +1,16 @@
+@article{Luo20241065,
+ abstract = {Modern database systems rely on indexes to accelerate data access. The recently proposed learned indexes can offer higher search performance with lower space costs than traditional indexes like B+-tree. We observe that existing main-memory learned indexes are particularly optimized for read-heavy workloads. However, such an optimization comes at the cost of model training and handling out-of-range key insertions, which will worsen the overall performance. We argue that workloads are not always read-heavy in real applications, and it is more important and practical to make learned indexes work efficiently for dynamic workloads with changing access patterns and data distributions. In this paper, we aim to improve the practicality of learned indexes by making them adaptive to dynamic workloads. Specifically, we propose a new polymorphic learned index named Morphtree, which can adaptively change the index structure to provide stable and high performance for dynamic workloads. The novelty of Morphtree lies in three aspects: (1) a decoupled tree structure for separating the inner search tree from the data layer consisting of leaf nodes, (2) a read-optimized learned inner tree for improving the performance of index search, and (3) an evolving data layer for automatically transforming node layouts into read friendly or write friendly according to workload changes. We evaluate these new ideas of Morphtree on various datasets and workloads. The comparative results with six up-to-date learned indexes, including ALEX, PGM-index, FITing-tree, LIPP, FINEdex, and XIndex, show that Morphtree can achieve, on average, 0.56x and 3x improvements in lookup and insertion performance, respectively. Moreover, when evaluated on dynamic workloads with changing lookup ratios and data distributions, Morphtree can achieve a sustained high throughput across different real-world datasets and query patterns, owing to its ability to automatically adjust the index structure according to workload changes. © The Author(s), under exclusive licence to Springer-Verlag GmbH Germany, part of Springer Nature 2023.},
+ author = {Luo, Yongping and Jin, Peiquan and Chu, Zhaole and Wang, Xiaoliang and Yuan, Yigui and Zhang, Zhou and Luo, Yun and Wu, Xufei and Zou, Peng},
+ doi = {10.1007/s00778-023-00823-y},
+ journal = {VLDB Journal},
+ note = {Cited by: 3},
+ number = {4},
+ pages = {1065 - 1084},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Morphtree: a polymorphic main-memory learned index for dynamic workloads},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85178233539?origin=resultslist},
+ volume = {33},
+ year = {2024}
+}

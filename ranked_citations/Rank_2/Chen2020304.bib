@@ -1,0 +1,14 @@
+@conference{Chen2020304,
+ abstract = {This paper presents a simple design approach that can be easily integrated into existing mature log-structured key-value (KV) stores (e.g., RocksDB) to mitigate the impact of background compaction. Reducing compaction-induced performance degradation has been widely studied, and most prior work focused on developing innovative data structures and algorithms to directly reduce the compaction-induced write amplification. Nevertheless, it is non-trivial or even practically infeasible for existing mature KV stores to adopt these new data structures and algorithms. Meanwhile, in the presence of well-established ecosystem and community around existing ones, it is a challenge to build and grow a new log-structured KV store with meaningful real-world adoption. Therefore, this work focuses on mitigating the impact of compaction while keeping the data structures and algorithms in existing KV stores completely intact. Instead of directly reducing the write amplification, this work applies the simple memory/storage tiering concept to mitigate the impact of compaction at the cost of larger write-ahead log (WAL) and host memory capacity usage. This paper presents design approaches to effectively reduce the WAL size and memory cost. We integrated this solution into RocksDB by only adding about 1,200 lines of code, without touching its core data structure and algorithm. Using 100GB and 1TB datasets as test vehicles, we carried out experiments with db_bench and YCSB workloads, and the results show that the modified RocksDB can improve the ops/s by up to 100.7% and meanwhile reduce the 99-percentile tail latency by up to 82%. © 2020 ACM.},
+ author = {Chen, Xubin and Hao, Jingpeng and Qiao, Yifan and Zhang, Tong},
+ doi = {10.1145/3422575.3422802},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 0},
+ pages = {304 - 316},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {WAL-assisted Tiering: Painlessly Improving Your Favorite Log-Structured KV Store Instead of Building a New One},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85103547897?origin=resultslist},
+ year = {2020}
+}

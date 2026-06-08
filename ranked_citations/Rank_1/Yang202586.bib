@@ -1,0 +1,14 @@
+@conference{Yang202586,
+ abstract = {The learned index technique has been widely explored as a strong competitor to traditional indexes. It adopts static learning-based models to fit the distribution of sorted data and locate keys through predictions, which shows outstanding query speed. However, frequent retraining is required when it comes to concurrent insertion scenarios. Despite existing studies introducing sparse slots and delta buffers to mitigate this effect, the read-write performance of the learned index still falls short of expectations, especially in concurrent conditions. In this paper, we first propose a novel hybrid index scheme that combines a read-efficient learned index with an insert-efficient Adaptive Radix Tree (ART) to realize high performance for read-write scenarios. However, it is not trivial due to expensive model prediction errors, complicated model hierarchy, and redundant node traversals. Therefore, we then introduce ALT-index, an efficient hybrid learned index with high concurrency for memory database systems. ALT-index highlights a delicate two-tier architecture where linear data are stored in the learned index without prediction errors and conflict data are hosted in the lower layer as an optimized ART. Besides, we develop a Greedy Pessimistic Linear (GPL) algorithm to support flattened data structures for concurrency. In the optimized ART layer, we introduce a fast and compact pointer buffer to further improve the overall performance. Experimental results conducted on various real-world datasets with 32 threads illustrate that ALT-index improves performance by up to 1.9x, 2.1x, and 2.3x compared with ALEX+, FINEdex, and XIndex in read-write-balanced scenarios, respectively.  © 2025 IEEE.},
+ author = {Yang, Yuxin and Wang, Fang and Lei, Mengya and Zhang, Peng and Feng, Dan},
+ doi = {10.1109/ICDE65448.2025.00014},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 0},
+ pages = {86 - 98},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ALT-Index: A Hybrid Learned Index for Concurrent Memory Database Systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105015423822?origin=resultslist},
+ year = {2025}
+}

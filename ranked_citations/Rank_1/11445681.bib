@@ -1,0 +1,14 @@
+@inproceedings{11445681,
+ abstract = {This paper presents an end-to-end framework for reconstructing 3D parametric curves directly from multi-view edge maps. Contrasting with existing two-stage methods that follow a sequential “edge point cloud reconstruction and parametric curve fitting” pipeline, our one-stage approach optimizes 3D parametric curves directly from 2D edge maps, eliminating error accumulation caused by the inherent optimization gap between disconnected stages. However, parametric curves inherently lack suitability for rendering-based multi-view optimization, necessitating a complementary representation that preserves their geometric properties while enabling differentiable rendering. We propose a novel bi-directional coupling mechanism between parametric curves and edge-oriented Gaussian components. This tight correspondence formulates a curveaware Gaussian representation, CurveGaussian, that enables differentiable rendering of 3D curves, allowing direct optimization guided by multi-view evidence. Furthermore, we introduce a dynamically adaptive topology optimization framework during training to refine curve structures through linearization, merging, splitting, and pruning operations. Comprehensive evaluations on the ABC dataset and real-world benchmarks demonstrate our onestage method's superiority over two-stage alternatives, particularly in producing cleaner and more robust reconstructions. Additionally, by directly optimizing parametric curves, our method significantly reduces the parameter count during training, achieving both higher efficiency and superior performance compared to existing approaches.},
+ author = {Gao, Zhirui and Yi, Renjiao and Dai, Yaqiao and Zhu, Xuening and Chen, Wei and Zhu, Chenyang and Xu, Kai},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02556},
+ issn = {2380-7504},
+ keyword = {Circuits and systems;Pixel;Product development;Communication systems;Protocols;Graphical user interfaces;Local area networks;Location awareness;Videos;Wide area networks;parametric curve reconstruction;gaussian splatting;3d edge detection},
+ month = {Oct},
+ number = {},
+ pages = {27531-27541},
+ title = {Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction},
+ volume = {},
+ year = {2025}
+}

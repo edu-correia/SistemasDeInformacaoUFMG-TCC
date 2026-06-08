@@ -1,0 +1,13 @@
+@conference{Saqur202531568,
+ abstract = {We propose MoE-F - a formalized mechanism for combining N pre-trained expert Large Language Models (LLMs) in online time-series prediction tasks. MoE-F adaptively forecasts the optimal weighting of LLM predictions at each time step by leveraging the conditional information in each expert's running performance, enabling the best combination of experts for the next step prediction. Diverging from static (learned) Mixture of Experts (MoE) methods, our approach employs time-adaptive stochastic filtering techniques to combine experts. By framing the expert selection problem as a finite state-space, continuous-time Hidden Markov model (HMM), we can leverage the Wonham-Shiryaev filter. Our approach first constructs N parallel filters corresponding to each N individual LLMs. Each filter proposes its best combination of LLMs, given the information that they have access to. Subsequently, the N filter outputs are optimally aggregated to maximize their robust predictive power, and this update is computed efficiently via a closed-form expression, thus generating our ensemble predictor. Our contributions are: (I) the MoE-F algorithm - deployable as a plug-and-play filtering harness over any heterogenous mixture of LLMs or specialized models, (II) theoretical optimality guarantees of the proposed filtering-based gating algorithm (via optimality guarantees for its parallel Bayesian filtering and its robust aggregation steps), and (III) empirical evaluation and ablative results using state of the art foundational and MoE LLMs on a real-world Financial Market Movement task based on streaming news where MoE-F attains a 17% absolute and 48.5% relative F1-score improvement over the best performing individual LLM expert. Further, we provide empirical evidence of substantial performance gains with MoE-F over specialized models in the long-horizon time-series forecasting domain using electricity-grid datasets. Supplementary materials available at: https://github.com/raeidsaqur/moe-f. © 2025 13th International Conference on Learning Representations, ICLR 2025. All rights reserved.},
+ author = {Saqur, Raeid and Kratsios, Anastasis and Krach, Florian and Limmer, Yannick and Tian, Jacob-Junqi and Willes, John and Horvath, Blanka and Rudzicz, Frank},
+ journal = {13th International Conference on Learning Representations, ICLR 2025},
+ note = {Cited by: 0},
+ pages = {31568 - 31601},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FILTERED NOT MIXED: FILTERING-BASED ONLINE GATING FOR MIXTURE OF LARGE LANGUAGE MODELS},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105010209602?origin=resultslist},
+ year = {2025}
+}

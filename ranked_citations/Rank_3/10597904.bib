@@ -1,0 +1,14 @@
+@inproceedings{10597904,
+ abstract = {Modern data-centric applications frequently need to store and read data with low latency. These requirements are difficult to achieve, even on high performance processors paired with fast solid state drives (SSDs). To this end, LSM tree is widely used in many systems such as in RocksDB and considered as an ideal index structure that fits SSDs. However, in spite of many improvements to LSM tree over the years, fundamental problems of limited read performance and expensive compaction operations remain. Microsoft Research proposed Bw-tree, a variant of B+ tree layered on top of log structured storage. Bw-tree achieves fast ingestion of data, similar to LSM tree, meanwhile it has less drawback on read performance and compaction. However, except for Microsoft, the industrial strength implementation of Bw-tree is rare. The open source OpenBw-Tree from Carnegie Mellon University was designed only for main memory. This paper describes Bwe-tree, an implementation and a significant evolution of Bw-tree on fast storage. It makes two contributions. First, Bwe-tree addresses reliability and performance issues revealed during running Bw-tree on fast storage in production, by revising structural modification operations, introducing page concurrency control, and storing large-size values off-tree. Performance improvements over Bw-tree are verified by experiments. Second, it demonstrates that Bw-tree is an effective alternative tree structure on SSDs. Compared to RocksDB (LSM tree) and BerkeleyDB (B+ tree), Bwe-vtree performs dramatically better (up to 3X or more) for the YCSB workloads. Our Bwe-vtree implementation has been integrated into production systems in Alibaba, including a flagshin cloud-native database service.},
+ author = {Wang, Rui and Yang, Xinjun and Li, Feifei and Lomet, David B. and Liu, Xin and Zhou, Panfeng and Chen, Yongxiang and Zhang, David and Zhou, Jingren and Wu, Jiesheng},
+ booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE60146.2024.00396},
+ issn = {2375-026X},
+ keyword = {Production systems;Program processors;Solid state drives;Databases;Switches;Data engineering;Compaction;indexing;logging;recovery;garbage collection;log structured storage},
+ month = {May},
+ number = {},
+ pages = {5266-5279},
+ title = {Bwe-tree: An Evolution of Bw-tree on Fast Storage},
+ volume = {},
+ year = {2024}
+}

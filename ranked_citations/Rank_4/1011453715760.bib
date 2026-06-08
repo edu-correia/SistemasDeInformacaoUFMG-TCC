@@ -1,0 +1,18 @@
+@article{10.1145/3715760,
+ abstract = {Code changes are an integral part of the software development process. Many code changes are meant to improve the code without changing its functional behavior, e.g., refactorings and performance improvements. Unfortunately, validating whether a code change preserves the behavior is non-trivial, particularly when the code change is performed deep inside a complex project. This paper presents ChangeGuard, an approach that uses learning-guided execution to compare the runtime behavior of a modified function. The approach is enabled by the novel concept of pairwise learning-guided execution and by a set of techniques that improve the robustness and coverage of the state-of-the-art learning-guided execution technique. Our evaluation applies ChangeGuard to a dataset of 224 manually annotated code changes from popular Python open-source projects and to three datasets of code changes obtained by applying automated code transformations. Our results show that the approach identifies semantics-changing code changes with a precision of 77.1% and a recall of 69.5%, and that it detects unexpected behavioral changes introduced by automatic code refactoring tools. In contrast, the existing regression tests of the analyzed projects miss the vast majority of semantics-changing code changes, with a recall of only 7.6%. We envision our approach being useful for detecting unintended behavioral changes early in the development process and for improving the quality of automated code transformations.},
+ address = {New York, NY, USA},
+ articleno = {FSE043},
+ author = {Gr\"{o}ninger, Lars and Souza, Beatriz and Pradel, Michael},
+ doi = {10.1145/3715760},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Code changes, differential testing, refactoring},
+ month = {June},
+ number = {FSE},
+ numpages = {21},
+ publisher = {Association for Computing Machinery},
+ title = {ChangeGuard: Validating Code Changes via Pairwise Learning-Guided Execution},
+ url = {https://doi.org/10.1145/3715760},
+ volume = {2},
+ year = {2025}
+}

@@ -1,0 +1,16 @@
+@article{Vorobyeva20222893,
+ abstract = {Write-optimized data structures (WODS), offer the potential to keep up with cyberstream event rates and give sub-second query response for key items like IP addresses. These data structures organize logs as the events are observed. To work in a real-world environment and not fill up the disk, WODS must efficiently expire older events. As the basis for our research into organizing security monitoring data, we implemented a tool, called Diventi, to index IP addresses in connection logs using RocksDB (a write-optimized LSM tree). We extended Diventi to automatically expire data as part of the data structures’ normal operations. We guarantee that Diventi always tracks the N most recent events and tracks no more than N+ k events for a parameter k< N, while ensuring the index is opportunistically pruned. To test Diventi at scale in a controlled environment, we used anonymized traces of IP communications collected at SuperComputing 2019. We synthetically extended the 2.4 billion connection events to 100 billion events. We tested Diventi vs. Elasticsearch, a common log indexing tool. In our test environment, Elasticsearch saw an ingestion rate of at best 37,000 events/s while Diventi sustained ingestion rates greater than 171,000 events/s. Our query response times were as much as 100 times faster, typically answering queries in under 80 ms. Furthermore, we saw no noticeable degradation in Diventi from expiration. We have deployed Diventi for many months where it has performed well and supported new security analysis capabilities. © 2022, National Technology & Engineering Solutions of Sandia, LLC.},
+ author = {Vorobyeva, Janet and Delayo, Daniel R. and Bender, Michael A. and Farach-Colton, Martín and Pandey, Prashant and Phillips, Cynthia A. and Singh, Shikha and Thomas, Eric D. and Kroeger, Thomas M.},
+ doi = {10.1007/s10586-021-03463-5},
+ journal = {Cluster Computing},
+ note = {Cited by: 1; All Open Access; Green Open Access},
+ number = {4},
+ pages = {2893 - 2914},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Using advanced data structures to enable responsive security monitoring},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85123501113?origin=resultslist},
+ volume = {25},
+ year = {2022}
+}

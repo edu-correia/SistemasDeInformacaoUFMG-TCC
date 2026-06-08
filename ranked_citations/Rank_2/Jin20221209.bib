@@ -1,0 +1,14 @@
+@conference{Jin20221209,
+ abstract = {Database systems typically have many knobs that must be configured by database administrators to achieve high performance. RocksDB achieves fast data writing performance using a log-structured merge-tree. This database contains many knobs related to write and space amplification, which are important performance indicators in RocksDB. Previously, it was proved that significant performance improvements could be achieved by tuning database knobs. However, tuning multiple knobs simultaneously is a laborious task owing to the large number of potential configuration combinations and trade-offs. To address this problem, we built a tuning system for RocksDB. First, we generated a valuable RocksDB data repository for analysis and tuning. To find the workload that is most similar to a target workload, we created a new representation for workloads. We then applied the Mahalanobis distance to create a combined workload that is as close to the original target workload as possible. Subsequently, we trained a deep neural network model with the combined workload and used it as the fitness function of a genetic algorithm. Finally, we applied the genetic algorithm to find the best solution for the original target workload. The experimental results demonstrated that the proposed system achieved a significant performance improvement for various target workloads.  © 2022 ACM.},
+ author = {Jin, Huijun and Lee, Jieun and Park, Sanghyun},
+ doi = {10.1145/3512290.3528726},
+ journal = {GECCO 2022 - Proceedings of the 2022 Genetic and Evolutionary Computation Conference},
+ note = {Cited by: 5; All Open Access; Bronze Open Access},
+ pages = {1209 - 1217},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RTune: A RocksDB Tuning System with Deep Genetic Algorithm},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85135246515?origin=resultslist},
+ year = {2022}
+}

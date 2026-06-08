@@ -1,0 +1,14 @@
+@article{9494536,
+ abstract = {The emergence of large-scale dynamic sets in networked and distributed applications attaches stringent requirements to approximate set representation. The existing data structures (including Bloom filter, Cuckoo filter, and their variants) preserve a tight dependency between the cells or buckets for an element and the lengths of the filters. This dependency, however, degrades the capacity elasticity, space efficiency and design flexibility of these data structures when representing dynamic sets. In this paper, we first propose the Index-Independent Cuckoo filter (I2CF), a probabilistic data structure that decouples the dependency between the length of the filter and the indices of buckets which store the information of elements. At its core, an I2CF maintains a consistent hash ring to assign buckets to the elements and generalizes the Cuckoo filter by providing optional  ${k}$  candidate buckets to each element. By adding and removing buckets adaptively, I2CF supports the bucket-level capacity alteration for dynamic set representation. Moreover, in case of a sudden increase or decrease of set cardinality, we further organize multiple I2CFs as a Consistent Cuckoo filter (CCF) to provide the filter-level capacity elasticity. By adding untapped I2CFs or merging under-utilized I2CFs, CCF is capable of resizing its capacity instantly. The trace-driven experiments indicate that CCF outperforms its alternatives and realizes our design rationales for dynamic set representation simultaneously, at the cost of a little higher complexity.},
+ author = {Luo, Lailong and Guo, Deke and Rottenstreich, Ori and Ma, Richard T. B. and Luo, Xueshan and Ren, Bangbang},
+ doi = {10.1109/TNSM.2021.3099433},
+ issn = {1932-4537},
+ journal = {IEEE Transactions on Network and Service Management},
+ keyword = {Data structures;Elasticity;Probabilistic logic;Merging;Wireless sensor networks;Wireless networks;Routing;Cuckoo filter;consistent hashing;elasticity},
+ month = {Dec},
+ number = {4},
+ pages = {4860-4874},
+ title = {A Capacity-Elastic Cuckoo Filter Design for Dynamic Set Representation},
+ volume = {18},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11461729,
+ abstract = {Supervised fine-tuning (SFT) is a crucial step for adapting large language models (LLMs) to downstream tasks. However, conflicting objectives across heterogeneous SFT tasks often induce the "seesaw effect": optimizing for one task may degrade performance on others, particularly when model parameters are updated indiscriminately. In this paper, we propose a principled approach to disentangle and isolate task-specific parameter regions, motivated by the hypothesis that parameter heterogeneity underlies cross-task interference. Specifically, we first independently fine-tune LLMs on diverse SFT tasks and identify each task’s core parameter region as the subset of parameters exhibiting the largest updates. Tasks with highly overlapping core parameter regions are merged for joint training, while disjoint tasks are organized into different stages. During multi-stage SFT, core parameters acquired in prior tasks are frozen, thereby preventing overwriting by subsequent tasks. To verify the effectiveness of our method, we conducted intensive experiments on multiple public datasets. The results showed that our dynamic parameter isolation strategy consistently reduced data conflicts and achieved consistent performance improvements compared to multi-stage and multi-task tuning baselines.},
+ author = {Liu, Xiaoyu and Guan, Xiaoyu and Liang, Di and Wu, Xianjie},
+ booktitle = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+ doi = {10.1109/ICASSP55912.2026.11461729},
+ issn = {2379-190X},
+ keyword = {Product development;Graphical user interfaces;Local area networks;Communication systems;LoRa;Spread spectrum communication;Protocols;HTTP;Regional area networks;Data communication;Parameter Heterogeneity;Catastrophic Forgetting;Supervised Fine-Tuning;Large Language Model},
+ month = {May},
+ number = {},
+ pages = {19337-19341},
+ title = {DPI: Exploiting Parameter Heterogeneity for Interference-Free Fine-Tuning},
+ volume = {},
+ year = {2026}
+}

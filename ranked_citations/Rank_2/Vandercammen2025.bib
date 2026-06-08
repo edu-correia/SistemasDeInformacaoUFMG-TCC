@@ -1,0 +1,15 @@
+@article{Vandercammen2025,
+ abstract = {Symbolic execution has proven itself a successful technique for automatically testing applications. However, it suffers from the state explosion problem, where execution of the program generates an exponential number of execution states that must be explored to fully cover the program. This problem can be mitigated by incorporating state merging into the testing procedure, where execution states that are sufficiently similar are merged together. Although state merging has been applied successfully to the testing of sequential applications, testing of event-driven applications brings with it unique challenges. In event-driven programs, the creation of new execution states is driven by both branch conditions encountered by the executor and the various permutations of the application's event sequence, as every event sequence potentially gives rise to a unique set of execution states that are created. This article presents the first description of how state merging can be applied in the context of symbolic execution of event-driven applications. Furthermore, although state merging has been described extensively for online symbolic execution, no mechanism has yet explicitly been described for incorporating state merging into offline symbolic execution, such as concolic testing. Online symbolic executors enable forking of the execution state upon reaching a branch condition that depends on symbolic input. Such testers can explore multiple program paths simultaneously. They can hence fork and merge states whenever the opportunity arises. Offline symbolic execution on the other hand, explores each program path separately. The reduced flexibility complicates the application of state merging. This article provides the first explicit overview of how state merging can be incorporated in concolic testing. We have implemented this approach to state merging in a concolic tester for event-driven JavaScript applications named STACKFUL. We evaluate this tester on a limited set of eight small, event-driven JavaScript web applications, and find that, within the scope of these eight applications, state merging successfully alleviates the state explosion problem, resulting in the concolic tester covering a larger part of the application in fewer test iterations. © 2025 Elsevier B.V.},
+ author = {Vandercammen, Maarten and De Roover, Coen},
+ doi = {10.1016/j.scico.2025.103264},
+ journal = {Science of Computer Programming},
+ note = {Cited by: 1; All Open Access; Green Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {State merging for concolic testing of event-driven applications},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85215560407?origin=resultslist},
+ volume = {242},
+ year = {2025}
+}

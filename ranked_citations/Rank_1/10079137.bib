@@ -1,0 +1,14 @@
+@article{10079137,
+ abstract = {Network monitoring solutions need to cope with increasing network traffic volumes, as a result, sketch-based monitoring methods have been extensively studied to trade accuracy for memory scalability and storage reduction. However, sketches are sensitive to skewness in network flow distributions due to hash collisions, and need complicated performance optimization to adapt to line-rate packet streams. We provide Jellyfish, an efficient sketch method that performs one-pass clustering over the network stream. One-pass clustering is realized by adapting the monitoring granularity from the whole network flow to fragments called subflows, which not only reduces the ingestion rate but also provides an efficient intermediate representation for the input to the sketch. Jellyfish provides the network-flow level query interface by reconstructing the network-flow level counters by merging subflow records from the same network flow. We provide probabilistic analysis of the expected accuracy of both existing sketch methods and Jellyfish. Real-world trace-driven experiments show that Jellyfish reduces the average estimation errors by up to six orders of magnitude for per-flow queries, by six orders of magnitude for entropy queries, and up to ten times for heavy-hitter queries.},
+ author = {Fu, Yongquan and An, Lun and Shen, Siqi and Chen, Kai and Barlet-Ros, Pere},
+ doi = {10.1109/TNET.2023.3251981},
+ issn = {1558-2566},
+ journal = {IEEE/ACM Transactions on Networking},
+ keyword = {Monitoring;Approximation error;Arrays;Real-time systems;Query processing;IEEE transactions;Hash functions;Subflow;sketch;hash collision;clustering;heavy hitter},
+ month = {Dec},
+ number = {6},
+ pages = {2604-2613},
+ title = {A One-Pass Clustering Based Sketch Method for Network Monitoring},
+ volume = {31},
+ year = {2023}
+}

@@ -1,0 +1,15 @@
+@conference{Xie2018149,
+ abstract = {Sparse Matrix-vector Multiplication (SpMV) is an important computation kernel widely used in HPC and data centers. The irregularity of SpMV is a well-known challenge that limits SpMV’s parallelism with vectorization operations. Existing work achieves limited locality and vectorization efficiency with large preprocessing overheads. To address this issue, we present the Compressed Vectorization-oriented sparse Row (CVR), a novel SpMV representation targeting efficient vectorization. The CVR simultaneously processes multiple rows within the input matrix to increase cache efficiency and separates them into multiple SIMD lanes so as to take the advantage of vector processing units in modern processors. Our method is insensitive to the sparsity and irregularity of SpMV, and thus able to deal with various scale-free and HPC matrices. We implement and evaluate CVR on an Intel Knights Landing processor and compare it with five state-of-the-art approaches using 58 scale-free and HPC sparse matrices. Experimental results show that CVR can achieve a speedup up to 1.70 × (1.33× on average) and a speedup up to 1.57× (1.10× on average) over the best existing approaches for scale-free and HPC sparse matrices, respectively. Moreover, CVR typically incurs the lowest preprocessing overhead compared with state-of-the-art approaches. © 2018 Copyright held by the owner/author(s).},
+ author = {Xie, Biwei and Gao, Wanling and Zhan, Jianfeng and Jia, Zhen and Zhang, Lixin and Liu, Xu and He, Xiwen},
+ doi = {10.1145/3168818},
+ journal = {CGO 2018 - Proceedings of the 2018 International Symposium on Code Generation and Optimization},
+ note = {Cited by: 76},
+ pages = {149 - 162},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CVR: Efficient Vectorization of SpMV on X86 Processors},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85052761987?origin=resultslist},
+ volume = {2018-February},
+ year = {2018}
+}

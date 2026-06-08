@@ -1,0 +1,14 @@
+@inproceedings{5951873,
+ abstract = {Regular expression matching is widely used in many network applications to analyze suspicious traffic against predefined signatures, and to discover anomalous events. Deterministic Finite Automaton (DFA), which recognizes a set of regular expressions, is the basic data structure to scan input traffic byte by byte. Though DFA meets the requirement of real-time processing of network traffic, constructing a combined DFA for a set of regular expression signatures is very time-consuming, especially when the signature set is large. To attack this problem, we propose new strategies to accelerate DFA construction. The basic idea of our method is to construct the combined DFA by hierarchical merging of the DFAs of each single regular expression. Our method runs in $O(|Q| |\Sigma|\ln n)$ time, which is substantially superior to the time complexity $O(|Q| |\Sigma|(\overset{n}{\underset{i=1}{\sum}}|Q_i|)^2)$of classical subset construction algorithm\cite{Aho1986}. Experiment on real signatures from open-source systems, such as L7-filter, BRO and SNORT, demonstrates that our method performs 45 times faster than the subset construction algorithm on average.},
+ author = {Liu, Yanbing and Guo, Li and Guo, Muyi and Liu, Ping},
+ booktitle = {2011 IEEE Ninth International Symposium on Parallel and Distributed Processing with Applications},
+ doi = {10.1109/ISPA.2011.32},
+ issn = {2158-9208},
+ keyword = {Doped fiber amplifiers;Complexity theory;Merging;Open source software;Data structures;Acceleration;Automata},
+ month = {May},
+ number = {},
+ pages = {1-6},
+ title = {Accelerating DFA Construction by Hierarchical Merging},
+ volume = {},
+ year = {2011}
+}

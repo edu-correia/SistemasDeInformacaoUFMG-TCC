@@ -1,0 +1,14 @@
+@conference{Kim2019170,
+ abstract = {High-performance storage devices, such as Non-Volatile Memory express Solid-State Drives (NVMe SSDs), have widely adopted in data centers. Especially, multiple storage devices improve higher I/O performance compared with a single device. However, the performance can be reduced in the case of workloads with mixed read and write requests (e.g., key-value stores) even though multiple storage devices are adopted. The reason is that read requests can be blocked until the processing for write requests is finished. In this paper, we propose an I/O isolation scheme to improve the performance of key-value store for multiple SSDs. In our scheme, we separate read and write operations for multiple files. For example, we classify generated files of key-value store and perform read/write operations in the separated storage devices according to the characteristics of each file. To do this, we deploy files by considering their characteristics on multiple SSDs. We implement our scheme in RocksDB and evaluate its performance with six NVMe SSDs compare with RAID-0 configuration. In the experimental results, we demonstrate that our scheme improves performance compared with an existing scheme (i.e., RAID-0). © 2019 IEEE.},
+ author = {Kim, Hwajung and Yeom, Heon Young and Son, Yongseok},
+ doi = {10.1109/FAS-W.2019.00049},
+ journal = {Proceedings - 2019 IEEE 4th International Workshops on Foundations and Applications of Self* Systems, FAS*W 2019},
+ note = {Cited by: 3},
+ pages = {170 - 175},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An I/O isolation scheme for key-value store on multiple solid-state drives},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85071419118?origin=resultslist},
+ year = {2019}
+}

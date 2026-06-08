@@ -1,0 +1,15 @@
+@article{10.1145/3806054,
+ abstract = {Emerging storage technologies, such as persistent memory and ultra-low latency SSD, enable the deduplication file system (DedupFS) to use non-cryptographic hash for fast fingerprinting. However, we find that the accelerated computation exposes another major performance penalty: the seemingly innocuous in-storage deduplication metadata maintenance incurs up to 38% overhead in the I/O path. We find the root cause is that deduplication incurs additional crash consistency overhead due to the maintenance of dedup-specific fingerprint-to-physical mappings. However, our insight, called deduplication-assisted crash consistency, shows that the deduplication mapping does not necessarily incur overhead, but rather can be exploited to improve performance. Our insight is based on two key observations: (1) The deduplication mapping can be merged with the file system logical-to-physical mapping, forming a logical-fingerprint-physical (LFP) mapping. Thus, we can persist deduplication metadata alongside file system metadata in a single I/O; (2) Furthermore, this mapping, containing fingerprint of the data block, can be leveraged to verify data integrity. Thus, we can achieve orderless data writes by verifying the integrity during recovery. We propose DarthFS to realize the efficiency of deduplication-assisted crash consistency. Using a series of techniques to manage data, metadata, and orderless I/O, DarthFS successfully leverages deduplication to improve file system I/O performance while retaining compatibility, effectiveness, and memory efficiency. Experiments across a range of synthetic and real-world workloads show that DarthFS outperforms existing file systems even under the workloads without duplicates, consistently outperforms existing DedupFSes, and can minimize deduplication-induced crash consistency overhead.},
+ address = {New York, NY, USA},
+ author = {Pan, Yanqi and Xia, Wen and Xu, Erci and Huang, Hao and Zou, Xiangyu and Li, Shiyi},
+ doi = {10.1145/3806054},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {Data Deduplication, File Systems, Crash Consistency, Persistent Memory, Ultra-Low Latency SSD},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Deduplication can Make File Systems Faster},
+ url = {https://doi.org/10.1145/3806054},
+ year = {2026}
+}

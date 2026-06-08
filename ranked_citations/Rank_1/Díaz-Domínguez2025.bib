@@ -1,0 +1,15 @@
+@conference{Díaz-Domínguez2025,
+ abstract = {We present compression algorithms designed to process terabyte-sized datasets in parallel. Our approach builds on locally consistent grammars, a lightweight form of compression, combined with simple post-processing techniques to achieve further space reductions. Locally consistent grammar algorithms are suitable for scaling as they need minimal satellite information to compact the text, but they are not inherently parallel. To enable parallelisation, we introduce a novel concept that we call stable local consistency. A grammar algorithm ALG is stable if for any pattern P occurring in a collection T = {T<sub>1</sub>, T<sub>2</sub>,..., T<sub>k</sub>}, instances ALG(T<sub>1</sub>), ALG(T<sub>2</sub>),..., ALG(T<sub>k</sub>) independently produce cores for P with the same topology. In a locally consistent grammar, the core of P is a subset of nodes and edges in the parse tree of T that remains the same in all the occurrences of P. This feature enables compression, but it only holds if ALG defines a common set of nonterminal symbols for the strings. Stability removes this restriction, allowing us to run ALG(T<sub>1</sub>), ALG(T<sub>2</sub>),..., ALG(T<sub>k</sub>) in parallel and subsequently merge their grammars into a single output equivalent to that of ALG(T ). We implemented our ideas and tested them on massive datasets. Our experiments showed that our method could process 7.9 TB of bacterial genomes in around nine hours, using 16 threads and 0.43 bits/symbol of working memory, achieving a compression ratio of 85x. © Diego Díaz-Domínguez.},
+ author = {Díaz-Domínguez, Diego},
+ doi = {10.4230/LIPIcs.SEA.2025.14},
+ journal = {Leibniz International Proceedings in Informatics, LIPIcs},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Terabyte-Scale Text Compression via Stable Local Consistency and Parallel Grammar Processing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105011080201?origin=resultslist},
+ volume = {338},
+ year = {2025}
+}

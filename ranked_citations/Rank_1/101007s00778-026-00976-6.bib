@@ -1,0 +1,18 @@
+@article{10.1007/s00778-026-00976-6,
+ abstract = {Most large enterprises build predefined data pipelines and execute them periodically to process operational data using SQL queries for various tasks. A key issue in minimizing the overall makespan of these pipelines is the efficient scheduling of varying concurrent queries within the pipelines. Existing tools mainly rely on simple heuristic rules due to the difficulty of expressing the complex features and mutual influences of queries. The latest reinforcement learning (RL) based methods have the potential to capture these patterns from feedback, but it is non-trivial to apply them directly due to the large scheduling space, high sampling cost, poor sample utilization, and limited generalization ability. Motivated by these challenges, we propose BQSched+, a generalizable RL-based Scheduler for varying Batch concurrent Queries. Specifically, we design a grouped attention-based state representation that captures the complex query patterns efficiently by incorporating the interaction patterns of different query groups and supports varying batch queries. We also propose IQ-PPO-m, an auxiliary task-enhanced proximal policy optimization (PPO) algorithm with multi-task balancing, to fully exploit the rich signals of Individual Query completion in logs and enable the learned policy to adapt to varying query sets. Based on the RL framework above, we further introduce three optimization strategies, including adaptive masking to prune the action space, scheduling gain-based query clustering to deal with large query sets, and an incremental simulator to reduce sampling cost. Extensive experiments show that BQSched+ can significantly improve the efficiency and stability of batch query scheduling, while also achieving remarkable scalability and generalizability in both data and queries. For example, across all DBMSs and scales tested, BQSched+ reduces the overall makespan of batch queries on TPC-DS benchmark by an average of 34% and 13%, compared with the commonly used heuristic strategy and the adapted RL-based scheduler, respectively. The source code of BQSched+ is available at .},
+ address = {Berlin, Heidelberg},
+ author = {Xu, Chenhao and Chen, Chunyu and Peng, Jinglin and Wang, Jiannan and Gao, Jun},
+ doi = {10.1007/s00778-026-00976-6},
+ issn = {1066-8888},
+ issue_date = {May 2026},
+ journal = {The VLDB Journal},
+ keyword = {Data pipeline, Query scheduling, Reinforcement learning, Multi-task learning},
+ month = {April},
+ number = {4},
+ numpages = {26},
+ publisher = {Springer-Verlag},
+ title = {BQSched+: A generalizable RL-based scheduler for varying batch concurrent queries},
+ url = {https://doi.org/10.1007/s00778-026-00976-6},
+ volume = {35},
+ year = {2026}
+}

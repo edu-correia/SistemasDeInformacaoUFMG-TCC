@@ -1,0 +1,15 @@
+@article{Sun201929,
+ abstract = {Log-structured merge tree (LSM-tree) based key–value stores are widely employed in large-scale storage systems. In compaction, high-level sorted string table files (i.e., SSTables) are merged with low-level overlapping key ranges and sorted for data queries. However, the compaction process incurs write amplification, which degrades system performance particularly under update-intensive workloads. Current optimizations mostly focus on reducing the overload of compaction in the host but rarely exploit parallelisms between the host and the device to fully utilize computing resources in the entire system for optimizing compaction performance. In this study, we propose Co-KV, a Collaborative Key-Value store, to improve compaction performance in LSM-tree-based key–value stores. Co-KV is based on a near-data processing (i.e., NDP) model-enabled storage device. Co-KV exhibits the following advantages: (1) it reduces write amplification and host-side CPU costs using a compaction offloading scheduling between a host computer and an NDP-enabled storage device; (2) it relieves the overload associated with data transfer between the host and the storage device; and (3) it improves the compaction of LSM-tree based key–value stores under update-intensive workloads. We employed an Open Ethernet Driver (OED), which is a real-world NDP platform as the testbed for our experiments. Extensive db_bench evaluations demonstrate that Co-KV achieves overall throughput improvements of approximately 1.75x, CPU cost reductions of approximately 68.1%, and write amplification reductions by up to 50.0% over the state-of-the-art LevelDB. Under YCSB workloads, Co-KV increases throughput by 1.7x ∼ 1.9x while decreasing the write amplification and average latency by up to 50.0% and 46.3%, respectively. © 2019 Elsevier Inc.},
+ author = {Sun, Hui and Liu, Wei and Huang, Jianzhong and Shi, Weisong},
+ doi = {10.1016/j.jpdc.2019.04.011},
+ journal = {Journal of Parallel and Distributed Computing},
+ note = {Cited by: 6},
+ pages = {29 - 43},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Collaborative Compaction Optimization System using Near-Data Processing for LSM-tree-based Key-Value Stores},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85065403684?origin=resultslist},
+ volume = {131},
+ year = {2019}
+}

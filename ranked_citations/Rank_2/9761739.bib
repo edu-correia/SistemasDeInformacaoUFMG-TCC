@@ -1,0 +1,14 @@
+@article{9761739,
+ abstract = {Automatic coronary artery segmentation is of great value in diagnosing coronary disease. In this paper, we propose an automatic coronary artery segmentation method for coronary computerized tomography angiography (CCTA) images based on a deep convolutional neural network. The proposed method consists of three steps. First, to improve the efficiency and effectiveness of the segmentation, a 2D DenseNet classification network is utilized to screen out the non-coronary-artery slices. Second, we propose a coronary artery segmentation network based on the 3D-UNet, which is capable of extracting, fusing and rectifying features efficiently for accurate coronary artery segmentation. Specifically, in the encoding process of the 3D-UNet network, we adapt the dense block into the 3D-UNet so that it can extract rich and representative features for coronary artery segmentation; In the decoding process, 3D residual blocks with feature rectification capability are applied to improve the segmentation quality further. Third, we introduce a Gaussian weighting method to obtain the final segmentation results. This operation can highlight the more reliable segmentation results at the center of the 3D data blocks while weakening the less reliable segmentations at the block boundary when merging the segmentation results of spatially overlapping data blocks. Experiments demonstrate that our proposed method achieves a Dice Similarity Coefficient (DSC) value of 0.826 on a CCTA dataset constructed by us. The code of the proposed method is available at https://github.com/alongsong/3D_CAS.},
+ author = {Song, Along and Xu, Lisheng and Wang, Lu and Wang, Bin and Yang, Xiaofan and Xu, Bu and Yang, Benqiang and Greenwald, Stephen E.},
+ doi = {10.1109/JBHI.2022.3169425},
+ issn = {2168-2208},
+ journal = {IEEE Journal of Biomedical and Health Informatics},
+ keyword = {Image segmentation;Arteries;Feature extraction;Three-dimensional displays;Bioinformatics;Encoding;Convolutional neural networks;Computerized tomography angiography;convolutional neural network;coronary artery segmen- tation;deep learning;dense block;residual block},
+ month = {Aug},
+ number = {8},
+ pages = {4044-4055},
+ title = {Automatic Coronary Artery Segmentation of CCTA Images With an Efficient Feature-Fusion-and-Rectification 3D-UNet},
+ volume = {26},
+ year = {2022}
+}

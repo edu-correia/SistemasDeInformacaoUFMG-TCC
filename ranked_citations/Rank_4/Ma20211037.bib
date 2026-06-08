@@ -1,0 +1,16 @@
+@article{Ma20211037,
+ abstract = {Due to its low latency, byte-addressable, non-volatile, and high density, persistent memory (PM) is expected to be used to design a high-performance storage system. However, PM also has disadvantages such as limited endurance, thereby proposing challenges to traditional index technologies such as B<sup>+</sup> tree. B<sup>+</sup> tree is originally designed for dynamic random access memory (DRAM)-based or disk-based systems and has a large write amplification problem. The high write amplification is detrimental to a PM-based system. This paper proposes WO-tree, a write-optimized B<sup>+</sup> tree for PM. WO-tree adopts an unordered write mechanism for the leaf nodes, and the unordered write mechanism can reduce a large number of write operations caused by maintaining the entry order in the leaf nodes. When the leaf node is split, WO-tree performs the cache line flushing operation after all write operations are completed, which can reduce frequent data flushing operations. WO-tree adopts a partial logging mechanism and it only writes the log for the leaf node. The inner node recognizes the data inconsistency by the read operation and the data can be recovered using the leaf node information, thereby significantly reducing the logging overhead. Furthermore, WO-tree adopts a lock-free search for inner nodes, which reduces the locking overhead for concurrency operation. We evaluate WO-tree using the Yahoo! Cloud Serving Benchmark (YCSB) workloads. Compared with traditional B<sup>+</sup> tree, wB-tree, and Fast-Fair, the number of cache line flushes caused by WO-tree insertion operations is reduced by 84.7%, 22.2%, and 30.8%, respectively, and the execution time is reduced by 84.3%, 27.3%, and 44.7%, respectively. © 2021, Institute of Computing Technology, Chinese Academy of Sciences.},
+ author = {Ma, Rui-Xiang and Wu, Fei and Dong, Bu-Rong and Zhang, Meng and Li, Wei-Jun and Xie, Chang-Sheng},
+ doi = {10.1007/s11390-021-1247-6},
+ journal = {Journal of Computer Science and Technology},
+ note = {Cited by: 2},
+ number = {5},
+ pages = {1037 - 1050},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Write-Optimized B + Tree Index Technology for Persistent Memory},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85117917065?origin=resultslist},
+ volume = {36},
+ year = {2021}
+}

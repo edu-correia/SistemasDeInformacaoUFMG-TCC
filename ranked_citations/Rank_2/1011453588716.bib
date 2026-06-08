@@ -1,0 +1,18 @@
+@article{10.1145/3588716,
+ abstract = {Many data science applications, most notably Geographic Information Systems, require the computation of spatial joins between large object collections. The objective is to find pairs of objects that intersect, i.e., share at least one common point. The intersection test is very expensive especially for polygonal objects. Therefore, the objects are typically approximated by their minimum bounding rectangles (MBRs) and the join is performed in two steps. In the filter step, all pairs of objects whose MBRs intersect are identified as candidates; in the refinement step, each of the candidate pairs is verified for intersection. The refinement step has been shown notoriously expensive, especially for polygon-polygon joins, constituting the bottleneck of the entire process. We propose a novel approximation technique for polygons, which (i) rasterizes them using a fine grid, (ii) models groups of nearby cells that intersect a polygon as an interval, and (iii) encodes each interval by a bitstring that captures the overlap of each cell in it with the polygon. We also propose an efficient intermediate filter, which is applied on the object approximations before the refinement step, to avoid it for numerous object pairs. Via experimentation with real data, we show that the end-to-end spatial join cost can be reduced by up to one order of magnitude with the help of our filter and by at least three times compared to using alternative intermediate filters.},
+ address = {New York, NY, USA},
+ articleno = {36},
+ author = {Georgiadis, Thanasis and Mamoulis, Nikos},
+ doi = {10.1145/3588716},
+ issue_date = {May 2023},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {intervals, polygons, rasterization, spatial filters, spatial joins},
+ month = {May},
+ number = {1},
+ numpages = {18},
+ publisher = {Association for Computing Machinery},
+ title = {Raster Intervals: An Approximation Technique for Polygon Intersection Joins},
+ url = {https://doi.org/10.1145/3588716},
+ volume = {1},
+ year = {2023}
+}

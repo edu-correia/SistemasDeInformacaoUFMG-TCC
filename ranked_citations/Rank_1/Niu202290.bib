@@ -1,0 +1,14 @@
+@conference{Niu202290,
+ abstract = {Sparse general matrix-matrix multiplication (SpGEMM) is one of the most fundamental building blocks in sparse linear solvers, graph processing frameworks and machine learning applications. The existing parallel approaches for shared memory SpGEMM mostly use the row-row style with possibly good parallelism. However, because of the irregularity in sparsity structures, the existing row-row methods often suffer from three problems: (1) load imbalance, (2) high global space complexity and unsatisfactory data locality, and (3) sparse accumulator selection. We in this paper propose a tiled parallel SpGEMM algorithm named TileSpGEMM. Our algorithm sparsifies the tiled method in dense general matrix-matrix multiplication (GEMM), and saves each non-empty tile in a sparse form. Its first advantage is that the basic working unit is now a fixed-size sparse tile containing a small number of nonzeros, but not a row possibly very long. Thus the load imbalance issue can be naturally alleviated. Secondly, the temporary space needed for each tile is small and can always be in on-chip scratchpad memory. Thus there is no need to allocate an off-chip space for a large amount of intermediate products, and the data locality can be much better. Thirdly, because the computations are restricted within a single tile, it is relatively easier to select a fast sparse accumulator for a sparse tile. Our experimental results on two newest NVIDIA GPUs show that our TileSpGEMM outperforms four state-of-the-art SpGEMM methods cuSPARSE, bhSPARSE, NSPARSE and spECK in 139, 138, 127 and 94 out of all 142 square matrices executing no less than one billion flops for an SpGEMM operation, and delivers up to 2.78x, 145.35x, 97.86x and 3.70x speedups, respectively.  © 2022 ACM.},
+ author = {Niu, Yuyao and Lu, Zhengyang and Ji, Haonan and Song, Shuhui and Jin, Zhou and Liu, Weifeng},
+ doi = {10.1145/3503221.3508431},
+ journal = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPOPP},
+ note = {Cited by: 65},
+ pages = {90 - 106},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {TileSpGEMM: A Tiled Algorithm for Parallel Sparse General Matrix-Matrix Multiplication on GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85127543165?origin=resultslist},
+ year = {2022}
+}

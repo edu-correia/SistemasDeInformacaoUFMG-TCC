@@ -1,0 +1,17 @@
+@article{10.14778/2809974.2809980,
+ abstract = {Graph clustering is one of the key techniques for understanding the structures present in graphs. Besides cluster detection, identifying hubs and outliers is also a key task, since they have important roles to play in graph data mining. The structural clustering algorithm SCAN, proposed by Xu et al., is successfully used in many application because it not only detects densely connected nodes as clusters but also identifies sparsely connected nodes as hubs or outliers. However, it is difficult to apply SCAN to large-scale graphs due to its high time complexity. This is because it evaluates the density for all adjacent nodes included in the given graphs. In this paper, we propose a novel graph clustering algorithm named SCAN++. In order to reduce time complexity, we introduce new data structure of directly two-hop-away reachable node set (DTAR). DTAR is the set of two-hop-away nodes from a given node that are likely to be in the same cluster as the given node. SCAN++ employs two approaches for efficient clustering by using DTARs without sacrificing clustering quality. First, it reduces the number of the density evaluations by computing the density only for the adjacent nodes such as indicated by DTARs. Second, by sharing a part of the density evaluations for DTARs, it offers efficient density evaluations of adjacent nodes. As a result, SCAN++ detects exactly the same clusters, hubs, and outliers from large-scale graphs as SCAN with much shorter computation time. Extensive experiments on both real-world and synthetic graphs demonstrate the performance superiority of SCAN++ over existing approaches.},
+ author = {Shiokawa, Hiroaki and Fujiwara, Yasuhiro and Onizuka, Makoto},
+ doi = {10.14778/2809974.2809980},
+ issn = {2150-8097},
+ issue_date = {July 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {1178–1189},
+ publisher = {VLDB Endowment},
+ title = {SCAN++: efficient algorithm for finding clusters, hubs and outliers on large-scale graphs},
+ url = {https://doi.org/10.14778/2809974.2809980},
+ volume = {8},
+ year = {2015}
+}

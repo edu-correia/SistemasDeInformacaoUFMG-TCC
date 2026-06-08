@@ -1,0 +1,14 @@
+@article{9026880,
+ abstract = {FTL (Flash Translation Layer) is a memory block controller that manages the challenges of a data storage system based on flash memory technology. The design of internal parallelism in MLC-based SSDs with virtual blocks resulted in various challenges and due to the physical structure of flash memory cells based on MLC technology, it is possible to write a new page in a data block at the address after the last page is written. In parallel-based SSD design based on virtual blocks, some writes create unusable pages at the memory space, and these created holes reduce memory efficiency; consequently, it reduces the life-time of memory blocks by creating more operations, and accelerates garbage collection and merging operations. The proposed FTL offers three steps to address this constraint. Firstly, an idea was proposed to prevent costly transitions and to distribute data more evenly at memory blocks (wear leveling). Secondly, the unused holes created in virtual blocks became much fewer resulting in increased utilization of memory space. At last, a policy was proposed to prevent update blocks (log blocks) from being blocked and to postpone the merging and garbage collection by which the memory lifetime increases significantly. Simulation results showed that the number of unused erased pages and the number of extra write operations decreased up to 23% and 17%, respectively. In addition, the number of invalid released pages increased up to 21% in the proposed FTL, and the speed of I/O executions to 3%.},
+ author = {Forouhar, Peyman and Safaei, Farshad},
+ doi = {10.1109/ACCESS.2020.2978982},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Flash memories;Parallel processing;Merging;Memory management;Nonvolatile memory;Transistors;Registers;Solid-state disk;MLC (multi-level cell);parallel virtual blocks;flash translation layer;life-span;memory utilization},
+ month = {},
+ number = {},
+ pages = {48212-48225},
+ title = {Improving Utilization and Life-Span in Parallel Aware MLC-Based SSD Using Virtual Blocks},
+ volume = {8},
+ year = {2020}
+}

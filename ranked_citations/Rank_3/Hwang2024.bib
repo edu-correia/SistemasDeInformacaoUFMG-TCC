@@ -1,0 +1,16 @@
+@article{Hwang2024,
+ abstract = {The multiplication of sparse matrix and vector (SpMV) is one of the most widely used kernels in high-performance computing as well as machine learning acceleration for sparse neural networks. The design space of SpMV accelerators has two axes: Algorithm and matrix representation. There have been two widely used algorithms and data representations. Two algorithms, scalar multiplication and dot product, can be combined with two sparse data representations, compressed sparse and bitmap formats for the matrix and vector. Although the prior accelerators adopted one of the possible designs, it is yet to be investigated which design is the best one across different hardware resources and workload characteristics. This paper first investigates the impact of design choices with respect to the algorithm and data representation. Our evaluation shows that no single design always outperforms the others across different workloads, but the two best designs (i.e., compressed sparse format and bitmap format with dot product) have complementary performance with trade-offs incurred by the matrix characteristics. Based on the analysis, this study proposes Cerberus, a triple-mode accelerator supporting two sparse operation modes in addition to the base dense mode. To allow such multi-mode operation, it proposes a prediction model based on matrix characteristics under a given hardware configuration, which statically selects the best mode for a given sparse matrix with its dimension and density information. Our experimental results show that Cerberus provides 12.1× performance improvements from a dense-only accelerator, and 1.5× improvements from a fixed best SpMV design. © 2024 Copyright held by the owner/author(s).},
+ author = {Hwang, Soojin and Baek, Daehyeon and Park, Jongse and Huh, Jaehyuk},
+ doi = {10.1145/3653020},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 4; All Open Access; Gold Open Access},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Cerberus: Triple Mode Acceleration of Sparse Matrix and Vector Multiplication},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85194362729?origin=resultslist},
+ volume = {21},
+ year = {2024}
+}

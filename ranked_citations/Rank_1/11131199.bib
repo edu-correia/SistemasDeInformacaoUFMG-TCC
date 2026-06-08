@@ -1,0 +1,14 @@
+@article{11131199,
+ abstract = {Log-structured merge tree (LSM-tree) is a critical data structure designed for write-optimized, user-facing key-value (KV) databases. However, LSM-trees must frequently perform data merge operations to maintain read efficiency and discard obsolete data. These operations generate a considerable amount of write activity on the storage device [e.g., a solid-state drive (SSD)], which can drastically reduce the device’s lifespan. Often, these merges involve rewriting data that has not changed, a process that could be avoided. Recognizing this, we introduce “Bloom Merge,” an innovative merge strategy for LSM-trees specifically developed for SSD. Based on the key distribution in LSM-tree’s sorted string tables (SSTables), this method selectively and efficiently performs merges, only when necessary. It also mitigates the potential negative impact on read performance through the strategic use of in-memory bloom filters (BFs). We present several key insights into determining the optimal conditions for merging and outline strategies that achieve a balanced improvement in both read and write performance. Our evaluation demonstrates that Bloom Merge significantly enhances write efficiency while reducing unnecessary operations.},
+ author = {Chen, Yi-Hua and Cheng, Wei-Chun and Chen, Yun-Chih and Shih, Wei-Kuan and Chang, Yuan-Hao},
+ doi = {10.1109/TCAD.2025.3600356},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Filters;Performance evaluation;Merging;Hash functions;Arrays;Training;Integrated circuits;Indexes;Design automation;Databases;Key-value stores (KV stores);log-structured merge tree (LSM-tree);solid-state drive (SSD)},
+ month = {March},
+ number = {3},
+ pages = {1239-1250},
+ title = {Bloom Merge Strategies for Sustainable SSD Endurance in Write-Intensive LSM-Trees},
+ volume = {45},
+ year = {2026}
+}

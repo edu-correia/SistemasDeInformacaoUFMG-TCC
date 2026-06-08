@@ -1,0 +1,14 @@
+@conference{Yu202415,
+ abstract = {Shingled Magnetic Recording (SMR) technology, employing a shingled track layout, has significantly enhanced areal density capability. However, this layout imposes severe write penalties when dealing with non-sequential writes. The emerging Interlaced Magnetic Recording (IMR) technology not only achieves higher storage density than SMR, but also significantly reduces rewrite overhead by dividing all tracks into bottom and top tracks and organizing them in an interlaced fashion. However, frequent updates to the bottom track can trigger a large number of Read-Modify-Write (RMW) operations during high disk space utilization, which can severely affect the I/O performance of the disk. Addressing this issue, this paper proposes an interlaced translation layer named DTB to improve the write performance of IMR disks. Firstly, a workload-sensitive track heat analysis mechanism is introduced to intelligently place data to reduce track rewrite probability. Simultaneously, the zero-incremental cost region is selectively used to construct a Twin-Buffer architecture to reduce RMW operations triggered by frequent writeback of hot data, thereby effectively curtailing the rewriting overhead. In addition, an adaptive space allocation engine was developed by analyzing the data characteristics in the buffer, and we designed a dynamic configuration model based on reinforcement learning to flexibly allocate and reclaim space within the Twin-Buffer, improving disk resource utilization and I/O performance. Experimental results indicate that DTB can reduce the number of RMWs by 63.45%, decrease the average write latency by 44.37%, and lower the tail latency by 56.84% compared with state-of-the-art studies.  © 2024 IEEE.},
+ author = {Yu, Fangxing and Zhang, Chi and Li, Menghan and Li, Zhike and Nie, Shiqiang and Wu, Weiguo},
+ doi = {10.1109/HPCC64274.2024.00014},
+ journal = {Proceedings - 2024 IEEE International Conference on High Performance Computing and Communications, HPCC 2024},
+ note = {Cited by: 1},
+ pages = {15 - 23},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DTB: A Novel Reinforcement Learning-Assisted Data Management Strategy in Interlaced Magnetic Recording},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105013072356?origin=resultslist},
+ year = {2024}
+}

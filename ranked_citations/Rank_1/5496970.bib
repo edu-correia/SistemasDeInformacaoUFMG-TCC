@@ -1,0 +1,14 @@
+@inproceedings{5496970,
+ abstract = {Flash Translation Layer (FTL) is one of the most important components of SSD, whose main purpose is to perform logical to physical address translation in a way that is suitable to the unique physical characteristics of the Flash memory technology. The pure page-mapping FTL scheme, arguably the best FTL scheme due to its ability to map any logical page number (LPN) to any physical page number (PPN) to minimize erase operations, cannot be practically deployed since it consumes a prohibitively large RAM (SRAM or DRAM) space to store the page-mapping table for an SSD of moderate to large size. Alternatives to the pure page-mapping FTL, such as block-mapping FTLs, hybrid FTLs (e.g., FAST) and the latest demand-based page-mapping FTLs (e.g., DFTL), require significantly less RAM space but suffer from a few performance issues. Block-mapping FTLs perform poorly with higher erasure counts, particularly under random write workloads. Hybrid FTL schemes incur costly merge operations that hurt performance and increase the erasure counts. Performances of demand-based FTLs heavily depend on workload characteristics such as access locality, read/write ratio and request arrival interval time. This paper proposes a new FTL scheme, called HAT, to achieve the performance of a pure page-mapping FTL at the RAM cost of a block-mapping FTL while consuming lower energy, by hiding the address translation (HAT). The basic idea behind our scheme is to create a separate access path to read/write the address mapping information to significantly Hide the Address-Translation latency by incorporating a low energy-consuming solid-state memory device that stores the entire page mapping table. We implement an SSD simulator, SSDsim, to validate our HAT design and evaluate its performance. The extensive trace-driven simulation results show that the performance of HAT is within 0.8% of the pure page-mapping FTL, while consuming about 50% of the energy.},
+ author = {Hu, Yang and Jiang, Hong and Feng, Dan and Tian, Lei and Zhang, Shuping and Liu, Jingning and Tong, Wei and Qin, Yi and Wang, Liuzheng},
+ booktitle = {2010 IEEE 26th Symposium on Mass Storage Systems and Technologies (MSST)},
+ doi = {10.1109/MSST.2010.5496970},
+ issn = {2160-1968},
+ keyword = {Costs;Read-write memory;Flash memory;Random access memory;Solid state circuits;Space technology;Delay;Hard disks;Energy consumption;Power system reliability},
+ month = {May},
+ number = {},
+ pages = {1-12},
+ title = {Achieving page-mapping FTL performance at block-mapping FTL cost by hiding address translation},
+ volume = {},
+ year = {2010}
+}

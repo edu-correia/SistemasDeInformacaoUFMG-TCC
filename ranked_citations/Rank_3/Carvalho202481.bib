@@ -1,0 +1,16 @@
+@article{Carvalho202481,
+ abstract = {Network Function Virtualization promises better utilization of computational resources by dynamically scaling resources on demand. However, most network functions (NFs) are stateful and require state updates on a per-packet basis. During a scaling operation, cores need to synchronize access to a shared state to avoid race conditions and to guarantee that NFs process packets in arrival order. Unfortunately, the classic approach to control concurrent access to a shared state with locks does not scale to today's throughput and latency requirements. Moreover, network traffic is highly skewed, leading to load imbalances in systems that use only sharding to partition the NF states. To address these challenges, we present Dyssect, a system that enables dynamic scaling of stateful NFs by disaggregating the states of network functions. By carefully coordinating actions between cores and a central controller, Dyssect migrates shards and flows between cores for load balancing or traffic prioritization without resorting to locks or reordering packets. Also, Dyssect's state disaggregation allows the offloading of stateful network functions to programmable NICs and makes it easier for exploring hardware-software tradeoffs that better suit specific service chains and traffic loads. Our experimental evaluation shows that Dyssect reduces tail latency up to 32.04% and increases throughput up to 19.36% when compared to state-of-the-art competing solutions.  © 1993-2012 IEEE.},
+ author = {Carvalho, Fabricio B. and Ferreira, Ronaldo A. and Cunha, Italo and Vieira, Marcos A. M. and Ramanathan, Murali K.},
+ doi = {10.1109/TNET.2023.3282562},
+ journal = {IEEE/ACM Transactions on Networking},
+ note = {Cited by: 6},
+ number = {1},
+ pages = {81 - 95},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {State Disaggregation for Dynamic Scaling of Network Functions},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85162643509?origin=resultslist},
+ volume = {32},
+ year = {2024}
+}

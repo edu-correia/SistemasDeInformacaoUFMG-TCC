@@ -1,0 +1,14 @@
+@inproceedings{6900896,
+ abstract = {Large-scale packet classification such as Open-Flow table lookup in Software Defined Networking (SDN) is a key task performed at the Internet routers. However, the increasing size of the rule set and the increasing width of each individual rule make large-scale packet classification a challenging problem. In this paper, we present a decomposition-based approach for large-scale packet classification on multicore processors. We develop a model to predict the performance of the classification engine with respect to throughput and latency. This model involves the architectural parameters of the multi-core processors and the design requirements of packet classification. Based on this model, we employ optimization techniques such as grouping short fields in the search phase and early termination of the merge phase. The performance model can be applied to other generic multi-field classification problems as well. To evaluate the accuracy of the performance model, we implement a 15-field classification engine on state-of-the-art multi-core processors. Experimental results show that, the proposed model predicts the performance with less than ±10% error. For a 32 K 15-field rule set, the optimized decomposition-based approach achieves 2000 ns per packet latency and 33 Million Packets Per Second (MPPS) throughput (49% of the peak throughput). The peak performance assumes an ideal execution model that uses an optimized execution sequence and ignores memory access latency, data dependencies, and context switch overhead.},
+ author = {Qu, Yun R. and Zhou, Shijie and Prasanna, Viktor K.},
+ booktitle = {2014 IEEE 15th International Conference on High Performance Switching and Routing (HPSR)},
+ doi = {10.1109/HPSR.2014.6900896},
+ issn = {2325-5560},
+ keyword = {Multicore processing;Throughput;Optimization;Memory management;Program processors;Predictive models;Sockets;packet classification;multi-core;performance},
+ month = {July},
+ number = {},
+ pages = {154-161},
+ title = {Performance modeling and optimizations for decomposition-based large-scale packet classification on multi-core processors},
+ volume = {},
+ year = {2014}
+}

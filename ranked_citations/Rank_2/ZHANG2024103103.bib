@@ -1,0 +1,13 @@
+@article{ZHANG2024103103,
+ abstract = {Trained on 680,000 h of massive speech data, Whisper is a multitasking, multilingual speech foundation model demonstrating superior performance in automatic speech recognition, translation, and language identification. However, its applicability in speaker verification (SV) tasks remains unexplored, particularly in low-data-resource scenarios where labeled speaker data in specific domains are limited. To fill this gap, we propose a lightweight adaptor framework to boost SV with Whisper, namely Whisper-SV. Given that Whisper is not specifically optimized for SV tasks, we introduce a representation selection module to quantify the speaker-specific characteristics contained in each layer of Whisper and select the top-k layers with prominent discriminative speaker features. To aggregate pivotal speaker-related features while diminishing non-speaker redundancies across the selected top-k distinct layers of Whisper, we design a multi-layer aggregation module in Whisper-SV to integrate multi-layer representations into a singular, compacted representation for SV. In the multi-layer aggregation module, we employ convolutional layers with shortcut connections among different layers to refine speaker characteristics derived from multi-layer representations from Whisper. In addition, an attention aggregation layer is used to reduce non-speaker interference and amplify speaker-specific cues for SV tasks. Finally, a simple classification module is used for speaker classification. Experiments on VoxCeleb1, FFSVC, and IMSV datasets demonstrate that Whisper-SV achieves EER/minDCF of 2.22%/0.307, 6.14%/0.488, and 7.50%/0.582, respectively, showing superior performance in low-data-resource SV scenarios.},
+ author = {Li Zhang and Ning Jiang and Qing Wang and Yue Li and Quan Lu and Lei Xie},
+ doi = {https://doi.org/10.1016/j.specom.2024.103103},
+ issn = {0167-6393},
+ journal = {Speech Communication},
+ keyword = {Whisper, Speaker verification, Adaptor, Low-data-resource},
+ pages = {103103},
+ title = {Whisper-SV: Adapting Whisper for low-data-resource speaker verification},
+ url = {https://www.sciencedirect.com/science/article/pii/S016763932400075X},
+ volume = {163},
+ year = {2024}
+}

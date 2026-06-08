@@ -1,0 +1,14 @@
+@conference{Shen2023762,
+ abstract = {Key-value (KV) stores play an important role in today's online service systems, but concerns about server-side attacks hinder users from uploading their workloads. The proposal of the hardware trusted execution environment (TEE) like Intel SGX provides an alternative for trusted computing on untrusted hosts. TEE can be used to construct privacy preserving scheme for KV stores. The current research on secure persistent KV store is limited to the shielded execution framework which involves a large trusted computing base and high overhead.In this paper, we propose Pldb, a secure persistent KV store that is based on Log-Structured Merge (LSM) tree. In order to ensure security, TEE's access to persistent storage data needs to pass through the encryption/decryption interface. This is the main overhead of secure KV data storage based on TEE design. We designed a hybrid KV storage structure, which encrypts the value data and stores it directly on the disk, thereby reducing the encryption/decryption interface calls through the TEE. With a carefully designed architecture leveraging Intel SGX, Pldb provides security properties including confidentiality, integrity, authentication, and data freshness to prevent rollback attacks. We extend LevelDB to implement a fully functional prototype system. Experiments show that our system can achieve reasonable overhead under different types of workloads. © 2023 IEEE.},
+ author = {Shen, Chenkai and Fan, Lei},
+ doi = {10.1109/TrustCom60117.2023.00111},
+ journal = {Proceedings - 2023 IEEE 22nd International Conference on Trust, Security and Privacy in Computing and Communications, TrustCom/BigDataSE/CSE/EUC/iSCI 2023},
+ note = {Cited by: 1},
+ pages = {762 - 771},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Pldb: Protecting LSM-based Key-Value Store using Trusted Execution Environment},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85195507203?origin=resultslist},
+ year = {2023}
+}

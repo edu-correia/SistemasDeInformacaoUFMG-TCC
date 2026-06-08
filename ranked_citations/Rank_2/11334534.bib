@@ -1,0 +1,14 @@
+@inproceedings{11334534,
+ abstract = {Current call graph generation methods for ArkTS, a new programming language for OpenHarmony, exhibit precision limitations when supporting advanced static analysis tasks such as data flow analysis and vulnerability pattern detection, while the workflow of traditional JavaScript(JS)/TypeScript(TS) analysis tools fails to interpret ArkUI component tree semantics. The core technical bottleneck originates from the closure mechanisms inherent in TypeScript’s dynamic language features and the interaction patterns involving OpenHarmony’s framework APIs. Existing static analysis tools for ArkTS struggle to achieve effective tracking and precise deduction of object reference relationships, leading to topological fractures in call graph reachability and diminished analysis coverage. This technical limitation fundamentally constrains the implementation of advanced program analysis techniques.Therefore, in this paper, we propose a tool named ArkAnalyzer Pointer Analysis Kit (APAK), the first context-sensitive pointer analysis framework specifically designed for ArkTS. APAK addresses these challenges through a unique ArkTS heap object model and a highly extensible plugin architecture, ensuring future adaptability to the evolving OpenHarmony ecosystem. In the evaluation, we construct a dataset from 1,663 real-world applications in the OpenHarmony ecosystem to evaluate APAK, demonstrating APAK’s superior performance over CHA/RTA approaches in critical metrics including valid edge coverage (e.g., a 7.1% reduction compared to CHA and a 34.2% increase over RTA). The improvement in edge coverage systematically reduces false positive rates from 20% to 2%, enabling future exploration of establishing more complex program analysis tools based on our framework. Our proposed APAK has been merged into the official static analysis framework ArkAnalyzer for OpenHarmony.},
+ author = {Yang, Yizhuo and Xu, Lingyun and Zhou, Mingyi and Li, Li},
+ booktitle = {2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+ doi = {10.1109/ASE63991.2025.00269},
+ issn = {2643-1572},
+ keyword = {Measurement;Computer languages;Technological innovation;Trees (botanical);Ecosystems;Semantics;Static analysis;Syntactics;Optimization;Software engineering},
+ month = {Nov},
+ number = {},
+ pages = {3262-3273},
+ title = {Context-Sensitive Pointer Analysis for ArkTS},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,13 @@
+@article{DAI2024106350,
+ abstract = {In recent years, self-supervised learning has emerged as a powerful approach to learning visual representations without requiring extensive manual annotation. One popular technique involves using rotation transformations of images, which provide a clear visual signal for learning semantic representation. However, in this work, we revisit the pretext task of predicting image rotation in self-supervised learning and discover that it tends to marginalise the perception of features located near the centre of an image. To address this limitation, we propose a new self-supervised learning method, namely FullRot, which spotlights underrated regions by resizing the randomly selected and cropped regions of images. Moreover, FullRot increases the complexity of the rotation pretext task by applying the degree-free rotation to the region cropped into a circle. To encourage models to learn from different general parts of an image, we introduce a new data mixture technique called WRMix, which merges two random intra-image patches. By combining these innovative crop and rotation methods with the data mixture scheme, our approach, FullRot + WRMix, surpasses the state-of-the-art self-supervision methods in classification, segmentation, and object detection tasks on ten benchmark datasets with an improvement of up to +13.98% accuracy on STL-10, +8.56% accuracy on CIFAR-10, +10.20% accuracy on Sports-100, +15.86% accuracy on Mammals-45, +15.15% accuracy on PAD-UFES-20, +32.44% mIoU on VOC 2012, +7.62% mIoU on ISIC 2018, +9.70% mIoU on FloodArea, +25.16% AP50 on VOC 2007, and +58.69% AP50 on UTDAC 2020. The code is available at https://github.com/anthonyweidai/FullRot_WRMix.},
+ author = {Wei Dai and Tianyi Wu and Rui Liu and Min Wang and Jianqin Yin and Jun Liu},
+ doi = {https://doi.org/10.1016/j.neunet.2024.106350},
+ issn = {0893-6080},
+ journal = {Neural Networks},
+ keyword = {Self-supervised learning, Full rotation, Data mixing, Vision impairment},
+ pages = {106350},
+ title = {Any region can be perceived equally and effectively on rotation pretext task using full rotation and weighted-region mixture},
+ url = {https://www.sciencedirect.com/science/article/pii/S0893608024002740},
+ volume = {176},
+ year = {2024}
+}

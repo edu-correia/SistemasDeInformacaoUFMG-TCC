@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2022.3181350,
+ abstract = {Dialogue state tracking for multi-domain dialogues is challenging because the model should be able to track dialogue states across multiple domains and slots. As using pre-trained language models is the de facto standard for natural language processing tasks, many recent studies use them to encode the dialogue context for predicting the dialogue states. Model architectures that have certain inductive biases for modeling the relationship among different domain-slot pairs are also emerging. Our work is based on these research approaches on multi-domain dialogue state tracking. We propose a model architecture that effectively models the relationship among domain-slot pairs using a pre-trained language encoder. Inspired by the way the special &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;$[CLS]$&lt;/tex-math&gt;&lt;/inline-formula&gt; token in BERT is used to aggregate the information of the whole sequence, we use multiple special tokens for each domain-slot pair that encodes information corresponding to its domain and slot. The special tokens are run together with the dialogue context through the pre-trained language encoder, which effectively models the relationship among different domain-slot pairs. Our experimental results on the datasets MultiWOZ-2.0 and MultiWOZ-2.1 show that our model outperforms other models with the same setting. Our ablation studies incorporate three main parts. The first component shows the effectiveness of our approach exploiting the relationship modeling. The second component compares the effect of using different pre-trained language encoders. The final component involves comparing different initialization methods that could be used for the special tokens. Qualitative analysis of the attention map of the pre-trained language encoder shows that our special tokens encode relevant information through the encoding process by attending to each other.},
+ author = {An, Jinwon and Cho, Sungzoon and Bang, Junseong and Kim, Misuk},
+ doi = {10.1109/taslp.2022.3181350},
+ issn = {2329-9290},
+ issue_date = {2022},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {June},
+ numpages = {12},
+ pages = {2091–2102},
+ publisher = {IEEE Press},
+ title = {Domain-Slot Relationship Modeling Using a Pre-Trained Language Encoder for Multi-Domain Dialogue State Tracking},
+ url = {https://doi.org/10.1109/TASLP.2022.3181350},
+ volume = {30},
+ year = {2022}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3656378,
+ abstract = {Modular design is critical in reducing hardware designer’s cognitive load and development cost. However, it is challenging to modularize high-performance pipelined circuits with structural, data, and control hazards because their resolution—stalling, and bypassing, and discard-and-restarting—introduce cross-stage dependencies. The dependencies could potentially mandate monolithic control logic and create combinational loops, hindering modular design. An effective method to modularize pipelined circuits is valid-ready interfaces, but they apply to a relatively simple form of pipelined circuits only with structural hazards.We propose hazard interfaces, a generalization of valid-ready interfaces that can modularize pipelined circuits not only with structural but also with data and control hazards. The key idea is enveloping the cross-stage dependencies within interfaces. We also design combinators for hazard interfaces in the style of map-reduce that facilitate decomposition of control logic. We implement a compiler (to synthesizable Verilog) for a prototype language supporting hazard interfaces and combinators, and design a sound and efficient type checker that proves the absence of combinational loops. With case studies on 5-stage RISC-V CPU core and 100 Gbps Ethernet NIC, we demonstrate that hazard interfaces indeed facilitate modular design while incurring no noticeable cost in performance, power, and area over reference designs in Chisel and Verilog.CCS Concepts: • Hardware → Hardware description languages and compilation; • Software and its engineering → Functional languages.},
+ address = {New York, NY, USA},
+ articleno = {148},
+ author = {Jang, Minseong and Rhee, Jungin and Lee, Woojin and Zhao, Shuangshuang and Kang, Jeehoon},
+ doi = {10.1145/3656378},
+ issue_date = {June 2024},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {hardware description language, functional programming, pipelining, hazard, combinator},
+ month = {June},
+ number = {PLDI},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Modular Hardware Design of Pipelined Circuits with Hazards},
+ url = {https://doi.org/10.1145/3656378},
+ volume = {8},
+ year = {2024}
+}

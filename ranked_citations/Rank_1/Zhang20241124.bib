@@ -1,0 +1,14 @@
+@conference{Zhang20241124,
+ abstract = {As deep learning models continue to grow larger, model pruning is employed to reduce memory footprint and computation complexity, which generates a large number of sparse matrix-matrix multiplication (SpMM) with unstructured sparsity (e.g., vector sparsity). However, leveraging GPU especially the newly integrated sparse tensor core (SpTC) to accelerate SpMM is quite challenging due to the unstructured sparsity. Unfortunately, existing works fail to fully exploit the SpTC on GPU due to the difficulty of satisfying the stringent requirement for restricted sparsity (e.g., 2:4 sparsity). In this paper, we propose Jigsaw, a novel method to utilize SpTC for accelerating SpMM with vector sparsity. Specifically, we propose the multi-granularity sparsity reorder method to transform the sparse data for satisfying the sparse pattern supported on SpTC. In addition, we propose a reorder-aware storage format for the transformed sparse data to better adapt to the parallelism of SpTC. Moreover, we propose corresponding optimizations to better exploit the SpTC for further accelerating SpMM. The experiment results demonstrate that Jigsaw outperforms state-of-the-art SpMM implementations and achieves promising speedup over cuBLAS.  © 2024 Owner/Author.},
+ author = {Zhang, Kaige and Liu, Xiaoyan and Yang, Hailong and Feng, Tianyu and Yang, Xinyu and Liu, Yi and Luan, Zhongzhi and Qian, Depei},
+ doi = {10.1145/3673038.3673108},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 13; All Open Access; Gold Open Access},
+ pages = {1124 - 1134},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Jigsaw: Accelerating SpMM with Vector Sparsity on Sparse Tensor Core},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85202453199?origin=resultslist},
+ year = {2024}
+}

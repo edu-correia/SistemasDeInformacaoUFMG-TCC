@@ -1,0 +1,14 @@
+@inproceedings{7435451,
+ abstract = {NAND flash memory has become a popular alternative to replace disks in a storage system because of its non-volatility, high I/O performance, shock resistance, and low power consumption. However, NAND flash memory has characteristics of erase-before-write and limited cycles of write and erase operations, which introduce new challenges into the design of file system. Index schemes of conventional file systems do not consider flash memory characteristics, which results in poor performance. We propose a new index scheme both in directory structure and file data for NAND flash file system in this paper, which is called NIS. NIS has two features: hybrid extendable hash-based directory structure, HyEx Hash and adaptive file data index. The HyEx Hash integrates the static hashing that has the fixed number of hash items and dynamic hashing that can create overflow bucket at run-time to achieve better update performance and search efficiency. The adaptive file data index also uses hybrid scheme that includes traditional indirect index for large files and direct index for small files to reduce locating cost in terms of file size. To further reduce cost of locating small files, we separate direct index from indirect index and store it together with files themselves. The experimental results show that NIS reduces the index cost by 25% to 55%, and outperforms the state-of-the-art file systems both in throughput and in read/write bandwidth.},
+ author = {Ou, Yang and Wu, Xiaoquan and Xiao, Nong and Liu, Fang and Chen, Wei},
+ booktitle = {2015 Third International Conference on Advanced Cloud and Big Data},
+ doi = {10.1109/CBD.2015.17},
+ issn = {},
+ keyword = {Flash memories;File systems;Metadata;Indexing;Electric shock;Resistance;Flash Memory;File System;Hash;Directory Index;File Index},
+ month = {Oct},
+ number = {},
+ pages = {44-51},
+ title = {NIS: A New Index Scheme for Flash File System},
+ volume = {},
+ year = {2015}
+}

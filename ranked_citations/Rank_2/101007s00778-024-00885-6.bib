@@ -1,0 +1,18 @@
+@article{10.1007/s00778-024-00885-6,
+ abstract = {Regular Path Queries (RPQs), which are essentially regular expressions to be matched against the labels of paths in labeled graphs, are at the core of graph database query languages like SPARQL and GQL. A way to solve RPQs is to translate them into a sequence of operations on the adjacency matrices of each label. We design and implement a Boolean algebra on sparse matrix representations and, as an application, use them to handle RPQs. Our baseline representation uses the same space and time as the previously most compact index for RPQs, outperforming it on the hardest types of queries—those where both RPQ endpoints are unspecified. Our more succinct structure, based on k2-trees, is 4 times smaller than any existing representation that handles RPQs. While slower, it still solves complex RPQs in a few seconds and slightly outperforms the smallest previous structure on the hardest RPQs. Our new sparse-matrix-based solutions dominate a good portion of the space/time tradeoff map, being outperformed only by representations that use much more space. They also implement an algebra of Boolean matrices that is of independent interest beyond solving RPQs.},
+ address = {Berlin, Heidelberg},
+ author = {Arroyuelo, Diego and G\'{o}mez-Brand\'{o}n, Adri\'{a}n and Navarro, Gonzalo},
+ doi = {10.1007/s00778-024-00885-6},
+ issn = {1066-8888},
+ issue_date = {Jan 2025},
+ journal = {The VLDB Journal},
+ keyword = {Regular path queries on graph databases, Compact data structures for adjacency matrices, Sparse matrices, Sparse Boolean matrices},
+ month = {November},
+ number = {1},
+ numpages = {28},
+ publisher = {Springer-Verlag},
+ title = {Evaluating regular path queries on compressed adjacency matrices},
+ url = {https://doi.org/10.1007/s00778-024-00885-6},
+ volume = {34},
+ year = {2024}
+}

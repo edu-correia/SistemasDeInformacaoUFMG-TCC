@@ -1,0 +1,14 @@
+@article{10499884,
+ abstract = {Natural language understanding (NLU) is integral to various social media applications. However, the existing NLU models rely heavily on context for semantic learning, resulting in compromised performance when faced with short and noisy social media content. To address this issue, we leverage in-context learning (ICL), wherein language models learn to make inferences by conditioning on a handful of demonstrations to enrich the context and propose a novel hashtag-driven ICL (HICL) framework. Concretely, we pretrain a model #Encoder, which employs #hashtags (user-annotated topic labels) to drive BERT-based pretraining through contrastive learning. Our objective here is to enable #Encoder to gain the ability to incorporate topic-related semantic information, which allows it to retrieve topic-related posts to enrich contexts and enhance social media NLU with noisy contexts. To further integrate the retrieved context with the source text, we employ a gradient-based method to identify trigger terms useful in fusing information from both sources. For empirical studies, we collected 45 M tweets to set up an in-context NLU benchmark, and the experimental results on seven downstream tasks show that HICL substantially advances the previous state-of-the-art results. Furthermore, we conducted an extensive analysis and found that the following hold: 1) combining source input with a top-retrieved post from #Encoder is more effective than using semantically similar posts and 2) trigger words can largely benefit in merging context from the source and retrieved posts.},
+ author = {Tan, Hanzhuo and Xu, Chunpu and Li, Jing and Zhang, Yuqun and Fang, Zeyang and Chen, Zeyu and Lai, Baohua},
+ doi = {10.1109/TNNLS.2024.3384987},
+ issn = {2162-2388},
+ journal = {IEEE Transactions on Neural Networks and Learning Systems},
+ keyword = {Social networking (online);Context modeling;Semantics;Self-supervised learning;Training;Natural language processing;In-context learning (ICL);natural language processing;pretrained language model;social media},
+ month = {April},
+ number = {4},
+ pages = {7037-7050},
+ title = {HICL: Hashtag-Driven In-Context Learning for Social Media Natural Language Understanding},
+ volume = {36},
+ year = {2025}
+}

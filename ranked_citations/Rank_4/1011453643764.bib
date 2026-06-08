@@ -1,0 +1,18 @@
+@article{10.1145/3643764,
+ abstract = {Modern software engineering establishes software supply chains and relies on tools and libraries to improve productivity. However, reusing external software in a project presents a security risk when the source of the component is unknown or the consistency of a component cannot be verified. The SolarWinds attack serves as a popular example in which the injection of malicious code into a library affected thousands of customers and caused a loss of billions of dollars. Reproducible builds present a mitigation strategy, as they can confirm the origin and consistency of reused components. A large reproducibility community has formed for Debian, but the reproducibility of the Maven ecosystem, the backbone of the Java supply chain, remains understudied in comparison. Reproducible Central is an initiative that curates a list of reproducible Maven libraries, but the list is limited and challenging to maintain due to manual efforts. Our research aims to support these efforts in the Maven ecosystem through automation. We investigate the feasibility of automatically finding the source code of a library from its Maven release and recovering information about the original release environment. Our tool, AROMA, can obtain this critical information from the artifact and the source repository through several heuristics and we use the results for reproduction attempts of Maven packages. Overall, our approach achieves an accuracy of up to 99.5% when compared field-by-field to the existing manual approach. In some instances, we even detected flaws in the manually maintained list, such as broken repository links. We reveal that automatic reproducibility is feasible for 23.4% of the Maven packages using AROMA, and 8% of these packages are fully reproducible. We demonstrate our ability to successfully reproduce new packages and have contributed some of them to the Reproducible Central repository. Additionally, we highlight actionable insights, outline future work in this area, and make our dataset and tools available to the public.},
+ address = {New York, NY, USA},
+ articleno = {38},
+ author = {Keshani, Mehdi and Velican, Tudor-Gabriel and Bot, Gideon and Proksch, Sebastian},
+ doi = {10.1145/3643764},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Maven Ecosystem, Reproducible Builds, Library Reproducibility},
+ month = {July},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {AROMA: Automatic Reproduction of Maven Artifacts},
+ url = {https://doi.org/10.1145/3643764},
+ volume = {1},
+ year = {2024}
+}

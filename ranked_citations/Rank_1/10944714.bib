@@ -1,0 +1,14 @@
+@article{10944714,
+ abstract = {Transformers have recently gained significant attention in medical image segmentation due to their ability to capture long-range dependencies. However, the presence of excessive background noise in large regions of medical images introduces distractions and increases the computational burden on the fine-grained self-attention (SA) mechanism, which is a key component of the transformer model. Meanwhile, preserving fine-grained details is essential for accurately segmenting complex, blurred medical images with diverse shapes and sizes. Thus, we propose a novel Multi-scale Dynamic Sparse Attention (MDSA) module, which flexibly reduces computational costs while maintaining multi-scale fine-grained interactions with content awareness. Specifically, multi-scale aggregation is first applied to the feature maps to enrich the diversity of interaction information. Then, for each query, irrelevant key-value pairs are filtered out at a coarse-grained level. Finally, fine-grained SA is performed on the remaining key-value pairs. In addition, we design an enhanced downsampling merging (EDM) module and an enhanced upsampling fusion (EUF) module for building pyramid architectures. Using MDSA to construct the basic blocks, combined with EDMs and EUFs, we develop a UNet-like model named MDSA-UNet. Since MDSA-UNet dynamically processes only a small subset of relevant fine-grained features, it achieves strong segmentation performance with high computational efficiency. Extensive experiments on four datasets spanning three different types demonstrate that our MDSA-UNet, without using pre-training, significantly outperforms other non-pretrained methods and even competes with pre-trained models, achieving Dice scores of 82.10% on DDTI, 80.20% on TN3K, 90.75% on ISIC2018, and 91.05% on ACDC. Meanwhile, our model maintains lower complexity, with only 6.65 M parameters and 4.54 G FLOPs at a resolution of 224 × 224, ensuring both effectiveness and efficiency. Code is available at URL.},
+ author = {Li, Xiang and Fu, Chong and Wang, Qun and Zhang, Wenchao and Ye, Chen and Chen, Junxin and Sham, Chiu-Wing},
+ doi = {10.1109/JBHI.2025.3555805},
+ issn = {2168-2208},
+ journal = {IEEE Journal of Biomedical and Health Informatics},
+ keyword = {Biomedical imaging;Image segmentation;Transformers;Computational modeling;Computational efficiency;Computer architecture;Accuracy;Bioinformatics;Medical image segmentation;multi-scale dynamic sparse attention;UNet},
+ month = {Sep.},
+ number = {9},
+ pages = {6754-6766},
+ title = {Multi-Scale Dynamic Sparse Attention UNet for Medical Image Segmentation},
+ volume = {29},
+ year = {2025}
+}

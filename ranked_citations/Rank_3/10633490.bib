@@ -1,0 +1,14 @@
+@inproceedings{10633490,
+ abstract = {Change-proneness prediction aims to identify source files that deserve developers' attention for early quality improvement, ultimately reducing future maintenance costs. Existing studies have utilized diverse change features and machine learning techniques to construct effective prediction models. However, these approaches do not leverage the grouping of change features for the learning of feature representations; and the roles of dependency files in influencing the change-proneness of the target file are not adequately exploited. To this end, in this paper, we propose a novel approach called DeepCP, which utilizes a deep learning model to predict the change-proneness of source files. The key rationale of DeepCP is that the grouping of change features should be considered when constructing deep learning models, given that feeding the sequence of features directly into models has a detrimental impact on the learning of feature representations. To achieve this, DeepCP utilizes different subnetworks to learn different categories of features and merges the resulting representations with a multi-head attention network to generate the source file representation. Another key rationale of DeepCP is that the features of dependency files should be exploited because the change-proneness of dependency files influences that of the target file due to ripple effects. To accomplish this, DeepCP first learns the representations of the target file and its structurally dependent files and then integrates the resulting representations with an attention network. Our evaluation results demonstrate that DeepCP outperforms the state-of-the-art approach in predicting change-proneness.},
+ author = {Hu, Yamin and Jiang, Hao},
+ booktitle = {2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)},
+ doi = {10.1109/COMPSAC61105.2024.00162},
+ issn = {2836-3795},
+ keyword = {Deep learning;Costs;Semantics;Predictive models;Software;Graph neural networks;Data models;Change-proneness;software quality;deep learning;structural dependencies},
+ month = {July},
+ number = {},
+ pages = {1218-1229},
+ title = {Predicting Change-Proneness with a Deep Learning Model: Incorporating Structural Dependencies},
+ volume = {},
+ year = {2024}
+}

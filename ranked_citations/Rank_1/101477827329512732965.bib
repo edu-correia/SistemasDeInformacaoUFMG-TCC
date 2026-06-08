@@ -1,0 +1,17 @@
+@article{10.14778/2732951.2732965,
+ abstract = {This paper presents a technique called WideTable that aims to improve the speed of analytical data processing systems. A WideTable is built by denormalizing the database, and then converting complex queries into simple scans on the underlying (wide) table. To avoid the pitfalls associated with denormalization, e.g. space overheads, WideTable uses a combination of techniques including dictionary encoding and columnar storage. When denormalizing the data, WideTable uses outer joins to ensure that queries on tables in the schema graph, which are now nested as embedded tables in the WideTable, are processed correctly. Then, using a packed code scan technique, even complex queries on the original database can be answered by using simple scans on the WideTable(s). We experimentally evaluate our methods in a main memory setting using the queries in TPC-H, and demonstrate the effectiveness of our methods, both in terms of raw query performance and scalability when running on many-core machines.},
+ author = {Li, Yinan and Patel, Jignesh M.},
+ doi = {10.14778/2732951.2732965},
+ issn = {2150-8097},
+ issue_date = {June 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {12},
+ pages = {907–918},
+ publisher = {VLDB Endowment},
+ title = {WideTable: an accelerator for analytical data processing},
+ url = {https://doi.org/10.14778/2732951.2732965},
+ volume = {7},
+ year = {2014}
+}

@@ -1,0 +1,15 @@
+@conference{Sun20211111,
+ abstract = {In end-to-end multilingual speech recognition, the hypotheses in one language could include word tokens from other languages. Language confusions happen even more frequently when language identifier (LID) is not present during inference. In this paper, we explore to reduce language confusions without using LID in model inference by creating models with multiple output heads and use sequence probability to select the correct head for output hypotheses. We propose head grouping to merge several language outputs into one head to save runtime cost. Head groups are decided by the distances among language clusters learned through language embedding vectors to separate confusable languages apart. We further propose prediction network sharing for languages from the same family. By jointly applying head grouping and prediction network sharing, training data from the same family languages is better shared while confusable languages are divided into different heads to reduce language confusions. Our experiments demonstrate that our multilingual transformer transducer models based on multi-head outputs achieve on average 7.8% and 10.9% relative word error rate reductions without LID being used in inference from one-head baseline model with affordably increased runtime cost on 10 European languages.  Copyright © 2021 ISCA.},
+ author = {Sun, Eric and Li, Jinyu and Meng, Zhong and Wu, Yu and Xue, Jian and Liu, Shujie and Gong, Yifan},
+ doi = {10.21437/Interspeech.2021-1949},
+ journal = {Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH},
+ note = {Cited by: 2},
+ pages = {1111 - 1115},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Improving multilingual transformer transducer models by reducing language confusions},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85119209889?origin=resultslist},
+ volume = {2},
+ year = {2021}
+}

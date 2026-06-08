@@ -1,0 +1,18 @@
+@article{TANG2023104888,
+ abstract = {Background and objectives
+Intravascular optical coherence tomography (IVOCT) is capable of delineating peri-luminal region, including thin fibrous cap, calcium, lipid and thrombus. The segmentation result of these plaques is needed when calculating some useful diagnostic indicators, such as the minimum fiber cap thickness or the maximum Plaque Structural Stress (PSS), to help the diagnosis of vulnerable plaque. Since only some images contain plaques, in order to simplify the network architecture, we designed a three-step framework with single task for each step in this paper to realize the machine learning based pixel-level semantic segmentation of plaque in IVOCT.
+Methods
+A three-step framework is designed: lumen segmentation, image classification and plaque semantic segmentation. Firstly, the lumen of IVOCT is segmented using U-Net. Then the patches are cropped along the lumen boundary, and the plaques in the patches are classified and merged to get whether the original image contains calcium or lipid plaque. In the classification procedure, a self-attention module is introduced into ResNet to form the improved self-attention ResNet. Finally, the selected images with plaque are segmented to get the pixel-level segmentation results of each plaque component, which is realized by an combined network composed by convolutional auto encoder and U-Net.
+Results and conclusions
+In the lumen segmentation step, the Dice coefficient is greater than 95%. In the classification step, the classification precision, sensitivity and specificity of calcium plaque are all 100%; and that of lipid plaque are 97%, 100% and 94% respectively. In the final segmentation step, the Dice coefficient of calcium plaque is 71.8% and that of lipid plaque is 60.5%; the sensitivity of calcium plaque is 78.4% and that of lipid plaque is 80.2%. The experiments show that compared to some commonly used networks the proposed method achieves better performance.},
+ author = {Hui Tang and Zhenquan Zhang and Yanglong He and Jinhua Shen and Jin Zheng and Wei Gao and Umar Sadat and Mingxin Wang and Yupeng Wang and Xu Ji and Yang Chen and Zhongzhao Teng},
+ doi = {https://doi.org/10.1016/j.bspc.2023.104888},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {Intravascular optical coherence tomography (IVOCT), Machine learning, Classification, Segmentation},
+ pages = {104888},
+ title = {Automatic classification and segmentation of atherosclerotic plaques in the intravascular optical coherence tomography (IVOCT)},
+ url = {https://www.sciencedirect.com/science/article/pii/S174680942300321X},
+ volume = {85},
+ year = {2023}
+}

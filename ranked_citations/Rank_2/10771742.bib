@@ -1,0 +1,14 @@
+@article{10771742,
+ abstract = {This paper proposes a novel end-to-end network for Image Manipulation Localization (IML) comprising three modules: feature fusion, encoder, and decoder. To address the limitations of current DNN-based IML algorithms in accessing global features and segmenting tampered edges, we propose a Dual-shallow Feature Pyramid Fusion (DFPF) module. The DFPF module integrates semantic and texture features through a bidirectional pathway, forming RGB Feature Pyramids (RGBFP) and Local Textual Feature Pyramids (LTFP) using dual Hybrid ResNet50s in a ’Siamese' configuration. These feature pyramids are merged via multi-scale fusion to enhance global pyramid features for decoding. The LTFP branch includes a Pre-processing Block, Parallel Multi-Scale Convolution (PMSC), or Channel Split High-frequency Convolution (CSHC) to capture local textual features and subtle manipulation traces. The Encoder employs Transformer layers for robust global representations. At the same time, the Decoder uses Cascaded Boundary Context Inconsistent Enhancement (BCIE) Blocks to reconstruct a coarse-to-fine binary mask, enhancing texture inconsistencies at manipulated region boundaries. Additionally, we introduce an automated method for generating a large-scale forgery dataset via Photoshop Scripting, reducing labor costs. Our model effectively locates tampered regions of various shapes and sizes, improving boundary anomaly detection. Extensive experimental results demonstrate that our method significantly outperforms existing state-of-the-art models.},
+ author = {Xiang, Yan and Yuan, Xiaochen and Zhao, Kaiqi and Liu, Tong and Xie, Zhiyao and Huang, Guoheng and Li, Jianqing},
+ doi = {10.1109/TETCI.2024.3500025},
+ issn = {2471-285X},
+ journal = {IEEE Transactions on Emerging Topics in Computational Intelligence},
+ keyword = {Feature extraction;Decoding;Transformers;Residual neural networks;Convolution;Semantics;Image edge detection;Location awareness;Kernel;Forensics;Image manipulation localization (IML);dual-shallow feature pyramid fusion (DFPF);boundary contextual incoherence enhancement (BCIE);parallel multi-scale convolution (PMSC);channel split high-frequency convolution (CSHC)},
+ month = {Aug},
+ number = {4},
+ pages = {2858-2868},
+ title = {Image Manipulation Localization Using Dual-Shallow Feature Pyramid Fusion and Boundary Contextual Incoherence Enhancement},
+ volume = {9},
+ year = {2025}
+}

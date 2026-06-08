@@ -1,0 +1,14 @@
+@article{9732282,
+ abstract = {Multi-scale object detection in natural scenes is still challenging. To enhance the multi-scale perception capability, some algorithms combine the lower-level and higher-level information via multi-scale feature fusion strategies. However, the inherent spatial properties among instances and relations between foreground and background are ignored. In addition, the human-defined “center-based” regression quality evaluation strategy, predicting a high-to-low score based on a linear relationship with the distance to the center of ground-truth box, is not robust to scale-variant objects. In this work, we propose a Depth-Guided Progressive Network (DGPNet) for multi-scale object detection. Specifically, besides the prediction of classification and localization, the depth is estimated and used to guide the image features in a weighted manner to obtain a better spatial representation. Therefore, depth estimation and 2D object detection are simultaneously learned via a unified network, where the depth features are merged as auxiliary information into the detection branch to enhance the discrimination among multi-scale objects. Moreover, to overcome the difficulty of empirically fitting the localization quality function, high-quality predicted boxes on scale-variant objects are more adaptively obtained by an IoU-aware progressive sampling strategy. We divide the sampling process into two stages, i.e., “statistical-aware” and “IoU-aware”. The former selects thresholds for positive samples based on statistical characteristics of multi-scale instances, and the latter further selects high-quality samples by IoU on the basis of the former. Therefore, the final ranking scores better reflect the quality of localization. Experiments verify that our method outperforms state-of-the-art methods on the KINS and Cityscapes dataset.},
+ author = {Ma, Jia-Wei and Liang, Min and Chen, Song-Lu and Chen, Feng and Tian, Shu and Qin, Jingyan and Yin, Xu-Cheng},
+ doi = {10.1109/TITS.2022.3156365},
+ issn = {1558-0016},
+ journal = {IEEE Transactions on Intelligent Transportation Systems},
+ keyword = {Feature extraction;Object detection;Detectors;Interference;Signal to noise ratio;Semantics;Location awareness;Object detection;multi-scale object;depth-guided;progressive sampling},
+ month = {Oct},
+ number = {10},
+ pages = {19523-19533},
+ title = {Depth-Guided Progressive Network for Object Detection},
+ volume = {23},
+ year = {2022}
+}

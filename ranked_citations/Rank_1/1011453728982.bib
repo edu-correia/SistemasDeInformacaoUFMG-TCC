@@ -1,0 +1,18 @@
+@article{10.1145/3728982,
+ abstract = {With the advancement of digital transformation, Industrial Control Systems (ICS) are becoming increasingly open and intelligent.   However, inherent vulnerabilities in ICS protocols pose significant security threats to devices and systems.   The proprietary nature of ICS protocols complicates the security analysis and deployment of protective mechanisms for ICS.   Protocol reverse engineering aims to infer the syntax, semantics, and state machines of protocols in the absence of official specifications.   Traditional protocol reverse engineering tools face considerable limitations due to the lack of executable environments, incomplete inference strategies, and low-quality network traffic.   In this paper, we present ICEPRE, a novel data-driven protocol reverse engineering method based on concolic execution, which uniquely integrates network trace with static analysis.   Unlike conventional methods that rely on executable environments, ICEPRE statically tracks the program's parsing process for specific input messages.   Furthermore, we employ an innovative field boundary inference strategy to infer the protocol's syntax by analyzing how the protocol parser handles different fields.   Our evaluation demonstrates that ICEPRE significantly outperforms previous protocol reverse engineering tools in field boundary inference, achieving an F1 score of 0.76 and a perfection score of 0.67, while DynPRE, BinaryInferno, Nemeys, and Netzob yield (0.65, 0.35), (0.42, 0.14), (0.39, 0.09), and (0.27, 0.10), respectively.   These results underscore the superior overall performance of our method.   Additionally, ICEPRE exhibits exceptional performance with proprietary protocols in real-world scenarios, highlighting its practical applicability in downstream applications.},
+ address = {New York, NY, USA},
+ articleno = {ISSTA105},
+ author = {Qu, Yibo and Fang, Dongliang and Wang, Zhen and Cheng, Jiaxing and Si, Shuaizong and Chen, Yongle and Sun, Limin},
+ doi = {10.1145/3728982},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Data Flow Analysis, Protocol Reverse Engineering, Symbolic Execution},
+ month = {June},
+ number = {ISSTA},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {ICEPRE: ICS Protocol Reverse Engineering via Data-Driven Concolic Execution},
+ url = {https://doi.org/10.1145/3728982},
+ volume = {2},
+ year = {2025}
+}

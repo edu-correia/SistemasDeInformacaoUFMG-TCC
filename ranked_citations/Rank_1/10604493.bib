@@ -1,0 +1,14 @@
+@inproceedings{10604493,
+ abstract = {As model parameters grow, fine-tuning new models for each task becomes resource-heavy. Parameter-Efficient Transfer Learning (PETL) offers a solution by updating minimal parameters, allowing large pretrained models to adapt to downstream tasks more efficiently. However, existing PETL methods often suffer from increased inference latency. This paper presents ‘PreAdapter’, an enhancement to traditional adapter structures, overcoming this latency issue. PreAdapter maintains PETL's benefits while avoiding extra inference delay. Specifically, we first demonstrate that adapter modules can be incorporated into large pre-trained language models through structural reparameterization. We explore the optimal deployment sites and the sparse architecture of these adapter modules, aiming to enhance the performance and parameter-efficiency of PreAdapter. To validate the effectiveness of PreAdapter, we perform transfer experiments on the GLUE dataset using the most representative BERT models. Compared to preceding adapter methods, PreAdapter updates 0.6 million fewer parameters in the 110 million parameter BERT-base model, yielding an average performance improvement of 2.7%. In the case of the 335 million parameter BERT-large model, PreAdapter reduces parameter updates by 1.5 million relative to previous methods, leading to an average performance enhancement of 1.7%.},
+ author = {Mao, Chenyang and Jin, Xiaoxiao and Yue, Dengfeng and Leng, Tuo},
+ booktitle = {2024 7th International Conference on Artificial Intelligence and Big Data (ICAIBD)},
+ doi = {10.1109/ICAIBD62003.2024.10604493},
+ issn = {2769-3554},
+ keyword = {Training;Adaptation models;Transfer learning;Merging;Big Data;Benchmark testing;Natural language processing;Adapter;Re-parameterization;Natural Language Processing},
+ month = {May},
+ number = {},
+ pages = {218-225},
+ title = {PreAdapter: Sparse Adaptive Parameter-Efficient Transfer Learning for Language Models},
+ volume = {},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{8737367,
+ abstract = {Distributed synchronous stochastic gradient descent has been widely used to train deep neural networks on computer clusters. With the increase of computational power, network communications have become one limiting factor on the system scalability. In this paper, we observe that many deep neural networks have a large number of layers with only a small amount of data to be communicated. Based on the fact that merging some short communication tasks into a single one may reduce the overall communication time, we formulate an optimization problem to minimize the training iteration time. We develop an optimal solution named merged-gradient wait-free backpropagation (MG-WFBP) and implement it in our open-source deep learning platform B-Caffe. Our experimental results on an 8-node GPU cluster with 10GbE interconnect and trace-based simulation results on a 64-node cluster both show that the MG-WFBP algorithm can achieve much better scaling efficiency than existing methods WFBP and SyncEASGD.},
+ author = {Shi, Shaohuai and Chu, Xiaowen and Li, Bo},
+ booktitle = {IEEE INFOCOM 2019 - IEEE Conference on Computer Communications},
+ doi = {10.1109/INFOCOM.2019.8737367},
+ issn = {2641-9874},
+ keyword = {Training;Data communication;Backpropagation;Computational modeling;Data models;Neural networks;Hardware;Deep Learning;GPU;Distributed Stochastic Gradient Descent;Gradient Communication;Merged-gradient},
+ month = {April},
+ number = {},
+ pages = {172-180},
+ title = {MG-WFBP: Efficient Data Communication for Distributed Synchronous SGD Algorithms},
+ volume = {},
+ year = {2019}
+}

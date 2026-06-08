@@ -1,0 +1,15 @@
+@article{10.1145/3704727,
+ abstract = {Tree-based ensembles stand as the prominent resource-efficient approaches for real-time inference. To optimize their performance, researchers have developed several solutions to accommodate their unique program structure, i.e., consecutive branches and eliminate the floating-point arithmetic operations, which are usually costly at the embedded computing systems. Most of them are realized at the level of source code and a standard compilation is applied subsequently. Therefore, an end-to-end compilation flow may consolidate these methods and provide a holistic optimization. In this work, we introduce TreeHouse, a compilation flow based on MLIR designed for real-time inference of tree ensembles. First, we optimize the layout of basic blocks to reduce the expected branches during inference. Moreover, we provide a solution to facilitate LLVM register allocation for further efficiency. In addressing the suboptimal performance of floating-point operations in edge systems, we incorporate methods to convert data into integer format. We implemented and evaluated TreeHouse using two tree-based ensembles: boosting trees and random forests. Overall, boosting trees exhibited performance gains ranging from 1.38 \texttimes{} to 8.24 \texttimes{} on x86, 1.70 \texttimes{} to 6.61 \texttimes{} on ARMv8, and 1.75 \texttimes{} to 4.52 \texttimes{} on RISC-V compared to state-of-the-art decision tree research. Random forests achieved performance gains of up to 1.6 \texttimes{} on x86, 2.03 \texttimes{} on ARMv8, and 2.9 \texttimes{} on RISC-V.},
+ address = {New York, NY, USA},
+ author = {Su, ChiaHui and Ku, Chia-Hua and Lee, Jenq Kuen and Chen, Kuan-Hsun},
+ doi = {10.1145/3704727},
+ issn = {1539-9087},
+ journal = {ACM Trans. Embed. Comput. Syst.},
+ keyword = {MLIR, Register Allocation, Decision Tree, Real-Time Inference, Tree-based Ensembles, Random Forest, Boosting Trees},
+ month = {November},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {TreeHouse: An MLIR-based Compilation Flow for Real-Time Tree-based Inference},
+ url = {https://doi.org/10.1145/3704727},
+ year = {2024}
+}

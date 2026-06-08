@@ -1,0 +1,18 @@
+@article{10.1007/s00778-025-00960-6,
+ abstract = {A key need in different disciplines is to perform analytics over fast-paced data streams, similar in nature to the traditional OLAP analytics in relational databases - i.e., with aggregates and selection predicates. Storing unbounded streams, however, is not a realistic, or desired approach due to the high storage requirements, and the delays introduced when storing massive data. Accordingly, many synopses/sketches have been proposed that can summarize the stream in small memory (usually sufficiently small to be stored in RAM), such that aggregate queries can be efficiently approximated, without storing the full stream. However, past synopses predominantly focus on summarizing single-attribute streams, and cannot handle selection predicates and constraints on arbitrary subsets of multiple attributes efficiently. In this work, we propose OmniSketch, the first sketch that scales to fast-paced and complex data streams (with many attributes), and supports count aggregates with predicates on multiple attributes, dynamically chosen at query time. OmniSketch supports streams containing both inserts and deletes, under the bounded deletes streaming model. OmniSketch offers probabilistic guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution. We demonstrate experimentally with both real and synthetic data that OmniSketch outperforms the state-of-the-art and can approximate complex ad-hoc queries within the configured accuracy guarantees, with small memory requirements.},
+ address = {Berlin, Heidelberg},
+ author = {Punter, Wieger R. and Papapetrou, Odysseas and Garofalakis, Minos},
+ doi = {10.1007/s00778-025-00960-6},
+ issn = {1066-8888},
+ issue_date = {Jan 2026},
+ journal = {The VLDB Journal},
+ keyword = {Multi-dimensional Stream Analytics, Sketching, Bounded deletes model},
+ month = {January},
+ number = {1},
+ numpages = {25},
+ publisher = {Springer-Verlag},
+ title = {OmniSketch: Multi-dimensional update stream analytics with arbitrary predicates},
+ url = {https://doi.org/10.1007/s00778-025-00960-6},
+ volume = {35},
+ year = {2026}
+}

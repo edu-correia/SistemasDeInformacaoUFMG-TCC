@@ -1,0 +1,14 @@
+@inproceedings{7573818,
+ abstract = {In this paper, we analyze and optimize the most time-consuming steps of the SWAP-Assembler, a parallel genome assembler, so that it can scale to a large number of cores for huge genomes with sequencing data ranging from terabyes to petabytes. Performance analysis results show that the most time-consuming steps are input parallelization, k-mer graph construction, and graph simplification (edge merging). For the input parallelization, the input data is divided into virtual fragments with nearly equal size, and the start position and end position of each fragment are automatically separated at the beginning of the reads. In k-mer graph construction, in order to improve the communication efficiency, the message size is kept constant between any two processes by proportionally increasing the number of nucleotides to the number of processes in the input parallelization step for each round. The memory usage is also decreased because only a small part of the input data is processed in each round. With graph simplification, the communication protocol reduces the number of communication loops from four to two loops and decreases the idle communication time. The optimized assembler is denoted SWAP-Assembler 2 (SWAP2). In our experiments using a 1000 Genomes project dataset of 4 terabytes (the largest dataset ever used for assembling) on the supercomputer Mira, the results show that SWAP2 scales to 131,072 cores with an efficiency of 40%. We also compared our work with both the HipMer assembler and the SWAP-Assembler. On the Yanhuang dataset of 300 gigabytes, SWAP2 shows a 3X speedup and 4X better scalability compared with the HipMer assembler and is 45 times faster than the SWAP-Assembler. The SWAP2 software is available at https://sourceforge.net/projects/swapassembler.},
+ author = {Meng, Jintao and Seo, Sangmin and Balaji, Pavan and Wei, Yanjie and Wang, Bingqiang and Feng, Shenzhong},
+ booktitle = {2016 45th International Conference on Parallel Processing (ICPP)},
+ doi = {10.1109/ICPP.2016.29},
+ issn = {2332-5690},
+ keyword = {Genomics;Bioinformatics;Sequential analysis;FAA;Merging;Scalability;Optimization;Genome assembly;Performance optimization},
+ month = {Aug},
+ number = {},
+ pages = {195-204},
+ title = {SWAP-Assembler 2: Optimization of De Novo Genome Assembler at Extreme Scale},
+ volume = {},
+ year = {2016}
+}

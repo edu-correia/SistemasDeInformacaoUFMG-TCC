@@ -1,0 +1,15 @@
+@conference{Chai2019722,
+ abstract = {Log-structured merge (LSM) tree key-value (KV) stores have been widely deployed in many NoSQL and SQL systems, serving online big data applications such as social networking, bioinfomatics, graph processing, machine learning, etc. The batch processing of sorted data merging (i.e., compaction) in LSM-tree KV stores greatly improves the efficiency of writing, leading to good write performance and high space efficiency. Recently, some lazy compaction methods were proposed to further promote the system throughput through delaying the compaction to accumulate more data within a compaction batch. However, the batched writing manner also leads to significant tail latency, which is unacceptable for online processing, and the newly proposed lazy approaches worsen the tail latency problem. Furthermore, the unbalanced read/write performance of the widely deployed SSDs make the performance optimization harder. Aiming to optimize both the tail latency and the system throughput, in this paper, we propose a novel Lower-level Driven Compaction (LDC) method for LSM-tree KV stores. LDC breaks the limitations of the traditional upper-level driven compaction manner and triggers practical compaction actions by lower-level data. It has the benefits of both decreasing the compaction granularity effectively for smaller tail latency and reducing the write amplification of LSM-tree compaction for higher throughput. We have implemented LDC in LevelDB; the experimental results indicate that LDC can reduce the 99.9th percentile latency for 2.62 times compared with the traditional upper-level driven compaction mechanism, and achieve 56.7% ~ 72.3% higher system throughput at the same time. © 2019 IEEE.},
+ author = {Chai, Yunpeng and Chai, Yanfeng and Wang, Xin and Wei, Haocheng and Bao, Ning and Liang, Yushi},
+ doi = {10.1109/ICDE.2019.00070},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 33},
+ pages = {722 - 733},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LDC: A lower-level driven compaction method to optimize SSD-oriented key-value stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85067919030?origin=resultslist},
+ volume = {2019-April},
+ year = {2019}
+}

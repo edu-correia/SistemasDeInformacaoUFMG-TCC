@@ -1,0 +1,14 @@
+@inproceedings{7101663,
+ abstract = {This paper applies partial evaluation to stage a stencil code Domain-Specific Language (DSL) onto a functional and imperative programming language. Platform-specific primitives such as scheduling or vectorization, and algorithmic variants such as boundary handling are factored out into a library that make up the elements of that DSL. We show how partial evaluation can eliminate all overhead of this separation of concerns and creates code that resembles hand-crafted versions for a particular target platform. We evaluate our technique by implementing a DSL for the V-cycle multigrid iteration. Our approach generates code for AMD and NVIDIA GPUs (via SPIR and NVVM) as well as for CPUs using AVX/AVX2 alike from the same high-level DSL program. First results show that we achieve a speedup of up to 3x on the CPU by vectorizing multigrid components and a speedup of up to 2x on the GPU by merging the computation of multigrid components.},
+ author = {Membarth, Richard and Slusallek, Philipp and Köster, Marcel and Leißa, Roland and Hack, Sebastian},
+ booktitle = {2014 Fourth International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing},
+ doi = {10.1109/WOLFHPC.2014.5},
+ issn = {},
+ keyword = {DSL;Clamps;Graphics processing units;Optimization;Computer architecture;Merging;Libraries;Multigrid codes; partial evaluation; domain-specific language},
+ month = {Nov},
+ number = {},
+ pages = {52-57},
+ title = {Target-Specific Refinement of Multigrid Codes},
+ volume = {},
+ year = {2014}
+}

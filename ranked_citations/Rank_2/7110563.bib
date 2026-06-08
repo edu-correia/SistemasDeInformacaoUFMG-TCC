@@ -1,0 +1,14 @@
+@article{7110563,
+ abstract = {Indexing key-value data on persistent storage is an important factor for NoSQL databases. Most key-value storage engines use tree-like structures for data indexing, but their performance and space overhead rapidly get worse as the key length becomes longer. This also affects the merge or compaction cost which is critical to the overall throughput. In this paper, we present ForestDB, a key-value storage engine for a single node of large-scale NoSQL databases. ForestDB uses a new hybrid indexing scheme called HB+-trie, which is a disk-based trie-like structure combined with B+-trees. It allows for efficient indexing and retrieval of arbitrary length string keys with relatively low disk accesses over tree-like structures, even though the keys are very long and randomly distributed in the key space. Our evaluation results show that ForestDB significantly outperforms the current key-value storage engine of Couchbase Server [1], LevelDB [2], and RocksDB [3], in terms of both the number of operations per second and the amount of disk writes per update operation.},
+ author = {Ahn, Jung-Sang and Seo, Chiyoung and Mayuram, Ravi and Yaseen, Rahim and Kim, Jin-Soo and Maeng, Seungryoul},
+ doi = {10.1109/TC.2015.2435779},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Vegetation;Indexing;Compaction;Throughput;Engines;Key-value storage system;NoSQL;index structures;B+-tree;Key-value storage system;NoSQL;index structures;B+-tree},
+ month = {March},
+ number = {3},
+ pages = {902-915},
+ title = {ForestDB: A Fast Key-Value Storage System for Variable-Length String Keys},
+ volume = {65},
+ year = {2016}
+}

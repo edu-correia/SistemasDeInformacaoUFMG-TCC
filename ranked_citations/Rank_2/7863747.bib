@@ -1,0 +1,14 @@
+@inproceedings{7863747,
+ abstract = {Halide is a domain-specific language for fast image processing that separates pipelines into the algorithm, which defines what values are computed, and the schedule, which defines how they are computed. Changes to the schedule are guaranteed to not change the results. While Halide supports parallelizing and vectorizing naturally data-parallel operations, it does not support the same scheduling for reductions. Instead, the programmer must create data parallelism by manually factoring reductions into multiple stages. This manipulation of the algorithm can introduce bugs, impairs readability and portability, and makes it impossible for automatic scheduling methods to parallelize reductions. We describe a new Halide scheduling primitive rfactor which moves this factoring transformation into the schedule, as well as a novel synthesis-based technique that takes serial Halide reductions and synthesizes an equivalent binary associative reduction operator and its identity. This enables us to automatically replace the original pipeline stage with a pair of stages which first compute partial results over slices of the reduction domain, and then combine them. Our technique permits parallelization and vectorization of Halide algorithms which previously required manipulating both the algorithm and schedule.},
+ author = {Suriana, Patricia and Adams, Andrew and Kamil, Shoaib},
+ booktitle = {2017 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO.2017.7863747},
+ issn = {},
+ keyword = {Schedules;Processor scheduling;Histograms;Reactive power;Algorithm design and analysis;Google;Pipelines},
+ month = {Feb},
+ number = {},
+ pages = {281-291},
+ title = {Parallel associative reductions in Halide},
+ volume = {},
+ year = {2017}
+}

@@ -1,0 +1,14 @@
+@article{8869918,
+ abstract = {This article presents an efficient design and implementation of a real-time spike sorting system using unsupervised clustering. We utilize the online sorting (OSort) algorithm and model it first in both floating-point and fixed-point numerical representations to accurately assess the feasibility of our hardware architecture and also reliably analyze the sorting accuracy. For efficient hardware realization of OSort, we propose a modified parallel OSort algorithm. By reducing the number of required memory accesses, the number of computations performed for the management and upkeep of cluster averages and cluster merging is substantially reduced. By limiting the number of supported clusters per channel, the classification/clustering latency is significantly reduced compared to the previously published work, making the designed OSort system applicable for in-vivo spike sorting. The proposed OSort hardware architecture utilizes a novel memory configuration scheme to parallelize the OSort algorithm, which allows us to avoid using relatively large memory queues for storing detected spike waveforms and process them concurrently to the spike cluster management. The characteristics and implementation results of the designed OSort-based spike sorting system on a Xilinx Artix-7 field-programmable gate array (FPGA) are presented. The ASIC implementation of the designed system is estimated to occupy 2.57 mm2 in a standard 32-nm CMOS process. Post-layout power estimation shows that the ASIC will dissipate 2.78 mW, while operating at 24 kHz.},
+ author = {Valencia, Daniel and Alimohammad, Amirhossein},
+ doi = {10.1109/TBCAS.2019.2947618},
+ issn = {1940-9990},
+ journal = {IEEE Transactions on Biomedical Circuits and Systems},
+ keyword = {Sorting;Feature extraction;Discrete wavelet transforms;Real-time systems;Clustering algorithms;Hardware;Neurons;Biomedical signal processing;low-power electronics;very large scale integration},
+ month = {Dec},
+ number = {6},
+ pages = {1700-1713},
+ title = {A Real-Time Spike Sorting System Using Parallel OSort Clustering},
+ volume = {13},
+ year = {2019}
+}

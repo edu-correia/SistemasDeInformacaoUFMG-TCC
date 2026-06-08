@@ -1,0 +1,14 @@
+@conference{Bhatt2025332,
+ abstract = {Key-value stores based on a Log-Structured Merge-Tree, especially LevelDB, are extensively used for managing unstructured data with no predefined schema. LevelDB’s popularity stems from an optimized write performance, achieved through in-memory buffers, sequential disk writes, and background compaction. Although the write performance is satisfactory, the read performance is, at best, marginally acceptable, particularly for random (non-contiguous) reads. Read performance can be enhanced by optimizing the compaction strategy (i.e., the trade-off between the number of levels and the number of tables per level). LevelDB utilizes geometric progression to determine compaction table size, which often leads to increased read latency due to the inefficient distribution of compaction tables across levels. We propose utilizing power law distribution to determine compaction table size for each level, which in turn improves read efficiency. Our empirical results show a reduction in average query runtime (up to 2%), an increase in read throughput (up to 2.5%), and a decrease in average latency (up to 2%) on YCSB’s read-only workload. © 2024 Copyright held by the owner/author(s).},
+ author = {Bhatt, Umesh and Pandey, Sarvesh},
+ doi = {10.1145/3703323.3703707},
+ journal = {CODS-COMAD 2024 - Proceedings of the 8th Jpint International Conference on Data Science and Management of Data},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {332 - 334},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {On Designing a Compaction Strategy for Enhanced LevelDB Read Performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105012252005?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@conference{Zhao2024107,
+ abstract = {The emergence of persistent memory (PMem) is greatly impacting the design of commonly used data structures to obtain the full benefit from the new technology. Compared to the DRAM, PMem's larger capacity and lower cost make it an attractive alternative for hosting large data structures, such as indexes of in-memory databases, especially for those that require data persistency. However, simply using existing index structures in the PMem can be unexpectedly inefficient for three reasons. (1) Index accesses are composed of small writes and reads. (2) Each small write is required to come with expensive fence and flush operations. And (3) PMems usually prefer large accesses for high performance with their internal block-like access designs despite being byte-addressable. For example, Intel Optane DC PMem has a 256-byte access unit (XPLine), leading to significant read/write amplification for small accesses. In this work we systematically study a series of techniques, including application-managed write-buffering, read-caching, and out-of-place updates and their synergistic effect on performance of some representative indexes (hash table, B+ tree, and skip list) designed for PMems. We then apply the knowledge obtained from this investigation into the design of a high-performance PMem index, named Spot-on tree (SPTree), that facilitates applications to selectively cache read-intensive components of an index and to buffer written data to index structure, while providing crash consistency and quick recovery upon crash. Compared to the state-of-art indexes, SPTree provides up to 2X and 4X higher write and read throughput, respectively.  © 2024 Copyright held by the owner/author(s).},
+ author = {Zhao, Xingsheng and Challa, Prajwal and Zhong, Chen and Jiang, Song},
+ doi = {10.1145/3629526.3645032},
+ journal = {ICPE 2024 - Proceedings of the 15th ACM/SPEC International Conference on Performance Engineering},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {107 - 117},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Developing Index Structures in Persistent Memory Using Spot-on Optimizations with DRAM},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85193795525?origin=resultslist},
+ year = {2024}
+}

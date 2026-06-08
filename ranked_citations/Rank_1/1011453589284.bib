@@ -1,0 +1,18 @@
+@article{10.1145/3589284,
+ abstract = {Although many updatable learned indexes have been proposed in recent years, whether they can outperform traditional approaches on disk remains unknown. In this study, we revisit and implement four state-of-the-art updatable learned indexes on disk, and compare them against the B+-tree under a wide range of settings. Through our evaluation, we make some key observations: 1) Overall, the B+-tree performs well across a range of workload types and datasets. 2) A learned index could outperform B+-tree or other learned indexes on disk for a specific workload. For example, PGM achieves the best performance in write-only workloads while LIPP significantly outperforms others in lookup-only workloads. We further conduct a detailed performance analysis to reveal the strengths and weaknesses of these learned indexes on disk. Moreover, we summarize the observed common shortcomings in five categories and propose four design principles to guide future design of on-disk, updatable learned indexes: (1) reducing the index's tree height, (2) better data structures to lower operation overheads, (3) improving the efficiency of scan operations, and (4) more efficient storage layout.},
+ address = {New York, NY, USA},
+ articleno = {139},
+ author = {Lan, Hai and Bao, Zhifeng and Culpepper, J. Shane and Borovica-Gajic, Renata},
+ doi = {10.1145/3589284},
+ issue_date = {June 2023},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {Learned Indexes},
+ month = {June},
+ number = {2},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {Updatable Learned Indexes Meet Disk-Resident DBMS - From Evaluations to Design Choices},
+ url = {https://doi.org/10.1145/3589284},
+ volume = {1},
+ year = {2023}
+}

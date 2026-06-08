@@ -1,0 +1,17 @@
+@article{10.14778/3529337.3529346,
+ abstract = {Random walk is widely used in many graph analysis tasks, especially the first-order random walk. However, as a simplification of real-world problems, the first-order random walk is poor at modeling higher-order structures in the data. Recently, second-order random walk-based applications (e.g., Node2vec, Second-order PageRank) have become attractive. Due to the complexity of the second-order random walk models and memory limitations, it is not scalable to run second-order random walk-based applications on a single machine. Existing disk-based graph systems are only friendly to the first-order random walk models and suffer from expensive disk I/Os when executing the second-order random walks. This paper introduces an I/O-efficient disk-based graph system for the scalable second-order random walk of large graphs, called GraSorw. First, to eliminate massive light vertex I/Os, we develop a bi-block execution engine that converts random I/Os into sequential I/Os by applying a new triangular bi-block scheduling strategy, the bucket-based walk management, and the skewed walk storage. Second, to improve the I/O utilization, we design a learning-based block loading model to leverage the advantages of the full-load and on-demand load methods. Finally, we conducted extensive experiments on six large real datasets as well as several synthetic datasets.. The empirical results demonstrate that the end-to-end time cost of popular tasks in GraSorw is reduced by more than one order of magnitude compared to the existing disk-based graph systems.},
+ author = {Li, Hongzheng and Shao, Yingxia and Du, Junping and Cui, Bin and Chen, Lei},
+ doi = {10.14778/3529337.3529346},
+ issn = {2150-8097},
+ issue_date = {April 2022},
+ journal = {Proc. VLDB Endow.},
+ month = {April},
+ number = {8},
+ numpages = {13},
+ pages = {1619–1631},
+ publisher = {VLDB Endowment},
+ title = {An I/O-efficient disk-based graph system for scalable second-order random walk of large graphs},
+ url = {https://doi.org/10.14778/3529337.3529346},
+ volume = {15},
+ year = {2022}
+}

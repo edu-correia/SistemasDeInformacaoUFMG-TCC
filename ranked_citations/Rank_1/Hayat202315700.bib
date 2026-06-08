@@ -1,0 +1,16 @@
+@article{Hayat202315700,
+ abstract = {Heterogeneous computer systems are becoming mainstream due to their disparate processing and performance capabilities. These systems consist of different types of devices, i.e., central processing units (CPUs), accelerators, and graphics processing units (GPUs). In the heterogeneous computing environment, if one device is more powerful in terms of computing capability, the scheduling schemes generally favor the powerful device, and that device becomes overloaded, while the other device is underutilized. This load imbalance problem results in increased execution time. In this research, we propose load-balanced task scheduler combined with machine learning-based device predictor. The device predictor is used to predict execution time both on CPU and GPU devices, and a device with shorter predicted execution time is considered as a suitable device for that particular task. However, it may happen that a high fraction of tasks map only on one type of device since that device is considered as a suitable device for them. It is due to the fact that a task is mapped to one device (with lower predicted execution time), although it can be executed on the other device as well. In this context, one device may become overloaded, while the other device may be underutilized. To solve this problem of load imbalance, we use work-stealing-based task scheduler as part of our solution that allows an idle device to process tasks from the queue of another’s device. In this way, we can avoid load imbalance, minimize the overall execution time of tasks, and maximize the device utilization and throughput. We evaluate the performance of our proposed solution into two stages. Firstly, we measure the error rate of our machine learning predictor using three different algorithms (i.e., random forest, gradient boosting, and multiple linear regression). We demonstrate that random forest performs better with marginal error rate. Secondly, we compare the performance of work-stealing task scheduler with other scheduling alternatives. Our results show that the proposed solution reduces execution time by 65.63%, increased resource utilization by 93.3%, and throughput by 65.5% in comparison with baseline scheduling schemes. © 2023, The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature.},
+ author = {Hayat, Asad and Khalid, Yasir Noman and Rathore, Muhammad Siraj and Nadir, Muhammad Nadeem},
+ doi = {10.1007/s11227-023-05266-4},
+ journal = {Journal of Supercomputing},
+ note = {Cited by: 7},
+ number = {14},
+ pages = {15700 - 15728},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A machine learning-based resource-efficient task scheduler for heterogeneous computer systems},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85153090248?origin=resultslist},
+ volume = {79},
+ year = {2023}
+}

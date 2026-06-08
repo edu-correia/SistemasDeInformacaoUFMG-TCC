@@ -1,0 +1,13 @@
+@article{FU2026115239,
+ abstract = {Recent advances in visual representation learning have leveraged Transformer architectures to achieve remarkable performance in tasks such as image classification and dense prediction. However, traditional Vision Transformers (ViTs) often struggle with multi-scale feature handling and the preservation of fine-grained details due to pooling-based downsampling and random cropping operations, which can result in information loss. To address these challenges, we propose a novel unified dual-domain framework, named RWT, which jointly exploits RGB and wavelet domain representations to capture both global dependencies as well as localized frequency information. In the RGB domain, multi-head self-attention is employed to extract long-range interactions, while in the wavelet domain, the Discrete Wavelet Transform (DWT) facilitates invertible downsampling by decomposing images into low-frequency (structural) and high-frequency (textural) components, which are then processed via depthwise separable convolutions. A dynamic convolutional kernel adjustment allows the model to adapt to varying decomposition levels, ensuring efficient feature extraction without pooling artifacts. Furthermore, a cross-attention fusion module merges global RGB features with local wavelet details. Extensive experiments on ImageNet-1K demonstrate that RWT outperforms state-of-the-art models, while showing superior transferability on downstream datasets like CIFAR-10/100, Stanford Cars, and Flowers-102. Source code is available at http://github.com/Fuuu12/RWT.},
+ author = {Yu Fu and Weichao Yi and Liquan Dong and Ming Liu and Lingqin Kong},
+ doi = {https://doi.org/10.1016/j.knosys.2025.115239},
+ issn = {0950-7051},
+ journal = {Knowledge-Based Systems},
+ keyword = {Wavelet transform, Multi-Modal fusion, Dual-domain learning, Cross-attention fusion, Image recognition},
+ pages = {115239},
+ title = {All you need is two domains: Unified RGB-Wavelet transformer for visual representation learning},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950705125022737},
+ volume = {335},
+ year = {2026}
+}

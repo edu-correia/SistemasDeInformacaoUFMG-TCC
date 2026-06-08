@@ -1,0 +1,14 @@
+@inproceedings{7545215,
+ abstract = {Ceph is a well-known and widely deployed open source distributed storage. Specifically, it is the mostly used storage backend for popular OpenStack cloud computing platform. For the traditional usage of Ceph in cloud computing, Ceph block device implemented in the VMM (virtual machine monitor), qem-rbd, is used to provide disks for the VMs (virtual machine). Recently, the container technology becomes more and more popular, and is regarded as a promising alternative solution to virtualization for cloud computing. A container is much more lightweight than a VM, thus achieves better performance. The technology behind container is different with virtualization, and VMM is not used, so qem-rbd could not be used in container scenarios. Currently, the only choice to integrate Ceph with container to provide disks to containers is to use the Ceph block device implemented in OS (operating system) kernel, ker-rbd. However, ker-rbd has some important limitations. In this paper, we propose the design and implementation of use-rbd, Ceph block device implemented in user space. Use-rbd has a lightweight yet efficient design, which makes it easy to be implemented correctly and stably. In contrast to ker-rbd, use-rbd has better portability and maintainability. Our experimental results show that use-rbd enjoys good performance scalability, and delivers the same or sometimes slightly higher performance than ker-rbd, therefore is a promising solution for container scenarios. Use-rbd has been accepted and merged into Ceph official code, and freely available for downloading and using.},
+ author = {Wang, Li and Wen, Yunchuan},
+ booktitle = {2016 International Symposium on Computer, Consumer and Control (IS3C)},
+ doi = {10.1109/IS3C.2016.105},
+ issn = {},
+ keyword = {Containers;Kernel;Instruction sets;Virtual machine monitors;Sockets;Virtualization;Cloud computing;Container;NBD;Userspace;Block Device},
+ month = {July},
+ number = {},
+ pages = {383-386},
+ title = {Design and Implementation of Ceph Block Device in Userspace for Container Scenarios},
+ volume = {},
+ year = {2016}
+}

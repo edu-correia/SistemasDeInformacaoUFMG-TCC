@@ -1,0 +1,14 @@
+@article{HU2024103529,
+ abstract = {Text clustering aims to organize a vast collection of documents into meaningful and coherent clusters, thereby facilitating the extraction of valuable insights. While current frameworks for text clustering try to minimize the anisotropy of pre-trained language models through contrastive learning of text embeddings, the approach of treating in-batch samples as negatives is suboptimal. The K-means algorithm offers a way to sample both hard negatives and false negatives. However, relying solely on a single measure of semantic similarity between distributions and using coarse-grained weighting for negative pairs may potentially limit performance. Furthermore, considering the very similar distribution in text clusters due to rich semantics, the Mahalanobis distance-based Gaussian Mixture Model (GMM) is prone to falling into local optima due to one Gaussian model, having a smaller weight, may gradually merging into another during the parameter evaluation by the EM algorithm. To tackle these challenges, we propose a model named JourTC: Joint unsupervised contrastive learning and robust GMM for Text Clustering. In the contrastive learning phase, hard negatives, potential false negatives, and their corresponding global similarity-aware weights are determined through posterior probabilities derived from a Robust GMM (RGMM). This RGMM utilizes the entropy of each individual Gaussian model as a metric and adaptively adjusts the posterior probabilities of samples based on the Gaussian models with both maximum and minimum entropy to diminish the influence of low-entropy Gaussian models. Extensive experiments have shown that JourTC can be seamlessly integrated into existing text clustering frameworks, leading to a notable improvement in accuracy. Our code is publicly available.11http://github.com/nickhcx/JourTC.},
+ author = {Chenxi Hu and Tao Wu and Shuaiqi Liu and Chunsheng Liu and Tao Ma and Fang Yang},
+ doi = {https://doi.org/10.1016/j.ipm.2023.103529},
+ issn = {0306-4573},
+ journal = {Information Processing & Management},
+ keyword = {Text clustering, Contrastive learning, Negative sampling, Gaussian mixture model, Expectation maximization},
+ number = {1},
+ pages = {103529},
+ title = {Joint unsupervised contrastive learning and robust GMM for text clustering},
+ url = {https://www.sciencedirect.com/science/article/pii/S0306457323002662},
+ volume = {61},
+ year = {2024}
+}

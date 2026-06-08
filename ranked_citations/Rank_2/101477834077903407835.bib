@@ -1,0 +1,17 @@
+@article{10.14778/3407790.3407835,
+ abstract = {Current approaches for enforcing Fine Grained Access Control (FGAC) in DBMS do not scale to scenarios when the number of access control policies are in the order of thousands. This paper identifies such a use case in the context of emerging smart spaces wherein systems may be required by legislation, such as Europe's GDPR and California's CCPA, to empower users to specify who may have access to their data and for what purposes. We present Sieve, a layered approach of implementing FGAC in existing DBMSs, that exploits a variety of their features (e.g., UDFs, index usage hints, query explain) to scale to a large number of policies. Given a query, Sieve exploits its context to filter the policies that need to be checked. It also generates guarded expressions that save on evaluation cost by grouping policies and exploit database indices to cut on read cost. Our experimental results demonstrate that existing DBMSs can utilize Sieve to significantly reduce query-time policy evaluation cost. Using Sieve DBMSs can support real-time access control in applications such as emerging smart environments.},
+ author = {Pappachan, Primal and Yus, Roberto and Mehrotra, Sharad and Freytag, Johann-Christoph},
+ doi = {10.14778/3407790.3407835},
+ issn = {2150-8097},
+ issue_date = {August 2020},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {12},
+ numpages = {14},
+ pages = {2424–2437},
+ publisher = {VLDB Endowment},
+ title = {Sieve: a middleware approach to scalable access control for database management systems},
+ url = {https://doi.org/10.14778/3407790.3407835},
+ volume = {13},
+ year = {2020}
+}

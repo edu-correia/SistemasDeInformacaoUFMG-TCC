@@ -1,0 +1,20 @@
+@article{CHANG2024108060,
+ abstract = {Background and Objective
+Vital sign monitoring in the Intensive Care Unit (ICU) is crucial for enabling prompt interventions for patients. This underscores the need for an accurate predictive system. Therefore, this study proposes a novel deep learning approach for forecasting Heart Rate (HR), Systolic Blood Pressure (SBP), and Diastolic Blood Pressure (DBP) in the ICU.
+Methods
+We extracted 24,886 ICU stays from the MIMIC-III database which contains data from over 46 thousand patients, to train and test the model. The model proposed in this study, Transformer-based Diffusion Probabilistic Model for Sparse Time Series Forecasting (TDSTF), merges Transformer and diffusion models to forecast vital signs. The TDSTF model showed state-of-the-art performance in predicting vital signs in the ICU, outperforming other models' ability to predict distributions of vital signs and being more computationally efficient. The code is available at https://github.com/PingChang818/TDSTF.
+Results
+The results of the study showed that TDSTF achieved a Standardized Average Continuous Ranked Probability Score (SACRPS) of 0.4438 and a Mean Squared Error (MSE) of 0.4168, an improvement of 18.9% and 34.3% over the best baseline model, respectively. The inference speed of TDSTF is more than 17 times faster than the best baseline model.
+Conclusion
+TDSTF is an effective and efficient solution for forecasting vital signs in the ICU, and it shows a significant improvement compared to other models in the field.},
+ author = {Ping Chang and Huayu Li and Stuart F. Quan and Shuyang Lu and Shu-Fen Wung and Janet Roveda and Ao Li},
+ doi = {https://doi.org/10.1016/j.cmpb.2024.108060},
+ issn = {0169-2607},
+ journal = {Computer Methods and Programs in Biomedicine},
+ keyword = {Deep learning, Time series forecasting, Sparse data, Vital signs, ICU},
+ pages = {108060},
+ title = {A transformer-based diffusion probabilistic model for heart rate and blood pressure forecasting in Intensive Care Unit},
+ url = {https://www.sciencedirect.com/science/article/pii/S0169260724000567},
+ volume = {246},
+ year = {2024}
+}

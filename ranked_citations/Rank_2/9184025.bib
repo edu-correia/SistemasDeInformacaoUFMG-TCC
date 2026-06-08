@@ -1,0 +1,14 @@
+@article{9184025,
+ abstract = {Visual narrating focuses on generating semantic descriptions to summarize visual content of images or videos, e.g., visual captioning and visual storytelling. The challenge mainly lies in how to design a decoder to generate accurate descriptions matching visual content. Recent advances often employ a recurrent neural network (RNN), e.g., Long-Short Term Memory (LSTM), as the decoder. However, RNN is prone to diluting long-term information, which weakens its performance of capturing long-term dependencies. Recent work has demonstrated memory network (MemNet) owns the advantage of storing long-term information. However, as the decoder, it has not been well exploited for visual narrating. The reason partially comes from the difficulty of multi-modal sequential decoding with MemNet. In this article, we devise a novel memory decoder for visual narrating. Concretely, to obtain a better multi-modal representation, we first design a new multi-modal fusion method to fully merge visual and lexical information. Then, based on the fusion result, during decoding, we construct a MemNet-based decoder consisting of multiple memory layers. Particularly, in each layer, we employ a memory set to store previous decoding information and utilize an attention mechanism to adaptively select the information related to the current output. Meanwhile, we also employ a memory set to store the decoding output of each memory layer at the current time step and still utilize an attention mechanism to select the related information. Thus, this decoder alleviates dilution of long-term information. Meanwhile, the hierarchical architecture leverages the latent information of each layer, which is helpful for generating accurate descriptions. Experimental results on two tasks of visual narrating, i.e., video captioning and visual storytelling, show that our decoder could obtain superior results and outperform the performance of conventional RNN-based decoder.},
+ author = {Wu, Aming and Han, Yahong and Zhao, Zhou and Yang, Yi},
+ doi = {10.1109/TCSVT.2020.3020877},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Decoding;Visualization;Videos;Task analysis;Computer architecture;Electronic mail;Semantics;Visual narrating;multi-modal fusion;hierarchical memory decoder;video captioning;visual storytelling},
+ month = {June},
+ number = {6},
+ pages = {2438-2449},
+ title = {Hierarchical Memory Decoder for Visual Narrating},
+ volume = {31},
+ year = {2021}
+}

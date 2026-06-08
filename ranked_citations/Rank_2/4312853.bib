@@ -1,0 +1,14 @@
+@inproceedings{4312853,
+ abstract = {Various kinds of data such as news articles and sensor data are generated continuously in the form of XML data on the network. The processing systems (e.g., systems for selective dissemination of information and notification) must evaluate many filters for every XML data. Therefore, Gupta and Suciu proposed an automaton called the XPush machine, which can efficiently evaluate a large number of XPath filters, each with many predicates, on a stream of XML documents. The XPush machine is constructed by creating an AFA (Alternating Finite Automaton) for each filter, and then transforming the set of AFAs into a single DPDA (Deterministic PushDown Automaton). Since the XPush machine cannot be partially updated inherently, however, addition of a single filter necessitates recalculation (i.e., reconstruction) of the XPush machine as a whole. In other words, the cost of updating an automaton depends on the total number of AFAs (or filters). In this paper, we propose and evaluate an integrated XPush machine, which enables incremental update by constructing the whole machine from a set of sub-XPush machines. The evaluation result positively demonstrates that efficient partial exchange of the AFAs is possible without significantly affecting all of the state transition tables.},
+ author = {Takekawa, Hajime and Ishikawa, Hiroshi},
+ booktitle = {18th International Workshop on Database and Expert Systems Applications (DEXA 2007)},
+ doi = {10.1109/DEXA.2007.13},
+ issn = {2378-3915},
+ keyword = {Merging;Automata;Filters;XML;Navigation;Throughput;Costs;Filtering;Data structures;Databases},
+ month = {Sep.},
+ number = {},
+ pages = {40-44},
+ title = {Incrementally-Updatable Stream Processors for XPath Queries based on Merging Automata via Ordered Hash-keys},
+ volume = {},
+ year = {2007}
+}

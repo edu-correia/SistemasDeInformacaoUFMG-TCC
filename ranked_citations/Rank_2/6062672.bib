@@ -1,0 +1,14 @@
+@article{6062672,
+ abstract = {This paper presents design and implementation of a pipelined datapath for real-time face detection using cascades of boosted classifiers. We propose following methods: symmetric image downscaling, classifier sharing, and cascade merging, to achieve the desired processing speed and area efficiency. First, an image pyramid with 16 levels is generated from the input image to simultaneously detect faces with different scales. The downscaled images are then transferred to the first stage of the cascade that is shared between the corresponding image pairs based on the pixel validity of the symmetric image pyramid. The last method exploits the different hit ratios of the cascade stages. We use a tree-structured cascade of classifiers since most of the nonface elements are eliminated during the early stages of the classifier. The use of a synthesis tool confirms that the proposed design reduces resource utilization by one-eighth without accuracy loss, compared to the fully parallelized implementation of the same algorithm. We implemented the proposed hardware architecture on a Xilinx Virtex-5 LX330 FPGA. The indicative throughput is 307 frames/s irrespective of the number of faces in the scene for standard VGA (640 × 480) images with an operating frequency of 125.59 MHz. We may ensure that face detection results are generated at each clock cycle after the initial pipeline delay, using this fully pipelined datapath for tree-structured cascade classifiers.},
+ author = {Jin, Seunghun and Kim, Dongkyun and Nguyen, Thuy Tuong and Kim, Daijin and Kim, Munsang and Jeon, Jae Wook},
+ doi = {10.1109/TII.2011.2173943},
+ issn = {1941-0050},
+ journal = {IEEE Transactions on Industrial Informatics},
+ keyword = {Face;Face detection;Field programmable gate arrays;Computer architecture;Streaming media;Real time systems;Hardware;Computer vision;face detection;field-programmable gate arrays (FPGAs);integrated circuit design},
+ month = {Feb},
+ number = {1},
+ pages = {158-167},
+ title = {Design and Implementation of a Pipelined Datapath for High-Speed Face Detection Using FPGA},
+ volume = {8},
+ year = {2012}
+}

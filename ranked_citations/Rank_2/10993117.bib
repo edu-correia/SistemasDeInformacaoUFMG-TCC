@@ -1,0 +1,14 @@
+@inproceedings{10993117,
+ abstract = {The row-wise product algorithm shows significant potential for sparse matrix-matrix multiplication (SpGEMM) on hardware accelerators. Recent studies have made notable progress in accelerating SpGEMM using this algorithm. However, several challenges remain in accelerating imbalanced SpGEMM, where the distribution of non-zero elements across different rows is imbalanced. These challenges include: (1) the fixed dataflow of the merger tree, which leads to lower PE utilization, and (2) highly imbalanced data distributions, such as single rows with numerous non-zero elements, which result in intensive computations. This imbalance significantly challenges SpGEMM acceleration, leading to time-consuming processes that dominate overall computation time. In this paper, we propose AiSpGEMM to accelerate imbalanced SpGEMM on FPGAs. First, we improved the C2SR format to adapt it for imbalanced SpGEMM acceleration based on the row-wise product algorithm. This reduces off-chip memory bank conflicts and increases data reuse of matrix B. Secondly, we design a reconfigurable merger (R-merger) with flexible interconnects to improve PE utilization. Additionally, we propose an intra-row parallel merging algorithm and its corresponding hardware architecture, the parallel merger (P-merger), to accelerate intensive operations. Experimental results demonstrate that AiSpGEMM achieves a geometric mean (geomean) speedup of 5.8× compared to the state-of-the-art FPGA-based SpGEMM accelerator. In Geomean, AiSpGEMM achieves a 3.0× speedup and a 9.8× improvement in energy efficiency compared to the NVIDIA cuSPARSE library running on an NVIDIA A6000 GPU. Moreover, AiSpGEMM-21 demonstrated a 4× increase in average throughput compared to the same GPU.},
+ author = {Tang, Enhao and Li, Shun and Zhou, Hao and Dai, Guohao and Lin, Jun and Wang, Kun},
+ booktitle = {2025 Design, Automation & Test in Europe Conference (DATE)},
+ doi = {10.23919/DATE64628.2025.10993117},
+ issn = {1558-1101},
+ keyword = {Corporate acquisitions;Merging;Graphics processing units;Performance gain;Parallel processing;Throughput;Libraries;Energy efficiency;Sparse matrices;Field programmable gate arrays;SpGEMM;FPGA;row-wise product;accelerator},
+ month = {March},
+ number = {},
+ pages = {1-7},
+ title = {AiSpGEMM: Accelerating Imbalanced SpGEMM on FPGAs with Flexible Interconnect and Intra-row Parallel Merging},
+ volume = {},
+ year = {2025}
+}

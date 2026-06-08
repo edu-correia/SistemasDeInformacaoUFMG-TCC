@@ -1,0 +1,14 @@
+@inproceedings{11395197,
+ abstract = {Baseline JIT compilers need to compile early and as fast as possible, while still performing optimizations. One powerful technique to write fast baseline JIT compilers is abstract interpretation. Several implementations of this technique exist in practice, implementing in a single pass optimizations such as register allocation, constant propagation, and instruction scheduling. However, although they share the same technique, all these implementations vary in the exact optimizations performed, their internal design and further implementation details (e.g., the implementation language and framework). Thus, it is challenging to understand and isolate the benefits of the technique by simply studing these existing implementations.Understanding the real impact of compile-time abstract interpreters requires isolating performance differences and experimenting with different variations of the same implementation, which demands extensive engineering work. In this paper, we propose to analyse the impact of abstract interpreters through metacompilation. We use metacompilation as a means to (a) reduce the experimentation effort and (b) to produce compiler variants that are comparable, reducing implementation noise.We implemented our solution to generate several JIT compiler variants for the Pharo VM. We describe the adaptations required in the metacompilation framework to target both abstract interpreters and direct translators, in combination with Static Type Prediction optimizations.Our benchmarks show that compile-time abstract interpreters, on average, reduce the emitted machine code size by 12% and increase execution speed by 10%, up to 30%, without increasing JIT compilation overhead, compared to direct translators.},
+ author = {Palumbo, Nahuel and Polito, Guillermo and Ducasse, Stéphane and Tesone, Pablo},
+ booktitle = {2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO68049.2026.11395197},
+ issn = {},
+ keyword = {Codes;Translation;Noise;Benchmark testing;Size measurement;Virtual machines;Time measurement;Registers;Resource management;Optimization;JIT compiler;abstract interpreter;metacompiler;compiler optimization;Pharo},
+ month = {Jan},
+ number = {},
+ pages = {416-426},
+ title = {Practical: Are Abstract-Interpreter Baseline JITs Worth It? An Empirical Evaluation through Metacompilation},
+ volume = {},
+ year = {2026}
+}

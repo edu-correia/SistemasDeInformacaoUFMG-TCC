@@ -1,0 +1,14 @@
+@inproceedings{7851549,
+ abstract = {The prevalence of chip multiprocessor opens opportunities of running data-parallel applications originally in clusters on a single machine with many cores. MapReduce, a simple and elegant programming model to program large scale clusters, has recently been shown to be a promising alternative to harness the multicore platform. The differences such as memory hierarchy and communication patterns between clusters and multicore platforms raise new challenges to design and implement an efficient MapReduce system on multicore. This paper argues that it is more efficient for MapReduce to iteratively process small chunks of data in turn than processing a large chunk of data at one time on shared memory multicore platforms. Based on the argument, we extend the general MapReduce programming model with “tiling strategy”, called Tiled-MapReduce (TMR). TMR partitions a large MapReduce job into a number of small sub-jobs and iteratively processes one subjob at a time with efficient use of resources; TMR finally merges the results of all sub-jobs for output. Based on Tiled-MapReduce, we design and implement several optimizing techniques targeting multicore, including the reuse of input and intermediate data structure among sub-jobs, a NUCA/NUMA-aware scheduler, and pipelining a sub-job's reduce phase with the successive sub-job's map phase, to optimize the memory, cache and CPU resources accordingly. We have implemented a prototype of Tiled-MapReduce based on Phoenix, an already highly optimized MapReduce runtime for shared memory multiprocessors. The prototype, namely Ostrich, runs on an Intel machine with 16 cores. Experiments on four different types of benchmarks show that Ostrich saves up to 85% memory, causes less cache misses and makes more efficient uses of CPU cores, resulting in a speedup ranging from 1.2X to 3.3X.},
+ author = {Chen, Rong and Chen, Haibo and Zang, Binyu},
+ booktitle = {2010 19th International Conference on Parallel Architectures and Compilation Techniques (PACT)},
+ doi = {},
+ issn = {},
+ keyword = {Multicore processing;Programming;Runtime;Optimization;Data structures;Computational modeling;Buffer storage;MapReduce;Tiled-MapReduce;Tiling;Multicore},
+ month = {Sep.},
+ number = {},
+ pages = {523-534},
+ title = {Tiled-MapReduce: Optimizing resource usages of data-parallel applications on multicore with tiling},
+ volume = {},
+ year = {2010}
+}

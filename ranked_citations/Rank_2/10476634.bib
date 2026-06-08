@@ -1,0 +1,14 @@
+@article{10476634,
+ abstract = {Text patterns typically exhibit distinct boundaries and sparse color histograms. However, in current hybrid codec frameworks, the positions of coding units are often misaligned with the text patterns, resulting in prediction and color mapping tools consuming a large number of bits to indicate these patterns. Nowadays, some text detection and recognition methods have been proposed to accurately locate and analyze the text regions in screen images. Combined with these techniques, we propose a character position-aware compression framework for screen text image. On the encoder side, a low-complexity detection method is adopted to locate the text characters. Then it copies the detected characters to the position aligned with the coding unit (CU) grid to form a text layer. This text-layer representation can further increase the efficiency of existing screen content coding tools such as Intra Block Copy (IBC). Moreover, we design several compression tools based on this representation. We extend the two Motion Vector (MV) prediction modes: Adaptive Motion Vector Prediction (AMVP) and Merge. We modify the MV encoding syntax according to the layout characteristics of the text layer. We present a Gradient-guided In-loop Filter (GIF) to sharpen the text lines using a convolutional network. Experiments conducted on VVC reference software VTM all_intra configuration show that the proposed framework can achieve an average bitrate savings of 4.6% and 3.6% under the w/ GIF and w/o GIF versions, with a corresponding increase in CPU encoding complexity of 72% and 10%.},
+ author = {Zhu, Chen and Lu, Guo and Chen, Huanbang and Feng, Donghui and Wang, Shen and Zhao, Yan and Xie, Rong and Song, Li},
+ doi = {10.1109/TCSVT.2024.3379675},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Encoding;Image coding;Codecs;Image reconstruction;Image color analysis;Vectors;Transforms;Screen content coding;text detection;motion vector prediction and coding;in-loop filter},
+ month = {Sep.},
+ number = {9},
+ pages = {8821-8835},
+ title = {A Character Position-Aware Compression Framework for Screen Text Image},
+ volume = {34},
+ year = {2024}
+}

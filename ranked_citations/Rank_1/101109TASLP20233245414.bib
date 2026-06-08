@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2023.3245414,
+ abstract = {In this paper we propose a data-driven approach for multiple speaker tracking in reverberant enclosures. The speakers are uttering, possibly overlapping, speech signals while moving in the environment. The method comprises two stages. The first stage executes a single source localization using semi-supervised learning on multiple manifolds. The second stage, which is unsupervised, uses time-varying maximum likelihood estimation for tracking. The feature vectors, used by both stages, are the relative transfer functions (RTFs), which are known to be related to source positions. The number of sources is assumed to be known while the microphone positions are unknown. In the training stage, a large database of RTFs is given. A small percentage of the data is attributed with exact positions (namely, labelled data) and the rest is assumed to be unlabelled, i.e. the respective position is unknown. Then, a nonlinear, manifold-based, mapping function between the RTFs and the source positions is inferred. Applying this mapping function to all unlabelled RTFs constructs a dense grid of localized sources. In the test phase, this RTF grid serves as the centroids for a Mixture of Gaussians (MoG) model. The MoG parameters are estimated by applying a recursive variant of the expectation-maximization (EM) procedure that relies on the sparsity and intermittency of the speech signals. We present a comprehensive simulation study in various reverberation levels, including static and dynamic scenarios, for both two or three (partially) overlapping speakers. For the dynamic case we provide simulations with several speakers trajectories, including intersecting sources. The proposed scheme outperforms baseline methods that use a simpler propagation model in terms of localization accuracy and tracking capabilities.},
+ author = {Bross, Avital and Gannot, Sharon},
+ doi = {10.1109/TASLP.2023.3245414},
+ issn = {2329-9290},
+ issue_date = {2023},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {February},
+ numpages = {17},
+ pages = {1124–1140},
+ publisher = {IEEE Press},
+ title = {Training-Based Multiple Source Tracking Using Manifold-Learning and Recursive Expectation-Maximization},
+ url = {https://doi.org/10.1109/TASLP.2023.3245414},
+ volume = {31},
+ year = {2023}
+}

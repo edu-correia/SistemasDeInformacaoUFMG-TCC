@@ -1,0 +1,14 @@
+@inproceedings{5695628,
+ abstract = {The Map Reduce programming model simplifies large-scale data processing on commodity clusters by having users specify a map function that processes input key/value pairs to generate intermediate key/value pairs, and a reduce function that merges and converts intermediate key/value pairs into final results. Typical Map Reduce implementations such as Hadoop enforce barrier synchronization between the map and reduce phases, i.e., the reduce phase does not start until all map tasks are finished. In turn, this synchronization requirement can cause inefficient utilization of computing resources and can adversely impact performance. Thus, we present and evaluate two different approaches to cope with the synchronization drawback of existing Map Reduce implementations. The first approach, hierarchical reduction, starts a reduce task as soon as a predefined number of map tasks completes, it then aggregates the results of different reduce tasks following a tree structure. The second approach, incremental reduction, starts a predefined number of reduce tasks from the beginning and has each reduce task incrementally reduce records collected from map tasks. Together with our performance modeling, we evaluate different reducing approaches with two real applications on a 32-node cluster. The experimental results have shown that incremental reduction outperforms hierarchical reduction in general. Also, incremental reduction can speed-up the original Hadoop implementation by up to 35.33% for the word count application and 57.98% for the grep application. In addition, incremental reduction outperforms the original Hadoop in an emulated cloud environment with heterogeneous compute nodes.},
+ author = {Elteir, Marwa and Lin, Heshan and Feng, Wu-chun},
+ booktitle = {2010 IEEE 16th International Conference on Parallel and Distributed Systems},
+ doi = {10.1109/ICPADS.2010.116},
+ issn = {1521-9097},
+ keyword = {Merging;Equations;Mathematical model;Synchronization;Analytical models;Data processing;Sorting;Distributed Computing;Cloud Computing;MapReduce;Hadoop;Asynchronous processing},
+ month = {Dec},
+ number = {},
+ pages = {397-405},
+ title = {Enhancing MapReduce via Asynchronous Data Processing},
+ volume = {},
+ year = {2010}
+}

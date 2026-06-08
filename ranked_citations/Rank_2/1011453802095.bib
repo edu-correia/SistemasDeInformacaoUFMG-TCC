@@ -1,0 +1,18 @@
+@article{10.1145/3802095,
+ abstract = {Large Language Models (LLMs) vary significantly in metrics such as accuracy, latency, and cost, making it challenging for users and applications to decide which model to invoke for each query. This paper presents OctoSelector, a framework for LLM selection that satisfies user-defined objectives and constraints across multiple metrics. In the pre-processing phase, OctoSelector learns difficulty-aware representations of queries based on both input and output complexity, clustering them into similar difficulty groups to enable efficient performance estimation across multiple LLMs. During inference, OctoSelector supports LLM selection for batched workload, formulating it as an Integer Linear Programming (ILP) problem that optimizes a user-defined objective (e.g., minimizing cost or latency, or maximizing accuracy) while enforcing constraints on other metrics. We evaluate OctoSelector on two types of tasks: NL2SQL using the Spider and BIRD benchmarks, and sentiment analysis using the IMDb benchmark. When optimizing for cost under accuracy and latency constraints, OctoSelector achieves up to a 67.7% cost reduction on NL2SQL tasks for batched workloads compared to state-of-the-art approaches.},
+ address = {New York, NY, USA},
+ articleno = {218},
+ author = {Zhang, Guangxue and Lin, Yiming and Mehrotra, Sharad},
+ doi = {10.1145/3802095},
+ issue_date = {June 2026},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {large language models, text-to-sql, model selection},
+ month = {May},
+ number = {3},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {OctoSelector: Efficient and Effective Batch-Aware Model Selection for Large Language Models},
+ url = {https://doi.org/10.1145/3802095},
+ volume = {4},
+ year = {2026}
+}

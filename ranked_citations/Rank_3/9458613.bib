@@ -1,0 +1,14 @@
+@inproceedings{9458613,
+ abstract = {Many applications require update-intensive work-loads on spatial objects, e.g., social-network services and shared-riding services that track moving objects (devices). By buffering insert and delete operations in memory, the Log Structured Merge Tree (LSM) has been used widely in various systems because of its ability to handle insert-intensive workloads. While the focus on LSM has been on key-value stores and their optimizations, there is a need to study how to efficiently support LSM-based secondary indexes. We investigate the augmentation of a main-memory-based memo structure into an LSM secondary index structure to handle update-intensive workloads efficiently. We conduct this study in the context of an R-tree-based secondary index. In particular, we introduce the LSM RUM-tree that demonstrates the use of an Update Memo in an LSM-based R-tree to enhance the performance of the R-tree’s insert, delete, update, and search operations. The LSM RUM-tree introduces novel strategies to reduce the size of the Update Memo to be a light-weight in-memory structure that is suitable for handling update-intensive workloads without introducing significant over-head. Experimental results using real spatial data demonstrate that the LSM RUM-tree achieves up to 9.6x speedup on update operations and up to 2400x speedup on query processing over the existing LSM R-tree implementations.},
+ author = {Shin, Jaewoo and Wang, Jianguo and Aref, Walid G.},
+ booktitle = {2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE51399.2021.00238},
+ issn = {2375-026X},
+ keyword = {Social networking (online);Query processing;Conferences;Data engineering;Spatial databases;Cleaning;Indexes;LSM Tree;LSM R tree;LSM RUM tree;Update Memo;Update intensive},
+ month = {April},
+ number = {},
+ pages = {2285-2290},
+ title = {The LSM RUM-Tree: A Log Structured Merge R-Tree for Update-intensive Spatial Workloads},
+ volume = {},
+ year = {2021}
+}

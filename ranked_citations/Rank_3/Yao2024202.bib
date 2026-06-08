@@ -1,0 +1,15 @@
+@article{Yao2024202,
+ abstract = {As a write-optimized data structure, the Log-Structured Merge-tree (LSM-tree) based storage engine, which maintains data in a leveled structure on disk, is widely used in Key-Value (KV) storage systems. Meanwhile, the leveled design also makes it suffer from heavy read amplification since one query may incur multiple file search operations across several levels. To reduce I/O overhead, Bloom filters are adopted to accelerate the query process. Nevertheless, caching Bloom filters in memory incurs substantial memory overhead, and they need to be rebuilt during compaction. In this paper, we analyze the factors causing read amplification in LSM-trees and the challenges for the designing of Bloom filters. Based on our observation and analysis, we propose MDCF, an innovative solution that replaces Bloom filters with Multiple Dynamic Cuckoo Filters (MDCF) and implements it on LevelDB. The basic idea of MDCF is to construct a DCF for each level of the LSM-tree, except for the lowest level. KV pairs in level L<sub>0</sub> are mapped to a combination of a fingerprint and an SSTable identifier in DCF<sub>0</sub>, while KV pairs in other levels are mapped to a fingerprint in the corresponding DCF. We demonstrate that this design not only significantly reduces read amplification by directly locating the target SSTable for each read request, but also consumes much less memory space. Experimental results based on YCSB demonstrate that MDCF outperforms LevelDB by 20–89% in read throughput without sacrificing write latency. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2024.},
+ author = {Yao, Xingfei and Xie, Taotao and Chen, Xiaowei and Shen, Zhaoyan and Cai, Xiaojun},
+ doi = {10.1007/978-981-97-0811-6_12},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 0},
+ pages = {202 - 218},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MDCF: Multiple Dynamic Cuckoo Filters for LSM-Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85187545738?origin=resultslist},
+ volume = {14492 LNCS},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@conference{Prabhakar2013357,
+ abstract = {Modern large computing systems employ sophisticated disk I/O systems that are configured to deliver high throughput, low-latency disk I/O to multiple clients accessing them. However, due to potential interferences among concurrent I/O accesses issued by multiple clients, a disk-cache and disk-level parallelism unaware I/O scheduling algorithm employed by the operating system/storage controller may have a significant impact on both system throughput and I/O latency. In this paper, we propose two fundamentally new disk I/O scheduling techniques. The first technique, called DCAP, performs I/O scheduling in a disk cache aware and parallelism aware manner. The key idea in DCAP is to process simultaneous requests to different disks from the same application/priority class together and reorder them so that they have the highest number of hits in the disk cache. We then propose an enhanced version of DCAP called DCAP-G, that aggregates requests into service groups to alleviate the problem of request starvation that may occur in DCAP in certain cases. We evaluate both DCAP and DCAP-G using a set of I/O workloads from production-based enterprise systems as well as high-performance computing domain. In addition, we also compare the performance of our algorithms to previously proposed I/O scheduling algorithms. Our evaluation shows that, averaged across all our workloads, DCAP improves the average I/O response time, taking maximum advantage of disk access locality and exploiting parallelism among concurrent accesses to multiple disks, by 14.9% over an I/O scheduler that schedules requests on a first-come-first-served (FCFS) basis and also improves by 6.5% over a previously proposed locality-optimal I/O scheduler (SPCTF). In addition to these improvements, DCAP-G improves the average I/O response time by 6.6% over DCAP, leading to an overall 20.7% and 12.0% improvement over FCFS, and SPCTF, respectively. © 2013 IEEE.},
+ author = {Prabhakar, Ramya and Kandemir, Mahmut and Jung, Myoungsoo},
+ doi = {10.1109/IPDPS.2013.59},
+ journal = {Proceedings - IEEE 27th International Parallel and Distributed Processing Symposium, IPDPS 2013},
+ note = {Cited by: 5},
+ pages = {357 - 368},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Disk-cache and parallelism aware I/O scheduling to improve storage system performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84884844582?origin=resultslist},
+ year = {2013}
+}

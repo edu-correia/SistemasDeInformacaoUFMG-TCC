@@ -1,0 +1,16 @@
+@article{Cao2022,
+ abstract = {Active storage devices and in-storage computing are proposed and developed in recent years to effectively reduce the amount of required data traffic and to improve the overall application performance. They are especially preferred in the compute-storage disaggregated infrastructure. In both techniques, a simple computing module is added to storage devices/servers such that some stored data can be processed in the storage devices/servers before being transmitted to application servers. This can reduce the required network bandwidth and offload certain computing requirements from application servers to storage devices/servers. However, several challenges exist when designing an in-storage computing-based architecture for applications. These include what computing functions need to be offloaded, how to design the protocol between in-storage modules and application servers, and how to deal with the caching issue in application servers.HBase is an important and widely used distributed Key-Value Store. It stores and indexes key-value pairs in large files in a storage system like HDFS. However, its performance especially read performance, is impacted by the heavy traffics between HBase RegionServers and storage servers in the compute-storage disaggregated infrastructure when the available network bandwidth is limited. We propose an In-Storage-based HBase architecture, called IS-HBase, to improve the overall performance and to address the aforementioned challenges. First, IS-HBase executes a data pre-processing module (In-Storage ScanNer, called ISSN) for some read queries and returns the requested key-value pairs to RegionServers instead of returning data blocks in HFile. IS-HBase carries out compactions in storage servers to reduce the large amount of data being transmitted through the network and thus the compaction execution time is effectively reduced. Second, a set of new protocols is proposed to address the communication and coordination between HBase RegionServers at computing nodes and ISSNs at storage nodes. Third, a new self-adaptive caching scheme is proposed to better serve the read queries with fewer I/O operations and less network traffic. According to our experiments, the IS-HBase can reduce up to 97% network traffic for read queries and the throughput (queries per second) is significantly less affected by the fluctuation of available network bandwidth. The execution time of compaction in IS-HBase is only about 6.31%-41.84% of the execution time of legacy HBase. In general, IS-HBase demonstrates the potential of adopting in-storage computing for other data-intensive distributed applications to significantly improve performance in compute-storage disaggregated infrastructure.  © 2022 Association for Computing Machinery.},
+ author = {Cao, Zhichao and Dong, Huibing and Wei, Yixun and Liu, Shiyong and Du, David H. C.},
+ doi = {10.1145/3488368},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 17},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {IS-HBase: An In-Storage Computing Optimized HBase with I/O Offloading and Self-Adaptive Caching in Compute-Storage Disaggregated Infrastructure},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85130259225?origin=resultslist},
+ volume = {18},
+ year = {2022}
+}

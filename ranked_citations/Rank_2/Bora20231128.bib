@@ -1,0 +1,16 @@
+@article{Bora20231128,
+ abstract = {Models of parallel processing systems typically assume that one has ll workers and jobs are split into an equal number of k=lk=l tasks. Splitting jobs into k > lk>l smaller tasks, i.e. using 'tiny tasks', can yield performance and stability improvements because it reduces the variance in the amount of work assigned to each worker, but as kk increases, the overhead involved in scheduling and managing the tasks begins to overtake the performance benefit. We perform extensive experiments on the effects of task granularity on an Apache Spark cluster, and based on these, develop a four-parameter model for task and job overhead that, in simulation, produces sojourn time distributions that match those of the real system. We also present analytical results which illustrate how using tiny tasks improves the stability region of split-merge systems, and analytical bounds on the sojourn and waiting time distributions of both split-merge and single-queue fork-join systems with tiny tasks. Finally we combine the overhead model with the analytical models to produce an analytical approximation to the sojourn and waiting time distributions of systems with tiny tasks which include overhead. We also perform analogous tiny-tasks experiments on a hybrid multi-processor shared memory system based on MPI and OpenMP which has no load-balancing between nodes. Though no longer strict analytical bounds, our analytical approximations with overhead match both the Spark and MPI/OpenMP experimental results very well.  © 2022 IEEE.},
+ author = {Bora, Stefan and Walker, Brenton and Fidler, Markus},
+ doi = {10.1109/TPDS.2022.3233712},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 7; All Open Access; Hybrid Gold Open Access},
+ number = {4},
+ pages = {1128 - 1144},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {The Tiny-Tasks Granularity Trade-Off: Balancing Overhead Versus Performance in Parallel Systems},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85147217340?origin=resultslist},
+ volume = {34},
+ year = {2023}
+}

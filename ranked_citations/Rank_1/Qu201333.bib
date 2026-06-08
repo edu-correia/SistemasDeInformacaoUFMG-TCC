@@ -1,0 +1,14 @@
+@conference{Qu201333,
+ abstract = {Packet classification matches a packet header against the predefined rules in a rule set; it is a kernel function that has been studied for decades. A recent trend in packet classification is to match a large number of packet header fields. For example, the flow table lookup in Software Defined Networking (SDN) requires 15 fields of the packet header to be examined. Another trend in packet classification is to use software-based solutions employing multi-core general purpose processors and virtual machines. Although packet classification has been widely studied, most existing solutions on multi-core systems target the classic 5-field packet classification; their performance cannot be easily scaled up for a larger number of packet header fields. In this paper, we propose a decomposition-based packet classification approach; it supports large rule sets consisting of a large number of packet header fields. We first use range-tree and hashing to search each field of the input packet header individually in parallel. The partial results from all the fields are represented by bit vectors; they are merged in parallel to produce the final packet header match. We also balance the search and merge latencies, and employ software pipelining to further enhance the overall performance. We implement our approach on state-of-the-art multi-core processors; we evaluate its performance with respect to throughput and latency for rule set size ranging from 1K to 32K. Experimental results show that, for a 32K rule set, our algorithms can achieve an average processing latency of 2000 ns per packet and an overall throughput of 30 million packets per second on a state-of-the-art 16-core platform. © 2013 IEEE.},
+ author = {Qu, Yun R. and Zhou, Shijie and Prasanna, Viktor K.},
+ doi = {10.1109/SBAC-PAD.2013.29},
+ journal = {Proceedings - Symposium on Computer Architecture and High Performance Computing},
+ note = {Cited by: 27},
+ pages = {33 - 40},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scalable many-field packet classification on multi-core processors},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84893596936?origin=resultslist},
+ year = {2013}
+}

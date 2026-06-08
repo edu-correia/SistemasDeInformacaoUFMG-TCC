@@ -1,0 +1,14 @@
+@inproceedings{9774682,
+ abstract = {Power estimation is the basis of many hardware optimization strategies. However, it is still challenging to offer accurate power estimation at an early stage such as high-level synthesis (HLS). In this paper, we propose PowerGear, a graph-learning-assisted power estimation approach for FPGA HLS, which features high accuracy, efficiency and transferability. PowerGear comprises two main components: a graph construction flow and a customized graph neural network (GNN) model. Specifically, in the graph construction flow, we introduce buffer insertion, datapath merging, graph trimming and feature annotation techniques to transform HLS designs into graph-structured data, which encode both intra-operation micro-architectures and inter-operation interconnects annotated with switching activities. Furthermore, we propose a novel power-aware heterogeneous edge-centric GNN model which effectively learns heterogeneous edge semantics and structural properties of the constructed graphs via edge-centric neighborhood aggregation, and fits the formulation of dynamic power. Compared with on-board measurement, PowerGear estimates total and dynamic power for new HLS designs with errors of 3.60% and 8.81%, respectively, which outperforms the prior arts in research and the commercial product Vivado. In addition, PowerGear demonstrates a speedup of 4× over Vivado power estimator. Finally, we present a case study in which PowerGear is exploited to facilitate design space exploration for FPGA HLS, leading to a performance gain of up to 11.2%, compared with methods using state-of-the-art predictive models.},
+ author = {Lin, Zhe and Yuan, Zike and Zhao, Jieru and Zhang, Wei and Wang, Hui and Tian, Yonghong},
+ booktitle = {2022 Design, Automation & Test in Europe Conference & Exhibition (DATE)},
+ doi = {10.23919/DATE54114.2022.9774682},
+ issn = {1558-1101},
+ keyword = {Power measurement;Semantics;Estimation;Switches;Transforms;Predictive models;Performance gain;High-level synthesis;graph neural network;power estimation},
+ month = {March},
+ number = {},
+ pages = {1341-1346},
+ title = {PowerGear: Early-Stage Power Estimation in FPGA HLS via Heterogeneous Edge-Centric GNNs},
+ volume = {},
+ year = {2022}
+}

@@ -1,0 +1,15 @@
+@article{Liu2024507,
+ abstract = {In this paper, we propose a high-performance Mixed Index based key-value store named HTStore to improve the write and read performance in update-intensive workloads of LSM-tree based key-value stores. The key idea of HTStore is to build a global index, called Mixed Index, in the DRAM and NVM hybrid storage, which saves keys and their latest positions. HTStore judges the key’s version participating in flush or compaction is the latest by accessing the Mixed Index. If the key-value pair is expired redundant old version data, HTStore filters it away, which helps reduce the flush and compaction overhead caused by such expired redundant data, leading to improved write throughput. Additionally, the Mixed Index helps quickly locate the level of the key, avoiding layer-by-layer search. The Mixed Index comprises a HashTable in DRAM and a Trie-tree in NVM. We implemented HTStore on RocksDB and compared it with the original RocksDB. Our performance evaluation showed that write throughput increased by up to 73–105% in update-intensive workloads and read throughput by up to 80%. Compared with MatrixKV and PebblesDB, HTStore also demonstrated specific performance improvements. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2024.},
+ author = {Liu, Jinzhou and Yue, Yinliang and Zhou, Jiang and Fan, Zhixin and Yao, Zekun},
+ doi = {10.1007/978-981-97-2387-4_34},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 0},
+ pages = {507 - 521},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HTStore: A High-Performance Mixed Index Based Key-Value Store for Update-Intensive Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85192791322?origin=resultslist},
+ volume = {14333 LNCS},
+ year = {2024}
+}

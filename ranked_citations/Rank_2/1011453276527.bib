@@ -1,0 +1,18 @@
+@article{10.1145/3276527,
+ abstract = {The ability to reason about relational queries plays an important role across many types of database applications, such as test data generation, query equivalence checking, and computer-assisted query authoring. Unfortunately, symbolic reasoning about relational queries can be challenging because relational tables are multisets (bags) of tuples, and the underlying languages, such as SQL, can introduce complex computation among tuples. We propose a space refinement algorithm that soundly reduces the space of tables such applications need to consider. The refinement procedure, independent of the specific dataset application, uses the abstract semantics of the query language to exploit the provenance of tuples in the query output to prune the search space. We implemented the refinement algorithm and evaluated it on SQL using three reasoning tasks: bounded query equivalence checking, test generation for applications that manipulate relational data, and concolic testing of database applications. Using real world benchmarks, we show that our refinement algorithm significantly speeds up (up to 100\texttimes{}) the SQL solver when reasoning about a large class of challenging SQL queries, such as those with aggregations.},
+ address = {New York, NY, USA},
+ articleno = {157},
+ author = {Wang, Chenglong and Cheung, Alvin and Bodik, Rastislav},
+ doi = {10.1145/3276527},
+ issue_date = {November 2018},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Relational Query, Symbolic Reasoning, Verification},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {25},
+ publisher = {Association for Computing Machinery},
+ title = {Speeding up symbolic reasoning for relational queries},
+ url = {https://doi.org/10.1145/3276527},
+ volume = {2},
+ year = {2018}
+}

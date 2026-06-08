@@ -1,0 +1,14 @@
+@article{9132670,
+ abstract = {NVMe SSDs provide extremely high performance and have been widely deployed in distributed object storage systems in data centers. However, we observe that there are still severe performance degradation and write amplification under the unaligned writes scenario with high-performance SSDs. In this article, we identify that the RMW sequence which is used to handle the unaligned writes incurs severe overhead in the data path. Besides, unaligned writes incur additional metadata management overhead in the block map table. To address these problems, we propose an object-based device system named NVStore to optimize the unaligned writes in cloud storage with NVMe SSDs. NVStore provides a Flexible Cache Management to reduce the RMW operations while supporting lazy page sync and ensuring data consistency. To optimize the metadata management, NVStore proposes a KV Affinity Metadata Management which co-designs the block map and key-value store to provides a flattened and decoupled metadata management. Evaluations show that NVStore provides at most 6.11× bandwidth of BlueStore in the cluster. Besides, NVStore can reduce at most 94.7 percent of the write traffic from metadata under unaligned writes compared to BlueStore and achieves smaller data write traffic which is about 50 percent of BlueStore and 65.7 percent of FileStore.},
+ author = {Shu, Jiwu and Li, Fei and Li, Siyang and Lu, Youyou},
+ doi = {10.1109/TPDS.2020.3006655},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Metadata;Bandwidth;Indexes;Performance evaluation;Cloud computing;Nonvolatile memory;Optimization;Distributed system;object storage;unaligned writes;solid state drives},
+ month = {Dec},
+ number = {12},
+ pages = {2923-2937},
+ title = {Towards Unaligned Writes Optimization in Cloud Storage With High-Performance SSDs},
+ volume = {31},
+ year = {2020}
+}

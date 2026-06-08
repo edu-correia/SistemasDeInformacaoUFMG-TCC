@@ -1,0 +1,14 @@
+@article{11359465,
+ abstract = {Accurate semantic segmentation of high-resolution remote sensing imagery is essential for applications ranging from urban planning to environmental monitoring. However, this task remains fundamentally challenging due to the complex spatial patterns, extreme scale variations, and fine-grained details inherent in geographical scenes. While attention mechanisms, particularly global and sparse attention, have shown promise in capturing long-range dependencies, existing approaches often suffer from three interconnected limitations: prohibitive computational complexity, misalignment when integrating multiscale representations, and loss of semantic information during the decoder’s upsampling stages. This article introduces AMPUNet, a novel framework designed to overcome these limitations through the construction of a hierarchical, coarse-to-fine attention map pyramid. Our core innovation lies in explicitly propagating and refining attention maps across network layers rather than operating solely on feature maps. Specifically, we design: first, a hybrid sparse attention framework combining a block attention module and a column attention module to model global context efficiently, second, a dimension correspondence module to achieve tensor-level granularity alignment for multiscale attention maps, and third, an attention map merging module with a CAW strategy, which directly transfers high-level semantic information from deep to shallow layers, mitigating information degradation. Extensive experiments on the ISPRS Vaihingen, Potsdam, and LoveDA benchmarks demonstrate that AMPUNet achieves superior performance, with mean intersection of union scores of 75.43% on Vaihingen, 78.03% on Potsdam, and 50.94% on LoveDA, while maintaining competitive inference efficiency. Our findings confirm that structuring attention into a learnable pyramid is a highly effective paradigm for remote sensing semantic segmentation, successfully balancing precise detail preservation with robust global understanding.},
+ author = {Yang, Yang and Ao, Wei and Zheng, Shunyi and Liu, Zhao and Wu, Yunni},
+ doi = {10.1109/JSTARS.2026.3656191},
+ issn = {2151-1535},
+ journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+ keyword = {Remote sensing;Attention mechanisms;Transformers;Semantic segmentation;Semantics;Feature extraction;Computer architecture;Context modeling;Computational efficiency;Accuracy;Attention map pyramid (AMP);global attention mechanism;remote sensing;semantic segmentation;sparse attention mechanism},
+ month = {},
+ number = {},
+ pages = {6328-6340},
+ title = {AMPUNet: Hierarchical Attention Map Pyramid for Semantic Segmentation of Remote Sensing Images},
+ volume = {19},
+ year = {2026}
+}

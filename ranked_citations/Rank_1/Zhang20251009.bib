@@ -1,0 +1,14 @@
+@conference{Zhang20251009,
+ abstract = {Log-structured file system (LFS) has been a popular option for persistent memory (PM) for its high write performance and lightweight crash consistency protocols. However, even with PM’s byte-addressable I/O interface, existing PM LFSes still maintain contiguous space for log locality while using heavy garbage collection (GC) to synchronously reclaim space, causing up to 50% I/O performance degradation on PM. Thus, there exists a last-mile problem between the contiguous space management of LFS (that induces GC) and the non-contiguous byte-addressability of PM. To overcome this, we propose a novel scatter logging technique called SLOT. The core idea is to efficiently manage non-contiguous log entries on byte-addressable PM to prevent GC in LFS. Specifically, SLOT scatters log entries across PM and manages them in a per-entry granularity, thereby enabling the immediate reallocation of invalidated entries and eliminating GC overheads. SLOT further introduces an array of techniques to exploit PM write buffer efficiency to fully unleash PM I/O performance potential. We implement SlotFS to realize the efficiency of SLOT. Experimental results driven by synthetic and real-world workloads show that SlotFS significantly outperforms state-of-the-art PM file systems. Compared to two representative PM LFSes, NOVA and MadFS, SlotFS achieves 27%-47% and 59%-175% performance improvement under a series of real-world workloads. © 2025 Copyright held by the owner/author(s).},
+ author = {Zhang, Yifeng and Pan, Yanqi and Huang, Hao and Shan, Yuchen and Xia, Wen},
+ doi = {10.1145/3689031.3717488},
+ journal = {EuroSys 2025 - Proceedings of the 2025 20th European Conference on Computer Systems},
+ note = {Cited by: 2},
+ pages = {1009 - 1025},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Overcoming the Last Mile between Log-Structured File Systems and Persistent Memory via Scatter Logging},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105002215549?origin=resultslist},
+ year = {2025}
+}

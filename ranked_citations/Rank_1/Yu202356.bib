@@ -1,0 +1,14 @@
+@conference{Yu202356,
+ abstract = {Graph neural networks are frameworks for deep learning on graph-structured data. When updating node information, graph neural networks need to aggregate information from peripheral node, which can be represented mathematically as a sparse matrix multiplied by a dense matrix. Because many calculations in graph neural networks are based on SpMM-like operations, accelerating SpMM is significant for overall acceleration of graph neural network training. However, due to the highly irregular memory access caused by the sparse matrix, the data locality of this computing kernel is poor. To address this issue, we have designed a method to accelerate SpMM on GPU. Our method adopts two sparse matrix storage formats and two task partitioning methods for different types of sparse matrices. Because the sparse matrix storage format is commonly used, no additional data conversion is required. The row splitting method is based on the CSR format, while the non-zero splitting method is based on the COO format. The threshold for the non-zero splitting method is set according to the average number of non-zero entries per row of the sparse matrix, and the optimal calculation kernel is selected for different sparse matrices. Experimental evaluation using real-world graphs from the SuiteSparse collection shows that our technique achieves an average speedup of 1.43x (up to 2.26x) for SpMM over the vendor-optimized library cuSPARSE[1] by NVIDIA on an NVIDIA V100 GPU. © 2023 ACM.},
+ author = {Yu, Hang and Bian, Haodong and Huang, Jianqiang},
+ doi = {10.1145/3606043.3606051},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 0},
+ pages = {56 - 61},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient SpMM with Kernel Switching on GPUs for Graph Neural Networks},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85180150486?origin=resultslist},
+ year = {2023}
+}

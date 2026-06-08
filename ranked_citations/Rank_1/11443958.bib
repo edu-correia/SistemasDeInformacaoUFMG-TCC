@@ -1,0 +1,14 @@
+@inproceedings{11443958,
+ abstract = {Large vision-and-language models (LVLMs) have traditionally integrated visual and textual tokens by concatenating them into a single homogeneous input for large language models (LLMs), thereby maximally preserving the pre-trained language capabilities. However, this constrained architecture for visual and textual tokens restricts the design space for processing visual tokens, potentially leading to suboptimal performance and efficiency. In this paper, we propose Decomposed Attention (D-Attn), a more flexible attention architecture for LVLMs, which enables modification of visual token operations without affecting textual-to-textual attention. D-Attn decomposes the 1-D causal self-attention of LVLMs into visual-to-visual, textual-to-visual, and textual-to-textual attentions, and the visual and textual output tokens from the decomposed attentions are merged with a carefully derived weighting strategy, namely $\alpha$-weighting. Taking advantage of the flexibility, we are able to introduce two critical improvements in visual token processing while maintaining the capacity of pre-trained LLMs: 1) We rectify the biased positional encoding in textual-to-visual attention to boost visual understanding performance. 2) We diagonalize visual-to-visual attention to reduce computation complexity from $\mathcal{O}\left(\vert V\vert^{2}\right)$ to $\mathcal{O}(\vert V\vert)$ for $\vert V\vert$ visual tokens without compromising performance. Extensive experiments and analysis validate the effectiveness of D-Attn, demonstrating significant improvements on multiple image benchmarks while significantly reducing computational costs (e.g., $5 \times$ faster). Code will be available at https://github.com/bytedance/DecomposedAttention.},
+ author = {Kuo, Chia-Wen and Zhu, Sijie and Chen, Fan and Shen, Xiaohui and Wen, Longyin},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02219},
+ issn = {2380-7504},
+ keyword = {Feeds;Feedback;Filtering;Circuits;Filters;Text to video;Vehicular ad hoc networks;Videos;Protocols;Ad hoc networks},
+ month = {Oct},
+ number = {},
+ pages = {23935-23944},
+ title = {$\mathcal{D}$-Attn: Decomposed Attention for Large Vision-and-Language Models},
+ volume = {},
+ year = {2025}
+}

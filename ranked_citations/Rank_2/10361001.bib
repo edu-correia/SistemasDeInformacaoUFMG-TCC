@@ -1,0 +1,14 @@
+@inproceedings{10361001,
+ abstract = {Hashing is a widely used and efficient indexing mechanism for key-value storage. Persistent memory (PM) has attracted extensive attention in research due to its non-volatility and DRAM-like performance. Intel DCPMM, as a PM, can provide large capacity and low total cost of ownership, further promoting the research of PM-based hash index. However, based on real-world workloads, we found that negative searches of existing PM-based hash indexes significantly degrade system performance. A direct method to solve this problem is to use a PM-based Bloom filter to reduce negative searches, but at the cost of the decreased lifespan of PM due to extra PM writes. An alternative method is to use a DRAM-based Bloom filter, but it still faces increased multi-threaded insertion/deletion/positive-search scalability overhead as well as increased data consistency and recovery overhead.In this paper, we propose SmartHT, a small-size DRAM-based Bloom filter to accelerate hash table operations for PM while solving the aforementioned problems. SmartHT uses efficient merge write optimization with head insertion, lazy deletion, and shortened average chained length of head-bucket to provide high insertion/deletion/positive-search scalability, respectively. On the other hand, it utilizes a merged-flush mechanism based on an 8-byte failure-atomic write method to reduce flush instructions and extra PM writes to achieve low data consistency overhead. Experimental results on Intel Optane DCPMM show that, compared with the state-of-the-art persistent hash indexes, SmartHT improves multi-threaded negative queries under uniform and skewed distributions by 4.61x-13.86x and 2.76x-12.99x respectively, achieves high multi-threaded scalability and low data consistency overhead, at the modest cost of recovery time overhead.},
+ author = {Xiao, Renzhi and Jiang, Hong and Feng, Dan and Hu, Yuchong and Tong, Wei and Liu, Kang and Zhang, Yucheng and Wei, Xueliang and Li, Zhengtao},
+ booktitle = {2023 IEEE 41st International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD58817.2023.00035},
+ issn = {2576-6996},
+ keyword = {Costs;Scalability;System performance;Search problems;Optimization;Faces;Indexing;persistent memory;PM-based hash index;negative research;multi-threaded scalability},
+ month = {Nov},
+ number = {},
+ pages = {174-181},
+ title = {Accelerating Persistent Hash Indexes via Reducing Negative Searches},
+ volume = {},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11443644,
+ abstract = {Detection transformers have been applied to humanobject interaction (HOI) detection, enhancing the localization and recognition of human-action-object triplets in images. Despite remarkable progress, this study identifies a critical issue—“Toxic Siblings” bias—which hinders the interaction decoder's learning, as numerous similar yet distinct HOI triplets interfere with and even compete against each other both input side and output side to the interaction decoder. This bias arises from high confusion among sibling triplets/categories, where increased similarity paradoxically reduces precision, as one's gain comes at the expense of its toxic sibling's decline. To address this, we propose two novel debiasing learning objectives—“contrastive-thencalibration” and “merge-then-split”—targeting the input and output perspectives, respectively. The former samples sibling-like incorrect HOI triplets and reconstructs them into correct ones, guided by strong positional priors. The latter first learns shared features among sibling categories to distinguish them from other groups, then explicitly refines intra-group differentiation to preserve uniqueness. Experiments show that we significantly outperform both the baseline ($+9.18 \%$ mAP on HICO-Det) and the state-of-the-art (+3.59% mAP) across various settings.},
+ author = {Yang, Bin and Zhang, Yulin and Zhou, Hong-Yu and Yang, Sibei},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02108},
+ issn = {2380-7504},
+ keyword = {Feeds;Filtering;Contacts;Filters;Circuits and systems;Videos;Protocols;Communication systems;Text to video;Wide area networks;hoi;hico-det;v-coco;human-object interaction;class-imbalance learning},
+ month = {Oct},
+ number = {},
+ pages = {22707-22717},
+ title = {No More Sibling Rivalry: Debiasing Human-Object Interaction Detection},
+ volume = {},
+ year = {2025}
+}

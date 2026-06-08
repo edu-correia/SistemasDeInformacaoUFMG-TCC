@@ -1,0 +1,16 @@
+@article{McCarthy20111773,
+ abstract = {This paper explores efficient ways to use flash memory to store online analytical processing (OLAP) data. The particular type of queries considered are range queries using the aggregate functions SUM, COUNT and AVG. The asymmetric cost of reads and writes for flash memory gives higher importance to how updates are handled in a flash memory environment. A popular data structure used for answering OLAP range-sum queries is the prefix sum cube. It allows the range-sum query to be answered in constant time. However, updating the prefix sum cube is very expensive. To overcome this, the Δ-tree was proposed by Chun et al. (Dynamic update cube for range-sum queries. Proc. Int. Conf. Very Large Data Bases, San Francisco, CA, USA, 2001, pp. 521-530. Morgan Kaufmann Publisher). The Δ-tree stores all updates to the prefix sum cube in a separate r-tree. This approach worked well for the hard disk where in-place updates are relatively cheap. However, for flash memory where in-place updates are very expensive, the Δ-tree performs very poorly. We take a four-pronged approach to overcome the problem of expensive in-place updates. The first is efficient caching of updates in RAM. The second is writing out whole trees from RAM to flash memory instead of incrementally updating a disk resident tree. The third is we allow users to trade bounded amounts of accuracy for less updates via lossy compression. Finally, we use a quadtree index structure instead of the R-tree. We prove that the quadtree compression problem is NP-complete. A greedy heuristic is proposed to find near optimal solutions in polynomial time. Various experiments were conducted to compare the proposed algorithms against the existing Δ-tree. The results show that our algorithms consistently outperformed Δ-tree by factors of between 10 and 100. This demonstrates the importance of designing flash memory customized algorithms for OLAP range queries. In addition, among our algorithms, the error bound solutions with a small error bound setting significantly outperform the accurate solution in terms of performance for a variety of parameter settings. This indicates that the error bound algorithms offer users an effective trade-off between execution time and accuracy. © The Author 2011. Published by Oxford University Press on behalf of The British Computer Society. All rights reserved.},
+ author = {McCarthy, Mitzi and He, Zhen},
+ doi = {10.1093/comjnl/bxr004},
+ journal = {Computer Journal},
+ note = {Cited by: 3; All Open Access; Bronze Open Access},
+ number = {11},
+ pages = {1773 - 1789},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient updates for OLAP range queries on flash memory},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/80455149993?origin=resultslist},
+ volume = {54},
+ year = {2011}
+}

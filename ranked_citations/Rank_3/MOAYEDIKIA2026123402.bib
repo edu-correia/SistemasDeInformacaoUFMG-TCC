@@ -1,0 +1,13 @@
+@article{MOAYEDIKIA2026123402,
+ abstract = {Training large neural networks and merging task-specific models both exploit low-rank structure and require parameter importance estimation, yet these challenges have been pursued in isolation. Current workflows compute curvature information during training, discard it, then recompute similar information for merging—wasting computation and discarding valuable trajectory data. We introduce a unified framework that maintains factorized momentum and curvature statistics during training, then reuses this information for geometry-aware model composition. The proposed method incurs modest memory overhead (approximately 30% over AdamW) to accumulate task saliency scores that enable curvature-aware merging. These scores, computed as a byproduct of optimization, provide importance estimates comparable to post-hoc Fisher computation while producing merge-ready models directly from training. We establish convergence guarantees for non-convex objectives with approximation error bounded by gradient singular value decay. On natural language understanding benchmarks, curvature-aware parameter selection outperforms magnitude-only baselines across all sparsity levels, with multi-task merging improving 1.6% over strong baselines. The proposed framework exhibits rank-invariant convergence and superior hyperparameter robustness compared to existing low-rank optimizers. By treating the optimization trajectory as a reusable asset rather than discarding it, our approach demonstrates that training-time curvature information suffices for effective model composition, enabling a unified training-merging pipeline.},
+ author = {Alireza Moayedikia and Alicia Troncoso},
+ doi = {https://doi.org/10.1016/j.ins.2026.123402},
+ issn = {0020-0255},
+ journal = {Information Sciences},
+ keyword = {Memory-efficient optimization, Model merging, Low-rank momentum factorization, Curvature-aware aggregation, Multi-task learning},
+ pages = {123402},
+ title = {Bridging training and merging through momentum-aware optimization},
+ url = {https://www.sciencedirect.com/science/article/pii/S0020025526003336},
+ volume = {745},
+ year = {2026}
+}

@@ -1,0 +1,16 @@
+@article{Lu2019,
+ abstract = {Synchronous I/O has long been a design challenge in file systems. Although open-channel solid state drives (SSDs) provide better performance and endurance to file systems, they still suffer from synchronous I/Os due to the amplified writes and worse hot/cold data grouping. The reason lies in the controversy design choices between flash write and read/erase operations. While fine-grained logging improves performance and endurance in writes, it hurts indexing and data grouping efficiency in read and erase operations. In this article, we propose a flash-friendly data layout by introducing a built-in persistent staging layer to provide balanced read, write, and garbage collection performance. Based on this, we design a new flash file system (FS) named StageFS, which decouples the content and structure updates. Content updates are logically logged to the staging layer in a persistence-efficient way, which achieves better write performance and lower write amplification. The updated contents are reorganized into the normal data area for structure updates, with improved hot/cold grouping and in a page-level indexing way, which is more friendly to read and garbage collection operations. Evaluation results show that, compared to recent flash-friendly file system (F2FS), StageFS effectively improves performance by up to 211.4% and achieves low garbage collection overhead for workloads with frequent synchronization. © 2019 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Lu, Youyou and Shu, Jiwu and Zhang, Jiacheng},
+ doi = {10.1145/3319369},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 15},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Mitigating synchronous I/O overhead in file systems on open-channel SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85068462134?origin=resultslist},
+ volume = {15},
+ year = {2019}
+}

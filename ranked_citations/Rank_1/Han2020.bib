@@ -1,0 +1,13 @@
+@conference{Han2020,
+ abstract = {Conventional persistent key-value stores widely adopt LSM-Tree to manage data across memory and disk. However, expensive write ahead logging, inefficient cross-media indexing and write amplification are three limitations faced by LSM-Tree based key-value store. Thanks to the development of non-volatile memory (NVM), persistent key-value stores can exploit NVM-based persistent memory (PM) to directly persist data avoiding costly logging. With this design choice, we propose LightKV a cross media key-value store with persistent memory. To support efficient cross-media indexing, we design a global index Radix-Hash Tree (RH-Tree) consisting of the upper-layer radix tree and hash table based leaf nodes. We explore the specific features of real PM product to balance the persistency and performance of RH-Tree. Meanwhile, replying on the range partition of RH-Tree, LightKV organizes key-value pairs with the same key prefix into SSTables within the same partition. LightKV then conducts partition-based data compaction with carefully-controlled compacted data volumes. By doing so, LightKV greatly reduces write amplification. We evaluate LightKV against state-of-the-art PM-based key-value stores NoveLSM and SLM-DB as well as LevelDB and RocksDB. The experiment results show that LightKV reduces write amplification by up to 8.1x and improves read performance by up to 9.2x. Due to the reduced write amplification, LightKV also reduces read tail latency by up to 18.8x under read-write mixed workload. © 2020 36th International Conference on Massive Storage Systems and Technology, MSST 2020. All Rights Reserved.},
+ author = {Han, Shukai and Jiang, Dejun and Xiong, Jin},
+ journal = {36th International Conference on Massive Storage Systems and Technology, MSST 2020},
+ note = {Cited by: 13},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LightKV: A Cross Media Key Value Store with Persistent Memory to Cut Long Tail Latency},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85153692211?origin=resultslist},
+ year = {2020}
+}

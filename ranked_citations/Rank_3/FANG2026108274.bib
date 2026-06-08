@@ -1,0 +1,13 @@
+@article{FANG2026108274,
+ abstract = {Mixture-of-Experts (MoE) models have emerged as a powerful approach for scaling large language models (LLMs) by activating only a subset of specialized experts. Recently, there has been growing interest in deploying LLMs on low-resource devices, such as single-GPU systems with low memory, to enable real-time and personalized applications without relying on large-scale cloud infrastructure. However, increasing the number of activated experts, while beneficial for performance, leads to substantial memory consumption and inference overhead, which severely limits deployment in such constrained environments. By analyzing expert utilization in MoE models, we observe that many experts remain underutilized, resulting in inefficient resource allocation. Motivated by this observation, we propose ExpertFuse, a progressive fusion framework that employs a Huffman tree-based strategy to merge experts based on their utilization frequency while preserving their individual contributions. Through this merging process, we reduce the MoE model to a single expert, significantly reducing memory consumption and inference cost. We evaluate ExpertFuse on the Switch Transformers as well as large-scale, general-purpose MoE models such as Mixtral 8x7B and DeepSeekMoE. Our experiments demonstrate that ExpertFuse effectively maintains strong performance across diverse tasks, including GLUE, SuperGLUE, MMLU, and various reasoning benchmarks, while greatly improving efficiency and enabling deployment on low-resource devices.},
+ author = {Yizeng Fang and Juinndar Huang},
+ doi = {https://doi.org/10.1016/j.neunet.2025.108274},
+ issn = {0893-6080},
+ journal = {Neural Networks},
+ keyword = {Mixture-of-Experts (MoE), Expert fusion, Model compression, Inference efficiency},
+ pages = {108274},
+ title = {Expertfuse: A huffman tree-based gradual expert integration framework for MoE models},
+ url = {https://www.sciencedirect.com/science/article/pii/S0893608025011554},
+ volume = {195},
+ year = {2026}
+}

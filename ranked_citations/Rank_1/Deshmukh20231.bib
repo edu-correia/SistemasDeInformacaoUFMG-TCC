@@ -1,0 +1,14 @@
+@conference{Deshmukh20231,
+ abstract = {Structured dense matrices result from boundary integral problems in electrostatics and geostatistics, and also Schur complements in sparse preconditioners such as multi-frontal methods. Exploiting the structure of such matrices can reduce the time for dense direct factorization from O(N<sup>3</sup>) to O(N). The Hierarchically Semi-Separable (HSS) matrix is one such low rank matrix format that can be factorized using a Cholesky-like algorithm called ULV factorization. The HSS-ULV algorithm is highly parallel because it removes the dependency on trailing sub-matrices at each HSS level. However, a key merge step that links two successive HSS levels remains a challenge for efficient parallelization. In this paper, we use an asynchronous runtime system PaRSEC with the HSS-ULV algorithm. We compare our work with STRUMPACK and LORAPO, both state-of-the-art implementations of dense direct low rank factorization, and achieve up to 2x better factorization time for matrices arising from a diverse set of applications on up to 128 nodes of Fugaku for similar or better accuracy for all the problems that we survey. © 2023 Association for Computing Machinery. All rights reserved.},
+ author = {Deshmukh, Sameer and Ma, Qinxiang and Yokota, Rio and Bosilca, George},
+ doi = {10.1145/3605573.3605606},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 1},
+ pages = {1 - 10},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {O(N) distributed direct factorization of structured dense matrices using runtime systems.},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179888374?origin=resultslist},
+ year = {2023}
+}

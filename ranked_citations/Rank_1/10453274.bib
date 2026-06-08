@@ -1,0 +1,14 @@
+@article{10453274,
+ abstract = {In 2022, the National Institute of Standards and Technology (NIST) made an announcement regarding the standardization of Post-Quantum Cryptography (PQC) candidates. Out of all the Key Encapsulation Mechanism (KEM) schemes, the CRYSTAL-Kyber emerged as the sole winner. This paper presents another improved version of Plantard arithmetic that could speed up Kyber implementations on two low-end 32-bit IoT platforms (ARM Cortex-M3 and RISC-V) without SIMD extensions. Specifically, we further enlarge the input range of the Plantard arithmetic without modifying its computation steps. After tailoring the Plantard arithmetic for Kyber’s modulus, we show that the input range of the Plantard multiplication by a constant is at least  ${2.14\times }$  larger than the original design in TCHES2022. Then, two optimization techniques for efficient Plantard arithmetic on Cortex-M3 and RISC-V are presented. We show that the Plantard arithmetic supersedes both Montgomery and Barrett arithmetic on low-end 32-bit platforms. With the enlarged input range and the efficient implementation of the Plantard arithmetic on these platforms, we propose various optimization strategies for NTT/INTT. We minimize or entirely eliminate the modular reduction of coefficients in NTT/INTT by taking advantage of the larger input range of the proposed Plantard arithmetic on low-end 32-bit platforms. Furthermore, we propose two memory optimization strategies that reduce 23.50%~28.31% stack usage for the speed-version Kyber implementation when compared to its counterpart on Cortex-M4. The proposed optimizations make the speed-version implementation more feasible on low-end IoT devices. Thanks to the aforementioned optimizations, our NTT/INTT implementation shows considerable speedups compared to the state-of-the-art work. Overall, we demonstrate the applicability of the speed-version Kyber implementation on memory-constrained IoT platforms and set new speed records for Kyber on these platforms.},
+ author = {Huang, Junhao and Zhao, Haosong and Zhang, Jipeng and Dai, Wangchen and Zhou, Lu and Cheung, Ray C. C. and Koç, Çetin Kaya and Chen, Donglong},
+ doi = {10.1109/TIFS.2024.3371369},
+ issn = {1556-6021},
+ journal = {IEEE Transactions on Information Forensics and Security},
+ keyword = {Arithmetic;Internet of Things;Optimization;Standards;Cryptography;Vectors;Software algorithms;Post-quantum cryptography;Kyber;Plantard arithmetic;Cortex-M3;RISC-V},
+ month = {},
+ number = {},
+ pages = {3800-3813},
+ title = {Yet Another Improvement of Plantard Arithmetic for Faster Kyber on Low-End 32-bit IoT Devices},
+ volume = {19},
+ year = {2024}
+}

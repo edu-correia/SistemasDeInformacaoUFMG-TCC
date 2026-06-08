@@ -1,0 +1,14 @@
+@conference{Raju2017497,
+ abstract = {Key-value stores such as LevelDB and RocksDB offer excellent write throughput, but suffer high write amplification. The write amplification problem is due to the Log-Structured Merge Trees data structure that underlies these key-value stores. To remedy this problem, this paper presents a novel data structure that is inspired by Skip Lists, termed Fragmented Log-Structured Merge Trees (FLSM). FLSM introduces the notion of guards to organize logs, and avoids rewriting data in the same level. We build PebblesDB, a high-performance key-value store, by modifying HyperLevelDB to use the FLSM data structure. We evaluate PebblesDB using micro-benchmarks and show that for write-intensive workloads, PebblesDB reduces write amplification by 2.4-3× compared to RocksDB, while increasing write throughput by 6.7×. We modify two widely-used NoSQL stores, MongoDB and HyperDex, to use PebblesDB as their underlying storage engine. Evaluating these applications using the YCSB benchmark shows that throughput is increased by 18-105% when using PebblesDB (compared to their default storage engines) while write IO is decreased by 35-55%. © 2017 Association for Computing Machinery.},
+ author = {Raju, Pandian and Chidambaram, Vijay and Kadekodi, Rohan and Abraham, Ittai},
+ doi = {10.1145/3132747.3132765},
+ journal = {SOSP 2017 - Proceedings of the 26th ACM Symposium on Operating Systems Principles},
+ note = {Cited by: 297},
+ pages = {497 - 514},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PebblesDB: Building Key-Value Stores using Fragmented Log-Structured Merge Trees},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85041681351?origin=resultslist},
+ year = {2017}
+}

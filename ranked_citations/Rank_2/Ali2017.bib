@@ -1,0 +1,16 @@
+@article{Ali2017,
+ abstract = {There exist many dataflow applications with timing constraints that require real-time guarantees on safe execution without violating their deadlines. Extraction of timing parameters (offsets, deadlines, periods) from these applications enables the use of real-time scheduling and analysis techniques, and provides guarantees on satisfying timing constraints. However, existing extraction techniques require the transformation of the dataflow application from highly expressive dataflow computational models, for example, Synchronous Dataflow (SDF) and Cyclo-Static Dataflow (CSDF) to Homogeneous Synchronous Dataflow (HSDF). This transformation can lead to an exponential increase in the size of the application graph that significantly increases the runtime of the analysis. In this article, we address this problem by proposing an offline heuristic algorithm called slack-based merging. The algorithm is a novel graph reduction technique that helps in speeding up the process of timing parameter extraction and finding a feasible real-time schedule, thereby reducing the overall design time of the real-time system. It uses two main concepts: (a) the difference between the worst-case execution time of the SDF graph's firings and its timing constraints (slack) to merge firings together and generate a reducedsize HSDF graph, and (b) the novel concept of merging called safe merge, which is a merge operation that we formally prove cannot cause a live HSDF graph to deadlock. The results show that the reduced graph (1) respects the throughput and latency constraints of the original application graph and (2) typically speeds up the process of extracting timing parameters and finding a feasible real-time schedule for real-time dataflow applications. They also show that when the throughput constraint is relaxed with respect to the maximal throughput of the graph, the merging algorithm is able to achieve a larger reduction in graph size, which in turn results in a larger speedup of the real-time scheduling algorithms. © 2017 ACM.},
+ author = {Ali, Hazem Ismail and Stuijk, Sander and Akesson, Benny and Pinho, Luís Miguel},
+ doi = {10.1145/2956232},
+ journal = {ACM Transactions on Design Automation of Electronic Systems},
+ note = {Cited by: 5},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Reducing the complexity of dataflow graphs using slack-based merging},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85011411549?origin=resultslist},
+ volume = {22},
+ year = {2017}
+}

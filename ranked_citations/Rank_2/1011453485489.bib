@@ -1,0 +1,18 @@
+@article{10.1145/3485489,
+ abstract = {Many data processing systems allow SQL queries that call user-defined functions (UDFs) written in conventional programming languages. While such SQL extensions provide convenience and flexibility to users, queries involving UDFs are not as efficient as their pure SQL counterparts that invoke SQL’s highly-optimized built-in functions. Motivated by this problem, we propose a new technique for translating SQL queries with UDFs to pure SQL expressions. Unlike prior work in this space, our method is not based on syntactic rewrite rules and can handle a much more general class of UDFs. At a high-level, our method is based on counterexample-guided inductive synthesis (CEGIS) but employs a novel compositional strategy that decomposes the synthesis task into simpler sub-problems. However, because there is no universal decomposition strategy that works for all UDFs, we propose a novel lazy inductive synthesis approach that generates a sequence of decompositions that correspond to increasingly harder inductive synthesis problems. Because most realistic UDF-to-SQL translation tasks are amenable to a fine-grained decomposition strategy, our lazy inductive synthesis method scales significantly better than traditional CEGIS. We have implemented our proposed technique in a tool called CLIS for optimizing Spark SQL programs containing Scala UDFs. To evaluate CLIS, we manually study 100 randomly selected UDFs and find that 63 of them can be expressed in pure SQL. Our evaluation on these 63 UDFs shows that CLIS can automatically synthesize equivalent SQL expressions in 92% of the cases and that it can solve 2.4\texttimes{} more benchmarks compared to a baseline that does not use our compositional approach. We also show that CLIS yields an average speed-up of&nbsp;3.5\texttimes{} for individual UDFs and 1.3\texttimes{} to 3.1\texttimes{} in terms of end-to-end application performance.},
+ address = {New York, NY, USA},
+ articleno = {112},
+ author = {Zhang, Guoqiang and Xu, Yuanchao and Shen, Xipeng and Dillig, I\c{s}\i{}l},
+ doi = {10.1145/3485489},
+ issue_date = {October 2021},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {program synthesis, query optimization, source-to-source compiler},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {UDF to SQL translation through compositional lazy inductive synthesis},
+ url = {https://doi.org/10.1145/3485489},
+ volume = {5},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@inproceedings{1631140,
+ abstract = {Java decompilers convert Java class files to Java source. Java class files may be created by a number of different tools including standard Java compilers, compilers for other languages such as AspectJ, or other tools such as optimizers or obfuscators. There are two kinds of Java decompilers, Javac-specific decompilers that assume that the class file was created by a standard Javac compiler and tool-independent decompilers that can decompile arbitrary class files, independent of the tool that created the class files. Typically Javac-specific decompilers produce more readable code, but they fail to decompile many class files produced by other tools. This paper tackles the problem of how to make a tool-independent decompiler, Dava, produce Java source code that is programmer-friendly. In past work it has been shown that Dava can decompile arbitrary class files, but often the output, although correct, is very different from what a programmer would write and is hard to understand. Furthermore, tools like obfuscators intentionally confuse the class files and this also leads to confusing decompiled source files. Given that Dava already produces correct Java abstract syntax trees (ASTs) for arbitrary class files, we provide a new back-end for Dava. The back-end rewrites the ASTs to semantically equivalent ASTs that correspond to code that is easier for programmers to understand. Our new back-end includes a new AST traversal framework, a set of simple pattern-based transformations, a structure-based data flow analysis framework and a collection of more advanced AST transformations that use flow analysis information. We include several illustrative examples including the use of advanced transformations to clean up obfuscated code},
+ author = {Naeem, N.A. and Hendren, L.},
+ booktitle = {14th IEEE International Conference on Program Comprehension (ICPC'06)},
+ doi = {10.1109/ICPC.2006.40},
+ issn = {1092-8138},
+ keyword = {Java;Program processors;Optimizing compilers;Programming profession;Information analysis;Pattern analysis;Code standards;Computer science;Data analysis;Internet},
+ month = {June},
+ number = {},
+ pages = {327-336},
+ title = {Programmer-friendly Decompiled Java},
+ volume = {},
+ year = {2006}
+}

@@ -1,0 +1,14 @@
+@conference{Xu20231895,
+ abstract = {Zoned Namespace SSDs (ZNS SSDs) are a new kind of SSDs that can offer stabler writing performance and higher space efficiency than traditional SSDs. In this paper, we propose LeanKV, a novel LSM-tree-based key-value store optimized for ZNS SSDs, which aims to reduce the data migration cost of garbage collection. We note that existing ZNSSSD-aware data management approaches will lead to zone fragmentation in write-heavy workloads, causing extra data migration during garbage collection. To address this problem, we first present a new method to predict the lifetime of an SSTable based on its compaction history. Then, we propose a lifetime-based algorithm to cluster SSTables according to lifetime. The SSTables in the same cluster will be put into the same zone, ensuring the SSTables in each zone have similar lifetimes. With such a mechanism, less valid data is needed to be moved during garbage collection. We implement LeanKV on top of RocksDB and compare LeanKV with RocksDB and ZenFS on a real ZNS SSD (Western Digital ZN540). The results show that LeanKV can effectively reduce the amount of data migration and the number of files migrated during garbage collection under various workloads. Meanwhile, LeanKV achieves higher throughputs than RocksDB and ZenFS. © 2023 IEEE.},
+ author = {Xu, Yishun and Jin, Peiquan and Lu, Mingchen and Wang, Xiaoliang},
+ doi = {10.1109/ICPADS60453.2023.00260},
+ journal = {Proceedings of the International Conference on Parallel and Distributed Systems - ICPADS},
+ note = {Cited by: 3},
+ pages = {1895 - 1902},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LeanKV: Efficient Garbage Collection for LSM-Based Key-Value Stores on ZNS SSDs through Lifetime-Based SSTable Clustering},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85190252744?origin=resultslist},
+ year = {2023}
+}

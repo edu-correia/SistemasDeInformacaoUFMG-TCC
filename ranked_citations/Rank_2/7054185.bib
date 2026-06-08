@@ -1,0 +1,14 @@
+@inproceedings{7054185,
+ abstract = {We investigate parallelizing flow- and context-sensitive static analysis for JavaScript. Previous attempts to parallelize such analyses for other languages typically start with the traditional framework of sequential dataflow analysis, and then propose methods to parallelize the existing sequential algorithms within this framework. However, we show that this approach is non-optimal and propose a new perspective on program analysis based on abstract interpretation that separates the analysis into two components: (1) an embarrassingly parallel state exploration of a state transition system; and (2) a separate component that controls the size of the state space by selectively merging states, thus injecting sequential dependencies into the system. This perspective simplifies the parallelization problem and exposes useful opportunities to exploit the natural parallelism of the analysis. We apply our insights to parallelize a JavaScript abstract interpreter. Because of JavaScript's dynamic nature and tricky semantics, static analysis of JavaScript is difficult to scale — one of our benchmarks with only 2.8 KLOC takes over 22 hours to analyze using the sequential JavaScript abstract interpreter. Thus, JavaScript is an excellent case study for the benefits of our approach. Our resulting parallel implementation sees significant benefits on real-world JavaScript programs, with speedups between 2-Ax on average with a superlinear maximum of 36.9× on 12 hardware threads.},
+ author = {Dewey, Kyle and Kashyap, Vineeth and Hardekopf, Ben},
+ booktitle = {2015 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO.2015.7054185},
+ issn = {},
+ keyword = {Abstracts;Merging;Parallel processing;Synchronization;Instruction sets;Lattices;Ink},
+ month = {Feb},
+ number = {},
+ pages = {34-45},
+ title = {A parallel abstract interpreter for JavaScript},
+ volume = {},
+ year = {2015}
+}

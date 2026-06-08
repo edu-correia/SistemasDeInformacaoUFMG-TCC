@@ -1,0 +1,14 @@
+@inproceedings{8855386,
+ abstract = {Key-value (KV) stores based on the Log-Structure Merge tree (LSM-tree) have been widely used in modern storage systems (e.g. LevelDB and RocksDB) to achieve high write throughput. However, conventional LSM-tree design has high latency for random read operations, especially in the workloads with concurrent read and write operations. This paper proposes a dual-grained cache scheme to improve the performance of LSM-tree based KV stores, in which a coarse-grained cache improves read performance by leveraging spatial locality and a fine-grained cache tracks the frequently accessed KV pairs. We implement the dual-grained caching on a LSM-tree simulator and evaluate its performance using various Yahoo! Cloud Service Benchmark (YCSB) workloads. Our experimental results show that the proposed way of dual-grained caches can significantly improve the read performance of KV stores without sacrificing the advantages of the LSM-tree for write-intensive workloads.},
+ author = {Li, Xiang and Xu, Guangping and Fan, Hao and Lu, Hongli and Tang, Bo and Xue, Yanbing and Zong, Ziliang},
+ booktitle = {2019 IEEE 21st International Conference on High Performance Computing and Communications; IEEE 17th International Conference on Smart City; IEEE 5th International Conference on Data Science and Systems (HPCC/SmartCity/DSS)},
+ doi = {10.1109/HPCC/SmartCity/DSS.2019.00123},
+ issn = {},
+ keyword = {Compaction;Throughput;Conferences;Indexes;Computer science;Benchmark testing;Distributed databases;KV Stores;LSM trees;Caches;Performance Evaluation},
+ month = {Aug},
+ number = {},
+ pages = {841-848},
+ title = {Improving Read Performance of LSM-Tree Based KV Stores via Dual Grained Caches},
+ volume = {},
+ year = {2019}
+}

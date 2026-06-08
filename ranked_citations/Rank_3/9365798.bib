@@ -1,0 +1,14 @@
+@inproceedings{9365798,
+ abstract = {To maximize data-rates by combining more carrier components, 5G RF transceivers require many carrier frequencies, resulting in the situation of many LC PLLs occupying a large silicon area. Ring-oscillator-based digital PLLs (RO-DPLLs) with a fractional resolution obviously can be a good solution, but conventional ΔΣM-based PLLs hardly achieve a low enough jitter to satisfy the requirements of high-order modulations, such as 256-QAM. Currently, the use of a digital-to-time converter (DTC) to cancel the quantization noise (Q-noise) is popular, but fractional spurs due to the nonlinearity of the DTC (NLDTC) are a critical problem, especially for RO-DPLLs that require a wide bandwidth to suppress the RO jitter. The piecewise linearization of the DTC code can compensate for this NLDTC [1], but its effectiveness has a tradeoff with design resources. The time-invariant probability modulation (TIPM) [2] at the top of Fig. 32.1.1 is another method to cope with NLDTC. It uses a property that, if the DTC code is modulated such that its probability density function (PDF) is time-invariant (TI), the expected value of the output is constant even after experiencing NLDTC so that the generation of fractional spurs can be avoided. However, since the TIPM avoids spurs by spreading out their noise power, it cannot reduce the rms jitter (or IPN) itself. Moreover, the TIPM is valid only for NLDTC since its TI property is nullified when the two DTC paths are merged. Therefore, it is still vulnerable to the spurs caused by the interaction of the Q-noise, which could remain after the DTCs or be coupled directly through substrate/supply, with the nonlinearities of other circuits (NLOC), and that includes the effects of parasitics and bond wires. The bottom of Fig. 32.1.1 shows that the TIPM effectively avoids spurs due to NLDTC, but the IPN remains the same (left). When NLOC also is applied (middle), the expected value of the TDC output, DTDC, varies over time, generating fractional spurs at SOUT.},
+ author = {Park, Hangi and Hwang, Chanwoong and Seong, Taeho and Lee, Yongsun and Choi, Jaehyouk},
+ booktitle = {2021 IEEE International Solid-State Circuits Conference (ISSCC)},
+ doi = {10.1109/ISSCC42613.2021.9365798},
+ issn = {2376-8606},
+ keyword = {Wires;Jitter;Probability density function;Transceivers;Solid state circuits;Phase locked loops;Substrates},
+ month = {Feb},
+ number = {},
+ pages = {442-444},
+ title = {32.1 A 365fsrms-Jitter and -63dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/Third- Order Nonlinearity Cancelation and a Probability-Density-Shaping ΔΣM},
+ volume = {64},
+ year = {2021}
+}

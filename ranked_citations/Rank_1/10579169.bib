@@ -1,0 +1,14 @@
+@inproceedings{10579169,
+ abstract = {An X-ray free electron laser (XFEL) facility can produce on the order of 1,000,000 extremely bright X-ray light pulses per second. Using an XFEL to image the atomic structure of a molecule requires fast analysis of an enormous amount of data, estimated to exceed one terabyte per second and requiring petabytes of storage. The SpiniFEL application provides such analysis by determining the 3D structure of proteins from single-particle imaging (SPI) experiments performed using XFELs, but it needs significantly better performance and efficiency to scale and keep up with the terabyte-per-second data production. Thus, this paper addresses the high-performance computing optimizations and scaling needed to improve this 3D reconstruction of SPI data. First, we optimize data movement, memory efficiency, and algorithms to improve the per-node computational efficiency and deliver a 5.28× speedup over the baseline GPU implementation.In addition, we achieved a 485× speedup for the post-analysis reconstruction resolution, which previously took as long as the 3D reconstruction of SPI data. Second, we present a novel distributed shared-memory computational algorithm to hide data latency and load-balance network traffic, thus enabling the processing of 128× more orientations than previously possible. Third, we conduct an exploratory study over the hyperparameter space for the SpiniFEL application to identify the optimal parameters for our underlying target hardware, which ultimately led to an up to 1.25× speedup for the number of streams. Overall, we achieve a 6.6× speedup (i.e., 5.28×1.25) over the previous fastest GPUMPI-based SpiniFEL realization.},
+ author = {Shah, Niteya and Sweeney, Christine and Ramakrishnaiah, Vinay and Donatelli, Jeffrey and Feng, Wu-Chun},
+ booktitle = {2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS57955.2024.00030},
+ issn = {1530-2075},
+ keyword = {Proteins;Three-dimensional displays;Imaging;X-ray lasers;Telecommunication traffic;Production;X-ray imaging;High Performance Computing;GPU;XFEL;Distributed Computing;RMA;Protein Reconstruction;Computational Science},
+ month = {May},
+ number = {},
+ pages = {253-264},
+ title = {Optimizing and Scaling the 3D Reconstruction of Single-Particle Imaging},
+ volume = {},
+ year = {2024}
+}

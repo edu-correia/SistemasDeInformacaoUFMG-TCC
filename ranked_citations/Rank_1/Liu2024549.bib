@@ -1,0 +1,16 @@
+@article{Liu2024549,
+ abstract = {The new generation of computing devices tends to support multiple floating-point formats and different computing precision. Besides single and double precision, half precision is embraced and widely supported by new computing devices. Low-precision representations have compact memory size and lightweight computing strength, and they also bring opportunities to the optimization of BLAS routines. This paper proposes a new sparse matrix partition approach based on IEEE 754 standard floating-point format. An input sparse matrix in double precision is partitioned and transformed into several sub-matrices in different precision without loss of accuracy. Most non-zero elements can be stored in half or single precision, if the most significant bits of exponent and the least significant bits of mantissa are zeros in double-precision representation. Based on this mixed-precision representation of sparse matrix, we also present a new SpMV algorithm pSpMV for GPU devices. pSpMV not only reduces the memory access overhead, but also reduces the computing strength of floating-point numbers. Experimental results on two GPU devices show that pSpMV achieves a geometric mean speedup of 1.39x on Tesla V100 and 1.45x on Tesla P100 over double-precision SpMV for 2,554 sparse matrices. © The Author(s) 2024.},
+ author = {Liu, Jie and Wang, Yizhuo and Gao, Jianhua and Ji, Weixing},
+ doi = {10.1007/s42514-024-00195-x},
+ journal = {CCF Transactions on High Performance Computing},
+ note = {Cited by: 2; All Open Access; Hybrid Gold Open Access},
+ number = {6},
+ pages = {549 - 565},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {pSpMv: precision-based sparse matrix partition and SpMV optimization},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85212488473?origin=resultslist},
+ volume = {6},
+ year = {2024}
+}

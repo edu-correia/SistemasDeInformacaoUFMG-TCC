@@ -1,0 +1,14 @@
+@article{8451966,
+ abstract = {Adaptive mesh refinement based on octree data structures has enabled efficient simulations of complex physical phenomena. Existing meshing algorithms were proposed with the assumption that computer memory is volatile. Consequently, for failure recovery, in-core algorithms need to save memory states as snapshots with slow file I/O, while out-of-core algorithms store octants on disk for persistence. However, neither was designed to best exploit the unique characteristics of non-volatile byte-addressable memory (NVBM). We propose a novel data structure, the Distributed Persistent Merged octree (DPM-octree), for both meshing and in-memory storage of persistent octrees using NVBM. DPM-octree is a multi-version data structure that can recover from failures using an earlier persistent version stored in NVBM. In addition, we design a feature-directed sampling approach to help dynamically transform the DPM-octree layout for reducing NVBM-induced memory write latency. DPM-octree uses parity trees which are created using erasure coding and stored in NVBM to support low-latency in-memory octant recovery after data loss. DPM-octree has been successfully integrated with the Gerris software for simulation of fluid dynamics. Our experimental results with real-world scientific workloads show that DPM-octree scales up to 1.1 billion mesh elements with 1,000 processors on the Titan supercomputer.},
+ author = {Nguyen, Bao and Tan, Hua and Davis, Kei and Zhang, Xuechen},
+ doi = {10.1109/TPDS.2018.2867867},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Octrees;Random access memory;Data models;Nonvolatile memory;Computational modeling;Three-dimensional displays;Octree;adaptive mesh refinement;non-volatile byte-addressable memory},
+ month = {March},
+ number = {3},
+ pages = {677-691},
+ title = {Persistent Octrees for Parallel Mesh Refinement through Non-Volatile Byte-Addressable Memory},
+ volume = {30},
+ year = {2019}
+}

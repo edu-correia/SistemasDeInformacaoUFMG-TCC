@@ -1,0 +1,16 @@
+@conference{Kimura2010630,
+ abstract = {Uncertain data management has received growing attention from industry and academia. Many efforts have been made to optimize uncertain databases, including the development of special index data structures. However, none of these efforts have explored primary (clustered) indexes for uncertain databases, despite the fact that clustering has the potential to offer substantial speedups for non-selective analytic queries on large uncertain databases. In this paper, we propose a new index called a UPI (Uncertain Primary Index) that clusters heap files according to uncertain attributes with both discrete and continuous uncertainty distributions. Because uncertain attributes may have several possible values, a UPI on an uncertain attribute duplicates tuple data once for each possible value. To prevent the size of the UPI from becoming unmanageable, its size is kept small by placing low-probability tuples in a special Cutoff Index that is consulted only when queries for low-probability values are run. We also propose several other optimizations, including techniques to improve secondary index performance and techniques to reduce maintenance costs and fragmentation by buffering changes to the table and writing updates in sequential batches. Finally, we develop cost models for UPIs to estimate query performance in various settings to help automatically select tuning parameters of a UPI. We have implemented a prototype UPI and experimented on two real datasets. Our results show that UPIs can significantly (up to two orders of magnitude) improve the performance of uncertain queries both over clustered and unclustered attributes. We also show that our buffering techniques mitigate table fragmentation and keep the maintenance cost as low as or even lower than using an unclustered heap file. © 2010 VLDB Endowment.},
+ author = {Kimura, Hideaki and Madden, Samuel and Zdonik, Stanley B.},
+ doi = {10.14778/1920841.1920922},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 12},
+ number = {1},
+ pages = {630 - 637},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {UPI: A primary index for uncertain databases},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84859243233?origin=resultslist},
+ volume = {3},
+ year = {2010}
+}

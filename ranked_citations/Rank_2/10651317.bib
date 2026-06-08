@@ -1,0 +1,14 @@
+@inproceedings{10651317,
+ abstract = {Pre-trained language models (PLMs) have played an increasing role in vision-language (VL) learning, but they usually require a deep multi-modal branch for VL reasoning, resulting in excessive computation and memory overhead. Recently, visual prompting is a feasible way to adapt PLMs to VL tasks, but we notice that the use of all visual tokens will greatly execrate the already high computation, and the token placement is also vital to performance. Based on these observations, we propose a novel transfer learning approach for PLMs in this paper, termed Dynamic Visual Prompting (DVP). Concretely, DVP first deploys a cross-attention module to obtain text-related and compact visual prompt tokens, thereby greatly reducing the input length of PLMs. To obtain the optimal placement, we also equip DVP with a reinforcement-learning based search algorithm, which can automatically merge DVP with PLMs for different VL tasks via a very short search process. In addition, we also combine DVP with the recently popular adapter approach to keep the most parameters of PLMs intact during adaption, which also help PLMs achieve a quick shift between single- and multi-modal tasks. We apply DVP to two representative PLMs, namely BERT and T5, and a recent large language model called LLaMA. Extensive experiments are conducted on a set of VL reasoning benchmarks including VQA2.0, GQA, SNLI-VE and ScienceQA. The experimental results not only show the merits of DVP in performance and efficiency, e.g. +2.28% accuracy and -80% FLOPs on VQA2.0, but also confirm its superiority in adapting pre-trained language models to VL tasks. Our code is released at https://github.com/hsb1357173526/Dynamic_Visual_Prompting.},
+ author = {Huang, Shubin and Wu, Qiong and Zhou, Yiyi},
+ booktitle = {2024 International Joint Conference on Neural Networks (IJCNN)},
+ doi = {10.1109/IJCNN60899.2024.10651317},
+ issn = {2161-4407},
+ keyword = {Visualization;Adaptation models;Computational modeling;Heuristic algorithms;Transfer learning;Redundancy;Neural networks;Visual Prompting;Pre-trained Language Models;Adapter},
+ month = {June},
+ number = {},
+ pages = {1-8},
+ title = {Adapting Pre-trained Language Models to Vision-Language Tasksvia Dynamic Visual Prompting},
+ volume = {},
+ year = {2024}
+}

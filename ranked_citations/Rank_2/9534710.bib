@@ -1,0 +1,14 @@
+@article{9534710,
+ abstract = {Super host refers to the host that has a high cardinality or exhibits a big change in a network. Facing big-volume network traffic, sketches have been widely applied to identify super hosts in an efficient and accurate way. However, most sketches cannot flexibly balance memory usage and accuracy in host cardinality estimation. Setting an inappropriate counter size for a sketch could either lead to inaccurate host cardinality estimation or cause memory waste. In order to solve this issue, we propose a novel extensible and reversible sketch, named ExtendedSketch, to achieve accurate super host identification with high memory efficiency. The core idea of ExtendedSketch is to monitor low-cardinality hosts with small-sized counters while dynamically extending the size of counters when monitoring high-cardinality hosts by applying an adaptive extension strategy. Such the strategy can adaptively increase counter size according to network traffic status at runtime, which not only ensures the accuracy of high-cardinality host estimation but also avoids unnecessary memory consumption. We perform theoretical analysis and conduct a series of experimental evaluations on ExtendedSketch based on real world network traffic. Experimental results show that under same memory usage, compared to the state-of-the-art, ExtendedSketch achieves $1.4{ \sim }7.5$1.4∼7.5 times smaller error rate in estimating host cardinality with $1.9{ \sim }26.7$1.9∼26.7 times better accuracy on super host identification and $95 {\sim }2^{15}$95∼215 times faster speed on abnormal address reconstruction. Its advance in accuracy and efficiency demonstrates the practical significance of ExtendedSketch for super host identification.},
+ author = {Jing, Xuyang and Yan, Zheng and Han, Hui and Pedrycz, Witold},
+ doi = {10.1109/TDSC.2021.3111328},
+ issn = {1941-0018},
+ journal = {IEEE Transactions on Dependable and Secure Computing},
+ keyword = {Estimation;Monitoring;Memory management;Size measurement;Hash functions;Licenses;Information filters;Network traffic measurement;host cardinality estimation;super host identification;sketch;memory efficiency},
+ month = {Nov},
+ number = {6},
+ pages = {3913-3924},
+ title = {ExtendedSketch: Fusing Network Traffic for Super Host Identification With a Memory Efficient Sketch},
+ volume = {19},
+ year = {2022}
+}

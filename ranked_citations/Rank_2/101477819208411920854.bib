@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920854,
+ abstract = {Keyword search in relational databases has been extensively studied. Given a relational database, a keyword query finds a set of interconnected tuple structures connected by foreign key references. On rdbms, a keyword query is processed in two steps, namely, candidate networks (CNs) generation and CNs evaluation, where a CN is an sql. In common, a keyword query needs to be processed using over 10,000 sqls. There are several approaches to process a keyword query on rdbms, but there is a limit to achieve high performance on a uniprocessor architecture. In this paper, we study parallel computing keyword queries on a multicore architecture. We give three observations on keyword query computing, namely, a large number of sqls that needs to be processed, high sharing possibility among sqls, and large intermediate results with small number of final results. All make it challenging for parallel keyword queries computing. We investigate three approaches. We first study the query level parallelism, where each sql is processed by one core. We distribute the sqls into different cores based on three objectives, regarding minimizing workload skew, minimizing intercore sharing and maximizing intra-core sharing respectively. Such an approach has the potential risk of load unbalancing through accumulating errors of cost estimation. We then study the operation level parallelism, where each operation of an sql is processed by one core. All operations are processed in stages, where in each stage the costs of operations are re-estimated to reduce the accumulated error. Such operation level parallelism still has drawbacks of workload skew when large operations are involved and a large number of cores are used. Finally, we propose a new algorithm that partitions relations adaptively in order to minimize the extra cost of partitioning and at the same time reduce workload skew. We conducted extensive performance studies using two large real datasets, DBLP and IMDB, and we report the efficiency of our approaches in this paper.},
+ author = {Qin, Lu and Yu, Jeffrey Xu and Chang, Lijun},
+ doi = {10.14778/1920841.1920854},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {12},
+ pages = {58–69},
+ publisher = {VLDB Endowment},
+ title = {Ten thousand SQLs: parallel keyword queries computing},
+ url = {https://doi.org/10.14778/1920841.1920854},
+ volume = {3},
+ year = {2010}
+}

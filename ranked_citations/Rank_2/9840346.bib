@@ -1,0 +1,14 @@
+@article{9840346,
+ abstract = {Sparse general matrix multiplication (SpGEMM) is a fundamental building block for many real-world applications. Since SpGEMM is a well-known memory-bounded application with vast and irregular memory accesses, considering the memory access efficiency is of critical importance for SpGEMM’s performance. Yet, the existing methods put less consideration into the memory subsystem and achieved suboptimal performance. In this paper, we thoroughly analyze the memory access patterns of SpGEMM and their influences on the memory subsystem. Based on the analysis, we propose a novel and more efficient accumulation method named BRMerge for the multi-core CPU architectures. The BRMerge accumulation method follows the row-wise dataflow. It first accesses the  $B$  matrix, generates the intermediate lists for one output row, and stores these intermediate lists in a consecutive memory space, which is implemented by a ping-pong buffer. It then immediately merges these intermediate lists generated in the previous phase two by two in a tree-like hierarchy between two ping-pong buffers. The architectural benefits of BRMerge are 1) streaming access patterns, 2) minimized TLB cache miss rate, and 3) reasonably high L1/L2 cache hit rates, which result in both low access latency and high bandwidth utilization when performing SpGEMM. Based on the BRMerge accumulation method, we propose two SpGEMM libraries named BRMerge-Upper and BRMerge-Precise, which use different allocation methods. Performance evaluations with 26 commonly used benchmarks on two CPU servers show that the proposed SpGEMM libraries significantly outperform the state-of-the-art SpGEMM libraries.},
+ author = {Du, Zhaoyang and Guan, Yijin and Guan, Tianchan and Niu, Dimin and Zheng, Hongzhong and Xie, Yuan},
+ doi = {10.1109/ACCESS.2022.3193937},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Libraries;Sparse matrices;Memory management;Resource management;Arrays;Computer architecture;Sparse general matrix multiplication;SpGEMM;multi-core CPU;parallel computing;high-performance computing},
+ month = {},
+ number = {},
+ pages = {79237-79248},
+ title = {Accelerating CPU-Based Sparse General Matrix Multiplication With Binary Row Merging},
+ volume = {10},
+ year = {2022}
+}

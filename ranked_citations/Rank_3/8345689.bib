@@ -1,0 +1,14 @@
+@article{8345689,
+ abstract = {In the big data era, there are many demands for efficient and easy to use data replay services over large scale historical data. For example, stock security trading and on-line e-business services need historical data replay services to conduct system testing or ex-post review and analysis, just like replaying videos for security monitoring. Stream processing systems are designed for processing stream data, thus can not perform complex replay jobs over the static historical data. Database management systems support easy to use complex queries, but lack stream processing abilities. In this paper, we present a data replay model that combines the stream replay and complex query ability together, to allow the applications to replay large scale historical data from various data sources. First, to meet the demands of flexible replay semantics, we designed a set of easy to use replay operators to describe various replay behaviors and semantics. Users can use these operators to build up their complex replay jobs with diversified requirements. Then, we proposed a query mechanism to provide a flexible data loading service. Next, we presented the Penguin framework to support the proposed query-based replay model along with the replay operators. Penguin enables users to develop high-throughput and easy to use replay services over various large scale data sources with tunable replay speeds. To further improve the data replay performance, we proposed four system-level optimizations, including caching loading task results, cascading merging intermediate record queues, producing the replay queue in parallel, and caching remote file streams. Experimental results over replaying millions of records demonstrate that Penguin can achieve up to 4x and 144x speedup in data preparation and up to 16x and 9x speedup in replay speed compared to Apache Phoenix and Apache Hive respectively. As a case study, Penguin has been deployed in production environments of some Securities companies to provide online historical stock data replay services to large number of stock market users.},
+ author = {Gu, Rong and Zhou, Yufa and Wang, Zhaokang and Yuan, Chunfeng and Huang, Yihua},
+ doi = {10.1109/TPDS.2018.2829759},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Distributed databases;Structured Query Language;Sorting;Sparks;Data models;Semantics;Data replay framework;query-based stream replay;distributed processing},
+ month = {Oct},
+ number = {10},
+ pages = {2333-2345},
+ title = {Penguin: Efficient Query-Based Framework for Replaying Large Scale Historical Data},
+ volume = {29},
+ year = {2018}
+}

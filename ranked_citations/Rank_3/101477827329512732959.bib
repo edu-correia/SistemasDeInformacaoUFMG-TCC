@@ -1,0 +1,17 @@
+@article{10.14778/2732951.2732959,
+ abstract = {In this paper we advocate that it is time for a radical rethinking of database systems design. Developers should be able to leverage high-level programming languages without having to pay a price in efficiency. To realize our vision of abstraction without regret, we present LegoBase, a query engine written in the high-level programming language Scala. The key technique to regain efficiency is to apply generative programming: the Scala code that constitutes the query engine, despite its high-level appearance, is actually a program generator that emits specialized, low-level C code. We show how the combination of high-level and generative programming allows to easily implement a wide spectrum of optimizations that are difficult to achieve with existing low-level query compilers, and how it can continuously optimize the query engine.We evaluate our approach with the TPC-H benchmark and show that: (a) with all optimizations enabled, our architecture significantly outperforms a commercial in-memory database system as well as an existing query compiler, (b) these performance improvements require programming just a few hundred lines of high-level code instead of complicated low-level code that is required by existing query compilers and, finally, that (c) the compilation overhead is low compared to the overall execution time, thus making our approach usable in practice for efficiently compiling query engines.},
+ author = {Klonatos, Yannis and Koch, Christoph and Rompf, Tiark and Chafi, Hassan},
+ doi = {10.14778/2732951.2732959},
+ issn = {2150-8097},
+ issue_date = {June 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {12},
+ pages = {853–864},
+ publisher = {VLDB Endowment},
+ title = {Building efficient query engines in a high-level language},
+ url = {https://doi.org/10.14778/2732951.2732959},
+ volume = {7},
+ year = {2014}
+}

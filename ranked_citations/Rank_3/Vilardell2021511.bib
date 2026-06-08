@@ -1,0 +1,14 @@
+@conference{Vilardell2021511,
+ abstract = {Measurement-based timing analysis techniques increasingly rely on the Performance Monitoring Units (PMU) of MPSoCs, as these units implement specialized Hardware Event Monitors (HEMs) that convey detailed information about multicore interference in hardware shared resources. Unfortunately, there is an evident mismatch between the large number of HEMs (typically several hundreds) and the comparatively small number (normally less than ten) of Performance Monitoring Counters (PMCs) that can be configured to track HEMs in the PMU. Timing analysis normally require to observe a non-negligible number of HEMs per task from the same execution. However, due to the small number of PMCs, HEMs are necessarily collected across multiple runs that, despite intended to repeat the same experiment, carry out some significant variability (above 50% for some HEMs in relevant MPSoCs) caused by platform-intrinsic execution conditions. Therefore, blindly merging HEMs from different runs is not acceptable since they may easily correspond to significantly different conditions. To tackle this issue, the HRM approach has been proposed recently to merge HEMs from different runs accurately preserving their correlation w.r.t. one anchor HEM (i.e. processor cycles) building on order statistics. However, HRM do not always preserves the correlation between other pairs of HEMs that might be lost to a large extent. This paper copes with HRM limitations by proposing the <u>MU</u>lti-<u>C</u>orrelation <u>H</u>EM reading and merging approach (MUCH). MUCH builds on multivariate Gaussian distributions to merge HEMs from different runs while preserving pairwise correlations across each individual pair of HEMs simultaneously. Our results on an NXP T2080 MPSoC used for avionics systems show that MUCH largely outperforms HRM for an identical number of input runs. © 2021 ACM.},
+ author = {Vilardell, Sergi and Serra, Isabel and Mezzetti, Enrico and Abella, Jaume and Cazorla, Francisco J.},
+ doi = {10.1145/3412841.3441931},
+ journal = {Proceedings of the ACM Symposium on Applied Computing},
+ note = {Cited by: 1; All Open Access; Green Open Access},
+ pages = {511 - 520},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MUCH: Exploiting pairwise hardware event monitor correlations for improved timing analysis of complex MPSoCs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85104948023?origin=resultslist},
+ year = {2021}
+}

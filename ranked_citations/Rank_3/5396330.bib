@@ -1,0 +1,14 @@
+@article{5396330,
+ abstract = {Decision diagrams (DDs) are a data structure that allows compact representation of discrete functions. The efficient construction of DDs in terms of space and time is often considered problem. A particular problem is that during the construction of a DD, a large number of temporary nodes are created. We address this problem in the case when the functions are specified in the PLA format. A common practice is to construct a DD by recursively processing all the cubes in PLA specification. The DD representing a subfunction defined by a single cube is merged with the DD for the subfunction defined by all the previously processed cubes. We proposed a method of reordering and partitioning the set of cubes in PLA specification that results in the reduction of both space and time complexities of the construction of DDs. First, we arrange cubes by their suffices. Then we partition the set of cubes, construct DDs for the subfunctions representing each partition separately, and merge them into a final DD. The reordering and partitioning ensures that these intermediary decision diagrams never exceed a certain size which is controlled by the size of the partitions. In this way, the number of operations on the nodes during the merging decision diagrams is reduced. This reduction results in a decrease both in the number of temporary nodes and construction time. The proposed method is used for the construction of DDs for the set of standard benchmark functions. The experiments show that the total number of created nodes is reduced on average by 34.65 percent, while the construction time is decreased by 48.6 percent.},
+ author = {Stojkovic, Suzana and Jankovic, Dragan and Stankovic, Radomir S.},
+ doi = {10.1109/TC.2010.21},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Data structures;Programmable logic arrays;Boolean functions;Partitioning algorithms;Hard disks;Cubes;decision diagrams;decision diagrams construction.},
+ month = {Aug},
+ number = {8},
+ pages = {1105-1119},
+ title = {An Improved Algorithm for the Construction of Decision Diagrams by Rearranging and Partitioning the Input Cube Set},
+ volume = {59},
+ year = {2010}
+}

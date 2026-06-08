@@ -1,0 +1,15 @@
+@article{10.1145/3808231,
+ abstract = {The conformance testing of programming language implementations is crucial to support correct and consistent execution environments. Researchers often use coverage information in the mechanized language specification to generate or check the quality of conformance tests. Since specifications use inductive definitions to describe the semantics of language features, traditional graph coverage criteria for software can still be applied. However, they may not produce high-quality conformance tests because language implementations often have specialized execution paths for different features, even when their semantics descriptions use the same functions. Traditional graph coverage may not distinguish test requirements of such language features, degrading conformance testing quality. Similarly, it may not distinguish test requirements of different parts of the same language feature if their semantics use the same functions.We introduce feature-sensitive (FS) coverage as a novel coverage criterion for generating high-quality conformance tests for language implementations. The core idea is to enhance traditional graph coverage by incorporating the innermost enclosing language features. To further improve the quality of conformance tests, we extend this approach to feature-call-path-sensitive (FCPS) coverage and its  (k) -limiting variant. To assess the effectiveness of the new coverage criteria, we apply them to the mechanized JavaScript specification for ES13 and extend JEST, a state-of-the-art JavaScript conformance test synthesizer. Using five coverage criteria, our tool synthesizes 237,981 conformance tests for ES13 in 50 hours. The tool detected 157 conformance bugs (45 in engines and 112 in transpilers), 139 confirmed by the developers, and 136 newly discovered bugs. However, a higher (k)  value may lead to an excessive number of tests. To resolve this issue, we present a selective FS/FCPS that utilizes the key feature stacks for the target language implementation. The selective approach for transpiler conformance testing with ECMA-262 for ES15 successfully reduces the number of synthesized tests by 70.7% on average. Still, it detects 53 bugs compared to 57 bugs detected by the non-selective approach.},
+ address = {New York, NY, USA},
+ author = {Lee, Kanguk and Kim, Seunghwan and Park, Jihyeok and Ryu, Sukyoung},
+ doi = {10.1145/3808231},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {mechanized specification, conformance test synthesis, coverage-guided fuzzing, feature-sensitive coverage},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages},
+ url = {https://doi.org/10.1145/3808231},
+ year = {2026}
+}

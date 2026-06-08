@@ -1,0 +1,14 @@
+@article{10.1145/3785142,
+ abstract = {Amidst the growing reliance on Conflict-free Replicated Data Types (CRDTs) for synchronizing data across distributed networks, our research introduces a novel implementation of Prolly trees that addresses a critical instability in classical designs: cascading rechunking, where a single insertion can trigger boundary changes propagating through multiple chunks, causing O(N) restructuring operations in the worst case. Our optimized design provides strong update locality guarantees, ensuring each insertion affects at most one chunk plus an O(H) anchor path update, requiring  (leq 2H)  hash computations while preserving the expected tree height of  (lceillog_{1/P_{b}}Nrceil)  with high probability (where H is tree height,  (P_{b}=1/Q)  is the boundary probability, Q is expected chunk size, and N is the number of elements). We achieve these measurable guarantees through three key innovations: (1) a deterministic chunking algorithm that eliminates cascading effects by localizing boundary decisions, (2) anchor nodes along the rightmost path that maintain structural stability during sequential insertions, and (3) a batch insertion mechanism that amortizes update costs. Developed in Golang for execution speed and Python for adaptability, our implementation demonstrates that these theoretical guarantees translate to significant practical improvements: 30-50% reduction in insertion time for DoltHub workloads and multiple-fold performance increases for Canvas operations. Comprehensive benchmarking validates our core claim of bounded update complexity, consistently showing  (leq 2H)  hash operations per insertion across diverse workloads while maintaining logarithmic height even under adversarial patterns, establishing our design as a robust solution for production environments requiring predictable performance in blockchain and distributed synchronization applications.},
+ address = {New York, NY, USA},
+ author = {Rawat, Abhimanyu and Vangani, Tarun Kumar and Daza, Vanesa},
+ doi = {10.1145/3785142},
+ journal = {Distrib. Ledger Technol.},
+ keyword = {Prolly Tree, Merkle Tree, Blockchain, Distributed, Data Structure},
+ month = {January},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Accelerating Prolly Trees: Simplified Chunking for Rapid Updates},
+ url = {https://doi.org/10.1145/3785142},
+ year = {2026}
+}

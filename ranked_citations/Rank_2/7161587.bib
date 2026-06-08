@@ -1,0 +1,14 @@
+@inproceedings{7161587,
+ abstract = {Dumping large amounts of related data simultaneously to local storage devices instead of a parallel file system is a frequent I/O pattern of HPC applications running at large scale. Since local storage resources are prone to failures and have limited potential to serve multiple requests in parallel, techniques such as replication are often used to enable resilience and high availability. However, replication introduces overhead, both in terms of network traffic necessary to distribute replicas, as well as extra storage space requirements. To reduce this overhead, state-of-art techniques often apply redundancy elimination (e.g. compression or deduplication) before replication, ignoring the natural redundancy that is already present. By contrast, this paper proposes a novel scheme that treats redundancy elimination and replication as a single co-optimized phase: remotely duplicated data is detected and directly leveraged to maintain a desired replication factor by keeping only as many replicas as needed and adding more if necessary. In this context, we introduce a series of high performance algorithms specifically designed to operate under tight and controllable constrains at large scale. We present how this idea can be leveraged in practice and demonstrate its viability for two real-life HPC applications.},
+ author = {Nicolae, Bogdan},
+ booktitle = {2015 IEEE International Parallel and Distributed Processing Symposium},
+ doi = {10.1109/IPDPS.2015.82},
+ issn = {1530-2075},
+ keyword = {Redundancy;Context;Algorithm design and analysis;Bandwidth;Resource management;Load management;Ash;data resilience;high availability;data replication;deduplication;collective I/O scalability;redundancy management},
+ month = {May},
+ number = {},
+ pages = {1023-1032},
+ title = {Leveraging Naturally Distributed Data Redundancy to Reduce Collective I/O Replication Overhead},
+ volume = {},
+ year = {2015}
+}

@@ -1,0 +1,14 @@
+@inproceedings{7868400,
+ abstract = {The latest High Efficiency Video Coding (HEVC) standard is a significant improvement over the previous video coding standard (H.264/AVC), However, HEVC has a higher computational complexity. In particular, it is difficult to decode high-resolution video in an embedded device. In this paper, we propose a novel framework for an HEVC decoder based on a distributed embedded system. We use parallel computing method tiles to divide the video into multiple chunks and encode them independently in a server. The resulting bit-stream is partitioned into several non-overlapping segments and individual Map tasks, which achieve HEVC decoding with Wavefront Parallel Processing (WPP) multithreading in respective nodes. The Reduce task receives HEVC decoded segments from the Map task, and merges video into the final HEVC decoded file. Based on the HM 16.0 software, the proposed method can speed the process up to 9× on 10 processing units with a Cortex-A53 Quad Core four-thread processor. Experimental results show the proposed method can decode 2560 × 1600-resolution video at 60 fps.},
+ author = {Liu Wei and Yeongkwang Park and Yongbeom Cho},
+ booktitle = {2017 IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC)},
+ doi = {10.1109/CCWC.2017.7868400},
+ issn = {},
+ keyword = {Decoding;Embedded systems;High efficiency video coding;Mobile communication;Encoding;Streaming media;HEVC;multithreading;embedded device;distributed computing},
+ month = {Jan},
+ number = {},
+ pages = {1-5},
+ title = {Implementation of HEVC decoder in distributed mobile embedded system},
+ volume = {},
+ year = {2017}
+}

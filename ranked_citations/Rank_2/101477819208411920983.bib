@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920983,
+ abstract = {Predicate selectivity estimates are subject to considerable run-time variation relative to their compile-time estimates, often leading to poor plan choices that cause inflated response times. We present here a parametrized family of plan generation and selection algorithms that replace, whenever feasible, the optimizer's solely cost-conscious choice with an alternative plan that is (a) guaranteed to be near-optimal in the absence of selectivity estimation errors, and (b) likely to deliver comparatively stable performance in the presence of arbitrary errors. These algorithms have been implemented within the PostgreSQL optimizer, and their performance evaluated on a rich spectrum of TPC-H and TPC-DS-based query templates in a variety of database environments. Our experimental results indicate that it is indeed possible to identify robust plan choices that substantially curtail the adverse effects of erroneous selectivity estimates. In fact, the plan selection quality provided by our algorithms is often competitive with those obtained through apriori knowledge of the plan search and optimality spaces. The additional computational overheads incurred by the replacement approach are miniscule in comparison to the expected savings in query execution times. We also demonstrate that with appropriate parameter choices, it is feasible to directly produce anorexic plan diagrams, a potent objective in query optimizer design.},
+ author = {Abhirama, M. and Bhaumik, Sourjya and Dey, Atreyee and Shrimal, Harsh and Haritsa, Jayant R.},
+ doi = {10.14778/1920841.1920983},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {12},
+ pages = {1137–1148},
+ publisher = {VLDB Endowment},
+ title = {On the stability of plan costs and the costs of plan stability},
+ url = {https://doi.org/10.14778/1920841.1920983},
+ volume = {3},
+ year = {2010}
+}

@@ -1,0 +1,14 @@
+@article{9900473,
+ abstract = {Existing real-time text detectors reconstruct text contours by shrink-masks only. Though they simplify the framework and can make the model run fast, the strong dependence on shrink-masks leads to unreliable detection results (e.g., miss detection and overdetection). Moreover, these methods ignore the information from surrounding pixels, which causes sensitive shrink-masks and accelerates the reliability decline of detection results. Considering the above problems, we construct an effective and efficient text detection network, termed as Reinforcement Shrink-Mask for Text Detection (RSMTD), which strengthens the model's ability to recognize texts while enjoying a high detection speed. Specifically, an effective text representation strategy (Reinforcement Shrink-Mask, RSM) is designed to decouple texts and shrink-masks. RSM builds texts through shrink-masks and reinforcement offsets to ensure stable detection results encountering shrink-masks that deviate from the ground-truth. It is worth noting that reinforcement offsets can force our method to focus on the foreground shapes to bring precise shrink-mask edges. For the robustness improvement of shrink-masks, Super-pixel Window (SPW) is proposed to encourage RSMTD to utilize the surroundings of each pixel to predict shrink-masks. Particularly, SPW treats the interval regions between texts and shrink-masks as background, which helps to suppress interval regions and to avoid text adhesion. Moreover, a lightweight feature merging branch is constructed to further accelerate the inference process. As demonstrated in the experiments, our method is superior to existing state-of-the-art (SOTA) methods in both detection accuracy and speed on multiple benchmarks.},
+ author = {Yang, Chuang and Chen, Mulin and Yuan, Yuan and Wang, Qi},
+ doi = {10.1109/TMM.2022.3209022},
+ issn = {1941-0077},
+ journal = {IEEE Transactions on Multimedia},
+ keyword = {Feature extraction;Real-time systems;Reliability;Merging;Shape;Detectors;Computational efficiency;Text detection;arbitrary-shaped text;real-time text detector},
+ month = {},
+ number = {},
+ pages = {6458-6470},
+ title = {Reinforcement Shrink-Mask for Text Detection},
+ volume = {25},
+ year = {2023}
+}

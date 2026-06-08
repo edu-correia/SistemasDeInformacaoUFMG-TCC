@@ -1,0 +1,14 @@
+@article{11081460,
+ abstract = {Despite improvements in automatic speech, performance drops with accented speech. Generative error correction (GER) leverages the linguistic knowledge of large language models (LLMs), outperforming typical language model methods. However, it lacks specificity in accented speech scenarios. Accents represent deviations from standard pronunciation, making multi-granularity pronunciation and semantic information essential for accented speech recognition. Moreover, accents exhibit considerable diversity, with each accent possessing distinct characteristics. In this study, we leverage GER to improve transcription accuracy by addressing the two primary features. We propose the multi-modal GER, which integrates pronunciation information from the speech modality, and the multi-granularity GER, which incorporates fine-grained phoneme-level pronunciation information. These methods enable the LLM to utilize the pronunciation information of accented speech and the semantic information from word-level hypotheses for accurate transcription predictions through low-rank adaptation (LoRA) fine-tuning. We employ a three-stage strategy to train separate multi-modal GER models for each accent to obtain mono-accent LoRA experts. By adopting our proposed HDMoLE method, which incorporates hierarchical routing and dynamic thresholds within the mixture of LoRA experts, we effectively merge mono-accent LoRA experts within a single multi-modal GER to overcome accent diversity challenges. Furthermore, multi-granularity GER leverages N-best word-level and phoneme-level hypotheses from the HDMoLE model to predict final transcriptions. Experiments on a multi-accent English dataset show that our methods reduce word error rate by 67.35% compared to the baseline vanilla Whisper-large-v3 model.},
+ author = {Mu, Bingshen and Wei, Kun and Guo, Pengcheng and Xie, Lei},
+ doi = {10.1109/TASLPRO.2025.3589856},
+ issn = {2998-4173},
+ journal = {IEEE Transactions on Audio, Speech and Language Processing},
+ keyword = {Speech recognition;Semantics;Error correction;Decoding;Accuracy;Training;Adaptation models;Hands;Standards;Routing;HDMoLE;multi -granularity GER;multi -modal GER},
+ month = {},
+ number = {},
+ pages = {2973-2985},
+ title = {Mixture of LoRA Experts With Multi-Modal and Multi-Granularity LLM Generative Error Correction for Accented Speech Recognition},
+ volume = {33},
+ year = {2025}
+}

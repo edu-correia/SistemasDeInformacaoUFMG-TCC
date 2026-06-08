@@ -1,0 +1,14 @@
+@article{11450500,
+ abstract = {Federated learning (FL) offers a decentralized, privacy-preserving framework for encrypted traffic classification (ETC), enabling network management and security. However, real-world deployment of federated ETC faces compound client specific feature, concept, and label drift, which degrades model performance. Existing ETC methods under FL settings typically address these drift types in isolation or partial combinations, overlooking their entanglement. Moreover, multiple-global model and personalized FL approaches are computational and communication expensive. To fill this gap, we propose DAIR FedMoE, a Drift-Adaptive, Imbalance-Aware, RL-Managed Federated Mixture-of-Experts framework to simultaneously handle the drift triad with single-global model while minimizing the computational and communication overhead. DAIR-FedMoE in tegrates a GShard Transformer with a hierarchical Mixture of-Experts (MoE) layer that routes encrypsted flows to either stable or drift-specialist experts based on per-client drift scores. Within each expert, entropy-guided loss reweighting empha sizes low-confidence classes to address dynamic label imbalance. Additionally, a reinforcement learning-based policy dynamically manages the expert pool by spawning, pruning, and merging experts, enabling efficient adaptation to evolving traffic patterns. Experiments on federated splits of ISCX-VPN, ISCX-Tor, VNAT, and USTC-TFC2016 show that DAIR-FedMoE achieves superior macro-F1, minority-class recall, and drift-recovery speed compared to state-of-the-art baselines, while preserving privacy and communication efficiency. The source code is available at https://github.com/dairfedmoe/DairFM.},
+ author = {Fardous, Shamaila and Sharif, Kashif and Li, Fan and Manjotho, Ali Asghar and Zhu, Liehuang},
+ doi = {10.1109/TDSC.2026.3676447},
+ issn = {1941-0018},
+ journal = {IEEE Transactions on Dependable and Secure Computing},
+ keyword = {Adaptation models;Computational modeling;Robustness;Concept drift;Training;Federated learning;Routing;Protocols;Privacy;Transformers;Federated Learning;Encrypted Traffic Classifi cation;Distributed Concept Drift;Class Imbalance;Mixture-of Expert;Reinforcement Learning},
+ month = {},
+ number = {},
+ pages = {1-18},
+ title = {DAIR-FedMoE: Hierarchical MoE for Federated Encrypted Traffic Classification under Compound Drift},
+ volume = {},
+ year = {2026}
+}

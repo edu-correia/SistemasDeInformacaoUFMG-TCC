@@ -1,0 +1,14 @@
+@article{10038694,
+ abstract = {Image inpainting methods leverage the similarity of adjacent pixels to create alternative content. However, as the invisible region becomes larger, the pixels completed in the deeper hole are difficult to infer from the surrounding pixel signal, which is more prone to visual artifacts. To help fill this void, we adopt an alternative progressive hole-filling scheme that hierarchically fills the corrupted region in the feature and image spaces. This technique allows us to utilize reliable contextual information of the surrounding pixels, even for large hole samples, and then gradually complete the details as the resolution increases. For a more realistic representation of the completed region, we devise a pixel-wise dense detector. By distinguishing each pixel as whether it is a masked region or not, and passing the gradient to all resolutions, the generator further enhances the potential quality of the compositing. Furthermore, the completed images at different resolutions are then merged using a proposed structure transfer module (STM) that incorporates fine-grained local and coarse-grained global interactions. In this new mechanism, each completed image at the different resolutions attends its closest composition at fine granularity adjacent image and thus can capture the global continuity by interacting both short- and long-range dependencies. By comparing our solutions qualitatively and quantitatively with state-of-the-art methods, we conclude that our model exhibits a significantly improved visual quality, even in the case of large holes.},
+ author = {Kim, Jinwoo and Kim, Woojae and Oh, Heeseok and Lee, Sanghoon},
+ doi = {10.1109/TIP.2023.3238317},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Image resolution;Semantics;Generators;Image restoration;Training;Task analysis;Image edge detection;Image inpainting;image completion;free-form inpainting;object removal;adversarial learning},
+ month = {},
+ number = {},
+ pages = {1200-1214},
+ title = {Progressive Contextual Aggregation Empowered by Pixel-Wise Confidence Scoring for Image Inpainting},
+ volume = {32},
+ year = {2023}
+}

@@ -1,0 +1,16 @@
+@article{Eslami20253923,
+ abstract = {Range filters are compact probabilistic data structures that answer approximate range emptiness queries. They are used in many domains, e.g., in key-value stores, to quickly rule out the existence of keys in a given query range and avoid having to search for them in storage. However, all existing range filters exhibit at least one of the following shortcomings: (1) they do not provide robust false positive rate and performance guarantees, (2) they do not support variable-length keys and query ranges, and (3) they do not allow dynamic operations such as insertions, deletions, or expansions. We introduce Diva, the first range filter to address all the above challenges simultaneously. Diva learns the dataset’s distribution by sampling keys and storing them in a cache-efficient trie. It compresses the keys in-between samples by removing their longest common prefix and truncating their suffixes while leaving enough bits in the middle (i.e., an infix) to allow differentiating between the keys in the sorted order. It stores infixes in constant time dynamic data blocks, which it splits to handle insertions and expansions. It processes a range query by traversing the trie and checking for the inclusion of infixes in the target query range. We show, theoretically and empirically, that Diva achieves a false positive rate on par with the state of the art on real-world datasets while supporting dynamicity and variable-length queries and keys. © 2025, VLDB Endowment. All rights reserved.},
+ author = {Eslami, Navid and Bercea, Ioana O. and Dayan, Niv},
+ doi = {10.14778/3749646.3749664},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 3},
+ number = {11},
+ pages = {3923 - 3936},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Diva: Dynamic Range Filter for Var-Length Keys and Queries},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105016663294?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

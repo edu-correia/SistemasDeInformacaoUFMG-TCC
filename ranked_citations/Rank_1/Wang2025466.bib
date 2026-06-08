@@ -1,0 +1,14 @@
+@conference{Wang2025466,
+ abstract = {Log-structured storage has emerged as a prevalent paradigm in the storage domain. However, the out-of-place update mechanism generates a substantial number of invalid data blocks, and the garbage collection (GC) mechanism employed to reclaim these blocks exacerbates write amplification. Although numerous existing schemes have made significant progress in mitigating write amplification, they often incur considerable performance and memory overheads. To address this issue, we present NatSep, a novel data placement scheme that reduces write amplification while safeguarding system performance and minimizing memory overhead. The core of NatSep lies in leveraging Native Information to characterize data hotness, with the following key design components: Firstly, NatSep meticulously defines the temperature regions and implements a strict rollback-style, unidirectional linear growth writing mode for each region. Secondly, NatSep adopts a more stringent GC selection strategy, for GC within a region, it strictly retrieves from the head of each region, and for GC between regions, there are priorities. Thirdly, NatSep manages each hotness temperature region independently and establishes dynamically allocated regions for adjacent temperature regions. The experimental results demonstrate that NatSep exhibits outstanding performance advantages compared with the current state-of-the-art data placement schemes. In detail, the throughput of NatSep has increased by 26%, the memory overhead has been reduced by 50.8%, and the performance has been improved by 20.6%. © 2025 IEEE.},
+ author = {Wang, Jinlong and Tan, Zhipeng and Xiao, Yang and Qi, Wenjie and Tan, Shikai and Yuan, Ying},
+ doi = {10.1109/ICCD65941.2025.00072},
+ journal = {Proceedings - IEEE International Conference on Computer Design: VLSI in Computers and Processors},
+ note = {Cited by: 0},
+ pages = {466 - 473},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {NatSep: Little-to-No Overhead Data Separation for Log-Structured Storage Using Native Information},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105032504348?origin=resultslist},
+ year = {2025}
+}

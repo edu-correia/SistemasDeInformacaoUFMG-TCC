@@ -1,0 +1,14 @@
+@article{5508421,
+ abstract = {The discrete pulse transform (DPT) is a decomposition of an observed signal into a sum of pulses, i.e., signals that are constant on a connected set and zero elsewhere. Originally developed for 1-D signal processing, the DPT has recently been generalized to more dimensions. Applications in image processing are currently being investigated. The time required to compute the DPT as originally defined via the successive application of LULU operators (members of a class of minimax filters studied by Rohwer) has been a severe drawback to its applicability. This paper introduces a fast method for obtaining such a decomposition, called the Roadmaker's algorithm because it involves filling pits and razing bumps. It acts selectively only on those features actually present in the signal, flattening them in order of increasing size by subtracing an appropriate positive or negative pulse, which is then appended to the decomposition. The implementation described here covers 1-D signal as well as two and 3-D image processing in a single framework. This is achieved by considering the signal or image as a function defined on a graph, with the geometry specified by the edges of the graph. Whenever a feature is flattened, nodes in the graph are merged, until eventually only one node remains. At that stage, a new set of edges for the same nodes as the graph, forming a tree structure, defines the obtained decomposition. The Roadmaker's algorithm is shown to be equivalent to the DPT in the sense of obtaining the same decomposition. However, its simpler operators are not in general equivalent to the LULU operators in situations where those operators are not applied successively. A by-product of the Roadmaker's algorithm is that it yields a proof of the so-called Highlight Conjecture, stated as an open problem in 2006. We pay particular attention to algorithmic details and complexity, including a demonstration that in the 1-D case, and also in the case of a complete graph, the Roadmaker's algorithm has optimal complexity: it runs in time O(m), where m is the number of arcs in the graph.},
+ author = {Laurie, Dirk P.},
+ doi = {10.1109/TIP.2010.2057255},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Discrete transforms;Signal processing algorithms;Space vector pulse width modulation;Fast Fourier transforms;Signal processing;Wavelet transforms;Image processing;Minimax techniques;Filters;Filling;Clustering algorithms;digital filters;digital signal processing;discrete transforms;multidimensional signal processing;nonlinear filters;signal analysis;tree graphs},
+ month = {Feb},
+ number = {2},
+ pages = {361-371},
+ title = {The Roadmaker's Algorithm for the Discrete Pulse Transform},
+ volume = {20},
+ year = {2011}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10360942,
+ abstract = {Zone Namespace (ZNS) SSDs delegate data placement and garbage collection (GC) to the host, enabling applications on the host to perform efficient GC. The existing works on LSMT-based KV stores adopt ZenFS (a user-level file system) to manage ZNS SSDs. ZenFS assumes that SSTs within the same level have similar lifetimes and places SSTs with similar lifetimes into the same zone to minimize data migration in GC. However, we observe significant disparity in the lifetimes of SSTs within the same level, resulting in fragmented zones and huge data migration in GC. To reduce data migration in GC and improve performance, we present LifetimeKV, an LSMT-based KV store for ZNS SSDs. LifetimeKV introduces a range compaction algorithm to reduce short-lived SSTs and an overlap-ratio-lifetime victim SST selection algorithm to reduce long-lived SSTs, thereby reducing the lifetime disparity among SSTs within the same level. We evaluate LifetimeKV performance on a real ZNS SSD. The results demonstrate that LifetimeKV reduces data migration in GC by 63.23% and achieves a throughput improvement of 98.81% under write-intensive workload than state-of-the-art work.},
+ author = {Liu, Biyong and Xia, Yuan and Wei, Xueliang and Tong, Wei},
+ booktitle = {2023 IEEE 41st International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD58817.2023.00053},
+ issn = {2576-6996},
+ keyword = {File systems;Tail;Throughput;Compaction;Key-Value Stores;Log-Structured Merge Trees;Zoned Namespace SSDs;Garbage Collection},
+ month = {Nov},
+ number = {},
+ pages = {300-307},
+ title = {LifetimeKV: Narrowing the Lifetime Gap of SSTs in LSMT-based KV Stores for ZNS SSDs},
+ volume = {},
+ year = {2023}
+}

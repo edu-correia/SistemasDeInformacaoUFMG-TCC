@@ -1,0 +1,14 @@
+@inproceedings{9472827,
+ abstract = {Network measurements are important for identifying congestion, DDoS attacks, and more. To support realtime analytics, stream ingestion is performed jointly by multiple nodes, each observing part of the traffic, periodically reporting its measurements to a single centralized server that aggregates them. To avoid communication congestion, each node reports a compressed version of its collected measurements. Traditionally, nodes symmetrically report summaries of the same size computed on their data. We explain that to maximize the accuracy of the joint measurement, nodes should imply various compression ratios on their measurements based on the amount of traffic observed by each node. We illustrate the approach for two common sketches: The Count-Min sketch (CM), which estimates flow frequencies, and the K-minimum-values (KMV) sketch, which estimates the number of distinct flows. For each sketch, we compute node compression ratios based on the traffic distribution. We perform extensive simulations for the sketches and analytically show that, under real-world scenarios, our sketches send smaller summaries than traditional ones while retaining similar error bounds.},
+ author = {Harris, Dor and Rinberg, Arik and Rottenstreich, Ori},
+ booktitle = {2021 IFIP Networking Conference (IFIP Networking)},
+ doi = {10.23919/IFIPNetworking52078.2021.9472827},
+ issn = {1861-2288},
+ keyword = {Computational modeling;Merging;Estimation;Distributed databases;Size measurement;Denial-of-service attack;Frequency estimation;Distributed Sketching;Measurement;Stream-Aware;Network Algorithms},
+ month = {June},
+ number = {},
+ pages = {1-8},
+ title = {Distributed Sketching with Traffic-Aware Summaries},
+ volume = {},
+ year = {2021}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749690,
+ abstract = {Memory channel bandwidth imposes an upper bound on the performance of online transaction processing (OLTP) on in-memory database management systems (DBMS). Emerging processing-in-memory (PIM) hardware has the potential to overcome this barrier by using small cores in DRAM chips that can read and process data in situ, thereby avoiding moving these data across memory channels. However, na\"{\i}vely offloading all database components to PIM does not solve the problem due to the characteristics of software components and the limitations of PIM hardware.In this paper, we present OLTPim, the first end-to-end OLTP DBMS designed for PIM systems. We build a formalized model for the affinity of each database operation towards PIM and use it to decide the partitioning of components on different types of memory. We also design a lightweight batching algorithm to overcome the large PIM control latency while minimizing the batching overhead. We implement and evaluate OLTPim on the latest PIM system from UPMEM with 64 worker threads and 2048 PIM modules. Our results show that OLTPim achieves up to 1.71\texttimes{} throughput and up to 6.14\texttimes{} less per-transaction memory channel traffic over MosaicDB, a state-of-the-art in-memory system.},
+ author = {Kim, Hyoungjoo and Zhao, Yiwei and Pavlo, Andrew and Gibbons, Phillip B.},
+ doi = {10.14778/3749646.3749690},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {4241–4254},
+ publisher = {VLDB Endowment},
+ title = {No Cap, This Memory Slaps: Breaking through the Memory Wall of Transactional Database Systems with Processing-in-Memory},
+ url = {https://doi.org/10.14778/3749646.3749690},
+ volume = {18},
+ year = {2025}
+}

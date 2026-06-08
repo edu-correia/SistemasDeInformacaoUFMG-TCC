@@ -1,0 +1,15 @@
+@article{Zhang2018102,
+ abstract = {With the continuous development of the Internet and information technology, more and more mobile terminals, wear equipment etc. contribute to the tremendous data. Thanks to the distributed computing, we can analyze the big data with quite high speed. However, many kinds of big data have an obvious common character that the datasets grow incrementally overtime, which means the distributed computing should focus on incremental processing. A number of systems for incremental data processing are available, such as Google's Percolator and Yahoo's CBP. However, in order to utilize these mature framework, one needs to make a troublesome change for their program to adapt to the environment requirement. In this paper, we introduce a MapReduce framework, named HadInc, for efficient incremental computations. HadInc is designed for offline scenes, in which real-time is needless and in-memory cluster computing is invalid. HadInc takes the advantages of finer-grained computing and Content-defined Chunking(CDC) to make sure that the system can still reuse the results which we have computed before, even if the split data has been changed seriously. Instead of re-computing the changed data entirely, HadInc can quickly find out the difference between the new split and the old one, and then merge the delta and old results into the latest result of the new datasets. Meanwhile, the dividing stability of the datasets is a key factor for reusing the results. In order to guarantee the stability of the dataset's division, we propose a series of novel algorithms based on CDC. We implemented HadInc by extending the Hadoop framework, and evaluated it with many experiments including three specific cases and a practical case. From the comparing results it can be seen that the proposed HadInc is very efficient. © 2017 Elsevier B.V.},
+ author = {Zhang, Liang and Feng, Yuanyuan and Shen, Peiyi and Zhu, Guangming and Wei, Wei and Song, Juan and Ali Shah, Syed Afaq and Bennamoun, Mohammed},
+ doi = {10.1016/j.future.2017.09.079},
+ journal = {Future Generation Computer Systems},
+ note = {Cited by: 12},
+ pages = {102 - 111},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient finer-grained incremental processing with MapReduce for big data},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85032788792?origin=resultslist},
+ volume = {80},
+ year = {2018}
+}

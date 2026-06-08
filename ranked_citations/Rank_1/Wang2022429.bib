@@ -1,0 +1,13 @@
+@conference{Wang2022429,
+ abstract = {Log-structured storage has been widely deployed in various domains of storage systems, yet its garbage collection incurs write amplification (WA) due to the rewrites of live data. We show that there exists an optimal data placement scheme that minimizes WA using the future knowledge of block invalidation time (BIT) of each written block, yet it is infeasible to realize in practice. We propose a novel data placement algorithm for reducing WA, SepBIT, that aims to infer the BITs of written blocks from storage workloads and separately place the blocks into groups with similar estimated BITs. We show via both mathematical and production trace analyses that SepBIT effectively infers the BITs by leveraging the write skewness property in practical storage workloads. Trace analysis and prototype experiments show that SepBIT reduces WA and improves I/O throughput, respectively, compared with state-of-the-art data placement schemes. SepBIT is currently deployed to support the log-structured block storage management at Alibaba Cloud. © AST 2022.All rights reserved.},
+ author = {Wang, Qiuping and Li, Jinhong and Lee, Patrick P.C. and Ouyang, Tao and Shi, Chao and Huang, Lilong},
+ journal = {Proceedings of the 20th USENIX Conference on File and Storage Technologies, FAST 2022},
+ note = {Cited by: 47},
+ pages = {429 - 443},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Separating Data via Block Invalidation Time Inference for Write Amplification Reduction in Log-Structured Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85134176081?origin=resultslist},
+ year = {2022}
+}

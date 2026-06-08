@@ -1,0 +1,14 @@
+@article{11373860,
+ abstract = {This paper investigates how to leverage emerging non-volatile memory (NVM) to enhance the performance of Log-Structure Merge (LSM) tree based key-value (KV) stores. We propose KVFG-DB, which efficiently integrates fine-block granularity and single-NVM-level compaction, to deliver high write and read performance with minimal write amplification and reduced write stalls. KVFG-DB leverages a streamlined SSTable layout called CSSTable to manage data blocks (each containing ordered KV pairs) and their indexes (i.e., the minimal and maximal keys of every block), optimizing both storage costs and compaction performance. It organizes the LSM-tree data as CSSTables into a single level on NVM, with the left area serving as a buffer to receive flushed data with substantially greater capacity, and the right area storing compacted data in a global order among CSSTables. A fine-grained compaction is then performed under various conditions to select the most relevant data blocks with intersecting keys from CSSTables in both areas, facilitating byte-addressable, fast parallel execution across multiple threads. As a result, KVFG-DB adaptively compacts data and quickly moves them from the left area to the right area to enhance performance efficiency, significantly reducing write amplification and further mitigating write stalls. Our extensive experimental studies demonstrate that KVFG-DB achieves $1.2{\boldsymbol{\times}}$1.2× and $2{\boldsymbol{\times}}$2× lower write amplification, compared with state-of-the-art KV stores MioDB and SLM-DB. Accordingly, KVFG-DB shows a $1.1{\boldsymbol{\times}}$1.1× and $7.1{\boldsymbol{\times}}$7.1× improvement in random write performance compared to them, with tail latency reduced by $1.1{\boldsymbol{\times}}$1.1× and $7{\boldsymbol{\times}}$7×, respectively.},
+ author = {Shan, Licheng and Zhou, Jiang and Zhang, Jinchao and Lu, Youyou and Li, Bo and Gu, Xiaoyan and Wang, Weiping},
+ doi = {10.1109/TC.2026.3662419},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Compaction;Nonvolatile memory;Random access memory;Computers;Trees (botanical);Costs;Data structures;Throughput;Three-dimensional displays;Telecommunication traffic;LSM-trees;key-value stores;write amplification;persistent memory;compaction},
+ month = {May},
+ number = {5},
+ pages = {1922-1936},
+ title = {Reducing Write Amplification in LSM-Trees Through Orchestrated Fine-Grained Compaction and Persistent Memory},
+ volume = {75},
+ year = {2026}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/1687553.1687564,
+ abstract = {Join is an important database operation. As computer architectures evolve, the best join algorithm may change hand. This paper re-examines two popular join algorithms -- hash join and sort-merge join -- to determine if the latest computer architecture trends shift the tide that has favored hash join for many years. For a fair comparison, we implemented the most optimized parallel version of both algorithms on the latest Intel Core i7 platform. Both implementations scale well with the number of cores in the system and take advantages of latest processor features for performance. Our hash-based implementation achieves more than 100M tuples per second which is 17X faster than the best reported performance on CPUs and 8X faster than that reported for GPUs. Moreover, the performance of our hash join implementation is consistent over a wide range of input data sizes from 64K to 128M tuples and is not affected by data skew. We compare this implementation to our highly optimized sort-based implementation that achieves 47M to 80M tuples per second. We developed analytical models to study how both algorithms would scale with upcoming processor architecture trends. Our analysis projects that current architectural trends of wider SIMD, more cores, and smaller memory bandwidth per core imply better scalability potential for sort-merge join. Consequently, sort-merge join is likely to outperform hash join on upcoming chip multiprocessors. In summary, we offer multicore implementations of hash join and sort-merge join which consistently outperform all previously reported results. We further conclude that the tide that favors the hash join algorithm has not changed yet, but the change is just around the corner.},
+ author = {Kim, Changkyu and Kaldewey, Tim and Lee, Victor W. and Sedlar, Eric and Nguyen, Anthony D. and Satish, Nadathur and Chhugani, Jatin and Di Blas, Andrea and Dubey, Pradeep},
+ doi = {10.14778/1687553.1687564},
+ issn = {2150-8097},
+ issue_date = {August 2009},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {2},
+ numpages = {12},
+ pages = {1378–1389},
+ publisher = {VLDB Endowment},
+ title = {Sort vs. Hash revisited: fast join implementation on modern multi-core CPUs},
+ url = {https://doi.org/10.14778/1687553.1687564},
+ volume = {2},
+ year = {2009}
+}

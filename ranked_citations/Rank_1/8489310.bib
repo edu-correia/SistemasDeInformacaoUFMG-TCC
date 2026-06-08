@@ -1,0 +1,14 @@
+@inproceedings{8489310,
+ abstract = {Pedestrian detection as a key problem of computer vision has many comprehensive applications such as smart transportation, video surveillance and self-driving car. In this work, we explore the application of Faster R-CNN for pedestrian detection. We found that Faster R-CNN has not shown competitive results as we expected. The main challenges for Faster R-CNN may be small objects and hard negative examples. More interestingly, we found that when the RPN and the proposal classifier are trained separately and simply combined, the detection results can be significantly improved. Based on these observations, we designed a multi-map network and a multi-ROI network to solve these two problems. The multi-map network not only utilizes the convolutional feature maps output by last convolutional layer but also exploits the previous feature maps which have higher resolution but less semantic information. The multi-ROI network converts one bounding box to three bounding boxes including enlarged one, shrinking one and original one. Then, the network fuses the features of these three bounding boxes into one robust and discriminative feature. In addition to comparing these two networks with Faster R-CNN, we also merged them into one unified and end to end network called multi-ROI-map (MRM) network. Finally, we trained the RPN and MRM separately and fused their detection results. Overall, our method achieves a competitive result compared with some leading methods on the Caltech dataset and executes 2 times faster than these methods.},
+ author = {Qiu, Zhe and Gu, Xiaodong},
+ booktitle = {2018 International Joint Conference on Neural Networks (IJCNN)},
+ doi = {10.1109/IJCNN.2018.8489310},
+ issn = {2161-4407},
+ keyword = {Feature extraction;Proposals;Detectors;Object detection;Semantics;Convolutional neural networks;Faster R-CNN;multi-map;multi-ROI;fusion},
+ month = {July},
+ number = {},
+ pages = {1-7},
+ title = {Multi ROI and Multi Map Networks for Accurate and Efficient Pedestrian Detection},
+ volume = {},
+ year = {2018}
+}

@@ -1,0 +1,14 @@
+@article{11346807,
+ abstract = {Slender objects in remote sensing, such as bridges and trains, represent a unique, yet under-researched target because of their extreme aspect ratios. This characteristic presents challenges in effectively utilizing both low- and high-level features for detecting slender objects. In this article, we propose a geometric parallelism embedded structure-aware network for slender object detection in remote sensing. Based on the observation that slender objects often exhibit distinct parallel structures in their geometry, our method aims to extract detailed structure-aware information from low-level feature maps and inject it into the high-level box head to assist in the detection of slender objects. To capture structure-aware information of slender objects, a weakly supervised mask head and geometric parallelism regularized level set loss (GP-LS loss) are proposed. The characteristic of slender objects is modeled as the geometric parallelism regularization term to provide additional parallel shrinkage force that supervises the predicted segmentation contour closer to the slender target. In the high-level box head, the structure-aware deformable region of interest (RoI) align has been designed to learn sampling offsets from a fusion of structure-aware features and original features, effectively guiding the network to extract features that are more relevant to slender objects. Finally, when employing the sliding window detection strategy for large-size slender objects, fragmented detections may occur due to the division of objects across adjacent windows. To refine the detection bounding boxes and reduce false alarms, the fragments are processed by merging & splitting (M&S) module based on contours derived from the weakly supervised prediction mask. Experimental results on the SAT-MTB and GLH-Bridge datasets demonstrate that our approach significantly improves the slender object detection performance. The code for this work will be available on the link: https://github.com/jyzhangXdu/GPSDet},
+ author = {Zhang, Jinyue and Zhang, Xiangrong and Huang, Zhongjian and Zhang, Tianyang and Han, Xiao and Jiao, Licheng},
+ doi = {10.1109/TGRS.2026.3653106},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Feature extraction;Object detection;Head;Remote sensing;Bridges;Parallel processing;Weak supervision;Proposals;Detectors;Merging;Geometric parallelism;remote sensing;slender object detection;structure-aware deformable region of interest (RoI) align},
+ month = {},
+ number = {},
+ pages = {1-14},
+ title = {GPSDet: Geometric Parallelism Embedded Structure-Aware Slender Object Detection in Remote Sensing Images},
+ volume = {64},
+ year = {2026}
+}

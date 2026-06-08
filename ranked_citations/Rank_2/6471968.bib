@@ -1,0 +1,14 @@
+@article{6471968,
+ abstract = {Dynamic binary translation (DBT) is a core technology to many important applications such as system virtualization, dynamic binary instrumentation, and security. However, there are several factors that often impede its performance: 1) emulation overhead before translation; 2) translation and optimization overhead; and 3) translated code quality. The issues also include its retargetability that supports guest applications from different instruction-set architectures (ISAs) to host machines also with different ISAs--an important feature to system virtualization. In this work, we take advantage of the ubiquitous multicore platforms, and use a multithreaded approach to implement DBT. By running the translator and the dynamic binary optimizer on different cores with different threads, it could off-load the overhead incurred by DBT on the target applications; thus, afford DBT of more sophisticated optimization techniques as well as its retargetability. Using QEMU (a popular retargetable DBT for system virtualization) and Low-Level Virtual Machine (LLVM) as our building blocks, we demonstrated in a multithreaded DBT prototype, called Hybrid-QEMU (HQEMU), that it could improve QEMU performance by a factor of $(2.6 {\times})$ and $(4.1 {\times})$ on the SPEC CPU2006 integer and floating point benchmarks, respectively, for dynamic translation of x86 code to run on x86-64 platforms. For ARM codes to x86-64 platforms, HQEMU can gain a factor of $(2.5 {\times})$ speedup over QEMU for the SPEC CPU2006 integer benchmarks. We also address the performance scalability issue of multithreaded applications across ISAs. We identify two major impediments to performance scalability in QEMU: 1) coarse-grained locks used to protect shared data structures, and 2) inefficient emulation of atomic instructions across ISAs. We proposed two techniques to mitigate those problems: 1) using indirect branch translation caching (IBTC) to avoid frequent accesses to locks, and 2) using lightweight memory transactions to emulate atomic instructions across ISAs. Our experimental results show that for multithread applications, HQEMU achieves $(25 {\times})$ speedups over QEMU for the PARSEC benchmarks.},
+ author = {Hong, Ding-Yong and Wu, Jan-Jan and Yew, Pen-Chung and Hsu, Wei-Chung and Hsu, Chun-Chen and Liu, Pangfeng and Wang, Chien-Min and Chung, Yeh-Ching},
+ doi = {10.1109/TPDS.2013.56},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Optimization;Instruction sets;Emulation;Merging;Multicore processing;Benchmark testing;Scalability;Dynamic binary translation;multicores;feedback-directed optimization;hardware performance monitoring;traces},
+ month = {March},
+ number = {3},
+ pages = {622-632},
+ title = {Efficient and Retargetable Dynamic Binary Translation on Multicores},
+ volume = {25},
+ year = {2014}
+}

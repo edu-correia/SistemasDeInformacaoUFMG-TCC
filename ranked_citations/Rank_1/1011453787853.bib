@@ -1,0 +1,15 @@
+@article{10.1145/3787853,
+ abstract = {Type recovery is a crucial step in binary code analysis, holding significant importance for reverse engineering and various security applications. Existing works typically simply target type identifiers within binary code and achieve type recovery by analyzing variable characteristics within functions. However, we find that the types in real-world binary programs are more complex and often follow specific distribution patterns.In this paper, to gain a profound understanding of the variable type recovery problem in binary code, we first conduct a comprehensive empirical study. We utilize the TYDA dataset, which includes 163,643 binary programs across four architectures and four compiler optimization options, fully reflecting the complexity and diversity of real-world programs. We carefully study the unique patterns that characterize types and variables in binary code, and also investigate the impact of compiler optimizations, yielding many valuable insights. Based on our empirical findings, we propose ByteTR, a framework for recovering variable types in binary code. We map the infinite set of target types to a finite, predictable set to obtain a balanced type dataset and perform static program analysis to tackle the impact of compiler optimizations on variable storage. In light of the ubiquity of variable propagation across functions observed in our study, ByteTR conducts inter-procedural analysis to trace variable propagation and employs a gated graph neural network to capture long-range data flow dependencies for variable type recovery. We conduct extensive experiments to evaluate the performance of ByteTR. The results demonstrate that ByteTR outperforms state-of-the-art works in both effectiveness and efficiency. Moreover, in real-world capture-the-flag (CTF) vulnerability analysis case, the pseudo code optimized by ByteTR significantly improves readability, surpassing leading tools IDA Pro and Ghidra as well as methods DIRTY and StateFormer, demonstrating the substantial practical applicability.},
+ address = {New York, NY, USA},
+ author = {Li, Gangyang and Shang, Xiuwei and Cheng, Shaoyin and Zhang, Junqi and Hu, Li and Zhu, Xu and Zhang, Weiming and Yu, Nenghai},
+ doi = {10.1145/3787853},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Reverse Engineering, Binary Program Analysis, Variable Type Recovery, Graph Neural Networks},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Beyond the Edge of Function: Unraveling the Patterns of Type Recovery in Binary Code},
+ url = {https://doi.org/10.1145/3787853},
+ year = {2026}
+}

@@ -1,0 +1,16 @@
+@article{Huynh20241105,
+ abstract = {Log-structured merge trees (LSM trees) are increasingly used as part of the storage engine behind several data systems, and are frequently deployed in the cloud. As the number of applications relying on LSM-based storage backends increases, the problem of performance tuning of LSM trees receives increasing attention. We consider both nominal tunings—where workload and execution environment are accurately known a priori—and robust tunings—which consider uncertainty in the workload knowledge. This type of workload uncertainty is common in modern applications, notably in shared infrastructure environments like the public cloud. To address this problem, we introduce Endure, a new paradigm for tuning LSM trees in the presence of workload uncertainty. Specifically, we focus on the impact of the choice of compaction policy, size ratio, and memory allocation on the overall performance. Endure considers a robust formulation of the throughput maximization problem and recommends a tuning that offers near-optimal throughput when the executed workload is not the same, instead in a neighborhood of the expected workload. Additionally, we explore the robustness of flexible LSM designs by proposing a new unified design called K-LSM that encompasses existing designs. We deploy our robust tuning system, Endure, on a state-of-the-art key-value store, RocksDB, and demonstrate throughput improvements of up to 5× in the presence of uncertainty. Our results indicate that the tunings obtained by Endure are more robust than tunings obtained under our expanded LSM design space. This indicates that robustness may not be inherent to a design, instead, it is an outcome of a tuning process that explicitly accounts for uncertainty. © The Author(s) 2024. corrected publication 2024.},
+ author = {Huynh, Andy and Chaudhari, Harshal A. and Terzi, Evimaria and Athanassoulis, Manos},
+ doi = {10.1007/s00778-023-00826-9},
+ journal = {VLDB Journal},
+ note = {Cited by: 3; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ number = {4},
+ pages = {1105 - 1128},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Towards flexibility and robustness of LSM trees},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85182471823?origin=resultslist},
+ volume = {33},
+ year = {2024}
+}

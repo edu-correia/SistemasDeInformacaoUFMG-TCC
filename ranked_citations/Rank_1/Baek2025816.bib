@@ -1,0 +1,14 @@
+@conference{Baek2025816,
+ abstract = {WebAssembly (Wasm) programs may trigger bugs in their engine implementations. To aid debugging, program reduction techniques try to produce a smaller variant of the input program that still triggers the bug. However, existing execution-unaware program reduction techniques struggle with large and complex Wasm programs, because they rely on static information and apply syntactic transformations, while ignoring the valuable information offered by the input program's execution behavior. We present RR-Reduce and Hybrid-Reduce, novel execution-aware program reduction techniques that leverage execution behaviors via record and replay. RR-Reduce identifies a bug-triggering function as the target function, isolates that function from the rest of the program, and generates a reduced program that replays only the interactions between the target function and the rest of the program. Hybrid-Reduce combines a complementary execution-unaware reduction technique with RR-Reduce to further reduce program size. We evaluate RR-Reduce and Hybrid-Reduce on 28 Wasm programs that trigger a diverse set of bugs in three engines. On average, RR-Reduce reduces the programs to 1.20% of their original size in 14.5 minutes, which outperforms the state of the art by 33.15× in terms of reduction time. Hybrid-Reduce reduces the programs to 0.13% of their original size in 3.5 hours, which outperforms the state of the art by 3.42× in terms of reduced program size and 2.26× in terms of reduction time. We envision RR-Reduce as the go-to tool for rapid, on-demand debugging in minutes, and Hybrid-Reduce for scenarios where developers require the smallest possible programs. © 2025 IEEE.},
+ author = {Baek, Doehyun and Lehmann, Daniel and Titzer, Ben L. and Ryu, Sukyoung and Pradel, Michael},
+ doi = {10.1109/ASE63991.2025.00073},
+ journal = {Proceedings - 2025 40th IEEE/ACM International Conference on Automated Software Engineering, ASE 2025},
+ note = {Cited by: 0},
+ pages = {816 - 827},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Execution-Aware Program Reduction for WebAssembly via Record and Replay},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105034685305?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,22 @@
+@article{CAI2024111919,
+ abstract = {Context:
+Recently, several deep learning based smart contract vulnerability detection approaches have been proposed. However, challenges still exist in applying deep learning for fine-grained vulnerability detection in smart contracts, including the lack of the dataset with sufficient statement-level labeled smart contract samples and neglect of heterogeneity between syntax and semantic features during code feature learning.
+Objective:
+To utilize deep learning for fine-grained smart contract vulnerability detection, we propose a security best practices (SBP) based dataset construction approach to address the scarcity of datasets. Moreover, we propose a syntax-sensitive graph neural network to address the challenge of heterogeneous code feature learning.
+Method:
+The dataset construction approach is motivated by the insight that smart contract code fragments guarded by security best practices may contain vulnerabilities in their original unguarded code form. Thus, we locate and strip security best practices from the smart contract code to recover its original vulnerable code form and perform sample labeling. Meanwhile, as the heterogeneity between tree-structured syntax features embodied inside the abstract syntax tree (AST) and graph-structured semantic features reflected by relations between statements, we propose a code graph whose nodes are each statement’s AST subtree with a syntax-sensitive graph neural network that enhances the graph neural network by a child-sum tree-LSTM cell to learn these heterogeneous features for fine-grained smart contract vulnerability detection.
+Results:
+We compare our approach with three state-of-the-art deep learning-based approaches that only support contract-level vulnerability detection and two popular static analysis-based approaches that support fine detection granularity. The experiment results show that our approach outperforms the baselines at both coarse and fine granularities.
+Conclusion:
+In this paper, we propose utilizing security best practices inside the smart contract code to construct the dataset with statement-level labels. To learn both tree-structured syntax and graph-structured semantic code features, we propose a syntax-sensitive graph neural network. The experimental results show that our approach outperforms the baselines.},
+ author = {Jie Cai and Bin Li and Tao Zhang and Jiale Zhang and Xiaobing Sun},
+ doi = {https://doi.org/10.1016/j.jss.2023.111919},
+ issn = {0164-1212},
+ journal = {Journal of Systems and Software},
+ keyword = {Smart contract, Static analysis, Vulnerability detection, Graph neural network},
+ pages = {111919},
+ title = {Fine-grained smart contract vulnerability detection by heterogeneous code feature learning and automated dataset construction},
+ url = {https://www.sciencedirect.com/science/article/pii/S016412122300314X},
+ volume = {209},
+ year = {2024}
+}

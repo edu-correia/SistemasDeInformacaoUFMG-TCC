@@ -1,0 +1,14 @@
+@article{11370167,
+ abstract = {In recent years, the increasing complexity of industrial cyber-physical systems such as autonomous vehicles has tightened real-time constraints, yet conventional model-based development (MBD) does not always exploit embedded multi/many-core processors. Obstacles include the need to manually implement ROS 2 I/O and node structure, the requirement in ROS 2 to handle execution timing such as event-driven and timer-driven callbacks and multi-input synchronization, and parallelization must be repeated for target hardware configurations. Although Model-based Parallelizer (MBP) can generate task-parallel code from Simulink models, its support for MATLAB/Simulink Toolbox blocks (e.g., ROS Toolbox) is limited, and lacking data parallelism, speedup is hard to obtain. This paper proposes a Simulink-to-ROS 2 parallel code generation method from Simulink models that include Toolbox blocks. The proposed method preserves Toolbox-equivalent functionality while preventing excessive block reduction from degrading parallelism, and generates ROS 2 C++ nodes automatically that support event-driven and timer-driven execution. Functional correctness is validated through split-merge-based verification and back-to-back tests using identical rosbag2 inputs. Beyond single-node execution time, the method measures end-to-end pipeline execution time across multiple nodes and ROS 2 latency; variability is quantified using WCET (maximum over 1,000 runs), jitter, and variance. Autoware Universe-derived ROS 2 nodes are evaluated on Raspberry Pi 4, WSL2, and the Coolidge platform. The evaluation demonstrates up to 15.92 times speedup on a 16-core Coolidge configuration. Meanwhile, ROS 2 communication and scheduling latency remains below approximately 1% of a 100 ms cycle. These results demonstrate practical, reproducible high-performance ROS 2 deployment on embedded platforms using Toolbox-based MBD.},
+ author = {Obi, Kenshin and Onozawa, Takumi and Yoshinaka, Ryo and Fujimoto, Hiroshi and Azumi, Takuya},
+ doi = {10.1109/OJIES.2026.3659855},
+ issn = {2644-1284},
+ journal = {IEEE Open Journal of the Industrial Electronics Society},
+ keyword = {Mathematical models;Codes;Software packages;Autonomous vehicles;Software;C++ languages;MATLAB;Real-time systems;Pipelines;Parallel processing;Embedded systems;model-based development (MBD);multicore processor},
+ month = {},
+ number = {},
+ pages = {348-368},
+ title = {Model-Based Development for Event-Driven and Timer-Driven ROS 2 Nodes Considering Parallelization},
+ volume = {7},
+ year = {2026}
+}

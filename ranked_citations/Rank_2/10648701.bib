@@ -1,0 +1,14 @@
+@article{10648701,
+ abstract = {Training on time-series data generated from mobile networks is a resource-intensive and time-consuming task that encounters various training failures. To cope with this issue, we propose CheckBullet, a lightweight checkpoint system to minimize storage requirements and enable fast recovery in mobile networks. First, CheckBullet determines a checkpointing interval based on the characteristics of the model and the timing of failure occurrences. This approach ensures fast recovery while preserving the existing training runtime. Second, CheckBullet quantizes the weight tensor and eliminates duplicate weights, which significantly reduces the overall checkpoint size, leading to a substantial decrease in storage requirements. Third, CheckBullet selects the minimum training loss among the deduplicated checkpoints and merges the selected checkpoints. This approach reduces recovery time while preserving existing training loss. The experimental results show that CheckBullet can reduce the recovery time by $6\times$6× to $11\times$11× barely increasing the training runtime. Furthermore, CheckBullet can save storage requirements by up to 70% while maintaining the minimum training loss.},
+ author = {Jeon, Youbin and Choi, Hongrok and Jeong, Hyeonjae and Jung, Daeyoung and Pack, Sangheon},
+ doi = {10.1109/TMC.2024.3450283},
+ issn = {1558-0660},
+ journal = {IEEE Transactions on Mobile Computing},
+ keyword = {Training;Checkpointing;Data models;Tensors;Runtime;Computational modeling;Graphics processing units;Checkpointing;failure resiliency;robust model training;time-series data},
+ month = {Dec},
+ number = {12},
+ pages = {14946-14958},
+ title = {CheckBullet: A Lightweight Checkpointing System for Robust Model Training on Mobile Networks},
+ volume = {23},
+ year = {2024}
+}

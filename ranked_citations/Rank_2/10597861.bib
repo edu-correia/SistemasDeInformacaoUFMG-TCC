@@ -1,0 +1,14 @@
+@inproceedings{10597861,
+ abstract = {Data science pipelines commonly utilize dataframe and array operations for tasks such as data preprocessing, analysis, and machine learning. The most popular tools for these tasks are pandas and NumPy. However, these tools are limited to executing on a single node, making them unsuitable for processing large-scale data. Several systems have attempted to distribute data science applications to clusters while maintaining interfaces similar to single-node libraries, enabling data scientists to scale their workloads without significant effort. However, existing systems often struggle with processing large datasets due to Out-of-Memory (OOM) problems caused by poor data partitioning. To overcome these challenges, we develop Xorbits, a high-performance, scalable data science framework specifically designed to distribute data science workloads across clusters while retaining familiar APIs. The key differentiator of Xorbits is its ability to dynamically switch between graph construction and graph execution. Xorbits has been successfully deployed in production environments with up to 5k CPU cores. Its applications span various domains, including user behavior analysis and recommendation systems in the e-commerce sector, as well as credit assessment and risk management in the finance industry. Users can easily scale their data science workloads by simply changing the import line of their pandas and NumPy code. Our experiments demonstrate that Xorbits can effectively process very large datasets without encountering OOM or data-skewing problems. Over the fastest state-of-the-art solutions, Xorbits achieves an impressive 2.66 × speedup on average. In terms of API coverage, Xorbits attains a compatibility rate of 96.7%, surpassing the fastest framework by an impressive margin of 60 percentage points. Xorbits is available at https://github.com/xorbitsai/xorbits.},
+ author = {Lu, Weizheng and He, Kaisheng and Qin, Xuye and Li, Chengjie and Wang, Zhong and Yuan, Tao and Liao, Xia and Zhang, Feng and Chen, Yueguo and Du, Xiaoyong},
+ booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE60146.2024.00392},
+ issn = {2375-026X},
+ keyword = {Tiles;Scalability;Distributed databases;Switches;Production;Data science;Risk management;scalable data science;dataframe;array;tiling;computation graph},
+ month = {May},
+ number = {},
+ pages = {5211-5223},
+ title = {Xorbits: Automating Operator Tiling for Distributed Data Science},
+ volume = {},
+ year = {2024}
+}

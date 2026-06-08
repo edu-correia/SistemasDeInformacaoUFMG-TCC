@@ -1,0 +1,14 @@
+@conference{Silberstein2008765,
+ abstract = {We study the problem of bulk-inserting records into tables in a system that horizontally range-partitions data over a large cluster of shared-nothing machines. Each table partition contains a contiguous portion of the table's key range, and must accept all records inserted into that range. Examples of such systems include BigTable [8] at Google, and PNUTS [15] at Yahoo! During bulk inserts into an existing table, if most of the inserted records end up going into a small number of data partitions, the obtained throughput may be very poor due to ineffective use of cluster parallelism. We propose a novel approach in which a planning phase is invoked before the actual insertions. By creating new partitions and intelligently distributing partitions across machines, the planning phase ensures that the insertion load will be well-balanced. Since there is a tradeoff between the cost of moving partitions and the resulting throughput gain, the planning phase must minimize the sum of partition movement time and insertion time. We show that this problem is a variation of NP-hard bin-packing, reduce it to a problem of packing vectors, and then give a solution with provable approximation guarantees. We evaluate our approach on a prototype system deployed on a cluster of 50 machines, and show that it yields significant improvements over more naïve techniques. Copyright 2008 ACM.},
+ author = {Silberstein, Adam and Cooper, Brian F. and Srivastava, Utkarsh and Vee, Erik and Yemeni, Ramana and Ramakrishnan, Raghu},
+ doi = {10.1145/1376616.1376693},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 32},
+ pages = {765 - 778},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient bulk insertion into a distributed ordered table},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/57149122176?origin=resultslist},
+ year = {2008}
+}

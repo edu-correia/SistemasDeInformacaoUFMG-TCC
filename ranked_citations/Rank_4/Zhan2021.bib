@@ -1,0 +1,16 @@
+@article{Zhan2021,
+ abstract = {Making logical copies, or clones, of files and directories is critical to many real-world applications and workflows, including backups, virtual machines, and containers. An ideal clone implementation meets the following performance goals: (1) creating the clone has low latency; (2) reads are fast in all versions (i.e., spatial locality is always maintained, even after modifications); (3) writes are fast in all versions; (4) the overall system is space efficient. Implementing a clone operation that realizes all four properties, which we call a nimble clone, is a long-standing open problem. This article describes nimble clones in B-ϵ-tree File System (BetrFS), an open-source, full-path-indexed, and write-optimized file system. The key observation behind our work is that standard copy-on-write heuristics can be too coarse to be space efficient, or too fine-grained to preserve locality. On the other hand, a write-optimized key-value store, such as a B<sup>ε</sup>-tree or an log-structured merge-tree (LSM)-tree, can decouple the logical application of updates from the granularity at which data is physically copied. In our write-optimized clone implementation, data sharing among clones is only broken when a clone has changed enough to warrant making a copy, a policy we call copy-on-abundant-write. We demonstrate that the algorithmic work needed to batch and amortize the cost of BetrFS clone operations does not Erode the performance advantages of baseline BetrFS; BetrFS performance even improves in a few cases. BetrFS cloning is efficient; for example, when using the clone operation for container creation, BetrFS outperforms a simple recursive copy by up to two orders-of-magnitude and outperforms file systems that have specialized Linux Containers (LXC) backends by 3-4×. © 2021 Association for Computing Machinery. All rights reserved.},
+ author = {Zhan, Yang and Conway, Alex and Jiao, Yizheng and Mukherjee, Nirjhar and Groombridge, Ian and Bender, Michael A. and Farach-Colton, Martin and Jannen, William and Johnson, Rob and Porter, Donald E. and Yuan, Jun},
+ doi = {10.1145/3423495},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 2},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Copy-on-abundant-write for NiMble file system clones},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85100415454?origin=resultslist},
+ volume = {17},
+ year = {2021}
+}

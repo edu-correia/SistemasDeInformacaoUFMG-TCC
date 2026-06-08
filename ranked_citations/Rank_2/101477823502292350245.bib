@@ -1,0 +1,17 @@
+@article{10.14778/2350229.2350245,
+ abstract = {Parallel dataflow systems are a central part of most analytic pipelines for big data. The iterative nature of many analysis and machine learning algorithms, however, is still a challenge for current systems. While certain types of bulk iterative algorithms are supported by novel dataflow frameworks, these systems cannot exploit computational dependencies present in many algorithms, such as graph algorithms. As a result, these algorithms are inefficiently executed and have led to specialized systems based on other paradigms, such as message passing or shared memory.We propose a method to integrate incremental iterations, a form of workset iterations, with parallel dataflows. After showing how to integrate bulk iterations into a dataflow system and its optimizer, we present an extension to the programming model for incremental iterations. The extension alleviates for the lack of mutable state in dataflows and allows for exploiting the sparse computational dependencies inherent in many iterative algorithms. The evaluation of a prototypical implementation shows that those aspects lead to up to two orders of magnitude speedup in algorithm runtime, when exploited. In our experiments, the improved dataflow system is highly competitive with specialized systems while maintaining a transparent and unified dataflow abstraction.},
+ author = {Ewen, Stephan and Tzoumas, Kostas and Kaufmann, Moritz and Markl, Volker},
+ doi = {10.14778/2350229.2350245},
+ issn = {2150-8097},
+ issue_date = {July 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {1268–1279},
+ publisher = {VLDB Endowment},
+ title = {Spinning fast iterative data flows},
+ url = {https://doi.org/10.14778/2350229.2350245},
+ volume = {5},
+ year = {2012}
+}

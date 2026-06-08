@@ -1,0 +1,15 @@
+@article{Sun201861233,
+ abstract = {Log-structured merge tree (LSM-tree)-based key-value stores are widely deployed in large-scale storage systems. The underlying reason is that the traditional relational databases cannot reach the high performance required by big-data applications. As high-throughput alternatives to relational databases, LSM-tree-based key-value stores can support high-throughput write operations and provide high sequential bandwidth in storage systems. However, the compaction process triggers write amplification and is confronted with the degraded write performance, especially under update-intensive workloads. To address this issue, we design a holistic key-value store to explorer near-data processing (NDP) and on-demand scheduling for compaction optimization in an LSM-tree key-value store, named DStore. DStore makes full use of various computing capacities in the host-side and device-side subsystems. DStore dynamically divides the whole host-side compaction tasks into the above two-side subsystems according to two-side different computing capabilities. Meanwhile, the device must be featured with an NDP model. The divided compaction tasks are performed by the host and the device in parallel. In DStore, the NDP-based devices exhibit low-latency and high-bandwidth performance, thus facilitating key-value stores. DStore not only accomplishes compaction for key-value stores but also improves the system performance. We implement our DStore prototype in a real-world platform, and different kinds of testbeds are employed in our experiment. LevelDB and a static compaction optimization using the NDP model (called Co-KV) are used to compare with the DStore in our evaluation. Results show that DStore achieves about 3.7 × performance improvement over LevelDB under the db_bench workload. In addition, DStore-enabled key-value stores outperform LevelDB by a factor of about 3.3 × and 77% in terms of throughput and latency under YCSB benchmark, respectively. © 2013 IEEE.},
+ author = {Sun, Hui and Liu, Wei and Qiao, Zhi and Fu, Song and Shi, Weisong},
+ doi = {10.1109/ACCESS.2018.2873579},
+ journal = {IEEE Access},
+ note = {Cited by: 12; All Open Access; Gold Open Access; Green Open Access},
+ pages = {61233 - 61253},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DStore: A Holistic Key-Value Store Exploring Near-Data Processing and On-Demand Scheduling for Compaction Optimization},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85054534238?origin=resultslist},
+ volume = {6},
+ year = {2018}
+}

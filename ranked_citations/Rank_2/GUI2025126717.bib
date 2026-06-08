@@ -1,0 +1,13 @@
+@article{GUI2025126717,
+ abstract = {Image inpainting has achieved a superior performance boost in inpainting quality with transformers, because of their powerful long-dependency modeling capacity. However, due to quadratically increased computation complexity with spatial resolution, transformers are not suitable for high-resolution image inpainting tasks, especially when attempting to model structure and texture separately. It remains challenging to accurately and reasonably recover the global structures and texture details while maintaining competitive inference efficiency. In this paper, we propose a novel and efficient method for high-resolution image inpainting using a lightweight structure-guided network, which includes a high-resolution structure restoration (HRSR) sub-network and a structure enhanced texture restoration (SETR) sub-network. Specifically, we introduce an efficient transformer block into the HRSR network, which combines recursive gated convolution with a hybrid attention mechanism to enhance the dependency modeling and effectively merge the information from both known and masked regions, allowing for global structure reconstruction at high resolution and high performance. Additionally, we introduce a global–local gated transformer block into the SETR, which employs the gating mechanism to transfers useful global and local features and uses the structural prior information to guide the texture restoration process for the final inpainting of images. We conduct extensive experiments on several benchmark datasets to demonstrate the effectiveness of our LSG-Net. The results show that our method achieves a new state-of-the-art performance on the high-resolution image inpainting task, for example, with the PSNR of 25.68 and SSIM of 0.930 on the Indoor dataset, while significantly reducing the number of parameters (268.7 M) and computational complexity. Furthermore, we demonstrate our method on various applications. Our code and models are available at https://github.com/LYaNing-LSG/LSG-Net.git.},
+ author = {Yan Gui and Yaning Liu and Chen Yan and Lidan Kuang and Zhihua Chen},
+ doi = {https://doi.org/10.1016/j.eswa.2025.126717},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {High-resolution image inpainting, Structure reconstruction, Hydra interaction attention, Global–local gated transformer},
+ pages = {126717},
+ title = {Lightweight structure-guided network with hydra interaction attention and global–local gating mechanism for high-resolution image inpainting},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425003392},
+ volume = {272},
+ year = {2025}
+}

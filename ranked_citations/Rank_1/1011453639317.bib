@@ -1,0 +1,18 @@
+@article{10.1145/3639317,
+ abstract = {Timeseries analytics is important in many real-world applications. Recently, the Transformer model, popular in natural language processing, has been leveraged to learn high quality feature embeddings from timeseries: embeddings are key to the performance of various timeseries analytics tasks such as similarity-based timeseries queries within vector databases. However, quadratic time and space complexities limit Transformers' scalability, especially for long timeseries. To address these issues, we develop a timeseries analytics tool, RITA, which uses a novel attention mechanism, named group attention, to address this scalability issue. Group attention dynamically clusters the objects based on their similarity into a small number of groups and approximately computes the attention at the coarse group granularity. It thus significantly reduces the time and space complexity, yet provides a theoretical guarantee on the quality of the computed attention. The dynamic scheduler of RITA continuously adapts the number of groups and the batch size in the training process, ensuring group attention always uses the fewest groups needed to meet the approximation quality requirement. Extensive experiments on various timeseries datasets and analytics tasks demonstrate that RITA outperforms the state-of-the-art in accuracy and is significantly faster --- with speedups of up to 63X.},
+ address = {New York, NY, USA},
+ articleno = {62},
+ author = {Liang, Jiaming and Cao, Lei and Madden, Samuel and Ives, Zack and Li, Guoliang},
+ doi = {10.1145/3639317},
+ issue_date = {February 2024},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {attention, efficient transformers, self-supervised, timeseries analytics},
+ month = {March},
+ number = {1},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {RITA: Group Attention is All You Need for Timeseries Analytics},
+ url = {https://doi.org/10.1145/3639317},
+ volume = {2},
+ year = {2024}
+}

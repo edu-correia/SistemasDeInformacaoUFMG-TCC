@@ -1,0 +1,16 @@
+@article{Kim20202301,
+ abstract = {High-performance storage devices, such as Non-Volatile Memory express Solid-State Drives (NVMe SSDs), have been widely adopted in data centers. Especially, multiple storage devices provide higher I/O performance compared with a single device. However, the performance can be reduced in the case of workloads with mixed read and write requests (e.g., key-value stores) even though multiple storage devices are adopted. This is because read requests can be blocked until the processing for write requests is finished. In this article, we propose an I/O isolation scheme to improve the performance of the key-value store for multiple SSDs. In our scheme, we classify files of the key-value store and deploy files to the separated storage devices according to the characteristics of each file. Thus, read/write operations are performed in different storage devices. In addition, we propose two different device mapping methods, namely fixed and adaptive device mapping to deploy files to the proper device. We implement our scheme in RocksDB with multiple storage devices (six NVMe SSDs) and extend our scheme on an open-channel SSD, which reveals internal hardware architecture to verify the effectiveness of read/write isolation within a single storage device. The experimental results demonstrate that our scheme improves performance by up to 29% and 26% in the open-channel SSD and multiple storage devices, respectively, compared with the existing scheme. © 2020, Springer Science+Business Media, LLC, part of Springer Nature.},
+ author = {Kim, Hwajung and Yeom, Heon Young and Son, Yongseok},
+ doi = {10.1007/s10586-020-03161-8},
+ journal = {Cluster Computing},
+ note = {Cited by: 0},
+ number = {3},
+ pages = {2301 - 2313},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Design and implementation of an I/O isolation scheme for key-value store on multiple solid-state drives},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85088561071?origin=resultslist},
+ volume = {23},
+ year = {2020}
+}

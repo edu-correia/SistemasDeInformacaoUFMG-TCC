@@ -1,0 +1,14 @@
+@inproceedings{11035403,
+ abstract = {Use-After-Free vulnerabilities pose significant threats in memory-unsafe languages like C/C++, potentially leading to memory corruption, data leakage, or arbitrary code execution. This paper presents a novel UAF detection method based on Memory Tagging Extension, which enhances traditional virtual address-based defenses by introducing dynamic tag embedding and tag-state tracking. By binding a memory tag to both allocated objects and their referencing pointers, and modifying the tag upon deallocation, this approach enables efficient detection of dangling pointer dereferences through tag mismatches. The system integrates seamlessly with the Linux ptmalloc2 allocator using dynamic linking, allowing for high compatibility without requiring source code modifications. Experimental results on the Juliet Test Suite demonstrate a detection accuracy of 98%, while evaluations on the MiBench benchmark confirm significantly reduced runtime and memory overhead compared to existing tools such as ASan, QASan, and CETS. The proposed method balances security, performance, and engineering practicality, making it particularly suitable for resource-constrained and security-critical environments like embedded or IoT systems.},
+ author = {Gao, Li and Hu, Chuanping and Zhuang, Yan},
+ booktitle = {2025 IEEE 6th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)},
+ doi = {10.1109/AINIT65432.2025.11035403},
+ issn = {},
+ keyword = {Seminars;Runtime;Source coding;Linux;Memory management;Tagging;Dynamic scheduling;Safety;Security;Information technology;Use-After-Free;virtual address reuse;ptmalloc2;memory safety;dynamic tagging},
+ month = {April},
+ number = {},
+ pages = {991-995},
+ title = {UAF Vulnerability Detection Method Based on Dynamic Tag Extension},
+ volume = {},
+ year = {2025}
+}

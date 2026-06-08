@@ -1,0 +1,14 @@
+@article{9779208,
+ abstract = {Network measurements are important for identifying congestion, DDoS attacks, and more. To support real-time analytics, stream ingestion is performed jointly by multiple nodes, each observing part of the traffic, periodically reporting its measurements to a single centralized server that aggregates them. To avoid communication congestion, each node reports a compressed version of its collected measurements. Traditionally, nodes symmetrically report summaries of the same size computed on their data. We explain that to maximize the accuracy of the joint measurement, nodes should imply various compression ratios on their measurements based on the amount of traffic observed by each node. We illustrate the approach for three common sketches: The Count-Min sketch (CM), which estimates flow sizes as well as for the K-minimum-values (KMV) sketch and the HyperLogLog (HLL), which both estimate the number of distinct flows. For each sketch, we compute node compression ratios based on the traffic distribution. In general, this is done with a single round of communication with the central server, after which the compression ratio for each node can be computed. We perform extensive simulations for the sketches and analytically show that, under real-world scenarios, our sketches send smaller summaries than traditional ones while retaining similar error bounds.},
+ author = {Harris, Dor and Rinberg, Arik and Rottenstreich, Ori},
+ doi = {10.1109/TNSM.2022.3172299},
+ issn = {1932-4537},
+ journal = {IEEE Transactions on Network and Service Management},
+ keyword = {Estimation;Servers;Merging;Data models;Measurement uncertainty;Hash functions;Frequency measurement;Measurement;computer network management},
+ month = {June},
+ number = {2},
+ pages = {1962-1975},
+ title = {Compressing Distributed Network Sketches With Traffic-Aware Summaries},
+ volume = {20},
+ year = {2023}
+}

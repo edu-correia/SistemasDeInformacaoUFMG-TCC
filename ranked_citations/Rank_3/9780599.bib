@@ -1,0 +1,14 @@
+@article{9780599,
+ abstract = {The log-structured merge-tree (LSM-tree)-based key-value store has been widely adopted by many large-scale data storage applications for its excellent write performance. However, such write performance gains mainly come from scarifying read performance due to the leveled and log-structured intrinsic characteristics of the LSM-tree. Therefore, the critical challenge of the existing LSM-tree is how to improve the read efficiency by reducing read amplification. This article for the first time proposes Tidal-tree-Mem, a novel data structure where data flow inside the LSM-tree-like Tidal waves. First, a floating strategy is proposed to allow frequently accessed files at the bottom of the LSM-tree to move to higher positions, reducing read amplification. Second, a stretching strategy is proposed to vary the shape of the LSM-tree to adapt to workloads with different characteristics. To evaluate the performance of Tidal-tree-Mem, we conduct a series of experiments using standard benchmarks from YCSB. The experimental results show that Tidal-tree-Mem can effectively reduce read amplification and the overall latency by over 71.94% and 47.34%, respectively, compared with representative schemes.},
+ author = {Ma, Chenlin and Yang, Hao and Wu, Shangyu and Wang, Yi and Mao, Rui},
+ doi = {10.1109/TCAD.2022.3177575},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Compaction;Indexes;Social networking (online);Shape;Micromechanical devices;Databases;Standards;Key-value store;log-structured merge tree (LSM-tree);read amplification;storage system;write amplification},
+ month = {Feb},
+ number = {2},
+ pages = {423-436},
+ title = {Tidal-Tree-Mem: Toward Read-Intensive Key-Value Stores With Tidal Structure Based on LSM-Tree},
+ volume = {42},
+ year = {2023}
+}

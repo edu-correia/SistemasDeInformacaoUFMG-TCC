@@ -1,0 +1,14 @@
+@inproceedings{10597902,
+ abstract = {Log-structured merge-tree (LSM-tree) is a storage architecture widely used in key-value (KV) stores. To enhance the read efficiency of LSM-tree, recent works utilize the learned index to learn the mapping between keys and locations. However, in existing learned-index-aided KV stores, inefficient design of the learned index and disk access significantly impact the read performance. How to design a learned KV store to improve index efficiency and minimize disk access remains a critical problem. This paper presents LeaderKV, a read-optimized LSM-tree-based KV store. LeaderKV employs decoupled KV tables (DK-Table) and efficient learned indexes for data retrieval. DKTables are storage files in Leader Kvbecause they avoid reading irrelevant data in collaboration with learned indexes during queries. A learned index called Leader is proposed to accelerate data retrieval within DKTable. Leader is composed of precise models and approximate models. A redirect mechanism is designed to reduce the cost of mispredictions in Leader. We integrate DKTable and Leader into LeaderKV and demonstrate its effectiveness using a variety of datasets and workloads. Experimental results show that LeaderKV significantly improves the read performance compared to representative schemes.},
+ author = {Wang, Yi and Yuan, Jianan and Wu, Shangyu and Liu, Huan and Chen, Jiaxian and Ma, Chenlin and Qin, Jianbin},
+ booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE60146.2024.00010},
+ issn = {2375-026X},
+ keyword = {Training;Lead acid batteries;Costs;Graphics processing units;Collaboration;Bandwidth;Data engineering;Key-value store;LSM-tree;read performance;learned index;decoupled KV table},
+ month = {May},
+ number = {},
+ pages = {29-41},
+ title = {LeaderKV: Improving Read Performance of KV Stores via Learned Index and Decoupled KV Table},
+ volume = {},
+ year = {2024}
+}

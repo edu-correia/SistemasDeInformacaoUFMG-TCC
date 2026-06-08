@@ -1,0 +1,15 @@
+@article{Lemire201713,
+ abstract = {Compression can sometimes improve performance by making more of the data available to the processors faster. We consider the compression of integer keys in a B+-tree index. For this purpose, systems such as IBM DB2 use variable-byte compression over differentially coded keys. We revisit this problem with various compression alternatives such as Google's VarIntGB, Binary Packing and Frame-of-Reference. In all cases, we describe algorithms that can operate directly on compressed data. Many of our alternatives exploit the single-instruction-multiple-data (SIMD) instructions supported by modern CPUs. We evaluate our techniques in a database environment provided by Upscaledb, a production-quality key-value database. Our best techniques are SIMD accelerated: they simultaneously reduce memory usage while improving single-threaded speeds. In particular, a differentially coded SIMD binary-packing techniques (BP128) can offer a superior query speed (e.g., 40% better than an uncompressed database) while providing the best compression (e.g., by a factor of ten). For analytic workloads, our fast compression techniques offer compelling benefits. Our software is available as open source. © 2017 Elsevier Ltd},
+ author = {Lemire, Daniel and Rupp, Christoph},
+ doi = {10.1016/j.is.2017.01.002},
+ journal = {Information Systems},
+ note = {Cited by: 7; All Open Access; Green Open Access},
+ pages = {13 - 23},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Upscaledb: Efficient integer-key compression in a key-value store using SIMD instructions},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85009250343?origin=resultslist},
+ volume = {66},
+ year = {2017}
+}

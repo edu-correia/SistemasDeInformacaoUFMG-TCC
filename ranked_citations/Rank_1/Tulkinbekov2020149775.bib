@@ -1,0 +1,15 @@
+@article{Tulkinbekov2020149775,
+ abstract = {Key-value stores based on a log-structured merge (LSM) tree have emerged in big data systems because of their scalability and reliability. An LSM-tree offers a multilevel data structure with a simple interface. However, it performs file rewrites at the disk level, which causes write amplification. This study is concerned with this problem in relation to an embedded board environment, which can be used in edge computing. Addressing the major problems associated with an LSM-tree, we propose a new key-value store named CaseDB, which aggressively separates keys and bloom filters on the non-volatile memory express (NVMe) drive and stores the values on the SSD. Our solution reduces the I/O cost and enhances the overall performance in a cost-efficient manner. CaseDB employs a memory component, CBuffer, to avoid small write operations, and a delayed value compaction technique that guarantees the sorted order for both keys and values. CaseDB also utilizes deduction-based data deduplication to prevent space amplification in the values layer. The experiments show that CaseDB outperforms LevelDB and WiscKey 5.7 and 1.8 times, respectively, with respect to data writes, and additionally improves the read performance by 1.5 times. CaseDB also avoids the space amplification of WiscKey. © 2013 IEEE.},
+ author = {Tulkinbekov, Khikmatullo and Kim, Deok-Hwan},
+ doi = {10.1109/ACCESS.2020.3016680},
+ journal = {IEEE Access},
+ note = {Cited by: 13; All Open Access; Gold Open Access; Green Open Access},
+ pages = {149775 - 149786},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CaseDB: Lightweight Key-Value Store for Edge Computing Environment},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85090337340?origin=resultslist},
+ volume = {8},
+ year = {2020}
+}

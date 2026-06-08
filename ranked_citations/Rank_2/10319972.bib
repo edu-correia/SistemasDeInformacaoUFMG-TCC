@@ -1,0 +1,14 @@
+@inproceedings{10319972,
+ abstract = {Disaggregated Persistent Memory (DPM) is a promising technology offering elasticity, high resource utilization, persistent data storage, and lower power consumption. While building KV stores on the DPM benefits from these merits, achieving efficient writes also faces two primary challenges: 1) limited scalability caused by the underused PM bandwidth, and 2) limited CPU resources the persistent memory server (PMS) can provide. Integrating the SmartNIC such as the Data Processing Unit (DPU) into the DPM gives developers the chance to optimize writing to KV stores by utilizing both the memory and processor of DPU. However, simple offloading cannot make full use of the DPU’s potential capacity. To address these challenges, we propose DoW-KV, a persistent hash KV store on DPM. DoW-KV employs a two-tier hash index consisting of a DPU cache table in DPU memory and multiple PM persistent tables on the PM. It relocates small random writes to the DPU memory and consolidates them to the PM at a coarse granularity. Furthermore, DoW-KV uses DPU-offloaded step merge and a coroutine-based asynchronous processing framework to efficiently manage the PM persistent tables. DoW-KV also introduces a client-mixed read strategy to boost key searching on the two-tier hash index. Experimental results show that DoW-KV outperforms the state-of-the-art DINOMO by 2.1× and 1.3× in the Put and Get operations, respectively.},
+ author = {Zhang, Yiwen and Li, Guokuan and Wan, Jiguang and Wang, Junyue and Li, Jun and Yao, Ting and Wu, Huatao and Wang, Daohui},
+ booktitle = {2023 IEEE International Conference on Cluster Computing (CLUSTER)},
+ doi = {10.1109/CLUSTER52292.2023.00030},
+ issn = {2168-9253},
+ keyword = {Power demand;Scalability;Memory management;Random access memory;Writing;Throughput;Central Processing Unit;Disaggregated persistent memory;Key-value store;Data processing unit},
+ month = {Oct},
+ number = {},
+ pages = {271-283},
+ title = {DoW-KV: A DPU-offloaded and Write-optimized Key-Value Store on Disaggregated Persistent Memory},
+ volume = {},
+ year = {2023}
+}

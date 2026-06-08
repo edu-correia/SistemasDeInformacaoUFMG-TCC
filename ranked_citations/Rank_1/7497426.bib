@@ -1,0 +1,14 @@
+@inproceedings{7497426,
+ abstract = {The Pipe-and-Filter style represents a well-known family of component-based architectures. By executing each filter on a dedicated processing unit, it is also possible to leverage contemporary distributed systems and multi-core systems for a high throughput. However, this simple parallelization approach is not very effective when (1) the workload is uneven distributed over all filters and when (2) the number of available processing units exceeds the number of filters. In the first case, parallelizing all filters can lead to a waste of resources since only the slowest filter is responsible for the overall throughput. In the second case, some processing units remain unused. In this paper, we present an automatic parallelization approach providing high throughput and utilizing the available processing units. Our main idea is to provide a composite filter that is wrapped around an existing filter to increase its throughput. We call this composite filter the Task Farm Filter since it implements the Task Farm parallelization pattern. It creates and executes multiple instances of the underlying filter in parallel. Moreover, we present a modular, self-adaptive mechanism that automatically adapts the number of instances at runtime to achieve the highest possible throughput. Finally, we present an extensive experimental evaluation of our self-adaptive task farm filter by employing a CPU-intensive, an I/O-intensive, and a hybrid scenario. The evaluation shows that our task farm automatically parallelize the underlying filter and thus increases the overall throughput. Furthermore, the evaluation shows that our task farm scales well with the workload of the executed Pipe-and-Filter architecture.},
+ author = {Wulf, Christian and Wiechmann, Christian Claus and Hasselbring, Wilhelm},
+ booktitle = {2016 19th International ACM SIGSOFT Symposium on Component-Based Software Engineering (CBSE)},
+ doi = {10.1109/CBSE.2016.21},
+ issn = {},
+ keyword = {Throughput;Corporate acquisitions;Computer architecture;Runtime;Ports (Computers);Distribution strategy;Parallel processing;Software performance;Software architecture},
+ month = {April},
+ number = {},
+ pages = {13-22},
+ title = {Increasing the Throughput of Pipe-and-Filter Architectures by Integrating the Task Farm Parallelization Pattern},
+ volume = {},
+ year = {2016}
+}

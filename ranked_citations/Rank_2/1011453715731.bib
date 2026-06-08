@@ -1,0 +1,18 @@
+@article{10.1145/3715731,
+ abstract = {Vulnerability datasets used for ML testing implicitly contain retrospective information. When tested on the field, one can only use the labels available at the time of training and testing (e.g. seen and assumed negatives). As vulnerabilities are discovered across calendar time, labels change and past performance is not necessarily aligned with future performance. Past works only considered the slices of the whole history (e.g. DiverseVUl) or individual differences between releases (e.g. Jimenez et al. ESEC/FSE 2019).   Such approaches are either too optimistic in training (e.g. the whole history) or too conservative (e.g. consecutive releases). We propose a method to restructure a dataset into a series of datasets in which both training and testing labels change to account for the knowledge available at the time. If the model is actually learning, it should improve its performance over time as more data becomes available and data becomes more stable, an effect that can be checked with the Mann-Kendall test.  We validate our methodology for vulnerability detection with 4 time-based datasets (3 projects from BigVul dataset + Vuldeepecker’s NVD) and 5 ML models (Code2Vec, CodeBERT, LineVul, ReGVD, and Vuldeepecker). In contrast to the intuitive expectation (more retrospective information, better performance), the trend results show that performance changes inconsistently across the years, showing that most models are not learning.},
+ address = {New York, NY, USA},
+ articleno = {FSE016},
+ author = {Paramitha, Ranindya and Feng, Yuan and Massacci, Fabio},
+ doi = {10.1145/3715731},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Dataset tuning, machine learning, perspective, software security},
+ month = {June},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Today’s Cat Is Tomorrow’s Dog: Accounting for Time-Based Changes in the Labels of ML Vulnerability Detection Approaches},
+ url = {https://doi.org/10.1145/3715731},
+ volume = {2},
+ year = {2025}
+}

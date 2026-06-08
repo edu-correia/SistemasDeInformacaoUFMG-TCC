@@ -1,0 +1,14 @@
+@inproceedings{10133074,
+ abstract = {Prospects of novel flash-based, crash-tolerant, non-volatile memory (NVM) such as Intel’s Optane DC memory [17] and future CXL-based persistent memory [28] bring about new and exciting usage scenarios for both general-purpose and embedded computing systems involving FPGA-enabled Trusted Execution Environment (TEE) [35], [43]. However, the NVM modules demonstrate high write latency and limited write endurance and therefore, are more suitable for a hybrid NVM + volatile DRAM setup [15]. Furthermore, different memory-based adversaries in NVM including integrity-based attacks demand the use of a robust authentication method such as Bonsai Merkle Tree (BMT) [4]. Conventional BMT authentication schemes should not be directly applied to such hybrid, embedded NVM platforms as the typical frequent update process of a BMT affects runtime performance even when persistence is unnecessary. On the contrary, the latest intermittent BMT update techniques can provide better run-time throughput, but lack crash-consistency [27]. Therefore, a heterogeneous memory-based system would greatly benefit from an authentication mechanism that can change its update method on-the-fly and provide a good balance between the persistence and run-time performance.In this paper, we propose a unified and hardware-friendly BMT framework called opportunistic Merkle tree (OMT). OMT is both modular and run-time adaptive by 1) merging the logic for two different BMT update schemes while still allowing for parallel updates through separate update cores and 2) streamlining the BMT read/verification for both of the update methods with a common datapath to support both recovery-critical and general data, therefore eliminating the need for individual authentication subsystems for different memory modules in a heterogeneous memory platform. Most interestingly, through the use of its adaptive Data and Address Management Unit (DAMU), OMT allows for a run-time switch between the update methods depending on the request type (persistent/intermittent). Extensive testing of OMT in a heterogeneous embedded memory system provides 44% lower memory overhead & up to 22% faster execution in synthetic benchmarks compared to a baseline.},
+ author = {Shadab, Rakin Muhammad and Zou, Yu and Gandham, Sanjay and Lin, Mingjie},
+ booktitle = {2023 IEEE International Symposium on Hardware Oriented Security and Trust (HOST)},
+ doi = {10.1109/HOST55118.2023.10133074},
+ issn = {2765-8406},
+ keyword = {Runtime;Nonvolatile memory;Merging;Authentication;Random access memory;Switches;Memory modules},
+ month = {May},
+ number = {},
+ pages = {191-202},
+ title = {OMT: A Run-time Adaptive Architectural Framework for Bonsai Merkle Tree-Based Secure Authentication with Embedded Heterogeneous Memory},
+ volume = {},
+ year = {2023}
+}

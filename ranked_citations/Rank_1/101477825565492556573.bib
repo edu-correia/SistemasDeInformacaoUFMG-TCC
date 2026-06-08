@@ -1,0 +1,17 @@
+@article{10.14778/2556549.2556573,
+ abstract = {Horton+ is a graph query processing system that executes declarative reachability queries on a partitioned attributed multi-graph. It employs a query language, query optimizer, and a distributed execution engine. The query language expresses declarative reachability queries, and supports closures and predicates on node and edge attributes to match graph paths. We introduce three algebraic operators, select, traverse, and join, and a query is compiled into an execution plan containing these operators. As reachability queries access the graph elements in a random access pattern, the graph is therefore maintained in the main memory of a cluster of servers to reduce query execution time. We develop a distributed execution engine that processes a query plan in parallel on the graph servers. Since the query language is declarative, we build a query optimizer that uses graph statistics to estimate predicate selectivity. We experimentally evaluate the system performance on a cluster of 16 graph servers using synthetic graphs as well as a real graph from an application that uses reachability queries. The evaluation shows (1) the efficiency of the optimizer in reducing query execution time, (2) system scalability with the size of the graph and with the number of servers, and (3) the convenience of using declarative queries.},
+ author = {Sarwat, Mohamed and Elnikety, Sameh and He, Yuxiong and Mokbel, Mohamed F.},
+ doi = {10.14778/2556549.2556573},
+ issn = {2150-8097},
+ issue_date = {September 2013},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {14},
+ numpages = {12},
+ pages = {1918–1929},
+ publisher = {VLDB Endowment},
+ title = {Horton+: a distributed system for processing declarative reachability queries over partitioned graphs},
+ url = {https://doi.org/10.14778/2556549.2556573},
+ volume = {6},
+ year = {2013}
+}

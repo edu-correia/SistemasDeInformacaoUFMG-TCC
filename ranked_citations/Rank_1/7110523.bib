@@ -1,0 +1,14 @@
+@article{7110523,
+ abstract = {Graphics Processing Units (GPUs) run thousands of parallel threads and achieve high Memory Level Parallelism (MLP). To support high Memory Level Parallelism, a structure called a Miss-Status Holding Register (MSHR) handles multiple in-flight miss requests. When multiple cores send requests to the same cache line, the requests are merged into one last level cache MSHR entry and only one memory request is sent to the Dynamic Random-Access Memory (DRAM). We call this inter-core locality. The main reason for inter-core locality is that multiple cores access shared read-only data within the same cache line. By prioritizing memory requests that have high inter-core locality, more threads resume execution. In this paper, we analyze the reason for inter-core locality and show that requests with inter-core locality are more critical to performance. We propose a GPU DRAM scheduler that exploits information about inter-core locality detected at the last level cache MSHRs. For high inter-core locality benchmarks this leads to an average 28 percent reduction in memory request latency and 11 percent improvement in performance.},
+ author = {Li, Dongdong and Aamodt, Tor M.},
+ doi = {10.1109/LCA.2015.2435709},
+ issn = {1556-6064},
+ journal = {IEEE Computer Architecture Letters},
+ keyword = {Random access memory;Benchmark testing;Graphics processing units;Processor scheduling;Instruction sets;Computational fluid dynamics;Bandwidth;GPGPU;Memory Access Scheduling;Locality;GPGPU;memory access scheduling;locality},
+ month = {Jan},
+ number = {1},
+ pages = {25-28},
+ title = {Inter-Core Locality Aware Memory Scheduling},
+ volume = {15},
+ year = {2016}
+}

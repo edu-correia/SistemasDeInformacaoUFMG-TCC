@@ -1,0 +1,14 @@
+@article{10922769,
+ abstract = {Resistive random access memory (RRAM) has emerged as a promising technology for deep neural network (DNN) accelerators, but programming every weight in a DNN onto RRAM cells for inference can be both time-consuming and energy-intensive, especially when switching between different DNN models. This article introduces a hardware-aware multimodel merging (HA3M) framework designed to minimize the need for reprogramming by maximizing weight reuse, while taking into account the hardware constraints of the accelerator. The framework includes three key approaches: 1) crossbar (XB)-aware model mapping (XAMM); 2) block-based layer matching (BLM); and 3) multimodel retraining (MMR). XAMM reduces the XB usage of the preprogrammed model on RRAM XBs while preserving the model’s structure. BLM reuses preprogrammed weights in a block-based manner, ensuring the inference process remains unchanged. MMR then equalizes the block-based matched weights across multiple models. Experimental results show that the proposed framework significantly reduces programming cycles in multi-DNN switching scenarios while maintaining or even enhancing accuracy, and eliminating the need for reprogramming.},
+ author = {Gu, Fang-Yi and Lin, Ing-Chao and Li, Bing and Schlichtmann, Ulf and Li Zhang, Grace},
+ doi = {10.1109/TCAD.2025.3550403},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Programming;Switches;Artificial neural networks;Computational modeling;Voltage;Hardware;Virtual machine monitors;Computer architecture;Integrated circuit modeling;Accuracy;Deep neural network (DNN);model switching;multiple DNN application;resistive random access memory (RRAM);RRAM programming;RRAM-based DNN accelerator},
+ month = {Oct},
+ number = {10},
+ pages = {3738-3751},
+ title = {Efficient Model Switching in RRAM-Based DNN Accelerators},
+ volume = {44},
+ year = {2025}
+}

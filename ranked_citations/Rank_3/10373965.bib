@@ -1,0 +1,14 @@
+@article{10373965,
+ abstract = {Based on 512-bit SIMD instructions, a Huffman encoding implementation, termed Huffman-SIMD, is proposed. The proposed implementation consists of four parts: establishing the Huffman coding table, data initialization, look-up table, and shifting and merging data. We establish the code table according to the characteristics of SIMD instructions. The code table is divided into eight sub-tables, with every two sub-tables in a group. It uses flag bits in each storage item to distinguish codewords from non-codewords, so the code table does not need to store the length of codewords in order to reduce the use of registers. After accelerating the table lookup operation using SIMD instruction, the valid size in each entry is different. Therefore, the shift merging algorithm is designed to operate on data and eliminate the spacing between data. This paper uses three datasets, Calgary, Silesia and Canterbury, to evaluate the implementation and compare it with the existing Huff0 library. The throughput is improved by 12.01% on average. Thus the implementation proposed in this paper improves the coding efficiency.},
+ author = {Yu, Yue and Zhao, Zhe and Lin, Sian-Jheng and Li, Weihai},
+ doi = {10.1109/TCE.2023.3347229},
+ issn = {1558-4127},
+ journal = {IEEE Transactions on Consumer Electronics},
+ keyword = {Encoding;Symbols;Decoding;Codes;Throughput;Registers;Huffman coding;Huffman code;SIMD instructions;encoding algorithm},
+ month = {Feb},
+ number = {1},
+ pages = {554-563},
+ title = {Accelerating Huffman Encoding Using 512-Bit SIMD Instructions},
+ volume = {70},
+ year = {2024}
+}

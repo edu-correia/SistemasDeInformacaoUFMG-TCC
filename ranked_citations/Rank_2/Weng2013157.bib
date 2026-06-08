@@ -1,0 +1,14 @@
+@conference{Weng2013157,
+ abstract = {The parallel join processing which combines tuples from two or more relational tables together in a parallel manner is becoming more and more important and imperative to be solved, since tables may be huge, especially in this big data era. A few algorithms have already been proposed based on the prevailing mapreduce paradigm, while most of them impose both high communication costs and synchronization costs. In this paper, we propose a novel algorithm for scalable parallel join processing for the column-wise stored data analyzing. To cater for the prevailing deployed Hadoop system, we adopt the Hadoop Distributed File System (HDFS) as the file system across over a large set of machines. Tables are projected (i.e., vertical partition), segmented (i.e., horizontal partition), clustered and placed in a column-wise format over the distributed file system based on Gray Code. By effectively fetching the dedicated tuples from other tables on demand based on an optimized bloom filter strategy, each segment (i.e., partition) is capable in accomplishing the join processing individually with dramatically reduced communication cost, and consequently achieves the desired scalable parallelism. Tuples are transmitted in a demand driven manner across the network, rather than the hash-based movement in the mapreduce paradigm. Our extensive performance studies confirm the effectiveness and efficiency of our methods. © 2013 IEEE.},
+ author = {Weng, Nianlong and Zhou, Minqi and Shan, Ming-Chien and Zhou, Aoying},
+ doi = {10.1109/BigData.Congress.2013.29},
+ journal = {Proceedings - 2013 IEEE International Congress on Big Data, BigData 2013},
+ note = {Cited by: 2},
+ pages = {157 - 164},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scalable parallel join for huge tables},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84886077373?origin=resultslist},
+ year = {2013}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10184823,
+ abstract = {The emerging trend of memory disaggregation where CPU and memory are physically separated from each other and are connected via ultra-fast networking, e.g., over RDMA, allows elastic and independent scaling of compute (CPU) and main memory. This paper investigates how indexing can be efficiently designed in the memory disaggregated architecture. Although existing research has optimized the B-tree for this new architecture, its performance is moderate. This paper focuses on LSM-based indexing and proposes dLSM, the first highly optimized LSM-tree for disaggregated memory. dLSM introduces a suite of optimizations including reducing software overhead, leveraging near-data computing, tuning for byte-addressability, and an instantiation over RDMA as a case study with RDMA-specific customizations to improve system performance. Experiments illustrate that dLSM achieves 1.6× to 11.7× higher write throughput than running the optimized B-tree and four adaptations of existing LSM-tree indexes over disaggregated memory. dLSM is written in C++ (with approximately 41,000 LOC), and is open-sourced.},
+ author = {Wang, Ruihong and Wang, Jianguo and Kadam, Prishita and Tamer Özsu, M. and Aref, Walid G.},
+ booktitle = {2023 IEEE 39th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE55515.2023.00217},
+ issn = {2375-026X},
+ keyword = {System performance;Memory architecture;Memory management;Throughput;Market research;Software;Low latency communication;Log structured Merge (LSM) Tree;Disaggregated Memory;RDMA},
+ month = {April},
+ number = {},
+ pages = {2835-2849},
+ title = {dLSM: An LSM-Based Index for Memory Disaggregation},
+ volume = {},
+ year = {2023}
+}

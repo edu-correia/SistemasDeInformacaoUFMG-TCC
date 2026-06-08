@@ -1,0 +1,15 @@
+@conference{Luo20191,
+ abstract = {The rising demands of real-time analytics have emphasized the need for Hybrid Transactional and Analytical Processing (HTAP) systems, which can handle both fast transactions and analytics concurrently. Wildfire is such a large-scale HTAP system prototyped at IBM Research - Almaden, with many techniques developed in this project incorporated into the IBM’s HTAP product offering. To support both workloads efficiently, Wildfire organizes data differently across multiple zones, with more recent data in a more transaction-friendly zone and older data in a more analytics-friendly zone. Data evolve from one zone to another, as they age. In fact, many other HTAP systems have also employed the multi-zone design, including SAP HANA, MemSQL, and SnappyData. Providing a unified index on the large volumes of data across multiple zones is crucial to enable fast point queries and range queries, for both transaction processing and real-time analytics. However, due to the scale and evolving nature of the data, this is a highly challenging task. In this paper, we present Umzi, the multi-version and multi-zone LSM-like indexing method in the Wildfire HTAP system. To the best of our knowledge, Umzi is the first indexing method to support evolving data across multiple zones in an HTAP system, providing a consistent and unified indexing view on the data, despite the constantly on-going changes underneath. Umzi employs a flexible index structure that combines hash and sort techniques together to support both equality and range queries. Moreover, it fully exploits the storage hierarchy in a distributed cluster environment (memory, SSD, and distributed shared storage) for index efficiency. Finally, all index maintenance operations in Umzi are designed to be non-blocking and lock-free for queries to achieve maximum concurrency, while only minimum locking overhead is incurred for concurrent index modifications. © 2019 Copyright held by the owner/author(s).},
+ author = {Luo, Chen and Tözün, Pınar and Tian, Yuanyuan and Barber, Ronald and Raman, Vijayshankar and Sidle, Richard},
+ doi = {10.5441/002/edbt.2019.02},
+ journal = {Advances in Database Technology - EDBT},
+ note = {Cited by: 22},
+ pages = {1 - 12},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Umzi: Unified multi-zone indexing for large-scale HTAP},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85064937425?origin=resultslist},
+ volume = {2019-March},
+ year = {2019}
+}

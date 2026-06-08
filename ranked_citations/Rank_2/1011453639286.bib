@@ -1,0 +1,18 @@
+@article{10.1145/3639286,
+ abstract = {The scaling of per-GB DRAM cost has slowed down in recent years. Recent research has suggested that adding remote memory to a system can further reduce the overall memory cost while maintaining good performance. Remote memory (i.e., tiered memory), connected to host servers via high-speed interconnect protocols such as RDMA and CXL, is expected to deliver 100x (less than 1µs) lower latency than SSD and be more cost-effective than local DRAM through pooling or adopting cheaper memory technologies.Tiered memory opens up a large number of potential use cases within database systems. But previous work has only explored limited ways of using tiered memory. Our study provides a systematic study for DBMS to build tiered memory buffer management with respect to a wide range of hardware performance characteristics. Specifically, we study five different indexing designs that leverage remote memory in different ways and evaluate them through a wide range of metrics including performance, tiered-memory latency sensitivity, and cost-effectiveness. In addition, we propose a new memory provisioning strategy that allocates an optimal amount of local and remote memory for a given workload. Our evaluations show that while some designs achieve higher performance than others, no design can win in all measured dimensions.},
+ address = {New York, NY, USA},
+ articleno = {31},
+ author = {Hao, Xiangpeng and Zhou, Xinjing and Yu, Xiangyao and Stonebraker, Michael},
+ doi = {10.1145/3639286},
+ issue_date = {February 2024},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {buffer management, database, remote memory, tiered memory},
+ month = {March},
+ number = {1},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Towards Buffer Management with Tiered Main Memory},
+ url = {https://doi.org/10.1145/3639286},
+ volume = {2},
+ year = {2024}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3763129,
+ abstract = {Datalog engines for fixpoint evaluation have brought great benefits to static program analysis over the past decades. A Datalog specification of an analysis allows a declarative, easy-to-maintain specification, without sacrificing performance, and indeed often achieving significant speedups compared to hand-coded algorithms. However, these benefits come with a certain loss of control. Datalog evaluation is bottom-up, meaning that all inferences (from a set of initial facts) are performed and all their conclusions are outputs of the computation. In practice, virtually every program analysis expressed in Datalog becomes unscalable for some inputs, due to the worst-case blowup of computing all results, even when a partial answer would have been perfectly satisfactory. In this work, we present a simple, uniform, and elegant solution to the problem, with great practical effectiveness and application to virtually any Datalog-based analysis. The approach consists of leveraging the choice construct, supported natively in modern Datalog engines like Souffle. The choice construct allows the definition of functional dependencies in a relation and has been used in the past for expressing worklist algorithms. We show a near-universal construction that allows the choice construct to flexibly limit evaluation of predicates. The technique is applicable to practically any analysis architecture imaginable, since it adaptively prunes evaluation results when a (programmer-controlled) projection of a relation exceeds a desired cardinality. We apply the technique to probably the largest, pre-existing Datalog analysis frameworks in existence: Doop (for Java bytecode) and the main client analyses from the Gigahorse framework (for Ethereum smart contracts). Without needing to understand the existing analysis logic and with minimal, local-only changes, the performance of each framework increases dramatically, by over 20x for the hardest inputs, with near-negligible sacrifice in completeness.},
+ address = {New York, NY, USA},
+ articleno = {351},
+ author = {Antoniadis, Anastasios and Tsatiris, Ilias and Grech, Neville and Smaragdakis, Yannis},
+ doi = {10.1145/3763129},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Static analysis, datalog, logic programming, optimization, program analysis},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Universal Scalability in Declarative Program Analysis (with Choice-Based Combination Pruning)},
+ url = {https://doi.org/10.1145/3763129},
+ volume = {9},
+ year = {2025}
+}

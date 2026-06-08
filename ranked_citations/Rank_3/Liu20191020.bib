@@ -1,0 +1,14 @@
+@conference{Liu20191020,
+ abstract = {With the development of byte-addressable non-volatile memory (NVM) technologies, such as Intel/Micron's 3D-XPoint memory and phase change memory (PCM), it is possible to persistently store data in hybrid memory systems consisting of DRAM and NVM. NVM-enabled hybrid memory systems are important to in-memory databases and computing, especially to large-scale in-memory data storage and processing. In this paper, we redesign the cache layer of LevelDB, which is a persistent key-value database based on the LSM-tree, and present NVLevel to provide low latency and high throughput for applications running in NVM-based hybrid memory systems. In particular, we propose two new designs over the LSM-tree. First, we propose Multi-Memtable to offer a write-friendly cache layer for the LSM-tree. Second, we present Hash-Skiplist, which is a hash-based Skiplist that has better read performance than the traditional Skiplist. With the new design of write-optimized Multi-Memtable and read-optimized Hash-Skiplist, NVLevel can achieve high performance both in read-intensive and write-intensive workloads. Our experiments with popular benchmarks including DBBench and YCSB show that NVLevel achieves better write throughput and latency compared to Huge-Memtable, which is the state-of-the-art improvement of the LSM-tree over NVM. Moreover, the overall performance of NVLevel in multi-thread environments is over 2 times higher than that of Huge-Memtable. © 2019 IEEE.},
+ author = {Liu, Ruicheng and Jin, Peiquan and Wang, Xiaoliang and Zhang, Zhou and Wan, Shouhong and Hua, Bei},
+ doi = {10.1109/HPCC/SmartCity/DSS.2019.00146},
+ journal = {Proceedings - 21st IEEE International Conference on High Performance Computing and Communications, 17th IEEE International Conference on Smart City and 5th IEEE International Conference on Data Science and Systems, HPCC/SmartCity/DSS 2019},
+ note = {Cited by: 15},
+ pages = {1020 - 1027},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {NVLevel: A high performance key-value store for non-volatile memory},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85073519136?origin=resultslist},
+ year = {2019}
+}

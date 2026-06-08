@@ -1,0 +1,14 @@
+@conference{Manoochehri2017643,
+ abstract = {General Purpose GPUs (GPGPUs) are ideal platforms for parallel execution of applications with regular shared memory access patterns. However, majority of real world multithreaded applications require access to shared memory with irregular patterns. The Minimum Spanning Forest (MSF) calculation arises in many real world applications. The Boruvka's algorithm for calculating MSF has the most expressed parallelism; however, it is a challenging irregular algorithm to implement on GPUs. In this paper we show that a transaction- based design and implementation of the Boruvka's algorithm on GPU can handle some of the challenges arising due to irregularity. First, we identify the hotspots of the algorithm that are the main bottlenecks: edge discovery and merge. The edge discovery phase is implemented using lock-free synchronizations after extracting certain algebraic properties (e.g. monotonicity) of the computation. The merge phase, however, lacks such algebraic properties and hence we utilize a Software Transactional Memory (STM) based synchronization method. STM offers ease of use by guaranteeing deadlock/livelock-free behavior as opposed to blocking lock-based synchronization. It also increases programmability by providing high level abstractions for synchronization which facilitate a natural transition from algorithm design to implementation. In addition, we employ several optimization techniques in different phases of the algorithm to achieve load balance and enhanced GPU resource utilization. Experimental results show that our GPU-based implementation outperforms both the fastest sequential implementation and the existing STM-based implementation on multicore CPUs when tested on large-scale graphs with diverse densities. © 2017 IEEE.},
+ author = {Manoochehri, Shayan and Goodarzi, Bahareh and Goswami, Dhrubajyoti},
+ doi = {10.1109/HPCS.2017.100},
+ journal = {Proceedings - 2017 International Conference on High Performance Computing and Simulation, HPCS 2017},
+ note = {Cited by: 5},
+ pages = {643 - 650},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An efficient transaction-based GPU implementation of minimum spanning forest algorithm},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85032391686?origin=resultslist},
+ year = {2017}
+}

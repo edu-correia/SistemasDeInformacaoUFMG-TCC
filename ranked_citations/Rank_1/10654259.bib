@@ -1,0 +1,14 @@
+@article{10654259,
+ abstract = {Medical image segmentation plays a crucial role in modern clinical practice, enabling accurate diagnosis and personalized treatment plans. Advancements in machine learning, particularly deep learning techniques, have significantly driven this progress. While Convolutional Neural Networks (CNNs) dominate the field, transformer-based models are emerging as powerful alternatives for computer vision tasks. However, most existing CNN-Transformer models underutilize the full potential of Transformers, often relegating them to assistant modules. To address this issue, we propose a novel and efficient UNet-Transformer (seUNet-Trans) model for medical image segmentation. The seUNet-Trans framework leverages a UNet architecture for feature extraction, generating rich representations from input images. These features are then passed through a bridge layer that connects the UNet to a transformer module. To improve efficiency, we employ a novel pixel-wise embedding method that eliminates the need for position embedding vectors. We utilize spatially reduced attention within the transformer to reduce computational complexity. By combining the strengths of UNet’s localization capabilities and the transformer’s ability to capture long-range dependencies, seUNet-Trans effectively captures both local and global information within medical images. This holistic understanding enables the model to achieve superior segmentation performance. The efficacy of our model is demonstrated through extensive experimentation on seven medical image segmentation datasets. The seUNet-Trans model outperforms several state-of-the-art segmentation models, achieving impressive mean Dice Coefficient (mDC) and mean Intersection over Union (mIoU) scores. On the CVC-ClinicDB dataset, it achieves scores of 0.945 and 0.895, respectively; on the GlaS dataset, it scores 0.899 and 0.823, respectively; on the ISIC 2018 dataset, it achieves 0.922 and 0.854, respectively; and on the Data Science Bowl dataset, it scores 0.928 and 0.867, respectively. The code is available on seUnet-Trans.},
+ author = {Pham, Tan-Hanh and Li, Xianqi and Nguyen, Kim-Doang},
+ doi = {10.1109/ACCESS.2024.3451304},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Transformers;Image segmentation;Medical diagnostic imaging;Decoding;Computer architecture;Colonoscopy;Biomedical imaging;Deep learning;Polyps;colonoscopy;medical image analysis;deep learning;vision transformers},
+ month = {},
+ number = {},
+ pages = {122139-122154},
+ title = {seUNet-Trans: A Simple Yet Effective UNet-Transformer Model for Medical Image Segmentation},
+ volume = {12},
+ year = {2024}
+}

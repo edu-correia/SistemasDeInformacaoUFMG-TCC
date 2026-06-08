@@ -1,0 +1,17 @@
+@article{10.14778/3021924.3021937,
+ abstract = {Subgraph enumeration aims to find all the subgraphs of a large data graph that are isomorphic to a given pattern graph. As the subgraph isomorphism operation is computationally intensive, researchers have recently focused on solving this problem in distributed environments, such as MapReduce and Pregel. Among them, the state-of-the-art algorithm, Twin TwigJoin, is proven to be instance optimal based on a left-deep join framework. However, it is still not scalable to large graphs because of the constraints in the left-deep join framework and that each decomposed component (join unit) must be a star. In this paper, we propose SEED - a scalable sub-graph enumeration approach in the distributed environment. Compared to Twin TwigJoin, SEED returns optimal solution in a generalized join framework without the constraints in Twin TwigJoin. We use both star and clique as the join units, and design an effective distributed graph storage mechanism to support such an extension. We develop a comprehensive cost model, that estimates the number of matches of any given pattern graph by considering power-law degree distribution in the data graph. We then generalize the left-deep join framework and develop a dynamic-programming algorithm to compute an optimal bushy join plan. We also consider overlaps among the join units. Finally, we propose clique compression to further improve the algorithm by reducing the number of the intermediate results. Extensive performance studies are conducted on several real graphs, one containing billions of edges. The results demonstrate that our algorithm outperforms all other state-of-the-art algorithms by more than one order of magnitude.},
+ author = {Lai, Longbin and Qin, Lu and Lin, Xuemin and Zhang, Ying and Chang, Lijun and Yang, Shiyu},
+ doi = {10.14778/3021924.3021937},
+ issn = {2150-8097},
+ issue_date = {November 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {12},
+ pages = {217–228},
+ publisher = {VLDB Endowment},
+ title = {Scalable distributed subgraph enumeration},
+ url = {https://doi.org/10.14778/3021924.3021937},
+ volume = {10},
+ year = {2016}
+}

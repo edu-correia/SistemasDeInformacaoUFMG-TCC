@@ -1,0 +1,14 @@
+@conference{Veldema20111,
+ abstract = {Automatic memory management makes programming easier. This is also true for general purpose GPU computing where currently no garbage collectors exist. In this paper we present a parallel mark-and-sweep collector to collect GPU memory on the GPU and tune its performance. Performance is increased by: (1) data-parallel marking and sweeping of regions of memory, (2) marking all elements of large arrays in parallel, (3) trading recursion over parallelism to match deeply linked data structures. (1) is achieved by coarsely processing all potential objects in a region of memory in parallel. When during (1) a large array is detected, it is put aside and a parallel-for is later issued on the GPU to mark its elements. For a data-structure that is a large linked list, we dynamically switch to a marking version with less overhead by performing a few recursive steps sequentially (and multiple lists in parallel). The collector achieves a speedup of a factor of up-to 11 over a sequential collector on the same GPU. © 2011 ACM.},
+ author = {Veldema, Ronald and Philippsen, Michæl},
+ doi = {10.1145/1993478.1993480},
+ journal = {International Symposium on Memory Management, ISMM},
+ note = {Cited by: 6},
+ pages = {1 - 10},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Iterative data-parallel mark&sweep on a GPU},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/79959890825?origin=resultslist},
+ year = {2011}
+}

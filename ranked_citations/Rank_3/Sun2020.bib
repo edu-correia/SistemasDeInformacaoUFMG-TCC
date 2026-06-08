@@ -1,0 +1,15 @@
+@article{Sun2020,
+ abstract = {Log-structured merge tree (i.e., LSM-tree)-based key–value stores (i.e., KV stores) are widely used in big-data applications and provide high performance. NAND Flash-based Solid-state disks (i.e., SSDs) have become a popular storage device alternative to hard disk drives (i.e., HDDs) because of their high performance and low power consumption. LSM-tree KV stores with SSDs are deployed in large-scale storage systems, which aims to achieve high performance in the cloud. Write amplification in LSM-tree KV stores and NAND Flash memory in SSDs are defined as WA1 and WA2 in this paper. The former, which is attributed to compaction operations in LSM-tree-based KV stores, is a burden on I/O bandwidth between the host and the device. The latter, which results from out-place updates in NAND Flash memory, blocks user I/O requests between the host and NAND Flash memory, thereby degrading the SSD performance. Write amplification impairs the overall system performance. In this study, we explored the two-level cascaded write amplification in LSM-tree KV stores with SSDs. The cascaded write amplification is represented as WA. Our primary goal is to comprehensively study two-level cascaded write amplification on the host-side LSM-tree KV stores and the device-side SSDs. We quantitatively analyze the impact of two-level write amplification on overall performance. The cascaded write amplification is 16.44 (WA1 is 16.55; WA2 is 0.99) and 35.51 (WA1 is 16.6; WA2 is 2.14) for SSD-I and SSD-S with LevelDB's default setting under DB_bench. The larger cascaded write amplification of KV stores has a bad impact on SSD performance and lifetime. The throughput of SSD-S and SSD-I under an 80%-write workload is approximately 0.28x and 0.31x of that under a 100%-write workload. Therefore, it is important to design a novel approach to balance the cost of an SSD lifetime caused by cascaded write amplification and its high performance under the read-write-mixed workloads. We attempt to reveal details of cascaded write amplification and hope that this study is useful for developers of LSM-tree-based KV stores and SSD software stacks. © 2020 Elsevier B.V.},
+ author = {Sun, Hui and Dai, Shangshang and Huang, Jianzhong},
+ doi = {10.1016/j.micpro.2020.103217},
+ journal = {Microprocessors and Microsystems},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Cascaded Write Amplification of LSM-tree-based Key-Value Stores underlying Solid-State Disks},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85089347585?origin=resultslist},
+ volume = {78},
+ year = {2020}
+}

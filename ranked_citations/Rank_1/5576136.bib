@@ -1,0 +1,14 @@
+@inproceedings{5576136,
+ abstract = {Most solid state drives use DRAM for device's cache, the volatile memory provides the I/O Caching ability, and maintains the drives' mapping table (indicates the correspondence between physical unit and logical unit). However, when the drives' power shut down unexpected, the volatile DRAM memory may lose the caching data, which did not have time to write to the drives' storage media, so the dirty data generated. This paper proposes an efficient management scheme for low cost Solid State Drives, with low cost ASIC controller chip, only has internal SRAM memory, and no external DRAM. We use a kind of Cache Blocks: when write requests come, write in these areas first, and write in the sequentially physical place, and the limited internal SRAM for the mapping tables maintaining and data transferring. We propose some efficient methods: 1)using flash memory as cache, 2) page mapping for cache blocks regions, block mapping for data blocks regions, 3) binding two planes operation, 4) using the idle internal plane SRAM as data buffer to improve the I/O performance, without DRAM. So we avoid the dirty data when the power loses unexpected. And this scheme is energy-efficient and low cost. We test the scheme on our own SSD test board, with the pool SRAM size, the I/O performances do not decrease two much, and the random write even better about 20%, compare to the SSD with DRAM. The experiment also shows, this scheme cuts about 21% energy than the DRAM architecture. And it may be adapted in consumer electronics area.},
+ author = {Wu, Fei and Chen, Xiang and Wan, Jiguang},
+ booktitle = {2010 IEEE Fifth International Conference on Networking, Architecture, and Storage},
+ doi = {10.1109/NAS.2010.58},
+ issn = {},
+ keyword = {Random access memory;Microprogramming;Flash memory;Solids;Arrays;Capacitance;Accidents;Dirty Data;SRAM;DRAM;Cache Blocks;Random write;Power concumption;Comsumer electronics},
+ month = {July},
+ number = {},
+ pages = {477-484},
+ title = {Cache Blocks: An Efficient Scheme for Solid State Drives without DRAM Cache},
+ volume = {},
+ year = {2010}
+}

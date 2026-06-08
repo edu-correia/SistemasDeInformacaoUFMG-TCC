@@ -1,0 +1,15 @@
+@conference{Wang20223119,
+ abstract = {LSM-tree has been widely used as a write-optimized storage engine in many key-value stores, such as LevelDB and RocksDB. However, conventional compaction operations on the LSM-tree need to read, merge, and write many SSTables, which we call Table Compaction in this paper. Table Compaction will cause two major problems, namely write amplification and block-cache invalidation. They will lower both write and read performance of the LSM-tree. To address these issues, we propose a novel compaction scheme named Block Compaction that adopts a block-grained merging policy to perform compaction operations on the LSM-tree. Block Compaction identifies the boundaries of data blocks and tries to avoid reusing data blocks, which not only reduces the write amplification but also alleviates the block-cache invalidation. We present cost analysis to theoretically demonstrate that Block Compaction is more efficient than the existing Table Compaction. Furthermore, we analyze the side-effects of Block Compaction and present three optimizations: (1) Selective Compaction is to reduce the space amplification of Block Compaction by integrating Table Compaction with Block Compaction. (2) Parallel Merging divides a compaction task into several sub-tasks and uses multiple workers to accomplish sub-tasks in parallel. (3) Lazy Deletion mitigates the overhead caused by traversing files at the tail of compaction operations. We implement a new key-value store named BlockDB based on Block Compaction and its optimizations. Then, we compare BlockDB with LevelDB, RocksDB, and L2SM using the YCSB benchmark. The results show that BlockDB can reduce write amplification up to 32% and running time by up to 43.6%, compared to its competitors. In addition, it can maintain the high performance for point lookups and range scans.  © 2022 IEEE.},
+ author = {Wang, Xiaoliang and Jin, Peiquan and Hua, Bei and Long, Hai and Huang, Wei},
+ doi = {10.1109/ICDE53745.2022.00279},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 25},
+ pages = {3119 - 3131},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Reducing Write Amplification of LSM-Tree with Block-Grained Compaction},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85136347346?origin=resultslist},
+ volume = {2022-May},
+ year = {2022}
+}

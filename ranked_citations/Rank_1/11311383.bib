@@ -1,0 +1,14 @@
+@article{11311383,
+ abstract = {Model merging has become a popular approach for combining individual models into a single model that inherits their capabilities and achieves improved performance. However, its success has not yet been transferred to semantic segmentation tasks due to two major challenges: 1) current model merging methods predominantly employ static merging strategies with fixed coefficients, limiting their ability to incorporate task-specific prior knowledge and 2) semantic segmentation faces large distribution shifts across multiple domains, causing negative transfer in the merged model. In this article, we propose an effective model merging approach for semantic segmentation, named M2Seg. To dramatically integrate relevant priors based on the input data, we propose a novel SVD-structured MoE module for adaptive merging. To address the severe distribution shifts, we further introduce a test-time dynamic calibration function designed to minimize discrepancies between training and test statistics. Additionally, historical information is leveraged to refine activation statistics during inference. Recognizing that unreliable data can negatively impact update directions, we develop a pixel-efficient entropy minimization mechanism to filter unstable pixels, thus stabilizing the merging process and enhancing segmentation performance. Extensive experiments on both seen and unseen semantic segmentation tasks demonstrate the superior effectiveness and generalization capability of our proposed method. The source code and pretrained checkpoints are available at https://github.com/cht619/MMSeg},
+ author = {Chen, Haotian and Xu, Yanyu and Xu, Yonghui and Zhang, Yu and Zhang, Yixin and Wang, Fang and Cui, Lizhen},
+ doi = {10.1109/TNNLS.2025.3626606},
+ issn = {2162-2388},
+ journal = {IEEE Transactions on Neural Networks and Learning Systems},
+ keyword = {Merging;Adaptation models;Semantic segmentation;Data models;Computational modeling;Entropy;Training;Semantics;Predictive models;Interference;Distribution shift;model merging;semantic segmentation},
+ month = {April},
+ number = {4},
+ pages = {1948-1962},
+ title = {Toward Effective Model Merging in Semantic Segmentation},
+ volume = {37},
+ year = {2026}
+}

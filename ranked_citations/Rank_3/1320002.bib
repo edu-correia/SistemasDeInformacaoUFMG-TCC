@@ -1,0 +1,14 @@
+@inproceedings{1320002,
+ abstract = {We introduce the hash-merge join algorithm (HMJ, for short); a new nonblocking join algorithm that deals with data items from remote sources via unpredictable, slow, or bursty network traffic. The HMJ algorithm is designed with two goals in mind: (1) minimize the time to produce the first few results, and (2) produce join results even if the two sources of the join operator occasionally get blocked. The HMJ algorithm has two phases: The hashing phase and the merging phase. The hashing phase employs an in-memory hash-based join algorithm that produces join results as quickly as data arrives. The merging phase is responsible for producing join results if the two sources are blocked. Both phases of the HMJ algorithm are connected via a flushing policy that flushes in-memory parts into disk storage once the memory is exhausted. Experimental results show that HMJ combines the advantages of two state-of-the-art nonblocking join algorithms (XJoin and Progressive Merge Join) while avoiding their shortcomings.},
+ author = {Mokbel, M.F. and Lu, M. and Aref, W.G.},
+ booktitle = {Proceedings. 20th International Conference on Data Engineering},
+ doi = {10.1109/ICDE.2004.1320002},
+ issn = {1063-6382},
+ keyword = {Data engineering},
+ month = {April},
+ number = {},
+ pages = {251-262},
+ title = {Hash-merge join: a non-blocking join algorithm for producing fast and early join results},
+ volume = {},
+ year = {2004}
+}

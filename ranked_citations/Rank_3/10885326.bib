@@ -1,0 +1,14 @@
+@inproceedings{10885326,
+ abstract = {Graph data is becoming dynamic and large-scale, demanding high-performance and large-capacity graph storage. Therefore, due to the performance approaching DRAM and the larger capacity than DRAM, persistent memory (PM) has been adopted in large-scale dynamic graph storage systems. However, existing PM-based dynamic graph storage systems have issues, especially PM write amplification caused by the unsorted data structure used to store edges. To improve this issue, we propose a PM-based dynamic graph storage system, HDGraph, using sorted data structure to store edges on DRAM-PM hybrid memory architecture. To better adapt the sorted data structure on PM, HDGraph employs edge buffering on DRAM, merging small writes to reduce write amplification in PM. Moreover, HDGraph also triggers buffer flushing based on a heat evaluating strategy to alleviate DRAM space pressure. Finally, HDGraph maintains a buffering log in PM for edge-level data consistency, enabling quick recovery after a crash. Experimental results show that HDGraph achieves 1.09× to 1.52× higher edge ingestion performance, compared with the only PM-based dynamic graph storage system XPGraph, which use unsorted data structure to store edges.},
+ author = {Ao, Yang and Deng, Yutong and Li, Dingding and Tang, Yong},
+ booktitle = {2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)},
+ doi = {10.1109/ISPA63168.2024.00162},
+ issn = {2158-9208},
+ keyword = {Distributed processing;Memory architecture;Merging;Random access memory;Distributed databases;Data structures;Computer crashes;Space heating;Heat recovery;persistent memory;sorted data structure;dynamic graph},
+ month = {Oct},
+ number = {},
+ pages = {1210-1215},
+ title = {A Sorted and Dynamic Graph Storage System of the Hybrid Memory Architecture},
+ volume = {},
+ year = {2024}
+}

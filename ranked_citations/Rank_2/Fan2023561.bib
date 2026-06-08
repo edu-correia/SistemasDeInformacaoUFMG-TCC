@@ -1,0 +1,14 @@
+@conference{Fan2023561,
+ abstract = {Modern key-value storage systems employ LSM-tree as the core data structure for data management, but often suffer from high write amplification. It can further lead to write stall in which application throughput dramatically drops to nearly zero. To solve the problem, existing works mainly focus on the key-value separation solution to reduce levels and compaction data amount, or adopt SSTables partition strategies for fine-grained merging. However, they still have limitations due to continuous, small compactions, especially in facing noticeably periodic write-intensive workloads. In this paper, we exploit non-volatile memory (NVM) to address the issue and propose DepotDB, a new LSM-tree based KV store with multi-tier DRAM-NVM-SSD architecture. DepotDB's design principles include performing fast and efficient region compaction to reduce write amplification, while deferring write stalls to periods of low write load for performance efficiency. To achieve it, DepotDB first organizes key-value pairs to reduce the depth of LSM-tree with one NVM level and one SSD level thus mitigating write amplification. Then it divides data in each level into various regions and conducts region compaction explicitly when workloads are light. This can further substantially decrease the frequency and data amount of compaction, while alleviating write stall. We implement DepotDB based on LevelDB and conduct extensive experiments on a hybrid system. Extensive experimental results show that DepotDB achieves 1.1-1.83 × higher random write performance and 1.7-2.3 × higher random read performance compared to the SOTA LSM-based KVS MatrixKV, respectively. Moreover, DepotDB reduces write amplification by 30% compared to MatrixKV, and reduces its average write latency by 60% correspondingly.  © 2023 IEEE.},
+ author = {Fan, Zhixin and Zhang, Yaohui and Zhou, Jiang and Li, Bo and Chen, Yong and Wang, Weiping},
+ doi = {10.1109/ISPA-BDCloud-SocialCom-SustainCom59178.2023.00105},
+ journal = {Proceedings - 2023 IEEE International Conference on Parallel and Distributed Processing with Applications, Big Data and Cloud Computing, Sustainable Computing and Communications, Social Computing and Networking, ISPA/BDCloud/SocialCom/SustainCom 2023},
+ note = {Cited by: 0},
+ pages = {561 - 566},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DepotDB: Mitigate Write Amplification with Region Compaction on KV Stores for Periodic Write-Intensive Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85191358612?origin=resultslist},
+ year = {2023}
+}

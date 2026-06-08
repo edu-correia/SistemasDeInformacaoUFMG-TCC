@@ -1,0 +1,14 @@
+@inproceedings{8834730,
+ abstract = {In cloud computing, how to use limited hardware resources to meet the increasing demands has become a major issue. KSM (Kernel Same-page Merging) is a content-based page sharing mechanism used in Linux that merges equal memory pages, thereby significantly reducing memory usage and increasing the density of virtual machines or containers. However, KSM introduces a large overhead in CPU and memory bandwidth usage due to the use of red-black trees and content-based page comparison. To reduce the deduplication overhead, in this paper, we propose a new design called AMT-KSM, which leverages array mapped tries to realize lightweight memory deduplication. The basic idea is to divide each memory page into multiple segments and use the concatenated strings of the hash values of segments as indexed keys in the tries. By doing this, we can significantly reduce the time required for searching duplicate pages as well as the number of page comparisons. We conduct experiments to evaluate the performance of our design, and results show that compared with the conventional KSM, AMT-KSM can reduce up to 44.9% CPU usage and 31.6% memory bandwidth usage.},
+ author = {You, Lingjing and Li, Yongkun and Guo, Fan and Xu, Yinlong and Chen, Jinzhong and Yuan, Liu},
+ booktitle = {2019 IEEE International Conference on Networking, Architecture and Storage (NAS)},
+ doi = {10.1109/NAS.2019.8834730},
+ issn = {},
+ keyword = {Arrays;Indexes;Kernel;Cloud computing;Linux;Bandwidth;Merging;Memory Deduplication;KSM;Array Mapped Tries},
+ month = {Aug},
+ number = {},
+ pages = {1-8},
+ title = {Leveraging Array Mapped Tries in KSM for Lightweight Memory Deduplication},
+ volume = {},
+ year = {2019}
+}

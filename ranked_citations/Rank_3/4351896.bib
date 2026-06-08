@@ -1,0 +1,14 @@
+@article{4351896,
+ abstract = {This work presents an automatically-determined region of interest (ROI) scheme embedded in JPEG 2000. The proposed scheme analyzes the image content and then determines the probable ROI masks by examining the significant states of high-frequency subbands generated from embedded block coding with optimized truncation (EBCOT). Additionally, probable ROI masks are constructed in all bit planes of subbands by categorizing sub-blocks as either interesting or uninteresting, smoothing subblocks of interest, and grouping these subblocks based on an or no initial point. The rate-distortion (RD) pairs corresponding to all probable ROI masks are then estimated from the RD distribution during the Tier-2 coding process of EBCOT. Based on these estimations, the Lagrangian multiplier method is employed in the RD function to obtain the optimized ROI mask from the probable masks by minimizing the distortion of the ROI-encoded image at a given bit-rate constraint. ROI-encoded images obtained using the proposed scheme outperform ROI-encoded images obtained via the conventional schemes using fixed-square and object-segmentation masks, as judged by subjective visual perception and objective measurement in terms of peak signal-to-noise ratio. Particularly, the proposed scheme can easily adapt the ROI region with varied sizes and shapes according to the bit-rate constraint whereas the conventional schemes only adopt the fixed-square region and fixed segmented objects. Furthermore, when the proposed scheme is applied to motion JPEG 2000 for video compression, the centroid of the ROI mask in the previous frame can be used as an initial point for merging the subblocks of interest in the current frame to track the ROI masks in a video sequence. Therefore, the proposed scheme can easily be employed to improve the perceptual and objective performance in the ROI coding associated with JPEG 2000 and motion JPEG 2000.},
+ author = {Chen, Oscal T.-C. and Chen, Chih-Chang},
+ doi = {10.1109/TMM.2007.906572},
+ issn = {1941-0077},
+ journal = {IEEE Transactions on Multimedia},
+ keyword = {Image analysis;Block codes;Smoothing methods;Rate-distortion;Lagrangian functions;Constraint optimization;Visual perception;Distortion measurement;PSNR;Shape;Adaptive-binary-arithmetic-code;coding-decoding;digital-image-processing;discrete-wavelet-transform;image-coding;optimization;region of interest},
+ month = {Nov},
+ number = {7},
+ pages = {1333-1345},
+ title = {Automatically-Determined Region of Interest in JPEG 2000},
+ volume = {9},
+ year = {2007}
+}

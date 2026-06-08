@@ -1,0 +1,18 @@
+@article{10.1145/3728973,
+ abstract = {Performance is crucial for database management systems (DBMSs), and they are always designed to handle ever-changing workloads efficiently. However, the complexity of the cost-based optimizer (CBO) and its interactions can introduce implementation errors, leading to data-sensitive performance anomalies. These anomalies may cause significant performance degradation compared to the expected design under certain datasets. To diagnose performance issues, DBMS developers often rely on intuitions or compare execution times to a baseline DBMS. These approaches overlook the impact of datasets on performance. As a result, only a subset of performance issues is identified and resolved.    In this paper, we propose Hulk to automatically explore these data-sensitive performance anomalies via data-driven analysis. The key idea is to identify performance anomalies as the dataset evolves. Specifically, Hulk estimates a reasonable response time range for each data volume to pinpoint performance cliffs. Then, performance cliffs are checked for deviations from expected performance by finding a reasonable plan that aligns with performance expectations. We evaluate Hulk on six widely used DBMSs, namely MySQL, MariaDB, Percona, TiDB, PostgreSQL, and AntDB. Hulk totally reports 135 anomalies, with 129 have been confirmed as new bugs, including 14 CVEs. Among them, 94 are data-sensitive performance anomalies.},
+ address = {New York, NY, USA},
+ articleno = {ISSTA096},
+ author = {Wu, Zhiyong and Liang, Jie and Fu, Jingzhou and Wang, Mingzhe and Jiang, Yu},
+ doi = {10.1145/3728973},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Database Management Systems, Fuzzing, Performance Testing},
+ month = {June},
+ number = {ISSTA},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {Hulk: Exploring Data-Sensitive Performance Anomalies in DBMSs via Data-Driven Analysis},
+ url = {https://doi.org/10.1145/3728973},
+ volume = {2},
+ year = {2025}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3342263.3342278,
+ abstract = {Many applications ingest data in an intermittent, yet largely predictable, pattern. Existing systems tend to ignore how data arrives when making decisions about how to update (or refresh) an ongoing query. To address this shortcoming we propose a new query processing paradigm, Intermittent Query Processing (IQP), that bridges query execution and policies, to determine when to update results and how much resources to allocate for ensuring fast query updates. Here, for a query the system provides an initial result that is to be refreshed when policy dictates, such as after a defined number of new records arrive or a time interval elapses. In between intermittent data arrivals, IQP inactivates query execution by selectively releasing some resources occupied in normal execution that will be least helpful (for future refreshes) according to the arrival patterns for new records. We present an IQP prototype based on PostgreSQL that selectively persists the state associated with query operators to allow for fast query updates while constraining resource consumption. Our experiments show that for several application scenarios IQP greatly lowers query processing latency compared to batch systems, and largely reduces memory consumption with comparable latency compared to a state-of-the-art incremental view maintenance technique.},
+ author = {Tang, Dixin and Shang, Zechao and Elmore, Aaron J. and Krishnan, Sanjay and Franklin, Michael J.},
+ doi = {10.14778/3342263.3342278},
+ issn = {2150-8097},
+ issue_date = {July 2019},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {15},
+ pages = {1427–1441},
+ publisher = {VLDB Endowment},
+ title = {Intermittent query processing},
+ url = {https://doi.org/10.14778/3342263.3342278},
+ volume = {12},
+ year = {2019}
+}

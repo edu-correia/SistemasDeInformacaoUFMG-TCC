@@ -1,0 +1,15 @@
+@article{Jin2026,
+ abstract = {Development of medical image segmentation foundation models relies on large-scale samples. However, it is more time-consuming to annotate 3D medical images than 2D natural images, making it challenging to collect sufficient annotated samples. While pseudo-labeling offers a potential solution to expand the annotated dataset, it may introduce noisy labels that can create systematic biases, particularly affecting the segmentation performance of smaller anatomical structures. To this end, we propose a pseudo-label enriched segmentation framework (PESF), which integrates confidence filtering and perturbation-based curriculum learning. To begin with, our pseudo-labeling approach applies a well-pretrained foundation model to generate pseudo-labels for previously unannotated organ categories, effectively expanding the number of classes in the original dataset. Subsequently, we develop a confidence-based filtering mechanism, leveraging a feature extraction module combined with a confidence prediction module to quantitatively assess and filter out low-quality pseudo-labels, thereby minimizing the detrimental effects of noisy pseudo-labels on the model's optimization. Furthermore, a progressive sampling strategy that integrates curriculum learning with Gaussian random perturbations is proposed, systematically introducing training samples from simpler to more complex cases, thereby enhancing the model's generalization capability across organs of varying shapes and sizes. Additionally, our theoretical analysis reveals that incorporating these extra pseudo-labeled classes strengthens feature discrimination by increasing the angular margins between class decision boundaries in the embedding space. Experimental results demonstrate that PESF achieves a 6.8% improvement in the overall average Dice Similarity Coefficient (DSC) compared to the baseline SAM-Med3D on (Amos, FLARE22, WORD, BTCV), with particularly gains in challenging anatomical structures such as the pancreas and esophagus. The code is available at https://github.com/lonezhizi/PESF. © 2025 Elsevier Ltd},
+ author = {Jin, Ge and Zhang, Qian and Cheng, Yong and Xu, Ming and Zhu, Yingwen and Yu, De and Yuan, Yongqi and Li, Juncheng and Shi, Jun},
+ doi = {10.1016/j.neunet.2025.107979},
+ journal = {Neural Networks},
+ note = {Cited by: 9; All Open Access; Hybrid Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Enhancing feature discrimination with pseudo-labels for foundation model in segmentation of 3D medical images},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105013580622?origin=resultslist},
+ volume = {193},
+ year = {2026}
+}

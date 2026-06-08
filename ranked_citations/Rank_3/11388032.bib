@@ -1,0 +1,14 @@
+@inproceedings{11388032,
+ abstract = {Timely recognition of skin cancers improves survival chances, yet automated diagnosis is hindered by subtle lesion similarities and uneven class distributions. This study proposes a dual-stream ensemble that integrates EfficientFormerV2 with the Swin Tiny Transformer for multiclass dermoscopic classification using the HAM10000 dataset. Both networks were pretrained on ImageNet and subsequently fine-tuned; their predictions were merged through two strategies: (1) probability-level fusion via weighted soft voting and (2) a meta-ensemble in which a logistic regression model learns from the concatenated logits of both backbones. Unlike earlier works that rely on a single CNN or transformer, this framework leverages the complementary strengths of a lightweight CNN–transformer hybrid and a hierarchical vision transformer. Experiments show that the Swin Tiny model achieves the highest accuracy (∼90%), whereas the logistic-regression ensemble delivers the best balance across classes (macro F1 = 0.8800) and strong discrimination capability (ROC-AUC = 0.9814), with clear improvements on infrequent lesion types such as AKIEC and DF. We also assess inference cost and model size, highlighting EfficientFormerV2’s suitability for resource-limited deployment. While evaluation is restricted to HAM10000, future work will include cross-dataset studies and integration of clinical metadata. Overall, the proposed approach demonstrates potential as a reliable, scalable decision-support tool in dermatological practice.},
+ author = {Sireesha, Moturi and Siva Rama Krishna Vinay, Yelchuri and Sai Manikanta, Hari Lakshmi and Satyanarayana, Prajapathi},
+ booktitle = {2025 IEEE 3rd International Symposium on Sustainable Energy, Signal Processing and Cybersecurity},
+ doi = {10.1109/iSSSC66652.2025.11388032},
+ issn = {},
+ keyword = {Deep learning;Logistic regression;Accuracy;Costs;Metadata;Signal processing;Transformers;Skin;Robustness;Lesions;Skin lesion classification;deep learning;meta-ensemble;EfficientFormerV2;Swin Tiny Transformer;logistic regression;HAM10000;ROC-AUC},
+ month = {Nov},
+ number = {},
+ pages = {1-6},
+ title = {A Meta-Ensemble Deep Learning Approach Using EfficientFormerV2 and Swin Tiny Transformer for Skin Lesion Classification},
+ volume = {},
+ year = {2025}
+}

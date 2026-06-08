@@ -1,0 +1,14 @@
+@inproceedings{4483329,
+ abstract = {We propose two algorithms for the direct suffix sorting problem. The first is a simple algorithm that runs in an O(n) average time and space complexity, but with a worst case complexity in O(n log n) time and O(n) space. The second algorithm improves the first algorithm to O(n) time and space in the worst case. The improved algorithm requires only 7n bytes of storage, including the n bytes for the original string, and the 4n bytes for the suffix array. We take a general divide and conquer approach: divide the sequence into two groups; construct the suffix array for the first group; construct the suffix array for the second group, based on the sorted suffix from the first; Merge the suffix arrays from the two groups to form the suffix array for the parent sequence; Perform the above steps recursively to construct the complete suffix array for the entire sequence. Given a string of length n, our algorithm runs in O(n) worst case time and space. Our algorithm differs from previous approaches in the use of a simple partitioning step, and how it exploits this simple partitioning scheme for conflict resolution, using the notion of conflict trees. The basis of our improved algorithm is an extension of Shannon-Fano-Elias codes used in information theory. The space requirement for the proposed algorithm is 7n bytes, including the n bytes required to store the original string. This is a significant improvement when compared with the 13n bytes required by the KS algorithm. The method is also unique in its use of Shannon-Fano-Elias codes in efficient suffix sorting. To our knowledge, this is the first time information- theoretic methods have been used as the basis for solving the suffix sorting problem.},
+ author = {Adjeroh, Don and Nan, Fei},
+ booktitle = {Data Compression Conference (dcc 2008)},
+ doi = {10.1109/DCC.2008.99},
+ issn = {2375-0359},
+ keyword = {Sorting;Partitioning algorithms;Information theory;Data compression;Computer science;Buildings;Tree data structures;Data structures;Algorithm design and analysis;Taxonomy;Suffix sorting;suffix trees;suffix arrays;space efficiency;prefix codes;information theory},
+ month = {March},
+ number = {},
+ pages = {502-502},
+ title = {Suffix Sorting via Shannon-Fano-Elias Codes},
+ volume = {},
+ year = {2008}
+}

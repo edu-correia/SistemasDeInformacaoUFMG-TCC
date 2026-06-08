@@ -1,0 +1,14 @@
+@inproceedings{1281680,
+ abstract = {Static Single Assignment form is an intermediate representation that uses /spl Phi/ instructions to merge values at each confluent point of the control flow graph. /spl Phi/ instructions are not machine instructions and must be renamed back to move instructions when translating out of SSA form. Without a coalescing algorithm, the out of SSA translation generates many move instructions. Leung and George [A. L. Leung et al., (1999)] use a SSA form for programs represented as native machine instructions, including the use of machine dedicated registers. For this purpose, they handle renaming constraints thanks to a pinning mechanism. Pinning /spl Phi/ arguments and their corresponding definition to a common resource is also a very attractive technique for coalescing variables. Extending this idea, we propose a method to reduce the /spl Phi/-related copies during the out of SSA translation, thanks to a pinning-based coalescing algorithm that is aware of renaming constraints. We implemented our algorithm in the STMicroelectronics Linear Assembly Optimizer [B. Dupont de Dinechin et al., (2000)]. Our experiments show interesting results when comparing to the existing approaches of Leung and George [A. L. Leung et al., (1999)], Sreedhar et al. [V. Sreedhar et al., (1999)], and Appel and George for register coalescing [L. George et al., (1996)].},
+ author = {Rastello, F. and de Ferriere, F. and Guillon, C.},
+ booktitle = {International Symposium on Code Generation and Optimization, 2004. CGO 2004.},
+ doi = {10.1109/CGO.2004.1281680},
+ issn = {},
+ keyword = {Constraint optimization;Assembly;Flow graphs;Processor scheduling;Registers;Hardware;Induction generators;Joining processes;Pipeline processing;Digital signal processing},
+ month = {March},
+ number = {},
+ pages = {265-276},
+ title = {Optimizing translation out of SSA using renaming constraints},
+ volume = {},
+ year = {2004}
+}

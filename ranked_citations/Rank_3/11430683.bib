@@ -1,0 +1,14 @@
+@article{11430683,
+ abstract = {As data centers continue to expand in size and complexity, obtaining global traffic insights necessitates aggregating statistical data from numerous individual nodes, a process critical for effective network management. However, in data centers, existing approaches often rely on querying individual endpoint hosts to gather cluster-wide statistics, which introduces substantial latency and reduces efficiency, particularly in large-scale deployments. To address this issue, we propose HiMon, a cost-efficient and high-accurate distributed monitoring system for optimizing traffic aggregation. HiMon enables distributed nodes to perform real-time, flow-level statistical processing and report the data to a manager node with minimal bandwidth consumption. The manager node aggregates the collected data to construct a comprehensive global traffic view. To enable high-speed and high-precision per-packet processing on child nodes, we introduce MaxSketch. MaxSketch’s data structure and update strategy allow it to accurately estimate child node traffic with minimal memory and computational overhead. For high-speed aggregation on the manager node, we present PolySketch, which significantly boosts aggregation efficiency by delegating most computational tasks to the child nodes. Together, the hierarchical sketch structures of MaxSketch and PolySketch form the HiMon monitoring system. Experimental evaluations demonstrate that HiMon surpasses baseline algorithms, achieving a 17- $210\times $  improvement in traffic processing efficiency, a 25- $42\times $  reduction in manager node bandwidth consumption, and a 3.69- $8.97\times $  increase in accuracy.},
+ author = {Zhang, Yuchen and Wen, Zhenyu and He, Shibo and Chen, Xiang and Gu, Chaojie and Chen, Jiming},
+ doi = {10.1109/TON.2026.3672801},
+ issn = {2998-4157},
+ journal = {IEEE Transactions on Networking},
+ keyword = {Monitoring;Accuracy;Data centers;Merging;Bandwidth;Servers;Real-time systems;Data structures;Memory management;Costs;Monitoring;sketch;data center},
+ month = {},
+ number = {},
+ pages = {4154-4168},
+ title = {HiMon: Achieving Low-Cost and High-Accuracy Network Monitoring via Hierarchical Sketching},
+ volume = {34},
+ year = {2026}
+}

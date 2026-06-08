@@ -1,0 +1,14 @@
+@inproceedings{9978344,
+ abstract = {The LSM-tree based key-value store has been widely deployed in modern storage systems because of its optimized write performance. However, its query performance is frequently criticized owing to the multi-layer structure. Caching is one of the most common approaches for boosting read performance, but existing caching in LSM-tree may be invalidated due to compaction. Simultaneously, obsolete data brought by duplicate writes may cause significant read and write amplification during compaction. Caching invalidation and compaction with obsolete data both impair performance.By developing a fine-grained Entry Cache in memory and inventing a hotspot-aware compaction strategy, we propose a Hotspot-aware LSM-tree based storage engine (simplified as HaLSM). The Entry Cache stores hot data in memory efficiently, and all data in it are valid indefinitely and are unaffected by compaction. Using the hotspot-aware compaction strategy, HaLSM can reduce the impact on tree structures brought by hotspot data and keep hot data in upper levels. We have implemented HaLSM based on LevelDB, and the evaluation results with the YCSB benchmark show that the performance of HaLSM is higher than that of LevelDB in various workloads, and the number of disk I/Os can be reduced significantly.},
+ author = {Zhang, Jianshun and Wang, Fang and Dong, Chao},
+ booktitle = {2022 IEEE 40th International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD56317.2022.00035},
+ issn = {2576-6996},
+ keyword = {Memory management;Benchmark testing;Boosting;Compaction;Engines;Key-Value store;Log-Structured Merge Trees;Cache},
+ month = {Oct},
+ number = {},
+ pages = {179-186},
+ title = {HaLSM: A Hotspot-aware LSM-tree based Key-Value Storage Engine},
+ volume = {},
+ year = {2022}
+}

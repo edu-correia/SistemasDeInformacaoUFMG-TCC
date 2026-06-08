@@ -1,0 +1,14 @@
+@article{11271464,
+ abstract = {Modern key-value stores often utilize Log-Structured Merge Trees (LSM-trees) to achieve high write throughput. However, LSM-trees inherently suffer from high read and write amplification. Keyvalue separation, a technique that isolates large values from keys and stores them in a separate value log, has emerged as a promising solution to mitigate these issues. Despite its potential, existing key-value separation designs have struggled to simultaneously optimize for both update and range queries. To overcome this limitation, we introduce SharK, a new key-value store design that excels in both update and range query performance. SharK partitions the value log into shards and stores values based on their ranges, employing adaptive value management through resharding to maintain consistent performance even under varying key distributions. By performing garbage collection on a per-shard basis with dynamic resharding, SharK ensures efficient update performance. Range-based sharding also directly improves the performance of range queries. Through evaluations, SharK demonstrates superior query performance compared to RocksDB and other key-value separation designs while maintaining comparable update performance.},
+ author = {Sugiura, Naoto and Fujiki, Daichi},
+ doi = {10.1109/ACCESS.2025.3638766},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Sharks;Compaction;Trees (botanical);Sharding;Throughput;Optimization;Interpolation;Hands;Filters;Databases;LSM-tree;key-value store;key-value separation;range query;SSD;storage},
+ month = {},
+ number = {},
+ pages = {203041-203056},
+ title = {SharK: Enabling High-Performance Range Queries in Key-Value Store Through Vlog Resharding},
+ volume = {13},
+ year = {2025}
+}

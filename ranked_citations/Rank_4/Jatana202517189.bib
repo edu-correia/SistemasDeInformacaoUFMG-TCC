@@ -1,0 +1,16 @@
+@article{Jatana202517189,
+ abstract = {A collaborative real-time text editor is an application that allows multiple users to edit a document simultaneously and merge their contributions automatically. It can be made collaborative by implementing a conflict resolution algorithm either on the client side (in peer-to-peer collaboration) or on the server side (when using web sockets and a central server to monitor state changes). Although web sockets are ideal for real-time text editors, using multiple collaborative editors on one connection can create problems. This is because a single web connection cannot monitor which user is collaborating on which application state, leading to unnecessary network queries and data being delivered to the wrong state. To address this issue, the current solution is to open multiple web socket connections, with one web socket per collaboration application. However, this can add significant overhead proportional to the number of apps utilized. In this study, we demonstrate an algorithm that enables using a single web socket for multiple collaborative applications in a collaborative editor. Our method involves modifying the socket's code to track which application's shared state is being worked on and by whom. This allows for the simultaneous collaboration of multiple states in real-time, with infinite users, without opening a different socket for each application. Our optimized editor showed an efficiency improvement of over 96% in access time duration. This approach can be implemented in other collaborative editors and web applications with similar architecture to improve performance and eliminate issues arising from network overload. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2024.},
+ author = {Jatana, Nishtha and Singh, Mansehej and Gupta, Charu and Dhand, Geetika and Malik, Shaily and Dadheech, Pankaj and Aneja, Nagender and Aneja, Sandhya},
+ doi = {10.1007/s11042-024-19734-3},
+ journal = {Multimedia Tools and Applications},
+ note = {Cited by: 0; All Open Access; Green Open Access},
+ number = {17},
+ pages = {17189 - 17204},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Differentially processed optimized collaborative rich text editor},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85197859168?origin=resultslist},
+ volume = {84},
+ year = {2025}
+}

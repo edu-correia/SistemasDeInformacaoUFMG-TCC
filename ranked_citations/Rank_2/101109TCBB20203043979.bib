@@ -1,0 +1,18 @@
+@article{10.1109/TCBB.2020.3043979,
+ abstract = {Parallelization in Python integrates Message Passing Interface via the mpi4py module. Since mpi4py does not support parallelization of objects greater than &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;$2^{31}$&lt;/tex-math&gt;&lt;alternatives&gt;&lt;mml:math&gt;&lt;mml:msup&gt;&lt;mml:mn&gt;2&lt;/mml:mn&gt;&lt;mml:mn&gt;31&lt;/mml:mn&gt;&lt;/mml:msup&gt;&lt;/mml:math&gt;&lt;inline-graphic xlink:href="ascension-ieq1-3043979.gif"/&gt;&lt;/alternatives&gt;&lt;/inline-formula&gt; bytes, we developed BigMPI4py, a Python module that wraps mpi4py, supporting object sizes beyond this boundary. BigMPI4py automatically determines the optimal object distribution strategy, and uses vectorized methods, achieving higher parallelization efficiency. BigMPI4py facilitates the implementation of Python for Big Data applications in multicore workstations and High Performance Computer systems. We use BigMPI4py to speed-up the search for germ line specific &lt;italic&gt;de novo&lt;/italic&gt; DNA methylated/unmethylated motifs from the 59 whole genome bisulfite sequencing DNA methylation samples from 27 human tissues of the ENCODE project. We developed a parallel implementation of the Kruskall-Wallis test to find CpGs with differential methylation across germ layers. The parallel evaluation of the significance of 55 million CpG achieved a 22x speedup with 25 cores allowing us an efficient identification of a set of hypermethylated genes in ectoderm and mesoderm-related tissues, and another set in endoderm-related tissues and finally, the discovery of germ layer specific DNA demethylation motifs. Our results point out that DNA methylation signal provide a higher degree of information for the demethylated state than for the methylated state. BigMPI4py is available at &lt;uri&gt;https://https://www.arauzolab.org/tools/bigmpi4py&lt;/uri&gt; and &lt;uri&gt;https://gitlab.com/alexmascension/bigmpi4py&lt;/uri&gt; and the Jupyter Notebook with WGBS analysis at &lt;uri&gt;https://gitlab.com/alexmascension/wgbs-analysis&lt;/uri&gt;.},
+ address = {Washington, DC, USA},
+ author = {Ascensi\'{o}n, Alex M. and Ara\'{u}zo-Bravo, Marcos J.},
+ doi = {10.1109/tcbb.2020.3043979},
+ issn = {1545-5963},
+ issue_date = {May-June 2022},
+ journal = {IEEE/ACM Trans. Comput. Biol. Bioinformatics},
+ month = {December},
+ number = {3},
+ numpages = {16},
+ pages = {1507–1522},
+ publisher = {IEEE Computer Society Press},
+ title = {BigMPI4py: Python Module for Parallelization of Big Data Objects Discloses Germ Layer Specific DNA Demethylation Motifs},
+ url = {https://doi.org/10.1109/TCBB.2020.3043979},
+ volume = {19},
+ year = {2020}
+}

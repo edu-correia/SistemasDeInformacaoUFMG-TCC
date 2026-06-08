@@ -1,0 +1,14 @@
+@conference{Gottstein2013106,
+ abstract = {Append-/Log-based Storage Managers (LbSM) for database systems represent a good match for the characteristics and behaviour of Flash technology. LbSM alleviate random writes reducing the impact of Flash read/write asymmetry, increasing endurance and performance. A recently proposed combination of Multi-Versioning database approaches and LbSM called SIAS [9] offers further benefits: it substantially lowers the write rate due to tuple version append granularity and therefore improves the performance. In SIAS a page contains versions of tuples of the same table. Once appended such a page is immutable. The only allowable operations are reads (lookups, scans, version visibility checks) in tuple version granularity. Optimising for them offers an essential performance increase. In the present work-in-progress paper we propose two types of read optimisations: Multi-Version Index and Ordered Log Storage. Benefits of Ordered Log Storage: (i) Read efficiency due to the use of parallel read streams; (ii) Write efficiency since larger amounts of data are appended sequentially; (iii) fast garbage collection: read multiple sorted runs, filter dead tuples and write one single, large (combined) sorted run. (iv) possible cache-efficiency optimisations (for large scans) Benefits of Multi-Version Indexing: (i) index only visibility checks; (ii) postponing of index reorganisations; (iii) no invalid tuple bits in the index (in-place updates); (iv) pre-filtering of invisible tuple versions; (v) facilitate easy identification of tuple versions to be garbage collected. Benefits of the combination of both approaches: (i) Index and ordered access; (ii) Facilitate range searches in sorted runs; (iii) on the fly garbage collection (checking of one bit). © 2013 ACM.},
+ author = {Gottstein, Robert and Petrov, Ilia and Buchmann, Alejandro},
+ doi = {10.1145/2513591.2513640},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 0},
+ pages = {106 - 113},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Read optimisations for append storage on flash},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84887205669?origin=resultslist},
+ year = {2013}
+}

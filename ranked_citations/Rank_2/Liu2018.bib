@@ -1,0 +1,14 @@
+@conference{Liu2018,
+ abstract = {Log-Structured Merge Trees (LSM) based key-value (KV) stores such as LevelDB and HyperLevelDB, use a compaction strategy which brings frequent compaction operations, to store key-value items in sorted order. However, large numbers of compactions impose a negative impact on write and read performance for random data-intensive workloads. To remedy this problem, this paper presents OHDB, an optimization of HyperLevelDB for random data-intensive workloads. OHDB implements two stand-alone techniques in the disk component of LSM structure to optimize the concurrent compactions. One is dividing KV items by prefix at the first level in the disk component, to reduce the frequency of overlapping in key range among data files, and thus reduces the amount of compactions. The other is separating the first level in the disk component from the rest levels, and organizing them in two disks individually, to increase parallelism of disk writes of compactions. We evaluate three OHDBs which are OHDB with each of the technique and OHDB with the combination of both respectively, using micro-benchmarks with random write- intensive and read-intensive workloads. Experimental results show that OHDB reduces the amount of compactions by a factor of up to 4x, and improves the write and read performance for random data-intensive workloads under various settings. © 2018 IEEE.},
+ author = {Liu, Li and Wang, Hua and Zhou, Ke},
+ doi = {10.1109/NAS.2018.8515730},
+ journal = {2018 IEEE International Conference on Networking, Architecture and Storage, NAS 2018 - Proceedings},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An optimized implementation for concurrent lsm-structured key-value stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85057563966?origin=resultslist},
+ year = {2018}
+}

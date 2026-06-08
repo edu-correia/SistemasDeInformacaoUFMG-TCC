@@ -1,0 +1,16 @@
+@article{10.5555/3722577.3722789,
+ abstract = {Bayesian optimization (BO) has become a popular strategy for global optimization of expensive real-world functions. Contrary to a common expectation that BO is suited to optimizing black-box functions, it actually requires domain knowledge about those functions to deploy BO successfully. Such domain knowledge often manifests in Gaussian process (GP) priors that specify initial beliefs on functions. However, even with expert knowledge, it is non-trivial to quantitatively define a prior. This is especially true for hyperparameter tuning problems on complex machine learning models, where landscapes of tuning objectives are often difficult to comprehend. We seek an alternative practice for setting these functional priors. In particular, we consider the scenario where we have data from similar functions that allow us to pre-train a tighter distribution a priori. We detail what pretraining entails for GPs using a KL divergence based loss function, and propose a new pretraining based BO framework named HyperBO. Theoretically, we show bounded posterior predictions and near-zero regrets for HyperBO without assuming the "ground truth" GP prior is known. To verify our approach in realistic setups, we collect a large multi-task hyperparameter tuning dataset by training tens of thousands of configurations of near-state-of-the-art deep learning models on popular image and text datasets, as well as a protein sequence dataset. Our results show that on average, HyperBO is able to locate good hyperparameters at least 3 times more efficiently than the best competing methods on both our new tuning dataset and existing multi-task BO benchmarks.},
+ articleno = {212},
+ author = {Wang, Zi and Dahl, George E. and Swersky, Kevin and Lee, Chansoo and Nado, Zachary and Gilmer, Justin and Snoek, Jasper and Ghahramani, Zoubin},
+ issn = {1532-4435},
+ issue_date = {January 2024},
+ journal = {J. Mach. Learn. Res.},
+ keyword = {Bayesian optimization, Gaussian processes, pre-trained models, transfer learning, hyperparameter tuning},
+ month = {January},
+ number = {1},
+ numpages = {83},
+ publisher = {JMLR.org},
+ title = {Pre-trained Gaussian processes for Bayesian optimization},
+ volume = {25},
+ year = {2024}
+}

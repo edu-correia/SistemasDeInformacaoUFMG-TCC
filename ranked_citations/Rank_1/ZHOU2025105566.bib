@@ -1,0 +1,13 @@
+@article{ZHOU2025105566,
+ abstract = {Infrared–visible image fusion combines complementary information from both modalities to enhance visual quality and support downstream tasks. However, existing methods typically enhance semantic information by designing fusion functions for source images and combining them with downstream network, overlooking the optimization and guidance of the fused image itself. This neglect weakens the semantic knowledge within the fused image, limiting its alignment with task objectives and reducing accuracy in downstream tasks. To overcome these limitations, we propose the self-distillation guided Semantic Knowledge Feedback (SKFFusion) network, which extracts semantic knowledge from the fused image and feeds it back to iteratively optimize the fusion process, addressing the lack of semantic guidance. Specifically, we introduce shallow-to-deep feature fusion modules, including Shallow Texture Fusion (STF) and Deep Semantic Fusion (DSF) to integrate fine-grained details and high-level semantics. The STF uses channel and spatial attention mechanisms to aggregate detailed multi-modal information, while the DSF leverages a Mamba structure to capture long-range dependencies, enabling deeper cross-modal semantic fusion. Additionally, we design a CNN-Transformer-based Knowledge Feedback Network (KFN) to extract local detail features and capture global dependencies. A Semantic Attention Guidance (SAG) further refines the fused image’s semantic representation, aligning it with task objectives. Finally, a distillation loss provides more robust training and excellent image quality. Experimental results show that SKFFusion outperforms existing methods in visual quality and vision task performance, particularly under challenging conditions like low-light and fog. Our code is available at https://github.com/yyzzttkkjj/SKFFusion.},
+ author = {Wei Zhou and Yingyuan Wang and Lina Zuo and Dan Ma and Yugen Yi},
+ doi = {https://doi.org/10.1016/j.imavis.2025.105566},
+ issn = {0262-8856},
+ journal = {Image and Vision Computing},
+ keyword = {Infrared–visible image fusion, High-level vision tasks, Self-distillation optimization, Knowledge feedback},
+ pages = {105566},
+ title = {Self-distillation guided Semantic Knowledge Feedback network for infrared–visible image fusion},
+ url = {https://www.sciencedirect.com/science/article/pii/S0262885625001544},
+ volume = {159},
+ year = {2025}
+}

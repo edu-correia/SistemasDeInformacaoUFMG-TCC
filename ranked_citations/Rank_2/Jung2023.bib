@@ -1,0 +1,16 @@
+@article{Jung2023,
+ abstract = {Zoned Namespace (ZNS) SSDs address the disadvantages that come from supporting the block interface within conventional SSDs, granting more control over data management to host systems, while also relieving heavy duties from device firmware. However, with the removal of on-device garbage collection, host systems must explicitly send zone reset requests to free up storage space, which may incur multiple NAND block erase operations according to the configured zone size, resulting in increased tail latency. In this article, we propose a Preemptive Zone Reset scheduling design, which we implemented within the firmware of our ZNS SSD prototype, and compare it to an intuitive Zone Mapping Table method, which we consider as the state-of-the-art. The main idea is to service high priority foreground I/O requests while preempting block erase operations induced by zone resets. Our proposed approach, opposed to the baseline method, as much as halved tail latency for write-only workloads, and reduced read tail latency by up to 1.76 times in a mixed workload. © 2023 by the authors.},
+ author = {Jung, Siu and Lee, Seungjin and Han, Jungwook and Kim, Youngjae},
+ doi = {10.3390/electronics12040798},
+ journal = {Electronics (Switzerland)},
+ note = {Cited by: 8; All Open Access; Gold Open Access; Green Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Preemptive Zone Reset Design within Zoned Namespace SSD Firmware},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85149256450?origin=resultslist},
+ volume = {12},
+ year = {2023}
+}

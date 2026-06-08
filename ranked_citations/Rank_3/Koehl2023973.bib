@@ -1,0 +1,16 @@
+@article{Koehl2023973,
+ abstract = {Geometry is crucial in our efforts to comprehend the structures and dynamics of biomolecules. For example, volume, surface area, and integrated mean and Gaussian curvature of the union of balls representing a molecule are used to quantify its interactions with the water surrounding it in the morphometric implicit solvent models. The Alpha Shape theory provides an accurate and reliable method for computing these geometric measures. In this paper, we derive homogeneous formulas for the expressions of these measures and their derivatives with respect to the atomic coordinates, and we provide algorithms that implement them into a new software package, AlphaMol. The only variables in these formulas are the interatomic distances, making them insensitive to translations and rotations. AlphaMol includes a sequential algorithm and a parallel algorithm. In the parallel version, we partition the atoms of the molecule of interest into 3D rectangular blocks, using a kd-tree algorithm. We then apply the sequential algorithm of AlphaMol to each block, augmented by a buffer zone to account for atoms whose ball representations may partially cover the block. The current parallel version of AlphaMol leads to a 20-fold speed-up compared to an independent serial implementation when using 32 processors. For instance, it takes 31 s to compute the geometric measures and derivatives of each atom in a viral capsid with more than 26 million atoms on 32 Intel processors running at 2.7 GHz. The presence of the buffer zones, however, leads to redundant computations, which ultimately limit the impact of using multiple processors. AlphaMol is available as an OpenSource software. © 2023 American Chemical Society.},
+ author = {Koehl, Patrice and Akopyan, Arseniy and Edelsbrunner, Herbert},
+ doi = {10.1021/acs.jcim.2c01346},
+ journal = {Journal of Chemical Information and Modeling},
+ note = {Cited by: 11; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ number = {3},
+ pages = {973 - 985},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Computing the Volume, Surface Area, Mean, and Gaussian Curvatures of Molecules and Their Derivatives},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85147222448?origin=resultslist},
+ volume = {63},
+ year = {2023}
+}

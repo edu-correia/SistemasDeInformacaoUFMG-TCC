@@ -1,0 +1,14 @@
+@inproceedings{10746210,
+ abstract = {Traditional Simultaneous Localization and Mapping (SLAM) often fails when operating within narrow and repetitive metro train inspection pit environments. A novel SLAM framework is presented in this paper to address this problem. It integrates multi-sensor data and leverages prior knowledge of train structures, ensures consistent trajectory estimation in robot’s unidirectional straight runs up to 192m. By employing feature-based Laser Odometry (LO) and Time-of-Flight (ToF) ranging sensors for train wheel center detection, the SLAM frontend generates two types of keyframes. LO keyframes record timestamps, velocities, and pose estimations. ToF keyframes record timestamps when the ToF laser ranging point reaches the centers of the first and last wheels of each carriage. These heterogeneous keyframes are merged to serve as nodes in the factor graph. In addition to standard pose-to-pose constraints, the framework uses true distances between each carriage's first and last wheels, as well as estimated actual distances between carriages and from the robot's reached boundaries in the inspection pit to the centers of the first and last train wheels, as distance constraints between nodes. Finally, the backend optimization yields a globally consistent trajectory, an optimized feature map, and accurate center positions of each carriage’s first wheel in the inspection pit coordinate system. The proposed framework solves the issues of scale inconsistency in maps generated during real-time SLAM in each inspection session, as well as scale drift encountered during long-distance straight-line movements, ensures accuracy and safety in under-train inspections. The effectiveness of the proposed framework is demonstrated using real-world datasets.},
+ author = {Zhang, Muhua and Ma, Lei and Shen, Kai and Sun, Yongkui},
+ booktitle = {2024 30th International Conference on Mechatronics and Machine Vision in Practice (M2VIP)},
+ doi = {10.1109/M2VIP62491.2024.10746210},
+ issn = {2996-4164},
+ keyword = {Simultaneous localization and mapping;Accuracy;Robot kinematics;Lasers;Wheels;Inspection;Feature extraction;Distance measurement;Trajectory;Mobile robots;graph-based SLAM;inspection robot;under-train inspection},
+ month = {Oct},
+ number = {},
+ pages = {1-5},
+ title = {Graph-Based SLAM for Under-Train Inspection Robots in Narrow Site},
+ volume = {},
+ year = {2024}
+}

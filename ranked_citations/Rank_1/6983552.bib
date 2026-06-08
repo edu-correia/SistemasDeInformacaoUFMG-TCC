@@ -1,0 +1,14 @@
+@article{6983552,
+ abstract = {This paper addresses the problem of semantic segmentation, where the possible class labels are from a predefined set. We exploit top-down guidance, i.e., the coarse localization of the objects and their class labels provided by object detectors. For each detected bounding box, figure-ground segmentation is performed and the final result is achieved by merging the figure-ground segmentations. The main idea of the proposed approach, which is presented in our preliminary work, is to reformulate the figure-ground segmentation problem as sparse reconstruction pursuing the object mask in a nonparametric manner. The latent segmentation mask should be coherent subject to sparse error caused by intra-category diversity; thus, the object mask is inferred by making use of sparse representations over the training set. To handle local spatial deformations, local patch-level masks are also considered and inferred by sparse representations over the spatially nearby patches. The sparse reconstruction coefficients and the latent mask are alternately optimized by applying the Lasso algorithm and the accelerated proximal gradient method. The proposed formulation results in a convex optimization problem; thus, the global optimal solution is achieved. In this paper, we provide theoretical analysis of the convergence and optimality. We also give an extended numerical analysis of the proposed algorithm and a comprehensive comparison with the related semantic segmentation methods on the challenging PASCAL visual object class object segmentation datasets and the Weizmann horse dataset. The experimental results demonstrate that the proposed algorithm achieves a competitive performance when compared with the state of the arts.},
+ author = {Xia, Wei and Domokos, Csaba and Xiong, Junjun and Cheong, Loong Fah and Yan, Shuicheng},
+ doi = {10.1109/TCSVT.2014.2379972},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Image reconstruction;Image segmentation;Training;Optimization;Feature extraction;Semantics;Semantic segmentation;Sparse reconstruction;Lasso optimization;Accelerated Proximal Gradient method;Accelerated proximal gradient (APG) method;semantic segmentation;sparse reconstruction;Lasso optimization},
+ month = {Aug},
+ number = {8},
+ pages = {1295-1308},
+ title = {Segmentation Over Detection via Optimal Sparse Reconstructions},
+ volume = {25},
+ year = {2015}
+}

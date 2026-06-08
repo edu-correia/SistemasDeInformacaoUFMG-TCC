@@ -1,0 +1,14 @@
+@conference{Kim2020119,
+ abstract = {Key-value stores such as LevelDB and RocksDB are widely used in various systems due to their high write performance. However, the background compaction operations inherent to the key-value stores are often to blame for write amplification and write stall. In particular, the SSTable size in the existing key-value stores introduces, upon compactions, a tradeoff between the fsync() call frequency and the amount of amplified writes. Small SSTables require a larger number of fsync()/fdatasync() than large SSTables to maintain file consistency. On the contrary, large SSTables result in large overlaps and frequent rewrites of SSTables. In this paper, to reduce file consistency overhead without increasing key ranges of SSTables, we present a variant of LSM-tree, namely, BoLT (Barrier-optimized LSM-Tree), that minimizes the number of calls to fsync()/fdatasync() barriers while taking advantage of fine-grained SSTables. BoLT consists of four key elements: (i) compaction file, (ii) logical SSTables, (iii) group compaction, and (iv) settled compaction. We implement BoLT in LevelDB and HyperLevelDB and compare the performances against LevelDB, HyperLevelDB, RocksDB, and the state-of-the-art PebblesDB. Our experimental study shows that BoLT achieves significantly higher write throughputs than LevelDB and HyperLevelDB. © 2020 Association for Computing Machinery.},
+ author = {Kim, Dongui and Park, Chanyeol and Lee, Sang-Won and Nam, Beomseok},
+ doi = {10.1145/3423211.3425676},
+ journal = {Middleware 2020 - Proceedings of the 2020 21st International Middleware Conference},
+ note = {Cited by: 8},
+ pages = {119 - 133},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {BoLt: Barrier-optimized LSM-Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85098495433?origin=resultslist},
+ year = {2020}
+}

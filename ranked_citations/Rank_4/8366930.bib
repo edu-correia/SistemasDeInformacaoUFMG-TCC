@@ -1,0 +1,14 @@
+@inproceedings{8366930,
+ abstract = {Graphics rendering is a complex multi-step process whose data demands typically dominate memory system design in SoCs. GPUs create images by merging many simpler scenes for each frame. For performance, scenes are tiled into parallel tasks which produce different parts of the final output. This execution model results in complex memory behavior with bandwidth demands and data sharing varying over time, and which depends heavily on the structure of the application. To design systems that can efficiently accommodate and schedule these workloads we need to understand their behavior and diversity. In this work, we develop a quantitative characterization of the data demands of modern graphics rendering. Our approach uses an architecturally-independent analysis, identifying different types of data sharing present in the applications, independent of their scheduling. From this analysis, we present a limit study into the potential to improve memory system performance by tackling each type of data sharing. We see that there is the potential to reduce graphics bandwidth by 43% if we can take full advantage of data reuse between tasks and scenes within each frame. For the particularly complex benchmarks, capturing inter-task reuse alone has the potential to reduce bandwidth by 15% (up to 31%), while targeting interscene reuse could provide a savings of 60% (up to 75%). These insights provide us the opportunity to understand where we should focus design efforts on graphics memory systems.},
+ author = {Ceballos, German and Sembrant, Andreas and Carlson, Trevor E. and Black-Schaffer, David},
+ booktitle = {2018 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+ doi = {10.1109/ISPASS.2018.00009},
+ issn = {},
+ keyword = {Task analysis;Rendering (computer graphics);Bandwidth;Benchmark testing;Taxonomy;graphics processing unit;rendering (computer graphics);memory hierarchy;cache behaviour;task based programming;tools;memory modeling},
+ month = {April},
+ number = {},
+ pages = {1-11},
+ title = {Behind the Scenes: Memory Analysis of Graphical Workloads on Tile-Based GPUs},
+ volume = {},
+ year = {2018}
+}

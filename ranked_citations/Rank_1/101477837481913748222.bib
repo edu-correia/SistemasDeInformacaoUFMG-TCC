@@ -1,0 +1,17 @@
+@article{10.14778/3748191.3748222,
+ abstract = {Neural text-to-SQL models, which translate natural language questions (NLQs) into SQL queries given a database schema, have achieved remarkable performance. However, database schemas frequently evolve to meet new requirements. Such schema evolution often leads to performance degradation for models trained on static schemas. Existing work either mainly focuses on simply paraphrasing some syntactic or semantic mappings among NLQ, DB and SQL, or lacks a comprehensive and controllable way to investigate the model robustness issue under the schema evolution, which is insufficient when facing the increasingly complex and rich database schema changes in reality, especially in the LLM era.To address the challenges posed by schema evolution, we present EvoSchema, a comprehensive benchmark designed to assess and enhance the robustness of text-to-SQL systems under real-world schema changes. EvoSchema introduces a novel schema evolution taxonomy, encompassing ten perturbation types across column-level and table-level modifications, systematically simulating the dynamic nature of database schemas. Through EvoSchema, we conduct an in-depth evaluation spanning different open-source and closed-source LLMs, revealing that table-level perturbations have a significantly greater impact on model performance compared to column-level changes. Furthermore, EvoSchema inspires the development of more resilient text-to-SQL systems, in terms of both model training and database design. The models trained on EvoSchema's diverse schema designs can force the model to distinguish the schema difference for the same questions to avoid learning spurious patterns, which demonstrate remarkable robustness compared to those trained on unperturbed data on average. This benchmark offers valuable insights into model behavior and a path forward for designing systems capable of thriving in dynamic, real-world environments.},
+ author = {Zhang, Tianshu and Qian, Kun and Sahai, Siddhartha and Tian, Yuan and Garg, Shaddy and Sun, Huan and Li, Yunyao},
+ doi = {10.14778/3748191.3748222},
+ issn = {2150-8097},
+ issue_date = {June 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {14},
+ pages = {3655–3668},
+ publisher = {VLDB Endowment},
+ title = {Evoschema: Towards Text-to-SQL Robustness against Schema Evolution},
+ url = {https://doi.org/10.14778/3748191.3748222},
+ volume = {18},
+ year = {2025}
+}

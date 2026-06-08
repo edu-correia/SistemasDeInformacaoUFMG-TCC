@@ -1,0 +1,14 @@
+@inproceedings{6983396,
+ abstract = {In this paper we describe the design and implementation of ACaZoo, a key-value store that combines strong consistency with high performance and high availability. ACaZoo supports the popular column-oriented data model of Apache Cassandra and HBase. It implements strongly-consistent data replication using primary-backup atomic broadcast of a write-ahead log, which records data mutations to a Log-structured Merge Tree (LSM-Tree). ACaZoo scales by horizontally partitioning the key space via consistent primary-key hashing on available replica groups (RGs). LSM-Tree compactions can hamper performance, especially when they take place at RG primaries. ACaZoo addresses this problem by changing RG leadership prior to heavy compactions, a method that can improve throughput by up to 40% in write-intensive workloads. We evaluate ACaZoo using the Yahoo Cloud Serving Benchmark (YCSB) and compare it to Oracle's NoSQL Database and to Cassandra providing serial consistency via an extension of the Paxos algorithm.},
+ author = {Garefalakis, Panagiotis and Papadopoulos, Panagiotis and Magoutis, Kostas},
+ booktitle = {2014 IEEE 33rd International Symposium on Reliable Distributed Systems},
+ doi = {10.1109/SRDS.2014.43},
+ issn = {1060-9857},
+ keyword = {Compaction;Nominations and elections;Servers;Proposals;Protocols;Data models;Databases;distributed systems;key-value stores;nosql databases},
+ month = {Oct},
+ number = {},
+ pages = {211-220},
+ title = {ACaZoo: A Distributed Key-Value Store Based on Replicated LSM-Trees},
+ volume = {},
+ year = {2014}
+}

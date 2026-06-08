@@ -1,0 +1,14 @@
+@article{10982125,
+ abstract = {With the increasing popularity and accessibility of high dynamic range (HDR) photography, tone mapping operators (TMOs) for dynamic range compression are practically demanding. In this paper, we develop a two-stage neural network-based TMO that is self-calibrated and perceptually optimized. In Stage one, motivated by the physiology of the early stages of the human visual system, we first decompose an HDR image into a normalized Laplacian pyramid. We then use two lightweight deep neural networks, taking the normalized representation as input and estimating the Laplacian pyramid of the corresponding LDR image. We optimize the tone mapping network by minimizing the normalized Laplacian pyramid distance, a perceptual metric aligning with human judgments of tone-mapped image quality. In Stage two, we input the same HDR image—self-calibrated to different maximum luminance levels—into the learned tone mapping network, and generate a pseudo-multi-exposure image stack with varying detail visibility and color saturation. We then train another fusion network to merge the LDR image stack into a desired LDR image by maximizing a variant of the structural similarity index for multi-exposure image fusion, proven perceptually relevant to fused image quality. Extensive experiments show that our method produces images with consistently better visual quality while ranking among the fastest local TMOs.},
+ author = {Cao, Peibei and Le, Chenyang and Fang, Yuming and Ma, Kede},
+ doi = {10.1109/TVCG.2025.3566377},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Measurement;Laplace equations;Optimization;Indexes;Training;Image quality;Image coding;Visualization;Photography;Image fusion;High dynamic range imaging;tone mapping;image fusion;Laplacian pyramid;perceptual optimization},
+ month = {Oct},
+ number = {10},
+ pages = {8268-8282},
+ title = {A Perceptually Optimized and Self-Calibrated Tone Mapping Operator},
+ volume = {31},
+ year = {2025}
+}

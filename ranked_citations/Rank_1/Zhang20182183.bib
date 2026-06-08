@@ -1,0 +1,16 @@
+@conference{Zhang20182183,
+ abstract = {Many new memory indexing structures have been proposed and outperform current in-memory skip-list index adopted by LevelDB, RocksDB and other key-value systems. However, those new indexes cannot be easily intergrated with key-value systems, because most of them do not consider how the data can be efficiently ushed to disk. Some assumptions, such as fixed size key and value, are unrealistic for real applications. In this paper, we present S3, a scalable in-memory skip-list index for the customized version of RocksDB in Alibaba Cloud. S3 adopts a two-layer structure. In the top layer, a cache-sensitive structure is used to maintain a few guard entries to facilitate the search over the skip-list. In the bottom layer, a semi-ordered skip-list index is built to support highly concurrent insertions and fast lookup and range query. To further improve the performance, we train a neural model to select guard entries intelligently according to the data distribution and query distribution. Experiments on multiple datasets show that S3 achieves a comparable performance to other new memory indexing schemes, and can replace current in-memory skip-list of LevelDB and RocksDB to support huge volume of data. © 2019 VLDB Endowment.},
+ author = {Zhang, Jingtian and Wu, Sai and Tan, Zeyuan and Chen, Gang and Cheng, Zhushi and Cao, Wei and Gao, Yusong and Feng, Xiaojie},
+ doi = {10.14778/3352063.3352134},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 27},
+ number = {12},
+ pages = {2183 - 2194},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {S3: A scalable In-memory Skip-list Index for Key-Value Store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85074520563?origin=resultslist},
+ volume = {12},
+ year = {2018}
+}

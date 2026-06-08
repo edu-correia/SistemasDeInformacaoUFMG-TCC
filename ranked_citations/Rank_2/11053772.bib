@@ -1,0 +1,14 @@
+@article{11053772,
+ abstract = {With the exponential growth of data volumes in AI training and prediction systems, the cost and resource demands of data transmission have emerged as critical challenges. Lossless data compression effectively reduces data size, transmission bandwidth, and latency while preserving data integrity. This article presents a fully pipelined lossless CODEC integrating Deflate compression and Inflate decompression accelerators. The proposed Deflate implementation employs match filtering and pair merging strategies to enhance compression ratios. We introduce three key innovations for the Inflate decompressor: 1) a dual-thread architecture with multicheckpoint control; 2) optimized end-of-block (EOB) handling in Huffman coding; and 3) a rewinding mechanism in LZ77 decoding. FPGA implementation results demonstrate that our Deflate compressor achieves 16 bytes/cycle throughput with an average compression ratio of 2.26, surpassing state-of-the-art implementations. The 28 nm CMOS implementation shows Inflate decompression throughputs of 1431.85 MB/s (dynamic Huffman) and 1324.26 MB/s (static Huffman) on the Calgary Corpus dataset. Notably, our 28 nm CMOS-based decompressor achieves  $1.16\times $  higher throughput than recent 14 nm implementations in spite of operating at half their maximum frequency.},
+ author = {Zhang, Wei and Luo, Yiwei and Wang, Xianglong and Ouyang, Jiaqi and Chen, Lei and An, Fengwei},
+ doi = {10.1109/TVLSI.2025.3580753},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Throughput;Standards;Filtering;Decoding;Merging;Huffman coding;Dictionaries;Redundancy;Technological innovation;History;Deflate;Huffman;Inflate;lossless compression;LZ77},
+ month = {Oct},
+ number = {10},
+ pages = {2761-2771},
+ title = {Dual-Thread Deflate/Inflate Accelerator With Multicheckpoint Control With High Throughput and Compression Ratio for Bandwidth-Efficient Systems},
+ volume = {33},
+ year = {2025}
+}

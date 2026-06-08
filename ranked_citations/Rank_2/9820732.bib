@@ -1,0 +1,14 @@
+@inproceedings{9820732,
+ abstract = {The 8-byte granularity of failure-atomicity brings two challenges to Persistent Memory (PM) B+-tree designs. The first is how to insert a key in a sorted node atomically. The second is how to atomically perform structural modification operations that involve multiple nodes, such as node splits and merges. The majority of current designs either have huge consistency cost or compromise recovery time. In this paper, we propose an in-node logging technology, named Lazy-Box, to update multiple parts of a node without exposing intermediate states. Lazy-Box aggregates successive modifications and selectively uses Copy-on-Write (CoW) to reduce consistency cost. Based on Lazy-Box, we propose a new variant of B+-tree on PM, named Side-to-Side B+-Tree (SSB- Tree). SSB- Tree relaxes the tree-structure requirement so that node splits and merges only modify one node. Taking advantage of Lazy-Box, all modification operations of SSB-Tree are committed through a single 8-byte write. Therefore, SSB- Tree not only enables efficient concurrency protocol but also achieves instant recovery. Last but most important, SSB- Tree doubles the node space and reuses the extra space to avoid expensive node allocations when performing CoW. Our experimental results show that SSB-Tree achieves up to 29%, 40%, and 14% higher throughput in Insert, Delete, and Scan benchmark respectively than other state-of-the-art PM B+-trees.},
+ author = {Li, Tongliang and Wang, Haixia and Shao, Airan and Wang, Dongsheng},
+ booktitle = {2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS53621.2022.00016},
+ issn = {1530-2075},
+ keyword = {Concurrent computing;Distributed processing;Protocols;Costs;Cows;Throughput;Computer crashes;Persistent Memory;B+- Tree;Crash Consistency;Concurrency Protocol},
+ month = {May},
+ number = {},
+ pages = {70-80},
+ title = {SSB-Tree: Making Persistent Memory B+- Trees Crash-Consistent and Concurrent by Lazy-Box},
+ volume = {},
+ year = {2022}
+}

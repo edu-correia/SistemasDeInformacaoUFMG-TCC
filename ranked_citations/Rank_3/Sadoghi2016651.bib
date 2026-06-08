@@ -1,0 +1,16 @@
+@article{Sadoghi2016651,
+ abstract = {Multiversion databases store both current and historical data. Rows are typically annotated with timestamps representing the period when the row is/was valid. We develop novel techniques to reduce index maintenance in multiversion databases, so that indexes can be used effectively for analytical queries over current data without being a heavy burden on transaction throughput. To achieve this end, we re-design persistent index data structures in the storage hierarchy to employ an extra level of indirection. The indirection level is stored on solid-state disks that can support very fast random I/Os, so that traversing the extra level of indirection incurs a relatively small overhead. The extra level of indirection dramatically reduces the number of magnetic disk I/Os that are needed for index updates and localizes maintenance to indexes on updated attributes. Additionally, we batch insertions within the indirection layer in order to reduce physical disk I/Os for indexing new records. In this work, we further exploit SSDs by introducing novel DeltaBlock techniques for storing the recent changes to data on SSDs. Using our DeltaBlock, we propose an efficient method to periodically flush the recently changed data from SSDs to HDDs such that, on the one hand, we keep track of every change (or delta) for every record, and, on the other hand, we avoid redundantly storing the unchanged portion of updated records. By reducing the index maintenance overhead on transactions, we enable operational data stores to create more indexes to support queries. We have developed a prototype of our indirection proposal by extending the widely used generalized search tree open-source project, which is also employed in PostgreSQL. Our working implementation demonstrates that we can significantly reduce index maintenance and/or query processing cost by a factor of 3. For the insertion of new records, our novel batching technique can save up to 90 % of the insertion time. For updates, our prototype demonstrates that we can significantly reduce the database size by up to 80 % even with a modest space allocated for DeltaBlocks on SSDs. © 2015, Springer-Verlag Berlin Heidelberg.},
+ author = {Sadoghi, Mohammad and Ross, Kenneth A. and Canim, Mustafa and Bhattacharjee, Bishwaranjan},
+ doi = {10.1007/s00778-015-0410-5},
+ journal = {VLDB Journal},
+ note = {Cited by: 13},
+ number = {5},
+ pages = {651 - 672},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Exploiting SSDs in operational multiversion databases},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84947418659?origin=resultslist},
+ volume = {25},
+ year = {2016}
+}

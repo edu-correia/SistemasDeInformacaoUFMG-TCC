@@ -1,0 +1,14 @@
+@article{11533605,
+ abstract = {Smoke detection by remote sensing plays a vital role in forest fire monitoring due to its wide coverage and fast update frequency. At present, two main challenges remain: 1) the spatio-temporal variability of smoke's shape and color, and 2) the drastic scale differences of smoke instances across images, both of which hinder the generalization of existing approaches. Traditional CNNs are effective in capturing local details but struggle with large-scale context modeling. Transformers offer global self-attention and long-range dependency modeling but often miss fine-grained information, especially for small targets. To address these issues, we propose SmokeNeXt, a dual-stream, multiscale adaptive model tailored for smoke classification. By fusing the Conv-branch's local detail extraction with the Trans-branch's global context modeling, a semantic merge module with a self-designed multi-axis convolutional cross-attention enables cross-stream feature complementation. In addition, A gated redundancy suppression module is introduced to dynamically filter out irrelevant background noise, enhancing robustness to appearance variability. Experiments on the FASDD_RS and USTC_SmokeRS datasets demonstrate that SmokeNeXt effectively mitigates both challenges. On FASDD_RS, it achieves 97.8% accuracy and 99.1% AR@$\bf {\phi _{0.04\%\rm{--}0.8\%}}$, with high recall even under extreme small-scale smoke conditions, and consistently focusing on smoke regions across diverse appearances and backgrounds. On USTC_SmokeRS, SmokeNeXt achieves an accuracy of 96.2%. Compared with ResNet-50, ConvNeXt-B, and MobileNetV3, SmokeNeXt improves AR by 8.0%, 1.5%, and 6.6%, respectively, indicating strong generalization under extreme scale variation and morphological diversity.},
+ author = {Wu, Jinhong and Wang, Haihui and Qin, Zhenhai and Dai, Jinyang and Zhang, Qixing},
+ doi = {10.1109/JSTARS.2026.3695155},
+ issn = {2151-1535},
+ journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+ keyword = {Modeling;Transformers;Remote sensing;Convolutional neural networks;Signal detection;Grounding;Earth;Fires;Firing;Design methodology;CNN-Transformer hybrid;deep learning;multiscale adaptability;remote sensing smoke detection},
+ month = {},
+ number = {},
+ pages = {1-20},
+ title = {SmokeNeXt: Dual-Stream CNN-Transformer Hybrid Architecture With Multiscale Adaptation for Satellite Remote Sensing Smoke Image Classification},
+ volume = {},
+ year = {2026}
+}

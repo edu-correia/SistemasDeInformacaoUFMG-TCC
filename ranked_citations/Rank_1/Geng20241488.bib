@@ -1,0 +1,16 @@
+@article{Geng20241488,
+ abstract = {Advanced data centers strive for high performance and throughput, which can be achieved through the desirable merits of Remote Procedure Call (RPC) programming model and the low latency of Remote Direct Memory Access (RDMA). However, despite the widespread availability of these software and hardware utilities, they have been utilized separately for their own applications in existing production systems for many years. Although researchers have attempted to develop RDMA-enabled RPC prototypes, they often face challenges such as API discrepancies and a lack of specific features for effective integration with major production software, rendering them incompatible. This industry R&D project aims to enhance the performance of gRPC, a widely utilized RPC framework in major companies, by integrating RDMA as an internal component. Our system solution, called RR-Compound, combines the simple user interface and other merits of gRPC with low latency for remote data accesses. RR-Compound is fully compatible with gRPC and can serve as a seamless replacement without altering existing applications. However, to achieve low latency, high throughput, and scalability for RR-Compound, several technical challenges in managing network connections and memory space utilization must be effectively addressed. To overcome the limitations of existing connection methods, we have developed a new method called BPEV that is independent of gRPC and applicable to all RDMA systems. We have also retained the asynchronous framework of gRPC, albeit with limited buffer space in RDMA memory management. In micro-benchmarks, RR-Compound outperforms mRPC - the state-of-the-art RPC framework for a large number of connections, achieving a 14.77% increase in throughput and a 42.55% reduction in latency. Subsequently, we compare RR-Compound with gRPC over IPoIB using two real-world applications: KV-Store and TensorFlow. RR-Compound achieves up to a 2.35x increase in throughput and reduces the average latency by 46.92%.  © 1990-2012 IEEE.},
+ author = {Geng, Liang and Wang, Hao and Meng, Jingsong and Fan, Dayi and Ben-Romdhane, Sami and Pichumani, Hari Kadayam and Phegade, Vinay and Zhang, Xiaodong},
+ doi = {10.1109/TPDS.2024.3404394},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 3},
+ number = {8},
+ pages = {1488 - 1505},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RR-Compound: RDMA-Fused gRPC for Low Latency, High Throughput, and Easy Interface},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85194047058?origin=resultslist},
+ volume = {35},
+ year = {2024}
+}

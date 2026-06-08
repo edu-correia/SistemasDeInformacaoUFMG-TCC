@@ -1,0 +1,14 @@
+@conference{Garg2019222,
+ abstract = {Deflection-routed NoCs like Hoplite and HopliteRT take advantage of FPGA-specific features to deliver low-cost, high-frequency, FPGA-friendly communication networks. However, they suffer from long packet deflection penalties, low sustained throughputs, and feature limitations such as out-of-order delivery of packets. In this paper, we introduce the HopliteBuf NoC, and an associated static analysis tool, that eliminates deflections entirely while simultaneously adding in-order delivery feature using (1) small, stall-free FIFOs with provable occupancy bounds, and (2) linearization of vertical rings of the torus Hoplite topology to improve provable link utilization. We implement these FIFOs using cheap LUT SRAMs (Xilinx SRL32s, and Intel MLABs) to absorb packet contention. We evaluate conditions for stall-free behavior using static analysis that compute upper bounds on FIFO occupancy based on the communication pattern. Our static analysis deliver bounds that are not only better (in latency) than HopliteRT but also tighter by 2–3×. Across 100 randomly-generated flowsets mapped to a 5×5 system size, HopliteBuf is able to route a larger fraction of these flowsets with <128-deep FIFOs, boost worst-case routing latency by ≈2× for mutually feasible flowsets. At 20% injection rates, HopliteRT is only able to route 1–2% of the flowsets while HopliteBuf can deliver 40–50% sustainability. © 2019 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Garg, Tushar and Wasly, Saud and Pellizzoni, Rodolfo and Kapre, Nachiket},
+ doi = {10.1145/3289602.3293917},
+ journal = {FPGA 2019 - Proceedings of the 2019 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+ note = {Cited by: 8},
+ pages = {222 - 231},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HopliteBuf: FPGA NoCs with provably stall-free FIFOs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85064408440?origin=resultslist},
+ year = {2019}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11455460,
+ abstract = {Open-vocabulary 3D instance segmentation (OV3IS) has emerged as a promising field, successfully bridging point cloud data and text descriptions through intermediate image modalities. However, existing approaches often rely on strong 3D clustering priors or a single, isolated 2D mask branch, which typically results in insufficient and inefficient feature interaction between the point cloud and image domains. To address these limitations, we propose VoxelFlow, a novel framework that effectively combines 2D mask semantics with 3D geometric features. Our core insight is to leverage the implicit semantic and spatial information embedded in 2D masks and leverage them to replace rigid 3D priors. Specifically, voxel masks, initially derived from 2D projections, are meticulously refined through a unique two-stage process: growth and cross-frame merging, ensuring precise alignment with true instance masks under both semantic and geometric constraints. The methodology unfolds in three key steps. Firstly, we project 2D masks onto a voxelized 3D scene to establish initial seed voxel masks in 3D. Secondly, these voxel masks are grown based on local 3D geometric features and progressively merged across frames using a dynamic threshold, yielding robust super voxel masks. Finally, these semantically consistent and geometrically aligned super voxel masks are integrated with a visual language model and text embeddings to achieve comprehensive open-vocabulary instance segmentation. Extensive experiments on ScanNet200 and ScanNet++ demonstrate that VoxelFlow not only significantly outperforms robust 3D prior baselines but also achieves superior performance in both class-agnostic and open-vocabulary 3D instance segmentation.},
+ author = {Wang, Chaolei and Chen, Huan and Ma, Jin and Han, Ting and Chen, Yiping},
+ booktitle = {2025 International Conference on Cyberworlds (CW）},
+ doi = {10.1109/CW68232.2025.00027},
+ issn = {2642-3596},
+ keyword = {Instance segmentation;Point cloud compression;Visualization;Solid modeling;Three-dimensional displays;Semantics;Merging;Point Cloud;Instance Segmentation;Open-vocabulary;2D Vision-Language model;3D Scene Understanding},
+ month = {Oct},
+ number = {},
+ pages = {01-08},
+ title = {VoxelFlow: 2D Semantic Mask-Guided Voxel Flow for Open-Vocabulary 3D Instance Segmentation},
+ volume = {},
+ year = {2025}
+}

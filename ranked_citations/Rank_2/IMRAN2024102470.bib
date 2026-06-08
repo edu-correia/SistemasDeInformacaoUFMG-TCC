@@ -1,0 +1,13 @@
+@article{IMRAN2024102470,
+ abstract = {Advancements in medical imaging and endovascular grafting have facilitated minimally invasive treatments for aortic diseases. Accurate 3D segmentation of the aorta and its branches is crucial for interventions, as inaccurate segmentation can lead to erroneous surgical planning and endograft construction. Previous methods simplified aortic segmentation as a binary image segmentation problem, overlooking the necessity of distinguishing between individual aortic branches. In this paper, we introduce Context-Infused Swin-UNet (CIS-UNet), a deep learning model designed for multi-class segmentation of the aorta and thirteen aortic branches. Combining the strengths of Convolutional Neural Networks (CNNs) and Swin transformers, CIS-UNet adopts a hierarchical encoder–decoder structure comprising a CNN encoder, a symmetric decoder, skip connections, and a novel Context-aware Shifted Window Self-Attention (CSW-SA) module as the bottleneck block. Notably, CSW-SA introduces a unique adaptation of the patch merging layer, distinct from its traditional use in the Swin transformers. CSW-SA efficiently condenses the feature map, providing a global spatial context, and enhances performance when applied at the bottleneck layer, offering superior computational efficiency and segmentation accuracy compared to the Swin transformers. We evaluated our model on computed tomography (CT) scans from 59 patients through a 4-fold cross-validation. CIS-UNet outperformed the state-of-the-art Swin UNetR segmentation model by achieving a superior mean Dice coefficient of 0.732 compared to 0.717 and a mean surface distance of 2.40 mm compared to 2.75 mm. CIS-UNet’s superior 3D aortic segmentation offers improved accuracy and optimization for planning endovascular treatments. Our dataset and code will be made publicly available at https://github.com/mirthAI/CIS-UNet.},
+ author = {Muhammad Imran and Jonathan R. Krebs and Veera Rajasekhar Reddy Gopu and Brian Fazzone and Vishal Balaji Sivaraman and Amarjeet Kumar and Chelsea Viscardi and Robert Evans Heithaus and Benjamin Shickel and Yuyin Zhou and Michol A. Cooper and Wei Shao},
+ doi = {https://doi.org/10.1016/j.compmedimag.2024.102470},
+ issn = {0895-6111},
+ journal = {Computerized Medical Imaging and Graphics},
+ keyword = {Aorta segmentation, Computed tomography, Context infused swin-UNet, Shifted window self-attention},
+ pages = {102470},
+ title = {CIS-UNet: Multi-class segmentation of the aorta in computed tomography angiography via context-aware shifted window self-attention},
+ url = {https://www.sciencedirect.com/science/article/pii/S0895611124001472},
+ volume = {118},
+ year = {2024}
+}

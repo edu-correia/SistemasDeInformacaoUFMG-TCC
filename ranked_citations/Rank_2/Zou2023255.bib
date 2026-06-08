@@ -1,0 +1,16 @@
+@conference{Zou2023255,
+ abstract = {A Modern KV store typically employs log structured merge trees (LSM-Tree) for organizing data and bloom filters to speed up read. However, both the multi-layer structure and the boom filters come at a performance cost in certain scenarios. In this paper, we leverage persistent memory (PM) devices to improve the performance of LSMT based KV store. We present a novel KV store engine, the Multi-Cuckoo-Filter KV (MCF-KV), which is a new design that replaces in-memory Bloom filters with a multiple-cuckoo-filter index stored in PM, and uses a single-level LSMT to store real data on SSD. In MCF index, we store fingerprint and location information of a key-value pair. While the MCF index performs well in both read and write and has low write amplification, its duplicate key update is costly as it does not distinguish between items with hash collisions. To address this, we harness Fast and Fair B+-tree, a b+-tree index specifically designed for PM, to store key-value pairs that trigger hash collisions. Also, MCF-KV performs overlap-based compaction to efficiently reclaim storage space on disk while avoiding unnecessary write amplification. Our extensive experiments demonstrate that MCF-KV provides 2.1× and 4.9× higher random write throughput, and 2.2× and 1.4× higher point query performance compared to SLM-DB and LevelDB respectively. It also achieves much lower read latency compared to the baselines. © 2024 Copyright held by the owner/author(s).},
+ author = {Zou, Hongjia and Shou, Lidan and Chen, Ke and Zhou, Xuan},
+ doi = {10.48786/edbt.2024.23},
+ journal = {Advances in Database Technology - EDBT},
+ note = {Cited by: 0},
+ number = {2},
+ pages = {255 - 267},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MCF-KV: Multi-Cuckoo-Filter Index based Key-Value Store with Persistent Memory},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85190971418?origin=resultslist},
+ volume = {27},
+ year = {2023}
+}

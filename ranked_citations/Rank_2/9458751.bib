@@ -1,0 +1,14 @@
+@inproceedings{9458751,
+ abstract = {In recent years, Log-Structured Merge Tree (LSMtree) based key-value stores, such as LevelDB and RocksDB, have been widely adopted in data center systems. Though optimized for high-speed write processing, the severe I/O amplification remains a critical constraint that hinders them from reaching their maximum performance potential. Unfortunately, this problem is deeply rooted in the fundamental design of the LSMtree structure. A small number of frequently updated key-value items could quickly pollute the entire tree structure, causing repeated changes in the structure and quickly amplifying the amount of disk IOs across the levels in the tree. In this paper, we present a novel scheme, called Log-assisted LSM-tree (L2SM), to fundamentally address the long-existing I/O amplification problem. L2SM adopts a small-size, multi-level log structure to isolate selected key-value items that have a disruptive effect on the tree structure, accumulates and absorbs the repeated updates in a highly efficient manner, and removes obsolete and deleted key-value items at an early stage. We have prototyped the L2SM structure based on LevelDB. Our evaluation with the YCSB benchmark shows promising results by reducing the amount of disk IOs by up to 40.2%, increasing the throughput by up to 67.4%, and decreasing the average latency by up to 40.1%.},
+ author = {Huang, Kecheng and Jia, Zhiping and Shen, Zhaoyan and Shao, Zili and Chen, Feng},
+ booktitle = {2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE51399.2021.00059},
+ issn = {2375-026X},
+ keyword = {Data centers;Conferences;Prototypes;Benchmark testing;Throughput;Data engineering;Compaction;Key-value store;LSM-tree;Bloom filter},
+ month = {April},
+ number = {},
+ pages = {612-623},
+ title = {Less is More: De-amplifying I/Os for Key-value Stores with a Log-assisted LSM-tree},
+ volume = {},
+ year = {2021}
+}

@@ -1,0 +1,15 @@
+@article{Zha201524,
+ abstract = {In the original MapReduce model, reduce tasks need to fetch output data of map tasks in the manner of “pull”. However, reduce tasks which are occupying reduce slots cannot start executing until all the corresponding map tasks are completed. It forms the dependence between map and reduce tasks, which is called the coupled relationship in this paper. The coupled relationship leads to two problems: reduce slot hoarding and underutilized network bandwidth. Meanwhile, storing the result data is costly especially when the system has replications, which leads to the inefficient storage problem. We propose an uncoupled data process and transfer model in order to address these problems. Four core techniques, including weighted mapping, data pushing, partial data backup, and data compression are introduced and applied in Apache Hadoop, the mainstream open-source implementation of MapReduce model. This work has been practiced in Baidu, the biggest search engine company in China. A real-world application for web data processing shows that our model can improve the system throughput by 29.5%, reduce the total wall time by 22.8%, provide a weighted wall time acceleration of 26.3%, and reduce the result data stored in disk by 70%. What’s more, the implementation of this model is transparent to users and compatible with the original Hadoop. © Springer-Verlag Berlin Heidelberg 2015.},
+ author = {Zha, Li and Zhang, Jie and Liu, Wei and Lin, Jian},
+ doi = {10.1007/978-3-662-46335-22},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1},
+ pages = {24 - 44},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An uncoupled data process and transfer model for mapreduce},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84922386781?origin=resultslist},
+ volume = {8970},
+ year = {2015}
+}

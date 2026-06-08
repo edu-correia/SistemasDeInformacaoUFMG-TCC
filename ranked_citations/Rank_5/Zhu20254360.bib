@@ -1,0 +1,14 @@
+@conference{Zhu20254360,
+ abstract = {Update-intensive workloads are prevalent in contemporary OLTP and AI/ML scenarios. An update operation typically involves deleting the old version of the target record and then inserting a new version. In this work, we demonstrate that an LSM-tree faces two issues when dealing with update-intensive workloads. Firstly, the deleted old versions are not promptly garbage collected until they merge with their new versions during compaction. This may lead to space waste and write amplification. Secondly, it is common for an update operation to modify only a small fraction of a data record, such as one of a hundred attributes. However, state-of-the-art LSM-trees fail to effectively utilize the incremental storage strategy, which involves storing only the updated fraction rather than the entire new version to enhance efficiency. In this paper, we propose two techniques, active and fast garbage collection, and adaptive incremental updating, to address these issues, respectively. Active and fast garbage collection probes the distribution of invalid data versions in an LSM-tree and performs garbage collection in a more promptly manner. Adaptive incremental updating applies different storage modes to the update operation to achieve balanced write and read amplification ratios as much as possible. Based on the techniques, we introduce SylphDB implemented based on the codebase of RocksDB and optimized for update-intensive workloads. Experimental results demonstrated that, compared to traditional LSM-tree based systems, SylphDB can improve the efficiency of garbage collection by 2× and reduce write amplification by 20%.  © 2025 IEEE.},
+ author = {Zhu, Jun-Peng and Ye, Zhiwei and He, Xiaolong and Cai, Peng and Zhou, Xuan and Zhou, Aoying and Cai, Dunbo and Qian, Ling and Xu, Kai and Tang, Liu and Liu, Qi},
+ doi = {10.1109/ICDE65448.2025.00327},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 0},
+ pages = {4360 - 4372},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SylphDB: An Active and Adaptive LSM Engine for Update-Intensive Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105015567795?origin=resultslist},
+ year = {2025}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3352063.3352120,
+ abstract = {Query optimization is a hallmark of database systems. When an SQL query runs more expensively than is viable or warranted, determination of the performance issues is usually performed manually in consultation with experts through the analysis of query's execution plan (QEP). However, this is an excessively time consuming, human error-prone, and costly process. GALO is a novel system that automates this process. The tool automatically learns recurring problem patterns in query plans over workloads in an offline learning phase, to build a knowledge base of plan-rewrite remedies. It then uses the knowledge base online to re-optimize queries often quite drastically.GALO's knowledge base is built on RDF and SPARQL, W3C graph database standards, which is well suited for manipulating and querying over SQL query plans, which are graphs themselves. GALO acts as a third-tier of re-optimization, after query rewrite and cost-based optimization, as a query plan rewrite. For generality, the context of knowledge base problem patterns, including table and column names, is abstracted with canonical symbol labels. Since the knowledge base is not tied to the context of supplied QEPs, table and column names are matched automatically during the re-optimization phase. Thus, problem patterns learned over a particular query workload can be applied in other query workloads. GALO's knowledge base is also an invaluable tool for database experts to debug query performance issues by tracking to known issues and solutions as well as refining the optimizer with new tuned techniques by the development team. We demonstrate an experimental study of the effectiveness of our techniques over synthetic TPC-DS and real IBM client query workloads.},
+ author = {Damasio, Guilherme and Corvinelli, Vincent and Godfrey, Parke and Mierzejewski, Piotr and Mihaylov, Alex and Szlichta, Jaroslaw and Zuzarte, Calisto},
+ doi = {10.14778/3352063.3352120},
+ issn = {2150-8097},
+ issue_date = {August 2019},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {2010–2021},
+ publisher = {VLDB Endowment},
+ title = {Guided automated learning for query workload re-optimization},
+ url = {https://doi.org/10.14778/3352063.3352120},
+ volume = {12},
+ year = {2019}
+}

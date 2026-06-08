@@ -1,0 +1,14 @@
+@inproceedings{11506560,
+ abstract = {Named entity recognition on social media is a markedly harder problem than its counterpart on formal text, owing to the informal vocabulary, creative abbreviations, and context-dependent entity references that characterise platforms such as Twitter. Although attaching an image to a tweet often carries the disambiguating information needed to resolve ambiguous entity mentions, most existing methods either discard the visual channel entirely or incorporate it in ways that introduce noise rather than signal. We present MSCMT_Hybrid, a hybrid architecture that encodes tweet text with BERTweet - a domainspecific language model pre-trained on 850 million tweets – and extracts global visual semantics with a frozen CLIP ViT$\mathrm{L} / 14$ encoder. A learnable cross-modal projection maps the image embedding into the text representation space, after which a tokenlevel sigmoid gate selectively modulates visual influence at each token position. A Conditional Random Field decoder enforces globally valid BIO label sequences. We evaluate the model on a merged corpus combining TWITTER-2015 and TWITTER-2017, totalling approximately 12,090 tweet-image pairs. A systematic grid search over learning rate and batch size yields a final weighted F 1 of 75.97 % - a competitive result relative to published state-of-the-art methods on this task, achieved with a substantially simpler cross-modal fusion mechanism than prior Transformer-based approaches. We additionally conduct a crossdataset generalisation analysis and ablation study that identify the individual contribution of each architectural component, and document a systematic failure mode of unified vision-language models when adapted to token-level sequence labelling, providing an empirical motivation for the hybrid design.},
+ author = {Shehzadi, Ayesha and Fraz, Muhammad Moazam and Ali, Syed Imran and Bilal, Hafiz Syed Muhammad and Satti, Fahad Ahmad},
+ booktitle = {2026 39th Conference of Open Innovations Association (FRUCT)},
+ doi = {10.23919/FRUCT70069.2026.11506560},
+ issn = {2305-7254},
+ keyword = {Modeling;Social networking (online);Training;Visualization;Blogs;Labeling;Bit error rate;Merging;Printing;Conditional random fields;Multimodal Named Entity Recognition;Social Media NLP;BERTweet;CLIP ViT-L/14;Token-Level Gated Fusion;Conditional Random Field;Vision-Language Models;Twitter NER},
+ month = {April},
+ number = {},
+ pages = {271-280},
+ title = {A Hybrid Multimodal Architecture for Named Entity Recognition on Social Media Using Domain-Specific Language Modelling and Token-Level Gated Visual Fusion},
+ volume = {},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@conference{Jung2022100,
+ abstract = {The Log-Structured Merge (LSM) tree is considered well-suited to zoned namespace (ZNS) storage devices since the write requests to LSM-tree is sequential. However, zones can be partially invalidated and be fragmented during LSM-tree compaction. The partially-invalid zones cannot be utilized and thus space amplification becomes significant. To reclaim the invalid space, host-managed garbage collection (GC) is required, which increases the write amplification of ZNS storage and degrades I/O performance. We introduce a lifetime-leveling compaction (LL-compaction) tailored for ZNS SSD, which can alleviate space amplification without GC by making the sorted string tables in a zone have similar lifetimes. In our experiments using LevelDB, the LL-compaction achieved 1.7x better performance by removing GCs. © 2022 ACM.},
+ author = {Jung, Jeeyoon and Shin, Dongkun},
+ doi = {10.1145/3538643.3539741},
+ journal = {HotStorage 2022 - Proceedings of the 2022 14th ACM Workshop on Hot Topics in Storage and File Systems},
+ note = {Cited by: 50},
+ pages = {100 - 105},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Lifetime-leveling LSM-tree compaction for ZNS SSD},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85134162069?origin=resultslist},
+ year = {2022}
+}

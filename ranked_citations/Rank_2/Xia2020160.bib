@@ -1,0 +1,14 @@
+@conference{Xia2020160,
+ abstract = {A finite-state machine (FSM) is a key component for many important applications, such as Huffman decoding, regular expression matching and HTML tokenization. Due to its inherent dependencies and unpredictable memory access pattern, FSM computations are considered to be extremely difficult to parallelize. As such, significant research efforts have been made to accelerate FSM computations. Although they achieve promising performance results on multi-core machines, these methods are not scalable for emerging many-core architectures such as the GPUs. Based on our experiments, we point out that the bottleneck of achieving scalability on GPUs is the sequential merge inherent to these methods. However, unlike the case for simple reduction loops, parallel merge implementations for FSM computations typically require runtime checks and re-executions, which can also impede performance. Based on these observations, we develop parallel merge techniques that select efficient runtime check implementations and avoids unnecessary re-executions. Further, based on GPU architectural features, we develop optimization techniques to improve performance. We evaluate our parallel merge implementations on a set of representative algorithms. Experimental results show that our parallel merge implementations are 2.02-6.74 times more efficient than corresponding sequential merge implementations and achieve better scalability on an Nvidia V100 GPU. © 2020 Association for Computing Machinery.},
+ author = {Xia, Yang and Jiang, Peng and Agrawal, Gagan},
+ doi = {10.1145/3332466.3374524},
+ journal = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPOPP},
+ note = {Cited by: 8},
+ pages = {160 - 172},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scaling out speculative execution of finite-state machines with parallel merge},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85082384263?origin=resultslist},
+ year = {2020}
+}

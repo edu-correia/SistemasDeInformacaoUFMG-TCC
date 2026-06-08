@@ -1,0 +1,15 @@
+@article{10.1145/3815118,
+ abstract = {LSM-tree-based key-value (KV) stores mainly employ sorting-based operations (e.g., flush and compaction) to manage the KV pairs on disk. Through analysis and experiments with RocksDB, we identify that the sorting operations cause critical issues of operation coupling, including intertwined resource consumption within an operation, interdependencies and contention among operations. These coupling problems lead to dependency in resource usage and are particularly exacerbated on hybrid storage devices, causing significant resource fragmentation and increased write stalls. Existing approaches to mitigating write stalls rely on either fixed differentiated data management or superficial scheduling of data sorting operations, but they fail to fundamentally address the resource usage dependency caused by operation coupling. In this paper, we propose DecouKV, a key-value store designed to break resource usage dependency and improve overall resource utilization on hybrid storage devices through operation decoupling and adaptive scheduling. Specifically, DecouKV decouples data sorting operations into CPU-intensive index merge tasks and I/O-intensive data append and data flush tasks by separating indexes from data files. It manages indexes using a merge-friendly skip list-based structure and stores data in append-only files. We propose an elastic capacity adjustment for higher levels to enable deeper decoupling. In addition, DecouKV employs a parameterized, queue-based scheduling framework that integrates resource monitoring, read/write performance balancing, and adaptive task dispatching to fully exploit available system resources. We implement DecouKV and conduct experimental evaluations. Compared to RocksDB, as well as state-of-the-art systems such as MatrixKV, PrismDB, SplitDB and ADOC, DecouKV improves CPU utilization by 25.4%–32.3%, increases throughput by 2.3–4.9 \texttimes{}, and reduces tail latency by 74.3%–91.4% under write-intensive workloads. DecouKV also achieves a modest throughput improvement of 1.2–2.3 \texttimes{} under read-intensive workloads.},
+ address = {New York, NY, USA},
+ author = {Zhang, Qingyang and Li, Yongkun and Pan, Yubiao and Tang, Haoting and Xu, Yinlong and Zhang, Zaigui},
+ doi = {10.1145/3815118},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {Key-Value Store, LSM-Tree, Hybrid Storage Devices},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {On Optimizing Sorting-based KV Stores on Hybrid Storage Devices by Breaking Resource Usage Dependency with Operation Decoupling and Adaptive Scheduling},
+ url = {https://doi.org/10.1145/3815118},
+ year = {2026}
+}

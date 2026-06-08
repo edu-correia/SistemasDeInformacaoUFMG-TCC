@@ -1,0 +1,15 @@
+@article{10.1145/3818616,
+ abstract = {Multi-robot navigation to an out-of-view destination in dynamic, GPS-denied environments is challenging because robots must plan over a changing, non-metric connectivity graph while maintaining route continuity under sensing and topology disruptions. We present a decentralized pathfinding framework in which robots record commonly observed visual common landmarks (CLs) as blockchain transactions, forming a continuously updated shared CL-graph for navigation beyond the current field of view. On top of a multi-goal weighted search over this CL-graph, we introduce two resilience mechanisms, PathShift and PathSwap, which precompute up to  (k-1)  backup paths to reduce recovery overhead when the primary route is invalidated by CL-recognition failures or robot/edge loss. Across simulations on randomly generated CL-graphs with varying robot counts and graph densities (100–1000 trials), PathShift provides the strongest overall recovery performance. In the representative  (k{=}3) , 15-robot, edge-probability-0.4 setting, it achieves the lowest average backtracking cost under both edge removal (0.04) and robot failure (0.01), compared with PathSwap (0.73/0.51), Yen's algorithm (0.06/0.02), and all-paths Dijkstra (0.12/0.06). It also attains a 100% recovery success rate in our non-adversarial failure model, while PathSwap achieves 88–89%. Runtime experiments further show that PathShift and PathSwap execute faster than Yen's and all-paths Dijkstra as robot count and edge density increase. Compared with D* Lite in this non-metric CL setting, PathShift yields similar main-path lengths while providing slightly more alternative paths on average (3.3 vs.&nbsp;3.25), indicating stronger failover support. These results identify PathShift as the most effective lightweight strategy for resilient decentralized navigation in the evaluated setting.},
+ address = {New York, NY, USA},
+ author = {Paykari, Nasim and Lyons, Damian M. and Rahouti, Mohamed},
+ doi = {10.1145/3818616},
+ issn = {2378-962X},
+ journal = {ACM Trans. Cyber-Phys. Syst.},
+ keyword = {Blockchain, navigation, multi-robot pathfinding, GPS-denied environments, common landmark},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Decentralized, Distributed, and Resilient Pathfinding for Dynamic, GPS-Denied Environments Using Visual Common Landmarks},
+ url = {https://doi.org/10.1145/3818616},
+ year = {2026}
+}

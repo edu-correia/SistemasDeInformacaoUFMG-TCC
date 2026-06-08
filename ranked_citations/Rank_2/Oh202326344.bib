@@ -1,0 +1,15 @@
+@article{Oh202326344,
+ abstract = {This paper proposes ZenFS+, a new storage backend of RocksDB for small-zone ZNS SSD. RocksDB has complicated internal operations such as flush and compaction. Flush and compaction run in separate threads, and it is well known that they closely interact around the sstables. Due to the concurrent storage I/O between flush and compaction, ZenFS presents unsatisfactory performance for small-zone ZNS SSD. We believe that ZenFS+ presents how ZNS SSD can support the performance and isolation of modern key-value stores. Leveraging the ZNS SSD, ZenFS+ intelligently identifies the independent zones group (IZG), which reveals the device's internal parallelism. With the IZG information, ZenFS+ effectively isolates the flush workloads of RocksDB from compaction. Besides, ZenFS+ spreads the sstables to multiple IZGs so that the storage write can leverage the hardware parallelism. ZenFS+ presents up to 4.8x higher storage throughput for write-intensive microbenchmark and stabilizing 99.9P tail latency by 1/51 from existing ZenFS. Further, ZenFS+ implements proactive garbage collection, and presents sustainable performance over longer lifespan of the device. © 2013 IEEE.},
+ author = {Oh, Myounghoon and Yoo, Seehwan and Choi, Jongmoo and Park, Jeongsu and Choi, Chang-Eun},
+ doi = {10.1109/ACCESS.2023.3257354},
+ journal = {IEEE Access},
+ note = {Cited by: 20; All Open Access; Gold Open Access; Green Open Access},
+ pages = {26344 - 26357},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ZenFS+: Nurturing Performance and Isolation to ZenFS},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85151382327?origin=resultslist},
+ volume = {11},
+ year = {2023}
+}

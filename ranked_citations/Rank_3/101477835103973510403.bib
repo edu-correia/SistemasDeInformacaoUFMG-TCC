@@ -1,0 +1,17 @@
+@article{10.14778/3510397.3510403,
+ abstract = {We propose DSON, a space efficient δ-based CRDT approach for distributed JSON document stores, enabling high availability at a global scale, while providing strong eventual consistency guarantees. We define the semantics of our CRDT based approach formally, and prove its correctness and convergence. Previous approaches optimize for collaborative document editing and store metadata proportional to the number of updates to a document, which is not acceptable for long lived document management. The metadata stored with our approach is bounded by O(k2D + n log n), where n is the number of replicas, D is the number of document elements, and k ≤ n is the number of concurrent document updates. We also implement our approach[37] and demonstrate its space efficiency empirically. Experimental analysis shows that the metadata stored is typically significantly less than the worst case. This provides the basis for robust highly available distributed document stores with well defined semantics and safety guarantees, relieving application developers from the burden of conflict resolution.},
+ author = {Rinberg, Arik and Solomon, Tomer and Shlomo, Roee and Khazma, Guy and Lushi, Gal and Keidar, Idit and Ta-Shma, Paula},
+ doi = {10.14778/3510397.3510403},
+ issn = {2150-8097},
+ issue_date = {January 2022},
+ journal = {Proc. VLDB Endow.},
+ month = {January},
+ number = {5},
+ numpages = {13},
+ pages = {1053–1065},
+ publisher = {VLDB Endowment},
+ title = {DSON: JSON CRDT using delta-mutations for document stores},
+ url = {https://doi.org/10.14778/3510397.3510403},
+ volume = {15},
+ year = {2022}
+}

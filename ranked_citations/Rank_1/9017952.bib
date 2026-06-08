@@ -1,0 +1,14 @@
+@article{9017952,
+ abstract = {Authenticated encryption algorithms offer privacy, authentication, and data integrity, as well. In recent years, they have received special attention after the call for submissions of Competition for Authenticated Encryption: Security, Applicability, and Robustness (CAESAR) was published. The CAESAR goal is to generate a portfolio with recommendations of authenticated encryption algorithms for three different scenarios: Lightweight, high speed, and defense in deep. ELmD and COPA are two on-line authenticated encryption algorithms submitted to CAESAR; because of their similarities, they were merged as COLM during the third-round of CAESAR. COLM is a finalist in the use case 3 defense in depth. ELmD, COPA, and COLM are based on the ECB-mix-ECB structure, which is highly parallelizable and pipelineable. In this paper, we present optimized single-chip implementations of ELmD, COPA, and COLM using pipelining. For ELmD, we present implementations for eight combinations of its parameters set: For intermediate tags, fixed, variable tag length, and 10 and 6 AES rounds. COLM implementation is for variable tag length without intermediate tags. In the case of COPA, it does not have parameters set. The implementation results with a Xilinx Virtex 6 FPGA show that ELmD is the best option concerning area and speed for single-chip implementation. The area of COPA and COLM are 1.65 and 1.69 times ELmD's respectively. Regarding throughput, the range of our implementations goes from 33.34 Gbits/s for COLM to more than 35 Gbits/s for several versions of ELmD.},
+ author = {Bossuet, Lilian and Mancillas-López, Cuauhtemoc and Ovilla-Martínez, Brisbane},
+ doi = {10.1109/TC.2020.2977031},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Encryption;Ciphers;Authentication;Privacy;Hardware;CAESAR competition;authenticated encryption;AES;COLM;COPA;ELmD;FPGA;pipeline},
+ month = {Oct},
+ number = {10},
+ pages = {1533-1543},
+ title = {Pipelined Hardware Implementation of COPA, ELmD, and COLM},
+ volume = {69},
+ year = {2020}
+}

@@ -1,0 +1,14 @@
+@conference{Hewage2022170,
+ abstract = {State-of-the-art, scalable, indexing techniques in location-based image data retrieval are primarily focused on supporting window and range queries. However, support of these indexes is not well explored when there are multiple spatially similar images to retrieve for a given geographic location. Adoption of existing spatial indexes such as the kD-tree pose major scalability impediments. In response, this work proposes a novel scalable, key-value, database oriented, secondary-memory based, spatial index to retrieve the top k most spatially similar images to a given geographic location. The proposed index introduces a 4-dimensional Hilbert index (4DHI). This space filling curve is implemented atop HBase (a key-value database). Experiments performed on both synthetically generated and real world data demonstrate comparable accuracy with MD-HBase (a state of the art, scalable, multidimensional point data management system) and better performance. Specifically, 4DHI yielded 34% - 39% storage improvements compared to the disk consumption of the original index of MD-HBase. The compactness in 4DHI also yielded up to 3.4 and 4.7 fold gains when retrieving 6400 and 12800 neighbours, respectively; compared to the adoption of original index of MD-HBase for respective neighbour searches. An optimization technique termed 'Bounding Box Displacement' (BBD) is introduced to improve the accuracy of the top k approximations in relation to the results of in-memory kD-tree. Finally, a method of reducing row key length is also discussed for the proposed 4DHI to further improve the storage efficiency and scalability in managing large numbers of remotely sensed images.  © 2022 IEEE.},
+ author = {Hewage, Chamin Nalinda Lokugam and Vo, Anh Vu and Le-Khac, Nhien-An and Laefer, Debra and Bertolotto, Michela},
+ doi = {10.1109/IC2E55432.2022.00025},
+ journal = {Proceedings - 2022 IEEE International Conference on Cloud Engineering, IC2E 2022},
+ note = {Cited by: 0},
+ pages = {170 - 181},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {4DHI: An index for approximate kNN search of remotely sensed images in Key-Value databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85143164735?origin=resultslist},
+ year = {2022}
+}

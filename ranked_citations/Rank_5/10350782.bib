@@ -1,0 +1,14 @@
+@inproceedings{10350782,
+ abstract = {Context: Operation-based versioning introduces the benefit of meaningful edit histories. However, to load a distinct prior version, it must be restored by reapplying all previous operations, which is time-consuming and interrupts the user's workflow. Caching helps to overcome this problem to the cost of increasing memory requirements. Further, there is no caching approach supporting branches, merges, and possibly resolved conflicts. Objective: We developed an adaptive caching strategy capable of the previously mentioned features. The adaptive strategy aims at reducing the memory in use by garbage collecting aged caches by not using the same static distance between two caches across the whole edit history. Instead, the distance increases depending on a version's age and its distance to a branch's head. Method: We conducted a controlled experiment with models of several sizes and compared the time to restore model versions and the memory in use for no caching, static caching, and our developed adaptive caching. Results: Adaptive caching decreases the time to restore a version to 0.0007 % and 8.3 % compared to no caching. While static caching performs slightly better, it uses 70 % more memory than adaptive caching. Conclusion: Our adaptive caching strategy performs well on models with branches and merges and reduces the time to restore below thresholds which would negatively impact the user experience.},
+ author = {Pietron, Jakob and Raab, Heiko and Tichy, Matthias},
+ booktitle = {2023 ACM/IEEE International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C)},
+ doi = {10.1109/MODELS-C59198.2023.00152},
+ issn = {},
+ keyword = {Adaptation models;Costs;Memory management;Aging;User experience;Model driven engineering;History;operation-based versioning;modeling;caching;event-sourcing},
+ month = {Oct},
+ number = {},
+ pages = {969-978},
+ title = {Efficient Caching for Operation-Based Versioning},
+ volume = {},
+ year = {2023}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/1453856.1453891,
+ abstract = {We study the problem of extracting flattened tuple data from streaming, hierarchical XML data. Tuple-extraction queries are essentially XML pattern queries with multiple extraction nodes. Their typical applications include mapping-based XML transformation and integrated (set-based) processing of XML and relational data. Holistic twig joins are known for the optimal matching of XML pattern queries on parsed/indexed XML data. Na\"{\i}ve application of the holistic twig joins to streaming XML data incurs unnecessary disk I/Os. We adapt the holistic twig joins for tuple-extraction queries on streaming XML with two novel features: first, we use the block-and-trigger technique to consume streaming XML data in a best-effort fashion without compromising the optimality of holistic matching; second, to reduce peak buffer sizes and overall running times, we apply query-path pruning and existential-match pruning techniques to aggressively filter irrelevant incoming data. We compare our solution with the direct competitor TurboXPath and other alternative approaches that use full-fledged query engines such as XQuery or XSLT engines for tuple extraction. The experiments using real-world XML data and queries demonstrated that our approach 1) outperformed its competitors by up to orders of magnitude, and 2) exhibited almost linear scalability. Our solution has been demonstrated extensively to IBM customers and will be included in customer engagement applications in healthcare.},
+ author = {Han, Wook-Shin and Jiang, Haifeng and Ho, Howard and Li, Quanzhong},
+ doi = {10.14778/1453856.1453891},
+ issn = {2150-8097},
+ issue_date = {August 2008},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {1},
+ numpages = {12},
+ pages = {289–300},
+ publisher = {VLDB Endowment},
+ title = {StreamTX: extracting tuples from streaming XML data},
+ url = {https://doi.org/10.14778/1453856.1453891},
+ volume = {1},
+ year = {2008}
+}

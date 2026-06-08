@@ -1,0 +1,13 @@
+@article{SHTERENLIKHT2018155,
+ abstract = {A 3D multi-scale cellular automata finite element (CAFE) framework for modelling fracture in heterogeneous materials is described. The framework is implemented in a hybrid MPI/Fortran coarray code for efficient parallel execution on HPC platforms. Two open source BSD licensed libraries developed by the authors in modern Fortran were used: CGPACK, implementing cellular automata (CA) using Fortran coarrays, and ParaFEM, implementing finite elements (FE) using MPI. The framework implements a two-way concurrent hierarchical information exchange between the structural level (FE) and the microstructure (CA). MPI to coarrays interface and data structures are described. The CAFE framework is used to predict transgranular cleavage propagation in a polycrystalline iron round bar under tension. Novel results enabled by this CAFE framework include simulation of progressive cleavage propagation through individual grains and across grain boundaries, and emergence of a macro-crack from merging of cracks on preferentially oriented cleavage planes in individual crystals. Nearly ideal strong scaling up to at least tens of thousands of cores was demonstrated by CGPACK and by ParaFEM in isolation in prior work on Cray XE6. Cray XC30 and XC40 platforms and CrayPAT profiling were used in this work. Initially the strong scaling limit of hybrid CGPACK/ParaFEM CAFE model was 2000 cores. After replacing all-to-all communication patterns with the nearest neighbour algorithms the strong scaling limit on Cray XC30 was increased to 7000 cores. TAU profiling on non-Cray systems identified deficiencies in Intel Fortran 16 optimisation of remote coarray operations. Finally, coarray synchronisation challenges and opportunities for thread parallelisation in CA are discussed.},
+ author = {A. Shterenlikht and L. Margetts and L. Cebamanos},
+ doi = {https://doi.org/10.1016/j.advengsoft.2018.05.008},
+ issn = {0965-9978},
+ journal = {Advances in Engineering Software},
+ keyword = {Fracture, Heterogeneous materials, Multi-scale, Fortran coarrays, MPI, Strong scaling, Profiling, Cellular automata, Finite elements},
+ pages = {155-166},
+ title = {Modelling fracture in heterogeneous materials on HPC systems using a hybrid MPI/Fortran coarray multi-scale CAFE framework},
+ url = {https://www.sciencedirect.com/science/article/pii/S0965997817307494},
+ volume = {125},
+ year = {2018}
+}

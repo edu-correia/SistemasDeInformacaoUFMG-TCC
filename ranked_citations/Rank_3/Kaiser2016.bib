@@ -1,0 +1,15 @@
+@conference{Kaiser2016,
+ abstract = {The requirements of deduplication systems have changed in the last years. Early deduplication systems had to process dozens to hundreds of backup streams at the same time while today they are able to process hundreds to thousands of them. Traditional approaches rely on stream-locality, which supports parallelism, but which easily leads to many non-contiguous disk accesses, as each stream competes with all other streams for the available resources. This paper presents a new exact deduplication approach designed for processing thousands of backup streams at the same time on the same fingerprint index. The underlying approach destroys the traditionally exploited temporal chunk locality and creates a new one by sorting fingerprints. The sorting leads to perfectly sequential disk access patterns on the backup servers, while only slightly increasing the load on the clients. In our experiments, the new approach generates up to 113 times less I/Os than the exact Data Domain deduplication file system and up to 12 times less I/Os than the approximate Sparse Indexing, while consuming less memory at the same time. © 2016 IEEE.},
+ author = {Kaiser, Jurgen and Süß, Tim and Nagel, Lars and Brinkmann, André},
+ doi = {10.1109/MSST.2016.7897082},
+ journal = {IEEE Symposium on Mass Storage Systems and Technologies},
+ note = {Cited by: 11},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Sorted deduplication: How to process thousands of backup streams},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85018352721?origin=resultslist},
+ volume = {0},
+ year = {2016}
+}

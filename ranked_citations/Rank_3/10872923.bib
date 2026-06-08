@@ -1,0 +1,14 @@
+@article{10872923,
+ abstract = {Causal discovery faces significant challenges as the number of hypotheses grows exponentially with the number of variables. This complexity becomes particularly daunting when dealing with large sets of variables. We introduce a novel divide-and-conquer method that uniquely handles this challenge. The existing division strategies often rely on conditional independency (CI) tests or data-driven clustering to split variables, which can suffer from the typical data scarcity in large-scale settings, thus leading to inaccurate division results. The proposed method overcomes this by implementing a data-independent division strategy, which constructs a prior structure, informed by potential causal relationships identified using a Large Language Model (LLM), to guide recursively dividing variables into sub-sets. This approach avoids the impact of data insufficiency and is robust against potential incompleteness in the prior structure. In the merging phase, we adopt a score-based refinement strategy to address fake causal links caused by hidden variables in sub-sets, which eliminates edges in the intersected parts of sub-sets to optimize the score of local structures. While maintaining both correctness and completeness under the faithfulness assumption, this novel merging approach demonstrates enhanced performance than the conventional CI-test based merging strategy in practical scenarios. Empirical evaluations on various large-scale datasets demonstrate the proposed approach's superior accuracy and efficiency compared to existing causal discovery methods.},
+ author = {Wang, Xiangyu and Ban, Taiyu and Chen, Lyuzhou and Lyu, Derui and Zhu, Qinrui and Chen, Huanhuan},
+ doi = {10.1109/TKDE.2025.3537832},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Cause effect analysis;Merging;Cognition;Accuracy;Reviews;Faces;Complexity theory;Bayes methods;Training;Stability criteria;Causal structure learning;large language model;Bayesian network structure learning},
+ month = {May},
+ number = {5},
+ pages = {2695-2711},
+ title = {Large-Scale Hierarchical Causal Discovery via Weak Prior Knowledge},
+ volume = {37},
+ year = {2025}
+}

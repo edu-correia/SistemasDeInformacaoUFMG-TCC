@@ -1,0 +1,18 @@
+@article{10.1007/s00778-026-00964-w,
+ abstract = {Discovering co-movement patterns from GPS trajectories has long attracted attention in spatio-temporal data mining. To extend this research line, this paper migrates the data source from GPS sensors to surveillance cameras and presents the first investigation into co-movement pattern mining from videos. We formulate the new problem, re-define the spatial-temporal constraints from cameras deployed in a road network, and theoretically prove its hardness. We first study the problem on large-scale offline video data. Due to the lack of readily applicable solutions, two competitive offline baselines are adapted from existing techniques. As the key technical contribution for offline mining, we introduce a novel index called the temporal-cluster suffix tree (TCS-tree), which performs two-level temporal clustering within each camera and constructs a suffix tree from the resulting clusters. Building on this index, we further design a sequence-ahead pruning framework that utilizes all pattern constraints to filter candidate paths and incorporates several optimization techniques to reduce verification cost on the candidate paths. In response to the growing demand for real-time processing, this work also explores co-movement pattern mining from streaming video data. We extend the offline TCS-tree framework as an adapted baseline for the streaming scenario. To further improve real-time performance, we introduce a new trie-based structure called CP-tree that directly stores candidate patterns with lightweight online maintenance. An efficient stream mining framework based on CP-tree is then proposed, which performs fast localized updates only on affected patterns involved in the current update. Finally, we conduct extensive experiments on real-world datasets. The scalability analysis validates the efficiency of both the proposed offline and streaming frameworks. Moreover, empirical analysis on our constructed video dataset with 1,169 cameras shows that the patterns derived from the video-driven approach are similar to those from groundtruth trajectories, providing evidence of its effectiveness.},
+ address = {Berlin, Heidelberg},
+ author = {Bei, Yijun and Ma, Teng and Zhang, Dongxiang and Hu, Junnan and Tan, Kian-Lee and Chen, Gang},
+ doi = {10.1007/s00778-026-00964-w},
+ issn = {1066-8888},
+ issue_date = {Mar 2026},
+ journal = {The VLDB Journal},
+ keyword = {Co-movement mining, Video trajectories, Streaming algorithms, Index structures},
+ month = {February},
+ number = {2},
+ numpages = {26},
+ publisher = {Springer-Verlag},
+ title = {Efficient discovery of co-movement patterns from video data},
+ url = {https://doi.org/10.1007/s00778-026-00964-w},
+ volume = {35},
+ year = {2026}
+}

@@ -1,0 +1,15 @@
+@article{Perez2026,
+ abstract = {Proper orthogonal decomposition (POD) is a quintessential tool in the analysis of flow fields in experimental and computational fluid dynamics as a whole and turbulence in particular. It is a data driven technique that can be used to extract coherent structures in the flow and to create reduced-order dynamical systems that represent the most energetic flow structures. While extremely useful, its main drawback is that, at least traditionally, the POD algorithm is executed in serial using all the available data at once, while the original full-order system (simulation or experiment) is typically conducted and concluded before, either using a parallel simulation code or an (optical field-based) experiment. This can potentially limit its applications, in particular for large-scale data sets, e.g., from three-dimensional turbulent flows. In this article, we collect and review some of the more flexible methods for calculation of the POD (in particular, based on singular value decomposition, SVD) that have appeared over the years in order to tackle these limitations. We summarize an implementation that combines the characteristics of the (distributed-memory) parallel and streaming methods and conduct detailed uncertainty quantification studies to address the effect of the hyper-parameters that typically appear with the introduction of streaming and parallel computations. We find that in general, the number of parallel processes used to compute the POD has no significant effect. On the other hand, the accuracy of the results depends on the number of updated modes and the number of snapshots treated simultaneously, with 60% and 30% of global sensitivity, respectively, in the error in the obtained POD modes. Given these findings, we formulate the recommendation that it is beneficial that more POD modes than those desired for later analysis are continuously updated. We find that the errors introduced by using streaming and parallel algorithms are minimal in all cases, including extended implementations such as the novel Hilbert-POD, which incorporates a spatial Hilbert transform. Therefore, the use of these algorithms for either computation on smaller memory systems, or online (in-situ) computation of POD modes as simulations advance is a reliable and robust way forward to increase the rate of scientific discovery in large-scale fluid-mechanics problems. © 2026 The Author(s)},
+ author = {Perez, Adalberto and Rezaeiravesh, Saleh and Markidis, Stefano and Schlatter, Philipp},
+ doi = {10.1016/j.cpc.2026.110188},
+ journal = {Computer Physics Communications},
+ note = {Cited by: 0; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Effect of hyper-parameters on streaming and parallel proper orthogonal decomposition},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105038738438?origin=resultslist},
+ volume = {325},
+ year = {2026}
+}

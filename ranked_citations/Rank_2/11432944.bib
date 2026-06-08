@@ -1,0 +1,14 @@
+@article{11432944,
+ abstract = {Sharpness-aware minimization (SAM) enhances generalization by minimizing max-sharpness (MaxS). Despite its practical success, we empirically found that the MaxS behind SAM’s generalization enhancements faces the “flatness indicator problem” (FIP), where SAM only considers the flatness in the direction of gradient ascent. This leads to high Hessian eigenvalues for the deep neural network (DNN), indicating insufficient flatness in the solution region. Abetter flatness indicator (FI) would lower these Hessian eigenvalues, resulting in a flatter minimum and improved generalization of the network. Because SAM is inherently a greedy search method. In this article, we propose to utilize the difference between the training loss and the minimum loss over the neighborhood surrounding the current weight, which we denote asmin-sharpness (MinS). By merging MaxS and MinS, we create a better FI that indicates a flatter direction during the optimization. Specifically, we combine this FI with SAM into the proposed bilateral SAM (BSAM), which finds a flatter minimum than SAM. The theoretical analysis demonstrates that BSAM converges to a local minimum. Extensive experiments demonstrate that BSAM offers superior generalization performance and robustness compared to vanilla SAM across various tasks, i.e.,classification, transfer learning, human pose estimation, semantic segmentation, and network quantization.},
+ author = {Deng, Jiaxin and Pang, Junbiao and Zhang, Baochang and Huang, Qingming},
+ doi = {10.1109/TNNLS.2026.3671361},
+ issn = {2162-2388},
+ journal = {IEEE Transactions on Neural Networks and Learning Systems},
+ keyword = {Training;Perturbation methods;Optimization;Loss measurement;Minimization;Transfer learning;Artificial neural networks;Taylor series;Stochastic processes;Standards;Flatness;flatter minima;generalization;sharpness-aware minimization (SAM)},
+ month = {},
+ number = {},
+ pages = {1-10},
+ title = {Bilateral Sharpness-Aware Minimization for Flatter Minima},
+ volume = {},
+ year = {2026}
+}

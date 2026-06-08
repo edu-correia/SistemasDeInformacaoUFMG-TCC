@@ -1,0 +1,14 @@
+@article{6104122,
+ abstract = {We present a system for accurately quantifying the presence and extent of stain on account of a vascular biomarker on tissue microarrays. We demonstrate our flexible, robust, accurate, and high-throughput minimally supervised segmentation algorithm, termed hierarchical normalized cuts (HNCuts) for the specific problem of quantifying extent of vascular staining on ovarian cancer tissue microarrays. The high-throughput aspect of HNCut is driven by the use of a hierarchically represented data structure that allows us to merge two powerful image segmentation algorithms-a frequency weighted mean shift and the normalized cuts algorithm. HNCuts rapidly traverses a hierarchical pyramid, generated from the input image at various color resolutions, enabling the rapid analysis of large images (e.g., a 1500 × 1500 sized image under 6 s on a standard 2.8-GHz desktop PC). HNCut is easily generalizable to other problem domains and only requires specification of a few representative pixels (swatch) from the object of interest in order to segment the target class. Across ten runs, the HNCut algorithm was found to have average true positive, false positive, and false negative rates (on a per pixel basis) of 82%, 34%, and 18%, in terms of overlap, when evaluated with respect to a pathologist annotated ground truth of the target region of interest. By comparison, a popular supervised classifier (probabilistic boosting trees) was only able to marginally improve on the true positive and false negative rates (84% and 14%) at the expense of a higher false positive rate (73%), with an additional computation time of 62\% compared to HNCut. We also compared our scheme against a k-means clustering approach, which both the HNCut and PBT schemes were able to outperform. Our success in accurately quantifying the extent of vascular stain on ovarian cancer TMAs suggests that HNCut could be a very powerful tool in digital pathology and bioinformatics applications where it could be used to facilitate computer-assisted prognostic predictions of disease outcome.},
+ author = {Janowczyk, Andrew and Chandran, Sharat and Singh, Rajendra and Sasaroli, Dimitra and Coukos, George and Feldman, Michael D. and Madabhushi, Anant},
+ doi = {10.1109/TBME.2011.2179546},
+ issn = {1558-2531},
+ journal = {IEEE Transactions on Biomedical Engineering},
+ keyword = {Image color analysis;Biological tissues;Image segmentation;Clustering algorithms;Algorithm design and analysis;Spatial resolution;Biomarker discovery;hierarchical normalized cuts (HNCuts);high-throughput;mean shift;multivariate histology;normalized cuts;segmentation;tissue microarray (TMA)},
+ month = {May},
+ number = {5},
+ pages = {1240-1252},
+ title = {High-Throughput Biomarker Segmentation on Ovarian Cancer Tissue Microarrays via Hierarchical Normalized Cuts},
+ volume = {59},
+ year = {2012}
+}

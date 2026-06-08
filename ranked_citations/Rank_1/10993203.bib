@@ -1,0 +1,14 @@
+@inproceedings{10993203,
+ abstract = {In LSM-based KV stores, typically deployed on systems with DRAM-SSD storage, compaction degrades write performance and SSD endurance due to significant write amplification. To address this issue, recent proposals have mostly focused on redesigning the structure of LSM trees. In this paper, we observe the prevalence of data blocks that are are simply read and written back without being altered during the LSM-tree compaction process, which we refer to as Unchanged Data Blocks (UDBs). These UDBs are source of unnecessary write amplification leading to performance degradation and shortening of SSD lifetime. To address this duplication issue, we propose a remapping-based compaction method, which we call RemapCom. RemapCom considers the identification and retention by designing a lightweight state machine to track the status of the KV items in each data block as well as designing a UDB retention strategy to prevent data blocks from being split due to adjacent intersecting blocks. We implement a prototype of RemapCom on LevelDB by providing two primitives for the remapping. Compared to the state-of-the-art, evaluation results demonstrate that RemapCom can reduce the write amplification by up to 53%.},
+ author = {Fan, Yi and Du, Yajuan and H.Noh, Sam},
+ booktitle = {2025 Design, Automation & Test in Europe Conference (DATE)},
+ doi = {10.23919/DATE64628.2025.10993203},
+ issn = {1558-1101},
+ keyword = {Degradation;Prototypes;Europe;Benchmark testing;Compaction;Proposals;LSM-tree;Compaction;SSDs;Data Remapping},
+ month = {March},
+ number = {},
+ pages = {1-7},
+ title = {RemapCom: Optimizing Compaction Performance of LSM Trees via Data Block Remapping in SSDs},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@conference{Zhang2017293,
+ abstract = {Large-scale applications implemented in today's high performance graph frameworks heavily underutilize modern hardware systems. While many graph frameworks have made substantial progress in optimizing these applications, we show that it is still possible to achieve up to 5× speedups over the fastest frameworks by greatly improving cache utilization. Previous systems have applied out-of-core processing techniques from the memory/disk boundary to the cache/DRAM boundary. However, we find that blindly applying such techniques is ineffective because the much smaller performance gap between cache and DRAM requires new designs for achieving scalable performance and low overhead. We present Cagra, a cache optimized inmemory graph framework. Cagra uses a novel technique, CSR Segmenting, to break the vertices into segments that fit in last level cache, and partitions the graph into subgraphs based on the segments. Random accesses in each subgraph are limited to one segment at a time, eliminating the much slower random accesses to DRAM. The intermediate updates from each subgraph are written into buffers sequentially and later merged using a low overhead parallel cache-aware merge. Cagra achieves speedups of up to 5× for PageRank, Collaborative Filtering, Label Propagation and Betweenness Centrality over the best published results from state-of-the-art graph frameworks, including GraphMat, Ligra and GridGraph. © 2017 IEEE.},
+ author = {Zhang, Yunming and Kiriansky, Vladimir and Mendis, Charith and Amarasinghe, Saman and Zaharia, Matei},
+ doi = {10.1109/BigData.2017.8257937},
+ journal = {Proceedings - 2017 IEEE International Conference on Big Data, Big Data 2017},
+ note = {Cited by: 104},
+ pages = {293 - 302},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Making caches work for graph analytics},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85047804487?origin=resultslist},
+ volume = {2018-January},
+ year = {2017}
+}

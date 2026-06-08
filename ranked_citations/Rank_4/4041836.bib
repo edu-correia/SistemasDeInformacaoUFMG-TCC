@@ -1,0 +1,14 @@
+@inproceedings{4041836,
+ abstract = {VLIW and EDGE (explicit data graph execution) architectures rely on compilers to form high-quality hyper-blocks for good performance. These compilers typically perform hyperblock formation, loop unrolling, and scalar optimizations in a fixed order. This approach limits the compiler's ability to exploit or correct interactions among these phases. EDGE architectures exacerbate this problem by imposing structural constraints on hyperblocks, such as instruction count and instruction composition. This paper presents convergent hyperblock formation, which iteratively applies if-conversion, peeling, unrolling, and scalar optimizations until converging on hyperblocks that are as close as possible to the structural constraints. To perform peeling and unrolling, convergent hyperblock formation generalizes tail duplication, which removes side entrances to acyclic traces, to remove back edges into cyclic traces using head duplication. Simulation results for an EDGE architecture show that convergent hyperblock formation improves code quality over discrete-phase approaches with heuristics for VLIW and EDGE. This algorithm offers a solution to hyperblock phase ordering problems and can be configured to implement a wide range of policies},
+ author = {Maher, Bertrand A. and Smith, Aaron and Burger, Doug and McKinley, Kathryn S.},
+ booktitle = {2006 39th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO'06)},
+ doi = {10.1109/MICRO.2006.34},
+ issn = {2379-3155},
+ keyword = {Merging;Tail;VLIW;Optimizing compilers;Constraint optimization;Hardware;Parallel processing;Runtime;Microarchitecture;High performance computing},
+ month = {Dec},
+ number = {},
+ pages = {65-76},
+ title = {Merging Head and Tail Duplication for Convergent Hyperblock Formation},
+ volume = {},
+ year = {2006}
+}

@@ -1,0 +1,14 @@
+@article{11059908,
+ abstract = {This study presents a comprehensive evaluation and comparison of selected conventional and advanced approaches for detecting and classifying emotional stress levels from speech. Three representative and publicly available stress datasets-CRISIS, StressDat, and SUSAS-were used. A detailed comparative analysis of their speech characteristics, including fundamental frequency ( $F_{0}$ ), formant frequencies ( $F_{1}$ ,  $F_{2}$ ,  $F_{3}$ ), voice intensity, harmonic-to-noise ratio, jitter, and shimmer, was conducted to investigate how these features change with increasing stress and contribute to its detection. Both conventional feature-based methods and deep learning techniques, including transfer and self-supervised learning, are explored in the experimental part of this research. The best classification results among the conventional methods were achieved using a combination of features extracted via the Discrete Wavelet Transform and GammaTone Cepstral Coefficients (DWT+GTCC), paired with a Subspace k-Nearest Neighbors classifier, which yielded F1-scores of up to 91.1% on CRISIS and 82.4% on StressDat. Among the deep learning approaches, we fine-tuned self-supervised models such as Wav2Vec 2.0 and BYOL-S (Bootstrap Your Own Latent for Speech), as well as transfer learning models including VGGish and YAMNet. Wav2Vec 2.0 consistently outperformed the others, achieving an F1-score of 94% on CRISIS and over 87% on StressDat. On the SUSAS dataset, which contains speech under simulated and real stress conditions, an F1-score of 77% was achieved using both the fine-tuned Wav2Vec 2.0 model as well as a pipeline combining BYOL-S feature extraction with a Support Vector Machine (SVM) classifier. After merging all stress-related datasets into a single balanced dataset, Wav2Vec 2.0 achieved the highest F1-score of 85%. Incorporating additional emotional speech data improved robustness and led to a slight increase in the accuracy of classifying stress into three distinct levels. These results highlight the importance of robust feature selection, appropriate classifier design, and the integration of emotional speech data to enhance generalization performance in real-world applications.},
+ author = {Staš, Ján and Ondáš, Stanislav and Juhár, Jozef},
+ doi = {10.1109/ACCESS.2025.3584534},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Human factors;Feature extraction;Anxiety disorders;Monitoring;Discrete wavelet transforms;Classification algorithms;Deep learning;Recording;Accuracy;Wavelet packets;Deep learning;emotional speech;feature selection;fundamental frequency;generalization;levels of stress;self-supervised learning;speech under stress;transfer learning},
+ month = {},
+ number = {},
+ pages = {112880-112904},
+ title = {Performance Evaluation of Different Speech-Based Emotional Stress Level Detection Approaches},
+ volume = {13},
+ year = {2025}
+}

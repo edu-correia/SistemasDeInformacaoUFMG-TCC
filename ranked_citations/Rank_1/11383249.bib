@@ -1,0 +1,14 @@
+@inproceedings{11383249,
+ abstract = {Modern databases need to handle both fast data writes and quick reads, but most systems focus on Log-Structured Merge (LSM) tree or B+ tree. Existing hybrid systems like LAB-DB and Jungle combine both but lose performance when workloads suddenly change.Adaptive Hybrid DB uses shared memory buffer that automatically adjusts between the two algorithms. During normal workloads, memory is rebalanced slowly over 60 seconds, while sudden changes trigger a fast 10-second reallocation for quick adaptation. It also uses a reliable crash recovery system using a single write-ahead log and versioned snapshots to ensure consistent recovery after failures. This paper improves the database engine by introducing Proximal Policy Optimization (PPO) AI agent that predicts workload that reduce delays and improve throughput while avoiding service-level (SLO) violations. This monitors real-time metrics of workload trends and volatility and analyse from the trained data to switch efficiently. Thus, the switching time between B+ and LSM algorithms, through PPO agent has been decreased by 83.33%},
+ author = {Patra, Souhridya and Srivastava, Shlok and Kumar, Anmol and Shajeena, J. and Rahmath Nisha, S. and Kizhakkethottam, Jubilant J},
+ booktitle = {2025 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)},
+ doi = {10.1109/ICECMSN68058.2025.11383249},
+ issn = {},
+ keyword = {Trees (botanical);Switches;Prediction algorithms;Real-time systems;Computer crashes;Artificial intelligence;Engines;Optimization;Faces;Systematic literature review;Log-Structured Merge (LSM) tree;B+ tree;Hybrid systems;Adaptive algorithms;Workload prediction;Proximal Policy Optimization (PPO);AI agent},
+ month = {Nov},
+ number = {},
+ pages = {958-963},
+ title = {Database Engine with Smart Workload Balancer and Crash Revival},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@article{10091894,
+ abstract = {As key components of DBMSs, various storage engines and index structures have been proposed based on incorrect assumptions before PMem hardware is publicly available. Recent studies reveal that there is a significant performance gap in evaluating index structures on real PMem platforms as compared to DRAM-based emulators. However, a comprehensive evaluation for those PMem-aware database storage engines on real PMem hardware is still missing. Meanwhile, dynamic memory management is more important on PMem systems because PMem is slower than DRAM and unfriendly to random small-writes, and ensuring crash-consistency for the metadata of PMem allocators introduces extra overhead. Therefore, it is essential to understand the performance intricacies of PMem-aware database storage engines from the perspective of PMem allocators. This paper presents a systematic evaluation of three PMem-aware database storage engines using representative workloads and a unified benchmarking framework that is integrated with four PMem allocators. Besides the commonly used metrics, the impact of different hardware configurations (such as NUMA and eADR) on performance is also considered. Through in-depth analysis, we reveal caveats and pitfalls on using or designing PMem-aware storage engines and important insights that can serve as guidelines for future development of PMem allocators and other related components.},
+ author = {Chen, Zhiwen and Che, Wenkui and Hu, Daokun and He, Xin and Sun, Jianhua and Chen, Hao},
+ doi = {10.1109/TKDE.2023.3248643},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Engines;Random access memory;Metadata;Resource management;Databases;Memory management;Hardware;Persistent memory;non-volatile memory;NUMA;storage engine;memory allocator},
+ month = {Oct},
+ number = {10},
+ pages = {10365-10382},
+ title = {On the Performance Intricacies of Persistent Memory Aware Storage Engines},
+ volume = {35},
+ year = {2023}
+}

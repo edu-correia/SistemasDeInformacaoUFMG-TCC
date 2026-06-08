@@ -1,0 +1,14 @@
+@conference{AlSaber2013421,
+ abstract = {Recently, GPU libraries have made it easy to improve application performance by offloading computation to the GPU. However, using such libraries introduces the complexity of manually handling explicit data movements between GPU and CPU memory spaces. Unfortunately, when using these libraries with complex applications, it is very difficult to optimize CPU-GPU communication between multiple kernel invocations to avoid redundant communication. In this paper, we introduce SemCache, a semantics-aware GPU cache that automatically manages CPU-GPU communication and dynamically optimizes communication by eliminating redundant transfers using caching. Its key feature is the use of library semantics to determine the appropriate caching granularity for a given offloaded library (e.g., matrices in BLAS). We applied SemCache to BLAS libraries to provide a GPU drop-in replacement library which handles communications and optimizations automatically. Our caching technique is efficient; it only tracks matrices instead of tracking every memory access at fine granularity. Experimental results show that our system can dramatically reduce redundant communication for real-world computational science application and deliver significant performance improvements, beating GPU-based implementations like CULA and CUBLAS. © 2013 ACM.},
+ author = {AlSaber, Nabeel and Kulkarni, Milind},
+ doi = {10.1145/2464996.2465021},
+ journal = {Proceedings of the International Conference on Supercomputing},
+ note = {Cited by: 13},
+ pages = {421 - 432},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SemCache: Semantics-aware caching for efficient GPU offloading},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84879816119?origin=resultslist},
+ year = {2013}
+}

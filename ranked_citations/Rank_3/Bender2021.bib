@@ -1,0 +1,16 @@
+@article{Bender2021,
+ abstract = {Storage devices have complex performance profiles, including costs to initiate IOs (e.g., seek times in hard drives), parallelism and bank conflicts (in SSDs), costs to transfer data, and firmware-internal operations.The Disk-access Machine (DAM) model simplifies reality by assuming that storage devices transfer data in blocks of size B and that all transfers have unit cost. Despite its simplifications, the DAM model is reasonably accurate. In fact, if B is set to the half-bandwidth point, where the latency and bandwidth of the hardware are equal, then the DAM approximates the IO cost on any hardware to within a factor of 2.Furthermore, the DAM model explains the popularity of B-trees in the 1970s and the current popularity of BI -trees and log-structured merge trees. But it fails to explain why some B-trees use small nodes, whereas all BI -trees use large nodes. In a DAM, all IOs, and hence all nodes, are the same size.In this article, we show that the affine and PDAM models, which are small refinements of the DAM model, yield a surprisingly large improvement in predictability without sacrificing ease of use. We present benchmarks on a large collection of storage devices showing that the affine and PDAM models give good approximations of the performance characteristics of hard drives and SSDs, respectively.We show that the affine model explains node-size choices in B-trees and BI -trees. Furthermore, the models predict that B-trees are highly sensitive to variations in the node size, whereas BI -trees are much less sensitive. These predictions are born out empirically.Finally, we show that in both the affine and PDAM models, it pays to organize data structures to exploit varying IO size. In the affine model, BI -trees can be optimized so that all operations are simultaneously optimal, even up to lower-order terms. In the PDAM model, BI -trees (or B-trees) can be organized so that both sequential and concurrent workloads are handled efficiently.We conclude that the DAM model is useful as a first cut when designing or analyzing an algorithm or data structure but the affine and PDAM models enable the algorithm designer to optimize parameter choices and fill in design details.  © 2021 Association for Computing Machinery.},
+ author = {Bender, Michael A. and Conway, Alex and Farach-Colton, Martín and Jannen, William and Jiao, Yizheng and Johnson, Rob and Knorr, Eric and McAllister, Sara and Mukherjee, Nirjhar and Pandey, Prashant and Porter, Donald E. and Yuan, Jun and Zhan, Yang},
+ doi = {10.1145/3470635},
+ journal = {ACM Transactions on Parallel Computing},
+ note = {Cited by: 4},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {External-memory Dictionaries in the Affine and PDAM Models},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85115645832?origin=resultslist},
+ volume = {8},
+ year = {2021}
+}

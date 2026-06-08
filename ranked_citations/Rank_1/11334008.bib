@@ -1,0 +1,14 @@
+@article{11334008,
+ abstract = {Cooperative control of connected automated vehicles (CAVs) offers a promising solution for reducing traffic congestion and accidents. However, existing optimization-based and search-based methods for trajectory planning and vehicle scheduling struggle with real-time multi-vehicle control. This paper introduces a hybrid bi-level approach that nests optimization modelling within deep reinforcement learning (DRL) to jointly optimize vehicle sequences, lane selections, and trajectories, providing a rapid, safe, and high-quality solution to enhance traffic performance at multi-lane freeway merging sections. Specifically, we approach the problem of lane selection and vehicle sequencing for multiple vehicles as a multi-step decision-making process. At the upper level, we design a DRL agent with an attention-based encoder-decoder structure that auto-regressively constructs driving sequences and lane choices. It generates a probability matrix to select the next passing vehicle and target lane based on prior decisions at each step. The attention mechanism enables the centralized upper level to adapt to scenarios with varying vehicle counts without the need to retrain. At the lower level, we formulate a model predictive control (MPC) planner to generate safe trajectories. The resulting travel delay guides the upper-level DRL agent learning to maximize overall traffic efficiency. Moreover, we introduce a leader-and-lane-specific credit assignment mechanism that leverages domain knowledge to link each action with associated travel delays. This mechanism enables the agent to accurately recognize the impact of decisions on total delay, enhancing learning performance. Simulation results suggest that the proposed approach’s superior real-time performance and scalability from several to over a dozen vehicles, making it well-suited for practical automated merging tasks.},
+ author = {Chen, Jieming and Zhang, Yifeng and Zhou, Yue and Wu, Yiwei and Chung, Edward and Sartoretti, Guillaume},
+ doi = {10.1109/TITS.2025.3643420},
+ issn = {1558-0016},
+ journal = {IEEE Transactions on Intelligent Transportation Systems},
+ keyword = {Merging;Real-time systems;Traffic control;Trajectory;Safety;Delays;Sequential analysis;Trees (botanical);Planning;Learning systems;Connected automated vehicles;deep reinforcement learning;multi-lane on-ramp merging},
+ month = {March},
+ number = {3},
+ pages = {3369-3382},
+ title = {Learning-Based Lane Selection and Driving Orders for Connected Automated Vehicles at Multi-Lane Freeway Merging Sections},
+ volume = {27},
+ year = {2026}
+}

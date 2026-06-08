@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2019.2920718,
+ abstract = {Packet classification is an important part of many networking devices, such as routers and firewalls. Software-defined networking SDN heavily relies on online packet classification which must efficiently process two different streams: incoming packets to classify and rules to update. This rules out many offline packet classification algorithms that do not support fast updates. We propose a novel online classification algorithm, TupleMerge TM, derived from tuple space search TSS, the packet classifier used by Open vSwitch OVS. TM improves upon TSS by combining hash tables which contain rules with similar characteristics. This greatly reduces classification time preserving similar performance in updates. We validate the effectiveness of TM using both simulation and deployment in a full-fledged software router, specifically within the vector packet processor VPP. In our simulation results, which focus solely on the efficiency of the classification algorithm, we demonstrate that TM outperforms all other state of the art methods, including TSS, PartitionSort PS, and SAX-PAC. For example, TM is 34% faster at classifying packets and 30% faster at updating rules than PS. We then experimentally evaluate TM deployed within the VPP framework comparing TM against linear search and TSS, and also against TSS within the OVS framework. This validation of deployed implementations is important as SDN frameworks have several optimizations such as caches that may minimize the influence of a classification algorithm. Our experimental results clearly validate the effectiveness of TM. VPP TM classifies packets nearly two orders of magnitude faster than VPP TSS and at least one order of magnitude faster than OVS TSS.},
+ author = {Daly, James and Bruschi, Valerio and Linguaglossa, Leonardo and Pontarelli, Salvatore and Rossi, Dario and Tollet, Jerome and Torng, Eric and Yourtchenko, Andrew},
+ doi = {10.1109/tnet.2019.2920718},
+ issn = {1063-6692},
+ issue_date = {August 2019},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {August},
+ number = {4},
+ numpages = {15},
+ pages = {1417–1431},
+ publisher = {IEEE Press},
+ title = {TupleMerge: Fast Software Packet Processing for Online Packet Classification},
+ url = {https://doi.org/10.1109/TNET.2019.2920718},
+ volume = {27},
+ year = {2019}
+}

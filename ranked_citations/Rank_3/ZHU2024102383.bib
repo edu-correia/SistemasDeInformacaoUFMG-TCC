@@ -1,0 +1,13 @@
+@article{ZHU2024102383,
+ abstract = {Semi-supervised learning has made significant progress in medical image segmentation. However, existing methods primarily utilize information from a single dimensionality, resulting in sub-optimal performance on challenging magnetic resonance imaging (MRI) data with multiple segmentation objects and anisotropic resolution. To address this issue, we present a Hybrid Dual Mean-Teacher (HD-Teacher) model with hybrid, semi-supervised, and multi-task learning to achieve effective semi-supervised segmentation. HD-Teacher employs a 2D and a 3D mean-teacher network to produce segmentation labels and signed distance fields from the hybrid information captured in both dimensionalities. This hybrid mechanism allows HD-Teacher to utilize features from 2D, 3D, or both dimensions as needed. Outputs from 2D and 3D teacher models are dynamically combined based on confidence scores, forming a single hybrid prediction with estimated uncertainty. We propose a hybrid regularization module to encourage both student models to produce results close to the uncertainty-weighted hybrid prediction to further improve their feature extraction capability. Extensive experiments of binary and multi-class segmentation conducted on three MRI datasets demonstrated that the proposed framework could (1) significantly outperform state-of-the-art semi-supervised methods (2) surpass a fully-supervised VNet trained on substantially more annotated data, and (3) perform on par with human raters on muscle and bone segmentation task. Code will be available at https://github.com/ThisGame42/Hybrid-Teacher.},
+ author = {Jiayi Zhu and Bart Bolsterlee and Brian V.Y. Chow and Yang Song and Erik Meijering},
+ doi = {https://doi.org/10.1016/j.compmedimag.2024.102383},
+ issn = {0895-6111},
+ journal = {Computerized Medical Imaging and Graphics},
+ keyword = {Semi-supervised learning, Hybrid learning, Segmentation, Convolutional neural networks},
+ pages = {102383},
+ title = {Hybrid dual mean-teacher network with double-uncertainty guidance for semi-supervised segmentation of magnetic resonance images},
+ url = {https://www.sciencedirect.com/science/article/pii/S0895611124000600},
+ volume = {115},
+ year = {2024}
+}

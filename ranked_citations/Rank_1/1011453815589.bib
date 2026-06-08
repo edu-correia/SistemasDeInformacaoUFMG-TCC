@@ -1,0 +1,15 @@
+@article{10.1145/3815589,
+ abstract = {Sparse General Matrix Multiplication (SpMM) is a fundamental kernel in iterative scientific computing and graph neural network inference. On single-GPU platforms, iterative SpMM suffers from two major performance bottlenecks: excessive memory traffic caused by repeated loading of Krylov basis vectors, and low computational efficiency due to irregular sparsity patterns. To address these challenges, this paper proposes BLR-Krylov, an iterative SpMM optimization framework that integrates Communication-Avoiding Krylov (CA-Krylov) methods with a Block Low-Rank Sparse (BLR-Sparse) matrix format. BLR-Krylov first preprocesses sparse matrices into the BLR-Sparse format, where low-rank blocks are compressed through basis vector decomposition to reduce storage and arithmetic overhead. It then employs GPU-optimized matrix power kernels to batch-compute Krylov subspace basis vectors, effectively minimizing global memory accesses across iterations. Experimental results on multiple GPU architectures demonstrate that BLR-Krylov achieves a 4.0–6.0 \texttimes{} speedup over existing communication-avoiding approaches in iterative workloads, increases global memory bandwidth utilization to  (82% ) – (87% ) , and improves tensor core utilization to  (85% ) – (92% ) , while maintaining numerical accuracy within 1 \texttimes{} 10− 6. To facilitate reproducibility, partial source code is publicly available at https://github.com/19547035579zz-tech/BLR-Krylov.},
+ address = {New York, NY, USA},
+ author = {Li, Wen and Zhundefinedng, Zh\`{e}ng and Zhao, Jie and Zhu, Song and Hui, Ming},
+ doi = {10.1145/3815589},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {Iterative SpMM, Communication Avoidance, Block Low-Rank, Single GPU, Krylov Subspace},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {BLR-Krylov: A Single-GPU Iterative SpMM Framework with Communication Avoidance and Block Low-Rank Optimization},
+ url = {https://doi.org/10.1145/3815589},
+ year = {2026}
+}

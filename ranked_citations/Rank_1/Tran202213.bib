@@ -1,0 +1,14 @@
+@conference{Tran202213,
+ abstract = {In most computational codes, the core computational kernel is the Sparse Matrix-Vector product (SpMV) that enables specialized linear algebra libraries like PETSc to be used, especially in the distributed memory setting. However, optimizing SpMvperformance and scalability at all levels of a modern heterogeneous architecture can be challenging as it is characterized by irregular memory access. This work presents a hybrid approach (HyMV) for evaluating SpMV for matrices arising from PDE discretization schemes such as the finite element method (FEM). The approach enables localized structured memory access that provides improved performance and scalability. Additionally, it simplifies the programmability and portability on different architectures. The developed HyMV approach enables efficient parallelization using MPI, SIMD, OpenMP, and CUDA with minimum programming effort. We present a detailed comparison of HyMV with the two traditional approaches in computational code, matrix-assembled and matrix-free approaches, for structured and unstructured meshes. Our results demonstrate that the HyMV approach achieves excellent scalability and outperforms both approaches, e.g., achieving average speedups of 11x for matrix setup, 1.7x for SpMV with structured meshes, 3.6x for SpMV with unstructured meshes, and 7.5x for GPU SpMV.  © 2022 IEEE.},
+ author = {Tran, Han D. and Fernando, Milinda and Saurabh, Kumar and Ganapathysubramanian, Baskar and Kirby, Robert M. and Sundar, Hari},
+ doi = {10.1109/IPDPS53621.2022.00011},
+ journal = {Proceedings - 2022 IEEE 36th International Parallel and Distributed Processing Symposium, IPDPS 2022},
+ note = {Cited by: 10},
+ pages = {13 - 24},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A scalable adaptive-matrix SPMV for heterogeneous architectures},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85134303921?origin=resultslist},
+ year = {2022}
+}

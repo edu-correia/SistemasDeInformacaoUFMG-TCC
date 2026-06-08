@@ -1,0 +1,14 @@
+@inproceedings{9680358,
+ abstract = {Sparse general matrix-matrix multiplication, SpGEMM, is one of the most fundamental yet challenging sparse computation kernels. Due to its irregular computation pattern, SpGEMM frequently becomes the performance bottleneck in many scientific applications. Many prior state-of-the-art approaches use either dense or sparse accumulators to merge matrix rows as a critical component. Dense accumulators are efficient for small matrices but are infeasible for large or highly sparse matrices, due to high memory use and low cache efficiency. In this work, by segmenting the columns for the second input matrix, we propose a new SpGEMM algorithm that utilizes both a new sparse high-level overview of the matrix and fast and small dense accumulators that would fit in cache. With that, our approach brings the dense accumulator benefits to both large and highly sparse matrices. Our extensive experimental evaluation, carried out on three hardware platforms and on hundreds of sparse matrices from a variety of domains, shows that our algorithm out-performs state-of-the-art SpGEMM implementations.},
+ author = {An, Xiaojing and Çatalyürek, Ümit V.},
+ booktitle = {2021 IEEE 28th International Conference on High Performance Computing, Data, and Analytics (HiPC)},
+ doi = {10.1109/HiPC53243.2021.00034},
+ issn = {2640-0316},
+ keyword = {Runtime;Multicore processing;High performance computing;Conferences;Memory management;Parallel processing;Hardware;sparse matrix;matrix multiplication;shared memory parallelism},
+ month = {Dec},
+ number = {},
+ pages = {202-211},
+ title = {Column-Segmented Sparse Matrix-Matrix Multiplication on Multicore CPUs},
+ volume = {},
+ year = {2021}
+}

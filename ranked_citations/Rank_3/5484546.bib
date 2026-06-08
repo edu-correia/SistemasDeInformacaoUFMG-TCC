@@ -1,0 +1,14 @@
+@article{5484546,
+ abstract = {As real-time industrial control systems scale up, single real-time local area network (LAN) is no longer sufficient; instead, we need real-time switches to merge many real-time LANs into real-time wide area networks (WANs). However, nowadays commercially-off-the-shelf WAN switches are designed for best-effort Internet traffic rather than real-time traffic. To address this problem, we propose a real-time crossbar switch design that minimally modifies, and even simplifies the de facto industrial standard switch design of iSLIP. Specifically, we change the iSLIP request-grant-accept negotiation to deterministic grant. The switch runs periodically with an M cell-time clock-period. Every input port runs per-flow queueing, and every output port deterministically grants input port per-flow queues according to its own M cell-time clock-period schedule. The schedules are created offline. We prove that the global scheduling can be reduced to a preemptive open shop scheduling problem; as long as every input/output needs to send/fetch no more than M cells per M cell-time clock-period, all outputs schedules do not conflict; and the scheduling algorithm takes O(N4) time (N is the number of input/output ports). Such design serves real-time periodic/aperiodic traffic in a time-division multiple-access (TDMA) fashion. This simplifies analysis, provides isolation, and results in a close-form end-to-end delay bound. We implemented the proposed real-time switch using Xilinx field programmable gate arrays (FPGAs), and built a distributed control test bed upon the switched networks. Using the test bed, we carried out experiments to compare the implemented real-time switches and iSLIP switches. The results prove the necessity of using real-time switches for real-time industrial control.},
+ author = {Wang, Qixin and Gopalakrishnan, Sathish},
+ doi = {10.1109/TII.2010.2051557},
+ issn = {1941-0050},
+ journal = {IEEE Transactions on Industrial Informatics},
+ keyword = {Switches;IP networks;Spread spectrum communication;Real time systems;Job shop scheduling;Communication system traffic control;Traffic control;Clocks;Industrial control;Local area networks;Cyber-physical systems (CPSs);industrial control;real-time;switch},
+ month = {Aug},
+ number = {3},
+ pages = {393-404},
+ title = {Adapting a Main-Stream Internet Switch Architecture for Multihop Real-Time Industrial Networks},
+ volume = {6},
+ year = {2010}
+}

@@ -1,0 +1,14 @@
+@conference{Mei2018477,
+ abstract = {Key-value (KV) stores based on multi-stage structures are widely deployed in the cloud to ingest massive amounts of easily searchable user data. However, current KV storage systems inevitably sacrifice at least one of the performance objectives, such as write, read, space efficiency etc., for the optimization of others. To understand the root cause of and ultimately remove such performance disparities among the representative existing KV stores, we analyze their enabling mechanisms and classify them into two models of data structures facilitating KV operations, namely, the multi-stage tree (MS-tree) as represented by LevelDB, and the multi-stage forest (MS-forest) as typified by the size-tiered compaction in Cassandra. We then build a KV store on a novel split MS-forest structure, called SifrDB, that achieves the lowest write amplification across all workload patterns and minimizes space reservation for the compaction. In addition, we design a highly efficient parallel search algorithm that fully exploits the access parallelism of modern flash-based storage devices to substantially boost the read performance. Evaluation results show that under both micro and YCSB benchmarks, SifrDB outperforms its closest competitors, i.e., the popular MS-forest implementations, making it a highly desirable choice for the modern large-dataset-driven KV stores. © 2018 Association for Computing Machinery.},
+ author = {Mei, Fei and Jiang, Hong and Cao, Qiang and Li, Jingjun},
+ doi = {10.1145/3267809.3267829},
+ journal = {SoCC 2018 - Proceedings of the 2018 ACM Symposium on Cloud Computing},
+ note = {Cited by: 42},
+ pages = {477 - 489},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SifRDB: A unified solution for write-optimized key-value stores in large datacenter},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85058996230?origin=resultslist},
+ year = {2018}
+}

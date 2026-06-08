@@ -1,0 +1,16 @@
+@article{Zhuang20251223,
+ abstract = {Key-value separation is used in LSM-tree to store large values in separate log files to reduce write amplification but requires garbage collection to recycle invalid values. Existing LSM-tree typically adopts a static policy to recycle obsolete values, struggling to achieve low write amplification as it is challenging to predefine the static parameters for garbage collection. In this work we propose DumpKV, a learning-based lifetime-aware garbage collection mechanism which achieves lower write amplification. DumpKV trains a machine learning model based on the access history of keys and accordingly uses the lightweight model to predict the lifetime of each key, where the predicted lifetime can be used to guide the garbage collection. To reduce the interference to write throughput introduced by garbage collection, DumpKV conducts feature collection during L<sup>0</sup>-L<sup>1</sup> compaction, leveraging the fact that LSM-tree is small under KV separation. Experimental results show that DumpKV reduces GC write size by 25.7%-53.3% in real-world workloads and 19%-65% in synthetic workloads compared to baseline key-value separation LSM-tree KV stores with small feature storage overhead. © Publication rights licensed to the VLDB Endowment.},
+ author = {Zhuang, Zhutao and Zeng, Xinqi and Chen, Zhiguang},
+ doi = {10.14778/3717755.3717778},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 1},
+ number = {4},
+ pages = {1223 - 1236},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DumpKV: Learning based lifetime aware garbage collection for key value separation in LSM-tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105008761895?origin=resultslist},
+ volume = {18},
+ year = {2025}
+}

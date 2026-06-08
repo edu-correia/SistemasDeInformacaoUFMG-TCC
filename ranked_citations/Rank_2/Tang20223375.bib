@@ -1,0 +1,16 @@
+@article{Tang20223375,
+ abstract = {LSM-tree is widely used in key-value stores for big data storage, but it suffers from write amplification brought by frequent compaction operations. An effective solution for this problem is key-value separation, which decouples values from the LSM-tree and stores them in a separate value log. However, existing key-value separation schemes achieve poor range query performance, especially for small key-value pairs, because they focus on mitigating write amplification but neglect access characteristics of the SSD. In this article, we propose FenceKV, which aims to achieve better range query performance while maintaining reasonable update performance for update-intensive workloads. FenceKV employs a new partition method to map values to the storage space based on the key-range to achieve efficient update and range query. Moreover, it adopts a key-range garbage collection policy to mitigate the garbage collection overhead and maintain sequential access for range queries. We compare FenceKV with modern key-value stores with various workloads, and results show that FenceKV can improve the range query performance significantly, while maintaining reasonable update performance compared to the existing designs of key-value separation.  © 1990-2012 IEEE.},
+ author = {Tang, Chenlei and Wan, Jiguang and Xie, Changsheng},
+ doi = {10.1109/TPDS.2022.3149003},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 37},
+ number = {12},
+ pages = {3375 - 3386},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FenceKV: Enabling Efficient Range Query for Key-Value Separation},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85124717398?origin=resultslist},
+ volume = {33},
+ year = {2022}
+}

@@ -1,0 +1,14 @@
+@article{7079380,
+ abstract = {The MapReduce programming model simplifies large-scale data processing on commodity cluster by exploiting parallel map tasks and reduce tasks. Although many efforts have been made to improve the performance of MapReduce jobs, they ignore the network traffic generated in the shuffle phase, which plays a critical role in performance enhancement. Traditionally, a hash function is used to partition intermediate data among reduce tasks, which, however, is not traffic-efficient because network topology and data size associated with each key are not taken into consideration. In this paper, we study to reduce network traffic cost for a MapReduce job by designing a novel intermediate data partition scheme. Furthermore, we jointly consider the aggregator placement problem, where each aggregator can reduce merged traffic from multiple map tasks. A decomposition-based distributed algorithm is proposed to deal with the large-scale optimization problem for big data application and an online algorithm is also designed to adjust data partition and aggregation in a dynamic manner. Finally, extensive simulation results demonstrate that our proposals can significantly reduce network traffic cost under both offline and online cases.},
+ author = {Ke, Huan and Li, Peng and Guo, Song and Guo, Minyi},
+ doi = {10.1109/TPDS.2015.2419671},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Big data;Programming;Data models;Distributed algorithms;Heuristic algorithms;Algorithm design and analysis;Network topology;MapReduce, partition, aggregation, big data, lagrangian decomposition},
+ month = {March},
+ number = {3},
+ pages = {818-828},
+ title = {On Traffic-Aware Partition and Aggregation in MapReduce for Big Data Applications},
+ volume = {27},
+ year = {2016}
+}

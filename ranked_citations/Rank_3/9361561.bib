@@ -1,0 +1,14 @@
+@article{9361561,
+ abstract = {Network function (NF) developers have traditionally prioritized performance when creatingnew packet processing capabilities. This was usually driven by a market demand for highly available solu-tions with differentiating features running at line rate, even at the expense of flexibility and tightly-coupledmonolithic designs. Today, however, the market advantage is achieved by providing more features in shorterdevelopment cycles and quickly deploying them in different operating environments. In fact, networkoperators are increasingly adopting continuous software delivery practices as well as new architectural styles(e.g.,microservices) to decouple functionality and accelerate development. A key challenge in revisiting NFdesign is state management, which is usually highly optimized for a deployment by carefully selecting theunderlying data store. Therefore, migrating to a data store that suits a different use case is time-consumingas it requires code refactoring and adaptation to new application programming interfaces, APIs. As aresult, refactoring NF software for different environments can take up to months, reducing the pace atwhich new features and upgrades can be deployed in production networks. In this paper, we demonstrateexperimentally that it is feasible to introduce an abstraction layer to decouple NF state management from thedata store adopted while still approaching line-rate performance. We presentFlexState, a state managementsystem that exposes data store functionality asconfiguration options, which reduces code refactoring efforts.Experiments show that FlexState achieves significant flexibility in optimizing the state management, andaccelerates deployment on new scenarios while preserving performance and scalability.},
+ author = {Pozza, Matteo and Rao, Ashwin and Lugones, Diego F. and Tarkoma, Sasu},
+ doi = {10.1109/ACCESS.2021.3061814},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Noise measurement;Scalability;Production;Reliability engineering;Distributed databases;Optimization;Middleware;Data storage systems;middleboxes;network functions;network functions virtualization;NFV;parallel processing;state management},
+ month = {},
+ number = {},
+ pages = {46837-46850},
+ title = {FlexState: Flexible State Management of Network Functions},
+ volume = {9},
+ year = {2021}
+}

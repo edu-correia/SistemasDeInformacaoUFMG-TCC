@@ -1,0 +1,14 @@
+@article{1432682,
+ abstract = {The real-time display of huge geometry and imagery databases involves view-dependent approximations, typically through the use of precomputed hierarchies that are selectively refined at runtime. A classic motivating problem is terrain visualization in which planetary databases involving billions of elevation and color values are displayed on PC graphics hardware at high frame rates. This paper introduces a new diamond data structure for the basic selective-refinement processing, which is a streamlined method of representing the well-known hierarchies of right triangles that have enjoyed much success in real-time, view-dependent terrain display. Regular-grid tiles are proposed as the payload data per diamond for both geometry and texture. The use of 4-8 grid refinement and coarsening schemes allows level-of-detail transitions that are twice as gradual as traditional quadtree-based hierarchies, as well as very high-quality low-pass filtering compared to subsampling-based hierarchies. An out-of-core storage organization is introduced based on Sierpinski indices per diamond, along with a tile preprocessing framework based on fine-to-coarse, same-level, and coarse-to-fine gathering operations. To attain optimal frame-to-frame coherence and processing-order priorities, dual split and merge queues are developed similar to the realtime optimally adapting meshes (ROAM) algorithm, as well as an adaptation of the ROAM frustum culling technique. Example applications of lake-detection and procedural terrain generation demonstrate the flexibility of the tile processing framework.},
+ author = {Hwa, L.M. and Duchaineau, M.A. and Joy, K.I.},
+ doi = {10.1109/TVCG.2005.65},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Geometry;Displays;Image databases;Spatial databases;Visual databases;Runtime;Data visualization;Graphics;Hardware;Index Terms- Large data set visualization;level-of-detail techniques;view-dependent visualization;adaptive textures;out-of-core algorithms;procedural terrain generation.},
+ month = {July},
+ number = {4},
+ pages = {355-368},
+ title = {Real-time optimal adaptation for planetary geometry and texture: 4-8 tile hierarchies},
+ volume = {11},
+ year = {2005}
+}

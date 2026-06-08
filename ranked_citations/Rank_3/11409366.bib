@@ -1,0 +1,14 @@
+@article{11409366,
+ abstract = {The deployment of multimodal large language models (MLLMs) in edge-cloud networks faces critical challenges, including computational resource heterogeneity, memory bottlenecks, and bandwidth constraints. To address these issues, we propose EdgeSD, a novel framework that accelerates MLLM inference by integrating speculative decoding (SD) with edge-cloud collaboration. First, EdgeSD decouples the vision encoding and decoding processes of the draft MLLM across heterogeneous edge servers (ESs). This disaggregation architecture overcomes single-node memory constraints, enabling optimized resource utilization and high-resolution input processing. Second, to resolve the communication bottleneck and computational burden inherent in this distributed architecture, EdgeSD integrates a bandwidth-aware dynamic image token merging (ITM) method. Unlike general pruning techniques, this EdgeSD-specific ITM method focuses on minimizing inter-ES transmission latency for vision-decoding disaggregation while maintaining draft quality. Third, to optimize SD efficiency on consumer-grade ESs, EdgeSD employs an adaptive and scalable token tree structure solved using a parallel delta-stepping algorithm. This structure maximizes the number of accepted tokens under strict edge latency constraints. Extensive experiments on six multimodal datasets and five benchmarks with various MLLM pairs demonstrate that EdgeSD achieves substantial acceleration and throughput gains in edge-cloud collaboration scenarios using a lightweight draft MLLM, achieving 3.04-5.12x speedup compared to baseline methods.},
+ author = {Huang, Hualong and Zhan, Wenhan and Duan, Hancong and Peng, Kai and Min, Geyong and Zhao, Zijia and Zhao, Zitian and Ye, Yalan},
+ doi = {10.1109/TMC.2026.3667591},
+ issn = {1558-0660},
+ journal = {IEEE Transactions on Mobile Computing},
+ keyword = {Visualization;Servers;Image edge detection;Computational modeling;Decoding;Collaboration;Encoding;Cloud computing;Throughput;Graphics processing units;Multimodal large language model inference;mobile edge computing;edge-cloud collaborative inference;task scheduling},
+ month = {},
+ number = {},
+ pages = {1-18},
+ title = {EdgeSD: Efficient Speculative Decoding with Vision-Decoding Disaggregation for MLLM Inference in Edge-Cloud Networks},
+ volume = {},
+ year = {2026}
+}

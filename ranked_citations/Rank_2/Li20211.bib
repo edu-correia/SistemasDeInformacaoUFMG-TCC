@@ -1,0 +1,14 @@
+@conference{Li20211,
+ abstract = {Authenticated data storage on an untrusted platform is an important computing paradigm for cloud applications ranging from data outsourcing, to cryptocurrency and general transparency logs. These modern applications increasingly feature update-intensive workloads, whereas existing authenticated data structures (ADSs) designed with in-place updates are inefficient to handle such workloads. This work addresses the issue and presents a novel authenticated log-structured merge tree (eLSM) based key-value store built on Intel SGX. We present a system design that runs the code of eLSM store inside enclave. To circumvent the limited enclave memory (128 MB with the latest Intel CPUs), we propose to place the memory buffer of the eLSM store outside the enclave and protect the buffer using a new authenticated data structure by digesting individual LSM-tree levels. We design protocols to support data integrity, (range) query completeness, and freshness. Our protocol causes small proofs by including the Merkle proofs at selected levels. We implement eLSM on top of Google LevelDB and Facebook RocksDB with minimal code change and performance interference. We evaluate the performance of eLSM under the YCSB workload benchmark and show a performance advantage of up to 4.5X speedup.  © 2021 ACM.},
+ author = {Li, Kai and Tang, Yuzhe and Zhang, Qi and Xu, Jianliang and Chen, Ju},
+ doi = {10.1145/3491084.3491425},
+ journal = {Middleware 2021 Industry Track - Proceedings of the 2021 International Middleware Conference Industrial Track},
+ note = {Cited by: 8},
+ pages = {1 - 8},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Authenticated key-value stores with hardware enclaves},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85121471601?origin=resultslist},
+ year = {2021}
+}

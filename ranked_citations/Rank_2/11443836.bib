@@ -1,0 +1,14 @@
+@inproceedings{11443836,
+ abstract = {Hyperdimensional Computing (HDC) represents data using extremely high-dimensional, low-precision vectors— termed hypervectors (HVs)—and performs learning and inference through lightweight, noise-tolerant operations. However, the high dimensionality, sparsity, and repeated data movement involved in HDC make these computations difficult to accelerate efficiently on conventional processors. As a result, executing core HDC operations—binding, permutation, bundling, and similarity search—on CPUs or GPUs often leads to suboptimal utilization, memory bottlenecks, and limits on real-time performance.In this paper, our contributions are two-fold. First, we develop an image-encoding algorithm that, similar in spirit to convolutional neural networks, maps local image patches to hypervectors enriched with spatial information. These patch-level hypervectors are then merged into a global representation using the fundamental HDC operations, enabling spatially sensitive and robust image encoding. This encoder achieves 95.67% accuracy on MNIST and 85.14% on Fashion-MNIST, outperforming prior HDC-based image encoders. Second, we design an end-to-end accelerator that implements these compute operations on an FPGA through a pipelined architecture that exploits parallelism both across the hypervector dimensionality and across the set of image patches. Our Alveo U280 implementation delivers 0.09ms inference latency, achieving up to 1300× and 60× speedup over state-of-the-art CPU and GPU baselines, respectively.},
+ author = {Parikh, Dhruv and Arockiaraj, Jebacyril and Prasanna, Viktor},
+ booktitle = {2025 59th Asilomar Conference on Signals, Systems, and Computers},
+ doi = {10.1109/IEEECONF67917.2025.11443836},
+ issn = {2576-2303},
+ keyword = {Image coding;Accuracy;Graphics processing units;Computer architecture;Parallel processing;Real-time systems;Inference algorithms;Central Processing Unit;Field programmable gate arrays;Image classification;Hyperdimensional Computing;Hypervectors;FPGA Acceleration;Image Classification;Real-Time Systems;Patch-Based Encoding;Parallel Processing;Low-Power Computing},
+ month = {Oct},
+ number = {},
+ pages = {1557-1563},
+ title = {Primitive-Driven Acceleration of Hyperdimensional Computing for Real-Time Image Classification},
+ volume = {},
+ year = {2025}
+}

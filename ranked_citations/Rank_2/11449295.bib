@@ -1,0 +1,14 @@
+@article{11449295,
+ abstract = {Head pose estimation (HPE) requires a sophisticated understanding of 3D spatial relationships to generate precise yaw, pitch, and roll angles. Previous HPE models, primarily CNN-based, rely on cropped close-up human head images as inputs and often lack robustness in real-world scenario. Vision Language Models (VLMs) can analyze entire images while focusing on specific objects through their attention mechanisms. In this paper, we propose a novel framework to improve the HPE accuracy by leveraging the object detection grounding capability of a VLM, referred to as CogVLM. We empirically find that directly LoRA fine-tuning of this VLM for the HPE task fails to achieve desirable HPE accuracy, while some model merging methods can improve accuracy but frequently produce blended invalid response formats, struggling to handle both object detection and HPE tasks simultaneously. To integrate HPE capability into CogVLM effectively, we develop a novel LoRA layer-based model merging method. This merging approach applies a high cosine similarity threshold and a “winner-takes-all” layer selection strategy, aligning attention to the HPE task while preserving original object detection knowledge. It successfully resolves issues with blended invalid response formats and improves accuracy. Results show that our HPE-CogVLM achieves a 31.5% reduction in Mean Absolute Error over the current state-of-the-art CNN model, 6DRepNet, in cross-dataset evaluation. Furthermore, HPE-CogVLM outperforms both directly LoRA fine-tuned and task arithmetic-based merged VLMs across all HPE metrics.},
+ author = {Tian, Yu and Shao, Tianqi and Demizu, Tsukasa and Wu, Xuyang and Wu, Hsin-Tai},
+ doi = {10.1109/TCSVT.2026.3675940},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Grounding;Head;Accuracy;Visualization;Videos;Pose estimation;Merging;Circuits and systems;Training;Three-dimensional displays;Vision language model;Model merging;Head pose estimation;Visual grounding task;Catastrophic forgetting problem},
+ month = {},
+ number = {},
+ pages = {1-1},
+ title = {HPE-CogVLM: Advancing Vision Language Models with a Head Pose Grounding Task},
+ volume = {},
+ year = {2026}
+}

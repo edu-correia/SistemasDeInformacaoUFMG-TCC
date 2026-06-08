@@ -1,0 +1,14 @@
+@article{11316173,
+ abstract = {Multi-Agent Path Finding (MAPF) has been widely studied in recent years. However, most existing MAPF algorithms assume that an agent occupies only a single cell in a grid-based map. This assumption limits their applicability in many real-world domains where agents have geometric shapes rather than being point-like. These agents, which can occupy multiple cells simultaneously, are referred to as “large” agents. When considering the shape and size of agents in MAPF, i.e., MAPF for large agents (LA-MAPF), the computational complexity increases significantly as the number of agents increases, primarily because of the increased overhead in conflict detection between geometric agents. This paper introduces Layered Decomposition, a method that decomposes a MAPF problem into subproblems through iterative bipartitioning. This approach aims to reduce the time cost when solving LA-MAPF problems. To address unsolvable subproblems, we propose a solvability safeguard mechanism that merges subproblems until a solvable subproblem is formed. Experiments show that our LA-MAPF method with decomposition reduces time cost and increases the success rate of state-of-art MAPF methods significantly. To facilitate further research, we have made the source code for the Layered decomposition of LA-MAPF publicly available. Note to Practitioners—Motivated by the configuration space of MAPF’s solutions growing exponentially as the number of agents increases, we decompose an LA-MAPF problem into multiple smaller subproblems to reduce the time cost of solving it. To determine whether a subproblem is solvable quickly, we adopt an efficient but incomplete solvability checker, which may misjudge unsolvable subproblems as solvable, and this will result in unsolvable subproblems. To handle unsolvable subproblems, we adopt a merge mechanism which merges unsolvable subproblems with other subproblems until all subproblems are solvable. Our method is a general strategy that can be applied to various MAPF methods. In the results, we test our method on multiple maps with random shapes and numbers of agents to demonstrate our method’s advantages and disadvantages.},
+ author = {Yao, Zhuo and Wang, Wei and Cai, Yueri},
+ doi = {10.1109/TASE.2025.3648677},
+ issn = {1558-3783},
+ journal = {IEEE Transactions on Automation Science and Engineering},
+ keyword = {Shape;Robots;Costs;Search problems;Computational efficiency;Automation;Spatiotemporal phenomena;Planning;Image edge detection;Artificial intelligence;MAPF (multi-agent path finding);LA-MAPF (MAPF for large agents);graph theory},
+ month = {},
+ number = {},
+ pages = {1994-2019},
+ title = {Decomposing the Multi-Agent Pathfinding Problem for Large Agents: Accelerating Solving Without Compromising Solvability},
+ volume = {23},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{11216145,
+ abstract = {Shingled Magnetic Recording (SMR) disks have been improved significantly over traditional Hard Disk Drives (HDDs) in storage capacity and cost by a shingled-like structure that overlaps with adjacent tracks. However, the overall system performance is severely sacrificed due to the large portion of Read-Merge-Write (RMW) operations triggered by the non-sequential nature of SMR disks. To handle such performance degradation, Persistent Cache (PC) and built-in NAND flash cache are applied to absorb non-sequential writes. However, when the cache is full, triggering write-back operations extends the I/O response time. Additionally, the erase of NAND flash also compromises its lifetime. This paper aims to manage the NAND flash region and the original SMR band region uniformly instead of only adopting NAND flash as a cache layer. To achieve this, we propose a Region-based Co-optimized strategy named Multi-Regional Collaborative Management (MCM). Our approach segments I/O requests using a fast and efficient Bloom filter alongside a Band-based partitioning module. Additionally, the NAND flash memory region is managed based on the characteristics of the segmented data, enabling maximum control over frequent data updates in the NAND flash memory. The NAND flash cache will not serve as the first-level cache as before. Meanwhile, through Region-aware Wear-leveling (WL) and garbage collection (GC) strategies, the lifetime of NAND flash memory is extended, and cleaning efficiency is improved. In addition, further analysis of the impact of the wear-leveling parameters on RMWs and NAND flash lifetime under different workloads. According to the experimental results, compared with the typical Skylight (baseline), our scheme reduces the average response time and write amplification by 74.56% and 98.99%, respectively. At the same time, our approach also outperforms some state-of-the-art solutions, such as MU-RMW, RMW-F, and FC.},
+ author = {Wang, Guohui and Chen, Zhengang and Shi, Zhiping and Guan, Yong and Wang, Tianyu},
+ doi = {10.1109/TC.2025.3625183},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Flash memories;Time factors;Optimization;Electronic mail;Collaboration;Hard disks;Data models;Aerospace electronics;System performance;Shingled magnetic recording;Shingled magnetic recording;flash memory;bloom filter;data identification},
+ month = {Jan},
+ number = {1},
+ pages = {219-232},
+ title = {Region-Based Collaborative Caching With Joint Latency and Lifetime Optimization for Hybrid SMR-Flash Storage},
+ volume = {75},
+ year = {2026}
+}

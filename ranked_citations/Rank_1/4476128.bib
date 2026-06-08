@@ -1,0 +1,14 @@
+@inproceedings{4476128,
+ abstract = {Statistical learning based face detection systems search multiple scale sub-frames of an image or frame of a video stream with a trained classifier to detect face objects. If the frame is large there will be a large number of these sub-frames. Sections of the frame with a regional variance below a predefined threshold do not need to be searched as it is not possible for a face to exist in these spaces. A preprocessing system to eliminate these low variance regions of a frame is presented in this paper. A top down quad-tree deconstruction of the frame is used to accomplish this task. Regional variance is computed and tested to determine if a given quadrant should be further broken down. If below a predefined threshold that region will be eliminated in a mask image. This procedure is continued until all sections are eliminated or a defined tree depth is reached. The resulting mask image is then smoothed and subjected to thresholding, merging the remaining valid search areas. The resulting filled mask is then used to determine whether a given sub-frame should be sent to a Viola-Jones face detection cascade. Preliminary results show promise in reducing the number of sub-frames that must be considered for detection, increasing the speed of the detection system.},
+ author = {Livingston, Adam R. and Asari, Vijayan K.},
+ booktitle = {36th Applied Imagery Pattern Recognition Workshop (aipr 2007)},
+ doi = {10.1109/AIPR.2007.15},
+ issn = {2332-5615},
+ keyword = {Face detection;High definition video;Image coding;Sensor arrays;Face recognition;Object detection;Radar detection;Detectors;Image recognition;Pattern recognition;Face detection;Quad-tree;Regional Variance;High Definition Video},
+ month = {Oct},
+ number = {},
+ pages = {89-94},
+ title = {Regional Variance Dependant Sub-frame Reduction for Face Detection in High Definition Video Frames},
+ volume = {},
+ year = {2007}
+}

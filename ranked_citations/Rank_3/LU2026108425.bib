@@ -1,0 +1,13 @@
+@article{LU2026108425,
+ abstract = {Log-structured merge-tree (LSM-tree) is widely used as a storage engine in modern key-value (KV) stores owing to its high throughput. Compaction, the core of the LSM-tree engine, enables efficient handling of write requests by reorganizing data in the background. However, techniques like compaction granulation and parallel merge face significant challenges that hinder further improvements in compaction efficiency. In this paper, we propose C2LSM, a novel configuration paradigm for efficient compaction in LSM-tree-based KV stores. First, C2LSM introduces the reservedspaceconfiguration, which determines the optimal reserved rate for each level of the LSM-tree. This configuration balances the merged data size with system resources by optimizing per-level capacity, thereby reducing compaction time and write-amplification at various granularities. Second, C2LSM proposes the parallelmergeconfiguration, which sets the appropriate SSTable size for each level. This approach minimizes unpredictable merge latencies during parallel merges, thereby reducing overall compaction time. Moreover, we develop compaction time-cost models to theoretically analyze the relationship among per-level capacity, SSTable size, and compaction time. Empirical evaluations validate the accuracy of these models. We compare C2LSM with state-of-the-art LSM-tree-based KV stores and demonstrate that it reduces compaction time and write-amplification by 82.8% and 83.4%, respectively, while maintaining high space utilization.},
+ author = {Jinkang Lu and Peixuan Li and Cheng Zhang and Yukun Huang and Qiang Cao and Ping Xie},
+ doi = {https://doi.org/10.1016/j.future.2026.108425},
+ issn = {0167-739X},
+ journal = {Future Generation Computer Systems},
+ keyword = {LSM-tree, Key-value store, Configuration, Compaction,},
+ pages = {108425},
+ title = {C2LSM: A configuration paradigm for efficient compaction in LSM-tree-based key-value stores},
+ url = {https://www.sciencedirect.com/science/article/pii/S0167739X26000592},
+ volume = {181},
+ year = {2026}
+}

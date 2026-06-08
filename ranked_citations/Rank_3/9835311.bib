@@ -1,0 +1,14 @@
+@inproceedings{9835311,
+ abstract = {Modern data warehouses can scale compute nodes independently of storage. These systems persist their data on cloud storage, which is always available and cost-efficient. Ad-hoc compute nodes then fetch necessary data on-demand from cloud storage. This ability to quickly scale or shrink data systems is highly beneficial if query workloads may change over time. We apply this new architecture to search engines with a focus on optimizing their latencies in cloud environments. However, simply placing existing search engines (e.g., Apache Lucene) on top of cloud storage significantly increases their end-to-end query latencies (i.e., more than 6 seconds on average in one of our studies). This is because their indexes can incur multiple network round-trips due to their hierarchical structure (e.g., skip lists, B-trees, learned indexes). To address this issue, we develop a new statistical index, called IoU Sketch. For lookup, IoU Sketch makes multiple asynchronous network requests in parallel. While IoU Sketch may fetch more bytes than existing indexes, it significantly reduces the index lookup time because parallel requests do not block each other. Based on IoU Sketch, we built an end-to-end search engine called Airphant; we describe how Airphant builds, optimizes, and manages IoU Sketch, and ultimately supports keyword-based querying. In our experiments with four real datasets, Airphant's average end-to-end latencies are between 13 milliseconds and 300 milliseconds, up to 8.97× faster than Apache Lucence and 113.39× faster than Elasticsearch.},
+ author = {Chockchowwat, Supawit and Sood, Chaitanya and Park, Yongjoo},
+ booktitle = {2022 IEEE 38th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE53745.2022.00107},
+ issn = {2375-026X},
+ keyword = {Cloud computing;Databases;Scalability;Conferences;Search engines;Data warehouses;Data structures;Airphant;IoU Sketch;Multi layer Hash Table;Inverted Index;Indexing;Cloud storage;Separation of compute and storage;Physical database design;Database as a service;Information retrieval;Sketch data structure},
+ month = {May},
+ number = {},
+ pages = {1368-1381},
+ title = {Airphant: Cloud-oriented Document Indexing},
+ volume = {},
+ year = {2022}
+}

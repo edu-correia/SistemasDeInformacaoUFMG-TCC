@@ -1,0 +1,14 @@
+@conference{Spillane2010,
+ abstract = {The modern file system is still implemented in the kernel, and is statically linked with other kernel components. This architecture has brought performance and efficient integration with memory management. However kernel development is slow and modern storage systems must support an array of features, including distribution across a network, tagging, searching, deduplication, checksumming, snap-shotting, file preallocation, real time I/O guarantees for media, and more. To move complex components into user-level however will require an efficient mechanism for handling page faulting and zero-copy caching, write ordering, synchronous flushes, interaction with the kernel page write-back thread, and secure shared memory. We implement such a system, and experiment with a user-level object store built on top. Our object store is a complete re-design of the traditional storage stack and demonstrates the efficiency of our technique, and the flexibility it grants to user-level storage systems. Our current prototype file system incurs between a 1% and 6% overhead on the default native file system EXT3 for in-cache system workloads. Where the native kernel file system design has traditionally found its primary motivation. For update and insert intensive metadata workloads that are out-of-cache, we perform 39 times better than the native EXT3 file system, while still performing only 2 times worse on out-of-cache random lookups. © 2010 IEEE.},
+ author = {Spillane, Richard P. and Dixit, Sagar and Archak, Shrikar and Bhanage, Saumitra and Zadok, Erez},
+ doi = {10.1109/MSST.2010.5496973},
+ journal = {2010 IEEE 26th Symposium on Mass Storage Systems and Technologies, MSST2010},
+ note = {Cited by: 2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Exporting kernel page caching for efficient user-level I/O},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/77957825466?origin=resultslist},
+ year = {2010}
+}

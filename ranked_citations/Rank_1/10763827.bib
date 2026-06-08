@@ -1,0 +1,14 @@
+@inproceedings{10763827,
+ abstract = {Permissioned blockchains are gaining traction for enterprise applications due to their enhanced security and performance characteristics. However, they face significant scalability challenges, particularly in environments with high concurrency and diverse workload demands. In this paper, we present a novel architecture for scaling permissioned blockchains by disaggregating Log-Structured Merge (LSM) trees between execution and storage nodes. Our approach leverages the inherent structure of LSM-trees to efficiently handle write-intensive workloads by separating recent updates in execution nodes and long-term data storage in storage nodes. This design supports elastic scaling of both compute and memory resources, enabling independent and efficient resource utilization. We introduce the concept of Semi-stateful Nodes, which balance the benefits of fully-stateful and stateless nodes. This approach reduces communication overhead during parallel transaction execution while simultaneously improving scalability. Our architecture also includes a parallel transaction execution algorithm to minimize Cross-Shard Transactions (CSTs) and enhance overall system performance. Through our experimentation, we demonstrate that our system achieves significant performance improvements, including up to $15 \times$ increase in throughput compared to traditional architectures. The results indicate that our approach significantly reduces the overhead and time consumption during scalability operations in permissioned blockchains, making it a system that can achieve high scalability and good performance at a low cost.},
+ author = {Tian, Jiazhou and Qi, Guangpeng and Shang, Guangyong and Ma, Zhen and Liu, Yaxiong and Zhang, Meng and Li, Jingying and Wu, Delun and Yang, Yi and Ding, Xuan},
+ booktitle = {2024 IEEE 30th International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS63350.2024.00090},
+ issn = {2690-5965},
+ keyword = {Concurrent computing;Costs;Scalability;System performance;Memory management;Throughput;Blockchains;Security;Resource management;Faces;Sharding;Parallel Transaction Processing;Permissioned Blockchain},
+ month = {Oct},
+ number = {},
+ pages = {649-656},
+ title = {Scaling Permissioned Blockchain through LSM Disaggregation across Execution and Storage Nodes},
+ volume = {},
+ year = {2024}
+}

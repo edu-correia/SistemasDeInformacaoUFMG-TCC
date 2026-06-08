@@ -1,0 +1,14 @@
+@inproceedings{7344869,
+ abstract = {The ability to detect adverse drug events (ADEs) in electronic health records (EHRs) is useful in many medical applications, such as alerting systems that indicate when an ADE-specific diagnosis code should be assigned. Automating the detection of ADEs can be attempted by applying machine learning to existing, labeled EHR data. How to do this in an effective manner is, however, an open question. The issues addressed in this study concern the granularity of the classification task: (1) If we wish to predict the occurrence of any ADE, is it advantageous to conflate the various ADE class labels prior to learning, or should they be merged post prediction? (2) If we wish to predict a family of ADEs or even a specific ADE, can the predictive performance be enhanced by dividing the classification task into a cascading scheme: predicting first, on a coarse level, whether there is an ADE or not, and, in the former case, followed by a more specific prediction on which family the ADE belongs to, and then finally a prediction on the specific ADE within that particular family? In this study, we conduct a series of experiments using a real, clinical dataset comprising healthcare episodes that have been assigned one of eight ADE-related diagnosis codes and a set of randomly extracted episodes that have not been assigned any ADE code. It is shown that, when distinguishing between ADEs and non-ADEs, merging the various ADE labels prior to learning leads to significantly higher predictive performance in terms of accuracy and area under ROC curve. A cascade of random forests is moreover constructed to determine either the family of ADEs or the specific class label; here, the performance is indeed enhanced compared to directly employing a one-step prediction. This study concludes that, if predictive performance is of primary importance, the cascading scheme should be the recommended approach over employing a one-step prediction for detecting ADEs in EHRs.},
+ author = {Zhao, Jing and Henriksson, Aron and Boström, Henrik},
+ booktitle = {2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA)},
+ doi = {10.1109/DSAA.2015.7344869},
+ issn = {},
+ keyword = {Drugs;Diseases;Electronic medical records;Computers;Safety;History},
+ month = {Oct},
+ number = {},
+ pages = {1-8},
+ title = {Cascading adverse drug event detection in electronic health records},
+ volume = {},
+ year = {2015}
+}

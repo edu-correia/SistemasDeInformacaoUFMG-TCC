@@ -1,0 +1,14 @@
+@inproceedings{1268859,
+ abstract = {The paper presents a method for translating Boolean circuits to CNF by identifying trees of ITE operators, where each ITE has fanout count of 1, and representing every such tree with a single set of equivalent CNF clauses without intermediate variables for ITE outputs, except for the tree output. This not only eliminates intermediate variables, but also reduces the number of clauses, compared to conventional translation to CNF, where each ITE is assigned an output variable and is represented with a separate set of clauses. Other gates with fanout count of 1 are similarly merged with their fanout gate to generate a single set of equivalent clauses. This translation to CNF was implemented in a decision procedure for the logic of equality with uninterpreted functions and memories (EUFM), and was applied to formulas from formal verification of microprocessors. To increase the number of ITE-trees in the Boolean formulas, the decision procedure was optimized to preserve the ITE-tree structure of arguments to equality comparisons. In conventional translation to CNF with the unoptimized decision procedure, the benchmark formulas require up to hundreds of thousands of CNF variables and millions of clauses. The best translation strategy reduced the CNF variables by up to 8x; the clauses by up to 17x; the SAT-solver decisions by up to 79x; the SAT-solver conflicts by up to 96x; and accelerated the SAT solving by up to 420x.},
+ author = {Velev, M.N.},
+ booktitle = {Proceedings Design, Automation and Test in Europe Conference and Exhibition},
+ doi = {10.1109/DATE.2004.1268859},
+ issn = {1530-1591},
+ keyword = {Formal verification;Microprocessors;Signal processing;Decision feedback equalizers;Logic gates;Logic circuits;Acceleration;Observability;Testing;Business continuity},
+ month = {Feb},
+ number = {},
+ pages = {266-271 Vol.1},
+ title = {Exploiting signal unobservability for efficient translation to CNF in formal verification of microprocessors},
+ volume = {1},
+ year = {2004}
+}

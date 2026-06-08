@@ -1,0 +1,14 @@
+@article{9224619,
+ abstract = {A log-structured merge-tree-based key value store (LSMKV) is an append-only database for storing and retrieving unstructured data, especially in a write-intensive environment. This database uses hierarchical components to store and manage data. Upper-level components have a shorter data lifespan and a higher access locality than lower-level components. Hence, the data access latency of the upper-level components significantly affects the performance of the entire database. Hybrid solid-state drives (SSD) composed of media with different access speeds can improve the performance of an LSMKV by storing the upper-level components using a fast storage space. However, many hybrid SSDs use fast storage spaces to store data that are frequently allocated to the same logical address; they are not suitable for storing append-only component data, which are allocated to adjacent logical addresses. This article proposes a hybrid SSD-management method to reduce the data access latency of append-only LSMKVs and increase the durability of hybrid SSDs. The proposed method allocates the data of upper-level components to a fast storage space using the level information of the data as a hint. This study utilizes dynamic data separation to determine the components to be placed in the fast storage space, NAND block management to store the data with similar lifespans in the same fast NAND block, and a data-relocation method to migrate long-lived data from the fast NAND region to another NAND region. Experimental results indicate that the proposed method reduces the average I/O latency by an average of 12% and increases the device durability by an average of 22%.},
+ author = {Jeong, Joonyong and Kwak, Jaewook and Lee, Daeyong and Choi, Seungdo and Lee, Jungkeol and Choi, Jungwook and Song, Yong Ho},
+ doi = {10.1109/ACCESS.2020.3031322},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Compaction;Computer architecture;Flash memories;Microprocessors;Databases;Performance evaluation;Data placement;flash storage;hybrid NAND storage;key-value store;log-structured merge tree},
+ month = {},
+ number = {},
+ pages = {188256-188268},
+ title = {Level Aware Data Placement Technique for Hybrid NAND Flash Storage of Log-Structured Merge-Tree Based Key-Value Store System},
+ volume = {8},
+ year = {2020}
+}

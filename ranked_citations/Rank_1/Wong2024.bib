@@ -1,0 +1,16 @@
+@article{Wong2024,
+ abstract = {Rapid growth in data size poses significant computational and memory challenges to data processing. FPGA accelerators and near-storage processing have emerged as compelling solutions for tackling the growing computational and memory requirements. Many FPGA-based accelerators have shown to be effective in processing large data sets by leveraging the storage capability of either host-attached or FPGA-attached storage devices. However, the current HLS development environment does not allow direct access to host-or FPGA-attached NVMe storage from the HLS code. As such, users must frequently hand off between HLS and host code to access data in storage, and such a process requires tedious programming to ensure functional correctness. Moreover, since the HLS code uses radically different methods to access storage compared to DRAM, the HLS codebase targeting DRAM-based platforms cannot be easily ported to NVMe-based platforms, resulting in limited code portability and reusability. Furthermore, frequent suspension of HLS kernel and synchronization between CPU and FPGA introduce significant latency overhead and require sophisticated scheduling mechanisms to hide latency. To address these challenges, we propose a new HLS storage interface named DONGLE 2.0 that enables direct FPGA-orchestrated NVMe storage access. By providing a unified interface for storage and memory access, DONGLE 2.0 allows a single-source HLS program to target multiple memory/storage devices, thus making the codebase cleaner, portable, and more efficient. DONGLE 2.0 is an extension to DONGLE 1.0 [1] but adds support for host-attached storage. While its primary focus is still on FPGA NVMe access in near-storage configurations, the added host storage support ensures its compatibility with platforms that lack native support for FPGA-attached NVMe storage. We implemented a prototype of DONGLE 2.0 using an AMD/Xilinx Alveo U200 FPGA and Solidigm DC-P4610 SSD. Our evaluation on various workloads showed a geometric mean speed-up of 2.3× and a reduction in lines of code (LoC) by 2.4× compared to the state-of-the-art commercial platform when using FPGA-attached NVMe storage. Moreover, DONGLE 2.0 demonstrated a geometric mean speed-up of 1.5× and a reduction in LoC by 2.4× compared to the state-of-the-art commercial platform when using host-attached NVMe storage.  © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Wong, Linus Y. and Zhang, Jialiang and Li, Jing},
+ doi = {10.1145/3650038},
+ journal = {ACM Transactions on Reconfigurable Technology and Systems},
+ note = {Cited by: 2; All Open Access; Bronze Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DONGLE 2.0: Direct FPGA-Orchestrated NVMe Storage for HLS},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85206100300?origin=resultslist},
+ volume = {17},
+ year = {2024}
+}

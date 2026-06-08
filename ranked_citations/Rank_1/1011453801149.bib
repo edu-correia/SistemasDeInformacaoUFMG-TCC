@@ -1,0 +1,15 @@
+@article{10.1145/3801149,
+ abstract = {Software vulnerabilities exist in open-source software (OSS), and the developers who discover these vulnerabilities may submit issue reports (IRs) to describe their details. Security practitioners need to spend a lot of time manually identifying vulnerability-related IRs from the community, and the time gap may be exploited by attackers to harm the system. Previously, researchers have proposed automatic approaches to facilitate identifying these vulnerability-related IRs, but these works focus on textual descriptions but lack the comprehensive analysis of IR’s rich-text information. In this paper, we propose VulRTex, a reasoning-guided approach to identify vulnerability-related IRs with their rich-text information. In particular, VulRTex first utilizes the reasoning ability of the Large Language Model (LLM) to prepare the Vulnerability Reasoning Database with historical IRs. Then, it retrieves the relevant cases from the prepared reasoning database to generate reasoning guidance, which guides LLM to identify vulnerabilities by reasoning analysis on target IRs’ rich-text information. To evaluate the performance of VulRTex, we conduct experiments on 973,572 IRs, and the results show that VulRTex achieves the highest performance in identifying the vulnerability-related IRs and predicting CWE-IDs when the dataset is imbalanced, outperforming the best baseline with +11.0% F1, +20.2% AUPRC, and +10.5% Macro-F1, and 2x lower time cost than baseline reasoning approaches. Furthermore, VulRTex has been applied to identify 30 emerging vulnerabilities across 10 representative OSS projects in 2024’s GitHub IRs, and 11 of them are successfully assigned CVE-IDs, which illustrates VulRTex’s practicability.},
+ address = {New York, NY, USA},
+ author = {Jiang, Ziyou and Li, Mingyang and Yang, Guowei and Shi, Lin and Wang, Junjie and Wang, Qing},
+ doi = {10.1145/3801149},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Large Language Model, Software Vulnerability, Agentic AI},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {VulRTex: A Reasoning-Guided Approach to Identify Vulnerabilities from Rich-Text Issue Report},
+ url = {https://doi.org/10.1145/3801149},
+ year = {2026}
+}

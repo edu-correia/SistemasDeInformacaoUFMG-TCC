@@ -1,0 +1,14 @@
+@inproceedings{11185863,
+ abstract = {Integrating changes into large monolithic software repositories is a critical step in modern software development that substantially impacts the speed of feature delivery, the stability of the codebase, and the overall productivity of development teams. To ensure the stability of the main branch, many organizations use merge pipelines that test software versions before the changes are permanently integrated. However, the load on merge pipelines is often so high that they become bottlenecks, despite the use of parallelization. Existing optimizations frequently rely on specific build systems, limiting their generalizability and applicability. In this paper we propose to optimize the order of PRs in merge pipelines using practical build predictions utilizing only historical build data, PR metadata, and contextual information to estimate the likelihood of successful builds in the merge pipeline. By dynamically prioritizing likely passing PRs during peak hours, this approach maximizes throughput when it matters most. Experiments conducted on a real-world, large-scale project demonstrate that predictive ordering significantly outperforms traditional first-in-first-out (FIFO), as well as non-learning-based ordering strategies. Unlike alternative optimizations, this approach is agnostic to the underlying build system and thus easily integrable into existing automated merge pipelines.},
+ author = {Jungwirth, Maximilian and Gruber, Martin and Fraser, Gordon},
+ booktitle = {2025 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+ doi = {10.1109/ICSME64153.2025.00057},
+ issn = {2576-3148},
+ keyword = {Productivity;Software maintenance;Limiting;Pipelines;Organizations;Continuous integration;Metadata;Throughput;Optimization;Continuous Integration;Merge Pipelines;Build Prediction},
+ month = {Sep.},
+ number = {},
+ pages = {565-575},
+ title = {Improving Merge Pipeline Throughput in Continuous Integration via Pull Request Prioritization},
+ volume = {},
+ year = {2025}
+}

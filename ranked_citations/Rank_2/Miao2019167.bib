@@ -1,0 +1,14 @@
+@conference{Miao2019167,
+ abstract = {Stream analytics has an insatiable demand for memory and performance. Emerging hybrid memories combine commodity DDR4 DRAM with 3D-stacked High Bandwidth Memory (HBM) DRAM to meet such demands. However, achieving this promise is challenging because (1) HBM is capacitylimited and (2) HBM boosts performance best for sequential access and high parallelismworkloads. At first glance, stream analytics appears a particularly poor match for HBM because they have high capacity demands and data grouping operations, their most demanding computations, use random access. This paper presents the design and implementation of StreamBox-HBM, a stream analytics engine that exploits hybrid memories to achieve scalable high performance. StreamBox-HBM performs data grouping with sequential access sorting algorithms in HBM, in contrast to random access hashing algorithms commonly used in DRAM. StreamBox- HBM solely uses HBM to store Key Pointer Array (KPA) data structures that contain only partial records (keys and pointers to full records) for grouping operations. It dynamically creates and manages prodigious data and pipeline parallelism, choosing when to allocate KPAs in HBM. It dynamically optimizes for both the high bandwidth and limited capacity of HBM, and the limited bandwidth and high capacity of standard DRAM. StreamBox-HBM achieves 110 million records per second and 238 GB/s memory bandwidth while effectively utilizing all 64 cores of Intel's Knights Landing, a commercial server with hybrid memory. It outperforms stream engines with sequential access algorithms without KPAs by 7× and stream engines with random access algorithms by an order of magnitude in throughput. To the best of our knowledge, StreamBox-HBM is the first stream engine optimized for hybrid memories. © 2019 Association for Computing Machinery.},
+ author = {Miao, Hongyu and Jeon, Myeongjae and Pekhimenko, Gennady and McKinley, Kathryn S. and Xiaozhu Lin, Felix},
+ doi = {10.1145/3297858.3304031},
+ journal = {International Conference on Architectural Support for Programming Languages and Operating Systems - ASPLOS},
+ note = {Cited by: 29; All Open Access; Gold Open Access},
+ pages = {167 - 181},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {StreamBox-HBM: Stream Analytics on High Bandwidth Hybrid Memory},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85064662505?origin=resultslist},
+ year = {2019}
+}

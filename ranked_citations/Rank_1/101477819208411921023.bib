@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1921023,
+ abstract = {Nowadays, due to the increased user requirements of the fast and reliable data management operation for mobile applications, major device vendors use embedded DBMS for their mobile devices such as MP3 players, mobile phones, digital cameras and PDAs. However, database logging is the major bottleneck against the fast response time. There has been a lot of work minimizing logging overhead but no single recovery method provides the best performance to a variety of database workloads. In this paper, we present a novel recovery method called adaptive logging which can switch the logging method from ARIES to shadow paging adaptively at a page level according to the update state of each page on run time. Also, we propose a log compaction method called deferred logging which removes redundant logs by deferring to create log records until the updated data page is flushed or until the transaction commits. Deferred logging is coupled with adaptive logging seamlessly so that it boosts the performance of adaptive logging by reducing the typical overhead of hybrid methods. We have implemented the proposed approaches to our embedded DBMS which was deployed to more than 10 million mobile devices and evaluated them through a real world application on a mobile device. The result shows that our approaches can reduce logging overhead significantly and consequently can improve the response time of both small update transaction and large update transaction effectively.},
+ author = {Kim, Young-Seok and Jin, Heegyu and Woo, Kyoung-Gu},
+ doi = {10.14778/1920841.1921023},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {12},
+ pages = {1481–1492},
+ publisher = {VLDB Endowment},
+ title = {Adaptive logging for mobile device},
+ url = {https://doi.org/10.14778/1920841.1921023},
+ volume = {3},
+ year = {2010}
+}

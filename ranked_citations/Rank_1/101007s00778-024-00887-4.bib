@@ -1,0 +1,17 @@
+@article{10.1007/s00778-024-00887-4,
+ abstract = {Spatial join processing techniques that identify intersections between complex geometries (e.g., polygons) commonly follow a two-step filter-and-refine pipeline. The filter step evaluates the query predicate on the minimum bounding rectangles (MBRs) of the geometries, while the refinement step eliminates false positives by applying the query on the exact geometries. To accelerate spatial join evaluation over complex geometries, we propose a raster intervals approximation of object geometries and introduce a powerful intermediate step in the pipeline. In a preprocessing phase, our method (i) rasterizes each object geometry using a fine grid, (ii) models groups of nearby cells that intersect the polygon as an interval, and (iii) encodes each interval with a bitstring capturing the overlap of each cell in it with the polygon. Going one step further, we improve our approach by approximating each object with two sets of intervals that succinctly capture the raster cells that (i) intersect with the object and (ii) are fully contained within the object. Using this representation, we show that we can verify whether two polygons intersect through a sequence of linear-time joins between the interval sets. Our approximations are effectively compressible and customizable for partitioned data and polygons of varying sizes, rasterized at different granularities. Finally, we propose a novel algorithm that computes the interval approximation of a polygon without fully rasterizing it first, rendering the computation of approximations orders of magnitude faster. Experiments on real data demonstrate the effectiveness and efficiency of our proposal over previous work.},
+ address = {Berlin, Heidelberg},
+ author = {Georgiadis, Thanasis and Tzirita Zacharatou, Eleni and Mamoulis, Nikos},
+ doi = {10.1007/s00778-024-00887-4},
+ issn = {1066-8888},
+ issue_date = {Jan 2025},
+ journal = {The VLDB Journal},
+ month = {December},
+ number = {1},
+ numpages = {25},
+ publisher = {Springer-Verlag},
+ title = {Raster interval object approximations for spatial intersection joins: Raster Interval Object...},
+ url = {https://doi.org/10.1007/s00778-024-00887-4},
+ volume = {34},
+ year = {2024}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3406186,
+ abstract = {We introduce the concurrent binary tree (CBT), a novel concurrent representation to build and update arbitrary binary trees in parallel. Fundamentally, our representation consists of a binary heap, i.e., a 1D array, that explicitly stores the sum-reduction tree of a bitfield. In this bitfield, each one-valued bit represents a leaf node of the binary tree encoded by the CBT, which we locate algorithmically using a binary-search over the sum-reduction. We show that this construction allows to dispatch down to one thread per leaf node and that, in turn, these threads can safely split and/or remove nodes concurrently via simple bitwise operations over the bitfield. The practical benefit of CBTs lies in their ability to accelerate binary-tree-based algorithms with parallel processors. To support this claim, we leverage our representation to accelerate a longest-edge-bisection-based algorithm that computes and renders adaptive geometry for large-scale terrains entirely on the GPU. For this specific algorithm, the CBT accelerates processing speed linearly with the number of processors.},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Dupuy, Jonathan},
+ doi = {10.1145/3406186},
+ issue_date = {August 2020},
+ journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+ keyword = {GPU, binary heap, binary tree, concurrent, longest edge bisection, parallel, real-time},
+ month = {August},
+ number = {2},
+ numpages = {20},
+ publisher = {Association for Computing Machinery},
+ title = {Concurrent Binary Trees (with application to longest edge bisection)},
+ url = {https://doi.org/10.1145/3406186},
+ volume = {3},
+ year = {2020}
+}

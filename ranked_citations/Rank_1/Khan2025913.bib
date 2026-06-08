@@ -1,0 +1,15 @@
+@article{Khan2025913,
+ abstract = {Graphs-based neural networks are powerful tools for analyzing intricate non-euclidean data structures to solve complex real-world problems bounded by latency and throughput constraints. However, the computation structures operate on ultra-sparse and unstructured matrices resulting in load balancing and data locality challenges for the sparse matrixmatrix multiplication (SpMM) in massively parallel processors. To overcome these challenges, researchers have turned to model pruning techniques that effectively compress the hidden dimensions in the dense matrices without compromising model accuracy. However, exploiting sparsity for performance becomes challenging when the compressed dimensions cannot exploit the full potential of vector-level parallelism in single instruction multiple thread (SIMT) processors. We propose to virtualize the vector unit into virtual SIMT slots to map the low-dimensional SpMM computations, and improve parallel hardware utilization. The key challenge is to find parallel work to occupy the exposed virtualized slots. A static slot mapping strategy exposes parallelism by trading off load-balancing, memory coalescing, and data locality when distributing work among the slots. The key insight is that work efficiency and parallelism are highly input graph dependent, and static schemes cannot optimally exploit performance. An input-aware slot mapping strategy is proposed that adapts to the input graph's characteristics at SIMT granularity to expose maximum parallelism at runtime. The evaluation with an NVIDIA H100 GPU shows improved performance scaling using the proposed input-aware slot mapping heuristic compared to the static baseline. © 2025 IEEE.},
+ author = {Khan, Hanan and Gurevin, Deniz and Khan, Omer},
+ doi = {10.1109/IPDPS64566.2025.00086},
+ journal = {Proceedings of the IEEE International Parallel and Distributed Processing Symposium, IPDPS},
+ note = {Cited by: 0},
+ number = {2025},
+ pages = {913 - 925},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Graph Input-Aware Matrix Multiplication for Pruned Graph Neural Network Acceleration},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105013078948?origin=resultslist},
+ year = {2025}
+}

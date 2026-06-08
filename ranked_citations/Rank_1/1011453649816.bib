@@ -1,0 +1,18 @@
+@article{10.1145/3649816,
+ abstract = {The ongoing trend of hardware specialization has led to a growing use of custom data formats when processing sparse workloads, which are typically memory-bound. These formats facilitate optimized software/hardware implementations by utilizing sparsity pattern- or target-aware data structures and layouts to enhance memory access latency and bandwidth utilization. However, existing sparse tensor programming models and com pilers offer little or no support for productively customizing the sparse formats. Additionally, because these frameworks represent formats using a limited set of per-dimension attributes, they lack the flexibility to accommodate numerous new variations of custom sparse data structures and layouts.To overcome this deficiency, we propose UniSparse, an intermediate language that provides a unified abstraction for representing and customizing sparse formats. Unlike the existing attribute-based frameworks, UniSparse decouples the logical representation of the sparse tensor (i.e., the data structure) from its lowlevel memory layout, enabling the customization of both. As a result, a rich set of format customizations can be succinctly expressed in a small set of well-defined query, mutation, and layout primitives. We also develop a compiler leveraging the MLIR infrastructure, which supports adaptive customization of formats and automatic code generation of format conversion and compute operations for heterogeneous architectures We demonstrate the efficacy of our approach through experiments running commonly-used sparse linear algebra operations with specialized formats on multiple different hardware targets, including an Intel CPU, an NVIDIA GPU, an AMD Xilinx FPGA, and a simulated processing-in-memory (PIM) device.},
+ address = {New York, NY, USA},
+ articleno = {99},
+ author = {Liu, Jie and Zhao, Zhongyuan and Ding, Zijian and Brock, Benjamin and Rong, Hongbo and Zhang, Zhiru},
+ doi = {10.1145/3649816},
+ issue_date = {April 2024},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {sparse data formats, compilers, programming languages, heterogeneous systems},
+ month = {April},
+ number = {OOPSLA1},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {UniSparse: An Intermediate Language for General Sparse Format Customization},
+ url = {https://doi.org/10.1145/3649816},
+ volume = {8},
+ year = {2024}
+}

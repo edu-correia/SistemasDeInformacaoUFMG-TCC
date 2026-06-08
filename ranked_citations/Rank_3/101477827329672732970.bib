@@ -1,0 +1,17 @@
+@article{10.14778/2732967.2732970,
+ abstract = {Lazy replication with snapshot isolation (SI) has emerged as a popular choice for distributed databases. However, lazy replication often requires execution of update transactions at one (master) site so that it is relatively easy for a total SI order to be determined for consistent installation of updates in the lazily replicated system. We propose a set of techniques that support update transaction execution over multiple partitioned sites, thereby allowing the master to scale. Our techniques determine a total SI order for update transactions over multiple master sites without requiring global coordination in the distributed system, and ensure that updates are installed in this order at all sites to provide consistent and scalable replication with SI. We present ConfluxDB, a PostgreSQL-based implementation of our techniques, and demonstrate its effectiveness through experimental evaluation.},
+ author = {Chairunnanda, Prima and Daudjee, Khuzaima and \"{O}zsu, M. Tamer},
+ doi = {10.14778/2732967.2732970},
+ issn = {2150-8097},
+ issue_date = {July 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {947–958},
+ publisher = {VLDB Endowment},
+ title = {ConfluxDB: multi-master replication for partitioned snapshot isolation databases},
+ url = {https://doi.org/10.14778/2732967.2732970},
+ volume = {7},
+ year = {2014}
+}

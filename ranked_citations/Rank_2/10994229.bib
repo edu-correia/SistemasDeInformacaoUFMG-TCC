@@ -1,0 +1,14 @@
+@article{10994229,
+ abstract = {The increasing use of unmanned aerial vehicles (UAVs) highlights the need for robust classification systems. This study explores the impact of noise on UAV classification accuracy using radar-based deep learning (DL). A noise-free dataset of range-Doppler maps (RDMs) is generated from digital twin simulations, and noisy datasets are created by adding additive white Gaussian noise (AWGN) across signal-to-noise ratio (SNR) levels from −20 to 10 dB. A DL model, trained on a merged dataset, achieves an accuracy exceeding 98%. Performance evaluation shows accuracy dropping to 34% at −14-dB SNR, with receiver operating characteristic (ROC) curves used for analysis. Inference at the software level is conducted using TensorFlow on a PC within the Vitis-AI Docker environment, achieving an accuracy of 96.39%. The quantized model, when deployed on the KR260 field-programmable gate array (FPGA), attains an accuracy of 94.73%. Although there is a slight drop in accuracy, the hardware (HW) implementation demonstrates impressive performance, supporting a real-time UAV classification system that is effective across different noise levels. Finally, the pretrained model is deployed on an FPGA processing platform to evaluate its effectiveness for real-time classification. By leveraging the FPGA’s real-time processing capabilities, this approach satisfies the stringent speed and accuracy requirements necessary for UAV classification.},
+ author = {Ahmed, Taher S. and Sayed, Ahmed N. and Youssef, Ahmed and Shaker, George and Elbahnasawy, Magdy},
+ doi = {10.1109/JSEN.2025.3566651},
+ issn = {1558-1748},
+ journal = {IEEE Sensors Journal},
+ keyword = {Autonomous aerial vehicles;Radar;Accuracy;Signal to noise ratio;Radar cross-sections;Real-time systems;Deep learning;Field programmable gate arrays;AWGN;Solid modeling;Deep learning processor unit (DPU);radar digital twins;range–Doppler maps (RDMs);unmanned aerial vehicle (UAV) classification;UAV detection},
+ month = {June},
+ number = {12},
+ pages = {22850-22862},
+ title = {Assessing Noise Effects on UAV Classification Accuracy With Deep Learning and FPGA Real-Time Processing: A Study Utilizing Radar Digital Twins},
+ volume = {25},
+ year = {2025}
+}

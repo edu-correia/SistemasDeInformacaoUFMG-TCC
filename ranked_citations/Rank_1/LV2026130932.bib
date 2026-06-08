@@ -1,0 +1,13 @@
+@article{LV2026130932,
+ abstract = {In this paper, we focus on weakly supervised semantic segmentation (WSSS) task, which aims to generate accurate pixel-level predictions with only image-level labels available. A typical solution is to generate dense masks from sparse attention maps with the guidance of image-level labels. Recent works utilize Contrastive Language-Image Pre-training (CLIP) in WSSS task. As CLIP aligns visual features with textural features, most previous works directly adopt CLIP to generate class-aware attention maps. However, they usually train a separate segmentation network to obtain satisfactory performance with attention maps as pseudo masks. In this work, we find that a frozen CLIP as segmentation encoder may perform quite well in WSSS task, and additional encoder training is not necessary. Specifically, we first generate pixel-level pseudo masks via Grad-CAM from the frozen CLIP model. To obtain fine-grained attention, we compute CAMs by jointly leveraging gradients from both the last and intermediate transformer layers. Subsequently, we append a lightweight convolutional decoder to produce initial segmentation predictions. To mitigate the class-preference and space-preference biases inherent in CLIP, the Bias Rectification Module is employed to adaptively rectify these biases. We further impose a contrastive loss between masked image features and textual features to better align the visual and textual representations within CLIP. In addition, a supervised loss between the generated pseudo masks and the rectified predictions is employed to refine the dense outputs. Extensive experiments on PASCAL VOC2012 and MS COCO2014 datasets demonstrate that our method performs favorably against previous state-of-the-art WSSS approaches.},
+ author = {You Lv and Guoliang Kang and Wei Wei},
+ doi = {https://doi.org/10.1016/j.eswa.2025.130932},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Semantic segmentation, Weakly supervised, CLIP},
+ pages = {130932},
+ title = {Additional encoder is not what you need: Unleashing the potential of CLIP for weakly-supervised semantic segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425045476},
+ volume = {306},
+ year = {2026}
+}

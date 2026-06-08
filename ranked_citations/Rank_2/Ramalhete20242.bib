@@ -1,0 +1,14 @@
+@conference{Ramalhete20242,
+ abstract = {Concurrency controls with optimistic read accesses and pessimistic write accesses are among the fastest in the literature. However, during write transactions these algorithms need to increment an atomic variable, the central clock, limiting parallelism and preventing scalability at high core counts. In this paper, we propose a new concurrency control, Deferred Clock Transactional Locking (DCTL), which significantly reduces the heartbeat of the central clock, thus increasing scalability. DCTL will not increment the clock for consecutive disjoint transactions. An optimized variant, named DCOTL, allows for consecutive transactions with non-disjoint write-accesses to commit without incrementing the clock. Moreover, we show variants of these two algorithms with starvation-free transactions. Transactions in DCTL are opaque, which means it can be applied to concurrent data structures, Database Management Systems, Software Transactional Memory, and Persistent Transactional Memory. Our experiments show that these DCTL algorithms match or surpass the current state of the art for most workloads. We adapted both algorithms using an existing durability technique and implemented a fully transactional DBMS with disk persistence, whose scalability in write transactions exceeds the current state of the art. © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Ramalhete, Pedro and Correia, Andreia},
+ doi = {10.1145/3627535.3638472},
+ journal = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPOPP},
+ note = {Cited by: 4},
+ pages = {2 - 16},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Scaling Up Transactions with Slower Clocks},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85187197189?origin=resultslist},
+ year = {2024}
+}

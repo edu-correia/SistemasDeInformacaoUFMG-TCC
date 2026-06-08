@@ -1,0 +1,14 @@
+@inproceedings{9458734,
+ abstract = {Counters are the fundamental building block of many data sketching schemes, which hash items to a small number of counters and account for collisions to provide good approximations for frequencies and other measures. Most existing methods rely on fixed-size counters, which may be wasteful in terms of space, as counters must be large enough to eliminate any risk of overflow. Instead, some solutions use small, fixed-size counters that may overflow into secondary structures.This paper takes a different approach. We propose a simple and general method called SALSA for dynamic re-sizing of counters, and show its effectiveness. SALSA starts with small counters, and overflowing counters simply merge with their neighbors. SALSA can thereby allow more counters for a given space, expanding them as necessary to represent large numbers. Our evaluation demonstrates that, at the cost of a small overhead for its merging logic, SALSA significantly improves the accuracy of popular schemes (such as Count-Min Sketch and Count Sketch) over a variety of tasks. Our code is released as open source [1].},
+ author = {Basat, Ran Ben and Einziger, Gil and Mitzenmacher, Michael and Vargaftik, Shay},
+ booktitle = {2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE51399.2021.00080},
+ issn = {2375-026X},
+ keyword = {Measurement errors;Heuristic algorithms;Conferences;Merging;Layout;Data engineering;Encoding},
+ month = {April},
+ number = {},
+ pages = {864-875},
+ title = {SALSA: Self-Adjusting Lean Streaming Analytics},
+ volume = {},
+ year = {2021}
+}

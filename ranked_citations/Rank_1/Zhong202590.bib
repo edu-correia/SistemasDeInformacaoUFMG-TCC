@@ -1,0 +1,14 @@
+@conference{Zhong202590,
+ abstract = {We introduce VEGA, an AI-driven system aimed at easing the development of compiler backends for new targets. Our approach involves categorizing functions from existing backends into function groups, each comprising various target-specific implementations of a standard compiler interface function, abstracted as a single function template. Therefore, generating a new backend involves customizing these function templates to specific target requirements. To capitalize on AI’s capabilities in code generation, VEGA maps statements in a target-specific version of a function template into feature vectors, distinguishing between target-independent and target-specific properties. Leveraging a pre-trained model, VEGA can efficiently auto-generate a version of each function template tailored to a specific target, thereby enabling the construction of a complete compiler backend for a new target based solely on its target description files. We evaluated VEGA on three distinct targets: a CPU processor (RISC-V), a customized processor with instruction extensions (RI5CY), and an IoT processor (xCORE). VEGA demonstrated high efficiency, generating compiler backends under an hour, which can substantially enhance developer productivity. Across the three targets, VEGA achieved accuracy rates of 71.5%, 73.2%, and 62.2% for all generated functions, significantly outperforming the traditional fork-flow method, which yielded less than 8% accuracy. Moreover, VEGA provides explicit confidence scores for generated functions and statements, allowing developers to easily identify areas requiring minimal manual intervention. This research has the potential to improve the effectiveness of traditional compiler backend development. © 2025 Copyright held by the owner/author(s).},
+ author = {Zhong, Ming and Lv, Fang and Wang, Lulin and Qiu, Lei and Wang, Yingying and Liu, Ying and Cui, Huimin and Feng, Xiaobing and Xue, Jingling},
+ doi = {10.1145/3696443.3708931},
+ journal = {CGO 2025 - Proceedings of the 23rd ACM/IEEE International Symposium on Code Generation and Optimization},
+ note = {Cited by: 4},
+ pages = {90 - 106},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {VEGA: Automatically Generating Compiler Backends using a Pre-trained Transformer Model},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105001151106?origin=resultslist},
+ year = {2025}
+}

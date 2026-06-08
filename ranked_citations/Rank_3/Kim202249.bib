@@ -1,0 +1,14 @@
+@conference{Kim202249,
+ abstract = {Multiversion concurrency control (MVCC) and design principles thereof are ingrained in modern database management systems, thus promoting remarkable progress in managing online transaction processing (OLTP) workloads for decades. However, MVCC systems would battle two vital concerns when facing hybrid transactional/analytical processing (HTAP). The first concern is to ensure rapid version searching for analytic queries with less I/O, and the second concern is to reclaim garbage data versions promptly for easing the strain on storage footprint. These are often tightly coupled since many MVCC systems rely on unified version storage that poses a space-time tradeoff in HTAP, giving rise to disappointing performance metrics that may negatively stereotype OLTP-friendly MVCC systems. This paper refutes the stereotype resulting from coupled design concerns and addresses the core problem by proposing Diva (Decoupling Index from Version dAta) that physically separates version index from version data; for decoupled concerns, we devise independent management policies: provisional version indexing and time interval-based version garbage collection. The separation of coupled concerns would render legacy disk-based MVCC systems more HTAP-friendly. We applied Diva to two full-fledged database systems-PostgreSQL and MySQL-and demonstrated that the systems with Diva escaped the space-time tradeoff under hybrid transactional/analytical workloads. © 2022 ACM.},
+ author = {Kim, Jongbin and Yu, Jaeseon and Ahn, Jaechan and Kang, Sooyong and Jung, Hyungsoo},
+ doi = {10.1145/3514221.3526135},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 13},
+ pages = {49 - 64},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Diva: Making MVCC Systems HTAP-Friendly},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85132748826?origin=resultslist},
+ year = {2022}
+}

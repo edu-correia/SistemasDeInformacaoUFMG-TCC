@@ -1,0 +1,13 @@
+@article{HU2021102547,
+ abstract = {A computed tomography (CT) scan may be composed of hundreds of two-dimensional image slices. Therefore, doctors who diagnose rib fractures using CT may feel fatigued given the nature of the process, resulting in missed diagnosis. Computer-aided diagnosis is an effective means to reduce missed diagnosis. In this study, based on the difficulties associated with computer-aided rib fracture diagnosis, we conduct the following two tasks. Firstly, a data cleaning algorithm is proposed. Given the lack of publicly available CT rib fracture datasets, a CT rib fracture dataset is established using real clinical data collected from hospitals cleaned by this algorithm, which provides a good trade-off between human resource consumption and cleaning accuracy. Secondly, we propose a slice grouping and aggregation network (SGANet) model, which can classify the cases of rib fracture via three processes. Initially, several consecutive slices are merged into a group by three-dimensional (3D) convolution. Subsequently, the high-level features of each slice group are extracted by two-dimensional (2D) convolution to simulate the process through which doctors observe changes in the rib in the adjacent slice group with one slice as the center. Finally, the features of different groups are aggregated by 3D convolution for classification. The efficacy of the model is verified by a clinical dataset with the ground truth established by experienced doctors, and the results demonstrate that the missed diagnosis rate of rib fractures can be significantly reduced, albeit with a slight increase in the workload on doctors. Source code and dataset is available at https://github.com/jjjpg/SGANet.},
+ author = {Yetian Hu and Xiuchao He and Rong Zhang and Lijun Guo and Linlin Gao and Jianhua Wang},
+ doi = {https://doi.org/10.1016/j.bspc.2021.102547},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {CT, Rib fracture, 3D convolution, Grouping and aggregation, Auxiliary diagnosis},
+ pages = {102547},
+ title = {Slice grouping and aggregation network for auxiliary diagnosis of rib fractures},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809421001440},
+ volume = {67},
+ year = {2021}
+}

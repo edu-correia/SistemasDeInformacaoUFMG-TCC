@@ -1,0 +1,14 @@
+@conference{Li20253133,
+ abstract = {The explosive growth of mini-game platforms has led to widespread code plagiarism, where malicious users access popular games' source code and republish them with modifications. While existing static analysis tools can detect simple obfuscation techniques like variable renaming and dead code injection, they fail against sophisticated deep obfuscation methods such as encrypted code with local or cloud-based decryption keys that completely destroy code structure and render traditional Abstract Syntax Tree analysis ineffective. To address these challenges, we present JSidentify-V2, a novel dynamic analysis framework that detects mini-game plagiarism by capturing memory invariants during program execution. Our key insight is that while obfuscation can severely distort static code characteristics, runtime memory behavior patterns remain relatively stable. JSidentify-V2 employs a four-stage pipeline: (1) static pre-analysis and instrumentation to identify potential memory invariants, (2) adaptive hot object slicing to maximize execution coverage of critical code segments, (3) Memory Dependency Graph construction to represent behavioral fingerprints resilient to obfuscation, and (4) graph-based similarity analysis for plagiarism detection.We evaluate JSidentify-V2 against eight obfuscation methods on a comprehensive dataset of 1,200 mini-games. Our framework achieves over 90% similarity detection across all tested obfuscation techniques, maintaining high accuracy even against advanced decryption-based methods where existing tools achieve near 0% detection rates. In real-world deployment, JSidentify-V2 achieves 100% precision and 99.8% recall while delivering an 8× speedup compared to previous methods. Our production deployment demonstrates that plagiarism complaints have decreased by over 80%, proving JSidentify-V2's effectiveness in protecting intellectual property rights in mini-game ecosystems. © 2025 IEEE.},
+ author = {Li, Zhihao and Wang, Chaozheng and Li, Zongjie and Peng, Xinyong and Xia, Qun and Lu, Haochuan and Xiong, Ting and Gao, Shuzheng and Gao, Cuiyun and Wang, Shuai and Deng, Yuetang and Ma, Huafeng},
+ doi = {10.1109/ASE63991.2025.00257},
+ journal = {Proceedings - 2025 40th IEEE/ACM International Conference on Automated Software Engineering, ASE 2025},
+ note = {Cited by: 0},
+ pages = {3133 - 3144},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {JSidentify-V2: Leveraging Dynamic Memory Fingerprinting for Mini-Game Plagiarism Detection},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105034656426?origin=resultslist},
+ year = {2025}
+}

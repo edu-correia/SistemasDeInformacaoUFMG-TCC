@@ -1,0 +1,14 @@
+@article{11483344,
+ abstract = {Hybrid beamforming for extremely large-scale multiple-input multiple-output (XL-MIMO) systems is challenging in the near field because the channel depends jointly on angle and distance, and the multiuser interference (MUI) is strong. Existing deep learning methods typically follow either a decoupled design that optimizes analog beamforming without explicitly accounting for MUI, or an end-to-end (E2E) joint analog–digital optimization that can be unstable under nonconvex constant-modulus (CM), pronounced analog–digital coupling, and gradient pattern of sum-rate loss. To address both issues, we develop a complex-valued E2E framework based on a variant minimum mean square error (variant-MMSE) criterion, where the digital precoder is eliminated in closed form via Karush–Kuhn–Tucker (KKT) conditions so that analog learning is trained with a stable objective. The network employs a grouped complex-convolution sensing front-end for uplink (UL) measurements, a shared complex multi-layer perceptron (MLP) for per-user feature extraction, and a merged constant-modulus head to output the analog precoder. In the indirect mode, the network designs hybrid beamformers from estimated channel state information (CSI). In the direct mode where explicit CSI is unavailable, the network learns the sensing operator and the analog mapping from short pilots, after which additional pilots estimate the equivalent channel and enable a KKT closed-form digital precoder. Simulations show that the indirect mode approaches the performance of iterative variant-MMSE optimization with a complexity reduction proportional to the antenna number. In the direct mode, the proposed method improves spectral efficiency over sparse-recovery pipelines and recent deep learning baselines under the same pilot budget.},
+ author = {Li, Xinyang and Yang, Songjie and Ning, Boyu and He, Zongmiao and Ling, Xiang and Yuen, Chau},
+ doi = {10.1109/TWC.2026.3682746},
+ issn = {1558-2248},
+ journal = {IEEE Transactions on Wireless Communications},
+ keyword = {Antennas;Apertures;Antenna arrays;Antennas and propagation;Planar arrays;Feeds;Aperture antennas;Radio broadcasting;Frequency modulation;Circuits;Hybrid beamforming;extremely large-scale MIMO (XL-MIMO);near-field communications;multiuser interference;deep learning;deep complex neural networks},
+ month = {},
+ number = {},
+ pages = {15199-15215},
+ title = {Indirect and Direct Multiuser Hybrid Beamforming for Far-Field and Near-Field Communications: A Deep Learning Approach},
+ volume = {25},
+ year = {2026}
+}

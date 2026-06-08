@@ -1,0 +1,14 @@
+@conference{Wang20171174,
+ abstract = {Distributed burst buffers are a promising storage architecture for handling I/O workloads for exascale computing. Their aggregate storage bandwidth grows linearly with system node count. However, although scientific applications can achieve scalable write bandwidth by having each process write to its node-local burst buffer, metadata challenges remain formidable, especially for files shared across many processes. This is due to the need to track and organize file segments across the distributed burst buffers in a global index. Because this global index can be accessed concurrently by thousands or more processes in a scientific application, the scalability of metadata management is a severe performance-limiting factor. In this paper, we propose MetaKV: A key-value store that provides fast and scalable metadata management for HPC metadata workloads on distributed burst buffers. MetaKV complements the functionality of an existing key-value store with specialized metadata services that efficiently handle bursty and concurrent metadata workloads: Compressed storage management, supervised block clustering, and log-ring based collective message reduction. Our experiments demonstrate that MetaKV outperforms the state-of-the-art key-value stores by a significant margin. It improves put and get metadata operations by as much as 2.66× and 6.29×, respectively, and the benefits of MetaKV increase with increasing metadata workload demand. © 2017 IEEE.},
+ author = {Wang, Teng and Moody, Adam and Zhu, Yue and Mohror, Kathryn and Sato, Kento and Islam, Tanzima and Yu, Weikuan},
+ doi = {10.1109/IPDPS.2017.39},
+ journal = {Proceedings - 2017 IEEE 31st International Parallel and Distributed Processing Symposium, IPDPS 2017},
+ note = {Cited by: 19},
+ pages = {1174 - 1183},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MetaKV: A Key-Value Store for Metadata Management of Distributed Burst Buffers},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85027705777?origin=resultslist},
+ year = {2017}
+}

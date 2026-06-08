@@ -1,0 +1,14 @@
+@inproceedings{11282921,
+ abstract = {Sparse-sparse matrix multiplication (SpGEMM) is a well-studied problem on CPUs, GPUs, accelerators (e.g. FPGAs), and distributed systems. The main computational bottleneck in SpGEMM is the reduction process, which involves matching indices to accumulate partial products that map to the same output locations and requires irregular memory accesses. Efficient implementations must use the memory hierarchy effectively so that this reduction is done in fast local (cache) memory as much as possible. This is challenging, especially on GPUs, where the local memory is managed explicitly, as different rows of the result may have vastly different numbers of nonzero elements and vastly different numbers of partial products required to produce the output row which may not fit in the local memory. We demonstrate an SpGEMM implementation on GPUs which perfectly partitions the partial products into equal-size blocks such that each block maps to disjoint output locations. In this way, the block size can be chosen to maximize local memory, all reductions happen in local memory, and each block can be processed independently without communication or data from other blocks. We show how this partitioning can be achieved by solving many instances of a multiway merge partitioning problem. There are several algorithms in the literature for solving this problem. We present the mathematical formulation, missing from all papers providing algorithms for this problem, and show that this is a useful framework for parallelizing it efficiently for GPUs. To our knowledge, this partitioning scheme has never been applied to SpGEMM. We evaluate our SpGEMM implementation, MMSpGEMM, with respect to state-of-the-art implementations including cuSPARSE, TileSpGEMM, spECK, and AC-SpGEMM, achieving speedups of up to $5.3 x, 10.0 x, 1.3 x$, and $1.1 x$, respectively, on a select set of 20 SuiteSparse matrices, and much higher on synthetic matrix multiplications with different left and right matrices. Finally, we discuss improvements and limitations and suggest ways to incorporate the idea into more general SpGEMM routines.},
+ author = {Lorimer, Eric and Han, Ruobing and Kang, Sung Ha and Kim, Hyesoon},
+ booktitle = {2025 34th International Conference on Parallel Architectures and Compilation Techniques (PACT)},
+ doi = {10.1109/PACT65351.2025.00025},
+ issn = {},
+ keyword = {Source coding;Memory management;Cache memory;Graphics processing units;Load management;Partitioning algorithms;Parallel architectures;Sparse matrices;Field programmable gate arrays;GPU;SpGEMM;load balancing;partitioning;sparse matrix},
+ month = {Nov},
+ number = {},
+ pages = {160-171},
+ title = {Multiway Merge Partitioning for Sparse-Sparse Matrix Multiplication on GPUs},
+ volume = {},
+ year = {2025}
+}

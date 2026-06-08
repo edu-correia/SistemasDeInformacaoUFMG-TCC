@@ -1,0 +1,13 @@
+@article{ZHAO2025102514,
+ abstract = {Accurate segmentation of hepatic vessels is pivotal for guiding preoperative planning in ablation surgery utilizing CT images. While non-contrast CT images often lack observable vessels, we focus on segmenting hepatic vessels within preoperative MR images. However, the vascular structures depicted in MR images are susceptible to noise, leading to challenges in connectivity. To address this issue, we propose a two-stage two-stream graph attention U-Net (i.e., TTGA U-Net) for hepatic vessel segmentation. Specifically, the first-stage network employs a CNN or Transformer-based architecture to preliminarily locate the vessel position, followed by an improved superpixel segmentation method to generate graph structures based on the positioning results. The second-stage network extracts graph node features through two parallel branches of a graph spatial attention network (GAT) and a graph channel attention network (GCT), employing self-attention mechanisms to balance these features. The graph pooling operation is utilized to aggregate node information. Moreover, we introduce a feature fusion module instead of skip connections to merge the two graph attention features, providing additional information to the decoder effectively. We establish a novel well-annotated high-quality MR image dataset for hepatic vessel segmentation and validate the vessel connectivity enhancement network’s effectiveness on this dataset and the public dataset 3D IRCADB. Experimental results demonstrate that our TTGA U-Net outperforms state-of-the-art methods, notably enhancing vessel connectivity.},
+ author = {Ziqi Zhao and Wentao Li and Xiaoyi Ding and Jianqi Sun and Lisa X. Xu},
+ doi = {https://doi.org/10.1016/j.compmedimag.2025.102514},
+ issn = {0895-6111},
+ journal = {Computerized Medical Imaging and Graphics},
+ keyword = {Hepatic vessel segmentation, Graph neural network, Vessel connectivity},
+ pages = {102514},
+ title = {TTGA U-Net: Two-stage two-stream graph attention U-Net for hepatic vessel connectivity enhancement},
+ url = {https://www.sciencedirect.com/science/article/pii/S0895611125000230},
+ volume = {122},
+ year = {2025}
+}

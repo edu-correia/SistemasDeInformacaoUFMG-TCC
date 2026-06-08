@@ -1,0 +1,15 @@
+@article{Zhu2026318,
+ abstract = {Log parsing is a critical step for log analysis, responsible for converting raw, semi-structured log messages into structured templates. Despite using semantic knowledge to enhance template extraction, LLM-based log parsers frequently generate fragmented templates, generating several marginally distinct templates for semantically identical events. This fragmentation generates duplicate downstream processing, reduces cache hit rates, and inflates the template pool. We introduce EM-Merge, a lightweight, model-independent postprocessing layer that directly mitigates fragmentation without requiring further LLM calls. EM-Merge employs a two-stage strategy: (1) semantic screening, where newly generated and cached templates are encoded with Sentence-BERT and nearest-neighbor search selects semantically plausible candidates; (2) confidence-weighted structural merging, where candidate pairs are scored by a normalized longest-common-subsequence measure modulated by LLM generation confidences, then clustered and merged into generalized templates (non-common tokens replaced by wildcards). This design preserves semantic distinctions while preventing misleading splits driven by punctuation or surface variation. We evaluate EM-Merge on 14 public log datasets and find that, with no runtime overhead, it reliably reduces template redundancy, improves grouping and parsing accuracy, and lowers end-to-end processing cost when compared to strong baselines. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2026.},
+ author = {Zhu, Qiyue and Wang, Jinyuan and Yang, Yani and Li, Tong},
+ doi = {10.1007/978-981-95-7826-9_17},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {318 - 338},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {EM-Merge: Consolidating Fragmented Templates in LLM Log Parsing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105038890152?origin=resultslist},
+ volume = {16458 LNCS},
+ year = {2026}
+}

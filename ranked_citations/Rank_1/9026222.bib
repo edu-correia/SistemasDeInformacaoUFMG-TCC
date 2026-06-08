@@ -1,0 +1,14 @@
+@inproceedings{9026222,
+ abstract = {This paper presents online SLAM for self-localization of mobile robots in artificial environments. This proposed method exploits global planar features as landmarks in extended Kalman filter (EKF). The main purpose of using global planer features is reducing accumulative error of the estimation. Planes are extracted from point cloud of 3-D LiDAR as normals. These normals are projected onto “depth-Gaussian sphere” Those points from each plane are concentrated in one place on the sphere since planes has many normals which are almost same directions. These concentrations of points are deemed as planar features. The state vector of EKF has states of both a robot and landmarks. Prediction steps compute integration of angular velocity from gyroscope and linear velocity from wheel encoders, respectively. Observation steps update the states by associating observed planes and landmark planes. Area of landmark planes are also expanded with every association. Observed planes which are not associated with any landmarks become new landmarks, and the state vector is augmented. Similar landmarks are merged as necessary. To avoid mismatching between observations and landmarks, candidates for the association are selected by some conditions. To evaluate the proposed method, an experiment with an actual robot was performed. It shows the method suppresses accumulative error of self-localization by using the landmarks.},
+ author = {Ozaki, Ryota and Kuroda, Yoji},
+ booktitle = {2020 IEEE/SICE International Symposium on System Integration (SII)},
+ doi = {10.1109/SII46433.2020.9026222},
+ issn = {2474-2325},
+ keyword = {Simultaneous localization and mapping;Feature extraction;Robot kinematics;Mobile robots;Three-dimensional displays},
+ month = {Jan},
+ number = {},
+ pages = {531-535},
+ title = {6-DoF EKF SLAM with global planar features in artificial environments},
+ volume = {},
+ year = {2020}
+}

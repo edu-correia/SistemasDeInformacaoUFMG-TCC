@@ -1,0 +1,14 @@
+@article{7590021,
+ abstract = {The 3D extension of High Efficiency Video Coding significantly improves the coding efficiency of 3D video at the expense of computational complexity. This paper presents a novel fast mode decision algorithm for depth map coding based on the grayscale similarity and inter-view correlation. First, depth map grayscale similarity is adopted to judge whether the reference frame could assist the coding of the current frame. When the difference in the average grayscale between the co-located coding unit (CU) and the current CU is smaller than the similarity threshold, the depth level of the current CU will be restricted by that of the coded reference CU. Second, the grayscale similarity and inter-view correlation are jointly used for dependent views to achieve early decision on the best prediction unit (PU) mode. The mode decision procedure will be determined early when the co-located CU, which has a grayscale similarity with the current CU, selects Merge or Inter 2N ×2N as the best prediction mode. Moreover, when the corresponding CU in the independent view selects Merge or Inter 2N × 2N as the best prediction mode, the current CU will skip other PU modes checking based on the strong inter-view correlation. Finally, different strategies are proposed for the P-frames and B-frames of dependent views in view of the characteristics of different prediction structures. For B frames, the PU mode information of the coded independent view is utilized as reference to skip the unnecessary mode decision processes. For P frames, the spatial-temporal correlation is considered in the process of early mode decision to determine whether to choose the Merge mode or Inter 2N × 2N as the best mode. Experimental results show that our proposed scheme achieves considerable time saving with negligible degradation of coding performance.},
+ author = {Lei, Jianjun and Duan, Jinhui and Wu, Feng and Ling, Nam and Hou, Chunping},
+ doi = {10.1109/TCSVT.2016.2617332},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Encoding;Correlation;Gray-scale;Three-dimensional displays;Computational complexity;3D extension of High Efficiency Video Coding (3D-HEVC);depth map coding;early termination;grayscale similarity;inter-view correlation;video coding;visual communication},
+ month = {March},
+ number = {3},
+ pages = {706-718},
+ title = {Fast Mode Decision Based on Grayscale Similarity and Inter-View Correlation for Depth Map Coding in 3D-HEVC},
+ volume = {28},
+ year = {2018}
+}

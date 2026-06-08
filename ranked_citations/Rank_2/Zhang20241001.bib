@@ -1,0 +1,14 @@
+@conference{Zhang20241001,
+ abstract = {The demand for greater computing power has driven the development of Multi-chip-module GPUs (MCM-GPUs), which greatly improve parallel processing capabilities. Unfortunately, MCM-GPUs have encountered a notable challenge, the performance bottleneck caused by remote accesses through the inter-module network. In this work, we found significant data access redundancy among SMs within a GPU module which can be coalesced to reduce network pressure. However, how to design the coalescing scheme to identify memory addresses with high data locality is still not clear. Previously proposed techniques, such as intra-cluster coalescing (ICC), which merges all memory requests, and the L1.5 cache, which uses cache replacement policy to identify locality, are ineffective in many-chip-module GPUs. This ineffectiveness is due to the high number of SMs within a GPU module and the uniform sharing behavior of memory addresses, as this paper identifies. We next propose a simple but effective framework, the Adaptive Coalescer (AdCoalescer), based on the key observation that the program counter (PC) values can be exploited to identify the memory requests with a high data locality. AdCoalescer consists of two key components: the PC filter and the merge table. AdCoalescer adaptively merges memory requests sent from different SMs to the same cache line, especially requests that may be concurrently issued by multiple SMs identified by the PC value. Compared to traditional designs, AdCoalescer achieves an average performance improvement of 22.5% (up to 71.9%) with minimal hardware cost. This substantially outperforms the ICC design, which shows a 7.7% improvement, and the L1.5 cache design, which achieves a 7.1% improvement, both of which cause higher hardware cost.  © 2024 Owner/Author.},
+ author = {Zhang, Xu and Zhang, Guangda and Wang, Lu and Zhang, Shiqing and Zhao, Xia},
+ doi = {10.1145/3673038.3673075},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 2; All Open Access; Gold Open Access},
+ pages = {1001 - 1011},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {AdCoalescer: An Adaptive Coalescer to Reduce the Inter-Module Traffic in MCM-GPUs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85202442162?origin=resultslist},
+ year = {2024}
+}

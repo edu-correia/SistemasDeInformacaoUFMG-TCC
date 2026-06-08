@@ -1,0 +1,13 @@
+@article{DENG2024110232,
+ abstract = {COVID-19 is a highly contagious infectious disease that necessitates timely assessment and effective diagnosis, although it is no longer a health emergency. Most existing computer-aided diagnosis systems for COVID-19 can achieve high accuracy, but they show insufficient generalization performance and weak interpretability. To address these issues, we propose diagnostic report supervised contrastive learning (DRSCL), a model training strategy that incorporates textual information from medical reports into model pretraining and then only transfers the pretrained image encoder into model inference. Due to the issue of data recurrence in medical diagnosis reports, which is common in the medical domain and can cause nonconvergence of the pretraining stage of DRSCL, we improve the loss function calculation of contrastive learning by integrating an operation to merge identical text or image features. In addition, for the fine-tuning and inference stage of DRSCL, we design a hierarchical fine-tuning strategy to better evaluate the pretraining performance and importance of each module. In case study, we build a medical image-text pair dataset of lung diseases for pretraining, with samples collected from hospitals in East China, and then conduct the fine-tuning and inference operation of DRSCL with a publicly available SARS-CoV-2 dataset. The comparative experimental results show that DRSCL helps all involved image encoders obtain better classification accuracy and superior generalization performance in the given COVID-19-related diagnostic application. This finding indicates that DRSCL enhances deep models to learn more deep information with supervision of medical textual information. Furthermore, we adopt the Grad-CAM method to visualize pretrained models, and the results demonstrate that the DRSCL strategy is advantageous for improving model interpretability.},
+ author = {Shiqi Deng and Xing Zhang and Shancheng Jiang},
+ doi = {https://doi.org/10.1016/j.patcog.2023.110232},
+ issn = {0031-3203},
+ journal = {Pattern Recognition},
+ keyword = {Deep learning, COVID-19, Image classification, Diagnosis, Chest CT image, Multimodal},
+ pages = {110232},
+ title = {A diagnostic report supervised deep learning model training strategy for diagnosis of COVID-19},
+ url = {https://www.sciencedirect.com/science/article/pii/S0031320323009299},
+ volume = {149},
+ year = {2024}
+}

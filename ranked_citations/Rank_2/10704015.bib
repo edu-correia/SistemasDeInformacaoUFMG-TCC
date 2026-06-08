@@ -1,0 +1,14 @@
+@article{10704015,
+ abstract = {Key-value (KV) stores based on log-structured merge tree (LSM-tree) have been extensively studied and deployed in major information technology infrastructures. Because this type of systems is catered for KV store accessing disks, a limited disk bandwidth increases the difficulty of serving online data requests. One solution involves using a large DRAM such that frequent KV pairs are buffered and accessed from the main memory – and this solution exposes a major design drawback of the KV store: its lack of support for integrated data management in memory and on disks. For example, data in the most popular LSM-tree implementation – RocksDB – may reside in a small write buffer (MemTable) that organizes KV pairs for disk writes, a buffer cache for disk blocks, a write-ahead log on the disk for data persistence, and in various LSM levels on the disk. Without the integrated management of indexes, data, and their persistence in a hierarchical memory/disk architecture, memory is under-utilized along with missed performance optimization opportunities. We propose a KV store, TrieKV, which holistically incorporates DRAM, persistent memory (PMem), and disk with certain desired features: (1) fast in-memory access, (2) accurate identification of hot/cold data at an adaptable granularity, (3) customized memory space allocation for minimized fragmentation, (4) hotness-aware data placement across the storage hierarchy, (5) in-place data persistence in the PMem, and (6) hotness-aware LSM-tree compaction. TrieKV employs a single, integrated trie-structured index for all KV pairs in memory, where access hotness can be consistently discovered. Accordingly, the KV placement is dynamically determined according to the hotness and persistence needs of the storage hierarchy spanning the DRAM, PMem, and solid-state drive. In the experiment, we demonstrate that the 99th latency of RocksDB and NoveLSM is 38x and 6x higher than that of TrieKV, respectively. In addition, TrieKV outperforms RocksDB and NoveLSM by a factor of 5.6 and 1.7in terms of throughput, respectively.},
+ author = {Sun, Hui and Kong, Deyan and Jiang, Song and Yue, Yinliang and Qin, Xiao},
+ doi = {10.1109/TPDS.2024.3473013},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Compaction;Random access memory;Indexes;Memory management;Resource management;Costs;Throughput;Solid state drives;Optimization;Bandwidth;Hybrid memory;key-value (KV) store;log-structured merge tree (LSM-tree);persistent memory},
+ month = {Dec},
+ number = {12},
+ pages = {2479-2496},
+ title = {TrieKV: A High-Performance Key-Value Store Design With Memory as Its First-Class Citizen},
+ volume = {35},
+ year = {2024}
+}

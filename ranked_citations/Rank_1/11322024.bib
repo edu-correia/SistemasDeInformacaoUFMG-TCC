@@ -1,0 +1,14 @@
+@inproceedings{11322024,
+ abstract = {The article proposes a new hybrid neural network that combines a one-dimensional convolutional neural network for processing sequential In-phase and Quadrature data in polar coordinates and a multilayer perceptron for processing numerical signal characteristics. The novelty lies in the fact that the model uses two separate input streams for different types of data, which are then merged before the final classification layer. This design allows the hybrid model to account for both temporal dependencies In-phase and Quadrature data (through convolutional neural network) and specific numerical signal parameters (through multilayer perceptron) for more accurate signal type classification. Unlike traditional methods that require computationally intensive timefrequency transformations (Choi-Williams distribution, Short-Time Fourier Transform) and manual feature engineering, the proposed hybrid neural network architecture does not require them, instead directly processing the amplitude and phase of each sample and implementing features such as number of pulses, pulse width, delay, pulse repetition interval, and signal-to-noise ratios into the parallel multilayer perceptron branch. The study was conducted using the open RadChar Baseline dataset ($\mathbf{1 0 0 0 0 0 0}$ In-phase and Quadrature data signals, 5 modulation classes). The hybrid model achieved an average of 88.5% accuracy and 88% macro F1 score across five types of In-phase and Quadrature data signals (coherent pulse train, Barker code, polyphase Barker, Frank code, Linear Frequency Modulation), surpassing the singlebranch convolutional neural network by $3.5 \%$ in recognition accuracy while requiring approximately four times fewer computational resources compared to the ChoiWilliams distribution-based dual-channel convolutional neural network. The obtained results demonstrate the suitability of the proposed approach for electronic intelligence systems with limited computational resources.},
+ author = {Nazarevych, Oleksandr and Peleshchak, Roman and Lytvyn, Vasyl and Peleshchak, Ivan and Motyka, Volodymyr},
+ booktitle = {2025 IEEE 13th International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications (IDAACS)},
+ doi = {10.1109/IDAACS68557.2025.11322024},
+ issn = {2770-4254},
+ keyword = {Accuracy;Codes;Computational modeling;Neural networks;Multilayer perceptrons;Data models;Robustness;Radar signal processing;Convolutional neural networks;Signal to noise ratio;hybrid CNN+MLP neural network;polar representation of IQ data;LPI classification;real-time signal recognition},
+ month = {Sep.},
+ number = {},
+ pages = {338-345},
+ title = {Recognition of Low Probability of Intercept Radar Signals in a Polar Coordinate System Based on a Hybrid CNN and MLP},
+ volume = {},
+ year = {2025}
+}

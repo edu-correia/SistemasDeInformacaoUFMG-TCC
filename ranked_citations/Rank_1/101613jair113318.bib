@@ -1,0 +1,17 @@
+@article{10.1613/jair.1.13318,
+ abstract = {In the multi-agent path finding problem (MAPF) we are given a set of agents each with respective start and goal positions. The task is to find paths for all agents while avoiding collisions, aiming to minimize a given objective function. Many MAPF solvers were introduced in the past decade for optimizing two specific objective functions: sum-of-costs and makespan. Two prominent categories of solvers can be distinguished: search-based solvers and compilation-based solvers. Search-based solvers were developed and tested for the sum-of-costs objective, while the most prominent compilation-based solvers that are built around Boolean satisfiability (SAT) were designed for the makespan objective. Very little is known on the performance and relevance of solvers from the compilation-based approach on the sum-of-costs objective. In this paper, we start to close the gap between these cost functions in the compilation-based approach. Our main contribution is a new SAT-based MAPF solver called MDD-SAT, that is directly aimed to optimally solve the MAPF problem under the sum-of-costs objective function. Using both a lower bound on the sum-of-costs and an upper bound on the makespan, MDD-SAT is able to generate a reasonable number of Boolean variables in our SAT encoding. We then further improve the encoding by borrowing ideas from ICTS, a search-based solver. In addition, we show that concepts applicable in search-based solvers like ICTS and ICBS are applicable in the SAT-based approach as well. Specifically, we integrate independence detection, a generic technique for decomposing an MAPF instance into independent subproblems, into our SAT-based approach, and we design a relaxation of our optimal SAT-based solver that results in a bounded suboptimal SAT-based solver. Experimental evaluation on several domains shows that there are many scenarios where our SAT-based methods outperform state-of-the-art sum-of-costs search-based solvers, such as variants of the ICTS and ICBS algorithms.},
+ address = {El Segundo, CA, USA},
+ author = {Surynek, Pavel and Stern, Roni and Boyarski, Eli and Felner, Ariel},
+ doi = {10.1613/jair.1.13318},
+ issn = {1076-9757},
+ issue_date = {May 2022},
+ journal = {J. Artif. Int. Res.},
+ keyword = {planning, constraint satisfaction, satisfiability, problem solving},
+ month = {May},
+ numpages = {66},
+ publisher = {AI Access Foundation},
+ title = {Migrating Techniques from Search-based Multi-Agent Path Finding Solvers to SAT-based Approach},
+ url = {https://doi.org/10.1613/jair.1.13318},
+ volume = {73},
+ year = {2022}
+}

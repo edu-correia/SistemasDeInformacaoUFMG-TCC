@@ -1,0 +1,18 @@
+@article{10.1145/3643560,
+ abstract = {The rise of mobile devices with abundant sensory data and local computing capabilities has driven the trend of federated learning (FL) on these devices. And personalized FL (PFL) emerges to train specific deep models for each mobile device to address data heterogeneity and varying performance preferences. However, mobile training times vary significantly, resulting in either delay (when waiting for slower devices for aggregation) or accuracy decline (when aggregation proceeds without waiting). In response, we propose a shift towards asynchronous PFL, where the server aggregates updates as soon as they are available. Nevertheless, existing asynchronous protocols are unfit for PFL because they are devised for federated training of a single global model. They suffer from slow convergence and decreased accuracy when confronted with severe data heterogeneity prevalent in PFL. Furthermore, they often exclude slower devices for staleness control, which notably compromises accuracy when these devices possess critical personalized data. Therefore, we propose EchoPFL, a coordination mechanism for asynchronous PFL. Central to EchoPFL is to include updates from all mobile devices regardless of their latency. To cope with the inevitable staleness from slow devices, EchoPFL revisits model broadcasting. It intelligently converts the unscalable broadcast to on-demand broadcast, leveraging the asymmetrical bandwidth in wireless networks and the dynamic clustering-based PFL. Experiments show that compared to status quo approaches, EchoPFL achieves a reduction of up to 88.2% in convergence time, an improvement of up to 46% in accuracy, and a decrease of 37% in communication costs.},
+ address = {New York, NY, USA},
+ articleno = {41},
+ author = {Li, Xiaochen and Liu, Sicong and Zhou, Zimu and Guo, Bin and Xu, Yuan and Yu, Zhiwen},
+ doi = {10.1145/3643560},
+ issue_date = {March 2024},
+ journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+ keyword = {Asynchronous personalized federated learning, data heterogeneity, dynamic clustering, on-demand broadcast},
+ month = {March},
+ number = {1},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {EchoPFL: Asynchronous Personalized Federated Learning on Mobile Devices with On-Demand Staleness Control},
+ url = {https://doi.org/10.1145/3643560},
+ volume = {8},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11279075,
+ abstract = {Solid-state drives (SSDs) are gaining popularity. Meanwhile, keyvalue stores built on log-structured merge-tree (LSM-tree) are widely deployed for data management. LSM-tree frequently calls syncs to persist newly-generated files for crash consistency. The blocking syncs are costly for performance. We revisit the necessity of syncs for LSM-tree. We find that Ext4 journaling embraces asynchronous commits to implicitly persist files. Hence, we design NobLSM that makes LSM-tree and Ext4 cooperate to substitute most syncs with non-blocking asynchronous commits, without losing consistency. Experiments show that NobLSM significantly outperforms state-of-the-art LSM-trees with higher throughput on an ordinary SSD. CCS CONCEPTS † Software and its engineering $\rightarrow$ File systems management; † Information systems $\rightarrow$ Key-value stores.},
+ author = {Dang, Haoran and Ye, Chongnan and Hu, Yanpeng and Wang, Chundong},
+ booktitle = {2022 59th ACM/IEEE Design Automation Conference (DAC)},
+ doi = {},
+ issn = {0738-100X},
+ keyword = {Design automation;Solid state drives;File systems;Throughput;Software;Computer crashes;Synchronization;Information systems;LSM-tree;Key-Value Store;Fsync;Asynchronous Commit},
+ month = {June},
+ number = {},
+ pages = {403-408},
+ title = {NobLSM: An LSM-tree with Non-blocking Writes for SSDs},
+ volume = {},
+ year = {2022}
+}

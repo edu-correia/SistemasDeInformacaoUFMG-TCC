@@ -1,0 +1,13 @@
+@article{SHEN2026103929,
+ abstract = {CNNs handling multi-scale variations and Transformers modeling long-range dependencies are crucial for vascular segmentation. The fusion of these two models effectively combines the multi-scale local features extracted by CNNs with the global information modeled by Transformers, significantly enhancing the accuracy of blood vessel segmentation. However, the powerful model faces challenges when dealing with the gradual formation of extensive collateral vessels in the upper digestive system veins of patients with cirrhotic portal hypertension, leading to numerous false negative and false positive segmentation results. To this end, the paper proposes UDV-Net, a fusion network combining CNN and Transformer with vessel prior and spatial awareness for upper digestive system vein vessel segmentation. Initially, a CNN utilizing an encoding-decoding architecture is employed to create a multi-scale representation of blood vessels from the image. The representation is further refined by the blood vessel attention module at the corresponding scale to address tubular structures, thereby reducing false positive results. Secondly, a Transformer bridge with three-dimensional voxel position encoding is proposed to connect the corresponding encoding-decoding layer, effectively perceiving widely distributed blood vessels with diverse shapes, improving blood vessel connectivity, and avoiding false negative blood vessel results. We collected and annotated abdominal contrast-enhanced CT images of 191 patients with liver cirrhosis, constituting the PHCT dataset. Our method’s validation result on this dataset is state-of-the-art. When evaluated on the publicly available 3D-IRCADb dataset as an unseen external validation set for PHCT, the model demonstrated satisfactory performance. Additionally, our method also achieves the optimal performance on the public MSD hepatic vessel dataset.},
+ author = {Bowei Shen and Xiaoquan Huang and Yuli Li and Xinghuan Li and Lili Ma and Yonghong Shi and Shiyao Chen},
+ doi = {https://doi.org/10.1016/j.media.2025.103929},
+ issn = {1361-8415},
+ journal = {Medical Image Analysis},
+ keyword = {Vessels segmentation, Hybrid CNN and transformer, Prior knowledge, Spatial-awareness},
+ pages = {103929},
+ title = {UDV-Net: A hybrid CNN and transformer vein segmentation network with vascular prior and spatial awareness},
+ url = {https://www.sciencedirect.com/science/article/pii/S136184152500475X},
+ volume = {109},
+ year = {2026}
+}

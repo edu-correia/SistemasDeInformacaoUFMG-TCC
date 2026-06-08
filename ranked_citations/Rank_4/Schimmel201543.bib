@@ -1,0 +1,14 @@
+@conference{Schimmel201543,
+ abstract = {Multithreaded programs are subject to data races. Data race detectors find such defects by static or dynamic inspection of the program. Current race detectors suffer from high numbers of false positives, slowdown, and false negatives. Because of these disadvantages, recent approaches reduce the false positive rate and the runtime overhead by applying race detection only on a subset of the whole program. To achieve this, they make use of parallel test cases, but this has other disadvantages: Parallel test cases have to be engineered manually, cover code regions that are affected by data races, and execute with input data that provoke the data races. This paper introduces an approach that does not need additional parallel use cases to be engineered. Instead, we take conventional unit tests as input and automatically generate parallel test cases, execution contexts and input data. As can be observed, most real-world software projects nowadays have high test coverages, so a large information base as input for our approach is already available. We analyze and reuse input data, initialization code, and mock objects that conventional unit tests already contain. With this information, no further oracles are necessary for generating parallel test cases. Instead, we reuse the knowledge that is already implicitly available in conventional unit tests. We implemented our parallel test case generation strategy in a tool called Test Merge. To evaluate these test cases we used them as input for the dynamic race detector CHESS that evokes all possible thread interleavings for a given program. We evaluated Test Merge using six sample programs and one industrial application with a high test case coverage of over 94%. For this benchmark, Test Merge identified all previously known data races and even revealed previously unknown ones. © 2015 IEEE.},
+ author = {Schimmel, Jochen and Molitorisz, Korbinian and Jannesari, Ali and Tichy, Walter F.},
+ doi = {10.1109/AST.2015.16},
+ journal = {Proceedings - 10th International Workshop on Automation of Software Test, AST 2015},
+ note = {Cited by: 3},
+ pages = {43 - 47},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Combining Unit Tests for Data Race Detection},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84945345316?origin=resultslist},
+ year = {2015}
+}

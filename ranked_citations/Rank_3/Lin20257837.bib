@@ -1,0 +1,14 @@
+@conference{Lin20257837,
+ abstract = {Vision-Language Models (VLMs) generate discourse-level, multi-sentence visual descriptions, challenging text scene graph parsers built for single-sentence caption-to-graph mapping. Current approaches typically merge sentence-level parsing outputs for discourse input, often missing phenomena like cross-sentence coreference, resulting in fragmented graphs and degraded downstream VLM task performance. We introduce a new task, Discourse-level text Scene Graph parsing (DiscoSG), and release DiscoSG-DS, a dataset of 400 expert-annotated and 8,430 synthesised multi-sentence caption-graph pairs. Each caption averages 9 sentences, and each graph contains at least 3× more triples than those in existing datasets. Fine-tuning GPT-4o on DiscoSG-DS yields over 40% higher SPICE metric than the best sentence-merging baseline. However, its high inference cost and licensing restrict open-source use. Smaller fine-tuned open-source models (e.g., Flan-T5) perform well on simpler graphs yet degrade on denser, more complex graphs. To bridge this gap, we introduce DiscoSG-Refiner, a lightweight open-source parser that drafts a seed graph and iteratively refines it with a novel learned graph-editing model, achieving 30% higher SPICE than the baseline while delivering 86× faster inference than GPT-4o. It generalises from simple to dense graphs, thereby consistently improving downstream VLM tasks, including discourse-level caption evaluation and hallucination detection, outperforming alternative open-source parsers. Code and data are available at https://github.com/ShaoqLin/DiscoSG. © 2025 Association for Computational Linguistics.},
+ author = {Lin, Shaoqing and Teng, Chong and Li, Fei and Ji, Donghong and Qu, Lizhen and Li, Zhuang},
+ doi = {10.18653/v1/2025.emnlp-main.398},
+ journal = {EMNLP 2025 - 2025 Conference on Empirical Methods in Natural Language Processing, Proceedings of the Conference},
+ note = {Cited by: 0},
+ pages = {7837 - 7862},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105040132282?origin=resultslist},
+ year = {2025}
+}

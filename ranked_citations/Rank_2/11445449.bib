@@ -1,0 +1,14 @@
+@inproceedings{11445449,
+ abstract = {Generating naturalistic and nuanced listener motions for extended interactions remains an open problem. Existing methods often rely on low-dimensional motion codes for facial behavior generation followed by photorealistic rendering, limiting both visual fidelity and expressive richness. To address these challenges, we introduce DiTaiListener, powered by a video diffusion model with multimodal conditions. Our approach first generates short segments of listener responses conditioned on the speaker's speech and facial motions with DiTaiListener-Gen. It then refines the transitional frames via DiTaiListener-Edit for a seamless transition. Specifically, DiTaiListener-Gen adapts a Diffusion Transformer (DiT) for the task of listener head portrait generation by introducing a Causal Temporal Multimodal Adapter (CTM-Adapter) to process speakers' auditory and visual cues. CTM-Adapter integrates speakers' input in a causal manner into the video generation process to ensure temporally coherent listener responses. For long-form video generation, we introduce DiTaiListener-Edit, a transition refinement video-to-video diffusion model. The model fuses video segments into smooth and continuous videos, ensuring temporal consistency in facial expressions and image quality when merging short video segments produced by DiTaiListener-Gen. Quantitatively, DiTaiListener achieves the state-of-the-art performance on benchmark datasets in both photorealism ($+73.8 \%$ in FID on RealTalk) and motion representation ($+6.1 \%$ in FD metric on VICO) spaces. User studies confirm the superior performance of DiTaiListener, with the model being the clear preference in terms of feedback, diversity, and smoothness, outperforming competitors by a significant margin. See the project page for more results: https://ihp-lab.github.io/DiTaiListener/},
+ author = {Siniukov, Maksim and Chang, Di and Tran, Minh and Gong, Hongkun and Chaubey, Ashutosh and Soleymani, Mohammad},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01115},
+ issn = {2380-7504},
+ keyword = {Feeds;Antennas;Feedback;Circuits;Graphical user interfaces;Videos;Pixel;Avatars;Amplitude shift keying;Internet;human behavior generation;listener head generation;video generation},
+ month = {Oct},
+ number = {},
+ pages = {11991-12001},
+ title = {Ditailistener: Controllable High Fidelity Listener Video Generation with Diffusion},
+ volume = {},
+ year = {2025}
+}

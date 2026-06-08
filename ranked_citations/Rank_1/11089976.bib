@@ -1,0 +1,14 @@
+@article{11089976,
+ abstract = {Transformer-based segmentation methods exhibit considerable potential in medical image analysis. However, their improved performance often comes with increased computational complexity, limiting their application in resource-constrained medical settings. Prior methods follow two independent tracks: (i) accelerating existing networks via semantic-aware routing, and (ii) optimizing token adapter design to enhance network performance. Despite directness, they encounter unavoidable defects (e.g., inflexible acceleration techniques or non-discriminative processing) limiting further improvements of quality-complexity trade-off. To address these shortcomings, we integrate these schemes by proposing the semantic-aware adapter (SarAdapter), which employs a semantic-based routing strategy, leveraging neural operators (ViT and CNN) of varying complexities. Specifically, it merges semantically similar tokens volume into low-resolution regions while preserving semantically distinct tokens as high-resolution regions. Additionally, we introduce a Mixed-adapter unit, which adaptively selects convolutional operators of varying complexities to better model regions at different scales. We evaluate our method on four medical datasets from three modalities and show that it achieves a superior balance between accuracy, model size, and efficiency. Notably, our proposed method achieves state-of-the-art segmentation quality on the Synapse dataset while reducing the number of tokens by 65.6%, signifying a substantial improvement in the efficiency of ViTs for the segmentation task.},
+ author = {Jiang, Weili and Li, Yihao and Liu, Zaiyi and An, Lin and Quellec, Gwenolé and Ou, Chubin},
+ doi = {10.1109/TMI.2025.3591476},
+ issn = {1558-254X},
+ journal = {IEEE Transactions on Medical Imaging},
+ keyword = {Biomedical imaging;Image segmentation;Merging;Semantics;Transformers;Computational modeling;Training;Computer architecture;Image resolution;Computational efficiency;Semantic-aware recombination;mixed-adapter;token merging;medical image segmentation},
+ month = {Jan},
+ number = {1},
+ pages = {40-52},
+ title = {SarAdapter: Prioritizing Attention on Semantic-Aware Representative Tokens for Enhanced Medical Image Segmentation},
+ volume = {45},
+ year = {2026}
+}

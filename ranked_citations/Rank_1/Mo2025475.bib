@@ -1,0 +1,14 @@
+@conference{Mo2025475,
+ abstract = {In order to mitigate memory overheads and reduce data movements in the critical path, a computational and space-efficient learned index is promising to deliver high performance and complement traditional index structures, which unfortunately works well only in static workloads. In dynamic workloads, the learned indexes incur performance degradation with poor scalability due to inefficient data placement for newly inserted items and intensive lock contention. Furthermore, the model retraining is time-consuming and blocking, which hampers the performance of index operations. In order to meet the needs of dynamic workloads and efficient retraining, we propose LOFT, a highly scalable and adaptive learned index with lock-free design and self-tuning retraining technique to provide high throughput and low latency. LOFT enables all index operations to be concurrently executed in a lock-free manner by using Compare- and-Swap (CAS) primitive and an expanded learned bucket to handle the overflowed data. To minimize the impact of model retraining, LOFT leverages a shadow node to serve the clients’ requests and accelerates the retraining process with the aid of index operations. To accommodate dynamic workloads, LOFT determines when and how to perform retraining based on inferred access patterns. Our extensive evaluation on YCSB and real-world workloads demonstrates that LOFT effectively improves the performance by up to 14× than state-of-the-art designs. © 2025 Copyright held by the owner/author(s).},
+ author = {Mo, Yuxuan and Hua, Yu},
+ doi = {10.1145/3689031.3717458},
+ journal = {EuroSys 2025 - Proceedings of the 2025 20th European Conference on Computer Systems},
+ note = {Cited by: 1},
+ pages = {475 - 491},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LOFT: A Lock-free and Adaptive Learned Index with High Scalability for Dynamic Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105002218259?origin=resultslist},
+ year = {2025}
+}

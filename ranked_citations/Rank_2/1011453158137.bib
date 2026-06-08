@@ -1,0 +1,18 @@
+@article{10.1145/3158137,
+ abstract = {High-performance dynamic language implementations make heavy use of speculative optimizations to achieve speeds close to statically compiled languages. These optimizations are typically performed by a just-in-time compiler that generates code under a set of assumptions about the state of the program and its environment. In certain cases, a program may execute code compiled under assumptions that are no longer valid. The implementation must then deoptimize the program on-the-fly; this entails finding semantically equivalent code that does not rely on invalid assumptions, translating program state to that expected by the target code, and transferring control. This paper looks at the interaction between optimization and deoptimization, and shows that reasoning about speculation is surprisingly easy when assumptions are made explicit in the program representation. This insight is demonstrated on a compiler intermediate representation, named sourir, modeled after the high-level representation for a dynamic language. Traditional compiler optimizations such as constant folding, unreachable code elimination, and function inlining are shown to be correct in the presence of assumptions. Furthermore, the paper establishes the correctness of compiler transformations specific to deoptimization: namely unrestricted deoptimization, predicate hoisting, and assume composition.},
+ address = {New York, NY, USA},
+ articleno = {49},
+ author = {Fl\"{u}ckiger, Olivier and Scherer, Gabriel and Yee, Ming-Ho and Goel, Aviral and Ahmed, Amal and Vitek, Jan},
+ doi = {10.1145/3158137},
+ issue_date = {January 2018},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {compiler correctness, dynamic deoptimization, on-stack-replacement, speculative optimizations},
+ month = {December},
+ number = {POPL},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Correctness of speculative optimizations with dynamic deoptimization},
+ url = {https://doi.org/10.1145/3158137},
+ volume = {2},
+ year = {2017}
+}

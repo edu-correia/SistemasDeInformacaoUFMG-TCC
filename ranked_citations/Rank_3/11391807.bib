@@ -1,0 +1,14 @@
+@inproceedings{11391807,
+ abstract = {Graphs can model complex relational data, which makes them invaluable in numerous machine-learning applications. While the graph's structure can be efficiently represented and stored, the associated feature memory is substantial. The feature memory can be terabytes or petabytes for web-scale graphs, especially at companies like Pinterest and Google. The extra feature memory can require external storage devices with slower I/O times for data loading, making training even slower. To address the storage issue with feature memory, we aim to reduce the number of training nodes needed through sampling, reducing the storage requirement. However, the problem is that simply training a model with fewer nodes will result in worse performance. To solve that problem, we propose BLB-HGNN, a training algorithm based on the Bag of Little Bootstraps. BLB-HGNN independently trains several replicas of the architecture on different subsamples of the data. For each training epoch, our blb-sampler creates a bootstrap resampling of the data for the replica to train on. The trained replicas are merged using parameter averaging and then fine-tuned for inference. We conduct experiments with the OGB_MAG and MAG240M datasets to demonstrate the effectiveness of BLB-HGNN over simple training. We also conduct experiments on the impact of different sampling methods and model merging techniques. With almost no additional runtime cost, BLB-HGNN consistently provides a performance boost of up to 5% compared to standard training with the same training budget. Applying a non-uniform sampling method, such as Personalized PageRank or Spread Sampling, further improves performance. Furthermore, BLB-HGNN can achieve performance close to full dataset training with less than 50% of the training data on specific models. To our knowledge, this is the first work addressing the storage problem and uses Bag of Little Bootstraps for HGNN training.},
+ author = {Vadlamani, Aditya T. and Salarian, Sama and Gurukar, Saket and Parthasarathy, Srinivasan},
+ booktitle = {2025 IEEE International Conference on Data Mining (ICDM)},
+ doi = {10.1109/ICDM65498.2025.00165},
+ issn = {2374-8486},
+ keyword = {Training;Runtime;Costs;Memory management;Training data;Machine learning;Sampling methods;Data models;Web sites;Standards;Scalability;Graph Machine Learning;Bag of Little Bootstraps},
+ month = {Nov},
+ number = {},
+ pages = {1555-1564},
+ title = {BLB-HGNN: Bag of Little Bootstraps for Training Heterogeneous GNNs},
+ volume = {},
+ year = {2025}
+}

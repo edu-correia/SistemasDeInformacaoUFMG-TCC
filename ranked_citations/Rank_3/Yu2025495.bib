@@ -1,0 +1,16 @@
+@article{Yu2025495,
+ abstract = {Graph-based indices are widely used for approximate nearest neighbor search (ANNS). Under dynamic workloads, existing ANNS systems amortize update overhead with large batches, but large batches degrade index quality. We identify two key limitations in existing systems when handling small-batch updates. First, they still scan the entire index to repair the affected graph topology and rebuild the index, causing heavy I/O. Second, their naive repair introduces many edges, repeatedly triggering costly neighbor pruning with expensive distance computations. To address these issues, we propose a topology-aware localized update strategy that exploits the locality of small-batch updates to reduce unnecessary I/O and computation. Specifically, we introduce a lightweight graph topology that quickly identifies affected nodes without full index scans, and a localized update mechanism that restricts modifications to the pages containing these nodes. Moreover, we design a similarity-aware localized connection method that links each affected node to a small set of highly similar neighbors, avoiding redundant edges and costly pruning. Extensive experiments show that our update strategy achieves 2.39-5.96× higher update throughput than the state-of-the-art graph-based streaming ANNS system FreshDiskANN while maintaining high search efficiency and accuracy. © 2025, VLDB Endowment. All rights reserved.},
+ author = {Yu, Song and Lin, Shengyuan and Gong, Shufeng and Xie, Yongqing and Liu, Ruicheng and Zhou, Yijie and Sun, Ji and Zhang, Yanfeng and Li, Guoliang and Yu, Ge},
+ doi = {10.14778/3778092.3778108},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 1},
+ number = {3},
+ pages = {495 - 508},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Topology-Aware Localized Update Strategy for Graph-Based ANN Index},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105035286973?origin=resultslist},
+ volume = {19},
+ year = {2025}
+}

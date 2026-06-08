@@ -1,0 +1,17 @@
+@article{10.14778/2831360.2831368,
+ abstract = {The Deuteronomy transactional key value store executes millions of serializable transactions/second by exploiting multi-version timestamp order concurrency control. However, it has not supported range operations, only individual record operations (e.g., create, read, update, delete). In this paper, we enhance our multi-version timestamp order technique to handle range concurrency and prevent phantoms. Importantly, we maintain high performance while respecting the clean separation of duties required by Deuteronomy, where a transaction component performs purely logical concurrency control (including range support), while a data component performs data storage and management duties. Like the rest of the Deuteronomy stack, our range technique manages concurrency information in a latch-free manner. With our range enhancement, Deuteronomy can reach scan speeds of nearly 250 million records/s (more than 27 GB/s) on modern hardware, while providing serializable isolation complete with phantom prevention.},
+ author = {Levandoski, Justin and Lomet, David and Sengupta, Sudipta and Stutsman, Ryan and Wang, Rui},
+ doi = {10.14778/2831360.2831368},
+ issn = {2150-8097},
+ issue_date = {September 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {13},
+ numpages = {12},
+ pages = {2146–2157},
+ publisher = {VLDB Endowment},
+ title = {Multi-version range concurrency control in Deuteronomy},
+ url = {https://doi.org/10.14778/2831360.2831368},
+ volume = {8},
+ year = {2015}
+}

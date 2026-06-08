@@ -1,0 +1,14 @@
+@inproceedings{7877136,
+ abstract = {We present a strictly balanced method for the parallel computation of sparse matrix-vector products (SpMV). Our algorithm operates directly upon the Compressed Sparse Row (CSR) sparse matrix format without preprocessing, inspection, reformatting, or supplemental encoding. Regardless of nonzero structure, our equitable 2D merge-based decomposition tightly bounds the workload assigned to each processing element. Furthermore, our technique is suitable for recursively partitioning CSR datasets themselves into multi-scale, distributed, NUMA, and GPU environments that are constrained by fixed-size local memories. We evaluate our method on both CPU and GPU microarchitectures across a very large corpus of diverse sparse matrix datasets. We show that traditional CsrMV methods are inconsistent performers, often subject to order-of-magnitude performance variation across similarly-sized datasets. In comparison, our method provides predictable performance that is substantially uncorrelated to the distribution of nonzeros among rows and broadly improves upon that of current CsrMV methods.},
+ author = {Merrill, Duane and Garland, Michael},
+ booktitle = {SC '16: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+ doi = {10.1109/SC.2016.57},
+ issn = {2167-4337},
+ keyword = {Sparse matrices;Graphics processing units;Runtime;Encoding;Matrix decomposition;Parallel processing;Partitioning algorithms;SpMV;sparse matrix;parallel merge;merge-path;many-core;GPU;linear algebra},
+ month = {Nov},
+ number = {},
+ pages = {678-689},
+ title = {Merge-Based Parallel Sparse Matrix-Vector Multiplication},
+ volume = {},
+ year = {2016}
+}

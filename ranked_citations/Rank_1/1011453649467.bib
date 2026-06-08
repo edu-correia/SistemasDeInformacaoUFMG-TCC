@@ -1,0 +1,15 @@
+@article{10.1145/3649467,
+ abstract = {Predicting future traffic conditions from urban sensor data is crucial for smart city applications. Recent traffic forecasting methods are derived from Spatio-Temporal Graph Convolution Networks (STGCNs). Despite their remarkable achievements, these spatio-temporal models have mainly been evaluated on small-scale datasets. In light of the rapid growth of the Internet of Things and urbanization, cities are witnessing an increased deployment of sensors, resulting in the collection of extensive sensor data to provide more accurate insights into citywide traffic dynamics. Spatio-temporal graph modeling on large-scale traffic data is challenging due to the memory constraint of the computing device. For traffic forecasting, subgraph sampling from road networks onto multiple devices is feasible. Many GCN sampling methods have been proposed recently. However, combining these with STGCNs degrades performance. This is primarily due to prediction biases introduced by each sampled subgraph, which analyze traffic states from a regional perspective. Addressing these challenges, we introduce a parallel STGCN framework called PaSTG. PaSTG divides the road network into regions, each processed by an individual STGCN in a device. To mitigate regional biases, Aggregation Blocks in PaSTG merge spatial-temporal features from each STBlock. This collaboration enhances traffic forecasting. Furthermore, PaSTG implements pipeline parallelism and employs a graph partition algorithm for optimized pipeline efficiency. We evaluate PaSTG on various STGCNs using three traffic datasets on multiple GPUs. Results demonstrate that our parallel approach applies widely to diverse STGCN models, surpassing existing GCN samplers by up to 57.4% in prediction accuracy. Additionally, the parallel framework achieves speedups of up to 2.87x and 4.70x in training and inference compared to GCN samplers.},
+ address = {New York, NY, USA},
+ author = {He, Xianhao and Hu, Yikun and Liao, Qing and Xiong, Hantao and Yang, Wangdong and Li, Kenli},
+ doi = {10.1145/3649467},
+ issn = {1550-4859},
+ journal = {ACM Trans. Sen. Netw.},
+ keyword = {Graph Convolution Networks, Multiple GPUs, Parallel Computing, Smart City, Spatio-Temporal Data Mining, Traffic Forecasting},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {PaSTG: A Parallel Spatio-Temporal GCN Framework for Traffic Forecasting in Smart City},
+ url = {https://doi.org/10.1145/3649467},
+ year = {2024}
+}

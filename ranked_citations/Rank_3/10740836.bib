@@ -1,0 +1,14 @@
+@inproceedings{10740836,
+ abstract = {The disaggregated memory (DM) architecture sepa-rates CPU and memory resources into two components: computing servers and memory servers, connecting them via high-speed remote direct memory access (RDMA) networks for low-latency data access. Current tree indexes for DM rely on expensive lock-based concurrency control mechanisms, highlighting the need for a lock-free solution. This paper proposes vBoost, a lock-free distributed index based on the van Emde Boas (vEB) tree, which efficiently handles all operations using only one-sided RDMA verbs, without involving CPU resources on the memory server. Additinaly, vBoost redesigns the index structure, inheriting the vEB tree's feature of no node splitting or merging, and utilizes RDMA atomic verbs to ensure consistency and correctness of concurrent access. Experimental results demonstrate that vBoost outperforms state-of-the-art tree indexes, achieving up to 77.0% higher throughput and better scalability with its lock-free algorithm.},
+ author = {Li, Yuting and Xu, Yun and Wang, Pengcheng and Xu, Yonghui and Wang, Weiguang},
+ booktitle = {2024 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops)},
+ doi = {10.1109/CLUSTERWorkshops61563.2024.00037},
+ issn = {},
+ keyword = {Concurrent computing;Scalability;Conferences;Merging;Memory management;Memory architecture;Throughput;Indexes;Servers;Low latency communication;distributed indexes;lock-free concurrency control;RDMA},
+ month = {Sep.},
+ number = {},
+ pages = {158-159},
+ title = {vBoost: A Lock-free Distributed Index Based on vEB Tree for Disaggregated Memory},
+ volume = {},
+ year = {2024}
+}

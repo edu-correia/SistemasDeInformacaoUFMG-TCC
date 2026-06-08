@@ -1,0 +1,14 @@
+@article{10848408,
+ abstract = {Containers are the technology used by Linux to isolate execution environments. By distributing a container image, which is a collection of files contained in the container, users use an execution environment that includes the necessary files and libraries. However, container images are tens to hundreds of megabytes in size and require many network resources to be transferred. Especially in low-bandwidth network environments like edge computing, frequent image updating will be difficult and increase the network cost. The approach has been proposed to transfer only updated files but cannot provide smaller updates for partially updated files. In this paper, we propose D4C. D4C reduces the data size required for image updates using delta encodings. Delta encodings reduce data size and finish updating quickly, but generating and applying deltas is a time-consuming operation. We propose a delta generation approach by merging existing deltas to provide requested deltas as fast as we can. Also, D4C provides a dedicated file system called Di3FS. Di3FS applies deltas lazily and it enables container images to be available without applying all deltas. We confirmed that D4C can reduce the data size required to update container images by up to 95% and provide about 10x faster updating than the state-of-the-art approach. D4C's merge-based delta generation approach can provide required deltas over 60x faster than generating deltas on-demand. Furthermore, benchmarks with PostgreSQL and PyTorch showed that D4C did not influence their performance.},
+ author = {Matsumoto, Naoki and Kotani, Daisuke and Okabe, Yasuo},
+ doi = {10.23919/transcom.2024EBT0008},
+ issn = {1745-1345},
+ journal = {IEICE Transactions on Communications},
+ keyword = {Containers;Image coding;Encoding;File systems;Image edge detection;Edge computing;Costs;Merging;Libraries;Data transfer;container image updating;delta encoding;edge computing},
+ month = {July},
+ number = {7},
+ pages = {780-795},
+ title = {D4C: Fast and Efficient Container Image Updating for Edge with Delta Encodings},
+ volume = {E108-B},
+ year = {2025}
+}

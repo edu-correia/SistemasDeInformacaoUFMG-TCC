@@ -1,0 +1,14 @@
+@inproceedings{9139793,
+ abstract = {Many popular vetting tools for Android applications use static code analysis techniques. In particular, Interprocedural Data-Flow Graph (IDFG) construction is the computation at the core of Android static data-flow analysis and consumes most of the analysis time. Many analysis tools use a worklist algorithm, an iterative fixed-point approach, to construct the IDFG. In this paper, we observe that a straightforward GPU parallelization of the worklist algorithm leads to significant underutilization of the GPU resources. We identify four performance bottlenecks, namely, frequent dynamic memory allocations, high branch divergence, workload imbalance, and irregular memory access patterns. Accordingly, we propose GDroid, a GPU-based worklist algorithm implementation with multiple fine-grained optimizations tailored to common characteristics of Android applications. The optimizations considered are: matrix-based data structure, memory access-based node grouping, and worklist merging. Our experimental evaluation, performed on 1000 Android applications, shows that the proposed optimizations are beneficial to performance, and GDroid can achieve up to 128X speedups against a plain GPU implementation.},
+ author = {Yu, Xiaodong and Wei, Fengguo and Ou, Xinming and Becchi, Michela and Bicer, Tekin and Yao, Danfeng},
+ booktitle = {2020 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS47924.2020.00037},
+ issn = {1530-2075},
+ keyword = {Graphics processing units;Androids;Humanoid robots;Optimization;Smart phones;Tools;Security;GPU;static program analysis;data-flow analysis;Android security;mobile application vetting;worklist algorithm;application-specific optimization},
+ month = {May},
+ number = {},
+ pages = {274-284},
+ title = {GPU-Based Static Data-Flow Analysis for Fast and Scalable Android App Vetting},
+ volume = {},
+ year = {2020}
+}

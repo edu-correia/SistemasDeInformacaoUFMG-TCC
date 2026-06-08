@@ -1,0 +1,18 @@
+@article{10.1145/3689784,
+ abstract = {A challenge of writing concurrent message passing programs is ensuring the absence of partial deadlocks, which can cause severe memory leaks in long running systems. Several static analysis techniques have been proposed for automatically detecting partial deadlocks in Go programs. For a large enterprise code base, we found these tools too imprecise to reason about process communication that is parametric, i.e., where the number of channel communication operations or the channel capacities are determined at runtime.We present a novel approach to automatically verify the absence of partial deadlocks in Go program fragments with such parametric process communication. The key idea is to translate Go fragments to a core language that is sufficiently expressive to represent real-world parametric communication patterns and can be encoded into Dafny programs annotated with postconditions enforcing partial deadlock freedom. In situations where a fragment is partial deadlock free only when the concurrency parameters satisfy certain conditions, a suitable precondition can often be inferred.Experimental results on a real-world code base containing 583 program fragments that are beyond the reach of existing techniques have shown that the approach can verify the absence of partial deadlocks in 145 cases. For an additional 228 cases, a nontrivial precondition is inferred that the surrounding code must satisfy to ensure partial deadlock freedom.},
+ address = {New York, NY, USA},
+ articleno = {344},
+ author = {Saioc, Georgian-Vlad and Lange, Julien and M\o{}ller, Anders},
+ doi = {10.1145/3689784},
+ issue_date = {October 2024},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Software and its engineering → Formal software verification, Theory of computation → Automated reasoning, Go, message passing concurrency, partial deadlocks, static analysis, automated verification, invariant discovery},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {Automated Verification of Parametric Channel-Based Process Communication},
+ url = {https://doi.org/10.1145/3689784},
+ volume = {8},
+ year = {2024}
+}

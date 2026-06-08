@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749713,
+ abstract = {Most recently, researchers have started building large language models (LLMs) powered data systems that allow users to analyze unstructured text documents like working with a database because LLMs are very effective in extracting attributes from documents. In such systems, LLM-based extraction operations constitute the performance bottleneck of query execution due to the high monetary cost and slow LLM inference. Existing systems typically borrow the query optimization principles popular in relational databases to produce query execution plans, which unfortunately are ineffective in minimizing LLM cost. To fill this gap, we propose QUEST, which features a bunch of novel optimization strategies for unstructured document analysis. First, we introduce an index-based strategy to minimize the cost of each extraction operation. With this index, QUEST quickly retrieves the text segments relevant to the target attributes and only feeds them to LLMs. Furthermore, we design an evidence-augmented retrieval strategy to reduce the possibility of missing relevant segments. Moreover, we develop an instance-optimized query execution strategy: because the attribute extraction cost could vary significantly document by document, QUEST produces different plans for different documents. For each document, QUEST produces a plan to minimize the frequency of attribute extraction. The innovations include LLM cost-aware operator ordering strategies and an optimized join execution approach that transforms joins into filters. Extensive experiments on 3 real-world datasets demonstrate the superiority of QUEST, achieving 30%-6\texttimes{} cost savings while improving the F1 score by 10% -27% compared with state-of-the-art baselines.},
+ author = {Sun, Zhaoze and Chai, Chengliang and Deng, Qiyan and Jin, Kaisen and Guo, Xinyu and Han, Han and Yuan, Ye and Wang, Guoren and Cao, Lei},
+ doi = {10.14778/3749646.3749713},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {4560–4573},
+ publisher = {VLDB Endowment},
+ title = {QUEST: Query Optimization in Unstructured Document Analysis},
+ url = {https://doi.org/10.14778/3749646.3749713},
+ volume = {18},
+ year = {2025}
+}

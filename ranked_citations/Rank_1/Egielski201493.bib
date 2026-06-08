@@ -1,0 +1,16 @@
+@article{Egielski201493,
+ abstract = {One important type of parallelism exploited in many applications is reduction type parallelism. In these applications, the order of the read-modify-write updates to one shared data object can be arbitrary as long as there is an imposed order for the read-modify-write updates. The typical way to parallelize these types of applications is to first let every individual thread perform local computation and save the results in thread-private data objects, and then merge the results from all worker threads in the reduction stage. All applications that fit into the map reduce framework belong to this category. Additionally, the machine learning, data mining, numerical analysis and scientific simulation applications may also benefit from reduction type parallelism. However, the parallelization scheme via the usage of thread-private data objects may not be vi- able in massively parallel GPU applications. Because the number of concurrent threads is extremely large (at least tens of thousands of), thread-private data object creation may lead to memory space explosion problems. In this paper, we propose a novel approach to deal with shared data object management for reduction type parallelism on GPUs. Our approach exploits fine-grained parallelism while at the same time maintaining good programmability. It is based on the usage of intrinsic hardware atomic instructions. Atomic operation may appear to be expensive since it causes thread serialization when multiple threads atomically update the same memory object at the same time. However, we discovered that, with appropriate atomic collision reduction techniques, the atomic implementation can out- perform the non-atomics implementation, even for benchmarks known to have high performance non-atomics GPU implementations. In the meantime, the usage of atomics can greatly reduce coding complexity as neither thread-private object management or explicit thread-communication (for the shared data objects protected by atomic operations) is necessary.  © 2014 ACM.},
+ author = {Egielski, Ian J. and Huang, Jesse and Zhang, Eddy Z.},
+ doi = {10.1145/2602988.2602993},
+ journal = {ACM SIGPLAN Notices},
+ note = {Cited by: 14},
+ number = {11},
+ pages = {93 - 103},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Massive atomics for massive parallelism on GPUs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85027164593?origin=resultslist},
+ volume = {49},
+ year = {2014}
+}

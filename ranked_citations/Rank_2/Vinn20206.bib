@@ -1,0 +1,16 @@
+@article{Vinn20206,
+ abstract = {Materialized views can help improve query execution speed dramatically using full or part of stored precalculated query results. Incremental maintenance takes materialized views up-to-date adjusting them accordingly to the changes in related base tables. It is often more effective than a full refresh replacing materialized view tables by the new query execution result. Asynchronous maintenance, which brings the materialized views to the actual state, is not a constituent of the transaction making changes in the base tables. Most of the published works are dedicated to synchronous incremental updating of views, algorithms for which require accessing the pre-update state of base tables and cannot be applied directly to asynchronous updates which are performed on the post-update state. A few works are devoted to asynchronous maintenance of views, either restrict changes in only one of base tables or assume there is only one base table, which is impractical, either is wrong, either provides too high level and complex incremental update algorithms or can be implemented only if the database management system supports data versioning at the table and row levels. In this paper, we propose a solution for the asynchronous incremental update of views which can be implemented with any database management systems. We collect changes in base tables, access the pre-update state of base tables exploiting the condensing process and apply the pre-update incremental maintenance algorithms for asynchronous maintenance on the post-update state of base tables considering the specifics of asynchronous maintenance. It is applicable for SPJ queries with inner joins, queries with inner joins and aggregations. We also build a prototype and provide experiments on automatic generating source codes in C to collect changes in base tables and to perform the asynchronous incremental update of materialized views in PostgreSQL},
+ author = {Vinn, Nguyen Tran Quoc and Nhan, Tran Trong and Van Khanh, Le and Hung, Tran Dang and Alsadoon, Abeer and Prasad, PW Chandana and Hang, Pham Duong Thu},
+ doi = {10.15587/1729-4061.2020.193715},
+ journal = {Eastern-European Journal of Enterprise Technologies},
+ note = {Cited by: 0; All Open Access; Gold Open Access; Green Open Access},
+ number = {103},
+ pages = {6 - 13},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A NEW SOLUTION FOR ASYNCHRONOUS INCREMENTAL MAINTENANCE OF MATERIALIZED VIEWS},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85097246273?origin=resultslist},
+ volume = {1},
+ year = {2020}
+}

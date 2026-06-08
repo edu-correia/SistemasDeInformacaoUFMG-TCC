@@ -1,0 +1,13 @@
+@article{CHEN2025107179,
+ abstract = {Segmentation of optic disc(OD) and optic cup(OC) plays an important role in automatic optic nerve head (ONH) assessment. Most of the existing methods are based on pixel level segmentation. These methods have a good performance in many cases, but cannot ensure the geometric forms and topological structure. In this paper, we parameterized the OD and OC contours, and propose an information aggregation network with contour reconstruction for joint OD and OC segmentation. This framework contains two parts: an information aggregation network for pixel-level segmentation and a contour reconstruction network for result correction. The information aggregation network is composed of three cascaded structures: backbone, semantic segmentation branch, and deep supervision with gradient boosting. Firstly, high-resolution network is used as backbone for the feature representation. Secondly, semantic segmentation branch merges spatial detail to structure information through two kind of paths: the lateral path gradually upsamples low-resolution feature maps, and the top-down path gradually propagates high-level information to low-level feature maps. Thirdly, the deep supervision with gradient boosting is utilized for the progressive modification of segmentation. In order to maintain the prior shape and structure of the OD and OC, a contour reconstruction network is designed with a simple encoder–decoder structure. Fourier coefficients are introduced as parameters describing OD and OC contour in polar coordinate system. The encoder estimates these parameters and the decoder generates final segmentation results. Our method is evaluated on two datasets ORIGA and DRISHTI-GS. The overlapping errors of OD, OC and rim on ORIGA are 0.051,0.200 and 0.196, respectively. The Dice coefficient of OD and OC on DRISHTI-GS are 0.9765 and 0.9178, respectively. The segmentation results demonstrate the effectiveness of our method in preserving the geometric structure.},
+ author = {Changlong Chen and Beiji Zou and Yuanqiong Chen and Chengzhang Zhu},
+ doi = {https://doi.org/10.1016/j.bspc.2024.107179},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {Fundus image, OD and OC segmentation, Information aggregation network, Contour reconstruction},
+ pages = {107179},
+ title = {Optic disc and cup segmentation based on information aggregation network with contour reconstruction},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809424012370},
+ volume = {104},
+ year = {2025}
+}

@@ -1,0 +1,13 @@
+@article{WANG2026101949,
+ abstract = {Point-based weakly supervised change detection cuts annotation costs by replacing pixel-level labels with sparse points, yet suffers from limited semantic and positional cues and poor boundary delineation. To address these challenges, this paper proposes PGU-CD, a point-guided uncertainty-aware framework for building change detection. Specifically, a pseudo-label generation strategy is developed. Firstly, the Segment Anything Model (SAM) leverages sparse point annotations as prompts to generate bi-temporal segmentation results, thereby enriching semantic context and boundary information. Subsequently, set operations are employed to obtain three categories of pseudo-labels (no-change, change, and uncertain), which explicitly model semantically ambiguous regions and mitigate annotation errors introduced by SAM segmentation. In terms of network architecture, a multi-class change detection network integrated with multi-scale feature fusion is constructed, balancing scale generalization ability and fine-grained detail preservation by incorporating semantic and boundary features from SAM's multi-scale representations. Finally, an entropy-based change decision function is designed to output the detection results, which quantifies pixel-level uncertainty via information entropy and corrects boundary localization bias and semantic prediction errors. Comparative experiments on the LEVIR-CD and WHU-CD datasets verify the effectiveness of the proposed method, demonstrating that PGU-CD significantly outperforms state-of-the-art weakly supervised change detection methods in both detection accuracy and generalization performance.},
+ author = {Yongqing Wang and Erzhu Li and Alim Samat and Wei Liu and Xing Li},
+ doi = {https://doi.org/10.1016/j.rsase.2026.101949},
+ issn = {2352-9385},
+ journal = {Remote Sensing Applications: Society and Environment},
+ keyword = {Change detection, Weakly supervised learning, Point annotations, Segment anything model},
+ pages = {101949},
+ title = {PGU-CD: A point-guided uncertainty-aware framework for building change detection},
+ url = {https://www.sciencedirect.com/science/article/pii/S2352938526000820},
+ volume = {41},
+ year = {2026}
+}

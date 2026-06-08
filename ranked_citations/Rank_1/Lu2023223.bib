@@ -1,0 +1,14 @@
+@conference{Lu2023223,
+ abstract = {Existing key-value stores (KVSs) based on log-structured merge-tree (LSM-tree) have been broadly deployed in practice to leverage characteristics of conventional block storage via file system, but lack effective exploitation for emerging byte-addressed persistent memory (PM). We reveal that these KVSs running upon existing PM-aware File systems cause inefficient PM I/O behaviors, including 1) numerous page faults, 2) I/O misaligned with cacheline, and 3) bandwidth wastage of concurrent I/O threads. To make full use of PM without major modification for existing LSM-based KVSs, this paper proposes PMLDS, a direct managed storage for LSM-tree-based KVSs directly running upon PM. PMLDS acts as a unified I/O layer to handle all requests from KVS to PM. PMLDS designs an LSM-tree-aware data layout to directly map the KVS's persistent objects to the storage slots with fixed location and size, thus simplifying and replacing the file system's functionality with a minor modification. To improve I/O efficiency, PMLDS further presents three key techniques: 1) pre-allocating reusable data slots to avoid page faults, 2) forcing cacheline-alignment for small requests, and 3) scheduling asynchronous I/O threads to harness PM's limited parallelism. We implement PMLDS and evaluate it with popular RocksDB under a variety of workloads. The results show that compared to representative PM-aware file systems such as Ext4-DAX, XFS-DAX, NOVA, and WineFS, PMLDS improves the write performance of RocksDB by up to 2.1× while reducing the read latency by 20%~50%. © 2023 Association for Computing Machinery. All rights reserved.},
+ author = {Lu, Ziyi and Cao, Qiang and Wang, Shucheng and Yao, Jie and Yang, Xiangrui},
+ doi = {10.1145/3605573.3605629},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 1},
+ pages = {223 - 232},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PMLDS: An LSM-Tree Direct Managed Storage for Key-Value Stores on Byte-Addressable Devices},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179880897?origin=resultslist},
+ year = {2023}
+}

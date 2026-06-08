@@ -1,0 +1,14 @@
+@inproceedings{9355302,
+ abstract = {The acceleration of Graph Neural Networks (GNNs) requires efficient and framework-compatible Sparse-Dense Matrix-Matrix Multiplication (SpMM). From the compatibility perspective, the sophisticated sparse matrix representations in state-of-the-art SpMM designs cause heavy preprocessing overhead for the framework. From the efficiency perspective, optimizations for SpMV (Sparse Matrix-Vector) do not apply well to SpMM, leading to redundant and uncoalesced global memory access. We propose GE-SpMM1, which takes the CSR format consistent with GNN frameworks to enable integration without the format transformation overhead. We use Coalesced Row Caching to ensure coalesced access to both sparse and dense data in the global memory. We use Coarse-grained Warp Merging to reduce redundant data loading among GPU warps. Experiments on a real-world graph dataset demonstrate up to 1.41× speedup over Nvidia cuSPARSE [1] and up to 1.81× over GraphBLAST [2]. We embed GE-SpMM in GNN frameworks and get up to 3.67× speedup on popular GNN models like GCN [3] and GraphSAGE [4].},
+ author = {Huang, Guyue and Dai, Guohao and Wang, Yu and Yang, Huazhong},
+ booktitle = {SC20: International Conference for High Performance Computing, Networking, Storage and Analysis},
+ doi = {10.1109/SC41405.2020.00076},
+ issn = {},
+ keyword = {Training;Merging;Memory management;Loading;Graph neural networks;Sparse matrices;Optimization},
+ month = {Nov},
+ number = {},
+ pages = {1-12},
+ title = {GE-SpMM: General-Purpose Sparse Matrix-Matrix Multiplication on GPUs for Graph Neural Networks},
+ volume = {},
+ year = {2020}
+}

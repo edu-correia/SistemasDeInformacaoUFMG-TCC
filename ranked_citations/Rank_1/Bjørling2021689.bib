@@ -1,0 +1,13 @@
+@conference{Bjørling2021689,
+ abstract = {The Zoned Namespace (ZNS) interface represents a new division of functionality between host software and flash-based SSDs. Current flash-based SSDs maintain the decades-old block interface, which comes at substantial expense in terms of capacity over-provisioning, DRAM for page mapping tables, garbage collection overheads, and host software complexity attempting to mitigate garbage collection. ZNS offers shelter from this ever-rising block interface tax. This paper describes the ZNS interface and explains how it affects both SSD hardware/firmware and host software. By exposing flash erase block boundaries and write-ordering rules, the ZNS interface requires the host software to address these issues while continuing to manage media reliability within the SSD. We describe how storage software can be specialized to the semantics of the ZNS interface, often resulting in significant efficiency benefits. We show the work required to enable support for ZNS SSDs, and show how modified versions of f2fs and RocksDB take advantage of a ZNS SSD to achieve higher throughput and lower tail latency as compared to running on a block-interface SSD with identical physical hardware. For example, we find that the 99.9<sup>th</sup>-percentile random-read latency for our zone-specialized RocksDB is at least 2-4× lower on a ZNS SSD compared to a blockinterface SSD, and the write throughput is 2× higher. © 2021 USENIX Annual Technical Conference. All rights reserved.},
+ author = {Bjørling, Matias and Aghayev, Abutalib and Holmberg, Hans and Ramesh, Aravind and Le Moal, Damien and Ganger, Gregory R. and Amvrosiadis, George},
+ journal = {2021 USENIX Annual Technical Conference},
+ note = {Cited by: 206},
+ pages = {689 - 703},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ZNS: Avoiding the block interface tax for flash-based SSDs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85107882934?origin=resultslist},
+ year = {2021}
+}

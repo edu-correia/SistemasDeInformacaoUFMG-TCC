@@ -1,0 +1,15 @@
+@conference{Gao2021223,
+ abstract = {With the advent of the era of big data, key-value storage systems based on LSM-Tree have been widely used. Because of its excellent writing performance, it is favored by data centers. LSM-Tree is divided into two parts, one that SkipList structure located in the memory and the other that level structure resident in the disk. The SkipList structure involves two modules, MemTable and Immutable MemTable, which speed up its read and write performance. However, Immutable MemTable is only single and unchangeable, which will cause the thread to block and affect access efficiency in terms of write-intensive workloads. To solve the issue, we propose multiple Immutable MemTables for rotating storage to improve write performance. Furthermore, due to the increase of memory-resident data in the MemTables, the read rate is also enhanced. Through running the benchmarks of the LevelDB system, In the case of less than 1000, 000 key-value items, the read performance can be improved by 15%~65%, and when it comes to less than 10000, 000 key-value items, the write performance can be improved by 15%~71%.  © 2021 IEEE.},
+ author = {Gao, Yuan and Xie, Ping and Hua, Wendi and Lv, Meng and Li, Peixuan},
+ doi = {10.1109/ICSESS52187.2021.9522173},
+ journal = {Proceedings of the IEEE International Conference on Software Engineering and Service Sciences, ICSESS},
+ note = {Cited by: 1},
+ pages = {223 - 227},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Improve the Performance of LSM-Tree Based Key-Value via Multiple Immutable MemTables},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85114964601?origin=resultslist},
+ volume = {2021-August},
+ year = {2021}
+}

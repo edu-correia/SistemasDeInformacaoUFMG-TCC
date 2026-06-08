@@ -1,0 +1,15 @@
+@article{10.1145/3793675,
+ abstract = {Failing test generation is challenging. It involves searching in a vast space for fault-triggering test inputs and the oracles asserting these faulty executions. Despite techniques proposed to generate tests using large language models (LLMs), they are ineffective in finding failing tests, particularly for programs that implement non-trivial coding tasks such as medium/advanced-level coding contest problems.To tackle this limitation, we are inspired by an earlier finding that constituent snippets within a program typically implement simpler coding tasks compared to the program as a whole. As a result, LLMs can be leveraged to generate failing tests that target a program’s constituent snippets, thereby revealing the program defects.Leveraging this insight, we propose Microscopic Test Generation (MitGen), a novel technique of failing test generation. Unlike previous approaches that generate tests to fulfill code coverage, MitGen focuses on generating tests that reveal faults in a given program’s constituent code snippets. We evaluate MitGen using Starcoder2-15B-instruct-v0.1 , Meta-Llama-3-8B-Instruct and CodeQwen1.5-7B-Chat , on two popular benchmarks (EvoEval-Difficult and ClassEval) and 100 real-world subjects. We compare MitGen with three baselines, including state-of-the-art approaches (Differential Prompting and Pynguin) in finding failing tests . The evaluation results show that MitGen’s recall is 0.66 , 112.7% enhancement over the best baseline (0.31 ).},
+ address = {New York, NY, USA},
+ author = {Li, Tsz-On and Yan, Xiaochuan and Zong, Wenxi and Wang, Yibo and Tian, Haoye and Xu, Congying and Wang, Ying and Cheung, Shing-Chi and Kramer, Jeff},
+ doi = {10.1145/3793675},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {failure-revealing test cases, large language models, code infilling, code correctness assessment},
+ month = {February},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Less Is More: Failing Test Generation with Large Language Models},
+ url = {https://doi.org/10.1145/3793675},
+ year = {2026}
+}

@@ -1,0 +1,16 @@
+@article{Yue2017961,
+ abstract = {Multi-component based Log-Structured Merge-tree (LSM-tree) has been becoming one of the mainstream indexes. LSM-tree adopts component-by-component KV item flowing down mechanism to push each KV item from one smaller component to the adjacent larger component during compaction procedures until the KV items reach the largest component. This process incurs significant write amplification and limits the write throughput. In this paper, we propose one multi-component Skip-tree to aggressively push the KV items to the non-adjacent larger components via skipping some components and then make the KV items' top-down move more efficient. We develop adaptive and reliable KV item movements among components. By reducing the number of steps during the flowing process from memory-resident component to the disk-resident largest component, Skip-tree can effectively reduce the write amplification and thus improve the system throughput. We design and implement one high performance key-value store, named SkipStore, based on Skip-tree. The experiments demonstrate that SkipStore outperforms the state-of-the-art open-sourced system RocksDB in Facebook by 66.5 percent under HDD and 61 percent under SSD. © 2017 IEEE.},
+ author = {Yue, Yinliang and He, Bingsheng and Li, Yuzhe and Wang, Weiping},
+ doi = {10.1109/TPDS.2016.2609912},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 44},
+ number = {4},
+ pages = {961 - 973},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Building an Efficient Put-Intensive Key-Value Store with Skip-Tree},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85015628475?origin=resultslist},
+ volume = {28},
+ year = {2017}
+}

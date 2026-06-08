@@ -1,0 +1,15 @@
+@conference{Xie202598,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is a crucial computational operation in various fields, such as graph computation, machine learning, and molecular dynamics. However, due to the irregular data distribution and low density of non-zero elements, the performance of SpMV is typically inferior to that of dense matrix computations. To tackle this issue, numerous optimization efforts have been made on FPGAs equipped with high-bandwidth memory (HBM), addressing problems like excessive transmission latency and load imbalance between channels. Nevertheless, several key challenges remain that hinder the performance of FPGA-based SpMV accelerators, including (1) the tendency for cache blocks to frequently miss and be replaced due to the irregular distribution of non-zero elements in sparse matrices; (2) control divergence issues within the single instruction multiple data (SIMD) SpMV accelerator architecture.To overcome these challenges, this study introduces CoSpMV, an accelerator design for FPGAs with HBM. It incorporates (1) a matrix block synchronous processing technique under ping-pong buffering, (2) a more efficient data compression format known as row-column compressed coordinate format (R3Coo), and (3) a storage accumulation module. R3Coo enhances data transmission efficiency by compressing bit width and improving the efficiency of flag bits; the matrix block synchronous processing technique under ping-pong buffering conceals replacement overhead and prevents irregular cache access by dividing and synchronously processing matrix data into rows and columns; the storage accumulation module eliminates inconsistent control flow by decoupling the addition reduction to be performed within the memory. Experimental results indicate that CoSpMV achieves an average performance improvement of 1.5x compared to state-of-the-art work and an average speedup of 7.4x compared to CPUs.  © 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Xie, DongHuan and Gao, Zhenyu and Lang, Qingjie and Zhang, Dunbo and Chang, Junsheng and Shen, Li},
+ doi = {10.1145/3719276.3725175},
+ journal = {Proceedings of the 22nd ACM International Conference on Computing Frontiers 2025, CF 2025},
+ note = {Cited by: 0},
+ pages = {98 - 106},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Combination of Storage and Accumulation for Synchronous SpMV Acceleration on FPGAs with HBM},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105014909003?origin=resultslist},
+ volume = {1},
+ year = {2025}
+}

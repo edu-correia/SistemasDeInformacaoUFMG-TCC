@@ -1,0 +1,15 @@
+@conference{Chen20232207,
+ abstract = {The log-structured merge tree (LSM-tree) has been widely adopted as a backbone of modern key-value stores. However, the multiple exponentially increased levels of LSM-tree makes it suffer from high write amplification. Existing studies often improve the write performance by sacrificing the read performance, which is inefficient to make trade-offs between the update and search efficiency. In this paper, we exploit nonvolatile memory (NVM) to address the write amplification issue for systems with NVM-SSD hybrid storage, and further propose a reinforcement learning method to navigate between update and search efficiency on the varying workloads. Specifically, we first propose a lightweight hot data identification method to efficiently capture access recency as well as frequency in NVM with relative large capacity. On this basis, we can eliminate different versions of frequently updated data in high-performance NVM without pushing them to SSD. To improve the data access locality and facilitate fine-grained index tuning in each level, we devise a virtual-split method to partition the key space gradually without extra write amplification. Finally, we propose a cost based Q-learning algorithm to adaptively tune the data organizations of each partition according to the changing access patterns. Experimental results show that our approach outperforms existing methods by up to 2.67×.  © 2023 IEEE.},
+ author = {Chen, Lixiang and Chen, Ruihao and Yang, Chengcheng and Han, Yuxing and Zhang, Rong and Zhou, Xuan and Jin, Peiquan and Qian, Weining},
+ doi = {10.1109/ICDE55515.2023.00171},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 17},
+ pages = {2207 - 2219},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Workload-Aware Log-Structured Merge Key-Value Store for NVM-SSD Hybrid Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85167728164?origin=resultslist},
+ volume = {2023-April},
+ year = {2023}
+}

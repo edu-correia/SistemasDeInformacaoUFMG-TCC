@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3682020,
+ abstract = {With a single Bloom filter, one can approximately answer set membership queries within a space budget. Practical systems often use collections of Bloom filters to facilitate applications such as data skipping, sideways information passing, and network filtering. While the optimal space-to-accuracy allocation is well-understood for a single filter, jointly optimizing how space is used across a collection of filters is yet to be studied. We pose this problem in the following way: (1) let's assume that each Bloom filter has some likelihood of being queried, and (2) given knowledge of this likelihood, how do we allocate space to minimize the expected false positive rate? In other words, "hot" filters are allocated more space, and "cold" filters are allocated less space. In this paper, we show how to solve this optimization problem. We first develop the concept of a "truncated" Bloom filter and theoretically analyze its false positive rate. We then formulate an optimization problem for a collection of truncated Bloom filters that minimizes the false positive rate across a utility distribution while meeting a strict space budget. Next, we show that the problem is convex and find a fast relaxation. Lastly, we apply our method to data skipping and full-text search, demonstrating its effectiveness across the range of possible space budgets when compared to the state of the art.},
+ author = {Mersy, Gabriel and Wang, Zhuo and Sintos, Stavros and Krishnan, Sanjay},
+ doi = {10.14778/3681954.3682020},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {3551–3564},
+ publisher = {VLDB Endowment},
+ title = {Optimizing Collections of Bloom Filters within a Space Budget},
+ url = {https://doi.org/10.14778/3681954.3682020},
+ volume = {17},
+ year = {2024}
+}

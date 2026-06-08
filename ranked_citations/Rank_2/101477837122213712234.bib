@@ -1,0 +1,17 @@
+@article{10.14778/3712221.3712234,
+ abstract = {Selecting a good execution plan can significantly improve the query efficiency of Spark SQL. Several machine learning-based techniques have been proposed to select good execution plans for DBMS, but none of them perform well on Spark SQL due to the following issues. (1) Limited compatibility with Spark SQL: these approaches rely on physical operator enumeration, while Spark SQL doesn't support it; (2) Unreliable cost estimation: they often select execution plans with poor performance due to inaccurate cost estimation; (3) Time-consuming plan enumeration: they take much time to generate a large number of candidate execution plans in Spark SQL. To overcome these issues, in this paper, we propose LEAP, the first learned query optimizer tailored for Spark SQL, which can be integrated seamlessly into Spark SQL and solves the compatibility issue. Also, to avoid the unreliable cost value estimation, LEAP selects execution plans with an estimation-free method, which directly performs comparisons between the plans. Furthermore, LEAP employs an efficient progressive plan enumeration algorithm with pruning techniques to find better plans with fewer enumerations. Extensive experiments on three public benchmarks show the effectiveness of LEAP. It reduces the end-to-end execution time of the native optimizer by up to 54% and other learned methods by up to 94%.},
+ author = {Ye, Junhao and Li, Jiahui and Chen, Lu and Mao, Yuren and Gao, Yunjun and Li, Tianyi},
+ doi = {10.14778/3712221.3712234},
+ issn = {2150-8097},
+ issue_date = {November 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {13},
+ pages = {675–687},
+ publisher = {VLDB Endowment},
+ title = {LEAP: A Low-Cost Spark SQL Query Optimizer using Pairwise Comparison},
+ url = {https://doi.org/10.14778/3712221.3712234},
+ volume = {18},
+ year = {2024}
+}

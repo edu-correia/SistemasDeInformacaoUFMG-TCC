@@ -1,0 +1,16 @@
+@conference{Lee2009373,
+ abstract = {In a typical commercial multi-core processor, the last level cache (LLC) is shared by two or more cores. Existing studies have shown that the shared LLC is beneficial to concurrent query processes with commonly shared data sets. However, the shared LLC can also be a performance bottleneck to concurrent queries, each of which has private data structures, such as a hash table for the widely used hash join operator, causing serious cache conflicts. We show that cache conflicts on multi-core processors can significantly degrade overall database performance. In this paper, we propose a hybrid system method called MCC-DB for accelerating executions of warehouse-style queries, which relies on the DBMS knowledge of data access patterns to minimize LLC conflicts in multicore systems through an enhanced OS facility of cache partitioning. MCC-DB consists of three components: (1) a cacheaware query optimizer carefully selects query plans in order to balance the numbers of cache-sensitive and cache-insensitive plans; (2) a query execution scheduler makes decisions to corun queries with an objective of minimizing LLC conflicts; and (3) an enhanced OS kernel facility partitions the shared LLC according to each query's cache capacity need and locality strength. We have implemented MCC-DB by patching the three components in PostgreSQL and Linux kernel. Our intensive measurements on an Intel multi-core system with warehouse-style queries show that MCC-DB can reduce query execution times by up to 33%. © 2009 VLDB Endowment.},
+ author = {Lee, Rubao and Ding, Xiaoning and Chen, Feng and Lu, Qingda and Zhang, Xiaodong},
+ doi = {10.14778/1687627.1687670},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 41},
+ number = {1},
+ pages = {373 - 384},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MCC-DB: Minimizing cache conflicts in multi-core processors for databases},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/77955032509?origin=resultslist},
+ volume = {2},
+ year = {2009}
+}

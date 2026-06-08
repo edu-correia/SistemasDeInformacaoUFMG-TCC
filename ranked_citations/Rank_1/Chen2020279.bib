@@ -1,0 +1,15 @@
+@article{Chen2020279,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is one of the important subroutines in numerical linear algebras widely used in lots of large-scale applications. Accelerating SpMV on multicore and manycore architectures based on Compressed Sparse Row (CSR) format via row-wise parallelization is one of the most popular directions. However, there are three main challenges in optimizing parallel CSR-based SpMV: (a) limited local memory of each computing unit can be overwhelmed by assignments to long rows of large-scale sparse matrices; (b) irregular accesses to the input vector result in expensive memory access latency; (c) sparse data structure leads to low bandwidth usage. This paper proposes a two-phase large-scale SpMV, called tpSpMV, based on the memory structure and computing architecture of multicore and manycore architectures to alleviate the three main difficulties. First, we propose the two-phase parallel execution technique for tpSpMV that performs parallel CSR-based SpMV into two separate phases to overcome the computational scale limitation. Second, we respectively propose the adaptive partitioning methods and parallelization designs using the local memory caching technique for the two phases to exploit the architectural advantages of the high-performance computing platforms and alleviate the problem of high memory access latency. Third, we design several optimizations, such as data reduction, aligned memory accessing, and pipeline technique, to improve bandwidth usage and optimize tpSpMV's performance. Experimental results on SW26010 CPUs of the Sunway TaihuLight supercomputer prove that tpSpMV achieves up to 28.61 speedups and yields the performance improvement of 13.16% over the state-of-the-art work on average. © 2020},
+ author = {Chen, Yuedan and Xiao, Guoqing and Wu, Fan and Tang, Zhuo and Li, Keqin},
+ doi = {10.1016/j.ins.2020.03.020},
+ journal = {Information Sciences},
+ note = {Cited by: 17},
+ pages = {279 - 295},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {tpSpMV: A two-phase large-scale sparse matrix-vector multiplication kernel for manycore architectures},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85082132826?origin=resultslist},
+ volume = {523},
+ year = {2020}
+}

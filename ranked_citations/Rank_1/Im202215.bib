@@ -1,0 +1,14 @@
+@conference{Im202215,
+ abstract = {Zoned Namespace (ZNS) is a novel storage interface that offers logical zones aligned to a physical media (e.g., NAND flash) to the host system. Due to the out-of-place updating scheme of the physical media, a log-structured merged-tree (LSM-Tree)-based key-value store, such as RocksDB, fits well with the append-only constraint of ZNS SSDs. Even though ZenFS, which is a file system plugin of RocksDB, shows a decent throughput with a large-zone ZNS SSD, the performance with a small-zone ZNS SSD is disappointing because the small-sized zone has no room to exploit the internal parallelism. In this paper, we propose two parallel I/O mechanisms to exploit the external parallelism by distributing I/O data to multiple zones in parallel. The proposed I/O mechanisms are applied to ZenFS according to the characteristic of LSM-tree levels. In addition, a dynamic zone management policy is proposed to maximize the space utilization by placing the data chunks with similar lifetime to the same zone so that the files placed in one zone are deleted at around the same time. This enables the zones to be reused without garbage collection. The proposed methods are evaluated with various workloads in db_bench benchmarking tool (i.e., fillrandom, fillseq, readseq, overwrite) in RocksDB. Experimental results show that the proposed method achieves outstanding improvements compared to the conventional ZenFS. It shows 7.5× for the I/O performance in average while keeping nearly the same degree of spatial efficiency.  © 2022 ACM.},
+ author = {Im, Minwoo and Kang, Kyungsu and Yeom, Heonyoung},
+ doi = {10.1145/3564695.3564774},
+ journal = {Middleware 2022 Industrial Track - Proceedings of the 23rd International Middleware Conference Industrial Track, Part of Middleware 2022},
+ note = {Cited by: 25},
+ pages = {15 - 21},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating RocksDB for small-zone ZNS SSDs by parallel I/O mechanism},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85144828281?origin=resultslist},
+ year = {2022}
+}

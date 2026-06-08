@@ -1,0 +1,17 @@
+@article{10.14778/2732977.2732997,
+ abstract = {Query optimizers built on the Volcano/Cascades framework, which is based on transformation rules, are used in many commercial databases. Transformation rulesets proposed earlier for join order enumeration in such a framework either allow enumeration of joins with cross-products (which can significantly increase the cost of optimization), or generate a large number of duplicate derivations. In this paper we propose two new rulesets for generating cross-product free trees. One of the rulesets is a minor extension of a simple but inefficient ruleset, which we prove is complete (we also show that a naive extension of an efficient ruleset leads to incompleteness). We then propose an efficient new ruleset, which is based on techniques proposed recently for top-down join order enumeration, but unlike earlier work it is cleanly integrated into the Volcano/Cascades framework, and can be used in conjunction with other transformation rules. We show that our ruleset is complete (i.e., it generates the entire search space without cross products) while avoiding inefficiency due to duplicate derivations. We have implemented this ruleset in the PyroJ Optimizer (an implementation of the Volcano optimizer framework) and show that it significantly outperforms the alternatives, in some cases by up to two orders of magnitude, in terms of time taken.},
+ author = {Shanbhag, Anil and Sudarshan, S.},
+ doi = {10.14778/2732977.2732997},
+ issn = {2150-8097},
+ issue_date = {August 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {1243–1254},
+ publisher = {VLDB Endowment},
+ title = {Optimizing join enumeration in transformation-based query optimizers},
+ url = {https://doi.org/10.14778/2732977.2732997},
+ volume = {7},
+ year = {2014}
+}

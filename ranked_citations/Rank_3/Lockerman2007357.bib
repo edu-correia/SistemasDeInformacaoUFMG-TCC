@@ -1,0 +1,13 @@
+@conference{Lockerman2007357,
+ abstract = {The FuzzyLog is a partially ordered shared log abstraction. Distributed applications can concurrently append to the partial order and play it back. FuzzyLog applications obtain the benefits of an underlying shared log - extracting strong consistency, durability, and failure atomicity in simple ways - without suffering from its drawbacks. By exposing a partial order, the FuzzyLog enables three key capabilities for applications: linear scaling for throughput and capacity (without sacrificing atomicity), weaker consistency guarantees, and tolerance to network partitions. We present Dapple, a distributed implementation of the FuzzyLog abstraction that stores the partial order compactly and supports efficient appends / playback via a new ordering protocol. We implement several data structures and applications over the FuzzyLog, including several map variants as well as a ZooKeeper implementation. Our evaluation shows that these applications are compact, fast, and flexible: they retain the simplicity (100s of lines of code) and strong semantics (durability and failure atomicity) of a shared log design while exploiting the partial order of the FuzzyLog for linear scalability, flexible consistency guarantees (e.g., causal+ consistency), and network partition tolerance. On a 6-node Dapple deployment, our FuzzyLog-based ZooKeeper supports 3M/sec single-key writes, and 150K/sec atomic cross-shard renames. © Proceedings of NSDI 2010: 7th USENIX Symposium on Networked Systems Design and Implementation. All rights reserved.},
+ author = {Lockerman, Joshua and Abadi, Daniel J. and Faleiro, Jose M. and Kim, Juno and Aspnes, James and Sen, Siddhartha and Sankaran, Soham and Balakrishnan, Mahesh},
+ journal = {Proceedings of the 13th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2018},
+ note = {Cited by: 29},
+ pages = {357 - 372},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {The fuzzylog: A partially ordered shared log},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85076684557?origin=resultslist},
+ year = {2007}
+}

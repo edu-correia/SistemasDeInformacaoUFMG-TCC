@@ -1,0 +1,14 @@
+@article{11205912,
+ abstract = {key-value (KV) stores based on log-structured merge trees (LSM-trees) have become vital for managing large-scale unstructured data. Recent studies have proposed hybrid zoned storage architectures—combining host-managed shingled magnetic recording (HM-SMR) HDDs and zoned namespace (ZNS) SSDs—to balance performance and cost, making them well-suited for LSM-tree–based KV stores. Although a number of novel schemes have been developed to optimize write performance, garbage collection, and compaction overhead, read performance remains a critical challenge. Specifically, we observe that read requests often concentrate on low-performance HM-SMR HDDs, resulting in severe read bottlenecks. To address this issue, we propose hybrid zoned cache improvement (HZCI) to enhance read efficiency in hybrid zoned KV stores. First, we construct a hybrid-granularity zoned cache that leverages file access patterns to exploit the high-speed characteristics of ZNS SSDs. Second, we introduce an access-aware cache management strategy to intelligently manage the KV cache within ZNS SSDs. Finally, we design a compaction mechanism that balances read performance with compaction overhead, thereby improving cache efficiency. Experimental results show that HZCI improves average read throughput by 32%, 40%, and 52% compared to GearDB, ZoneKV, and SpanDB, respectively.},
+ author = {Nie, Shiqiang and Li, Menghan and Zhang, Chi and Zhang, Di and Wu, Weiguo},
+ doi = {10.1109/LES.2025.3599998},
+ issn = {1943-0671},
+ journal = {IEEE Embedded Systems Letters},
+ keyword = {Performance evaluation;Costs;Shingled magnetic recording;Throughput;Cache storage;Compaction;key-value (KV) store;log-structured merge tree (LSM-tree);persistent cache;zoned storage device},
+ month = {Oct},
+ number = {5},
+ pages = {321-324},
+ title = {Accelerating LSM-Tree KV Stores via Caching Hot Keys on Hybrid Zoned Storage},
+ volume = {17},
+ year = {2025}
+}

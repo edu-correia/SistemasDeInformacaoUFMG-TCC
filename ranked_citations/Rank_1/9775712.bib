@@ -1,0 +1,14 @@
+@article{9775712,
+ abstract = {Existing malicious device detection preprocessing ignores the topological similarity of node neighborhood structures in the network. According to the structural equivalence hypothesis, devices with approximately local symmetry in the device-account graph have similar topological embeddings after preprocessing. In order to improve the performance of malicious device detection, we propose the Graph Structural-topic Similar Subgraph Merging, abbreviated GraphSTSGM, to extract topological similarity between nodes. GraphSTSGM extracts approximate local symmetry features by adding local neighborhood structural patterns merge to Graph Structural-topic Neural Network (GraphSTONE). In this algorithm, we build a device-account relationship graph  $G$  with devices and accounts as nodes, build an edge between associated devices and accounts, and then calculate the approximate local symmetry of each device via the merge-similar-substructures-based anonymous walk in  $G$ . Then, the approximate local symmetry features and device features of the nodes are aggregated through Graph Convolutional Network (GCN). We use the above algorithm as a preprocessing method to enhance the ability of malicious device detection by accurately characterizing the approximate local symmetry features of nodes. Finally, the obtained aggregated features are used as the input of the Density-Based Spatial Clustering of Applications with Noise (DBSCAN) model for malicious device detection. Experiments based on Alibaba Cloud Security data show that the proposal outperforms the state-of-the-art algorithms by 3.6% with respect to the AUC of malicious device detection. In addition, experiments based on the graph dataset Cora show that the proposal outperforms the state-of-the-art algorithms by 2.6% with respect to the AUC of node classification.},
+ author = {Hao, Yiran and Lu, Quan and Chen, Xinming},
+ doi = {10.1109/ACCESS.2022.3175581},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Feature extraction;Detection algorithms;Approximation algorithms;Performance evaluation;Topology;Support vector machines;Neural networks;Approximate local symmetry features;anonymous walk;automatic preprocessing;graph representation;graph structural topic neural network;local neighborhood structural patterns;malicious device detection},
+ month = {},
+ number = {},
+ pages = {53418-53432},
+ title = {A Graph Representation Learning Algorithm for Approximate Local Symmetry Feature Extraction to Enhance Malicious Device Detection Preprocessing},
+ volume = {10},
+ year = {2022}
+}

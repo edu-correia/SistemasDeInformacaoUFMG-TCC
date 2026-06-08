@@ -1,0 +1,15 @@
+@conference{Matsuda2014163,
+ abstract = {KMR is a map-reduce library designed to exploit the capacity and capability of supercomputers. To match the supercomputer environment, KMR runs on memory, communicates by MPI, and utilizes CPU cores by multithreading. In such a design, shuffling communication is implemented by MPI-Alltoallv. However, since many map-reduce systems have demonstrated to exploit overlaps of communication and computation in the literature, it is necessary to assess overlapping in KMR. For this purpose, two new shuffling modes are introduced in addition to the normal all-to-all mode. In the send-at-add mode, messages are sent when the buffer is full during mapping and reducing. In the fast-notice mode, a lightweight event notification is performed alongside the send-at-add mode messages. We chose TPC-H as a benchmark with a shuffle-heavy workload, and benchmarked five out of the 22 queries defined in TPC-H. This benchmark was performed with 1024 nodes on the K Computer. The results show only a slight improvement, at most 15% reduction of the execution time. Although the fast-notice mode achieves precise polling timing, it slightly degrades the performance. Analyzing the breakdown of completions of the send-at-add mode messages reveals that the mapping/reducing operations are quickly finished before the messages are exchanged. That is, there is a little chance of overlapping for TPC-H queries, per se. We conclude that the benefit of overlapping is marginal in the current MPI environment. © ACM 2014.},
+ author = {Matsuda, Motohiko and Takizawa, Shinichiro and Maruyama, Naoya},
+ doi = {10.1145/2642769.2642800},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 1},
+ pages = {163 - 168},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Evaluation of asynchronous MPI communication in map-reduce system on the K computer},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84958955072?origin=resultslist},
+ volume = {09-12-September-2014},
+ year = {2014}
+}

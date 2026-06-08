@@ -1,0 +1,13 @@
+@article{DHAYAL2025101732,
+ abstract = {Rapid delineation of landslides from post-event remote-sensing imagery demands models that can be deployed in the field, often on battery-powered edge devices with strict memory and latency budgets. Most state-of-the-art detectors break those constraints, shipping tens of millions of parameters to gain marginal accuracy. We therefore introduce a Dual-Stream Attention Network whose total trainable footprint is just 2.03M parameters – roughly the size of a single JPEG image – yet still exploits the complementary physics of co-registered RGB orthomosaics and digital-elevation models. Two light encoders process the modalities independently; a provably isometric late-fusion operator merges their hierarchies without information loss, and a (≤1)-Lipschitz spatial-channel gate discards redundant features while preserving gradient stability. Despite its size, the network attains an IoU of 0.835 and an mIoU of 0.818 on the high-resolution Bijie benchmark, coming within 4–5 percentage points of heavyweight baselines such as DeepLabv3\protect \relax \special {t4ht=＋}(R-101) while using ≈95% fewer weights. Ablation studies show that each architectural choice – dual-stream processing, late fusion, and attentional gating – contributes at least +1.5 pp IoU. A single Jetson Xavier AGX segments a 256 × 256 tile in 1.6 s (<10 W envelope), confirming real-time suitability for rapid landslide mapping missions. By reconciling DEM-derived information with extreme parameter efficiency, the proposed architecture offers a practical foundation for next-generation, on-device geohazard monitoring systems.},
+ author = {Pooja Dhayal and Pradeep Singh and Kanishk Sharma and Samarpita Sarkar and Dhani Ram Rajak and Alok Bhardwaj and Balasubramanian Raman},
+ doi = {https://doi.org/10.1016/j.rsase.2025.101732},
+ issn = {2352-9385},
+ journal = {Remote Sensing Applications: Society and Environment},
+ keyword = {Dual-stream network, Landslide segmentation, Geohazard monitoring, Multi-modal fusion, Attention gate, Spectral texture},
+ pages = {101732},
+ title = {A lightweight Dual-Stream Attention Network for real-time landslide monitoring in multi-modal remote sensing imagery},
+ url = {https://www.sciencedirect.com/science/article/pii/S235293852500285X},
+ volume = {40},
+ year = {2025}
+}

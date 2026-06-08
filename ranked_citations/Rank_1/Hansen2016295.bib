@@ -1,0 +1,16 @@
+@article{Hansen2016295,
+ abstract = {This paper describes an approach that seeks to parallelize the spatial search associated with computational contact mechanics. In contact mechanics, the purpose of the spatial search is to find “nearest neighbors,” which is the prelude to an imprinting search that resolves the interactions between the external surfaces of contacting bodies. In particular, we are interested in the contact global search portion of the spatial search associated with this operation on domain-decomposition-based meshes. Specifically, we describe an implementation that combines standard domain-decomposition-based MPI-parallel spatial search with thread-level parallelism (MPI-X) available on advanced computer architectures (those with GPU coprocessors). Our goal is to demonstrate the efficacy of the MPI-X paradigm in the overall contact search. Standard MPI-parallel implementations typically use a domain decomposition of the external surfaces of bodies within the domain in an attempt to efficiently distribute computational work. This decomposition may or may not be the same as the volume decomposition associated with the host physics. The parallel contact global search phase is then employed to find and distribute surface entities (nodes and faces) that are needed to compute contact constraints between entities owned by different MPI ranks without further inter-rank communication. Key steps of the contact global search include computing bounding boxes, building surface entity (node and face) search trees and finding and distributing entities required to complete on-rank (local) spatial searches. To enable source-code portability and performance across a variety of different computer architectures, we implemented the algorithm using the Kokkos hardware abstraction library. While we targeted development towards machines with a GPU accelerator per MPI rank, we also report performance results for OpenMP with a conventional multi-core compute node per rank. Results here demonstrate a 47 % decrease in the time spent within the global search algorithm, comparing the reference ACME algorithm with the GPU implementation, on an 18M face problem using four MPI ranks. While further work remains to maximize performance on the GPU, this result illustrates the potential of the proposed implementation. © 2015, Springer-Verlag London (outside the USA).},
+ author = {Hansen, Glen A. and Xavier, Patrick G. and Mish, Sam P. and Voth, Thomas E. and Heinstein, Martin W. and Glass, Micheal W.},
+ doi = {10.1007/s00366-015-0418-x},
+ journal = {Engineering with Computers},
+ note = {Cited by: 12; All Open Access; Green Open Access},
+ number = {2},
+ pages = {295 - 311},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An MPI+X implementation of contact global search using Kokkos},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84961054295?origin=resultslist},
+ volume = {32},
+ year = {2016}
+}

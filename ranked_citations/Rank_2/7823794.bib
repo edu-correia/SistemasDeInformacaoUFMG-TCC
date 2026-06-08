@@ -1,0 +1,14 @@
+@inproceedings{7823794,
+ abstract = {Key-value stores are widely used to provide much higher read and write throughput than traditional SQL databases. LSMT (log structure merge tree) based key-value store, as one type of key-value stores, is applied in many practical systems since it could eliminate random writes and provide good read performance at the same time. However, the data residing in disk needs compaction operations from time to time, which takes a large amount of I/O resources. Since disk access speed is much slower than DRAM and most data resides in disks, the compaction operation will significantly influence the system performance. In this paper, we propose a grouped level structure, which divides each level in LSMT into multiple groups. Also, we propose a new compaction method for the grouped level structure to reduce the compaction I/O overhead. Our experiments show that the grouped level structure saves about 55% to 78% I/O resource of compaction, so it improves the write throughput by 69% to 284%, but only reduces the read throughput by 5% to 9%. It improves the overall throughput by 30% to 69% with read dominated workloads of 25% write operations and 75% read operations.},
+ author = {Zhang, Weitao and Xu, Yinlong and Li, Yongkun and Li, Dinglong},
+ booktitle = {2016 IEEE 22nd International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS.2016.0079},
+ issn = {1521-9097},
+ keyword = {Compaction;Throughput;Micromechanical devices;Layout;Indexes;High performance computing;Key-Value;Log Structured Merge Tree;Compaction},
+ month = {Dec},
+ number = {},
+ pages = {553-560},
+ title = {Improving Write Performance of LSMT-Based Key-Value Store},
+ volume = {},
+ year = {2016}
+}

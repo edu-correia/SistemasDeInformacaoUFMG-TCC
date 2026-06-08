@@ -1,0 +1,15 @@
+@article{Suh202334603,
+ abstract = {Downsampling layers are essential for convolutional neural network-based semantic segmentation methods to widen their receptive fields. However, as fine-grained information is lost in the layers, the accuracy of these methods becomes limited. The need for downsampling layers can be eliminated by using a transformer encoder. Nevertheless, removing downsampling layers inevitably increases the computational cost of the network. In this paper, we present a mask transformer layer that reduces computational cost in any transformer-based networks by substituting a vanilla transformer layer. Additionally, we introduce an aggregation scheme to merge masked outputs, which enhances the accuracy of predictions. Our method aggregates intermediate outputs to generate a final output where the number of intermediate outputs depends on the importance of an area. With this strategy, we achieve different computational cost levels by modulating the threshold used to determine the importance. Our method comprises the following steps. First, we split the transformer encoder into several blocks and attach a segmentation decoder to each block to estimate the intermediate segmentation output. On the basis of the intermediate outputs and predefined thresholds, we classify unnecessary image patches and remove them in subsequent blocks. By progressively masking unnecessary patches, we obtain multiple intermediate outputs for important areas; aggregating them yields better segmentation accuracy with a lower computational burden. In addition, we determine the most effective training scheme and devise a threshold-search algorithm to optimally determine threshold hyperparameters. Extensive experiments on the ADE20K, Cityscapes, and Pascal-Context datasets verify the efficacy of our design, which surpasses the accuracy of the baseline method with lower computational cost.  © 2013 IEEE.},
+ author = {Suh, Min-Kook and Seo, Seung-Woo},
+ doi = {10.1109/ACCESS.2023.3265077},
+ journal = {IEEE Access},
+ note = {Cited by: 2; All Open Access; Gold Open Access; Green Open Access},
+ pages = {34603 - 34615},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Aggregation of Masked Outputs for Improving Accuracy-Cost Trade-Off in Semantic Segmentation},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85153331834?origin=resultslist},
+ volume = {11},
+ year = {2023}
+}

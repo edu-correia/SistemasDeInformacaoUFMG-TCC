@@ -1,0 +1,18 @@
+@article{10.1145/3786677,
+ abstract = {The deployment of databases across geographically distributed regions has become increasingly critical for ensuring data reliability and scalability. Recent studies indicate that distributed databases exhibit significantly higher latency than single-node databases, primarily due to consensus protocols maintaining data consistency across multiple nodes. We argue that synchronization cost constitutes the primary bottleneck for distributed databases, which is particularly pronounced in wide-area networks (WANs). Fortunately, we identify opportunities to optimize synchronization costs in real production environments: (1) network clustering phenomena, (2) triangle inequality violations in transmission, and (3) redundant data transfers. Based on these observations, we propose GeoCoCo, a synchronization acceleration framework for cross-region distributed databases. First, GeoCoCo presents a group rescheduling strategy that adapts to real-time network conditions to maximize WAN transmission efficiency. Second, GeoCoCo introduces a task-preserving data filtering method that reduces the data volume transmitted over the WAN. Finally, GeoCoCo develops a consistency-guaranteed transmission framework integrating grouping and pruning. Extensive evaluations in both trace-driven simulations and real-world deployments demonstrate that GeoCoCo reduces synchronization cost—primarily by lowering WAN bandwidth usage—by up to 40.3%, and improves system throughput by up to 14.1% in GeoGauss.},
+ address = {New York, NY, USA},
+ articleno = {63},
+ author = {Xu, Duling and Li, Tong and Sun, Zegang and Chen, Zheng and Zhou, Weixing and Zhang, Yanfeng and Lu, Wei and Du, Xiaoyong},
+ doi = {10.1145/3786677},
+ issue_date = {February 2026},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {geo-distributed databases, synchronization, consistency, wan, distributed systems},
+ month = {April},
+ number = {1},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Performant Synchronization in Geo-Distributed Databases},
+ url = {https://doi.org/10.1145/3786677},
+ volume = {4},
+ year = {2026}
+}

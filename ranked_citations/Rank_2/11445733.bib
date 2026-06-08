@@ -1,0 +1,14 @@
+@inproceedings{11445733,
+ abstract = {Interactive segmentation (IS) allows users to iteratively refine object boundaries with minimal cues, such as positive and negative clicks. While the Segment Anything Model (SAM) has garnered attention in the IS community for its promptable segmentation capabilities, it often struggles in specialized domains or when handling complex scenarios (e.g., camouflaged or multi-part objects). To overcome these challenges, we propose DC-TTA, a novel test-time adaptation (TTA) framework that adapts SAM on a persample basis by leveraging user interactions as supervision. Instead of forcing a single model to incorporate all user clicks at once, DC-TTA partitions the clicks into more coherent subsets, each processed independently via TTA with a separated model. This Divide-and-Conquer strategy reduces conflicts among diverse cues and enables more localized updates. Finally, we merge the adapted models to form a unified predictor that integrates the specialized knowledge from each subset. Experimental results across various benchmarks demonstrate that DC-TTA significantly outperforms SAM's zero-shot results and conventional TTA methods, effectively handling complex tasks such as camouflaged object segmentation with fewer interactions and improved accuracy. The code is available at https://github.com/jihun1998/DCTTA.},
+ author = {Kim, Jihun and Kwon, Hoyong and Kweon, Hyeokjun and Jeong, Wooseong and Yoon, Kuk-Jin},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02161},
+ issn = {2380-7504},
+ keyword = {Low earth orbit satellites;Circuits;Feedback;Communications technology;Information and communication technology;Pixel;Videos;Protocols;Communication systems;Video equipment;divide-and-conquer;test-time adaptation;interactive segmentation;segment anything model},
+ month = {Oct},
+ number = {},
+ pages = {23279-23289},
+ title = {DC-TTA: Divide-and-Conquer Framework for Test-Time Adaptation of Interactive Segmentation},
+ volume = {},
+ year = {2025}
+}

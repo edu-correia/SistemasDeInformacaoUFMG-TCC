@@ -1,0 +1,15 @@
+@conference{Wasly201764,
+ abstract = {Overlay NoCs, such as Hoplite, are cheap to implement on an FPGA but provide no bounds on worst-case routing latency of packets traversing the NoC due to deflection routing. In this paper, we show how to adapt Hoplite to enable calculation of precise upper bounds on routing latency by modifying the routing function to prioritize deflections, and by regulating the injection of packets to meet certain throughput and burstiness constraints. We provide an analytical model for computing endto-end latency in the form of (1) in-flight time in the network T<sup>f</sup> , and (2) waiting time at the source node T<sup>s</sup>. To bound inflight time in an m × m NoC, we modify the routing function and switching crossbar richness in the Hoplite router to deliver T<sup>f</sup> = ΔX + ΔY + (ΔY × m) + 2 where ΔX and ΔY are differences of the source and destination address co-ordinates of the packet. To bound the waiting time at the source, we add a Token Bucket regulator with rate ρi and burstiness ωi for each flow f<sub>i</sub> of node (x, y) to deliver (1/ρ<sub>i</sub>ρi⌉-1)+T<sup>s</sup>: T<sup>s</sup> = ⌈ω(ΓCf )1-ρ(ΓCf ) ⌉ which depends on the regulator period 1/ρi, burstiness ω and the rate ρ of all interfering flows ΓC f . A 64b implementation of our HopliteRT router requires ≈4% fewer LUTs, and similar number of FFs compared to the original Hoplite router. We also need two small counters at each client port for regulating injection. We evaluate our model and RTL implementation across synthetic traffic patterns and observe behavior that conforms with the analytical bounds. © 2017 IEEE.},
+ author = {Wasly, Saud and Pellizzoni, Rodolfo and Kapre, Nachiket},
+ doi = {10.1109/FPT.2017.8280122},
+ journal = {2017 International Conference on Field-Programmable Technology, ICFPT 2017},
+ note = {Cited by: 21},
+ pages = {64 - 71},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HopliteRT: An efficient FPGA NoC for real-time applications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85050869527?origin=resultslist},
+ volume = {2018-January},
+ year = {2017}
+}

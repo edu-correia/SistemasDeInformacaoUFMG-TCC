@@ -1,0 +1,14 @@
+@inproceedings{7161562,
+ abstract = {We present the design and evaluation of a distributed matrix-assembly abstraction for large-scale inverse problems in HPC environments: namely, physics-based Hessian estimation in full-waveform seismic inversion at the scale of the entire globe. Our solution to this data-assimilation problem relies on UPC++, a new PGAS extension to the C++ language, to implement one-sided asynchronous updates to distributed matrix elements, and allows us to tackle inverse problems well beyond our previous capabilities. Our evaluation includes scaling results for Hessian estimation on up to 12, 288 cores, typical of current production scientific runs and next-generation inversions. We also present comparisons with an alternative implementation based on MPI-3 remote memory access (RMA) operations, focusing on performance and code complexity. Interoperability between UPC++ and other parallel programming tools (e.g. MPI, OpenMP) allowed for incremental adoption of the PGAS model where most beneficial. Further, we note that this model of asynchronous assembly can generalize to other data-assimilation applications that accumulate updates into shared global state.},
+ author = {French, Scott and Zheng, Yili and Romanowicz, Barbara and Yelick, Katherine},
+ booktitle = {2015 IEEE International Parallel and Distributed Processing Symposium},
+ doi = {10.1109/IPDPS.2015.58},
+ issn = {1530-2075},
+ keyword = {Computational modeling;Jacobian matrices;Memory management;Assembly;Electronics packaging;Earth;Data models},
+ month = {May},
+ number = {},
+ pages = {753-762},
+ title = {Parallel Hessian Assembly for Seismic Waveform Inversion Using Global Updates},
+ volume = {},
+ year = {2015}
+}

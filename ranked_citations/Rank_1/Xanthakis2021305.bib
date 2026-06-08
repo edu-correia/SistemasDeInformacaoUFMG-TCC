@@ -1,0 +1,14 @@
+@conference{Xanthakis2021305,
+ abstract = {Key-value (KV) separation is a technique that introduces randomness in the I/O access patterns to reduce I/O amplification in LSM-based key-value stores. KV separation has a significant drawback that makes it less attractive: Delete and update operations in modern workloads result in frequent and expensive garbage collection (GC) in the value log. In this paper, we design and implement Parallax, which proposes hybrid KV placement to reduce GC overhead significantly and increases the benefits of using a log. We first model the benefits of KV separation for different KV pair sizes. We use this model to classify KV pairs in three categories small, medium, and large. Then, Parallax uses different approaches for each KV category: It always places large values in a log and small values in place. For medium values it uses a mixed strategy that combines the benefits of using a log and eliminates GC overhead as follows: It places medium values in a log for all but the last few (typically one or two) levels in the LSM structure, where it performs a full compaction, merges values in place, and reclaims log space without the need for GC. We evaluate Parallax against RocksDB that places all values in place and BlobDB that always performs KV separation. We find that Parallax increases throughput by up to 12.4x and 17.83x, decreases I/O amplification by up to 27.1x and 26x, and increases CPU efficiency by up to 18.7x and 28x, respectively, for all but scan-based YCSB workloads.  © 2021 Association for Computing Machinery.},
+ author = {Xanthakis, Giorgos and Saloustros, Giorgos and Batsaras, Nikos and Papagiannis, Anastasios and Bilas, Angelos},
+ doi = {10.1145/3472883.3487012},
+ journal = {SoCC 2021 - Proceedings of the 2021 ACM Symposium on Cloud Computing},
+ note = {Cited by: 24},
+ pages = {305 - 318},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Parallax: Hybrid key-value placement in LSM-based key-value stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85119107754?origin=resultslist},
+ year = {2021}
+}

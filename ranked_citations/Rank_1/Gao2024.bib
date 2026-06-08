@@ -1,0 +1,15 @@
+@article{Gao2024,
+ abstract = {Sparse matrix-vector multiplication (SpMV) optimization on GPUs has been challenging due to irregular memory accesses and unbalanced workloads. The majority of existing solutions assign a fixed number of threads to one or more rows of sparse matrices according to empirical formulas. However, this method does not give the optimal thread configuration and results in a significant performance loss. This paper proposes a new machine learning-based thread assignment strategy for SpMV on GPU, predicting the near-optimal thread configuration for matrices. Further, we partition irregular sparse matrices into blocks according to the distribution of non-zero elements and predict the optimal thread configuration for each block. A new SpMV kernel is designed to accelerate the execution of different blocks. Experimental results show that our machine learning-based approach can select the near-optimal thread configuration for most matrices. The efficiency of SpMV for irregular matrices is also improved by matrix partitioning and blockwise prediction. Finally, we dive into the trained model to find out the connection between the features of a sparse matrix and its optimal thread configuration. © 2023 Elsevier Inc.},
+ author = {Gao, Jianhua and Ji, Weixing and Liu, Jie and Wang, Yizhuo and Shi, Feng},
+ doi = {10.1016/j.jpdc.2023.104799},
+ journal = {Journal of Parallel and Distributed Computing},
+ note = {Cited by: 6},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Revisiting thread configuration of SpMV kernels on GPU: A machine learning based approach},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85177571898?origin=resultslist},
+ volume = {185},
+ year = {2024}
+}

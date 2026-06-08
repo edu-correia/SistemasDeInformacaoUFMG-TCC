@@ -1,0 +1,13 @@
+@article{LI2025129122,
+ abstract = {Zero-Shot Anomaly Segmentation (ZSAS) aims to segment anomalies without any training data related to the test samples. Recently, while foundational models like CLIP and SAM have shown potential for ZSAS, existing approaches leveraging either CLIP or SAM individually encounter critical limitations: (1) CLIP emphasizes global feature alignment across different inputs, leading to imprecise segmentation of local anomalous parts; and (2) SAM tends to generate numerous redundant masks without proper prompt constraints, resulting in complex post-processing requirements. In this paper, we introduce ClipSAM, a novel collaborative framework that integrates CLIP and SAM to address these issues in ZSAS. The insight behind ClipSAM is to employ CLIP’s semantic understanding capability for anomaly localization and rough segmentation, which is further used as the prompt constraints for SAM to refine the anomaly segmentation results. Specifically, we propose a Unified Multi-scale Cross-modal Interaction (UMCI) module that learns local and global semantics about anomalous parts by interacting language features with visual features at both row-column and multi-scale levels, effectively reasoning about anomaly positions. Additionally, we develop a Multi-level Mask Refinement (MMR) module that guides SAM’s output through multi-level spatial prompts derived from CLIP’s localization, progressively merging the masks to refine the segmentation results. Extensive experiments validate the effectiveness of our approach, achieving the optimal segmentation performance on the MVTec-AD and VisA datasets.},
+ author = {Shengze Li and Jianjian Cao and Peng Ye and Yuhan Ding and Chongjun Tu and Tao Chen},
+ doi = {https://doi.org/10.1016/j.neucom.2024.129122},
+ issn = {0925-2312},
+ journal = {Neurocomputing},
+ keyword = {Zero-shot anomaly segmentation, CLIP and SAM collaboration, Cross-modal interaction},
+ pages = {129122},
+ title = {ClipSAM: CLIP and SAM collaboration for zero-shot anomaly segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0925231224018939},
+ volume = {618},
+ year = {2025}
+}

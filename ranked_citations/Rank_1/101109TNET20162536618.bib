@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2016.2536618,
+ abstract = {Many important network functions require online membership lookup against a large set of addresses, flow labels, signatures, and so on. This paper studies a more difficult, yet less investigated problem, called multi-set membership lookup, which involves multiple sometimes in hundreds or even thousands sets. The lookup determines not only whether an element is a member of the sets but also which set it belongs to. To facilitate the implementation of multi-set membership lookup in on-die memory of a network processor for line-speed packet inspection, the existing work uses the variants of Bloom filters to encode set IDs. However, through a thorough analysis of the mechanism and the performance of the prior art, much to our surprise, we find that Bloom filters—which were originally designed for encoding binary membership information—are actually not efficient for encoding set IDs. This paper takes a different solution path by separating membership encoding and set ID storage in two data structures, called index filter and set-id table, respectively. With a new ID placement strategy called uneven candidate-entry distribution and a two-level design of an index filter, we demonstrate through analysis and simulation that when compared with the best existing work, our new approach is able to achieve significant memory saving under the same lookup accuracy requirement, or achieve significantly better lookup accuracy under the same memory constraint.},
+ author = {Qiao, Yan and Chen, Shigang and Mo, Zhen and Yoon, Myungkeun},
+ doi = {10.1109/tnet.2016.2536618},
+ issn = {1063-6692},
+ issue_date = {December 2016},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {December},
+ number = {6},
+ numpages = {14},
+ pages = {3326–3339},
+ publisher = {IEEE Press},
+ title = {When Bloom Filters Are No Longer Compact: Multi-Set Membership Lookup for Network Applications},
+ url = {https://doi.org/10.1109/TNET.2016.2536618},
+ volume = {24},
+ year = {2016}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3110254,
+ abstract = {Differential privacy is a widely studied theory for analyzing sensitive data with a strong privacy guarantee—any change in an individual's data can have only a small statistical effect on the result—and a growing number of programming languages now support differentially private data analysis. A common shortcoming of these languages is poor support for adaptivity. In practice, a data analyst rarely wants to run just one function over a sensitive database, nor even a predetermined sequence of functions with fixed privacy parameters; rather, she wants to engage in an interaction where, at each step, both the choice of the next function and its privacy parameters are informed by the results of prior functions. Existing languages support this scenario using a simple composition theorem, which often gives rather loose bounds on the actual privacy cost of composite functions, substantially reducing how much computation can be performed within a given privacy budget. The theory of differential privacy includes other theorems with much better bounds, but these have not yet been incorporated into programming languages. We propose a novel framework for adaptive composition that is elegant, practical, and implementable. It consists of a reformulation based on typed functional programming of privacy filters, together with a concrete realization of this framework in the design and implementation of a new language, called Adaptive Fuzz. Adaptive Fuzz transplants the core static type system of Fuzz to the adaptive setting by wrapping the Fuzz typechecker and runtime system in an outer adaptive layer, allowing Fuzz programs to be conveniently constructed and typechecked on the fly. We describe an interpreter for Adaptive Fuzz and report results from two case studies demonstrating its effectiveness for implementing common statistical algorithms over real data sets.},
+ address = {New York, NY, USA},
+ articleno = {10},
+ author = {Winograd-Cort, Daniel and Haeberlen, Andreas and Roth, Aaron and Pierce, Benjamin C.},
+ doi = {10.1145/3110254},
+ issue_date = {September 2017},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Adaptivity, Case Study, Differential Privacy, Fuzz, Privacy Filter},
+ month = {August},
+ number = {ICFP},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {A framework for adaptive differential privacy},
+ url = {https://doi.org/10.1145/3110254},
+ volume = {1},
+ year = {2017}
+}

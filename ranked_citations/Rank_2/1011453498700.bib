@@ -1,0 +1,18 @@
+@article{10.1145/3498700,
+ abstract = {We describe the foundation of the metaprogramming language, M\{oe}bius, which supports the generation of polymorphic code and, more importantly, the analysis of polymorphic code via pattern matching. M\{oe}bius has two main ingredients: 1) we exploit contextual modal types to describe open code together with the context in which it is meaningful. In M\{oe}bius, open code can depend on type and term variables (level 0) whose values are supplied at a later stage, as well as code variables (level 1) that stand for code templates supplied at a later stage. This leads to a multi-level modal lambda-calculus that supports System-F style polymorphism and forms the basis for polymorphic code generation. 2) we extend the multi-level modal lambda-calculus to support pattern matching on code. As pattern matching on polymorphic code may refine polymorphic type variables, we extend our type-theoretic foundation to generate and track typing constraints that arise. We also give an operational semantics and prove type preservation. Our multi-level modal foundation for M\{oe}bius provides the appropriate abstractions for both generating and pattern matching on open code without committing to a concrete representation of variable binding and contexts. Hence, our work is a step towards building a general type-theoretic foundation for multi-staged metaprogramming that, on the one hand, enforces strong type guarantees and, on the other hand, makes it easy to generate and manipulate code. This will allow us to exploit the full potential of metaprogramming without sacrificing the reliability of and trust in the code we are producing and running.},
+ address = {New York, NY, USA},
+ articleno = {39},
+ author = {Jang, Junyoung and G\'{e}lineau, Samuel and Monnier, Stefan and Pientka, Brigitte},
+ doi = {10.1145/3498700},
+ issue_date = {January 2022},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Type Systems, Polymorphism, Metaprogramming, Contextual Types},
+ month = {January},
+ number = {POPL},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {M\{oe}bius: metaprogramming using contextual types: the stage where system f can pattern match on itself},
+ url = {https://doi.org/10.1145/3498700},
+ volume = {6},
+ year = {2022}
+}

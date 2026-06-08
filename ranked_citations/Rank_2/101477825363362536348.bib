@@ -1,0 +1,17 @@
+@article{10.14778/2536336.2536348,
+ abstract = {As Personalized PageRank has been widely leveraged for ranking on a graph, the efficient computation of Personalized PageRank Vector (PPV) becomes a prominent issue. In this paper, we propose FastPPV, an approximate PPV computation algorithm that is incremental and accuracy-aware. Our approach hinges on a novel paradigm of scheduled approximation: the computation is partitioned and scheduled for processing in an "organized" way, such that we can gradually improve our PPV estimation in an incremental manner, and quantify the accuracy of our approximation at query time. Guided by this principle, we develop an efficient hub based realization, where we adopt the metric of hub-length to partition and schedule random walk tours so that the approximation error reduces exponentially over iterations. Furthermore, as tours are segmented by hubs, the shared substructures between different tours (around the same hub) can be reused to speed up query processing both within and across iterations. Finally, we evaluate FastPPV over two real-world graphs, and show that it not only significantly outperforms two state-of-the-art baselines in both online and offline phrases, but also scale well on larger graphs. In particular, we are able to achieve near-constant time online query processing irrespective of graph size.},
+ author = {Zhu, Fanwei and Fang, Yuan and Chang, Kevin Chen-Chuan and Ying, Jing},
+ doi = {10.14778/2536336.2536348},
+ issn = {2150-8097},
+ issue_date = {April 2013},
+ journal = {Proc. VLDB Endow.},
+ month = {April},
+ number = {6},
+ numpages = {12},
+ pages = {481–492},
+ publisher = {VLDB Endowment},
+ title = {Incremental and accuracy-aware personalized pagerank through scheduled approximation},
+ url = {https://doi.org/10.14778/2536336.2536348},
+ volume = {6},
+ year = {2013}
+}

@@ -1,0 +1,14 @@
+@article{11151848,
+ abstract = {Traffic sign detection plays a crucial role in autonomous driving systems, yet remains a challenging task due to factors such as small object sizes, distant placements, complex lighting conditions, and frequent occlusions. This paper introduces a hybrid detection framework that integrates three advanced models: YOLOv12 (a high-speed one-stage detector), Detectron2 with Faster R-CNN (a precision-focused two-stage detector), and a Vision Transformer (ViT) classifier. The proposed system is trained and evaluated on the Self-Driving Cars Dataset (SDCD) from Roboflow, featuring 15 traffic sign classes in complex urban environments. Detection outputs are merged using an overlapping box fusion strategy, and a ViT module further verifies predictions, resolves conflicting labels, and filters false positives. Experimental results demonstrate that the hybrid system achieves 97.7% mAP@50 and 88.3% mAP@50:95, outperforming individual detectors and previous hybrid approaches. Qualitative analysis shows substantial improvements in detecting small, occluded, and overlapping signs. The inclusion of ViT reduces both false positives and missed detections. While this ensemble increases computational complexity, it offers enhanced robustness, making it suitable for safety-critical applications. Future work will focus on improving inference efficiency and validating the system on larger and more diverse datasets such as TT100K to assess generalization performance across wider environments.},
+ author = {Dagher, Issam and Makary, Antonio},
+ doi = {10.1109/ACCESS.2025.3606754},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Detectors;Transformers;Accuracy;YOLO;Computer vision;Real-time systems;Location awareness;Proposals;Lighting;Benchmark testing;Autonomous driving;Detectron2;faster R-CNN;mean average precision (mAP);multi-object tracking;object detection;overlapping box fusion;self-driving cars dataset (SDCD);traffic sign detection;vision transformer (ViT);YOLOv12},
+ month = {},
+ number = {},
+ pages = {160619-160626},
+ title = {Detection to Framework for Traffic Signs Using a Hybrid Approach},
+ volume = {13},
+ year = {2025}
+}

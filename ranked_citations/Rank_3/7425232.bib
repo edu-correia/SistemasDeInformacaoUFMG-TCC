@@ -1,0 +1,14 @@
+@article{7425232,
+ abstract = {Online set intersection operations have been widely used in network processing tasks, such as Quality of Service differentiation, firewall processing, and packet/traffic classification. The major challenge for online set intersection is to sustain line-rate processing speed; accelerating set intersection using state-of-the-art hardware devices is of great interest to the research community. In this paper, we present a novel high-performance set intersection approach on FPGA. In our approach, each element in any set is represented by a combination of Group ID (GID) and Bit Stride (BS); all the sets are intersected using linear merge techniques and bitwise AND operations. We map our online set intersection algorithm onto hardware; this is done by constructing modular Processing Element (PE) and concatenating multiple PEs into a tree-based parallel architecture. In order to improve the throughput on a state-of-the-art FPGA, we feed all the inputs to FPGA in a streaming fashion with the help of the synchronization GIDs. Post place-and-route results show that, for a typical set intersection problem in network processing, our design can intersect $\text{eight}$  sets, each of up to  $32$ K elements, at a throughput of  $47.4$  Thousand Intersections Per Second (KIPS) and a latency of  $94.8\,\mu$ s per batch of inputs. Compared to the classic linear merge or bitwise AND techniques on state-of-the-art multi-core processors, our designs on FPGA achieves up to  $66\times$  throughput improvement and $80\times$  latency reduction.},
+ author = {Qu, Yun R. and Prasanna, Viktor K.},
+ doi = {10.1109/TPDS.2016.2537818},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Field programmable gate arrays;Memory management;Hardware;Engines;Throughput;Indexes;Data structures;Set intersection;network processing;field-programmable gate array (FPGA)},
+ month = {Nov},
+ number = {11},
+ pages = {3214-3225},
+ title = {Fast Online Set Intersection for Network Processing on FPGA},
+ volume = {27},
+ year = {2016}
+}

@@ -1,0 +1,16 @@
+@article{10.1613/jair.1.14253,
+ abstract = {Controllers for dynamical systems that operate in safety-critical settings must account for stochastic disturbances. Such disturbances are often modeled as process noise in a dynamical system, and common assumptions are that the underlying distributions are known and/or Gaussian. In practice, however, these assumptions may be unrealistic and can lead to poor approximations of the true noise distribution. We present a novel controller synthesis method that does not rely on any explicit representation of the noise distributions. In particular, we address the problem of computing a controller that provides probabilistic guarantees on safely reaching a target, while also avoiding unsafe regions of the state space. First, we abstract the continuous control system into a finite-state model that captures noise by probabilistic transitions between discrete states. As a key contribution, we adapt tools from the scenario approach to compute probably approximately correct (PAC) bounds on these transition probabilities, based on a finite number of samples of the noise. We capture these bounds in the transition probability intervals of a so-called interval Markov decision process (iMDP). This iMDP is, with a user-specified confidence probability, robust against uncertainty in the transition probabilities, and the tightness of the probability intervals can be controlled through the number of samples. We use state-of-the-art verification techniques to provide guarantees on the iMDP and compute a controller for which these guarantees carry over to the original control system. In addition, we develop a tailored computational scheme that reduces the complexity of the synthesis of these guarantees on the iMDP. Benchmarks on realistic control systems show the practical applicability of our method, even when the iMDP has hundreds of millions of transitions.},
+ address = {El Segundo, CA, USA},
+ author = {Badings, Thom and Romao, Licio and Abate, Alessandro and Parker, David and Poonawala, Hasan A. and Stoelinga, Marielle and Jansen, Nils},
+ doi = {10.1613/jair.1.14253},
+ issn = {1076-9757},
+ issue_date = {May 2023},
+ journal = {J. Artif. Int. Res.},
+ month = {May},
+ numpages = {51},
+ publisher = {AI Access Foundation},
+ title = {Robust Control for Dynamical Systems with Non-Gaussian Noise via Formal Abstractions},
+ url = {https://doi.org/10.1613/jair.1.14253},
+ volume = {76},
+ year = {2023}
+}

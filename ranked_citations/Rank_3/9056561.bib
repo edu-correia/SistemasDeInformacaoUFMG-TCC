@@ -1,0 +1,14 @@
+@article{9056561,
+ abstract = {Log-Structured Merge-tree (LSM-tree) organizes write-friendly and hierarchical structure, which leads to inevitable disk I/O from data compaction occuring between layers. Previous research tried to reduce write bottlenecks of LSM-tree by using non-volatile memory (NVM) to LSM-tree, but write amplification on compaction does not resolved. In this paper, we present tiered LSM (TLSM), a persistent LSM-based key-value database tiering NVM, which is regarded as fast storage device. Our design aims to exploit multi-layered LSM system utilizing NVM and reduce redundant cost on compaction. We address 4 key points: (1) analysis of disk I/O overhead on current LSM-tree, (2) novel design of TLSM preserving the concept of LSM-tree and utilizing NVM, (3) persistent and byte-addressable data compaction minimizing disk write, and (4) tiering policy for increasing usability to TLSM. To implement TLSM-tree, we extended LevelDB, which is a simple LSM-based key-value store. On micro-benchmark DB Bench, the write and read latencies of TLSM are improved up to 34% and 57%, respectively, compared to those of LevelDB-NVM. In evaluation of YCSB, TLSM also reduces the write and read latencies of existing LevelDB up to 25%, 33%, respectively. Furthermore, frequency of write stall and total amount of data write are reduced significantly in TLSM.},
+ author = {Lee, Jihwan and Choi, Won Gi and Kim, Doyoung and Sung, Hanseung and Park, Sanghyun},
+ doi = {10.1109/ACCESS.2020.2985407},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Nonvolatile memory;Compaction;Indexes;Data structures;Random access memory;Database recovery;key-value;store;log-structured merge-tree;non-volatile;memory},
+ month = {},
+ number = {},
+ pages = {100948-100962},
+ title = {TLSM: Tiered Log-Structured Merge-Tree Utilizing Non-Volatile Memory},
+ volume = {8},
+ year = {2020}
+}

@@ -1,0 +1,14 @@
+@article{11278795,
+ abstract = {Unstructured meshes present challenges in scientific data analysis due to irregular distribution and complex connectivity. Computing and storing connectivity information is a major bottleneck for visualization algorithms, affecting both time and memory performance. Recent task-parallel data structures address this by precomputing connectivity information at runtime while the analysis algorithm executes, effectively hiding computation costs and improving performance. However, existing approaches are CPU-bound, forcing the data structure and analysis algorithm to compete for the same computational resources, limiting potential speedups. To overcome this limitation, we introduce a novel task-parallel approach optimized for heterogeneous CPU-GPU systems. Specifically, we offload the computation of mesh connectivity information to GPU threads, enabling CPU threads to focus on executing the visualization algorithm. Following this paradigm, we propose GPU-Aided Localized data structurE (GALE), the first open-source CUDA-based data structure designed for heterogeneous task parallelism. Experiments on two 20-core CPUs and an NVIDIA V100 GPU show that GALE achieves up to $2.7\times$ speedup over state-of-the-art localized data structures while maintaining memory efficiency.},
+ author = {Liu, Guoxi and Randall, Thomas and Ge, Rong and Iuricich, Federico},
+ doi = {10.1109/TVCG.2025.3634637},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Data structures;Instruction sets;Message systems;Graphics processing units;Faces;Data visualization;Computational modeling;Memory management;Runtime;Limiting;Data structure;unstructured mesh;topological data analysis;parallel computation;GPU algorithm},
+ month = {Jan},
+ number = {1},
+ pages = {1010-1020},
+ title = {GALE: Leveraging Heterogeneous Systems for Efficient Unstructured Mesh Data Analysis},
+ volume = {32},
+ year = {2026}
+}

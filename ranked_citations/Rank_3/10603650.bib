@@ -1,0 +1,14 @@
+@inproceedings{10603650,
+ abstract = {In recent years, methods based on deep learning have made significant progress in the field of medical image segmentation, especially the method combining Transformer with Convolutional Neural Network (CNN). However, the existing hybrid models usually stack the Transformer module after convolutional layers, forming a serial structure. In this structure, CNN is first responsible for extracting the local features of the image, and then these features are passed into Transformer for extracting global information. Although this design combines the advantages of both to some extent, there is a problem in this serial structure that Transformer may not fully utilize the local features extracted by CNN when integrating global information, resulting in the loss of information in the transmission process , affecting the accuracy of segmentation. In addition, medical equipment often has certain limitations, and the number of model parameters cannot be too large. Therefore, in response to the mentioned problems, we present a novel model that combines Transformer and CNN in a parallel manner; a Hierarchical Feature Fusion (HFF) block is specially designed to effectively merge feature information from the two branches; A lightweight decoder is proposed, this decoder not only integrates the different scale features from the encoder, but also reduces the number of model parameters and improves training efficiency.},
+ author = {Zhou, Mingkun and Nie, Xueyun and Liu, Yuhang and Li, Doudou},
+ booktitle = {2024 5th International Conference on Computer Engineering and Application (ICCEA)},
+ doi = {10.1109/ICCEA62105.2024.10603650},
+ issn = {2159-1288},
+ keyword = {Training;Image segmentation;Semantics;Transformers;Feature extraction;Decoding;Convolutional neural networks;Component;medical image segmentation;parallel encoder;hierarchical feature fusion(HFF) block;lightweight decoder},
+ month = {April},
+ number = {},
+ pages = {1048-1051},
+ title = {Parallel Transformer-CNN Model for Medical Image Segmentation},
+ volume = {},
+ year = {2024}
+}

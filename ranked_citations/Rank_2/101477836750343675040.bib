@@ -1,0 +1,17 @@
+@article{10.14778/3675034.3675040,
+ abstract = {We study index-based processing for connectivity queries within sliding windows on streaming graphs. These queries, which determine whether two vertices belong to the same connected component, are fundamental operations in real-time graph data processing and demand high throughput and low latency. While indexing methods that leverage data structures for fully dynamic connectivity can facilitate efficient query processing, they encounter significant challenges with deleting expired edges from the window during window updates. We introduce a novel indexing approach that eliminates the need for physically performing edge deletions. This is achieved through a unique bidirectional incremental computation framework, referred to as the BIC model. The BIC model implements two distinct incremental computations to compute connected components within the window, operating along and against the timeline, respectively. These computations are then merged to efficiently compute queries in the window. We propose techniques for optimized index storage, incremental index updates, and efficient query processing to improve BIC effectiveness. Empirically, BIC achieves a 14\texttimes{} increase in throughput and a reduction in P95 latency by up to 3900\texttimes{} when compared to state-of-the-art indexes.},
+ author = {Zhang, Chao and Bonifati, Angela and \"{O}zsu, M. Tamer},
+ doi = {10.14778/3675034.3675040},
+ issn = {2150-8097},
+ issue_date = {June 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {10},
+ numpages = {14},
+ pages = {2473–2486},
+ publisher = {VLDB Endowment},
+ title = {Incremental Sliding Window Connectivity over Streaming Graphs},
+ url = {https://doi.org/10.14778/3675034.3675040},
+ volume = {17},
+ year = {2024}
+}

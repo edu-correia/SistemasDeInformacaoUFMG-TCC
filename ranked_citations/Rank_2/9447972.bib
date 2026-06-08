@@ -1,0 +1,14 @@
+@article{9447972,
+ abstract = {Deep convolutional neural networks (CNNs) have recently made significant advances in the inverse tone mapping technique, which generates a high dynamic range (HDR) image from a single low dynamic range (LDR) image that has lost information in over- and under-exposed regions. The end-to-end inverse tone mapping approach specifies the dynamic range in advance, thereby limiting dynamic range expansion. In contrast, the method of generating multiple exposure LDR images from a single LDR image and subsequently merging them into an HDR image enables flexible dynamic range expansion. However, existing methods for generating multiple exposure LDR images require an additional network for each exposure value to be changed or a process of recursively inferring images that have different exposure values. Therefore, the number of parameters increases significantly due to the use of additional networks, and an error accumulation problem arises due to recursive inference. To solve this problem, we propose a novel network architecture that can control arbitrary exposure values without adding networks or applying recursive inference. The training method of the auxiliary classifier-generative adversarial network structure is employed to generate the image conditioned on the specified exposure. The proposed network uses a newly designed spatially-adaptive normalization to address the limitation of existing methods that cannot sufficiently restore image detail due to the spatially equivariant nature of the convolution. Spatially-adaptive normalization facilitates restoration of the high frequency component by applying different normalization parameters to each element in the feature map according to the characteristics of the input image. Experimental results show that the proposed method outperforms state-of-the-art methods, yielding a 5.48dB higher average peak signal-to-noise ratio, a 0.05 higher average structure similarity index, a 0.28 higher average multi-scale structure similarity index, and a 7.36 higher average HDR-VDP-2 for various datasets.},
+ author = {Jo, So Yeon and Lee, Siyeong and Ahn, Namhyun and Kang, Suk-Ju},
+ doi = {10.1109/TMM.2021.3087034},
+ issn = {1941-0077},
+ journal = {IEEE Transactions on Multimedia},
+ keyword = {Image restoration;Dynamic range;Generators;High frequency;Brightness;Training;Process control;High dynamic range imaging;inverse tone mapping;image restoration;deep learning},
+ month = {},
+ number = {},
+ pages = {2713-2726},
+ title = {Deep Arbitrary HDRI: Inverse Tone Mapping With Controllable Exposure Changes},
+ volume = {24},
+ year = {2022}
+}

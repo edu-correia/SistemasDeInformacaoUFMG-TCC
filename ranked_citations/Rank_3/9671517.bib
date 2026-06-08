@@ -1,0 +1,14 @@
+@inproceedings{9671517,
+ abstract = {The horizontal visibility graph (HVG) representation of a time series is a structured graph whose connectivity properties have been used to study the dynamics of a wide range of nonlinear systems. Applications range from the brain (EEG), the heart (ECG) and the financial markets (bid prices), to the sun (solar intensity readings) and river flows. HVGs have also been extended to image-based pattern recognition. Efficient and scalable online HVG construction is vital to extending HVG-based time series analysis to long, streaming, and distributed real-world time series data.The fastest scalable method for constructing HVGs today is the binary search tree (BST) encoding&#x2013;decoding algorithm, which is O(n log n) in time series length for balanced data such as noise. However, in practice BST is highly sensitive to the geometric structure of a time series and its performance degrades significantly towards O(n<sup>2</sup>) when data possess long term dependencies or when the sample frequency is high, which occur regularly in practice. To avoid these problems we leverage an O(n) ordered rooted tree representation of time series that is (graph) dual to the HVG. We demonstrate that this representation leads to an algorithm for HVG construction that is agnostic with respect to the geometry and auto-correlations of the underlying data. Moreover, it possesses an efficient branch fusion operation for tree merging, leading to the idea of a bipartite HVG introduced in this paper, which allows HVGs for very large time series to be constructed efficiently in parallel.After introducing our method and algorithms for parallel construction of HVGs we report on experimental benchmarks comparing their real-world performance to existing approaches on long time series. On data sampled from fractional Brownian motions, deterministic chaotic systems, brain EEG recordings, and the financial markets, our dual tree algorithms significantly outperform previous methods.},
+ author = {Stephen, Colin},
+ booktitle = {2021 IEEE International Conference on Big Data (Big Data)},
+ doi = {10.1109/BigData52589.2021.9671517},
+ issn = {},
+ keyword = {Geometry;Time-frequency analysis;Runtime;Time series analysis;Merging;Big Data;Streaming media;time series analysis;graph algorithms},
+ month = {Dec},
+ number = {},
+ pages = {40-50},
+ title = {A Scalable Linear-Time Algorithm for Horizontal Visibility Graph Construction Over Long Sequences},
+ volume = {},
+ year = {2021}
+}

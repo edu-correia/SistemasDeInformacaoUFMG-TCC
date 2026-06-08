@@ -1,0 +1,14 @@
+@conference{Liu2018207,
+ abstract = {The NoSQL database has showed a great improvement for large-scale datasets storage and compute. As for the conventional deployment architecture, they can obtain tremendously good performance as storage and compute are running in the same node. Nevertheless, many NoSQL users have their own storage pool (e.g., OSD server pool) which provides different interfaces for different NoSQL databases. Many benefits are achieved from this new application scenarios, such as higher scalability, better flexibility and data maintainability. However, the physical separation of NoSQL application and storage nodes potentially influences the system performance. To better understand the new scenario, we take HBase, a common NoSQL database, as a study. HBase exploit a layered storage architecture with two main layers, a distributed database atop a distributed file system (HDFS). We perform experiments with YCSB benchmark and a new developed benchmark to evaluate the separation deployment of RegionServer and HDFS server and verify the read amplification of network I/O between them. Based on our observations we propose a novel OSD Agent direction consisting of HBase Local Storage Scanner and HBase Local Storage Compactor to reduce the amplification by filtering out the requested data from the data block on OSD server pool. From the simulation results, the OSD Agent can reduce the network traffic amplification from 36x-92x to 1.7x for HBase read operation, 1.2x-21x to 1.2x for HBase scan with column filter operation. Moreover, the OSD Agent makes the read performance less sensitive to the network bandwidth. The OSD Agent brings in great performance improvement for NoSQL Database on top of OSDs. © 2018 IEEE.},
+ author = {Liu, Shiyong and Guo, Zhongwen and Liu, Chen and Wang, Xupeng and Wang, Guohua and Qiu, Zhijin and Qin, Xukun},
+ doi = {10.1109/BIGCOM.2018.00040},
+ journal = {Proceedings - 2018 4th International Conference on Big Data Computing and Communications, BIGCOM 2018},
+ note = {Cited by: 1},
+ pages = {207 - 212},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {The read amplification analysis of NoSQL database on top of OSDs: A case study of HBase},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85056473406?origin=resultslist},
+ year = {2018}
+}

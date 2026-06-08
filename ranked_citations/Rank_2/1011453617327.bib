@@ -1,0 +1,18 @@
+@article{10.1145/3617327,
+ abstract = {Compiler optimization plays an increasingly important role to boost the performance of machine learning models for data processing and management. With increasingly complex data, the dynamic tensor shape phenomenon emerges for ML models. However, existing ML compilers either can only handle static shape models or expose a series of performance problems for both operator fusion optimization and code generation in dynamic shape scenes. This paper tackles the main challenges of dynamic shape optimization: the fusion optimization without shape value, and code generation supporting arbitrary shapes. To tackle the fundamental challenge of the absence of shape values, it systematically abstracts and excavates the shape information and designs a cross-level symbolic shape representation. With the insight that what fusion optimization relies upon is tensor shape relationships between adjacent operators rather than exact shape values, it proposes the dynamic shape fusion approach based on shape information propagation. To generate code that adapts to arbitrary shapes efficiently, it proposes a compile-time and runtime combined code generation approach. Finally, it presents a complete optimization pipeline for dynamic shape models and implements an industrial-grade ML compiler, named BladeDISC. The extensive evaluation demonstrates that BladeDISC outperforms PyTorch, TorchScript, TVM, ONNX Runtime, XLA, Torch Inductor (dynamic shape), and TensorRT by up to 6.95\texttimes{}, 6.25\texttimes{}, 4.08\texttimes{}, 2.04\texttimes{}, 2.06\texttimes{}, 7.92\texttimes{}, and 4.16\texttimes{} (3.54\texttimes{}, 3.12\texttimes{}, 1.95\texttimes{}, 1.47\texttimes{}, 1.24\texttimes{}, 2.93\texttimes{}, and 1.46\texttimes{} on average) in terms of end-to-end inference speedup on the A10 and T4 GPU, respectively. BladeDISC's source code is publicly available at https://github.com/alibaba/BladeDISC.},
+ address = {New York, NY, USA},
+ articleno = {206},
+ author = {Zheng, Zhen and Pan, Zaifeng and Wang, Dalin and Zhu, Kai and Zhao, Wenyi and Guo, Tianyou and Qiu, Xiafei and Sun, Minmin and Bai, Junjie and Zhang, Feng and Du, Xiaoyong and Zhai, Jidong and Lin, Wei},
+ doi = {10.1145/3617327},
+ issue_date = {September 2023},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {code generation, dynamic shape, machine learning, operator fusion, tensor compiler},
+ month = {November},
+ number = {3},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {BladeDISC: Optimizing Dynamic Shape Machine Learning Workloads via Compiler Approach},
+ url = {https://doi.org/10.1145/3617327},
+ volume = {1},
+ year = {2023}
+}

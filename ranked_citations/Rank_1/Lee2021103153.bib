@@ -1,0 +1,15 @@
+@article{Lee2021103153,
+ abstract = {Persistent key-value stores have been widely adopted as storage engines for modern IT infrastructures because they provide high performance with simple design principles. Moreover, many key-value stores commonly employ LSM-tree as their index structure due to its attractive features such as high write throughput and storage space efficiency. Unfortunately, LSM-tree has critical drawbacks in that it leads to write/read amplification problem. One of the prevalent solutions for remedying the write amplification problem is the tiering merge policy that reduces the number of rewrites by delaying merge operations. However, in spite of this advantage, the tiering merge policy may lead to a side-effect that induces high read amplification, increasing search/scan cost for upcoming read operations. In this paper, we concentrate on mitigating the high read amplification problem of the tiering merge policy, while maintaining its low write amplification. To achieve this, we propose a novel LSM-tree scheme, called Spatially Fragmented LSM-tree (SFM), which delays merge operations only for the non-read-intensive key-spaces. For this, SFM identifies the read intensity of each key-spaces by dynamically estimating their read/write hotness. We have implemented SFM based on PebblesDB and evaluated the performance benefits of our scheme under real-world workloads of Facebook. Experimental results clearly show that our scheme improves throughput by up to 1.67times compared with the conventional schemes while maintaining low write amplification, and also indicate that its latency is lowered by up to 41.41% on average by mitigating the read amplification problem of the existing schemes, by up to 43.68%.  © 2013 IEEE.},
+ author = {Lee, Hoyoung and Lee, Minho and Eom, Young Ik},
+ doi = {10.1109/ACCESS.2021.3098736},
+ journal = {IEEE Access},
+ note = {Cited by: 10; All Open Access; Gold Open Access; Green Open Access},
+ pages = {103153 - 103166},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SFM: Mitigating Read/Write Amplification Problem of LSM-Tree-Based Key-Value Stores},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85111007257?origin=resultslist},
+ volume = {9},
+ year = {2021}
+}

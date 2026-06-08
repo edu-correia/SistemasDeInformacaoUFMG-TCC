@@ -1,0 +1,14 @@
+@article{10543016,
+ abstract = {Given the prominence of 3-D sensors in recent years, 3-D point clouds are worthy to be further investigated for environment perception and scene understanding. Learning accurate local and global contexts in point clouds is pivotal for semantic segmentation, and neighbor aggregation (NA) and transformers have achieved notable success in local and global perception in point cloud analysis, respectively. Nevertheless, studying each independently is far from the optimal solution for comprehensive feature learning. To address this, we take a novel step toward investigating and integrating the structures of NA and transformers. In this article, we introduce Point Neighbor Aggregation with Transformer (PointNAT), a conceptually straightforward and effective approach aiming to enhance the performance of 3-D point cloud semantic segmentation. PointNAT consists of an NA block (NAB) for local perception, a point transformer block (PTB) for global modeling, and a hybrid block to connect NABs and PTBs. NABs effectively learn complex local features at varying scales through an improved NA operation and a multihead mechanism. PTBs efficiently perform global attention using a small set of learnable key points. Hybrid blocks serve as high-and-low frequency signal hybridizers, merging the strengths of these two blocks by adaptively assigning hybrid weights to local and global contexts. We have evaluated the performance of PointNAT with state-of-the-art networks on several benchmarks, including Stanford Large-Scale 3-D Indoor Spaces (S3DIS), Toronto3D, and SensatUrban. PointNAT achieves mean intersection over union (mIoU) scores of 77.8%, 84.7%, and 65.2% in these three datasets. Furthermore, it outperforms the baseline approach PointNeXt by 3.0%, 1.3%, and 4.2% while utilizing only 59.9% of the parameters and 15.2% of the floating-point operations (FLOPs). The results demonstrate PointNAT’s superior ability in accurately segmenting large-scale 3-D point cloud scenes, emphasizing its potential to advance environment perception and scene understanding. Our code is available at https://github.com/zeng-ziyin/PointNAT.},
+ author = {Zeng, Ziyin and Qiu, Huan and Zhou, Jian and Dong, Zhen and Xiao, Jinsheng and Li, Bijun},
+ doi = {10.1109/TGRS.2024.3407761},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Point cloud compression;Transformers;Three-dimensional displays;Task analysis;Computational efficiency;Semantic segmentation;Feature extraction;Hybrid feature;neighbor aggregation (NA);point cloud;point transformer;semantic segmentation},
+ month = {},
+ number = {},
+ pages = {1-18},
+ title = {PointNAT: Large-Scale Point Cloud Semantic Segmentation via Neighbor Aggregation With Transformer},
+ volume = {62},
+ year = {2024}
+}

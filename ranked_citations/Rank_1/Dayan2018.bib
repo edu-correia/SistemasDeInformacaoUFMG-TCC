@@ -1,0 +1,16 @@
+@article{Dayan2018,
+ abstract = {In this article, we show that key-value stores backed by a log-structured merge-tree (LSM-tree) exhibit an intrinsic tradeoff between lookup cost, update cost, and main memory footprint, yet all existing designs expose a suboptimal and dificult to tune tradeoff among these metrics. We pinpoint the problem to the fact that modern key-value stores suboptimally co-tune the merge policy, the buffer size, and the Bloom filters' false-positive rates across the LSM-tree's different levels. We present Monkey, an LSM-tree based key-value store that strikes the optimal balance between the costs of updates and lookups with any given main memory budget. The core insight is that worst-case lookup cost is proportional to the sum of the false-positive rates of the Bloom filters across all levels of the LSM-tree. Contrary to state-of-the-art key-value stores that assign a fixed number of bits-per-element to all Bloom filters, Monkey allocates memory to filters across different levels so as to minimize the sum of their false-positive rates. We show analytically that Monkey reduces the asymptotic complexity of the worst-case lookup I/O cost, and we verify empirically using an implementation on top of RocksDB that Monkey reduces lookup latency by an increasing margin as the data volume grows (50-80% for the data sizes we experimented with). Furthermore, we map the design space onto a closed-form model that enables adapting the merging frequency and memory allocation to strike the best tradeoff among lookup cost, update cost and main memory, depending on the workload (proportion of lookups and updates), the dataset (number and size of entries), and the underlying hardware (main memory available, disk vs. flash). We show how to use this model to answer what-if design questions about how changes in environmental parameters impact performance and how to adapt the design of the key-value store for optimal performance. © 2018 Association for Computing Machinery.},
+ author = {Dayan, Niv and Athanassoulis, Manos and Idreos, Stratos},
+ doi = {10.1145/3276980},
+ journal = {ACM Transactions on Database Systems},
+ note = {Cited by: 64},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Optimal bloom filters and adaptive merging for LSM-trees},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85061209141?origin=resultslist},
+ volume = {43},
+ year = {2018}
+}

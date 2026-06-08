@@ -1,0 +1,14 @@
+@inproceedings{6495798,
+ abstract = {Modern cluster file systems provide highly scalable I/O bandwidth along the data path by enabling highly parallel access to file data. Unfortunately metadata scaling is lagging far behind data scaling. We propose a filesystem design that inherits the scalable data bandwidth of existing cluster file systems and adds support for distributed and high-performance metadata operations. Our idea is to integrate a distributed indexing mechanism with general-purpose optimized on-disk metadata store. To demonstrate the feasibility of our approach, we implemented prototype middleware using the FUSE file system and evaluated it on 64-node cluster. Preliminary results show promising scalability and performance: the single-node metadata store was 10X faster than modern local file systems and the distributed middleware prototype scales to a peak performance of 190,000 file creates per second on a 64-server configuration.},
+ author = {Patil, Swapnil and Ren, Kai and Gibson, Garth},
+ booktitle = {2012 SC Companion: High Performance Computing, Networking Storage and Analysis},
+ doi = {10.1109/SC.Companion.2012.372},
+ issn = {},
+ keyword = {Metadata;Servers;File systems;Indexing;Middleware;Compaction;History;Fuses;Storage management;Scalability;file system;metadata;performance},
+ month = {Nov},
+ number = {},
+ pages = {30-35},
+ title = {A Case for Scaling HPC Metadata Performance through De-specialization},
+ volume = {},
+ year = {2012}
+}

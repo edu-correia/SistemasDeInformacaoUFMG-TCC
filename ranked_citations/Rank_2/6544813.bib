@@ -1,0 +1,14 @@
+@inproceedings{6544813,
+ abstract = {Given a large graph G = (V, E) with millions of nodes and edges, how do we compute its connected components efficiently? Recent work addresses this problem in map-reduce, where a fundamental trade-off exists between the number of map-reduce rounds and the communication of each round. Denoting d the diameter of the graph, and n the number of nodes in the largest component, all prior techniques for map-reduce either require a linear, Θ(d), number of rounds, or a quadratic, Θ (n|V| + |E|), communication per round. We propose here two efficient map-reduce algorithms: (i) Hash-Greater-to-Min, which is a randomized algorithm based on PRAM techniques, requiring O(log n) rounds and O(|V | + |E|) communication per round, and (ii) Hash-to-Min, which is a novel algorithm, provably finishing in O(log n) iterations for path graphs. The proof technique used for Hash-to-Min is novel, but not tight, and it is actually faster than Hash-Greater-to-Min in practice. We conjecture that it requires 2 log d rounds and 3(|V| + |E|) communication per round, as demonstrated in our experiments. Using secondary sorting, a standard map-reduce feature, we scale Hash-to-Min to graphs with very large connected components. Our techniques for connected components can be applied to clustering as well. We propose a novel algorithm for agglomerative single linkage clustering in map-reduce. This is the first map-reduce algorithm for clustering in at most O(log n) rounds, where n is the size of the largest cluster. We show the effectiveness of all our algorithms through detailed experiments on large synthetic as well as real-world datasets.},
+ author = {Rastogi, Vibhor and Machanavajjhala, Ashwin and Chitnis, Laukik and Das Sarma, Anish},
+ booktitle = {2013 IEEE 29th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE.2013.6544813},
+ issn = {1063-6382},
+ keyword = {Clustering algorithms;Convergence;Phase change random access memory;Complexity theory;Vegetation;Merging;Couplings},
+ month = {April},
+ number = {},
+ pages = {50-61},
+ title = {Finding connected components in map-reduce in logarithmic rounds},
+ volume = {},
+ year = {2013}
+}

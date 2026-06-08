@@ -1,0 +1,18 @@
+@article{10.1145/3704902,
+ abstract = {We present ZipML, a new path-based type system for a fully fledged ML-module language that avoids the signature avoidance problem. This is achieved by introducing floating fields, which act as additional fields of a signature, invisible to the user but still accessible to the typechecker. In practice, they are handled as zippers on signatures, and can be seen as a lightweight extension of existing signatures. Floating fields allow to delay the resolution of instances of the signature avoidance problem as long as possible or desired. Since they do not exist at runtime, they can be simplified along type equivalence, and dropped once they became unreachable. We give rewriting rules for the simplification of floating fields without loss of type-sharing and present an algorithm that implements them. Remaining floating fields may fully disappear at signature ascription, especially in the presence of toplevel interfaces. Residual unavoidable floating fields can be shown to the user as a last resort, improving the quality of error messages. Besides, ZipML implements early and lazy strengthening, as well as lazy inlining of definitions, preventing duplication of signatures inside the typechecker. The correctness of the type system is proved by elaboration into Mω, which has itself been proved sound by translation to Fω. ZipML has been designed to be an improvement over OCaml that could be retrofitted into the existing implementation.},
+ address = {New York, NY, USA},
+ articleno = {66},
+ author = {Blaudeau, Cl\'{e}ment and R\'{e}my, Didier and Radanne, Gabriel},
+ doi = {10.1145/3704902},
+ issue_date = {January 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Modules, ML, Zippers, Signature avoidance, Strengthening, OCaml},
+ month = {January},
+ number = {POPL},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {Avoiding Signature Avoidance in ML Modules with Zippers},
+ url = {https://doi.org/10.1145/3704902},
+ volume = {9},
+ year = {2025}
+}

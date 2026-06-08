@@ -1,0 +1,15 @@
+@article{Zheng2022183,
+ abstract = {Hash is widely used in various storage systems due to its excellent insertion and search performance. However, existing hash designs are not friendly for block devices because they will generate a lot of random small I/Os, which will significantly reduce the I/O efficiency on block devices. This paper proposes BDCuckoo (Block Device Cuckoo) hash, a I/O-optimized Cuckoo hash for block device. BDCuckoo reduces the amount of I/Os during the slot detection by limiting the location where the element may be stored on the hash table. Unlike the traditional cuckoo hash that triggers an disk I/O for each detection, BDCuckoo hash loads the possible slots of the target element into DRAM in a single large disk I/O. The paper also shows a use case that uses BDCuckoo to optimize a large directory index in the EXT4 file system. The evaluation shows that BDCuckoo hash outperforms the traditional Cuckoo hash for all YCSB workloads been tested and has a 2.64 times performance improvement at most for workload D with the load factor of 0.7. In the use case, the directory index of BDCuckoo-optimized file system achieves 1.79 times performance improvement for stat command and 1.64 times performance improvement for rm command. © 2022, IFIP International Federation for Information Processing.},
+ author = {Zheng, Xianqi and Ma, Jia and Liu, Yubo and Chen, Zhiguang},
+ doi = {10.1007/978-3-030-93571-9_15},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1},
+ pages = {183 - 194},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {BDCuckoo: an Efficient Cuckoo Hash for Block Device},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85124279732?origin=resultslist},
+ volume = {13152 LNCS},
+ year = {2022}
+}

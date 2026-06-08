@@ -1,0 +1,17 @@
+@article{10.14778/3681954.3681963,
+ abstract = {Continuously monitoring structural patterns in streaming graphs is a critical task in many real-time graph-based applications. In this paper, we study the problem of time-constrained continuous subgraph matching (shorted as TCSM) over streaming graphs. Given a query graph Q with timing order constraint and a data graph stream G, TCSM aims to report all incremental matches of Q in G for each update of G, where a match should obey both structure constraint (i.e., isomorphism) and timing order constraint of Q. Although TCSM has a wide range of applications, such as cyber-attack detection and credit card fraud detection, we note that this problem has not been well addressed. The state-of-the-art bears the limitations of high index space cost and intermediate result maintenance cost. In this paper, we propose TC-Match, an effective approach to TCSM. First, we design a space and time cost-effective index CSS, which is essentially a k-partite graph structure where a node corresponds to an edge in G. By carefully creating links between nodes, we can encapsulate into CSS the partial embedding and timing order information between edges in G. We theoretically show that CSS has polynomial space and construction time complexities. Second, based on the property of CSS, we develop an efficient incremental matching algorithm with an effective node merging optimization. Extensive experiments show that TC-Match can achieve up to 3 orders of magnitude query performance improvement over the baseline methods, and meanwhile the memory consumption is reduced by 48.7%-86.7%.},
+ author = {Yang, Jianye and Fang, Sheng and Gu, Zhaoquan and Ma, Ziyi and Lin, Xuemin and Tian, Zhihong},
+ doi = {10.14778/3681954.3681963},
+ issn = {2150-8097},
+ issue_date = {July 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {2791–2804},
+ publisher = {VLDB Endowment},
+ title = {TC-Match: Fast Time-Constrained Continuous Subgraph Matching},
+ url = {https://doi.org/10.14778/3681954.3681963},
+ volume = {17},
+ year = {2024}
+}

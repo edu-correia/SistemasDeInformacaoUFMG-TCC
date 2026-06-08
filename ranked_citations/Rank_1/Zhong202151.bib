@@ -1,0 +1,13 @@
+@conference{Zhong202151,
+ abstract = {LSM-tree based key-value (KV) stores organize data in a multi-level structure for high-speed writes. Range queries on traditional LSM-trees must seek and sort-merge data from multiple table files on the fly, which is expensive and often leads to mediocre read performance. To improve range query efficiency on LSM-trees, we introduce a space-efficient KV index data structure, named REMIX, that records a globally sorted view of KV data spanning multiple table files. A range query on multiple REMIX-indexed data files can quickly locate the target key using a binary search, and retrieve subsequent keys in sorted order without key comparisons. We build RemixDB, an LSM-tree based KV-store that adopts a write-efficient compaction strategy and employs REMIXes for fast point and range queries. Experimental results show that REMIXes can substantially improve range query performance in a write-optimized LSM-tree based KV-store. © 2021 by The USENIX Association.},
+ author = {Zhong, Wenshao and Chen, Chen and Wu, Xingbo and Jiang, Song},
+ journal = {Proceedings of the 19th USENIX Conference on File and Storage Technologies, FAST 2021},
+ note = {Cited by: 59},
+ pages = {51 - 64},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {REMIX: Efficient range query for LSM-trees},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85102978985?origin=resultslist},
+ year = {2021}
+}

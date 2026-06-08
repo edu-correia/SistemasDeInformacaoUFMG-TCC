@@ -1,0 +1,14 @@
+@inproceedings{9011009,
+ abstract = {Resembling the rapid learning capability of human, low-shot learning empowers vision systems to understand new concepts by training with few samples. Leading approaches derived from meta-learning on images with a single visual object. Obfuscated by a complex background and multiple objects in one image, they are hard to promote the research of low-shot object detection/segmentation. In this work, we present aflexible and general methodology to achieve these tasks. Our work extends Faster /Mask R-CNN by proposing meta-learning over RoI (Region-of-Interest) features instead of a full image feature. This simple spirit disentangles multi-object information merged with the background, without bells and whistles, enabling Faster /Mask R-CNN turn into a meta-learner to achieve the tasks. Specifically, we introduce a Predictor-head Remodeling Network (PRN) that shares its main backbone with Faster /Mask R-CNN. PRN receives images containing low-shot objects with their bounding boxes or masks to infer their class attentive vectors. The vectors take channel-wise soft-attention on RoI features, remodeling those R-CNN predictor heads to detect or segment the objects consistent with the classes these vectors represent. In our experiments, Meta R-CNN yields the new state of the art in low-shot object detection and improves low-shot object segmentation byMaskR-CNN.Code: https://yanxp.github.io/metarcnn.html.},
+ author = {Yan, Xiaopeng and Chen, Ziliang and Xu, Anni and Wang, Xiaoxi and Liang, Xiaodan and Lin, Liang},
+ booktitle = {2019 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV.2019.00967},
+ issn = {2380-7504},
+ keyword = {Image segmentation;Feature extraction;Head;Proposals;Task analysis;Object detection;Object recognition},
+ month = {Oct},
+ number = {},
+ pages = {9576-9585},
+ title = {Meta R-CNN: Towards General Solver for Instance-Level Low-Shot Learning},
+ volume = {},
+ year = {2019}
+}

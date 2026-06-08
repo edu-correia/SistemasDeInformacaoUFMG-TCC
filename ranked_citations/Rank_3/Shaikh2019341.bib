@@ -1,0 +1,16 @@
+@article{Shaikh2019341,
+ abstract = {With the increase in stream data, a demand for stream processing has become diverse and complicated. To meet this demand, several stream processing engines (SPEs) have been developed which execute continuous queries (CQs) to process continuous data streams. Event-driven stream processing, which is one of the important requirements, continuously gets the incoming stream data and, however, generates query results only on the occurrence of specified events. In the basic query execution scheme, even when no event is raised, input stream tuples are continuously processed by query operators, though they do not generate any query result. This results in increased system load and wastage of system resources. For this problem, we propose a smart event-driven stream processing scheme, which makes use of smart windows to buffer the stream tuples during the absence of an event. When the event is raised, the buffered tuples are flushed and processed by the downstream operators. If the buffered tuples in the smart window expire due to the window size before the occurrence of an event, they are deleted directly from the smart window. Since CQs once registered are executed for several weeks, months or even years, SPEs usually execute several CQs in parallel and merge their query plans whenever possible to save processing cost. Due to the presence of smart window, existing multi-query optimization techniques cannot work for smart event-driven stream processing. Hence, this work proposes a multi-query optimization for the proposed smart scheme to cover the cases where multiple continuous queries are registered. Extensive experiments are performed on real and synthetic data streams to show the effectiveness of the proposed smart scheme and its multi-query optimization. © 2018, Springer-Verlag London Ltd., part of Springer Nature.},
+ author = {Shaikh, Salman Ahmed and Watanabe, Yousuke and Wang, Yan and Kitagawa, Hiroyuki},
+ doi = {10.1007/s10115-018-1195-9},
+ journal = {Knowledge and Information Systems},
+ note = {Cited by: 6},
+ number = {2},
+ pages = {341 - 370},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Smart scheme: an efficient query execution scheme for event-driven stream processing},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85045879929?origin=resultslist},
+ volume = {58},
+ year = {2019}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3611479.3611510,
+ abstract = {Developers would benefit greatly from time travel: being able to faithfully replay past executions and retroactively execute modified code on past events. Currently, replay and retroaction are impractical because they require expensively capturing fine-grained timing information to reproduce concurrent accesses to shared state. In this paper, we propose practical time travel for database-backed applications, an important class of distributed applications that access shared state through transactions.We present R3, a novel Record-Replay-Retroaction tool. R3 implements a lightweight interceptor to record concurrency information for applications at transaction-level granularity, enabling replay and retroaction with minimal overhead. We address key challenges in both replay and retroaction. First, we design a novel algorithm for faithfully reproducing application requests running with snapshot isolation, allowing R3 to support most production DBMSs. Second, we develop a retroactive execution mechanism that provides high fidelity with the original trace while supporting nearly arbitrary code modifications. We demonstrate how R3 simplifies debugging for real, hard-to-reproduce concurrency bugs from popular open-source web applications. We evaluate R3 using TPC-C and microservice workloads and show that R3 always-on recording has a small performance overhead (&lt;25% for point queries but &lt;0.1% for complex transactions like in TPC-C) during normal application execution and that R3 can retroactively execute bugfixed code over recorded traces within 0.11--0.78\texttimes{} of the original execution time.},
+ author = {Li, Qian and Kraft, Peter and Cafarella, Michael and Demiralp, \c{C}a\u{g}atay and Graefe, Goetz and Kozyrakis, Christos and Stonebraker, Michael and Suresh, Lalith and Yu, Xiangyao and Zaharia, Matei},
+ doi = {10.14778/3611479.3611510},
+ issn = {2150-8097},
+ issue_date = {July 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {13},
+ pages = {3085–3097},
+ publisher = {VLDB Endowment},
+ title = {R3: Record-Replay-Retroaction for Database-Backed Applications},
+ url = {https://doi.org/10.14778/3611479.3611510},
+ volume = {16},
+ year = {2023}
+}

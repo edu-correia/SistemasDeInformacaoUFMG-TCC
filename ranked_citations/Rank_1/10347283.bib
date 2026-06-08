@@ -1,0 +1,14 @@
+@article{10347283,
+ abstract = {Finite element method (FEM) is one of the most successful numerical approaches for solving partial differential equations. It discretizes the target space into smaller and simpler parts to utilize the power of massively parallel computing, which usually involves two challenging combinatorial optimization problems: partitioning and placement. The partitioning decomposes the complete problem into a series of parallelizable tasks. The subsequent placement determines the mapping from computational tasks to parallel processors and optimizes the overall simulation overhead, such as latency and interference. Similar to the successful application of hardware acceleration for boosting the training of deep neural networks in the ISPD 2020 contest, a new challenge for exploiting the power of a wafer-scale engine to accelerate the finite element method was proposed in ISPD 2021. First, we need to partition the target space into non-uniform grids according to the heatmap to maximize the accuracy. Then, the computing task corresponding to each grid needs to be placed onto a 2D array of 848,000 processors to minimize the total communication overhead. In this paper, we propose an effective metaheuristic algorithm named MS-CLS for tackling this challenging problem by introducing a Merging-Splitting-based heuristic for partitioning and a Cluster-based Local Search metaheuristic for placement. Compared with the records of the ISPD 2021 contest, MS-CLS outperforms all the qualified teams in the contest on all the benchmark datasets in a short computational time. Moreover, similar techniques proposed in this work can be used on other hardware parallel acceleration applications.},
+ author = {Luo, Canhui and Su, Zhouxing and Lü, Zhipeng},
+ doi = {10.1109/TETCI.2023.3336928},
+ issn = {2471-285X},
+ journal = {IEEE Transactions on Emerging Topics in Computational Intelligence},
+ keyword = {Finite element analysis;Partitioning algorithms;Costs;Mathematical models;Parallel processing;Wires;Scheduling;Heuristic algorithms;Wafer scale integration;Scheduling and task partitioning;placement and routing;heuristic search;wafer-scale physics modeling},
+ month = {April},
+ number = {2},
+ pages = {1194-1208},
+ title = {MS-CLS: An Effective Partitioning and Placement Metaheuristic for Wafer-Scale Physics Modeling},
+ volume = {8},
+ year = {2024}
+}

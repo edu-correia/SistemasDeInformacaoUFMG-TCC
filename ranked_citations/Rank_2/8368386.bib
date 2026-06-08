@@ -1,0 +1,14 @@
+@inproceedings{8368386,
+ abstract = {Density-based clustering algorithms have the distinctive advantage of discovering arbitrarily shaped clusters, but they usually require a procedure to compute the distance between every pair of data points, and this procedure is prohibitive for large datasets since it has quadratic computation complexity. In this paper, we propose a new distributed clustering algorithm, named REstore MOdel with Local Density estimation (REMOLD). Firstly, REMODL applies a balanced partitioning method to evenly divide an large dataset based on Local Sensitive Hashing (LSH). Then, it locally clusters each partition of the dataset, and uses a Gaussian model to represent each local cluster based on the observation that the density distribution of each local cluster shares similar shape with Gaussian distribution. Finally, these models are aggregated on a server where REMOLD restores global clusters based on these local Gaussian models. More specifically, model connection, which measures the density connectivity between two models, are defined to merge local models with an optimized procedure. In this aggregation, REMOLD requires low cost of network transmission for local Gaussian models, since the number of Gaussian models is often less than that of core objects for each partition. We evaluate REMOLD on three synthetic datasets and three real-world datasets on Spark, and the experiment results demonstrate that REMOLD is efficient and effective to find out clusters with complex shapes and it outperforms the established methods.},
+ author = {Liang, Mingfei and Li, Qingyong and Geng, Yangli-ao and Wang, Jianzhu and Wei, Zhi},
+ booktitle = {2017 IEEE 23rd International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS.2017.00057},
+ issn = {1521-9097},
+ keyword = {Clustering algorithms;Partitioning algorithms;Computational modeling;Estimation;Load modeling;Kernel;Sparks;distributed clustering;density-based clustering;density estimation;Gaussian model;Spark},
+ month = {Dec},
+ number = {},
+ pages = {376-383},
+ title = {REMOLD: An Efficient Model-Based Clustering Algorithm for Large Datasets with Spark},
+ volume = {},
+ year = {2017}
+}

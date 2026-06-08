@@ -1,0 +1,13 @@
+@conference{Zhang2022397,
+ abstract = {Modern distributed key-value (KV) stores adopt replication for fault tolerance by distributing replicas of KV pairs across nodes. However, existing distributed KV stores often manage all replicas in the same index structure, thereby leading to significant I/O costs beyond the replication redundancy. We propose a notion called replica decoupling, which decouples the storage management of the primary and redundant copies of replicas, so as to not only mitigate the I/O costs in indexing, but also provide tunable performance. In particular, we design a novel two-layer log that enables tunable ordering for the redundant copies to achieve balanced read/write performance. We implement a distributed KV store prototype, DEPART, atop Cassandra. Experiments show that DEPART outperforms Cassandra in all performance aspects under various consistency levels and parameter settings. Specifically, under the eventual consistency setting, DEPART achieves up to 1.43×, 2.43×, 2.68×, and 1.44× throughput for writes, reads, scans, and updates, respectively. © AST 2022.All rights reserved.},
+ author = {Zhang, Qiang and Li, Yongkun and Lee, Patrick P.C. and Xu, Yinlong and Wu, Si},
+ journal = {Proceedings of the 20th USENIX Conference on File and Storage Technologies, FAST 2022},
+ note = {Cited by: 11},
+ pages = {397 - 412},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DEPART: Replica Decoupling for Distributed Key-Value Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85128095500?origin=resultslist},
+ year = {2022}
+}

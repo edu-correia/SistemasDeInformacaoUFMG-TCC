@@ -1,0 +1,14 @@
+@article{8006204,
+ abstract = {This paper proposes a complete lossless compression method for exploiting the redundancy of rectified light-field data. The light-field data consist of an array of rectified subaperture images, called for short views, which are segmented into regions according to an optimized partition of the central view. Each region of a view is predictively encoded using a specifically designed sparse predictor, exploiting the smoothness of each color component in the current view, and the cross similarities with the other color components and already encoded neighbor views. The views are encoded sequentially, using a spiral scanning order, each view being predicted based on several similar neighbor views. The essential challenge for each predictor becomes choosing the most relevant regressors from a large number of possible regressors belonging to the neighbor views. The proposed solution here is to couple sparse predictor design and minimum description length (MDL) principle, where the data description length is measured by an implementable code length, optimized for a class of probability models. This paper introduces a region merging segmentation under the MDL criterion for partitioning the views into regions having their own specific sparse predictors. In experiments, several fast sparse design methods are considered. The proposed scheme is evaluated over a database of plenoptic images, achieving better lossless compression ratios than straightforward usage of standard image and video compression methods for the spiral sequence of views.},
+ author = {Helin, Petri and Astola, Pekka and Rao, Bhaskar and Tabus, Ioan},
+ doi = {10.1109/JSTSP.2017.2737967},
+ issn = {1941-0484},
+ journal = {IEEE Journal of Selected Topics in Signal Processing},
+ keyword = {Image coding;Image segmentation;Light field image processing;Lossless compression;light-field coding;minimum description length segmentation;plenoptics;sparse prediction},
+ month = {Oct},
+ number = {7},
+ pages = {1146-1161},
+ title = {Minimum Description Length Sparse Modeling and Region Merging for Lossless Plenoptic Image Compression},
+ volume = {11},
+ year = {2017}
+}

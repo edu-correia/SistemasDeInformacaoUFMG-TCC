@@ -1,0 +1,14 @@
+@inproceedings{10597679,
+ abstract = {As the most common data structure for key-value stores, LogStructured Merge Tree (LSM-tree) can eliminate random write operations and keep acceptable read performance. However, write stall and write amplification introduced by the leveled compaction of LSM-tree significantly degrade the system performance. The emerging non-volatile memory (NVM) provides byte-addressable access and low-latency data persistence. Integrating DIMM-interface NVM in the design of the LSM-tree can potentially alleviate the write stall and write amplification issue, as the access speed of NVM is several orders of magnitude faster than hard disk drives or flash memory-based solid-state drives. This hybrid storage should be carefully designed, requiring new architectural and key-value structural support. This paper presents ZigZagDB, an NVM-enabled data man-agement scheme for LSM-tree-based key-value stores. ZigZagDB adds additional layers of key-value stores and uses non-volatile memory as the storage media to hold these additional layers of data. The newly designed key-value stores alternately access the data from either SSD or NVM. This ‘ZigZag’ shape of storage collaboration and synchronization can benefit write efficiency and space utilization. By utilizing the NVM with very limited capacity, the redesigned organization of LSM-tree can effectively solve the write stall and write amplification issue. We demonstrate the viability of the proposed ZigZagDB using a set of extensive experiments. Experimental results show that ZigZagDB can significantly reduce the write amplification and boost the throughput in comparison with representative schemes.},
+ author = {Wang, Yi and He, Jiajian and Sun, Kaoyi and Dong, Yunhao and Chen, Jiaxian and Ma, Chenlin and Zhou, Amelie Chi and Mao, Rui},
+ booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE60146.2024.00166},
+ issn = {2375-026X},
+ keyword = {Nonvolatile memory;Solid state drives;Shape;System performance;Collaboration;Tail;Throughput;Key-value store;NVM;compaction;LSM-tree;write stall},
+ month = {May},
+ number = {},
+ pages = {2082-2095},
+ title = {Boosting Write Performance of KV Stores: An NVM - Enabled Storage Collaboration Approach},
+ volume = {},
+ year = {2024}
+}

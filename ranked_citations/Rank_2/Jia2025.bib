@@ -1,0 +1,16 @@
+@article{Jia2025,
+ abstract = {We present AugeFS, a scalable userspace log-structured file system for modern SSDs.AugeFS re-architects the file system stack to address three critical challenges: inefficient control plane, limited metadata scalability, and underutilized device bandwidth. First, we propose a shared and protected address space within the userspace of accessing applications to run AugeFS, which enables the high-performance data plane and efficient control plane. Second, we design a scalable LSM-tree based key-value store called MetaDB to organize small-sized metadata in AugeFS. To improve the metadata scalability, MetaDB employs parallel request processing to reduce thread synchronization overhead and fine-grained parallel write-ahead log to eliminate false sharing in metadata persistence. Finally, AugeFS distributes files into different domains. To reduce contention, we maintain space management metadata for each domain independently, which helps scale data performance and improve the device IO utilization. Moreover, AugeFS designs an asynchronous IO stack for fsync to reduce the latency of synchronous writes. The evaluation results show that AugeFS significantly improves both metadata scalability and data scalability. © 2025 Copyright held by the owner/author(s).},
+ author = {Jia, Wenqing and Jiang, Dejun and Xiong, Jin},
+ doi = {10.1145/3728645},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 0; All Open Access; Hybrid Gold Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A High-Performance and Scalable Userspace Log-Structured File System for Modern SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105023290523?origin=resultslist},
+ volume = {21},
+ year = {2025}
+}

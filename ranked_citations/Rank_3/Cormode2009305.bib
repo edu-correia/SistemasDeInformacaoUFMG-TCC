@@ -1,0 +1,14 @@
+@conference{Cormode2009305,
+ abstract = {When dealing with massive quantities of data, topk queries are a powerful technique for returning only the k most relevant tuples for inspection, based on a scoring function. The problem of efficiently answering such ranking queries has been studied and analyzed extensively within traditional database settings. The importance of the top-k is perhaps even greater in probabilistic databases, where a relation can encode exponentially many possible worlds. There have been several recent attempts to propose definitions and algorithms for ranking queries over probabilistic data. However, these all lack many of the intuitive properties of a top-k over deterministic data. Specifically, we define a number of fundamental properties, including exact-k, containment, unique-rank, value-invariance, and stability, which are all satisfied by ranking queries on certain data. We argue that all these conditions should also be fulfilled by any reasonable definition for ranking uncertain data. Unfortunately, none of the existing definitions is able to achieve this. To remedy this shortcoming, this work proposes an intuitive new approach of expected rank. This uses the well-founded notion of the expected rank of each tuple across all possible worlds as the basis of the ranking. We are able to prove that, in contrast to all existing approaches, the expected rank satisfies all the required properties for a ranking query. We provide efficient solutions to compute this ranking across the major models of uncertain data, such as attribute-level and tuple-level uncertainty. For an uncertain relation of N tuples, the processing cost is O(N logN)-no worse than simply sorting the relation. In settings where there is a high cost for generating each tuple in turn, we provide pruning techniques based on probabilistic tail bounds that can terminate the search early and guarantee that the top-k has been found. Finally, a comprehensive experimental study confirms the effectiveness of our approach. © 2009 IEEE.},
+ author = {Cormode, Graham and Li, Feifei and Yi, Ke},
+ doi = {10.1109/ICDE.2009.75},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 157},
+ pages = {305 - 316},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Semantics of ranking queries for probabilistic data and expected ranks},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/67649643456?origin=resultslist},
+ year = {2009}
+}

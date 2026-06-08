@@ -1,0 +1,14 @@
+@article{10231113,
+ abstract = {The attack on quantum computers is an enormous threat to conventional public-key cryptography. Hence, it is crucial to study quantum-resistant cryptosystems. After four rounds of evaluation, the National Institute of Standards and Technology (NIST) has decided to standardize CRYSTALS-Kyber as one of the public-key post-quantum cryptography (PQC) algorithms. In the hardware design of CRYSTALS-Kyber, the polynomial-related calculations are the most time-consuming. In this paper, we present a highly-efficient hardware architecture for CRYSTALS-Kyber. Firstly, we propose the CRYSTALS-Kyber-oriented conflict-free memory mapping scheme with two modes. Based on this scheme, we construct the mixed radix-2/4 NTT/INTT algorithm, which has no pre- or post-processing, for the first time. By using the “lazy-last-layer” trick, the available memory bandwidth of NTT is temporarily increased, and the average performance of NTT is improved. Besides, the point-wise-multiplication (PWM) is performed in a single memory bank by cooperating with the two modes of our memory mapping scheme. This avoids the waste of memory bandwidth, thus avoiding the usage of large FIFOs for the sampled data. Last, we propose an efficient modular multiplier for CRYSTALS-Kyber, and we merge the divide-by-2 operations in the finite field into modular adders and subtractors to reduce resource consumption. This design, which supports all three security levels, is implemented on Xilinx Artix-7 FPGA with 7.3k LUTs, 3.2k FFs, 2.2k Slices, 5 BRAMs, and 4 DSPs. It performs 12% better in area-time-product than other leading designs in the literature.},
+ author = {Guo, Wenbo and Li, Shuguo},
+ doi = {10.1109/TCSI.2023.3306347},
+ issn = {1558-0806},
+ journal = {IEEE Transactions on Circuits and Systems I: Regular Papers},
+ keyword = {Hardware;Memory management;Bandwidth;Pulse width modulation;Random access memory;Quantum computing;Standards;CRYSTALS-Kyber;post-quantum cryptography;mixed radix-2/4 NTT;conflict-free;modular multiplication},
+ month = {Nov},
+ number = {11},
+ pages = {4505-4515},
+ title = {Highly-Efficient Hardware Architecture for CRYSTALS-Kyber With a Novel Conflict-Free Memory Access Pattern},
+ volume = {70},
+ year = {2023}
+}

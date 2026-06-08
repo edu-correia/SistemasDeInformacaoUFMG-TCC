@@ -1,0 +1,14 @@
+@article{7004064,
+ abstract = {Large-scale scientific applications on High-Performance Computing (HPC) systems are generating a colossal amount of data that need to be analyzed in a timely manner for new knowledge, but are too costly to transfer due to their sheer size. Many HPC systems have catered to in situ analytics solutions that can analyze temporary datasets as they are generated, i.e., without storing to long-term storage media. However, there is still an open question on how to conduct efficient analytics of permanent datasets that have been stored to the backend persistent storage because of their long-term value. To fill the void, we exploit the analytics shipping model for fast analysis of large-scale scientific datasets on HPC backend storage servers. Through an efficient integration of MapReduce and the popular Lustre storage system, we have developed a Virtualized Analytics Shipping (VAS) framework that can ship MapReduce programs to Lustre storage servers. The VAS framework includes three component techniques: (a) virtualized analytics shipping with fast network and disk I/O; (b) stripe-aligned data distribution and task scheduling and (c) pipelined intermediate data merging and reducing. The first technique provides necessary isolation between MapReduce analytics and Lustre I/O services. The second and third techniques optimize MapReduce on Lustre and avoid explicit shuffling. Our performance evaluation demonstrates that VAS offers an exemplary implementation of analytics shipping and delivers fast and virtualized MapReduce programs on backend Lustre storage servers.},
+ author = {Xu, Cong and Goldstone, Robin and Liu, Zhuo and Chen, Hui and Neitzel, Bryon and Yu, Weikuan},
+ doi = {10.1109/TPDS.2015.2389262},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Servers;Yarn;Bandwidth;Interference;Analytical models;Merging;Computational modeling;Analytics Shipping;Hadoop;MapReduce;HPC;Lustre;Analytics shipping;hadoop;mapreduce;HPC;lustre},
+ month = {Jan},
+ number = {1},
+ pages = {185-196},
+ title = {Exploiting Analytics Shipping with Virtualized MapReduce on HPC Backend Storage Servers},
+ volume = {27},
+ year = {2016}
+}

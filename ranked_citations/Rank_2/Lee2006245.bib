@@ -1,0 +1,16 @@
+@article{Lee2006245,
+ abstract = {Spatial joins find all pairs of objects that satisfy a given spatial relationship. In spatial joins using indexes, original-space indexes such as the R-tree are widely used. An original-space index is the one that indexes objects as represented in the original space. Since original-space indexes deal with extents of objects, it is relatively complex to optimize join algorithms using these indexes. On the other hand, transform-space indexes, which transform objects in the original space into points in the transform space and index them, deal only with points but no extents. Thus, optimization of join algorithms using these indexes can be relatively simple. However, the disadvantage of these join algorithms is that they cannot be applied to original-space indexes such as the R-tree. In this paper, we present a novel mechanism for achieving the best of these two types of algorithms. Specifically, we propose the new notion of the transform-space view and present the transform-space view join algorithm. The transform-space view is a virtual transform-space index based on an original-space index. It allows us to “interpret” or “view” an existing original-space index as a transform-space index with no space and negligible time overhead and without actually modifying the structure of the original-space index or changing object representation. The transform-space view join algorithm joins two original-space indexes in the transform space through the notion of the transform-space view. Through analysis and experiments, we verify the excellence of the transform-space view join algorithm. The transform-space view join algorithm always outperforms existing ones for all the data sets tested in terms of all three measures used: the one-pass buffer size (the minimum buffer size required for guaranteeing one disk access per page), the number of disk accesses for a given buffer size, and the wall clock time. Thus, it constitutes a lower-bound algorithm. We believe that the proposed transform-space view can be applied to developing various new spatial query processing algorithms in the transform space. © 2006 IEEE},
+ author = {Lee, Min-Jae},
+ doi = {10.1109/TKDE.2006.33},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 11},
+ number = {2},
+ pages = {245 - 260},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Transform-Space View: Performing Spatial Join in the Transform Space Using Original-Space Indexes},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85008009670?origin=resultslist},
+ volume = {18},
+ year = {2006}
+}

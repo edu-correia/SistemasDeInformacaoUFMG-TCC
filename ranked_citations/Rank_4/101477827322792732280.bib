@@ -1,0 +1,17 @@
+@article{10.14778/2732279.2732280,
+ abstract = {As a result of increases in both the query load and the data managed, as well as changes in hardware architecture (multicore), the last years have seen a shift from query-at-a-time approaches towards shared work (SW) systems where queries are executed in groups. Such groups share operators like scans and joins, leading to systems that process hundreds to thousands of queries in one go.SW systems range from storage engines that use in-memory co-operative scans to more complex query processing engines that share joins over analytical and star schema queries. In all cases, they rely on either single query optimizers, predicate sharing, or on manually generated plans. In this paper we explore the problem of shared workload optimization (SWO) for SW systems. The challenge in doing so is that the optimization has to be done for the entire workload and that results in a class of stochastic knapsack with uncertain weights optimization, which can only be addressed with heuristics to achieve a reasonable runtime. In this paper we focus on hash joins and shared scans and present a first algorithm capable of optimizing the execution of entire workloads by deriving a global executing plan for all the queries in the system. We evaluate the optimizer over the TPC-W and the TPC-H benchmarks. The results prove the feasibility of this approach and demonstrate the performance gains that can be obtained from SW systems.},
+ author = {Giannikis, Georgios and Makreshanski, Darko and Alonso, Gustavo and Kossmann, Donald},
+ doi = {10.14778/2732279.2732280},
+ issn = {2150-8097},
+ issue_date = {February 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {February},
+ number = {6},
+ numpages = {12},
+ pages = {429–440},
+ publisher = {VLDB Endowment},
+ title = {Shared workload optimization},
+ url = {https://doi.org/10.14778/2732279.2732280},
+ volume = {7},
+ year = {2014}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10508163,
+ abstract = {Taint analysis mainly detects data leaks and unsafe use of untrusted data obtained from external sources. It reports dataflow paths connecting taint sources and taint sinks in the analyzed program. This paper focuses on inter-modular aspect of project analysis: large projects may contain dozens or even hundreds of target executable files to be analyzed. If analyzed separately, scalability problem arises due to high percentage of reused source files. Here we discuss the idea of linking these bitcode files together to form a single project-wide bitcode file and some caveats of this method: e.g. it makes possible to have execution paths visiting functions' definitions which never appear in the same target file. We also propose a method of eliminating such paths for IFDS-based analyzers. The methods were implemented in static taint analyzer Irbis and evaluated on several real projects with hundreds of thousands lines of code.},
+ author = {Chibisov, D.A. and Shimchik, N.V. and Ignatyev, V.N.},
+ booktitle = {2023 Ivannikov Ispras Open Conference (ISPRAS)},
+ doi = {10.1109/ISPRAS60948.2023.10508163},
+ issn = {2767-9535},
+ keyword = {Codes;Scalability;Source coding;Merging;Metadata;Libraries;Flow graphs;static code analysis;taint analysis;IFDS analysis;vulnerabilities},
+ month = {Dec},
+ number = {},
+ pages = {40-43},
+ title = {Improving Scalability of Inter-module Source Code Static Taint Analysis},
+ volume = {},
+ year = {2023}
+}

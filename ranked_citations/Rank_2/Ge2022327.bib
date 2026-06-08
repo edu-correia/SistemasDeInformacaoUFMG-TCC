@@ -1,0 +1,15 @@
+@article{Ge2022327,
+ abstract = {Key-value (KV) stores based on persistent memories such as Intel Optane Pmem can deliver higher throughput and lower latency, compared to traditional SSD/HDD. Many KV stores adopt LSM-tree as the bone index structure. However, LSM-tree suffers from severe write amplification, which degrades the system’s performance and exacerbates the wearout of persistent memory. In this paper, we propose SpacKV, a hybrid DRAM-Pmem KV store, which applies a KV separation scheme and exploits Pmem’s device characteristics to achieve high throughput. We design a dedicated value storage structure to maintain localized order of values for efficient range queries and a compaction-triggered garbage collection mechanism to minimize intermediate I/O overhead. Moreover, we leverage Pmem’s key features: byte-addressability, access unit of 256 bytes and specific persistence instructions to further mitigate the write amplification effect. The experimental results show that SpacKV achieves 1.4–10.8 ×, 4.7–9.7 ×, and 6.7–13.5 × in terms of write, read, and range query performance over three state-of-the-art LSM-tree based KV stores: LevelDB-Pmem, RocksDB-Pmem, and MatrixKV, respectively. © 2022, IFIP International Federation for Information Processing.},
+ author = {Ge, Xuran and Lai, Mingche and Liu, Yang and Wu, Lizhou and Zhuang, Zhutao and Ou, Yang and Chen, Zhiguang and Xiao, Nong},
+ doi = {10.1007/978-3-031-21395-3_30},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 3},
+ pages = {327 - 339},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SpacKV: A Pmem-Aware Key-Value Separation Store Based on LSM-Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85144455097?origin=resultslist},
+ volume = {13615 LNCS},
+ year = {2022}
+}

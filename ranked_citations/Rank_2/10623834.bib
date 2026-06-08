@@ -1,0 +1,14 @@
+@article{10623834,
+ abstract = {With the rapid development of network function virtualization (NFV), there is an increasing trend of implementing virtual network functions (vNFs), especially the stateful ones, on high-performance programmable data plane (PDP) switches (e.g., the P4-based PDP switches based on Tofino ASICs), and forming stateful service function chains (SFCs) with them. However, the capability of PDP switches on supporting stateful SFCs is still restricted by the limited hardware resources in them. In this work, we study how to optimize the deployment of stateful SFCs in P4-based PDP switches and design the system of st-SFC, so as to not only utilize the hardware resources on switches efficiently but also minimize the overhead of interactions between control and data planes. We first consider the deployment of stateful SFCs on a single PDP switch. Specifically, we propose to abstract each stateful vNF as a state machine and design a stateful SFC building algorithm to merge the state machines of vNFs for reducing redundant resource usages, and for the vNFs whose operations involve interactions with the control plane, we develop a PktIn-Table to reduce the resource usage in PDP switches and the interaction latency. Then, we propose an SFC deployment algorithm that realizes stateful SFCs on PDP switches on demand, aiming to optimize the resource usages across all the switches in runtime. We prototype st-SFC with PDP switches based on Tofino ASICs and demonstrate its effectiveness experimentally.},
+ author = {Li, Tingyu and Ma, Zhihuang and Zhu, Zuqing},
+ doi = {10.1109/TNSM.2024.3439515},
+ issn = {1932-4537},
+ journal = {IEEE Transactions on Network and Service Management},
+ keyword = {Registers;Pipelines;Hardware;Logic;Merging;Control systems;Buildings;Service function chain (SFC);stateful packet processing;programmable data plane (PDP);P4},
+ month = {Dec},
+ number = {6},
+ pages = {6658-6669},
+ title = {st-SFC: Optimizing Dynamic Deployment of Stateful SFCs on P4-Based PDP Switches},
+ volume = {21},
+ year = {2024}
+}

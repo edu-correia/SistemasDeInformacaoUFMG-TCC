@@ -1,0 +1,14 @@
+@inproceedings{7425444,
+ abstract = {Recently, multicore processors are very common existence. Thread-level parallel processing is inevitable to fully utilize the performance of multicore processors. In order to full utilization of high performance of multicore processors without reference of source program codes, we are now developing a software system for automated parallel processing that can parallelize directly program binary codes. Our system is built on Valgrind, a dynamic binary instrumentation framework, and parallelizes the binary code of loops within the target program to run the parallelized binary codes on multicore processor for performance improvement. The guest program on Valgrind is translated and executed per basic block basis. Although this feature is preferable for the instrumentation of the code inspection for target program, it is not suitable for parallelizing loop codes that consist of multiple basic blocks, since this causes the huge runtime overhead by wasteful processes between blocks. To solve this problem, in this paper, we present a method to reduce the runtime overhead by merging the basic blocks within the target loop and by translating entire codes at a time. Furthermore, we discuss the methods of thread control to reduce the runtime overheads. To investigate the most efficient method of thread control, we examine several combinations of thread creation and CPU affinity. Evaluation results show that translating multiple basic blocks within a program loop at a time can allow us to achieve about 2.3 times performance improvement as compared to the original execution on Valgrind.},
+ author = {Obuchi, Hiroyuki and Ootsu, Kanemitsu and Ohkawa, Takeshi and Yokota, Takashi},
+ booktitle = {2015 Third International Symposium on Computing and Networking (CANDAR)},
+ doi = {10.1109/CANDAR.2015.109},
+ issn = {2379-1896},
+ keyword = {Instruction sets;Parallel processing;Multicore processing;Resource management;Runtime;Binary codes;thread-level parallel processing;dynamic binary translation;automatic parallelization;runtime overhead;thread control},
+ month = {Dec},
+ number = {},
+ pages = {607-609},
+ title = {Efficient Translation and Execution Method for Automated Parallel Processing System by Using Valgrind},
+ volume = {},
+ year = {2015}
+}

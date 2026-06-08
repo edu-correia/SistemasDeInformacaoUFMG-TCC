@@ -1,0 +1,14 @@
+@inproceedings{10556292,
+ abstract = {WireGuard is a pioneering and lightweight Virtual Private Network (VPN) protocol that has been merged into the Linux kernel. It leverages the Noise secure framework to provide advanced security functionalities, such as identity hiding and perfect forward security. Although WireGuard has an optional pre-shared key mode to ensure key security, the advanced security features are guaranteed by asymmetric cryptography algorithms, which cannot be held in the face of superior quantum computers. To achieve quantum-resistant security, WireGuard should avoid using vulnerable asymmetric cryptography algorithms that are currently deeply integrated into the WireGuard protocol. In this paper, we present a solution to enhance the security of WireGuard by integrating Quantum Key Distribution (QKD). We first change the security mode to tunnel-orient Pre-Shared Keys (PSK) as the authentication anchor. We also design QKD-assisted ephemeral keys and corresponding Key Encapsulation Mechanism (KEM) to achieve WireGuard's advanced security properties without using asymmetric cryptography. We also integrate QKD keys during the key derivation to provide further security. Finally, we implement the entire protocol named WireGuard-QKD in Golang and evaluate its performance and security.},
+ author = {Chen, Lutong and Xue, Kaiping and Li, Jian and Li, Zhonghui and Yu, Nenghai},
+ booktitle = {2024 International Conference on Computing, Networking and Communications (ICNC)},
+ doi = {10.1109/ICNC59896.2024.10556292},
+ issn = {2473-7585},
+ keyword = {Resistance;Phase shift keying;Protocols;Quantum computing;Linux;Noise;Authentication;Network Security;Security Protocol;Quantum Key Distribution;Virtual Private Network;Quantum Computing},
+ month = {Feb},
+ number = {},
+ pages = {718-723},
+ title = {Security-Enhanced WireGuard Protocol Design Using Quantum Key Distribution},
+ volume = {},
+ year = {2024}
+}

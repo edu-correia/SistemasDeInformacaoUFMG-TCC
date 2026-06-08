@@ -1,0 +1,14 @@
+@article{9709785,
+ abstract = {Modern media data such as 360° videos and light field (LF) images are typically captured in much higher dimensions than the observers’ visual displays. To efficiently browse high-dimensional media, a navigational streaming model is considered: a client navigates the media space by dictating a navigation path to a server, who in response transmits the corresponding pre-encoded media data units (MDU) to the client one-by-one in sequence. Assuming that the MDU quality is pre-chosen and fixed, the problem resides in selecting and storing redundant representations of MDUs at the server in order to best trade off storage and transmission costs, while enabling adequate user’s random access. We address this problem with a landmark-based MDU optimization framework. The media space is divided into neighborhoods, each containing one landmark (a chosen MDU). MDUs in a neighborhood use the associated landmark as a predictor for inter-coding. Thus, for any MDU transition within the same neighborhood, only one inter-coded MDU transmission is required when the landmark resides in the decoder buffer. It results in lower transmission cost and enables navigational random access. To optimize an MDU structure, we employ tree-structured vector quantizer (TSVQ) to first optimize landmark locations, then iteratively add P-MDUs as refinements using a fast branch-and-bound technique. Taking interactive LF images and viewport adaptive 360° images as illustrative applications, and I-, P- and previously proposed merge frames to intra- and inter-code MDUs, we show experimentally that landmarked MDU structures can noticeably reduce the expected transmission cost compared with MDU structures without landmarks.},
+ author = {Yuan, Yuan and Cheung, Gene and Frossard, Pascal and Zhao, H. Vicky and Huang, Jiwu},
+ doi = {10.1109/TCSVT.2022.3150780},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Navigation;Media;Costs;Servers;Streaming media;Encoding;Videos;Navigational streaming;media compression;distributed source coding},
+ month = {Aug},
+ number = {8},
+ pages = {5663-5679},
+ title = {Landmarking for Navigational Streaming of Stored High-Dimensional Media},
+ volume = {32},
+ year = {2022}
+}

@@ -1,0 +1,14 @@
+@inproceedings{8683512,
+ abstract = {Low-latency and low-power implementations of Convolutional Neural Network (CNN) are highly desired for budget-restricted scenarios. Pruning and Winograd algorithm are two representative approaches to reduce the computation complexity of CNNs. Coupling them is very attractive, but the Winograd transformation removes data sparsity brought by pruning. In this paper, we present a low-latency sparse-Winograd CNN accelerator (LSW-CNN) for pruned Wino-grad CNN models. The ReLU-modified algorithm is employed to solve the zero refilling issue. Our design fully leverages the sparsity in both weights and activations, and thus eliminates all unnecessary computation and cycles. Moreover, a novel fast mask indexing algorithm for sparse data compression is developed. Accumulation buffers are scaled to reduce the latency brought by irregular serial channel merging. On VGG-16, experimental results demonstrate that the latency of LSW-CNN is reduced by 5.1 and 1.7 times, respectively, compared with state-of-the-art dense-Winograd and sparse-Winograd accelerators. Besides, the consumed hardware resource is also significantly reduced.},
+ author = {Wang, Haonan and Liu, Wenjian and Xu, Tianyi and Lin, Jun and Wang, Zhongfeng},
+ booktitle = {ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+ doi = {10.1109/ICASSP.2019.8683512},
+ issn = {2379-190X},
+ keyword = {Merging;Signal processing algorithms;Data compression;Computer architecture;Signal processing;Hardware;Convolutional neural networks;Low latency communication;Speech processing;Indexing;Convolutional Neural Network;accelerator;sparse;Winograd;low-latency},
+ month = {May},
+ number = {},
+ pages = {1448-1452},
+ title = {A Low-latency Sparse-Winograd Accelerator for Convolutional Neural Networks},
+ volume = {},
+ year = {2019}
+}

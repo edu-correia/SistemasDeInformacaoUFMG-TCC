@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920974,
+ abstract = {Recently, there has been increasing interest in extending relational query processing to include data obtained from unstructured sources. A common approach is to use stand-alone Information Extraction (IE) techniques to identify and label entities within blocks of text; the resulting entities are then imported into a standard database and processed using relational queries. This two-part approach, however, suffers from two main drawbacks. First, IE is inherently probabilistic, but traditional query processing does not properly handle probabilistic data, resulting in reduced answer quality. Second, performance inefficiencies arise due to the separation of IE from query processing. In this paper, we address these two problems by building on an in-database implementation of a leading IE model---Conditional Random Fields using the Viterbi inference algorithm. We develop two different query approaches on top of this implementation. The first uses deterministic queries over maximum-likelihood extractions, with optimizations to push the relational operators into the Viterbi algorithm. The second extends the Viterbi algorithm to produce a set of possible extraction "worlds", from which we compute top-k probabilistic query answers. We describe these approaches and explore the trade-offs of efficiency and effectiveness between them using two datasets.},
+ author = {Wang, Daisy Zhe and Franklin, Michael J. and Garofalakis, Minos and Hellerstein, Joseph M.},
+ doi = {10.14778/1920841.1920974},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {11},
+ pages = {1057–1067},
+ publisher = {VLDB Endowment},
+ title = {Querying probabilistic information extraction},
+ url = {https://doi.org/10.14778/1920841.1920974},
+ volume = {3},
+ year = {2010}
+}

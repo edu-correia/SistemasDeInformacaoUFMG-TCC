@@ -1,0 +1,18 @@
+@article{10.1109/TCBB.2018.2858797,
+ abstract = {De Bruijn graph based genome assembly has gained popularity as short read sequencers become ubiquitous. A core assembly operation is the generation of unitigs, which are sequences corresponding to chains in the graph. Unitigs are used as building blocks for generating longer sequences in many assemblers, and can facilitate graph compression. Chain compaction, by which unitigs are generated, remains a critical computational task. In this paper, we present a distributed memory parallel algorithm for simultaneous compaction of all chains in bi-directed de Bruijn graphs. The key advantages of our algorithm include bounding the chain compaction run-time to logarithmic number of iterations in the length of the longest chain, and ability to differentiate cycles from chains within logarithmic number of iterations in the length of the longest cycle. Our algorithm scales to thousands of computational cores, and can compact a whole genome de Bruijn graph from a human sequence read set in 7.3 seconds using 7680 distributed memory cores, and in 12.9 minutes using 64 shared memory cores. It is &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;$3.7times$&lt;/tex-math&gt;&lt;alternatives&gt;&lt;mml:math&gt;&lt;mml:mrow&gt;&lt;mml:mn&gt;3&lt;/mml:mn&gt;&lt;mml:mo&gt;.&lt;/mml:mo&gt;&lt;mml:mn&gt;7&lt;/mml:mn&gt;&lt;mml:mo&gt;×&lt;/mml:mo&gt;&lt;/mml:mrow&gt;&lt;/mml:math&gt;&lt;inline-graphic xlink:href="pan-ieq1-2858797.gif"/&gt;&lt;/alternatives&gt;&lt;/inline-formula&gt; and &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;$2.0times$&lt;/tex-math&gt;&lt;alternatives&gt;&lt;mml:math&gt;&lt;mml:mrow&gt;&lt;mml:mn&gt;2&lt;/mml:mn&gt;&lt;mml:mo&gt;.&lt;/mml:mo&gt;&lt;mml:mn&gt;0&lt;/mml:mn&gt;&lt;mml:mo&gt;×&lt;/mml:mo&gt;&lt;/mml:mrow&gt;&lt;/mml:math&gt;&lt;inline-graphic xlink:href="pan-ieq2-2858797.gif"/&gt;&lt;/alternatives&gt;&lt;/inline-formula&gt; faster than equivalent steps in the state-of-the-art tools for distributed and shared memory environments, respectively. An implementation of the algorithm is available at &lt;uri&gt;https://github.com/ParBLiSS/bruno&lt;/uri&gt;.},
+ address = {Washington, DC, USA},
+ author = {Pan, Tony and Nihalani, Rahul and Aluru, Srinivas},
+ doi = {10.1109/tcbb.2018.2858797},
+ issn = {1545-5963},
+ issue_date = {Jan.-Feb. 2020},
+ journal = {IEEE/ACM Trans. Comput. Biol. Bioinformatics},
+ month = {February},
+ number = {1},
+ numpages = {13},
+ pages = {136–148},
+ publisher = {IEEE Computer Society Press},
+ title = {Fast de Bruijn Graph Compaction in Distributed Memory Environments},
+ url = {https://doi.org/10.1109/TCBB.2018.2858797},
+ volume = {17},
+ year = {2020}
+}

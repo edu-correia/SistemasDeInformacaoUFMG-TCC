@@ -1,0 +1,14 @@
+@conference{Vaghasiya20243799,
+ abstract = {Group-By-Aggregate (GBA) queries are fundamental in data analysis, allowing users to organize data by specific attributes and apply aggregate functions, such as sum, average, and count, to generate insights from large datasets. Traditionally, DBMSs handle GBA queries through either sort-based or hashbased methods, each with unique strengths and limitations. Sortbased approaches, while effective in certain contexts, can become computationally expensive when few groups are involved due to extensive record comparisons. On the other hand, hash-based methods are efficient with larger group counts but are memoryintensive and may suffer from hash collisions, depending on data distribution and hashing functions.This paper presents an empirical performance study focused on traditional sort- and hash-based GBA operators, introducing a robust hybrid approach that unifies their strengths to deliver consistent, high performance across diverse data conditions. The hybrid GBA method combines hash-based grouping and early aggregation for the local phase with sort-based aggregation for the global phase. It forwards partially aggregated results when memory limits are reached, reducing data volume and minimizing memory usage and disk I/O. By eliminating the need to choose between sort and hash GBA operators and removing dependency on precise statistics or query optimizer intervention, the hybrid method significantly enhances query execution reliability. Extensive testing on Wisconsin, TPC-H, and TPC-DS benchmark datasets demonstrates that the hybrid approach consistently matches the performance of the bestsuited algorithm - whether sort or hash - in each scenario, across varying dataset sizes and complexities. This unified solution replaces separate GBA algorithms, providing a flexible, easily adaptable, and highly efficient method for processing GBA queries in big data management systems. © 2024 IEEE.},
+ author = {Vaghasiya, Gaurav and Jahangiri, Shiva},
+ doi = {10.1109/BigData62323.2024.10825803},
+ journal = {Proceedings - 2024 IEEE International Conference on Big Data, BigData 2024},
+ note = {Cited by: 1},
+ pages = {3799 - 3808},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Hybrid Approach to Group-By and Aggregation Query Execution},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85218046991?origin=resultslist},
+ year = {2024}
+}

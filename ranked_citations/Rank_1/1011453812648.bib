@@ -1,0 +1,15 @@
+@article{10.1145/3812648,
+ abstract = {We study the indexed set intersection problem. Given a family  (mathcal {S}=lbrace S_1,ldots,S_Nrbrace )  of sorted integer sets, preprocess  (mathcal {S} )  to answer queries Q⊆[1..N] that ask to compute  (bigcap _{iin Q} S_i ) . We introduce trie certificates, a new approach for the adaptive analysis of set intersection algorithms. Trie certificates capture the difficulty of an instance and allow one to obtain adaptive bounds for the set intersection problem across multiple computational models. Using trie certificates, we revisit Trabb-Pardo’s algorithm [Trabb-Pardo, 1978] in the pointer-machine model and prove an adaptive worst-case bound that matches the optimal comparison-model adaptive bound of Barbay and Kenyon [Barbay and Kenyon, 2008], namely  (mathrm{O}({delta sum _{iin Q}lg bigl (frac{n_i}{delta }bigr)}) ) , where |Si| = ni and δ is the alternation measure of Q. We also introduce a stronger difficulty measure ξ ≤ δ, called the run alternation measure, and design an algorithm whose running time adapts to ξ, achieving  (mathrm{O}({xi sum _{iin Q}lg bigl (frac{n_i}{xi }bigr))} )  time on a pointer machine. On a transdichotomous word-RAM with word size w, we show that these algorithms can be implemented with a Θ(w)-factor reduction in space, while retaining the above running times. Also on a transdichotomous word-RAM, via a decomposition of the original intersection instance into smaller subinstances, we show that the running time can be further improved. We then extend trie certificates to the thread-parallel setting by also decomposing each query into independent subinstances over disjoint subuniverses. We obtain a running-time bound that is determined by the hardest subinstance, and highlight the challenge of balancing difficulty across threads. Our experimental results empirically support our main findings, showing that our algorithms are competitive in practice and provide attractive space–time trade-offs.},
+ address = {New York, NY, USA},
+ author = {Arroyuelo, Diego and Castillo, Juan and Cazorla, Jos\'{e}},
+ doi = {10.1145/3812648},
+ issn = {0362-5915},
+ journal = {ACM Trans. Database Syst.},
+ keyword = {set intersection algorithms, adaptive set intersection algorithms, space-efficient data structures, certificates for adaptive set intersection},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Adaptive Set Intersection via Trie Partition Certificates},
+ url = {https://doi.org/10.1145/3812648},
+ year = {2026}
+}

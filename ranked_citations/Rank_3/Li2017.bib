@@ -1,0 +1,13 @@
+@conference{Li2017,
+ abstract = {In-memory key-value store KV-store is a crucial building block for many systems including large-scale web services and databases. Recent research works pay close attention to data availability of in-memory KV-store. Replication is a common solution to achieve data availability, but the significant memory consumption makes it not applicable for memoryintensive applications. Integrating erasure coding into inmemory KV-store is an emerging approach to achieve memory efficiency. However, traditional in-place update mechanism of erasure coding incurs significant bandwidth cost for writeintensive workload due to frequent broadcast of data update. In this paper, we build BCStore, a bandwidth-efficient inmemory KV-store with erasure coding. We propose a novel batch coding mechanism to optimize the bandwidth cost, and verify its feasibility and efficiency through theoretical analysis. To recycle the memory space due to delete and update operations, we design an efficient move-based garbage collection (GC) mechanism with a novel data layout called virtual coding stripe. Besides, BCStore guarantees consistent data read and write under these new designs, and supports fast online data recovery. We evaluate the performance of BCStore under various workloads. Experimental results show that BCStore can save up to 41% memory compared with replication, and achieve up to 2.4x throughput improvement and 51% bandwidth saving compared to erasure coding with in-place update. © 33rd International Conference on Massive Storage Systems and Technology, MSST 2017. All rights reserved.},
+ author = {Li, Shenglong and Zhang, Quanlu and Yang, Zhi and Dai, Yafei},
+ journal = {33rd International Conference on Massive Storage Systems and Technology, MSST 2017},
+ note = {Cited by: 27},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {BCStore: Bandwidth-Efficient in-memory kv-store with batch coding},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85087108334?origin=resultslist},
+ year = {2017}
+}

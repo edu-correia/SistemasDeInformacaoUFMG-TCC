@@ -1,0 +1,17 @@
+@article{10.14778/2735496.2735499,
+ abstract = {We present new hash tables for joins, and a hash join based on them, that consumes far less memory and is usually faster than recently published in-memory joins. Our hash join is not restricted to outer tables that fit wholly in memory. Key to this hash join is a new concise hash table (CHT), a linear probing hash table that has 100% fill factor, and uses a sparse bitmap with embedded population counts to almost entirely avoid collisions. This bitmap also serves as a Bloom filter for use in multi-table joins.We study the random access characteristics of hash joins, and renew the case for non-partitioned hash joins. We introduce a variant of partitioned joins in which only the build is partitioned, but the probe is not, as this is more efficient for large outer tables than traditional partitioned joins. This also avoids partitioning costs during the probe, while at the same time allowing parallel build without latching overheads. Additionally, we present a variant of CHT, called a concise array table (CAT), that can be used when the key domain is moderately dense. CAT is collision-free and avoids storing join keys in the hash table.We perform a detailed comparison of CHT and CAT against leading in-memory hash joins. Our experiments show that we can reduce the memory usage by one to three orders of magnitude, while also being competitive in performance.},
+ author = {Barber, R. and Lohman, G. and Pandis, I. and Raman, V. and Sidle, R. and Attaluri, G. and Chainani, N. and Lightstone, S. and Sharpe, D.},
+ doi = {10.14778/2735496.2735499},
+ issn = {2150-8097},
+ issue_date = {December 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {December},
+ number = {4},
+ numpages = {12},
+ pages = {353–364},
+ publisher = {VLDB Endowment},
+ title = {Memory-efficient hash joins},
+ url = {https://doi.org/10.14778/2735496.2735499},
+ volume = {8},
+ year = {2014}
+}

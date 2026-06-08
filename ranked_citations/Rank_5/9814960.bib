@@ -1,0 +1,14 @@
+@inproceedings{9814960,
+ abstract = {The performance of many accelerator architectures depends on the communication with external memory. During execution, new I/O data is continuously fetched forth and back to memory. This data exchange is very often performance-critical and a careful orchestration thus vital. To satisfy the I/O demand for accelerators of loop nests, it was shown that the individual reads and writes can be merged into larger blocks, which are subsequently transferred by a single DMA transfer. Furthermore, the order in which such DMA transfers must be issued, was shown to be reducible to a real-time task scheduling problem to be solved at run time. Rather than just concepts, we investigate in this paper efficient algorithms, data structures and their implementation in hardware of such a programmable Loop I/O Controller architecture called LION that only needs to be synthesized once for each processor array size and I/O buffer configuration, thus supporting a large class of processor arrays. Based on a proposed heap-based priority queue, LION is able to issue every 6 cycles a new DMA request to a memory bus. Even on a simple FPGA prototype running at just 200 MHz, this allows for more than 33 million DMA requests to be issued per second. Since the execution time of a typical DMA request is in general at least one order of magnitude longer, we can conclude that this rate is sufficient to fully utilize a given memory interface. Finally, we present implementations on FPGA and also 22nm FDX ASIC showing that the overall overhead of a LION typically amounts to less than 5% of an overall processor array design.},
+ author = {Walter, Dominik and Teich, Jürgen},
+ booktitle = {2021 19th ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE)},
+ doi = {10.1145/3487212.3487349},
+ issn = {},
+ keyword = {Processor scheduling;Process control;Prototypes;Accelerator architectures;Parallel processing;Real-time systems;Hardware;Massively Parallel Processor Arrays;TCPA;I/O Scheduling;Data Transfers;Priority QueueZ},
+ month = {Nov},
+ number = {},
+ pages = {32-43},
+ title = {LION: Real-Time I/O Transfer Control for Massively Parallel Processor Arrays},
+ volume = {},
+ year = {2021}
+}

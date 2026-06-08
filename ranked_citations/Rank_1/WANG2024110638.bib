@@ -1,0 +1,13 @@
+@article{WANG2024110638,
+ abstract = {We present a reconstruction flow for the task of compressed video quality enhancement (VQE). Compressed videos often suffer from various coding artifacts, such as blocking and blurring, especially under low bit-rate. VQE aims to suppress these artifacts to improve the visual quality. Frame similarity can be utilized to enhance low-quality frames given their neighboring high-quality frames, for which motion estimation becomes important. Previous approaches often calculate optical flow for the motion compensation. On the other hand, video coding contains a rich set of block motion vectors, forming a coding flow, which may or may not correspond to the scene motion, but to places that deliver the minimum compression error. In contrast, such a valuable coding flow has always been ignored in VQE previously. In this work, we combine these two motion sources into a new flow, namely reconstruction flow, for the purpose of high-quality VQE. Specifically, we estimate optical flows from RGB frames and extract coding flows from coding streams, which are then merged by a fusion module to generate reconstruction flow. Besides, our network is built upon a recurrent network to utilize global temporal information. The deep features are warped according to the reconstruction flow and fed into the subsequent reconstruction module with spatial-variant kernel attention. Our method is evaluated on the leading MFQE2.0 dataset, which demonstrates superior performances when compared to the existing state-of-the-art methods.},
+ author = {Zhengning Wang and Xuhang Liu and Chuan Wang and Ting Jiang and Tianjiao Zeng and Zhenni Zeng and Guoqing Wang and Shuaicheng Liu},
+ doi = {https://doi.org/10.1016/j.patcog.2024.110638},
+ issn = {0031-3203},
+ journal = {Pattern Recognition},
+ keyword = {Video coding, Video quality enhancement, Flow reconstruction},
+ pages = {110638},
+ title = {Reconstruction flow recurrent network for compressed video quality enhancement},
+ url = {https://www.sciencedirect.com/science/article/pii/S0031320324003893},
+ volume = {155},
+ year = {2024}
+}

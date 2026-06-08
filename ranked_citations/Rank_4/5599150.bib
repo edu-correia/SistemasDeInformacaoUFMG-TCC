@@ -1,0 +1,14 @@
+@inproceedings{5599150,
+ abstract = {Exact inference is a key problem in exploring probabilistic graphical models. The computational complexity of inference increases dramatically with the parameters of the graphical model. To achieve scalability over hundreds of threads remains a fundamental challenge. In this paper, we use a lightweight scheduler hosted by the CPU to allocate cliques in junction trees to the GPGPU at run time. The scheduler merges multiple small cliques or splits large cliques dynamically so as to maximize the utilization of the GPGPU resources. We implement node level primitives on the GPGPU to process the cliques assigned by the CPU. We propose a conflict free potential table organization and an efficient data layout for coalescing memory accesses. In addition, we develop a double buffering based asynchronous data transfer between CPU and GPGPU to overlap clique processing on the GPGPU with data transfer and scheduling activities. Our implementation achieved 30× speedup compared with state-of-the-art multicore processors.},
+ author = {Jeon, Hyeran and Xia, Yinglong and Prasanna, Viktor K.},
+ booktitle = {2010 39th International Conference on Parallel Processing},
+ doi = {10.1109/ICPP.2010.15},
+ issn = {2332-5690},
+ keyword = {Instruction sets;Kernel;Junctions;Particle separators;Message systems;Bayesian methods;Layout;Heterogeneous computing;GPGPU;Exact Inference},
+ month = {Sep.},
+ number = {},
+ pages = {61-70},
+ title = {Parallel Exact Inference on a CPU-GPGPU Heterogenous System},
+ volume = {},
+ year = {2010}
+}

@@ -1,0 +1,14 @@
+@inproceedings{9679403,
+ abstract = {With the development of embedded hardware and artificial intelligence technology, video surveillance terminals based on embedded device are becoming more intelligent, and the ability of image recognition is one of its development trends. Compared with the indiscriminate storage of surveillance video by traditional video surveillance terminals, intelligent video surveillance terminals with image recognition can be used as an edge computing node to automatically identify surveillance video clips containing the pre-set targets, and store these video clips (called valid videos) locally, discarding other meaningless surveillance video clips, thereby reducing the pressure on the remote data center. However, for some complex application scenarios, intelligent video surveillance terminals may generate a large number of valid videos. Therefore, there is an urgent need for a high-efficiency storage system suitable for embedded devices to store valid videos. General-purpose key-value stores (KVs) are widely used to store massive amounts of unstructured data, but their design is too elaborate, which will seriously increase the burden on the CPU of embedded devices. According to characteristics and storage requirements of valid videos, we present a new lightweight persistent KV: VideoKV, which is designed for embedded devices, it not only implements the core interfaces of general-purpose KVs, but also expands the interfaces to make it more compatible with diverse hardware environment of embedded devices. VideoKV is also more efficient when storing valid videos, we compare VideoKV against available state-of-the-art Log-Structured Merge (LSM) and B+ tree KVs, VideoKV can achieve throughput at least 1.5x that of its competitors on write-intensive workloads, 2.2x on scan-intensive workloads, and reduce CPU consumption rate by 25%.},
+ author = {Cui, Zhenli and Luo, Yu},
+ booktitle = {2021 IEEE International Performance, Computing, and Communications Conference (IPCCC)},
+ doi = {10.1109/IPCCC51483.2021.9679403},
+ issn = {2374-9628},
+ keyword = {Performance evaluation;Data centers;Image recognition;Conferences;Video surveillance;Throughput;Market research;key-value store;embedded devices;intelligent video surveillance terminals;B+ tree;log-structured merge tree (LSM)},
+ month = {Oct},
+ number = {},
+ pages = {1-9},
+ title = {VideoKV: A Fast Key-Value Store For Intelligent Video Surveillance Terminals},
+ volume = {},
+ year = {2021}
+}

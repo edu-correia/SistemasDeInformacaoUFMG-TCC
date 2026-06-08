@@ -1,0 +1,14 @@
+@article{7592415,
+ abstract = {In this paper, we present a single-microphone speech enhancement algorithm. A hybrid approach is proposed merging the generative mixture of Gaussians (MoG) model and the discriminative deep neural network (DNN). The proposed algorithm is executed in two phases, the training phase, which does not recur, and the test phase. First, the noise-free speech log-power spectral density is modeled as an MoG, representing the phoneme-based diversity in the speech signal. A DNN is then trained with phoneme labeled database of clean speech signals for phoneme classification with mel-frequency cepstral coefficients as the input features. In the test phase, a noisy utterance of an untrained speech is processed. Given the phoneme classification results of the noisy speech utterance, a speech presence probability (SPP) is obtained using both the generative and discriminative models. SPP-controlled attenuation is then applied to the noisy speech while simultaneously, the noise estimate is updated. The discriminative DNN maintains the continuity of the speech and the generative phoneme-based MoG preserves the speech spectral structure. Extensive experimental study using real speech and noise signals is provided. We also compare the proposed algorithm with alternative speech enhancement algorithms. We show that we obtain a significant improvement over previous methods in terms of speech quality measures. Finally, we analyze the contribution of all components of the proposed algorithm indicating their combined importance.},
+ author = {Chazan, Shlomo E. and Goldberger, Jacob and Gannot, Sharon},
+ doi = {10.1109/TASLP.2016.2618007},
+ issn = {2329-9304},
+ journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+ keyword = {Speech enhancement;Noise;Neural networks;Attenuation;Algorithm design and analysis;MixMax model;neural-network;phoneme classification;speech enhancement},
+ month = {Dec},
+ number = {12},
+ pages = {2516-2530},
+ title = {A Hybrid Approach for Speech Enhancement Using MoG Model and Neural Network Phoneme Classifier},
+ volume = {24},
+ year = {2016}
+}

@@ -1,0 +1,13 @@
+@article{CHEN2025104404,
+ abstract = {Monocular motion estimation in real scenes is challenging with the presence of noisy and possibly occluded detections. The recent method proposes to introduce a diffusion-based generative motion prior, which treats input detections as noisy partial evidence and generates motion through denoising. This advances robustness and motion quality, yet regardless of whether the denoised motion is close to visual observation, which often causes misalignment. In this work, we propose to reconcile model appearance and motion prior, which enables appearance to play the crucial role of providing reliable noise-free visual evidence for accurate visual alignment. The appearance is modeled by the radiance of both scene and human for joint differentiable rendering. To achieve this with monocular RGB input without mask and depth, we propose a semantic-perturbed mode estimation method to faithfully estimate static scene radiance from dynamic input with complex occlusion relationships, and a polyline depth calibration method to leverage knowledge from depth estimation model to recover the missing depth information. Meanwhile, to leverage knowledge from motion prior and reconcile it with the appearance guidance during optimization, we also propose an occlusion-aware gradient merging strategy. Experimental results demonstrate that our method achieves better-aligned tracking results while maintaining competitive motion quality. Our code is released at https://github.com/Zipei-Chen/Appearance-as-Reliable-Evidence-implementation.},
+ author = {Zipei Chen and Yumeng Li and Zhong Ren and Yao-Xiang Ding and Kun Zhou},
+ doi = {https://doi.org/10.1016/j.cag.2025.104404},
+ issn = {0097-8493},
+ journal = {Computers & Graphics},
+ keyword = {Human pose estimation, Motion prior, Appearance modeling, 3D Gaussian splatting},
+ pages = {104404},
+ title = {Appearance as reliable evidence: Reconciling appearance and generative priors for monocular motion estimation},
+ url = {https://www.sciencedirect.com/science/article/pii/S0097849325002456},
+ volume = {132},
+ year = {2025}
+}

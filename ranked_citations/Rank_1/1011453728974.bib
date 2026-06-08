@@ -1,0 +1,18 @@
+@article{10.1145/3728974,
+ abstract = {LLVM Intermediate Representation (IR) underpins the LLVM compiler infrastructure, offering a strong type system and a static single-assignment (SSA) form that are well-suited for program analysis. However, its single-type design assigns exactly one type to each IR variable, even when the variable may legitimately correspond to multiple types. The recent introduction of opaque pointers exacerbates this limitation: all pointers in the IR are uniformly represented with a generic pointer type (ptr) that erases concrete pointee type information, making many type-based analyses ineffective.    To address the limitations of single-type design, we introduce type-alias analysis, a multiple-type design that maintains type-alias sets for IR variables and infers types across IR instructions. We have developed TypeCopilot, a prototype that recovers concrete pointee types for opaque-pointer-enabled LLVM IR generated from C programs. TypeCopilot achieves 98.57% accuracy with 94.98% coverage, allowing existing analysis tools to retain their effectiveness despite the adoption of opaque pointers. To foster further research and security applications, we have open-sourced TypeCopilot, providing the community with a practical foundation for precise, type-aware security analyses on modern LLVM IR.},
+ address = {New York, NY, USA},
+ articleno = {ISSTA097},
+ author = {Zhou, Jinmeng and Pan, Ziyue and Shen, Wenbo and Wang, Xingkai and Lu, Kangjie and Qian, Zhiyun},
+ doi = {10.1145/3728974},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {LLVM IR, Opaque Pointer, Type System},
+ month = {June},
+ number = {ISSTA},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Type-Alias Analysis: Enabling LLVM IR with Accurate Types},
+ url = {https://doi.org/10.1145/3728974},
+ volume = {2},
+ year = {2025}
+}

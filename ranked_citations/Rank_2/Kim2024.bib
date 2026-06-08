@@ -1,0 +1,16 @@
+@article{Kim2024,
+ abstract = {Modern log-structured merge (LSM) tree-based key-value stores are widely used to process update-heavy workloads effectively as the LSM tree sequentializes write requests to a storage device to maximize storage performance. However, this append-only approach leaves many outdated copies of frequently updated key-value pairs, which need to be routinely cleaned up through the operation called compaction. When the system load is modest, compaction happens in background. However, at a high system load, it can quickly become the major performance bottleneck. To address this compaction bottleneck and further improve the write throughput of LSM tree-based key-value stores, we propose LAB-DB, which augments the existing LSM tree with a pair of B<sup>+</sup> trees on byte-addressable nonvolatile memory (NVM). The auxiliary B<sup>+</sup> trees on NVM reduce both compaction frequency and compaction time, hence leading to lower compaction overhead for writes and fewer storage accesses for reads. According to our evaluation of LAB-DB on RocksDB with YCSB benchmarks, LAB-DB achieves 94% and 67% speedups on two write-intensive workloads (Workload A and F), and also a 43% geomean speedup on read-intensive YCSB Workload B, C, D, and E. This performance gain comes with a low cost of NVM whose size is just 0.6% of the entire dataset to demonstrate the scalability of LAB-DB with an ever increasing volume of future datasets. © 2024 Copyright held by the owner/author(s)},
+ author = {Kim, Donguk and Lee, Jongsung and Lim, Keun Soo and Heo, Jun and Ham, Tae Jun and Lee, Jae W.},
+ doi = {10.1145/3633475},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 5; All Open Access; Hybrid Gold Open Access},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An LSM Tree Augmented with B+ Tree on Nonvolatile Memory},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85185722087?origin=resultslist},
+ volume = {20},
+ year = {2024}
+}

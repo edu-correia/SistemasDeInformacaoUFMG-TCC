@@ -1,0 +1,14 @@
+@conference{Kobus2022400,
+ abstract = {In this paper we introduce Jiffy, the first lock-free, linearizable, ordered key-value index that offers both (1) batch updates, i.e., put and remove operations that are executed atomically, and (2) consistent snapshots used by, e.g., range scan operations. Jiffy is built as a multiversioned lock-free skip list and relies on system-provided timestamps (e.g., on x86_64 obtained through the Time Stamp Counter register) to generate version numbers at minimal cost. For faster skip list traversals and better utilization of CPU caches, key-value entries are grouped into immutable objects called revisions. By (automatically) controlling the size of new revisions, our index can adapt to varying contention levels (e.g., smaller revisions are more suited for write-heavy workloads). Structure modifications to the index, which result in changing the size of revisions, happen through (lock-free) skip list node split and merge operations that are carefully coordinated with the update operations. Despite rich semantics, Jiffy offers highly scalable performance across varied workloads. Compared to Jiffy's lock-based rivals that support batch updates, our index can execute large batch updates up to 7.4 times more efficiently. Moreover, Jiffy often outperforms the state-of-the-art lock-free ordered indices that feature linearizable range scan operations but lack batch updates.  © 2022 ACM.},
+ author = {Kobus, Tadeusz and Kokociński, Maciej and Wojciechowski, Paweł T.},
+ doi = {10.1145/3503221.3508437},
+ journal = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPOPP},
+ note = {Cited by: 13; All Open Access; Gold Open Access},
+ pages = {400 - 415},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Jiffy: A Lock-free Skip List with Batch Updates and Snapshots},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85127558234?origin=resultslist},
+ year = {2022}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3654981,
+ abstract = {DBSCAN is a popular density-based clustering algorithm that has many different applications in practice. However, the running time of DBSCAN in high-dimensional space or general metric space (em e.g., clustering a set of texts by using edit distance) can be as large as quadratic in the input size. Moreover, most of existing accelerating techniques for DBSCAN are only available for low-dimensional Euclidean space. In this paper, we study the DBSCAN problem under the assumption that the inliers (the core points and border points) have a low intrinsic dimension (which is a realistic assumption for many high-dimensional applications), where the outliers can locate anywhere in the space without any assumption. First, we propose a k-center clustering based algorithm that can reduce the time-consuming labeling and merging tasks of DBSCAN to be linear. Further, we propose a linear time approximate DBSCAN algorithm, where the key idea is building a novel small-size summary for the core points. Also, our algorithm can be efficiently implemented for streaming data and the required memory is independent of the input size. Finally, we conduct our experiments and compare our algorithms with several popular DBSCAN algorithms. The experimental results suggest that our proposed approach can significantly reduce the computational complexity in practice.},
+ address = {New York, NY, USA},
+ articleno = {178},
+ author = {Mo, Guanlin and Song, Shihong and Ding, Hu},
+ doi = {10.1145/3654981},
+ issue_date = {June 2024},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {approximation, density-based clustering, doubling dimension, k-center clustering, outliers, streaming},
+ month = {May},
+ number = {3},
+ numpages = {25},
+ publisher = {Association for Computing Machinery},
+ title = {Towards Metric DBSCAN: Exact, Approximate, and Streaming Algorithms},
+ url = {https://doi.org/10.1145/3654981},
+ volume = {2},
+ year = {2024}
+}

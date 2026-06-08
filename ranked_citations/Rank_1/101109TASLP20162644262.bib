@@ -1,0 +1,17 @@
+@article{10.1109/TASLP.2016.2644262,
+ abstract = {The limited scale and genre coverage of labeled data greatly hinders the effectiveness of supervised models, especially when analyzing spoken languages, such as texts transcribed from speech and informal text including tweets and product comments in Internet. In order to effectively utilize multiple labeled datasets with heterogeneous annotations for the same task, this paper proposes a coupled sequence labeling model that can directly learn and infer two heterogeneous annotations simultaneously, using Chinese part-of-speech POS tagging as our case study. The key idea is to bundle two sets of POS tags together e.g., “[NN, n]n, and build a conditional random field CRF based tagging model in the enlarged space of bundled tags with the help of ambiguous labeling. To train our model on two nonoverlapping datasets that each has only one-side tags, we transform a one-side tag into a set of bundled tags by concatenating the tag with every possible tag at the missing side according to a predefined context-free tag-to-tag mapping function, thus producing ambiguous labeling as weak supervision. We design and investigate four different context-free tag-to-tag mapping functions, and find out that the coupled model achieves its best performance when each one-side tag is mapped to all tags at the other side namely complete mapping, indicating that the model can effectively learn the loose mapping between the two heterogeneous annotations, without the need of manually designed mapping rules. Moreover, we propose a context-aware online pruning strategy that can more accurately capture mapping relationships between annotations based on contextual evidences and thus effectively solve the severe inefficiency problem with our coupled model under complete mapping, making it comparable with the baseline CRF model. Experiments on benchmark datasets show that our coupled model significantly outperforms the state-of-the-art baselines on both one-side POS tagging and annotation conversion tasks. The codes and newly annotated data are released for research usage.1},
+ author = {Li, Zhenghua and Chao, Jiayuan and Zhang, Min and Chen, Wenliang and Zhang, Meishan and Fu, Guohong and Zhenghua Li and Jiayuan Chao and Min Zhang and Wenliang Chen and Meishan Zhang and Guohong Fu},
+ doi = {10.1109/taslp.2016.2644262},
+ issn = {2329-9290},
+ issue_date = {March 2017},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {March},
+ number = {3},
+ numpages = {15},
+ pages = {557–571},
+ publisher = {IEEE Press},
+ title = {Coupled POS Tagging on Heterogeneous Annotations},
+ url = {https://doi.org/10.1109/TASLP.2016.2644262},
+ volume = {25},
+ year = {2017}
+}

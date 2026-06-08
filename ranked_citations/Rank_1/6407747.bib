@@ -1,0 +1,14 @@
+@inproceedings{6407747,
+ abstract = {NAND flash memory based Solid State Drive (SSD) is increasingly popular as one of the major non-volatile storage devices. Due to the superior performance and energy efficiency properties, it becomes an important complimentary device between the main memory and the traditional mechanical Hard Disk Drive (HDD). It is also anticipated to substitute HDD as the mainstream secondary storage. Today, flash memory is widely used in embedded systems, hand-held devices, personal computers and even enterprise computer systems. To access the data on the flash, a software component called Flash Translation Layer (FTL) has to be applied to convert the file system logical address into the corresponding physical address. FTL has great impacts on the system overall performance. Numerous FTL algorithms have been proposed in the past decade. DFTL is one of the most popular page-level address mapping FTL algorithms. It has been considered to have the best flexibility. However, it has extra mapping information I/O overhead and cannot always achieve the optimal performance. In this paper, we propose CAST, a novel and efficient pagelevel FTL algorithm to relieve this issue. CAST reserves a small portion of embedded SRAM to cache most recently accessed logical-physical address mapping information. Unlike DFTL, we use a compact packing methodology. Consecutive logical-physical page mapping information is represented with only a single entry. Thus, more address mapping information can be maintained in the caching table, and the cache hit rates can be increased. To improve the garbage collection efficiency, CAST maintains multiple current data blocks simultaneously. When a new data write request comes, the system can select an appropriate one to conduct the process based on the request issuer and/or logical address information. Our simulation results show that CAST outperforms DFTL under various workloads and it can reduce the number of erase operations and decrease the I/O response time significantly.},
+ author = {Xu, Zhiyong and Li, Ruixuan and Xu, Cheng-Zhong},
+ booktitle = {2012 IEEE 31st International Performance Computing and Communications Conference (IPCCC)},
+ doi = {10.1109/PCCC.2012.6407747},
+ issn = {2374-9628},
+ keyword = {Ash;Random access memory;Portable computers;Algorithm design and analysis;Data structures;Flash memory;NAND flash memory;Solid-State Drive (SSD);SingleLevel Cell (SLC);Multi-Level Cell (MLC);Flash Translatio Layer (FTL);Demand-based FTL (DFTL)},
+ month = {Dec},
+ number = {},
+ pages = {142-151},
+ title = {CAST: A page-level FTL with compact address mapping and parallel data blocks},
+ volume = {},
+ year = {2012}
+}

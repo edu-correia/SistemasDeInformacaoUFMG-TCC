@@ -1,0 +1,15 @@
+@article{Kwak2024354,
+ abstract = {Multi-key homomorphic encryption is a generalized notion of homomorphic encryption supporting arbitrary computation on ciphertexts, possibly encrypted under different keys. In this paper, we revisit the work of Chen, Chillotti and Song (ASIACRYPT 2019) and present yet another multi-key variant of the TFHE scheme. The previous construction by Chen et al. involves a blind rotation procedure where the complexity of each iteration gradually increases as it continuously operates on ciphertexts under different keys. Hence, the complexity of gate bootstrapping grows quadratically with respect to the number of associated keys. Our scheme is based on a new blind rotation algorithm which consists of two separate phases. We first split a given multi-key ciphertext into several single-key ciphertexts, take each of them as input to the blind rotation procedure, and obtain accumulators corresponding to individual keys. Then, we merge these single-key accumulators into a single multi-key accumulator. In particular, we develop a novel homomorphic operation between single-key and multi-key ciphertexts to instantiate our pipeline. Therefore, our construction achieves an almost linear time complexity since the gate bootstrapping is dominated by the first phase of blind rotation which requires only independent single-key operations. It also enjoys with great advantages of parallelizability and key-compatibility. We implement the proposed scheme and provide its performance benchmark. For example, our 16-key gate bootstrapping takes about 5.65 s, which is 4.38x faster compared to the prior work. © International Association for Cryptologic Research 2024.},
+ author = {Kwak, Hyesun and Min, Seonhong and Song, Yongsoo},
+ doi = {10.1007/978-3-031-57728-4_12},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 12},
+ pages = {354 - 385},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Towards Practical Multi-key TFHE: Parallelizable, Key-Compatible, Quasi-linear Complexity},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85192142978?origin=resultslist},
+ volume = {14604 LNCS},
+ year = {2024}
+}

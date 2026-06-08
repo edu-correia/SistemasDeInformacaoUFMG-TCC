@@ -1,0 +1,15 @@
+@conference{Lomet2021792,
+ abstract = {Modern storage devices do not support update-in-place. Rather, flash and shingled disks, are forms of log structured stores. Such a store writes a number of diverse and non-contiguous logical pages into a unit of contiguous storage we call a segment instead of using a write I/O to update each page in place. The result is that pages need to be relocated and remapped on every write. Log structuring was invented for and used initially to improve performance in file systems. Segments need to be garbage collected, but can be only when they no longer house any current pages. A process of "cleaning"produces an empty segment by, when necessary, moving (re-writing) still current pages of the segment to another location. Cleaning effectiveness has a major impact on the performance of modern storage devices, and for flash, impacts the rate of wear and hence the lifetime of the device. We analyze cleaning performance and introduce a cleaning strategy that uses a new way to prioritize the order in which segments are cleaned. Our cleaning strategy approximates an "optimal cleaning strategy". Simulation studies confirm the results of the analysis. This strategy is a significant improvement over previous cleaning strategies. © 2021 IEEE.},
+ author = {Lomet, David and Luo, Chen},
+ doi = {10.1109/ICDE51399.2021.00074},
+ journal = {Proceedings - International Conference on Data Engineering},
+ note = {Cited by: 2},
+ pages = {792 - 803},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficiently reclaiming space in a log structured store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85112866051?origin=resultslist},
+ volume = {2021-April},
+ year = {2021}
+}

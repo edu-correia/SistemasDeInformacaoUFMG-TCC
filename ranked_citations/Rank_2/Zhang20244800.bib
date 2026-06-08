@@ -1,0 +1,16 @@
+@article{Zhang20244800,
+ abstract = {This article presents Ursal, an hard-disk drive (HDD)-only block storage system that achieves ultraefficiency, reliability, scalability and availability at low cost. Compared to existing block stores, such as Ursa, Ceph, and Sheepdog, Ursal has the following distinctions. First, since parallelism is harmful to the random I/O performance on HDDs, we restrict Ursal storage servers to conservatively perform parallel I/O on HDDs for avoiding I/O contention and reducing tail latency. Second, Ursal designs a proxy-based storage architecture to separate the high-level and low-level I/O logic, where for each virtual machine (VM) there is one Ursal proxy process running at the client VM side to control (at a high level) the procedure of server-side low-level I/O. Third, to alleviate the problem of low-random write performance of HDDs, Ursal selectively performs direct block writes on raw HDDs or indirect log appends to HDD journals (which are then asynchronously replayed to raw HDDs), depending on the characteristics of the workloads. Fourth, software failures are nontrivial in large-scale block storage systems of which the availability is vital to client VMs, and thus for high availability we design an efficient fault-tolerance mechanism by isolating the connection management module of Ursal proxy. We have implemented Ursal and deployed it at scale. Extensive evaluation results demonstrate that Ursal achieves much higher performance than the state-of-the-art solutions for underloaded scenarios. © 2024 IEEE.},
+ author = {Zhang, Yiming and Zhang, Zhihao and Chen, Yan and Li, Huiba and Wang, Haonan and Zhong, Ping and Liu, Shengyun and Li, Dongsheng},
+ doi = {10.1109/TCAD.2024.3400690},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ note = {Cited by: 1},
+ number = {12},
+ pages = {4800 - 4812},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Block Storage in the Cloud},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85193223519?origin=resultslist},
+ volume = {43},
+ year = {2024}
+}

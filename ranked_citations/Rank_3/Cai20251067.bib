@@ -1,0 +1,14 @@
+@conference{Cai20251067,
+ abstract = {Log-Structured Merge-Tree (LSM-Tree) enhances write efficiency by converting random write operations into batch sequential writes, making it widely adopted in key-value storage systems. However, its key-value pair based indexing approach incurs significant memory and computational overhead in large-scale data environments and suffers from high latency in point query scenarios. Although learned index can enhance query performance and compress index structures, they are often constrained by high training costs, low update efficiency, and poor adaptability to changing data distributions. To address these limitations, this paper proposes HTMdex, a Hierarchical Temporal Memory (HTM) based learned index for LSMTree. HTMdex shifts the indexing target from key-value pairs to SST blocks and introduces an index encoding based on key region method, significantly reducing model training data volume and index complexity. Leveraging the online learning capabilities of the HTM model, HTMdex implements a lazy update mechanism to avoid frequent retraining and associated resource consumption. Furthermore, an adaptive query strategy based on dynamic threshold is proposed, which adaptively adjusts prediction strength based on the index error rate during queries, further enhancing query robustness and model adaptability. Performance evaluations using YCSB and GRE benchmarking tools demonstrate that HTMdex achieves 1. 5 × to 1. 7 6 × improvement in query performance in high-concurrency, write-intensive, and dynamically changing data scenarios, with performance gains ranging from 1.06 × to 20 × across various read-write update workloads. Moreover, system memory overhead is reduced by 32 ×.  © 2025 IEEE.},
+ author = {Cai, Tao and Yin, Yizihao and Niu, Dejiao and Zou, Danping and Deng, Yikang and Huang, Qiujing},
+ doi = {10.1109/ISPA67752.2025.00146},
+ journal = {Proceedings - 2025 IEEE International Symposium on Parallel and Distributed Processing with Applications, ISPA 2025},
+ note = {Cited by: 0},
+ pages = {1067 - 1072},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {The New Learned Index for LSM-Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105030160019?origin=resultslist},
+ year = {2025}
+}

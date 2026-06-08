@@ -1,0 +1,14 @@
+@inproceedings{8109159,
+ abstract = {Distributed Stream Processing Systems (DSPS) like Apache Storm and Spark Streaming enable composition of continuous dataflows that execute persistently over data streams. They are used by Internet of Things (IoT) applications to analyze sensor data from Smart City cyber-infrastructure, and make active utility management decisions. As the ecosystem of such IoT applications that leverage shared urban sensor streams continue to grow, applications will perform duplicate pre-processing and analytics tasks. This offers the opportunity to collaboratively reuse the outputs of overlapping dataflows, thereby improving the resource efficiency. In this paper, we propose dataflow reuse algorithms that given a submitted dataflow, identifies the intersection of reusable tasks and streams from a collection of running dataflows to form a merged dataflow. Similar algorithms to unmerge dataflows when they are removed are also proposed. We implement these algorithms for the popular Apache Storm DSPS, and validate their performance and resource savings for 35 synthetic dataflows based on public OPMW workflows with diverse arrival and departure distributions, and on 21 real IoT dataflows from RIoTBench. We see that our Reuse algorithms reduce the count of running tasks by 38 - 46% for the two workloads, and a reduction in cumulative CPU usage of 36-51%, that can result in real cost savings on Cloud resources.},
+ author = {Chaturvedi, Shilpa and Tyagi, Sahil and Simmhan, Yogesh},
+ booktitle = {2017 IEEE 13th International Conference on e-Science (e-Science)},
+ doi = {10.1109/eScience.2017.54},
+ issn = {},
+ keyword = {Cloud computing;Storms;Smart cities;Kalman filters;Sensors;Sparks},
+ month = {Oct},
+ number = {},
+ pages = {403-412},
+ title = {Collaborative Reuse of Streaming Dataflows in IoT Applications},
+ volume = {},
+ year = {2017}
+}

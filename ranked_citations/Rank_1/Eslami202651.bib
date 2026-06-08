@@ -1,0 +1,16 @@
+@article{Eslami202651,
+ abstract = {Range filters are compact data structures that answer approximate range emptiness queries. They are used in many domains, e.g., in key-value stores, to quickly rule out the existence of keys in a given query range and avoid having to search for them in storage. However, all existing range filters exhibit at least one of the following shortcomings: (1) they do not provide robust false positive rate and performance guarantees, (2) they do not support variable-length keys and query ranges, and (3) they do not allow dynamic operations such as insertions, deletions, or expansions. We introduce Diva, the first range filter to address all the above challenges simultaneously. Diva learns the dataset’s distribution by sampling keys and storing them in a cache-efficient trie. It compresses the keys in-between samples by removing their longest common prefix and truncating their suffixes while leaving enough bits in the middle (i.e., an infix) to allow differentiating between the keys in the sorted order. It stores infixes in constant-time dynamic data blocks, which it stretches and eventually splits to handle insertions and expansions. It processes a range query by traversing the trie and checking for the inclusion of at least one infix in the target query range. Diva is the culmination of several years of research on filters from Orca Lab at the University of Toronto, in collaboration with KTH and Copenhagen University. This paper describes how Diva builds on this body of work, and how it addresses the limitations of prior art. ©Copyright held by the owner/author(s).},
+ author = {Eslami, Navid and Bercea, Ioana O. and Dayan, Niv},
+ doi = {10.1145/3810900.3810910},
+ journal = {SIGMOD Record},
+ note = {Cited by: 0},
+ number = {1},
+ pages = {51 - 60},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Dynamic Range Filtering Beyond Worst-Case Bounds},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105038262946?origin=resultslist},
+ volume = {55},
+ year = {2026}
+}

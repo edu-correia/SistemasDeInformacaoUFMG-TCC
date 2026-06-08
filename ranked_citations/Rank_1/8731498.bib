@@ -1,0 +1,14 @@
+@inproceedings{8731498,
+ abstract = {The volume of time series data has exploded due to the popularity of new applications, such as data center management and IoT. Subsequence matching is a fundamental task in mining time series data. All index-based approaches only consider raw subsequence matching (RSM) and do not support subsequence normalization. UCR Suite can deal with normalized subsequence matching problem (NSM), but it needs to scan full time series. In this paper, we propose a novel problem, named constrained normalized subsequence matching problem (cNSM), which adds some constraints to NSM problem. The cNSM problem provides a knob to flexibly control the degree of offset shifting and amplitude scaling, which enables users to build the index to process the query. We propose a new index structure, KV-index, and the matching algorithm, KV-match. With a single index, our approach can support both RSM and cNSM problems under either ED or DTW distance. KV-index is a key-value structure, which can be easily implemented on local files or HBase tables. To support the query of arbitrary lengths, we extend KV-match to KV-match_DP, which utilizes multiple varied-length indexes to process the query. We conduct extensive experiments on synthetic and real-world datasets. The results verify the effectiveness and efficiency of our approach.},
+ author = {Wu, Jiaye and Wang, Peng and Pan, Ningting and Wang, Chen and Wang, Wei and Wang, Jianmin},
+ booktitle = {2019 IEEE 35th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE.2019.00082},
+ issn = {2375-026X},
+ keyword = {Indexes;Time series analysis;Windows;Standards;Electrooculography;Data mining;Euclidean distance;timeseries;subsequence matching;similarity search;normalization;dynamic time warping},
+ month = {April},
+ number = {},
+ pages = {866-877},
+ title = {KV-Match: A Subsequence Matching Approach Supporting Normalization and Time Warping},
+ volume = {},
+ year = {2019}
+}

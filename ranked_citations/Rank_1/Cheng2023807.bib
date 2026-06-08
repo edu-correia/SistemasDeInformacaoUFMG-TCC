@@ -1,0 +1,14 @@
+@conference{Cheng2023807,
+ abstract = {Sparse general matrix-matrix multiplication (SpGEMM) is an important kernel in computational science and engineering, and has been widely studied on homogeneous processors, e.g., CPUs and GPUs. Recently, the asymmetric multicore processors (AMPs), composed of big and LITTLE cores from ARM, or of performance and efficient cores from Apple and Intel, are becoming the mainstream processors of modern computers. However, directly running the existing SpGEMM algorithms on AMPs easily leads to load imbalance problems due to the irregularity from both the sparse matrix side and the AMP side, and there is still a lack of parallel SpGEMM algorithm that can efficiently exploit the different cores on AMPs. In this paper, we propose a parallel algorithm called heterogeneity-aware SpGEMM (HASpGEMM). To motivate our algorithm design, we first obtain the performance characteristics of a variety of kernels (i.e., SPA, HASH and ESC) on P- and E-cores of Intel 12th and 13th Gen AMPs through micro-benchmarking. On top of the large amount of kernel-level testing data, we design a row-wise mapping technique to better select kernels and cores for rows of different characteristics and develop a task assignment scheme to better balance workload in terms of compute and memory access on the two kinds of cores. Based on the experimental data, compared to the SPA, HASH, ESC, and the latest Intel oneMKL library on Intel Core i9-12900KF and i9-13900KF AMPs, our algorithm HASpGEMM achieves an average speedup of 2.83x, 1.85x, 3.85x, 1.88x (with a maximum speedup of 46.50x, 37.48x, 106.31x, 113.17x) on the i9-12900KF processor. On the i9-13900KF processor, it achieves an average speedup of 4.06x, 2.21x, 4.56x, 2.23x (with a maximum speedup of 52.51x, 78.08x, 161.68x, 131.48x). © 2023 Association for Computing Machinery. All rights reserved.},
+ author = {Cheng, Helin and Li, Wenxuan and Lu, Yuechen and Liu, Weifeng},
+ doi = {10.1145/3605573.3605611},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 13},
+ pages = {807 - 817},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HASpGEMM: Heterogeneity-Aware Sparse General Matrix-Matrix Multiplication on Modern Asymmetric Multicore Processors},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179523559?origin=resultslist},
+ year = {2023}
+}

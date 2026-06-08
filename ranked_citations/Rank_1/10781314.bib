@@ -1,0 +1,14 @@
+@article{10781314,
+ abstract = {The push to reduce size, weight, power, and cost (SWaP-C) has led to the integration of multiple subsystems with different criticality levels onto a single hardware platform. Virtualization has played a crucial role in merging real-time capabilities with complex environments, facilitating the creation of Mixed-Criticality Systems (MCS). However, consolidating various workloads on a single platform often requires shared peripheral access, such as Network Interface Controllers (NICs), among guest Virtual Machines (VMs). VirtIO provides a standardized interface for device para-virtualization, enabling us to deploy device drivers and sharing logic within dedicated VMs. Despite its advantages, VirtIO can introduce latency and reduced throughput due to its reliance on the hypervisor or other VMs for network access, which may exacerbate resource contention and affect time isolation between VMs. Time-Sensitive Networking (TSN) techniques can mitigate these issues by ensuring reliable, low-latency, and deterministic network communication, although its implementation often depends on proprietary Linux-based solutions. In this paper, we present BiRtIO, an infrastructure designed to support a virtual real-time network for VMs on the Bao hypervisor without compromising safety and security. It leverages the VirtIO standard and incorporates TSN mechanisms available in mainline Linux, such as bandwidth limitation, to enhance performance and predictability in a saturated virtualized network. Experiments conducted on the Xilinx ZCU102 high-performance multicore platform demonstrate that our solution achieves performance and predictability levels suitable for real-time workloads on MCS with limited Ethernet ports.},
+ author = {Peixoto, João and Martins, José and Cerdeira, David and Pinto, Sandro},
+ doi = {10.1109/ACCESS.2024.3512777},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Virtual machine monitors;Real-time systems;Standards;Linux;Security;Network interfaces;Performance evaluation;Safety;Protocols;Limiting;Mixed-criticality systems;real-time;security;time-sensitive networks;VirtIO;virtualization},
+ month = {},
+ number = {},
+ pages = {185434-185447},
+ title = {BiRtIO: VirtIO for Real-Time Network Interface Sharing on the Bao Hypervisor},
+ volume = {12},
+ year = {2024}
+}

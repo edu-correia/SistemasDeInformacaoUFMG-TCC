@@ -1,0 +1,14 @@
+@conference{Li2018149,
+ abstract = {Minimum Spanning Tree (MST) is a fundamental problem in graph processing. The current state of the art concentrates on parallelizing its computation on multi-cores to speedup MST. Although many parallelism strategies have been explored, the actual speedup is limited, and they consume a large amount of CPU power. In this paper, we propose a new approach to the MST computation by coordinating computing power inside SSD storage with host CPU cores. A comprehensive framework of software-hardware co-design, referred to as CISC (coordinating Intelligent SSD and CPU), preprocesses MST graph edges inside storage and parallelizes the remaining computation on host CPU. Leveraging the special properties of modern SSD storage, CISC exploits a divide and conquer approach to reordering graph edges. We have implemented an FPGA circuit that reorders chunks of graph edges inside an SSD. The ordered chunks are then loaded to the system RAM and processed by the host CPU to build a B-Tree structure by repetitively picking up edges at heads of chunks. A working prototype CISC has been built using NVM-e SSD on a server. Extensive experiments have been carried out using real-world benchmarks to demonstrate the feasibility and performance of deploying CISC in NVM-e SSD storage. Our experimental results show 2.2~2.7× speedup for serial version implementation and 11.47× to 17.2× speedup for the parallel version with 96-cores. For the same number of cores, our parallel CISC outperforms the traditional software MST by up to 35%. © 2018 IEEE.},
+ author = {Li, Dongyang and Yang, Yafei and Li, Weijun and Yang, Qing},
+ doi = {10.1109/ISPDC2018.2018.00029},
+ journal = {Proceedings - 17th International Symposium on Parallel and Distributed Computing, ISPDC 2018},
+ note = {Cited by: 4; All Open Access; Green Open Access},
+ pages = {149 - 156},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CISC: Coordinating Intelligent SSD and CPU to Speedup Graph Processing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85053895436?origin=resultslist},
+ year = {2018}
+}

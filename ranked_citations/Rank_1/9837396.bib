@@ -1,0 +1,14 @@
+@article{9837396,
+ abstract = {Automatic International Classification of Diseases (ICD) coding is defined as a kind of text multi-label classification problem, which is difficult because the number of labels is very large and the distribution of labels is unbalanced. The label-wise attention mechanism is widely used in automatic ICD coding because it can assign weights to every word in full Electronic Medical Records (EMR) for different ICD codes. However, the label-wise attention mechanism is redundant and costly in computing. In this paper, we propose a pseudo label-wise attention mechanism to tackle the problem. Instead of computing different attention modes for different ICD codes, the pseudo label-wise attention mechanism automatically merges similar ICD codes and computes only one attention mode for the similar ICD codes, which greatly compresses the number of attention modes and improves the predicted accuracy. In addition, we apply a more convenient and effective way to obtain the ICD vectors, and thus our model can predict new ICD codes by calculating the similarities between EMR vectors and ICD vectors. Our model demonstrates effectiveness in extensive computational experiments. On the public MIMIC-III dataset and private Xiangya dataset, our model achieves the best performance on micro F1 (0.583 and 0.806), micro AUC (0.986 and 0.994), P@8 (0.756 and 0.413), and costs much smaller GPU memory (about 26.1% of the models with label-wise attention). Furthermore, we verify the ability of our model in predicting new ICD codes. The interpretablility analysis and case study show the effectiveness and reliability of the patterns obtained by the pseudo label-wise attention mechanism.},
+ author = {Wu, Yifan and Zeng, Min and Yu, Ying and Li, Yaohang and Li, Min},
+ doi = {10.1109/JBHI.2022.3193291},
+ issn = {2168-2208},
+ journal = {IEEE Journal of Biomedical and Health Informatics},
+ keyword = {Codes;Encoding;Predictive models;Computational modeling;Learning systems;Feature extraction;Semantics;Automatic ICD coding;pseudo label-wise attention;text multi-label classification;multi-label learning},
+ month = {Oct},
+ number = {10},
+ pages = {5201-5212},
+ title = {A Pseudo Label-Wise Attention Network for Automatic ICD Coding},
+ volume = {26},
+ year = {2022}
+}

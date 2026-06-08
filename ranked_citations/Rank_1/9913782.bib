@@ -1,0 +1,14 @@
+@article{9913782,
+ abstract = {Compute-in-memory (CIM) is an attractive solution for machine learning hardware acceleration since it merges computation directly into memory arrays, performing parallel multiply-and-accumulate (MAC) operations. The primary challenge in the reported CIM designs is the analog-to-digital converters (ADCs) that digitize analog MAC values for further processing, causing accuracy loss, excessive power dissipation, latency penalty, and area overhead. In this work, we propose ENNA, a novel CIM architecture based on an ADC-free sub-array design, implementing inter-array data processing in an analog manner. A lightweight input encoding scheme based on pulse-width modulation (PWM) is proposed to improve the throughput. We taped-out a prototype macro and validated the proposed ADC-free RRAM array design in TSMC 40nm process. Based on the measured silicon data, we explore the system-level performance with a partition between analog and digital processing at a level higher than the sub-array. The evaluation results show that the proposed accelerator can achieve 73.6~86.4 TOPS/W energy efficiency and 2.3~7 TOPS throughput (normalized to binary operation) tested on various DNN models. Furthermore, we project the proposed design using a heterogeneous 3D integration (H3D) scheme, showing a  $3\times \sim 37\times $  throughput improvement depending on different tasks and ~50% reduced area overhead compared to 2D design.},
+ author = {Jiang, Hongwu and Huang, Shanshi and Li, Wantong and Yu, Shimeng},
+ doi = {10.1109/TCSI.2022.3208755},
+ issn = {1558-0806},
+ journal = {IEEE Transactions on Circuits and Systems I: Regular Papers},
+ keyword = {Encoding;Computer architecture;Throughput;Random access memory;Hardware;Voltage;Transistors;Compute-in-memory;ADC-free;pulse-width-modulation;heterogeneous 3D integration},
+ month = {Jan},
+ number = {1},
+ pages = {353-363},
+ title = {ENNA: An Efficient Neural Network Accelerator Design Based on ADC-Free Compute-In-Memory Subarrays},
+ volume = {70},
+ year = {2023}
+}

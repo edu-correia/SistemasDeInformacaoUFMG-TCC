@@ -1,0 +1,14 @@
+@article{9211431,
+ abstract = {Application-specific instruction-set processors (ASIPs) utilize customized instructions to speedup a specific application or a set of applications. Thus, ASIPs execute the application(s) faster and are energy efficient compared to general-purpose processors. State-of-the-art custom instruction design methods typically target small applications or kernels of an application, often demanding an instruction designer's ingenuity at some point (semi-automated) to achieve design goals. In this article, for the first time, a fully automated system called FINDER is presented, which finds parallel instructions for ASIPs to improve the performance of large applications and generate FLIX (flexible instructions extension instructions, which are VLIW-type instructions) configurations. Note that we do not synthesize accelerators to speedup. We demonstrate that the proposed method scales well when applied to large applications. The proposed method described in this article models parallel instructions as a graph, analyzes the graph, and finds maximum weighted cliques to create FLIX configurations for a given application. Moreover, hardware reuse within multiple FLIX configurations is incorporated into the methodology. From the configurations, a commercial processor design tool (Xtensa) creates the FLIX instructions and integrates it into a base processor. The results show that the FINDER methodology generates FLIX configurations which shows speedups of up to 2.1× for large applications and 2.7× for smaller applications when compared to the base processor (without FLIX instructions). The logic area increase on average is 11%, and in the worst case is 22%. The energy-delay product can be up to 7.3× lower than when the application is executed on the base processor. Compared to the state-of-the-art systems which are typically demonstrated on applications with less than 100 lines of code, FINDER is capable of analyzing applications with thousands of lines of code and can automatically generate instructions for such applications.},
+ author = {Gnanasambandapillai, Vikkitharan and Peddersen, Jorgen and Ragel, Roshan and Parameswaran, Sri},
+ doi = {10.1109/TCAD.2020.3012211},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Hardware;Program processors;Clocks;Logic gates;Generators;Design automation;Integrated circuits;Application specific instructions;bioinformatics;customized instructions;design synthesis;genomics;hardware/software codesign;heterogeneous processor},
+ month = {Nov},
+ number = {11},
+ pages = {3577-3588},
+ title = {FINDER: Find Efficient Parallel Instructions for ASIPs to Improve Performance of Large Applications},
+ volume = {39},
+ year = {2020}
+}

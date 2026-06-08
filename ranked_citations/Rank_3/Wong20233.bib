@@ -1,0 +1,14 @@
+@conference{Wong20233,
+ abstract = {Rapid growth in data size poses increasing computational and memory challenges to data processing. FPGA accelerators and near-storage processing are promising candidates for tackling computational and memory requirements, and many near-storage FPGA accelerators have been shown to be effective in processing large data. However, the current HLS development environment does not allow direct NVMe storage access from the HLS code. As such, users must frequently hand off between HLS and host code to access data in storage, and such a process requires tedious programming to ensure functional correctness. Moreover, since the HLS code uses radically different methods to access storage compared to DRAM, the HLS codebase targeting DRAM-based platforms cannot be easily ported to NVMe-based platforms, resulting in limited code portability and reusability. Furthermore, frequent suspension of HLS kernel and synchronization between CPU and FPGA introduce significant latency overhead and require sophisticated scheduling mechanisms to hide latency. To address these challenges, we propose a new HLS storage interface named DONGLE that enables direct FPGA-orchestrated NVMe storage access. By providing a unified interface for storage and memory access, DONGLE allows a single-source HLS program to target multiple memory/storage devices, thus making the codebase cleaner, portable, and more efficient. We prototyped DONGLE with an AMD/Xilinx Alveo U200 FPGA and Solidigm DC-P4610 SSD and demonstrate a geomean speed-up of 2.3× and a reduction of lines-of-code by 2.4× on evaluated workloads over the state-of-The-Art commercial platform. © 2023 ACM.},
+ author = {Wong, Linus Y. and Zhang, Jialiang and Li, Jing Jane},
+ doi = {10.1145/3543622.3573185},
+ journal = {FPGA 2023 - Proceedings of the 2023 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+ note = {Cited by: 6},
+ pages = {3 - 13},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DONGLE: Direct FPGA-Orchestrated NVMe Storage for HLS},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85148589933?origin=resultslist},
+ year = {2023}
+}

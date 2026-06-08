@@ -1,0 +1,17 @@
+@article{10.14778/2947618.2947622,
+ abstract = {Data processing systems offer an ever increasing degree of parallelism on the levels of cores, CPUs, and processing nodes. Query optimization must exploit high degrees of parallelism in order not to gradually become the bottleneck of query evaluation. We show how to parallelize query optimization at a massive scale.We present algorithms for parallel query optimization in left-deep and bushy plan spaces. At optimization start, we divide the plan space for a given query into partitions of equal size that are explored in parallel by worker nodes. At the end of optimization, each worker returns the optimal plan in its partition to the master which determines the globally optimal plan from the partition-optimal plans. No synchronization or data exchange is required during the actual optimization phase. The amount of data sent over the network, at the start and at the end of optimization, as well as the complexity of serial steps within our algorithms increase only linearly in the number of workers and in the query size. The time and space complexity of optimization within one partition decreases uniformly in the number of workers. We parallelize single- and multi-objective query optimization over a cluster with 100 nodes in our experiments, using more than 250 concurrent worker threads (Spark executors). Despite high network latency and task assignment overheads, parallelization yields speedups of up to one order of magnitude for large queries whose optimization takes minutes on a single node.},
+ author = {Trummer, Immanuel and Koch, Christoph},
+ doi = {10.14778/2947618.2947622},
+ issn = {2150-8097},
+ issue_date = {May 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {12},
+ pages = {660–671},
+ publisher = {VLDB Endowment},
+ title = {Parallelizing query optimization on shared-nothing architectures},
+ url = {https://doi.org/10.14778/2947618.2947622},
+ volume = {9},
+ year = {2016}
+}

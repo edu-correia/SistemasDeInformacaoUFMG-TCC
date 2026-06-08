@@ -1,0 +1,14 @@
+@inproceedings{8171369,
+ abstract = {Video content makes up more than half of the world's Internet traffic, and this figure is expected to grow rapidly. New techniques that remove traffic redundancy have been shown to significantly improve network performance since many concurrent streams deliver the same video. These techniques employ smart routers that recognize duplicated video streams and merge them to reduce traffic redundancy. Routers deployed over an ISP's network or Internet backbone capture the video traffic and convey it into the overlay. Overlapping streams are merged into each other in link-level by receiving the packet only for the first stream, and re-using it for the subsequent duplicated streams. In this paper, we significantly improve these techniques by introducing a merger-aware routing method. The conventional wisdom is that traffic congestion is bad and routing techniques should be designed to prevent congestion. Video access patterns, however, follow the 80:20 rule; i.e., many video requests are for the same videos. The proposed routing technique leverages this characteristic of streaming traffic. It plans strategic network congestion to increase the opportunity for traffic merging. Although it sounds counter-intuitive to improve network performance by introducing network congestion, we show that creating momentary congestion is indeed an effective solution to reduce network congestion. We introduce a new kind of overlay network, called the Deduplication Overlay Network (DON), to reduce traffic for the underlying network. In DON, redundancy is maximized in link-level by the new routing technique. In order to compute the optimal network path for a new stream, the overall delay of packet transfers in DON is modeled by taking merging streams into consideration. The cost minimization is reduced down to the shortest path problem for efficient computation. The proposed method is implemented on a network simulator and the redundancy elimination performance is compared with an alternative overlay solution based on a recent stream merging technique. Experiments under various workloads and overlay network densities show significantly less traffic over the alternative.},
+ author = {Akpınar, Kutalmış and Hua, Kien A.},
+ booktitle = {2017 IEEE 16th International Symposium on Network Computing and Applications (NCA)},
+ doi = {10.1109/NCA.2017.8171369},
+ issn = {},
+ keyword = {Streaming media;Routing;Merging;Overlay networks;Internet;Servers;Redundancy},
+ month = {Oct},
+ number = {},
+ pages = {1-9},
+ title = {Deduplication overlay network},
+ volume = {},
+ year = {2017}
+}

@@ -1,0 +1,14 @@
+@article{11084791,
+ abstract = {Omnidirectional images carry comprehensive scene representation and are widely useful for applications like AR/VR, robotics, and autonomous driving that require holistic scene understanding. Depth estimation, being the core component of scene understanding, has been widely researched, achieving significant improvement for perspective inputs. However, for 360 input, the methods still produce low-quality, globally inconsistent depths, indicating poor generalization ability due to challenges such as inherent spherical distortion and relatively few training data. Recent state-of-the-art (SOTA) methods utilize multiple projected distortionless tangent patches to mitigate spherical distortion, but they lose the learning of holistic contextual information, leading to global discrepancies and merging artifacts in the final merged-back 360 depths. In this paper, we propose to mitigate the existing global inconsistency and merging artifact issue via a new initial depth estimation network that directly takes a panorama image to learn holistic features with enhanced global awareness via latent attention. We further present a novel semantic and surface normal cascaded multi-task model agnostic framework that mitigates the negative transfer effect observed in current multi-task 360-depth approaches, to produce fine-grained, structure-detailed depths. Specifically, our approach utilizes an initial depth estimation to simulate RGBD input to enhance the performance of semantic segmentation and surface normal estimation, which is, in turn, leveraged to explicitly guide the final depth prediction. Our approach shows significant improvement in Abs Rel by 19.62%, 21.45%, and zero-shot depths by 22.8% using real-world Stanford2D3D and Matterport2D3D benchmark datasets, respectively, over the SOTA while producing structurally detailed globally consistent high-quality depths.},
+ author = {Mohadikar, Payal and Duan, Ye},
+ doi = {10.1109/ACCESS.2025.3590646},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Depth measurement;Multitasking;Semantics;Distortion;Semantic segmentation;Surface treatment;Merging;Kernel;Estimation;Decoding;360 depth;monocular;semantic;surface normal},
+ month = {},
+ number = {},
+ pages = {127599-127613},
+ title = {SN360: Semantic and Surface Normal Cascaded Multi-Task 360 Monocular Depth Estimation},
+ volume = {13},
+ year = {2025}
+}

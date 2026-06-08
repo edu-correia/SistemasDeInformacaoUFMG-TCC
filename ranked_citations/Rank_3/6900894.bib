@@ -1,0 +1,14 @@
+@inproceedings{6900894,
+ abstract = {Traffic classification is a critical task in network management. Decision-trees are commonly used in Machine Learning (ML)-based traffic classification algorithms. Most of the existing implementations are hardware-based, while a new trend for network applications is to use software-based solutions. Since the decision-tree used for traffic classification is highly unbalanced, it is challenging to achieve high throughput for decision-tree-based traffic classification on multi-core platforms. In this paper, we present a high-throughput traffic classifier employing a scalable data structure on multi-core platforms. We convert decision-trees used in ML-based algorithms into a compact rule set table. Based on this data structure, we develop a divide-and-conquer algorithm by (1) searching all the columns of this table in parallel, and (2) merging the outcomes from all the columns into the final classification result. High throughput is sustained using our approach even if the size of the rule set table is scaled up with respect to (1) the number of decision-tree leaves and (2) the number of features examined during the classification process. We prototype our design on state-of-the-art multi-core platforms. For a typical decision-tree-based traffic classifier consisting of 128 leaf nodes and 6 flow-level features, our implementation achieves a throughput of 98 Million Lookups Per Second (MLPS). Our traffic classifier sustains high throughput even for highly unbalanced decision-trees. We achieve 1.5× throughput compared with the C4.5 decision-tree-based implementations, and 13× throughput compared with the SVM based traffic classifiers on multi-core platforms.},
+ author = {Tong, Da and Qu, Yun R. and Prasanna, Viktor K.},
+ booktitle = {2014 IEEE 15th International Conference on High Performance Switching and Routing (HPSR)},
+ doi = {10.1109/HPSR.2014.6900894},
+ issn = {2325-5560},
+ keyword = {Classification algorithms;Throughput;Accuracy;Algorithm design and analysis;Data structures;Ports (Computers);Support vector machines;traffic classification;multi-core;performance},
+ month = {July},
+ number = {},
+ pages = {138-145},
+ title = {High-throughput traffic classification on multi-core processors},
+ volume = {},
+ year = {2014}
+}

@@ -1,0 +1,13 @@
+@conference{Qiu2025497,
+ abstract = {>Tiered storage architectures are promising to improve cost efficiency by combining small and fast storage with slower but cheaper mediums. However, existing designs of Log-Structured Merge-trees (LSM-trees) on tiered storage cannot simultaneously support efficient read and write accesses. Keeping the upper and lower LSM-tree levels in the fast and slow storage respectively (i.e., tiering) allows efficient writes to the fast disks, but read-hot data may be stuck in the slow disks. Putting all the levels in the slow storage and using the fast disks as a cache (i.e., caching) can handle frequently read data efficiently, but LSM-tree compactions now need to happen in the slow disks. We present HotRAP, a key-value store based on RocksDB that follows the tiering approach above, but enhances it to timely promote hot records individually from slow to fast storage and keep them in fast storage while they are hot. HotRAP uses an on-disk data structure (a specially-made LSM-tree) to track the hotness of keys in a fine-grained manner, and leverages two pathways to ensure that hot records reach fast storage with short delays. Our experiments show that HotRAP outperforms state-of-the-art LSM-trees on tiered storage by up to 1.6× compared to the second best under read-write-balanced YCSB workloads with common access skew patterns, and up to 1.5× under Twitter production workloads. © 2025 by The USENIX Association. All rights reserved.},
+ author = {Qiu, Jiansheng and Yuan, Fangzhou and Gao, Mingyu and Zhang, Huanchen},
+ journal = {Proceedings of the 2025 USENIX Annual Technical Conference, ATC 2025},
+ note = {Cited by: 0},
+ pages = {497 - 511},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105011604389?origin=resultslist},
+ year = {2025}
+}

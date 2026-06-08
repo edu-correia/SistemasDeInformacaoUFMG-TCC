@@ -1,0 +1,14 @@
+@conference{Anderson20201011,
+ abstract = {The adoption of low latency persistent memory modules (PMMs) upends the long-established model of remote storage for distributed file systems. Instead, by colocating computation with PMM storage, we can provide applications with much higher IO performance, sub-second application failover, and strong consistency. To demonstrate this, we built the Assise distributed file system, based on a persistent, replicated coherence protocol that manages client-local PMM as a linearizable and crash-recoverable cache between applications and slower (and possibly remote) storage. Assise maximizes locality for all file IO by carrying out IO on process-local, socket-local, and client-local PMM whenever possible. Assise minimizes coherence overhead by maintaining consistency at IO operation granularity, rather than at fixed block sizes. We compare Assise to Ceph/BlueStore, NFS, and Octopus on a cluster with Intel Optane DC PMMs and SSDs for common cloud applications and benchmarks, such as LevelDB, Postfix, and FileBench. We find that Assise improves write latency up to 22×, throughput up to 56×, fail-over time up to 103×, and scales up to 6× better than its counterparts, while providing stronger consistency semantics. © 2018 Institute of Electrical and Electronics Engineers Inc.. All rights reserved.},
+ author = {Anderson, Thomas E. and Canini, Marco and Kim, Jongyul and Kostić, Dejan and Kwon, Youngjin and Peter, Simon and Reda, Waleed and Schuh, Henry N. and Witchel, Emmett},
+ journal = {Proceedings of the 14th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2020},
+ note = {Cited by: 72},
+ pages = {1011 - 1027},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Assise: Performance and Availability via Client-local NVM in a Distributed File System},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105037105154?origin=resultslist},
+ volume = {2020-November},
+ year = {2020}
+}

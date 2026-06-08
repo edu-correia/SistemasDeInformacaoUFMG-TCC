@@ -1,0 +1,14 @@
+@conference{Hewage20224916,
+ abstract = {Aerial images are a special class of remote sensing images, as they are intentionally collected with a high degree of overlap. This high degree of overlap complicates existing index strategies such as R-tree and Space Filling Curve (SFC) based index techniques due to complications in space splitting, granularity of the grid cells and excessive duplication of image object identifiers (IOIs). However, SFC based space ordering can be modified to provide scalable management of overlapping aerial images. This involves overcoming similar IOIs in adjacent grid cells, which would naturally occur in SFC based grids with such data. IOI duplication can be minimized by merging adjacent grid cells through the proposed 'Designing Adjacent Cell Merge Algorithm' (DACMA). This work focuses on establishing a proper adjacent cell merge metric and merge percentage value. Using a highly scalable, distributed HBase cluster for both a single aerial mapping project, and multiple aerial mapping projects, experiments evaluated Jaccard Similarity (JS) and Percentage of Overlap (PO) merge metrics. JS had significant advantages: (i) generating smaller merged regions and (ii) obtaining over 21% and 36% improvement in reducing query response times compared to PO. As a result, JS is proposed for the merge metric for DACMA. For the merge percentage two considerations were dominant: (i) substantial storage reductions with respect to both straight forward SFC-based cell space indexing and 4SA based indexing, and (ii) minimal impact on the query response time. The proposed merge percentage value was selected to optimize the storage (i.e. space) needs and response time (i.e. time) herein named the "Space-Time Trade-off Optimization Percentage"value (or STOP value) is presented. © 2022 IEEE.},
+ author = {Hewage, Chamin Nalinda Lokugam and Laefer, Debra and Bertolotto, Michela and Vo, Anh Vu and Le-Khac, Nhien-An},
+ doi = {10.1109/BigData55660.2022.10020833},
+ journal = {Proceedings - 2022 IEEE International Conference on Big Data, Big Data 2022},
+ note = {Cited by: 0},
+ pages = {4916 - 4925},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {DACMA: Designing space ordering optimizations to scalably manage aerial images},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85147961435?origin=resultslist},
+ year = {2022}
+}

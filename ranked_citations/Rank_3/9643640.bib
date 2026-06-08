@@ -1,0 +1,14 @@
+@inproceedings{9643640,
+ abstract = {Ethereum as one of the largest blockchain systems plays an important role in the distributed ledger, database systems, etc. As more and more blocks are mined, the storage burden of Ethereum is significantly increased. The current Ethereum system uniformly transforms all its data into key-value (KV) items and stores them to the underlying Log-Structure Merged tree (LSM-tree) storage engine ignoring the software semantics. Consequently, it not only exacerbates the write amplification effect of the storage engine but also hurts the performance of Ethereum. In this paper, we proposed a new Ethereum-aware storage model called Block-LSM, which significantly improves the data synchronization of the Ethereum system. Specifically, we first design a shared prefix scheme to transform Ethereum data into ordered KV pairs to alleviate the key range overlaps of different levels in the underlying LSM-tree based storage engine. Moreover, we propose to maintain several semantic-orientated memory buffers to isolate different kinds of Ethereum data. To save space overhead, Block-LSM further aggregates multiple blocks into a group and assigns the same prefix to all KV items from the same block group. Finally, we implement Block-LSM in the real Ethereum environment and conduct a series of experiments. The evaluation results show that Block-LSM significantly reduces up to 3.7× storage write amplification and increases throughput by 3× compared with the original Ethereum design.},
+ author = {Chen, Zehao and Li, Bingzhe and Cai, Xiaojun and Jia, Zhiping and Shen, Zhaoyan and Wang, Yi and Shao, Zili},
+ booktitle = {2021 IEEE 39th International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD53106.2021.00017},
+ issn = {2576-6996},
+ keyword = {Distributed ledger;Semantics;Prototypes;Transforms;Throughput;Database systems;Data models;Ethereum;Storage Engine;KV Store},
+ month = {Oct},
+ number = {},
+ pages = {25-32},
+ title = {Block-LSM: An Ether-aware Block-ordered LSM-tree based Key-Value Storage Engine},
+ volume = {},
+ year = {2021}
+}

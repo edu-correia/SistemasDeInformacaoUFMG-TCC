@@ -1,0 +1,13 @@
+@conference{Crotty2022,
+ abstract = {Memory-mapped (mmap) file I/O is an OS-provided feature that maps the contents of a file on secondary storage into a program's address space. The program then accesses pages via pointers as if the file resided entirely in memory. The OS transparently loads pages only when the program references them and automatically evicts pages if memory fills up. mmap's perceived ease of use has seduced database management system (DBMS) developers for decades as a viable alternative to implementing a buffer pool. There are, however, severe correctness and performance issues with mmap that are not immediately apparent. Such problems make it difficult, if not impossible, to use mmap correctly and efficiently in a modern DBMS. In fact, several popular DBMSs initially used mmap to support larger-than-memory databases but soon encountered these hidden perils, forcing them to switch to managing file I/O themselves after significant engineering costs. In this way, mmap and DBMSs are like coffee and spicy food: an unfortunate combination that becomes obvious after the fact. Since developers keep trying to use mmap in new DBMSs, we wrote this paper to provide a warning to others that mmap is not a suitable replacement for a traditional buffer pool. We discuss the main shortcomings of mmap in detail, and our experimental analysis demonstrates clear performance limitations. Based on these findings, we conclude with a prescription for when DBMS developers might consider using mmap for file I/O. © 2022 12th Annual Conference on Innovative Data Systems Research, CIDR 2022. All rights reserved.},
+ author = {Crotty, Andrew and Leis, Viktor and Pavlo, Andrew},
+ journal = {12th Annual Conference on Innovative Data Systems Research, CIDR 2022},
+ note = {Cited by: 36},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Are You Sure You Want to Use MMAP in Your Database Management System?},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85149316754?origin=resultslist},
+ year = {2022}
+}

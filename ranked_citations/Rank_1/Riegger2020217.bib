@@ -1,0 +1,15 @@
+@conference{Riegger2020217,
+ abstract = {Modern mixed (HTAP) workloads execute fast update-transactions and long-running analytical queries on the same dataset and system. In multi-version (MVCC) systems, such workloads result in many short-lived versions and long version-chains as well as in increased and frequent maintenance overhead. Consequently, the index pressure increases significantly. Firstly, the frequent modifications cause frequent creation of new versions, yielding a surge in index maintenance overhead. Secondly and more importantly, index-scans incur extra I/O overhead to determine, which of the resulting tuple-versions are visible to the executing transaction (visibility-check) as current designs only store version/timestamp information in the base table – not in the index. Such index-only visibility-check is critical for HTAP workloads on large datasets. In this paper we propose the Multi-Version Partitioned B-Tree (MV-PBT) as a version-aware index structure, supporting index-only visibility checks and flash-friendly I/O patterns. The experimental evaluation indicates a 2x improvement for analytical queries and 15% higher transactional throughput under HTAP workloads. MV-PBT offers 40% higher tx. throughput compared to WiredTiger’s LSM-Tree implementation under YCSB. © 2020 Copyright held by the owner/author(s).},
+ author = {Riegger, Christian and Vinçon, Tobias and Gottstein, Robert and Petrov, Ilia},
+ doi = {10.5441/002/edbt.2020.20},
+ journal = {Advances in Database Technology - EDBT},
+ note = {Cited by: 10},
+ pages = {217 - 228},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MV-PBT: Multi-version indexing for large datasets and HTap workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85084184681?origin=resultslist},
+ volume = {2020-March},
+ year = {2020}
+}

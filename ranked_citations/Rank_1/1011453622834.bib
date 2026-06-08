@@ -1,0 +1,18 @@
+@article{10.1145/3622834,
+ abstract = {Rewrite rules are critical in equality saturation, an increasingly popular technique  in optimizing compilers, synthesizers, and verifiers. Unfortunately,   developing high-quality rulesets is difficult and error-prone. Recent   work on automatically inferring rewrite rules does not scale to large   terms or grammars, and existing rule inference tools are monolithic and   opaque. Equality saturation users therefore struggle to guide inference and   incrementally construct rulesets. As a result, most users still   manually develop and maintain rulesets.    This paper proposes Enumo, a new domain-specific language for   programmable theory exploration. Enumo provides a small set of core   operators that enable users to strategically guide rule inference and   incrementally build rulesets. Short Enumo programs easily replicate   results from state-of-the-art tools, but Enumo programs can also scale   to infer deeper rules from larger grammars than prior approaches. Its   composable operators even facilitate developing new strategies for   ruleset inference. We introduce a new fast-forwarding strategy that does not require  evaluating terms in the target language, and can thus support domains   that were out of scope for prior work.    We evaluate Enumo and fast-forwarding across a variety of domains. Compared to   state-of-the-art techniques, enumo can synthesize better rulesets over a   diverse set of domains, in some cases matching the effects of   manually-developed rulesets in systems driven by equality saturation.},
+ address = {New York, NY, USA},
+ articleno = {258},
+ author = {Pal, Anjali and Saiki, Brett and Tjoa, Ryan and Richey, Cynthia and Zhu, Amy and Flatt, Oliver and Willsey, Max and Tatlock, Zachary and Nandi, Chandrakana},
+ doi = {10.1145/3622834},
+ issue_date = {October 2023},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {program synthesis, equality saturation, Rewrite rules},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {29},
+ publisher = {Association for Computing Machinery},
+ title = {Equality Saturation Theory Exploration \`{a} la Carte},
+ url = {https://doi.org/10.1145/3622834},
+ volume = {7},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{7013007,
+ abstract = {The growing size of modern storage systems is expected to exceed billions of objects, making metadata scalability critical to overall performance. Many existing distributed file systems only focus on providing highly parallel fast access to file data, and lack a scalable metadata service. In this paper, we introduce a middleware design called Index FS that adds support to existing file systems such as PVFS, Lustre, and HDFS for scalable high-performance operations on metadata and small files. Index FS uses a table-based architecture that incrementally partitions the namespace on a per-directory basis, preserving server and disk locality for small directories. An optimized log-structured layout is used to store metadata and small files efficiently. We also propose two client-based storm free caching techniques: bulk namespace insertion for creation intensive workloads such as N-N check pointing, and stateless consistent metadata caching for hot spot mitigation. By combining these techniques, we have demonstrated Index FS scaled to 128 metadata servers. Experiments show our out-of-core metadata throughput out-performing existing solutions such as PVFS, Lustre, and HDFS by 50% to two orders of magnitude.},
+ author = {Ren, Kai and Zheng, Qing and Patil, Swapnil and Gibson, Garth},
+ booktitle = {SC '14: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+ doi = {10.1109/SC.2014.25},
+ issn = {2167-4337},
+ keyword = {Servers;Indexes;Compaction;Throughput;Middleware;Receivers;Scalability;Distributed file systems;file system metadata;stateless caching;bulk insertion;log-structured merge tree},
+ month = {Nov},
+ number = {},
+ pages = {237-248},
+ title = {IndexFS: Scaling File System Metadata Performance with Stateless Caching and Bulk Insertion},
+ volume = {},
+ year = {2014}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/2536360.2536370,
+ abstract = {The multi-core architectures of today's computer systems make parallelism a necessity for performance critical applications. Writing such applications in a generic, hardware-oblivious manner is a challenging problem: Current database systems thus rely on labor-intensive and error-prone manual tuning to exploit the full potential of modern parallel hardware architectures like multi-core CPUs and graphics cards. We propose an alternative design for a parallel database engine, based on a single set of hardware-oblivious operators, which are compiled down to the actual hardware at runtime. This design reduces the development overhead for parallel database engines, while achieving competitive performance to hand-tuned systems.We provide a proof-of-concept for this design by integrating operators written using the parallel programming framework OpenCL into the open-source database MonetDB. Following this approach, we achieve efficient, yet highly portable parallel code without the need for optimization by hand. We evaluated our implementation against MonetDB using TPC-H derived queries and observed a performance that rivals that of MonetDB's query execution on the CPU and surpasses it on the GPU. In addition, we show that the same set of operators runs nearly unchanged on a GPU, demonstrating the feasibility of our approach.},
+ author = {Heimel, Max and Saecker, Michael and Pirk, Holger and Manegold, Stefan and Markl, Volker},
+ doi = {10.14778/2536360.2536370},
+ issn = {2150-8097},
+ issue_date = {July 2013},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {9},
+ numpages = {12},
+ pages = {709–720},
+ publisher = {VLDB Endowment},
+ title = {Hardware-oblivious parallelism for in-memory column-stores},
+ url = {https://doi.org/10.14778/2536360.2536370},
+ volume = {6},
+ year = {2013}
+}

@@ -1,0 +1,15 @@
+@article{Zheng2026486,
+ abstract = {Modern Log-Structured Merge-tree (LSM-tree) based Key-Value (KV) stores built on SSDs become a crucial storage paradigm for enabling a variety of applications. In an LSM-tree, in-memory writes are first stored in a sorted buffer and periodically flushed to disk as Level-0 SSTables. Compaction merges overlapping SSTables to remove redundant entries and enforce global ordering, ensuring that levels above Level-0 remain sorted and non-overlapping. However, the read performance of LSM-tree based KV stores deteriorates on fast SSDs due to severe write interference: (1) the flush operation during write process prolongs the read path; (2) the compaction operation triggered by writes invalidates the read cache. To solve these problems, this paper proposes CalmKV, an interference-resistant KV store on fast SSDs that delivers high read performance. CalmKV improves upon conventional KV stores by incorporating two core components: the L0 Filter Map component to shorten the read path and the Dual-Index Mixed Cache component to improve the cache hit rate. Experimental results show that CalmKV improves read performance by 1.21× to 2.92× compared to state-of-the-art production KV store systems across various workloads. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2026.},
+ author = {Zheng, Yitian and Zhang, Yuhao and Huo, Zhijie and Shu, Jiwu},
+ doi = {10.1007/978-981-95-8414-7_27},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {486 - 506},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CalmKV: Enhancing Read Performance of KV Store on Fast SSDs Under Write Interference},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105035507251?origin=resultslist},
+ volume = {16385 LNCS},
+ year = {2026}
+}

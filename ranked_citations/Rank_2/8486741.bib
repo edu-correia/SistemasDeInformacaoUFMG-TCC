@@ -1,0 +1,14 @@
+@article{8486741,
+ abstract = {Up-to-date results in data stream analytics are difficult to obtain because the data are in rapid sequence and can be accessed only once. Due to the exactly-once delivery nature of streaming data, online processing is quite unstable. To guarantee comprehensive and accurate results, aggregating historical data is essential when processing streaming data. In this paper, we propose a hash-based hybrid cache model, namely, HCache, for fast data analytics covering real-time streaming data and historical data. The HCache model integrates the online cache and batch cache for hybrid online and batch processing and uses a hash structure to accelerate storage. When executing analytic tasks, the batch cache and online cache are accessed in parallel. Computed streaming data are stored in the online cache, which returns qualified results based on one-time visiting. The most recently visited historical data are stored in the batch cache, and they are also used to correct errors in the online cache. Efficient replacement strategies are used to keep the caches within a relatively stable size. To coordinate the online cache with the batch cache, an LRU-based selection strategy is designed to achieve comprehensive results. Experimental results show that the HCache model can quickly and efficiently execute analytic tasks with little additional overhead; moreover HCache is more stable and effective at data storage, access and query with less memory utilization than other models.},
+ author = {Zhao, Feng and Li, Shaofeng and Zhou, Bing Bing and Jin, Hai and Yang, Laurence T.},
+ doi = {10.1109/TSC.2018.2874966},
+ issn = {1939-1374},
+ journal = {IEEE Transactions on Services Computing},
+ keyword = {Data models;Batch production systems;Computational modeling;Analytical models;Real-time systems;Data analysis;Task analysis;Streaming data;data analytics;cache model;merging mechanism;replacement strategy},
+ month = {Sep.},
+ number = {5},
+ pages = {1384-1396},
+ title = {HCache: A Hash-based Hybrid Caching Model for Real-Time Streaming Data Analytics},
+ volume = {14},
+ year = {2021}
+}

@@ -1,0 +1,15 @@
+@article{10.1145/3809161,
+ abstract = {Distributed Graph Neural Network (DGNN) is a powerful tool in large-scale graph representation learning. However, high data-transfer overhead among workers in a DGNN training job confines its scalability and thus the overall performance. Vertex-wise historical embedding methods have demonstrated high potential to alleviate the problems, but still suffer from severe accuracy loss and limited performance scalability, which has been attributed to the information loss of critical channels in historical vertices and redundant information in local channels. This paper explores the optimization of channel level and construct a quantitative accuracy model for channel-wise historical embedding. We propose Sift, a novel DGNN training framework, supporting channel-wise partial historical embedding with accuracy guarantee. Sift has three components: a historical embedding evaluator with channel-wise quantitative accuracy model, a sawtooth-like matrix rearrangement for accelerating message passing, and a hybrid parallel framework for overlapping communication overhead. Comprehensive experimental results show that Sift achieves near-linear parallel convergence speedup, outperforming the state-of-the-art baselines by up to 72% in total training performance and up to 21% in convergence speed.},
+ address = {New York, NY, USA},
+ author = {Xu, Zhewen and Li, Hongliang and Han, Junze and Yue, Hengshan and Zhao, Hairui and Tian, Dongyuan and Li, Zijian and Wei, Xiaohui},
+ doi = {10.1145/3809161},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {Distributed Graph Neural Network, Historical Embedding, Accuracy Guarantee, Performance Optimization},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Sift: Channel-Wise Historical Embedding for High Efficiency Distributed Graph Neural Network Training with Accuracy Guarantee},
+ url = {https://doi.org/10.1145/3809161},
+ year = {2026}
+}

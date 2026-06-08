@@ -1,0 +1,14 @@
+@inproceedings{9361005,
+ abstract = {The existing parallel DBSCAN (density based spatial clustering of applications with noise) algorithm needs to determine the parameter settings manually, and the datasets will be repeatedly accessed in the process of data partitioning and data merging, which reduces the efficiency of the algorithm excuting. Therefore, this paper proposes a parallel adaptive DBSCAN algorithm based on k-dimensional tree partition. It divides the dataset into several balanced data partitions by using k-dimensional tree, and carries out parallel computing in spark distributed computing framework, thus increasing the concurrent processing ability of the algorithm program and improving the I/O access speed. In addition, the improved adaptive DBSCAN parameter method is applied to each data partition for clustering analysis to obtain local clusters, which solves the random problem of manual setting parameters in the clustering process, and ensures the data quality of clustering mining. At the same time of creating local clusters, this algorithm also puts the mapping relationship between data points and adjacent points into the HashMap data structure of the master node, and uses it to merge local clusters into whole clusters, which can reduce the time cost of data merging. The experimental results show that the proposed algorithm can save about 18% running time compared with RDD-DBSCAN algorithm without reducing the clustering quality. With the increase of the number of cluster nodes, the running efficiency of the algorithm can be further improved, so it is suitable for processing massive data clustering analysis.},
+ author = {Lu, Xin and Wang, Yu and Yuan, Jiao and Wang, Xun and Fu, Kun and Yang, Ke},
+ booktitle = {2020 2nd International Conference on Machine Learning, Big Data and Business Intelligence (MLBDBI)},
+ doi = {10.1109/MLBDBI51377.2020.00053},
+ issn = {},
+ keyword = {Machine learning algorithms;Merging;Clustering algorithms;Data structures;Partitioning algorithms;Sparks;Data mining;clustering analysis;data partition;k-dimensional tree;adaptive computing;Spark framework},
+ month = {Oct},
+ number = {},
+ pages = {249-256},
+ title = {A Parallel Adaptive DBSCAN Algorithm Based on k-Dimensional Tree Partition},
+ volume = {},
+ year = {2020}
+}

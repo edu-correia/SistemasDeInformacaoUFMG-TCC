@@ -1,0 +1,14 @@
+@inproceedings{8661174,
+ abstract = {Resource-constrained devices for embedded systems are becoming increasingly important. In such systems, memory is highly restrictive, making code size in most cases even more important than performance. Compared to more traditional platforms, memory is a larger part of the cost and code occupies much of it. Despite that, compilers make little effort to reduce code size. One key technique attempts to merge the bodies of similar functions. However, production compilers only apply this optimization to identical functions, while research compilers improve on that by merging the few functions with identical control-flow graphs and signatures. Overall, existing solutions are insufficient and we end up having to either increase cost by adding more memory or remove functionality from programs. We introduce a novel technique that can merge arbitrary functions through sequence alignment, a bioinformatics algorithm for identifying regions of similarity between sequences. We combine this technique with an intelligent exploration mechanism to direct the search towards the most promising function pairs. Our approach is more than 2.4x better than the state-of-the-art, reducing code size by up to 25%, with an overall average of 6%, while introducing an average compilation-time overhead of only 15%. When aided by profiling information, this optimization can be deployed without any significant impact on the performance of the generated code.},
+ author = {Rocha, Rodrigo C. O. and Petoumenos, Pavlos and Wang, Zheng and Cole, Murray and Leather, Hugh},
+ booktitle = {2019 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO.2019.8661174},
+ issn = {},
+ keyword = {Merging;Production;Optimization;Benchmark testing;Bioinformatics;Performance evaluation;C++ languages;Code Size;Function Merging;IPO;LTO},
+ month = {Feb},
+ number = {},
+ pages = {149-163},
+ title = {Function Merging by Sequence Alignment},
+ volume = {},
+ year = {2019}
+}

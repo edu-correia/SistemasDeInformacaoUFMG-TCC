@@ -1,0 +1,15 @@
+@article{Dong201395,
+ abstract = {Nowadays more and more data have been generated every day in some enterprises such as facebook and google. These data need to be collected and analyzed in time. So the speed of transmitting data must be very high and the latency must be very low. Hadoop is applied in these enterprises and they use several data centers to store and process these data. But if the amount of data is growing fast or we will use only one data center then the bandwidth of the Ethernet Hadoop Distributed File System (HDFS) using cannot meet the need. The bandwidth of the Ethernet is going to become the performance bottleneck of HDFS. In order to solve this problem we will introduce a relatively new switched fabric communication link - Infiniband in this paper. Based on Infiniband we have designed a new communication mechanism of HDFS and implemented it by modifying the code of HDFS. We use remote direct memory access (RDMA) to send and receive data rather than socket. The new HDFS will not use original stream mode to transmit data. Instead it will dynamically expand buffer and use changeable threshold. In this way the new HDFS will make CPU idle and improve performance. Unlike IPoIB which only uses Infiniband hardware device, our optimized HDFS is not only based on Infiniband hardware but also changes the code of HDFS to use RDMA. Our HDFS uses socket to transmit control message and RDMA to transmit data to make full use of the bandwidth of Infiniband. So applying the Infiniband with RDMA network bandwidth has not been the performance bottleneck of HDFS any more. According to the experiment results we have found that the network bandwidth of HDFS over Infiniband is 60 percent higher than the Ethernet and our optimized HDFS has much better performance than the HDFS over the Ethernet. On the other hand, the performance of our HDFS is also higher than the one which only use IPoIB. © 2013 Springer-Verlag.},
+ author = {Dong, Buyun and Fang, Pei and Fu, Xiao and Luo, Bin and Zhao, Zhihong},
+ doi = {10.1007/978-3-642-38401-1_8},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 1},
+ pages = {95 - 114},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Design and implementation of HDFS over Infiniband with RDMA},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84883336499?origin=resultslist},
+ volume = {7889 LNCS},
+ year = {2013}
+}

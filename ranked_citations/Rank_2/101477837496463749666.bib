@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749666,
+ abstract = {Retrieval Augmented Generation (RAG) uses vector databases to expand the expertise of an LLM model without having to retrain it. The idea can be applied over data lakes, leading to the notion of embedding data lakes, i.e., a pool of vector databases ready to be used by RAGs. The key component in these systems is the indexes enabling Approximated Nearest Neighbor Search (ANNS). However, in data lakes, one cannot realistically expect to build indexes for every dataset. Thus, we propose an adaptive, partition-based index, CrackIVF, that performs much better than up-front index building. CrackIVF starts answering as a small index, and only expands to improve performance as it sees enough queries. It does so by progressively adapting the index to the query workload. That way, queries can be answered right away without having to build a full index first. After seeing enough queries, CrackIVF will produce an index comparable to those built with conventional techniques. CrackIVF can often answer more than 1 million queries before other approaches have even built the index, achieving 10–1000x faster initialization times. This makes it ideal for cold or infrequently used data and as a way to bootstrap access to unseen datasets.},
+ author = {Mageirakos, Vasilis and Wu, Bowen and Alonso, Gustavo},
+ doi = {10.14778/3749646.3749666},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {3951–3964},
+ publisher = {VLDB Endowment},
+ title = {Cracking Vector Search Indexes},
+ url = {https://doi.org/10.14778/3749646.3749666},
+ volume = {18},
+ year = {2025}
+}

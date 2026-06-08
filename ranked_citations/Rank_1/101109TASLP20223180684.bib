@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2022.3180684,
+ abstract = {Typically, unsupervised segmentation of speech into the phone- and wordlike units are treated as separate tasks and are often done via different methods which do not fully leverage the inter-dependence of the two tasks. Here, we unify them and propose a technique that can jointly perform both, showing that these two tasks indeed benefit from each other. Recent attempts employ self-supervised learning, such as contrastive predictive coding (CPC), where the next frame is predicted given past context. However, CPC only looks at the audio signal's frame-level structure. We overcome this limitation with a segmental contrastive predictive coding (SCPC) framework to model the signal structure at a higher level, e.g., phone level. A convolutional neural network learns frame-level representation from the raw waveform via noise-contrastive estimation (NCE). A differentiable boundary detector finds variable-length segments, which are then used to optimize a segment encoder via NCE to learn segment representations. The differentiable boundary detector allows us to train frame-level and segment-level encoders jointly. Experiments show that our single model outperforms existing phone and word segmentation methods on TIMIT and Buckeye datasets. Finally, we use SCPC to extract speech features at the segment level rather than at the uniformly spaced frame level (e.g., 10 ms) and produce variable rate representations that change according to the contents of the utterance. We lower the feature extraction rate from the typical 100 Hz to 14.5 Hz on average while still outperforming the hand-crafted features such as MFCC on the linear phone classification task.},
+ author = {Bhati, Saurabhchand and Villalba, Jes\'{u}s and \.{Z}elasko, Piotr and Moro-Velazquez, Laureano and Dehak, Najim},
+ doi = {10.1109/taslp.2022.3180684},
+ issn = {2329-9290},
+ issue_date = {2022},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {June},
+ numpages = {13},
+ pages = {2002–2014},
+ publisher = {IEEE Press},
+ title = {Unsupervised Speech Segmentation and Variable Rate Representation Learning Using Segmental Contrastive Predictive Coding},
+ url = {https://doi.org/10.1109/TASLP.2022.3180684},
+ volume = {30},
+ year = {2022}
+}

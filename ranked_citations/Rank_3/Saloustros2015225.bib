@@ -1,0 +1,14 @@
+@conference{Saloustros2015225,
+ abstract = {HBase is a prominent NoSQL system used widely in the domain of big data storage and analysis. It is structured as two layers: a lower-level distributed file system (HDFS)supporting the higher-level layer responsible for data distribution, indexing, and elasticity. Layered systems have in many occasions proven to suffer from overheads due to the isolation between layers, HBase is increasingly seen as an instance of this. To overcome this problem we designed, implemented, and evaluated HBase-BDB, an alternative to HBase that replaces the HDFS store with a thinner layer of a log-structured B+ tree key value store (Berkeley DB) operating over local volumes. We show that HBase-BDB overcomes HBase's performance bottlenecks (while retaining compatibility with HBase applications) without losing on elasticity features. We evaluate the performance of HBase and HBase-BDB using the Yahoo! Cloud Serving Benchmark (YCSB) and online transaction processing(OLTP) workloads on a commercial public Cloud provider. We find that HBase-BDB outperforms a tuned HBase configuration by up to 85% under a write-intensive workload due to HBase-BDB's reduced background-write activity. HBase-BDB's novel elasticity mechanisms operating over local volumes are shown to be as perform ant as HBase's equivalent features when stress-tested under TPC-C workloads. © 2015 IEEE.},
+ author = {Saloustros, Giorgos and Magoutis, Kostas},
+ doi = {10.1109/ISPDC.2015.33},
+ journal = {Proceedings - IEEE 14th International Symposium on Parallel and Distributed Computing, ISPDC 2015},
+ note = {Cited by: 11},
+ pages = {225 - 234},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Rethinking HBase: Design and implementation of an elastic key-value store over log-structured local volumes},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84946089265?origin=resultslist},
+ year = {2015}
+}

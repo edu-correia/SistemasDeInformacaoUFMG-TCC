@@ -1,0 +1,14 @@
+@inproceedings{10313871,
+ abstract = {This paper presents the Pauli-based Circuit Optimization, Analysis, and Synthesis Toolchain (PCOAST), a framework for quantum circuit optimizations based on the commutative properties of Pauli strings. Prior work has demonstrated that commuting Clifford gates past Pauli rotations can expose opportunities for optimization in unitary circuits. PCOAST extends that approach by adapting the technique to mixed unitary and non-unitary circuits via generalized preparation and measurement nodes parameterized by Pauli strings. The result is the PCOAST graph, which enables novel optimizations based on whether a user needs to preserve the quantum state after executing the circuit, or whether they only need to preserve the measurement outcomes. Finally, the framework adapts a highly tunable greedy synthesis algorithm to implement the PCOAST graph with a given gate set. PCOAST is implemented as a set of compiler passes in the Intel® Quantum SDK. In this paper, we evaluate its compilation performance against two leading quantum compilers, Qiskit and t|ket>, We find that PCOAST reduces total gate count by 32.53% and 43.33% on average, compared to the best performance achieved by Qiskit and t|ket> respectively, two-qubit gates by 29.22% and 20.58%, and circuit depth by 42.02% and 51.27%.},
+ author = {Paykin, Jennifer and Schmitz, Albert T. and Ibrahim, Mohannad and Wu, Xin-Chuan and Matsuura, A. Y.},
+ booktitle = {2023 IEEE International Conference on Quantum Computing and Engineering (QCE)},
+ doi = {10.1109/QCE57702.2023.00087},
+ issn = {},
+ keyword = {Circuit optimization;Quantum chemistry;Merging;Computer architecture;Logic gates;Quantum state;Benchmark testing;Quantum Compiler;Quantum Circuit Optimization;Pauli Optimization;Classical-Quantum state},
+ month = {Sep.},
+ number = {},
+ pages = {715-726},
+ title = {PCOAST: A Pauli-Based Quantum Circuit Optimization Framework},
+ volume = {01},
+ year = {2023}
+}

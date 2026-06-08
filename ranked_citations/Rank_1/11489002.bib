@@ -1,0 +1,14 @@
+@article{11489002,
+ abstract = {Property-graph query languages have matured, but controlled materialization of reusable derived graph knowledge has remained comparatively under-specified. In many practical workloads, transient query answers are not enough: applications need persistent derived relationships, defaults, alerts, and provenance that can be reused and audited across downstream queries and services. We addressed this gap by presenting GQL Rules, a restricted rule layer for property graphs that combined a Cypher/GQL-style MATCH/WHERE body with an inflationary head based on MERGE and additive ENRICH. The framework targeted static finite graphs, preserved first-class edge identity, exposed explicit diagnostics and per-rule policies for imperfect inputs, and limited negation to stratified NOT EXISTS. We formalized a stratified fixpoint semantics and gave sufficient conditions for safety, finite generation, and deterministic saturated outcomes, together with a semi-naive evaluation strategy for recursive strata as part of the formal proposal. We also implemented a Neo4j/APOC wrapper-based proof of concept and reported preliminary results on representative workloads; these showed correct saturation behavior, deterministic final states under the stated conditions, and naive-fixpoint recursive-scaling trends that motivate the proposed semi-naive strategy.},
+ author = {Tomaszuk, Dominik},
+ doi = {10.1109/ACCESS.2026.3686122},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Filtering;Filters;Circuits and systems;Circuits;Radio access networks;Regional area networks;Semantic Web;Resource description framework;Internet;Communication systems;Deductive databases;GQL;graph databases;graph materialization;graph query languages;property graphs;rule-based systems},
+ month = {},
+ number = {},
+ pages = {62746-62762},
+ title = {GQL Rules: Deterministic and Safe Rule-Based Materialization for Property Graphs},
+ volume = {14},
+ year = {2026}
+}

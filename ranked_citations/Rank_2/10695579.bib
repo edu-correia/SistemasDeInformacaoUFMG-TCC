@@ -1,0 +1,14 @@
+@inproceedings{10695579,
+ abstract = {Log-Structured Merge Tree (LSM-tree) is commonly used for building high-performance persistent key-value stores. However, they are known to suffer from severe I/O amplification. To mitigate this issue, structures like Fragmented Log-Structured Merge Trees (FLSM-tree) have been developed, which leverage tiering merge policies to reduce write amplification. Nevertheless, FLSM-tree fails to consider data access frequency, access times, and other heat-related information. Additionally, the Sorted String Table(SSTable) in each level may not necessarily be ordered, leading to diminished read and range query performance. To address these issues, we have proposed a high-performance key-value storage structure, tailored specifically for read/write-intensive workloads, called HIndex-FLSM. This structure employs a heat calculation mechanism for cold and hot data segregation and enhances read performance by indexing Guard. The compaction process has also been optimized by combining heat and ordered indexing. To evaluate the performance of HIndex-FLSM, we have implemented the prototype system of HIndex-FLSM, called HIndex-PebblesDB, based on the prototype system PebblesDB of FLSM-tree. Through benchmark testing of HIndex-PebblesDB, we observed an approximately 20% improvement in hot spot read and 57% in range query compared to PebblesDB.},
+ author = {Wang, Xiaopeng and Li, Hui and Tan, Hong and Wang, Xiyu and Lu, Ping and Wang, Han},
+ booktitle = {2024 3rd International Joint Conference on Information and Communication Engineering (JCICE)},
+ doi = {10.1109/JCICE61382.2024.00024},
+ issn = {},
+ keyword = {Heating systems;Time-frequency analysis;Buildings;Prototypes;Benchmark testing;Compaction;Indexing;key-value database;log-structured merge tree;index;tiering merge policy},
+ month = {May},
+ number = {},
+ pages = {71-76},
+ title = {HIndex-FLSM: Fragmented Log-Structured Merge Trees Integrated with Heat and Index},
+ volume = {},
+ year = {2024}
+}

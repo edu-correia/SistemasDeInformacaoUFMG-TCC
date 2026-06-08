@@ -1,0 +1,17 @@
+@article{10.14778/3236187.3236209,
+ abstract = {Recent advancements in high-performance networking interconnect significantly narrow the performance gap between intra-node and inter-node communications, and open up opportunities for distributed memory platforms to enforce cache coherency among distributed nodes. To this end, we propose GAM, an efficient distributed in-memory platform that provides a directory-based cache coherence protocol over remote direct memory access (RDMA). GAM manages the free memory distributed among multiple nodes to provide a unified memory model, and supports a set of user-friendly APIs for memory operations. To remove writes from critical execution paths, GAM allows a write to be reordered with the following reads and writes, and hence enforces partial store order (PSO) memory consistency. A light-weight logging scheme is designed to provide fault tolerance in GAM. We further build a transaction engine and a distributed hash table (DHT) atop GAM to show the ease-of-use and applicability of the provided APIs. Finally, we conduct an extensive micro benchmark to evaluate the read/write/lock performance of GAM under various workloads, and a macro benchmark against the transaction engine and DHT. The results show the superior performance of GAM over existing distributed memory platforms.},
+ author = {Cai, Qingchao and Guo, Wentian and Zhang, Hao and Agrawal, Divyakant and Chen, Gang and Ooi, Beng Chin and Tan, Kian-Lee and Teo, Yong Meng and Wang, Sheng},
+ doi = {10.14778/3236187.3236209},
+ issn = {2150-8097},
+ issue_date = {July 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {1604–1617},
+ publisher = {VLDB Endowment},
+ title = {Efficient distributed memory management with RDMA and caching},
+ url = {https://doi.org/10.14778/3236187.3236209},
+ volume = {11},
+ year = {2018}
+}

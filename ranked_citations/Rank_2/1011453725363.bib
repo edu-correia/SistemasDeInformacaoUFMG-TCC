@@ -1,0 +1,18 @@
+@article{10.1145/3725363,
+ abstract = {Developing stateful cloud applications, such as low-latency workflows and microservices with strict consistency requirements, remains arduous for programmers. The Stateful Functions-as-a-Service (SFaaS) paradigm aims to serve these use cases. However, existing approaches provide weak transactional guarantees or perform expensive external state accesses requiring inefficient transactional protocols that increase execution latency. In this paper, we present Styx, a novel dataflow-based SFaaS runtime that executes serializable transactions consisting of stateful functions that form arbitrary call-graphs with exactly-once guarantees. Styx extends a deterministic transactional protocol by contributing: i) a function acknowledgment scheme to determine transaction boundaries required in SFaaS workloads, ii) a function-execution caching mechanism, and iii) an early commit-reply mechanism that substantially reduces transaction execution latency. Experiments with the YCSB, TPC-C, and Deathstar benchmarks show that Styx outperforms state-of-the-art approaches by achieving at least one order of magnitude higher throughput while exhibiting near-linear scalability and low latency.},
+ address = {New York, NY, USA},
+ articleno = {226},
+ author = {Psarakis, Kyriakos and Christodoulou, George and Siachamis, Georgios and Fragkoulis, Marios and Katsifodimos, Asterios},
+ doi = {10.1145/3725363},
+ issue_date = {June 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {serializable deterministic transactions, stateful functions, streaming dataflows},
+ month = {June},
+ number = {3},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Styx: Transactional Stateful Functions on Streaming Dataflows},
+ url = {https://doi.org/10.1145/3725363},
+ volume = {3},
+ year = {2025}
+}

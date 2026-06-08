@@ -1,0 +1,17 @@
+@article{10.14778/2002938.2002944,
+ abstract = {Adaptive indexing is characterized by the partial creation and refinement of the index as side effects of query execution. Dynamic or shifting workloads may benefit from preliminary index structures focused on the columns and specific key ranges actually queried --- without incurring the cost of full index construction. The costs and benefits of adaptive indexing techniques should therefore be compared in terms of initialization costs, the overhead imposed upon queries, and the rate at which the index converges to a state that is fully-refined for a particular workload component.Based on an examination of database cracking and adaptive merging, which are two techniques for adaptive indexing, we seek a hybrid technique that has a low initialization cost and also converges rapidly. We find the strengths and weaknesses of database cracking and adaptive merging complementary. One has a relatively high initialization cost but converges rapidly. The other has a low initialization cost but converges relatively slowly. We analyze the sources of their respective strengths and explore the space of hybrid techniques. We have designed and implemented a family of hybrid algorithms in the context of a column-store database system. Our experiments compare their behavior against database cracking and adaptive merging, as well as against both traditional full index lookup and scan of unordered data. We show that the new hybrids significantly improve over past methods while at least two of the hybrids come very close to the "ideal performance" in terms of both overhead per query and convergence to a final state.},
+ author = {Idreos, Stratos and Manegold, Stefan and Kuno, Harumi and Graefe, Goetz},
+ doi = {10.14778/2002938.2002944},
+ issn = {2150-8097},
+ issue_date = {June 2011},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {9},
+ numpages = {12},
+ pages = {586–597},
+ publisher = {VLDB Endowment},
+ title = {Merging what's cracked, cracking what's merged: adaptive indexing in main-memory column-stores},
+ url = {https://doi.org/10.14778/2002938.2002944},
+ volume = {4},
+ year = {2011}
+}

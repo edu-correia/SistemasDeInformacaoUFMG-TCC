@@ -1,0 +1,14 @@
+@conference{Zhao2024143,
+ abstract = {The advent of byte-addressable NVM (Non-Volatile Memory) gives an opportunity to offer data persistence with low latency. This paper designs a novel LSM-tree (Log Structured Merge-tree) based KVS (key-value store), called ThanosKV, that exploits both the non-volatility and byte-addressability of NVM in a holistic manner. By making use of non-volatility, ThanosKV separates levels of LSM-tree into two: hot and cold. In order to mitigate the notorious write stall problem of traditional KVSs, hot levels are maintained in NVM, while managing cold levels in SSD (Solid State Drive). This separation allows to devise of a hybrid compaction mechanism, applying leveled compaction for levels in SSD and double-tiered compaction for levels in NVM, which enables to enhancement of compaction efficiency. By utilizing byte-addressability, ThanosKV introduces an index structure in NVM to improve the lookup latency of key-value pairs in SSD. ThanosKV also conducts a performance-space analysis to determine how much NVM space is allocated for the index while using the remaining for the hot levels. We implement ThanosKV and evaluate its effectiveness by comparing it with two state-of-the-art KVSs, MatrixKV and NoveLSM. Evaluation results show that ThanosKV improves performance by up to 6.8x in write latency and 5.4x in read latency.  © 2024 IEEE.},
+ author = {Zhao, Guangxun and Shin, Hojin and Yoo, Seehwan and Cho, Seong-Je and Choi, Jongmoo},
+ doi = {10.1109/BigComp60711.2024.00031},
+ journal = {Proceedings - 2024 IEEE International Conference on Big Data and Smart Computing, BigComp 2024},
+ note = {Cited by: 4},
+ pages = {143 - 150},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ThanosKV: A Holistic Approach to Utilize NVM for LSM-tree based Key- Value Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85191473229?origin=resultslist},
+ year = {2024}
+}

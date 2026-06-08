@@ -1,0 +1,14 @@
+@inproceedings{11120588,
+ abstract = {Unikernels are specialized, single-address-space op-erating systems (OSes) tailored to specific applications. They offer strong isolation, low memory/disk footprints, and fast startup times-making them well-suited for cloud and serverless computing. However, deploying many of them at scale in cloud environments introduces new challenges. In particular, managing library updates and versioning in statically linked unikernels is difficult due to their tightly coupled structure. Unlike dynamically linked binaries, statically linked unikernels lack built-in versioning mechanisms. Consequently, even minor library changes result in entirely new memory layouts, which can significantly increase memory consumption when multiple instances run concurrently. We present Spacer-A, a framework that improves memory sharing across statically linked unikernels with different library versions. Spacer uses differential analysis and library align-ment to enable page-level sharing via memory deduplication scanners or a custom loader backed by a shared library pool. Our evaluation with Unikraft shows that Spacer reduces memory consumption and boot overhead while maintaining compatibility across versions. The framework integrates into existing unikernel build pipelines with minimal changes and is released as open source.},
+ author = {Gain, Gaulthier and Knott, Benoit and Mathy, Laurent},
+ booktitle = {2025 IEEE 18th International Conference on Cloud Computing (CLOUD)},
+ doi = {10.1109/CLOUD67622.2025.00038},
+ issn = {2159-6190},
+ keyword = {Memory management;Layout;Pipelines;Merging;Serverless computing;Collaboration;Libraries;Virtualization;Kernel;Software development management;Unikernels;versioning;statically-linked;libraryos;virtualization;cloud-computing},
+ month = {July},
+ number = {},
+ pages = {296-307},
+ title = {Efficient Versioning for Unikernels},
+ volume = {},
+ year = {2025}
+}

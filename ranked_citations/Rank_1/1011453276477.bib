@@ -1,0 +1,18 @@
+@article{10.1145/3276477,
+ abstract = {The execution of an application written in a reactive language involves transfer of data and control flow between imperative and reactive abstractions at well-defined points. In a multi-threaded environment, multiple such interactions may execute concurrently, potentially causing data races and event ordering ambiguities. Existing RP languages either disable multi-threading or handle it at the cost of reducing expressiveness or weakening consistency. This paper proposes a model for thread-safe reactive programming (RP) that ensures abort-free strict serializability under concurrency while sacrificing neither expressiveness nor consistency. We also propose an architecture for integrating a corresponding scheduler into the RP language runtime, such that thread-safety is provided "out-of-the-box" to the applications.  We show the feasibility of our proposal by providing and evaluating a ready-to-use implementation integrated into the REScala programming language. The scheduling algorithm is formally proven correct. A thorough empirical evaluation shows that reactive applications build on top of it scale with multiple threads, while the scheduler incurs acceptable performance overhead in a single-threaded configuration. The scalability enabled by our scheduler is roughly on-par with that of hand-crafted application-specific locking and better than the scalability enabled by a scheduler using an off-the-shelf software transactional memory library.},
+ address = {New York, NY, USA},
+ articleno = {107},
+ author = {Drechsler, Joscha and Mogk, Ragnar and Salvaneschi, Guido and Mezini, Mira},
+ doi = {10.1145/3276477},
+ issue_date = {November 2018},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Concurrency, Reactive Programming, Transactions},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {Thread-safe reactive programming},
+ url = {https://doi.org/10.1145/3276477},
+ volume = {2},
+ year = {2018}
+}

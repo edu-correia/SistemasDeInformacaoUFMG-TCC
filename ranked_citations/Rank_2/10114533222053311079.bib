@@ -1,0 +1,18 @@
+@article{10.1145/3322205.3311079,
+ abstract = {In this paper, we examine the design tradeoffs of existing in-memory data structures of a state-of-the-art key-value store. We observe that no data structures provide both fast point-accesses and consistent ranged- retrievals, and naive amalgamations of existing structures fail to get the best of both worlds. Furthermore, our experiments reveal a performance anomaly when increasing the memory size: as more key-value pairs are maintained in memory, the shortcomings of the data structures exacerbate. To address the above problems, we present TeksDB, a fast and consistent key-value store with a novel in-memory data structure, which effciently handles both point- and ranged- accesses at a modest increase in memory footprint. Our evaluation demonstrates that TeksDB outperforms RocksDB by 3.6\texttimes{}, 9\texttimes{}, and 4.5\texttimes{} for get, scan, and range_query, respectively. The effectiveness of TeksDB extends to real-world workloads, achieving up to 3.3\texttimes{} speedup for YCSB.},
+ address = {New York, NY, USA},
+ articleno = {8},
+ author = {Han, Youil and Kim, Bryan S. and Yeon, Jeseong and Lee, Sungjin and Lee, Eunji},
+ doi = {10.1145/3322205.3311079},
+ issue_date = {March 2019},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {data structures, key-value stores, nosql systems, scalability},
+ month = {March},
+ number = {1},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {TeksDB: Weaving Data Structures for a High-Performance Key-Value Store},
+ url = {https://doi.org/10.1145/3322205.3311079},
+ volume = {3},
+ year = {2019}
+}

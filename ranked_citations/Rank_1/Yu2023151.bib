@@ -1,0 +1,14 @@
+@conference{Yu2023151,
+ abstract = {Cricket Bowl Release Detection aims to segment specific portions of bowl release actions occurring in multiple videos, with a focus on detecting the entire time window of this action. Unlike traditional detection tasks that identify action categories at a specific moment, this task involves identifying events that typically span around 100 frames and require recognizing all instances of the bowl release action in the video. Strictly speaking, this task falls under a branch of temporal action detection. With the advancement of deep neural networks, recent works have proposed deep learning-based approaches to address this task. However, due to the challenge of unclear action boundaries in videos, many existing methods perform poorly on the DeepSportradar Cricket Bowl Release Dataset. To more accurately identify specific portions of the bowl release action in videos, we adopt a one-stage architecture based on Relative Boundary Modeling. Specifically, our method consists of three stages. In the first stage, we use the Inflated 3D ConvNet (I3D) model to extract spatio-temporal features from the input videos. In the second stage, we utilize Temporal Action Detection with Relative Boundary Modeling (TriDet) to model the boundaries of the bowl release action's specific portions based on the relative relationships between different time moments, thereby predicting the action's time window. Lastly, as the target events typically span around 100 frames and the predicted time windows may exhibit overlapping regions based on confidence scores, we implement a post-processing step to merge and filter these outputs, resulting in the final submission results. We conducted extensive experiments to demonstrate that our proposed method achieves superior performance. Additionally, we evaluated the training techniques of existing approaches. Our proposed method achieves a PQ score of 0.519, an SQ score of 0.822, and an RQ score of 0.632 on the challenge set of the DeepSportradar Cricket Bowl Release Dataset. Through this approach, our team, USTC\IAT\United, won the third place in the first phase of the DeepSportradar Cricket Bowl Release Challenge. © 2023 ACM.},
+ author = {Yu, Jun and Wang, Leilei and Lu, Renjie and Yang, Shuoping and Li, Renda and Wang, Lei and Chen, Minchuan and Zhu, Qingying and Wang, Shaojun and Xiao, Jing},
+ doi = {10.1145/3606038.3616167},
+ journal = {MMSports 2023 - Proceedings of the 6th International Workshop on Multimedia Content Analysis in Sports, Co-located with: MM 2023},
+ note = {Cited by: 0},
+ pages = {151 - 159},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Relative Boundary Modeling: A High-Resolution Cricket Bowl Release Detection Framework with I3D Features},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85178308558?origin=resultslist},
+ year = {2023}
+}

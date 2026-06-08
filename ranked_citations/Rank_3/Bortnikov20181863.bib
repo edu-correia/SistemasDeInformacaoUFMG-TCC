@@ -1,0 +1,16 @@
+@article{Bortnikov20181863,
+ abstract = {Log-structured merge (LSM) stores have emerged as the technology of choice for building scalable write-intensive keyvalue storage systems. An LSM store replaces random I/O with sequential I/O by accumulating large batches of writes in a memory store prior to ushing them to log-structured disk storage; the latter is continuously re-organized in the background through a compaction process for effciency of reads. Though inherent to the LSM design, frequent compactions are a major pain point because they slow down data store operations, primarily writes, and also increase disk wear. Another performance bottleneck in today's stateof-the-art LSM stores, in particular ones that use managed languages like Java, is the fragmented memory layout of their dynamic memory store. In this paper we show that these pain points may be mitigated via better organization of the memory store. We present Accordion an algorithm that addresses these problems by re-applying the LSM design principles to memory management. Accordion is implemented in the production code of Apache HBase, where it was extensively evaluated. We demonstrate Accordion's double-digit performance gains versus the baseline HBase implementation and discuss some unexpected lessons learned in the process. © 2018 VLDB Endowment.},
+ author = {Bortnikov, Edward and Braginsky, Anastasia and Hillel, Eshcar and Keidar, Idit and Sheffi, Gali},
+ doi = {10.14778/3229863.3229873},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 40},
+ number = {12},
+ pages = {1863 - 1875},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accordion: Better memory organization for LSM key value stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85058897532?origin=resultslist},
+ volume = {11},
+ year = {2018}
+}

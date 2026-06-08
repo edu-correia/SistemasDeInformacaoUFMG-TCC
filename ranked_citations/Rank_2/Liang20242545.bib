@@ -1,0 +1,16 @@
+@article{Liang20242545,
+ abstract = {Blockchain store states in Log-Structured Merge (LSM) tree-based database. Due to blockchain traceability, the growing ancient states are inevitably stored in the databases. Unfortunately, by default, this process mixes current and ancient states in the data layout, increasing unnecessary disk I/O access and slowing transaction execution. This paper proposes MoltDB, a scalable LSM-based database for efficient transaction execution through a novel idea of ancient state segregation, i.e., to segregate current and ancient states in the data layout. However, the frequently generated and uncertainly accessed characteristics of ancient states make the segregation challenging. Thus, we develop an 'extract-compact' mechanism to batch extraction process for frequently generated ancient states and the LSM compaction process to relieve additional disk I/O overhead. Moreover, we design an adaptive LSM-based storage for the uncertainly accessed ancient states extracted for on-demand access. We implement MoltDB as a database engine compatible with many mainstream blockchains and integrate it into Ethereum for evaluation. Experimental results show that MoltDB achieves 1.3 × transaction throughput and 30% disk I/O latency savings over the state-of-the-art works.  © 1990-2012 IEEE.},
+ author = {Liang, Junyuan and Chen, Wuhui and Hong, Zicong and Zhu, Haogang and Qiu, Wangjie and Zheng, Zibin},
+ doi = {10.1109/TPDS.2024.3467927},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 2},
+ number = {12},
+ pages = {2545 - 2558},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MoltDB: Accelerating Blockchain via Ancient State Segregation},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85207633215?origin=resultslist},
+ volume = {35},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@article{8100964,
+ abstract = {Data-race-free (DRF) parallel programming becomes a standard as newly adopted memory models of mainstream programming languages such as C++ or Java impose data-race-freedom as a requirement. We propose compiler techniques that automatically delineate extended data-race-free (xDRF) regions, namely regions of code that provide the same guarantees as the synchronization-free regions (in the context of DRF codes). xDRF regions stretch across synchronization boundaries, function calls and loop back-edges and preserve the data-race-free semantics, thus increasing the optimization opportunities exposed to the compiler and to the underlying architecture. We further enlarge xDRF regions with a conflict isolation (CI) technique, delineating what we call xDRF-CI regions while preserving the same properties as xDRF regions. Our compiler (1) precisely analyzes the threads' memory accessing behavior and data sharing in shared-memory, general-purpose parallel applications, (2) isolates data-sharing and (3) marks the limits of xDRF-CI code regions. The contribution of this work consists in a simple but effective method to alleviate the drawbacks of the compiler's conservative nature in order to be competitive with (and even surpass) an expert in delineating xDRF regions manually. We evaluate the potential of our technique by employing xDRF and xDRF-CI region classification in a state-of-the-art, dual-mode cache coherence protocol. We show that xDRF regions reduce the coherence bookkeeping and enable optimizations for performance (6.4 percent) and energy efficiency (12.2 percent) compared to a standard directory-based coherence protocol. Enhancing the xDRF analysis with the conflict isolation technique improves performance by 7.1 percent and energy efficiency by 15.9 percent.},
+ author = {Jimborean, Alexandra and Ekemark, Per and Waern, Jonatan and Kaxiras, Stefanos and Ros, Alberto},
+ doi = {10.1109/TPDS.2017.2771509},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Synchronization;Coherence;Optimization;Instruction sets;Protocols;Standards;Semantics;Compile-time analysis;inter-procedural analysis;inter-thread analysis;data sharing;data races;cache coherence},
+ month = {March},
+ number = {3},
+ pages = {527-541},
+ title = {Automatic Detection of Large Extended Data-Race-Free Regions with Conflict Isolation},
+ volume = {29},
+ year = {2018}
+}

@@ -1,0 +1,14 @@
+@conference{Gong2019,
+ abstract = {As widely used indices in key-value stores, the Log-Structured Merge-tree (LSM-tree) and its variants suffer from severe write amplification due to frequent merges in compactions for write-intensive applications. To address the problem, we first propose the Log-Structured Append-tree (LSA-tree), which tries to compact data with appends instead of merges, significantly reduces the write amplification and solves the issues existed in current append trees. However LSA increases read and space amplifications. Furthermore based on LSA, we design the Integrated Append/Merge-tree (IAM-tree). IAM selects appends or merges in compaction operations according to the size of memory-cached data. Theoretical analysis shows that IAM reduces the write amplification of LSM while keep the same read and space amplification. We implement IAM as a user library named IamDB. Experiments show that its write amplification is much less than that of LSM, only 8.71 vs. 19.00 for 1TB data with 64GB memory. Compared with nicely tuned LevelDB and RocksDB, IamDB provides 1.4-2.7× and 1.6-1.9× better write throughput, saves 12% and 10% disk space respectively, as well as the comparable read and scan performance. At the meantime IamDB achieves the most stable tail latency. © 2019 ACM.},
+ author = {Gong, Caixin and He, Shuibing and Gong, Yili and Lei, Yingchun},
+ doi = {10.1145/3337821.3337836},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 7},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {On integration of appends and merges in log-structured merge trees},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85071082294?origin=resultslist},
+ year = {2019}
+}

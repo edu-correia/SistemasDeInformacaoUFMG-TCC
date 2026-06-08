@@ -1,0 +1,14 @@
+@inproceedings{10609694,
+ abstract = {Datacenter applications exhibit large instruction footprints causing significant instruction cache misses and, as a result, frontend stalls. To address this issue, instruction prefetching mechanisms have been proposed, including state-of-the-art techniques such as fetch-directed instruction prefetching. However, our study shows that existing implementations still fall far short of an ideal system with a perfect instruction cache. In particular, up to $588.47 \%$ of potential IPC speedup of existing processors hides due to frontend stalls, and these frontend stalls are due to inaccurate and untimely instruction prefetches. We quantify the impact of these individual effects, observing that applications exhibit different characteristics that call for adaptive application-specific optimizations. Based on these insights, we propose two novel mechanisms, UDP and UFTQ, to improve the accuracy of FDIP without negatively affecting timeliness while leveraging prefetches on the wrong path. We evaluate our technique on 10 data center workloads showing a maximal IPC improvement of $16.1 \%$ and an average IPC improvement of $3.6 \%$. Our techniques only introduce moderate hardware modifications and a storage cost of 8 KB.},
+ author = {Oh, Surim and Xu, Mingsheng and Khan, Tanvir Ahmed and Kasikci, Baris and Litz, Heiner},
+ booktitle = {2024 ACM/IEEE 51st Annual International Symposium on Computer Architecture (ISCA)},
+ doi = {10.1109/ISCA59077.2024.00089},
+ issn = {},
+ keyword = {Data centers;Program processors;Costs;Prefetching;Computer architecture;Rendering (computer graphics);Particle measurements;Instruction prefetching;frontend stalls;data center},
+ month = {June},
+ number = {},
+ pages = {1188-1201},
+ title = {UDP: Utility-Driven Fetch Directed Instruction Prefetching},
+ volume = {},
+ year = {2024}
+}

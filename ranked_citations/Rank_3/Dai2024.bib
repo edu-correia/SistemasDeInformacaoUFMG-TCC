@@ -1,0 +1,16 @@
+@article{Dai2024,
+ abstract = {Accurately and reliably perceiving the environment is a major challenge in autonomous driving and robotics research. Traditional vision-based methods often suffer from varying lighting conditions, occlusions, and complex environments. This paper addresses these challenges by combining a deep learning-based object detection algorithm, YOLOv8, with LiDAR data fusion technology. The principle of this combination is to merge the advantages of these technologies: YOLOv8 excels in real-time object detection and classification through RGB images, while LiDAR provides accurate distance measurement and 3D spatial information, regardless of lighting conditions. The integration aims to apply the high accuracy and robustness of YOLOv8 in identifying and classifying objects, as well as the depth data provided by LiDAR. This combination enhances the overall environmental perception, which is critical for the reliability and safety of autonomous systems. However, this fusion brings some research challenges, including data calibration between different sensors, filtering ground points from LiDAR point clouds, and managing the computational complexity of processing large datasets. This paper presents a comprehensive approach to address these challenges. Firstly, a simple algorithm is introduced to filter out ground points from LiDAR point clouds, which are essential for accurate object detection, by setting different threshold heights based on the terrain. Secondly, YOLOv8, trained on a customized dataset, is utilized for object detection in images, generating 2D bounding boxes around detected objects. Thirdly, a calibration algorithm is developed to transform 3D LiDAR coordinates to image pixel coordinates, which are vital for correlating LiDAR data with image-based object detection results. Fourthly, a method for clustering different objects based on the fused data is proposed, followed by an object tracking algorithm to compute the 3D poses of objects and their relative distances from a robot. The Agilex Scout Mini robot, equipped with Velodyne 16-channel LiDAR and an Intel D435 camera, is employed for data collection and experimentation. Finally, the experimental results validate the effectiveness of the proposed algorithms and methods. © 2024 by the authors.},
+ author = {Dai, Yanyan and Kim, Deokgyu and Lee, Kidong},
+ doi = {10.3390/electronics13122250},
+ journal = {Electronics (Switzerland)},
+ note = {Cited by: 31; All Open Access; Gold Open Access},
+ number = {12},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An Advanced Approach to Object Detection and Tracking in Robotics and Autonomous Vehicles Using YOLOv8 and LiDAR Data Fusion},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85197290154?origin=resultslist},
+ volume = {13},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11393870,
+ abstract = {Antisense oligonucleotides (ASOs) are a promising class of nucleic acid-based therapeutics that regulate gene expression by binding target mRNAs, with applications in genetic and rare diseases. However, designing effective ASOs remains difficult due to the vast combinatorial space of sequences, secondary structures, and chemical modifications. Recent work has leveraged deep learning and graph neural networks to address these challenges. Building on this foundation, the present project explores a complementary pipeline using classical machine learning and statistical methods for ASO design and evaluation. The workflow integrates multiple computational stages: retrieval of target mRNA sequences from NCBI, interaction prediction using the miRanda algorithm, and structural analysis via ViennaRNA. Off-target interactions were systematically assessed, and custom Python scripts were developed to merge outputs into a unified dataset. Feature engineering incorporated both numeric and categorical predictors, such as cell line and density, enabling model testing of inhibitory efficiency. Features of sequence, structure and offtarget interactions trained multiple regressors including Linear Regression, Ridge, Lasso, Random Forest, and Gradient Boosting. Models were evaluated using nested cross-validation with groupaware splits to prevent leakage. Random Forest achieved the highest predictive performance to predict inhibition outcomes ($\mathrm{R}^{2} \approx 0.627, \text{MAE} \approx 9.47$). These results highlight both the feasibility and the challenges of applying interpretable machine learning techniques to ASO design, particularly in the presence of substantial missing data. Future directions include exploring a normalized hybridization energy gradient with relative energy per nucleotide. This work demonstrates the potential for combining bioinformatics tools, structural modeling, and machine learning to advance the rational design of therapeutic ASOs.},
+ author = {George, Ava and Bai, Yu and Tang, Jialin},
+ booktitle = {2026 IEEE 16th Annual Computing and Communication Workshop and Conference (CCWC)},
+ doi = {10.1109/CCWC67433.2026.11393870},
+ issn = {},
+ keyword = {Statistical analysis;Pipelines;Predictive models;Boosting;Prediction algorithms;mRNA;Numerical models;Nucleic acids;Random forests;Testing;Artificial intelligence;Antisense oligonucleotides;Machine Learning;Off-Target Effects;Permutation Importance;RNA Secondary Structure},
+ month = {Jan},
+ number = {},
+ pages = {0458-0461},
+ title = {Regression-Based Modeling of Antisense Oligonucleotide Efficacy Using Sequence, Structural, and Off-Target Features},
+ volume = {},
+ year = {2026}
+}

@@ -1,0 +1,14 @@
+@article{11007617,
+ abstract = {Leveraging sparsity in convolutional neural networks (CNNs) has emerged as a promising technique for enhancing the performance of CNN accelerators. However, despite achieving significant improvements in multiplier efficiency, the current sparse-based methods always fail to achieve a competitive performance and runtime latency compared with the conventional dense-based methods. This study posits that, because of the extremely irregular workload distribution in the input feature maps (IFMs), attaining a simultaneous improvement of the performance and multiplier efficiency in sparse-based accelerators is challenging. To address the above challenge, this study proposes a novel framework for eliminating irregularities at multi-level (i.e., dataflow-algorithm-hardware). Specifically, combined with filter decomposition and Winograd algorithms, a computation-oriented dataflow is designed for theoretical workload balancing under different convolution tasks. Furthermore, by exploiting the near-structured characteristic of IFMs, an online tile-based regularization scheme and a hybrid computation reduction method are designed to achieve a decreased and regular workload distribution. Finally, a large-scale sparse CNN accelerator, which integrates a row-merging scheme as well as a workload remapping method, is implemented to further eliminate hardware-level irregularities. The evaluation results show that our proposed methods can achieve 45.93%~76.59% multiplication savings when applied to VGG16, ResNet-34, and ResNet-50. Moreover, our accelerator can accomplish 3.06 TOPS and 2.86 sparsity extraction efficiency (SEE) while deploying VGG16, achieving a  $1.17\times $  to  $3.45\times $  enhancement on SEE compared with the state-of-the-art sparse-based accelerators.},
+ author = {Meng, Yishuo and Yang, Chen and Fu, Qiang and Wang, Jianfei and Xiang, Siwei and Li, Ge and Geng, Li},
+ doi = {10.1109/TCSI.2025.3565795},
+ issn = {1558-0806},
+ journal = {IEEE Transactions on Circuits and Systems I: Regular Papers},
+ keyword = {Convolutional neural networks;Hardware acceleration;Filtering algorithms;Computer architecture;Training;Computational efficiency;Circuits;Merging;Inference algorithms;Hardware accelerator;convolutional neural network;sparsity extraction efficiency;IFM regularization;row merging},
+ month = {Nov},
+ number = {11},
+ pages = {6578-6591},
+ title = {An Efficient CNN Accelerator Exploiting Novel Tile-Based Near-Structured Sparsity to Achieve Multi-Level Irregularity Elimination},
+ volume = {72},
+ year = {2025}
+}

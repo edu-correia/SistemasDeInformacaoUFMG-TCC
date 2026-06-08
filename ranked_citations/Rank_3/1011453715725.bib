@@ -1,0 +1,18 @@
+@article{10.1145/3715725,
+ abstract = {In recent years, the increase in ransomware attacks has significantly impacted individuals and organizations. Many strategies have been proposed to detect ransomware’s file disruption operation. However, they rely on certain assumptions that gradually fail in the face of evolving ransomware attacks, which use more stealthy encryption methods or benign-imitation-based I/O orchestration.  To mitigate this, we propose an approach to detect ransomware attacks through temporal correlation between encryption and I/O behaviors. Its key idea is that there is a strong temporal correlation inherent in ransomware’s encryption and I/O behaviors. To disrupt files, ransomware must first read the file data from the disk into memory, encrypt it, and then write the encrypted data back to the disk. This process creates a pronounced temporal correlation between the computation load of the encryption operations and the size of the files being encrypted. Based on this invariant, we implement a prototype called RansomRadar and evaluate its effectiveness against 411 latest ransomware samples from 89 families. Experimental results show that it achieves a detection rate of 100.00% with 2.68% false alarms. Its F1-score is 96.03, higher than the existing detectors for 31.82 on average.},
+ address = {New York, NY, USA},
+ articleno = {FSE010},
+ author = {Guo, Lihua and Hou, Yiwei and Zhou, Chijin and Zhang, Quan and Jiang, Yu},
+ doi = {10.1145/3715725},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Ransomware Detection},
+ month = {June},
+ number = {FSE},
+ numpages = {22},
+ publisher = {Association for Computing Machinery},
+ title = {Ransomware Detection through Temporal Correlation between Encryption and I/O Behavior},
+ url = {https://doi.org/10.1145/3715725},
+ volume = {2},
+ year = {2025}
+}

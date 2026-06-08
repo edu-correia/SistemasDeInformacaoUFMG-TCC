@@ -1,0 +1,13 @@
+@article{CHEN2025127950,
+ abstract = {Large-scale Traveling Salesman Problem (TSP) applications are common and important in practice. Unfortunately, the time usage of the state-of-the-art heuristic solver LKH increases quadratically with the scale of the problem instance. Neural Combinatorial Optimization (NCO) has emerged as an efficient alternative to LKH, but it struggles to handle large-scale instances using zero-shot generalization. Divide-and-conquer is a classical paradigm for handling large-scale problems. However, integrating NCO with the divide-and-conquer paradigm is challenging. Fine-grained division is necessary to maintain the solution quality of the NCO solver on sub-problems. The K-Means algorithm is widely used for division as it delivers good results, but its time complexity grows to O(N2) in fine-grained division. Besides, merging strategies that rely on pre-defined rules miss opportunities to improve solution quality. In this paper, we present FGDC, a fine-grained divide-and-conquer approach for extending NCO to solve large-scale TSP. In the dividing procedure, we propose LocKMeans algorithm with O(N) time complexity to construct small-scale sub-problems based on the density distribution of nodes. The solving procedure imposes minimal constraints on the NCO solver, which is used to solve these sub-problems with GPU parallel execution, allowing FGDC to serve as a plug-and-play tool for general NCO approaches. We propose an MST-based merging strategy which is enhanced from three different perspectives including merging combination, merging operator, and merging order. Experimental results demonstrate that FGDC outperforms existing methods in the fine-grained division scenario. Additionally, it is highly scalable over instances ranging from 1K to 1M nodes. When employing POMO (pre-trained on TSP-100) as the solver, FGDC surpasses the SOTA baseline H-TSP by a significant margin, yielding the best result for large-scale TSP within the NCO landscape.},
+ author = {Xinwei Chen and Yurui Li and Yifan Yang and Li Zhang and Shijian Li and Gang Pan},
+ doi = {https://doi.org/10.1016/j.eswa.2025.127950},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Traveling salesman problem, Neural combinatorial optimization, Divide-and-conquer},
+ pages = {127950},
+ title = {FGDC: A fine-grained divide-and-conquer approach for extending NCO to solve large-scale Traveling Salesman Problem},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417425015726},
+ volume = {286},
+ year = {2025}
+}

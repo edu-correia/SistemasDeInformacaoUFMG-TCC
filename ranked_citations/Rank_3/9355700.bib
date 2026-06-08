@@ -1,0 +1,14 @@
+@inproceedings{9355700,
+ abstract = {In the Bitcoin system, transaction history of an address can be useful in many scenarios, such as the balance calculation and behavior analysis. However, it is non-trivial for a common user who runs a light node to fetch historical transactions, since it only stores headers without any transaction details. It usually has to request a full node who stores the complete data. Validation of these query results is critical and mainly involves two aspects: correctness and completeness. The former can be implemented via Merkle branch easily, while the latter is quite difficult in the Bitcoin protocol. To enable the completeness validation, a strawman design is proposed, which simply includes the BF (Bloom filter) in the headers. However, since the size of BF is about KB, light nodes in the strawman will suffer from the incremental storage burden. What's worse, an integrated block must be transmitted when BF cannot work, resulting in large network overhead. In this paper, we propose LVQ, the first lightweight verifiable query approach that reduces the storage requirement and network overhead at the same time. To be specific, by only storing the hash of BF in headers, LVQ keeps data stored by light nodes being little. Besides, LVQ introduces a novel BMT (BF integrated Merkle Tree) structure for lightweight query, which can eliminate the communication costs of query results by merging the multiple successive BFs. Furthermore, when BF cannot work, a lightweight proof by SMT (Sorted Merkle Tree) is exploited to further reduce the network overhead. The security analysis confirms LVQ's ability to enable both correctness and completeness validation. In addition, the experimental results demonstrate its lightweight.},
+ author = {Dai, Xiaohai and Xiao, Jiang and Yang, Wenhui and Wang, Chaofan and Chang, Jian and Han, Rui and Jin, Hai},
+ booktitle = {2020 IEEE 40th International Conference on Distributed Computing Systems (ICDCS)},
+ doi = {10.1109/ICDCS47774.2020.00096},
+ issn = {2575-8411},
+ keyword = {Protocols;Merging;Prototypes;Bitcoin;History;Security;Distributed computing;Bitcoin;verifiable query;transaction history;Merkle tree;Bloom filter},
+ month = {Nov},
+ number = {},
+ pages = {1020-1030},
+ title = {LVQ: A Lightweight Verifiable Query Approach for Transaction History in Bitcoin},
+ volume = {},
+ year = {2020}
+}

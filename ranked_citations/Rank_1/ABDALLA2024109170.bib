@@ -1,0 +1,13 @@
+@article{ABDALLA2024109170,
+ abstract = {Accurate color representation in UAV-based imagery is critical in high-throughput plant phenotyping and precision agriculture for monitoring crop health and identifying nutrient deficiencies or water stress. However, achieving color accuracy is challenging due to varying lighting conditions and flight altitudes in UAV operations. To overcome these challenges, we propose an automated dual-phase approach for consistent color calibration in UAV imagery, integrating traditional color calibration methods with cutting-edge deep learning algorithms. In the first phase, we derived a color calibration matrix (M) for four color boards placed within the imaging area. This involved mapping the observed color values in the UAV images to their true color values, as measured by a colorimeter, using multivariate linear regression (MLR). The individual matrices from each board were then merged into a single, weighted average matrix, which was then applied to the UAV images for color correction, resulting in standardized color outputs. In the second phase, we developed a deep learning model, trained on the MLR-corrected images as a ground truth. This model assigns varying weights for different pixels across the image scene, translating the image from a distorted to a color-corrected image using image-to-image regression without manual intervention. We validated this approach using 184 UAV images of various sizes, ranging from 3969 × 2589 to 15257 × 15098 pixels, captured under a wide array of lighting conditions and altitudes. The results show that our deep learning model significantly outperforms existing methods, with a marginal color error of 1.52 %. This two-phase color correction method greatly improves operational efficiency by removing the necessity for physical color boards in each image and allowing for automated processing after training.},
+ author = {Alwaseela Abdalla and Rupak Karn and Oluwatola Adedeji and Wenxuan Guo},
+ doi = {https://doi.org/10.1016/j.compag.2024.109170},
+ issn = {0168-1699},
+ journal = {Computers and Electronics in Agriculture},
+ keyword = {color calibration, deep learning, multivariate linear regression, image-to-image regression, residual image.},
+ pages = {109170},
+ title = {Dual-stage color calibration of UAV imagery using multivariate regression and deep learning},
+ url = {https://www.sciencedirect.com/science/article/pii/S0168169924005611},
+ volume = {224},
+ year = {2024}
+}

@@ -1,0 +1,13 @@
+@article{YAZDI2024106464,
+ abstract = {Semantic segmentation of cells is the entry point to other areas of cell analysis such as instance segmentation, cell detection, Mitosis detection, and cell tracking. This paper presents a new approach for cell segmentation in microscopy images using a novel deep-learning filter called MaxSigLayer. The MaxSigLayer is a learnable layer that captures fine-grained details in cell structures by providing a better representation of the cells. Our technique employs two equal-sized windows, one containing the neighboring pixels of the center pixel and the other holding learnable weights determined during training. We calculate an updated value for each pixel by comparing and merging the Sigmoid outputs of both windows using element-wise multiplication and subtraction involving the Median and Mean of the result window and the center pixel value. The MaxSigLayer represents a new smooth nonlinear features map by simultaneously using the Max and Sigmoid functions. Experiments show that incorporating the MaxSigLayer into the image processing pipeline leads to a consistent improvement in performance. To make the model applicable to diverse cell datasets, the authors designed a larger architecture called MaxSigNet combining MaxSigLayer with dilated convolutional layers and edge maps, resulting in enhanced adaptability even to other types of medical imagery, including CT, MRI, and ultrasound scans. Overall, the proposed method significantly outperforms state-of-the-art techniques, highlighting its potential as a general solution for processing various types of medical imagery and might benefit from future developments and refinements towards wider applicability in this domain.},
+ author = {Reza Yazdi and Hassan Khotanlou},
+ doi = {https://doi.org/10.1016/j.bspc.2024.106464},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {Segmentation, Cell segmentation, Semantic cell segmentation, Deep learning},
+ pages = {106464},
+ title = {MaxSigNet: Light learnable layer for semantic cell segmentation},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809424005226},
+ volume = {95},
+ year = {2024}
+}

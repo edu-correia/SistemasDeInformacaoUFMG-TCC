@@ -1,0 +1,14 @@
+@conference{Vasireddy2023,
+ abstract = {Most scientific and AI applications rely on data that is usually sparse. Sparsity is sometimes deliberately introduced with pruning of insignificant and redundant connections in the neural network layers. This sparse data can efficiently be represented through various compression formats, thereby, reducing storage footprint and eliminating computations with zero values. However, accessing nonzero values introduces extra computational overhead. Consider sparse matrix-dense vector multiplication (spMV), where the sparse matrix data is represented in Compressed Sparse Row (CSR) format. In CSR format sparse matrix data is stored in three arrays, capturing nonzero values row-wise and their corresponding positions. This optimized storage of nonzero values results in irregular memory loads during spMV, which are particularly vexing for vectorized computations (e.g., modern CPUs with SVE or AVX extensions, GPUs) because they do not exploit spatial and temporal localities. In this work, we propose a memory-side accelerator known as MAID (Memory-side Acceleration for Irregular Data), which is a simple integer unit that performs these irregular memory accesses and streams the aligned data to the primary core. The primary vectorized CPU focuses on only fetching these aligned values and computing multiply-accumulate operations concurrently alongside our MAID accelerator. To accurately evaluate the performance effects of our proposed accelerator in a CPU-MAID-memory system, we used a Gem5 extension that permits simulating near data processing (NDP) accelerators close to memory devices at various levels of the memory hierarchy. Our experimental evaluations show that when MAID is placed close to L2 or LLC, minimizes data transfer to L1 cache, eliminates cache conflicts, and thus increases energy savings. We observed performance gains ranging between 2.76 and 3.56 times over in-order SIMD-CPU and an average of 2 times for out-of-order SIMD-CPU for sparse matrix∗dense vector multiplication (spMV) algorithm. We also evaluated our MAID with sparse matrix∗sparse vector (spMspV) and observed gains as high as 5.3 times over SIMD baseline.  © 2023 ACM.},
+ author = {Vasireddy, Pranathi and Kavi, Krishna and Weaver, Alex and Mehta, Gayatri},
+ doi = {10.1145/3631882.3631898},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Streaming Sparse Data on Architectures with Vector Extensions using Near Data Processing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85190673555?origin=resultslist},
+ year = {2023}
+}

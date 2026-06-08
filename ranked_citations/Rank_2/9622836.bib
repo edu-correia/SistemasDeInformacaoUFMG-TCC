@@ -1,0 +1,14 @@
+@inproceedings{9622836,
+ abstract = {The community detection problem continues to be challenging, particularly for large graph data. Although optimal graph partitioning is NP-hard, stochastic methods, such as in the IEEE HPEC GraphChallenge, can provide good approximate solutions in reasonable time. But the scalability with increasing graph size of such solutions remains a challenge. In this work, we describe three new techniques to speed up the stochastic block partition algorithm. The first technique relies on reducing the initial number of communities via aggressive agglomerative merging (a portion of the algorithm with high parallel scalability) to quickly reduce the amount of data that must be processed, resulting in an independent speedup of 1.85x for a 200k node graph. Our second technique uses a novel compressed data structure to store the main bookkeeping information of the algorithm. Our compressed representation allows the processing of large graphs that would otherwise be impossible due to memory constraints, and has a speedup of up to 1.19x over our uncompressed baseline representation. The third technique carefully manages the amount of parallelism during different phases of the algorithm. Compared to our best baseline configuration using a fixed number of threads, this technique yields an independent speedup of 2.26x for a 200k node graph. Combined together, our techniques result in speedups of 3.78x for a 50k node graph, 4.71x for a 100k node graph, and 5.13x for a 200k node graph over our previous best parallel algorithm.},
+ author = {Uppal, Ahsen J. and Choi, Jaeseok and Rolinger, Thomas B. and Howie Huang, H.},
+ booktitle = {2021 IEEE High Performance Extreme Computing Conference (HPEC)},
+ doi = {10.1109/HPEC49654.2021.9622836},
+ issn = {2643-1971},
+ keyword = {Scalability;Instruction sets;Conferences;Merging;Memory management;Data structures;Approximation algorithms;community detection;GraphChallenge;stochastic block partitioning},
+ month = {Sep.},
+ number = {},
+ pages = {1-7},
+ title = {Faster Stochastic Block Partition Using Aggressive Initial Merging, Compressed Representation, and Parallelism Control},
+ volume = {},
+ year = {2021}
+}

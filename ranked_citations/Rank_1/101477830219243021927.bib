@@ -1,0 +1,17 @@
+@article{10.14778/3021924.3021927,
+ abstract = {Discovering dense subgraphs and understanding the relations among them is a fundamental problem in graph mining. We want to not only identify dense subgraphs, but also build a hierarchy among them (e.g., larger but sparser subgraphs formed by two smaller dense subgraphs). Peeling algorithms (k-core, k-truss, and nucleus decomposition) have been effective to locate many dense subgraphs. However, constructing a hierarchical representation of density structure, even correctly computing the connected k-cores and k-trusses, have been mostly overlooked. Keeping track of connected components during peeling requires an additional traversal operation, which is as expensive as the peeling process. In this paper, we start with a thorough survey and point to nuances in problem formulations that lead to significant differences in runtimes. We then propose efficient and generic algorithms to construct the hierarchy of dense subgraphs for k-core, k-truss, or any nucleus decomposition. Our algorithms leverage the disjoint-set forest data structure to efficiently construct the hierarchy during traversal. Furthermore, we introduce a new idea to avoid traversal. We construct the subgraphs while visiting neighborhoods in the peeling process, and build the relations to previously constructed subgraphs. We also consider an existing idea to find the k-core hierarchy and adapt for our objectives efficiently. Experiments on different types of large scale real-world networks show significant speedups over naive algorithms and existing alternatives. Our algorithms also outperform the hypothetical limits of any possible traversal-based solution.},
+ author = {Sariy\"{u}ce, Ahmet Erdem and Pinar, Ali},
+ doi = {10.14778/3021924.3021927},
+ issn = {2150-8097},
+ issue_date = {November 2016},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {12},
+ pages = {97–108},
+ publisher = {VLDB Endowment},
+ title = {Fast hierarchy construction for dense subgraphs},
+ url = {https://doi.org/10.14778/3021924.3021927},
+ volume = {10},
+ year = {2016}
+}

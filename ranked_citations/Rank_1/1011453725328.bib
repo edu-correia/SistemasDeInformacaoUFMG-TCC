@@ -1,0 +1,18 @@
+@article{10.1145/3725328,
+ abstract = {Achieving both high throughput and low commit latency has long been a difficult challenge for Database Management Systems (DBMSs). As we show in this paper, existing commit processing protocols fail to fully leverage modern NVMe SSDs to deliver both high throughput and low-latency durable commits. We therefore propose autonomous commit, the first commit protocol that fully utilizes modern NVMe SSDs to achieve both objectives. Our approach exploits the high parallelism and low write latency of SSDs, enabling workers to explicitly write logs in smaller batches, thereby minimizing the impact of logging I/O on commit latency. Additionally, by parallelizing the acknowledgment procedure, where the DBMS iterates through a set of transactions to inspect their commit state, we mitigate excessive delays resulting from single-threaded commit operations in high-throughput workloads. Our experimental results show that autonomous commit achieves exceptional scalability and low-latency durable commits across a wide range of workloads.},
+ address = {New York, NY, USA},
+ articleno = {191},
+ author = {Nguyen, Lam-Duy and Alhomssi, Adnan and Ziegler, Tobias and Leis, Viktor},
+ doi = {10.1145/3725328},
+ issue_date = {June 2025},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {commit processing, database management systems, group commit, latency, logging, transaction processing},
+ month = {June},
+ number = {3},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Moving on From Group Commit: Autonomous Commit Enables High Throughput and Low Latency on NVMe SSDs},
+ url = {https://doi-org.ez27.periodicos.capes.gov.br/10.1145/3725328},
+ volume = {3},
+ year = {2025}
+}

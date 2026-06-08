@@ -1,0 +1,14 @@
+@inproceedings{9799133,
+ abstract = {Sharing data among asynchronous processes is considered to be a hard systems problem in multithreaded modern shared-memory multicore systems. Throughout the literature, multiple solutions have been proposed, like the so-called barrier synchronization. A Barrier is a synchronization primitive that provides guarantees that any thread will not continue execution from a given point until all threads have reached that point. This primitive is widely used in different parallel programming models, but it can easily become a hot-spot for performance critical applications due to its global nature as one preempted thread will stop execution of all other threads waiting at the barrier. This paper suggests a technique to change the global nature of barrier synchronization into a non-blocking synchronization model with lock-free thread progression guarantees. The main idea is to exploit algorithm-based memory access patterns to implement self-synchronizable threads to protect concurrent reads and writes in a shared data structure without explicit use of a barrier primitive. To the best of our knowledge, this is the first attempt to provide a different synchronization mechanism based on the algorithm intrinsic characteristics rather than an explicit use of a global barrier in shared-memory architectures. Our experimental results show factors of performance improvement against its global barrier-based algorithm counterpart.},
+ author = {Garza, Arturo and Parra, Claudio A. and Scherson, Isaac D.},
+ booktitle = {2021 International Conference on Computational Science and Computational Intelligence (CSCI)},
+ doi = {10.1109/CSCI54926.2021.00334},
+ issn = {},
+ keyword = {Scientific computing;Parallel programming;Multicore processing;Instruction sets;Data structures;Synchronization;Parallel algorithms;multithread;shared-memory;barrier synchronization;non-blocking synchronization;lock-free synchronization},
+ month = {Dec},
+ number = {},
+ pages = {1759-1764},
+ title = {Non-Blocking Technique for Parallel Algorithms with Global Barrier Synchronization},
+ volume = {},
+ year = {2021}
+}

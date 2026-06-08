@@ -1,0 +1,17 @@
+@article{10.14778/3685800.3685833,
+ abstract = {We design, to the best of our knowledge, the first differentially private (DP) stream aggregation processing system at scale. Our system - Differential Privacy SQL Pipelines (DP-SQLP) - is built using a streaming framework similar to Spark streaming, and is built on top of the Spanner database and the F1 query engine from Google.Towards designing DP-SQLP we make both algorithmic and systemic advances, namely, we (i) design a novel (user-level) DP key selection algorithm that can operate on an unbounded set of possible keys, and can scale to one billion keys that users have contributed, (ii) design a preemptive execution scheme for DP key selection that avoids enumerating all the keys at each triggering time, and (iii) use algorithmic techniques from DP continual observation to release a continual DP histogram of user contributions to different keys over the stream length. We empirically demonstrate the efficacy by obtaining at least 16\texttimes{} reduction in error over meaningful baselines we consider. We implemented a streaming differentially private user impressions for Google Shopping with DP-SQLP. The streaming DP algorithms are further applied to Google Trends.},
+ author = {Zhang, Bing and Doroshenko, Vadym and Kairouz, Peter and Steinke, Thomas and Thakurta, Abhradeep and Ma, Ziyin and Cohen, Eidan and Apte, Himani and Spacek, Jodi},
+ doi = {10.14778/3685800.3685833},
+ issn = {2150-8097},
+ issue_date = {August 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {14},
+ pages = {4145–4158},
+ publisher = {VLDB Endowment},
+ title = {Differentially Private Stream Processing at Scale},
+ url = {https://doi.org/10.14778/3685800.3685833},
+ volume = {17},
+ year = {2024}
+}

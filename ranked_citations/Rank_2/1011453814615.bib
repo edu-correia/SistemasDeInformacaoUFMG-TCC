@@ -1,0 +1,15 @@
+@article{10.1145/3814615,
+ abstract = {Compiler toolchains such as TVM are now a standard substrate for deploying deep neural networks, but the optimized executables also expose structures that attackers can leverage. Existing mitigations are commonly applied as global composite defense, which is effective yet costly because it disrupts performance-critical regularity everywhere. We present VulnSketch, the first LLM-driven vulnerability analysis system for compiled DNNs, and introduce an evidence-bounded formulation of vulnerability analysis that is both auditable and actionable. VulnSketch extracts a Minimal Evidence Interface (MEI) from TVM TIR, scores each operator location along three attacker-aligned vulnerability faces (Segmentation, Regularity, and Lifting), and routes only ambiguous gray locations to bounded LLM triage that must cite MEI fields and propose a pre-approved, semantics-preserving schedule knob. Every proposal is executed under compiler-side legality guards and accepted only if a single micro validation confirms the expected one-step movement on the prioritized face. Across five representative attacks, VulnSketch attains strong operator-level overlap at small budgets (top 5% recall 0.71-0.80; top 10% recall 0.84-0.91) and high global ranking quality (AUROC 0.85-0.89; AUPRC 0.51-0.62). Applying micro-validated knobs causally reduces attack success by 33-38% and recovered footprint by 38-40%. Operationally, VulnSketch yields 5.9 seconds amortized per verified note under default gray exposure.},
+ address = {New York, NY, USA},
+ author = {Li, Minghui and Li, Yang and Yin, Changchun and Li, Mingwei and Fang, Liming},
+ doi = {10.1145/3814615},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {System Security, Deep Learning Compiler, Vulnerability Analysis, Large Language Model},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {LLM-Triaged Vulnerability Analysis for Compiled DNNs},
+ url = {https://doi.org/10.1145/3814615},
+ year = {2026}
+}

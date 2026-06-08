@@ -1,0 +1,14 @@
+@conference{Akram202180,
+ abstract = {In our information-driven societies, full-text search is ubiquitous. Search is memory-intensive. Quickly searching massive corpora requires building indices, which consumes big volatile heaps. Search is storage I/O-intensive. Limited main memory necessitates writing large partial indices on non-volatile storage, where they finally live in merged form. These indices reside in memory, in full or in part, during query evaluation. Memory and I/O intensity make it hard to index and search content rapidly and efficiently. On the hardware side, the recently introduced Intel Optane DC persistent memory (PM) offers byte-addressability, high capacity, and non-volatility. This paper evaluates and exploits Optane PM for text indexing and search on multicore platforms. We identify essential structures in inverted indices (hash table, merge tree, and key-value store), where they reside (memory or storage), and key operations over them (sort, flush, and merge). We allocate index structures in DRAM, Optane PM, and block storage by modifying an existing search engine. We then evaluate a myriad of hybrid memory and storage configurations. Our findings include: (1) careful placement of index structures across DRAM, Optane PM, and SSD, speeds up indexing with a single core compared to a high-performance baseline, but does not scale to many cores, (2) crash-consistent indexing with Optane PM is feasible without incurring a high overhead, and (3) the tail latency of the longest multi-term conjunctive queries is lower with a PM-backed index than an SSD-backed one. This paper opens up persistent memory to a practical role in full-text search.  © 2021 ACM.},
+ author = {Akram, Shoaib},
+ doi = {10.1145/3459898.3463906},
+ journal = {ISMM 2021 - Proceedings of the 2021 ACM SIGPLAN International Symposium on Memory Management, co-located with PLDI 2021},
+ note = {Cited by: 9},
+ pages = {80 - 93},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Exploiting intel optane persistent memory for full text search},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85109632588?origin=resultslist},
+ year = {2021}
+}

@@ -1,0 +1,16 @@
+@article{Karimi20223977,
+ abstract = {The Sparse Matrix-Vector Multiplication (SpMV) kernel is used in a broad class of linear algebra computations. SpMV computations result in a performance bottleneck in many high performance applications, so optimizing SpMV performance is paramount. While implementing this kernel on a GPU can potentially boost performance significantly, current GPU libraries either provide modest performance gains or are burdened with high sparse format conversion overhead. In this paper we introduce the Vertical Compressed Sparse Row (VCSR) format, a novel memory-aware format that out-performs previous proposed formats on a GPU. We first motivate the design of our baseline VCSR format and then step through a series of enhancements that further improve VCSR's memory efficiency (VCSR-MEM) and performance (VCSR-INTRLV), while also considering conversion overhead. VCSR attempts to produce a high degree of thread-level parallelism and memory utilization by exploiting knowledge of GPU memory microarchitecture. VCSR can reduce the number of global memory transactions significantly, an issue not addressed by most other sparse formats. In addition, VCSR provides a novel reordering mechanism. It minimizes the size of the compressed matrix, handles both regular/irregular sparse matrices, and can be customized based on matrix size. VCSR also minimizes conversion overhead, as compared to full or partial row reordering. Our methodology is highly configurable and can be optimized for any sparse matrix. We have evaluated the VCSR format for the SpMV kernel when run on two different NVIDIA GPUs, the Kepler K40 and the Volta V100. We compare VCSR with NVIDIA's cuSPARSE library (the HYB format), a state-of-the-art sparse library. We also compare against other state-of-the-art CSR-based formats, including CSR5, merge-base SpMV and HOLA. We evaluate the benefits of VCSR over the entire University of Florida's SuiteSparse dataset collection. The VCSR-baseline format achieves an average speedup ranging from 1.10×1.10× to 1.39×1.39× when compared to the performance of the four state-of-the-art formats on an NVIDIA V100. While the VCSR-MEM format can save a significant amount of memory space, it is a bit slower than our VCSR-baseline. VCSR-INTRLV performs much better than the VCSR-baseline, and even when including the conversion overhead, achieves an average speedup of 1.08×1.08× as compared to HOLA (the best performing format among the prior schemes).  © 1990-2012 IEEE.},
+ author = {Karimi, Elmira and Agostini, Nicolas Bohm and Dong, Shi and Kaeli, David},
+ doi = {10.1109/TPDS.2022.3177291},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ note = {Cited by: 15},
+ number = {12},
+ pages = {3977 - 3989},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {VCSR: An Efficient GPU Memory-Aware Sparse Format},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85131755038?origin=resultslist},
+ volume = {33},
+ year = {2022}
+}

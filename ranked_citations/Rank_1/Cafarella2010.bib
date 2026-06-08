@@ -1,0 +1,14 @@
+@conference{Cafarella2010,
+ abstract = {The MapReduce distributed programming framework is very popular, but currently lacks the optimization techniques that have been standard with relational database systems for many years. This paper proposes Manimal, which uses static code analysis to detect MapReduce program seman tics and thereby enable wholly-automatic optimization of MapReduce programs. For example, a programmer's map function that emits data only when an if... statement holds true is essentially encoding a selection condition; code analysis can detect and characterize these conditions. If Manimal has an appropriate index available, it can then alter MapReduce execution to use it. Manimal can address many different optimization opportunities, including projections, structure-aware data com pression, and others. However, this paper illustrates the system by focusing on one: effcient selection. We give a static analysis algorithm that can detect selections in user programs, and cover how Manimal can employ a B+Tree to execute these selections effciently at runtime. Testing Manimal on several standard MapReduce programs, we show that selection alone can automatically reduce a standard program's runtime to 63% of conventional MapReduce execution time on identical hardware. We also give an in-depth discussion of other optimization targets and detection tech niques.},
+ author = {Cafarella, Michael J. and Reaaá, Christopher},
+ doi = {10.1145/1859127.1859141},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Manimal: Relational optimization for data-intensive programs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/78650436871?origin=resultslist},
+ year = {2010}
+}

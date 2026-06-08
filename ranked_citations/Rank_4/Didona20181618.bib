@@ -1,0 +1,16 @@
+@article{Didona20181618,
+ abstract = {Causal consistency is an attractive consistency model for geo-replicated data stores. It is provably the strongest model that tolerates network partitions. It avoids the long latencies associated with strong consistency, and, especially when using read-only transactions (ROTs), it prevents many of the anomalies of weaker consistency models. Recent work has shown that causal consistency allows “latency-optimal“ ROTs, that are nonblocking, single-round and single-version in terms of communication. On the surface, this latency optimality is very appealing, as the vast majority of applications are assumed to have read-dominated workloads. In this paper, we show that such “latency-optimal“ ROTs induce an extra overhead on writes that is so high that it actually jeopardizes performance even in read-dominated workloads. We show this result from a practical as well as from a theoretical angle. We present the Contrarian protocol that implements “almost latency-optimal“ ROTs, but that does not impose on the writes any of the overheads incurred by latency-optimal protocols. In Contrarian, ROTs are nonblocking and singleversion, but they require two rounds of client-server communication. We experimentally show that this protocol not only achieves higher throughput, but, surprisingly, also provides better latencies for all but the lowest loads and the most read-heavy workloads. We furthermore prove that the extra overhead imposed on writes by latency-optimal ROTs is inherent, i.e., it is not an artifact of the design we consider, and cannot be avoided by any implementation of latency-optimal ROTs. We show in particular that this overhead grows linearly with the number of clients. © 2018 VLDB Endowment.},
+ author = {Didona, Diego and Guerraoui, Rachid and Wang, Jingjing and Zwaenepoel, Willy},
+ doi = {10.14778/3236187.3236210},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 25; All Open Access; Green Open Access},
+ number = {11},
+ pages = {1618 - 1632},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Causal consistency and latency optimality: Friend or foe?},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85058897240?origin=resultslist},
+ volume = {11},
+ year = {2018}
+}

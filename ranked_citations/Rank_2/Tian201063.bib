@@ -1,0 +1,14 @@
+@conference{Tian201063,
+ abstract = {With the availability of chip multiprocessor (CMP) and simultaneous multithreading (SMT) machines, extracting thread level parallelism from a sequential program has become crucial for improving performance. However, many sequential programs cannot be easily parallelized due to the presence of dependences. To solve this problem, different solutions have been proposed. Some of them make the optimistic assumption that such dependences rarely manifest themselves at runtime. However, when this assumption is violated, the recovery causes very large overhead. Other approaches incur large synchronization or computation overhead when resolving the dependences. Consequently, for a loop with frequently arising cross-iteration dependences, previous techniques are not able to speed up the execution. In this paper we propose a compiler technique which uses state separation and multiple value prediction to speculatively parallelize loops in sequential programs that contain frequently arising cross-iteration dependences. The key idea is to generate multiple versions of a loop iteration based on multiple predictions of values of variables involved in cross-iteration dependences (i.e., live-in variables). These speculative versions and the preceding loop iteration are executed in separate memory states simultaneously. After the execution, if one of these versions is correct (i.e., its predicted values are found to be correct), then we merge its state and the state of the preceding iteration because the dependence between the two iterations is correctly resolved. The memory states of other incorrect versions are completely discarded. Based on this idea, we further propose a runtime adaptive scheme that not only gives a good performance but also achieves better CPU utilization. We conducted experiments on 10 benchmark programs on a real machine. The results show that our technique can achieve 1.7x speedup on average across all used benchmarks. © 2010 ACM.},
+ author = {Tian, Chen and Feng, Min and Gupta, Rajiv},
+ doi = {10.1145/1806651.1806663},
+ journal = {International Symposium on Memory Management, ISMM},
+ note = {Cited by: 22},
+ pages = {63 - 72},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Speculative parallelization using state separation and multiple value prediction},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/77954735655?origin=resultslist},
+ year = {2010}
+}

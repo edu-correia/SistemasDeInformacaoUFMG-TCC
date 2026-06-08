@@ -1,0 +1,13 @@
+@article{BLOUIN201849,
+ abstract = {Context. User Interfaces (UIs) intensively rely on event-driven programming: interactive objects send UI events, which capture users’ interactions, to dedicated objects called controllers. Controllers use several UI listeners that handle these events to produce UI commands. Objective. First, we reveal the presence of design smells in the code that describes and controls UIs. Second, we demonstrate that specific code analyses are necessary to analyze and refactor UI code, because of its coupling with the rest of the code. Method. We conducted an empirical study on four large Java software systems. We studied to what extent the number of UI commands that a UI listener can produce has an impact on the change- and fault-proneness of the UI listener code. We developed a static code analysis for detecting UI commands in the code. Results. We identified a new type of design smell, called Blob listener, that characterizes UI listeners that can produce more than two UI commands. We proposed a systematic static code analysis procedure that searches for Blob listener that we implement in InspectorGuidget. We conducted experiments on the four software systems for which we manually identified 53 instances of Blob listener. InspectorGuidget successfully detected 52 Blob listeners out of 53. The results exhibit a precision of 81.25% and a recall of 98.11%. We then developed a semi-automatically and behavior-preserving refactoring process to remove Blob listeners. 49.06% of the 53 Blob listeners were automatically refactored. Patches have been accepted and merged. Discussions with developers of the four software systems assess the relevance of the Blob listener. Conclusion. This work shows that UI code also suffers from design smells that have to be identified and characterized. We argue that studies have to be conducted to find other UI design smells and tools that analyze UI code must be developed.},
+ author = {Arnaud Blouin and Valéria Lelli and Benoit Baudry and Fabien Coulon},
+ doi = {https://doi.org/10.1016/j.infsof.2018.05.005},
+ issn = {0950-5849},
+ journal = {Information and Software Technology},
+ keyword = {User interface, Event handling, Design smell, Software maintenance, Code refactoring, Empirical software engineering},
+ pages = {49-64},
+ title = {User interface design smell: Automatic detection and refactoring of Blob listeners},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950584918300892},
+ volume = {102},
+ year = {2018}
+}

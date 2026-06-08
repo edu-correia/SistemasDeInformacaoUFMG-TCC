@@ -1,0 +1,14 @@
+@inproceedings{11323134,
+ abstract = {The Log-Structured Merge (LSM) tree is a widely used storage engine in key-value systems, but its compaction process is a major performance bottleneck due to high computational and I/O demands. While GPU-accelerated compaction (GPU Compaction) has emerged as an efficient solution, state-of-the-art approaches rely on CPU-centric GPU-SSD direct I/O stacks, suffering from synchronization overhead between IO and GPU Computation and limited GPU-SSD IO bandwidth. To address these limitations, we propose GCLComp, a GPUCentric LSM Compaction Strategy based on GPU-Initiated Direct Storage (GIDS). It is a computational storage architecture application based on GPU and GIDS. GCLComp introduces MiniFS, an efficient user-space Host-GPU shared-driver file storage system specifically designed for GPU-accelerated LSM compaction. It enables GPU-initiated I/O for compaction and higher GPU-SSD IO throughput. This allows the GPU to independently read the input files required for compaction from the SSD, perform compaction, and write the output to SSD, minimizing CPU involvement. GCLComp further employs a GPU IO-Computation Pipeline using CUDA streams to seamlessly orchestrate I/O and computation, eliminating synchronization overhead. The experimental results show that MiniFS improves read and write throughput by 52 % and 34 %, respectively, over the state-of-the-art. Based on that, GCLComp achieves up to 19.16 % higher compaction throughput, 21.98 % higher average Fillrandom throughput, 17.59 % lower average Fillrandom latency, 97.27 % lower Fillrandom P999 tail latency and 31.85% higher ReadWriteMix throughput under the KV store, compared to SOTA. We also find that compaction throughput scales nearly linearly with pipeline batch size by a sensitivity analysis.},
+ author = {Zhou, Hao and Zeng, Wu and Wang, Gang and Liu, Xiaoguang},
+ booktitle = {2025 IEEE 31th International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS67057.2025.11323134},
+ issn = {2690-5965},
+ keyword = {Sensitivity analysis;Trees (botanical);Pipelines;Graphics processing units;Telecommunication traffic;Throughput;Compaction;Synchronization;Engines;Communication switching;GPU-Centric;GPU-Initiated Direct Storage;LSM Tree;Compaction;KV store},
+ month = {Dec},
+ number = {},
+ pages = {1-9},
+ title = {GCLComp: A GPU-Centric Compaction Strategy for LSM-Based KV Store},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11207339,
+ abstract = {Modern data-intensive applications increasingly store and process big-value items, such as multimedia objects and machine learning embeddings, which exacerbate storage inefficiencies in Log-Structured Merge-Tree (LSM)-based key-value stores. This paper presents BVLSM, a Write-Ahead Log (WAL)time key-value separation mechanism designed to address three key challenges in LSM-Tree storage systems: write amplification, poor memory utilization, and I/O jitter under big-value workloads. Unlike state-of-the-art approaches that delay key-value separation until the flush stage, leading to redundant data in MemTables and repeated writes. BVLSM proactively decouples keys and values during the WAL phase. The MemTable stores only lightweight metadata, allowing multi-queue parallel store for big value. Benchmark results demonstrate that BVLSM significantly outperforms both RocksDB and BlobDB across various write-intensive workloads. Specifically, in asynchronous WAL mode, its 64KB write throughput exceeds that of RocksDB by a factor of 7.6 and that of BlobDB by a factor of 1.9.},
+ author = {Li, Ming and Cheng, Wendi and Wei, Jiahe and Shan, Xueqiang and Liu, Weikai and Zhao, Xiaonan and Zhang, Xiao},
+ booktitle = {2025 IEEE International Conference on High Performance Computing and Communications (HPCC)},
+ doi = {10.1109/HPCC67675.2025.00037},
+ issn = {},
+ keyword = {High performance computing;Machine learning;Bandwidth;Performance gain;Parallel processing;Metadata;Jitter;Benchmark testing;Throughput;Delays;Key-value storage systems;Log-Structured Merge-Tree;Key-value separation;Write-Ahead Log},
+ month = {Aug},
+ number = {},
+ pages = {34-41},
+ title = {BVLSM: Write-Efficient LSM-Tree Storage via WAL-Time Key-Value Separation},
+ volume = {},
+ year = {2025}
+}

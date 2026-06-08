@@ -1,0 +1,14 @@
+@article{9416456,
+ abstract = {Infrared and visible image fusion (IVIF) expects to obtain images that retain thermal radiation information from infrared images and texture details from visible images. In this paper, a model-based convolutional neural network (CNN) model, referred to as Algorithm Unrolling Image Fusion (AUIF), is proposed to overcome the shortcomings of traditional CNN-based IVIF models. The proposed AUIF model starts with the iterative formulas of two traditional optimization models, which are established to accomplish two-scale decomposition, i.e., separating low-frequency base information and high-frequency detail information from source images. Then the algorithm unrolling is implemented where each iteration is mapped to a CNN layer and each optimization model is transformed into a trainable neural network. Compared with the general network architectures, the proposed framework combines the model-based prior information and is designed more reasonably. After the unrolling operation, our model contains two decomposers (encoders) and an additional reconstructor (decoder). In the training phase, this network is trained to reconstruct the input image. While in the test phase, the base (or detail) decomposed feature maps of infrared/visible images are merged respectively by an extra fusion layer, and then the decoder outputs the fusion image. Qualitative and quantitative comparisons demonstrate the superiority of our model, which can robustly generate fusion images containing highlight targets and legible details, exceeding the state-of-the-art methods. Furthermore, our network has fewer weights and faster speed.},
+ author = {Zhao, Zixiang and Xu, Shuang and Zhang, Jiangshe and Liang, Chengyang and Zhang, Chunxia and Liu, Junmin},
+ doi = {10.1109/TCSVT.2021.3075745},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Optimization;Image fusion;Feature extraction;Task analysis;Kernel;Decoding;Neural networks;Image fusion;two-scale decomposition;algorithm unrolling;model-based network structure},
+ month = {March},
+ number = {3},
+ pages = {1186-1196},
+ title = {Efficient and Model-Based Infrared and Visible Image Fusion via Algorithm Unrolling},
+ volume = {32},
+ year = {2022}
+}

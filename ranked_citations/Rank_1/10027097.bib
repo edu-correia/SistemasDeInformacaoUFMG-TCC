@@ -1,0 +1,14 @@
+@inproceedings{10027097,
+ abstract = {High-performance computing (HPC) facilities have employed flash-based storage tier near to compute nodes to absorb high I/O demand by HPC applications during periodic system-level checkpoints. To accelerate these checkpoints, proxy-based distributed key-value stores (PD-KVS) gained particular attention for their flexibility to support multiple backends and different network configurations. PD-KVS rely internally on monolithic KVS, such as LevelDB or RocksDB, to exploit the KV interface and query support. However, PD-KVS are unaware of the high redundancy factor in checkpoint data, which can be up to GBs to TBs, and therefore, tend to generate high write and space amplification on these storage layers. In this paper, we propose DenKv which is deduplication-extended node-local LSM-tree-based KVS. DenKv employs asynchronous partially inline dedup (APID) and aims to maintain the performance characteristics of LSM-tree-based KVS while reducing the write and space amplification problems. We implemented DenKv atop BlobDB and showed that our proposed solution maintains performance while reducing write amplification up to 2× and space amplification by 4× on average.},
+ author = {Jamil, Safdar and Khan, Awais and Kim, Kihyun and Lee, Jae-Kook and An, Dosik and Hong, Taeyoung and Oral, Sarp and Kim, Youngjae},
+ booktitle = {2022 IEEE/ACM International Parallel Data Systems Workshop (PDSW)},
+ doi = {10.1109/PDSW56643.2022.00009},
+ issn = {},
+ keyword = {Checkpointing;High performance computing;Conferences;Termination of employment;Supercomputers;Data systems;Optimization;High Performance Computing;Key-Value Stores;Log-Structures Merge Tree;Deduplication},
+ month = {Nov},
+ number = {},
+ pages = {20-25},
+ title = {DenKv: Addressing Design Trade-offs of Key-value Stores for Scientific Applications},
+ volume = {},
+ year = {2022}
+}

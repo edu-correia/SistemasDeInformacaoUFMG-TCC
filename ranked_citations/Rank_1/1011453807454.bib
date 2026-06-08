@@ -1,0 +1,15 @@
+@article{10.1145/3807454,
+ abstract = {GPU sharing is commonly employed in GPU clusters to improve utilization, with spatial sharing being one of the most widely adopted techniques. However, spatial sharing can lead to resource interference, making task execution times difficult to predict. Predictable execution times for each task are crucial in GPU cluster management and task scheduling. In this paper, we propose a performance predictor for multi-DNN training tasks in GPU spatial sharing environments. We first conduct experiments on spatial sharing for multiple DNN workloads on a single GPU, demonstrating that concurrent execution of multiple tasks improves overall performance and GPU resource utilization compared to serial execution. By analyzing warp stall reasons collected during task execution, we investigate the interference for computation and memory resources under MPS on GPUs. Finally, we design a performance predictor that predicts the execution time of a target DNN training task when it runs concurrently with other tasks under GPU spatial sharing via MPS. The predictor is capable of predicting the execution time of each task for previously unseen combinations of DNN training tasks. Extensive evaluations on modern GPUs show that compared to other baseline methods, our approach exhibits higher prediction accuracy, as well as improved stability and robustness. Experiments on multiple GPU architectures, as well as at higher concurrency levels, further demonstrate that our method possesses strong generalization and scalability. We also conducted a performance analysis under diverse workload pattern and a case study to validate the practical applicability of our predictor in real scheduling environments.},
+ address = {New York, NY, USA},
+ author = {Chen, Sichao and Wang, Desheng and Zhang, Weizhe and Hao, Meng and Tian, Yu-Chu and He, Hui},
+ doi = {10.1145/3807454},
+ issn = {1544-3566},
+ journal = {ACM Trans. Archit. Code Optim.},
+ keyword = {GPU Sharing, Multi-Process Service, Performance Modeling, Multitask Concurrency, DNN Training},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Performance Prediction of Concurrent DNN Training Tasks in GPU Spatial Sharing Environments},
+ url = {https://doi.org/10.1145/3807454},
+ year = {2026}
+}

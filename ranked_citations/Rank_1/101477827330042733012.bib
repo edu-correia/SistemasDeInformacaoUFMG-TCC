@@ -1,0 +1,17 @@
+@article{10.14778/2733004.2733012,
+ abstract = {Scalability and fault-tolerance are two fundamental challenges for all distributed computing at Internet scale. Despite many recent advances from both academia and industry, these two problems are still far from settled. In this paper, we present Fuxi, a resource management and job scheduling system that is capable of handling the kind of workload at Alibaba where hundreds of terabytes of data are generated and analyzed everyday to help optimize the company's business operations and user experiences. We employ several novel techniques to enable Fuxi to perform efficient scheduling of hundreds of thousands of concurrent tasks over large clusters with thousands of nodes: 1) an incremental resource management protocol that supports multi-dimensional resource allocation and data locality; 2) user-transparent failure recovery where failures of any Fuxi components will not impact the execution of user jobs; and 3) an effective detection mechanism and a multi-level blacklisting scheme that prevents them from affecting job execution. Our evaluation results demonstrate that 95% and 91% scheduled CPU/memory utilization can be fulfilled under synthetic workloads, and Fuxi is capable of achieving 2.36T-B/minute throughput in GraySort. Additionally, the same Fuxi job only experiences approximately 16% slowdown under a 5% fault-injection rate. The slowdown only grows to 20% when we double the fault-injection rate to 10%. Fuxi has been deployed in our production environment since 2009, and it now manages hundreds of thousands of server nodes.},
+ author = {Zhang, Zhuo and Li, Chao and Tao, Yangyu and Yang, Renyu and Tang, Hong and Xu, Jie},
+ doi = {10.14778/2733004.2733012},
+ issn = {2150-8097},
+ issue_date = {August 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {13},
+ numpages = {12},
+ pages = {1393–1404},
+ publisher = {VLDB Endowment},
+ title = {Fuxi: a fault-tolerant resource management and job scheduling system at internet scale},
+ url = {https://doi.org/10.14778/2733004.2733012},
+ volume = {7},
+ year = {2014}
+}

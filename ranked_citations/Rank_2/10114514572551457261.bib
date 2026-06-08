@@ -1,0 +1,18 @@
+@article{10.1145/1457255.1457261,
+ abstract = {Preemptive multitasking is widely used in many low-cost and real-time embedded applications for its superior hardware utilization. The frequent and asynchronous context switches, however, require the preservation and restoration of the task state, thus resulting in a large number of memory transfer instructions. As a consequence, task responsiveness and application throughput can be significantly deteriorated. To address this problem we propose a cross-layer customization framework which through the close cooperation of compiler, OS, and hardware architecture achieves rapid and low-cost task switch. Application information extracted during compile-time regarding state liveness is exploited in order to preserve a minimal amount of task state on task preemption. We introduce two complementary techniques to implement the application-aware state preservation. The first technique utilizes compiler-generated custom routines which preserve/restore an extremely small live context at judiciously selected points in the application code. The second technique requires more sophisticated hardware support. It employs an OS-controlled register file mapping to achieve a rapid context switch. By mapping a small fraction of the register file in a single clock cycle, a context switch is achieved requiring no memory transfers for the majority of cases to preserve/restore the live state. The effect of aggressively replicated register files, where each task is given its own replica, is achieved with the hardware cost of only adding from 25% to 50% extra physical registers. Through the utilization of these novel mechanisms, a significant improvement on task response time is achieved as the context-switch cost is minimized.},
+ address = {New York, NY, USA},
+ articleno = {14},
+ author = {Zhou, Xiangrong and Petrov, Peter},
+ doi = {10.1145/1457255.1457261},
+ issn = {1539-9087},
+ issue_date = {January 2009},
+ journal = {ACM Trans. Embed. Comput. Syst.},
+ month = {February},
+ number = {2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Cross-layer customization for rapid and low-cost task preemption in multitasked embedded systems},
+ url = {https://doi.org/10.1145/1457255.1457261},
+ volume = {8},
+ year = {2009}
+}

@@ -1,0 +1,14 @@
+@inproceedings{9978375,
+ abstract = {For edge-side applications with severe power constraints, using pruning and quantization to compress models while maintaining network accuracy has become a widely deployed form of Convolutional Neural Networks (CNNs). For the same model accuracy, fine-grained non-regular pruning can bring higher model compression rate than coarse-grained regular pruning, but also introduces a larger indexing overhead. Besides, this overhead increases dramatically as the pruning granularity decreases. In this work, an approximate quantization scheme for fine-grained pruning is proposed. By reusing part of the quantized data bits, the proposed scheme can merge quantized data and indexes approximately, reducing the indexing overhead as well. Meanwhile, since the approximate compensation of index bits, the proposed scheme achieves an effective model accuracy improvement compared to the case of direct quantization to low bit-width. Experimental results show that, for 2:4 fine-grained pruning and 8-bit quantization scenario, the proposed method can save 20% of memory space and transmission cost. Compared with the direct quantization to 6-bit approach, the proposed scheme improves the accuracy by nearly 0.5% in the simulation of ImageNet dataset on ResNet50, despite occupying the same storage space. When deploying Yolov2-tiny at 16 × compression ratio, the energy efficiency of the CNN accelerator with the proposed approximate quantization is 1.33-3.82× that of other state-of-the-art designs.},
+ author = {Yu, Tianyang and Wu, Bi and Chen, Ke and Yan, Chenggang and Liu, Weiqiang},
+ booktitle = {2022 IEEE 40th International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD56317.2022.00116},
+ issn = {2576-6996},
+ keyword = {Quantization (signal);Image coding;Neural networks;Propagation losses;Energy efficiency;Hardware;Convolutional neural networks;CNN;approximate quantization;hardware acceleration},
+ month = {Oct},
+ number = {},
+ pages = {762-769},
+ title = {Energy-efficient Oriented Approximate Quantization Scheme for Fine-Grained Sparse Neural Network Acceleration},
+ volume = {},
+ year = {2022}
+}

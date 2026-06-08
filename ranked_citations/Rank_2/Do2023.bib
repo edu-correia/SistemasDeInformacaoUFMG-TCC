@@ -1,0 +1,16 @@
+@article{Do2023,
+ abstract = {Database query processing requires algorithms for duplicate removal, grouping, and aggregation. Three algorithms exist: in-stream aggregation is most efficient by far but requires sorted input; sort-based aggregation relies on external merge sort; and hash aggregation relies on an in-memory hash table plus hash partitioning to temporary storage. Cost-based query optimization chooses which algorithm to use based on several factors, including the sort order of the input, input and output sizes, and the need for sorted output. For example, hash-based aggregation is ideal for output smaller than the available memory (e.g., Query 1 of TPC-H), whereas sorting the entire input and aggregating after sorting are preferable when both aggregation input and output are large and the output needs to be sorted for a subsequent operation such as a merge join. Unfortunately, the size information required for a sound choice is often inaccurate or unavailable during query optimization, leading to sub-optimal algorithm choices. In response, this article introduces a new algorithm for sort-based duplicate removal, grouping, and aggregation. The new algorithm always performs at least as well as both traditional hash-based and traditional sort-based algorithms. It can serve as a system's only aggregation algorithm for unsorted inputs, thus preventing erroneous algorithm choices. Furthermore, the new algorithm produces sorted output that can speed up subsequent operations. Google's F1 Query uses the new algorithm in production workloads that aggregate petabytes of data every day. © 2022 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Do, Thanh and Graefe, Goetz and Naughton, Jeffrey},
+ doi = {10.1145/3568027},
+ journal = {ACM Transactions on Database Systems},
+ note = {Cited by: 19; All Open Access; Bronze Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Sorting, Duplicate Removal, Grouping, and Aggregation},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85146354416?origin=resultslist},
+ volume = {47},
+ year = {2023}
+}

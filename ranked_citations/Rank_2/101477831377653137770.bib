@@ -1,0 +1,17 @@
+@article{10.14778/3137765.3137770,
+ abstract = {Distributed stream processing systems need to support stateful processing, recover quickly from failures to resume such processing, and reprocess an entire data stream quickly. We present Apache Samza, a distributed system for stateful and fault-tolerant stream processing. Samza utilizes a partitioned local state along with a low-overhead background changelog mechanism, allowing it to scale to massive state sizes (hundreds of TB) per application. Recovery from failures is sped up by re-scheduling based on Host Affinity. In addition to processing infinite streams of events, Samza supports processing a finite dataset as a stream, from either a streaming source (e.g., Kafka), a database snapshot (e.g., Databus), or a file system (e.g. HDFS), without having to change the application code (unlike the popular Lambda-based architectures which necessitate maintenance of separate code bases for batch and stream path processing).Samza is currently in use at LinkedIn by hundreds of production applications with more than 10, 000 containers. Samza is an open-source Apache project adopted by many top-tier companies (e.g., LinkedIn, Uber, Netflix, TripAdvisor, etc.). Our experiments show that Samza: a) handles state efficiently, improving latency and throughput by more than 100X compared to using a remote storage; b) provides recovery time independent of state size; c) scales performance linearly with number of containers; and d) supports reprocessing of the data stream quickly and with minimal interference on real-time traffic.},
+ author = {Noghabi, Shadi A. and Paramasivam, Kartik and Pan, Yi and Ramesh, Navina and Bringhurst, Jon and Gupta, Indranil and Campbell, Roy H.},
+ doi = {10.14778/3137765.3137770},
+ issn = {2150-8097},
+ issue_date = {August 2017},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {12},
+ pages = {1634–1645},
+ publisher = {VLDB Endowment},
+ title = {Samza: stateful scalable stream processing at LinkedIn},
+ url = {https://doi.org/10.14778/3137765.3137770},
+ volume = {10},
+ year = {2017}
+}

@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2015.2457834,
+ abstract = {Recent literature including our past work provides analysis and solutions for using: 1 erasure coding; 2 parallelism; or 3 variable slicing/chunking i.e., dividing an object of a specific size into a variable number of smaller chunks in speeding up the I/O performance of storage clouds. However, a comprehensive approach that considers all three dimensions together to achieve the best throughput-delay tradeoff curve had been lacking. This paper presents the first set of solutions that can pick the best combination of coding redundancy ratio and object chunking/slicing options as the load dynamically changes. Our specific contributions are as follows: 1 We establish via measurements that combining variable redundancy ratio and chunking is mostly feasible over a popular public cloud. 2 We relate the delay-optimal values for chunking level and code redundancy ratio to the queue backlogs via an approximate queuing analysis. 3 Based on this analysis, we propose TOFEC that adapts the chunking level and redundancy ratio against the queue backlogs. Our trace-driven simulation results show that TOFEC's adaptation mechanism converges to an appropriate code that provides the optimal throughput-delay tradeoff without reducing system capacity. Compared to a nonadaptive strategy optimized for throughput, TOFEC delivers 2.5\texttimes{} lower latency under light workloads; compared to a nonadaptive strategy optimized for latency, TOFEC can scale to support over 3\texttimes{} as many requests. 4 We propose a simpler greedy solution that performs on a par with TOFEC in average delay performance, but exhibits significantly more performance variations.},
+ author = {Liang, Guanfeng and Kozat, Ulas C. and Guanfeng Liang and Kozat, Ulas C.},
+ doi = {10.1109/tnet.2015.2457834},
+ issn = {1063-6692},
+ issue_date = {August 2016},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {August},
+ number = {4},
+ numpages = {14},
+ pages = {2168–2181},
+ publisher = {IEEE Press},
+ title = {On Throughput-Delay Optimal Access to Storage Clouds via Load Adaptive Coding and Chunking},
+ url = {https://doi.org/10.1109/TNET.2015.2457834},
+ volume = {24},
+ year = {2016}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3750601.3750636,
+ abstract = {Data lakehouse architectures unify the cost-efficiency of data lakes with the transactional guarantees of data warehouses. Yet, real-time ingestion often depends on external streaming systems such as Apache Kafka, along with bespoke connectors that read from Kafka and write into the lakehouse—leading to increased complexity and high operational costs. In particular, traditional leader-based data streaming platforms are designed for sub-100 ms low-latency workloads; however, when used for data-intensive ingestion in a cloud environment, cross availability-zone (AZ) disk-based replication significantly raises total infrastructure costs due to excessive network traffic and overprovisioned disk storage. This paper introduces Ursa, a leaderless, cloud-native, and Kafka-compatible streaming engine that writes data directly to open lakehouse tables on object storage. By eliminating leader-based replication, disk-based broker storage, and external connectors, Ursa markedly reduces infrastructure costs while preserving high throughput, exactly-once semantics, and near-real-time streaming capabilities. Experimental results show that Ursa matches the performance of traditional Kafka clusters at a fraction of the cost, offering up to a 10x reduction in infrastructure expenses.},
+ author = {Merli, Matteo and Guo, Sijie and Li, Penghui and Chen, Hang and Lu, Neng},
+ doi = {10.14778/3750601.3750636},
+ issn = {2150-8097},
+ issue_date = {August 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {13},
+ pages = {5184–5196},
+ publisher = {VLDB Endowment},
+ title = {Ursa: A Lakehouse-Native Data Streaming Engine for Kafka},
+ url = {https://doi.org/10.14778/3750601.3750636},
+ volume = {18},
+ year = {2025}
+}

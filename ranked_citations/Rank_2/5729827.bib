@@ -1,0 +1,14 @@
+@article{5729827,
+ abstract = {Text information in natural scene images serves as important clues for many image-based applications such as scene understanding, content-based image retrieval, assistive navigation, and automatic geocoding. However, locating text from a complex background with multiple colors is a challenging task. In this paper, we explore a new framework to detect text strings with arbitrary orientations in complex natural scene images. Our proposed framework of text string detection consists of two steps: 1) image partition to find text character candidates based on local gradient features and color uniformity of character components and 2) character candidate grouping to detect text strings based on joint structural features of text characters in each text string such as character size differences, distances between neighboring characters, and character alignment. By assuming that a text string has at least three characters, we propose two algorithms of text string detection: 1) adjacent character grouping method and 2) text line grouping method. The adjacent character grouping method calculates the sibling groups of each character candidate as string segments and then merges the intersecting sibling groups into text string. The text line grouping method performs Hough transform to fit text line among the centroids of text candidates. Each fitted text line describes the orientation of a potential text string. The detected text string is presented by a rectangle region covering all characters whose centroids are cascaded in its text line. To improve efficiency and accuracy, our algorithms are carried out in multi-scales. The proposed methods outperform the state-of-the-art results on the public Robust Reading Dataset, which contains text only in horizontal orientation. Furthermore, the effectiveness of our methods to detect text strings with arbitrary orientations is evaluated on the Oriented Scene Text Dataset collected by ourselves containing text strings in nonhorizontal orientations.},
+ author = {Yi, Chucai and Tian, YingLi},
+ doi = {10.1109/TIP.2011.2126586},
+ issn = {1941-0042},
+ journal = {IEEE Transactions on Image Processing},
+ keyword = {Image color analysis;Pixel;Joining processes;Feature extraction;Partitioning algorithms;Image edge detection;Algorithm design and analysis;Adjacent character grouping;character property;image partition;text line grouping;text string detection;text string structure},
+ month = {Sep.},
+ number = {9},
+ pages = {2594-2605},
+ title = {Text String Detection From Natural Scenes by Structure-Based Partition and Grouping},
+ volume = {20},
+ year = {2011}
+}

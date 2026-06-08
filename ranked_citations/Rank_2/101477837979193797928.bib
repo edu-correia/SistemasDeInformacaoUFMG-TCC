@@ -1,0 +1,17 @@
+@article{10.14778/3797919.3797928,
+ abstract = {Graph database management systems (GDBMSs) have been powering many data-driven applications. To ensure GDBMS reliability, several testing approaches have been proposed. However, they all suffer from two key limitations: (1) insufficient support for generating complex and valid queries to exercise deep GDBMS code, and (2) lack of general oracles to validate the execution correctness of arbitrary queries.In this paper, we propose a novel and practical approach, Dinkel, for thoroughly testing GDBMSs. Our approach consists of two core techniques. First, to generate complex and valid queries, we model two kinds of graph state, query context and graph schema, to describe the Cypher variables and the manipulated graph labels and properties. We generate queries clause-by-clause, and modify the graph states on the fly to ensure each clause references the correct state information. Second, to generally validate query results, we introduce two fine-grained query transformations: clause-level and expression-level transformations. These transformations can operate on arbitrary queries while preserving their semantics. Dinkel validates GDBMSs by checking whether the transformed query produces the same results as the original. We evaluated Dinkel on three well-known GDBMSs. In total, we found 127 bugs, among which 113 were confirmed, 84 were fixed, and 33 were logic bugs. Compared to existing approaches, Dinkel can cover over 70% more code and find substantially more bugs within a 48-hour testing campaign. We expect Dinkel's powerful bug detection to lay a practical foundation for GDBMS testing.},
+ author = {W\"{u}st, Celine and Jiang, Zuming and Su, Zhendong},
+ doi = {10.14778/3797919.3797928},
+ issn = {2150-8097},
+ issue_date = {February 2026},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {6},
+ numpages = {14},
+ pages = {1198–1211},
+ publisher = {VLDB Endowment},
+ title = {Dinkel: State-Aware and Granular Framework for Validating Graph Databases},
+ url = {https://doi.org/10.14778/3797919.3797928},
+ volume = {19},
+ year = {2026}
+}

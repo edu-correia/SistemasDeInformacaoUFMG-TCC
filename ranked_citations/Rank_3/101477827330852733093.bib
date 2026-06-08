@@ -1,0 +1,17 @@
+@article{10.14778/2733085.2733093,
+ abstract = {We are interested in scalable data integration and data exchange under constraints/dependencies. In data exchange the problem is how to materialize a target database instance, satisfying the source-to-target and target dependencies, that provides the certain answers. In data integration, the problem is how to rewrite a query over the target schema into a query over the source schemas that provides the certain answers. In both these problems we make use of the chase algorithm, the main tool to reason with dependencies. Our first contribution is to introduce the frugal chase, which produces smaller universal solutions than the standard chase, still remaining polynomial in data complexity. Our second contribution is to use the frugal chase to scale up query answering using views under LAV weakly acyclic target constraints, a useful language capturing RDF/S. The latter problem can be reduced to query rewriting using views without constraints by chasing the source-to-target mappings with the target constraints. We construct a compact graph-based representation of the mappings and the constraints and develop an efficient algorithm to run the frugal chase on this representation. We show experimentally that our approach scales to large problems, speeding up the compilation of the dependencies into the mappings by close to 2 and 3 orders of magnitude, compared to the standard and the core chase, respectively. Compared to the standard chase, we improve online query rewriting time by a factor of 3, while producing equivalent, but smaller, rewritings of the original query.},
+ author = {Konstantinidis, George and Ambite, Jos\'{e} Luis},
+ doi = {10.14778/2733085.2733093},
+ issn = {2150-8097},
+ issue_date = {October 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {October},
+ number = {14},
+ numpages = {12},
+ pages = {1869–1880},
+ publisher = {VLDB Endowment},
+ title = {Optimizing the chase: scalable data integration under constraints},
+ url = {https://doi.org/10.14778/2733085.2733093},
+ volume = {7},
+ year = {2014}
+}

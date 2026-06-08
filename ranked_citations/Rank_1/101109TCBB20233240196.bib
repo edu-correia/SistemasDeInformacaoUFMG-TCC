@@ -1,0 +1,18 @@
+@article{10.1109/TCBB.2023.3240196,
+ abstract = {Range-join is an operation for finding overlaps in interval-form genomic data. Range-join is widely used in various genome analysis processes such as annotation, filtering and comparison of variants in whole-genome and exome analysis pipelines. The quadratic complexity of current algorithms with sheer data volume has surged the design challenges. Existing tools have limitations on algorithm efficiency, parallelism, scalability and memory consumption. This paper proposes BIndex, a novel bin-based indexing algorithm and its distributed implementation to attain high throughput range-join processing. BIndex features near-constant search complexity while the inherently parallel data structure facilitates exploitation of parallel computing architectures. Balanced partitioning of dataset further enables scalability on distributed frameworks. The implementation on Message Passing Interface shows upto 933.5x speedup in comparison to state-of-the-art tools. Parallel nature of BIndex further enables GPU-based acceleration with 3.72x speedup than CPU implementations. The add-in modules for Apache Spark provides upto 4.65x speedup than the previously best available tool. BIndex supports wide variety of input and output formats prevalent in bioinformatics community and the algorithm is easily extendable to streaming data in recent Big Data solutions. Furthermore, the index data structure is memory-efficient and consumes upto two orders-of-magnitude lesser RAM, while having no adverse effect on speedup.},
+ address = {Washington, DC, USA},
+ author = {Sinha, Aman and Lai, Bo-Cheng and Mai, Jhih-Yong},
+ doi = {10.1109/tcbb.2023.3240196},
+ issn = {1545-5963},
+ issue_date = {May-June 2023},
+ journal = {IEEE/ACM Trans. Comput. Biol. Bioinformatics},
+ month = {January},
+ number = {3},
+ numpages = {13},
+ pages = {2210–2222},
+ publisher = {IEEE Computer Society Press},
+ title = {A Bin-Based Indexing for Scalable Range Join on Genomic Data},
+ url = {https://doi.org/10.1109/TCBB.2023.3240196},
+ volume = {20},
+ year = {2023}
+}

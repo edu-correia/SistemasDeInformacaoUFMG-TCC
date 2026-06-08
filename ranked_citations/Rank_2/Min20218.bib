@@ -1,0 +1,14 @@
+@conference{Min20218,
+ abstract = {Key-value SSDs (KVSSDs) implement the storage engine of a key-value store such as log-structured merge-tree (LSM-tree) inside the SSD. However, recent LSM-tree based KVSSDs cannot be used directly in a multi-tenant environment. LSMtree-based KVSSDs are not designed with isolation in mind in terms of namespaces and performance, leading to incorrect data access between concurrent users and poor read performance. In this paper, we propose Iso-KVSSD, a LSM-tree based KVSSD for multi-tenancy by supporting namespace and performance isolation. The Iso-KVSSD performs access control based on the user's namespace and constructs per-namespace dedicated LSM-trees for users. We implement the Iso-KVSSD on Cosmos+ OpenSSD in a Linux environment and evaluate performance with Put() and Get() workloads by varying the number of tenants. Our extensive evaluation results showed that Iso-KVSSD has negligible write performance overhead and an average 2.9 times higher read throughput than a baseline that manages one global shared LSM tree between users. © 2021 Association for Computing Machinery.},
+ author = {Min, Donghyun and Kim, Youngjae},
+ doi = {10.1145/3465332.3470883},
+ journal = {HotStorage 2021 - Proceedings of the 13th ACM Workshop on Hot Topics in Storage and File Systems},
+ note = {Cited by: 6},
+ pages = {8 - 13},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Isolating namespace and performance in key-value SSDs for multi-tenant environments},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85112111279?origin=resultslist},
+ year = {2021}
+}

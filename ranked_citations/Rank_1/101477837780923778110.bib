@@ -1,0 +1,17 @@
+@article{10.14778/3778092.3778110,
+ abstract = {Efficiently computing group aggregations (i.e., GROUP BY) on modern architectures is critical for analytic database systems. Today, hash-based methods predominantly use a partitioned approach, in which incoming data is partitioned by key so that every row for a particular key is sent to the same partition. In this paper, we revisit a simpler strategy: a fully concurrent aggregation technique using a shared hash table. While approaches using general-purpose concurrent hash tables have generally been found to perform worse than partitioning-based approaches, we argue that the key ingredient is customizing the concurrent hash table for the specific task of group aggregation. Through experiments on synthetic workloads (varying key cardinality, skew, and thread count), we demonstrate that in morsel-driven systems, a purpose-built concurrent hash table can match or surpass partitioning-based techniques. We also analyze the operational characteristics of both techniques, including resizing costs and memory pressure. In the process, we derive practical guidelines for database implementers. Overall, our analysis indicates that fully concurrent group aggregation is a viable alternative to partitioning.},
+ author = {Xue, Daniel and Marcus, Ryan},
+ doi = {10.14778/3778092.3778110},
+ issn = {2150-8097},
+ issue_date = {November 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {13},
+ pages = {523–535},
+ publisher = {VLDB Endowment},
+ title = {Global Hash Tables Strike Back! An Analysis of Parallel GROUP by Aggregation},
+ url = {https://doi.org/10.14778/3778092.3778110},
+ volume = {19},
+ year = {2025}
+}

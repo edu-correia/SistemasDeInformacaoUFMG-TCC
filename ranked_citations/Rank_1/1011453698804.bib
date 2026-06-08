@@ -1,0 +1,18 @@
+@article{10.1145/3698804,
+ abstract = {Graph pattern query is a powerful tool for extracting crucial information from property graphs. With the exponential growth of sizes, property graphs are typically divided into multiple subgraphs (referred to as partitions) and stored across various sites in distributed environments. Existing graph partitioning methods have not been efficiently optimized for pattern queries, resulting in numerous query matches across multiple partitions, called crossing matches. Identifying these matches requires much inter-partition communication, which is the primary performance bottleneck in distributed query processing. To address this issue, this paper introduces a novel connectivity-oriented relationship-disjoint partitioning method, namely RCP (Relationship Connectivity Partitioning), aimed at enhancing the efficiency of graph pattern query processing by reducing crossing matches. By employing each weakly connected component of the subgraph, which is induced by different relationship labels, as a basic unit of partition, RCP ensures that matches for both variable-length path and labeled graph pattern queries are not crossing matches. Here, variable-length path and labeled graph pattern are two common components in graph pattern queries to identify paths meeting specific label constraints and retrieve subgraphs with consistent relationship types, respectively. Moreover, in the query processing phase, we further demonstrate that all graph pattern queries, belonging to these two basic queries or their extensions, can be executed independently under RCP, thereby avoiding crossing matches. In experiments, we implemented two prototype distributed property graph systems based on Neo4j and JanusGraph, which use declarative and functional query language, respectively. Experimental results on billion-scale datasets demonstrate that our approach brings a performance improvement of nearly two orders of magnitude over state-of-the-art partitioning methods.},
+ address = {New York, NY, USA},
+ articleno = {229},
+ author = {Shi, Min and Peng, Peng and Zhou, Xu and Liu, Jiayu and Xiao, Guoqing and Li, Kenli},
+ doi = {10.1145/3698804},
+ issue_date = {December 2024},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {distributed query processing, graph pattern query, property graph partitioning},
+ month = {December},
+ number = {6},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Connectivity-Oriented Property Graph Partitioning for Distributed Graph Pattern Query Processing},
+ url = {https://doi.org/10.1145/3698804},
+ volume = {2},
+ year = {2024}
+}

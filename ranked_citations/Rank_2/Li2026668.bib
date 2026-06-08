@@ -1,0 +1,16 @@
+@conference{Li2026668,
+ abstract = {Modeling genomic sequences faces two unsolved challenges: the information density varies widely across different regions, while there is no clearly defined minimum vocabulary unit. Relying on either four primitive bases or independently designed DNA tokenizers, existing approaches with naive masked language modeling pre-training often fail to adapt to the varying complexities of genomic sequences. Leveraging Token Merging techniques, this paper introduces a hierarchical architecture that jointly optimizes a dynamic genomic tokenizer and latent Transformers with context-aware pre-training tasks. As for network structures, the tokenization module automatically chunks adjacent bases into words by stacking multiple layers of the differentiable token merging blocks with local-window constraints, then a Latent Encoder captures the global context of these merged words by full-attention blocks. Symmetrically employing a Latent Decoder and a Local Decoder, MergeDNA learns with two pre-training tasks: Merged Token Reconstruction simultaneously trains the dynamic tokenization module and adaptively filters important tokens, while Adaptive Masked Token Modeling learns to predict these filtered tokens to capture informative contents. Extensive experiments show that MergeDNA achieves superior performance on three popular DNA benchmarks and several multi-omics tasks with fine-tuning or zero-shot evaluation, outperforming typical tokenization methods and large-scale DNA foundation models. © 2026, Association for the Advancement of Artificial Intelligence (www.aaai.org). All rights reserved.},
+ author = {Li, Siyuan and Yu, Kai and Wang, Anna and Liu, Zicheng and Yu, Chang and Zhou, Jingbo and Yang, Qirong and Guo, Yucheng and Zhang, Xiaoming and Li, Stan Z.},
+ doi = {10.1609/aaai.v40i1.37032},
+ journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ number = {1},
+ pages = {668 - 676},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MergeDNA: Context-aware Genome Modeling with Dynamic Tokenization Through Token Merging},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105034388819?origin=resultslist},
+ volume = {40},
+ year = {2026}
+}

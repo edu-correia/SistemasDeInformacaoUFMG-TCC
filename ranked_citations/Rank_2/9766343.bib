@@ -1,0 +1,14 @@
+@article{9766343,
+ abstract = {This letter proposes a novel method to obtain panoptic predictions by extending the semantic segmentation task with a few non-learning image processing steps, presenting the following benefits: 1) annotations do not require a specific format [e.g., common objects in context (COCO)]; 2) fewer parameters (e.g., single loss function and no need for object detection parameters); and 3) a more straightforward sliding windows implementation for large image classification (still unexplored for panoptic segmentation). Semantic segmentation models do not individualize touching objects, as their predictions can merge; i.e., a single polygon represents many targets. Our method overcomes this problem by isolating the objects using borders on the polygons that may merge. The data preparation requires generating a one-pixel border, and for unique object identification, we create a list with the isolated polygons, attribute a different value to each one, and use the expanding border (EB) algorithm for those with borders. Although any semantic segmentation model applies, we used the U-Net with three backbones (EfficientNet-B5, EfficientNet-B3, and EfficientNet-B0). The results show that the following hold: 1) the EfficientNet-B5 had the best results with 70% mean intersection over union (mIoU); 2) the EB algorithm presented better results for better models; 3) the panoptic metrics show a high capability of identifying things and stuff with 65 panoptic quality (PQ); and 4) the sliding windows on a  $2560\times 2560$ -pixel area has shown promising results, in which the ratio of merged objects by correct predictions was lower than 1% for all classes.},
+ author = {de Carvalho, Osmar L. F. and de Carvalho Júnior, Osmar A. and de Albuquerque, Anesmar O. and Santana, Nickolas C. and Borges, Díbio L.},
+ doi = {10.1109/LGRS.2022.3172207},
+ issn = {1558-0571},
+ journal = {IEEE Geoscience and Remote Sensing Letters},
+ keyword = {Semantics;Image segmentation;Prediction algorithms;Geographic information systems;Buildings;Windows;Task analysis;Aerial image;anchor-free;deep learning;sliding windows},
+ month = {},
+ number = {},
+ pages = {1-5},
+ title = {Rethinking Panoptic Segmentation in Remote Sensing: A Hybrid Approach Using Semantic Segmentation and Non-Learning Methods},
+ volume = {19},
+ year = {2022}
+}

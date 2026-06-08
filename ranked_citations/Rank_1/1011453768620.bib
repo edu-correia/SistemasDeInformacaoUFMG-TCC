@@ -1,0 +1,14 @@
+@article{10.1145/3768620,
+ abstract = {In recent years, research in the field of knowledge graph has mainly focused on enhancing the accuracy of generated embeddings by graph representation algorithms through increasing the complexity of the vector space. However, research dedicated to optimizing the quality of entities is relatively limited. Entities that have distinct meanings in various contexts are often mistakenly merged during the extraction process. This paper introduces SplitE, an innovative two-stage embedding generation algorithm for knowledge graphs. This algorithm initially generates embeddings using non hot node entities with fewer connections, and then splits and contextualizes hot node entities with multiple meanings through clustering and back merge algorithms. The SplitE algorithm precisely differentiates entities with multiple meanings in different contexts, and hence producing higher quality embeddings. Additionally, we propose a novel improvement aimed at solving the cold start problem of the knowledge graph models, which has plagued the industry for many years. For the group of entities that are frequently updated (named as unstable entities), we design an aggregate function that utilizes relatively less frequently updated nodes (named as stable entities) to compute their embeddings, thereby reducing the frequency of retraining. Another emphasis of our study is the performance comparison of SplitE generated embeddings with those derived from existing knowledge graph algorithms and contemporary large language models. Our results show that SplitE embeddings consistently outperform those produced by state-of-the-art large language models in evaluation tasks. This includes superior performance on Walmart’s People.AI knowledge graph, which comprises 1.6 million nodes and 83 million edges, and other benchmark datasets. The successful deployment of SplitE in such a complex environment underscores its efficacy to support various downstream applications in the knowledge graph domain.},
+ address = {New York, NY, USA},
+ author = {Wang, Qixin and Wang, Dawei and Huang, Shangwen and Zeng, Pei and Wang, Ruoteng and Srinivasan, Deepika and Chen, Kun and Wu, Xintao and Yao, Kan and Li, Han},
+ doi = {10.1145/3768620},
+ journal = {ACM Trans. Recomm. Syst.},
+ keyword = {Knowledge Graph, Graph Embeddings, Entity Disambiguation, Recommendation Systems, Cold Start Problem, Large Language Models},
+ month = {September},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {SplitE: Enhancing Knowledge Graph Embedding Precision with Entity Split and Contextualization},
+ url = {https://doi.org/10.1145/3768620},
+ year = {2025}
+}

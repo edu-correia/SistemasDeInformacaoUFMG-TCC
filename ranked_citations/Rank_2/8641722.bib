@@ -1,0 +1,14 @@
+@inproceedings{8641722,
+ abstract = {In-memory databases that support both online transactional and analytical workloads rely on a process called differential updates to manage writes while maintaining the majority of data in an optimized read-only structure. This, however, necessitates the merge of a write optimized delta partition with the read-only main partition, periodically consuming a significant amount of compute and memory resources while also causing a significant database downtime during which incoming transaction requests cannot be accepted. In this paper, we present an FPGA implementation which offloads the most resource intensive component of this merge process from the CPU to the FPGA. The functionality was fully developed using FPGA tools that mirror the typical software development process, with all the inherent advantages over traditional hardware development, such as reduced development times, flexible system level design and a familiar software debugging process. Our FPGA implementation has been fully integrated with a leading enterprise in-memory database and by taking advantage of the FPGA's streaming based model, its very low latency memory access, its ability to manipulate non-primitive data types as well as its fine-grained and system level parallelism we demonstrate a performance increase of up to ~14× versus the optimized single instruction, multiple data based CPU implementation.},
+ author = {McGlone, John and Palazzari, Paolo and Leclere, J.B.},
+ booktitle = {2018 International Conference on ReConFigurable Computing and FPGAs (ReConFig)},
+ doi = {10.1109/RECONFIG.2018.8641722},
+ issn = {2640-0472},
+ keyword = {Field programmable gate arrays;Databases;Acceleration;Dictionaries;Hardware;Kernel;Tools;FPGA;in-memory database;high level synthesis},
+ month = {Dec},
+ number = {},
+ pages = {1-8},
+ title = {Accelerating Key In-memory Database Functionality with FPGA Technology},
+ volume = {},
+ year = {2018}
+}

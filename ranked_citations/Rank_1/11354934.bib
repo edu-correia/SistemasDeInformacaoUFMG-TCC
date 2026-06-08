@@ -1,0 +1,14 @@
+@inproceedings{11354934,
+ abstract = {JavaScript is rapidly being deployed in security-critical embedded domains, including IoT devices, edge computing, and smart automotive applications. Embedded JavaScript virtual machines (VMs) are critical in powering such deployments, which should be secure and trustworthy. Fuzzing is an effective approach in detecting deep bugs in these VMs by generating diverse VM bytecode programs. However, existing JavaScript fuzzers are still limited in generating diverse and valid bytecode that finds deep bugs, because they fail to track the VM operand-stack state, which leads to invalid programs and missed bugs.In this paper, we present a novel fuzzing approach called DFAFuzz, to detect deep bugs in embedded JavaScript VMs. Our key idea is to use a type-directed deterministic finite automaton (DFA) to track instruction type information, guiding the generation of new type-correct JavaScript bytecode programs from existing fuzzing seeds. First, our approach employs type reconstruction to track variable type changes during bytecode generation. Second, our approach utilizes type transitions with the aid of DFA to guide bytecode generation to produce valid bytecode. We implement a software prototype DFAFuzzer and conduct extensive experiments to evaluate its effectiveness on JerryScript and QuickJS. Our results show that DFAFuzzer improves the bytecode validity ratio by 7.6% and 2.8% for JerryScript and QuickJS over AFL++, respectively. Furthermore, DFAFuzzer detects 111 bugs that are missed by state-of-the-art fuzzers, AFL++ and Fuzzilli.},
+ author = {Lai, Haiwei and Hua, Baojian},
+ booktitle = {2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)},
+ doi = {10.1109/Trustcom66490.2025.00216},
+ issn = {2324-9013},
+ keyword = {Privacy;Computer bugs;Prototypes;Fuzzing;Virtual machines;Software;Security;Internet of Things;Testing;Edge computing;Fuzzing;program security;JavaScript bytecode},
+ month = {Nov},
+ number = {},
+ pages = {1867-1876},
+ title = {DFAFuzz: Fuzzing for Embedded JavaScript Virtual Machines with Type-Directed DFA},
+ volume = {},
+ year = {2025}
+}

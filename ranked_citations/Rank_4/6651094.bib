@@ -1,0 +1,14 @@
+@inproceedings{6651094,
+ abstract = {MapReduce is a very popular programming model used to handle large datasets in enterprise data centers and clouds. Although various implementations of MapReduce exist, Hadoop MapReduce is the most widely used in large data centers like Facebook, Yahoo! and Amazon due to its portability and fault tolerance. Network performance plays a key role in determining the performance of data intensive applications using Hadoop MapReduce as data required by the map and reduce processes can be distributed across the cluster. In this context, data center designers have been looking at high performance interconnects such as InfiniBand to enhance the performance of their Hadoop MapReduce based applications. However, achieving better performance through usage of high performance interconnects like InfiniBand is a significant task. It requires a careful redesign of communication framework inside MapReduce. Several assumptions made for current socket based communication in the current framework do not hold true for high performance interconnects. In this paper, we propose the design of an RDMA-based Hadoop MapReduce over InfiniBand and several design elements: data shuffle over InfiniBand, in-memory merge mechanism for the Reducer, and pre-fetch data for the Mapper. We perform our experiments on native InfiniBand using Remote Direct Memory Access (RDMA) and compare our results with that of Hadoop-A [1] and default Hadoop over different interconnects and protocols. For all these experiments, we perform network level parameter tuning and use optimum values for each Hadoop design. Our performance results show that, for a 100GB TeraSort running on an eight node cluster, we achieve a performance improvement of 32% over IP-over InfiniBand (IPoIB) and 21% over Hadoop-A. With multiple disks per node, this benefit rises up to 39% over IPoIB and 31% over Hadoop-A.},
+ author = {Wasi-ur-Rahman, Md. and Islam, Nusrat Sharmin and Lu, Xiaoyi and Jose, Jithin and Subramoni, Hari and Wang, Hao and Panda, Dhabaleswar K. DK},
+ booktitle = {2013 IEEE International Symposium on Parallel & Distributed Processing, Workshops and Phd Forum},
+ doi = {10.1109/IPDPSW.2013.238},
+ issn = {},
+ keyword = {Benchmark testing;Software;IP networks;Libraries;Corporate acquisitions;Distributed databases;Information management},
+ month = {May},
+ number = {},
+ pages = {1908-1917},
+ title = {High-Performance RDMA-based Design of Hadoop MapReduce over InfiniBand},
+ volume = {},
+ year = {2013}
+}

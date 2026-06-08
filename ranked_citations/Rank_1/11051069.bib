@@ -1,0 +1,14 @@
+@article{11051069,
+ abstract = {Programmable data plane (PDP) has emerged as a powerful platform for line-rate packet processing, utilizing on-chip register memory to execute stateful applications. Yet most existing efforts concentrate on static approaches for allocating register memory, necessitating switch restarting and service interruption. Despite the availability of research on sharing memory for concurrent applications, the rigid requirement of limiting memory sharing to the same pipeline stages hampers application flexibility and poses scalability challenges. To address this limitation, we present FlxVRM, a flexible register memory virtualization layer for data plane P4 programs which supports high-flexibility sharing of register memory for concurrent applications on PDP. FlxVRM enables memory allocation at any stage and location of the pipeline on PDP for each application at run time. To reduce resource usage during virtualization in the data plane pipeline, FlxVRM further merges different tables and actions with similar structures within P4 programs. Additionally, FlxVRM provides a compiler to generate data plane programs for virtualization as well as the control plane API configuration. A prototype of FlxVRM is implemented based on P4 hardware switches with Intel Tofino ASIC. Our experiment results show that FlxVRM significantly improves the allocatable memory space for applications by up to 50%, while reducing the resource of the table up to 68%.},
+ author = {Qian, Mimi and Cui, Lin and Tso, Fung Po and Deng, Yuhui and Zhang, Zhen and Jia, Weijia},
+ doi = {10.1109/TSC.2025.3583131},
+ issn = {1939-1374},
+ journal = {IEEE Transactions on Services Computing},
+ keyword = {Registers;Switches;Memory management;Virtualization;Pipelines;Resource management;Program processors;Hardware;Dynamic scheduling;Scalability;Register memory sharing;P4;programmable data plane},
+ month = {July},
+ number = {4},
+ pages = {2103-2114},
+ title = {FlxVRM: Enabling Online Configuring Memory via Virtualization on Programmable Data Plane},
+ volume = {18},
+ year = {2025}
+}

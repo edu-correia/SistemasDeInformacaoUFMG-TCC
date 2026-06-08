@@ -1,0 +1,13 @@
+@article{LU2024108115,
+ abstract = {Accurately identifying essential proteins is vital for drug research and disease diagnosis. Traditional centrality methods and machine learning approaches often face challenges in accurately discerning essential proteins, primarily relying on information derived from protein-protein interaction (PPI) networks. Despite attempts by some researchers to integrate biological data and PPI networks for predicting essential proteins, designing effective integration methods remains a challenge. In response to these challenges, this paper presents the ACDMBI model, specifically designed to overcome the aforementioned issues. ACDMBI is comprised of two key modules: feature extraction and classification. In terms of capturing relevant information, we draw insights from three distinct data sources. Initially, structural features of proteins are extracted from the PPI network through community division. Subsequently, these features are further optimized using Graph Convolutional Networks (GCN) and Graph Attention Networks (GAT). Moving forward, protein features are extracted from gene expression data utilizing Bidirectional Long Short-Term Memory networks (BiLSTM) and a multi-head self-attention mechanism. Finally, protein features are derived by mapping subcellular localization data to a one-dimensional vector and processing it through fully connected layers. In the classification phase, we integrate features extracted from three different data sources, crafting a multi-layer deep neural network (DNN) for protein classification prediction. Experimental results on brewing yeast data showcase the ACDMBI model’s superior performance, with AUC reaching 0.9533 and AUPR reaching 0.9153. Ablation experiments further reveal that the effective integration of features from diverse biological information significantly boosts the model’s performance.},
+ author = {Pengli Lu and Jialong Tian},
+ doi = {https://doi.org/10.1016/j.compbiolchem.2024.108115},
+ issn = {1476-9271},
+ journal = {Computational Biology and Chemistry},
+ keyword = {Essential proteins, Community division, Multi-source biological information, Graph convolutional networks, Self-attention mechanism},
+ pages = {108115},
+ title = {ACDMBI: A deep learning model based on community division and multi-source biological information fusion predicts essential proteins},
+ url = {https://www.sciencedirect.com/science/article/pii/S1476927124001038},
+ volume = {112},
+ year = {2024}
+}

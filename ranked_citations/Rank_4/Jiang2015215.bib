@@ -1,0 +1,15 @@
+@article{Jiang2015215,
+ abstract = {Collaborative editing cloud servers allow a group of online users to concurrently edit a document. Every user achieves consistent views of the document by applying others’ modifications, which are pushed by the cloud servers. The cloud servers repeatedly transform, order, broadcast modifications,and merge them into a joint version in a real-time manner (typically, less than one second). However, in existing solutions such as Google Docs and Cloud9, the servers employ operational transformation to resolve edit conflicts and achieve consistent views for each online user, so all inputs (and the document) are processed as plaintext by the cloud servers. In this paper, we propose LightCore, a collaborative editing cloud service for sensitive data against honestbut- curious cloud servers. A LightCore client applies stream cipher algorithms to encrypt input characters that compose the text of the document before the user sends them to servers, while the keys are shared by all authorized users and unknown to the servers. The byte-by-byte encryption feature of stream cipher enables the servers to finish all heavy processing and provide collaborative editing cloud services as the existing solutions without the protections against curious servers. Therefore, the lightweight load of clients is kept while the users’ sensitive data are protected. We implement LightCore supporting two different methods to generate keystreams, i.e., the “pure” stream cipher and the CTR mode of block cipher. Note that the document is usually modified by collaborative users for many times, and the sequence of text segments is not input and encrypted in chronological order. So, different from the stateless CTR mode of block cipher, the overall performance of high-speed but stateful stream cipher varies significantly with different key update rules and use scenarios. The analysis and evaluation results on the prototype system show that, LightCore provides secure collaborative editing services for resource-limited clients. Finally, we suggest the suitable keystream policy for different use scenarios according to these results. © Springer International Publishing Switzerland 2015.},
+ author = {Jiang, Weiyu and Lin, Jingqiang and Wang, Zhan and Li, Huorong and Wang, Lei},
+ doi = {10.1007/978-3-319-28166-7_11},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 3},
+ pages = {215 - 239},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Lightcore: Lightweight collaborative editing cloud services for sensitive data},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84955300503?origin=resultslist},
+ volume = {9092},
+ year = {2015}
+}

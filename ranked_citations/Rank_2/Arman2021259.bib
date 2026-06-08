@@ -1,0 +1,16 @@
+@article{Arman2021259,
+ abstract = {Mergesort is a popular algorithm for sorting real-world workloads as it is immune to data skewness, suitable for parallelization using vectorized intrinsics, and relatively simple to multithread. In this paper, we introduce Origami, an in-memory mergesort framework that is optimized for scalar, as well as all current SIMD (single-instruction multiple-data) CPU architectures. For each vector-extension set (e.g., SSE, AVX2, AVX-512), we present an inregister sorter for small sequences that is up to 8× faster than prior methods and a branchless streaming merger that achieves up to a 1.5× speed-up over the naive merge. In addition, we introduce a cache-residing quad-merge tree to avoid bottlenecking on memory bandwidth and a parallel partitioning scheme to maximize threadlevel concurrency. We develop an end-to-end sort with these components and produce a highly utilized mergesort pipeline by reducing the synchronization overhead between threads. Single-threaded Origami performs up to 2× faster than the closest competitor and achieves a nearly perfect speed-up in multi-core environments. © 2021, VLDB Endowment. All rights reserved.},
+ author = {Arman, Arif and Loguinov, Dmitri},
+ doi = {10.14778/3489496.3489507},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 3},
+ number = {2},
+ pages = {259 - 271},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Origami: A High-Performance Mergesort Framework},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85126188964?origin=resultslist},
+ volume = {15},
+ year = {2021}
+}

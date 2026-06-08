@@ -1,0 +1,14 @@
+@inproceedings{8368378,
+ abstract = {Memory deduplication is a technique to eliminate redundant data, save memory space and improve the performance of the whole system. There are several effective deduplication algorithms, which identify replicated data via comparing the content of different pages. However, although a few literatures utilize spatial locality to improve the efficiency of memory deduplication [1][2], they still have several limitations, such as low ratio of continuous distribution and high failure rate of prediction under unstable environments. To address these problems, in this paper, we design a new memory deduplication algorithm called “Loc-K”. On one hand, it utilizes logical addresses of different pages to ensure better continuity, which can gain better spatial locality. On the other hand, Loc-K predicts K potential duplication locations as the targets for page scanning, which improves the prediction hit ratio. Furthermore, Loc-K merges the duplicated pages directly to avoid regular searching routines. To demonstrate the effectiveness of our algorithm, we conduct several experimentations via implementation in Linux Kernel. The results show that, compared to the state-of-the-art memory deduplication algorithms, Loc-K increases the predictable opportunity by up to 97.8%, increases the prediction hit ratio by up to 96.5%, and reduces the duplication identification time by at least 34.3% respectively.},
+ author = {Jia, Shuaijie and Wu, Chentao and Li, Jie},
+ booktitle = {2017 IEEE 23rd International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS.2017.00049},
+ issn = {1521-9097},
+ keyword = {Conferences;Memory Deduplication;Duplication Identification;Spatial Locality;Prediction;Performance Evaluation},
+ month = {Dec},
+ number = {},
+ pages = {310-317},
+ title = {Loc-K: A Spatial Locality-Based Memory Deduplication Scheme with Prediction on K-Step Locations},
+ volume = {},
+ year = {2017}
+}

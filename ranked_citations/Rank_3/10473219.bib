@@ -1,0 +1,14 @@
+@article{10473219,
+ abstract = {This paper explores the design of an architecture that replaces Disk with Persistent Memory (PM) to achieve the highest I/O throughput in Log-Structured Merge Tree (LSM-Tree) based key-value stores (KVS). Most existing LSM-Tree based KVSs use PM as an intermediate or smoothing layer, which fails to fully exploit PM's unique advantages to maximize I/O throughput. However, due to PM's distinct characteristics, such as byte addressability and short erasure time, simply replacing existing storage with PM does not yield optimal I/O performance. Furthermore, LSM-Tree based KVSs often face slow read performance. To tackle these challenges, this paper presents HPDK, a hybrid PM-DRAM KVS that combines level compression for LSM-Trees in PM with a B${}^{+}$+-tree based in-memory search index in DRAM, resulting in high write and read throughput. HPDK also employs a key-value separation design and a live-item rate-based dynamic merge method to reduce the volume of PM writes. We implement and evaluate HPDK using a real PM drive, and our extensive experiments show that HPDK provides 1.25-11.8 and 1.47-36.4 times higher read and write throughput, respectively, compared to other state-of-the-art LSM-Tree based approaches.},
+ author = {Liu, Bihui and Ye, Zhenyu and Hu, Qiao and Hu, Yupeng and Hu, Yuchong and Xu, Yang and Li, Keqin},
+ doi = {10.1109/TC.2024.3377914},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Throughput;Random access memory;Computer architecture;Indexes;Heuristic algorithms;Nonvolatile memory;Metadata; $B^{+}$    B  +      -tree;key-value store;log-structured merge trees;persistent memory},
+ month = {June},
+ number = {6},
+ pages = {1575-1587},
+ title = {HPDK: A Hybrid PM-DRAM Key-Value Store for High I/O Throughput},
+ volume = {73},
+ year = {2024}
+}

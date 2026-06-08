@@ -1,0 +1,14 @@
+@inproceedings{9696486,
+ abstract = {Pre-training strategies greatly improve various image classification model's accuracy. They have proved to be effective for guiding the model to attend on objects in complex samples, thereby letting the network perform better without adding extra inference cost. However, the training strategies and pipelines dramatically vary among different models, and they only change the complexity of the samples, but do not really combine the targets with the training process of the network. We therefore propose the DetachMix augmentation strategy, and it is divided into two steps: the first step is to segment the picture according to the color channels and train them separately on the network.The second step is to merge the first convolutional layer of the obtained weight files to replace the one obtained during normal training. The network model gained through DetachMix can not only combine images with network training, but also can be used in combination with other methods of processing samples (such as cutmix [1], Mixup [2], etc.). The method we proposed improves network performance by improving the network's ability to extract original semantic information from picture, and it is applicable to all models with the same reasoning time. We conducted a test on the collected Person Head State dataset and compared our method with the latest data processing methods. DetachMix can improve up to at most 8.3% precision compared to state-of-the-art baselines,reached 91.43 %.},
+ author = {Zhao, Boyu and Dong, Zhicheng and Li, Jie and Zhao, Bin and Li, Pengfei},
+ booktitle = {2021 IEEE International Conference on Emergency Science and Information Technology (ICESIT)},
+ doi = {10.1109/ICESIT53460.2021.9696486},
+ issn = {},
+ keyword = {Training;Image segmentation;Head;Image color analysis;Pipelines;Semantics;Neural networks;Deep learning;Convolutional Neural Network;Object Detection;Pre-training strategy;channel fusion},
+ month = {Nov},
+ number = {},
+ pages = {337-342},
+ title = {DetachMix: Color Channels Fusion for Training Object Detection Neural Networks},
+ volume = {},
+ year = {2021}
+}

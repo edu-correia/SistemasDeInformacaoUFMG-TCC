@@ -1,0 +1,16 @@
+@article{10.5555/3722577.3722754,
+ abstract = {Deploying deep learning models requires taking into consideration neural network metrics such as model size, inference latency, and #FLOPs, aside from inference accuracy. This results in deep learning model designers leveraging multi-objective optimization to design effective deep neural networks in multiple criteria. However, applying multi-objective optimizations to neural architecture search (NAS) is nontrivial because NAS tasks usually have a huge search space, along with a non-negligible searching cost. This requires effective multi-objective search algorithms to alleviate the GPU costs. In this work, we implement a novel multi-objectives optimizer based on a recently proposed meta-algorithm called LaMOO Zhao et al. (2022) on NAS tasks. In a nutshell, LaMOO speedups the search process by learning a model from observed samples to partition the search space and then focusing on promising regions likely to contain a subset of the Pareto frontier. Using LaMOO, we observe an improvement of more than 200% sample efficiency compared to Bayesian optimization and evolutionary-based multi-objective optimizers on different NAS datasets. For example, when combined with LaMOO, qEHVI achieves a 225% improvement in sample efficiency compared to using qEHVI alone in NasBench201. For real-world tasks, LaMOO achieves 97.36% accuracy with only 1.62M #Params on CIFAR10 in only 600 search samples. On ImageNet, our large model reaches 80.4% top-1 accuracy with only 522M #FLOPs.},
+ articleno = {177},
+ author = {Zhao, Yiyang and Wang, Linnan and Guo, Tian},
+ issn = {1532-4435},
+ issue_date = {January 2024},
+ journal = {J. Mach. Learn. Res.},
+ keyword = {neural architecture search, Monte Carlo tree search, AutoML, deep learning},
+ month = {January},
+ number = {1},
+ numpages = {41},
+ publisher = {JMLR.org},
+ title = {Multi-objective neural architecture search by learning search space partitions},
+ volume = {25},
+ year = {2024}
+}

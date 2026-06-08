@@ -1,0 +1,14 @@
+@inproceedings{10656358,
+ abstract = {Recent advances in text-to- video generation have demonstrated the utility of powerful diffusion models. Nev-ertheless, the problem is not trivial when shaping diffusion models to animate static image (i.e., image-to-video generation). The difficulty originates from the aspect that the diffusion process of subsequent animated frames should not only preserve the faithful alignment with the given image but also pursue temporal coherence among adjacent frames. To alleviate this, we present TRIP, a new recipe of image-to-video diffusion paradigm that pivots on image noise prior derived from static image to jointly trigger inter-frame relational reasoning and ease the coherent temporal modeling via temporal residual learning. Technically, the image noise prior is first attained through one-step backward dif-fusion process based on both static image and noised video latent codes. Next, TRIP executes a residual-like dual-path scheme for noise prediction: 1) a shortcut path that directly takes image noise prior as the reference noise of each frame to amplify the alignment between the first frame and sub-sequent frames; 2) a residual path that employs 3D-UNet over noised video and static image latent codes to enable inter-frame relational reasoning, thereby easing the learning of the residual noise for each frame. Furthermore, both reference and residual noise of each frame are dynamically merged via attention mechanism for final video generation. Extensive experiments on WebVid-10M, DTDB and MSR-VTT datasets demonstrate the effectiveness of our TRIP for image-to-video generation. Please see our project page at https://trip-i2v.github.io/TRIP/.},
+ author = {Zhang, Zhongwei and Long, Fuchen and Pan, Yingwei and Qiu, Zhaofan and Yao, Ting and Cao, Yang and Mei, Tao},
+ booktitle = {2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+ doi = {10.1109/CVPR52733.2024.00828},
+ issn = {2575-7075},
+ keyword = {Computer vision;Codes;Correlation;Computational modeling;Noise;Diffusion processes;Diffusion models;diffusion model;video generation;image-to-video generation},
+ month = {June},
+ number = {},
+ pages = {8671-8681},
+ title = {TRIP: Temporal Residual Learning with Image Noise Prior for Image-to-Video Diffusion Models},
+ volume = {},
+ year = {2024}
+}

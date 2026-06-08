@@ -1,0 +1,13 @@
+@article{MA2025104499,
+ abstract = {INRs (Implicit Neural Representations) have demonstrated strong potential in the field of image representation. Unlike traditional discrete representation methods, INRs map pixel coordinates to RGB values using a neural network, where data can be stored in a continuous form. Due to the infeasibility of interpreting INRs during training, current methods cannot effectively store associated INR weights, such as network weights before and after image editing. This results in the same storage space required to store two associated INR weights as for storing two unrelated images. To address this issue, we propose a method based on Parallel Adapter, which efficiently stores multiple INRs through model fine-tuning. By storing the residuals of different INRs in parallel Adapter structures, the storage space required for multiple associated INRs is significantly reduced. Furthermore, by parallelizing and merging Adapter structures, our method achieves functionality similar to storing and merging editing histories. We conducted experiments on both images and videos, demonstrating that our method is fully compatible with existing weight training methods and methods for generating weights from hypernetworks. And with our method, it is possible to directly utilize a meta-network to generate residuals between INRs, allowing for a generalized direct editing while preserving the original INR structure.},
+ author = {Mingyi Ma and Xinzui Wang and Yan Wang and Tongda Xu and Fucheng Cao and Shichen Su},
+ doi = {https://doi.org/10.1016/j.jvcir.2025.104499},
+ issn = {1047-3203},
+ journal = {Journal of Visual Communication and Image Representation},
+ keyword = {Image editing, INRs, Image compression},
+ pages = {104499},
+ title = {PA-INR: Parallel adapter-based storage of edited implicit neural representation},
+ url = {https://www.sciencedirect.com/science/article/pii/S1047320325001130},
+ volume = {111},
+ year = {2025}
+}

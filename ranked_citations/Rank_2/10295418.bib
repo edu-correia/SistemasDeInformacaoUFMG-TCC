@@ -1,0 +1,14 @@
+@article{10295418,
+ abstract = {Log Structured Merge Tree (LSM tree) serves as the core data storage engine in modern key-value stores. Its adoption is rapidly accelerated with cloud computing and data center development. Acknowledging its widespread use, the LSM tree still faces severe performance issues such as write stall, write amplification, and read inefficiency. This article presents research on improving LSM-tree-based key-value store performance using emerging Non-Volatile Memory (NVM) technology. Our performance diagnosis reveals that the above-mentioned issues result primarily from intensive hot key-value data processing, which is compounded by slow storage devices. To address hotspot bottlenecks, we propose a split log-structured merge tree over hybrid storage by leveraging the intrinsic hot and cold data separation property of the LSM tree. Our approach promotes frequently accessed, small-sized high levels onto fast NVM and offloads the remaining cold, large-sized low levels into slow devices, effectively closing the performance gap for DRAM-disk-based LSM trees. Additionally, we optimize the split LSM tree read and write performance by proposing a variety of novel techniques. We build a hotspot-aware key-value database named SplitDB and perform extensive experiments. Experimental results demonstrate that SplitDB effectively prevents write stalls, achieves a 6-fold write reduction, and improves read throughputs by 3.5 times compared to state-of-the-art key-value databases.},
+ author = {Cai, Miao and Jiang, Xuzhen and Shen, Junru and Ye, Baoliu},
+ doi = {10.1109/TC.2023.3326982},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Compaction;Nonvolatile memory;Databases;Performance evaluation;Random access memory;Throughput;Water resources;Log-structured merge tree;non-volatile memory;key-value storage},
+ month = {Jan},
+ number = {1},
+ pages = {206-220},
+ title = {SplitDB: Closing the Performance Gap for LSM-Tree-Based Key-Value Stores},
+ volume = {73},
+ year = {2024}
+}

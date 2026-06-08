@@ -1,0 +1,17 @@
+@article{10.14778/3213880.3213890,
+ abstract = {Modern analytics applications use a diverse mix of libraries and functions. Unfortunately, there is no optimization across these libraries, resulting in performance penalties as high as an order of magnitude in many applications. To address this problem, we proposed Weld, a common runtime for existing data analytics libraries that performs key physical optimizations such as pipelining under existing, imperative library APIs. In this work, we further develop the Weld vision by designing an automatic adaptive optimizer for Weld applications, and evaluating its impact on realistic data science workloads. Our optimizer eliminates multiple forms of overhead that arise when composing imperative libraries like Pandas and NumPy, and uses lightweight measurements to make data-dependent decisions at run-time in ad-hoc workloads where no statistics are available, with sub-second overhead. We also evaluate which optimizations have the largest impact in practice and whether Weld can be integrated into libraries incrementally. Our results are promising: using our optimizer, Weld accelerates data science workloads by up to 23X on one thread and 80X on eight threads, and its adaptive optimizations provide up to a 3.75X speedup over rule-based optimization. Moreover, Weld provides benefits if even just 4--5 operators in a library are ported to use it. Our results show that common runtime designs like Weld may be a viable approach to accelerate analytics.},
+ author = {Palkar, Shoumik and Thomas, James and Narayanan, Deepak and Thaker, Pratiksha and Palamuttam, Rahul and Negi, Parimajan and Shanbhag, Anil and Schwarzkopf, Malte and Pirk, Holger and Amarasinghe, Saman and Madden, Samuel and Zaharia, Matei},
+ doi = {10.14778/3213880.3213890},
+ issn = {2150-8097},
+ issue_date = {May 2018},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {14},
+ pages = {1002–1015},
+ publisher = {VLDB Endowment},
+ title = {Evaluating end-to-end optimization for data analytics applications in weld},
+ url = {https://doi.org/10.14778/3213880.3213890},
+ volume = {11},
+ year = {2018}
+}

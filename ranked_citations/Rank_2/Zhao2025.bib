@@ -1,0 +1,16 @@
+@article{Zhao2025,
+ abstract = {Sparse matrix–vector multiplication (SpMV) is a computationally intensive kernel ubiquitously employed in various linear algebra computations. In numerous high-performance applications, SpMV computations often become a performance bottleneck, making their optimization crucial. However, the irregular structure of sparse matrices can lead to redundant calculations, resulting in unbalanced loads and inefficient bandwidth utilization during SpMV operations on GPUs. In this paper, we introduce a novel approach called block strategy and adaptive storage (BSAS) to address these challenges. Our methodology involves partitioning the original matrix into uniform-distribution blocks based on the block strategy, ensuring maximum similarity in the count of non-zero elements per block. This partitioning balances the load, reduces redundant calculations, and minimizes conversion overhead. Additionally, we dynamically assign storage formats to each block using an adaptive storage format selection method that considers the distribution of non-zero elements within the blocks. Furthermore, we develop optimized kernel implementations for each block, significantly enhancing thread-level parallelism and memory utilization. We evaluated our proposed method against NVIDIA’s cuSPARSE library and three advanced SpMV algorithms: SELLP, Merge-Based, and BalanceCSR, using matrices from the SuiteSparse dataset on NVIDIA RTX 2080 Ti and A100 GPUs. The results indicated that our method outperformed the compared algorithms, achieving average speedups of 1.84×,1.30×,1.94×, and 1.42× over cuSPARSE, SELLP, Merge-Based, and BalanceCSR, respectively. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2025.},
+ author = {Zhao, Zhixiang and Wu, Yanxia and Zhang, Guoyin and Yang, Yiqing and Liu, Haibo},
+ doi = {10.1007/s10586-024-04966-7},
+ journal = {Cluster Computing},
+ note = {Cited by: 0},
+ number = {5},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Block strategy and adaptive storage for sparse matrix–vector multiplication on GPU},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105003668206?origin=resultslist},
+ volume = {28},
+ year = {2025}
+}

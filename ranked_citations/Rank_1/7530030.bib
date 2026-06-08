@@ -1,0 +1,14 @@
+@inproceedings{7530030,
+ abstract = {DBSCAN is a well-known clustering algorithm which is based on density and is able to identify arbitrary shaped clusters and eliminate noise data. However, parallelization of DBSCAN is a challenging work because based on MPI or OpenMP environments, there exist the issues of lack of fault-tolerance and there is no guarantee that workload is balanced. Moreover, programming with MPI requires data scientists to have an advanced experience to handle communication between nodes which is a big challenge. We present a new parallel DBSCAN algorithm using the new big data framework Spark. In order to reduce search time, we apply kd-tree in our algorithm. More specifically, we propose a novel approach to avoid communication between executors so that we can locally obtain partial clusters more efficiently. Based on Java API, we select appropriate data structures carefully: Using Queue to contain neighbors of the data point, and using Hashtable when checking the status of and processing the data points. In addition, we use other advanced features from Spark to make our implementation more effective. We implement the algorithm in Java and evaluate its scalability by using different number of processing cores. Our experiments demonstrate that the algorithm we propose scales up very well. Using data sets containing up to 1 million high-dimensional points, we show that our proposed algorithm achieves speedups up to 6 using 8 cores (10k), 10 using 32 cores (100k), and 137 using 512 cores (1m). Another experiment using 10k data points is conducted and the result shows that the algorithm with MapReduce achieves speedups to 1.3 using 2 cores, 2.0 using 4 cores, and 3.2 using 8 cores.},
+ author = {Han, Dianwei and Agrawal, Ankit and Liao, Wei-Keng and Choudhary, Alok},
+ booktitle = {2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)},
+ doi = {10.1109/IPDPSW.2016.57},
+ issn = {},
+ keyword = {Sparks;Clustering algorithms;Distributed databases;Big data;Algorithm design and analysis;Programming;DBSCAN;clustering;bigdata;Spark framework},
+ month = {May},
+ number = {},
+ pages = {1393-1402},
+ title = {A Novel Scalable DBSCAN Algorithm with Spark},
+ volume = {},
+ year = {2016}
+}

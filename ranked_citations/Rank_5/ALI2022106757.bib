@@ -1,0 +1,22 @@
+@article{ALI2022106757,
+ abstract = {Context:
+The advent of modeling in software engineering, like other engineering fields, has revolutionized the formalism and pace of software development. However, software applications are not built from scratch, instead, other existing software artifacts are reused and combined with new artifacts. This notion of software reuse has been in existence for decades. When structural models such as class diagrams are reused, the reusing and reused models often need to be merged and the result visualized to the modeler. However, layout mechanisms such as GraphViz, JGraphX, and other related layout tools do not retain the original layout and rather arbitrarily layout the merged models. Therefore, important information that corresponds to the mental map of a modeler and is conveyed by the specific layout is currently lost.
+Objective:
+This paper aims to establish layout algorithms to retain the original layout information from a set of individual but interrelated models after they are merged during software reuse to preserve a modeler’s mental map of the models.
+Method:
+In this work, rpGraph uses the relative positioning of model elements to retain the general layout of a single reusing model and a single reused model (two-model merge). Additionally, rpGraph integrates its two-model merge approach into a multi-model merge in a reuse hierarchy to preserve the general topology of several interrelated models. Our findings are evaluated with 20 example single-model reuses from a library of reusable software model artifacts. We further carry out a case study in a reuse hierarchy framework, Concern Oriented Reuse (CORE), where rpGraph is applied to the layout of reusable artifacts, which result from a merge of several individual models.
+Result:
+A comparison of the merged layouts of rpGraph, GraphViz, and JGraphX shows that rpGraph performs better in terms of retaining the original layouts.
+Conclusion:
+Considering relative positioning during model merge increases the degree with which original layouts can be preserved.},
+ author = {Hyacinth Ali and Gunter Mussbacher},
+ doi = {https://doi.org/10.1016/j.infsof.2021.106757},
+ issn = {0950-5849},
+ journal = {Information and Software Technology},
+ keyword = {Relative positioning, Automatic layout, Software reuse, Model composition, Class diagram, Reuse hierarchy},
+ pages = {106757},
+ title = {Layout merging with relative positioning in Concern-Oriented Reuse hierarchies},
+ url = {https://www.sciencedirect.com/science/article/pii/S0950584921002044},
+ volume = {143},
+ year = {2022}
+}

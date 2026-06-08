@@ -1,0 +1,14 @@
+@article{9044449,
+ abstract = {Key-value (KV) store has been widely deployed in both embedded systems and enterprise systems. Most KV stores today use log structured merge tree (LSM-Tree), as LSM-Tree can eliminate random write operations to the secondary storage and maintain acceptable read performance. LSM-Tree is originally designed for the secondary storage device with hard disk drives. As the emerging storage media, three-dimensional (3-D) flash memory has become the mainstream technology to replace hard disk drives. Different from hard disk drives and the conventional planar flash memory, 3-D flash memory is vulnerable to temperature. High temperature will introduce both charge loss and retention degradation. Since LSM-Tree transfers random write operations to the sequential ones, the access to consecutive physical address in flash memory will cause the temperature issue. This will affect the integrity of data stored in 3-D flash memory. This article presents TLSM, a temperature-aware persistent data management scheme for LSM-Tree-based KV store on 3-D NAND flash memory. TLSM offers both application-level LSM-Tree optimization and firmware-level address management to allocate persistent data to 3-D flash. At the application-level, TLSM presents a novel temperature-aware LSM data structure to reduce the amount of data issued from LSM-Tree to 3-D flash memory. At the firmware-level, TLSM reallocates the data to physical blocks with relatively low temperature. This cross-layer optimization can effectively handle the temperature issue to ensure the data integrity of LSM-Tree in 3-D flash memory. We demonstrate the viability of the proposed scheme using a set of standard benchmarks. Our extensive evaluations show that, TLSM can significantly enhance the data integrity and reduce write amplifications compared to representative schemes.},
+ author = {Wang, Yi and Tan, Jiali and Mao, Rui and Li, Tao},
+ doi = {10.1109/TCAD.2020.2982623},
+ issn = {1937-4151},
+ journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+ keyword = {Three-dimensional displays;Memory management;Optimization;Data integrity;Hard disks;Temperature distribution;Temperature sensors;Flash translation layer (FTL);log structured merge tree (LSM-tree);space allocation;temperature;three-dimensional (3-D) flash memory},
+ month = {Dec},
+ number = {12},
+ pages = {4611-4622},
+ title = {Temperature-Aware Persistent Data Management for LSM-Tree on 3-D NAND Flash Memory},
+ volume = {39},
+ year = {2020}
+}

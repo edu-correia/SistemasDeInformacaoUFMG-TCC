@@ -1,0 +1,14 @@
+@article{6702416,
+ abstract = {Phase change memory (PCM) has been considered an attractive alternative to flash memory and DRAM. It has promising features, including non-volatile storage, byte addressability, fast read and write operations, and supports random accesses. However, there are challenges in designing algorithms for PCM-based memory systems, such as longer write latency and higher energy consumption compared to DRAM. In this paper, we propose a new predictive B+-tree index, called the Bp-tree, which is tailored for database systems that make use of PCM. Our Bp-tree reduces data movements caused by tree node splits and merges that arise from insertions and deletions. This is achieved by pre-allocating space on PCM for near future data. To ensure the space are allocated where they are needed, we propose a novel predictive model to ascertain future data distribution based on the current data. In addition, as in [4], when keys are inserted into a leaf node, they are packed but need not be in sorted order. We have implemented the Bp-tree in PostgreSQL and evaluated it in an emulated environment. Our experimental results show that the Bp-tree significantly reduces the number of writes, therefore making it write and energy efficient and suitable for a PCM-like hardware environment.},
+ author = {Hu, Weiwei and Li, Guoliang and Ni, Jiacai and Sun, Dalie and Tan, Kian-Lee},
+ doi = {10.1109/TKDE.2014.5},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Phase change materials;Random access memory;Predictive models;Indexing;Nonvolatile memory;Database Management;Indexing methods;Relational databases;Phase change memory (PCM);non-volatile storage;B $^{p}$ -tree;predictive model},
+ month = {Oct},
+ number = {10},
+ pages = {2368-2381},
+ title = { $\mathsf{B}^{p}$ - $\mathsf{Tree}$ : A Predictive  $\mathsf{B}^{+}$ - $\mathsf{Tree}$  for Reducing Writes on Phase Change Memory},
+ volume = {26},
+ year = {2014}
+}

@@ -1,0 +1,15 @@
+@article{10.1145/3707206,
+ abstract = {Many computing systems are constrained by a fixed amount of available shared memory. Modeling applications with task graphs or Synchronous DataFlow (SDF) graphs makes it possible to analyze and optimize their memory usage. The NP-complete problem studied here is to find a sequential schedule of dataflow graphs that minimizes their memory peak. We propose four task graph transformations that reduce the graph size while preserving the minimal memory peak. They are able to compress all Series-Parallel Directed Acyclic Graphs (SP-DAG) to a single node representing an optimal schedule (optimal in the sense that its memory peak is minimal). They also offer simple criteria to schedule optimally independent tasks and guided us to develop an optimal compositional scheduling analysis. These transformations are quite effective and compress a large class of graphs into a single node representing an optimal schedule. When this is not the case, we propose an optimized branch and bound algorithm to complete the analysis of the reduced graphs. This algorithm is able to find the optimal schedule of graphs comprising up to 100 tasks. Our approach also applies to SDF graphs after converting them to task graphs. However, since this conversion may produce huge graphs, we also describe a new suboptimal method, similar to Partial Expansion Graphs, to reduce the graph and schedule sizes. We evaluate our approach on classic benchmarks, on which we always outperform the state-of-the-art.},
+ address = {New York, NY, USA},
+ author = {Fradet, Pascal and Girault, Alain and Honorat, Alexandre},
+ doi = {10.1145/3707206},
+ issn = {1539-9087},
+ journal = {ACM Trans. Embed. Comput. Syst.},
+ keyword = {dataflow, task graph, SDF, memory peak, sequential scheduling},
+ month = {January},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Graph Transformations for Memory Peak Minimization by Scheduling},
+ url = {https://doi.org/10.1145/3707206},
+ year = {2025}
+}

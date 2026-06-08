@@ -1,0 +1,14 @@
+@conference{Hu2025188,
+ abstract = {Structured-grid problems are common in scientific computing, particularly in applications like fluid dynamics and electromagnetic simulation. One of the key kernels in solving these problems is Sparse Triangular Solve (SpTRSV), which often becomes a performance bottleneck due to its low computing intensity and inherent internal data dependencies. In structured-grid SpTRSV, the regularity of non-zero distributions and the high parallelism of sparse matrices present opportunities to harness the architectural strengths of modern heterogeneous processors. However, existing SpTRSV algorithms fail to fully exploit these advantages, due to their mismatches in data dependencies, computational order, and memory layouts. In this paper, we introduce a novel SpTRSV algorithm tailored for structured-grids on modern heterogeneous processors. Our approach introduces a two-level blocking strategy to enhance data locality and reduce communication overhead, while a vertical tiling-based pipeline balances parallelism with computational granularity. Additionally, we design hardware-specific adaptive scheduling strategies to accommodate varying degrees of parallelism across distinct architectures. The algorithm has been implemented on two types of heterogeneous processors, NVIDIA GPUs and SW26010-Pro, with hardware-specific optimizations to further improve the performance. Experimental results show that our implementations achieve speedups of more than 1.87 × over state-of-the-art baselines and provide efficient end-to-end solutions with lightweight preprocessing. © 2025 Copyright held by the owner/author(s).},
+ author = {Hu, Zhengding and Zong, Yi and Sun, Jingwei and Xue, Wei and Sun, Guangzhong},
+ doi = {10.1145/3754598.3754647},
+ journal = {54th International Conference on Parallel Processing, ICPP 2025 - Main Conference Proceedings},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {188 - 198},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Fast Sparse Triangular Solve for Structured-grid Problems on Heterogeneous Processors},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105026454309?origin=resultslist},
+ year = {2025}
+}

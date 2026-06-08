@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2024.3446689,
+ abstract = {Software-based IP route lookup is a key component for packet forwarding in Software Defined Networks. Running lookup algorithms on commodity CPUs is flexible and scalable, which shows advantages on cost and power consumption over the hardware-based forwarding engines. However, dynamic network functions and services make route updates more frequent than ever. Existing algorithms often fall short of the incremental update requirements. In this paper, we propose the Overlay BitMap Algorithm (OBMA), which contains several variations, to support extraordinary update performance while maintaining the highest-in-class lookup speed and storage efficiency. Starting from the basic OBMA_B, we develop two variations with different tradeoffs for different application scenarios. OBMA_L supports faster lookups than OBMA_B at a small cost of update speed. OBMA_S achieves better storage efficiency than OBMA_B at a small cost of lookup throughput. We run our algorithms on a commodity CPU and evaluate them with real-world route tables and traces. The experiments show that OBMA achieves the lowest memory footprint, the highest update speed, and over 200 Mpps lookup throughput. Specifically, OBMA_S reduces the memory footprint to 3.98 bytes/prefix which is 25.33% smaller that of the state-of-the-art Poptrie; OBMA_L supports 252.02 Mpps lookup throughput with a single thread, and more than 600 Mpps with multiple parallel threads in a single CPU, significantly outperforming the state-of-the-art Poptrie and SAIL; OBMA_B supports updates at a rate of 14.58M updates/s which is 15 times faster than Poptrie. The tests show that the update process has little interference with the lookup process for OBMA, and achieves zero-interrupt to lookups with multiple threads.},
+ author = {Zhang, Chuwen and Feng, Yong and Song, Haoyu and Wan, Ying and Xu, Wenquan and Liu, Bin},
+ doi = {10.1109/TNET.2024.3446689},
+ issn = {1063-6692},
+ issue_date = {Dec. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {October},
+ number = {6},
+ numpages = {13},
+ pages = {4842–4854},
+ publisher = {IEEE Press},
+ title = {OBMA: Scalable Route Lookups With Fast and Zero-Interrupt Updates},
+ url = {https://doi.org/10.1109/TNET.2024.3446689},
+ volume = {32},
+ year = {2024}
+}

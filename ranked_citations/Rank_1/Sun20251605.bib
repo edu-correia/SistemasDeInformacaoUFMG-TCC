@@ -1,0 +1,16 @@
+@article{Sun20251605,
+ abstract = {The Log-structured merge-tree (LSM-tree), widely adopted in key-value stores (KV stores), is esteemed for its efficient write performance and superb scalability amid large-scale data processing. The compaction process of LSM-trees consumes significant computational resources, thereby becoming a bottleneck for system performance. Traditionally, compaction is handled by CPUs, but CPU processing capacity often falls short of increasing demands with the surge in data volumes. To address this challenge, existing solutions attempt to accelerate compaction using GPGPUs. Due to low GPGPU parallelism and data transfer delay in prior studies, the anticipated performance improvements have not yet been fully realized. In this paper, we bring forth RGKV – a comprehensive optimization approach to overcoming the limitations of current GPGPU-empowered KV stores. RGKV features the GPGPU-adapted contiguous memory allocation and GPGPU-optimized key-value block architecture to furnish high-efficient GPGPU parallel encoding and decoding catering to the needs of KV stores. To enhance the computational efficiency and overall performance of KV stores, RGKV employs a parallel merge-sorting algorithm to maximize the parallel processing capabilities of the GPGPU. Moreover, RGKV incorporates a data transfer module anchored on the GPUDirect storage technology – designed for KV stores – and designs an efficient data structure to substantially curtail data transfer latency between an SSD and a GPGPU, boosting data transfer speed and alleviating CPU load. The experimental results demonstrate that RGKV achieves a remarkable 4× improvement in overall throughput and a 7× improvement in compaction throughput compared to the state-of-the-art KV stores, while also reducing average write latency by 70.6%. © 1968-2012 IEEE.},
+ author = {Sun, Hui and Jiang, Xiangxiang and Yue, Yinliang and Qin, Xiao},
+ doi = {10.1109/TC.2025.3535832},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 1},
+ number = {5},
+ pages = {1605 - 1619},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {RGKV: A GPGPU-Empowered Compaction Framework for LSM-Tree-Based KV Stores With Optimized Data Transfer and Parallel Processing},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105002385087?origin=resultslist},
+ volume = {74},
+ year = {2025}
+}

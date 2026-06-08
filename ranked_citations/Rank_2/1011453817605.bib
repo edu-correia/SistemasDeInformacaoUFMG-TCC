@@ -1,0 +1,15 @@
+@article{10.1145/3817605,
+ abstract = {Deep learning compilers such as TVM generate highly optimized binaries, but these transformations also expose structural cues exploitable by reverse-engineering attacks. Existing defenses are difficult to control and offer limited support for balancing security and performance. Motivated by the symbolic reasoning ability of large language models (LLMs), we ask whether LLMs can assist compiler-level obfuscation. However, because schedule obfuscation and kernel-family classification involve intertwined compiler semantics, legality constraints, and experience transfer across kernels, directly exposing raw programs to LLMs often leads to unreliable reasoning, legality violations, and poor generalization across kernels. We therefore design a language-model-friendly Program Representation Language (PRL) that links compiler-side information with LLMs and recasts kernel classification and obfuscation-experience inheritance as a constrained generation task. Our framework, PRLBridge, introduces two abstractions: a kernel-family intermediate that canonically captures legality and structural information, and PRL, a compact grammar-constrained language through which LLMs express candidate transformations. The compiler incrementally verifies generated outputs and deterministically replays legal sentences into schedules. Experiments across four models and ten LLMs show that PRL-based generation consistently improves defense effectiveness, maintains over 97% legality and 100% reproducibility, and substantially reduces compilation cost through verified and reusable schedules.},
+ address = {New York, NY, USA},
+ author = {Li, Yang and Li, Minghui and Fang, Liming},
+ doi = {10.1145/3817605},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Model Deployment Security, Deep Learning Compiler, Large Language Model, Compiled Intermediate Representation},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {PRLBridge: A Legality-Aware Interface between Compilers and LLMs for Secure DNN Obfuscation},
+ url = {https://doi.org/10.1145/3817605},
+ year = {2026}
+}

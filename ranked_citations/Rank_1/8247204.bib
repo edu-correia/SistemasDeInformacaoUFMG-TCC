@@ -1,0 +1,14 @@
+@article{8247204,
+ abstract = {The continued growth in the width of vector registers and the evolving library of intrinsics on the modern x86 processors make manual optimizations for data-level parallelism tedious and error-prone. In this paper, we focus on parallel sorting, a building block for many higher-level applications, and propose a framework for the Automatic SIMDization of Parallel Sorting (ASPaS) on x86-based multiand many-core processors. That is, ASPaS takes any sorting network and a given instruction set architecture (ISA) as inputs and automatically generates vector code for that sorting network. After formalizing the sort function as a sequence of comparators and the transpose and merge functions as sequences of vector-matrix multiplications, ASPaS can map these functions to operations from a selected “pattern pool” that is based on the characteristics of parallel sorting, and then generate the vector code with the real ISA intrinsics. The performance evaluation on the Intel Ivy Bridge and Haswell CPUs, and Knights Corner MIC illustrates that automatically generated sorting codes from ASPaS can outperform the widely used sorting tools, achieving up to 5.2x speedup over the single-threaded implementations from STL and Boost and up to 6.7x speedup over the multi-threaded parallel sort from Intel TBB.},
+ author = {Hou, Kaixi and Wang, Hao and Feng, Wu-Chun},
+ doi = {10.1109/TPDS.2018.2789903},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Sorting;Microwave integrated circuits;Registers;Merging;Distributed databases;Instruction sets;SIMD;IMCI;AVX2;Xeon Phi;sorting networks;merging networks;code-generation},
+ month = {May},
+ number = {5},
+ pages = {958-972},
+ title = {A Framework for the Automatic Vectorization of Parallel Sort on x86-Based Processors},
+ volume = {29},
+ year = {2018}
+}

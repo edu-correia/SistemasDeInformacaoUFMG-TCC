@@ -1,0 +1,14 @@
+@conference{Nie2024,
+ abstract = {The inherent out-of-place update characteristic of the Log-Structured Merge tree (LSM-tree) cannot guarantee persistent deletion within a specific time window, leading to potential data privacy and security issues. Existing solutions like Lethe-Fade ensure time-constrained persistent deletion but introduce considerable write overhead, worsening the write amplification issue, particularly for key-value stores on ZNS SSD. To address this problem, we propose a zone-aware persistent deletion scheme for key-value store engines. Targeting mitigating the write amplification induced by level compaction, we design an adaptive SSTable selection strategy for each level in the LSM-tree. Additionally, as the SSTable with deletion records would become invalid after the persistent deletion timer reaches its threshold, we designed a tombstone aware zone allocation strategy to reduce the data migration induced by garbage collection. Experimental results demonstrate that our scheme effectively ensures that most outdated physical versions are deleted before reaching the persistent deletion time threshold. When deleting 10% of keys in the key-value store engine, this scheme reduces write amplification by 69.6% and the garbage collection-induced write by 82.4% compared to the Lethe-Fade scheme. © 2024 IEEE.},
+ author = {Nie, Shiqiang and Lei, Tong and Li, Menghan and Niu, Jie and Liu, Song and Wu, Weiguo},
+ doi = {10.1109/NVMSA63038.2024.10693671},
+ journal = {Proceedings - 2024 13th IEEE Non-Volatile Memory Systems and Applications Symposium, NVMSA 2024},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Zone-Aware Persistent Deletion for Key-Value Store Engine},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85207083286?origin=resultslist},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11334273,
+ abstract = {Token-inconsistency bugs (TIBs) involve the misuse of syntactically valid yet incorrect code tokens, such as misused variables and erroneous function invocations, which can often lead to software bugs. Unlike simple syntactic bugs, TIBs occur at the semantic level and are subtle - sometimes they remain undetected for years. Traditional detection methods, such as static analysis and dynamic testing, often struggle with TIBs due to their versatile and context-dependent nature. However, advancements in large language models (LLMs) like GPT-4 present new opportunities for automating TIB detection by leveraging these models’ semantic understanding capabilities.This paper reports the first systematic measurement of LLMs’ capabilities in detecting TIBs, revealing that while GPT-4 shows promise, it exhibits limitations in precision and scalability. Specifically, its detection capability is undermined by the model’s tendency to focus on the code snippets that do not contain TIBs; its scalability concern arises from GPT-4’s high cost and the massive amount of code requiring inspection. To address these challenges, we introduce LineBreaker, a novel and cascaded TIB detection system. LineBreaker leverages smaller, codespecific, and highly efficient language models to filter out large numbers of code snippets unlikely to contain TIBs, thereby significantly enhancing the system’s performance in terms of precision, recall, and scalability. We evaluated LineBreaker on 154 Python and C GitHub repositories, each with over 1,000 stars, uncovering 123 new flaws, 45% of which could be exploited to disrupt program functionalities. Out of our 69 submitted fixes, 41 have already been confirmed or merged.},
+ author = {Chen, Hongbo and Zhang, Yifan and Han, Xing and Mao, Tianhao and Rong, Huanyao and Zhang, Yuheng and Wang, XiaoFeng and Xing, Luyi and Chen, Xun and Zhang, Hang},
+ booktitle = {2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+ doi = {10.1109/ASE63991.2025.00079},
+ issn = {2643-1572},
+ keyword = {Codes;Systematics;Scalability;Large language models;Computer bugs;Semantics;Stars;Static analysis;Syntactics;Testing;Semantic Bug;Large Language Model for Security;Token-inconsistency Bug;Logic Bug;Bug Detection},
+ month = {Nov},
+ number = {},
+ pages = {893-905},
+ title = {LineBreaker: Finding Token-Inconsistency Bugs with Large Language Models},
+ volume = {},
+ year = {2025}
+}

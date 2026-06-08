@@ -1,0 +1,16 @@
+@article{Yao20229691,
+ abstract = {In the past ten years, solid-state drive (SSD) has become one of the mainstream storage devices due to its performance advantages. However, how to reduce the impact of garbage collection operations on host-side IO is still a challenging issue in SSD firmware design. To solve this problem, this paper proposes a uniform scheduling of interruptible garbage collection and host IO (USIGC). The main contributions of USIGC include: First, USIGC sets up an interruptible garbage collection sub-request queue, and then uniformly schedules this sub-request queue with the host IO queue. In this way, the idle time of each channel is fully utilized to complete valid page migration and erase operation of interrupt garbage collection. Second, USIGC predicts the probability that the erase operation can be completed in the current idle time based on the historical idle interval and then makes the erase operation decision to reduce the probability of blocking the host IO. Third, by converting the amount of data that can be written in future to the present and taking the number of invalid pages of the current block as the selection basis of the victim block, the garbage collection and wear-leveling can be unified. Experimental results show that, compared with existing works, USIGC can reduce the average response time and max wait time and achieve the best wear-leveling performance. © 2022, The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature.},
+ author = {Yao, Yingbiao and Kong, Xiaochong and Bao, Jiecheng and Xu, Xin and Gu, Nenghua and Feng, Wei},
+ doi = {10.1007/s11227-021-04294-2},
+ journal = {Journal of Supercomputing},
+ note = {Cited by: 5},
+ number = {7},
+ pages = {9691 - 9710},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Uniform scheduling of interruptible garbage collection and request IO to improve performance and wear-leveling of SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85123173829?origin=resultslist},
+ volume = {78},
+ year = {2022}
+}

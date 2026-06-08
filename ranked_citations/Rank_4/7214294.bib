@@ -1,0 +1,14 @@
+@article{7214294,
+ abstract = {System testing of a GUI-based application requires that test cases, consisting of sequences of user actions/events, be executed and the software's output be verified. To enable automated re-testing, such test cases are increasingly being coded as low-level test scripts, to be replayed automatically using test harnesses. Whenever the GUI changes—widgets get moved around, windows get merged—some scripts become unusable because they no longer encode valid input sequences. Moreover, because the software's output may have changed, their test oracles—assertions and checkpoints—encoded in the scripts may no longer correctly check the intended GUI objects. We present ScrIpT repAireR (SITAR), a technique to automatically repair unusable low-level test scripts. SITAR uses reverse engineering techniques to create an abstract test for each script, maps it to an annotated event-flow graph (EFG), uses repairing transformations and human input to repair the test, and synthesizes a new “repaired” test script. During this process, SITAR also repairs the reference to the GUI objects used in the checkpoints yielding a final test script that can be executed automatically to validate the revised software. SITAR amortizes the cost of human intervention across multiple scripts by accumulating the human knowledge as annotations on the EFG. An experiment using QTP test scripts suggests that SITAR is effective in that 41-89 percent unusable test scripts were repaired. Annotations significantly reduced human cost after 20 percent test scripts had been repaired.},
+ author = {Gao, Zebao and Chen, Zhenyu and Zou, Yunxiao and Memon, Atif M.},
+ doi = {10.1109/TSE.2015.2454510},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Maintenance engineering;Graphical user interfaces;Software;Testing;Automation;Computational modeling;Electronic mail;GUI testing;GUI test script;test script repair;human knowledge accumulation;GUI testing;GUI test script;test script repair;human knowledge accumulation},
+ month = {Feb},
+ number = {2},
+ pages = {170-186},
+ title = {SITAR: GUI Test Script Repair},
+ volume = {42},
+ year = {2016}
+}

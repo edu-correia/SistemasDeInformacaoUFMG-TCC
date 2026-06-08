@@ -1,0 +1,16 @@
+@article{Koo2025,
+ abstract = {Modern storage technologies aim at enhancing performance and lower costs. With advances in storage devices, numerous studies propose key-value store designs for heterogeneous storage systems. Many rely on the Log-Structured Merge-Tree (LSM), which optimizes write-heavy workloads and flash storage. However, LSM-tree-based key-value stores on heterogeneous storage systems suffer from severe performance degradation and a surge in query latency. A key issue is write stall constraints, which arise from considering only single-tier storage, limiting key-value stores from leveraging multi-tier architectures. Another problem with key-value stores for heterogeneous storage systems is the inter-storage imbalance. Performance discrepancies between storage tiers fluctuate due to each storage device’s differing storage media technologies and garbage collection mechanisms. Consequently, existing hierarchical storage-based key-value stores (HSKVS) do not fully utilize the resources of storage devices across tiers and do not account for the performance imbalance between storage tiers. This article presents an I/O scheduler designed to maintain data balance across storage tiers of multi-tiered storage engines. Our approach leverages two key techniques: dynamic data layout and flush I/O throttling. Dynamic data layout optimizes data placement by adapting to performance metrics and workload demands. This approach ensures data is stored in the most appropriate tier, improving access times and reducing latency. Meanwhile, flush I/O throttling aims at efficiently managing the I/O workload by controlling data movement between memory and storage. It balances data flow, preventing bottlenecks, especially during peak usage. To evaluate the effectiveness of our proposed I/O scheduler, we integrated it into a conventional HSKVS system. This integration achieved up to a 14.7× performance improvement on YCSB workload D compared to conventional HSKVS systems. Furthermore, our proposed scheduler reduced the tail latency for get queries by about 9.3×, from 13 ms to 1.4 ms. © 2025 Copyright held by the owner/author(s).},
+ author = {Koo, Kyoungho and Lee, Junhan},
+ doi = {10.1145/3722224},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 1; All Open Access; Hybrid Gold Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Maintaining Inter-Layer Equilibrium in Hierarchical-Storage-based KV Store},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105023300289?origin=resultslist},
+ volume = {21},
+ year = {2025}
+}

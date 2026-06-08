@@ -1,0 +1,17 @@
+@article{10.14778/2733085.2733100,
+ abstract = {Privacy has been the key road block to cloud computing as clouds may not be fully trusted. This paper concerns the problem of privacy preserving range query processing on clouds. Prior schemes are weak in privacy protection as they cannot achieve index indistinguishability, and therefore allow the cloud to statistically estimate the values of data and queries using domain knowledge and history query results. In this paper, we propose the first range query processing scheme that achieves index indistinguishability under the indistinguishability against chosen keyword attack (IND-CKA). Our key idea is to organize indexing elements in a complete binary tree called PBtree, which satisfies structure indistinguishability (i.e., two sets of data items have the same PBtree structure if and only if the two sets have the same number of data items) and node indistinguishability (i.e., the values of PBtree nodes are completely random and have no statistical meaning). We prove that our scheme is secure under the widely adopted IND-CKA security model. We propose two algorithms, namely PBtree traversal width minimization and PBtree traversal depth minimization, to improve query processing efficiency. We prove that the worse case complexity of our query processing algorithm using PBtree is O(|R| log n), where n is the total number of data items and R is the set of data items in the query result. We implemented and evaluated our scheme on a real world data set with 5 million items. For example, for a query whose results contain ten data items, it takes only 0.17 milliseconds.},
+ author = {Li, Rui and Liu, Alex X. and Wang, Ann L. and Bruhadeshwar, Bezawada},
+ doi = {10.14778/2733085.2733100},
+ issn = {2150-8097},
+ issue_date = {October 2014},
+ journal = {Proc. VLDB Endow.},
+ month = {October},
+ number = {14},
+ numpages = {12},
+ pages = {1953–1964},
+ publisher = {VLDB Endowment},
+ title = {Fast range query processing with strong privacy protection for cloud computing},
+ url = {https://doi.org/10.14778/2733085.2733100},
+ volume = {7},
+ year = {2014}
+}

@@ -1,0 +1,15 @@
+@article{Cao202578,
+ abstract = {Sparse Matrix-Dense Matrix Multiplication (SpMM) is a crucial kernel used in a wide range of fields including machine learning and linear algebra solvers. Thus, enhancing the performance of SpMM is essential. The uneven distribution of non-zeros in sparse matrices and the tight data dependency between sparse and dense matrices make efficiently running SpMM on various hardware platforms challenging. To address these issues, optimisations are tailored according to the characteristics of the different hardware platforms. In this study, we propose a Long Row Split and Short Row Merge (LSSM) approach on the new MIMD computing platform PEZY-SC3s, utilising the standard Compressed Sparse Row (CSR) format to optimise SpMM. Specifically, LSSM divides the rows of the sparse matrix into short rows (rows with a number of non-zeros less than blockSize) and long rows (rows with a number of non-zeros greater than blockSize), applying splitting to the long rows and merging to the short rows to optimize their computations separately. Additionally, based on the hardware features of PEZY-SC3s, we employed the atomic cache for workload scheduling, SIMD instructions to accelerate computation, and Local Memory to reduce data read-write operations, addressing issues of poor data locality, workload imbalance, and vectorisation during SpMM execution. As the first study of SpMM on PEZY-SC3s, compared with BS-SpMM and RoDe-SpMM implemented on PEZY-SC3s, LSSM-SpMM offers up to 26.17× and 13.59× acceleration on the SuiteSparse and deep learning datasets, respectively, with geometric mean speedups of 1.56× and 1.71×. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2025.},
+ author = {Cao, Ligang and Wang, Qinglin and Yang, Shun and Xia, Rui and Guo, Weihao and Liu, Jie},
+ doi = {10.1007/978-981-96-1551-3_7},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) },
+ note = {Cited by: 1},
+ pages = {78 - 97},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LSSM-SpMM: A Long-Row Splitting and Short-Row Merging Approach for Parallel SpMM on PEZY-SC3s},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85218976043?origin=resultslist},
+ volume = {15256 LNCS},
+ year = {2025}
+}

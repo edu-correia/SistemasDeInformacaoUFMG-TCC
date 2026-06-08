@@ -1,0 +1,18 @@
+@article{10.1145/3788105,
+ abstract = {Cloud computing data centers handle highly variable workloads: job resource requirements can range from just one or few cores to thousands, and job service times can range from milliseconds to hours or days. This variability significantly limits the maximum achievable utilization of infrastructures. Queuing theory has addressed the study of these systems with the definition of the Multiserver-Job Queuing Model (MJQM), where s identical servers are present and job n requires αn of the s servers for a random amount of time σn. The αn servers are occupied and released simultaneously. Unfortunately, despite its simple formulation, the MJQM remains elusive. For example, the MJQM stability condition has been derived only in particular cases. As a consequence, even applying Discrete-Event Simulation (DES) under high load becomes challenging, because stability cannot be determined a priori. In this paper, we analyze the MJQM with general independent arrival processes and service times under FCFS scheduling, using stochastic recurrence equations (SREs) and ergodic theory. Starting from the definition of the MJQM SRE, we prove the monotonicity and separability properties that allow us to apply an extension of Loynes' theorem, known as the monotone-separable framework, and formally define the MJQM stability condition. From these results, we introduce and implement two algorithms: the first one is used to draw sub-perfect samples (SPS) of the system's workload and the second one estimates the system's stability condition given the statistics of the jobs' input stream. The nature of the SPS algorithm allows for a massive GPU parallelization, thus greatly improving the efficiency in the estimation of performance metrics. The algorithm for the estimation of the stability condition solves an important problem for the analysis of MJQMs. We also define new metrics that capture the synchronization loss in MJQM systems and we show how these metrics can be efficiently evaluated using the SRE approach. Finally, we show that the approach proposed in this paper can be extended to more complicated systems, including MJQMs where resources have types.},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Baccelli, Fran\c{c}ois and Olliaro, Diletta and Ajmone Marsan, Marco and Marin, Andrea},
+ doi = {10.1145/3788105},
+ issue_date = {March 2026},
+ journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+ keyword = {multiserver-job queue, stochastic recurrence equation, loynes' theorem, perfect sample, coupling from the past, subadditive ergodic theorem, monotone-separable network, numerical analysis, cloud computing, data center},
+ month = {March},
+ number = {1},
+ numpages = {25},
+ publisher = {Association for Computing Machinery},
+ title = {The Multiserver-Job Stochastic Recurrence Equation for Cloud Computing Performance Evaluation},
+ url = {https://doi.org/10.1145/3788105},
+ volume = {10},
+ year = {2026}
+}

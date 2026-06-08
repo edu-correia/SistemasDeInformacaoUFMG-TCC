@@ -1,0 +1,14 @@
+@article{9165127,
+ abstract = {This article addresses two important issues of causal inference in the high-dimensional situation. One is how to reduce redundant conditional independence (CI) tests, which heavily impact the efficiency and accuracy of existing constraint-based methods. Another is how to construct the true causal graph from a set of Markov equivalence classes returned by these methods. For the first issue, we design a recursive decomposition approach where the original data (a set of variables) are first decomposed into two small subsets, each of which is then recursively decomposed into two smaller subsets until none of these subsets can be decomposed further. Redundant CI tests can be reduced by inferring causalities from these subsets. The advantage of this decomposition scheme lies in two aspects: 1) it requires only low-order CI tests and 2) it does not violate  $d$ -separation. The complete causality can be reconstructed by merging all the partial results of the subsets. For the second issue, we employ regression-based CI tests to check CIs in linear non-Gaussian additive noise cases, which can identify more causal directions by  $x - E(x|Z) \_{}\!\!\_{}\!\!\!\!\!\shortparallel z$  (or  $y - E(y|Z) \_{}\!\!\_{}\!\!\!\!\!\shortparallel z$ ). Consequently, causal direction learning is no longer limited by the number of returned  $V$ -structures and consistent propagation. Extensive experiments show that the proposed method can not only substantially reduce redundant CI tests but also effectively distinguish the equivalence classes.},
+ author = {Zhang, Hao and Zhou, Shuigeng and Yan, Chuanxu and Guan, Jihong and Wang, Xin and Zhang, Ji and Huan, Jun},
+ doi = {10.1109/TCYB.2020.3010004},
+ issn = {2168-2275},
+ journal = {IEEE Transactions on Cybernetics},
+ keyword = {Additive noise;Markov processes;Merging;Computer science;Task analysis;Testing;Cybernetics;Additive noise model (ANM);causal inference;Markov equivalence classes},
+ month = {May},
+ number = {5},
+ pages = {3232-3243},
+ title = {Learning Causal Structures Based on Divide and Conquer},
+ volume = {52},
+ year = {2022}
+}

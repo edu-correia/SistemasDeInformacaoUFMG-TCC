@@ -1,0 +1,18 @@
+@article{10.1145/3611653,
+ abstract = {PQ-trees and PC-trees are data structures that represent sets of linear and circular orders, respectively, subject to constraints that specific subsets of elements have to be consecutive. While equivalent to each other, PC-trees are conceptually much simpler than PQ-trees; updating a PC-tree so that a set of elements becomes consecutive requires only a single operation, whereas PQ-trees use an update procedure that is described in terms of nine transformation templates that have to be recursively matched and applied.Despite these theoretical advantages, to date no practical PC-tree implementation is available. This might be due to the original description by Hsu and McConnell&nbsp;[14] in some places only sketching the details of the implementation. In this paper, we describe two alternative implementations of PC-trees. For the first one, we follow the approach by Hsu and McConnell, filling in the necessary details and also proposing improvements on the original algorithm. For the second one, we use a different technique for efficiently representing the tree using a Union-Find data structure. In an extensive experimental evaluation we compare our implementations to a variety of other implementations of PQ-trees that are available on the web as part of academic and other software libraries. Our results show that both PC-tree implementations beat their closest fully correct competitor, the PQ-tree implementation from the OGDF library&nbsp;[6, 15], by a factor of 2 to 4, showing that PC-trees are not only conceptually simpler but also fast in practice. Moreover, we find the Union-Find-based implementation, while having a slightly worse asymptotic runtime, to be twice as fast as the one based on the description by Hsu and McConnell.},
+ address = {New York, NY, USA},
+ articleno = {1.10},
+ author = {Fink, Simon D. and Pfretzschner, Matthias and Rutter, Ignaz},
+ doi = {10.1145/3611653},
+ issn = {1084-6654},
+ issue_date = {December 2023},
+ journal = {ACM J. Exp. Algorithmics},
+ keyword = {PQ-tree, PC-tree, consecutive ones, experimental evaluation},
+ month = {October},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Experimental Comparison of PC-Trees and PQ-Trees},
+ url = {https://doi.org/10.1145/3611653},
+ volume = {28},
+ year = {2023}
+}

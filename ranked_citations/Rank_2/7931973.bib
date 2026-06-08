@@ -1,0 +1,14 @@
+@article{7931973,
+ abstract = {In recent years, flash memory has been widely used in embedded devices and enterprise computing environments because of its many advantages, which includes shock resistance, low energy consumption, non-volatile nature and high I/O speed. However, flash memory hardware also possesses characteristics such as erase-before write, a limited number of erase cycles and asymmetric I/O costs among read, write, and erase operations, where the cost of write and erase operations are much higher than that of read operations. Hence, there is the need for the cache-replacement policy in flash-based systems to consider the asymmetric I/O costs. Previous studies on cache management including least recently used (LRU), clean-first LRU (CFLRU) and cold clean-first LRU (CCF-LRU) focused mainly on to reducing the write access to flash memory by evicting clean pages before dirty pages, and they do not consider how the evicted page would be treated by the flash memory. This resulted in performance degradation. Flash aware buffer-management (FAB) tries to evict pages considering the inner structure of flash memory but there are problems related to the high cache-miss ratio and the generation of a large number of write operations to the flash memory. This paper proposes a log-buffer aware (LBA) cache-replacement policy that not only tries to reduce the number of write accesses to flash memory as well as the high cache hit ratio, but also evicts pages while considering the log-block associativity problem of log-based flash translation layers (FTLs). Experimental results show that compare to previous studies, the proposed cache-replacement policy is more effective for higher cache-hit ratio and for reducing the garbage-collection overhead of flash memory by increasing the partial merge and switch operation. },
+ author = {Anwar, Usman and Paik, Joon-Young and Jin, Rize and Chung, Tae-Sun},
+ doi = {10.1109/TCE.2017.7931973},
+ issn = {1558-4127},
+ journal = {IEEE Transactions on Consumer Electronics},
+ keyword = {Flash memories;Hardware;Electronic mail;Operating systems;Switches;Memory management;flash memory;cache management;page replacement policy;flash translation layer;embedded devices},
+ month = {February},
+ number = {1},
+ pages = {77-84},
+ title = {Log-buffer aware cache replacement policy for flash storage devices},
+ volume = {63},
+ year = {2017}
+}

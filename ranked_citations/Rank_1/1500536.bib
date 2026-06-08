@@ -1,0 +1,14 @@
+@inproceedings{1500536,
+ abstract = {Very large irregular-grid volume data sets are typically represented as tetrahedral mesh and require substantial disk I/O and rendering computation. One effective way to reduce this demanding resource requirement is compression. Previous research showed how rendering and decompression of a losslessly compressed irregular-grid data set can be integrated into a one-pass computation. This work, advances the state of the art one step further by showing that a losslessly compressed irregular volume data set can be simplified while it is being decompressed and that simplification, decompression, and rendering can again be integrated into a pipeline that requires only a single pass through the data sets. Since simplification is a form of lossy compression, the on-the-fly volume simplification algorithm provides a powerful mechanism to dynamically create versions of a tetrahedral mesh at multiple resolution levels directly from its losslessly compressed representation, which also corresponds to the finest resolution level. In particular, an irregular-grid volume Tenderer can exploit this multi-resolution representation to maintain interactivity on a given hardware/software platform by automatically adjusting the amount of rendering computation that could be afforded, or performing so called time-critical rendering. The proposed tetrahedral mesh simplification algorithm and its integration with volume decompression and rendering has been successfully implemented in the Gatun system. Performance measurements on the Gatun prototype show that simplification only adds less than 5% of performance overhead on an average and with multi-resolution pre-simplification the end-to-end rendering delay indeed decreases in an approximately linear fashion with respect to the simplification ratio.},
+ author = {Chuan-Kai Yang and Tzi-Cker Chiueh},
+ booktitle = {Fourth International Workshop on Volume Graphics, 2005.},
+ doi = {10.1109/VG.2005.194109},
+ issn = {1727-8376},
+ keyword = {Pipelines;Hardware;Software maintenance;Software performance;Time factors;Measurement;Software prototyping;Prototypes;Delay;Linear approximation},
+ month = {June},
+ number = {},
+ pages = {147-237},
+ title = {An integrated processing pipeline for irregular volume data},
+ volume = {},
+ year = {2005}
+}

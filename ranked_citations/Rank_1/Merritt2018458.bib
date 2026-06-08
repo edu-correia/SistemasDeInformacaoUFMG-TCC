@@ -1,0 +1,16 @@
+@article{Merritt2018458,
+ abstract = {Key-value stores are an important tool in managing and accessing large in-memory data sets. As many applications benefit from having as much of their working state fit into main memory, an important design of the memory management of modern key-value stores is the use of log-structured approaches, enabling efficient use of the memory capacity, by compacting objects to avoid fragmented states. However, with the emergence of thousand-core and peta-byte memory platforms (DRAM or future storage-class memories) logstructured designs struggle to scale, preventing parallel applications from exploiting the full capabilities of the hardware: careful coordination is required for background activities (compacting and organizing memory) to remain asynchronous with respect to the use of the interface, and for insertion operations to avoid contending for centralized resources such as the log head and memory pools. In this work, we present the design of a log-structured key-value store called Nibble that incorporates a multi-head log for supporting concurrent writes, a novel distributed epoch mechanism for scalable memory reclamation, and an optimistic concurrency index. We implement Nibble in the Rust language in ca. 4000 lines of code, and evaluate it across a variety of data-serving workloads on a 240- core cache-coherent server. Our measurements show Nibble scales linearly in uniform YCSB workloads, matching competitive nonlog- structured key-value stores for write- dominated traces at 50 million operations per second on 1 TiB-sized working sets. Our memory analysis shows Nibble is efficient, requiring less than 10% additional capacity, whereas memory use by non-log-structured key-value store designs may be as high as 2x. © 2017 VLDB.},
+ author = {Merritt, Alexander and Gavrilovska, Ada and Chen, Yuan and Milojicic, Dejan},
+ doi = {10.1145/3164135.3164142},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 8},
+ number = {4},
+ pages = {458 - 471},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Concurrent logstructured memory for many-core key-value stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85078014206?origin=resultslist},
+ volume = {11},
+ year = {2018}
+}

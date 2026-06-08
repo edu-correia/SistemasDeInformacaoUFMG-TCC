@@ -1,0 +1,18 @@
+@article{10.1145/3591232,
+ abstract = {Persistent memory (PM) is an emerging class of storage technology that combines the performance of DRAM with the durability of SSD, offering the best of both worlds. This had led to a surge of research on persistent objects in PM. Among such persistent objects, concurrent data structures (DSs) are particularly interesting thanks to their performance and scalability. One of the most widely used correctness criteria for persistent concurrent DSs is detectable recoverability, ensuring both thread safety (for correctness in non-crashing concurrent executions) and crash consistency (for correctness in crashing executions). However, the existing approaches to designing detectably recoverable concurrent DSs are either limited to simple algorithms or suffer from high runtime overheads. We present Memento: a general and high-performance programming framework for detectably recoverable concurrent DSs in PM. To ensure general applicability to various DSs, Memento supports primitive operations such as checkpoint and compare-and-swap and their composition with control constructs. To ensure high performance, Memento employs a timestamp-based recovery strategy that requires fewer writes and flushes to PM than the existing approaches. We formally prove that Memento ensures detectable recoverability in the presence of crashes. To showcase Memento, we implement a lock-free stack, list, queue, and hash table, and a combining queue that detectably recovers from random crashes in stress tests and performs comparably to existing hand-tuned persistent DSs with and without detectable recoverability.},
+ address = {New York, NY, USA},
+ articleno = {118},
+ author = {Cho, Kyeongmin and Jeon, Seungmin and Raad, Azalea and Kang, Jeehoon},
+ doi = {10.1145/3591232},
+ issue_date = {June 2023},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {concurrent data structure, detectable recovery, persistent memory},
+ month = {June},
+ number = {PLDI},
+ numpages = {26},
+ publisher = {Association for Computing Machinery},
+ title = {Memento: A Framework for Detectable Recoverability in Persistent Memory},
+ url = {https://doi.org/10.1145/3591232},
+ volume = {7},
+ year = {2023}
+}

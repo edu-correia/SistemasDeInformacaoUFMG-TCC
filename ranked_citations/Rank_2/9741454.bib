@@ -1,0 +1,14 @@
+@inproceedings{9741454,
+ abstract = {The rising prominence of write-dominated workloads has led to a rise in the usage of storage engines based on Log-Structured Merge Trees (LSMTs). LSMT-based storage engines provide higher write throughput, and this is predominantly because they are built around the idea that writing large amounts of data to the disk sequentially is faster than writing smaller amounts of data to disk at random locations, which is the behaviour in B+ Trees based storage engines. However, LSMT-based storage engines still experience high tail latencies, which can be particularly bad on high fan out systems where the effect of tail latencies gets amplified. In this work, we analyse the causes of high tail latencies in LevelDB, PebblesDB and other SOTA architectures to quantify these latencies. We additionally present the design of an LSM Forest, which aims to counteract the latency spikes issue, which uses multiple parallel LSM trees working on partitions of data, along with a scheduler that selects the best LSM from them to service reads or writes. The LSM forest design on average gives 0.003 times the latency observed in a few of the SOTA architectures and brings down the tail latency spikes by almost 97% for write dominant workloads and about 66% for read dominant workloads.},
+ author = {Kumaraswamy, Aishwarya and Lagwankar, Ishaan and M, Tejvi and Anjan, Spurthi N and Kalambur, Subramaniam},
+ booktitle = {2021 IEEE International Conference on Cloud Computing in Emerging Markets (CCEM)},
+ doi = {10.1109/CCEM53267.2021.00014},
+ issn = {},
+ keyword = {Fans;Databases;Conferences;Tail;Forestry;Writing;Parallel processing;Log Structured Merge Trees;Database;Distributed Systems},
+ month = {Oct},
+ number = {},
+ pages = {23-30},
+ title = {The Log Structured Merge Forest},
+ volume = {},
+ year = {2021}
+}

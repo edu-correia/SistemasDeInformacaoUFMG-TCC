@@ -1,0 +1,16 @@
+@article{Liang2025,
+ abstract = {The zoned storage has revolutionized the decades-old block storage in lowering the cost-per-gigabyte while enabling the host system to achieve better performance. With such benefit of cost and performance, we still require careful consideration on the endurance when deploying the applications on the zoned storage, since the modern storage tends to trade its endurance for larger capacity at lower cost. In this regard, although previous studies have deployed the log-structure merge (LSM-tree)-based key-value (KV) store on the zoned storage, the LSM-tree-based KV store can be suboptimal choice to build a cost-effective KV store on zoned storage, since LSM-tree has a well-known problem of write amplification (WA).Therefore, based on the key insight that the Fragmented Log-Structured Merge tree (FLSM-tree) substantially alleviates the notorious write amplification problem of the classical LSM-tree and inherently complies with the sequential write constraint of zoned storage, FLSM-tree would be a promising design choice to build a cost-effective KV store on zoned storage. However, based on our investigation, deploying an FLSM-tree-based KV store on zoned storage faces two challenges: The write amplification of the host-initiated garbage collection (GC) cancels out the low WA merit of FLSM-tree, and FLSM-tree results in high space amplification to increase the cost. In this regard, this article presents ZonesDB, a novel FLSM-tree-based KV store that comes with a series of innovative "zone-aware"techniques for pursuing write optimality and space adaptability. Our evaluations, based on two types of production-grade zoned storage (i.e., ZNS SSD and HM-SMR HDD), reveal that ZonesDB can bring into play the low WA merit of FLSM-tree, deliver outstanding write performance, and mitigate the space amplification problem of FLSM-tree on zoned storage.  © 2025 Copyright held by the owner/author(s).},
+ author = {Liang, Yuhong and Wang, Yingjia and Yang, Tsun-Yu and Bjørling, Matias and Yang, Ming-Chang},
+ doi = {10.1145/3715331},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 0; All Open Access; Hybrid Gold Open Access},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ZonesDB: Building Write-Optimized and Space-Adaptive Key-Value Store on Zoned Storage with Fragmented LSM Tree},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105003321582?origin=resultslist},
+ volume = {21},
+ year = {2025}
+}

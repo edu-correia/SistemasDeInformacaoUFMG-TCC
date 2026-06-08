@@ -1,0 +1,14 @@
+@conference{Gu202476,
+ abstract = {Memory deduplication techniques are widely used to improve memory utilization in cloud computing platforms, and they can be categorized into virtualized and containerized environments. In virtualized environments, prevalent memory deduplication approaches often rely on scanning the virtual address space of different processes. However, the complexity of virtual address spaces can reduce scanning efficiency in containerized environments. Additionally, the many-to-one mapping between virtual and physical pages can decrease the efficiency of merging operations.To solve the above problems, we proposed a Container-based Kernel Samepage Merging method called CKSM. This method leverages potential duplicate candidates and efficiently performs merging operations. It employs layered sampling to construct the priority of physical pages. Additionally, a physical page scanning mechanism is designed to directly obtain valid pages within the system. CKSM uses the physical page merge mechanism to merge all virtual pages at once and release the corresponding memory directly. We conduct several experiments to demonstrate the efficiency of CKSM. It reduces the scanning overhead by up to 80.99% and increases page comparison efficiency by up to 42.51%. Besides, CKSM achieves an average of 3.02×memory usage reduction compared to UKSM and 2.79×response speedup compared to KSM in the containerized environment. In cloud computing emulation, CKSM has been proven to be optimal in high-density deployment. © 2024 IEEE.},
+ author = {Gu, Yunfei and Lu, Yihui and Wu, Chentao and Li, Jie and Guo, Minyi},
+ doi = {10.1109/IPDPS57955.2024.00016},
+ journal = {Proceedings - 2024 IEEE International Parallel and Distributed Processing Symposium, IPDPS 2024},
+ note = {Cited by: 4},
+ pages = {76 - 88},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {CKSM: An Efficient Memory Deduplication Method for Container-based Cloud Computing Systems},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85198902687?origin=resultslist},
+ year = {2024}
+}

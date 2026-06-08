@@ -1,0 +1,14 @@
+@conference{Zhang2023379,
+ abstract = {This paper presents a novel approach to optimize multiple invocations of a sparse matrix-vector multiplication (SpMV) kernel performed on the same sparse matrix A and dense vector x, like Ax, A2x, ⋯, Akx, and their linear combinations such as Ax + A2x. Such computations are frequently used in scientific applications for solving linear equations and in multi-grid methods. Existing SpMV optimization techniques typically focus on a single SpMV invocation and do not consider opportunities for optimization across a sequence of SpMV operations (SSpMV), leaving much room for performance improvement. Our work aims to bridge this performance gap. It achieve this by partitioning the sparse matrix into submatrices and devising a new computation pipeline that reduces memory access to the sparse matrix and exploits the data locality of the dense vector of SpMV. Additionally, we demonstrate how our approach can be integrated with parallelization schemes to further improve performance. We evaluate our approach on four distinct multi-core systems, including three ARM and one Intel platform. Experimental results show that our techniques improve the standard implementation and the highly-optimized Intel math kernel library (MKL) by a large margin.  © 2023 IEEE.},
+ author = {Zhang, Yichen and Li, Shengguo and Yuan, Fan and Dong, Dezun and Yang, Xiaojian and Li, Tiejun and Wang, Zheng},
+ doi = {10.1109/IPDPS54959.2023.00046},
+ journal = {Proceedings - 2023 IEEE International Parallel and Distributed Processing Symposium, IPDPS 2023},
+ note = {Cited by: 14},
+ pages = {379 - 389},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Memory-aware Optimization for Sequences of Sparse Matrix-Vector Multiplications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85166652710?origin=resultslist},
+ year = {2023}
+}

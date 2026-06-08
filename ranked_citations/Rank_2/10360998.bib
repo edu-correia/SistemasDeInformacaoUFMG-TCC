@@ -1,0 +1,14 @@
+@inproceedings{10360998,
+ abstract = {Distributed file systems (DFS) are the cornerstone of modern mass data processing systems. In DFS, the metadata service, as the core component, often becomes a performance bottleneck. Existing metadata service solutions have implemented flattened metadata management and full-path indexing to achieve high scalability in terms of capacity and throughput. However, these approaches have limitations, such as conflicts with POSIX-style permission verification and flawed support for super directories, leading to high and unstable latency that cannot provide reliable service for latency-sensitive applications. To overcome these limitations, we propose Duplex, a scalable DFS metadata service based on full-path indexing, which aims for low and stable latency. Duplex incorporates three key designs: a fast access path featuring a centralized permission server for efficient permission verification, a permission merging algorithm to reduce the PMS's space footprint, and flattened metadata management based on double consistent hashing that enables low-latency access to super directories. Our evaluations demonstrate that, compared to state-of-the-art metadata solutions, Duplex significantly reduces the average lookup latency by up to 84% and the 99th percentile tail latency by up to 88.2% for metadataintensive benchmarks. Additionally, Duplex improves the lookup IOPS by up to 7.6 × /2.3× compared to CephFS and BeeGFS.},
+ author = {Dong, Chao and Wang, Fang and Yang, Yuxin and Lei, Mengya and Zhang, Jianshun and Feng, Dan},
+ booktitle = {2023 IEEE 41st International Conference on Computer Design (ICCD)},
+ doi = {10.1109/ICCD58817.2023.00051},
+ issn = {2576-6996},
+ keyword = {File systems;Scalability;Merging;Tail;Metadata;Throughput;Servers;Distributed file system;Metadata Service;Latency;Full-path Indexing},
+ month = {Nov},
+ number = {},
+ pages = {283-290},
+ title = {Low-Latency and Scalable Full-path Indexing Metadata Service for Distributed File Systems},
+ volume = {},
+ year = {2023}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920962,
+ abstract = {In many scientific domains, researchers are turning to large-scale behavioral simulations to better understand real-world phenomena. While there has been a great deal of work on simulation tools from the high-performance computing community, behavioral simulations remain challenging to program and automatically scale in parallel environments. In this paper we present BRACE (Big Red Agent-based Computation Engine), which extends the MapReduce framework to process these simulations efficiently across a cluster. We can leverage spatial locality to treat behavioral simulations as iterated spatial joins and greatly reduce the communication between nodes. In our experiments we achieve nearly linear scale-up on several realistic simulations.Though processing behavioral simulations in parallel as iterated spatial joins can be very efficient, it can be much simpler for the domain scientists to program the behavior of a single agent. Furthermore, many simulations include a considerable amount of complex computation and message passing between agents, which makes it important to optimize the performance of a single node and the communication across nodes. To address both of these challenges, BRACE includes a high-level language called BRASIL (the Big Red Agent SImulation Language). BRASIL has object-oriented features for programming simulations, but can be compiled to a dataflow representation for automatic parallelization and optimization. We show that by using various optimization techniques, we can achieve both scalability and single-node performance similar to that of a hand-coded simulation.},
+ author = {Wang, Guozhang and Salles, Marcos Vaz and Sowell, Benjamin and Wang, Xun and Cao, Tuan and Demers, Alan and Gehrke, Johannes and White, Walker},
+ doi = {10.14778/1920841.1920962},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {12},
+ pages = {952–963},
+ publisher = {VLDB Endowment},
+ title = {Behavioral simulations in MapReduce},
+ url = {https://doi.org/10.14778/1920841.1920962},
+ volume = {3},
+ year = {2010}
+}

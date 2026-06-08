@@ -1,0 +1,14 @@
+@conference{Xu2024294,
+ abstract = {This paper presents FLEX, a real-time scheduling framework that adaptively allocates limited machine attention (i.e., computing resources) among different spatial views (partitioned by camera facing directions) and sensory modalities (i.e., LiDAR and cameras) within multi-modal multi-view machine perception on resource-constrained embedded platforms. It is achieved through the effective wiring of two features: First, considering the heterogeneous and time-varying criticality among views and modalities within dynamic sensing contexts (i.e., object locations), we calibrate an 'anytime' multi-modal perception pipeline that dynamically adjusts the modality fusion strategies of each view. Second, to optimize the GPU processing throughput with time guarantees, FLEX centers around an adaptive batch scheduling algorithm that intelligently groups consecutive asynchronous view inspection tasks based on the job sequence<sup>1</sup> generated from a non-preemptive EDF schedule to maximize a measure of system utility, with the runtime elastic fusion used as a subroutine. Temporal load balancing is maintained during the scheduling by always ensuring the sequential schedulability of future tasks in early batching decisions. We implement FLEX on NVIDIA Jetson Orin and conduct extensive experiments with a large-scale driving dataset. The results demonstrate the superiority of FLEX in improving perception quality and system throughput with time guarantees.<sup>1</sup>Following the real-time conventions, we use 'job' to denote the instance of periodic tasks.  © 2024 IEEE.},
+ author = {Xu, Yuhang and Liu, Zixuan and Fu, Xinzhe and Liu, Shengzhong and Wu, Fan and Chen, Guihai},
+ doi = {10.1109/RTSS62706.2024.00033},
+ journal = {Proceedings - Real-Time Systems Symposium},
+ note = {Cited by: 4},
+ pages = {294 - 307},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {FLEX: Adaptive Task Batch Scheduling with Elastic Fusion in Multi-Modal Multi-View Machine Perception},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85217618359?origin=resultslist},
+ year = {2024}
+}

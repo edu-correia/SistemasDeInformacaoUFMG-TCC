@@ -1,0 +1,14 @@
+@inproceedings{9235077,
+ abstract = {The optimistic concurrency control (OCC) utilized by in-memory databases performs writes on thread-local copies and makes the writes visible upon passing validation. However, high contention workloads suffer from failure of the validation step due to non-semantic memory access conflicts, leading to frequent transaction aborts. In this work, we improve the commit rate of in-memory databases by replacing OCC and the underlying indexing of key-value entries in the Silo database with a lock-free transactional dictionary. To further optimize the transactional commit rate, we present transactional merging, a technique that relaxes the semantic conflict resolution of transactional data structures by merging conflicting operations to reduce aborts. Transactional merging guarantees strict serializability through a strategy that recovers the correct abstract state given that a transaction attempting to merge operations aborts. The experimental evaluation demonstrates that the lock-free transactional dictionary with transactional merging achieves an average speedup of 175% over OCC and the Masstree indexing used in the Silo database for write-dominated workloads on a non-uniform memory access system.},
+ author = {Peterson, Christina and Wilson, Amalee and Pirkelbauer, Peter and Dechev, Damian},
+ booktitle = {2020 IEEE 32nd International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD)},
+ doi = {10.1109/SBAC-PAD49847.2020.00025},
+ issn = {2643-3001},
+ keyword = {Merging;Data structures;Semantics;Databases;Instruction sets;Dictionaries;Throughput;transactional data structure;database;semantic conflict reduction},
+ month = {Sep.},
+ number = {},
+ pages = {107-115},
+ title = {Optimized Transactional Data Structure Approach to Concurrency Control for In-Memory Databases},
+ volume = {},
+ year = {2020}
+}

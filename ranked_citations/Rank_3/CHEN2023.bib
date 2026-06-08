@@ -1,0 +1,21 @@
+@article{CHEN2023,
+ abstract = {Background
+The normalization of institution names is of great importance for literature retrieval, statistics of academic achievements, and evaluation of the competitiveness of research institutions. Differences in authors’ writing habits and spelling mistakes lead to various names of institutions, which affects the analysis of publication data. With the development of deep learning models and the increasing maturity of natural language processing methods, training a deep learning–based institution name normalization model can increase the accuracy of institution name normalization at the semantic level.
+Objective
+This study aimed to train a deep learning–based model for institution name normalization based on the feature fusion of affiliation data from multisource literature, which would realize the normalization of institution name variants with the help of authority files and achieve a high specification accuracy after several rounds of training and optimization.
+Methods
+In this study, an institution name normalization–oriented model was trained based on bidirectional encoder representations from transformers (BERT) and other deep learning models, including the institution classification model, institutional hierarchical relation extraction model, and institution matching and merging model. The model was then trained to automatically learn institutional features by pretraining and fine-tuning, and institution names were extracted from the affiliation data of 3 databases to complete the normalization process: Dimensions, Web of Science, and Scopus.
+Results
+It was found that the trained model could achieve at least 3 functions. First, the model could identify the institution name that is consistent with the authority files and associate the name with the files through the unique institution ID. Second, it could identify the nonstandard institution name variants, such as singular forms, plural changes, and abbreviations, and update the authority files. Third, it could identify the unregistered institutions and add them to the authority files, so that when the institution appeared again, the model could identify and regard it as a registered institution. Moreover, the test results showed that the accuracy of the normalization model reached 93.79%, indicating the promising performance of the model for the normalization of institution names.
+Conclusions
+The deep learning–based institution name normalization model trained in this study exhibited high accuracy. Therefore, it could be widely applied in the evaluation of the competitiveness of research institutions, analysis of research fields of institutions, and construction of interinstitutional cooperation networks, among others, showing high application value.},
+ author = {Yifei Chen and Xiaoying Li and Aihua Li and Yongjie Li and Xuemei Yang and Ziluo Lin and Shirui Yu and Xiaoli Tang},
+ doi = {https://doi.org/10.2196/47434},
+ issn = {2561-326X},
+ journal = {JMIR Formative Research},
+ keyword = {multisource literature, institution name normalization, deep learning, bidirectional encoder representations from transformers, BERT},
+ title = {A Deep Learning Model for the Normalization of Institution Names by Multisource Literature Feature Fusion: Algorithm Development Study},
+ url = {https://www.sciencedirect.com/science/article/pii/S2561326X23003517},
+ volume = {7},
+ year = {2023}
+}

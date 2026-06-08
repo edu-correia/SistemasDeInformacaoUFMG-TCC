@@ -1,0 +1,18 @@
+@article{10.1145/3763137,
+ abstract = {Numerical code is often executed repetitively and on hardware with limited resources, which makes it a perfect target for optimizations. One of the most effective ways to boost performance—especially in terms of runtime—is by reducing the precision of computations. However, low precision can introduce significant rounding errors, potentially compromising the correctness of results. Mixed-precision tuning addresses this trade-off by assigning the lowest possible precision to a subset of variables and arithmetic operations in the program while ensuring that the overall error remains within acceptable bounds. State-of-the-art tools validate the accuracy of optimized programs using either sound static analysis or dynamic sampling. While sound methods are often considered safer but overly conservative, and dynamic methods are more aggressive and potentially more effective, the question remains: how do these approaches compare in practice?   In this paper, we present the first comprehensive evaluation of existing mixed-precision tuning tools for floating-point programs, offering a quantitative comparison between sound static and (unsound) dynamic approaches. We measure the trade-offs between performance gains, utilizing optimization potential, and the soundness guarantees on the accuracy---what we refer to as the cost of soundness. Our experiments on the standard FPBench benchmark suite challenge the common belief that dynamic optimizers consistently generate faster programs. In fact, for small straight-line numerical programs, we find that sound tools enhanced with regime inference match or outperform dynamic ones, while providing formal correctness guarantees, albeit at the cost of increased optimization time. Standalone sound tools, however, are overly conservative, especially when accuracy constraints are tight; whereas dynamic tools are consistently effective for different targets, but exceed the maximum allowed error by up to 9 orders of magnitude.},
+ address = {New York, NY, USA},
+ articleno = {359},
+ author = {Isychev, Anastasia and Lohar, Debasmita},
+ doi = {10.1145/3763137},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Dynamic Analysis, Floating-Point Optimization, Mixed-Precision Tuning, Soundness, Static Analysis},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Cost of Soundness in Mixed-Precision Tuning},
+ url = {https://doi.org/10.1145/3763137},
+ volume = {9},
+ year = {2025}
+}

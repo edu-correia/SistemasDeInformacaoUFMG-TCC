@@ -1,0 +1,13 @@
+@article{LIU2023104723,
+ abstract = {Monocular depth estimation has seen significant progress in recent years, especially in outdoor scenes. However, depth estimation results are not satisfying in omnidirectional images. As compared to perspective images, estimating the depth map from an omnidirectional image captured in the outdoor scene, using neural networks, has two additional challenges: (i) the depth range of outdoor images varies a lot across different scenes, making it difficult for the depth network to predict accurate depth results for training with an indoor dataset, besides the maximum distance in outdoor scenes mostly stays the same as the camera sees the sky, but depth labels in this region are entirely missing in existing datasets; (ii) a standard representation of omnidirectional images introduces spherical distortion, which causes difficulties for the vanilla network to predict accurate relative structural depth details. In this paper, we propose a novel network-MODE by giving special considerations to those challenges and designing a set of flexible modules for improving the performance of omnidirectional depth estimation. First, a consistent depth structure module is proposed to estimate a consistent depth structure map, and the predicted structural map can improve depth details. Second, to suit the characteristics of spherical sampling, we propose a strip convolution fusion module to enhance long-range dependencies. Third, rather than using a single depth decoder branch as in previous methods, we propose a semantics decoder branch to estimate sky regions in the omnidirectional image. The proposed method is validated on three widely used datasets, demonstrating the state-of-the-art performance. Moreover, the effectiveness of each module is shown through an ablation study on real-world datasets. Our code is available at https://github.com/lkku1/MODE. © 2017 Elsevier Inc. All rights reserved.},
+ author = {Yunbiao Liu and Chunyi Chen},
+ doi = {https://doi.org/10.1016/j.imavis.2023.104723},
+ issn = {0262-8856},
+ journal = {Image and Vision Computing},
+ keyword = {Omnidirectional depth estimation, Depth initialization, Long-range dependency},
+ pages = {104723},
+ title = {MODE: Monocular omnidirectional depth estimation via consistent depth fusion},
+ url = {https://www.sciencedirect.com/science/article/pii/S0262885623000975},
+ volume = {136},
+ year = {2023}
+}

@@ -1,0 +1,17 @@
+@article{10.14778/3137628.3137644,
+ abstract = {The interval join is a basic operation that finds application in temporal, spatial, and uncertain databases. Although a number of centralized and distributed algorithms have been proposed for the efficient evaluation of interval joins, classic plane sweep approaches have not been considered at their full potential. A recent piece of related work proposes an optimized approach based on plane sweep (PS) for modern hardware, showing that it greatly outperforms previous work. However, this approach depends on the development of a complex data structure and its parallelization has not been adequately studied. In this paper, we explore the applicability of a largely ignored forward scan (FS) based plane sweep algorithm, which is extremely simple to implement. We propose two optimizations of FS that greatly reduce its cost, making it competitive to the state-of-the-art single-threaded PS algorithm while achieving a lower memory footprint. In addition, we show the drawbacks of a previously proposed hash-based partitioning approach for parallel join processing and suggest a domain-based partitioning approach that does not produce duplicate results. Within our approach we propose a novel breakdown of the partition join jobs into a small number of independent mini-join jobs with varying cost and manage to avoid redundant comparisons. Finally, we show how these mini-joins can be scheduled in multiple CPU cores and propose an adaptive domain partitioning, aiming at load balancing. We include an experimental study that demonstrates the efficiency of our optimized FS and the scalability of our parallelization framework.},
+ author = {Bouros, Panagiotis and Mamoulis, Nikos},
+ doi = {10.14778/3137628.3137644},
+ issn = {2150-8097},
+ issue_date = {August 2017},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {11},
+ numpages = {12},
+ pages = {1346–1357},
+ publisher = {VLDB Endowment},
+ title = {A forward scan based plane sweep algorithm for parallel interval joins},
+ url = {https://doi.org/10.14778/3137628.3137644},
+ volume = {10},
+ year = {2017}
+}

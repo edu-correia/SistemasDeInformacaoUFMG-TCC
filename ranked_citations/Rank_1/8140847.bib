@@ -1,0 +1,14 @@
+@article{8140847,
+ abstract = {Memory is a crucial resource which limits the scalability and performance of the virtualized systems. It is evident from the existing literature that substantial memory savings can be achieved by obviating the redundant memory across virtual machines. Memory deduplication is one such approach that harnesses these memory redundancies through sharing of the duplicate memory. However, this approach incurs a significant overhead when shared pages are liable to frequent modification which results in early breaking of Copy-on-Write (CoW)\ mechanism. In worst case, this early breaking of CoW mechanism leads to the problem of thrashing which nullifies the benefits of memory deduplication. The existing memory deduplication techniques have not focused on the thrashing issue. The proposed approach, MDedup++, addresses this issue through a hinting mechanism, where hints can be inferred from the temporal analysis of page-sharing behaviors. With these hints, the memory deduplication scanner explores the sharing potential only on stable pages. In addition, MDedup++ also analyzes the spatial distribution of page-sharing behaviors to reduce the latency and search cost of the memory deduplication process. The proposed approach is implemented in Linux Kernel daemon (Kernel Samepage Merging, KSM), without guest operating system modification. The evaluation with several benchmark workloads shows that MDedup++ achieves a significant improvement in terms of memory savings, deduplication speed and CPU overhead over vanilla KSM memory deduplication scanner.},
+ author = {Veni, T. and Bhanu, S. Mary Saira},
+ doi = {10.1093/comjnl/bxu149},
+ issn = {1460-2067},
+ journal = {The Computer Journal},
+ keyword = {memory deduplication;copy-on-write;virtualization;server consolidation;KSM;memory deduplication scanner},
+ month = {March},
+ number = {3},
+ pages = {353-370},
+ title = {MDedup++: Exploiting Temporal and Spatial Page-Sharing Behaviors for Memory Deduplication Enhancement},
+ volume = {59},
+ year = {2016}
+}

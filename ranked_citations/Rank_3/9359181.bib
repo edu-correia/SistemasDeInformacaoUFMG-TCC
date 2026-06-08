@@ -1,0 +1,14 @@
+@inproceedings{9359181,
+ abstract = {A growing number of KV storage systems have adopted the Log-Structured-Merge-tree (LSM-tree) due to its excellent write performance. However, the high write amplification in the LSM-tree has always been a difficult problem to solve. The reason is that the design of traditional LSM-tree under-utilizes the data distribution of query, and the design space does not take into account the read and write performance concurrently. As a result, we may sacrifice one to improve another performance. When advancing the writing performance of the LSM-tree, we can only conservatively select the design pattern in the design space to reduce the impact on reading throughputs, resulting in limited improvement. Aiming at the shortcomings of existing methods, a new LSM-tree structure (Leveling-Tiering-Grouped-LSM-tree, LTG-LSM) is proposed by us that combined with reading hotness. The LTG-LSM structure maintains hotness prediction models at each level of the LSM-tree. The structure of the newly generated disk components is determined by the predicted hotness. Finally, a specific compaction algorithm is carried out to handle the compaction between the different structural components and processing workflow hotness changes. Experiments show that the scheme proposed by this paper significantly reduces the write amplification (up to about 71%) of the original LSM-tree with almost no sacrificing reading performance and improves the write throughputs (up to about 24%) in workflows with different configurations.},
+ author = {Yu, JiaPing and Chen, HuaHui and Qian, JiangBo and Dong, YiHong},
+ booktitle = {2020 IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS)},
+ doi = {10.1109/ICPADS51040.2020.00011},
+ issn = {2690-5965},
+ keyword = {Distributed databases;Writing;Predictive models;Throughput;Prediction algorithms;Database systems;Compaction;LSM-tree;KV Store;Storage Management;Hotness Prediction;Big Data},
+ month = {Dec},
+ number = {},
+ pages = {1-8},
+ title = {LTG-LSM: The Optimal Structure in LSM-tree Combined with Reading Hotness},
+ volume = {},
+ year = {2020}
+}

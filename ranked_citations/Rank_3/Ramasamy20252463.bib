@@ -1,0 +1,15 @@
+@article{Ramasamy20252463,
+ abstract = {The inverted index, a fundamental data structure in search engines, is inherently optimized for flat document representations and falls short when dealing with hierarchical or relational data. However, many real-world applications-such as e-commerce (products and variants), online food delivery (restaurants and menu items), and streaming platforms (movies and episodes, or albums and songs) -frequently involve entities with parent-child relationships. A common approach is to denormalize relational entities at the application layer by copying parent attributes into child documents. While this method works for small-scale or low-cardinality scenarios, it becomes inefficient when parent entities have many children. In such cases, any update to a parent must be propagated to all its associated children, resulting in increased index size, slower ingestion, and higher serving cost. This paper examines existing techniques for managing hierarchical entities in inverted index-based systems and highlights their limitations. We propose a novel approach to support joins over parent-child relationships by enforcing a specific index layout in which child documents are collocated immediately after their parent, enabling efficient single-pass retrieval of all child documents corresponding to matching parents. Preserving this layout under continuous realtime updates requires periodic sort-and-merge operations, which are computationally expensive. To mitigate this, we adopt a read/write separation model that isolates indexing overhead from query execution. Finally, we describe how this design was scaled and deployed in production at Uber to support high-throughput real-time updates and latency-sensitive query workloads. © 2025 IEEE.},
+ author = {Ramasamy, Karthikeyan and Fu, Yupeng and Wang, Jinny Jingyu and Chan, Philip and Naik, Tejas and Zhai, George and Gupta, Shubham and Kathpalia, Saurabh and Schlager, Noah and Arbabifard, Kamyar and Sainath, Sandhya and Veera, Kunal and Muniyandi, Vivek and Sheth, Nimish and Pan, Yiyu and Gui, Tao and Zhang, Frank and Butte, Kaustubh and Agarwal, Monika and Pandey, Aparajita},
+ doi = {10.1109/BigData66926.2025.11401496},
+ journal = {Proceedings of the IEEE International Conference on Big Data, BigData},
+ note = {Cited by: 0},
+ number = {2025},
+ pages = {2463 - 2472},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Joining the Dots: Efficient Joins Over Parent-Child Ordered Postings Lists},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105037826626?origin=resultslist},
+ year = {2025}
+}

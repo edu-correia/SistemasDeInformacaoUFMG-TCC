@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2018.2865125,
+ abstract = {This paper addresses the fundamental problem of finding persistent items and estimating the number of times each persistent item occurred in a given data stream during a given period of time at any given observation point. We propose a novel scheme, PIE, that can not only accurately identify each persistent item with a probability greater than any desired false negative rate FNR, but can also accurately estimate the number of occurrences of each persistent item. The key idea of PIE is that it uses Raptor codes to encode the ID of each item that appears at the observation point during a measurement period and stores only a few bits of the encoded ID in the memory. The item that is persistent occurs in enough measurement periods that enough encoded bits for the ID can be retrieved from the observation point to decode them correctly and get the ID of the persistent item. To estimate the number of occurrences of any given persistent item, PIE uses maximum likelihood estimation-based statistical techniques on the information already recorded during the measurement periods. We implemented and evaluated PIE using three real network traffic traces and compared its performance with three prior schemes. Our results show that PIE not only achieves the desire FNR in every scenario, its average FNR can be 19.5 times smaller than the FNR of the adapted prior scheme. Our results also show that PIE achieves any desired success probability in estimating the number of occurrences of persistent items.},
+ author = {Dai, Haipeng and Shahzad, Muhammad and Liu, Alex X. and Li, Meng and Zhong, Yuankun and Chen, Guihai},
+ doi = {10.1109/tnet.2018.2865125},
+ issn = {1063-6692},
+ issue_date = {December 2018},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {December},
+ number = {6},
+ numpages = {14},
+ pages = {2429–2442},
+ publisher = {IEEE Press},
+ title = {Identifying and Estimating Persistent Items in Data Streams},
+ url = {https://doi.org/10.1109/TNET.2018.2865125},
+ volume = {26},
+ year = {2018}
+}

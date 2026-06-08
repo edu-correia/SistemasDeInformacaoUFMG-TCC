@@ -1,0 +1,16 @@
+@article{Kwon2023,
+ abstract = {We propose Vigil-KV, a hardware and software co-designed framework that eliminates long-tail latency almost perfectly by introducing strong latency determinism. To make Get latency deterministic, Vigil-KV first enables a predictable latency mode (PLM) interface on a real datacenter-scale NVMe SSD, having knowledge about the nature of the underlying flash technologies. Vigil-KV at the system-level then hides the non-deterministic time window (associated with SSD's internal tasks and/or write services) by internally scheduling the different device states of PLM across multiple physical functions. Vigil-KV further schedules compaction/flush operations and client requests being aware of PLM's restrictions thereby integrating strong latency determinism into LSM KVs. We implement Vigil-KV upon a 1.92TB NVMe SSD prototype and Linux 4.19.91, but other LSM KVs can adopt its concept. We evaluate diverse Facebook and Yahoo scenarios with Vigil-KV, and the results show that Vigil-KV can reducethe tail latency of a baseline KV system by 3.19× while reducing the average latency by 34%, on average. © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM.},
+ author = {Kwon, Miryeong and Lee, Seungjun and Choi, Hyunkyu and Hwang, Jooyoung and Jung, Myoungsoo},
+ doi = {10.1145/3582695},
+ journal = {ACM Transactions on Storage},
+ note = {Cited by: 1},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Realizing Strong Determinism Contract on Log-Structured Merge Key-Value Stores},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85153875494?origin=resultslist},
+ volume = {19},
+ year = {2023}
+}

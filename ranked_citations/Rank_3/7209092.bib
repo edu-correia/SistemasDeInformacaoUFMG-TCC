@@ -1,0 +1,14 @@
+@inproceedings{7209092,
+ abstract = {In Ingress spatial index (Hilbert R-link tree) algorithms, a search operation (window query or exact-match query) and an update operation (insert or delete) S-lock one page at a time during index traversal. Then the target leaf pages are locked in S mode for fetching and locked in X mode for updating. If a page split is needed, then it is propagated bottom-up using lock-coupling protocol. To adjust minimum bounding rectangles another pass over the index is needed. In this paper, we present improvements to Ingress spatial index algorithms that would enhance concurrency and recovery in Ingres database. In our algorithms, a search operation traverses the tree by latching one node at time while an update operation (insert or delete) traverses the tree using latch-coupling with U latches. Update operations and tree-structure-modifications (such as page split, merge, link, or adjusting minimum-bounding-rectangle) are executed together in one pass over the Hilbert R-link tree from the root page down to the leaf-page level. To simplify recovery, each tree-structure-modification latches two pages on a single level of the tree, executed as an atomic action, and logged using a single redo-only log record. Thus, interrupted tree-structure-modifications (TSM) is never rolled back when transaction that triggered such TSM aborts or system fails. The algorithms keep the Hilbert R-link tree balanced during normal processing and after transaction aborts (or system failure) to guarantee logarithmic search path.},
+ author = {Jaluta, Ibrahim},
+ booktitle = {2015 2nd World Symposium on Web Applications and Networking (WSWAN)},
+ doi = {10.1109/WSWAN.2015.7209092},
+ issn = {},
+ keyword = {Latches;Indexes;Protocols;Concurrency control;Vegetation;Search problems;Ingres Database;Hilbert R-tree;Hilbert R-link tree;tree-structure-modifications;concurrency control;recovery},
+ month = {March},
+ number = {},
+ pages = {1-5},
+ title = {Enhancing concurrency and recovery in Ingres database},
+ volume = {},
+ year = {2015}
+}

@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2021.3103187,
+ abstract = {One unique architectural benefit of Named Data Networking (NDN) is adaptive forwarding, i.e., the forwarding plane is able to observe past data retrieval performance and use it to adjust forwarding decisions for future Interests. To be effective, adaptive forwarding assumes that &lt;italic&gt;Interest Routing Locality&lt;/italic&gt; is related to Interests’ common name prefix, meaning that Interests sharing the same prefix are likely to follow a similar forwarding path within a short period of time. Since Interests can have multiple common prefixes with different lengths, the real challenge is determining which prefix length should be used in adaptive forwarding to record path performance measurements - we refer to this as the &lt;italic&gt;Prefix Granularity Problem&lt;/italic&gt;. The longer the common prefix is, the better the Interest Routing Locality, and the larger the forwarding table. Given the limited FIB size, route names are designed to be considerably shorter than Interest names. Existing adaptive forwarding designs use route names to record path performance measurements, which looses forwarding adaptability as it promises in the event of partial network failures. In this work, we propose to dynamically aggregate and de-aggregate name prefixes in the forwarding table in order to use the prefixes that are the most appropriate given current network situation. In addition, to reduce the overhead of adaptive forwarding, we propose mechanisms to minimize the use of the longest prefix matching in Data packet processing. Simulations demonstrate that the proposed techniques can result in better forwarding decisions in the event of partial network failures with significantly reduced overhead.},
+ author = {Liang, Teng and Shi, Junxiao and Wang, Yi and Zhang, Beichuan},
+ doi = {10.1109/tnet.2021.3103187},
+ issn = {1063-6692},
+ issue_date = {Dec. 2021},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {December},
+ number = {6},
+ numpages = {14},
+ pages = {2820–2833},
+ publisher = {IEEE Press},
+ title = {On the Prefix Granularity Problem in NDN Adaptive Forwarding},
+ url = {https://doi.org/10.1109/TNET.2021.3103187},
+ volume = {29},
+ year = {2021}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11507101,
+ abstract = {Sequential recommendation aims to predict the next item that users are likely to interact with based on their historical behaviors. In practical scenarios, user preferences and item popularity often evolve over time, resulting in distribution shift. Although existing generalization models have achieved certain success, their adaptability often remains limited under highly dynamic conditions. Current generalization methods typically leverage distributionally robust optimization (DRO) to optimize “worst-case” losses, manually designed data augmentation to enrich the training distribution, or invariant learning to capture stable user representations. Despite their effectiveness, DRObased models may have a restricted modeling scope, while manual data augmentation could introduce noise, potentially distorting the captured user preferences. Moreover, invariant learning requires the construction of diverse “environments,” which is challenging. Furthermore, static generalization capabilities may struggle to adapt to an unseen and evolving testing distribution. Test Time Training (TTT) fine-tune models during the inference phase to adapt to varying test distributions. However, existing TTT-based recommenders are often model-specific and frequently rely on historical interactions that may be inaccessible. In this paper, we propose a Test-Time Learning Framework for Distribution Shifts in Sequential Recommendation (TTLS), which can be seamlessly integrated into various pre-trained models without requiring historical data. The core of TTLS lies in enhancing model confidence during fine-tuning while mitigating the risk of forgetting historical knowledge. Specifically, we utilize cross-entropy and entropy minimization losses to update parameters during inference, followed by a linear weight interpolation between the intermediate and original models. Experimental results on three benchmark datasets demonstrate the superiority and robustness of our method. The code is available at https://github.com/amiba11/TTLS.},
+ author = {Han, Chiyu and Tian, Mi and Zheng, Changlong},
+ booktitle = {2026 5th Asia Conference on Algorithms, Computing and Machine Learning (CACML)},
+ doi = {10.1109/CACML68972.2026.11507101},
+ issn = {},
+ keyword = {Modeling;Testing;Timing;Training;Printing;Learning (artificial intelligence);Tuning;Video games;Entropy;Merging;Sequential Recommendation;Distribution Shift;Test Time Learning;Model Merging},
+ month = {March},
+ number = {},
+ pages = {1-7},
+ title = {Test-Time Learning Framework for Distribution Shifts in Sequential Recommendation},
+ volume = {},
+ year = {2026}
+}

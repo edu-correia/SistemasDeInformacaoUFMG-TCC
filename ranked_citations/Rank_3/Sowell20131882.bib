@@ -1,0 +1,16 @@
+@article{Sowell20131882,
+ abstract = {Many modern applications rely on high-performance processing of spatial data. Examples include location-based services, games, virtual worlds, and scientific simulations such as molecular dynamics and behavioral simulations. These applications deal with large numbers of moving objects that continuously sense their environment, and their data access can often be abstracted as a repeated spatial join. Updates to object positions are interspersed with these join operations, and batched for performance. Even for the most demanding scenarios, the data involved in these joins fits comfortably in the main memory of a cluster of machines, and most applications run completely in main memory for performance reasons. Choosing appropriate spatial join algorithms is challenging due to the large number of techniques in the literature. In this paper, we perform an extensive evaluation of repeated spatial join algorithms for distance (range) queries in main memory. Our study is unique in breadth when compared to previous work: We implement, tune, and compare ten distinct algorithms on several workloads drawn from the simulation and spatial indexing literature. We explore the design space of both index nested loops algorithms and specialized join algorithms, as well as the use of moving object indices that can be incrementally maintained. Surprisingly, we find that when queries and updates can be batched, repeatedly re-computing the join result from scratch outperforms using a moving object index in all but the most extreme cases. This suggests that-given the code complexity of index structures for moving objects - specialized join strategies over simple index structures, such as Synchronous Traversal over R-Trees, should be the methods of choice for the above applications. © 2013 VLDB Endowment.},
+ author = {Sowell, Benjamin and Salles, Marcos Vaz and Cao, Tuan and Demers, Alan and Gehrke, Johannes},
+ doi = {10.14778/2556549.2556570},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 35},
+ number = {14},
+ pages = {1882 - 1893},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An experimental analysis of iterated spatial joins in main memory},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/84891047835?origin=resultslist},
+ volume = {6},
+ year = {2013}
+}

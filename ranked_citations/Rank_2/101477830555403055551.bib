@@ -1,0 +1,17 @@
+@article{10.14778/3055540.3055551,
+ abstract = {Big data analytics often involves complex join queries over two or more tables. Such join processing is expensive in a distributed setting both because large amounts of data must be read from disk, and because of data shuffling across the network. Many techniques based on data partitioning have been proposed to reduce the amount of data that must be accessed, often focusing on finding the best partitioning scheme for a particular workload, rather than adapting to changes in the workload over time.In this paper, we present AdaptDB, an adaptive storage manager for analytical database workloads in a distributed setting. It works by partitioning datasets across a cluster and incrementally refining data partitioning as queries are run. AdaptDB introduces a novel hyper-join that avoids expensive data shuffling by identifying storage blocks of the joining tables that overlap on the join attribute, and only joining those blocks. Hyper-join performs well when each block in one table overlaps with few blocks in the other table, since that will minimize the number of blocks that have to be accessed. To minimize the number of overlapping blocks for common join queries, AdaptDB users smooth repartitioning to repartition small portions of the tables on join attributes as queries run. A prototype of AdaptDB running on top of Spark improves query performance by 2--3x on TPC-H as well as real-world dataset, versus a system that employs scans and shuffle-joins.},
+ author = {Lu, Yi and Shanbhag, Anil and Jindal, Alekh and Madden, Samuel},
+ doi = {10.14778/3055540.3055551},
+ issn = {2150-8097},
+ issue_date = {January 2017},
+ journal = {Proc. VLDB Endow.},
+ month = {January},
+ number = {5},
+ numpages = {12},
+ pages = {589–600},
+ publisher = {VLDB Endowment},
+ title = {AdaptDB: adaptive partitioning for distributed joins},
+ url = {https://doi.org/10.14778/3055540.3055551},
+ volume = {10},
+ year = {2017}
+}

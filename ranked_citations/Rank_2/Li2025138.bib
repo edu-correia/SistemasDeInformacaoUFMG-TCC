@@ -1,0 +1,14 @@
+@conference{Li2025138,
+ abstract = {Modern data-intensive applications increasingly store and process big-value items, such as multimedia objects and machine learning embeddings, which exacerbate storage inefficiencies in Log-Structured Merge-Tree (LSM)-based key-value stores. This paper presents BVLSM, a Write-Ahead Log (WAL)time key-value separation mechanism designed to address three key challenges in LSM-Tree storage systems: write amplification, poor memory utilization, and I/O jitter under big-value workloads. Unlike state-of-the-art approaches that delay key-value separation until the flush stage, leading to redundant data in MemTables and repeated writes. BVLSM proactively decouples keys and values during the WAL phase. The MemTable stores only lightweight metadata, allowing multi-queue parallel store for big value. Benchmark results demonstrate that BVLSM significantly outperforms both RocksDB and BlobDB across various write-intensive workloads. Specifically, in asynchronous WAL mode, its 64KB write throughput exceeds that of RocksDB by a factor of 7.6 and that of BlobDB by a factor of 1.9. © 2025 IEEE.},
+ author = {Li, Ming and Cheng, Wendi and Wei, Jiahe and Shan, Xueqiang and Liu, Weikai and Zhao, Xiaonan and Zhang, Xiao},
+ doi = {10.1109/HPCC67675.2025.00037},
+ journal = {Proceedings - 2025 27th IEEE International Conference on High Performance Computing and Communications, 11th IEEE International Conference on Data Science and Systems, 23rd IEEE International Conference on Smart City, 11th IEEE International Conference on Dependability in Sensor, Cloud, and Big Data Systems and Applications and 21st IEEE International Conference on Embedded Software and Systems, HPCC/DSS/SmartCity/DependSys/ICESS 2025},
+ note = {Cited by: 0},
+ pages = {138 - 145},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {BVLSM: Write-Efficient LSM-Tree Storage via WAL-Time Key-Value Separation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105022712709?origin=resultslist},
+ year = {2025}
+}

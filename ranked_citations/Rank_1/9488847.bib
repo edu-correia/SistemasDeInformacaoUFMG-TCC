@@ -1,0 +1,14 @@
+@inproceedings{9488847,
+ abstract = {To cope with increasing network rates and massive traffic volumes, sketch-based methods have been extensively studied to trade accuracy for memory scalability and storage cost. However, sketches are sensitive to hash collisions due to skewed keys in real world environment, and need complicated performance control for line-rate packet streams.We present Jellyfish, a locality-sensitive sketching framework to address these issues. Jellyfish goes beyond network flow-based sketching towards fragments of network flows called subflows. First, Jellyfish splits consecutive packets from each network flow to subflow records, which not only reduces the rate contention but also provides intermediate subflow representations in form of truncated counters. Next, Jellyfish maps similar subflow records to the same bucket array and merges those from the same network flow to reconstruct the network-flow level counters. Real-world trace-driven experiments show that Jellyfish reduces the average estimation errors by up to six orders of magnitude for per-flow queries, by six orders of magnitude for entropy queries, and up to ten times for heavy-hitter queries.},
+ author = {Fu, Yongquan and An, Lun and Shen, Siqi and Chen, Kai and Barlet-Ros, Pere},
+ booktitle = {IEEE INFOCOM 2021 - IEEE Conference on Computer Communications},
+ doi = {10.1109/INFOCOM42981.2021.9488847},
+ issn = {2641-9874},
+ keyword = {Estimation error;Scalability;Conferences;Computational modeling;Entropy;Arrays;subflow;sketch;hash collision;clustering;heavy hitter},
+ month = {May},
+ number = {},
+ pages = {1-10},
+ title = {Jellyfish: Locality-Sensitive Subflow Sketching},
+ volume = {},
+ year = {2021}
+}

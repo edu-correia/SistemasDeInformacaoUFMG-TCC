@@ -1,0 +1,14 @@
+@article{11186192,
+ abstract = {Deep learning methods have been proposed for tooth segmentation on high-resolution intra-oral scans (IOS) that plays a crucial role in clinical dental practice. However, they generally segment teeth in a low-resolution data with a fixed receptive field and generate final segmentation by up-sampling interpolation, and neglect teeth’s morphology priors: their similar dental arch structures and significantly different curvatures in different parts of each tooth. They thus lack adaptability to different parts of each tooth, and show less accurate segmentation of boundary points between teeth and gums due to the up-sampling computation. Further, cluttered poses of IOS limit their generalization and usability of teeth location and geometric information. To address these limitations, a morphology prior enhanced teeth segmentation framework is proposed in this paper. Firstly, a robust preprocessing is introduced to align poses of different IOS by computing their dental arch orientations, thereby improving segmentation generalization and usability of IOS geometric information. Secondly, a decomposition-merging strategy is designed to avoid the up-sampling limitation, which decomposes an IOS into multiple low-resolution data and merges their segmentation outcomes into a high-resolution result. Thirdly, an innovative module integrating semantic and geometric features is proposed to adaptively select deformable receptive fields. It geometrically samples within a variable probability space to construct receptive fields with varied graph relationships for different points, facilitating adaptive segmentation of different parts of each tooth. Experimental results on 6238 IOS from four centers demonstrate that our method significantly outperforms 11 state-of-the-art methods, achieving a 6.93% enhancement for cross-center testing.},
+ author = {Jiang, Yuxian and Wang, Xiuying and Yang, Tao and Ji, Changkai and He, Lanshan and Liu, Yusheng and Wang, Wei and Liu, Min and Shi, Junyu and Guo, Huayan and Chen, Sheng and Wang, Lisheng},
+ doi = {10.1109/JBHI.2025.3616205},
+ issn = {2168-2208},
+ journal = {IEEE Journal of Biomedical and Health Informatics},
+ keyword = {Teeth;Dentistry;Three-dimensional displays;Morphology;Semantics;Surface morphology;Geometry;Convolution;Bioinformatics;Adaptation models;High-resolution intra-oral scan;teeth segmentation;pose standardization;decomposition-merging strategy;generalization ability},
+ month = {April},
+ number = {4},
+ pages = {3344-3355},
+ title = {Morphology Prior Enhanced Teeth Segmentation for High-Resolution Oral Scans},
+ volume = {30},
+ year = {2026}
+}

@@ -1,0 +1,15 @@
+@article{10.1145/3801958,
+ abstract = {Motivated by existence of software projects that undergo regular refactorings and modifications and yet need to ensure semantic stability of some of their core parts, we propose a highly-scalable approach for automatically checking semantic equivalence of different versions of large-scale, real-world C projects, with a particular (though not exclusive) focus on the Linux kernel. The proposed method uses a novel combination of pattern matching with light-weight static analysis and control-flow transformations. The method checks preservation of the semantics of functions forming the API of the project being analysed as well as of the semantics of its global variables, which typically hold various control parameters. For the latter, a specialised slicing procedure is proposed to slice out code influenced by these variables and concentrate the analysis on that code only. Although the method cannot prove equivalence on heavily refactored code, it can compare thousands of functions in the order of minutes while producing a low number of false non-equality verdicts as our experiments show. The method has been implemented over the LLVM infrastructure in a tool called DiffKemp. Our results show that DiffKemp, unlike other existing tools, gives practically useful results even on projects of the size of the Linux kernel.},
+ address = {New York, NY, USA},
+ author = {Mal\'{\i}k, Viktor and Vojnar, Tom\'{a}\v{s} and Ne\v{c}as, Franti\v{s}ek},
+ doi = {10.1145/3801958},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {semantic equivalence, equivalence checking, refactoring, static analysis, light-weight code analysis, semantics-preserving patterns, refactoring patterns, program slicing, Linux kernel},
+ month = {March},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Automatically Checking Semantic Equivalence between Versions of Large-Scale C Projects},
+ url = {https://doi.org/10.1145/3801958},
+ year = {2026}
+}

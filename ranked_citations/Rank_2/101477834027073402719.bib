@@ -1,0 +1,17 @@
+@article{10.14778/3402707.3402719,
+ abstract = {Concurrency control on B+ trees is primarily achieved with latches, but serialization and contention can hinder scalability. As core counts on current processors increase, it is imperative to develop scalable latch-free techniques for concurrency control.We present PALM, a novel technique for performing multiple concurrent queries on in-memory B+ trees. PALM is based on the Bulk Synchronous Parallel model, which guarantees freedom from deadlocks and race conditions. Input queries are grouped and processed in atomic batches, and work proceeds in stages that preclude contention. Transitions between stages are accomplished with scalable point-to-point communication. PALM exploits data-and thread-level parallelism on modern many-core architectures, and performs 40M1 updates/second on trees with 128M keys, and 128M updates/second on trees with 512K keys on the latest CPU architectures. Our throughput is 2.3X--19X that of state-of-the-art concurrent update algorithms on in-memory B+ trees. PALM obtains close to peak throughput at very low response times of less than 350μs, even for large trees. We also evaluate PALM on the Intel® Many Integrated Core (Intel® MIC) architecture, and demonstrate a speedup of 1.5--2.1X for out-of-cache tree sizes on an Intel® Knights Ferry over a pair of Intel® Xeon® processors DP X5680 (Westmere-EP) in a dual-socket configuration.},
+ author = {Sewall, Jason and Chhugani, Jatin and Kim, Changkyu and Satish, Nadathur and Dubey, Pradeep},
+ doi = {10.14778/3402707.3402719},
+ issn = {2150-8097},
+ issue_date = {August 2011},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {11},
+ numpages = {12},
+ pages = {795–806},
+ publisher = {VLDB Endowment},
+ title = {PALM: parallel architecture-friendly latch-free modifications to B+ trees on many-core processors},
+ url = {https://doi.org/10.14778/3402707.3402719},
+ volume = {4},
+ year = {2011}
+}

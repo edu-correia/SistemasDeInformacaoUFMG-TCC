@@ -1,0 +1,14 @@
+@inproceedings{9545284,
+ abstract = {In the recent works that analyzed execution-time variation of real-time tasks, it was shown that such variation may conform to regular behavior. This regularity may arise from multiple sources, e.g., due to periodic changes in hardware or program state, program structure, inter-task dependence or inter-task interference. Such complexity can be better captured by a Markov Model, compared to the common approach of assuming independent and identically distributed random variables. However, despite the regularity that may be described with a Markov model, over time, the execution times may change, due to irregular changes in input, hardware state, or program state. In this paper, we propose a Bayesian approach to adapt the emission distributions of the Markov Model at runtime, in order to account for such irregular variation. A preprocessing step determines the number of states and the transition matrix of the Markov Model from a portion of the execution time sequence. In the preprocessing step, segments of the execution time trace with similar properties are identified and combined into clusters. At runtime, the proposed method switches between these clusters based on a Generalized Likelihood Ratio (GLR). Using a Bayesian approach, clusters are updated and emission distributions estimated. New clusters can be identified and clusters can be merged at runtime. The time complexity of the online step is $O(N^{2}+ NC)$ where N is the number of states in the Hidden Markov Model (HMM) that is fixed after the preprocessing step, and C is the number of clusters.},
+ author = {Friebe, Anna and Marković, Filip and Papadopoulos, Alessandro V. and Nolte, Thomas},
+ booktitle = {2021 IEEE 27th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)},
+ doi = {10.1109/RTCSA52859.2021.00008},
+ issn = {2325-1301},
+ keyword = {Adaptation models;Analytical models;Runtime;Computational modeling;Hidden Markov models;Markov processes;Real-time systems;Real-time systems;Hidden Markov Model;Bayesian Analysis;Probabilistic Timing Analysis},
+ month = {Aug},
+ number = {},
+ pages = {1-10},
+ title = {Adaptive Runtime Estimate of Task Execution Times using Bayesian Modeling},
+ volume = {},
+ year = {2021}
+}

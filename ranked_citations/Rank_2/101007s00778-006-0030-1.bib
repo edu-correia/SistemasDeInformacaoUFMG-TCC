@@ -1,0 +1,18 @@
+@article{10.1007/s00778-006-0030-1,
+ abstract = {Cost-based query optimizers need to estimate the selectivity of conjunctive predicates when comparing alternative query execution plans. To this end, advanced optimizers use multivariate statistics to improve information about the joint distribution of attribute values in a table. The joint distribution for all columns is almost always too large to store completely, and the resulting use of partial distribution information raises the possibility that multiple, non-equivalent selectivity estimates may be available for a given predicate. Current optimizers use cumbersome ad hoc methods to ensure that selectivities are estimated in a consistent manner. These methods ignore valuable information and tend to bias the optimizer toward query plans for which the least information is available, often yielding poor results. In this paper we present a novel method for consistent selectivity estimation based on the principle of maximum entropy (ME). Our method exploits all available information and avoids the bias problem. In the absence of detailed knowledge, the ME approach reduces to standard uniformity and independence assumptions. Experiments with our prototype implementation in DB2 UDB show that use of the ME approach can improve the optimizer’s cardinality estimates by orders of magnitude, resulting in better plan quality and significantly reduced query execution times. For almost all queries, these improvements are obtained while adding only tens of milliseconds to the overall time required for query optimization.},
+ address = {Berlin, Heidelberg},
+ author = {Markl, V. and Haas, P. J. and Kutsch, M. and Megiddo, N. and Srivastava, U. and Tran, T. M.},
+ doi = {10.1007/s00778-006-0030-1},
+ issn = {1066-8888},
+ issue_date = {January 2007},
+ journal = {The VLDB Journal},
+ month = {January},
+ number = {1},
+ numpages = {22},
+ pages = {55–76},
+ publisher = {Springer-Verlag},
+ title = {Consistent selectivity estimation via maximum entropy},
+ url = {https://doi.org/10.1007/s00778-006-0030-1},
+ volume = {16},
+ year = {2007}
+}

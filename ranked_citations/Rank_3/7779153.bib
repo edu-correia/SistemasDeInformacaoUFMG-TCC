@@ -1,0 +1,14 @@
+@article{7779153,
+ abstract = {We propose a novel parallel connected component labeling (CCL) algorithm along with efficient out-of-core data management to detect and track feature regions of large time-varying imagery datasets. Our approach contributes to the big data field with parallel algorithms tailored for GPU architectures. We remove the data dependency between frames and achieve pixel-level parallelism. Due to the large size, the entire dataset cannot fit into cached memory. Frames have to be streamed through the memory hierarchy (disk to CPU main memory and then to GPU memory), partitioned, and processed as batches, where each batch is small enough to fit into the GPU. To reconnect the feature regions that are separated due to data partitioning, we present a novel batch merging algorithm to extract the region connection information across multiple batches in a parallel fashion. The information is organized in a memory-efficient structure and supports fast indexing on the GPU. Our experiment uses a commodity workstation equipped with a single GPU. The results show that our approach can efficiently process a weather dataset composed of terabytes of time-varying radar images. The advantages of our approach are demonstrated by comparing to the performance of an efficient CPU cluster implementation which is being used by the weather scientists.},
+ author = {Peng, Chao and Sahani, Sandip and Rushing, John},
+ doi = {10.1109/TVCG.2016.2637904},
+ issn = {1941-0506},
+ journal = {IEEE Transactions on Visualization and Computer Graphics},
+ keyword = {Graphics processing units;Feature extraction;Labeling;Algorithm design and analysis;Merging;Computer architecture;Meteorology;Connected component labeling;time-varying imagery feature detection;GPGPU},
+ month = {Oct},
+ number = {10},
+ pages = {2262-2274},
+ title = {A GPU-Accelerated Approach for Feature Tracking in Time-Varying Imagery Datasets},
+ volume = {23},
+ year = {2017}
+}

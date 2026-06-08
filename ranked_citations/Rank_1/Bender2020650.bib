@@ -1,0 +1,14 @@
+@conference{Bender2020650,
+ abstract = {Buffer-and-flush is a technique for transforming standard external-memory search trees into write-optimized search trees. In exchange for faster amortized insertions, buffer-and-flush can sometimes significantly increase the latency of operations by causing cascades of flushes. In this paper, we show that flushing cascades are not a fundamental consequence of the buffer-flushing technique, and can be removed entirely using randomization techniques. The underlying implementation of buffer flushing relies on a buffer-eviction strategy at each node in the tree. The ability for the user to select the buffer eviction strategy based on the workload has been shown to be important for performance, both in theory and in practice. In order to support arbitrary buffer-eviction strategies, we introduce the notion of a universal flush, which uses a universal eviction policy that can simulate any other eviction policy. This abstracts away the underlying eviction strategy, even allowing for workload-specific strategies that change dynamically. Our deamortization preserves the amortized throughput of the underlying flushing strategy on all workloads. In particular, with our deamortization and a node cache of size poly-logarithmic in the number of insertions performed on the tree, the amortized insertion cost matches the lower bound of Brodal and Fagerberg. For typical parameters, the lower bound is less than 1 I/O per insertion. For such parameters, our worst-case insertion cost is O(1) I/Os. Copyright © 2020 by SIAM},
+ author = {Bender, Michael A. and Das, Rathish and Farach-Colton, Martín and Johnson, Rob and Kuszmaul, William},
+ journal = {Proceedings of the Annual ACM-SIAM Symposium on Discrete Algorithms},
+ note = {Cited by: 14},
+ pages = {650 - 669},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Flushing without cascades},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85084077932?origin=resultslist},
+ volume = {2020-January},
+ year = {2020}
+}

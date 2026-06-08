@@ -1,0 +1,16 @@
+@article{Hasnat2025,
+ abstract = {Today, real-time search over big microblogging data requires low indexing and query latency. Online services, therefore, prefer to host inverted indices in memory. Unfortunately, as datasets grow, indices grow proportionally, and with limited DRAM scaling, the main memory faces high pressure. Also, indices must be persisted on disks as building them is computationally intensive. Consequently, it becomes necessary to frequently move on-heap index segments to storage, slowing down indexing. Reading storage-resident index segments requires filesystem calls and disk accesses during query evaluation, leading to high and unpredictable tail latency.This work exploits hybrid DRAM and scalable non-volatile memory (NVM) to offer dynamically growing and instantly searchable (i.e., real-time) persistent indices in on-heap memory. We implement SPIRIT, a real-time text inversion engine over hybrid memory. SPIRIT exploits the byte-addressability of hybrid memory to enable direct access to the index on a pre-allocated heap, eliminating expensive block storage accesses and filesystem calls during live operation. It uses an in-memory segment descriptor table to offer: ĝ instant segment availability to query evaluators upon fresh ingestion, ĝ low-overhead segment movement across memory tiers transparent to query evaluators, and ĝ decoupled segment movement into NVM from their visibility to query evaluators, enabling different policies for mitigating NVM latency. SPIRIT accelerates compaction with zero-copy merging. It supports volatile, graceful shutdown, and crash-consistent indexing modes. The latter two modes offer instant recovery using persistent pointers.SPIRIT with hybrid memory and strong crash consistency guarantees exhibits many orders of magnitude better tail response times and query throughout than the state-of-the-art Lucene search engine. Compared against a highly optimized non-real-time evaluation of Lucene with liberal DRAM size, on average, across six query workloads, SPIRIT still delivers 2.5× better (real-time) query throughput. Our work applies to other services that will benefit from direct on-heap access to large persistent indices.  © 2025 Copyright held by the owner/author(s).},
+ author = {Hasnat, Adnan and Akram, Shoaib},
+ doi = {10.1145/3703351},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SPIRIT: Scalable and Persistent In-Memory Indices for Real-Time Search},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105003622862?origin=resultslist},
+ volume = {22},
+ year = {2025}
+}

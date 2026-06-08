@@ -1,0 +1,14 @@
+@article{11458781,
+ abstract = {Mixture-of-Experts (MoE) models reduce active computation through sparse routing; yet their significant memory overhead due to retaining the full parameter footprint of all experts remains a deployment challenge. To address this, we present Xami, an expert-aware adaptive compression framework that exploits routing heterogeneity to apply differentiated structured sparsity across experts. By profiling per-layer activation distributions, Xami preserves frequently activated experts at higher fidelity while more aggressively compressing infrequent ones, all while remaining compatible with native 2:4 Sparse Tensor Core (SpTCs) hardware execution. Across different MoE architectures, Xami consistently improves model-level compression over uniform 2:4 sparsity with minimal accuracy loss and competitive inference throughput. Our results demonstrate that expert heterogeneity can be translated into practical memory savings, achieving up to 2.4× compression over dense compared to just 1.8× achieved by uniform 2:4, without modifying the underlying hardware execution model, providing a highly desirable path toward more efficient MoE inference.},
+ author = {Umeike, Johnson and Asgari, Bahar},
+ doi = {10.1109/LCA.2026.3679449},
+ issn = {1556-6064},
+ journal = {IEEE Computer Architecture Letters},
+ keyword = {Feeds;Central Processing Unit;Electronic circuits;Routing;Product lifecycle management;Life cycle assessment;Communication systems;Radio access networks;Regional area networks;Switches;Mixture-of-Experts;Structured Sparsity;Model Compression;Sparse Tensor Cores;Expert Merging},
+ month = {Jan},
+ number = {1},
+ pages = {154-157},
+ title = {Xami: Expert-Aware Adaptive Compression for Mixture-of-Experts on Sparse Tensor Cores},
+ volume = {25},
+ year = {2026}
+}

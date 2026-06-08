@@ -1,0 +1,14 @@
+@inproceedings{8702499,
+ abstract = {Entropy coding is a fundamental technique in video coding to remove the statistical redundancy in syntax elements. Currently, context-adaptive binary arithmetic coding (CABAC) is used as the entropy coding tool in HEVC. Considering that the manually designed binarization and context models are not flexible to estimate the probability of the syntax elements, we use neural networks to estimate the probability of the syntax elements, then the estimated probabilities together with the values of the syntax elements are fed into an arithmetic coding engine to fulfill entropy coding. In this paper, we focus on the syntax elements of inter prediction information that consists of merge flag, merge index, reference index, motion vector difference and motion vector prediction index in HEVC under low-delay P (LDP) setting. Compared with the previous work on neural network-based arithmetic coding for intra prediction modes and intra DC coefficients, there are three new characteristics in this paper. First, surrounding syntax elements are directly fed into the neural network without converting to reconstructed pixels. Second, unified neural networks are designed for different prediction block sizes. Finally, dependency among the syntax elements in current prediction unit is omitted to improve parallelism. Experimental results show that compared with HEVC, our proposed method achieves up to 0.5% and on average 0.3% BD-rate reduction in LDP configuration.},
+ author = {Ma, Changyue and Liu, Dong and Peng, Xiulian and Zha, Zheng-Jun and Wu, Feng},
+ booktitle = {2019 IEEE International Symposium on Circuits and Systems (ISCAS)},
+ doi = {10.1109/ISCAS.2019.8702499},
+ issn = {2158-1525},
+ keyword = {Syntactics;Indexes;Neural networks;Entropy coding;Context modeling;Probability distribution;Arithmetic coding;CABAC;HEVC;inter prediction information;neural network},
+ month = {May},
+ number = {},
+ pages = {1-5},
+ title = {Neural Network-Based Arithmetic Coding for Inter Prediction Information in HEVC},
+ volume = {},
+ year = {2019}
+}

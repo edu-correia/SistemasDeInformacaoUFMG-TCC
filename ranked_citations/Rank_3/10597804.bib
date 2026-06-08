@@ -1,0 +1,14 @@
+@inproceedings{10597804,
+ abstract = {The multilayer (ML) graph model provides a robust representation of multi-sourced relationships among real-world entities, laying a solid foundation for reliable knowledge discovery. ML core decomposition is a fundamental analytical tool for ML graphs. It offers valuable insights into the dense structures in ML graphs and forms the basis for many complex analysis tasks. However, existing ML core decomposition algorithms face performance issues due to unavoidably unnecessary computations and are inherently serial, unable to fully leverage the multi-core processors. In this paper, we reformulate the search space of this problem with a tree-shaped structure called MLC-tree. Based on it, we present an efficient serial ML core decomposition algorithm that achieves improved time complexity over existing solutions and the first parallel framework for this problem by exploiting the path-decomposition of the MLC-tree. Two practical optimizations are introduced to further boost the parallel efficiency. To facilitate applications built upon ML cores, we construct a compact storage and index structure for ML cores based on the MLC-tree. The usefulness of this index is showcased through two applications: ML core search and a novel weighted densest sub graph discovery problem. Extensive experiments on 9 real-world ML graphs show that our MLC-tree-based ML core decomposition algorithm achieves a speedup of up to $128\times$ over existing baselines and the parallel approach attains an additional speedup of up to $30.6\times$ using 40 cores. Moreover, the MLC-tree index can efficiently support the studied applications.},
+ author = {Liu, Dandan and Wang, Run-An and Zou, Zhaonian and Huang, Xin},
+ booktitle = {2024 IEEE 40th International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE60146.2024.00211},
+ issn = {2375-026X},
+ keyword = {Solid modeling;Multicore processing;Merging;Nonhomogeneous media;Search problems;Solids;Reliability;Multilayer graphs;core decomposition;parallel algorithms;the densest subgraph},
+ month = {May},
+ number = {},
+ pages = {2695-2708},
+ title = {Fast Multilayer Core Decomposition and Indexing},
+ volume = {},
+ year = {2024}
+}

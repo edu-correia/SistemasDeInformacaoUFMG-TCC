@@ -1,0 +1,16 @@
+@article{Huang20201877,
+ abstract = {OpenACC is a directive-based programming model which allows programmers to write graphic processing unit (GPU) programs by simply annotating parallel loops. However, OpenACC has poor support for irregular nested parallel loops, which are natural choices to express nested parallelism. We propose PFACC, a programming model similar to OpenACC. PFACC directives can be used to annotate parallel loops and to guide data movement between different levels of memory hierarchy. Parallel loops can be arbitrarily nested or be placed inside functions that would be (possibly recursively) called in other parallel loops. The PFACC translator translates C programs with PFACC directives into CUDA programs by inserting runtime iteration-sharing and memory allocation routines. The PFACC runtime iteration-sharing routine is a two-level mechanism. Thread blocks dynamically organize loop iterations into batches and execute the batches in a depth-first order. Different thread blocks share iterations among one another with an iteration-stealing mechanism. PFACC generates CUDA programs with reasonable memory usage because of the depth-first execution order. The two-level iteration-sharing mechanism is implemented purely in software and fits well with the CUDA thread hierarchy. Experiments show that PFACC outperforms CUDA dynamic parallelism in terms of performance and code size on most benchmarks. © 2020 John Wiley & Sons, Ltd.},
+ author = {Huang, Ming Hsiang and Yang, Wuu},
+ doi = {10.1002/spe.2868},
+ journal = {Software - Practice and Experience},
+ note = {Cited by: 0},
+ number = {10},
+ pages = {1877 - 1904},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PFACC: An OpenACC-like programming model for irregular nested parallelism},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85087667130?origin=resultslist},
+ volume = {50},
+ year = {2020}
+}

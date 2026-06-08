@@ -1,0 +1,16 @@
+@article{10.5555/3648699.3648852,
+ abstract = {In mixture modeling and clustering applications, the number of components and clusters is often not known. A stick-breaking mixture model, such as the Dirichlet process mixture model, is an appealing construction that assumes infinitely many components, while shrinking the weights of most of the unused components to near zero. However, it is wellknown that this shrinkage is inadequate: even when the component distribution is correctly specified, spurious weights appear and give an inconsistent estimate of the number of clusters. In this article, we propose a simple solution: when breaking each mixture weight stick into two pieces, the length of the second piece is multiplied by a quasi-Bernoulli random variable, taking value one or a small constant close to zero. This effectively creates a soft truncation and further shrinks the unused weights. Asymptotically, we show that as long as this small constant diminishes to zero at a rate faster than o(1/n2), with n the sample size and given data from a finite mixture model, the posterior distribution will converge to the true number of clusters. In comparison, we rigorously explore Dirichlet process mixture models using a concentration parameter that is either constant or rapidly diminishes to zero--both of which lead to inconsistency for the number of clusters. Our proposed model is easy to implement, requiring only a small modification of a standard Gibbs sampler for mixture models. In simulations and a data application of clustering brain networks, our proposed method recovers the ground-truth number of clusters, and leads to a small number of clusters.},
+ articleno = {153},
+ author = {Zeng, Cheng and Miller, Jeffrey W and Duan, Leo L},
+ issn = {1532-4435},
+ issue_date = {January 2023},
+ journal = {J. Mach. Learn. Res.},
+ keyword = {consistent clustering, exchangeable partition probability function, sparse simplex},
+ month = {January},
+ number = {1},
+ numpages = {32},
+ publisher = {JMLR.org},
+ title = {Consistent model-based clustering using the Quasi-Bernoulli stick-breaking process},
+ volume = {24},
+ year = {2023}
+}

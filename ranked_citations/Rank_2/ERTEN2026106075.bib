@@ -1,0 +1,13 @@
+@article{ERTEN2026106075,
+ abstract = {Deep neural networks (DNNs) are powerful tools for spatial modeling tasks but they often struggle to capture spatial autocorrelation and accurately reproduce observed data, which are crucial in geoscience applications. While traditional methods like Kriging address these challenges effectively, DNNs typically treat spatial coordinates as standard features, missing the full potential of spatial relationships. A Conditioned DeepKriging (C-DK) methodology is proposed to overcome these limitations, which builds on the DeepKriging (DK) model architecture created by Chen et al., (2020). C-DK integrates Locally Dependent Moments (LDM) to ensure reproduction of observed values at sampled locations without increasing computational complexity. An embedding layer of spatial coordinates constructed with kernel basis functions is utilized as features in the DNN, and the resulting model is merged with LDM estimates based on local reliability. A second contribution is the addition of locally varying anisotropy (C-DK+LVA), which improves the ability to model complex geological features by incorporating LVA into the model. LVA parameterizes the spatial continuity of a domain using a vector field. Shortest-path distance (SPD) features are employed to encode the effects of LVA, replacing the Euclidean radial basis function (RBF) embedding used in the original DK model. This adaptation allows the model to incorporate directional continuity structures. To support 3D applications, both the Euclidean RBF embedding and SPD computations are extended to 3D. The proposed models are validated on 2D and 3D datasets and yield performance metrics comparable to Ordinary Kriging (OK). Moreover, C-DK+LVA outperforms both C-DK and OK+LVA in scenarios with significant variation in anisotropy. The proposed methodologies require no assumptions of stationarity or linearity and they eliminate the need for variogram calculations, enabling an automated estimation process.},
+ author = {Gamze Erdogan Erten and Jeff Boisvert},
+ doi = {https://doi.org/10.1016/j.cageo.2025.106075},
+ issn = {0098-3004},
+ journal = {Computers & Geosciences},
+ keyword = {DeepKriging, Exact conditioning, Deep neural networks, Locally varying anisotropy},
+ pages = {106075},
+ title = {Conditioned 3D DeepKriging with locally varying anisotropy},
+ url = {https://www.sciencedirect.com/science/article/pii/S0098300425002250},
+ volume = {207},
+ year = {2026}
+}

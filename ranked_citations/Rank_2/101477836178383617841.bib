@@ -1,0 +1,17 @@
+@article{10.14778/3617838.3617841,
+ abstract = {This paper develops a query-time missing value imputation framework, entitled ZIP, that modifies relational operators to be imputation aware in order to minimize the joint cost of imputing and query processing. The modified operators use a cost-based decision function to determine whether to invoke imputation or to defer to downstream operators to resolve missing values. The modified query processing logic ensures results with deferred imputations are identical to those produced if all missing values were imputed first. ZIP includes a novel outer-join based approach to preserve missing values during execution, and a bloom filter based index to optimize the space and running overhead. Extensive experiments on both real and synthetic data sets demonstrate 10 to 25 times improvement when augmenting the state-of-the-art technology, ImputeDB, with ZIP-based deferred imputation. ZIP also outperforms the offline approach by up to 19607 times in a real data set.},
+ author = {Lin, Yiming and Mehrotra, Sharad},
+ doi = {10.14778/3617838.3617841},
+ issn = {2150-8097},
+ issue_date = {September 2023},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1},
+ numpages = {13},
+ pages = {28–40},
+ publisher = {VLDB Endowment},
+ title = {ZIP: Lazy Imputation during Query Processing},
+ url = {https://doi.org/10.14778/3617838.3617841},
+ volume = {17},
+ year = {2023}
+}

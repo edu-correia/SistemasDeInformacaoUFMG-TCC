@@ -1,0 +1,14 @@
+@inproceedings{8754277,
+ abstract = {Whole-slide imaging (WSI) is the digitization of conventional glass slides. Automatic computer-aided diagnosis (CAD) based on WSI enables digital pathology and the integration of pathology with other data like genomic biomarkers. Numerous computational algorithms have been developed for WSI, with most of them taking the image patches cropped from the highest resolution as the input. However, these models exploit only the local information within each patch and lost the connections between the neighboring patches, which may contain important context information. In this paper, we propose a novel multi-scale convolutional network (ConvNet) to utilize the built-in image pyramids of WSI. For the concentric image patches cropped at the same location of different resolution levels, we hypothesize the extra input images from lower magnifications will provide context information to enhance the prediction of patch images. We build corresponding ConvNets for feature representation and then combine the extracted features by 1) late fusion: concatenation or averaging the feature vectors before performing classification, 2) early fusion: merge the ConvNet feature maps. We have applied the multi-scale networks to a benchmark breast cancer WSI dataset. Extensive experiments have demonstrated that our multi-scale networks utilizing the WSI image pyramids can achieve higher accuracy for the classification of breast cancer. The late fusion method by taking the average of feature vectors reaches the highest accuracy (81.50%), which is promising for the application of multi-scale analysis of WSI.},
+ author = {Tong, Li and Sha, Ying and Wang, May D},
+ booktitle = {2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)},
+ doi = {10.1109/COMPSAC.2019.00105},
+ issn = {0730-3157},
+ keyword = {Feature extraction;Breast cancer;Pathology;Solid modeling;Imaging;Image resolution;Deep learning;Whole-Slide Imaging;Breast Cancer;Image Pyramid;Multi-Scale Convolutional Neural Network},
+ month = {Jul},
+ number = {},
+ pages = {696-703},
+ title = {Improving Classification of Breast Cancer by Utilizing the Image Pyramids of Whole-Slide Imaging and Multi-scale Convolutional Neural Networks},
+ volume = {1},
+ year = {2019}
+}

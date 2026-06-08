@@ -1,0 +1,18 @@
+@article{10.1613/jair.1.11209,
+ abstract = {Classic best-first heuristic search algorithms, like A*, record every unique state they encounter in RAM, making them infeasible for solving large problems. In this paper, we demonstrate how best-first search can be scaled to solve much larger problems by exploiting disk storage and parallel processing and, in some cases, slightly relaxing the strict best-first node expansion order. Some previous disk-based search algorithms abandon best-first search order in an attempt to increase efficiency. We present two case studies showing that A*, when augmented with Delayed Duplicate Detection, can actually be more efficient than these non-best-first search orders. First, we present a straightforward external variant of A*, called PEDAL, that slightly relaxes best-first order in order to be I/O efficient in both theory and practice, even on problems featuring real-valued node costs. Because it is easy to parallelize, PEDAL can be faster than in-memory IDA* even on domains with few duplicate states, such as the sliding-tile puzzle. Second, we present a variant of PEDAL, called PE2A*, that uses partial expansion to handle problems that have large branching factors. When tested on the problem of Multiple Sequence Alignment, PE2A* is the first algorithm capable of solving the entire Reference Set 1 of the standard BAliBASE benchmark using a biologically accurate cost function. This work shows that classic best-first algorithms like A* can be applied to large real-world problems. We also provide a detailed implementation guide with source code both for generic parallel disk-based best-first search and for Multiple Sequence Alignment with a biologically accurate cost function. Given its effectiveness as a general-purpose problem-solving method, we hope that this makes parallel and disk-based search accessible to a wider audience.},
+ address = {El Segundo, CA, USA},
+ author = {Hatem, Matthew and Burns, Ethan and Ruml, Wheeler},
+ doi = {10.1613/jair.1.11209},
+ issn = {1076-9757},
+ issue_date = {May 2018},
+ journal = {J. Artif. Int. Res.},
+ month = {May},
+ number = {1},
+ numpages = {36},
+ pages = {233–268},
+ publisher = {AI Access Foundation},
+ title = {Solving large problems with heuristic search: general-purpose parallel external-memory search},
+ url = {https://doi.org/10.1613/jair.1.11209},
+ volume = {62},
+ year = {2018}
+}

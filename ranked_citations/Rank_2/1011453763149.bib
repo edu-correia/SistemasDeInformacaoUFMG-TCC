@@ -1,0 +1,18 @@
+@article{10.1145/3763149,
+ abstract = {Just-in-time (JIT) compilers typically sacrifice the precision of program analysis for efficiency, but are capable of performing sophisticated speculative optimizations based on run-time profiles to generate code that is specialized to a given execution. On the contrary, ahead-of-time static compilers can often afford precise flow-sensitive interprocedural analysis, but produce conservative results in scenarios where higher precision could be derived from run-time specialization. In this paper, we propose the first-of-its-kind approach to enrich static analysis with the possibility of speculative optimization during JIT compilation, as well as its usage to perform aggressive stack allocation on a production Java Virtual Machine.    Our approach of combining static analysis with JIT speculation -- named CoSSJIT -- involves three key contributions. First, we identify the scenarios where a static analysis would make conservative assumptions but a JIT could deliver precision based on run-time speculation. Second, we present the notion of "speculative conditions" and plug them into a static interprocedural dataflow analyzer (whose aim is to identify heap objects that can be allocated on stack), to generate partial results that can be specialized at run-time. Finally, we extend a production JIT compiler to read and enrich static-analysis results with the resolved values of speculative conditions, leading to a practical approach that efficiently combines the best of both worlds. Cherries on the cake: Using CoSSJIT, we obtain 5.7x improvement in stack allocation (translating to performance), while building on a system that ensures functional correctness during JIT compilation.},
+ address = {New York, NY, USA},
+ articleno = {371},
+ author = {Anand, Aditya and Sundaresan, Vijay and Maier, Daryl and Thakur, Manas},
+ doi = {10.1145/3763149},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Escape analysis, Speculative optimization, Stack allocation},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {CoSSJIT: Combining Static Analysis and Speculation in JIT Compilers},
+ url = {https://doi.org/10.1145/3763149},
+ volume = {9},
+ year = {2025}
+}

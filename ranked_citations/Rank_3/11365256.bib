@@ -1,0 +1,14 @@
+@inproceedings{11365256,
+ abstract = {Social media platforms, especially Facebook, contain rich, real-time signals about public interest and sentiment. This study addresses a novel challenge in the analysis of social media trends on Vietnamese Facebook: collecting public posts and comments, clustering them by individual news items rather than broad categories, and monitoring the temporal evolution to detect emerging trends. We introduce a pioneering system tailored to Vietnam's digital landscape, with Vietnamese-specific preprocessing focused on removing special characters to clean noisy content, and integrated real-time processing capabilities to handle streaming data ingestion and analysis. The core methodology includes a supervised classification pipeline enhanced by a custom clustering algorithm that starts each item as a distinct cluster and merges duplicates based on semantic similarity, ensuring precise grouping without overgeneralizing events. We present a curated dataset of 2,794 labeled Facebook texts across categories (Movies, Music, Social News, Slang & Memes, Travel, Entertainment Shows, Sports). We utilize ViSoBERT [1] to generate embeddings from pre-processed Vietnamese text and implement a classification model on top of these embeddings, achieving 93. 56% precision (0.3367 F1), outperforming traditional methods in accuracy and granularity. The end-to-end pipeline combines real-time data processing, classification, temporal aggregation, clustering, and interactive dashboards for near-real-time trend detection and visualization. Our main contributions are: •An annotated Vietnamese Facebook dataset for trend analysis. •A Classification-based ViSoBERT pipeline robust to noisy social text. •A real-time system for clustering and tracking emerging news. This work advances Vietnamese NLP by enabling granular social signals, precise viral tracking, and actionable insights into sentiment shifts where culturally tuned detection was absent. The dataset are available at: https://github.com/Hiep264/social_data.},
+ author = {Dang-Vinh, Hoi and Nguyen, Hiep Hoang and Pham, Hoang Duc-Huy and Nguyen, Anh Thi-Hoang and Do, Trong-Hop},
+ booktitle = {2025 RIVF International Conference on Computing and Communication Technologies (RIVF)},
+ doi = {10.1109/RIVF68649.2025.11365256},
+ issn = {2473-0130},
+ keyword = {Accuracy;Social networking (online);Pipelines;Text categorization;Data visualization;Trend analysis;Market research;Real-time systems;Noise measurement;Monitoring;Social media trend analysis;Facebook;Vietnamese NLP;Text classification;PhoBERT;ViSoBERT;Topic tracking;Data visualization},
+ month = {Dec},
+ number = {},
+ pages = {881-885},
+ title = {ViTrend: A Real-Time System for Topic-Based Social Media Trend Analysis on Vietnamese Facebook},
+ volume = {},
+ year = {2025}
+}

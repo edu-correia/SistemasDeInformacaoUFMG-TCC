@@ -1,0 +1,14 @@
+@article{8731912,
+ abstract = {Converting a single low dynamic range (LDR) image into a high dynamic range (HDR) image, which is the so-called inverse tone mapping (ITM), is a challenging ill-posed problem since a lot of information is lost during compression and storage. Traditional ITM techniques mainly focus on high-quality LDR images without compression artifacts. However, in practice, LDR images are usually stored as a lossy compression format for the convenience of transmission, which will cause artifacts, i.e., blocking and ringing. Hence, these ITM methods suffer from severe performance drop for some real-world applications. In this paper, we propose a novel decomposition-based network to reconstruct HDR images from compressed LDR images; in other words, the proposed network can simultaneously remove blocking/ringing artifacts and recover high-quality HDR information. Considering compression artifacts mainly embedded in high frequency part, we thus decompose the input image into the high-frequency component (also known as detail layer) and low-frequency component (also known as a base layer). The detail layer mainly contains the information of texture, noise, and artifacts, while the base layer contains the information of structure and large object. Based on this, we design two subnetworks, i.e., detail layer recovery subnetwork and base layer recovery subnetwork, to restore the two parts separately. The detail layer recovery subnetwork is responsible for the artifacts removal with texture preserving, while the base layer recovery subnetwork is designed for tone expansion and overexposed/underexposed region restoration. Finally, in order to further reconstruct the serious overexposed regions, we adapt a merge subnetwork to fuse the result from the previous two subnetworks. The experimental results on compressed images demonstrate that the proposed method significantly outperforms other state-of-the-art methods.},
+ author = {Wang, Chao and Zhao, Yang and Wang, Ronggang},
+ doi = {10.1109/ACCESS.2019.2920951},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Image coding;Image restoration;Dynamic range;Image reconstruction;High frequency;Image color analysis;Training;High dynamic range;decomposition;inverse tone mapping;compression artifacts removal;deep learning},
+ month = {},
+ number = {},
+ pages = {74558-74569},
+ title = {Deep Inverse Tone Mapping for Compressed Images},
+ volume = {7},
+ year = {2019}
+}

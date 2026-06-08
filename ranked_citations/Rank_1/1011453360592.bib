@@ -1,0 +1,18 @@
+@article{10.1145/3360592,
+ abstract = {We present the design, implementation, and foundation of a verifier for higher-order functional programs with generics and recursive data types. Our system supports proving safety and termination using preconditions, postconditions and assertions. It supports writing proof hints using assertions and recursive calls. To formalize the soundness of the system we introduce System FR, a calculus supporting System F polymorphism, dependent refinement types, and recursive types (including recursion through contravariant positions of function types). Through the use of sized types, System FR supports reasoning about termination of lazy data structures such as streams. We formalize a reducibility argument using the Coq proof assistant and prove the soundness of a type-checker with respect to call-by-value semantics, ensuring type safety and normalization for typeable programs. Our program verifier is implemented as an alternative verification-condition generator for the Stainless tool, which relies on the Inox SMT-based solver backend for automation. We demonstrate the efficiency of our approach by verifying a collection of higher-order functional programs comprising around 14000 lines of polymorphic higher-order Scala code, including graph search algorithms, basic number theory, monad laws, functional data structures, and assignments from popular Functional Programming MOOCs.},
+ address = {New York, NY, USA},
+ articleno = {166},
+ author = {Hamza, Jad and Voirol, Nicolas and Kun\v{c}ak, Viktor},
+ doi = {10.1145/3360592},
+ issue_date = {October 2019},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {SMT, System F, dependent types, recursive types, software verification},
+ month = {October},
+ number = {OOPSLA},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {System FR: formalized foundations for the stainless verifier},
+ url = {https://doi.org/10.1145/3360592},
+ volume = {3},
+ year = {2019}
+}

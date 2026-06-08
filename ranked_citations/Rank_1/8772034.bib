@@ -1,0 +1,14 @@
+@article{8772034,
+ abstract = {Recommender systems provide an important tool for users to find interested items from the massive amount of user-generated contents. As user interests often change over time and contents become available in a streaming fashion, it is highly desirable to support real-time recommendation that can adapt to changes in user interests and contents. If we represent both user interests and items by high-dimensional points in the same vector space, we can recommend to the user the  $k$  items that are the nearest neighbors (kNN) of the user. The problem of real-time recommendation, thus, translates to computing the kNNs based on the most recent items when the user interests change. As such, the main issue we tackle in this paper is to efficiently process high-dimensional kNN queries over a sliding window on data streams. In particular, we are interested in developing a scalable distributed solution to be able to handle the ever-increasing number of users and volume of data. We propose a new index structure called the dynamic bounded rings index (DBRI) to index the data points in data streams. The basic idea is to first find a set of pivots and assign all points to their nearest pivot to form subsets and then partition each subset into finer-grained bounded rings that can be dynamically adjusted as points change. The design of DBRI lends itself to easy adoption in a distributed setting. We further present the distributed high-dimensional kNN query algorithm (DHDKNN) based on DBRI, aiming at reducing both the communication and the computational cost of query processing. The experiments demonstrate that our algorithm scales well and significantly outperforms the existing methods.},
+ author = {Yang, Min and Zuo, Yixuan and Chen, Meng and Yu, Xiaohui},
+ doi = {10.1109/ACCESS.2019.2931005},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Indexes;Query processing;Distributed databases;Real-time systems;Recommender systems;Heuristic algorithms;Measurement;Real-time recommendation;data streams;k nearest neighbor;distributed processing},
+ month = {},
+ number = {},
+ pages = {103198-103208},
+ title = {Scalable Distributed kNN Processing on Clustered Data Streams},
+ volume = {7},
+ year = {2019}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3763159,
+ abstract = {We introduce Stencil-Lifting, a novel system for automatically converting stencil kernels written in low-level languages in legacy code into semantically equivalent Domain-Specific Language (DSL) implementations. Targeting the efficiency bottlenecks of existing verified lifting systems, Stencil-Lifting achieves scalable stencil kernel abstraction through two key innovations. First, we propose a hierarchical recursive lifting theory that represents stencil kernels, structured as nested loops, using invariant subgraphs, which are customized data dependency graphs that capture loop-carried computation and structural invariants. Each vertex in the invariant subgraph is associated with a predicate-based summary, encoding its computational semantics. By enforcing self-consistency across these summaries, Stencil-Lifting ensures the derivation of correct loop invariants and postconditions for nested loops, eliminating the need for external verification. Second, we develop a hierarchical recursive lifting algorithm that guarantees termination through a convergent recursive process, avoiding the inefficiencies of search-based synthesis. The algorithm efficiently derives the valid summaries of stencil kernels, and its completeness is formally proven. We evaluate Stencil-Lifting on diverse stencil benchmarks from two different suites and on four real-world applications. Experimental results demonstrate that Stencil-Lifting achieves 31.62\texttimes{} and 5.8\texttimes{} speedups compared to the state-of-the-art verified lifting systems STNG and Dexter, respectively, while maintaining full semantic equivalence. Our work significantly enhances the translation efficiency of low-level stencil kernels to DSL implementations, effectively bridging the gap between legacy optimization techniques and modern DSL-based paradigms.},
+ address = {New York, NY, USA},
+ articleno = {381},
+ author = {Li, Mingyi and Xiao, Junmin and Chen, Siyan and Ma, Hui and Chen, Xi and Bao, Peihua and Yuan, Liang and Tan, Guangming},
+ doi = {10.1145/3763159},
+ issue_date = {October 2025},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {intermediate representation, stencil computation, summary lifting},
+ month = {October},
+ number = {OOPSLA2},
+ numpages = {28},
+ publisher = {Association for Computing Machinery},
+ title = {Stencil-Lifting: Hierarchical Recursive Lifting System for Extracting Summary of Stencil Kernel in Legacy Codes},
+ url = {https://doi.org/10.1145/3763159},
+ volume = {9},
+ year = {2025}
+}

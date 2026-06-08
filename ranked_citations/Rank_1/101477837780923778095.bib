@@ -1,0 +1,17 @@
+@article{10.14778/3778092.3778095,
+ abstract = {GPUs are uniquely suited to accelerate (SQL) analytics workloads when datasets fit in the GPU High Bandwidth Memory (HBM). Unfortunately, GPU HBMs remain typically small when compared with lower-bandwidth CPU main memory. Current solutions to accelerate queries on large datasets include multi-GPU execution, processing smaller data batches, and hybrid execution with a connected device (e.g., CPUs). Unfortunately, these approaches are exposed to the limitations of lower main memory and host-to-device interconnect bandwidths, introduce additional I/O overheads, or incur higher costs. This is a substantial problem when trying to scale adoption of GPUs on larger datasets. Data compression can alleviate this bottleneck, but to avoid paying for costly decompression/decoding, an ideal solution must include computation primitives to operate directly on data in compressed form.This is the focus of our paper: a set of new methods for running queries directly on light-weight compressed data using schemes such as Run-Length Encoding (RLE), index encoding, bit-width reductions, and dictionary encoding. Our novelty includes operating on multiple RLE columns without decompression, handling heterogeneous column encodings, and leveraging PyTorch tensor operations for portability across devices. Experimental evaluations show speedups of an order of magnitude compared to state-of-the-art commercial CPU-only analytics systems, for real-world queries on a production dataset that would not fit into GPU memory uncompressed. This work paves the road for GPU adoption in a much broader set of use cases, and it is complementary to most other scale-out or fallback mechanisms.},
+ author = {Huang, Zezhou and Sakowski, Krystian and Lehnert, Hans and Cui, Wei and Curino, Carlo and Interlandi, Matteo and Dumitru, Marius and Sen, Rathijit},
+ doi = {10.14778/3778092.3778095},
+ issn = {2150-8097},
+ issue_date = {November 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {November},
+ number = {3},
+ numpages = {14},
+ pages = {320–333},
+ publisher = {VLDB Endowment},
+ title = {GPU Acceleration of SQL Analytics on Compressed Data},
+ url = {https://doi.org/10.14778/3778092.3778095},
+ volume = {19},
+ year = {2025}
+}

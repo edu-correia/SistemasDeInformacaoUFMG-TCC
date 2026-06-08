@@ -1,0 +1,14 @@
+@inproceedings{11113147,
+ abstract = {The non-volatile memory (NVM) with DRAM-like performance and disk-like persistency has attracted considerable attention in a variety of index structures, including hash table, B-Tree and R-Tree. However, existing NVM-optimized consistent R-Tree is still suboptimal because its single level system neglects the potential boost that DRAM can bring. In this paper, we first propose a hybrid DRAM-NVM consistent R-Tree (HR-Tree), which separately stores internal nodes in DRAM and leaf nodes in NVM. To avoid inconsistency, HR-Tree uses several auxiliary flag bits and pointers to record the process of writes to NVM and employs persistence operations to strictly control the order of writes to NVM. To reduce DRAM consumption, which mainly depends on the metadata size of a leaf node, we present a shared byte strategy to abolish restrictions on metadata size while still keeping HR-Tree consistency. Next, for further shortening search time, we propose an alternative Hilbert-curve-based hybrid R-Tree (HHR-Tree). It has better search efficiency yet leads to insertion performance degradation. Contrary to in-place update in HR-Tree, HHR-Tree applies out-of-place mechanism to enforce data consistency. We conduct comprehensive evaluations on Intel Optane DC Persistent Memory. The proposed HR-Tree outperforms FBR-Tree in terms of insertion, deletion and search throughput while HHR-Tree exhibits a significant improvement for search performance by sacrificing insertion efficiency.},
+ author = {Zhang, Kaiqi and Shen, Chengyou and Zhang, Siyuan and Shi, Shengfei and Gao, Hong and Tu, Yaofeng and Li, Jianzhong},
+ booktitle = {2025 IEEE 41st International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE65448.2025.00249},
+ issn = {2375-026X},
+ keyword = {Degradation;Nonvolatile memory;Random access memory;Process control;Metadata;Throughput;Data engineering;Indexes;Non-volatile memory;R-Tree;Data consistency},
+ month = {May},
+ number = {},
+ pages = {3329-3341},
+ title = {Hybrid DRAM-NVM R-Trees with Consistency Guarantee},
+ volume = {},
+ year = {2025}
+}

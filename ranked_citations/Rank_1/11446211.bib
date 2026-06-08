@@ -1,0 +1,14 @@
+@inproceedings{11446211,
+ abstract = {Diffusion Transformer(DiT)-based generation models have achieved remarkable success in video generation. However, their inherent computational demands pose significant efficiency challenges. In this paper, we exploit the inherent temporal non-uniformity of real-world videos, and observe that videos exhibit dynamic information density, with high-motion segments demanding greater detail preservation than static scenes. Inspired by this temporal non-uniformity, we propose DLFR-Gen, a training-free approach for Diffusion-based Video Generation with Dynamic Latent Frame Rate. DLFR-Gen adaptively adjusts the number of elements in latent space based on the motion frequency of the latent space content, using fewer tokens for low-frequency segments while preserving detail in high-frequency segments. Specifically, our key contributions are: (1) A dynamic frame rate scheduler for DiT video generation that adaptively assign frame rates for video segments. (2) A novel latent-space frame merging method to align latent representations with their denoised counterparts before merging those redundant in low-resolution space. (3) A preference analysis of Rotary Positional Embeddings (RoPE) across DiT layers, informing a tailered RoPE strategy optimized for semantic and local information capture. Experiments show that DLFR-Gen can achieve a speedup up to $3 \times$ for video generation with minimal quality degradation. Project Link.},
+ author = {Yuan, Zhihang and Xie, Rui and Shang, Yuzhang and Zhang, Hanling and Wang, Siyuan and Yan, Shengen and Dai, Guohao and Wang, Yu},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.01523},
+ issn = {2380-7504},
+ keyword = {Broadcasting;Motion pictures;Broadcast technology;Circuits and systems;Text to video;Videos;Pixel;Protocols;High frequency;Layered division multiplexing},
+ month = {Oct},
+ number = {},
+ pages = {16410-16419},
+ title = {Dlfr-Gen: Diffusion-Based Video Generation With Dynamic Latent Frame Rate},
+ volume = {},
+ year = {2025}
+}

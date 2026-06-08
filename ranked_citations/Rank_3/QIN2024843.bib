@@ -1,0 +1,14 @@
+@article{QIN2024843,
+ abstract = {In the era of the Internet, widely used web applications have become the target of hacker attacks because they contain a large amount of personal information. Among these vulnerabilities, stealing private data through cross-site scripting (XSS) attacks is one of the most commonly used attacks by hackers. Currently, deep learning-based XSS attack detection methods have good application prospects; however, they suffer from problems such as being prone to overfitting, a high false alarm rate, and low accuracy. To address these issues, we propose a multi-stage feature extraction and fusion model for XSS detection based on Random Forest feature enhancement. The model utilizes Random Forests to capture the intrinsic structure and patterns of the data by extracting leaf node indices as features, which are subsequently merged with the original data features to form a feature set with richer information content. Further feature extraction is conducted through three parallel channels. Channel I utilizes parallel one-dimensional convolutional layers (1D convolutional layers) with different convolutional kernel sizes to extract local features at different scales and perform multi-scale feature fusion; Channel II employs maximum one-dimensional pooling layers (max 1D pooling layers) of various sizes to extract key features from the data; and Channel III extracts global information bi-directionally using a Bi-Directional Long-Short Term Memory Network (Bi-LSTM) and incorporates a multi-head attention mechanism to enhance global features. Finally, effective classification and prediction of XSS are performed by fusing the features of the three channels. To test the effectiveness of the model, we conduct experiments on six datasets. We achieve an accuracy of 100% on the UNSW-NB15 dataset and 99.99% on the CICIDS2017 dataset, which is higher than that of the existing models.},
+ author = {Qiurong Qin and Yueqin Li and Yajie Mi and Jinhui Shen and Kexin Wu and Zhenzhao Wang},
+ doi = {https://doi.org/10.32604/cmc.2024.051769},
+ issn = {1546-2218},
+ journal = {Computers, Materials and Continua},
+ keyword = {Random forest, feature enhancement, three-channel parallelism, XSS detection},
+ number = {1},
+ pages = {843-874},
+ title = {Detecting XSS with Random Forest and Multi-Channel Feature Extraction},
+ url = {https://www.sciencedirect.com/science/article/pii/S1546221824004752},
+ volume = {80},
+ year = {2024}
+}

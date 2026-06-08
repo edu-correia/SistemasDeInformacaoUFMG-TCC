@@ -1,0 +1,14 @@
+@article{10974734,
+ abstract = {The sparse–sparse matrix multiplication (SpMSpM) is a fundamental operation in various applications. Existing SpMSpM accelerators based on inner product (IP) and outer product (OP) suffer from low computational efficiency and high memory traffic due to inefficient index matching and merging overheads. Gustavson’s product (GP)-based accelerators mitigate some of these challenges but struggle with workload imbalance and irregular memory access patterns, limiting computational parallelism. To overcome these limitations, we propose a distribute-merge product (DMP), a novel SpMSpM dataflow that evenly distributes workloads across multiple computation streams and merges partial results efficiently. We design and implement DMP-based SpMSpM architecture (DMSA), incorporating four key techniques to fully exploit the parallelism of DMP and efficiently handle irregular memory accesses. Implemented on a Xilinx ZCU106 FPGA, DMSA achieves speedups of up to  $3.38\times $  and  $1.73\times $  over two state-of-the-art FPGA-based SpMSpM accelerators while maintaining comparable hardware resource usage. In addition, compared to CPU and GPU implementations on an NVIDIA Jetson AGX Xavier, DMSA is  $4.96\times $  and  $1.53\times $  faster while achieving  $6.67\times $  and  $2.33\times $  better energy efficiency, respectively.},
+ author = {Nagahara, Yuta and Yan, Jiale and Kawamura, Kazushi and Fujiki, Daichi and Motomura, Masato and Van Chu, Thiem},
+ doi = {10.1109/TVLSI.2025.3558895},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Sparse matrices;Merging;IP networks;Indexes;Computational efficiency;Parallel processing;Memory management;Field programmable gate arrays;Very large scale integration;Loading;Accelerator;dataflow;distribute-merge product (DMP);FPGA;sparse–sparse matrix multiplication (SpMSpM)},
+ month = {July},
+ number = {7},
+ pages = {1858-1871},
+ title = {DMSA: An Efficient Architecture for Sparse–Sparse Matrix Multiplication Based on Distribute-Merge Product Dataflow},
+ volume = {33},
+ year = {2025}
+}

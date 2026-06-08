@@ -1,0 +1,15 @@
+@article{Ding2022216,
+ abstract = {Learned index is a novel index structure that enhances traditional index structures like B+-tree with machine learning models. It uses a trained model to locate a key position directly without the costly root-to-leaf traversing in the conventional B+-tree. However, the performance of existing learned indices relies on the prediction accuracy of the model. Recently, to address this problem, some existing learned indices, such as PGM-index, set a threshold to ensure that the prediction error is below the threshold. However, the PGM-index introduced additional space costs because it used a bottom-up strategy to build a tree structure to maintain an error threshold at each level. In this paper, we aim to find out a better trade-off between prediction accuracy and space consumption of learned indices. In particular, we propose a new learned index called HLI (Hybrid Learned Index) that offers high prediction accuracy and searching performance with limited space costs. HLI constructs error-bounded leaf nodes to provide high prediction accuracy and searching performance. Meanwhile, it organizes inner nodes without error bounds to reduce extra space costs. Consequently, we demonstrate that HLI can deliver high searching performance with limited space overhead. We conduct experiments on various datasets to compare HLI with several existing indices, including PGM-index, RMI, and B+-tree. The results show that HLI outperforms PGM-index in lookup performance on all datasets by 1.5 × on average. In addition, compared to PGM-index, HLI reduces the index size by up to 13 × without decaying the lookup performance. © 2022, The Author(s), under exclusive license to Springer Nature Switzerland AG.},
+ author = {Ding, Yuquan and Zhao, Xujian and Jin, Peiquan},
+ doi = {10.1007/978-3-031-12426-6_17},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 6},
+ pages = {216 - 228},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An Error-Bounded Space-Efficient Hybrid Learned Index with High Lookup Performance},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85136107599?origin=resultslist},
+ volume = {13427 LNCS},
+ year = {2022}
+}

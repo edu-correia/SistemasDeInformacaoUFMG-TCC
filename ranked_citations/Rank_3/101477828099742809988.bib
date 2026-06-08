@@ -1,0 +1,17 @@
+@article{10.14778/2809974.2809988,
+ abstract = {This paper describes our new algorithm for sorting an array of structures by efficiently exploiting the SIMD instructions and cache memory of today's processors. Recently, multiway mergesort implemented with SIMD instructions has been used as a high-performance in-memory sorting algorithm for sorting integer values. For sorting an array of structures with SIMD instructions, a frequently used approach is to first pack the key and index for each record into an integer value, sort the key-index pairs using SIMD instructions, then rearrange the records based on the sorted key-index pairs. This approach can efficiently exploit SIMD instructions because it sorts the key-index pairs while packed into integer values; hence, it can use existing high-performance sorting implementations of the SIMD-based multiway mergesort for integers. However, this approach has frequent cache misses in the final rearranging phase due to its random and scattered memory accesses so that this phase limits both single-thread performance and scalability with multiple cores. Our approach is also based on multiway mergesort, but it can avoid costly random accesses for rearranging the records while still efficiently exploiting the SIMD instructions. Our results showed that our approach exhibited up to 2.1x better single-thread performance than the key-index approach implemented with SIMD instructions when sorting 512M 16-byte records on one core. Our approach also yielded better performance when we used multiple cores. Compared to an optimized radix sort, our vectorized multiway mergesort achieved better performance when the each record is large. Our vectorized multiway mergesort also yielded higher scalability with multiple cores than the radix sort.},
+ author = {Inoue, Hiroshi and Taura, Kenjiro},
+ doi = {10.14778/2809974.2809988},
+ issn = {2150-8097},
+ issue_date = {July 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {1274–1285},
+ publisher = {VLDB Endowment},
+ title = {SIMD- and cache-friendly algorithm for sorting an array of structures},
+ url = {https://doi.org/10.14778/2809974.2809988},
+ volume = {8},
+ year = {2015}
+}

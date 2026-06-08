@@ -1,0 +1,18 @@
+@article{10.1145/3654944,
+ abstract = {Log-structured merge-trees (LSM-trees) are widely used in key-value stores because of its excellent write performance. To reduce LSM-tree's read amplification due to overlapping sorted runs, each file (i.e., SSTable) in an LSM-tree is typically associated with a point or range filter to reduce unnecessary I/Os to the runs that do not contain the target key (range). However, as modern SSDs get faster, probing multiple in-memory filters per query often makes the system CPU bottlenecked, thus compromising the system's throughput. In this paper, we developed the Global Range Filter (GRF) for RocksDB that reduces the number of filter probes per query to one. We follow the pioneering Chucky's approach by storing the sorted run IDs within the filter. However, we identify two practical challenges in building a global range filter: correctness in multi-version concurrency control and efficiency in frequent updates. We solve both challenges by the novel Shape Encoding algorithm. With further optimizations, GRF achieves a dominating performance over the state-of-the-art filters under different workloads when integrated into RocksDB.},
+ address = {New York, NY, USA},
+ articleno = {141},
+ author = {Wang, Hengrui and Guo, Te and Yang, Junzhao and Zhang, Huanchen},
+ doi = {10.1145/3654944},
+ issue_date = {June 2024},
+ journal = {Proc. ACM Manag. Data},
+ keyword = {LSM-trees, MVCC, range filters},
+ month = {May},
+ number = {3},
+ numpages = {27},
+ publisher = {Association for Computing Machinery},
+ title = {GRF: A Global Range Filter for LSM-Trees with Shape Encoding},
+ url = {https://doi.org/10.1145/3654944},
+ volume = {2},
+ year = {2024}
+}

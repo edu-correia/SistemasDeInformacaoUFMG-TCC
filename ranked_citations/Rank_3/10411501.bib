@@ -1,0 +1,14 @@
+@article{10411501,
+ abstract = {Code review is an important practice in software development. One of its main objectives is for the assurance of code quality. For this purpose, the efficacy of code review is subject to the credibility of reviewers, i.e., reviewers who have demonstrated strong evidence of previously making quality-enhancing comments are more credible than those who have not. Code reviewer recommendation (CRR) is designed to assist in recommending suitable reviewers for a specific objective and, in this context, assurance of code quality. Its performance is susceptible to the relevance of its training dataset to this objective, composed of all reviewers’ historical review comments, which, however, often contains a plethora of comments that are irrelevant to the enhancement of code quality. Furthermore, recommendation accuracy has been adopted as the sole metric to evaluate a recommender's performance, which is inadequate as it does not take reviewers’ relevant credibility into consideration. These two issues form the ground truth problem in CRR as they both originate from the relevance of dataset used to train and evaluate CRR algorithms. To tackle this problem, we first propose the concept of Quality-Enhancing Review Comments (QERC), which includes three types of comments - change-triggering inline comments, informative general comments, and approve-to-merge comments. We then devise a set of algorithms and procedures to obtain a distilled dataset by applying QERC to the original dataset. We finally introduce a new metric – reviewer's credibility for quality enhancement (RCQE) – as a complementary metric to recommendation accuracy for evaluating the performance of recommenders. To validate the proposed QERC-based approach to CRR, we conduct empirical studies using real data from seven projects containing over 82K pull requests and 346K review comments. Results show that: (a) QERC can effectively address the ground truth problem by distilling quality-enhancing comments from the dataset containing original code reviews, (b) QERC can assist recommenders in finding highly credible reviewers at a slight cost of recommendation accuracy, and (c) even “wrong” recommendations using the distilled dataset are likely to be more credible than those using the original dataset.},
+ author = {Rong, Guoping and Yu, Yongda and Zhang, Yifan and Zhang, He and Shen, Haifeng and Shao, Dong and Kuang, Hongyu and Wang, Min and Wei, Zhao and Xu, Yong and Wang, Juhong},
+ doi = {10.1109/TSE.2024.3356819},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Codes;Measurement;Software;History;Emojis;Software algorithms;Training;Code review;review comment;reviewer recommendation},
+ month = {July},
+ number = {7},
+ pages = {1658-1674},
+ title = {Distilling Quality Enhancing Comments From Code Reviews to Underpin Reviewer Recommendation},
+ volume = {50},
+ year = {2024}
+}

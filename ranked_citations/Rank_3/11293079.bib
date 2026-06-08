@@ -1,0 +1,14 @@
+@article{11293079,
+ abstract = {Hardware transient faults are proven to have a significant impact on deep neural networks (DNNs), whose safety-critical misclassification (SCM) in autonomous vehicles, healthcare, and space applications is increased up to four times. However, the inaccuracy evaluation using accurate fault injection is time-consuming and requires several hours and even a couple of days on a complete simulation platform. To accelerate the evaluation of hardware transient faults on DNNs, we design a unified and end-to-end automatic methodology, A-Mean, using the silent data corruption (SDC) rate of basic operations (such as convolution, addition, multiply, ReLU, and max-pooling) and a static two-level mean calculation mechanism to rapidly compute the overall SDC rate, for estimating the general classification metric accuracy and application-specific metric SCM. More importantly, a max-policy is used to determine the SDC boundary of non-sequential structures in DNNs. Then, the worst-case scheme is used to further calculate the enlarged SCM and halved accuracy under transient faults, via merging the static results of SDC with the original data from one-time dynamic fault-free execution. Furthermore, all of the steps mentioned above have been implemented automatically, so that this easy-to-use automatic tool can be employed for prompt evaluation of transient faults on diverse DNNs. Meanwhile, a novel metric “fault sensitivity” is defined to characterize the variation of transient fault-induced higher SCM and lower accuracy. The comparative results with a state-of-the-art fault injection method TensorFI+ on five DNN models and four datasets show that our proposed estimation method A-Mean achieves up to 922.80 times speedup, with just 4.20% SCM loss and 0.77% accuracy loss on average. The artifact of A-Mean is publicly available at https://github.com/breatrice321/A-Mean.},
+ author = {Jiao, Jiajia and Wen, Ran and Yang, Hong},
+ doi = {10.1631/FITEE.2400547},
+ issn = {2095-9230},
+ journal = {Frontiers of Information Technology & Electronic Engineering},
+ keyword = {Accuracy;Sensitivity;Upper bound;Estimation;Artificial neural networks;Static analysis;Hardware;Topology;Transient analysis;Vehicle dynamics;Analytical model;Deep neural networks;Hardware transient faults;Fast evaluation;Automatic evaluation tool},
+ month = {July},
+ number = {7},
+ pages = {1099-1114},
+ title = {An End-to-End Automatic Methodology to Accelerate the Accuracy Evaluation of Deep Neural Networks Under Hardware Transient Faults},
+ volume = {26},
+ year = {2025}
+}

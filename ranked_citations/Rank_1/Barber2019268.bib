@@ -1,0 +1,14 @@
+@conference{Barber2019268,
+ abstract = {In a classic transactional distributed database management system (DBMS), write transactions invariably synchronize with a coordinator before final commitment. While enforcing serializability, this model has long been criticized for not satisfying the applications' availability requirements. When entering the era of Internet of Things (IoT), this problem has become more severe, as an increasing number of applications call for the capability of hybrid transactional and analytical processing (HTAP), where aggregation constraints need to be enforced as part of transactions. Current systems work around this by creating escrows, allowing occasional overshoots of constraints, which are handled via compensating application logic.The WiSer DBMS targets consistency with availability, by splitting the database commit into two steps. First, a PROMISE step that corresponds to what humans are used to as commitment, and runs without talking to a coordinator. Second, a SERIALIZE step, that fixes transactions' positions in the serializable order, via a consensus procedure. We achieve this split via a novel data representation that embeds read-sets into transaction deltas, and serialization sequence numbers into table rows. WiSer does no sharding (all nodes can run transactions that modify the entire database), and yet enforces aggregation constraints. Both read-write conflicts and aggregation constraint violations are resolved lazily in the serialized data. WiSer also covers node joins and departures as database tables, thus simplifying correctness and failure handling. We present the design of WiSer as well as experiments suggesting this approach has promise. © 2019 IEEE.},
+ author = {Barber, Ronald and Garcia-Arellano, Christian and Grosman, Ronen and Lohman, Guy and Mohan, C. and Muller, Rene and Pirahesh, Hamid and Raman, Vijayshankar and Sidle, Richard and Storm, Adam and Tian, Yuanyuan and Tozun, Pinar and Wu, Yingjun},
+ doi = {10.1109/BigData47090.2019.9006519},
+ journal = {Proceedings - 2019 IEEE International Conference on Big Data, Big Data 2019},
+ note = {Cited by: 11; All Open Access; Green Open Access},
+ pages = {268 - 277},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {WiSer: A Highly Available HTAP DBMS for IoT Applications},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85081293846?origin=resultslist},
+ year = {2019}
+}

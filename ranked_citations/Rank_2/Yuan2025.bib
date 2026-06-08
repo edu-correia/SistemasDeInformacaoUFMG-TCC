@@ -1,0 +1,14 @@
+@conference{Yuan2025,
+ abstract = {Large Language Models (LLMs) use key-value (KV) cache to reduce redundant computation in autoregressive generation. However, the KV cache size increases linearly during generation, leading to excessive memory usage, especially for long texts. Most KV cache compression methods evict the unimportant KV pairs to maintain a fixed cache size, which leads to the permanent loss of tokens during generation. However, singular value decomposition shows that values do not exhibit a strong low-rank property as keys do, suggesting that information is distributed more evenly across values, in contrast to its more redundant distribution within keys. Therefore, methods that evict both keys and values risk losing crucial information and compromise context integrity, ultimately degrading the output quality. To address this problem, we propose WeightedKV, a novel, training-free approach that discards the keys of less important tokens, while merging their values into neighboring tokens via a convex combination weighted by their average attention scores. In this way, the retained keys serve as anchors that guide the generation process, while the merged values provide a rich contextual backdrop. We assess our method on four widely used language modeling datasets, demonstrating superior performance compared to all baseline methods, particularly with a lower budget ratio. © 2025 Institute of Electrical and Electronics Engineers Inc.. All rights reserved.},
+ author = {Yuan, Jian and He, Ziwei and Bai, Haoli and Leng, Jingwen and Jiang, Bo},
+ doi = {10.1109/ICASSP49660.2025.10889583},
+ journal = {ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings},
+ note = {Cited by: 1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {WeightedKV: Attention Scores Weighted Key-Value Cache Merging for Large Language Models},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105009585499?origin=resultslist},
+ year = {2025}
+}

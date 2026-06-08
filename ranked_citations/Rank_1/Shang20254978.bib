@@ -1,0 +1,14 @@
+@conference{Shang20254978,
+ abstract = {Sparse Matrix-Vector Multiplication (SpMV) is a critical operation in scientific and high-performance computing, playing a key role in large-scale numerical simulations. Handling extremely large sparse matrices on a single node is challenging, making distributed computing an effective solution. Existing distributed SpMV optimizations often overlook data locality and suffer from communication bottlenecks. This paper proposes two optimization strategies for distributed SpMV based on the Compressed Sparse Row (CSR) format to improve multi-node efficiency. First, combining cache-aware memory access with binary search, we partition thread tasks across nodes to enable fine-grained non-zero element distribution, reducing memory conflicts, load imbalance, and communication overhead. Second, we design a distributed SpMV kernel incorporating vectorization and load balancing to enhance performance. These strategies improve coordination across nodes and resource utilization. Experiments show average speedups of 81.82× and 7.99× over classical and graph-partitioned distributed SpMV, with peak speedups of 462.34× and 45.85×. Compared to recent distributed SpMV algorithms that balance computation and communication, our method achieves average and peak speedups of 1.23× and 4.27×. The algorithm scales well on large irregular sparse matrices, demonstrating the effectiveness of multi-node collaborative optimization. © 2025 IEEE.},
+ author = {Shang, Yunkun and Zhuang, Yuan and Zeng, Yunhui},
+ doi = {10.1109/SMC58881.2025.11342682},
+ journal = {Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics},
+ note = {Cited by: 0},
+ pages = {4978 - 4983},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {An Improved Distributed SpMV with Cache-Aware Optimization and Load Balancing},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105033143153?origin=resultslist},
+ year = {2025}
+}

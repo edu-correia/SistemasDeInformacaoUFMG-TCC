@@ -1,0 +1,15 @@
+@article{10.1145/3808230,
+ abstract = {As third-party libraries evolve, some API usages become deprecated, requiring corresponding updates in client code. Although library maintainers often provide natural language (NL) descriptions through changelogs or warnings to assist migration, updating deprecated API usage remains labor-intensive and error-prone. In this paper, we present the first empirical study that investigates whether LLMs can effectively update deprecated API usages based on NL descriptions. To this end, we construct a comprehensive benchmark of real-world API deprecation updates. Specifically, we convert NL descriptions into static rules, and identify matching updates from candidate code modifications retrieved via keyword search. The benchmark covers diverse deprecation granularities and varying levels of updating difficulty. Based on this benchmark, we evaluate 12 representative LLMs from four model families with different types and sizes. Our findings reveal that models from different families exhibit varying effectiveness in updating deprecated API usages, and both model size and code-specific tuning influence performance. By examining results across different levels of difficulty, we find that LLMs perform well on simple cases that only require element replacement, whereas complex cases involving additional code adaptation remain challenging. According to our manual analysis, non-trivial parameter changes and required data transformations account for the majority of cases that all LLMs fail to handle effectively. We further assess whether providing additional information such as surrounding code context and API documentation can help improve the effectiveness. Overall, our study highlights that automatically updating deprecated API usages from NL descriptions remains a challenging problem, and provides practical implications for future improvements in LLM-based updating. Additionally, our automatic data collection process has the additional benefit of detecting inconsistencies between deprecation documentation and code. In this process, we identified six documentation bugs, all of which have been confirmed and fixed.},
+ address = {New York, NY, USA},
+ author = {Zhu, Tingwei and Wen, Zhongzhen and Liu, Shangqing and Li, Yi and Zhang, Tian and Xia, Xin},
+ doi = {10.1145/3808230},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {deprecated API usage, API evolution, large language models, empirical study, code updating},
+ month = {April},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Assessing the Capability of LLMs for Deprecated API Usage Updating from Natural Language Descriptions},
+ url = {https://doi.org/10.1145/3808230},
+ year = {2026}
+}

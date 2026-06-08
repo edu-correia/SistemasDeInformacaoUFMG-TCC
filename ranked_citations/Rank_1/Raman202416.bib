@@ -1,0 +1,14 @@
+@conference{Raman202416,
+ abstract = {Database systems use indexes on frequently accessed attributes to accelerate query and transaction processing. This requires paying the cost of maintaining and updating those indexes, which can be thought of as the process of adding structure (e.g., sort) to an otherwise unstructured data collection. The indexing cost is redundant when data arrives pre-sorted, even if only up to some degree. While recent work has studied how classical indexes like B+-trees cannot fully exploit the near-sortedness during ingestion, there is a lack of this exploration on other index designs like read-optimized learned indexes or write-optimized LSM-trees. In this paper, we bridge this gap by conducting the first-ever study on the behavior of learned indexes and LSM-trees when varying the data sortedness in an ingestion workload. Specifically, we build on prior work on benchmarking data sortedness on B+-trees and we expand the scope to benchmark: (i) ALEX and LIPP, which are updatable learned index designs; and (ii) the LSM-tree engine offered by RocksDB. We present our evaluation framework and detail key insights on the performance of the index designs when varying data sortedness. Our observations indicate that learned indexes exhibit unpredictable performance when ingesting differently sorted data, while LSM-trees can benefit from sortedness-aware optimizations. We highlight the potential headroom for improvement and lay the groundwork for further research in this domain. © 2024 Owner/Author.},
+ author = {Raman, Aneesh and Huynh, Andy and Lu, Jinqi and Athanassoulis, Manos},
+ doi = {10.1145/3662165.3662764},
+ journal = {DBTest 2024 - Proceedings of the 10th International Workshop on Testing Database Systems},
+ note = {Cited by: 4; All Open Access; Gold Open Access},
+ pages = {16 - 22},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Benchmarking Learned and LSM Indexes for Data Sortedness},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85197311060?origin=resultslist},
+ year = {2024}
+}

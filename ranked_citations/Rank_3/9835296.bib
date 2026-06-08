@@ -1,0 +1,14 @@
+@inproceedings{9835296,
+ abstract = {Irregular algorithms are often encountered in highly data-centric application domains. These algorithms operate on irregular data structures such as sparse graphs with irregular access patterns, which may also modify the underlying topology unpredictably. High computational time and inherent data parallelism present in these algorithms motivate the use of GPUs for speeding things up, however there are challenges for their efficient implementations due to: difficulty in protecting the shared data consistency in the presence of concurrent dynamic transactions; irregular access patterns due to unstructured data structures; and dynamic structural modifications of the underlying topology. One approach to overcome these challenges is to use Software Transactional Memory (STM). However, overly complex design and implementations of contemporary STM-based approaches and lack of proper framework to employ them in conjunction with the irregular algorithms stalls their adoption by the programming community. To overcome some of these challenges, this research proposes a lightweight STM with a simple design (Lite GSTM), based on a lock stealing algorithm, and an associated extensible framework to hide the complexity of the STM from a programmer. The framework is extensible by allowing plug-ins of customized STMs designed for different needs of transactions. The use of the framework is elaborated with two use cases which employ completely different irregular algorithms, however, have some common features: the underlying data structure is a graph, and the graph is structurally modified (coarsened) unpredictably in the course of execution. The paper presents the performance comparisons of the STM-based implementations with respect to their sequential and non-STM based counterparts, which show promising results.},
+ author = {Manoochehri, Shayan and Cristofaro, Patrick and Goswami, Dhrubajyoti},
+ booktitle = {2022 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)},
+ doi = {10.1109/IPDPSW55747.2022.00098},
+ issn = {},
+ keyword = {Distributed processing;Heuristic algorithms;Software algorithms;Graphics processing units;Programming;Parallel processing;Data structures;software transactional memory;STM;GPU;irregular algorithms;morph operations;framework;minimum spanning tree;coarsening;graph partitioning},
+ month = {May},
+ number = {},
+ pages = {579-587},
+ title = {A Customizable Lightweight STM for Irregular Algorithms on GPU},
+ volume = {},
+ year = {2022}
+}

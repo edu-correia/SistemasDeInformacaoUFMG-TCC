@@ -1,0 +1,14 @@
+@article{10172076,
+ abstract = {Recent efforts have witnessed remarkable progress in satellite video super-resolution (SVSR). However, most SVSR methods usually assume the degradation is fixed and known, e.g., bicubic downsampling, which makes them vulnerable in real-world scenes with multiple and unknown degradations. To alleviate this issue, blind SR has, thus, become a research hotspot. Nevertheless, the existing approaches are mainly engaged in blur kernel estimation while losing sight of another critical aspect for VSR tasks: temporal compensation, especially compensating for blurry and smooth pixels with vital sharpness from severely degraded satellite videos. Therefore, this article proposes a practical blind SVSR algorithm (BSVSR) to explore more sharp cues by considering the pixelwise blur levels in a coarse-to-fine manner. Specifically, we employed multiscale deformable (MSD) convolution to coarsely aggregate the temporal redundancy into adjacent frames by window-slid progressive fusion. Then, the adjacent features are finely merged into mid-feature using deformable attention (DA), which measures the blur levels of pixels and assigns more weights to the informative pixels, thus inspiring the representation of sharpness. Moreover, we devise a pyramid spatial transformation (PST) module to adjust the solution space of sharp mid-feature, resulting in flexible feature adaptation in multilevel domains. Quantitative and qualitative evaluations on both simulated and real-world satellite videos demonstrate that our BSVSR performs favorably against state-of-the-art nonblind and blind SR models. Code will be available at https://github.com/XY-boy/Blind-Satellite-VSR.},
+ author = {Xiao, Yi and Yuan, Qiangqiang and Zhang, Qiang and Zhang, Liangpei},
+ doi = {10.1109/TGRS.2023.3291822},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Satellites;Kernel;Degradation;Superresolution;Estimation;Task analysis;Convolution;Blind super-resolution (SR);deformable attention (DA);multiple degradations;remote sensing;satellite video},
+ month = {},
+ number = {},
+ pages = {1-16},
+ title = {Deep Blind Super-Resolution for Satellite Video},
+ volume = {61},
+ year = {2023}
+}

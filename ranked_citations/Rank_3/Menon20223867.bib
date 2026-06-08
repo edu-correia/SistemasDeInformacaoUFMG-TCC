@@ -1,0 +1,16 @@
+@article{Menon20223867,
+ abstract = {Due to recent explosion of data volume and velocity, a new array of lightweight key-value stores have emerged to serve as alternatives to traditional databases. The majority of these storage engines, however, sacrifice their read performance in order to cope with write throughput by avoiding random disk access when writing a record in favor of fast sequential accesses. But, the boundary between sequential versus random access is becoming blurred with the advent of solid-state drives (SSDs). In this work, we propose our new key-value store, LogStore, optimized for hybrid storage architectures. Additionally, introduce a novel cost-based data staging model based on log-structured storage, in which recent changes are first stored on SSDs, and pushed to HDD as it ages, while minimizing the read/write amplification for merging data from SSDs and HDDs. Furthermore, we take a holistic approach in improving both the read and write performance by dynamically optimizing the data layout, such as deferring and reversing the compaction process, and developing an access strategy to leverage the strengths of each available medium in our storage hierarchy. Lastly, in our extensive evaluation, we demonstrate that LogStore achieves up to 6x improvement in throughput/latency over LevelDB, a state-of-the-art key-value store.  © 1989-2012 IEEE.},
+ author = {Menon, Prashanth and Qadah, Thamir M. and Rabl, Tilmann and Sadoghi, Mohammad and Jacobsen, Hans-Arno},
+ doi = {10.1109/TKDE.2020.3027191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ note = {Cited by: 4},
+ number = {8},
+ pages = {3867 - 3882},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LogStore: A Workload-Aware, Adaptable Key-Value Store on Hybrid Storage Systems},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85134165914?origin=resultslist},
+ volume = {34},
+ year = {2022}
+}

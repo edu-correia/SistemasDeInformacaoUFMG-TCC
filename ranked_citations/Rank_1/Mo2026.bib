@@ -1,0 +1,16 @@
+@article{Mo2026,
+ abstract = {Recent work has investigated adaptive filters, which are filters that change their internal representation in response to queries that yield false positives. These include: (1) strongly adaptive filters, which guarantee a false-positive probability of at most ɛ for any query regardless of the history of prior queries, i.e., against adaptive adversaries, (2) support-optimal filters, which guarantee an average false-positive probability of at most ɛ over sufficiently large query sequences, when the adversary is oblivious, (3) other adaptive filters that change their representation and empirically perform better, but do not come with any specific provable guarantees beyond static filters. In this article, we investigate the performance advantages that strongly adaptive filters offer on (non-adversarial) skewed query distributions, which are common in database applications. In our theoretical and experimental results, we model query distribution skewness with the Zipfian distribution with parameter z. We consider two strongly adaptive filters: the broom filter and the telescoping adaptive filter (TAF). We also consider two adaptive (but not strongly adaptive) filters: the adaptive cuckoo filter (ACF), and a non-adaptive rank-and-select quotient filter augmented with a cache of recent false positives, which we call the cache-augmented filter (CAF). We prove upper bounds on the false-positive rates of the broom filter, the TAF, and the CAF as a function of the Zipfian parameter z as the length of the query sequence tends to infinity. We provide an implementation of the broom filter, based on the (non-adaptive) rank-and-select quotient filter. We validate the above bounds experimentally on synthetic Zipfian query sequences on the broom filter, the TAF, and the CAF. Finally, we measure the observed false-positive rate of the broom filter, the TAF, the CAF, and the ACF on highly skewed real-world network trace data. We find that all adaptive filters achieved 1-2 orders of magnitude lower false-positive rates than non-adaptive filters. We further find that the broom filter and the TAF outperform the CAF only when the ratio of distinct negative queries to positive set size is high; otherwise, the CAF and the strongly adaptive filters yield similar false-positive rates. © 2026 Copyright held by the owner/author(s).},
+ author = {Mo, Tianchi and Bender, Michael A. and Das, Rathish and Farach-Colton, Martin and Tench, David},
+ doi = {10.1145/3786324},
+ journal = {ACM Transactions on Database Systems},
+ note = {Cited by: 0; All Open Access; Hybrid Gold Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Mitigating False Positives in Filters: To Adapt or to Cache?},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105034862634?origin=resultslist},
+ volume = {51},
+ year = {2026}
+}

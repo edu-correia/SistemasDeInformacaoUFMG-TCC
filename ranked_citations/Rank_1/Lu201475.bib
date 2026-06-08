@@ -1,0 +1,13 @@
+@conference{Lu201475,
+ abstract = {Hierarchical namespaces (directory trees) in file systems are effective in indexing file system data. However, the update patterns of namespace metadata, such as intensive writeback and scattered small updates, exaggerate the writes to flash storage dramatically, which hurts both performance and endurance (i.e., limited program/erase cycles of flash memory) of the storage system. In this paper, we propose a reconstructable file system, ReconFS, to reduce namespace metadata writeback size while providing hierarchical namespace access. ReconFS decouples the volatile and persistent directory tree maintenance. Hierarchical namespace access is emulated with the volatile directory tree, and the consistency and persistence of the persistent directory tree are provided using two mechanisms in case of system failures. First, consistency is ensured by embedding an inverted index in each page, eliminating the writes of the pointers (indexing for directory tree). Second, persistence is guaranteed by compacting and logging the scattered small updates to the metadata persistence log, so as to reduce write size. The inverted indices and logs are used respectively to reconstruct the structure and the content of the directory tree on reconstruction. Experiments show that ReconFS provides up to 46.3% performance improvement and 27.1% write reduction compared to ext2, a file system with low metadata overhead.},
+ author = {Lu, Youyou and Shu, Jiwu and Wang, Wei},
+ journal = {Proceedings of the 12th USENIX Conference on File and Storage Technologies, FAST 2014},
+ note = {Cited by: 73},
+ pages = {75 - 88},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ReconfS: A reconstructable file system on flash storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84977873442?origin=resultslist},
+ year = {2014}
+}

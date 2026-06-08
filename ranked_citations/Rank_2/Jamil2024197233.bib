@@ -1,0 +1,15 @@
+@article{Jamil2024197233,
+ abstract = {The Zoned Namespace (ZNS) interface shifts data management responsibility to upper-level applications, requiring them to reclaim space by issuing the zone-reset command to ZNS SSD devices, a process known as garbage collection (GC). Application-level GC can lead to performance degradation due to the high valid data copy overhead, which is further exacerbated by the larger GC units in ZNS SSDs. However, the impact of larger GC units can be mitigated if GC operations are made interruptible, allowing I/O requests to be served during zone resets or block reclamation. Moreover, the adoption of offline data deduplication as a storage optimization technique in ZNS-based file systems like ZenFS presents additional challenges. Offline deduplication must consider lifetime-based file allocation to avoid deduplicating hot data, and placing unique and duplicate data blocks together can further increase valid data copy overhead during GC. To address these issues, we propose DeZNS, an innovative data placement strategy for deduplication-enabled ZenFS. DeZNS tackles the increased valid data copy overhead during GC in offline deduplication by employing a lightweight CRC32 checksum-based method to predict potential duplicates with minimal performance impact, segregating unique and duplicate data blocks. This segregation reduces valid data migration overhead during GC, while the interruptible GC mechanism ensures that ongoing I/O requests are not delayed during zone resets, maintaining ZenFS performance. Additionally, DeZNS integrates an offline deduplication module that operates on segregated zones. Our extensive evaluation shows that DeZNS reduces valid data migration by 28% compared to baseline ZenFS and by up to 2 × compared to naive offline deduplication in micro-benchmarks.  © 2013 IEEE.},
+ author = {Jamil, Safdar and Ro, Joseph and Hwang, Joo-Young and Kim, Youngjae},
+ doi = {10.1109/ACCESS.2024.3520184},
+ journal = {IEEE Access},
+ note = {Cited by: 2; All Open Access; Gold Open Access; Green Open Access},
+ pages = {197233 - 197246},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Efficient Data Placement in Deduplication Enabled ZenFS via CRC-Based Prediction},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85212854503?origin=resultslist},
+ volume = {12},
+ year = {2024}
+}

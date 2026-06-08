@@ -1,0 +1,18 @@
+@article{10.1145/3660766,
+ abstract = {There are many approaches for automated software verification, but they are either imprecise, do not scale well to large systems, or do not sufficiently leverage parallelization. This hinders the integration of software model checking into the development process (continuous integration). We propose an approach to decompose one large verification task into multiple smaller, connected verification tasks, based on blocks in the program control flow. For each block, summaries (block contracts) are computed — based on independent, distributed, continuous refinement by communication between the blocks. The approach iteratively synthesizes preconditions to assume at the block entry (computed from postconditions received from block predecessors, i.e., which program states reach this block) and violation conditions to check at the block exit (computed from violation conditions received from block successors, i.e., which program states lead to a specification violation). This separation of concerns leads to an architecture in which all blocks can be analyzed in parallel, as independent verification problems. Whenever new information (as a postcondition or violation condition) is available from other blocks, the verification can decide to restart with this new information. We realize our approach on the basis of configurable program analysis and implement it for the verification of C programs in the widely used verifier CPAchecker. A large experimental evaluation shows the potential of our new approach: The distribution of the workload to several processing units works well, and there is a significant reduction of the response time when using multiple processing units. There are even cases in which the new approach beats the highly-tuned, existing single-threaded predicate abstraction.},
+ address = {New York, NY, USA},
+ articleno = {59},
+ author = {Beyer, Dirk and Kettl, Matthias and Lemberger, Thomas},
+ doi = {10.1145/3660766},
+ issue_date = {July 2024},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {Formal Verification, Program Analysis, Software Model Checking, Block Summaries, Contract Synthesis, Decomposition Strategies, Parallelization, Multi-process Model Checking},
+ month = {July},
+ number = {FSE},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Decomposing Software Verification using Distributed Summary Synthesis},
+ url = {https://doi.org/10.1145/3660766},
+ volume = {1},
+ year = {2024}
+}

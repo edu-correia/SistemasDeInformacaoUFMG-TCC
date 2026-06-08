@@ -1,0 +1,13 @@
+@article{RAHMAN2026100528,
+ abstract = {Rapid and reliable disaster severity assessment from social media is difficult due to noisy content, modality imbalance, and limited labeled data. This paper introduces ReliefNet, a real-time multimodal framework for disaster severity classification that jointly analyzes images and text. The system integrates DualEmbedNet, a dual-encoder transformer for textual classification, and DisasterNet, a CNN with channel-wise attention for visual analysis, combined through an accuracy-weighted decision-level fusion mechanism that dynamically adapts to modality reliability at inference time. To mitigate labeling scarcity, we construct a unified dataset of 14,996 image-text pairs by merging CrisisMMD and TSEqD. Unlabeled samples are annotated using unsupervised multimodal K-Means clustering, followed by Grad-CAM guided ROI refinement and manual auditing to reduce label noise. Models are evaluated using an 80/10/10 train-validation-test split with metrics including accuracy, precision, recall, F1-score, calibration error, and robustness under missing-modality conditions. The image-only model achieves an F1-score of 97.66%, while ReliefNet attains 97.00% F1 with superior robustness and stability under noisy or incomplete inputs. Accuracy-weighted fusion improves F1-score by 0.7% over equal-weight fusion and outperforms standard CNN baselines such as ResNet and EfficientNet. All models operate in real time on a single NVIDIA GPU, demonstrating ReliefNet's practical deployability.},
+ author = {Khondokar Radwanur Rahman and Amith Khandakar and Md. Fahim Hossen and Shaikh Golam Rabbani and Aniruddha Saha and Md. Faysal Ahamed and Md. Munawar Hossain and Mohamed Arselene Ayari and Rajab Abdulla R.E. Al-Esmail},
+ doi = {https://doi.org/10.1016/j.pdisas.2026.100528},
+ issn = {2590-0617},
+ journal = {Progress in Disaster Science},
+ keyword = {Deep Learning, Multimodal Learning, Transformer, Explainable AI (XAI), CLIP, Disaster},
+ pages = {100528},
+ title = {ReliefNet: A Knowledge-Driven, Explainable AI Multimodal Framework for Disaster Severity Classification and Humanitarian Decision-Making},
+ url = {https://www.sciencedirect.com/science/article/pii/S2590061726000141},
+ volume = {29},
+ year = {2026}
+}

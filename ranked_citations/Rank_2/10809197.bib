@@ -1,0 +1,14 @@
+@inproceedings{10809197,
+ abstract = {Accurately segmenting 3D optical micro-neurons is crucial for a deep understanding of neural structure and function, investigating disease mechanisms, and fostering innovation in neuroscience. Currently, accurate segmentation of 3D neuronal cells faces two major challenges. One is the difficulty in obtaining 3D labels for training deep learning models. The other is the poor segmentation performance for images with low signal-to-noise ratio and densely packed cells with adhesion. This article proposes a weakly supervised learning-based U3D-BCD network for dense 3D optical micro-neuron segmentation, aiming to address these two challenges. Firstly, to tackle the issue of difficult 3D label acquisition, we use the Cellpose algorithm to automatically label 2D slice cells, then optimize the labeling results using morphological algorithms, requiring manual correction of only a small number of mislabeled regions, and finally merge the 2D slice results to form pseudo labels for 3D segmentation. As for the problem of inaccurate segmentation of low signal-to-noise ratio and densely adherent cells, we employ a U3D-BCD multitask learning model with a fusion residual attention mechanism for segmentation. The introduction of attention mechanism in residual blocks improves segmentation results. The model simultaneously learns the foreground mask, instance contour, and distance transform of neural nuclei, and integrates the predictions of three types of maps, combined with post-processing algorithms like 3D watershed, to achieve segmentation of dense signals. Test results on the 3D fMOST dataset demonstrate that the algorithm in this article achieves manual identification accuracy (Recall 97%, Precision 95%, F1 96%), outperforming most current algorithms and obtaining good segmentation results on low signal-to-noise ratio dense cell images.},
+ author = {Quan-Wei, Ding and Qing, Huang and Jia-Heng, Feng},
+ booktitle = {2024 7th International Conference on Mechatronics, Robotics and Automation (ICMRA)},
+ doi = {10.1109/ICMRA62519.2024.10809197},
+ issn = {2996-380X},
+ keyword = {Image segmentation;Solid modeling;Three-dimensional displays;Accuracy;Weak supervision;Watersheds;Prediction algorithms;Optical imaging;Adaptive optics;Signal to noise ratio;3D neuron recognition;watershed;deep learning;weak supervision},
+ month = {Sep.},
+ number = {},
+ pages = {142-146},
+ title = {U3D-BCD Network Based on Weak Supervision Learning: An Algorithm for Accurate Segmentation of Dense 3D Microscopic Optical Neurons},
+ volume = {},
+ year = {2024}
+}

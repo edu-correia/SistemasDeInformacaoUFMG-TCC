@@ -1,0 +1,15 @@
+@article{10.1145/3806394,
+ abstract = {Python third-party libraries (TPLs) are essential in modern software development, but upgrades often cause compatibility issues, leading to system failures. These issues fall into two categories: version compatibility issues (VCIs) and code compatibility issues (CCIs). Existing tools mainly detect dependency conflicts but overlook code-level incompatibilities, with no solution fully automating the inference of compatible versions for both VCIs and CCIs. To fill this gap, we propose PCREQ, the first approach to automatically infer compatible requirements by combining version and code compatibility analysis. PCREQ integrates six modules: knowledge acquisition, version compatibility assessment, invoked APIs and modules extraction, code compatibility assessment, version change, and missing TPL completion. PCREQ collects candidate versions, checks for conflicts, identifies API usage, evaluates code compatibility, and iteratively adjusts versions to generate a compatible requirements.txt with a detailed repair report. To evaluate PCREQ, we construct REQBench, a real-world benchmark with 2,095 upgrade scenarios derived from 34 real-world scientific/ML Python projects (including 406 scenarios unsolvable by pip). Results show PCREQ achieves a 94.03% inference success rate, outperforming PyEGo (37.02%), ReadPyE (37.16%), and LLM-based approaches (GPT-4o, DeepSeek V3/R1) by 18–22%. PCREQ processes each scenario from REQBench in 60.79 s on average, demonstrating practical efficiency. PCREQ reduces manual effort in troubleshooting upgrades, advancing Python dependency maintenance automation.},
+ address = {New York, NY, USA},
+ author = {Lei, Huashan and Xiao, Guanping and Liu, Yepang and Zheng, Zheng},
+ doi = {10.1145/3806394},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Python Dependency Management, Third-Party Library Upgrades, Software Evolution},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {PCREQ: Automated Inference of Compatible Requirements for Python Third-party Library Upgrades},
+ url = {https://doi.org/10.1145/3806394},
+ year = {2026}
+}

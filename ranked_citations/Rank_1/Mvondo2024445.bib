@@ -1,0 +1,14 @@
+@conference{Mvondo2024445,
+ abstract = {We investigate if FaaS platforms can handle ultra-low latency workloads that run as low as less than 1μs and show that even for a warm start, the initialization time takes up to 99, 99% of the total execution time. This is due to the resume process of warm sandboxes that takes more time as the number of the sandbox’s allocated virtual CPUs (vCPUs) increases. We uncover that two operations use up to 93, 1% of the resume time. The first is the insertion of the paused sandbox’s vCPUs to a CPU-sorted run queue. The second is the update of a lock-protected variable, which represents the vCPUs’ load on each CPU. This variable is used for frequency scaling. We introduce Horse, for hot resume. Horse presents two simple approaches. The first is parallel precomputed sorted merge (P<sup>2</sup>SM), a parallel algorithm that leverages pre-computed data to have a parallel sorted merge of two sorted lists in O(1). The second is to coalesce the updates on the lock-protected variable used for frequency scaling. We implement Horse in Xen and Firecracker, two mainstream virtualization platforms. Our evaluation with real-world FaaS traces shows that Horse achieves up to 7, 16× resume time improvement and reduces sandbox initialization overhead by up to 142, 84× with no impact on functions. © 2024 Copyright held by the owner/author(s).},
+ author = {Mvondo, Djob and Taiani, Francois and Bromberg, Yerom-David},
+ doi = {10.1145/3652892.3700784},
+ journal = {Middleware 2024 - Proceedings of the 25th ACM International Middleware Conference},
+ note = {Cited by: 0; All Open Access; Gold Open Access; Green Open Access},
+ pages = {445 - 453},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Horse: Ultra-low latency workloads on FaaS platforms},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85215507883?origin=resultslist},
+ year = {2024}
+}

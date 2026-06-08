@@ -1,0 +1,13 @@
+@conference{Nguyen2016349,
+ abstract = {Most "Big Data" systems are written in managed languages, such as Java, C#, or Scala. These systems suffer from severe memory problems due to the massive volume of objects created to process input data. Allocating and deallocating a sea of data objects puts a severe strain on existing garbage collectors (GC), leading to high memory management overheads and reduced performance. This paper describes the design and implementation of Yak, a "Big Data" friendly garbage collector that provides high throughput and low latency for all JVM-based languages. Yak divides the managed heap into a control space (CS) and a data space (DS), based on the observation that a typical data-intensive system has a clear distinction between a control path and a data path. Objects created in the control path are allocated in the CS and subject to regular tracing GC. The lifetimes of objects in the data path often align with epochs creating them. They are thus allocated in the DS and subject to region-based memory management. Our evaluation with three large systems shows very positive results. © 2016 by The USENIX Association All Rights Reserved.},
+ author = {Nguyen, Khanh and Fang, Lu and Xu, Guoqing and Demsky, Brian and Lu, Shan and Alamian, Sanazsadat and Mutlu, Onur},
+ journal = {Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2016},
+ note = {Cited by: 107},
+ pages = {349 - 365},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Yak: A high-performance big-data-friendly garbage collector},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85027997675?origin=resultslist},
+ year = {2016}
+}

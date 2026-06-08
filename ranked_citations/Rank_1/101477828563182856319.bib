@@ -1,0 +1,17 @@
+@article{10.14778/2856318.2856319,
+ abstract = {Modern database clusters entail two levels of networks: connecting CPUs and NUMA regions inside a single server in the small and multiple servers in the large. The huge performance gap between these two types of networks used to slow down distributed query processing to such an extent that a cluster of machines actually performed worse than a single many-core server. The increased main-memory capacity of the cluster remained the sole benefit of such a scale-out.The economic viability of high-speed interconnects such as InfiniBand has narrowed this performance gap considerably. However, InfiniBand's higher network bandwidth alone does not improve query performance as expected when the distributed query engine is left unchanged. The scalability of distributed query processing is impaired by TCP overheads, switch contention due to uncoordinated communication, and load imbalances resulting from the inflexibility of the classic exchange operator model. This paper presents the blueprint for a distributed query engine that addresses these problems by considering both levels of networks holistically. It consists of two parts: First, hybrid parallelism that distinguishes local and distributed parallelism for better scalability in both the number of cores as well as servers. Second, a novel communication multiplexer tailored for analytical database workloads using remote direct memory access (RDMA) and low-latency network scheduling for high-speed communication with almost no CPU overhead. An extensive evaluation within the HyPer database system using the TPC-H benchmark shows that our holistic approach indeed enables high-speed query processing over high-speed networks.},
+ author = {R\"{o}diger, Wolf and M\"{u}hlbauer, Tobias and Kemper, Alfons and Neumann, Thomas},
+ doi = {10.14778/2856318.2856319},
+ issn = {2150-8097},
+ issue_date = {December 2015},
+ journal = {Proc. VLDB Endow.},
+ month = {December},
+ number = {4},
+ numpages = {12},
+ pages = {228–239},
+ publisher = {VLDB Endowment},
+ title = {High-speed query processing over high-speed networks},
+ url = {https://doi.org/10.14778/2856318.2856319},
+ volume = {9},
+ year = {2015}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10355845,
+ abstract = {N owadays, deep learning-based generative models are capable of producing high-quality spoofed speech. This presents new challenges for audio forensics, such as detecting spoofed speech and understanding how it is created. Current work is either limited to true-or-false detection or classification, or simply groups all samples from forgery classes unseen during training to an unknown class. In this paper, beyond classifying all samples from unseen classes as unknown, and considering the correlations between different classes, a cluster analysis-based embedding extractor training method is proposed to learn representations of speech forgery methods, which has good generalization ability to unknown speech forgery classes. In this method, a merged speech forgery recognition dataset is firstly constructed with more categories and more speech samples based on manually created labels. Based on this dataset, an embedding extractor is trained by finetuning a pre-trained Transformer. Subsequently, clustering is conducted with the embedding representations to label each sample as a cluster index. The pre-trained transformer with the same network structure is again finetuned on the new dataset with the cluster indexes as labels. The finetuned transformer acts as the final embedding extractor. Finally, the extractor is used to obtain the embedding representations and predict the number of classes of unknown data based on clustering analysis. Extensive experiments are performed on publicly available datasets. From the experimental results, the following two conclusions can be drawn: (1) Embedding extractors trained on clustering-based merged datasets have a better ability on traceability generalization to unknown forgery methods compared to embedding extractors trained on label-based merged datasets. (2) As the number of forgery method classes in the training set increases, the trained embedding extractor has better traceability generalization to unknown forgery methods.},
+ author = {Zhang, Qiang and Sun, Meng and Yang, Jibin and Zhang, Xiongwei and Cao, Tieyong and Chen, Weiwei},
+ booktitle = {2023 8th International Conference on Communication, Image and Signal Processing (CCISP)},
+ doi = {10.1109/CCISP59915.2023.10355845},
+ issn = {},
+ keyword = {Training;Correlation;Speech recognition;Transformers;Forgery;Robustness;Data models;speech anti-spoofing;unknown forgery method recognition;spoofing attribution;transformer;clustering},
+ month = {Nov},
+ number = {},
+ pages = {125-132},
+ title = {Unknown Forgery Method Recognition: Beyond Classification},
+ volume = {},
+ year = {2023}
+}

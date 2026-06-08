@@ -1,0 +1,14 @@
+@inproceedings{10444819,
+ abstract = {Compilers use a wide range of advanced optimizations to improve the quality of the machine code they generate. In most cases, compiler optimizations rely on precise analyses to be able to perform the optimizations. However, whenever a control-flow merge is performed information is lost as it is not possible to precisely reason about the program anymore. One existing solution to this issue is code duplication, which involves duplicating instructions from merge blocks to their predecessors. This paper introduces a novel and more aggressive approach to code duplication, grounded in loop unrolling and control-flow unmerging that enables subsequent optimizations that cannot be enabled by applying only one of these transformations. We implemented our approach inside LLVM, and evaluated its performance on a collection of GPU benchmarks in CUDA. Our results demonstrate that, even when faced with branch divergence, which complicates code duplication across multiple branches and increases the associated cost, our optimization technique achieves performance improvements of up to 81%.},
+ author = {Murtovi, Alnis and Georgakoudis, Giorgis and Parasyris, Konstantinos and Liao, Chunhua and Laguna, Ignacio and Steffen, Bernhard},
+ booktitle = {2024 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+ doi = {10.1109/CGO57630.2024.10444819},
+ issn = {2643-2838},
+ keyword = {Codes;Costs;Graphics processing units;Prototypes;Benchmark testing;Predictive models;Optimization;compiler;code duplication;LLVM;GPU},
+ month = {March},
+ number = {},
+ pages = {106-118},
+ title = {Enhancing Performance Through Control-Flow Unmerging and Loop Unrolling on GPUs},
+ volume = {},
+ year = {2024}
+}

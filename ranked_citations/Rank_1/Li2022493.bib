@@ -1,0 +1,15 @@
+@article{Li2022493,
+ abstract = {Log-Structured Merge tree (LSM-tree) has become the mainstream data structure of persistent key-value (KV) stores, but it suffers from serious write and read amplification. In update intensive workloads, repeated and useless compaction of outdated data makes the problem more serious. So we design an efficient global segmented hashmap to record the level of the latest KV pairs, and we present GHStore based on it, which is a key-value store that improves overall performance in write, read and range query simultaneously for update intensive workloads. A read operation of GHStore does not need to search from top to bottom, and a write-induced compaction operation ignores outdated records. The experiments show that for update intensive workloads, compared to widely-used key-value stores (e.g. RocksDB, Wisckey and PebblesDB), GHStore decreases read latency by 10%–50%, range query latency by 15%–60%, while increases write throughput by 4%–55%. © 2022, The Author(s), under exclusive license to Springer Nature Switzerland AG.},
+ author = {Li, Jiaoyang and Yue, Yinliang and Wang, Weiping},
+ doi = {10.1007/978-3-031-00123-9_39},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 2},
+ pages = {493 - 508},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {GHStore: A High Performance Global Hash Based Key-Value Store},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85129787720?origin=resultslist},
+ volume = {13245 LNCS},
+ year = {2022}
+}

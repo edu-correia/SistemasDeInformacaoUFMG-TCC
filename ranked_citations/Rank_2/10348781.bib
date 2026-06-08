@@ -1,0 +1,14 @@
+@inproceedings{10348781,
+ abstract = {Surgical instrument segmentation is a key step in robot assisted minimally invasive surgery and can enable other applications such as augmented reality. However, accurate instrument segmentation is still challenging due to the complex environment. With the growth of deep learning, the results have improved significantly. However, due to small data sets, the generalization of the trained networks needs to be improved, as the results drop significantly when applied to new, unseen data. To increase the generalization of a CNN for instrument segmentation, a synthetic data set is created for further training. The data set is created with images of surgical instruments in front of a green screen and background images of surgical procedures that do not contain any instruments. In addition to the background images from real procedures, a GAN is trained to generate more background images. The instruments are merged with the background using three different blending functions. A total of 15,000 new images are generated. Two models are trained, model 1 with the EndoVis17 data set and model 2 with the EndoVis17 and the synthetic data set. The models are based on the SegNet architecture with pretrained parameters and differ only in the training data used. Both models achieve a mIoU above 90% on the EndoVis17 test data. Additionally, both models are tested on the EndoVis15 data set, which provides a new environment compared to the training data. model 1 achieves a mIoU of 56.75% and model 2 of 76.15%. The additional training with the synthetic data set has improved the generalization of the CNN by about 20 percentage points on the new unseen data.},
+ author = {Streckert, Tim and Fromme, Dominik and Kaupenjohann, Matti and Thiem, Jörg},
+ booktitle = {2023 IEEE 12th International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications (IDAACS)},
+ doi = {10.1109/IDAACS58523.2023.10348781},
+ issn = {2770-4254},
+ keyword = {Training;Deep learning;Minimally invasive surgery;Instruments;Robot kinematics;Training data;Data models;surgical instrument segmentation;deep learning;generalization;robot assisted surgery;simulation},
+ month = {Sep.},
+ number = {},
+ pages = {336-340},
+ title = {Using Synthetic Data to Increase the Generalization of a CNN for Surgical Instrument Segmentation},
+ volume = {1},
+ year = {2023}
+}

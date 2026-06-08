@@ -1,0 +1,18 @@
+@article{10.1145/3697805,
+ abstract = {Despite recent breakthroughs in distributed Graph Neural Network (GNN) training, large-scale graphs still generate significant network communication overhead, decreasing time and resource efficiency. Although recently proposed partitioning or caching methods try to reduce communication inefficiencies and overheads, they are not sufficiently effective due to their sampling pattern-agnostic nature. This paper proposes a Pipelined Partition Aware Caching and Communication Efficient Refinement System (Pacer), a communication-efficient distributed GNN training system. First, Pacer intelligently estimates each partition's access frequency to each vertex by jointly considering the sampling method and graph topology. Then, it uses the estimated access frequency to refine partitions and caching vertices in its two-level cache (CPU and GPU) to minimize data transfer latency. Furthermore, Pacer incorporates a pipeline-based minibatching method to mask the effect of the network communication. Experimental results on real-world graphs show that Pacer outperforms state-of-the-art distributed GNN training system in training time by 40% on average.},
+ address = {New York, NY, USA},
+ articleno = {39},
+ author = {Mahmud, Shohaib and Shen, Haiying and Iyer, Anand},
+ doi = {10.1145/3697805},
+ issue_date = {December 2024},
+ journal = {Proc. ACM Netw.},
+ keyword = {distributed gnn training, graph neural network (gnn)},
+ month = {November},
+ number = {CoNEXT4},
+ numpages = {18},
+ publisher = {Association for Computing Machinery},
+ title = {PACER: Accelerating Distributed GNN Training Using Communication-Efficient Partition Refinement and Caching},
+ url = {https://doi.org/10.1145/3697805},
+ volume = {2},
+ year = {2024}
+}

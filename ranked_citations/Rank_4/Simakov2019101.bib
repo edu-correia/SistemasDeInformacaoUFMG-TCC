@@ -1,0 +1,15 @@
+@article{Simakov2019101,
+ abstract = {In this work, we report on strategies and results of our initial approach for modernization of Titan2D code. Titan2D is a geophysical mass flow simulation code designed for modeling of volcanic flows, debris avalanches and landslides over a realistic terrain model. It solves an underlying hyperbolic system of partial differential equations using parallel adaptive mesh Godunov scheme. The following work was done during code refactoring and modernization. To facilitate user input two level python interface was developed. Such design permits large changes in C++ and Python low-level while maintaining stable high-level interface exposed to the end user. Multiple diverged forks implementing different material models were merged back together. Data storage layout was changed from a linked list of structures to a structure of arrays representation for better memory access and in preparation for further work on better utilization of vectorized instruction. Existing MPI parallelization was augmented with OpenMP parallelization. The performance of a hash table used to store mesh elements and nodes references was improved by switching from a linked list for overflow entries to dynamic arrays allowing the implementation of the binary search algorithm. The introduction of the new data layout made possible to reduce the number of hash table look-ups by replacing them with direct use of indexes from the storage class. The modifications lead to 8–9 times performance improvement for serial execution. © 2019, Springer Nature Switzerland AG.},
+ author = {Simakov, Nikolay A. and Jones-Ivey, Renette L. and Akhavan-Safaei, Ali and Aghakhani, Hossein and Jones, Matthew D. and Patra, Abani K.},
+ doi = {10.1007/978-3-030-34356-9_10},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+ note = {Cited by: 6; All Open Access; Green Open Access},
+ pages = {101 - 112},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Modernizing Titan2D, a Parallel AMR Geophysical Flow Code to Support Multiple Rheologies and Extendability},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85076847131?origin=resultslist},
+ volume = {11887 LNCS},
+ year = {2019}
+}

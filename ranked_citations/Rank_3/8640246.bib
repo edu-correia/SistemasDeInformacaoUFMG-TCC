@@ -1,0 +1,14 @@
+@article{8640246,
+ abstract = {Modern cloud providers offer dense hardware with multiple cores and large memories, hosted in global platforms. This raises the challenge of implementing high-performance software systems that can effectively scale from a single core to multicore to the globe. Conventional wisdom says that software designed for one scale point needs to be rewritten when scaling up by 10 - 100× [1]. In contrast, we explore how a system can be architected to scale across many orders of magnitude by design. We explore this challenge in the context of a new key-value store system called Anna: a partitioned, multi-mastered system that achieves high performance and elasticity via wait-free execution and coordination-free consistency. Our design rests on a simple architecture of coordination-free actors that perform state update via merge of lattice-based composite data structures. We demonstrate that a wide variety of consistency models can be elegantly implemented in this architecture with unprecedented consistency, smooth fine-grained elasticity, and performance that far exceeds the state of the art.},
+ author = {Wu, Chenggang and Faleiro, Jose M. and Lin, Yihan and Hellerstein, Joseph M.},
+ doi = {10.1109/TKDE.2019.2898401},
+ issn = {1558-2191},
+ journal = {IEEE Transactions on Knowledge and Data Engineering},
+ keyword = {Lattices;Message systems;Multicore processing;Servers;Programming;Hardware;Scalability;Key-value store;high-performance;scalability;consistency;coordination-avoidance;lattices},
+ month = {Feb},
+ number = {2},
+ pages = {344-358},
+ title = {Anna: A KVS for Any Scale},
+ volume = {33},
+ year = {2021}
+}

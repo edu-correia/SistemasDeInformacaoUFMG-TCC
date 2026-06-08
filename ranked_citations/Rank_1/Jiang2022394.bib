@@ -1,0 +1,14 @@
+@conference{Jiang2022394,
+ abstract = {Log Structured Merge tree (LSM-tree) is widely used in modern key-value stores due to its superior write performance. However, current LSM-tree-based key-value stores suffer from two performance issues: (1) write stall caused by speed gap between fast DRAM and slow storage devices; (2) write amplification incurred by existing LSM-tree compaction. This paper proposes NV-Cache, a write-optimized non-volatile cache for LSM-tree-based key-value stores. We design a split LSM-tree over a hybrid storage hierarchy consisting of fast Non-Volatile Memory (NVM) and slow solid state drive (SSD). It promotes frequently-accessed, high LSM-tree levels onto fast NVM and offloads cold, large LSM-tree levels into the slow storage device. Further, we propose a range of techniques, including unsorted LSM-tree node layout, lightweight MemTable flush, write-optimal list compaction, and LRU-based NV-Cache eviction, to extensively optimize the write path. NV-Cache closes the performance gap between fast DRAM and slow storage devices to prevent the write stall and reduce write amplification. We implement NV-Cache based on Google LevelDB and conduct a series of experiments using db_bench and YCSB workloads. Experiment results suggest that NV-Cache effectively prevents write stall, achieves 2.3× write reduction, and performs 54% better than LeveIDB., NoveLSM., and MatrixKV. © 2022 IEEE.},
+ author = {Jiang, Xuzhen and Cai, Miao and Ye, Baoliu},
+ doi = {10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00057},
+ journal = {Proceedings - 20th IEEE International Symposium on Parallel and Distributed Processing with Applications, 12th IEEE International Conference on Big Data and Cloud Computing, 12th IEEE International Conference on Sustainable Computing and Communications and 15th IEEE International Conference on Social Computing and Networking, ISPA/BDCloud/SocialCom/SustainCom 2022},
+ note = {Cited by: 1},
+ pages = {394 - 401},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Improving Write Performance for LSM-tree-based Key-Value Stores with NV-Cache},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85151956000?origin=resultslist},
+ year = {2022}
+}

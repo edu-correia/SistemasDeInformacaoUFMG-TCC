@@ -1,0 +1,14 @@
+@inproceedings{11186068,
+ abstract = {Android apps are getting bloated by continuously integrating possibly unnecessary functional modules. This trend of software bloat negatively impacts the performance of static analysis tools. As a result, analysis reports are more likely to contain false positives and experience analysis timeouts. Consequently, developers are forced to manually inspect and troubleshoot errors, as well as restart the analysis process, making analyzers more time-consuming and less user-friendly. However, existing approaches for Android app debloating almost only consider how to remove redundant code elements or functional features from the perspective of users, thus they are unsuitable for the analyzer-oriented app debloating task in most cases. To fill this gap, we propose an Android app debloating approach that employs a novel Multi-layer Dependence Graph (MDG) structure to represent the app under analysis. We hierarchically construct the MDG by sequentially analyzing and capturing dependence at the class, method, and statement levels. Throughout this process, we dynamically identify hotspot classes and narrow down the scope for further dependence extraction, thereby alleviating the challenge of a too complicated graph structure caused by the excessive app size. We implement our approach as the tool FlowSlicer, a novel MDG-based static Android app debloater. We evaluate FlowSlicer by utilizing it to debloat the input app first and then observing the performance difference of two analysis processes which accept the original and the debloated app as input respectively. The evaluation is performed on both the hand-crafted and the real-world apps in our benchmark. Our results show that FlowSlicer is not only capable of effectively debloating Android apps but also enhancing the performance of static analyzers. For instance, cooperating with FlowSlicer, the analyzer FlowDroid could detect 212 more leaks in real-world apps in our benchmark.},
+ author = {Yang, Hengqin and Yan, Jiwei and Yan, Jun and Liang, Bin and Zhang, Jian},
+ booktitle = {2025 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+ doi = {10.1109/ICSME64153.2025.00054},
+ issn = {2576-3148},
+ keyword = {Software maintenance;Codes;Operating systems;Static analysis;Benchmark testing;Nonhomogeneous media;Market research;Android;Software Debloating;Static Analysis},
+ month = {Sep.},
+ number = {},
+ pages = {529-540},
+ title = {An Efficient Android App Debloating Approach Based on Multi-Layer Dependence Graph},
+ volume = {},
+ year = {2025}
+}

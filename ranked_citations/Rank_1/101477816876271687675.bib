@@ -1,0 +1,17 @@
+@article{10.14778/1687627.1687675,
+ abstract = {DBO is a database system that utilizes randomized algorithms to give statistically meaningful estimates for the final answer to a multi-table, disk-based query from start to finish during query execution. However, DBO's "time 'til utility" (or "TTU"; that is, the time until DBO can give a useful estimate) can be overly large, particularly in the case that many database tables are joined in a query, or in the case that a join query includes a very selective predicate on one or more of the tables, or when the data are skewed. In this paper, we describe Turbo DBO, which is a prototype database system that can answer multi-table join queries in a scalable fashion, just like DBO. However, Turbo DBO often has a much lower TTU than DBO. The key innovation of Turbo DBO is that it makes use of novel algorithms that look for and remember "partial match" tuples in a randomized fashion. These are tuples that satisfy some of the boolean predicates associated with the query, and can possibly be grown into tuples that actually contribute to the final query result at a later time.},
+ author = {Dobra, Alin and Jermaine, Chris and Rusu, Florin and Xu, Fei},
+ doi = {10.14778/1687627.1687675},
+ issn = {2150-8097},
+ issue_date = {August 2009},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {1},
+ numpages = {12},
+ pages = {419–430},
+ publisher = {VLDB Endowment},
+ title = {Turbo-charging estimate convergence in DBO},
+ url = {https://doi.org/10.14778/1687627.1687675},
+ volume = {2},
+ year = {2009}
+}

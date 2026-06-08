@@ -1,0 +1,14 @@
+@inproceedings{11112988,
+ abstract = {Log Structured Merge Trees (LSM-tree) based key-value stores are widely used in many storage systems to support a variety of operations such as updates, point reads, and range reads. Traditionally, the merge policy of LSM-trees organizes data into multiple levels of exponentially increasing capacity to support high-speed writes. However, we contend that the traditional merge policies are not optimized for reads. In this work, we present Autumn, a scalable and read-optimized LSM-tree based key-value store with near-optimal worst-case point and range read costs. The key idea in improving read performance is to dynamically adjust the capacity ratio between two adjacent levels as more data are stored. As a result, lower levels gradually increase their capacities and more actively merges. In particular, point and range read cost improves from the previous known O(logN) complexity to $O(\sqrt{logN})$ in Autumn by applying the novel Garnering merge policy. While the Garnering merge policy optimizes for both point reads and range reads, it maintains high performance for writes by inherently prioritizing the merges in the lower levels, as Garnering schedules more merges for the lower levels. We implemented Autumn on top of RocksDB and LevelDB and experimentally show the gain in performance for real-world workloads.},
+ author = {Zhao, Fuheng and Miller, Zach and Reznikov, Leron and Agrawal, Divyakant and El Abbadi, Amr},
+ booktitle = {2025 IEEE 41st International Conference on Data Engineering (ICDE)},
+ doi = {10.1109/ICDE65448.2025.00212},
+ issn = {2375-026X},
+ keyword = {Schedules;Costs;Data engineering;Complexity theory;LSM-tree;Storage},
+ month = {May},
+ number = {},
+ pages = {2824-2837},
+ title = {Autumn: A Scalable Read Optimized LSM-Tree Based Key-Value Stores with Fast Point and Range Reads},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@conference{Zhang201822,
+ abstract = {—Symbolic execution has achieved wide application in software testing and analysis. However, path explosion remains the bottleneck limiting scalability of most symbolic execution engines in practice. One of the promising solutions to address this issue is to merge explored states and decrease number of paths. Nevertheless, state merging leads to increase in complexity of path predicates at the same time, especially in the situation where variables with concrete values are turned symbolic and chances of concretely executing some statements are dissipated. As a result, calculating expressions and constraints becomes much more time-consuming and thus, the performance of symbolic execution is weakened in contrast. To resolve the problem, we propose a merge-fork framework enabling states under exploration to switch automatically between merging mode and forking mode. First, active state forking is introduced to enable forking a state into multiple ones as if a certain merging action taken before were eliminated. Second, we perform dynamic merge-fork analysis to cut source code into pieces and continuously evaluate efficiency of different merging strategies for each piece. Our approach dynamically combines paths under exploration to maximize opportunities for concrete execution and ease the burden on underlying solvers. We implement the framework on the foundation of the symbolic execution engine KLEE, and conduct experiments on GNU Coreutils code using our prototype to present the effect of our proposition. Experiments show up to 30% speedup and 80% decrease in queries compared to existing works. Copyright © 2018 for this paper by its authors.},
+ author = {Zhang, Chao and Yin, Weiliang and Lin, Zhiqiang},
+ journal = {CEUR Workshop Proceedings},
+ note = {Cited by: 0},
+ pages = {22 - 29},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Boost symbolic execution using dynamic state merging and forking},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85058622674?origin=resultslist},
+ volume = {2273},
+ year = {2018}
+}

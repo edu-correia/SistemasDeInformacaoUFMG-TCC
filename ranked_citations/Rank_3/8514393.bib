@@ -1,0 +1,14 @@
+@inproceedings{8514393,
+ abstract = {Sparse matrices are exploited in many problems from scientific computing and, thus, their efficient implementation is crucial for the overall performance of the problems. Three sparse matrix formats, such as Compressed Sparse Row Storage, Block Sparse Row Storage and Ellpack-Itpack, have been proposed to support an efficient storage and access to sparse matrices. A specific challenge is to implement sparse matrices on parallel platforms and to support efficient access within parallel algorithms. This article is a contribution towards the efficient parallel execution of a multi-threaded general matrix-matrix multiplication (GEMM) using sparse matrices. Major considerations are based on the benefit and overhead of a symbolic GEMM prior to the sparse GEMM operation to obtain information about the result matrix structure. Hence, overhead regarding sorting, merging of data structures and memory allocation routines can be minimized to improve the runtime performance. Multi-threaded GEMM implementations are studied for different storage formats and their performance is investigated for a broad range of sparse test matrices on recent multicore architectures. A constraint of our approach is that the sparse GEMM should be performed such that the sparse matrix format is an invariant property and the result matrix of the GEMM operation is provided in the same format without matrix format changes.},
+ author = {Richter, Marcel and Runger, Gudula},
+ booktitle = {2018 International Conference on High Performance Computing & Simulation (HPCS)},
+ doi = {10.1109/HPCS.2018.00088},
+ issn = {},
+ keyword = {Sparse matrices;Indexes;Layout;Memory management;Complexity theory;Matrix decomposition;Runtime},
+ month = {July},
+ number = {},
+ pages = {523-530},
+ title = {Symbolic Matrix Multiplication for Multithreaded Sparse GEMM Utilizing Sparse Matrix Formats},
+ volume = {},
+ year = {2018}
+}

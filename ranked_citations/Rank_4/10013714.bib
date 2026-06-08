@@ -1,0 +1,14 @@
+@article{10013714,
+ abstract = {Block-based compression scheme shows remarkable success in image and video coding. However, existing tree-type block partition methods usually divide point clouds into clusters with few or disjoint points due to the irregular sampling, which is adverse for the subsequent transform to exploit the local region correlation. Moreover, the widely-used optimal transform, e.g., Discrete Cosine Transform (DCT), is deduced with the assumption of the specified probability model. Thus these transforms cannot adequately conform to diverse statistical characteristics of point cloud attributes. To address the above two problems, we propose a block-adaptive codec with the optimized transform for point cloud attribute compression, including Progressive Clustering (PC) for block partition and Region-Aware Signal Modeling (RASM) for transform. PC is designed via the split-and-merge strategy. In the splitting phase, over-segmented clusters are obtained by iteratively searching the nearest neighbors to maintain the spatial continuity of points in one cluster. In the merging step, blocks are determined by merging over-segmented clusters under the guidance of minimizing texture complexity, which adjusts block sizes to adapt to texture variation. RASM adaptively captures the color correlations to respond to diverse statistical characteristics by optimizing the overall Rate-Distortion (RD) cost. Then, the optimal transform bases are obtained via the eigen-decomposition of the color correlation representation with respect to the Gaussian Markov Random Field, where input colors are obtained considering the linear relationship between geometry and color variations. The linear coefficients also need to be encoded to combine geometry to reconstruct the transform bases at the decoder in the same way as the encoder. Particularly, we accelerate the RASM by constraining the independent relationship between signals in the local region, which hardly influences RD performance. Extensive experiments not only indicate the effectiveness of PC and RASM but also show the significant RD gains achieved by our approach compared with several state-of-the-art platforms.},
+ author = {Song, Fei and Li, Ge and Yang, Xiaodong and Gao, Wei and Liu, Shan},
+ doi = {10.1109/TCSVT.2023.3235891},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Transforms;Point cloud compression;Image color analysis;Correlation;Geometry;Encoding;Covariance matrices;Adaptive block partition;signal modeling;optimized graph transform;point cloud compression},
+ month = {Aug},
+ number = {8},
+ pages = {4294-4308},
+ title = {Block-Adaptive Point Cloud Attribute Coding With Region-Aware Optimized Transform},
+ volume = {33},
+ year = {2023}
+}

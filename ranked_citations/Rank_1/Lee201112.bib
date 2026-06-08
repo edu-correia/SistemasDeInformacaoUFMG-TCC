@@ -1,0 +1,14 @@
+@conference{Lee201112,
+ abstract = {NAND flash memory is a preferred storage media for various platforms ranging from embedded systems to enterprise-scale systems. Flash devices do not have any mechanical moving parts and provide low-latency access. They also require less power compared to rotating media. Unlike hard disks, flash devices use out-of-update operations and they require a garbage collection (GC) process to reclaim invalid pages to create free blocks. This GC process is a major cause of performance degradation when running concurrently with other I/O operations as internal bandwidth is consumed to reclaim these invalid pages. The invocation of the GC process is generally governed by a low watermark on free blocks and other internal device metrics that different workloads meet at different intervals. This results in I/O performance that is highly dependent on workload characteristics. In this paper, we examine the GC process and propose a semi-preemptive GC scheme that can preempt on-going GC processing and service pending I/O requests in the queue. Moreover, we further enhance flash performance by pipelining internal GC operations and merge them with pending I/O requests whenever possible. Our experimental evaluation of this semi-preemptive GC sheme with realistic workloads demonstrate both improved performance and reduced performance variability. Write-dominant workloads show up to a 66.56% improvement in average response time with a 83.30% reduced variance in response time compared to the non-preemptive GC scheme. © 2011 IEEE.},
+ author = {Lee, Junghee and Kim, Youngjae and Shipman, Galen M. and Oral, Sarp and Wang, Feiyi and Kim, Jongman},
+ doi = {10.1109/ISPASS.2011.5762711},
+ journal = {ISPASS 2011 - IEEE International Symposium on Performance Analysis of Systems and Software},
+ note = {Cited by: 80},
+ pages = {12 - 21},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A semi-preemptive garbage collector for solid state drives},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/79957447473?origin=resultslist},
+ year = {2011}
+}

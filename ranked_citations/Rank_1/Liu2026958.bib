@@ -1,0 +1,16 @@
+@article{Liu2026958,
+ abstract = {Key-value stores underpin a wide range of applications due to their simplicity and efficiency. Log-Structured Merge Trees (LSM-trees) dominate as their underlying structure, excelling at handling rapidly growing data. Recent research has focused on optimizing LSM-tree performance under static workloads with fixed read-write ratios. However, real-world workloads are highly dynamic, and existing workload-aware approaches often struggle to sustain optimal performance or incur substantial transition overhead when workload patterns shift. To address this, we propose ElasticLSM, which removes traditional LSM-tree structural constraints to allow more flexible management actions (i.e., compactions and write stalls) creating greater opportunities for continuous performance optimization. We further design Arce, a lightweight compaction decision engine that guides ElasticLSM in selecting the optimal action from its expanded action space. Building on these components, we implement ArceKV, a full-fledged key-value store atop RocksDB. Extensive evaluations demonstrate that ArceKV outperforms state-of-the-art compaction strategies across diverse workloads, delivering around 3× faster performance in dynamic scenarios. © 2025, VLDB Endowment. All rights reserved.},
+ author = {Liu, Junfeng and Xie, Haoxuan and Luo, Siqiang},
+ doi = {10.14778/3796195.3796208},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 0},
+ number = {5},
+ pages = {958 - 972},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ArceKV: Towards Workload-driven LSM-compactions for Key-Value Store Under Dynamic Workloads},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105037979469?origin=resultslist},
+ volume = {19},
+ year = {2026}
+}

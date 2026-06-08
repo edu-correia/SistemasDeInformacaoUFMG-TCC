@@ -1,0 +1,13 @@
+@article{HE2022105780,
+ abstract = {Brain image registration is fundamental for brain medical image analysis. However, the lack of paired images with diverse modalities and corresponding ground truth deformations for training hinder its development. We propose a novel nonfinite-modality data augmentation for brain image registration to combat this. Specifically, some available whole-brain segmentation masks, including complete fine brain anatomical structures, are collected from the actual brain dataset, OASIS-3. One whole-brain segmentation mask can generate many nonfinite-modality brain images by randomly merging some fine anatomical structures and subsequently sampling the intensities for each fine anatomical structure using random Gaussian distribution. Furthermore, to get more realistic deformations as the ground truth, an improved 3D Variational Auto-encoder (VAE) is proposed by introducing the intensity-level reconstruction loss and the structure-level reconstruction loss. Based on the generated images and trained improved 3D VAE, a new Synthetic Nonfinite-Modality Brain Image Dataset (SNMBID) is created. Experiments show that pre-training on SNMBID can improve the accuracy of registration. Notably, SNMBID can be a landmark for evaluating other brain registration methods, and the model trained on the SNMBID can be a baseline for the brain image registration task. Our code is available at https://github.com/MangoWAY/SMIBID_BrainRegistration.},
+ author = {Yuanbo He and Aoyu Wang and Shuai Li and Yikang Yang and Aimin Hao},
+ doi = {https://doi.org/10.1016/j.compbiomed.2022.105780},
+ issn = {0010-4825},
+ journal = {Computers in Biology and Medicine},
+ keyword = {Nonfinite-modality, Data augmentation, Improved 3D VAE, Brain image registration},
+ pages = {105780},
+ title = {Nonfinite-modality data augmentation for brain image registration},
+ url = {https://www.sciencedirect.com/science/article/pii/S0010482522005479},
+ volume = {147},
+ year = {2022}
+}

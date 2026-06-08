@@ -1,0 +1,14 @@
+@inproceedings{6967105,
+ abstract = {Hadoop Distributed File System (HDFS) is quite commonly deployed in large data storage facilities and behaved very efficient when managing very large files. However, it has problems when operating large amount of small files. This is mainly because of the master-slave structure. Access request of too many small files will bring heavy burden to NameNode, which is the master machine of Hadoop. In the previous studies, Dong paid attention to file correlation and Chandrasekar S has proposed a general prefetching method. But neither of them gives a specific approach to record file correlation. Both of them made an assumption that files in one merged block has the higher correlation. In this paper, we proposed a new way to record file correlations based on Chandrasekar's EHDFS. Through our recorded data, an optimal file request chain is achieved. The chain represents the most correlate file order. According to this order, blocks that contains small files can be re-constructed. After reconstruction, the new blocks will have higher prefetching efficiency according to our theoretical analysis and significantly reduce the request sent to Hadoop NameNode.},
+ author = {Xiao, Chang and Li, Qiang and Zheng, Dong},
+ booktitle = {Proceedings of 2013 3rd International Conference on Computer Science and Network Technology},
+ doi = {10.1109/ICCSNT.2013.6967105},
+ issn = {},
+ keyword = {Correlation;Prefetching;Writing;Educational institutions;File systems;Merging;Master-slave;hadoop;small file;sequencefile;cloud storage;prefetch;small file mapping},
+ month = {Oct},
+ number = {},
+ pages = {244-248},
+ title = {A novel approach to record file correlation and reduce mapping frequency on HDFS based on ExtendHDFS},
+ volume = {},
+ year = {2013}
+}

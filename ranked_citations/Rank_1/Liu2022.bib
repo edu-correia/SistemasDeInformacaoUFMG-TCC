@@ -1,0 +1,14 @@
+@conference{Liu2022,
+ abstract = {LSM-based key-value(KV) storage plays an important role in many storage systems, but LSM-tree has caused high I/O amplification issues. The popular KV separation technique reduces I/O amplification by storing only keys in the LSM-tree and values in separated log-structured files. However, as for delete-intensive and update-intensive workloads, the existing KV separated design limits its high performance due to its imperfect value-log-oriented Garbage Collection (GC) mechanism. This exposes a series of problems such as untimely garbage collection and high I/O overhead. In this paper, we propose an efficient and adaptive garbage collection mechanism, uCleaner, which is suitable for KV-separated LSM-trees. In contrast to the existing garbage collection mechanism based on threshold-triggered lazy collection, we divide log-structured files into segments and uCleaner is a mechanism for actively initiating garbage collection requests based on segment utilization, forming an adaptive garbage collection between lazy collection and active segment request collection. Moreover, we present a cost-benefit analysis scoring mechanism based on segment utilization and segment duration, which automatically scores each segment to be cleaned, and the GC mechanism chooses the segment with the highest score from all segments for cleaning first. In addition, based on cost-benefit model, we propose a method to separate hot and cold data to reduce the I/Otraffic caused by the phenomenon of valid data movement during garbage collection. Experiments show that after using uCleaner, the overall throughput is increased by 1.18 times while saving 2.83% in write size.  © 2022 IEEE.},
+ author = {Liu, Mingxuan and Gu, Jianhua},
+ doi = {10.1109/DSIT55514.2022.9943889},
+ journal = {2022 5th International Conference on Data Science and Information Technology, DSIT 2022 - Proceedings},
+ note = {Cited by: 2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {UCleaner: An Efficient Adaptive Garbage Collection Mechanism for KV-Separated LSM-Stores},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85143135022?origin=resultslist},
+ year = {2022}
+}

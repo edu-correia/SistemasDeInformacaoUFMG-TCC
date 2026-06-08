@@ -1,0 +1,14 @@
+@inproceedings{11444877,
+ abstract = {This paper presents SeHDR, a novel high dynamic range 3D Gaussian Splatting (HDR-3DGS) approach for generating HDR novel views given multi-view LDR images. Unlike existing methods that typically require the multi-view LDR input images to be captured from different exposures, which are tedious to capture and more likely to suffer from errors (e.g., object motion blurs and calibration/alignment inaccuracies), our approach learns the HDR scene representation from multi-view LDR images of a single exposure. Our key insight to this ill-posed problem is that by first estimating Bracketed 3D Gaussians (i.e., with different exposures) from single-exposure multi-view LDR images, we may then be able to merge these bracketed 3D Gaussians into an HDR scene representation. Specifically, SeHDR first learns base 3D Gaussians from single-exposure LDR inputs, where the spherical harmonics parameterize colors in a linear color space. We then estimate multiple 3D Gaussians with identical geometry but varying linear colors conditioned on exposure manipulations. Finally, we propose the Differentiable Neural Exposure Fusion (NeEF) to integrate the base and estimated 3D Gaussians into HDR Gaussians for novel view rendering. Extensive experiments demonstrate that SeHDR outperforms existing methods as well as carefully designed baselines. Codes are available at https://github.com/yiyulics/SeHDR.},
+ author = {Li, Yiyu and Wang, Haoyuan and Xu, Ke and Hancke, Gerhard Petrus and Lau, Rynson W.H.},
+ booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+ doi = {10.1109/ICCV51701.2025.02416},
+ issn = {2380-7504},
+ keyword = {Filtering theory;Filters;Image filtering;Filtering;Pixel;Digital images;Protocols;Videos;Video equipment;HTTP;3d scene reconstruction;hdr reconstruction;single exposure;gaussian splatting},
+ month = {Oct},
+ number = {},
+ pages = {26045-26054},
+ title = {SeHDR: Single-Exposure HDR Novel View Synthesis Via 3D Gaussian Bracketing},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,15 @@
+@article{Wu2025283,
+ abstract = {Heterogeneous graph neural networks (HGNNs) are essential for capturing the structure and semantic information in heterogeneous graphs. However, existing GPU-based solutions, such as PyTorch Geometric, suffer from low GPU utilization due to numerous short-execution-time and memory-bound CUDA kernels during HGNN training. To address this issue, we introduce HiFuse, an enhancement for PyTorch Geometric designed to accelerate mini-batch HGNN training on CPU-GPU systems. From the data perspective, we reorganize and merge multiple smaller vertex feature matrices into larger ones, enabling a single kernel to process larger data chunks. This efficiently exploits data locality, reduces the kernel launch overhead, and improves overall GPU utilization. From the workflow perspective, we sophisticatedly offload the construction of semantic graphs from GPU to CPU to reduce the number of CUDA kernels. To meet the parallelism requirements on CPU and ensure seamless execution between CPU and GPU, we employ parallelization techniques including multi-threading and asynchronous pipeline. This allows different stages of the process to overlap, enhancing GPU utilization and reducing end-to-end execution latency, leading to a more efficient and balanced use of computational resources. Through extensive experiments, HiFuse demonstrates an average 2.38× speedup compared to a state-of-the-art solution. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2025.},
+ author = {Wu, Meng and Qiu, Jingkai and Yan, Mingyu and Li, Wenming and Zhang, Yang and Zhang, Zhimin and Ye, Xiaochun and Fan, Dongrui},
+ doi = {10.1007/978-981-96-1542-1_17},
+ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) },
+ note = {Cited by: 0},
+ pages = {283 - 303},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating Mini-batch HGNN Training by Reducing CUDA Kernels},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85219196771?origin=resultslist},
+ volume = {15253 LNCS},
+ year = {2025}
+}

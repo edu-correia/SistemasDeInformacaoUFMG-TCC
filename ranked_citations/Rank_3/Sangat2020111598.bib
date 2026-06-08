@@ -1,0 +1,15 @@
+@article{Sangat2020111598,
+ abstract = {The combination of powerful parallel frameworks and on-demand commodity hardware in distributed computing has made both analytics and decision support systems canonical to enterprises of all sizes. The unprecedented volumes of data stacked by companies present challenges to process analytical queries efficiently. This data is often organised as star schema, in which star join and group-by are ubiquitous and expensive operations. Although parallel frameworks such as Apache Spark facilitate join and group-by, the implementation can only process two tables at a time and fail to handle the excessive network communication, disk spills and multiple scans of data. In this paper, we present Distributed ATrie Group Join (DATGJ), a fast distributed star join and group-by algorithm for column-stores. DATGJ uses divide and broadcast-based joining technique where the fact table columns are partitioned equally and fast hash table (FHT) for each dimension table are broadcasted. This technique helps it avoid cross communication between workers and disk spills. DATGJ performs a single scan of partitioned fact table columns and use FHT to join data. FHT uses Robin Hood hashing with the upper limit on number of probes and achieve significant speed up during join. DATGJ performs group-by and aggregation leveraging progressive materialisation and realising grouping attributes as a tree shaped deterministic finite automation known as Aggregate Trie or ATrie. We evaluated our algorithm using Star Schema Benchmark (SSBM) to show that it is 1.5X to 6X faster than the most prominent approaches while having zero data shuffle and consistently perform well with addition of resources and in memory-constrained scenarios. © 2013 IEEE.},
+ author = {Sangat, Prajwol and Taniar, David and Messom, Christopher},
+ doi = {10.1109/ACCESS.2020.3003269},
+ journal = {IEEE Access},
+ note = {Cited by: 1; All Open Access; Gold Open Access; Green Open Access},
+ pages = {111598 - 111613},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Distributed ATrie Group Join: Towards Zero Network Cost},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85087401153?origin=resultslist},
+ volume = {8},
+ year = {2020}
+}

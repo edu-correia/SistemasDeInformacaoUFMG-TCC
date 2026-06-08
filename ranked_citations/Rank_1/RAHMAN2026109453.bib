@@ -1,0 +1,13 @@
+@article{RAHMAN2026109453,
+ abstract = {Brain tumor segmentation in magnetic resonance imaging (MRI) requires a careful trade-off between accuracy and computational efficiency. In this study a hybrid deep learning framework that integrates Swin Transformer and three dimensional (3D) Convolution is proposed to leverage both global and local feature representations. The encoder incorporates 3D Patch Aggregation and hierarchical feature compression using 3D Patch Merging, while feature recalibration is enhanced through Squeeze-and-Excitation (SE) modules. The bottleneck combines Kolmogorov–Arnold Networks (KAN) with Axial Attention for improved nonlinear modeling and long-range dependency capture. Multi-scale skip connections use Feature Compression Module (FCM) and Cross Attention Fusion (CAF) to strengthen feature alignment, and the decoder reconstructs segmentation masks using transposed convolutions with refined outputs via a Convolutional Block Attention Module (CBAM). A Teacher–Student Knowledge Distillation (KD) strategy enables the development of a lightweight Student model that utilizes Conv3D, Efficient Channel Attention (ECA), and a KAN bottleneck to preserve performance with reduced complexity. The proposed models are evaluated on the BraTS 2020, 2021, and 2023 datasets and demonstrate strong generalization on the MSD dataset without fine-tuning. The Teacher model achieves Dice scores up to 92.85% for whole tumor segmentation, while the Student model maintains competitive accuracy with only 2.804 million parameters and 30 GFLOPs. Visual and quantitative results confirm the framework’s robustness and effectiveness across multiple benchmarks in brain tumor segmentation.. For reproducibility, the source code is publicly available at: https://github.com/Rahman768/RCH.},
+ author = {Mostafizur Rahman and Ke Sun and Yu Wang},
+ doi = {https://doi.org/10.1016/j.bspc.2026.109453},
+ issn = {1746-8094},
+ journal = {Biomedical Signal Processing and Control},
+ keyword = {Brain tumor segmentation, Swin transformer, 3D convolution, Patch merging, Feature recalibration, Knowledge distillation, Attention mechanism},
+ pages = {109453},
+ title = {Advancing automatic brain tumor segmentation utilizing swinT-Unet and hierarchical attention module},
+ url = {https://www.sciencedirect.com/science/article/pii/S1746809426000078},
+ volume = {116},
+ year = {2026}
+}

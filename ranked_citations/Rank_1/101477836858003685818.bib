@@ -1,0 +1,17 @@
+@article{10.14778/3685800.3685818,
+ abstract = {Many organizations have embraced the "Lakehouse" data management paradigm, which involves constructing structured data warehouses on top of open, unstructured data lakes. This approach stands in stark contrast to traditional, closed, relational databases and introduces challenges for performance and stability of distributed query processors. Firstly, in large-scale, open Lakehouses with uncurated data, high ingestion rates, external tables, or deeply nested schemas, it is often costly or wasteful to maintain perfect and up-to-date table and column statistics. Secondly, inherently imperfect cardinality estimates with conjunctive predicates, joins and user-defined functions can lead to bad query plans. Thirdly, for the sheer magnitude of data involved, strictly relying on static query plan decisions can result in performance and stability issues such as excessive data movement, substantial disk spillage, or high memory pressure. To address these challenges, this paper presents our design, implementation, evaluation and practice of the Adaptive Query Execution (AQE) framework, which exploits natural execution pipeline breakers in query plans to collect accurate statistics and re-optimize them at runtime for both performance and robustness. In the TPC-DS benchmark, the technique demonstrates up to 25\texttimes{} per query speedup. At Databricks, AQE has been successfully deployed in production for multiple years. It powers billions of queries and ETL jobs to process exabytes of data per day, through key enterprise products such as Databricks Runtime, Databricks SQL, and Delta Live Tables.},
+ author = {Xue, Maryann and Bu, Yingyi and Somani, Abhishek and Fan, Wenchen and Liu, Ziqi and Chen, Steven and van Hovell, Herman and Samwel, Bart and Mokhtar, Mostafa and Korlapati, RK and Lam, Andy and Ma, Yunxiao and Ercegovac, Vuk and Li, Jiexing and Behm, Alexander and Li, Yuanjian and Li, Xiao and Krishnamurthy, Sriram and Shukla, Amit and Petropoulos, Michalis and Paranjpye, Sameer and Xin, Reynold and Zaharia, Matei},
+ doi = {10.14778/3685800.3685818},
+ issn = {2150-8097},
+ issue_date = {August 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {13},
+ pages = {3947–3959},
+ publisher = {VLDB Endowment},
+ title = {Adaptive and Robust Query Execution for Lakehouses at Scale},
+ url = {https://doi.org/10.14778/3685800.3685818},
+ volume = {17},
+ year = {2024}
+}

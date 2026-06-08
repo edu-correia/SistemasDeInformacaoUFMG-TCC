@@ -1,0 +1,14 @@
+@article{10509824,
+ abstract = {Preserving important textures of the content image and achieving prominent style transfer results remains a challenge in the field of image style transfer. This challenge arises from the entanglement between color and texture during the style transfer process. To address this challenge, we propose an end-to-end network that incorporates adaptive weighted least squares (AWLS) filter, iterative least squares (ILS) filter, and channel separation. Given a content image ($\mathcal {C}$) and a reference style image ($\mathcal {S}$), we begin by separating the RGB channels and utilizing ILS filter to decompose them into structure and texture layers. We then perform style transfer on the structural layers using WCT$^{2}$ (incorporating wavelet pooling and unpooling techniques for whitening and coloring transforms) in the R, G, and B channels, respectively. We address the texture distortion caused by WCT$^{2}$ with a texture enhancing (TE) module in the structural layer. Furthermore, we propose an estimating and compensating for the structure loss (ECSL) module. In the ECSL module, with the AWLS filter and the ILS filter, we estimate the texture loss caused by TE, convert the loss of the structural layer to the loss of the texture layer, and compensate for the loss in the texture layer. The final structural layer and the texture layer are merged into the channel style transfer results in the separated R, G, and B channels into the final style transfer result. Thereby, this enables a more complete texture preservation and a significant style transfer process. To evaluate our method, we utilize quantitative experiments using various metrics, including NIQE, AG, SSIM, PSNR, and a user study. The experimental results demonstrate the superiority of our approach over the previous state-of-the-art methods.},
+ author = {Ding, Hong and Zhang, Haimin and Fu, Gang and Jiang, Caoqing and Luo, Fei and Xiao, Chunxia and Xu, Min},
+ doi = {10.1109/TMM.2024.3394733},
+ issn = {1941-0077},
+ journal = {IEEE Transactions on Multimedia},
+ keyword = {Photorealistic images;Image color analysis;Smoothing methods;Electronic mail;Finance;Faces;Economics;Photorealistic image style transfer;image smoothing;channel separation;texture synthesis},
+ month = {},
+ number = {},
+ pages = {9892-9905},
+ title = {Towards High-Quality Photorealistic Image Style Transfer},
+ volume = {26},
+ year = {2024}
+}

@@ -1,0 +1,14 @@
+@inproceedings{10319945,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is a fundamental routine in computational science and engineering. Its optimization methods on various homogeneous parallel processors, such as CPUs and GPUs, received much attention. Recently, asymmetric multicore processors (AMPs) have heterogeneous performance and efficient cores (e.g., P- and E-cores from Intel and Apple, or Big.LITTLE cores from ARM), or cores with different cache structures (e.g., cores with/without 3D V-Cache from AMD) are becoming one of the mainstream in desktop and workstation computers. However, there lacks heterogeneity-aware research on accelerating SpMV on AMPs.We in this paper propose a parallel algorithm called heterogeneity-aware SpMV (HASpMV) for improving the performance of SpMV on the latest 12th- and 13th-Gen AMPs from Intel and Ryzen 9 AMPs from AMD. We first micro-benchmark bandwidth and multi-/single-core SpMV to collect performance characteristics and to motivate our algorithm design, and then develop several optimization techniques to assign workloads between the two types of cores for achieving significantly better cache locality and load balancing. The experimental results show that compared to the latest version of the Intel oneMKL library and the open-source works CSR5 and merge-SpMV, HASpMV achieves an average speedup of 2.61x, 2.31x, and 3.73x (up to 5.23x, 4.46x, and 8.23x) on the i9-12900KF processor. On the i9-13900KF processor, HASpMV achieves an average speedup of 3.17x, 1.52x, and 2.23x (up to 9.46x, 5.31x, and 4.49x). Additionally, when comparing AMD Ryzen 9 7950X3D and 7950X AMPs, HASpMV brings an average speedup of 1.43x, 1.3x, and 1.29x (up to 6.28x, 7.8x, and 10.8x) over AMD Optimizing CPU Libraries (AOCL), CSR5, and merge-SpMV, respectively.},
+ author = {Li, Wenxuan and Cheng, Helin and Lu, Zhengyang and Lu, Yuechen and Liu, Weifeng},
+ booktitle = {2023 IEEE International Conference on Cluster Computing (CLUSTER)},
+ doi = {10.1109/CLUSTER52292.2023.00025},
+ issn = {2168-9253},
+ keyword = {Program processors;Three-dimensional displays;Multicore processing;Scientific computing;Optimization methods;Load management;Libraries;Sparse matrix-vector multiplication;Asymmetric multicore processor;Heterogeneity-aware algorithm},
+ month = {Oct},
+ number = {},
+ pages = {209-220},
+ title = {HASpMV: Heterogeneity-Aware Sparse Matrix-Vector Multiplication on Modern Asymmetric Multicore Processors},
+ volume = {},
+ year = {2023}
+}

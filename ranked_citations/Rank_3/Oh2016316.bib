@@ -1,0 +1,14 @@
+@conference{Oh2016316,
+ abstract = {The proliferation of the big data analysis and the wide spread usage of public/private cloud services make it important to expand the storage capacity as the demand is increased. The scale-out storage is gaining more attention since it can inherently provide scalable storage capacity. The flash SSD, on the other hand, is getting popular as the drop-in replacement of the slow HDD, which seems to boost the system performance somewhat at least. However, the performance of traditional scale-out storage system does not get much better even though its HDD is replaced with the flash based high performance SSD since the whole system is designed based on HDD as its underlying storage device. In this paper, we identify performance problems of a representative scale-out storage system, Ceph, and analyze that these problems are caused by 1) Coarse-grained lock, 2) Throttling logic, 3) Batching based operation latency and 4) Transaction Overhead. We propose some optimization techniques for flash-based Ceph. First, we minimize coarse-grained locking. Second, we introduce throttle policy and system tuning. Third, we develop non-blocking logging and light-weight transaction processing. We found that our optimized Ceph shows up to 20 times improvement in the case of small random writes and it also shows more than two times better performance in the case of small random read through our experiments. We also show that the system exhibits linear performance increase as we add more nodes. © 2016 IEEE.},
+ author = {Oh, Myoungwon and Eom, Jugwan and Yoon, Jungyeon and Yun, Jae Yeun and Kim, Seungmin and Yeom, Heon Y.},
+ doi = {10.1109/CLUSTER.2016.11},
+ journal = {Proceedings - IEEE International Conference on Cluster Computing, ICCC},
+ note = {Cited by: 20},
+ pages = {316 - 325},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Performance optimization for all flash scale-out storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85013155791?origin=resultslist},
+ year = {2016}
+}

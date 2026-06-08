@@ -1,0 +1,17 @@
+@article{10.14778/3685800.3685804,
+ abstract = {At ByteDance, where we execute over a million Spark jobs and handle 500PB of shuffled data daily, ensuring resource efficiency is paramount for cost savings. However, achieving optimization of resource efficiency in large-scale production environments poses significant challenges. Drawing from our practical experiences, we have identified three key issues critical to addressing resource efficiency in real-world production settings: 1 slow I/Os leading to excessive CPU and memory idleness, 2 coarse-grained resource control causing wastage, and 3 sub-optimal job configurations resulting in low utilization. To tackle these issues, we propose a resource efficiency governance framework for Spark workloads. Specifically, 1 we devise the multi-mechanism shuffle services, including Enhanced External Shuffle Service (ESS) and Cloud Shuffle Service (CSS), where CSS employs a push-based approach to enhance I/O efficiency through sequential reading. 2 We modify the Spark configuration parameter protocol, allowing for fine-grained resource control by introducing several new parameters such as milliCores and memoryBurst, as well as supporting operators with additional spill modes. 3 We design a two-stage configuration autotuning method, comprising rule-based and algorithm-based tuning, providing more reliable Spark configuration optimizations. By deploying these techniques on millions of Spark jobs in production over the last two years, we have achieved over 22% CPU utilization increase, 5% memory utilization increase, and 10% shuffle block time ratio decrease, effectively saving millions of CPU cores and petabytes of memory daily.},
+ author = {Wu, Yixin and Huang, Xiuqi and Wei, Zhongjia and Cheng, Hang and Xin, Chaohui and Chen, Zuzhi and Chen, Binbin and Wu, Yufei and Wang, Hao and Zhang, Tieying and Shi, Rui and Gao, Xiaofeng and Liang, Yuming and Zhao, Pengwei and Chen, Guihai},
+ doi = {10.14778/3685800.3685804},
+ issn = {2150-8097},
+ issue_date = {August 2024},
+ journal = {Proc. VLDB Endow.},
+ month = {August},
+ number = {12},
+ numpages = {13},
+ pages = {3759–3771},
+ publisher = {VLDB Endowment},
+ title = {Towards Resource Efficiency: Practical Insights into Large-Scale Spark Workloads at ByteDance},
+ url = {https://doi.org/10.14778/3685800.3685804},
+ volume = {17},
+ year = {2024}
+}

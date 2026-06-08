@@ -1,0 +1,14 @@
+@article{4528965,
+ abstract = {We present Delta execution, a technique that speeds up state-space exploration of object-oriented programs. State-space exploration is the essence of model checking and an increasingly popular approach for automating test generation. A key issue in exploration of object-oriented programs is handling the program state, in particular the heap. We exploit the fact that many execution paths in state-space exploration partially overlap. Delta execution simultaneously operates on several states/heaps and shares the common parts across the executions, separately executing only the "deltas" where the executions differ. We implemented Delta execution in two model checkers: JPF, a popular general-purpose model checker for Java programs, and BOX, a specialized model checker that we developed for efficient exploration of sequential Java programs. The results for bounded-exhaustive exploration of ten basic subject programs and one larger case study show that Delta execution reduces exploration time from 1.06x to 126.80x (with median 5.60x) in JPF and from 0.58x to 4.16x (with median 2.23x) in BOX. The results for a non-exhaustive exploration in JPF show that Delta execution reduces exploration time from 0.92x to 6.28x (with median 4.52x).},
+ author = {d'Amorim, Marcelo and Lauterburg, Steven and Marinov, Darko},
+ doi = {10.1109/TSE.2008.37},
+ issn = {1939-3520},
+ journal = {IEEE Transactions on Software Engineering},
+ keyword = {Object oriented modeling;Boolean functions;Sliding mode control;Data structures;Automatic testing;Java;Software testing;Software reliability;Shape;Debugging;Software/Program Verification;Model checking;Testing and Debugging;Software/Program Verification;Model checking;Testing and Debugging},
+ month = {Sep.},
+ number = {5},
+ pages = {597-613},
+ title = {Delta Execution for Efficient State-Space Exploration of Object-Oriented Programs},
+ volume = {34},
+ year = {2008}
+}

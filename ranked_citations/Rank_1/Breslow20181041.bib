@@ -1,0 +1,16 @@
+@article{Breslow20181041,
+ abstract = {Approximate set membership data structures (ASMDSs) are ubiquitous in computing. They trade a tunable, often small, error rate (∈) for large space savings. The canonical ASMDS is the Bloom filter, which supports lookups and insertions but not deletions in its simplest form. Cuckoo filters (CFs), a recently proposed class of ASMDSs, add deletion support and often use fewer bits per item for equal ∈. This work introduces the Morton filter (MF), a novel ASMDS that introduces several key improvements to CFs. Like CFs, MFs support lookups, insertions, and deletions, but improve their respective throughputs by 1.3× to 2.5×, 0.9× to 15.5×, and 1.3× to 1.6×. MFs achieve these improvements by (1) introducing a compressed format that permits a logically sparse filter to be stored compactly in memory, (2) leveraging succinct embedded metadata to prune unnecessary memory accesses, and (3) heavily biasing insertions to use a single hash function. With these optimizations, lookups, insertions, and deletions often only require accessing a single hardware cache line from the filter. These improvements are not at a loss in space efficiency, as MFs typically use comparable to slightly less space than CFs for the same ∈. © VLDB Endowment 21508097/18/05},
+ author = {Breslow, Alex D. and Jayasena, Nuwan S.},
+ doi = {10.14778/3213880.3213884},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 77},
+ number = {9},
+ pages = {1041 - 1055},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Morton filters: Faster, spaceefficient cuckoo filters via biasing, compression, and decoupled logical sparsity},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85051469177?origin=resultslist},
+ volume = {11},
+ year = {2018}
+}

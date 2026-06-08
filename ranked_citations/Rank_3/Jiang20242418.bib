@@ -1,0 +1,14 @@
+@conference{Jiang20242418,
+ abstract = {Recently, sharding has become a popular direction to scale out blockchain systems by dividing the network into shards that process transactions in parallel. However, secure and efficient cross-shard transaction processing remains a vital and unaddressed challenge. Existing work handles a cross-shard transaction via transaction division: dividing it into sub-transactions, processing them separately, and combing the processing results. Such an approach is unfavorable for decentralized blockchain due to its reliance on trustworthy parties, e.g., the client or a reference node, to perform the transaction division and result combination. Furthermore, the processing result of one transaction can affect another, violating the important property of transaction isolation. In this work, we propose Sharon, a novel sharding protocol that processes cross-shard transactions via shard rotation rather than transaction division. In Sharon, shards rotate to merge pairwisely and process cross-shard transactions when merged. Sharon eliminates reliance on trustworthy parties and provides transaction isolation in nature because transactions are no longer divided. Nevertheless, it poses a scientific question of when and how to merge the shards to improve system performance. To answer the question, we formally define the shard scheduling problem to minimize transaction confirmation latency and propose a novel construction algorithm. The proposed algorithm is proven optimal and runs in polynomial time. We conduct extensive experiments on Amazon EC2 instances using Bitcoin and Ethereum data. The results indicate that Sharon achieves nearly linear scalability, improves the system throughput by 139%, and saves the transaction processing latency by 72.4% compared with state-of-the-art approaches. © 2024 IEEE.},
+ author = {Jiang, Shan and Cao, Jiannong and Tung, Cheung Leong and Wang, Yuqin and Wang, Shan},
+ doi = {10.1109/INFOCOM52122.2024.10621394},
+ journal = {Proceedings - IEEE INFOCOM},
+ note = {Cited by: 21},
+ pages = {2418 - 2427},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Sharon: Secure and Efficient Cross-shard Transaction Processing via Shard Rotation},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85201816640?origin=resultslist},
+ year = {2024}
+}

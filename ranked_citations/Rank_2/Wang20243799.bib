@@ -1,0 +1,16 @@
+@article{Wang20243799,
+ abstract = {Persistent key-value (KV) stores are widely used by cloud services at ByteDance as local storage engines, and RocksDB used to be the de facto implementation since it can be tailored to a variety of workloads and requirements. In this paper, we provide key insights into local storage engine usage at ByteDance, explain why the combination of highly write-intensive workloads and stringent requirements on cost efficiency and point lookup tail latency may pose challenges to a general-purpose local storage engine such as RocksDB, and present the design and implementation of LavaStore, a high-performance cost-effective local storage engine purposebuilt to address these challenges. LavaStore achieves its design goals by selectively customizing a few components of a RocksDB-based, general-purpose local storage engine, including a distinct KV separation design that decouples garbage collection from compaction, a specialized engine type for the commonly recurring Write-Ahead-Logging workload, and a customized user-space append-only filesystem. LavaStore has been deployed to production with hundreds of thousands of running instances, storing more than 100 PB of data and serving billions of requests per second, bringing significant performance improvements and cost reductions to customers over their original local storage engines. For example, a ByteDance proprietary distributed OLTP database service has experienced a reduction in average write and read latency by 61% and 16%, respectively, and a ByteDance proprietary caching service has gained an 87% increase in write throughput with no more than 6% space overhead. © 2024, VLDB Endowment. All rights reserved.},
+ author = {Wang, Hao and Ou, Jiaxin and Zhao, Ming and Qiu, Sheng and Jiao, Yizheng and Wang, Yi and Mao, Qizhong and Yang, Zhengyu and Liu, Yang and Zhang, Jianshun and Hu, Jianyang and Zhang, Jingwei and Liu, Jinrui and Chen, Jiaqiang and Shen, Yong and Cao, Lixun and Zhang, Heng and Li, Hongde and Li, Ming and Ma, Yue and Zhang, Lei and Liu, Jian and Zhang, Guanghui and Liu, Fei and Chen, Jianjun},
+ doi = {10.14778/3685800.3685807},
+ journal = {Proceedings of the VLDB Endowment},
+ note = {Cited by: 7},
+ number = {12},
+ pages = {3799 - 3812},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LavaStore: ByteDance’s Purpose-built, High-performance, Cost-effective Local Storage Engine for Cloud Services},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85205302015?origin=resultslist},
+ volume = {17},
+ year = {2024}
+}

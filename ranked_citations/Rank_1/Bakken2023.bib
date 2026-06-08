@@ -1,0 +1,15 @@
+@article{Bakken2023,
+ abstract = {Industrial information models are standardised ways of representing industrial devices, equipment, and processes together with the data collected from associated sensors and control systems. Companies invest in such models to enable digitalisation and modular, reusable solutions. They also invest heavily in analytics (e.g. machine learning) based on time series data sets to improve operations. Queries that use such context to retrieve time series data can make industrial data sets more accessible to practitioners performing analytics and application development. Moreover, they can enable scalable deployment of resulting analytical models. Industrial availability constraints require that queries over context and time series should be portable in general, as they should be able retrieve data for training in a cloud setting and production data for deployment in an on-premise setting. Solving this problem is challenging with existing approaches as context and time series data tend to exist in separate, specialised databases. We address the issue by proposing a hybrid query engine, namely Chrontext, in the setting of a SPARQL database hosting the static model, and an arbitrary time series database. We show how with a set of annotations in the knowledge graph, SPARQL queries can be evaluated over such a hybrid architecture. We provide a proof showing that our approach correctly answers SPARQL 1.1. queries. We implement our approach in Rust under the Apache 2.0 license, and use the Apache Arrow-based Polars library together with configurable pushdowns to achieve high performance. We compare the performance of Chrontext against Ontop, one of the most prominent virtual knowledge graph systems, on a synthetic data set based on industrial standards. Data are stored in a S3 data lake and PostgreSQL with the Dremio data lakehouse as the SQL integrator. We find that our approach performs 10× to 85× faster and consumes much less memory than Ontop. © 2023 The Author(s)},
+ author = {Bakken, Magnus and Soylu, Ahmet},
+ doi = {10.1016/j.eswa.2023.120149},
+ journal = {Expert Systems with Applications},
+ note = {Cited by: 14; All Open Access; Hybrid Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Chrontext: Portable SPARQL queries over contextualised time series data in industrial settings},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85153867690?origin=resultslist},
+ volume = {226},
+ year = {2023}
+}

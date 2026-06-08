@@ -1,0 +1,15 @@
+@article{Shachnai2026142,
+ abstract = {The eBPF verifier ensures the safety of user-supplied programs before they are executed in the Linux kernel, relying on abstract interpretation. While the verifier’s analysis must be sound, its utility hinges on precision. An overly conservative abstract operator can routinely cause the verifier to reject safe programs. In this paper, we introduce a framework for systematically comparing and validating the precision of competing abstract operator implementations used within the verifier. We provide a formal specification of the precision relationship between two abstract operators across all valid abstract inputs. However, reasoning about all valid abstract inputs over-approximates what is actually reachable in real verifier executions. This is because the eBPF verifier performs verification from a specific set of initial abstract states. Hence, many abstract inputs used in theoretical comparisons may never arise in practice. To address this gap, we propose SMT-based program synthesis to automatically generate concrete eBPF witness programs, explicitly demonstrating observable precision differences in actual verifier executions. Using these techniques and tools, we crafted a more precise multiplication abstract operator in the verifier, bpf_mul. Our multiplication patch has been upstreamed to the Linux kernel where the witness produced by our approach provided demonstration to the kernel developers. We have also used these techniques to check the precision of numerous kernel patches related to abstract operators in the eBPF verifier. © The Author(s), under exclusive license to Springer Nature Switzerland AG 2026.},
+ author = {Shachnai, Matan and Vishwanathan, Harishankar and Narayana, Srinivas and Nagarakatte, Santosh},
+ doi = {10.1007/978-3-032-07106-4_7},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {142 - 166},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Comparing the Precision of Abstract Operators in the eBPF Verifier Using Differential Synthesis},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105020390158?origin=resultslist},
+ volume = {16100 LNCS},
+ year = {2026}
+}

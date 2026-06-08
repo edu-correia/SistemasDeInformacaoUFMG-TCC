@@ -1,0 +1,17 @@
+@article{10.14778/2350229.2350258,
+ abstract = {Growing main memory sizes have facilitated database management systems that keep the entire database in main memory. The drastic performance improvements that came along with these in-memory systems have made it possible to reunite the two areas of online transaction processing (OLTP) and online analytical processing (OLAP): An emerging class of hybrid OLTP and OLAP database systems allows to process analytical queries directly on the transactional data. By offering arbitrarily current snapshots of the transactional data for OLAP, these systems enable real-time business intelligence.Despite memory sizes of several Terabytes in a single commodity server, RAM is still a precious resource: Since free memory can be used for intermediate results in query processing, the amount of memory determines query performance to a large extent. Consequently, we propose the compaction of memory-resident databases. Compaction consists of two tasks: First, separating the mutable working set from the immutable "frozen" data. Second, compressing the immutable data and optimizing it for efficient, memory-consumption-friendly snapshotting. Our approach reorganizes and compresses transactional data online and yet hardly affects the mission-critical OLTP throughput. This is achieved by unburdening the OLTP threads from all additional processing and performing these tasks asynchronously.},
+ author = {Funke, Florian and Kemper, Alfons and Neumann, Thomas},
+ doi = {10.14778/2350229.2350258},
+ issn = {2150-8097},
+ issue_date = {July 2012},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {12},
+ pages = {1424–1435},
+ publisher = {VLDB Endowment},
+ title = {Compacting transactional data in hybrid OLTP&amp;OLAP databases},
+ url = {https://doi.org/10.14778/2350229.2350258},
+ volume = {5},
+ year = {2012}
+}

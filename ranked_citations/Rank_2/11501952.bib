@@ -1,0 +1,14 @@
+@article{11501952,
+ abstract = {With recent advancements in IoT and performance monitoring, time-series management systems have garnered significant attention. Time-series data consists of two components: a series key (identifier) with a set of corresponding data points. Prior efforts only focus on optimizing the storage of data points. However, as the scale of data grows rapidly, storing series keys and their indexes with 60-minute granularity consumes more than 67.9% of the cost incurred by storing the whole dataset, also leading to unacceptably high query latency. Furthermore, the growing cardinality of series keys also slows down the construction of real-time indexes. Previous methods often rely on a data model or user-selected hot data mechanism for indexing. However, they either assume that users are aware of query patterns or suffer from high storage overhead, time-consuming index construction and high query latency. To pursue low storage costs, rapid real-time index construction and efficient query processing simultaneously, we propose a novel Adaptive Data Model (AdpDM) for large-scale high-cardinality time-series data management. It involves four core modules: 1) a grouping algorithm based on the similarity of series keys is designed to group time-series data for real-time group-level index construction while a grouping strategy reuse mechanism is developed to improve insertion throughput. And dynamic adjustment scheme for merging tagv could provide a stable real-time query latency. 2) a group-level inverted index instead of the traditional series-level inverted index is constructed to reduce the costs of storing indexes and query latency. 3) a dictionary compression algorithm compresses series keys and corresponding indexes to reduce storage caused by growing data cardinality. 4) a query merging schema and dynamic cache mechanism to reduce memory usage and unnecessary I/O. We conduct extensive experiments to evaluate AdpDM and advanced time-series database, the results present that AdpDM reduces at least 32% storage cost of series keys, 89% storage cost of indexes, and 24.8-94.1% query latency while achieving about 2.8× higher writing throughput.},
+ author = {Xu, Ziyue and Huang, Sutong and Yi, Liping and Fei, Di and Li, Yusen and Wang, Gang and Liu, Xiaoguang and Liu, Xinyu and Yu, Wenqing and Wei, Zijing and Liu, Shaozhi and Qu, Lin},
+ doi = {10.1109/TC.2026.3688967},
+ issn = {1557-9956},
+ journal = {IEEE Transactions on Computers},
+ keyword = {Telemetry;Aerospace and electronic systems;Radio broadcasting;Frequency modulation;Central Processing Unit;Filtering;Filters;Circuits and systems;Oscillators;Circuits;Time-series;large-scale database;data management;compression algorithm},
+ month = {},
+ number = {},
+ pages = {1-14},
+ title = {An Efficient Data Management based on Adaptive Data Model for High-Cardinality Time-Series Database},
+ volume = {},
+ year = {2026}
+}

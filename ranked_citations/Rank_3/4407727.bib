@@ -1,0 +1,14 @@
+@article{4407727,
+ abstract = {Morphological attribute filters have not previously been parallelized, mainly because they are both global and non-separable. We propose a parallel algorithm which achieves efficient parallelism for a large class of attribute filters, including attribute openings, closings, thinnings and thickenings, based on Salembier's Max-Trees and Min-trees. The image or volume is first partitioned in multiple slices. We then compute the Max-trees of each slice using any sequential Max-Tree algorithm. Subsequently, the Max-trees of the slices can be merged to obtain the Max-tree of the image. A C-implementation yielded good speed-ups on both a 16-processor MIPS 14000 parallel machine, and a dual-core Opteron-based machine. It is shown that the speed-up of the parallel algorithm is a direct measure of the gain with respect to the sequential algorithm used. Furthermore, the concurrent algorithm shows a speed gain of up to 72% on a single-core processor, due to reduced cache thrashing.},
+ author = {Wilkinson, Michael H.F. and Gao, Hui and Hesselink, Wim H. and Jonker, Jan-Eppo and Meijster, Arnold},
+ doi = {10.1109/TPAMI.2007.70836},
+ issn = {1939-3539},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ keyword = {Concurrent computing;Filters;Parallel machines;Tree graphs;Parallel algorithms;Parallel processing;Morphology;Fourier transforms;Shape;Senior members;Filtering;Enhancement Parallel algorithms;mathematical morphology;connected filters;Filtering;Enhancement Parallel algorithms;mathematical morphology;connected filters},
+ month = {Oct},
+ number = {10},
+ pages = {1800-1813},
+ title = {Concurrent Computation of Attribute Filters on Shared Memory Parallel Machines},
+ volume = {30},
+ year = {2008}
+}

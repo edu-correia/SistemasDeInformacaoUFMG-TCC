@@ -1,0 +1,13 @@
+@article{BHAJAJ2025111298,
+ abstract = {Accurate cell segmentation underpins reliable radiomics and multi-omic analysis in digital pathology, yet foundation-scale models often output masks that require further refinement for clinical use. This study presents ClinSegAI, a post-processing tool designed to refine cell segmentation outputs from the BiomedParse foundation model to preserve radiomic feature integrity in hematoxylin and eosin (H&E) stained whole slide images. The proposed pipeline analyzes whole-slide images, applies preprocessing, and uses BiomedParse for initial nucleus segmentation, followed by a refinement algorithm that corrects segmentation boundaries and merges or splits regions as needed to maintain morphological fidelity. ClinSegAI was evaluated on lung and other cancer pathology slides against six alternative segmentation approaches, including conventional digital pathology software and state-of-the-art deep learning models. It achieved the highest average Dice Similarity Coefficient (DSC) - near 0.80 and substantially reduced segmentation errors, with the lowest 95th-percentile Hausdorff distance (HD95) and average symmetric surface distance (ASSD) among all methods. Crucially, the refined segmentations preserved radiomic feature distributions (shape, intensity, and texture metrics) closer to ground truth, assessed with pooled two-sample t-statistics, improving the fidelity of quantitative features for downstream analysis. These improvements enable more reliable integration of histopathology with other modalities, for example, correlating precise spatial segmentations with spatial transcriptomic data, improving prognostic models, characterizing immune infiltration in the tumor microenvironment, and enhancing treatment response prediction from tissue images. ClinSegAI demonstrates how targeted post-processing built on a foundational visual transformer can bolster segmentation accuracy and radiomics reliability in computational pathology.},
+ author = {Prem Bhajaj and Saiprakash Nalubolu and Bhargavram Gurram and Mansi Srinivas and Rakesh Choudhary and Weiying Dai and Ling Wang and Tamara Jamaspishvili and Zeyu Ding and Nancy L. Guo},
+ doi = {https://doi.org/10.1016/j.compbiomed.2025.111298},
+ issn = {0010-4825},
+ journal = {Computers in Biology and Medicine},
+ keyword = {Histopathology, Segmentation, Radiomics, Deep-learning, Lung cancer, Visual transformer, Postprocessing, Spatial-transcriptomics},
+ pages = {111298},
+ title = {ClinSegAI: A post-processing framework for superior histopathology segmentation accuracy, radiomics feature preservation, and quantitative analysis},
+ url = {https://www.sciencedirect.com/science/article/pii/S001048252501652X},
+ volume = {199},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@inproceedings{8425184,
+ abstract = {Key-value (KY) stores play an increasingly critical role in supporting diverse large-scale applications in modern data centers hosting terabytes of KY items which even might reside on a single server due to virtualization purpose. The combination of ever growing volume of KY items and storage/application consolidation is driving a trend of high storage density for KY stores. Shingled Magnetic Recording (SMR) represents a promising technology for increasing disk capacity, but it comes at a cost of poor random write performance and severe I/O amplification. Applications/software working with SMR devices need to be designed and optimized in an SMR-friendly manner. In this work, we present SEALDB, a Log-Structured Merge tree (LSM-tree) based key-value store that is specifically optimized for and works well with SMR drives via adequately addressing the poor random writes and severe I/O amplification issues. First, for LSM-trees, SEALDB concatenates SSTables of each compaction, and groups them into sets. Taking sets as the basic unit for compactions, SEALDB improves compaction efficiency by mitigating random I/Os. Second, SEALDB creates varying size bands on HM-SMR drives, named dynamic bands. Dynamic bands not only accommodate the storage of sets, but also eliminate the auxiliary write amplification from SMR drives. We demonstrate the advantages of SEALDB via extensive experiments in various workloads. Overall, SEALDB delivers impressive performance improvement. Compared with LevelDB, SEALDB is 3.42× faster on random load due to improved compaction efficiency and eliminated auxiliary write amplification on SMR drives.},
+ author = {Yao, Ting and Tan, Zhihu and Wan, Jiguang and Huang, Ping and Zhang, Yiwen and Xie, Changsheng and He, Xubin},
+ booktitle = {2018 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS.2018.00040},
+ issn = {1530-2075},
+ keyword = {Compaction;Drives;Magnetic recording;Performance evaluation;Data centers;Servers;Electronic mail;LSM-tree;SMR;KV store;Set;Dynamic band},
+ month = {May},
+ number = {},
+ pages = {306-315},
+ title = {A Set-Aware Key-Value Store on Shingled Magnetic Recording Drives with Dynamic Band},
+ volume = {},
+ year = {2018}
+}

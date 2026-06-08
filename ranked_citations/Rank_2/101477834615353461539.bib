@@ -1,0 +1,17 @@
+@article{10.14778/3461535.3461539,
+ abstract = {Query optimizers rely on accurate cardinality estimation (CardEst) to produce good execution plans. The core problem of CardEst is how to model the rich joint distribution of attributes in an accurate and compact manner. Despite decades of research, existing methods either over-simplify the models only using independent factorization which leads to inaccurate estimates, or over-complicate them by lossless conditional factorization without any independent assumption which results in slow probability computation. In this paper, we propose FLAT, a CardEst method that is simultaneously &lt;u&gt;f&lt;/u&gt;ast in probability computation, &lt;u&gt;l&lt;/u&gt;ightweight in model size and &lt;u&gt;a&lt;/u&gt;ccurate in es&lt;u&gt;t&lt;/u&gt;imation quality. The key idea of FLAT is a novel unsupervised graphical model, called FSPN. It utilizes both independent and conditional factorization to adaptively model different levels of attributes correlations, and thus combines their advantages. FLAT supports efficient online probability computation in near linear time on the underlying FSPN model, provides effective offline model construction and enables incremental model updates. It can estimate cardinality for both single table queries and multi-table join queries. Extensive experimental study demonstrates the superiority of FLAT over existing CardEst methods: FLAT achieves 1--5 orders of magnitude better accuracy, 1--3 orders of magnitude faster probability computation speed and 1--2 orders of magnitude lower storage cost. We also integrate FLAT into Postgres to perform an end-to-end test. It improves the query execution time by 12.9% on the well-known IMDB benchmark workload, which is very close to the optimal result 14.2% using the true cardinality.},
+ author = {Zhu, Rong and Wu, Ziniu and Han, Yuxing and Zeng, Kai and Pfadler, Andreas and Qian, Zhengping and Zhou, Jingren and Cui, Bin},
+ doi = {10.14778/3461535.3461539},
+ issn = {2150-8097},
+ issue_date = {May 2021},
+ journal = {Proc. VLDB Endow.},
+ month = {May},
+ number = {9},
+ numpages = {14},
+ pages = {1489–1502},
+ publisher = {VLDB Endowment},
+ title = {FLAT: fast, lightweight and accurate method for cardinality estimation},
+ url = {https://doi.org/10.14778/3461535.3461539},
+ volume = {14},
+ year = {2021}
+}

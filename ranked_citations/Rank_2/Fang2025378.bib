@@ -1,0 +1,14 @@
+@conference{Fang2025378,
+ abstract = {Large transactions challenge the designs of the modern relational database systems, as they necessitate the management of uncommitted changes. OceanBase, a distributed relational database system, has implemented an LSM-tree based storage engine to achieve high read and write performance. However, the support for large transactions of existing LSM-tree based systems remains a problem under the append-only principle of LSM-tree, making them suffer from memory constraints and low efficiency. In this paper, we present MaLT, a framework designed to efficiently Manage Large Transactions within OceanBase system. We introduce Transaction Context Table (TCT) and Transaction Data Table (TDT) to manage transaction states in the LSM-tree based storage engine. Based on them, we further devise an efficient recovery mechanism to provide high availability of the databases after unexpected system failures. Unlike existing LSM-tree based RDBMSs that abstract LSM-trees as key-value stores, MaLT directly implements transactions into the LSM-tree and leverages its unique features. The backfill (i.e., in-row version number update upon commit) and undo operations for transactions are seamlessly integrated into the compaction stage of the LSM-tree. This enables efficient commit and abort, and in the meantime helps avoid the instant latency of recovering the system from uncommitted large transactions. Moreover, MaLT also embeds transaction information directly within the LSM-tree, facilitating various optimizations to improve both read and write performance. Finally, the experimental results demonstrate the effectiveness and the scalability of our approach implemented in OceanBase.  © 2025 ACM.},
+ author = {Fang, Chenguang and Qian, Chen and Yang, Qi and Wang, Zeyu and Yang, Zhenkun and Kong, Fanyu and Xu, Quanqing and Cao, Hui and Han, Fusheng and Yang, Chuanhui},
+ doi = {10.1145/3722212.3724442},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 0},
+ pages = {378 - 390},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MaLT: A Framework for Managing Large Transactions in OceanBase},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105010227926?origin=resultslist},
+ year = {2025}
+}

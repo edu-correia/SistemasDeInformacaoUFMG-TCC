@@ -1,0 +1,13 @@
+@conference{Oh2024259,
+ abstract = {Log-structured systems are widely used in various applications because of its high write throughput. However, high garbage collection (GC) cost is widely regarded as the primary obstacle for its wider adoption. There have been numerous attempts to alleviate GC overhead, but with ad-hoc designs. This paper introduces MiDAS that minimizes GC overhead in a systematic and analytic manner. It employs a chain-like structure of multiple groups, automatically segregating data blocks by age. It employs analytical models, Update Interval Distribution (UID) and Markov-Chain-based Analytical Model (MCAM), to dynamically adjust the number of groups as well as their sizes according to the workload I/O patterns, thereby minimizing the movement of data blocks. Furthermore, MiDAS isolates hot blocks into a dedicated НОТ group, where the size of НОТ is dynamically adjusted according to the workload to minimize overall WAF. Our experiments using simulations and a proof-of-concept prototype for flash-based SSDs show that MiDAS outperforms state-of-the-art GC techniques, offering 25% lower WAF and 54% higher throughput, while consuming less memory and CPU cycles. © 2024 by The USENIX Association All Rights Reserved.},
+ author = {Oh, Seonggyun and Kim, Jeeyun and Han, Soyoung and Kim, Jaeho and Lee, Sungjin and Noh, Sam H.},
+ journal = {Proceedings of the 22nd USENIX Conference on File and Storage Technologies, FAST 2024},
+ note = {Cited by: 18},
+ pages = {259 - 275},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MIDAS: Minimizing Write Amplification in Log-Structured Systems through Adaptive Group Number and Size Configuration},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85194168844?origin=resultslist},
+ year = {2024}
+}

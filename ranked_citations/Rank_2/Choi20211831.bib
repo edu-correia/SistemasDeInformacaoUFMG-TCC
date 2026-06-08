@@ -1,0 +1,16 @@
+@article{Choi20211831,
+ abstract = {The log structured merge (LSM) tree has been widely adopted by database systems owing to its superior write performance. However, LSM-tree based databases face vulnerabilities when processing analytical queries due to the read amplification caused by its architecture and the limited use of storage devices with high bandwidth. To flexibly handle transactional and analytical workloads, we proposed and implemented OurRocks taking full advantage of NVMe SSD and GPU devices, which improves scan performance. Although the NVMe SSD serves multi GB/s I/O rates, it is necessary to solve the data transfer overhead which limits the benefits of the GPU processing. The primary idea is to offload the scan operation to the GPU with filtering predicate pushdown and resolve the bottleneck from the data transfer between devices with direct memory access (DMA). OurRocks benefits from all the features of write-optimized database systems, in addition to accelerating the analytic queries using the aforementioned idea. Experimental results indicate that OurRocks effectively leverages resources of the NVMe SSD and GPU and significantly improves the execution of queries in the YCSB and TPC-H benchmarks, compared to the conventional write-optimized database. Our research demonstrates that the proposed approach can speed up the handling of the data-intensive workloads.  © 1968-2012 IEEE.},
+ author = {Choi, Won Gi and Kim, Doyoung and Roh, Hongchan and Park, Sanghyun},
+ doi = {10.1109/TC.2020.3027671},
+ journal = {IEEE Transactions on Computers},
+ note = {Cited by: 6},
+ number = {11},
+ pages = {1831 - 1844},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {OurRocks: Offloading Disk Scan Directly to GPU in Write-Optimized Database System},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85091938737?origin=resultslist},
+ volume = {70},
+ year = {2021}
+}

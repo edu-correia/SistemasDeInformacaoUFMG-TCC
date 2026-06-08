@@ -1,0 +1,14 @@
+@article{5727935,
+ abstract = {In this paper, we propose a passive-blind scheme for detecting forged images. The scheme leverages quantization table estimation to measure the inconsistency among images. To improve the accuracy of the estimation process, each AC DCT coefficient is first classified into a specific type; then the corresponding quantization step size is measured adaptively from its energy density spectrum (EDS) and the EDS's Fourier transform. The proposed content-adaptive quantization table estimation scheme is comprised of three phases: pre-screening, candidate region selection, and tampered region identification. In the pre-screening phase, we determine whether an input image has been JPEG compressed, and count the number of quantization steps whose size is equal to one. To select candidate regions for estimating the quantization table, we devise a candidate region selection algorithm based on seed region generation and region growing. First, the seed region generation operation finds a suitable region by removing suspect regions, after which the selected seed region is merged with other suitable regions to form a candidate region. To avoid merging suspect regions, a candidate region refinement operation is performed in the region growing step. After estimating the quantization table from the candidate region, an maximum-likelihood-ratio classifier exploits the inconsistency of the quantization table to identify tampered regions block by block. To evaluate the scheme's performance in terms of tampering detection, three common forgery techniques, copy-paste tampering, inpainting, and composite tampering, are used. Experiment results demonstrate that the proposed scheme can estimate quantization tables and identify tampered regions effectively.},
+ author = {Lin, Guo-Shiang and Chang, Min-Kuan and Chen, You-Lin},
+ doi = {10.1109/TCSVT.2011.2125370},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Quantization;Transform coding;Estimation;Image coding;Forgery;Discrete cosine transforms;Watermarking;Copy-paste tampering;forgery detection;image forensics;quantization table estimation},
+ month = {April},
+ number = {4},
+ pages = {421-434},
+ title = {A Passive-Blind Forgery Detection Scheme Based on Content-Adaptive Quantization Table Estimation},
+ volume = {21},
+ year = {2011}
+}

@@ -1,0 +1,15 @@
+@article{Polewski201833,
+ abstract = {In this study, we present a method for improving the quality of automatic single fallen tree stem segmentation in ALS data by applying a specialized constrained conditional random field (CRF). The entire processing pipeline is composed of two steps. First, short stem segments of equal length are detected and a subset of them is selected for further processing, while in the second step the chosen segments are merged to form entire trees. The first step is accomplished using the specialized CRF defined on the space of segment labelings, capable of finding segment candidates which are easier to merge subsequently. To achieve this, the CRF considers not only the features of every candidate individually, but incorporates pairwise spatial interactions between adjacent segments into the model. In particular, pairwise interactions include a collinearity/angular deviation probability which is learned from training data as well as the ratio of spatial overlap, whereas unary potentials encode a learned probabilistic model of the laser point distribution around each segment. Each of these components enters the CRF energy with its own balance factor. To process previously unseen data, we first calculate the subset of segments for merging on a grid of balance factors by minimizing the CRF energy. Then, we perform the merging and rank the balance configurations according to the quality of their resulting merged trees, obtained from a learned tree appearance model. The final result is derived from the top-ranked configuration. We tested our approach on 5 plots from the Bavarian Forest National Park using reference data acquired in a field inventory. Compared to our previous segment selection method without pairwise interactions, an increase in detection correctness and completeness of up to 7 and 9 percentage points, respectively, was observed. © 2017 International Society for Photogrammetry and Remote Sensing, Inc. (ISPRS)},
+ author = {Polewski, Przemyslaw and Yao, Wei and Heurich, Marco and Krzystek, Peter and Stilla, Uwe},
+ doi = {10.1016/j.isprsjprs.2017.04.001},
+ journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+ note = {Cited by: 27},
+ pages = {33 - 44},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Learning a constrained conditional random field for enhanced segmentation of fallen trees in ALS point clouds},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85017224090?origin=resultslist},
+ volume = {140},
+ year = {2018}
+}

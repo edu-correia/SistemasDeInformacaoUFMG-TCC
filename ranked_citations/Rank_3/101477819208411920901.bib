@@ -1,0 +1,17 @@
+@article{10.14778/1920841.1920901,
+ abstract = {Graphs are of growing importance in modeling complex structures such as chemical compounds, proteins, images, and program dependence. Given a query graph Q, the subgraph isomorphism problem is to find a set of graphs containing Q from a graph database, which is NP-complete. Recently, there have been a lot of research efforts to solve the subgraph isomorphism problem for a large graph database by utilizing graph indexes. By using a graph index as a filter, we prune graphs that are not real answers at an inexpensive cost. Then, we need to use expensive subgraph isomorphism tests to verify filtered candidates only. This way, the number of disk I/Os and subgraph isomorphism tests can be significantly minimized. The current practice for experiments in graph indexing techniques is that the author of a newly proposed technique does not implement existing indexes on his own code base, but instead uses the original authors' binary executables and reports only the wall clock time. However, we observe this practice may result in several problems. In order to address these problems, we have made significant efforts in implementing all representative indexing methods on a common framework called iGraph. Unlike existing implementations which either use (full or partial) in-memory representations or rely on OS file system cache without guaranteeing real disk I/Os, we have implemented these indexes on top of a storage engine that guarantees real disk I/Os. Through extensive experiments using many synthetic and real datasets, we also provide new empirical findings in the performance of the full disk-based implementations of these methods.},
+ author = {Han, Wook-Shin and Lee, Jinsoo and Pham, Minh-Duc and Yu, Jeffrey Xu},
+ doi = {10.14778/1920841.1920901},
+ issn = {2150-8097},
+ issue_date = {September 2010},
+ journal = {Proc. VLDB Endow.},
+ month = {September},
+ number = {1–2},
+ numpages = {11},
+ pages = {449–459},
+ publisher = {VLDB Endowment},
+ title = {iGraph: a framework for comparisons of disk-based graph indexing techniques},
+ url = {https://doi.org/10.14778/1920841.1920901},
+ volume = {3},
+ year = {2010}
+}

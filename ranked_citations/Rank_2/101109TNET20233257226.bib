@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2023.3257226,
+ abstract = {Sketch-based measurement has emerged as a promising solutions due to its high accuracy and resource efficiency. Prior sketches focus on measuring single flow keys and cannot support measurement on multiple keys. This work takes a significant step towards supporting arbitrary partial key queries, which aims to provide information for any key in the predefined range of possible flow keys. The designed system, CocoSketch, casts arbitrary partial key queries to the subset sum estimation problem and makes the theoretical tools for subset sum estimation practical. CocoSketch utilizes two techniques: (1) stochastic variance minimization to significantly reduce per-packet update delay, and (2) removing circular dependencies in the per-packet update logic to make the implementation hardware-friendly. This paper extends the conference version by discussing how CocoSketch adapts to new measurement requirements, including: (1) collecting the exact information of specified flow keys, and (2) distributed measurement. CocoSketch is implemented on five popular platforms (CPU, Open vSwitch, Redis, P4, and FPGA). Experiment results show that compared to baselines that use traditional single-key sketches, CocoSketch improves average packet processing throughput by &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$27.2times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; and accuracy by &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$10.4times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; when measuring six flow keys.},
+ author = {Miao, Ruijie and Zhang, Yinda and Zheng, Zihao and Wang, Ruixin and Zhang, Ruwen and Yang, Tong and Liu, Zaoxing and Jiang, Junchen},
+ doi = {10.1109/tnet.2023.3257226},
+ issn = {1063-6692},
+ issue_date = {Dec. 2023},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {April},
+ number = {6},
+ numpages = {16},
+ pages = {2653–2668},
+ publisher = {IEEE Press},
+ title = {CocoSketch: High-Performance Sketch-Based Measurement Over Arbitrary Partial Key Query},
+ url = {https://doi.org/10.1109/TNET.2023.3257226},
+ volume = {31},
+ year = {2023}
+}

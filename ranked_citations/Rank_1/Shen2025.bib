@@ -1,0 +1,16 @@
+@article{Shen2025,
+ abstract = {Solid State Drives (SSDs) based on the NVMe Zoned Namespaces (ZNS) interface can notably reduce the costs of address mapping, garbage collection, and over-provisioning by dividing the storage space into multiple zones for sequential writes and random reads. The Log-Structured Merge (LSM) tree, which is extensively used in key-value storage systems, converts random writes to sequential writes, hence a suitable scenario to utilize ZNS SSDs. However, LSM tree associated data significantly varies in lifetime due to the levels and merging mechanisms of the LSM tree. Therefore, without an accurate method to estimate data lifetime, data with disparate lifetimes may be placed in the same zone, thus causing low space utilization and high write amplification within the SSD.To address these issues, the article proposes two data overlapping aware optimizations to realize intelligent data placement: a zone allocation scheme and a garbage collection scheme. The key technique of these optimizations is an accurate data-lifetime estimation by considering both the associated tree level of the data and the data overlapping ratio between the data and those in the neighboring level. Using the estimation technique, the zone allocation optimization can place data with similar lifetimes in the same zone. Besides, the garbage collection optimization can reclaim zones in an adaptive manner based on overlapping ratios to reduce the amount of data migration. Experimental results demonstrate that the optimization schemes effectively reduce garbage collection-incurred data copy by average factors of 2.11× and 1.50× in comparison to a conventional work and a state-of-the-art work, respectively. Consequently, the proposed work successfully alleviates the write amplification effect by 18% and 6%, compared to the conventional work and the state-of-the-art work, respectively.  © 2025 Copyright held by the owner/author(s).},
+ author = {Shen, Jingcheng and Yang, Lang and Long, Linbo and Tan, Zhenhua and Gao, Congming and Zhong, Kan and Okita, Masao and Ino, Fumihiko},
+ doi = {10.1145/3721287},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 2; All Open Access; Gold Open Access},
+ number = {2},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Overlapping Aware Data Placement Optimizations for LSM Tree-Based Store on ZNS SSDs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105010740911?origin=resultslist},
+ volume = {22},
+ year = {2025}
+}

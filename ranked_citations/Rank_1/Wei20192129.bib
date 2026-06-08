@@ -1,0 +1,15 @@
+@article{Wei20192129,
+ abstract = {GPU’s powerful parallel processing capability has been highly recognized throughout the industry; however, GPU computing environments have not yet been widely used in the field of parallel computing. In this study, we develop a method of parallelization of serial programs for GPU computing. In particular, we propose an approach called PRODA to speedup parallel programs on GPUs through dependency analysis. PRODA provides theoretical underpins of task partitioning in parallel programs running in GPU computing environments. At the heart of PRODA is an analyzer for program workflows as well as data and function dependencies in a GPU program. With the dependency analysis in place, PRODA assigns computing tasks to multiple GPU cores in a way to speedup the performance of parallel program on GPUs. An overarching goal of PRODA is to minimize data communication cost between GPUs and main memory of a host CPU. PRODA achieves this goal by apply deploying two strategies. First, PRODA assigns functions processing the same data to a GPU core. Second, PRODA runs multiple independent functions on separate GPU cores. In doing so, PRODA improves the parallelism of parallel programs. We evaluate the performance of PRODA by running two popular benchmarks (i.e., AES and T26) on an 256-core system, where key length is set to 256 bits. The experimental results show that the speedup ratio of AES governed by PRODA is 5.2. Specifically, PRODA improves the performance of the existing CFM scheme by a factor of 1.39. To measure cost of parallel computing, we test PRODA and the alternative solutions by running AES under the 256-bit key length on 128 cores. The cost of parallel computing in PRODA is 524.8ms, which is 61.2% lower than that of the existing SA solution. The parallel efficiency of PRODA is 2.08, which represents an improvement of the PDM algorithm by a factor of 2.08. © 2017, Springer Science+Business Media, LLC.},
+ author = {Wei, Xiong and Hu, Ming and Peng, Tao and Jiang, Minghua and Wang, Zhiying and Qin, Xiao},
+ doi = {10.1007/s10586-017-1295-4},
+ journal = {Cluster Computing},
+ note = {Cited by: 1},
+ pages = {2129 - 2144},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PRODA: improving parallel programs on GPUs through dependency analysis},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85038877019?origin=resultslist},
+ volume = {22},
+ year = {2019}
+}

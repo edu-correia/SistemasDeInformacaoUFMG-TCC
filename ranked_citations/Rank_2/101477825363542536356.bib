@@ -1,0 +1,17 @@
+@article{10.14778/2536354.2536356,
+ abstract = {Database users commonly explore large data sets by running aggregate queries that project the data down to a smaller number of points and dimensions, and visualizing the results. Often, such visualizations will reveal outliers that correspond to errors or surprising features of the input data set. Unfortunately, databases and visualization systems do not provide a way to work backwards from an outlier point to the common properties of the (possibly many) unaggregated input tuples that correspond to that outlier. We propose Scorpion, a system that takes a set of user-specified outlier points in an aggregate query result as input and finds predicates that explain the outliers in terms of properties of the input tuples that are used to compute the selected outlier results. Specifically, this explanation identifies predicates that, when applied to the input data, cause the outliers to disappear from the output. To find such predicates, we develop a notion of influence of a predicate on a given output, and design several algorithms that efficiently search for maximum influence predicates over the input data. We show that these algorithms can quickly find outliers in two real data sets (from a sensor deployment and a campaign finance data set), and run orders of magnitude faster than a naive search algorithm while providing comparable quality on a synthetic data set.},
+ author = {Wu, Eugene and Madden, Samuel},
+ doi = {10.14778/2536354.2536356},
+ issn = {2150-8097},
+ issue_date = {June 2013},
+ journal = {Proc. VLDB Endow.},
+ month = {June},
+ number = {8},
+ numpages = {12},
+ pages = {553–564},
+ publisher = {VLDB Endowment},
+ title = {Scorpion: explaining away outliers in aggregate queries},
+ url = {https://doi.org/10.14778/2536354.2536356},
+ volume = {6},
+ year = {2013}
+}

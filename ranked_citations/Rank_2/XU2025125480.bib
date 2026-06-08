@@ -1,0 +1,13 @@
+@article{XU2025125480,
+ abstract = {To achieve accurate video captioning, most existing solutions focus on employing auxiliary features to provide complementary generation clues, such as detected target regions, audio speech signals, and in-plane text. However, beyond introducing external information, the potential of using the generated captions has been overlooked. We argue that the intrinsic value lies in the caption text, which can faithfully reflect the video content. To this end, we propose to reuse the captions via a Quality-Aware Recurrent Feedback Network (QARFNet), a model that progressively exploits the supportive power between video features and the generated captions. Specifically, inspired by the backtracking AdaBoost algorithm, we propose to build a recurrent loop structure that recycles the obtained linguistic predictions to refine the input visual features. Referring to the greedy selective nature of the AdaBoost algorithm, we set a quality-aware gate to assess the necessity of forwarding the next loop, lessening the complexity. After the refinement loop, if the confidence score remains below the predefined threshold, we select the output with the highest confidence score to advance the subsequent transformer decoder. To facilitate feedback in each loop, a Multi-level Update Module is constructed before fusing linguistic predictions with video features. This involves extracting nouns and verbs from linguistic predictions to lighten relevant video tokens, achieving self-interactions across recurrent loops. By merging the coarse-grained and gradually refined linguistic prediction features, the video tokens are semantically closer to the desired textual representation. To alleviate the increased calculation caused by the loops, we employ a flat transformer encoder to decrease the complexity. The experimental results on several benchmark datasets confirm the effectiveness of our approach, with superior performance compared to the state-of-the-art.},
+ author = {Tianyang Xu and Yunjie Zhang and Xiaoning Song and Xiao-Jun Wu},
+ doi = {https://doi.org/10.1016/j.eswa.2024.125480},
+ issn = {0957-4174},
+ journal = {Expert Systems with Applications},
+ keyword = {Video captioning, Quality-aware recurrent feedback network, Multi-level update module, Flat transformer encoder},
+ pages = {125480},
+ title = {Towards fine-grained adaptive video captioning via Quality-Aware Recurrent Feedback Network},
+ url = {https://www.sciencedirect.com/science/article/pii/S0957417424023479},
+ volume = {261},
+ year = {2025}
+}

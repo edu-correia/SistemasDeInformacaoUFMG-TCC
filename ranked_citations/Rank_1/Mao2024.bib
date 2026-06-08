@@ -1,0 +1,16 @@
+@article{Mao2024,
+ abstract = {There are usually a large number of concurrent graph queries (CGQs) requirements in streaming graphs. However, existing graph processing systems mainly optimize a single graph query in streaming graphs or CGQs in static graphs. They have a large number of redundant computations and expensive memory access overhead, and cannot process CGQs in streaming graphs efficiently. To address these issues, we propose PMGraph, a software-hardware collaborative accelerator for efficient processing of CGQs in streaming graphs. First, PMGraph centers on fine-grained data, selects graph queries that meet the requirements through vertex data, and utilizes the similarity between different graph queries to merge the same vertices they need to process to address the problem of a large amount of repeated access to the same data by different graph queries in CGQs, thereby reducing memory access overhead. Furthermore, it adopts the update strategy that regularizes the processing order of vertices in each graph query according to the order of the vertex dependence chain, consequently effectively reducing redundant computations. Second, we propose a CGQs-oriented scheduling strategy to increase the data overlap when different graph queries are processed, thereby further improving the performance. Finally, PMGraph prefetches the vertex information according to the global active vertex set Frontier of all graph queries, hiding the memory access latency. It also provides prefetching for the same vertices that need to be processed by different graph queries, reducing the memory access overhead. Compared with the state-of-the-art concurrent graph query software systems Kickstarter-C and Tripoline, PMGraph achieves average speedups of 5.57× and 4.58×, respectively. Compared with the state-of-the-art hardware accelerators Minnow, HATS, LCCG, and JetStream, PMGraph achieves the speedup of 3.65×, 3.41×, 1.73×, and 1.38× on average, respectively. Experimental results show that our proposed PMGraph outperforms the state-of-the-art concurrent graph processing systems and hardware accelerators. © 2024 Copyright held by the owner/author(s).},
+ author = {Mao, Fubing and Liu, Xu and Zhang, Yu and Liu, Haikun and Liao, Xiaofei and Jin, Hai and Zhang, Wei and Zhou, Jian and Wu, Yufei and Nie, Longyu and Guo, Yapu and Jiang, Zihan and Liu, Jingkang},
+ doi = {10.1145/3689337},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {PMGraph: Accelerating Concurrent Graph Queries over Streaming Graphs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85210282094?origin=resultslist},
+ volume = {21},
+ year = {2024}
+}

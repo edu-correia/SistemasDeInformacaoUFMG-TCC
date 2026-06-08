@@ -1,0 +1,14 @@
+@conference{Byun2025794,
+ abstract = {We reveal that modern LSM-tree multi-threaded compaction suffers from limited cross-level parallelism, which prevents concurrent compactions across multiple levels. This limitation leads to an imbalance in thread assignment and causes throughput to saturate even when more threads are added. To address this limitation, we propose a compaction strategy called DownForce. DownForce enables multiple compactions to be executed across levels by introducing non-blocking pipelined compaction, allowing level-wise compactions to proceed simultaneously. This resolves thread imbalance and achieves fully multi-threaded compaction. DownForce is implemented in RocksDB, a representative LSM-tree-based key-value store, and supports both leveled and tiered compaction. In our evaluation, leveled compaction enhanced with DownForce achieves an average of 1.44 × higher thread-level parallelism and delivers up to 1.81 × higher throughput under write-intensive workloads, compared to the conventional multi-threaded leveled compaction. © 2025 Copyright held by the owner/author(s).},
+ author = {Byun, Hongsu and Yoo, Honghyeon and Park, Sungyong},
+ doi = {10.1145/3754598.3754675},
+ journal = {54th International Conference on Parallel Processing, ICPP 2025 - Main Conference Proceedings},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {794 - 803},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Revisiting Multi-threaded Compaction in LSM-trees: Enabling Compaction Pipelining},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105026443155?origin=resultslist},
+ year = {2025}
+}

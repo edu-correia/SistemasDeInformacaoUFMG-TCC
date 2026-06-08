@@ -1,0 +1,15 @@
+@article{Cai2026387,
+ abstract = {The Log-Structured Merge tree (LSM-tree) transforms random writes into sequential writes to align with the characteristics of external storage devices and has become the core engine of modern key-value stores. However, fundamental issues such as write amplification and periodic performance degradation remain unsolved. Emerging storage devices like Non-Volatile Memory (NVM) and Zoned Namespace SSD (ZNS SSD) exhibit fundamental differences from traditional SSDs in aspects such as byte-addressability and sequential write constraints, making current LSM-trees ill-suited to fully exploit their hardware capabilities. In this paper, we propose ZQuery-LSM-tree, a novel design targeting hybrid storage systems composed of NVM and ZNS SSD. First, to address the high overlap ratio among L0 SSTables in the LSM-tree, we design an L0 layer reconstruction strategy based on extensible hashing, tailored to the sequential write constraint of ZNS SSD. Second, to mitigate write amplification caused by SSTable compaction operations, we propose an SST block construction strategy based on two-level three-bitmap encoding. Third, to alleviate performance degradation from SSTable proliferation in deeper levels, we design a low-I/O compaction strategy. Finally, we implement ZHashKV, a prototype key-value store built on the ZQuery-LSM-tree over hybrid storage media. Extensive evaluations using db_bench and YCSB show that, compared to ListDB, ZHashKV improves random write throughput by up to 38.1% and reduces write amplification by up to 56.8%. © The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2026.},
+ author = {Cai, Tao and Zou, Danping and Niu, Dejiao and Yinyi, Zihao and Huang, Qiujing and Deng, Yikang},
+ doi = {10.1007/978-981-95-8414-7_22},
+ journal = {Lecture Notes in Computer Science},
+ note = {Cited by: 0},
+ pages = {387 - 405},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ZQuery-LSM-Tree for ZNS SSD},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105035522960?origin=resultslist},
+ volume = {16385 LNCS},
+ year = {2026}
+}

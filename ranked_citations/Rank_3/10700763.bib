@@ -1,0 +1,14 @@
+@article{10700763,
+ abstract = {Considering that the nature of the stego signal caused by spatial domain steganography and joint photographic experts group (JPEG) domain steganography is different, existing deep-learning steganalysis networks typically cannot work well in both spatial and JPEG domains. We propose a unified steganalysis network named ESNet to effectively preserve and identify the stego signal from spatial and JPEG domains. Specifically, dual-branch preprocessing extracts noise residuals by using fixed SRM kernels (branch 1) and randomly initialized kernels (branch 2), fuses the features from two branches and exchanges the fused complementary information through two carefully designed bidirectional fusion blocks, thereby effectively enhancing the signal-to-noise ratio. During feature extraction, considering that low-level features, such as texture and edge, are indispensable for steganalysis, we gather multi-level feature maps at different layers of the network to provide richer feature representations and merge them by using a multi-level feature fusion module, which learns the weight of different features in single-level feature map to enhance the expression of steganographic features. During classification, the multi-scale attention pooling module is employed to extract multi-scale features by designing convolution kernels of different sizes. After concatenating features of different scales, gated channel transformation is exploited to weight the importance of each channel to further strengthen the representations of steganographic features. Finally, stylepooling in combination with global standard deviation pooling and global average pooling, is used to compress channels and preserve the representation ability of channels as much as possible for classification. The experimental results show that the proposed ESNet exhibits state-of-the-art detection performance in both spatial and JPEG domains, and achieves satisfactory robustness against the cover source mismatch.},
+ author = {He, Jian and Weng, Shaowei and Yu, Lifang and Chen, Dewang},
+ doi = {10.1109/TCSVT.2024.3470809},
+ issn = {1558-2205},
+ journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+ keyword = {Feature extraction;Transform coding;Steganography;Convolutional neural networks;Signal to noise ratio;Circuits and systems;Frequency-domain analysis;Discrete cosine transforms;Training;Steganalysis;deep learning;two-branch preprocessing;multi-level feature fusion;multi-scale attention pooling},
+ month = {Feb},
+ number = {2},
+ pages = {1451-1463},
+ title = {Steganalysis Network With Two-Branch Preprocessing for Spatial and JPEG Domains},
+ volume = {35},
+ year = {2025}
+}

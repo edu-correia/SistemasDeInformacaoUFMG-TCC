@@ -1,0 +1,14 @@
+@inproceedings{6280285,
+ abstract = {Developers of GPU kernels, such as FFT, linear solvers, etc, tune their code extensively in order to obtain optimal performance, making efficient use of different resources available on the GPU. Complex applications are composed of several such kernel components. The software engineering community has performed extensive research on component based design to build generic and flexible components, such that a component can be reused across diverse applications, rather than optimizing its performance. Since a GPU is used primarily to improve performance, application performance becomes a key design issue. The contribution of our work lies in extending component based design research in a new direction, dealing with the performance impact of refactoring an application consisting of the composition of highly tuned kernels. Such refactoring can make the composition more effective with respect to GPU resource usage especially when combined with suitable scheduling. Here we propose a methodology where developers of highly tuned kernels can enable application designers to optimize performance of the composition. Kernel developers characterize the performance of a kernel through its "performance signature". The application designer combines these kernels such that the performance of the refactored kernel is better than the sum of the performances of the individual kernels. This is partly based on the observation that different kernels may make unbalanced use of different GPU resources like different types of memory. Kernels may also have the potential to share data. Refactoring the kernels, combining them, and scheduling them suitably can improve performance. We study different types of potential design optimizations and evaluate their effectiveness on different types of kernels. This may even involve choosing non-optimal parameters for an individual kernel. We analyze how the performance signature of the composition changes from that of the individual kernels through our techniques. We demonstrate that our techniques lead to over 50% improvement with some kernels. Furthermore, the performance of a basic molecular dynamics application can be improved by around 25.7%, on a Fermi GPU, compared with an un-refactored implementation.},
+ author = {Sarkar, Santonu and Mitra, Sayantan and Srinivasan, Ashok},
+ booktitle = {2012 IEEE 10th International Symposium on Parallel and Distributed Processing with Applications},
+ doi = {10.1109/ISPA.2012.26},
+ issn = {2158-9208},
+ keyword = {Kernel;Graphics processing unit;Instruction sets;Merging;Hardware;Registers;Design methodology;gpu;component reuse;kernel composition;refactoring},
+ month = {July},
+ number = {},
+ pages = {134-141},
+ title = {Reuse and Refactoring of GPU Kernels to Design Complex Applications},
+ volume = {},
+ year = {2012}
+}

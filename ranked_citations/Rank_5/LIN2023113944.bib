@@ -1,0 +1,13 @@
+@article{LIN2023113944,
+ abstract = {Given two sequences A and B of lengths m and n, respectively, the consecutive suffix alignment (CSA) problem is to compute the longest common subsequence (LCS) between A and each suffix of B. The data structure of two-dimensional matrix for solving the CSA problem is named S-table. The S-table would be infeasible due to its quadratic-space requirement for long sequences. The linear-space S-table, proposed by Alves et al. (2005), consists of the first row of the S-table and the changes between every two consecutive rows. However, there is no further discussions and practical applications for the linear-space S-table. This paper proposes algorithms for improving three problems, related to LCS and S-table, by using the linear-space S-table. Suppose that A = A(1)A(2) (concatenation of two substrings), and we are given the S-table of A(2) and B, as well as the alignment result (LCS length) of A(1) to each prefix of B. The concatenated LCS (CoLCS) problem is to find the alignment result of A and B. For the CoLCS problem, this paper proposes an O(n)-time algorithm with the technique of set union-find to achieve the linear space. Next, for merging two linear S-tables, we propose an O(nlog⁡n)-time algorithm with the technique of range query and update to improve the quadratic-time algorithm using quadratic-space S-tables. Then, we propose an O(n)-time algorithm to update the linear-space S-table of A and B to obtain the linear-space S-table of Aσ and B, where σ denotes a new character appended to the tail of A. For further applications to long sequences by using the linear-space S-table, the algorithms proposed in this paper are essential and necessary.},
+ author = {Bi-Shiang Lin and Kuo-Si Huang and Chang-Biau Yang},
+ doi = {https://doi.org/10.1016/j.tcs.2023.113944},
+ issn = {0304-3975},
+ journal = {Theoretical Computer Science},
+ keyword = {Longest common subsequence, S-table, Linear space, Concatenation and merging, Incremental update},
+ pages = {113944},
+ title = {Linear-space S-table algorithms for the longest common subsequence problem},
+ url = {https://www.sciencedirect.com/science/article/pii/S0304397523002578},
+ volume = {964},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@conference{Lee2025396,
+ abstract = {Mainstream key-value stores adopt the write-friendly log-structured merge (LSM) tree as the underlying storage engine. However, the LSM tree is suboptimal for read operations as key-value pairs are not allowed to be promoted from a lower level to an upper level in the storage hierarchy. This leads to drops in read QPS when key-value pairs at a low level are frequently accessed due to an increase in file I/Os and CPU cycles for multi-level search operations. To address this problem of slow reads, we propose SkipLSM, an LSM tree-based key-value store augmented with a caching layer for hot keys on a high-performance NVMe SSD. SkipLSM enables fast retrieval of hot key-value pairs by leveraging a DRAM-SSD cache hierarchy. To reduce the I/O overhead of caching, SkipLSM introduces a lightweight storage manager which builds on a userlevel NVMe driver. We implement SkipLSM on RocksDB, a widely used LSM tree-based storage engine, as a lightweight plug-in. Our evaluation of SkipLSM with four read-intensive workloads shows that SkipLSM increases the QPS by 42.0%, 81.1%, and 46.4% for YCSB B, C, and D, respectively, and 94.0% for the PreDist workload of Facebook MixGraph benchmark over the vanilla RocksDB. Copyright © 2025 held by the owner/author(s).},
+ author = {Lee, Jongsung and Son, Sam and Bae, Jonghyun and Jin, Yunho and Ham, Tae Jun and Lee, Jae W.},
+ doi = {10.1145/3672608.3707715},
+ journal = {Proceedings of the ACM Symposium on Applied Computing},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {396 - 405},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {SkipLSM: Fast Retrieval of Hot Key-Value Pairs on LSM Tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105006439218?origin=resultslist},
+ year = {2025}
+}

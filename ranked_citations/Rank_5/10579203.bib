@@ -1,0 +1,14 @@
+@inproceedings{10579203,
+ abstract = {In order to achieve high availability and low storage costs in distributed storage systems, erasure code is widely used instead of replication. Compared to replication, erasure code can reduce storage costs, but also brings higher repair costs. There are currently many repair algorithms to reduce the block reconstruction time of single block failure. However, applying the existing methods to multi-block failures may lead to unbalanced network traffic, unnecessary network transfers, and network congestion at data collection node during the repair process, which can not make full use of the bandwidth between nodes.To solve this problem, we propose a novel repair algorithm called Partial Merge Repair (PMR) for multi-block failures, which is a scheduling algorithm that considers network load between nodes and combines multiple failed blocks to recover together. It first divides all surviving nodes into different groups, and then the data collection nodes within the group collect the data needed to repair multiple blocks through cross merging. Finally, the data collection node sends the collected blocks to the repair node to complete the repair. Our study presents a formal definition and proof of network transfer time in the modeled repair process of PMR, highlighting its superior efficiency compared to existing methods in homogeneous environments.We implement a prototype of PMR to evaluate its performance. The experimental results indicate that compared to existing repair technologies, PMR improves repair throughput by 28%-256% for various scenes.},
+ author = {Zhang, Shuaipeng and Li, Shiyi and Wu, Chentao and Wu, Ruobin and Long, Saiqin and Xia, Wen},
+ booktitle = {2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS57955.2024.00060},
+ issn = {1530-2075},
+ keyword = {Costs;Codes;Scheduling algorithms;Bandwidth;Telecommunication traffic;Maintenance engineering;Data collection;Erasure code;Distributed system;Network transfer;Repair algorithm;Parallelism},
+ month = {May},
+ number = {},
+ pages = {608-618},
+ title = {A Parallel Partial Merge Repair Algorithm for Multi-block Failures for Erasure Storage Systems},
+ volume = {},
+ year = {2024}
+}

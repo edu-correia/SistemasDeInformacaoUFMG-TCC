@@ -1,0 +1,16 @@
+@article{Jiang2020,
+ abstract = {Finite-state Machine (FSM) is the key kernel behind many popular applications, including regular expression matching, text tokenization, and Huffman decoding. Parallelizing FSMs is extremely difficult because of the strong dependencies and unpredictable memory accesses. Previous efforts have largely focused on multi-core parallelization and used different approaches, including speculative and enumerative execution, both of which have been effective but also have limitations. With increasing width and improving flexibility in SIMD instruction sets, this article focuses on combining SIMD and many/multi-core parallelism for FSMs. We have developed a novel strategy, called enumerative speculation. Instead of speculating on a single state as in speculative execution or enumerating all possible states as in enumerative execution, our strategy speculates transitions from several possible states, reducing the prediction overheads of speculation approach and the large amount of redundant work in the enumerative approach. A simple lookback approach produces a set of guessed states to achieve high speculation success rates in our enumerative speculation. In addition, to enable continued scalability of enumerative speculation with a large number of threads, we have developed a parallel merge method. We evaluate our method with four popular FSM applications: Huffman decoding, regular expression matching, HTML tokenization, and Div7. We obtain up to 2.5× speedup using SIMD on 1 core and up to 95× combining SIMD with 60 cores of an Intel Xeon Phi. On a single core, we outperform the best single-state speculative execution version by an average of 1.6×, and in combining SIMD and many-core parallelism, outperform enumerative execution by an average of 2×. Finally, when evaluate on a GPU, we show that our parallel merge implementations are 2.02 - 6.74× more efficient than corresponding sequential merge implementations and achieve better scalability on an Nvidia V100 GPU.  © 2020 ACM.},
+ author = {Jiang, Peng and Xia, Yang and Agrawal, Gagan},
+ doi = {10.1145/3399714},
+ journal = {ACM Transactions on Parallel Computing},
+ note = {Cited by: 5},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Combining SIMD and Many/Multi-core Parallelism for Finite-state Machines with Enumerative Speculation},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85092781314?origin=resultslist},
+ volume = {7},
+ year = {2020}
+}

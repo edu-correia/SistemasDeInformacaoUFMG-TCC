@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2021.3077455,
+ abstract = {We propose an online algorithm for clustering channel-states and learning the associated achievable multiuser rates. Our motivation stems from the complexity of multiuser scheduling. For instance, MU-MIMO scheduling involves the selection of a user subset and associated rate selection each time-slot for varying channel states (the vector of quantized channels matrices for each of the users) — a complex integer optimization problem that is different for each channel state. Instead, our algorithm clusters the collection of channel states to a much lower dimension, and for each cluster provides achievable multiuser capacity trade-offs, which can be used for user and rate selection. Our algorithm uses a bandit approach, where it learns both the unknown partitions of the channel-state space (channel-state clustering) as well as the rate region for each cluster along a pre-specified set of directions, by observing the success/failure of the scheduling decisions (e.g. through packet loss). We propose an epoch-greedy learning algorithm that achieves a sub-linear regret, given access to a class of classifying functions over the channel-state space. We empirically validate our approach on a high-fidelity 5G New Radio (NR) wireless simulator developed within AT&amp;T Labs. We show that our epoch-greedy bandit algorithm learns the channel-state clusters and the associated rate regions. Further, adaptive scheduling using this learned rate-region model (map from channel-state to the set of feasible rates) outperforms the corresponding hand-tuned static maps in multiple settings. Thus, we believe that auto-tuning cellular systems through learning-assisted scheduling algorithms can significantly improve performance in real deployments.},
+ author = {Tariq, Isfar and Sen, Rajat and Novlan, Thomas and Akoum, Salam and Majmundar, Milap and de Veciana, Gustavo and Shakkottai, Sanjay},
+ doi = {10.1109/tnet.2021.3077455},
+ issn = {1063-6692},
+ issue_date = {Oct. 2021},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {May},
+ number = {5},
+ numpages = {15},
+ pages = {1933–1947},
+ publisher = {IEEE Press},
+ title = {Auto-Tuning for Cellular Scheduling Through Bandit-Learning and Low-Dimensional Clustering},
+ url = {https://doi.org/10.1109/TNET.2021.3077455},
+ volume = {29},
+ year = {2021}
+}

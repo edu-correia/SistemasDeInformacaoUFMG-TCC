@@ -1,0 +1,16 @@
+@article{Zhao20241527,
+ abstract = {Modern key-value (KV) storage systems adopt append-only writes to update KV pairs with the out-of-place manner, because the performance of sequential accesses is much better than that of random accesses for HDDs. Compaction or GC operations will be deployed by traditional KVs or KV separation schemes due to updating KV pairs via append-only writes. Unfortunately, the system performance will be hurt because extra reads and writes are triggered during those operations, especially under update-intensive workloads.We find that the performance gap for SSDs between sequential and random accesses will get close when the request size becomes large in our experiments. Motivated by this, we propose InPlaceKV built atop SSDs, which adopts an in-place large-update scheme with a hotness-aware method to update KV pairs rather than use append-only writes with the LSM-tree. We further design the working flow of system operations with appropriate data structures. Finally, we compare InPlaceKV with state-of-the-art KV storage systems via extensive experiments under update-intensive workloads, and results validate the effectiveness of our design in improving the system throughput. © The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2023.},
+ author = {Zhao, Jianing and Pan, Yubiao and Zhang, Huizhen and Lin, Mingwei and Luo, Xin and Xu, Zeshui},
+ doi = {10.1007/s10586-023-04031-9},
+ journal = {Cluster Computing},
+ note = {Cited by: 8},
+ number = {2},
+ pages = {1527 - 1540},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {InPlaceKV: in-place update scheme for SSD-based KV storage systems under update-intensive Worklaods},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85160404998?origin=resultslist},
+ volume = {27},
+ year = {2024}
+}

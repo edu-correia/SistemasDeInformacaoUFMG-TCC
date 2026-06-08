@@ -1,0 +1,14 @@
+@conference{Dougal20261,
+ abstract = {Conflict-Free Replicated Data Types (CRDTs) are used in a range of fields for their coordination-free replication with strong eventual consistency. By prioritising availability over consistency under partition, peers accumulate events in different orders, and rely on an associative, commutative and idempotent merge function to present a materialised view of the CRDT. Under some circumstances, the state of the materialised view over time can appear to "roll back"previously applied events. When the materialised view is used to manage group permissions such as ones found in instant messaging applications, this can lead to surprising behaviour. Rollbacks can occur when there are multiple concurrent events, such as in the Duelling Admins problem where two equally per-missioned admins concurrently revoke each other's permissions. Who wins? Different solutions and their trade-offs are examined. A Byzantine admin can exploit concurrency to influence the duel, whereby we argue that an external arbiter is required to order concurrent events. Our ERA proposal arbitrates asynchronously in batches via optional "epoch events", preserving availability. This introduces a bounded total order within epochs, and the resulting "finality"improves on the level of consistency CRDTs can provide.  © 2026 Copyright held by the owner/author(s).},
+ author = {Dougal, Kegan},
+ doi = {10.1145/3806077.3806691},
+ journal = {PaPoC 2026 - Proceedings of the 13th Workshop on Principles and Practice of Consistency for Distributed Data},
+ note = {Cited by: 0; All Open Access; Gold Open Access; Green Open Access},
+ pages = {1 - 8},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {ERA: Epoch-Resolved Arbitration for Duelling Admins in Group Management CRDTs},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105038318008?origin=resultslist},
+ year = {2026}
+}

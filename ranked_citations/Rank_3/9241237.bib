@@ -1,0 +1,14 @@
+@article{9241237,
+ abstract = {Many network operations, ranging from attack investigation and mitigation to traffic management, require answering network-wide flow queries in seconds. Although flow records are collected at each router, using available traffic capture utilities, querying the resulting datasets from hundreds of routers across sites and over time, remains a significant challenge due to the sheer traffic volume and distributed nature of flow records. In this article, we investigate how to improve the response time for a priori unknown network-wide queries. We present Flowyager, a system that is built on top of existing traffic capture utilities. Flowyager generates and analyzes tree data structures, that we call Flowtrees, which are succinct summaries of the raw flow data available by capture utilities. Flowtrees are self-adjusted data structures that drastically reduce space and transfer requirements, by 75% to 95%, compared to raw flow records. Flowyager manages the storage and transfers of Flowtrees, supports Flowtree operators, and provides a structured query language for answering flow queries across sites and time periods. By deploying a Flowyager prototype at both a large Internet Exchange Point and a Tier-1 Internet Service Provider, we showcase its capabilities for networks with hundreds of router interfaces. Our results show that the query response time can be reduced by an order of magnitude when compared with alternative data analytics platforms. Thus, Flowyager enables interactive network-wide queries and offers unprecedented drill-down capabilities to, e.g., identify DDoS culprits, pinpoint the involved sites, and determine the length of the attack.},
+ author = {Saidi, Said Jawad and Maghsoudlou, Aniss and Foucard, Damien and Smaragdakis, Georgios and Poese, Ingmar and Feldmann, Anja},
+ doi = {10.1109/TNSM.2020.3034278},
+ issn = {1932-4537},
+ journal = {IEEE Transactions on Network and Service Management},
+ keyword = {Task analysis;Monitoring;Time factors;Distributed databases;Data structures;Tools;Switches;Network data summarization;network monitoring;network-wide traffic analytics},
+ month = {Dec},
+ number = {4},
+ pages = {1988-2006},
+ title = {Exploring Network-Wide Flow Data With Flowyager},
+ volume = {17},
+ year = {2020}
+}

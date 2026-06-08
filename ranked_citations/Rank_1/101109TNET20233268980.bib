@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2023.3268980,
+ abstract = {On a high-speed link, there may be tens of millions of IP packets per second and millions of active flows. Maintaining the state of each flow is a fundamental task underlying many network functions, such as load balancing and network anomaly detection. There are two important kinds of per-flow states: per-flow size (e.g., the number of packets received by an arbitrary destination IP) and per-flow cardinality (e.g., the number of distinct source IP addresses that contacted each destination IP). In this paper, we focus on the latter kind of states, and define a new problem: online query of per-flow cardinality, in which we query any given flow’s cardinality entirely on the data plane with low time complexity. For this problem, we propose three solutions named On-vHLL, Ton-vHLL and Aton-vHLL, whose time cost are &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$O(1)$ &lt;/tex-math&gt;&lt;/inline-formula&gt; even for the query operation. Our proposed techniques are three folds. First, we redesign the traditional vHLL with new supplementary data structures called incremental update units (IUUs). When a certain flow’s cardinality is queried, these IUUs can avoid scanning the whole data structure and reduce the time complexity to &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$O(1)$ &lt;/tex-math&gt;&lt;/inline-formula&gt;. Second, we apply a HLL register compression technique called TailCut to the On-vHLL sketch, which can save memory cost by 50%. Third, we add a prefilter based on min-heap, alongside the Ton-vHLL sketch. The prefilter is to give each currently sampled top-&lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$k$ &lt;/tex-math&gt;&lt;/inline-formula&gt; superspreader a dedicated HyperLogLog estimator for better accuracy. It can also absorb the superspreaders’ packets bypassing the sketch. We evaluate our new sketches by simulation with CAIDA traces. The results show that our On-vHLL, Ton-vHLL and Aton-vHLL sketches need about 5 memory accesses per packet. The time cost of query operation decreases by hundreds of times than the traditional vHLL that can only be queried offline. Meanwhile, the estimation error of flow spread by our Aton-vHLL is comparable to vHLL.},
+ author = {Xiao, Qingjun and Cai, Yuexiao and Cao, Yunpeng and Chen, Shigang},
+ doi = {10.1109/tnet.2023.3268980},
+ issn = {1063-6692},
+ issue_date = {Dec. 2023},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {May},
+ number = {6},
+ numpages = {16},
+ pages = {2994–3009},
+ publisher = {IEEE Press},
+ title = {Accurate and O(1)-Time Query of Per-Flow Cardinality in High-Speed Networks},
+ url = {https://doi.org/10.1109/TNET.2023.3268980},
+ volume = {31},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{11084298,
+ abstract = {Unsupervised domain adaptation (UDA) in semantic segmentation aims to transfer a model trained on a labeled source domain to an unlabeled target domain, ensuring robust performance despite domain shifts. A common strategy is generating high-quality pseudo-labels for the target domain and using them in self-training. However, many existing methods rely on fixed offline pseudo-labels, limiting adaptability to new data. To address this issue, we propose a novel UDA method, SCDAS (Selective Consensus pseudo-labeling for Domain Adaptive Segmentation), which is based on a teacher-student framework and incorporates a Selective Consensus strategy to dynamically update pseudo-labels. Specifically, our Selective Consensus strategy gradually merges offline feature-induced pseudo-labels with online pseudo-labels generated during model updates. This allows the pseudo-labels to gradually adapt to the target dataset, particularly for minority classes. Additionally, we enhance the quality of offline pseudo-labels by iteratively refining them using multiple anisotropic prototypes modeled with a Gaussian Mixture Model (GMM). The proposed method, implemented on Deeplabv3+ architecture with ResNet101 backbone, achieves significant performance gains on several public benchmarks, including GTA5 → Cityscapes (67.5% mIoU), Synthia → Cityscapes (68.7% mIoU), and Cityscapes → ACDC (61.08% mIoU).},
+ author = {Tran, Phuong Dong and Nguyen, Hieu and Nguyen, Thi-Oanh},
+ booktitle = {2025 IEEE International Conference on Image Processing (ICIP)},
+ doi = {10.1109/ICIP55913.2025.11084298},
+ issn = {2381-8549},
+ keyword = {Adaptation models;Limiting;Semantic segmentation;Image processing;Refining;Prototypes;Benchmark testing;Performance gain;Transformers;Gaussian mixture model;Unsupervised Domain Adaptation;Self-learning;Selective Consensus;GMM;Multi-prototypes;Semantic Segmentation;SCDAS},
+ month = {Sep.},
+ number = {},
+ pages = {2832-2837},
+ title = {Enhancing Unsupervised Domain Adaptation in Semantic Segmentation Through Selective Consensus and Gaussian Mixture Model-Based Pseudo-Labeling},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,14 @@
+@conference{Zhou2024453,
+ abstract = {Log-structured merge tree (LSM-tree) has been widely adopted by modern key-value stores. Deploying LSM-tree across heterogeneous SSD storage which combines the fast but expensive NVMe storage tier with the slow but economical SATA storage tier has emerged as the optimal choice for maximizing cost-effectiveness. However, existing studies typically focus on optimizing the performance of individual storage layers, thereby impeding the full utilization potential of both storage layers. We notice that they tend to over-rely on one storage layer and underutilize the other. In this paper, we present HyperDB, a novel hybrid key-value store designed to enhance the overall performance of both layers via deploying tailored data structures in different media. Especially, HyperDB devises a zone-based data layout for NVMe SSDs to reduce migration overhead, while also implementing a semi-sorted table on the SATA storage layer to minimize merge overhead. Furthermore, we propose a preemptive compaction method at the block-granularity level to further alleviate resource consumption caused by background compaction. Experimental results show that HyperDB achieves 2.25 × faster on average throughput and a 60.3% reduction in background task traffic, compared to the standard use of RocksDB in data centers today.  © 2024 Owner/Author.},
+ author = {Zhou, Ruisong and Zhang, Yuzhan and Li, Chunhua and Zhou, Ke and Wang, Peng and Zhang, Gong and Zhang, Ji and Zhang, Guangyu},
+ doi = {10.1145/3673038.3673153},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 3; All Open Access; Gold Open Access},
+ pages = {453 - 463},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {HyperDB: A Novel Key Value Store for Reducing Background Traffic in Heterogeneous SSD Storage},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85202434269?origin=resultslist},
+ year = {2024}
+}

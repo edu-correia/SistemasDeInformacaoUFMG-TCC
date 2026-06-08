@@ -1,0 +1,15 @@
+@article{Cui2026,
+ abstract = {Variable-length string indexing is a critical component of modern data-intensive systems. However, it typically suffers from a significant performance disparity compared to fixed-length integer indexing. In this paper, we first conduct a fine-grained micro-architectural profiling to reveal the primary bottlenecks of variable-length string indexing on modern processors: frequent L1/LLC cache misses and branch mispredictions. Motivated by these insights, we propose the Prefix-String Index (PSI), representing a fundamental micro-architectural paradigm shift rather than an incremental structural patch. PSI exploits SIMD-accelerated order-preserving encoding to efficiently map variable-length strings into a compact 64-bit prefix space, effectively transforming complex string navigation into a hardware-friendly integer search problem. Internally, PSI introduces an adaptive node mechanism that dynamically toggles between flattened arrays and sub-trie structures based on local data sparsity to maximize Instruction-Level Parallelism. Crucially, this adaptive mechanism is governed by deterministic, hardware-derived constants, entirely eliminating the need for manual hyperparameter tuning across diverse datasets. Furthermore, to mitigate the severe reconstruction overhead typical of dynamic workloads, PSI integrates a lightweight, non-blocking O(n) model retraining mechanism. Experimental results on real-world datasets (e.g., urls, idcards) and YCSB workloads demonstrate that PSI not only outperforms state-of-the-art baselines by 26%–33% in average throughput but also maintains a stable median latency between 0.50ms and 0.65ms, exhibiting superior stability in latency-sensitive scenarios. Notably, PSI reduces the p99.99 tail latency by 2.2× to 8.0× even under continuous insertions, validating that our micro-architectural adaptation is highly effective in enhancing retrieval performance and ensuring robust dynamic execution. © 2026 Elsevier B.V.},
+ author = {Cui, Yuanliang and Feng, Chujun and Chen, Zikang and Zheng, Xiaoying and Zhu, Yongxin},
+ doi = {10.1016/j.sysarc.2026.103805},
+ journal = {Journal of Systems Architecture},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating string search: A microarchitecture-aware index for variable-length data},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105035474904?origin=resultslist},
+ volume = {176},
+ year = {2026}
+}

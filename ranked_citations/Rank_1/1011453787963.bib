@@ -1,0 +1,18 @@
+@article{10.1145/3787963,
+ abstract = {Distributed ledger technology such as blockchain is considered essential for supporting large numbers of micro-transactions in the Machine Economy, which is envisioned to involve billions of connected heterogeneous and decentralized cyber-physical systems. This stresses the need for performance and scalability of distributed ledger technologies. Addressing this, sharding techniques that divide the blockchain network into multiple committees are a common approach to improve scalability. However, with current sharding approaches, costly cross-shard verification is needed to prevent double-spending. This article proposes a novel and more scalable distributed ledger method named ScaleGraph that implements dynamic sharding by using routing and logical proximity concepts from distributed hash tables. ScaleGraph addresses cybersecurity in terms of integrity and availability to support frequent micro-transactions between autonomous devices. Benefits of ScaleGraph include a total storage space complexity of  (O(t)) , where ( t )  is the global number of transactions (assuming a constant replication degree). This space is sharded over  ( N )  nodes so that each node needs  (O(t/N))  storage in expectation, which provides a high level of concurrency and data localization as compared to other delegated consensus proposals. ScaleGraph allows for a dynamic grouping of validators that are selected based on a distance metric. We analyze the consensus requirements in such a dynamic setting and show that a synchronous consensus protocol allows shards to be smaller than an asynchronous one, and likely yields better performance. Moreover, we provide an experimental analysis of security aspects regarding the required size of the consensus groups with ScaleGraph. Our analysis shows that dynamic sharding based on proximity concepts brings attractive scalability properties in general, especially when the fraction of corrupt nodes is small.},
+ address = {New York, NY, USA},
+ articleno = {33},
+ author = {Fink, Christoffer and Schel\'{e}n, Olov and Bodin, Ulf},
+ doi = {10.1145/3787963},
+ issue_date = {September 2026},
+ journal = {Distrib. Ledger Technol.},
+ keyword = {blockchain, sharding, microtransactions, distributed hash tables},
+ month = {May},
+ number = {3},
+ numpages = {32},
+ publisher = {Association for Computing Machinery},
+ title = {Dynamically Sharded Ledgers on a Distributed Hash Table},
+ url = {https://doi.org/10.1145/3787963},
+ volume = {5},
+ year = {2026}
+}

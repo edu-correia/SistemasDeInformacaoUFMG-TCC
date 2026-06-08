@@ -1,0 +1,14 @@
+@inproceedings{6681059,
+ abstract = {While multicore processors increase throughput for multi-programmed and multithreaded codes, many important applications are single threaded and thus do not benefit. Automatic parallelization techniques play an important role in migrating singe threaded applications to multicore platforms. Unfortunately, the prevalence of control flow, recursive data structures, and general pointer accesses in ordinary programs renders the traditional automatic parallelization techniques unsuitable. Parallel-Stage Decoupled Software Pipelining (PS-DSWP) is proposed to exploit fine-grained pipeline parallelism lurking in ordinary programs with the existence of all kinds of dependences, including arbitrary control dependences, at the instruction level. But it requires knowledge of architectural properties and hardware support of a communication channel and two special instructions. We propose an improved PS-DSWP algorithm based on OpenMP in this paper. It is implemented without relying on CPU architectures by using a high level intermediate representation. Moreover, the Program Dependence Graph (PDG) used in the algorithm is built based on the basic blocks, which exploits coarser-grained parallelism than the original PS-DSWP transformation with PDG based on instructions. OpenMP is employed in our algorithm to assign task and implement synchronization among threads while avoiding dependence on hardware support. We evaluate the loops with complex memory patterns and control flow, which cannot be dealt with by traditional techniques, on multicore platform. As a result, they can be parallelized and gain significant performance improvement with our algorithm. We obtain a maximum speedup as high as 2.07x and on average 1.39x with 5 threads.},
+ author = {Liu, Xiaoxian and Zhao, Rongcai and Han, Lin and Liu, Peng},
+ booktitle = {2013 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications},
+ doi = {10.1109/TrustCom.2013.227},
+ issn = {2324-9013},
+ keyword = {Instruction sets;Synchronization;Pipeline processing;Multicore processing;Merging;automatic parallelization;OpenMP;parallel-stage decoupled software pipelining},
+ month = {July},
+ number = {},
+ pages = {1825-1831},
+ title = {An Automatic Parallel-Stage Decoupled Software Pipelining Parallelization Algorithm Based on OpenMP},
+ volume = {},
+ year = {2013}
+}

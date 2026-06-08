@@ -1,0 +1,14 @@
+@article{11302797,
+ abstract = {Recent robot task planners utilize large language models (LLMs) or vision-language models (VLMs) as a failure detector. These methods perform well by leveraging their semantic reasoning capabilities but often assume full environment understanding, which can lead to unreliable planning in complex scenes lacking explicit structural modeling. To address these limitations, we propose a novel multi-view scene understanding framework that explicitly models object-level relationships, enabling failure detection and effective task replanning. Our approach first captures multi-view images for comprehensive coverage, and generates local 2D scene graphs encoding object identities and relational information. Building on this, we introduce a model based on a graph neural network that merges the local 2D scene graphs into a unified representation. This process results in the unified scene graph, used to detect task success and identify failure causes. For each sub-task, our framework compares the unified scene graph with the expected scene graph predicted by the LLM during the task planning stage, identifying potential failure causes based on their deviations. These causes are then fed back into the LLM to facilitate effective replanning, thereby reducing repetitive failures and enhancing adaptability. We evaluate our framework on five real-world benchmark tasks to demonstrate its applicability. Separately, we compare failure detection and reasoning performance with other methods, showing the benefits of combining multi-view perception with explicit graph-based reasoning.},
+ author = {Chong, Haechan and Lee, Jongwon and Ahn, Hyemin},
+ doi = {10.1109/LRA.2025.3645659},
+ issn = {2377-3766},
+ journal = {IEEE Robotics and Automation Letters},
+ keyword = {Robots;Planning;Cognition;Semantics;Three-dimensional displays;Robustness;Object recognition;Large language models;Accuracy;Visualization;Task and motion planning;failure detection and recovery;AI-enabled robotics},
+ month = {Feb},
+ number = {2},
+ pages = {1986-1993},
+ title = {Robust Task Planning via Failure Detection Using Scene Graph From Multi-View Images},
+ volume = {11},
+ year = {2026}
+}

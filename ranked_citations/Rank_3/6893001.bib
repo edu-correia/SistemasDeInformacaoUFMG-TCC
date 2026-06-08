@@ -1,0 +1,14 @@
+@article{6893001,
+ abstract = {Hierarchical agglomerative clustering (HAC) is a clustering method widely used in various disciplines from astronomy to zoology. HAC is useful for discovering hierarchical structure embedded in input data. The cost of executing HAC on large data is typically high, due to the need for maintaining global inter-cluster distance information throughout the execution. To address this issue, we propose a new parallelization scheme for multi-threaded shared-memory machines based on the concept of nearest-neighbor (NN) chains. The proposed multi-threaded algorithm allocates available threads into two groups, one for managing NN chains and the other for updating distance information. In-depth analysis of our approach gives insight into the ideal configuration of threads and theoretical performance bounds. We evaluate our proposed method by testing it with multiple public datasets and comparing its performance with that of several alternatives. In our test, the proposed method completes hierarchical clustering 3.09-51.79 times faster than the alternatives. Our test results also reveal the effects of performance-limiting factors such as starvation in chain growing, overhead incurred from using synchronization locks, and hardware aspects including memory-bandwidth saturation. According to our evaluation, the proposed scheme is effective in improving the HAC algorithm, achieving significant gains over the alternatives in terms of runtime and scalability.},
+ author = {Jeon, Yongkweon and Yoon, Sungroh},
+ doi = {10.1109/TPDS.2014.2355205},
+ issn = {1558-2183},
+ journal = {IEEE Transactions on Parallel and Distributed Systems},
+ keyword = {Clustering algorithms;Couplings;Algorithm design and analysis;Merging;Clustering methods;Instruction sets;Hierarchical clustering;unsupervised learning;parallelization;multi-threading;multi-core CPU},
+ month = {Sep.},
+ number = {9},
+ pages = {2534-2548},
+ title = {Multi-Threaded Hierarchical Clustering by Parallel Nearest-Neighbor Chaining},
+ volume = {26},
+ year = {2015}
+}

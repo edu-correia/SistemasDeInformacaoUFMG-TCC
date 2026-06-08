@@ -1,0 +1,16 @@
+@article{Seng2023,
+ abstract = {Generalization has always been a keyword in deep learning. Pretrained models and domain adaptation technology have received widespread attention in solving the problem of generalization. They are all focused on finding features in data to improve the generalization ability and to prevent overfitting. Although they have achieved good results in various tasks, those models are unstable when classifying a sentence whose label is positive but still contains negative phrases. In this article, we analyzed the attention heat map of the benchmarks and found that previous models pay more attention to the phrase rather than to the semantic information of the whole sentence. Moreover, we proposed a method to scatter the attention away from opposite sentiment words to avoid a one-sided judgment. We designed a two-stream network and stacked the gradient reversal layer and feature projection layer within the auxiliary network. The gradient reversal layer can reverse the gradient of features in the training stage so that the parameters are optimized following the reversed gradient in the backpropagation stage. We utilized an auxiliary network to extract the backward features and then fed them into the main network to merge them with normal features extracted by the main network. We applied this method to the three baselines of TextCNN, BERT, and RoBERTa using sentiment analysis and sarcasm detection datasets. The results show that our method can improve the sentiment analysis datasets by 0.5% and the sarcasm detection datasets by 2.1%. © 2023 by the authors.},
+ author = {Seng, Dewen and Wu, Xin},
+ doi = {10.3390/s23031287},
+ journal = {Sensors},
+ note = {Cited by: 7; All Open Access; Gold Open Access; Green Open Access},
+ number = {3},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Enhancing the Generalization for Text Classification through Fusion of Backward Features},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85147853313?origin=resultslist},
+ volume = {23},
+ year = {2023}
+}

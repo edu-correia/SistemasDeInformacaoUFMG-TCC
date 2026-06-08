@@ -1,0 +1,16 @@
+@article{Nunokawa2024425,
+ abstract = {NEC SX-Aurora TSUBASA (SX-AT) is the latest vector supercomputer, consisting of host processors called Vector Hosts (VHs) and vector processors called Vector Engines (VEs). The goal of this work is to simultaneously use both VHs and VEs to increase the resource utilization and improve the system throughput by co-executing more workloads. One difficulty is that performance interferences among VH and VE workloads could occur because they share some computing resources and potentially compete to use the same resource at the same time, so-called resource conflicts. To achieve efficient workload co-execution, first, this paper experimentally investigates the performance interference between a VH and a VE, when each of the two processors executes a different workload. It is empirically shown that the frequency of system calls from the VE workload could be a good indicator to predict if the co-execution could cause severe performance interference, even though monitoring system calls requires a huge runtime overhead and it is impractical to simply use it for decision making of co-execution. Then, this paper proposes a workload co-execution strategy based on a practical approach to identifying a pair of VE and VH workloads that could cause severe performance interferences. Our evaluation results clearly demonstrate that the system call frequency can be used to predict if the workload can affect the performance of another co-executing workload, and VH’s CPU load can be a good approximation of the system call frequency. The proposed approach based on the CPU loads could accurately identify a pair of workloads causing frequent resource conflicts, and thus reduce the risk of severe performance interferences between co-executing workloads on an SX-AT system, resulting in shorter makespan without significantly increasing the turn-around time. © The Author(s) 2023.},
+ author = {Nunokawa, Riku and Shimomura, Yoichi and Agung, Mulya and Egawa, Ryusuke and Takizawa, Hiroyuki},
+ doi = {10.1007/s42514-023-00171-x},
+ journal = {CCF Transactions on High Performance Computing},
+ note = {Cited by: 0; All Open Access; Hybrid Gold Open Access},
+ number = {4},
+ pages = {425 - 438},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Conflict-aware workload co-execution on SX-aurora TSUBASA},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85173766482?origin=resultslist},
+ volume = {6},
+ year = {2024}
+}

@@ -1,0 +1,16 @@
+@article{Iorga20235084,
+ abstract = {Memory models allow reasoning about the correctness of multithreaded programs. Constructing and using such models is facilitated by simulators that reveal which behaviours of a given program are allowed. While extensive work has been done on simulating axiomatic memory models, there has been less work on simulation of operational models. Operational models are often considered more intuitive than axiomatic models, but are challenging to simulate due to the vast number of paths through the model's transition system. Observing that a similar path-explosion problem is tackled by program analysis tools, we investigate the idea of reducing the decision problem of 'whether a given memory model allows a given behaviour' to the decision problem of 'whether a given C program is safe', which can be handled by a variety of off-The-shelf tools. We report on our experience using multiple program analysis tools for C for this purpose-a model checker (CBMC), a symbolic execution tool (KLEE), and three coverage-guided fuzzers (libFuzzer, Centipede and AFL++)-presenting two case-studies. First, we evaluate the performance and scalability of these tools in the context of the x86 memory model, showing that fuzzers offer performance competitive with that of RMEM, a state-of-The-Art bespoke memory model simulator. Second, we study a more complex, recently developed memory model for hybrid CPU/FPGA devices for which no bespoke simulator is available. We highlight how different encoding strategies can aid the various tools and show how our approach allows us to simulate the CPU/FPGA model twice as deeply as in prior work, leading to us finding and fixing several infidelities in the model. We also experimented with applying three analysis tools that won the 'falsification' category in the 2023 Annual Software Verification Competition (SV-COMP). We found that these tools do not scale to our use cases, motivating us to submit example C programs arising from our work for inclusion in the set of SV-COMP benchmarks, so that they can serve as challenge examples.  © 1976-2012 IEEE.},
+ author = {Iorga, Dan and Wickerson, John and Donaldson, Alastair F.},
+ doi = {10.1109/TSE.2023.3326056},
+ journal = {IEEE Transactions on Software Engineering},
+ note = {Cited by: 3; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ number = {12},
+ pages = {5084 - 5102},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Simulating Operational Memory Models Using Off-The-Shelf Program Analysis Tools},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85180267540?origin=resultslist},
+ volume = {49},
+ year = {2023}
+}

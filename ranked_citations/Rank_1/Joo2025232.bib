@@ -1,0 +1,15 @@
+@conference{Joo2025232,
+ abstract = {In the era of large language models (LLMs) and long-context generation, model compression techniques such as pruning, quantization, and distillation offer effective ways to reduce memory usage. Among them, pruning is constrained by the difficulty of exploiting unstructured sparsity on modern hardware. Consequently, LLM pruning is often restricted to structured patterns for hardware efficiency, although unstructured sparsity offers better accuracy retention at higher sparsity. To bridge this gap between the full potential of pruning and efficiency, we propose the Coruscant GPU SpMM kernel that leverages a bitmap-based sparse format for reduced memory footprint inside GPU memory and reduced latency of memory-bound matrix multiplications in LLM inference. This is achieved by transferring the compressed matrix tiles to GPU processors and decompressing them locally for tensor core execution. We see further optimization opportunity in microarchitecture-level and propose Coruscant Sparse Tensor Core, which computes directly on the compressed format without decompression by integrating a bitmap decoder. Coruscant kernel achieves up to 2 × speedup over cuBLAS and 1.48 × over Flash-LLM. With Coruscant Sparse Tensor Core, the speedup reaches 2.75 × over cuBLAS. Most importantly, Coruscant serves as an ideal solution for state-of-the-art LLM pruning methods by significantly reducing the memory footprint and accelerating SpMM on sparsity range 30% to 70%, enabling exploration of diverse sparsity patterns and pruning strategies. © 2025 Copyright held by the owner/author(s).},
+ author = {Joo, Donghyeon and Hosseini, Helya and Hadidi, Ramyad and Asgari, Bahar},
+ doi = {10.1145/3725843.3756065},
+ journal = {Proceedings of the Annual International Symposium on Microarchitecture, MICRO},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {232 - 245},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Coruscant: Co-Designing GPU Kernel and Sparse Tensor Core to Advocate Unstructured Sparsity in Efficient LLM Inference},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105021318213?origin=resultslist},
+ volume = {Part of 213862},
+ year = {2025}
+}

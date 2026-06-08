@@ -1,0 +1,14 @@
+@article{8811621,
+ abstract = {The scalable high efficiency video coding (SHVC) is an extension of high efficiency video coding (HEVC). It introduces multiple layers and inter-layer prediction, thus significantly increases the coding complexity on top of the already complicated HEVC encoder. In inter prediction for quality SHVC, in order to determine the best possible mode at each depth level, a coding tree unit can be recursively split into four depth levels, including merge mode, inter2N×2N, inter2N×N, interN×2N, interN×N, inter2N×nU, inter2N×nD, internL×2N and internRx×2N, intra modes and inter-layer reference (ILR) mode. This can obtain the highest coding efficiency, but also result in very high coding complexity. Therefore, it is crucial to improve coding speed while maintaining coding efficiency. In this research, we have proposed a new depth level and inter mode prediction algorithm for quality SHVC. First, the depth level candidates are predicted based on inter-layer correlation, spatial correlation and its correlation degree. Second, for a given depth candidate, we divide mode prediction into square and non-square mode predictions respectively. Third, in the square mode prediction, ILR and merge modes are predicted according to depth correlation, and early terminated whether residual distribution follows a Gaussian distribution. Moreover, ILR mode, merge mode and inter2N×2N are early terminated based on significant differences in Rate Distortion (RD) costs. Fourth, if the early termination condition cannot be satisfied, non-square modes are further predicted based on significant differences in expected values of residual coefficients. Finally, inter-layer and spatial correlations are combined with residual distribution to examine whether to early terminate depth selection. Experimental results have demonstrated that, on average, the proposed algorithm can achieve a time saving of 71.14%, with a bit rate increase of 1.27%.},
+ author = {Wang, Dayong and Sun, Yu and Zhu, Ce and Li, Weisheng and Dufaux, Frederic},
+ doi = {10.1109/TMM.2019.2937240},
+ issn = {1941-0077},
+ journal = {IEEE Transactions on Multimedia},
+ keyword = {Encoding;Correlation;Prediction algorithms;Video coding;Complexity theory;Static VAr compensators;Scalability;SHVC;coding depth;coding mode;mode prediction;early termination},
+ month = {April},
+ number = {4},
+ pages = {833-845},
+ title = {Fast Depth and Inter Mode Prediction for Quality Scalable High Efficiency Video Coding},
+ volume = {22},
+ year = {2020}
+}

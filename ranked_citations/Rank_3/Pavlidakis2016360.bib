@@ -1,0 +1,15 @@
+@conference{Pavlidakis2016360,
+ abstract = {Recently, NoSQL stores, such as HBase, have gained acceptance and popularity due to their ability to scale-out and perform queries over large amounts of data. NoSQL stores typically arrange data in tables of (key,value) pairs and support few simple operations: get, insert, delete, and scan. Despite its simplicity, this API has proven to be extremely powerful. Nowadays most data analytics frameworks utilize distributed file systems (DFS) for storing and accessing data. HDFS has emerged as the most popular choice due to its scalability. In this paper we explore how popular NoSQL stores, such as HBase, can provide an HDFS scale-out file system abstraction. We show how we can design an HDFS compliant filesystem on top a key-value store. We implement our design as a user-space library (KVFS) providing an HDFS filesystem over an HBase key-value store. KVFS is designed to run Hadoop style analytics such asMapReduce, Hive, Pig and Mahout over NoSQL stores without the use of HDFS. We perform a preliminary evaluation of KVFS against a native HDFS setup using DFSIO with varying number of threads. Our results show that the approach of providing a filesystem API over a key-value store is a promising direction: Read and write throughput of KVFS and HDFS, for big and small datasets, is identical. Both HDFS and KVFS throughput is limited by the network for small datasets and from the device I/O for bigger datasets. Copyright © 2016 by SCITEPRESS-Science and Technology Publications, Lda. All rights reserved.},
+ author = {Pavlidakis, Emmanouil and Mavridis, Stelios and Saloustros, Giorgos and Bilas, Angelos},
+ doi = {10.5220/0005924003600367},
+ journal = {CLOSER 2016 - Proceedings of the 6th International Conference on Cloud Computing and Services Science},
+ note = {Cited by: 1; All Open Access; Gold Open Access},
+ pages = {360 - 367},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {KVFS: An HDFS library over NoSQL databases},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84979790859?origin=resultslist},
+ volume = {1},
+ year = {2016}
+}

@@ -1,0 +1,14 @@
+@inproceedings{8820986,
+ abstract = {While current fairness-driven I/O schedulers are successful in allocating equal time/resource share to concurrent workloads, they ignore the I/O request queueing or reordering in storage device layer, such as Native Command Queueing (NCQ). As a result, requests of different workloads cannot have an equal chance to enter NCQ (NCQ conflict) and fairness is violated. We address this issue by providing the first systematic empirical analysis on how NCQ affects I/O fairness and SSD utilization and accordingly proposing a NCQ-aware I/O scheduling scheme, NASS. The basic idea of NASS is to elaborately control the request dispatch of workloads to relieve NCQ conflict and improve NCQ utilization. NASS builds on two core components: an evaluation model to quantify important features of the workload, and a dispatch control algorithm to set the appropriate request dispatch of running workloads. We integrate NASS into four state-of-the-art I/O schedulers and evaluate its effectiveness using widely used benchmarks and real world applications. Results show that with NASS, I/O schedulers can achieve 11-23% better fairness and at the same time improve device utilization by 9-29%.},
+ author = {Fan, Hao and Wu, Song and Ibrahim, Shadi and Chen, Ximing and Jin, Hai and Xiao, Jiang and Guan, Haibing},
+ booktitle = {2019 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ doi = {10.1109/IPDPS.2019.00062},
+ issn = {1530-2075},
+ keyword = {Bandwidth;Merging;Sea measurements;Performance evaluation;Parallel processing;Linux;Benchmark testing;SSD;NCQ;I/O scheduler;concurrent I/O},
+ month = {May},
+ number = {},
+ pages = {523-532},
+ title = {NCQ-Aware I/O Scheduling for Conventional Solid State Drives},
+ volume = {},
+ year = {2019}
+}

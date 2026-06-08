@@ -1,0 +1,13 @@
+@article{LEE2025100965,
+ abstract = {The structural information of spiral galaxies such as the spiral arm number, offer valuable insights into the formation processes of spirals and their physical roles in galaxy evolution. We developed classifiers based on convolutional neural networks (CNNs) using variants of the EfficientNet architecture with different transfer learning techniques and pre-trained weights to categorise spiral galaxies by their number of spiral arms. A selected dataset from Galaxy Zoo 2, comprising 11718 images filtered based on appropriate criteria is used for training and evaluation. Both the V2M model (EfficientNetV2M architecture fine-tuned on ImageNet) and the B0 model (EfficientNetB0 architecture with Zoobot pre-trained weights) achieved high accuracy on the down-sampled dataset, with most performance metrics exceeding 0.8 across all classes, except for galaxies with 4 arms due to the limited number of samples in this category. Merging higher-arm-number classes (more than 4 arms) improved the V2M model’s accuracy significantly for 4-arm galaxies, as this approach allowed the model to focus on more distinct features within fewer, broader categories with a more balanced class distribution. GradCAM++ and SmoothGrad highlight the networks’ effectiveness in classifying galaxies, through the distinction of the galaxy structures and the extraction of the spiral arms, with the V2M model showing better capabilities in both tasks. Lower-arm galaxies tend to be misclassified as “can’t tell” when their spiral arms are not clearly visible, while higher-arm galaxies tend to be misclassified as having fewer arms when their features are only partially detected. The study also found that galaxies with 3 arms tend to have lower stellar masses, and this tendency is reduced in the model predictions. The models’ mispredictions between 2-arm and 1/3-arm are likely resulting from external interference and dynamic nature of spiral arms. The V2M model prediction also shows a slight tendency towards higher stellar mass in many-arm galaxies.},
+ author = {Ming Wei Lee and John Y.H. Soo and Syarawi M.H. Sharoni},
+ doi = {https://doi.org/10.1016/j.ascom.2025.100965},
+ issn = {2213-1337},
+ journal = {Astronomy and Computing},
+ keyword = {Classification, Galaxy morphology, Spiral galaxies, Spiral arms, Deep learning, Convoluted neural networks},
+ pages = {100965},
+ title = {Classification of spiral galaxies by spiral arm number using convolutional neural network},
+ url = {https://www.sciencedirect.com/science/article/pii/S2213133725000381},
+ volume = {52},
+ year = {2025}
+}

@@ -1,0 +1,18 @@
+@article{10.1145/3428216,
+ abstract = {With distributed computing becoming ubiquitous in the modern era, safe distributed programming is an open challenge. To address this, multiparty session types (MPST) provide a typing discipline for message-passing concurrency, guaranteeing communication safety properties such as deadlock freedom.  While originally MPST focus on the communication aspects, and employ a simple typing system for communication payloads, communication protocols in the real world usually contain constraints on the payload. We introduce refined multiparty session types (RMPST), an extension of MPST, that express data dependent protocols via refinement types on the data types.  We provide an implementation of RMPST, in a toolchain called Session*, using Scribble, a toolchain for multiparty protocols, and targeting F*, a verification-oriented functional programming language. Users can describe a protocol in Scribble and implement the endpoints in F* using refinement-typed APIs generated from the protocol. The F* compiler can then statically verify the refinements. Moreover, we use a novel approach of callback-styled API generation, providing static linearity guarantees with the inversion of control. We evaluate our approach with real world examples and show that it has little overhead compared to a naive implementation, while guaranteeing safety properties from the underlying theory.},
+ address = {New York, NY, USA},
+ articleno = {148},
+ author = {Zhou, Fangyi and Ferreira, Francisco and Hu, Raymond and Neykova, Rumyana and Yoshida, Nobuko},
+ doi = {10.1145/3428216},
+ issue_date = {November 2020},
+ journal = {Proc. ACM Program. Lang.},
+ keyword = {Code Generation, Distributed Programming, F*, Multiparty Session Types (MPST), Refinement Types},
+ month = {November},
+ number = {OOPSLA},
+ numpages = {30},
+ publisher = {Association for Computing Machinery},
+ title = {Statically verified refinements for multiparty protocols},
+ url = {https://doi.org/10.1145/3428216},
+ volume = {4},
+ year = {2020}
+}

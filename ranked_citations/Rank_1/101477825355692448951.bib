@@ -1,0 +1,17 @@
+@article{10.14778/2535569.2448951,
+ abstract = {Massively parallel DNA sequencing technologies are revolutionizing genomics research. Billions of short reads generated at low costs can be assembled for reconstructing the whole genomes. Unfortunately, the large memory footprint of the existing de novo assembly algorithms makes it challenging to get the assembly done for higher eukaryotes like mammals. In this work, we investigate the memory issue of constructing de Bruijn graph, a core task in leading assembly algorithms, which often consumes several hundreds of gigabytes memory for large genomes. We propose a disk-based partition method, called Minimum Substring Partitioning (MSP), to complete the task using less than 10 gigabytes memory, without runtime slowdown. MSP breaks the short reads into multiple small disjoint partitions so that each partition can be loaded into memory, processed individually and later merged with others to form a de Bruijn graph. By leveraging the overlaps among the k-mers (substring of length k), MSP achieves astonishing compression ratio: The total size of partitions is reduced from Θ(kn) to Θ(n), where n is the size of the short read database, and k is the length of a k-mer. Experimental results show that our method can build de Bruijn graphs using a commodity computer for any large-volume sequence dataset.},
+ author = {Li, Yang and Kamousi, Pegah and Han, Fangqiu and Yang, Shengqi and Yan, Xifeng and Suri, Subhash},
+ doi = {10.14778/2535569.2448951},
+ issn = {2150-8097},
+ issue_date = {January 2013},
+ journal = {Proc. VLDB Endow.},
+ month = {January},
+ number = {3},
+ numpages = {12},
+ pages = {169–180},
+ publisher = {VLDB Endowment},
+ title = {Memory efficient minimum substring partitioning},
+ url = {https://doi.org/10.14778/2535569.2448951},
+ volume = {6},
+ year = {2013}
+}

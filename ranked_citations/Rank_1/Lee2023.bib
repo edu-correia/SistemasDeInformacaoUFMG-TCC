@@ -1,0 +1,14 @@
+@conference{Lee2023,
+ abstract = {We propose AccelFlush, which uses the zone append command of zoned namespace (ZNS) SSD to improve the write bandwidth and scalability of the log-structured merge (LSM) tree. We configured flush-zone-group, a pre-allocated group of zones for flush operation, and leveraged the zone append command to process the flush operation without synchronization from the host side. Since the flush operation has been changed to access multiple zones simultaneously, higher bandwidth can be utilized, improving overall query-per-second. Also, even if multiple flush operations occur concurrently, append is performed only within the pre-allocated flush-zone-group, so unlike previous studies, the maximum number of flush threads does not affect the open zone limit. Through experiments, AccelFlush achieved an improvement of up to 40.3% compared to the baseline system.  © 2023 IEEE.},
+ author = {Lee, Jongsung and Lee, Jae W.},
+ doi = {10.1109/ICCE-Asia59966.2023.10326387},
+ journal = {2023 IEEE International Conference on Consumer Electronics-Asia, ICCE-Asia 2023},
+ note = {Cited by: 0},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Accelerating Flush Operation of LSM Tree by Leveraging the Zone Append Command},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85179889442?origin=resultslist},
+ year = {2023}
+}

@@ -1,0 +1,14 @@
+@inproceedings{6691550,
+ abstract = {The MapReduce framework has become the de-facto framework for large-scale data analysis and data mining. One important area of data analysis is graph analysis. Many graphs of interest, such as the Web graph and Social Networks, are very large in size with millions of vertices and billions of edges. To cope with this vast amount of data, researchers have been using the MapReduce framework to analyse these graphs extensively. Unfortunately, most of these graph algorithms are iterative in nature, requiring repetitive MapReduce jobs. We introduce a new design pattern for a family of iterative graph algorithms for the MapReduce framework. Our method is to separate the immutable graph topology from the graph analysis results. Each MapReduce node participating in the graph analysis task reads the same graph partition at each iteration step, which is made local to the node, but it also reads all the current analysis results from the distributed file system (DFS). These results are correlated with the local graph partition using a merge-join and the new improved analysis results associated with only the nodes in the graph partition are generated and dumped to the DFS. Our algorithm requires one MapReduce job for pre-processing the graph and the repetition of one map-based MapReduce job for the actual analysis.},
+ author = {Gupta, Upa and Fegaras, Leonidas},
+ booktitle = {2013 IEEE International Conference on Big Data},
+ doi = {10.1109/BigData.2013.6691550},
+ issn = {},
+ keyword = {Topology;Partitioning algorithms;Iterative algorithms;Distributed databases;Internet;Memory management;Data analysis;File systems;Computational modeling;Analytical models;MapReduce;Distributed Computing;Graph Algorithms},
+ month = {Oct},
+ number = {},
+ pages = {24-30},
+ title = {Map-based graph analysis on MapReduce},
+ volume = {},
+ year = {2013}
+}

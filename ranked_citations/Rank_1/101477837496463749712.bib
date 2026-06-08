@@ -1,0 +1,17 @@
+@article{10.14778/3749646.3749712,
+ abstract = {Query optimizers are crucial for the performance of database systems. Recently, many learned query optimizers (LQOs) have demonstrated significant performance improvements over traditional optimizers. However, most of them operate under a limited assumption: a static query environment. This limitation prevents them from effectively handling complex, dynamic query environments in real-world scenarios. Extensive retraining can lead to the well-known catastrophic forgetting problem which reduces the LQO generalizability over time. In this paper, we address this limitation and introduce LIMAO (Lifelong Modular Learned Query Optimizer), a framework for lifelong learning of plan cost prediction that can be seamlessly integrated into existing LQOs. LIMAO leverages a modular lifelong learning technique, an attention-based neural network composition architecture, and an efficient training paradigm designed to retain prior knowledge while continuously adapting to new environments. We implement LIMAO in two LQOs, showing that our approach is agnostic to underlying engines. Experimental results show that LIMAO significantly enhances the performance of LQOs, achieving up to a 40% improvement in query execution time and reducing the variance of execution time by up to 60% under dynamic workloads. By leveraging a precise and self-consistent design, LIMAO effectively mitigates catastrophic forgetting, ensuring stable and reliable plan quality over time. Compared to Postgres, LIMAO achieves up to a 4\texttimes{} speedup on selected benchmarks, highlighting its practical advantages in real-world query optimization.},
+ author = {Zhang, Qihan and Xie, Shaolin and Sabek, Ibrahim},
+ doi = {10.14778/3749646.3749712},
+ issn = {2150-8097},
+ issue_date = {July 2025},
+ journal = {Proc. VLDB Endow.},
+ month = {July},
+ number = {11},
+ numpages = {14},
+ pages = {4546–4559},
+ publisher = {VLDB Endowment},
+ title = {LIMAO: A Framework for Lifelong Modular Learned Query Optimization},
+ url = {https://doi.org/10.14778/3749646.3749712},
+ volume = {18},
+ year = {2025}
+}

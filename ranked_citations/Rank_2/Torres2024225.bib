@@ -1,0 +1,16 @@
+@article{Torres2024225,
+ abstract = {The development of systems following model-driven engineering can include models from different domains. For example, to develop a mechatronic component one might need to combine expertise about mechanics, electronics, and software. Although these models belong to different domains, the changes in one model can affect other models causing inconsistencies in the entire system. Only few tools, however, support management of models from different domains. Indeed, these models are created using different modeling notations and it is not plausible to use a multitude of parsers geared toward each and every modeling notation. Therefore, to ensure maintenance of multi-domain systems, we need a uniform approach that would be independent from the peculiarities of the notation. Notation independence implies that such a uniform approach can only be based on elements commonly present in models of different domains, i.e., text, boxes, and lines. In this study, we investigate the suitability of optical character recognition (OCR) as a basis for such a uniformed approach. We select graphical models from various domains that typically combine textual and graphical elements. We start by analyzing the performance of Google Cloud Vision and Microsoft Cognitive Services, two off-the-shelf OCR services. Google Cloud Vision performed better than Microsoft Cognitive Services being able to detect text of 70% of model elements. Errors made by Google Cloud Vision are due to absence of support for text common in engineering formulas, e.g., Greek letters, equations, and subscripts. We identified the multi-line text error as one of the main issues of using OCR to recognize textual elements in models from different domains. This error happens when OCR misinterprets one textual element as two separate elements. To address the multi-line text error, we build Xamã on top of Google Cloud Vision. Xamã includes two approaches to identify whether the elements are positioned on a single line or multiple lines, and merge those identified as positioned on multiples lines. With and without shape detection, Xamã correctly identified 956 and 905 elements, respectively, out of 1171. Additionally, we compared the accuracy of Xamã and state-of-the-art tool img2UML, and we observe that Xamã outperformed img2UML in both precision and recall, being able to recognize 433 out of 614 textual elements as opposed to 171 by img2UML. © The Author(s) 2022.},
+ author = {Torres, Weslley and van den Brand, Mark G. J. and Serebrenik, Alexander},
+ doi = {10.1007/s11334-022-00453-7},
+ journal = {Innovations in Systems and Software Engineering},
+ note = {Cited by: 3; All Open Access; Green Open Access; Hybrid Gold Open Access},
+ number = {3},
+ pages = {225 - 249},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Xamã : Optical character recognition for multi-domain model management},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85128820953?origin=resultslist},
+ volume = {20},
+ year = {2024}
+}

@@ -1,0 +1,16 @@
+@article{Cai2026,
+ abstract = {The LSM-tree based on extendible hashing has been adopted in key-value storage systems due to its high write throughput, good scalability, and balanced read-write performance. However, it faces several challenges when accessing SSTables, including low cache efficiency, uneven data distribution across hash buckets, and frequent directory expansions. To address these issues, this paper proposes a cache-friendly LSM-tree based on extendible hashing. To solve the problem that similar keys in SSTables are not stored adjacently in SSTables, a key-to-value mapping strategy based on Locality-Sensitive Hashing (LSH) is employed. Second, to address the uneven data distribution across hash buckets in extendible hashing, a logically uniform extendible hashing scheme is designed, along with a novel HTable structure to replace the traditional SSTables in LSM-tree. In addition, an HTable indexing strategy based on the LSH-Cuckoo filter is proposed to accurately locate the target HTable. Based on the Intel Optane DC Persistent Memory driver, a prototype of a cache-friendly key-value storage system named DLMS was implemented on non-volatile memory (NVM), and evaluated using the YCSB benchmark. Experimental results show that, compared to the LSM-tree-based storage system RocksDB, DLMS achieves an average improvement of 9.8% in read throughput and 11.9% in write throughput, while reducing insertion latency by 7.8%. © 2025 John Wiley & Sons Ltd.},
+ author = {Cai, Tao and Huang, Qiujing and Dai, Jianfei and Niu, Dejiao and Deng, Yikang},
+ doi = {10.1002/cpe.70522},
+ journal = {Concurrency and Computation: Practice and Experience},
+ note = {Cited by: 0; All Open Access; Bronze Open Access},
+ number = {1},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {A Cache Friendly LSM Tree Based on Extendible Hash},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/105026287342?origin=resultslist},
+ volume = {38},
+ year = {2026}
+}

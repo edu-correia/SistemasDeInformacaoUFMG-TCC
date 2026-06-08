@@ -1,0 +1,13 @@
+@conference{Yao202017,
+ abstract = {Popular LSM-tree based key-value stores suffer from suboptimal and unpredictable performance due to write amplification and write stalls that cause application performance to periodically drop to nearly zero. Our preliminary experimental studies reveal that (1) write stalls mainly stem from the significantly large amount of data involved in each compaction between L<sub>0</sub>-L<sub>1</sub> (i.e., the first two levels of LSM-tree), and (2) write amplification increases with the depth of LSM-trees. Existing works mainly focus on reducing write amplification, while only a couple of them target mitigating write stalls. In this paper, we exploit non-volatile memory (NVM) to address these two limitations and propose MatrixKV, a new LSM-tree based KV store for systems with multi-tier DRAM-NVM-SSD storage. MatrixKV's design principles include performing smaller and cheaper L<sub>0</sub>-L<sub>1</sub> compaction to reduce write stalls while reducing the depth of LSM-trees to mitigate write amplification. To this end, four novel techniques are proposed. First, we relocate and manage the L<sub>0</sub> level in NVM with our proposed matrix container. Second, the new column compaction is devised to compact L<sub>0</sub> to L<sub>1</sub> at fine-grained key ranges, thus substantially reducing the amount of compaction data. Third, MatrixKV increases the width of each level to decrease the depth of LSM-trees thus mitigating write amplification. Finally, the cross-row hint search is introduced for the matrix container to keep adequate read performance. We implement MatrixKV based on RocksDB and evaluate it on a hybrid DRAM/NVM/SSD system using Intel's latest 3D Xpoint NVM device Optane DC PMM. Evaluation results show that, with the same amount of NVM, MatrixKV achieves 5× and 1.9× lower 99<sup>th</sup> percentile latencies, and 3.6× and 2.6× higher random write throughput than RocksDB and the state-of-art LSM-based KVS NoveLSM respectively. Copyright © Proc. of the 2020 USENIX Annual Technical Conference, ATC 2020. All rights reserved.},
+ author = {Yao, Ting and Zhang, Yiwen and Wan, Jiguang and Cui, Qiu and Tang, Liu and Jiang, Hong and Xie, Changsheng and He, Xubin},
+ journal = {Proceedings of the 2020 USENIX Annual Technical Conference, ATC 2020},
+ note = {Cited by: 166},
+ pages = {17 - 31},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {MatrixKV: Reducing write stalls and write amplification in LSM-tree based KV stores with a matrix container in NVM},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85091901097?origin=resultslist},
+ year = {2020}
+}

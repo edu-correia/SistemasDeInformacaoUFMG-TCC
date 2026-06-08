@@ -1,0 +1,17 @@
+@article{10.1109/TNET.2024.3413530,
+ abstract = {The programmable switch offers a limited capacity of packet header vector (PHV) words that store packet header fields and metadata fields defined by network functions. However, existing switch compilers employ inefficient strategies of encoding fields on PHV words. Their encoding wastes scarce PHV words and may result in failures when deploying network functions. In this paper, we propose Melody, a new framework that reuses PHV words for as many fields as possible to achieve resource-efficient PHV encoding. Melody offers a field analyzer and an optimization framework. The analyzer identifies which fields can reuse PHV words while preserving the original packet processing logic. The framework integrates analysis results into its encoding to offer the resource-optimal decisions. Also, to achieve timeliness at runtime, it provides a Greedy-based heuristic, which quickly solves PHV encoding and returns near-optimal results. We evaluate Melody with production-scale network functions. Our results show that Melody reduces the consumption of PHV words by up to 85%.},
+ author = {Chen, Xiang and Zhang, Wenbin and Sun, Xi and Liu, Hongyan and Zhang, Jianshan and Huang, Qun and Zhang, Dong and Zhou, Haifeng and Liu, Xuan and Wu, Chunming},
+ doi = {10.1109/tnet.2024.3413530},
+ issn = {1063-6692},
+ issue_date = {Oct. 2024},
+ journal = {IEEE/ACM Trans. Netw.},
+ month = {June},
+ number = {5},
+ numpages = {16},
+ pages = {4191–4206},
+ publisher = {IEEE Press},
+ title = {Resource-Efficient and Timely Packet Header Vector (PHV) Encoding on Programmable Switches},
+ url = {https://doi.org/10.1109/TNET.2024.3413530},
+ volume = {32},
+ year = {2024}
+}

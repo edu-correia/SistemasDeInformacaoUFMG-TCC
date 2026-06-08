@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2024.3363446,
+ abstract = {Cued Speech (CS) is a pure visual coding method used by hearing-impaired people that combines lip reading with several specific hand shapes to make the spoken language visible. Automatic CS recognition (ACSR) seeks to transcribe visual cues of speech into text, which can help hearing-impaired people to communicate effectively. The visual information of CS contains lip reading and hand cueing, thus the fusion of them plays an important role in ACSR. However, most previous fusion methods struggle to capture the global dependency present in long sequence inputs of multi-modal CS data. As a result, these methods generally fail to learn the effective cross-modal relationships that contribute to the fusion. Recently, attention-based transformers have been a prevalent idea for capturing the global dependency over the long sequence in multi-modal fusion, but existing multi-modal fusion transformers suffer from both poor recognition accuracy and inefficient computation for the ACSR task. To address these problems, we develop a novel computation and parameter efficient multi-modal fusion transformer by proposing a novel Token-Importance-Aware Attention mechanism (TIAA), where a token utilization rate (TUR) is formulated to select the important tokens from the multi-modal streams. More precisely, TIAA firstly models the modality-specific fine-grained temporal dependencies over all tokens of each modality, and then learns the efficient cross-modal interaction for the modality-shared coarse-grained temporal dependencies over the important tokens of different modalities. Besides, a light-weight gated hidden projection is designed to control the feature flows of TIAA. The resulting model, named &lt;italic&gt;Eco&lt;/italic&gt;nomical &lt;italic&gt;Cued&lt;/italic&gt; Speech Fusion Transformer (&lt;italic&gt;EcoCued&lt;/italic&gt;), achieves state-of-the-art performance on all existing CS datasets (i.e., Mandarin Chinese, French, and British CS), compared with existing transformer-based fusion methods and ACSR fusion methods. Notably, our method dramatically reduces the computational complexity from &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;$mathcal {O}(T^{2})$&lt;/tex-math&gt;&lt;/inline-formula&gt; to &lt;inline-formula&gt;&lt;tex-math notation="LaTeX"&gt;$mathcal {O}(T)$&lt;/tex-math&gt;&lt;/inline-formula&gt;. We will release the source code and data as open source.},
+ author = {Liu, Lei and Liu, Li and Li, Haizhou},
+ doi = {10.1109/TASLP.2024.3363446},
+ issn = {2329-9290},
+ issue_date = {2024},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {February},
+ numpages = {14},
+ pages = {1559–1572},
+ publisher = {IEEE Press},
+ title = {Computation and Parameter Efficient Multi-Modal Fusion Transformer for Cued Speech Recognition},
+ url = {https://doi.org/10.1109/TASLP.2024.3363446},
+ volume = {32},
+ year = {2024}
+}

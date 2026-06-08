@@ -1,0 +1,14 @@
+@conference{Luo202541235,
+ abstract = {Mixture-of-experts (MoE) architectures could achieve impressive computational efficiency with expert parallelism, which relies heavily on all-to-all communication across devices. Unfortunately, such communication overhead typically constitutes a significant portion of the total runtime, hampering the scalability of distributed training and inference for modern MoE models (consum-ing over 40% runtime in large-scale training). In this paper, we first define collaborative communication to illustrate this intrinsic limitation, and then propose system-and algorithm-level innovations to reduce communication costs. Specifically, given a pair of experts co-activated by one token, we call them as collaborated, which comprises 2 cases as intra-and inter-collaboration, depending on whether they are kept on the same device. Our pilot investigations reveal that augmenting the proportion of intra-collaboration can accelerate expert parallel at scale. It motivates us to strategically optimize collaborative communication for accelerated MoE training and inference, dubbed Occult. Our designs are capable of either delivering exact results with reduced communication cost, or controllably minimizing the cost with collaboration pruning, materialized by modified fine-tuning. Comprehensive experiments on various MoE-LLMs demonstrate that Occult can be faster than popular state-of-the-art inference or training frameworks (more than 1.5× speed up across multiple tasks and models) with comparable or superior quality compared to the standard fine-tuning. Code is available at https://github.com/UNITES-Lab/Occult. © 2025, by the authors.},
+ author = {Luo, Shuqing and Li, Pingzhi and Peng, Jie and Zhao, Yang and Cao, Yu and Cheng, Yu and Chen, Tianlong},
+ journal = {Proceedings of Machine Learning Research},
+ note = {Cited by: 0},
+ pages = {41235 - 41253},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Occult: Optimizing Collaborative Communications across Experts for Accelerated Parallel MoE Training and Inference},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105023638361?origin=resultslist},
+ volume = {267},
+ year = {2025}
+}

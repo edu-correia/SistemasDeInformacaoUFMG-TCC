@@ -1,0 +1,14 @@
+@inproceedings{9257673,
+ abstract = {One of the fundamental data structure that is commonly used in parallel and concurrent systems is first-in-first-out queue. Many studies propose lock-based concurrent queue algorithms to satisfy correctness property. However, the use of locks results in delays, contention, deadlock and some other issues. Instead, lock-free algorithms are introduced to overcome such issues and improve performance. Some lock-free algorithms use an atomic operation compare-and-swap (CAS) while some others replace it with fetch-and-add (FAA), to improve the performance. From implementation perspective, some queue algorithms use array data structure to ease the enqueuing and dequeuing processes but the size of queue is static. On the other hand, many queue algorithms use linked data structure where the size of queue is dynamic but the enqueuing and dequeuing processes are complicated. In this paper, we introduce new algorithms for concurrent queue that merge the ideas of array and linked data structure to get the advantages of both. Actually, our queue consists of circular linked list with k empty (dummy) nodes. Therefore, in normal case it works like array. The enqueue process places the data in one of the empty nodes (at tail position), while the dequeue process deletes the data from a non-empty node (at head position), and no need to maintain the linked list queue. However, our queue is dynamic such that we change the queue size by either creating new node and connect it to the linked-list, or deleting some exist nodes. Our algorithm eases the enqueue and dequeue processes, and reduces the use of CAS operations. Therefore, it improves the performance comparing to existing queue algorithms that use CAS, and almost matches the performances of the algorithms that use FAA.},
+ author = {Assiri, Basem},
+ booktitle = {2020 2nd International Conference on Computer and Information Sciences (ICCIS)},
+ doi = {10.1109/ICCIS49240.2020.9257673},
+ issn = {},
+ keyword = {Heuristic algorithms;Arrays;Linked data;FAA;System recovery;Delays;Urban areas;Concurrent Queue;Fill-in Queue;Array Queue;Compare-and-swap;Linked Data Structure},
+ month = {Oct},
+ number = {},
+ pages = {1-6},
+ title = {Lock-free Fill-in Queue},
+ volume = {},
+ year = {2020}
+}

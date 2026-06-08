@@ -1,0 +1,14 @@
+@inproceedings{10494107,
+ abstract = {3D video enables a remote viewer to observe a 3D scene from any angle or location. However, current 3D capture solutions incur high latency, consume significant bandwidth, and scale poorly with the number of depth sensors and size of scenes. These problems are largely caused by the current monolithic approach to 3D capture and the use of inefficient data representations for streaming. This paper introduces MeshReduce, a distributed scene capture, stream, and render system that advocates for the use of textured mesh data representation early in the 3D video capture and transmission process. Textured meshes are compact and can provide lower bitrates for the same quality compared to other 3D data representations. However, streaming textured meshes creates compute and memory challenges to achieve bandwidth efficiency. MeshReduce addresses these issues by using a pipeline that creates independent mesh reconstructions and incrementally merges them, rather than creating a single mesh directly from all sensor streams. While this enables a more efficient implementation, this approach requires optimal exchange of textured meshes across the network. MeshReduce also incorporates a novel approach for network rate control that divides bandwidth between texture and mesh for efficient, adaptive 3D video streaming. We demonstrate a real-time integrated embedded compute implementation of MeshReduce that can operate with commercial Azure Kinect depth cameras as well as a custom sensor front-end that uses LiDAR and 360° camera inputs to dramatically increase coverage.},
+ author = {Jin, Tao and Dasa, Mallesham and Smith, Connor and Apicharttrisorn, Kittipat and Seshan, Srinivasan and Rowe, Anthony},
+ booktitle = {2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)},
+ doi = {10.1109/VR58804.2024.00026},
+ issn = {2642-5254},
+ keyword = {Three-dimensional displays;Spectral efficiency;Pipelines;Bandwidth;Virtual reality;Streaming media;User interfaces;Computing methodologies;Computer graphics;Graphics systems and interfaces;Mixed / augmented reality;Information systems;Information systems applications;Multimedia information systems;Multimedia content creation},
+ month = {March},
+ number = {},
+ pages = {20-30},
+ title = {MeshReduce: Scalable and Bandwidth Efficient 3D Scene Capture},
+ volume = {},
+ year = {2024}
+}

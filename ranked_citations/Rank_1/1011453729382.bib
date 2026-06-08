@@ -1,0 +1,18 @@
+@article{10.1145/3729382,
+ abstract = {To ensure the safety of autonomous systems, it is imperative for them to abide by their safety properties. The specification of such safety properties is challenging because of the gap between the input sensor space (e.g., pixels, point clouds) and the semantic space over which safety properties are specified (e.g. people, vehicles, road). Recent work utilized scene graphs to overcome portions of that gap, enabling the specification and synthesis of monitors targeting many safe driving properties for autonomous vehicles. However, scene graphs are not rich enough to express the many driving properties that include temporal elements (i.e., when two vehicles enter an intersection at the same time, the vehicle on the left shall yield...), fundamentally limiting the types of specifications that can be monitored. In this work, we characterize the expressiveness required to specify a large body of driving properties, identify property types that cannot be specified with current approaches, which we name scene flow properties, and construct an enhanced domain-specific language that utilizes symbolic entities across time to enable the encoding of the rich temporal properties required for autonomous system safety. In analyzing a set of 114 specifications, we find that our approach can successfully encode 110 (96%) specifications as compared to 87 (76%) under prior approaches, an improvement of 20 percentage points. We implement the specifications in the form of a runtime monitoring framework to check the compliance of 3 state-of-the-art autonomous vehicles finding that they violated scene flow properties over 40 times in 30 test executions, including 34 violations for failing to yield properly at intersections. Empirical results demonstrate the implementation is suitably efficient for runtime monitoring applications.},
+ address = {New York, NY, USA},
+ articleno = {FSE112},
+ author = {Woodlief, Trey and Toledo, Felipe and Dwyer, Matthew and Elbaum, Sebastian},
+ doi = {10.1145/3729382},
+ issue_date = {July 2025},
+ journal = {Proc. ACM Softw. Eng.},
+ keyword = {autonomous systems, runtime verification, safety properties, scene graphs},
+ month = {June},
+ number = {FSE},
+ numpages = {24},
+ publisher = {Association for Computing Machinery},
+ title = {Scene Flow Specifications: Encoding and Monitoring Rich Temporal Safety Properties of Autonomous Systems},
+ url = {https://doi.org/10.1145/3729382},
+ volume = {2},
+ year = {2025}
+}

@@ -1,0 +1,16 @@
+@article{Lin2024,
+ abstract = {As deep neural networks (DNNs) become increasingly large and complicated, pruning techniques are proposed for lower memory footprint and more efficient inference. The most critical kernel to execute pruned sparse DNNs on GPUs is Sparse-dense Matrix Multiplication (SpMM). To maximize the performance of SpMM, despite the high-performance implementation generated from advanced tensor compilers, they often take a long time to iteratively search tuning configurations. Such a long time slows down the cycle of exploring better DNN architectures or pruning algorithms. In this article, we propose LO-SpMM to efficiently generate high-performance SpMM implementations for sparse DNN inference. Based on the analysis of nonzero elements' layout, the characterization of the GPU architecture, and a rank-based cost model, LO-SpMM can effectively reduce the search space and eliminate possibly low-performance candidates. Besides, rather than generating complete SpMM implementations for evaluation, LO-SpMM constructs simplified proxies to quickly estimate performance, thereby substantially reducing compilation and execution costs. Experimental results show that LO-SpMM can reduce the search time by 281× at most, while the performance of generated SpMM implementations is comparable to or better than the state-of-the-art sparse tensor compiling solutions. © 2024 Copyright held by the owner/author(s).},
+ author = {Lin, Junqing and Sun, Jingwei and Shi, Xiaolong and Zhang, Honghe and Yu, Xianzhi and Wang, Xinzhi and Yao, Jun and Sun, Guangzhong},
+ doi = {10.1145/3685277},
+ journal = {ACM Transactions on Architecture and Code Optimization},
+ note = {Cited by: 5; All Open Access; Gold Open Access},
+ number = {4},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {LO-SpMM: Low-cost Search for High-performance SpMM Kernels on GPUs},
+ type = {Article},
+ url = {https://www.scopus.com/pages/publications/85210274907?origin=resultslist},
+ volume = {21},
+ year = {2024}
+}

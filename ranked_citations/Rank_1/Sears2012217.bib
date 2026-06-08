@@ -1,0 +1,14 @@
+@conference{Sears2012217,
+ abstract = {Data management workloads are increasingly write-intensive and subject to strict latency SLAs. This presents a dilemma: Update in place systems have unmatched latency but poor write throughput. In contrast, existing log structured techniques improve write throughput but sacrifice read performance and exhibit unacceptable latency spikes. We begin by presenting a new performance metric: read fanout, and argue that, with read and write amplification, it better characterizes real-world indexes than approaches such as asymptotic analysis and price/performance. We then present bLSM, a Log Structured Merge (LSM) tree with the advantages of B-Trees and log structured approaches: (1) Unlike existing log structured trees, bLSM has near-optimal read and scan performance, and (2) its new "spring and gear" merge scheduler bounds write latency without impacting throughput or allowing merges to block writes for extended periods of time. It does this by ensuring merges at each level of the tree make steady progress without resorting to techniques that degrade read performance. We use Bloom filters to improve index performance, and find a number of subtleties arise. First, we ensure reads can stop after finding one version of a record. Otherwise, frequently written items would incur multiple B-Tree lookups. Second, many applications check for existing values at insert. Avoiding the seek performed by the check is crucial. © 2012 ACM.},
+ author = {Sears, Russell and Ramakrishnan, Raghu},
+ doi = {10.1145/2213836.2213862},
+ journal = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+ note = {Cited by: 283},
+ pages = {217 - 228},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {bLSM: A general purpose log structured merge tree},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/84862669866?origin=resultslist},
+ year = {2012}
+}

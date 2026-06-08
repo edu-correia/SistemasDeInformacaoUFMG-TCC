@@ -1,0 +1,14 @@
+@inproceedings{1106005,
+ abstract = {Many modern embedded processors (esp. DSPs) support partitioned memory banks (also called X-Y memory or dual bank memory) along with parallel load/store instructions to achieve code density and/or performance. In order to effectively utilize the parallel load/store instructions, the compiler must partition the memory resident values into X or Y bank. This paper gives a post-register allocation solution to merge the generated load/store instructions into their parallel counter-parts. Simultaneously, our framework performs allocation of values to X or Y memory banks. We first remove as many load/stores and register-register moves through an excellent iterated coalescing based register allocator by Appel and George. We then attempt to maximally parallelize the generated load/stores using a multi-pass approach with minimal growth in terms of memory requirements. The first phase of our approach attempts the merger of load stores without replication of values in memory. We model this problem in terms of a graph coloring problem in which each value is colored X or Y. We then construct a Motion Scheduling Graph (MSG) based on the range of motion for each load/store instruction. MSG reflects potential instructions which could be merged. We propose a notion of pseudo-fixed boundaries so that the load/store movement is minimally affected by register dependencies. We prove that the coloring problem for MSG is NP-complete. We then propose a heuristic solution, which minimally replicates load/stores on different control flow paths if necessary. Finally, the remaining load/stores are tackled by register rematerialization and local conflicts are eliminated Registers are re-assigned to create motion ranges if opportunities are found for merger which are hindered by local assignment of registers. We show that our framework results in parallelization of a large number of load/stores without much growth in data and code segments.},
+ author = {Xiaotong Zhuang and Pande, S. and Greenland, J.S.},
+ booktitle = {Proceedings.International Conference on Parallel Architectures and Compilation Techniques},
+ doi = {10.1109/PACT.2002.1106005},
+ issn = {1089-795X},
+ keyword = {Registers;Educational institutions;Electrostatic precipitators;Corporate acquisitions;Hardware;Bandwidth;Process design;Digital signal processing chips;Digital signal processing;Microprocessors},
+ month = {Sep.},
+ number = {},
+ pages = {68-79},
+ title = {A framework for parallelizing load/stores on embedded processors},
+ volume = {},
+ year = {2002}
+}

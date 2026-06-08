@@ -1,0 +1,14 @@
+@inproceedings{8117057,
+ abstract = {State-of-the-art Low Level Virtual Machine (LLVM) compiler infrastructure has a dedicated set of optimizations for loops. Each optimization is organized as a separate pass in LLVM, whereas passes are created using a mix of object creational patterns. However, recent focus of modern compilers is in improving runtime performance using a large set of conservative optimizations, most often omitting the energy consumption impact. This paper introduces the implementation of a new loop fusion algorithm designed for LLVM, which aims to improve both runtime performance and energy consumption of parallel codes involving loop parallelism. The algorithm proposed merges two non dependent loops with the same number of iterations and without any code between. Two loops are dependent when the first loop has to finish for the second to start, whereas two independent loops may not be allowed to be executed in parallel. This paper also proves that loop fusion is useful in optimizing loop parallelism, since the fusion of two loops cuts in half the number of threads that would otherwise be required to execute each iteration (when there is a one-to-one relation between threads and iterations). The decreased number of threads reduces the parallelization overhead which in turn improves the energy consumption. The improvements are discussed in the context of Non-Uniform Memory Access (NUMA) systems.},
+ author = {Ştirb, Iulia},
+ booktitle = {2017 13th IEEE International Conference on Intelligent Computer Communication and Processing (ICCP)},
+ doi = {10.1109/ICCP.2017.8117057},
+ issn = {},
+ keyword = {Optimization;Algorithm design and analysis;Energy consumption;Parallel processing;Runtime;Production facilities;Mathematical model;compiler;energy consumption;loop fusion optimization;loop parallelism;NUMA systems;performance},
+ month = {Sep.},
+ number = {},
+ pages = {519-526},
+ title = {An implementation of loop fusion for improving performance and energy consumption of shared-memory parallel codes},
+ volume = {},
+ year = {2017}
+}

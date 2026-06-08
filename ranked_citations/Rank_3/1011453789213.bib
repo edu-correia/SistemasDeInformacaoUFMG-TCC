@@ -1,0 +1,15 @@
+@article{10.1145/3789213,
+ abstract = {Mobile cloud backup applications are widely used to safeguard user data. This paper found that current cloud backup is inefficient on resource-limited mobile devices because it consumes excessive CPU resources for delta synchronization that requires intensive hash computation to identify the modified ranges of file data. To address this issue, this paper presents SolFS, an operation log versioning file system to optimize mobile cloud backup efficiency. The core idea is that if the cloud backup application knows the modified offset and length of each write since the last backup, it will be able to identify the new modified data and upload them only, avoiding data hashing throughout the entire file. SolFS proposes a series of designs to achieve this design goal. First, SolFS introduces per-file mergeable operation logging that allows each file to manage its write operation logs (i.e., offset and length) in an extent tree and merge operation logs with contiguous or overlapping modified ranges of file data. Then, SolFS proposes the operation log persistence and versioning mechanism that allows different cloud backup applications to manage their own file versions without interfering with each other. In addition, SolFS incorporates techniques such as compact log and dynamic granularity, to optimize the memory and storage overhead to the system. Finally, SolFS achieves hash-free file difference identification with the minimum extra overhead and extends the ability of cloud backup applications. In addition to the APP side, we extend the SolFS design to the cloud backup server to reduce the server-side computation overhead. Furthermore, the SolFS-enabled server integrates a new shadow file mechanism to significantly mitigate the write overhead caused by file reconstruction. The experimental results show that SolFS can significantly reduce the computational overhead of server-side by over 90% on average and the total cloud synchronization time by over 88.8% when files are updated. On the server side, the SolFS-enabled server can reduce up to 78% of file reconstruction latency.},
+ address = {New York, NY, USA},
+ author = {Pan, Riwei and Liang, Yu and Li, Lei and Du, Hongchao and Kuo, Tei-Wei and Xue, Chun Jason},
+ doi = {10.1145/3789213},
+ issn = {1553-3077},
+ journal = {ACM Trans. Storage},
+ keyword = {File system, cloud backup, mobile devices, log versioning},
+ month = {February},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Efficient Hash-free Mobile Cloud Backup via Operation-Log Versioning},
+ url = {https://doi.org/10.1145/3789213},
+ year = {2026}
+}

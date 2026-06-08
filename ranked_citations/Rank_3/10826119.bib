@@ -1,0 +1,14 @@
+@inproceedings{10826119,
+ abstract = {Key-value stores are a well-established technology for big data management, with many leveraging the Log-Structured Merge (LSM) tree for its high write throughput and efficient primary key lookups. However, searching for non-key values in LSM trees is slow, as it typically requires scanning all LSM tree files. Secondary indexes are a common solution, but they typically require rebuilding the entire LSM tree and involve a challenging selection of indexing attribute(s). To overcome these limitations, we propose a Bloom filter hierarchy to accelerate searching for non-key values in LSM trees. In a nutshell, a Bloom filter is built for each data file in the LSM tree, and then a hierarchy (another tree) of these Bloom filters is created. Experiments show our new indexing mechanism outperforms existing LSM methods by 80% with a small space overhead.},
+ author = {Macyna, Wojciech and Ordonez, Carlos},
+ booktitle = {2024 IEEE International Conference on Big Data (BigData)},
+ doi = {10.1109/BigData62323.2024.10826119},
+ issn = {2573-2978},
+ keyword = {Big Data;Throughput;Indexing},
+ month = {Dec},
+ number = {},
+ pages = {3712-3719},
+ title = {A Bloom Filter Hierarchy for Non-key Search in Key-Value Stores},
+ volume = {},
+ year = {2024}
+}

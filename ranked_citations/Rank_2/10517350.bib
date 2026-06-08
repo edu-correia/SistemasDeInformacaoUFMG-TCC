@@ -1,0 +1,14 @@
+@article{10517350,
+ abstract = {Personnel and boat detection in unmanned aerial vehicles (UAVs) imagery plays a crucial role in open water search and rescue missions. The diverse perspectives and altitudes of UAV images often result in significant variations in the imagery’s appearance and dimensions of personnel and boats, and the false detections arising from water surface flares are acknowledged as a great challenge as well. The existing deep learning-based detection methods employ convolutional blocks with fixed kernel sizes to extract features from the imagery at a fixed spatial scale, which will lead to missed and false detections and severely affect detection accuracy when there are substantial differences in the appearance and size of the target objects. In this article, a spatial scale adaptive real-time object detection neural network, namely YoloOW, was proposed to tackle the challenge of personnel and boat detection amid the diverse UAV imagery, which comprises a feature extractor, a feature enhancer, and a postprocessor. The OaohRep convolutional block was proposed as a pivotal component in constructing the YoloOW and applied to the feature extractor and the feature enhancer. Compared with general convolution blocks, the OaohRep convolution block can extract image features across a wide range of spatial scales, show better scale adaptability, and achieve faster detection speed due to its unique merged convolution layer design. OaohRepBi-path aggregation network (PAN) was proposed in the feature enhancer, which imitated the architecture of the classic algorithm scale invariant feature transform (SIFT) and was successfully applied to deep learning models, showing better scale adaptability. A novel UAV detection box filter (UDBF) module was proposed in the postprocessor, which can effectively remove false detections caused by water surface flares. Experimental results demonstrate that our YoloOW model achieves 37.18% mean averaged precision (mAP) on the SeaDronesSee dataset, surpassing the baseline by 8.43%. This notable improvement positions our model at the first of the leaderboard. The code will be available at https://github.com/Xjh-UCAS/YoloOW.},
+ author = {Xu, Jianhao and Fan, Xiangtao and Jian, Hongdeng and Xu, Chen and Bei, Weijia and Ge, Qifeng and Zhao, Teng},
+ doi = {10.1109/TGRS.2024.3395483},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Autonomous aerial vehicles;Feature extraction;Object detection;Search problems;Detectors;Boats;Training;Object detection;open water search and rescue;unmanned aerial vehicle (UAV) aerial imagery;unmanned aerial vehicle (UAV) metadata;water surface flares},
+ month = {},
+ number = {},
+ pages = {1-15},
+ title = {YoloOW: A Spatial Scale Adaptive Real-Time Object Detection Neural Network for Open Water Search and Rescue From UAV Aerial Imagery},
+ volume = {62},
+ year = {2024}
+}

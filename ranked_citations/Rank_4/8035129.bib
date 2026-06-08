@@ -1,0 +1,14 @@
+@inproceedings{8035129,
+ abstract = {Distributed representations have become the de facto standard by which many modern neural network architectures deal with natural language processing tasks. In particular, the word2vec algorithm introduced by Mikolov, et al. popularized the use of distributed representations by demonstrating that learned embeddings capture semantic relationships geometrically. Though word2vec addresses some of the scaling issues of earlier approaches, it can still take days to complete the training process for very large data sets. Recently, researchers have tried to address this by proposing parallel variants of the word2vec algorithm. Note that in these approaches, the data set is partitioned among multiple processors that asynchronously update a shared model. We propose a parallel approach for word2vec that is based on instantiating multiple models and working with their own data sets. Our scheme transfers the learning between different models at discrete intervals (synchronously). The frequency with which we transfer the learning between different models is much less compared to the frequency of asynchronous updates in existing approaches. In our approach, we treat each of our instantiated word2vec instances as independent models. This implies that off the shelf implementations of word2vec can be used in our parallel approach. The key feature of our algorithm is in how we transfer the parameters between different models that have been independently trained using distinct partitions of a large data set. For this we propose a computationally inexpensive alignment and merge step. We validate our algorithm on a publicly available dataset using an implementation of word2vec in Google's tensorflow software. We evaluate our algorithm by comparing its runtime with the runtime of the sequential algorithm for a given training loss. Our results show that our parallel algorithm is able to achieve efficiency up to 57%.},
+ author = {Zubair, Sahil and Zubair, Mohammad},
+ booktitle = {2017 International Conference on High Performance Computing & Simulation (HPCS)},
+ doi = {10.1109/HPCS.2017.90},
+ issn = {},
+ keyword = {Computational modeling;Parallel algorithms;Training;Data models;Partitioning algorithms;Mathematical model;Neural networks;Deep Learning;Word Embedding;Parallel Algorithm},
+ month = {July},
+ number = {},
+ pages = {566-571},
+ title = {Learning Word Embeddings in Parallel by Alignment},
+ volume = {},
+ year = {2017}
+}

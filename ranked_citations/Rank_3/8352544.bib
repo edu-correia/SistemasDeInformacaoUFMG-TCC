@@ -1,0 +1,14 @@
+@article{8352544,
+ abstract = {Key-value (KV) stores are widely used to provide much higher read and write throughput than traditional SQL databases. In particular, LSM-tree based KV store is popular with many applications since it could eliminate random writes and thus provides good write performance. However, the data residing in external storage are compacted from time to time, which takes a large amount of I/O resources and degrades the system performance. In this paper, we propose FlameDB, which leverages grouped level structure (GLS) to mitigate the compaction overhead. Besides dividing the whole storage space into multiple components as in LSM-tree, GLS further divides each component into multiple groups and compacts all KV items in a component as a group of the next component. Besides, we also propose a heterogeneous bloom filter (HEBF) scheme which assigns more bits to the bloom filters in upper components. With HEBF, the false positive rate of a bloom filter in upper components become smaller, and this scheme reduces the expected number of I/Os to read a KV item from the external storage with a given memory usage. Our experiments show that FlameDB saves about 75% I/O during compaction, so it improves the write throughput by about four times. Meanwhile, the read performance is also slightly improved by deploying HEBF.},
+ author = {Zhang, Weitao and Xu, Yinlong and Li, Yongkun and Zhang, Yueming and Li, Dinglong},
+ doi = {10.1109/ACCESS.2018.2831259},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Compaction;Throughput;Indexes;Information filters;Relational databases;Google;Key-value;log-structured merge-tree;write amplification;read amplification;bloom filter},
+ month = {},
+ number = {},
+ pages = {24962-24972},
+ title = {FlameDB: A Key-Value Store With Grouped Level Structure and Heterogeneous Bloom Filter},
+ volume = {6},
+ year = {2018}
+}

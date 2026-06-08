@@ -1,0 +1,14 @@
+@inproceedings{9006240,
+ abstract = {Modern NoSQL databases use log-structured merge (LSM) storage architectures to support high write throughput. LSM architectures aggregate writes in a mutable MemTabte (stored in memory), which is regularly flushed to disk, creating a new immutable file called an SSTable. Periodically, some of the SSTables are chosen to be merged - replaced with a single SSTable containing their union. A merge policy (a.k.a. compaction policy) specifies when to do merges and which SSTables to combine. A bounded depth merge policy is one that guarantees that the number of SSTables never exceeds a given parameter k, typically in the range 3-10. Bounded-depth policies are useful in applications where low read latency is crucial, but they and their underlying combinatorics are not yet well understood. This paper compares several bounded-depth policies, including representative policies from industrial NoSQL databases and two new ones based on recent theoretical modeling. The results validate the proposed theoretical model and show that, compared to the existing policies, the newly proposed policies can have substantially lower write amplification.},
+ author = {Mao, Qizhong and Jacobs, Steven and Amjad, Waleed and Hristidis, Vagelis and Tsotras, Vassilis J. and Young, Neal E.},
+ booktitle = {2019 IEEE International Conference on Big Data (Big Data)},
+ doi = {10.1109/BigData47090.2019.9006240},
+ issn = {},
+ keyword = {Google;Analytical models;Compaction;Adaptation models;Optimization;NoSQL databases;Computer architecture;NoSQL;LSM;merge policy;compaction},
+ month = {Dec},
+ number = {},
+ pages = {523-532},
+ title = {Experimental Evaluation of Bounded-Depth LSM Merge Policies},
+ volume = {},
+ year = {2019}
+}

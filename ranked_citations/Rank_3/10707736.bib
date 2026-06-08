@@ -1,0 +1,14 @@
+@inproceedings{10707736,
+ abstract = {The damages detected from borescope inspections of aero-engines pose safety risks during their operation. Therefore, reliably predicting the development trends of these damages to formulate maintenance plans in advance is of great importance. This paper proposes a method for predicting the development trend of damage in aero-engines based on Res-Graph Convolutional Markov Chains (Res-GCM), which is mainly divided into two modules: prediction and correction. For the prediction module, firstly, the damage data is converted into a graph structure, where a graph constructed from a single engine is treated as a subgraph, and the subgraphs of the same fleet are merged to form the final graph structure. Secondly, the Res-Graph Convolutional Network is constructed to process the graph structure, converting the challenge of predicting the aero-engine's damage development trend into the challenge of predicting the edge weights between new nodes in the graph structure. For the correction module, the damage data is first clustered into groups, re-describing the development trends of damage as the transition relationships between groups. Then, the subgraph merging operation is treated as a time step, and the Markov Chain residual correction model is constructed for each class of transition relationships between groups, with the prediction residuals of each class of transition relationships at each time step serving as the observation sequence. Finally, according to the class of transition relationship to which the damage development trend to be predicted belongs, the Markov Chain residual correction model of the corresponding class is selected to correct the results obtained in the prediction part. This paper uses crack damage data from an airline as a case study and employs seven traditional machine learning models for comparative experiments, demonstrating the effectiveness and superiority of the proposed algorithm.},
+ author = {Wang, Zhe and Fu, Xuyun and Zhang, Jinzhu},
+ booktitle = {2024 IEEE International Conference on Sensing, Diagnostics, Prognostics, and Control (SDPC)},
+ doi = {10.1109/SDPC62810.2024.10707736},
+ issn = {},
+ keyword = {Atmospheric modeling;Predictive models;Inspection;Market research;Prediction algorithms;Sensors;Safety;Aircraft propulsion;Periodic structures;Airline industry;aeroengine;trend prediction;res-graph convolutional Markov chains;borescope inspection},
+ month = {July},
+ number = {},
+ pages = {191-199},
+ title = {Res-GCM: A Damage Trend Prediction Method for Aero-Engines Based on Res-Graph Convolutional Markov Chains},
+ volume = {},
+ year = {2024}
+}

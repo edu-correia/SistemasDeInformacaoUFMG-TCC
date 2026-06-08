@@ -1,0 +1,14 @@
+@inproceedings{10943374,
+ abstract = {We present a parameter-efficient method for continual video question-answering (VidQA) learning. Our method, named Dam, uses the proposed Dynamic Adapter Merging to (i) mitigate catastrophic forgetting, (ii) enable efficient adaptation to continually arriving datasets, (iii) handle inputs from unknown datasets during inference, and (iv) enable knowledge sharing across similar dataset domains. Given a set of continually streaming VidQA datasets, we sequentially train dataset-specific adapters for each dataset while freezing the parameters of a large pretrained video-language backbone. During inference, given a video-question sample from an unknown domain, our method first uses the proposed non-parametric router function to compute a probability for each adapter, reflecting how relevant that adapter is to the current video-question input instance. Subsequently, the proposed dynamic adapter merging scheme aggregates all the adapter weights into a new adapter instance tailored for that particular test sample to compute the final VidQA prediction, mitigating the impact of inaccurate router predictions and facilitating knowledge sharing across domains. Our Dam model outperforms prior state-of-the-art continual learning approaches by 9.1% while exhibiting 1.9% less forgetting on 6 VidQA datasets spanning various domains. We further extend Dam to continual image classification and image QA and outperform prior methods by a large margin. The code will be publicly released.},
+ author = {Cheng, Feng and Wang, Ziyang and Sung, Yi-Lin and Lin, Yan-Bo and Bansal, Mohit and Bertasius, Gedas},
+ booktitle = {2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+ doi = {10.1109/WACV61041.2025.00662},
+ issn = {2642-9381},
+ keyword = {Continuing education;Computer vision;Adaptation models;Codes;Dams;Computational modeling;Aggregates;Merging;Streaming media;Image classification;continual learning;videoqa;visual language model;model merging},
+ month = {Feb},
+ number = {},
+ pages = {6805-6817},
+ title = {Dam: Dynamic Adapter Merging for Continual Video QA Learning},
+ volume = {},
+ year = {2025}
+}

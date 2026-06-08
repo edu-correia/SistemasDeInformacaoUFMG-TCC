@@ -1,0 +1,14 @@
+@article{11175089,
+ abstract = {Token merging is a widely adopted technique in vision transformers (ViTs) to reduce computation with minimal accuracy degradation. However, in tasks that require fine-grained outputs, such as text-unified object recognition, aggressive merging reaches a limit due to accuracy loss. To address this, we introduce a method that exploits residual token similarity beyond the merging threshold using difference computing, which significantly improves energy efficiency. The proposed processor integrates the post merging residual difference (PMRD) algorithm, which first reduces 34% of tokens through merging, then applies difference computing to the remaining tokens. This results in a 31% reduction in effective bit operations by leveraging residual similarity. To further exploit the resulting bit-level sparsity, the processor employs sparsity-separated accumulation with sign-magnitude representation (SSA-SM) and a bi-directional dynamic memory allocation (BDA) to optimize both computation and memory access. These enhancements yield an additional 29.4% computational energy savings. Overall, the system achieves a  $2.22\times $  improvement in energy efficiency and delivers 7.23 TOPS/W on the MS COCO dataset for text-unified object recognition.},
+ author = {Oh, Jungjun and Kim, Sangjin and Choi, Jiwon and Ryu, Junha and Kim, Byeongcheol and Choi, Yuseon and Yoo, Hoi-Jun},
+ doi = {10.1109/TVLSI.2025.3604745},
+ issn = {1557-9999},
+ journal = {IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+ keyword = {Merging;Transformers;Accuracy;Optimization;Energy efficiency;Visualization;Upper bound;Degradation;Redundancy;Hardware;Difference computing;energy efficiency;hardware accelerator;object recognition;token merging},
+ month = {Jan},
+ number = {1},
+ pages = {118-129},
+ title = {An Energy-Efficient High Resolution Vision Transformer Processor Exploiting Token Similarity Beyond Token Merging},
+ volume = {34},
+ year = {2026}
+}

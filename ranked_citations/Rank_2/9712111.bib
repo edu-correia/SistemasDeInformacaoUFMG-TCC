@@ -1,0 +1,14 @@
+@inproceedings{9712111,
+ abstract = {Information Retrieval (IR) techniques have been widely utilized by a growing number of software maintenance activities. However, there is a mismatch between source code lexicon (especially identifiers) and vocabulary in software artifacts, leading to the inefficiency of IR techniques. Consequently, it is essential to normalize identifiers, whose aim is to parse identifiers into several natural language terms. Identifier splitting significantly impacts on the effectiveness of identifier normalization. Even though researchers have proposed several approaches to split identifiers, three main drawbacks remain to be resolved, including without considering morphemes, over-splitting, and under-splitting. In this paper, we propose a new Character-level Hybrid-granularity Identifier Splitting approach CHIS to resolve the three drawbacks and better split identifiers. CHIS combines the Bidirectional Encoder Representation from Transformers (BERT) and Conditional Random Fields (CRF) to train a deep learning model to split identifiers. In addition, CHIS further employs a pre-processing component and a post-processing component to resolve the morpheme acquisition drawback and the over-splitting as well as the under-splitting drawbacks respectively, thus further improving its performance. Specifically, in the pre-processing component, CHIS obtains and labels the most frequent subwords of the training identifiers as morphemes through the Byte Pair Encoding (BPE) algorithm and the sequence labeling algorithm. In the post-processing component, CHIS iteratively merges and splits the splitting results obtained by the deep learning model to resolve the over-splitting and under-splitting drawbacks. We conduct extensive experiments to show the effectiveness of CHIS. Experimental results show that CHIS achieves the Accuracy of 0.943 on average and outperforms the state-of-the-art approach by 0.085 on average. In addition, the effectiveness of the pre-processing and post-processing components of CHIS are also validated.},
+ author = {Liu, Siyuan and Zhang, Jingxuan and Liang, Jiahui and Luo, Junpeng and Xu, Yong and Sun, Chenxing},
+ booktitle = {2021 28th Asia-Pacific Software Engineering Conference (APSEC)},
+ doi = {10.1109/APSEC53868.2021.00027},
+ issn = {2640-0715},
+ keyword = {Deep learning;Training;Vocabulary;Software maintenance;Codes;Natural languages;Transformers;Identifier Normalization;Identifier Splitting;Code Analysis;Deep Learning},
+ month = {Dec},
+ number = {},
+ pages = {192-201},
+ title = {CHIS: A Novel Hybrid Granularity Identifier Splitting Approach},
+ volume = {},
+ year = {2021}
+}

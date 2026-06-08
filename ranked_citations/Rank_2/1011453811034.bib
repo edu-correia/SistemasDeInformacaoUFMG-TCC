@@ -1,0 +1,15 @@
+@article{10.1145/3811034,
+ abstract = {Fuzz driver generation (FDG) has improved coverage and automation in modern fuzzing. Yet a persistent challenge remains: many crashes in generated drivers stem from incorrect API usage rather than genuine library defects. Consequently, root cause analysis (RCA) becomes essential for distinguishing true library bugs from driver-induced crashes. However, existing FDG systems lack dedicated RCA capabilities, whereas statistical RCA methods representative of recent top-tier works (e.g., Aurora, Racing, OptRCA) rely on simplifying assumptions, such as treating the first observable divergence as the true cause, which often fail to capture the underlying fault semantics in practice.In this paper, we propose Arash, an RCA framework for fuzz driver crashes that couples semantic checking with tokenefficient code slicing to enable precise and efficient analysis. Arash introduces two complementary components: (i) Fuzz Driver–Oriented Checker (FDOC), which captures two dominant classes of API misuse in the fuzz driver, namely propertyrelated crashes and extent-related crashes, and correlates these violations with crash traces; (ii) Parameter-Guided Code Slicing (PGCS), which reduces token consumption and contextual noise by preserving only statements relevant to parameters involved in the crash. We implement and evaluate Arash across a diverse corpus of fuzz driver crashes. Arash achieves a recall rate of 85.3%, successfully analyzing cases that all other tools fail to handle, and outperforms the current state-of-the-art by 52.6% in diagnostic accuracy. Moreover, Arash is highly token-efficient, achieving an average token reduction of 46.8% relative to a large language model (LLM) baseline that consumes windowed raw code context, and 24.5% relative to a retrieval-augmented LLM baseline that retrieves full stack-frame functions. Integrated into OSS-Fuzz-Gen, so far 30 genuine library bugs identified by Arash have been confirmed by developers, including one assigned a CVE (CVE-2024-9143), demonstrating its substantial real-world impact in large-scale fuzzing workflows.},
+ address = {New York, NY, USA},
+ author = {Xie, Maoyi and Li, Kaixuan and Ge, Jingquan and Ma, Wei and Sun, Yuqiang and Kong, Ziqiao and Zhang, Cen and Liu, Dongge and Chang, Oliver and Liu, Yang},
+ doi = {10.1145/3811034},
+ issn = {1049-331X},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ keyword = {Root Cause Analysis, API Misuse, Large Language Model, Fuzz Driver Generation},
+ month = {May},
+ note = {Just Accepted},
+ publisher = {Association for Computing Machinery},
+ title = {Arash: Token-Efficient LLM-Assisted Crash Root Cause Analysis in Fuzz Driver Generation},
+ url = {https://doi.org/10.1145/3811034},
+ year = {2026}
+}

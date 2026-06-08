@@ -1,0 +1,14 @@
+@conference{Fischer202562,
+ abstract = {Slow-Start is the default startup mechanism for congestion control in TCP and QUIC. However, its conservative initial window and round-trip time (RTT) driven exponential growth significantly delay bandwidth utilization on today's high bandwidth-delay product (BDP) paths. Particularly short and interactive flows, which comprise a large share of Internet traffic, suffer the most. We evaluate Careful Resume, a novel mechanism that reuses the previous congestion control state for rapid ramp-up. It has built-in validation and retreat mechanisms to handle path changes and congestion. Appropriate pacing is required for Careful Resume, but can be challenging for UDP-based protocols like QUIC. We implemented Careful Resume in Mozilla's Neqo, a QUIC stack written in Rust and running in Linux user space. Our experiments on emulated paths, as well as real fiber, 5G, and satellite paths, show that Careful Resume consistently achieves time-to-last-byte reductions of several RTTs - -for a very high bandwidth geostationary satellite path (1 Gbit/s and 600 ms RTT) even 12 RTTs - -all while not inflicting significant harm to connections that share a bottleneck on the path.  © 2025 ACM.},
+ author = {Fischer, Nicolai and Hofstätter, Matthias and Deutschmann, Jörg and German, Reinhard},
+ doi = {10.1145/3744200.3744766},
+ journal = {ANRW 2025 - Proceedings of the 2025 Applied Networking Research Workshop},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {62 - 69},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Getting up to Speed with Neqo and Careful Resume},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/105013061532?origin=resultslist},
+ year = {2025}
+}

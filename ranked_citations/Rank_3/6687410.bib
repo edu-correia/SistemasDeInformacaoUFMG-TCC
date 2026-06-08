@@ -1,0 +1,14 @@
+@inproceedings{6687410,
+ abstract = {Parallel programming is the mainstream for today's HPC applications. Programmers need to parallelize their programs to achieve better performance on multicore systems. However, due to a lack of good understanding of parallelism in algorithms, scheduling policy in runtime systems, and multicore architectures, programmers usually find it very hard to write high-performance, scalable programs on these parallel platforms. Although using a parallelized library written by experts can reduce the amount of work for coding, it does not automatically guarantee good performance according to our study. A better understanding of parallelism in algorithms, the OS/runtime systems, and hardware architectures is necessary if programmers wish to further improve performance. In this paper, we use SIFT-based feature matching within large-scale image collections to show the importance of three factors-the level of parallelism, scheduling policy, and memory architecture-that affect the performance of large-scale feature matching on multicore systems. We demonstrate experimental results using programs based on OpenCV and OpenMP, which are executed on both 16-core and 64-core machines. From our experimental results, we find that images with a large number of features achieve poor scalability on the 64-core machine due to a poor cache utilization. To address this issue of cache performance, we propose a Divide-and-Merge algorithm that divides the feature space into several small sub-spaces so that they fit within the cache. Our experiments show that the performance tuning addressing all of the three factors improves the speedup of feature matching from 10.6× to 21.5× on the 64-core machine. While the speedup is improved by 103%, the scalability of the feature matching algorithm is improved by up to 6.45 times on the 64-core machine with our performance tuning. Our study indicates that performance tuning on multicore systems is very challenging even for a simple image processing algorithm.},
+ author = {Tang, Xiaoxin and Mills, Steven and Eyers, David and Huang, Zhiyi and Leung, Kai-Cheung and Guo, Minyi},
+ booktitle = {2013 42nd International Conference on Parallel Processing},
+ doi = {10.1109/ICPP.2013.85},
+ issn = {2332-5690},
+ keyword = {Approximation algorithms;Multicore processing;Time complexity;Algorithm design and analysis;Parallel processing;Scalability;Tuning},
+ month = {Oct},
+ number = {},
+ pages = {718-727},
+ title = {Performance Tuning on Multicore Systems for Feature Matching within Image Collections},
+ volume = {},
+ year = {2013}
+}

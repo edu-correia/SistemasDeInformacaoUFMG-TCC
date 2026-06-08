@@ -1,0 +1,14 @@
+@article{10422819,
+ abstract = {Recently, semantic change detection (SCD) has gained growing attention from the remote-sensing (RS) research community due to its critical role in Earth observation applications. Typical approaches tackle the task using a multitask network, comprising one change detection (CD) subtask and two semantic segmentation (SS) subtasks. Although these approaches have achieved good performance, one crucial question persists: What is the effective way to handle the feature interactions across SCD subtasks? To address this issue, this article first offers an overview of existing SCD networks and compares them from a perspective view of multitask learning (MTL). Following that, we select an architecture combining a two-branch encoder and a three-branch decoder as the baseline due to its compatibility with MTL. Then, one simple, yet very effective module, decoder feature interaction across subtasks (DFITs), is introduced. DFIT seeks to enhance the CD decoding feature by leveraging the feature differences between two SS decoding branches on a layer-wise basis. Additionally, the feature aggregation module (FAM) is designed further to enhance network performance in cooperation with DFIT. FAM aims to produce more representative shared information across the SS and CD subtasks by merging the outputs from the final three encoder layers. Combining DFIT and FAM, the proposed network exploiting decoder-focused MTL (DEFO-MTLSCD) presents more representative information by capitalizing on both CD and SS losses backpropagations across all coding paths and achieves better performance. Experimental results reveal that our method outperforms state-of-the-art (SOTA) performances relative to previous SCD efforts. Our source code is released at https://github.com/byyztgxz/Decoder_Fusion.},
+ author = {Li, Zhe and Wang, Xiaoxin and Fang, Sheng and Zhao, Jianli and Yang, Shuqi and Li, Wen},
+ doi = {10.1109/TGRS.2024.3362728},
+ issn = {1558-0644},
+ journal = {IEEE Transactions on Geoscience and Remote Sensing},
+ keyword = {Task analysis;Decoding;Semantics;Semantic segmentation;Encoding;Feature extraction;Multitasking;Change detection (CD);feature aggregation;feature interactions;multitask learning (MTL);remote sensing (RS);semantic CD (SCD);semantic segmentation (SS)},
+ month = {},
+ number = {},
+ pages = {1-15},
+ title = {A Decoder-Focused Multitask Network for Semantic Change Detection},
+ volume = {62},
+ year = {2024}
+}

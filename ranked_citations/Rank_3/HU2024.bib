@@ -1,0 +1,21 @@
+@article{HU2024,
+ abstract = {Background
+Alzheimer disease and related dementias (ADRD) rank as the sixth leading cause of death in the United States, underlining the importance of accurate ADRD risk prediction. While recent advancements in ADRD risk prediction have primarily relied on imaging analysis, not all patients undergo medical imaging before an ADRD diagnosis. Merging machine learning with claims data can reveal additional risk factors and uncover interconnections among diverse medical codes.
+Objective
+The study aims to use graph neural networks (GNNs) with claim data for ADRD risk prediction. Addressing the lack of human-interpretable reasons behind these predictions, we introduce an innovative, self-explainable method to evaluate relationship importance and its influence on ADRD risk prediction.
+Methods
+We used a variationally regularized encoder-decoder GNN (variational GNN [VGNN]) integrated with our proposed relation importance method for estimating ADRD likelihood. This self-explainable method can provide a feature-important explanation in the context of ADRD risk prediction, leveraging relational information within a graph. Three scenarios with 1-year, 2-year, and 3-year prediction windows were created to assess the model’s efficiency, respectively. Random forest (RF) and light gradient boost machine (LGBM) were used as baselines. By using this method, we further clarify the key relationships for ADRD risk prediction.
+Results
+In scenario 1, the VGNN model showed area under the receiver operating characteristic (AUROC) scores of 0.7272 and 0.7480 for the small subset and the matched cohort data set. It outperforms RF and LGBM by 10.6% and 9.1%, respectively, on average. In scenario 2, it achieved AUROC scores of 0.7125 and 0.7281, surpassing the other models by 10.5% and 8.9%, respectively. Similarly, in scenario 3, AUROC scores of 0.7001 and 0.7187 were obtained, exceeding 10.1% and 8.5% than the baseline models, respectively. These results clearly demonstrate the significant superiority of the graph-based approach over the tree-based models (RF and LGBM) in predicting ADRD. Furthermore, the integration of the VGNN model and our relation importance interpretation could provide valuable insight into paired factors that may contribute to or delay ADRD progression.
+Conclusions
+Using our innovative self-explainable method with claims data enhances ADRD risk prediction and provides insights into the impact of interconnected medical code relationships. This methodology not only enables ADRD risk modeling but also shows potential for other image analysis predictions using claims data.},
+ author = {Xinyue Hu and Zenan Sun and Yi Nian and Yichen Wang and Yifang Dang and Fang Li and Jingna Feng and Evan Yu and Cui Tao},
+ doi = {https://doi.org/10.2196/54748},
+ issn = {2561-7605},
+ journal = {JMIR Aging},
+ keyword = {Alzheimer disease and related dementias, risk prediction, graph neural network, relation importance, machine learning},
+ title = {Self-Explainable Graph Neural Network for Alzheimer Disease and Related Dementias Risk Prediction: Algorithm Development and Validation Study},
+ url = {https://www.sciencedirect.com/science/article/pii/S2561760524000598},
+ volume = {7},
+ year = {2024}
+}

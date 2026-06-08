@@ -1,0 +1,14 @@
+@article{9625958,
+ abstract = {The number of applications that can access a storage device simultaneously has increased as a result of the increase in storage capacity and the emergence of hyperscale environments. In multi-application environments, the request for append-only data to storage from applications such as log-structured merge-tree-based key-value (LSMKV) stores can negatively affect the storage-internal buffer hit ratio of other applications. This is because frequently re- accessed data can be evicted from the buffer via the intensive requests of append-only data that are rarely re- accessed. This degradation in the buffer hit ratio increases the storage access latency of applications. Herein, we propose a buffer management method to increase the buffer hit ratio of non-append-only data (or applications) in multi-application environments. The proposed method (1) defines large-sequential writes (that are not overwritten) and all reads on them as append-only input/output (I/O), (2) detects I/O, matching the access pattern of append-only data of LSMKVs, (3) allocates the append-only read/write requests into separate small buffer spaces, and (4) evicts the append-only data from the buffer when free buffer space is required. Because the proposed method stores append-only data of an LSMKV in buffer spaces with a limited size, it can increase the buffer hit ratio of applications that frequently re- access its data. Experimental results show that the proposed method can increase the buffer hit ratio of hot-data-intensive applications and the total buffer hit ratio by 31.72% and 20.06%, on average, respectively, in comparison to the existing buffer management techniques.},
+ author = {Jeong, Joonyong and Lee, Gyeongyong and Lee, Jungkeol and Choi, Jungwook and Song, Yong Ho},
+ doi = {10.1109/ACCESS.2021.3130278},
+ issn = {2169-3536},
+ journal = {IEEE Access},
+ keyword = {Buffer storage;Ash;Compaction;Bars;Random access memory;Performance evaluation;Buffer management;log-structured merge tree;multi-application;NAND flash storage},
+ month = {},
+ number = {},
+ pages = {157681-157698},
+ title = {Buffer Management With Append-Only Data Isolation for Improving SSD Performance},
+ volume = {9},
+ year = {2021}
+}

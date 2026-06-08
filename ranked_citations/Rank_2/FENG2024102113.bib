@@ -1,0 +1,14 @@
+@article{FENG2024102113,
+ abstract = {In drone aerial target detection tasks, a high proportion of small targets and complex backgrounds often lead to false positives and missed detections, resulting in low detection accuracy. To improve the accuracy of the detection of small targets, this study proposes two improved models based on YOLOv8s, named IMCMD_YOLOv8_small and IMCMD_YOLOv8_large. Each model accommodates different application scenarios. First, the network structure was optimized by removing the backbone P5 layer used to detect large targets and merging the P4, P3, and P2 layers, which are better suited for detecting medium and small targets; P3 and P2 serve as detection heads to focus more on small targets. Subsequently, the coordinate attention mechanism is integrated into the backbone’s C2f, to create a C2f_CA module that enhances the model’ s focus on key information and secures a richer flow of gradient information. Subsequently, a multiscale attention feature fusion module was designed to merge the shallow and deep features. Finally, a Dynamic Head was introduced to unify the perception of scale, space, and tasks, further enhancing the detection capability for small targets. Experimental results on the VisDrone2019 dataset demonstrated that, compared with YOLOv8s, IMCMD_YOLOv8_small achieved improvements of 7.7% and 5.1% in mAP@0.5 and mAP@0.5:0.95, respectively, with a 73.0% reduction in the parameter count. The IMCMD_YOLOv8_large model showed even more significant improvements in these metrics, reaching 10.8% and 7.3%, respectively, with a 47.7% reduction in the parameter count, displaying superior performance in small target detection tasks. The improved models not only enhanced the detection accuracy but also achieved model lightweighting, thereby proving the effectiveness of the improvement strategies and showcasing superior performance compared with other classic models.},
+ author = {Fei Feng and Yu Hu and Weipeng Li and Feiyan Yang},
+ doi = {https://doi.org/10.1016/j.jksuci.2024.102113},
+ issn = {1319-1578},
+ journal = {Journal of King Saud University - Computer and Information Sciences},
+ keyword = {Aerial images, YOLOv8, Small target detection, Attention mechanism, Multiscale feature fusion},
+ number = {6},
+ pages = {102113},
+ title = {Improved YOLOv8 algorithms for small object detection in aerial imagery},
+ url = {https://www.sciencedirect.com/science/article/pii/S1319157824002027},
+ volume = {36},
+ year = {2024}
+}

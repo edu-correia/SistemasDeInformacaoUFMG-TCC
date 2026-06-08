@@ -1,0 +1,16 @@
+@article{10.1109/TASLP.2022.3221009,
+ abstract = {So far, discontinuous named entity recognition (NER) has received increasing research attention and many related methods have surged such as hypergraph-based methods, span-based methods, and sequence-to-sequence (Seq2Seq) methods, etc. However, these methods more or less suffer from some problems such as decoding ambiguity and efficiency, which limit their performance. Recently, grid-tagging methods, which benefit from the flexible design of tagging systems and model architectures, have shown superiority to adapt for various information extraction tasks. In this paper, we follow the line of such methods and propose a competitive grid-tagging model for discontinuous NER. We call our model TOE because we incorporate two kinds of Tag-Oriented Enhancement mechanisms into a state-of-the-art (SOTA) grid-tagging model that casts the NER problem into word-word relationship prediction. First, we design a Tag Representation Embedding Module (TREM) to force our model to consider not only word-word relationships but also word-tag and tag-tag relationships. Concretely, we construct tag representations and embed them into TREM, so that TREM can treat tag and word representations as queries/keys/values and utilize self-attention to model their relationships. On the other hand, motivated by the Next-Neighboring-Word (NNW) and Tail-Head-Word (THW) tags in the SOTA model, we add two new symmetric tags, namely Previous-Neighboring-Word (PNW) and Head-Tail-Word (HTW), to model more fine-grained word-word relationships and alleviate error propagation from tag prediction. In the experiments of three benchmark datasets, namely CADEC, ShARe13 and ShARe14, our TOE model pushes the SOTA results by about 0.83%, 0.05% and 0.66% in F1, demonstrating its effectiveness.},
+ author = {Liu, Jiang and Ji, Donghong and Li, Jingye and Xie, Dongdong and Teng, Chong and Zhao, Liang and Li, Fei},
+ doi = {10.1109/taslp.2022.3221009},
+ issn = {2329-9290},
+ issue_date = {2023},
+ journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+ month = {November},
+ numpages = {11},
+ pages = {177–187},
+ publisher = {IEEE Press},
+ title = {TOE: A Grid-Tagging Discontinuous NER Model Enhanced by Embedding Tag/Word Relations and More Fine-Grained Tags},
+ url = {https://doi.org/10.1109/TASLP.2022.3221009},
+ volume = {31},
+ year = {2022}
+}

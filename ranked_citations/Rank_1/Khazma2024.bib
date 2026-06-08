@@ -1,0 +1,14 @@
+@conference{Khazma2024,
+ abstract = {LSM-Trees are the backbone of modern key-value stores, supporting write-intensive workloads with balanced performance for point and range queries. Compaction in LSM-Trees optimizes queries but poses significant overhead on the write path, especially for medium to large values. Key-value (KV) separation addresses this by storing values in a separate value log and pointing to them from the LSM-Tree. This reduces write amplification as values are no longer rewritten during compaction. This KV separation, however, presents its own challenges. First, query performance suffers as the LSM-Tree must first be searched for an address followed by querying the log for the associated value. Second, the value log requires expensive garbage collection as (1) the LSM-Tree must be queried to determine whether a given value in the log is still the most recent version, and (2) a reinsertion is needed to update the LSM-Tree with the addresses of the relocated KV pairs. To address these challenges, this paper investigates how to map values in the log via an in-memory hash table while using the LSM-Tree to store small values and handle range queries. We implement Wayfinder on top of RocksDB and show its effectiveness in improving throughput while reducing space and write amplification.  © 2024 ACM.},
+ author = {Khazma, Guy and Thiessen, Myles and De Lara, Eyal and Dayan, Niv},
+ doi = {10.1145/3663351.3663880},
+ journal = {ACM International Conference Proceeding Series},
+ note = {Cited by: 0; All Open Access; Gold Open Access},
+ pages = {},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Wayfinder: Speeding up Key-Value Separation by Avoiding I/O Based Indirection},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85197480275?origin=resultslist},
+ year = {2024}
+}

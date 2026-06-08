@@ -1,0 +1,13 @@
+@conference{Bailleu2019173,
+ abstract = {We introduce SPEICHER, a secure storage system that not only provides strong confidentiality and integrity properties, but also ensures data freshness to protect against rollback/forking attacks. SPEICHER exports a Key-Value (KV) interface backed by Log-Structured Merge Tree (LSM) for supporting secure data storage and query operations. SPEICHER enforces these security properties on an untrusted host by leveraging shielded execution based on a hardware-assisted trusted execution environment (TEE)—specifically, Intel SGX. However, the design of SPEICHER extends the trust in shielded execution beyond the secure SGX enclave memory region to ensure that the security properties are also preserved in the stateful (or non-volatile) setting of an untrusted storage medium, including system crash, reboot, or migration. More specifically, we have designed an authenticated and confidentiality-preserving LSM data structure. We have further hardened the LSM data structure to ensure data freshness by designing asynchronous trusted counters. Lastly, we designed a direct I/O library for shielded execution based on Intel SPDK to overcome the I/O bottlenecks in the SGX enclave. We have implemented SPEICHER as a fully-functional storage system by extending RocksDB, and evaluated its performance using the RocksDB benchmark. Our experimental evaluation shows that SPEICHER incurs reasonable overheads for providing strong security guarantees, while keeping the trusted computing base (TCB) small.},
+ author = {Bailleu, Maurice and Thalheim, Jörg and Bhatotia, Pramod and Fetzer, Christof and Honda, Michio and Vaswani, Kapil},
+ journal = {Proceedings of the 17th USENIX Conference on File and Storage Technologies, FAST 2019},
+ note = {Cited by: 81},
+ pages = {173 - 190},
+ publication_stage = {Final},
+ source = {Scopus},
+ title = {Speicher: Securing LSM-based key-value stores using shielded Execution},
+ type = {Conference paper},
+ url = {https://www.scopus.com/pages/publications/85063877423?origin=resultslist},
+ year = {2019}
+}

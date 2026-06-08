@@ -1,0 +1,18 @@
+@article{10.1145/3731457,
+ abstract = {Probabilistic programming languages aim to separate the user-specified model from the inference runtime system, allowing users to focus on model design and leave inference to the compiler and runtime systems. However, the structure of the model can affect the inference efficiency, something that is often utilized when implementing Bayesian inference solutions without probabilistic programming. In this article, we consider a specific class of important models within phylogenetics, which are used for tree inference. Algorithms utilizing the structures of trees in such models have been used for a long time within phylogenetics, outside the scope of probabilistic programming. In particular, the use of belief propagation can significantly speed up probabilistic tree inference when combined with other approximate inferences, such as MCMC. However, there is an open problem of how to incorporate both belief-propagation (marginalization) of a subset of latent variables in typed universal probabilistic programming languages and still be able to apply approximate inference for the rest of the variables. In this article, we propose a solution to this problem by using an approach where a user only needs to mark which latent variables in the program should be marginalized, and the rest of the belief propagation is handled automatically. We call this approach annotated automatic pruning, acknowledging the original terminology of pruning from the phylogenetic literature. We evaluate our approach using non-trivial models for tree inference, assessing performance, and testing correctness by comparing to MrBayes as the reference implementation.},
+ address = {New York, NY, USA},
+ articleno = {15},
+ author = {\c{C}aylak, Gizem and Granqvist, Emma and Virgoulay, Thimoth\'{e}e and Ronquist, Fredrik and Broman, David},
+ doi = {10.1145/3731457},
+ issue_date = {September 2025},
+ journal = {ACM Trans. Probab. Mach. Learn.},
+ keyword = {Automated, Belief Propagation, PPLs},
+ month = {August},
+ number = {3},
+ numpages = {35},
+ publisher = {Association for Computing Machinery},
+ title = {Annotated Automatic Pruning of Universal Probabilistic Programming Languages},
+ url = {https://doi.org/10.1145/3731457},
+ volume = {1},
+ year = {2025}
+}

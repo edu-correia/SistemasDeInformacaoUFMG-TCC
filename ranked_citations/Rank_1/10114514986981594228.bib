@@ -1,0 +1,18 @@
+@article{10.1145/1498698.1594228,
+ abstract = {Suffix tree is one of the most important data structures in string algorithms and biological sequence analysis. Unfortunately, when it comes to implementing those algorithms and applying them to real genomic sequences, often the main memory size becomes the bottleneck. This is easily explained by the fact that while a DNA sequence of length n from alphabet Σ = {A,C,G,T} can be stored in n log |Σ| = 2n bits, its suffix tree occupiesO(n log n) bits. In practice, the size difference easily reaches factor 50.We report on an implementation of the compressed suffix tree very recently proposed by Sadakane (2007). The compressed suffix tree occupies space proportional to the text size, that is, O(n log |Σ|) bits, and supports all typical suffix tree operations with at most log n factor slowdown. Our experiments show that, for example, on a 10 MB DNA sequence, the compressed suffix tree takes 10% of the space of the normal suffix tree. At the same time, a representative algorithm is slowed down by factor 30.Our implementation follows the original proposal in spirit, but some internal parts are tailored toward practical implementation. Our construction algorithm has time requirement O(n log n log |Σ|) and uses closely the same space as the final structure while constructing it: on the 10MB DNA sequence, the maximum space usage during construction is only 1.5 times the final product size. As by-products, we develop a method to create Succinct Suffix Array directly from Burrows-Wheeler transform and a space-efficient version of the suffixes-insertion algorithm to build balanced parentheses representation of suffix tree from LCP information.},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {V\"{a}lim\"{a}ki, N. and M\"{a}kinen, V. and Gerlach, W. and Dixit, K.},
+ doi = {10.1145/1498698.1594228},
+ issn = {1084-6654},
+ issue_date = {2009},
+ journal = {ACM J. Exp. Algorithmics},
+ keyword = {Algorithm engineering, Burrows-Wheeler transform, balanced parentheses, biological sequence analysis, lcp values, lowest common ancestor, text compression, text indexing, wavelet tree},
+ month = {January},
+ numpages = {23},
+ publisher = {Association for Computing Machinery},
+ title = {Engineering a compressed suffix tree implementation},
+ url = {https://doi.org/10.1145/1498698.1594228},
+ volume = {14},
+ year = {2010}
+}

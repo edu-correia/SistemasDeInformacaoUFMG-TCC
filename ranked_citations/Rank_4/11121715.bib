@@ -1,0 +1,14 @@
+@inproceedings{11121715,
+ abstract = {Maintaining a “green” mainline branch—where all builds pass successfully—is crucial but challenging in fast-paced, large-scale software development environments, particularly with concurrent code changes in large monorepos. SubmitQueue, a system designed to address these challenges, speculatively executes builds and only lands changes with successful outcomes. However, despite its effectiveness, the system faces inefficiencies in resource utilization, leading to a high rate of premature build aborts and delays in landing smaller changes blocked by larger conflicting ones. This paper introduces enhancements to SubmitQueue, focusing on optimizing resource usage and improving build prioritization. Central to this is our innovative probabilistic model, which distinguishes between changes with shorter and longer build times to prioritize builds for more efficient scheduling. By leveraging a machine learning model to predict build times and incorporating this into the probabilistic framework, we expedite the landing of smaller changes blocked by conflicting larger time-consuming changes. Additionally, introducing a concept of speculation threshold ensures that only the most likely builds are executed, reducing unnecessary resource consumption. After implementing these enhancements across Uber's major monorepos (Go, iOS, and Android), we observed a reduction in Continuous Integration (CI) resource usage by approximately 53%, CPU usage by 44%, and P95 waiting times by 37%. These improvements highlight the enhanced efficiency of SubmitQueue in managing large-scale software changes while maintaining a green mainline.},
+ author = {Juloori, Dhruva and Lin, Zhongpeng and Williams, Matthew and Shin, Eddy and Mahajan, Sonal},
+ booktitle = {2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+ doi = {10.1109/ICSE-SEIP66354.2025.00044},
+ issn = {2832-7659},
+ keyword = {Job shop scheduling;Green products;Machine learning;Software quality;Predictive models;Continuous integration;Probabilistic logic;Delays;Resource management;Software engineering;Continuous Integration;Merge Queue;Monorepos;Build Time Prediction;Build Scheduling;Probabilistic Modeling;Speculative Execution;Version Control},
+ month = {April},
+ number = {},
+ pages = {437-447},
+ title = {CI at Scale: Lean, Green, and Fast},
+ volume = {},
+ year = {2025}
+}

@@ -1,0 +1,22 @@
+@article{WANG2022,
+ abstract = {Background
+With the popularization of electronic health records in China, the utilization of digitalized data has great potential for the development of real-world medical research. However, the data usually contains a great deal of protected health information and the direct usage of this data may cause privacy issues. The task of deidentifying protected health information in electronic health records can be regarded as a named entity recognition problem. Existing rule-based, machine learning–based, or deep learning–based methods have been proposed to solve this problem. However, these methods still face the difficulties of insufficient Chinese electronic health record data and the complex features of the Chinese language.
+Objective
+This paper proposes a method to overcome the difficulties of overfitting and a lack of training data for deep neural networks to enable Chinese protected health information deidentification.
+Methods
+We propose a new model that merges TinyBERT (bidirectional encoder representations from transformers) as a text feature extraction module and the conditional random field method as a prediction module for deidentifying protected health information in Chinese medical electronic health records. In addition, a hybrid data augmentation method that integrates a sentence generation strategy and a mention-replacement strategy is proposed for overcoming insufficient Chinese electronic health records.
+Results
+We compare our method with 5 baseline methods that utilize different BERT models as their feature extraction modules. Experimental results on the Chinese electronic health records that we collected demonstrate that our method had better performance (microprecision: 98.7%, microrecall: 99.13%, and micro-F1 score: 98.91%) and higher efficiency (40% faster) than all the BERT-based baseline methods.
+Conclusions
+Compared to baseline methods, the efficiency advantage of TinyBERT on our proposed augmented data set was kept while the performance improved for the task of Chinese protected health information deidentification.},
+ author = {Peng Wang and Yong Li and Liang Yang and Simin Li and Linfeng Li and Zehan Zhao and Shaopei Long and Fei Wang and Hongqian Wang and Ying Li and Chengliang Wang},
+ doi = {https://doi.org/10.2196/38154},
+ issn = {2291-9694},
+ journal = {JMIR Medical Informatics},
+ keyword = {EHR, PHI, personal information, protected data, protected information, patient information, health information, de-identification, de-identify, privacy, TinyBert, model, development, algorithm, machine learning, CRF, data augmentation, health record, medical record},
+ number = {8},
+ title = {An Efficient Method for Deidentifying Protected Health Information in Chinese Electronic Health Records: Algorithm Development and Validation},
+ url = {https://www.sciencedirect.com/science/article/pii/S2291969422002174},
+ volume = {10},
+ year = {2022}
+}

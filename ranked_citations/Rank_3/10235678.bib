@@ -1,0 +1,14 @@
+@inproceedings{10235678,
+ abstract = {As an open-source compiler architecture that is continuously being improved, LLVM generates a relatively inefficient access address calculation instruction that involve a large number of redundant calculations. This issue seriously impacts the efficiency of memory access and hinders the performance of the processor. This paper proposes an optimization method for accelerating the computation of the access address, aiming at the low efficiency of the existing access address calculation. This method first merges part of the calculation instructions in the address calculation instruction to reduce the redundancy calculation, so as to complete the optimization of a single access address calculation instruction. For multiple merged address calculation instructions, it is necessary to decompose the offset, and reorganize the operand with the decomposed operand information to generate the instruction matrix. The instructions in the matrix are then used for instruction match, and using the instruction which match successfully to adjusts the position of the operands in the sequence by instruction replacement, thus optimizing multiple access address calculation instructions. This optimization method can significantly improve the quality of compiler-generated code and effectively accelerate access. A performance evaluation is conducted on the industry-standard performance benchmark suite SPEC CPU2006. The results show that after using memory address calculation optimization, the overall performance improves by 1.35% compared to the original compiler. The average performance of the two benchmark test programs, SPECint and SPECfp, improve by1.51% and 1.22%, respectively.},
+ author = {Shang, Jiandong and Xu, Kunkun and Han, Lin and Wang, Hongsheng and Chai, Yunda and Yang, Xiaoyi},
+ booktitle = {2023 4th International Conference on Information Science, Parallel and Distributed Systems (ISPDS)},
+ doi = {10.1109/ISPDS58840.2023.10235678},
+ issn = {},
+ keyword = {Performance evaluation;Information science;Codes;Program processors;Memory management;Redundancy;Optimization methods;LLVM;address calculation;compiler optimization;operand recombination;instruction replacement},
+ month = {July},
+ number = {},
+ pages = {458-464},
+ title = {Optimization of Access Address Calculation for LLVM},
+ volume = {},
+ year = {2023}
+}

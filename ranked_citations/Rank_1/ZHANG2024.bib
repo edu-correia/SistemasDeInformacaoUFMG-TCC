@@ -1,0 +1,21 @@
+@article{ZHANG2024,
+ abstract = {Background
+The increasing prevalence of nonalcoholic fatty liver disease (NAFLD) in China presents a significant public health concern. Traditional ultrasound, commonly used for fatty liver screening, often lacks the ability to accurately quantify steatosis, leading to insufficient follow-up for patients with moderate-to-severe steatosis. Transient elastography (TE) provides a more quantitative diagnosis of steatosis and fibrosis, closely aligning with biopsy results. Moreover, machine learning (ML) technology holds promise for developing more precise diagnostic models for NAFLD using a variety of laboratory indicators.
+Objective
+This study aims to develop a novel ML-based diagnostic model leveraging TE results for staging hepatic steatosis. The objective was to streamline the model’s input features, creating a cost-effective and user-friendly tool to distinguish patients with NAFLD requiring follow-up. This innovative approach merges TE and ML to enhance diagnostic accuracy and efficiency in NAFLD assessment.
+Methods
+The study involved a comprehensive analysis of health examination records from Suzhou Municipal Hospital, spanning from March to May 2023. Patient data and questionnaire responses were meticulously inputted into Microsoft Excel 2019, followed by thorough data cleaning and model development using Python 3.7, with libraries scikit-learn and numpy to ensure data accuracy. A cohort comprising 978 residents with complete medical records and TE results was included for analysis. Various classification models, including logistic regression (LR), k-nearest neighbor (KNN), support vector machine (SVM), random forest (RF), light gradient boosting machine (LightGBM), and extreme gradient boosting (XGBoost), were constructed and evaluated based on the area under the receiver operating characteristic curve (AUROC).
+Results
+Among the 916 patients included in the study, 273 were diagnosed with moderate-to-severe NAFLD. The concordance rate between traditional ultrasound and TE for detecting moderate-to-severe NAFLD was 84.6% (231/273). The AUROC values for the RF, LightGBM, XGBoost, SVM, KNN, and LR models were 0.91, 0.86, 0.83, 0.88, 0.77, and 0.81, respectively. These models achieved accuracy rates of 84%, 81%, 78%, 81%, 76%, and 77%, respectively. Notably, the RF model exhibited the best performance. A simplified RF model was developed with an AUROC of 0.88, featuring 62% sensitivity and 90% specificity. This simplified model used 6 key features: waist circumference, BMI, fasting plasma glucose, uric acid, total bilirubin, and high-sensitivity C-reactive protein. This approach offers a cost-effective and user-friendly tool while streamlining feature acquisition for training purposes.
+Conclusions
+The study introduces a groundbreaking, cost-effective ML algorithm that leverages health examination data for identifying moderate-to-severe NAFLD. This model has the potential to significantly impact public health by enabling targeted investigations and interventions for NAFLD. By integrating TE and ML technologies, the study showcases innovative approaches to advancing NAFLD diagnostics.},
+ author = {Liang Zhang and Yueqing Huang and Min Huang and Chun-Hua Zhao and Yan-Jun Zhang and Yi Wang},
+ doi = {https://doi.org/10.2196/53654},
+ issn = {2561-326X},
+ journal = {JMIR Formative Research},
+ keyword = {NAFLD, artificial intelligence, public health, transient elastography, diagnosis},
+ title = {Development of Cost-Effective Fatty Liver Disease Prediction Models in a Chinese Population: Statistical and Machine Learning Approaches},
+ url = {https://www.sciencedirect.com/science/article/pii/S2561326X24001082},
+ volume = {8},
+ year = {2024}
+}
